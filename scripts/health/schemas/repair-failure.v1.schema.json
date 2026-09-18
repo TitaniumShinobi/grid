@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "https://grid.local/schemas/health/repair-failure.v1.schema.json",
+  "title": "Grid Repair Failure v1", "type": "object",
+  "required": ["schemaVersion", "code", "failedPrimitive", "affectedResources", "expectedState", "observedState", "boundedRecoveryAttempted", "recoveryChoices", "externalStateTrustworthy"],
+  "properties": { "schemaVersion": { "const": 1 }, "code": { "type": "string", "minLength": 1 }, "failedPrimitive": { "type": "string", "minLength": 1 }, "affectedResources": { "type": "array", "items": { "type": "string" } }, "expectedState": {}, "observedState": {}, "lastVerifiedJournalEntry": { "type": ["string", "null"] }, "currentHashes": { "type": "array" }, "boundedRecoveryAttempted": { "type": "array", "items": { "type": "string" } }, "recoveryChoices": { "type": "array", "items": { "type": "string" } }, "externalStateTrustworthy": { "type": "boolean" } },
+  "additionalProperties": false
+}

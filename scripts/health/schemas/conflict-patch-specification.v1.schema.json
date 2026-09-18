@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/conflict-patch-specification.v1.schema.json",
+  "type": "object",
+  "required": ["schemaVersion", "caseId", "status", "solutionKind", "targetPluginName", "records", "assetActions", "evidenceFingerprint", "supportingEvidenceIds", "proposalId", "writer", "exclusions", "specificationSha256"],
+  "properties": {
+    "schemaVersion": { "const": 1 }, "status": { "const": "Inert" }, "caseId": { "type": "string" },
+    "solutionKind": { "enum": ["RecordPatch", "InstallationAssetRepair", "MixedRecordAndAssetRepair"] },
+    "targetPluginName": { "type": ["string", "null"], "pattern": "(?i)\\.(esp|esm|esl)$" }, "records": { "type": "array" },
+    "assetActions": { "type": "array", "items": { "type": "object", "required": ["virtualPath", "action", "providerName", "expectedCurrentState", "postcondition"] } },
+    "evidenceFingerprint": { "type": "string", "pattern": "^[A-F0-9]{64}$" }, "supportingEvidenceIds": { "type": "array", "minItems": 1 },
+    "proposalId": { "type": "string" }, "writer": { "type": "object" }, "exclusions": { "type": "array" }, "specificationSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" }
+  }, "anyOf": [{ "properties": { "records": { "minItems": 1 } } }, { "properties": { "assetActions": { "minItems": 1 } } }], "additionalProperties": false
+}

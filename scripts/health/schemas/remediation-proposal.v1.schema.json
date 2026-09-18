@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/remediation-proposal.v1.schema.json",
+  "title": "Grid Remediation Proposal v1",
+  "type": "object",
+  "required": ["schemaVersion", "proposalId", "caseId", "contextFingerprint", "evidenceFingerprint", "actionType", "targets", "supportingEvidenceIds", "authorization", "verificationSteps", "backupRequirement", "rollbackProcedure", "status"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "supportingEvidenceIds": { "type": "array", "minItems": 1 },
+    "status": { "enum": ["Unsupported", "AwaitingAuthorization", "Authorized", "Executing", "Verifying", "Verified", "Incomplete", "Failed", "RolledBack"] }
+  },
+  "additionalProperties": true
+}

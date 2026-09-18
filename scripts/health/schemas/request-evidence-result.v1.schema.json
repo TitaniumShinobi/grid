@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Grid request evidence result v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "requestId", "terminalState", "affectedMods", "modRoles", "finding", "solution", "evidenceToolIds", "mutationAuthorized"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "requestId": { "type": "string" },
+    "terminalState": { "enum": ["EvidenceComplete", "EvidencePartial", "EvidenceUnavailable", "EvidenceFailed", "CapabilityRequired", "Diagnosed"] },
+    "resultKind": { "enum": ["Evidence", "Diagnostic", "CapabilityRequired", "CapabilityAssessment"] },
+    "affectedMods": { "type": "array", "items": { "type": "string" } },
+    "modRoles": { "type": "array", "items": { "type": "object", "required": ["mod", "role"] } },
+    "finding": { "type": "string" },
+    "solution": { "type": "string" },
+    "evidenceToolIds": { "type": "array", "items": { "type": "string" } },
+    "evidenceIds": { "type": "array", "items": { "type": "string" } },
+    "confidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "rating", "evidenceIds"],
+      "properties": {
+        "status": { "enum": ["NotEvaluated", "Evaluated"] },
+        "rating": { "type": ["string", "null"] },
+        "evidenceIds": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "capabilityRequired": {
+      "type": ["object", "null"],
+      "properties": {
+        "classId": { "type": "string" },
+        "plannerStatus": { "type": "string" },
+        "missingInputs": { "type": "array", "items": { "type": "string" } },
+        "coverageGaps": { "type": "array", "items": { "type": "string" } },
+        "missingCapabilityIds": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "capabilityAssessment": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["schemaVersion", "capabilityId", "displayName", "installedStatus", "installedProviders", "discoveryStatus", "observedAtUtc", "communityCandidates", "evidenceIds"],
+      "properties": {
+        "schemaVersion": { "const": 1 },
+        "capabilityId": { "type": "string", "pattern": "^grid\\.capability\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+        "displayName": { "type": "string", "minLength": 1 },
+        "installedStatus": { "enum": ["Unresolved", "Absent", "Partial", "Satisfied"] },
+        "installedProviders": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "role", "status", "evidenceIds"],
+            "properties": {
+              "name": { "type": "string", "minLength": 1 },
+              "role": { "type": "string", "minLength": 1 },
+              "status": { "type": "string", "minLength": 1 },
+              "evidenceIds": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "discoveryStatus": { "enum": ["NotRequested", "Current", "Stale", "AuthenticationRequired", "Unavailable"] },
+        "observedAtUtc": { "type": ["string", "null"], "format": "date-time" },
+        "communityCandidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "provider", "uri", "version", "compatibilityStatus", "compatibilityDetail", "requiredPatches", "evidenceIds"],
+            "properties": {
+              "name": { "type": "string", "minLength": 1 },
+              "provider": { "type": "string", "minLength": 1 },
+              "uri": { "type": ["string", "null"], "format": "uri" },
+              "version": { "type": ["string", "null"] },
+              "compatibilityStatus": { "enum": ["Unresolved", "Compatible", "PatchRequired", "Incompatible"] },
+              "compatibilityDetail": { "type": "string" },
+              "requiredPatches": { "type": "array", "items": { "type": "string" } },
+              "evidenceIds": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "evidenceIds": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "repairState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["specificationAvailable", "applyEnabled", "rollbackAvailable"],
+      "properties": {
+        "specificationAvailable": { "type": "boolean" },
+        "applyEnabled": { "type": "boolean" },
+        "rollbackAvailable": { "type": "boolean" }
+      }
+    },
+    "mutationAuthorized": { "const": false }
+  }
+}

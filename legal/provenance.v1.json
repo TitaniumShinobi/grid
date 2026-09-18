@@ -1,0 +1,108 @@
+﻿{
+    "schemaVersion":  1,
+    "ledgerId":  "grid.provenance.v1",
+    "baseline":  {
+                     "capturedOn":  "2026-09-16",
+                     "gitHistory":  "Unavailable",
+                     "statement":  "The supplied Grid working tree contained no commits or branches and all files were untracked. This snapshot is the first formal provenance baseline."
+                 },
+    "entries":  [
+                    {
+                        "id":  "grid.core",
+                        "paths":  [
+                                      "src/Grid.Core/**"
+                                  ],
+                        "classification":  "OriginalGridWork",
+                        "reviewState":  "Reviewed",
+                        "distributionDisposition":  "Approved",
+                        "upstream":  null,
+                        "evidence":  [
+                                         "Grid-specific namespaces, contracts, models, and services in the 2026-09-16 baseline."
+                                     ],
+                        "requiredAction":  "Attorney and similarity review before commercial release."
+                    },
+                    {
+                        "id":  "grid.application",
+                        "paths":  [
+                                      "src/Grid.App/**",
+                                      "src/Grid.DevLauncher/**",
+                                      "src/Grid.Diagnostics/**"
+                                  ],
+                        "classification":  "OriginalGridWork",
+                        "reviewState":  "Reviewed",
+                        "distributionDisposition":  "Approved",
+                        "upstream":  null,
+                        "evidence":  [
+                                         "Grid-specific WinUI application, launcher, and diagnostic host in the baseline."
+                                     ],
+                        "requiredAction":  "Review source and UI expression against identified inspirations before release."
+                    },
+                    {
+                        "id":  "grid.mo2.interoperability",
+                        "paths":  [
+                                      "src/Grid.Mo2/**"
+                                  ],
+                        "classification":  "InteroperabilityImplementation",
+                        "reviewState":  "Reviewed",
+                        "distributionDisposition":  "Approved",
+                        "upstream":  "ModOrganizer2/modorganizer@efe2a02d5dc641946baaa8db1440800f38d07837; ModOrganizer2/usvfs@57f1ea5e6ad13f7435a7af184748e6c1312c5637; Nexus-Mods/Vortex@16001c5490b0727e7a039a0e5b90b51a170bcf60; ModOrganizer2/modorganizer-installer_fomod@24f07cf7af5273efe52daa90c631a49e7e847c74; ModOrganizer2/modorganizer-installer_fomod_csharp@276bf9d10eb24cef052f8ed7a6af7beadad262b6; ModOrganizer2/modorganizer-bsatk@c42a252797041fa245573f367ef098569f5de5c3; ModOrganizer2/libbsarch@2a544ac3de342ef2027134333c7ee61851607f4f",
+                        "evidence":  [
+                                         "Completed file-level provenance review of src/Grid.Mo2/**. Normalized whole-file comparisons against the five frozen MO2/usvfs/Vortex/FOMOD upstreams produced zero normalized whole-file matches. Targeted structural review of Mo2BsaIndexParser.cs against ModOrganizer2/modorganizer-bsatk@c42a252797041fa245573f367ef098569f5de5c3 identified shared BSA-format facts/constraints but no meaningful implementation correspondence. Frozen-source investigation identified no upstream PEX/Papyrus parser implementation target for Mo2PapyrusInspectionService.cs. Other reviewed files were resolved as interoperability/functional similarity or no identified upstream source correspondence. No copied or adapted upstream source material was identified. Zero matches are comparison evidence and are not treated as proof of independent authorship."
+                                     ],
+                        "requiredAction":  "No further upstream-source comparison required for the reviewed src/Grid.Mo2/** scope absent a new concrete provenance trigger. Preserve the five machine-readable comparison reports, frozen revision identifiers, BSA structural-review evidence, and Papyrus negative-target finding with the provenance record."
+                    },
+                    {
+                        "id":  "grid.repository.tooling",
+                        "paths":  [
+                                      "eng/**",
+                                      "scripts/**",
+                                      "tests/**",
+                                      "test-lab/**"
+                                  ],
+                        "classification":  "OriginalGridWork",
+                        "reviewState":  "Reviewed",
+                        "distributionDisposition":  "Approved",
+                        "upstream":  null,
+                        "evidence":  [
+                                         "Grid-specific verification, diagnostics, game adapters, tests, and bounded operator tooling."
+                                     ],
+                        "requiredAction":  "Review copied snippets, generated code, fixtures, and tool-specific embedded scripts before release."
+                    },
+                    {
+                        "id":  "grid.documentation",
+                        "paths":  [
+                                      "README.md",
+                                      "AGENTS.md",
+                                      "GRID_PROVIDER_DISCOVERY_PATCH.md",
+                                      "GRID_PROVENANCE_PATCH.md",
+                                      "docs/**",
+                                      "legal/**"
+                                  ],
+                        "classification":  "OriginalGridWork",
+                        "reviewState":  "Reviewed",
+                        "distributionDisposition":  "Approved",
+                        "upstream":  null,
+                        "evidence":  [
+                                         "Grid architecture, design, operating contracts, and project records."
+                                     ],
+                        "requiredAction":  "Review quotations, screenshots, copied product text, and external marks separately."
+                    },
+                    {
+                        "id":  "grid.build.configuration",
+                        "paths":  [
+                                      "Grid.sln",
+                                      "Directory.Build.props",
+                                      "installer/**",
+                                      ".gitignore"
+                                  ],
+                        "classification":  "OriginalGridWork",
+                        "reviewState":  "Reviewed",
+                        "distributionDisposition":  "Approved",
+                        "upstream":  null,
+                        "evidence":  [
+                                         "Grid-specific solution, build, and installer configuration."
+                                     ],
+                        "requiredAction":  "Confirm generated templates and installer fragments have compatible terms."
+                    }
+                ]
+}

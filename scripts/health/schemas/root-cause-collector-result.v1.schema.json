@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/root-cause-collector-result.v1.schema.json",
+  "type": "object",
+  "required": ["schemaVersion", "status", "caseId", "baselineManifestSha256", "installationId", "profileId", "contextFingerprint", "recordGraph", "assetGraph", "issues", "usage", "rawSources"],
+  "properties": {
+    "schemaVersion": { "const": 1 }, "status": { "enum": ["Completed", "Failed", "Partial", "Cancelled"] },
+    "caseId": { "type": "string", "minLength": 1 }, "baselineManifestSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "installationId": { "type": "string", "minLength": 1 }, "profileId": { "type": "string", "minLength": 1 },
+    "contextFingerprint": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "recordGraph": {
+      "type": "object",
+      "required": ["status", "plugins", "chains", "traversedKeys", "cellScopeDiscoveries", "discoveredKeys", "recordHeadersExamined", "bytesScanned", "issues", "semanticFingerprint"],
+      "properties": {
+        "status": { "enum": ["Complete", "Partial", "Refused"] }, "plugins": { "type": "array" },
+        "chains": { "type": "array", "items": { "type": "object", "required": ["target", "records", "winner"] } },
+        "traversedKeys": { "type": "array" }, "cellScopeDiscoveries": { "type": "array" }, "discoveredKeys": { "type": "array" },
+        "recordHeadersExamined": { "type": "integer", "minimum": 0 }, "bytesScanned": { "type": "integer", "minimum": 0 },
+        "issues": { "type": "array" }, "semanticFingerprint": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" }
+      }, "additionalProperties": false
+    },
+    "assetGraph": {
+      "type": "object",
+      "required": ["status", "inspectedBytes", "targets", "issues"],
+      "properties": {
+        "status": { "enum": ["Complete", "Missing", "Inaccessible", "Unsupported", "Malformed", "Oversized", "ChangedDuringRead", "DigestMismatch", "Cancelled"] },
+        "inspectedBytes": { "type": "integer", "minimum": 0 },
+        "targets": { "type": "array", "items": { "type": "object", "required": ["virtualPath", "kind", "origin", "status", "sourcePath", "provider", "issues"] } },
+        "issues": { "type": "array" }
+      }, "additionalProperties": false
+    },
+    "issues": { "type": "array", "items": { "type": "object", "required": ["code", "severity", "detail"] } },
+    "usage": {
+      "type": "object",
+      "required": ["recordsExamined", "assetsExamined", "bytesRead", "pluginBytesScanned", "assetBytesInspected", "wallClockMilliseconds"],
+      "properties": {
+        "recordsExamined": { "type": "integer", "minimum": 0 }, "assetsExamined": { "type": "integer", "minimum": 0 },
+        "bytesRead": { "type": "integer", "minimum": 0 }, "pluginBytesScanned": { "type": "integer", "minimum": 0 },
+        "assetBytesInspected": { "type": "integer", "minimum": 0 }, "wallClockMilliseconds": { "type": "integer", "minimum": 0 }
+      }, "additionalProperties": false
+    },
+    "rawSources": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["sourceId", "path", "name", "kind", "sha256", "sizeBytes", "readability", "beforeLastWriteTimeUtcTicks", "afterLastWriteTimeUtcTicks"],
+        "properties": {
+          "sourceId": { "type": "string", "minLength": 1 }, "path": { "type": "string", "minLength": 1 }, "name": { "type": "string", "minLength": 1 },
+          "kind": { "type": "string", "minLength": 1 }, "sha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" },
+          "sizeBytes": { "type": "integer", "minimum": 0 }, "readability": { "const": "Readable" },
+          "beforeLastWriteTimeUtcTicks": { "type": ["integer", "null"] }, "afterLastWriteTimeUtcTicks": { "type": ["integer", "null"] }
+        }, "additionalProperties": false
+      }
+    }
+  }, "additionalProperties": false
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "fixture-portable-debug",
+  "manifestId": "grid.verification.v1",
+  "lane": "Portable",
+  "configuration": "Debug",
+  "startedAtUtc": "2026-09-02T21:00:00.0000000+00:00",
+  "finishedAtUtc": "2026-09-02T21:00:01.0000000+00:00",
+  "durationMs": 1000,
+  "platform": { "os": "fixture", "isWindows": false, "architecture": "X64" },
+  "dotnetSdk": "9.0.0",
+  "powerShellVersion": "7.4.0",
+  "overallResult": "Passed",
+  "checks": [
+    {
+      "id": "fixture-first",
+      "displayName": "First",
+      "order": 10,
+      "category": "Fixture",
+      "commandIdentity": "fixture command",
+      "configuration": "Debug",
+      "startedAtUtc": "2026-09-02T21:00:00.0000000+00:00",
+      "durationMs": 1000,
+      "exitCode": 0,
+      "result": "Passed",
+      "logPath": "logs/010-fixture-first.log"
+    }
+  ]
+}

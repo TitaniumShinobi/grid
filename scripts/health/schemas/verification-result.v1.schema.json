@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/verification-result.v1.schema.json",
+  "title": "Grid Verification Result v1",
+  "type": "object",
+  "required": ["schemaVersion", "verificationId", "proposalId", "status", "evidenceIds", "recordedAt"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "status": { "enum": ["Verified", "Failed", "RolledBack", "Incomplete"] },
+    "evidenceIds": { "type": "array" },
+    "recordedAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": true
+}

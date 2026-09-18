@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/provenance-ledger.v1.schema.json",
+  "title": "Grid provenance ledger v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "ledgerId", "baseline", "entries"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "ledgerId": { "const": "grid.provenance.v1" },
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["capturedOn", "gitHistory", "statement"],
+      "properties": {
+        "capturedOn": { "type": "string", "format": "date" },
+        "gitHistory": { "enum": ["Available", "Unavailable"] },
+        "statement": { "type": "string", "minLength": 1 }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "paths", "classification", "reviewState", "distributionDisposition", "evidence", "requiredAction"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9.-]*$" },
+          "paths": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "classification": {
+            "enum": ["OriginalGridWork", "BehaviorOrWorkflowInspiration", "InteroperabilityImplementation", "MITDerivedCode", "GPLDerivedCode", "ThirdPartyDependency", "CopiedOrLicensedAsset", "UnclearProvenance"]
+          },
+          "reviewState": { "enum": ["Provisional", "ReviewRequired", "Reviewed"] },
+          "distributionDisposition": { "enum": ["Candidate", "NoticeRequired", "SeparateComponent", "Excluded", "Blocked", "Approved"] },
+          "upstream": { "type": ["string", "null"] },
+          "evidence": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+          "requiredAction": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

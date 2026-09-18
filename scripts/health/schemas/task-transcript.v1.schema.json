@@ -1,0 +1,12 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Grid local task transcript v1",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["schemaVersion","updatedAt","tasks"],
+  "properties":{
+    "schemaVersion":{"const":1},
+    "updatedAt":{"type":"string"},
+    "tasks":{"type":"array","items":{"type":"object","required":["taskId","requestId","createdAt","approvedAt","classId","terminalState","caseId","caseDirectory","rawPrompt","mods","tools","result","toolReceipts","resumable"]}}
+  }
+}

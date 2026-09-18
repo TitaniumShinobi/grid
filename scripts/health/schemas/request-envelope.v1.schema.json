@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/request-envelope.v1.schema.json",
+  "title": "Grid RequestEnvelope v1",
+  "type": "object",
+  "required": ["schemaVersion", "requestId", "submittedAt", "mode", "context", "class", "selections", "claims", "provenance", "envelopeSha256"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "digestAlgorithm": { "enum": ["grid.request-envelope.portable-v1"] },
+    "requestId": { "type": "string", "pattern": "^request-[a-f0-9]{24}$" },
+    "submittedAt": { "type": "string", "minLength": 1 },
+    "mode": { "const": "Game" },
+    "context": {
+      "type": "object",
+      "required": ["gameId", "installationId", "profileId"],
+      "properties": {
+        "gameId": { "type": "string", "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+        "installationId": { "type": ["string", "null"] },
+        "profileId": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "class": {
+      "type": "object",
+      "required": ["classId", "recipeVersion"],
+      "properties": {
+        "classId": { "type": "string", "pattern": "^grid\\.class\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+        "recipeVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" }
+      },
+      "additionalProperties": false
+    },
+    "selections": {
+      "type": "object",
+      "required": ["mods", "tools"],
+      "properties": {
+        "mods": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["providerName", "selectionRole"],
+            "properties": { "providerName": { "type": "string", "minLength": 1, "maxLength": 512 }, "selectionRole": { "enum": ["Subject", "Context"] } },
+            "additionalProperties": false
+          }
+        },
+        "tools": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["toolId", "selectionSource"],
+            "properties": { "toolId": { "type": "string", "pattern": "^grid\\.tool\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$" }, "selectionSource": { "enum": ["UserSelected", "DetectedRunning", "ContextInherited"] } },
+            "additionalProperties": false
+          }
+        },
+        "capabilities": {
+          "type": "array",
+          "maxItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": ["capabilityId", "selectionSource"],
+            "properties": {
+              "capabilityId": { "type": "string", "pattern": "^grid\\.capability\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+              "selectionSource": { "const": "UserSelected" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "claims": { "type": "object", "required": ["text"], "properties": { "text": { "type": "string", "maxLength": 1048576 } }, "additionalProperties": false },
+    "provenance": { "type": "array" },
+    "envelopeSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" }
+  },
+  "additionalProperties": false
+}

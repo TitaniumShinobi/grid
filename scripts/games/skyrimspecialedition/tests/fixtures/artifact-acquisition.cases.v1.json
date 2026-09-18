@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "positive": [
+    {
+      "provider": "FixtureProvider",
+      "gameId": "skyrimspecialedition",
+      "modId": "17004",
+      "fileId": "173454",
+      "version": "6.2",
+      "fileName": "fixture-main-file.7z",
+      "sizeBytes": 6
+    }
+  ],
+  "negative": [
+    { "mutation": "wrongFileId", "expectedError": "ProviderIdentityConflict" },
+    { "mutation": "oversize", "expectedError": "ArtifactSizeRefused" },
+    { "mutation": "credentialInUri", "expectedError": "NetworkPolicyRefused" }
+  ]
+}

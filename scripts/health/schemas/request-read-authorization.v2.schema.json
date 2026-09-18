@@ -1,0 +1,12 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Grid request read authorization review v2",
+  "type":"object","additionalProperties":false,
+  "required":["schemaVersion","reviewId","status","authorityClass","semanticBinding","semanticBindingSha256","scopes","createdAt","reviewDigest"],
+  "properties":{
+    "schemaVersion":{"const":2},"reviewId":{"type":"string","pattern":"^review-[a-f0-9]{32}$"},"status":{"const":"AwaitingAuthorization"},"authorityClass":{"const":"Read"},
+    "semanticBinding":{"$ref":"authorization-semantic-binding.v1.schema.json"},"semanticBindingSha256":{"type":"string","pattern":"^[A-F0-9]{64}$"},
+    "scopes":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["toolId","adapter","observationMode","availability","exactReadPaths","inputs"],"properties":{"toolId":{"type":"string"},"adapter":{"type":["string","null"]},"observationMode":{"type":["string","null"]},"availability":{"type":"string"},"exactReadPaths":{"type":"array","items":{"type":"string"}},"inputs":{"type":"object"}}}},
+    "createdAt":{"type":"string","format":"date-time"},"reviewDigest":{"type":"string","pattern":"^[A-F0-9]{64}$"}
+  }
+}

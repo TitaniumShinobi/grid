@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://grid.local/schemas/profile-snapshot.v1.schema.json",
+  "title": "Grid protected diagnostic profile snapshot v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "snapshotId", "caseId", "installationId", "profileId", "contextFingerprint", "observedAt", "sources", "protection"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "snapshotId": { "type": "string", "minLength": 1 },
+    "caseId": { "type": "string", "minLength": 1 },
+    "installationId": { "type": "string", "minLength": 1 },
+    "profileId": { "type": "string", "minLength": 1 },
+    "contextFingerprint": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "observedAt": { "type": "string", "format": "date-time" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sourceId", "kind", "observationIds"],
+        "properties": {
+          "sourceId": { "type": "string", "minLength": 1 },
+          "kind": { "type": "string", "minLength": 1 },
+          "observationIds": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }
+        }
+      }
+    },
+    "protection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pathsTokenized", "secretsExcluded", "userContentExcluded", "notes"],
+      "properties": {
+        "pathsTokenized": { "type": "boolean" },
+        "secretsExcluded": { "type": "boolean" },
+        "userContentExcluded": { "type": "boolean" },
+        "notes": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

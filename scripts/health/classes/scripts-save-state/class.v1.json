@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "classId": "grid.class.scripts-save-state",
+  "recipeVersion": "1.1.0",
+  "displayName": "Scripts & Save State",
+  "iconId": "grid.icon.script",
+  "coverage": "Registered",
+  "supportedGames": [
+    "skyrimspecialedition"
+  ],
+  "selectionPolicy": {
+    "mods": {
+      "minimum": 1,
+      "maximum": null
+    },
+    "tools": {
+      "minimum": 0,
+      "maximum": null,
+      "allowedToolIds": ["grid.tool.sseedit", "grid.tool.mo2"]
+    }
+  },
+  "evidencePolicy": {
+    "requiredAnyOf": [["observedForms"], ["providerSeeds"]]
+  },
+  "pipelines": {
+    "diagnose": { "rootCapabilityIds": ["grid.game.skyrimspecialedition.scripted-reference.observe"] },
+    "propose": null,
+    "execute": null,
+    "verify": null
+  }
+}

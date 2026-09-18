@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "providerId": "steam",
+  "gameId": "grandtheftautov",
+  "displayName": "Grand Theft Auto V",
+  "applications": [
+    { "appId": "271590", "edition": "Legacy", "requiredFiles": ["GTA5.exe"], "conflictingFiles": ["GTA5_Enhanced.exe"] },
+    { "appId": "3240220", "edition": "Enhanced", "requiredFiles": ["GTA5_Enhanced.exe"], "conflictingFiles": ["GTA5.exe"] }
+  ]
+}

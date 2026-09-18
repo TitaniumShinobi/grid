@@ -1,0 +1,83 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>Grid.App</RootNamespace>
+    <AssemblyName>Grid</AssemblyName>
+    <Product>Grid</Product>
+    <Description>Grid</Description>
+    <Version>0.1.0</Version>
+    <FileVersion>0.1.0.0</FileVersion>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <ApplicationIcon>Assets\TemporaryIdentity\GridTemporary.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <UseWinUI>true</UseWinUI>
+    <EnableMsixTooling>false</EnableMsixTooling>
+    <WindowsPackageType>None</WindowsPackageType>
+    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+    <PublishSingleFile>false</PublishSingleFile>
+    <PublishTrimmed>false</PublishTrimmed>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260710003" />
+    <ProjectReference Include="..\Grid.Core\Grid.Core.csproj" />
+    <ProjectReference Include="..\Grid.Mo2\Grid.Mo2.csproj" />
+    <ProjectReference Include="..\Grid.Diagnostics\Grid.Diagnostics.csproj" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\scripts\health\classes\**\class.v1.json">
+      <Link>AssistantClasses\%(RecursiveDir)class.v1.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\**\*">
+      <Link>RequestEngine\scripts\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\legal\**\*">
+      <Link>Legal\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Temporary Stage 1 identity. Replace this asset without changing application behavior. -->
+    <None Update="Assets\TemporaryIdentity\GridTemporary.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+  <Target Name="CopyGridWinUiResourcesToPublish" AfterTargets="Publish">
+    <!-- Unpackaged WinUI publish does not include app-generated XBF/PRI resources by default. -->
+    <ItemGroup>
+      <_GridWinUiPublishResource Include="$(TargetDir)*.xbf" />
+      <_GridWinUiPublishResource Include="$(TargetDir)$(AssemblyName).pri" Condition="Exists('$(TargetDir)$(AssemblyName).pri')" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_GridWinUiPublishResource)"
+          DestinationFolder="$(PublishDir)"
+          SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="CopyGridDiagnosticsToOutput" AfterTargets="Build">
+    <ItemGroup>
+      <_GridDiagnosticsRuntime Include="$(MSBuildProjectDirectory)\..\Grid.Diagnostics\bin\$(Platform)\$(Configuration)\net9.0-windows10.0.19041.0\Grid.Diagnostics.*" />
+      <_GridDiagnosticsRuntime Include="$(MSBuildProjectDirectory)\..\Grid.Diagnostics\bin\$(Platform)\$(Configuration)\net9.0-windows10.0.19041.0\Grid.Core.dll"
+                               Condition="Exists('$(MSBuildProjectDirectory)\..\Grid.Diagnostics\bin\$(Platform)\$(Configuration)\net9.0-windows10.0.19041.0\Grid.Core.dll')" />
+      <_GridDiagnosticsRuntime Include="$(MSBuildProjectDirectory)\..\Grid.Diagnostics\bin\$(Platform)\$(Configuration)\net9.0-windows10.0.19041.0\Grid.Mo2.dll"
+                               Condition="Exists('$(MSBuildProjectDirectory)\..\Grid.Diagnostics\bin\$(Platform)\$(Configuration)\net9.0-windows10.0.19041.0\Grid.Mo2.dll')" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_GridDiagnosticsRuntime)" DestinationFolder="$(OutDir)RequestEngine\bin" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="CopyGridDiagnosticsToPublish" AfterTargets="Publish">
+    <ItemGroup>
+      <_GridDiagnosticsPublishRuntime Include="$(MSBuildProjectDirectory)\..\Grid.Diagnostics\bin\$(Platform)\$(Configuration)\net9.0-windows10.0.19041.0\$(RuntimeIdentifier)\Grid.Diagnostics.*" />
+      <_GridDiagnosticsPublishRuntime Include="$(MSBuildProjectDirectory)\..\Grid.Diagnostics\bin\$(Platform)\$(Configuration)\net9.0-windows10.0.19041.0\$(RuntimeIdentifier)\Grid.Core.dll" />
+      <_GridDiagnosticsPublishRuntime Include="$(MSBuildProjectDirectory)\..\Grid.Diagnostics\bin\$(Platform)\$(Configuration)\net9.0-windows10.0.19041.0\$(RuntimeIdentifier)\Grid.Mo2.dll" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_GridDiagnosticsPublishRuntime)" DestinationFolder="$(PublishDir)RequestEngine\bin" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

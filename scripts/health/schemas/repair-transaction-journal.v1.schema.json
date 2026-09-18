@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "https://grid.local/schemas/health/repair-transaction-journal.v1.schema.json",
+  "title": "Grid Repair Journal Record v1", "type": "object",
+  "required": ["schemaVersion", "transactionId", "sequence", "operation", "state", "previousRecordSha256", "recordedAt", "recordSha256"],
+  "properties": { "schemaVersion": { "const": 1 }, "transactionId": { "type": "string" }, "sequence": { "type": "integer", "minimum": 0 }, "operation": { "type": "string" }, "state": { "type": "string" }, "previousRecordSha256": { "type": ["string", "null"], "pattern": "^[A-F0-9]{64}$" }, "recordedAt": { "type": "string", "format": "date-time" }, "detail": {}, "recordSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" } },
+  "additionalProperties": false
+}

@@ -1,0 +1,72 @@
+<ContentDialog
+    x:Class="Grid.App.Views.Mo2LaunchConfirmationDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    CloseButtonText="Cancel"
+    DefaultButton="Close"
+    PrimaryButtonClick="OnPrimaryButtonClick"
+    PrimaryButtonText="Launch through MO2"
+    Title="Confirm launch through MO2">
+
+    <ScrollViewer MaxWidth="820" MaxHeight="680" VerticalScrollBarVisibility="Auto">
+        <StackPanel Spacing="14">
+            <InfoBar
+                AutomationProperties.Name="MO2 launch route disclosure"
+                IsClosable="False"
+                IsOpen="True"
+                Message="Grid will request this existing MO2-configured executable through the validated ModOrganizer.exe route. MO2, the configured executable, and the game may perform their normal external writes. Grid will not launch the tool or game binary directly, replace USVFS, edit configuration, or provide rollback."
+                Severity="Warning"
+                Title="EXPLICIT LOCAL LAUNCH · VIA MO2 / USVFS ONLY" />
+
+            <Grid ColumnSpacing="16" RowSpacing="8">
+                <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <TextBlock Style="{StaticResource ShellLabelStyle}" Text="GAME" />
+                <TextBlock x:Name="GameText" Grid.Column="1" TextWrapping="Wrap" />
+                <TextBlock Grid.Row="1" Style="{StaticResource ShellLabelStyle}" Text="INSTALLATION" />
+                <TextBlock x:Name="InstallationText" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" />
+                <TextBlock Grid.Row="2" Style="{StaticResource ShellLabelStyle}" Text="GRID PROFILE" />
+                <TextBlock x:Name="ProfileText" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" />
+                <TextBlock Grid.Row="3" Style="{StaticResource ShellLabelStyle}" Text="MO2 CONFIG" />
+                <TextBlock x:Name="ExecutableText" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" />
+                <TextBlock Grid.Row="4" Style="{StaticResource ShellLabelStyle}" Text="AUDIT" />
+                <TextBlock x:Name="AuditText" Grid.Row="4" Grid.Column="1" FontFamily="Consolas" TextWrapping="Wrap" />
+                <TextBlock Grid.Row="5" Style="{StaticResource ShellLabelStyle}" Text="INVOCATION" />
+                <TextBlock x:Name="InvocationText" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" />
+            </Grid>
+
+            <InfoBar
+                x:Name="ReadinessStatus"
+                AutomationProperties.Name="Launch readiness status"
+                IsClosable="False"
+                IsOpen="True" />
+
+            <CheckBox
+                x:Name="AuditAcknowledgementCheckBox"
+                AutomationProperties.HelpText="Acknowledgement applies only to warnings and unsupported evidence in the displayed fingerprint-bound audit."
+                AutomationProperties.Name="Acknowledge launch-relevant audit warnings and unsupported evidence"
+                Checked="OnConfirmationChanged"
+                Content="I reviewed the launch-relevant warnings and unsupported evidence"
+                Unchecked="OnConfirmationChanged"
+                Visibility="Collapsed" />
+
+            <CheckBox
+                x:Name="ExplicitLaunchCheckBox"
+                AutomationProperties.HelpText="This confirms only the displayed snapshot-bound MO2 launch request. It grants no reusable or automatic launch permission."
+                AutomationProperties.Name="Confirm this explicit MO2 launch request"
+                Checked="OnConfirmationChanged"
+                Content="Launch this exact MO2 configuration now"
+                Unchecked="OnConfirmationChanged" />
+        </StackPanel>
+    </ScrollViewer>
+</ContentDialog>

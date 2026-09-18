@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "lineageCases": [
+    {
+      "name": "pending-acquisition",
+      "repairState": "PendingUserAcquisition",
+      "expectedEligibility": "PreconditionsNotMet",
+      "expectedRecoveryDisposition": "ResumeAvailable",
+      "expectedBlockingPrimitive": "ArtifactAcquisition",
+      "expectedRuntimeValidation": "NotStarted",
+      "expectedReadyToPlay": "NotEvaluated"
+    },
+    {
+      "name": "sealed-lineage-substitution",
+      "repairState": "PendingUserAcquisition",
+      "expectedEligibility": "InvalidLineage",
+      "expectedRuntimeValidation": "NotStarted",
+      "expectedReadyToPlay": "NotEvaluated"
+    },
+    {
+      "name": "authorization-required",
+      "repairState": "ArtifactVerifiedSpecificationPresent",
+      "expectedEligibility": "ApprovalRequired",
+      "expectedRecoveryDisposition": "AuthorizationRequired",
+      "expectedRuntimeValidation": "NotStarted",
+      "expectedReadyToPlay": "NotEvaluated"
+    },
+    {
+      "name": "rollback-missing",
+      "repairState": "TransactionAndStaticVerificationWithoutRollback",
+      "expectedEligibility": "PreconditionsNotMet",
+      "expectedRuntimeValidation": "NotStarted",
+      "expectedReadyToPlay": "NotEvaluated"
+    },
+    {
+      "name": "eligible",
+      "repairState": "TransactionStaticVirtualWinnerRollbackAndProtectedStateVerified",
+      "expectedEligibility": "Eligible",
+      "expectedRuntimeValidation": "NotStarted",
+      "expectedReadyToPlay": "NotEvaluated"
+    }
+  ],
+  "pluginCases": [
+    {
+      "name": "implicit-creation-club-master",
+      "enabledPlugin": "FixtureFeature.esp",
+      "masters": ["Skyrim.esm", "ccGridFixture.esl"],
+      "implicitMasterNames": ["Skyrim.esm", "ccGridFixture.esl"],
+      "expectedStatus": "Pass"
+    },
+    {
+      "name": "physically-missing-implicit-master",
+      "enabledPlugin": "FixtureFeature.esp",
+      "masters": ["Skyrim.esm", "ccGridFixture.esl"],
+      "implicitMasterNames": ["Skyrim.esm", "ccGridFixture.esl"],
+      "omitPhysicalPlugin": "ccGridFixture.esl",
+      "expectedStatus": "Fail"
+    },
+    {
+      "name": "present-but-not-active-master",
+      "enabledPlugin": "FixtureFeature.esp",
+      "masters": ["Skyrim.esm", "FixtureDependency.esm"],
+      "implicitMasterNames": ["Skyrim.esm"],
+      "expectedStatus": "Fail"
+    }
+  ]
+}

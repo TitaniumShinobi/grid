@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net9.0-windows10.0.19041": {
+      "SharpCompress": {
+        "type": "Direct",
+        "requested": "[0.50.4, 0.50.4]",
+        "resolved": "0.50.4",
+        "contentHash": "/hxjUR7DEX6mky8/LQXyrnrKioOL6D6veAID1EZpro+q4s02x5dHEYBV3qjEN6lDYYilDoQQ76BcmQj+lRx51w=="
+      },
+      "grid.core": {
+        "type": "Project"
+      }
+    }
+  }
+}

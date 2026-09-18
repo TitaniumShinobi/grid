@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/tool-provisioning-receipt.v1.schema.json",
+  "title": "Grid Tool Provisioning Receipt v1",
+  "type": "object",
+  "required": ["schemaVersion", "receiptId", "collectorId", "collectorVersion", "sourceSha256", "installedSha256", "executableSha256", "destinationPath", "installedAt", "proposalId"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "receiptId": { "type": "string", "minLength": 1 },
+    "collectorId": { "const": "Grid.TraceReference" },
+    "collectorVersion": { "type": "string", "minLength": 1 },
+    "sourceSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "installedSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "executableSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "destinationPath": { "type": "string", "minLength": 1 },
+    "installedAt": { "type": "string", "format": "date-time" },
+    "proposalId": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://grid.local/schemas/prior-evidence-index.v1.schema.json",
+  "title": "Grid prior diagnostic evidence index v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "caseId", "createdAt", "entries"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "caseId": { "type": "string", "minLength": 1 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["priorCaseId", "status", "manifestSha256", "semanticBaselineFingerprint", "referencedAt", "evidenceIds", "detail"],
+        "properties": {
+          "priorCaseId": { "type": "string", "minLength": 1 },
+          "status": { "enum": ["Valid", "ReferencedEvidenceUnavailable", "HashMismatch", "SchemaInvalid"] },
+          "manifestSha256": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[A-F0-9]{64}$" }] },
+          "semanticBaselineFingerprint": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[A-F0-9]{64}$" }] },
+          "referencedAt": { "type": "string", "format": "date-time" },
+          "evidenceIds": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+          "detail": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

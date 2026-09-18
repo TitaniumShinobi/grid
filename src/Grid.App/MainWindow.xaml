@@ -1,0 +1,725 @@
+<Window
+    x:Class="Grid.App.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="using:Grid.App.Views"
+    Title="Grid"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ShellContentGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" KeyDown="OnShellKeyDown">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#181818" BorderThickness="0">
+            <Grid x:Name="TitleBarDragRegion" Margin="0,0,138,0" ColumnSpacing="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Width="48" Height="35" Padding="0" Background="Transparent" BorderThickness="0"
+                        AutomationProperties.Name="Home" ToolTipService.ToolTip="Home" Click="OnHomeBrandClicked">
+                    <TextBlock Text="G" FontSize="18" FontWeight="Bold" Foreground="{StaticResource ShellAccentBrush}"
+                               HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Button>
+
+                <MenuBar x:Name="MainMenuBar" Grid.Column="1" Height="32" VerticalAlignment="Center" Background="Transparent">
+                    <MenuBarItem Title="File">
+                        <MenuFlyoutItem Text="Connect game…" Click="OnAddGameClicked" />
+                        <MenuFlyoutItem Text="Open in manager…" Click="OnOpenManagerInstanceClicked" />
+                        <MenuFlyoutSeparator />
+                        <MenuFlyoutItem Text="Exit" Click="OnExitClicked" />
+                    </MenuBarItem>
+                    <MenuBarItem Title="Edit">
+                        <MenuFlyoutItem x:Name="UndoRepairMenuItem" Text="Undo repair" IsEnabled="False" Click="OnUndoRepairClicked">
+                            <MenuFlyoutItem.KeyboardAccelerators>
+                                <KeyboardAccelerator Key="Z" Modifiers="Control" />
+                            </MenuFlyoutItem.KeyboardAccelerators>
+                        </MenuFlyoutItem>
+                        <MenuFlyoutItem x:Name="RedoRepairMenuItem" Text="Redo repair" IsEnabled="False" Click="OnRedoRepairClicked">
+                            <MenuFlyoutItem.KeyboardAccelerators>
+                                <KeyboardAccelerator Key="Y" Modifiers="Control" />
+                                <KeyboardAccelerator Key="Z" Modifiers="Control,Shift" />
+                            </MenuFlyoutItem.KeyboardAccelerators>
+                        </MenuFlyoutItem>
+                        <MenuFlyoutSeparator />
+                        <MenuFlyoutItem Text="Focus global search" Click="OnFocusSearchClicked" />
+                        <MenuFlyoutItem Text="Clear terminal" Click="OnClearTerminalClicked" />
+                    </MenuBarItem>
+                    <MenuBarItem Title="View">
+                        <MenuFlyoutItem Text="Welcome / Setup" Click="OnWelcomeClicked" />
+                        <MenuFlyoutItem Text="Activities" Click="OnActivitiesClicked" />
+                        <MenuFlyoutItem Text="Settings" Click="OnSettingsClicked" />
+                    </MenuBarItem>
+                    <MenuBarItem Title="Tools">
+                        <MenuFlyoutItem Text="Manager connection" Click="OnManageGameClicked" />
+                        <MenuFlyoutItem Text="Refresh observations" Click="OnRefreshMenuClicked" />
+                        <MenuFlyoutItem Text="Toggle terminal" Click="OnBottomPanelToggleClicked" />
+                    </MenuBarItem>
+                    <MenuBarItem Title="Help">
+                        <MenuFlyoutItem Text="Safety boundaries" Click="OnHelpClicked" />
+                        <MenuFlyoutItem Text="About Grid" Click="OnAboutClicked" />
+                    </MenuBarItem>
+                </MenuBar>
+
+                <Button x:Name="CompactMenuButton" Grid.Column="1" Width="32" Height="30" Padding="8,0,0,0"
+                        HorizontalAlignment="Left" HorizontalContentAlignment="Left"
+                        Visibility="Collapsed" Style="{StaticResource ShellChromeButtonStyle}"
+                        AutomationProperties.Name="Application menu" ToolTipService.ToolTip="Menu">
+                    <Button.Flyout>
+                        <MenuFlyout>
+                            <MenuFlyoutSubItem Text="File">
+                                <MenuFlyoutItem Text="Connect game..." Click="OnAddGameClicked" />
+                                <MenuFlyoutItem Text="Open in manager..." Click="OnOpenManagerInstanceClicked" />
+                                <MenuFlyoutSeparator />
+                                <MenuFlyoutItem Text="Exit" Click="OnExitClicked" />
+                            </MenuFlyoutSubItem>
+                            <MenuFlyoutSubItem Text="Edit">
+                                <MenuFlyoutItem x:Name="CompactUndoRepairMenuItem" Text="Undo repair" IsEnabled="False" Click="OnUndoRepairClicked" />
+                                <MenuFlyoutItem x:Name="CompactRedoRepairMenuItem" Text="Redo repair" IsEnabled="False" Click="OnRedoRepairClicked" />
+                                <MenuFlyoutSeparator />
+                                <MenuFlyoutItem Text="Focus global search" Click="OnFocusSearchClicked" />
+                                <MenuFlyoutItem Text="Clear terminal" Click="OnClearTerminalClicked" />
+                            </MenuFlyoutSubItem>
+                            <MenuFlyoutSubItem Text="View">
+                                <MenuFlyoutItem Text="Welcome / Setup" Click="OnWelcomeClicked" />
+                                <MenuFlyoutItem Text="Activities" Click="OnActivitiesClicked" />
+                                <MenuFlyoutItem Text="Settings" Click="OnSettingsClicked" />
+                            </MenuFlyoutSubItem>
+                            <MenuFlyoutSubItem Text="Tools">
+                                <MenuFlyoutItem Text="Manager connection" Click="OnManageGameClicked" />
+                                <MenuFlyoutItem Text="Refresh observations" Click="OnRefreshMenuClicked" />
+                                <MenuFlyoutItem Text="Toggle terminal" Click="OnBottomPanelToggleClicked" />
+                            </MenuFlyoutSubItem>
+                            <MenuFlyoutSubItem Text="Help">
+                                <MenuFlyoutItem Text="Safety boundaries" Click="OnHelpClicked" />
+                                <MenuFlyoutItem Text="About Grid" Click="OnAboutClicked" />
+                            </MenuFlyoutSubItem>
+                        </MenuFlyout>
+                    </Button.Flyout>
+                    <FontIcon FontFamily="Segoe Fluent Icons" FontSize="14" FontWeight="Normal" Glyph="&#xE700;" />
+                </Button>
+
+                <StackPanel Grid.Column="3" Orientation="Horizontal" Margin="0,0,4,0"
+                            HorizontalAlignment="Right" VerticalAlignment="Center" Spacing="0">
+                    <Button x:Name="BackButton" Width="26" Height="28" Padding="0" Style="{StaticResource ShellChromeButtonStyle}"
+                            AutomationProperties.Name="Back" Click="OnBackClicked" IsEnabled="False" ToolTipService.ToolTip="Back">
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="13" Glyph="&#xE72B;" />
+                    </Button>
+                    <Button x:Name="ForwardButton" Width="26" Height="28" Padding="0" Style="{StaticResource ShellChromeButtonStyle}"
+                            AutomationProperties.Name="Forward" Click="OnForwardClicked" IsEnabled="False" ToolTipService.ToolTip="Forward">
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="13" Glyph="&#xE72A;" />
+                    </Button>
+                    <Border x:Name="GlobalSearchPanel" Width="300" Height="24" Margin="1,0,0,0"
+                            VerticalAlignment="Center" Background="{StaticResource ShellSurfaceBrush}"
+                            BorderBrush="#454545" BorderThickness="1" CornerRadius="4">
+                        <AutoSuggestBox x:Name="GlobalSearchBox" MinHeight="0" Padding="6,0"
+                                        VerticalAlignment="Stretch" Background="Transparent" BorderThickness="0"
+                                        CornerRadius="3" FontSize="12" VerticalContentAlignment="Center"
+                                        TextBoxStyle="{StaticResource ShellSearchTextBoxStyle}"
+                                        AutomationProperties.Name="Global Grid search"
+                                        TextChanged="OnGlobalSearchTextChanged" QuerySubmitted="OnGlobalSearchQuerySubmitted"
+                                        SuggestionChosen="OnSearchSuggestionChosen" />
+                    </Border>
+                </StackPanel>
+
+                <Button x:Name="OpenInButton" Grid.Column="4" Width="110" Height="28" Padding="7,0" Margin="1,0" Style="{StaticResource ShellChromeButtonStyle}"
+                        AutomationProperties.Name="Open in manager instance" ToolTipService.ToolTip="Open the selected context in an available manager">
+                    <Button.Flyout>
+                        <MenuFlyout>
+                            <MenuFlyoutItem Text="Mod Organizer 2 instance" Tag="MO2" Click="OnOpenManagerInstanceClicked" />
+                            <MenuFlyoutItem Text="Vortex instance" Tag="Vortex" Click="OnOpenManagerInstanceClicked" />
+                            <MenuFlyoutSeparator />
+                            <MenuFlyoutItem Text="Choose another manager…" Tag="Other" Click="OnOpenManagerInstanceClicked" />
+                        </MenuFlyout>
+                    </Button.Flyout>
+                    <StackPanel Orientation="Horizontal" Spacing="6">
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="14" Glyph="&#xE8A7;" />
+                        <TextBlock x:Name="OpenInLabel" VerticalAlignment="Center" FontSize="12" Text="Open in..." />
+                    </StackPanel>
+                </Button>
+
+                <StackPanel Grid.Column="5" Orientation="Horizontal" VerticalAlignment="Center" Spacing="1">
+                    <Button Width="32" Style="{StaticResource ShellChromeButtonStyle}" AutomationProperties.Name="Customize layout"
+                            ToolTipService.ToolTip="Customize Layout">
+                        <Button.Flyout>
+                            <MenuFlyout>
+                                <MenuFlyoutItem Text="Reset panel sizes" Click="OnResetLayoutClicked" />
+                                <ToggleMenuFlyoutItem x:Name="CompactDensityMenuItem" Text="Compact density" IsChecked="True" Click="OnCompactDensityClicked" />
+                                <MenuFlyoutSeparator />
+                                <ToggleMenuFlyoutItem x:Name="LeftPanelMenuItem" Text="Left sidebar" IsChecked="True" Click="OnLeftPanelToggleClicked" />
+                                <ToggleMenuFlyoutItem x:Name="RightPanelMenuItem" Text="Right panel" IsChecked="True" Click="OnAssistantToggleClicked" />
+                                <ToggleMenuFlyoutItem x:Name="BottomPanelMenuItem" Text="Bottom panel" IsChecked="True" Click="OnBottomPanelToggleClicked" />
+                            </MenuFlyout>
+                        </Button.Flyout>
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="15" Glyph="&#xE713;" />
+                    </Button>
+                    <ToggleButton x:Name="LeftPanelToggleButton" IsChecked="True" Style="{StaticResource ShellChromeToggleStyle}"
+                                  AutomationProperties.Name="Toggle left sidebar" Click="OnLeftPanelToggleClicked" ToolTipService.ToolTip="Toggle left sidebar">
+                        <Grid Width="16" Height="14">
+                            <Border BorderBrush="{StaticResource MutedTextBrush}" BorderThickness="1" CornerRadius="2" />
+                            <Border x:Name="LeftPanelToggleFill" Width="4" Margin="2" HorizontalAlignment="Left"
+                                    Background="{StaticResource MutedTextBrush}" CornerRadius="1" />
+                        </Grid>
+                    </ToggleButton>
+                    <ToggleButton x:Name="BottomPanelToggleButton" IsChecked="True" Style="{StaticResource ShellChromeToggleStyle}"
+                                  AutomationProperties.Name="Toggle bottom panel" Click="OnBottomPanelToggleClicked" ToolTipService.ToolTip="Toggle bottom panel">
+                        <Grid Width="16" Height="14">
+                            <Border BorderBrush="{StaticResource MutedTextBrush}" BorderThickness="1" CornerRadius="2" />
+                            <Border x:Name="BottomPanelToggleFill" Height="4" Margin="2" VerticalAlignment="Bottom"
+                                    Background="{StaticResource MutedTextBrush}" CornerRadius="1" />
+                        </Grid>
+                    </ToggleButton>
+                    <ToggleButton x:Name="AssistantToggleButton" IsChecked="True" Style="{StaticResource ShellChromeToggleStyle}"
+                                  AutomationProperties.Name="Hide Grid Assistant" Click="OnAssistantToggleClicked" ToolTipService.ToolTip="Toggle right panel">
+                        <Grid Width="16" Height="14">
+                            <Border BorderBrush="{StaticResource MutedTextBrush}" BorderThickness="1" CornerRadius="2" />
+                            <Border x:Name="AssistantToggleFill" Width="4" Margin="2" HorizontalAlignment="Right"
+                                    Background="{StaticResource MutedTextBrush}" CornerRadius="1" />
+                        </Grid>
+                    </ToggleButton>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Grid x:Name="WorkspaceHost" Grid.Row="1" Background="#181818">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="48" />
+                <ColumnDefinition Width="4.25" />
+                <ColumnDefinition x:Name="LeftPanelColumn" Width="286" />
+                <ColumnDefinition x:Name="LeftSplitterColumn" Width="4.25" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition x:Name="AssistantSplitterColumn" Width="4.25" />
+                <ColumnDefinition x:Name="AssistantPanelColumn" Width="360" />
+                <ColumnDefinition Width="8" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Background="#181818" BorderThickness="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <ScrollViewer Grid.Row="0" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"
+                                  VerticalScrollMode="Auto" AutomationProperties.Name="Game rail">
+                        <StackPanel Spacing="4">
+                            <StackPanel x:Name="GameRailItems" Spacing="4" />
+                            <Button Style="{StaticResource ActivityRailButtonStyle}" AutomationProperties.Name="Add game"
+                                    Click="OnAddGameClicked" ToolTipService.ToolTip="Add game">
+                                <FontIcon FontFamily="Segoe Fluent Icons" FontSize="20" Glyph="&#xECC8;" />
+                            </Button>
+                        </StackPanel>
+                    </ScrollViewer>
+
+                    <StackPanel Grid.Row="1">
+                        <Button Style="{StaticResource ActivityRailButtonStyle}" AutomationProperties.Name="Search"
+                                Click="OnSearchActivityClicked" ToolTipService.ToolTip="Search">
+                            <FontIcon FontFamily="Segoe Fluent Icons" FontSize="20" Glyph="&#xE721;" />
+                        </Button>
+                        <Button Style="{StaticResource ActivityRailButtonStyle}" AutomationProperties.Name="Explorer"
+                                Click="OnLibraryActivityClicked" ToolTipService.ToolTip="Explorer">
+                            <FontIcon FontFamily="Segoe Fluent Icons" FontSize="20" Glyph="&#xE8B7;" />
+                        </Button>
+                        <Button Style="{StaticResource ActivityRailButtonStyle}" AutomationProperties.Name="Activities"
+                                Click="OnActivitiesClicked" ToolTipService.ToolTip="Activities">
+                            <FontIcon FontFamily="Segoe Fluent Icons" FontSize="20" Glyph="&#xE81C;" />
+                        </Button>
+                        <Button Style="{StaticResource ActivityRailButtonStyle}" AutomationProperties.Name="Settings"
+                                Click="OnSettingsClicked" ToolTipService.ToolTip="Settings">
+                            <FontIcon FontFamily="Segoe Fluent Icons" FontSize="20" Glyph="&#xE713;" />
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="1" Background="Transparent" />
+
+            <Border x:Name="LeftSidebar" Grid.Column="2" Margin="0,3.25" Background="{StaticResource ShellSidebarBrush}"
+                    BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="1" CornerRadius="4">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid Margin="12,10,8,8" ColumnDefinitions="*,Auto" ColumnSpacing="4">
+                        <TextBlock x:Name="SidePanelTitle" VerticalAlignment="Center" Style="{StaticResource ShellSectionHeaderStyle}" Text="HOME" />
+                        <Button Grid.Column="1" Width="28" Height="26" Padding="0" Style="{StaticResource ShellChromeButtonStyle}"
+                                AutomationProperties.Name="Side panel options" ToolTipService.ToolTip="Panel options">
+                            <FontIcon FontFamily="Segoe Fluent Icons" FontSize="12" Glyph="&#xE712;" />
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <ScrollViewer x:Name="HomeSidePanel" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                            <StackPanel Padding="12,4,12,12" Spacing="8">
+                                <TextBlock FontSize="13" FontWeight="SemiBold" Text="Registered games" />
+                                <TextBlock Foreground="{StaticResource MutedTextBrush}" FontSize="11" Text="Choose a circular game thumbnail to open its workspace." TextWrapping="Wrap" />
+                                <Button x:Name="EmptyGamesButton" HorizontalAlignment="Stretch" MinHeight="36"
+                                        AutomationProperties.Name="Add game" Click="OnAddGameClicked" Content="Add game…"
+                                        Style="{StaticResource ShellChromeButtonStyle}" />
+                                <ComboBox x:Name="GameSortSelector" Visibility="Collapsed" SelectionChanged="OnGameSortChanged" />
+                                <StackPanel x:Name="GamesList" Visibility="Collapsed" />
+                            </StackPanel>
+                        </ScrollViewer>
+
+                        <ScrollViewer x:Name="GameSnapshotPanel" Visibility="Collapsed" AutomationProperties.Name="Game snapshot" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                            <StackPanel Padding="12,4,12,12" Spacing="10">
+                                <Border Height="104" CornerRadius="6" Background="{StaticResource CardHoverBrush}">
+                                    <Grid><FontIcon HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Segoe Fluent Icons" FontSize="34" Glyph="&#xE7FC;" /></Grid>
+                                </Border>
+                                <TextBlock x:Name="SnapshotGameName" FontSize="18" FontWeight="SemiBold" TextWrapping="Wrap" />
+                                <TextBlock x:Name="SnapshotInstanceText" Foreground="{StaticResource MutedTextBrush}" FontSize="11" TextWrapping="Wrap" />
+                                <TextBlock Style="{StaticResource ShellSectionHeaderStyle}" Text="PROFILE" />
+                                <TextBlock x:Name="SnapshotProfileText" FontSize="12" TextWrapping="Wrap" />
+                                <TextBlock Style="{StaticResource ShellSectionHeaderStyle}" Text="RECENT ACTIVITY" />
+                                <TextBlock Foreground="{StaticResource MutedTextBrush}" FontSize="11" Text="No recorded activity for this snapshot." TextWrapping="Wrap" />
+                            </StackPanel>
+                        </ScrollViewer>
+
+                        <Grid x:Name="LibraryPanel" Visibility="Collapsed">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Grid Margin="8,2,6,6" ColumnSpacing="4">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <TextBlock x:Name="ExplorerRootText"
+                                           VerticalAlignment="Center"
+                                           FontSize="10"
+                                           FontWeight="SemiBold"
+                                           Foreground="{StaticResource MutedTextBrush}"
+                                           TextTrimming="CharacterEllipsis"
+                                           AutomationProperties.Name="Explorer root" />
+                                <Button Grid.Column="1"
+                                        Width="28"
+                                        Height="28"
+                                        Padding="0"
+                                        Style="{StaticResource ShellChromeButtonStyle}"
+                                        ToolTipService.ToolTip="Collapse folders"
+                                        AutomationProperties.Name="Collapse Explorer folders"
+                                        Click="OnCollapseExplorerClicked">
+                                    <FontIcon FontFamily="Segoe Fluent Icons" FontSize="12" Glyph="&#xE8A0;" />
+                                </Button>
+                                <Button Grid.Column="2"
+                                        Width="28"
+                                        Height="28"
+                                        Padding="0"
+                                        Style="{StaticResource ShellChromeButtonStyle}"
+                                        ToolTipService.ToolTip="Refresh"
+                                        AutomationProperties.Name="Refresh Explorer"
+                                        Click="OnRefreshExplorerClicked">
+                                    <FontIcon FontFamily="Segoe Fluent Icons" FontSize="12" Glyph="&#xE72C;" />
+                                </Button>
+                            </Grid>
+
+                            <TextBlock Grid.Row="1"
+                                       Margin="8,0,8,6"
+                                       FontSize="10"
+                                       Foreground="{StaticResource MutedTextBrush}"
+                                       Text="Connected profile · read only"
+                                       AutomationProperties.Name="Explorer read only status" />
+
+                            <TreeView x:Name="InstanceExplorerTree"
+                                      Grid.Row="2"
+                                      Margin="4,0,4,4"
+                                      SelectionMode="Single"
+                                      AutomationProperties.Name="Instance explorer"
+                                      Expanding="OnExplorerNodeExpanding"
+                                      SelectionChanged="OnExplorerSelectionChanged" />
+
+                            <TextBlock x:Name="ExplorerSelectionText"
+                                       Grid.Row="3"
+                                       Margin="8,4,8,8"
+                                       FontSize="10"
+                                       Foreground="{StaticResource MutedTextBrush}"
+                                       TextTrimming="CharacterEllipsis"
+                                       AutomationProperties.Name="Explorer selection" />
+                        </Grid>
+
+                        <ScrollViewer x:Name="SearchPanel" Visibility="Collapsed" AutomationProperties.Name="Sidebar search panel" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                            <StackPanel Padding="12,4,12,12" Spacing="8">
+                                <TextBox x:Name="SideSearchBox" PlaceholderText="Search active instance" />
+                                <TextBlock Foreground="{StaticResource MutedTextBrush}" FontSize="11" Text="Search results open in the main panel." TextWrapping="Wrap" />
+                            </StackPanel>
+                        </ScrollViewer>
+
+                        <Grid x:Name="ActivityPanel" Visibility="Collapsed">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid Margin="12,4,12,8" Height="22" ColumnDefinitions="*,*,*,*" Background="{ThemeResource ShellPanelBrush}">
+                                <Button x:Name="ActivityQueueScore" Padding="0" Style="{StaticResource ShellChromeButtonStyle}" AutomationProperties.Name="Queue task count" Click="OnActivityQueueScoreClicked" />
+                                <Button x:Name="ActivityProgressScore" Grid.Column="1" Padding="0" Style="{StaticResource ShellChromeButtonStyle}" AutomationProperties.Name="In Progress task count" Click="OnActivityProgressScoreClicked" />
+                                <Button x:Name="ActivityReadyScore" Grid.Column="2" Padding="0" Style="{StaticResource ShellChromeButtonStyle}" AutomationProperties.Name="Ready task count" Click="OnActivityReadyScoreClicked" />
+                                <Button x:Name="ActivityLedgerScore" Grid.Column="3" Padding="0" Style="{StaticResource ShellChromeButtonStyle}" AutomationProperties.Name="Ledger task count" Click="OnActivityLedgerScoreClicked" />
+                            </Grid>
+                            <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                                <StackPanel Padding="12,2,12,12" Spacing="8">
+                                    <TextBlock FontSize="13" FontWeight="SemiBold" Text="Recent activity" />
+                                    <StackPanel x:Name="ActivityLedgerItems" Spacing="7" />
+                                    <Button HorizontalAlignment="Stretch" Content="See more activity" AutomationProperties.Name="See more activity"
+                                            Click="OnSeeMoreActivityClicked" Style="{StaticResource ShellChromeButtonStyle}" />
+                                </StackPanel>
+                            </ScrollViewer>
+                            <Grid Grid.Row="2" Margin="10,8,10,10" ColumnDefinitions="Auto,*,Auto" ColumnSpacing="6">
+                                <Button Content="+" AutomationProperties.Name="Attach to Activity task" Click="OnActivityAttachClicked" Style="{StaticResource ShellChromeButtonStyle}" />
+                                <TextBox x:Name="ActivityComposerText" Grid.Column="1" PlaceholderText="Plan a task…" AutomationProperties.Name="Activity composer" />
+                                <Button Grid.Column="2" Content="↑" AutomationProperties.Name="Send Activity task to chat" Click="OnActivityComposeClicked" Style="{StaticResource AccentButtonStyle}" />
+                            </Grid>
+                        </Grid>
+
+                        <Expander x:Name="LibraryExpander" Visibility="Collapsed" />
+                        <Expander x:Name="SearchExpander" Visibility="Collapsed" />
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Thumb x:Name="LeftSplitter" Grid.Column="3" Style="{StaticResource VerticalPanelSplitterStyle}"
+                   IsTabStop="True" AutomationProperties.Name="Resize left sidebar"
+                   DragDelta="OnLeftSplitterDragDelta" KeyDown="OnLeftSplitterKeyDown" />
+
+            <Border x:Name="MainWorkspacePanel" Grid.Column="4" Margin="0,3.25" Background="{ThemeResource ShellWorkbenchBrush}"
+                    AutomationProperties.Name="Main workbench panel" BorderThickness="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition x:Name="MainContentRow" Height="*" />
+                        <RowDefinition x:Name="BottomSplitterRow" Height="4.25" />
+                        <RowDefinition x:Name="BottomPanelRow" Height="220" />
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="0" Grid.RowSpan="3"
+                            Background="{ThemeResource ShellWorkbenchBrush}"
+                            CornerRadius="4" />
+
+                    <Grid Grid.Row="0">
+                        <TabView x:Name="EditorTabView" Height="30" Margin="-4,0,33,0" IsAddTabButtonVisible="False"
+                                 CanDragTabs="True" CanReorderTabs="True" TabWidthMode="SizeToContent"
+                                 AutomationProperties.Name="Open tabs"
+                                 SelectionChanged="OnEditorTabSelectionChanged"
+                                 TabCloseRequested="OnEditorTabCloseRequested" />
+                        <Button x:Name="EditorMoreActionsButton" Width="30" Height="24" Margin="0,3,3,3"
+                                HorizontalAlignment="Right" Style="{StaticResource ShellChromeButtonStyle}"
+                                AutomationProperties.Name="Main panel more actions" ToolTipService.ToolTip="More actions">
+                            <Button.Flyout>
+                                <MenuFlyout>
+                                    <MenuFlyoutItem Text="Manage current game…" Click="OnManageGameClicked" />
+                                    <MenuFlyoutItem Text="Open in manager…" Click="OnOpenManagerInstanceClicked" />
+                                    <MenuFlyoutSeparator />
+                                    <MenuFlyoutItem Text="Toggle terminal" Click="OnBottomPanelToggleClicked" />
+                                </MenuFlyout>
+                            </Button.Flyout>
+                            <FontIcon FontFamily="Segoe Fluent Icons" FontSize="12" Glyph="&#xE712;" />
+                        </Button>
+                    </Grid>
+
+                    <Border x:Name="ContextBar" Grid.Row="1" Padding="{StaticResource ShellPanelContentInset}" HorizontalAlignment="Stretch"
+                            Background="{ThemeResource ShellWorkbenchBrush}"
+                            BorderThickness="0" Visibility="Collapsed">
+                        <Grid x:Name="ContextLayout" HorizontalAlignment="Right" ColumnSpacing="8">
+                            <Grid.RowDefinitions><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <StackPanel x:Name="ContextIdentityPanel" VerticalAlignment="Center" Spacing="1" Visibility="Collapsed">
+                                <TextBlock x:Name="GameContextName" FontSize="16" FontWeight="SemiBold" Text="Game workspace" TextTrimming="CharacterEllipsis" />
+                                <TextBlock x:Name="InstallationSummaryText" FontSize="11" Foreground="{StaticResource MutedTextBrush}"
+                                           Text="External installation" TextTrimming="CharacterEllipsis" />
+                            </StackPanel>
+                            <StackPanel x:Name="InstallationContextPanel" Grid.Column="1" Spacing="3" Visibility="Collapsed">
+                                <TextBlock Style="{StaticResource ShellLabelStyle}" Text="INSTALLATION" />
+                                <ComboBox x:Name="InstallationSelector" Height="32" FontSize="12" AutomationProperties.Name="Installation" DisplayMemberPath="Name"
+                                          HorizontalAlignment="Stretch" PlaceholderText="Unavailable" SelectionChanged="OnInstallationSelectionChanged" />
+                            </StackPanel>
+                            <StackPanel x:Name="ProfileContextPanel" Grid.Column="2" Spacing="3" Visibility="Collapsed">
+                                <TextBlock Style="{StaticResource ShellLabelStyle}" Text="PROFILE" />
+                                <ComboBox x:Name="ProfileSelector" Height="32" FontSize="12" AutomationProperties.Name="Profile" DisplayMemberPath="Name"
+                                          HorizontalAlignment="Stretch" PlaceholderText="Unavailable" SelectionChanged="OnProfileSelectionChanged" />
+                            </StackPanel>
+                            <Grid x:Name="TargetContextPanel" Grid.Column="0" ColumnSpacing="5">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Button x:Name="RefreshEnvironmentButton" Width="28" Height="28" Padding="0"
+                                        VerticalAlignment="Center" Style="{StaticResource ShellChromeButtonStyle}"
+                                        AutomationProperties.Name="Refresh read-only environment index"
+                                        ToolTipService.ToolTip="Scan this profile read only"
+                                        Click="OnRefreshEnvironmentClicked">
+                                    <TextBlock Text="↻" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Button>
+                                <ComboBox x:Name="LaunchTargetSelector" Grid.Column="1" Visibility="Collapsed"
+                                          PlaceholderText="Unavailable" SelectionChanged="OnLaunchTargetSelectionChanged">
+                                    <ComboBox.ItemTemplate><DataTemplate><StackPanel><TextBlock FontSize="12" FontWeight="SemiBold" Text="{Binding Name}" />
+                                        <TextBlock FontSize="10" Foreground="{StaticResource MutedTextBrush}" Text="{Binding PresentationStatus}" />
+                                    </StackPanel></DataTemplate></ComboBox.ItemTemplate>
+                                </ComboBox>
+                                <Button x:Name="LaunchTargetButton" Grid.Column="1" Height="28" MinWidth="0" Padding="8,0"
+                                        HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch"
+                                        VerticalContentAlignment="Center" Background="{ThemeResource ShellInputBrush}"
+                                        BorderBrush="#454545" BorderThickness="1" CornerRadius="4" IsEnabled="False"
+                                        AutomationProperties.Name="Tool or launch target">
+                                    <Button.Flyout>
+                                        <MenuFlyout x:Name="LaunchTargetFlyout" Placement="BottomEdgeAlignedLeft"
+                                                    Opening="OnLaunchTargetFlyoutOpening" />
+                                    </Button.Flyout>
+                                    <Grid ColumnSpacing="8">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock x:Name="LaunchTargetButtonText" VerticalAlignment="Center" FontSize="12"
+                                                   Text="Unavailable" TextTrimming="CharacterEllipsis" />
+                                        <FontIcon Grid.Column="1" VerticalAlignment="Center" FontFamily="Segoe Fluent Icons"
+                                                  FontSize="8" Glyph="&#xE70D;" />
+                                    </Grid>
+                                </Button>
+                            </Grid>
+                            <Button x:Name="RunButton" Grid.Column="1" Height="28" VerticalAlignment="Bottom" Content="Run" IsEnabled="False"
+                                    AutomationProperties.Name="Run selected tool" AutomationProperties.HelpText="Run is unavailable unless a real, verified launch route exists."
+                                    Click="OnRunClicked" Style="{StaticResource AccentButtonStyle}" />
+                        </Grid>
+                    </Border>
+
+                    <Frame x:Name="ContentFrame" Grid.Row="2" Background="{ThemeResource ShellWorkbenchBrush}" IsNavigationStackEnabled="False" />
+
+                    <!-- Keep the canonical workbench outline above TabView's native header surface. -->
+                    <Border x:Name="MainContentPanelOutline" Grid.Row="0" Grid.RowSpan="3"
+                            Background="Transparent" BorderBrush="{ThemeResource ShellDividerBrush}"
+                            BorderThickness="1" CornerRadius="4" IsHitTestVisible="False" Canvas.ZIndex="20" />
+
+                    <Thumb x:Name="BottomSplitter" Grid.Row="3" Style="{StaticResource HorizontalPanelSplitterStyle}"
+                           IsTabStop="True" AutomationProperties.Name="Resize bottom panel"
+                           DragDelta="OnBottomSplitterDragDelta" KeyDown="OnBottomSplitterKeyDown" />
+
+                    <Border x:Name="BottomPanel" Grid.Row="4" AutomationProperties.Name="Bottom tool panel"
+                            Background="{ThemeResource ShellWorkbenchBrush}" BorderBrush="{ThemeResource ShellDividerBrush}"
+                            BorderThickness="1" CornerRadius="4">
+                        <Grid>
+                            <Grid.RowDefinitions><RowDefinition Height="30" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+                            <Grid Grid.Row="0" ColumnDefinitions="Auto,Auto,Auto,*,Auto,Auto,Auto" BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="0,0,0,1">
+                                <ToggleButton x:Name="TerminalTabButton" IsChecked="True" Width="86" Click="OnTerminalTabClicked" Content="Terminal" Style="{StaticResource ShellTabToggleStyle}" />
+                                <ToggleButton x:Name="OutputTabButton" Grid.Column="1" Width="76" Click="OnOutputTabClicked" Content="Output" Style="{StaticResource ShellTabToggleStyle}" />
+                                <ToggleButton x:Name="ProblemsTabButton" Grid.Column="2" Width="90" Click="OnProblemsTabClicked" Content="Problems" Style="{StaticResource ShellTabToggleStyle}" />
+                                <TextBlock Grid.Column="4" Margin="8,0" VerticalAlignment="Center" Text="pwsh" FontSize="11" Foreground="{StaticResource MutedTextBrush}" />
+                                <ToggleButton x:Name="BottomPanelMaximizeButton" Grid.Column="5" Width="34" Height="30"
+                                              Style="{StaticResource ShellChromeToggleStyle}"
+                                              AutomationProperties.Name="Maximize bottom panel"
+                                              Click="OnBottomPanelMaximizeClicked" ToolTipService.ToolTip="Maximize panel">
+                                    <FontIcon FontFamily="Segoe Fluent Icons" FontSize="13" Glyph="&#xE740;" />
+                                </ToggleButton>
+                                <Button Grid.Column="6" Width="34" Height="30" Style="{StaticResource ShellChromeButtonStyle}"
+                                        AutomationProperties.Name="Clear terminal" Click="OnClearTerminalClicked" ToolTipService.ToolTip="Clear terminal">
+                                    <FontIcon FontFamily="Segoe Fluent Icons" FontSize="13" Glyph="&#xE74D;" />
+                                </Button>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Grid x:Name="TerminalSurface">
+                                    <Grid.RowDefinitions><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+                                    <ScrollViewer x:Name="TerminalScrollViewer" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                                        <TextBlock x:Name="TerminalOutputText" Margin="12,8" FontFamily="Cascadia Mono, Consolas" FontSize="12"
+                                                   TextWrapping="NoWrap" IsTextSelectionEnabled="True" />
+                                    </ScrollViewer>
+                                    <Grid Grid.Row="1" Margin="12,3,12,8" ColumnDefinitions="Auto,*">
+                                        <TextBlock VerticalAlignment="Center" FontFamily="Cascadia Mono, Consolas" FontSize="12" Text="PS GRID&gt; " Foreground="{StaticResource ShellSuccessBrush}" />
+                                        <TextBox x:Name="TerminalCommandBox" Grid.Column="1" Height="28" Padding="4,1" BorderThickness="0" Background="Transparent"
+                                                 FontFamily="Cascadia Mono, Consolas" FontSize="12" PlaceholderText="Type help for Grid-local commands"
+                                                 AutomationProperties.Name="Grid terminal command" KeyDown="OnTerminalKeyDown" />
+                                    </Grid>
+                                </Grid>
+                                <ScrollViewer x:Name="OutputSurface" Visibility="Collapsed" HorizontalScrollBarVisibility="Disabled">
+                                    <TextBlock x:Name="OutputText" Margin="12,10" FontFamily="Cascadia Mono, Consolas" FontSize="12" TextWrapping="Wrap" />
+                                </ScrollViewer>
+                                <ScrollViewer x:Name="ProblemsSurface" Visibility="Collapsed" HorizontalScrollBarVisibility="Disabled">
+                                    <StackPanel Margin="12,10" Spacing="8">
+                                        <TextBlock FontWeight="SemiBold" Text="Problems" />
+                                        <TextBlock x:Name="ProblemsDetailText" Text="No evidence-backed discrepancies or concerns are active for this surface." TextWrapping="Wrap" />
+                                    </StackPanel>
+                                </ScrollViewer>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <Thumb x:Name="AssistantSplitter" Grid.Column="5" Style="{StaticResource VerticalPanelSplitterStyle}"
+                   IsTabStop="True" AutomationProperties.Name="Resize right panel"
+                   AutomationProperties.HelpText="Drag or use Left and Right arrow keys. Press Home to reset."
+                   DragDelta="OnAssistantSplitterDragDelta" KeyDown="OnAssistantSplitterKeyDown" />
+
+            <!-- Console full view: direct center-workspace projection. Side panels remain independent. -->
+            <Border x:Name="BottomPanelFullView" Grid.Column="4" Margin="0,3.25"
+                    AutomationProperties.Name="Maximized bottom tool panel"
+                    Background="{ThemeResource ShellWorkbenchBrush}" BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="1" CornerRadius="4" Visibility="Collapsed" Canvas.ZIndex="25">
+                <Grid>
+                    <Grid.RowDefinitions><RowDefinition Height="30" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+                    <Grid Grid.Row="0" ColumnDefinitions="Auto,Auto,Auto,*,Auto,Auto,Auto"
+                          BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="0,0,0,1">
+                        <ToggleButton x:Name="FullTerminalTabButton" IsChecked="True" Width="86"
+                                      Click="OnFullTerminalTabClicked" Content="Terminal" Style="{StaticResource ShellTabToggleStyle}" />
+                        <ToggleButton x:Name="FullOutputTabButton" Grid.Column="1" Width="76"
+                                      Click="OnFullOutputTabClicked" Content="Output" Style="{StaticResource ShellTabToggleStyle}" />
+                        <ToggleButton x:Name="FullProblemsTabButton" Grid.Column="2" Width="90"
+                                      Click="OnFullProblemsTabClicked" Content="Problems" Style="{StaticResource ShellTabToggleStyle}" />
+                        <TextBlock Grid.Column="4" Margin="8,0" VerticalAlignment="Center" Text="pwsh" FontSize="11"
+                                   Foreground="{StaticResource MutedTextBrush}" />
+                        <Button Grid.Column="5" Width="34" Height="30" Style="{StaticResource ShellChromeButtonStyle}"
+                                AutomationProperties.Name="Restore bottom panel" Click="OnRestoreBottomPanelClicked"
+                                ToolTipService.ToolTip="Restore panel">
+                            <FontIcon FontFamily="Segoe Fluent Icons" FontSize="13" Glyph="&#xE73F;" />
+                        </Button>
+                        <Button Grid.Column="6" Width="34" Height="30" Style="{StaticResource ShellChromeButtonStyle}"
+                                AutomationProperties.Name="Clear maximized terminal" Click="OnClearTerminalClicked"
+                                ToolTipService.ToolTip="Clear terminal">
+                            <FontIcon FontFamily="Segoe Fluent Icons" FontSize="13" Glyph="&#xE74D;" />
+                        </Button>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid x:Name="FullTerminalSurface">
+                            <Grid.RowDefinitions><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+                            <ScrollViewer x:Name="FullTerminalScrollViewer" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                                <TextBlock x:Name="FullTerminalOutputText" Margin="12,8" FontFamily="Cascadia Mono, Consolas"
+                                           FontSize="12" TextWrapping="NoWrap" IsTextSelectionEnabled="True" />
+                            </ScrollViewer>
+                            <Grid Grid.Row="1" Margin="12,3,12,8" ColumnDefinitions="Auto,*">
+                                <TextBlock Text="PS GRID&gt;" FontFamily="Cascadia Mono, Consolas" FontSize="12"
+                                           VerticalAlignment="Center" Foreground="{StaticResource ShellSuccessBrush}" />
+                                <TextBox x:Name="FullTerminalCommandBox" Grid.Column="1" Margin="6,0,0,0"
+                                         FontFamily="Cascadia Mono, Consolas" FontSize="12"
+                                         AutomationProperties.Name="Maximized Grid terminal command"
+                                         KeyDown="OnFullTerminalKeyDown" />
+                            </Grid>
+                        </Grid>
+                        <ScrollViewer x:Name="FullOutputSurface" Visibility="Collapsed">
+                            <TextBlock x:Name="FullOutputText" Margin="12,10" FontFamily="Cascadia Mono, Consolas" FontSize="12" TextWrapping="Wrap" />
+                        </ScrollViewer>
+                        <ScrollViewer x:Name="FullProblemsSurface" Visibility="Collapsed">
+                            <StackPanel Margin="12,10" Spacing="8">
+                                <TextBlock Text="Problems" FontWeight="SemiBold" />
+                                <TextBlock x:Name="FullProblemsDetailText" TextWrapping="Wrap" />
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Border x:Name="AssistantPanelShell" Grid.Column="6" AutomationProperties.Name="Grid Assistant panel" Margin="0,3.25"
+                    Background="{ThemeResource ShellSurfaceBrush}"
+                    BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="1" CornerRadius="4" Canvas.ZIndex="30">
+                <views:AssistantPanel x:Name="AssistantPanelView" />
+            </Border>
+
+            <Border Grid.Column="7" Background="Transparent" />
+
+            <Border x:Name="TaskboardShellOverlay" Grid.ColumnSpan="8" Canvas.ZIndex="100" Visibility="Collapsed"
+                    Background="{ThemeResource ShellWorkbenchBrush}">
+                <views:TaskboardPage x:Name="TaskboardOverlayView" />
+            </Border>
+        </Grid>
+
+        <Border Grid.Row="2" Background="#181818" BorderThickness="0">
+            <Grid VerticalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48" />
+                    <ColumnDefinition Width="{Binding Width, ElementName=LeftPanelColumn}" />
+                    <ColumnDefinition Width="{Binding Width, ElementName=LeftSplitterColumn}" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="38" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="ConnectionStatusButton" Grid.Column="0" Width="48" Height="29" Padding="0"
+                        Style="{StaticResource ShellChromeButtonStyle}" AutomationProperties.Name="Manager availability"
+                        Click="OnManageGameClicked" ToolTipService.ToolTip="Manager availability and connection">
+                    <Ellipse x:Name="ConnectionDot" Width="8" Height="8" Fill="{StaticResource MutedTextBrush}" />
+                </Button>
+                <StackPanel Grid.Column="1" Grid.ColumnSpan="4" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Button Height="29" Padding="8,0" Style="{StaticResource ShellChromeButtonStyle}"
+                            AutomationProperties.Name="Discrepancies" Click="OnProblemsTabClicked">
+                        <TextBlock x:Name="DiscrepancyCountText" Text="&#x00D7;0" Foreground="{StaticResource ShellProblemBrush}" />
+                    </Button>
+                    <Button Height="29" Padding="8,0" Style="{StaticResource ShellChromeButtonStyle}"
+                            AutomationProperties.Name="Concerns" Click="OnProblemsTabClicked">
+                        <TextBlock x:Name="ConcernCountText" Text="!0" Foreground="{StaticResource ShellWarningBrush}" />
+                    </Button>
+                    <Button x:Name="MediationButton" Height="29" Padding="8,0" HorizontalContentAlignment="Left"
+                            Style="{StaticResource ShellChromeButtonStyle}" AutomationProperties.Name="Review corrective actions"
+                            Click="OnMediationClicked" Content="No corrective actions" />
+                </StackPanel>
+                <Button x:Name="NotificationsButton" Grid.Column="5" Width="38" Height="29" Style="{StaticResource ShellChromeButtonStyle}"
+                        AutomationProperties.Name="Notifications" Click="OnNotificationsClicked" ToolTipService.ToolTip="Notifications">
+                    <Button.Flyout>
+                        <Flyout x:Name="NotificationsFlyout" Placement="TopEdgeAlignedRight">
+                            <Grid Width="380" MaxHeight="440" RowSpacing="8">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid ColumnDefinitions="*,Auto">
+                                    <TextBlock FontSize="16" FontWeight="SemiBold" Text="Notifications" />
+                                    <Button Grid.Column="1" Padding="8,2" Content="Clear" Click="OnClearNotificationsClicked"
+                                            Style="{StaticResource ShellChromeButtonStyle}" />
+                                </Grid>
+                                <TextBlock x:Name="NoNotificationsText" Grid.Row="1" Margin="0,10"
+                                           Foreground="{StaticResource MutedTextBrush}" Text="No notifications" />
+                                <ListView x:Name="NotificationList" Grid.Row="1" MaxHeight="380" SelectionMode="None" Visibility="Collapsed">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid MinHeight="64" Padding="8,7" ColumnDefinitions="18,*" ColumnSpacing="8">
+                                                <FontIcon FontFamily="Segoe Fluent Icons" FontSize="13" Glyph="{Binding Glyph}" />
+                                                <StackPanel Grid.Column="1" Spacing="3">
+                                                    <TextBlock FontWeight="SemiBold" Text="{Binding Title}" TextWrapping="Wrap" />
+                                                    <TextBlock FontSize="12" Foreground="{StaticResource MutedTextBrush}"
+                                                               Text="{Binding Message}" TextWrapping="Wrap" />
+                                                    <TextBlock FontSize="10" Foreground="{StaticResource MutedTextBrush}" Text="{Binding Timestamp}" />
+                                                </StackPanel>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </Grid>
+                        </Flyout>
+                    </Button.Flyout>
+                    <Grid>
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="14" Glyph="&#xEA8F;" />
+                        <Border x:Name="NotificationBadge" MinWidth="13" Height="13" Padding="2,0"
+                                HorizontalAlignment="Right" VerticalAlignment="Top" Background="{ThemeResource AccentFillColorDefaultBrush}"
+                                CornerRadius="7" Visibility="Collapsed">
+                            <TextBlock x:Name="NotificationCountText" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                       FontSize="8" FontWeight="Bold" Text="0" />
+                        </Border>
+                    </Grid>
+                </Button>
+            </Grid>
+        </Border>
+
+        <Grid x:Name="LoadingState" Grid.Row="1" Canvas.ZIndex="40" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="12"><ProgressRing IsActive="True" />
+                <TextBlock Text="Loading connected games" AutomationProperties.LiveSetting="Polite" /></StackPanel>
+        </Grid>
+        <Grid x:Name="ErrorState" Grid.Row="1" Canvas.ZIndex="41" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Visibility="Collapsed">
+            <StackPanel MaxWidth="420" Margin="24" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="12">
+                <TextBlock FontSize="24" FontWeight="SemiBold" Text="Grid could not load" />
+                <TextBlock x:Name="ErrorMessage" TextWrapping="Wrap" /><Button Content="Retry" Click="OnRetryClicked" HorizontalAlignment="Left" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

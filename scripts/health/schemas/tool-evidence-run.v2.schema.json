@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","title":"Grid tool evidence run v2","type":"object","additionalProperties":false,
+  "required":["schemaVersion","workspaceId","requestId","submissionId","envelopeSha256","planSha256","authorizationGrantId","authorizationBindingSha256","terminalState","mutationAuthorized","toolReceipts","runSha256"],
+  "properties":{"schemaVersion":{"const":2},"workspaceId":{"type":"string"},"requestId":{"type":"string"},"submissionId":{"type":"string"},"envelopeSha256":{"type":"string","pattern":"^[A-F0-9]{64}$"},"planSha256":{"type":"string","pattern":"^[A-F0-9]{64}$"},"authorizationGrantId":{"type":"string"},"authorizationBindingSha256":{"type":"string","pattern":"^[A-F0-9]{64}$"},"terminalState":{"enum":["EvidenceComplete","EvidencePartial","EvidenceUnavailable","EvidenceFailed"]},"mutationAuthorized":{"const":false},"toolReceipts":{"type":"array","items":{"$ref":"tool-evidence-receipt.v2.schema.json"}},"runSha256":{"type":"string","pattern":"^[A-F0-9]{64}$"}}
+}

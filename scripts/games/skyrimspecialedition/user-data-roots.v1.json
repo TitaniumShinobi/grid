@@ -1,0 +1,61 @@
+{
+  "$schema": "../../health/schemas/game-user-data-roots.v1.schema.json",
+  "schemaVersion": 1,
+  "gameId": "skyrimspecialedition",
+  "displayName": "Skyrim Special Edition",
+  "roots": [
+    {
+      "rootId": "skyrimUserData",
+      "anchor": "Documents",
+      "relativePath": "My Games/Skyrim Special Edition",
+      "role": "UserData",
+      "collectionPolicy": "ProtectedMetadataOnly",
+      "authority": "OfficialPrimary",
+      "confidence": "Verified",
+      "sourceIds": ["bethesdaSkyrimSaves"],
+      "excludedRelativePaths": [],
+      "artifacts": [
+        { "artifactId": "skyrimIni", "kind": "ConfigurationFile", "relativePath": "Skyrim.ini", "observation": "FullContentHash", "optional": true },
+        { "artifactId": "skyrimPrefsIni", "kind": "ConfigurationFile", "relativePath": "SkyrimPrefs.ini", "observation": "FullContentHash", "optional": true },
+        { "artifactId": "skyrimCustomIni", "kind": "ConfigurationFile", "relativePath": "SkyrimCustom.ini", "observation": "FullContentHash", "optional": true },
+        { "artifactId": "saves", "kind": "ProtectedDirectory", "relativePath": "Saves", "observation": "PresenceOnly", "optional": true }
+      ]
+    },
+    {
+      "rootId": "skseDiagnostics",
+      "anchor": "Documents",
+      "relativePath": "My Games/Skyrim Special Edition/SKSE",
+      "role": "Diagnostics",
+      "collectionPolicy": "BoundedTopLevelFiles",
+      "authority": "ProjectPrimary",
+      "confidence": "Corroborated",
+      "sourceIds": ["skseReadme", "observedSkyrimCrashLog"],
+      "excludedRelativePaths": [],
+      "maxFiles": 256,
+      "maxFileBytes": 33554432,
+      "artifacts": [
+        { "artifactId": "skseLogs", "kind": "DiagnosticFilePattern", "relativePath": "skse*.log", "observation": "BoundedRead", "optional": true },
+        { "artifactId": "crashLogs", "kind": "DiagnosticFilePattern", "relativePath": "crash-*.log", "observation": "BoundedRead", "optional": true }
+      ]
+    }
+  ],
+  "evidenceSources": [
+    {
+      "sourceId": "bethesdaSkyrimSaves",
+      "authority": "OfficialPrimary",
+      "url": "https://help.bethesda.net/app/answers/detail/a_id/41673/~/where-do-i-find-my-saves-for-the-elder-scrolls-v%3A-skyrim",
+      "claim": "Bethesda documents Skyrim Special Edition user saves beneath Documents/My Games/Skyrim Special Edition/Saves."
+    },
+    {
+      "sourceId": "skseReadme",
+      "authority": "ProjectPrimary",
+      "url": "https://github.com/ianpatt/skse64/blob/master/skse64_readme.txt",
+      "claim": "The SKSE64 project documents its logs beneath Documents/My Games/Skyrim Special Edition/SKSE."
+    },
+    {
+      "sourceId": "observedSkyrimCrashLog",
+      "authority": "ObservedLocal",
+      "claim": "Current local evidence shows crash-*.log files directly beneath the SKSE diagnostic root."
+    }
+  ]
+}

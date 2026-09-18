@@ -1,0 +1,129 @@
+{
+  "$schema": "../schemas/community-capability-catalog.v1.schema.json",
+  "schemaVersion": 1,
+  "gameId": "skyrimspecialedition",
+  "observedAtUtc": "2026-09-11T16:00:00Z",
+  "expiresAtUtc": "2026-10-11T16:00:00Z",
+  "sources": [
+    {
+      "sourceId": "nexus.skyrimspecialedition.5336.description",
+      "provider": "Nexus Mods",
+      "uri": "https://www.nexusmods.com/skyrimspecialedition/mods/5336",
+      "claims": [
+        "Immersive Jewelry 1.06a includes multi-finger ring behavior.",
+        "Its description documents left/right ring swapping and several simultaneously worn rings."
+      ]
+    },
+    {
+      "sourceId": "nexus.skyrimspecialedition.5336.files",
+      "provider": "Nexus Mods",
+      "uri": "https://www.nexusmods.com/skyrimspecialedition/mods/5336?tab=files",
+      "claims": [
+        "Immersive Jewelry SSE 1.05 is the required main payload.",
+        "Immersive Jewelry 1.06a is an update and still requires the main payload containing the meshes."
+      ]
+    },
+    {
+      "sourceId": "nexus.skyrimspecialedition.180015.description",
+      "provider": "Nexus Mods",
+      "uri": "https://www.nexusmods.com/skyrimspecialedition/mods/180015",
+      "claims": [
+        "My Precious...es - Multiple Rings SKSE 0.4.6 supports up to ten rings and mod-added rings that use slot 36 or the ClothingRing keyword.",
+        "Address Library is required; SkyUI and MCM Helper are optional for MCM configuration.",
+        "The New Gentleman must be version 4.1.0 or newer when present."
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "capabilityId": "grid.capability.equipment.multiple-rings",
+      "displayName": "Wear rings on multiple fingers",
+      "installedProviders": [
+        {
+          "providerId": "nexus.skyrimspecialedition.5336",
+          "name": "Immersive Jewelry",
+          "role": "Installed multi-ring and jewelry provider",
+          "nexusModId": 5336,
+          "aliases": [
+            "Immersive Jewelry",
+            "Immersive Jewelry 1.06a",
+            "Immersive Jewelry SSE"
+          ],
+          "requiredComponents": [
+            {
+              "componentId": "main",
+              "displayName": "Immersive Jewelry SSE 1.05 main payload",
+              "archivePrefixes": [
+                "Immersive Jewelry SSE 1.05"
+              ]
+            },
+            {
+              "componentId": "update",
+              "displayName": "Immersive Jewelry 1.06a update",
+              "archivePrefixes": [
+                "Immersive Jewelry 1.06a"
+              ]
+            }
+          ],
+          "sourceIds": [
+            "nexus.skyrimspecialedition.5336.description",
+            "nexus.skyrimspecialedition.5336.files"
+          ]
+        }
+      ],
+      "communityCandidates": [
+        {
+          "candidateId": "nexus.skyrimspecialedition.180015",
+          "name": "My Precious...es - Multiple Rings SKSE",
+          "provider": "Nexus Mods",
+          "uri": "https://www.nexusmods.com/skyrimspecialedition/mods/180015",
+          "providerLocator": {
+            "gameId": "skyrimspecialedition",
+            "modId": 180015
+          },
+          "version": "0.4.6",
+          "requiredDependencies": [
+            {
+              "displayName": "Address Library for SKSE Plugins",
+              "nexusModId": 32444,
+              "aliases": [
+                "Address Library for SKSE Plugins",
+                "Address Library All in One"
+              ]
+            }
+          ],
+          "optionalFeatures": [
+            {
+              "displayName": "MCM configuration",
+              "dependencies": [
+                {
+                  "displayName": "SkyUI",
+                  "nexusModId": 12604,
+                  "aliases": ["SkyUI"]
+                },
+                {
+                  "displayName": "MCM Helper",
+                  "nexusModId": 53000,
+                  "aliases": ["MCM Helper"]
+                }
+              ]
+            }
+          ],
+          "minimumVersionsWhenPresent": [
+            {
+              "displayName": "The New Gentleman",
+              "aliases": ["The New Gentleman", "TNG"],
+              "minimumVersion": "4.1.0"
+            }
+          ],
+          "unresolvedCoexistenceProviderIds": [
+            "nexus.skyrimspecialedition.5336"
+          ],
+          "sourceIds": [
+            "nexus.skyrimspecialedition.180015.description"
+          ]
+        }
+      ]
+    }
+  ]
+}

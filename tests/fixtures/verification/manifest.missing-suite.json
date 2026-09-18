@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "grid.verification.v1",
+  "lanes": [
+    { "id": "Portable", "description": "fixture" },
+    { "id": "WindowsSource", "description": "fixture" },
+    { "id": "Distribution", "description": "fixture" }
+  ],
+  "suites": [
+    {
+      "id": "missing-suite",
+      "displayName": "Missing suite",
+      "order": 10,
+      "kind": "PowerShell",
+      "path": "tests/fixtures/verification/does-not-exist.Tests.ps1",
+      "lanes": ["Portable"],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Fixture"
+    }
+  ]
+}

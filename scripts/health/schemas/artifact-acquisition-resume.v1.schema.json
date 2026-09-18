@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/artifact-acquisition-resume.v1.schema.json",
+  "title": "Grid Artifact Acquisition Resume Record v1",
+  "type": "object",
+  "required": ["schemaVersion", "state", "providerIdentity", "partPath", "downloadedBytes", "expectedSizeBytes", "validators", "requestedUri", "finalUri", "updatedAt"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "state": { "enum": ["Downloading", "Downloaded"] },
+    "providerIdentity": { "$ref": "artifact-provider-identity.v1.schema.json" },
+    "partPath": { "type": "string", "minLength": 1 },
+    "downloadedBytes": { "type": "integer", "minimum": 0, "maximum": 1073741824 },
+    "expectedSizeBytes": { "type": "integer", "minimum": 1, "maximum": 1073741824 },
+    "validators": {
+      "type": "object",
+      "required": ["etag", "lastModified"],
+      "properties": {
+        "etag": { "type": ["string", "null"] },
+        "lastModified": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "requestedUri": { "type": "string", "pattern": "^https://" },
+    "finalUri": { "type": "string", "pattern": "^https://" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": false
+}

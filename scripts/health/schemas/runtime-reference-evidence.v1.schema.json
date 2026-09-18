@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://grid.local/schemas/runtime-reference-evidence.v1.schema.json",
+  "title": "Grid Skyrim installed runtime-reference evidence v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "status", "records", "issues", "evidenceId"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "status": { "enum": ["Verified", "Incomplete"] },
+    "evidenceId": { "type": ["string", "null"] },
+    "records": { "type": "array", "items": { "type": "object" } },
+    "issues": { "type": "array", "items": { "type": "string" } }
+  }
+}

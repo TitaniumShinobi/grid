@@ -1,0 +1,10 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","title":"Grid tool evidence receipt v2","type":"object","additionalProperties":false,
+  "required":["schemaVersion","toolId","availability","status","workspaceId","requestId","submissionId","envelopeSha256","planSha256","authorizationGrantId","authorizationBindingSha256","capabilityId","capabilityVersion","adapterId","adapterVersion","normalizedInputSha256","outputSha256","evidenceSha256","startedAt","completedAt","durationMilliseconds","exitCode","reason","stdout","stderr","evidence","receiptSha256"],
+  "properties":{
+    "schemaVersion":{"const":2},"toolId":{"type":"string"},"availability":{"enum":["Available","Unavailable","Misconfigured","UnsupportedForGame","UnsupportedForClass"]},"status":{"enum":["Collected","Unavailable","Failed"]},
+    "workspaceId":{"type":"string"},"requestId":{"type":"string"},"submissionId":{"type":"string"},"envelopeSha256":{"type":"string","pattern":"^[A-F0-9]{64}$"},"planSha256":{"type":"string","pattern":"^[A-F0-9]{64}$"},"authorizationGrantId":{"type":"string"},"authorizationBindingSha256":{"type":"string","pattern":"^[A-F0-9]{64}$"},
+    "capabilityId":{"type":"string"},"capabilityVersion":{"type":"string"},"adapterId":{"type":["string","null"]},"adapterVersion":{"type":["string","null"]},"normalizedInputSha256":{"type":"string","pattern":"^[A-F0-9]{64}$"},"outputSha256":{"type":"string","pattern":"^[A-F0-9]{64}$"},"evidenceSha256":{"type":"string","pattern":"^[A-F0-9]{64}$"},
+    "startedAt":{"type":"string"},"completedAt":{"type":"string"},"durationMilliseconds":{"type":"integer","minimum":0},"exitCode":{"type":["integer","null"]},"reason":{"type":["string","null"]},"stdout":{"type":"string"},"stderr":{"type":"string"},"evidence":{"type":"array"},"receiptSha256":{"type":"string","pattern":"^[A-F0-9]{64}$"}
+  }
+}

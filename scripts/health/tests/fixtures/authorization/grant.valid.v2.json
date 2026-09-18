@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "grantId": "grant-0123456789abcdef0123456789abcdef",
+  "reviewId": "review.fixture",
+  "state": "Issued",
+  "authorityClass": "Mutation",
+  "semanticBinding": {
+    "schemaVersion": 1,
+    "actorId": "actor.fixture",
+    "sessionId": "session.fixture",
+    "workspaceId": "workspace.fixture",
+    "requestId": "request.fixture",
+    "submissionId": "submission.fixture",
+    "envelopeSha256": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+    "planSha256": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+    "scopeSha256": "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC",
+    "proposalOrSpecificationId": "proposal.fixture",
+    "proposalOrSpecificationSha256": "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+    "capabilities": [
+      {
+        "capabilityId": "grid.health.fixture",
+        "capabilityVersion": "2.0.0",
+        "adapterId": null,
+        "adapterVersion": null
+      }
+    ],
+    "targets": [
+      "fixture-target"
+    ],
+    "normalizedInputSha256": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
+  },
+  "semanticBindingSha256": "0424313F60647E1457515323FC2824CE5E12B1B7CE4AD84765CC3F58AA377C97",
+  "secretProof": {
+    "algorithm": "PBKDF2-HMAC-SHA1",
+    "iterations": 200000,
+    "saltBase64": "MDEyMzQ1Njc4OWFiY2RlZg==",
+    "hashBase64": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8="
+  },
+  "issuedAt": "2026-09-02T20:00:00Z",
+  "expiresAt": "2026-09-02T20:15:00Z",
+  "lease": null,
+  "consumption": null,
+  "failure": null
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/skyrimspecialedition/esl-eligibility-result.v1.schema.json",
+  "title": "Grid Skyrim ESL eligibility result v1",
+  "type": "object",
+  "required": ["schemaVersion", "status", "pluginName", "classification", "newRecordCount", "maximumObjectId", "hasNewCell", "hasEsmFlag", "warning", "contextFingerprint", "supportingEvidenceIds", "observedAt", "mutationAuthorized"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "status": { "enum": ["AlreadyLight", "EligibleWithoutCompaction", "CompactionRequired", "Ineligible", "UnsafeEngineRisk"] },
+    "pluginName": { "type": "string", "pattern": "^[^\\/\\r\\n]+\\.(?i:esp|esm|esl)$" },
+    "classification": { "enum": ["AlreadyLight", "HeaderFlagOnly", "CompactionRequired", "IneligibleTooManyNewRecords"] },
+    "newRecordCount": { "type": "integer", "minimum": 0, "maximum": 4095 },
+    "maximumObjectId": { "type": "string", "pattern": "^[A-F0-9]{6}$" },
+    "hasNewCell": { "type": "boolean" },
+    "hasEsmFlag": { "type": "boolean" },
+    "warning": { "type": ["string", "null"], "enum": [null, "EsmWithNewCellEngineRisk"] },
+    "contextFingerprint": { "type": "string", "minLength": 1 },
+    "supportingEvidenceIds": { "type": "array", "minItems": 1, "maxItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "observedAt": { "type": "string", "minLength": 1 },
+    "mutationAuthorized": { "const": false }
+  },
+  "additionalProperties": false
+}

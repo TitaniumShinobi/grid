@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/diagnostic-result.v1.schema.json",
+  "title": "Grid Diagnostic Result v1",
+  "type": "object",
+  "required": ["schemaVersion", "caseId", "state", "contextFingerprint", "evidenceFingerprint", "semanticEvidenceFingerprint", "resolverVersion", "policyVersion", "result", "resultFingerprint", "createdAt"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "caseId": { "type": "string", "minLength": 1 },
+    "state": { "enum": ["NeedsContext", "NeedsEvidence", "ReadyToCollect", "Diagnosed", "Failed"] },
+    "contextFingerprint": { "type": "string" },
+    "evidenceFingerprint": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "semanticEvidenceFingerprint": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "resolverVersion": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "policyVersion": { "const": "diagnostic-result.v1" },
+    "result": {
+      "type": "object",
+      "required": ["affectedMods", "modRoles", "finding", "solution"],
+      "properties": {
+        "affectedMods": { "$ref": "#/$defs/affectedField" },
+        "modRoles": { "$ref": "#/$defs/roleField" },
+        "finding": { "$ref": "#/$defs/textField" },
+        "solution": { "$ref": "#/$defs/solutionField" }
+      },
+      "additionalProperties": false
+    },
+    "resultFingerprint": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "createdAt": { "type": "string", "format": "date-time" }
+  },
+  "$defs": {
+    "status": { "enum": ["Resolved", "Unresolved"] },
+    "affectedField": {
+      "type": "object",
+      "required": ["status", "items", "evidenceIds"],
+      "properties": {
+        "status": { "$ref": "#/$defs/status" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["subjectId", "kind", "name", "authoritativeOrder"],
+            "properties": {
+              "subjectId": { "type": "string", "minLength": 1, "maxLength": 512 },
+              "kind": { "enum": ["Mod", "Plugin"] },
+              "name": { "type": "string", "minLength": 1, "maxLength": 512 },
+              "authoritativeOrder": { "type": ["integer", "null"], "minimum": 0 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "evidenceIds": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "roleField": {
+      "type": "object",
+      "required": ["status", "items", "evidenceIds"],
+      "properties": {
+        "status": { "$ref": "#/$defs/status" },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["subjectId", "roles"],
+            "properties": {
+              "subjectId": { "type": "string", "minLength": 1, "maxLength": 512 },
+              "roles": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": { "enum": ["BaseOrMaster", "WorldspaceOrCellEditor", "PlacementProvider", "OverrideProvider", "CompatibilityPatch", "AssetProvider", "AssetReplacer", "GeneratedOutput", "Dependency", "RuntimeModuleProvider"] }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "evidenceIds": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "textField": {
+      "type": "object",
+      "required": ["status", "text", "evidenceIds"],
+      "properties": {
+        "status": { "$ref": "#/$defs/status" },
+        "text": { "type": "string", "minLength": 1, "maxLength": 4096 },
+        "evidenceIds": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      },
+      "additionalProperties": false
+    },
+    "solutionField": {
+      "type": "object",
+      "required": ["status", "text", "evidenceIds"],
+      "properties": {
+        "status": { "enum": ["Verified", "Proposed", "Unsupported", "Unresolved"] },
+        "text": { "type": "string", "minLength": 1, "maxLength": 4096 },
+        "evidenceIds": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+        "proposalId": { "type": ["string", "null"] },
+        "verificationId": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

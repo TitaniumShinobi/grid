@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "classId": "grid.class.plugins-dependencies",
+  "recipeVersion": "1.0.0",
+  "displayName": "Plugins & Dependencies",
+  "iconId": "grid.icon.plugin",
+  "coverage": "Registered",
+  "supportedGames": [
+    "skyrimspecialedition"
+  ],
+  "selectionPolicy": {
+    "mods": {
+      "minimum": 1,
+      "maximum": null
+    },
+    "tools": {
+      "minimum": 0,
+      "maximum": null,
+      "allowedToolIds": [
+        "grid.tool.loot",
+        "grid.tool.mo2"
+      ]
+    }
+  },
+  "evidencePolicy": {
+    "requiredAnyOf": [
+      [
+        "providerSeeds"
+      ]
+    ]
+  },
+  "pipelines": {
+    "diagnose": {
+      "rootCapabilityIds": [
+        "grid.game.skyrimspecialedition.baseline.collect"
+      ]
+    },
+    "propose": null,
+    "execute": null,
+    "verify": null
+  }
+}

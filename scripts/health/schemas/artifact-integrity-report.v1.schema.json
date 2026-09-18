@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "https://grid.local/schemas/health/artifact-integrity-report.v1.schema.json",
+  "title": "Grid Artifact Integrity Report v1", "type": "object",
+  "required": ["schemaVersion", "artifactId", "path", "status", "sizeBytes", "sha256", "identityEvidenceIds", "observedAt"],
+  "properties": {
+    "schemaVersion": { "const": 1 }, "artifactId": { "type": "string", "minLength": 1 }, "path": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["Verified", "Missing", "Unreadable", "ChangedDuringRead", "Rejected", "IdentityUnresolved"] },
+    "sizeBytes": { "type": ["integer", "null"], "minimum": 0 }, "sha256": { "type": ["string", "null"], "pattern": "^[A-F0-9]{64}$" },
+    "identityEvidenceIds": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true }, "observedAt": { "type": "string", "format": "date-time" },
+    "provenance": { "type": "object" }
+  }, "additionalProperties": false
+}

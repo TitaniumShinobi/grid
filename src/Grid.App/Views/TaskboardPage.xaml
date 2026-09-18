@@ -1,0 +1,69 @@
+<Page
+    x:Class="Grid.App.Views.TaskboardPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid AutomationProperties.Name="GRID Taskboard" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid ColumnSpacing="1" Background="{ThemeResource ShellDividerBrush}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid>
+                    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+                    <Grid Margin="14,10,8,6" ColumnDefinitions="*,Auto">
+                        <TextBlock Text="QUEUE" VerticalAlignment="Center" Style="{StaticResource ShellSectionHeaderStyle}" />
+                        <Button Grid.Column="1" Width="28" Height="26" Padding="0" Content="×"
+                                AutomationProperties.Name="Close Activity Taskboard" Click="OnCloseClicked"
+                                Style="{StaticResource ShellChromeButtonStyle}" ToolTipService.ToolTip="Close Activity Taskboard" />
+                    </Grid>
+                    <Grid Grid.Row="1" Margin="12,0,12,8" Height="22" ColumnDefinitions="*,*,*,*" Background="{ThemeResource ShellPanelBrush}">
+                        <TextBlock x:Name="QueueScore" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="11" />
+                        <TextBlock x:Name="ProgressScore" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="11" />
+                        <TextBlock x:Name="ReadyScore" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="11" />
+                        <TextBlock x:Name="LedgerScore" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="11" />
+                    </Grid>
+                    <ScrollViewer Grid.Row="2" HorizontalScrollBarVisibility="Disabled"><StackPanel x:Name="QueueCards" Padding="12,0,12,10" Spacing="8" /></ScrollViewer>
+                    <StackPanel Grid.Row="3" Margin="12,4,12,8" Spacing="6">
+                        <TextBlock Text="SUGGESTIONS" Style="{StaticResource ShellSectionHeaderStyle}" />
+                        <StackPanel x:Name="SuggestionCards" Spacing="6" />
+                    </StackPanel>
+                    <TextBox x:Name="TaskComposer" Grid.Row="4" Margin="12,4,12,4"
+                             PlaceholderText="Plan a task…" AutomationProperties.Name="Activity task composer" />
+                    <Grid Grid.Row="5" Margin="12,0,12,12" ColumnDefinitions="*,Auto" ColumnSpacing="6">
+                        <StackPanel Orientation="Horizontal" Spacing="4">
+                            <Button Content="+" AutomationProperties.Name="Attach to Activity task" Click="OnAttachClicked"
+                                    Style="{StaticResource ShellChromeButtonStyle}" ToolTipService.ToolTip="Attach" />
+                        </StackPanel>
+                        <Button Grid.Column="1" Content="↑" AutomationProperties.Name="Send Activity task to chat"
+                                Click="OnComposeClicked" Style="{StaticResource AccentButtonStyle}" />
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="1" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+                    <TextBlock Margin="14,12,14,8" Text="IN PROGRESS" Style="{StaticResource ShellSectionHeaderStyle}" />
+                    <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Disabled"><StackPanel x:Name="ProgressCards" Padding="12,0,12,12" Spacing="8" /></ScrollViewer>
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="2" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+                    <TextBlock Margin="14,12,14,8" Text="READY" Style="{StaticResource ShellSectionHeaderStyle}" />
+                    <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Disabled"><StackPanel x:Name="ReadyCards" Padding="12,0,12,12" Spacing="8" /></ScrollViewer>
+                </Grid>
+            </Border>
+
+            <Border Grid.Column="3" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <Grid><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+                    <TextBlock Margin="14,12,14,8" Text="LEDGER" Style="{StaticResource ShellSectionHeaderStyle}" />
+                    <ScrollViewer x:Name="LedgerScroll" Grid.Row="1" HorizontalScrollBarVisibility="Disabled"><StackPanel x:Name="LedgerCards" Padding="12,0,12,12" Spacing="8" /></ScrollViewer>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

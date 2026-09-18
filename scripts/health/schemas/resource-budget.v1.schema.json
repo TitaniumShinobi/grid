@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://grid.local/schemas/resource-budget.v1.schema.json",
+  "title": "Grid diagnostic baseline resource budget v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "policyVersion", "createdAt", "limits", "recordedLimits", "derivedBudgetInputs", "derivedAllocations", "derivedBudgetFormulas", "checkpointPolicy"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "policyVersion": { "const": "grid.baseline.resource-policy.v1" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "limits": {
+      "type": "object", "additionalProperties": false,
+      "required": ["maximumWallClockSeconds", "maximumFilesObserved", "maximumEntries", "maximumRecordCatalogEntries", "maximumBytesRead", "maximumBytesHashed", "maximumAttachmentBytes", "maximumCopiedEvidenceBytes", "maximumPriorCases", "maximumConcurrentReads"],
+      "properties": {
+        "maximumWallClockSeconds": { "type": "integer", "minimum": 1 }, "maximumFilesObserved": { "type": "integer", "minimum": 0 },
+        "maximumEntries": { "type": "integer", "minimum": 0 }, "maximumRecordCatalogEntries": { "const": 10000000 }, "maximumBytesRead": { "type": "integer", "minimum": 1 },
+        "maximumBytesHashed": { "type": "integer", "minimum": 0 }, "maximumAttachmentBytes": { "type": "integer", "minimum": 1 },
+        "maximumCopiedEvidenceBytes": { "type": "integer", "minimum": 0 }, "maximumPriorCases": { "type": "integer", "minimum": 1 },
+        "maximumConcurrentReads": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "recordedLimits": {
+      "type": "object", "additionalProperties": false,
+      "required": ["maximumWallClockSeconds", "maximumFilesObserved", "maximumEntries", "maximumRecordCatalogEntries", "maximumBytesRead", "maximumBytesHashed", "maximumAttachmentBytes", "maximumCaseMetadataBytes", "minimumFreeDiskReserveBytes", "minimumFreeDiskReservePercent", "maximumWorkingMemoryBytes", "maximumIdleSeconds", "maximumRetries", "retryDelaySeconds", "maximumPriorCases", "maximumConcurrentReads", "remote", "profile", "configuration", "modMetadata", "parser", "virtualData", "archive"],
+      "properties": {
+        "maximumWallClockSeconds": { "type": "integer", "minimum": 1 }, "maximumFilesObserved": { "type": "integer", "minimum": 1 }, "maximumEntries": { "const": 2000000 }, "maximumRecordCatalogEntries": { "const": 10000000 },
+        "maximumBytesRead": { "type": "integer", "minimum": 1 }, "maximumBytesHashed": { "type": "integer", "minimum": 1 }, "maximumAttachmentBytes": { "type": "integer", "minimum": 1 },
+        "maximumCaseMetadataBytes": { "const": 17179869184 }, "minimumFreeDiskReserveBytes": { "const": 10737418240 }, "minimumFreeDiskReservePercent": { "const": 15 },
+        "maximumWorkingMemoryBytes": { "const": 536870912 }, "maximumIdleSeconds": { "const": 300 }, "maximumRetries": { "const": 1 }, "retryDelaySeconds": { "const": 2 },
+        "maximumPriorCases": { "type": "integer", "minimum": 1 }, "maximumConcurrentReads": { "const": 4 },
+        "remote": { "$ref": "#/definitions/remote" }, "profile": { "$ref": "#/definitions/profile" }, "configuration": { "$ref": "#/definitions/configuration" },
+        "modMetadata": { "$ref": "#/definitions/modMetadata" }, "parser": { "$ref": "#/definitions/parser" }, "virtualData": { "$ref": "#/definitions/virtualData" }, "archive": { "$ref": "#/definitions/archive" }
+      }
+    },
+    "derivedBudgetInputs": {
+      "type": "object", "additionalProperties": false,
+      "required": ["estimatedTraversalEntries", "estimatedHashBytes", "estimatedCopiedEvidenceBytes", "caseStoreVolumeBytes", "caseStoreFreeBytes", "sourceDeviceClass", "measuredThroughputBytesPerSecond", "effectiveMemoryBytes"],
+      "properties": {
+        "estimatedTraversalEntries": { "type": "integer", "minimum": 0 }, "estimatedHashBytes": { "type": "integer", "minimum": 0 }, "estimatedCopiedEvidenceBytes": { "type": "integer", "minimum": 0 },
+        "caseStoreVolumeBytes": { "type": "integer", "minimum": 0 }, "caseStoreFreeBytes": { "type": "integer", "minimum": 0 }, "sourceDeviceClass": { "type": "string", "minLength": 1 },
+        "measuredThroughputBytesPerSecond": { "type": "integer", "minimum": 1 }, "effectiveMemoryBytes": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "derivedAllocations": {
+      "type": "object", "additionalProperties": false,
+      "required": ["traversalEntries", "recordCatalogEntries", "hashBytes", "copiedEvidenceBytes", "storageReserveBytes", "wallClockSeconds", "memoryBytes", "concurrentMetadataReads", "concurrentHashReads"],
+      "properties": {
+        "traversalEntries": { "type": "integer", "minimum": 0, "maximum": 2000000 }, "recordCatalogEntries": { "const": 10000000 }, "hashBytes": { "type": "integer", "minimum": 0, "maximum": 1099511627776 },
+        "copiedEvidenceBytes": { "type": "integer", "minimum": 0, "maximum": 17179869184 }, "storageReserveBytes": { "type": "integer", "minimum": 10737418240 },
+        "wallClockSeconds": { "type": "integer", "minimum": 900, "maximum": 14400 }, "memoryBytes": { "type": "integer", "minimum": 0, "maximum": 536870912 },
+        "concurrentMetadataReads": { "const": 4 }, "concurrentHashReads": { "const": 2 }
+      }
+    },
+    "derivedBudgetFormulas": {
+      "type": "object", "additionalProperties": false,
+      "required": ["reserve", "copied", "hash", "traversal", "recordCatalog", "wall", "memory", "metadataReaders", "hashReaders"],
+      "properties": {
+        "reserve": { "const": "max(10GiB,floor(caseStoreVolumeBytes*0.15))" },
+        "copied": { "const": "min(16GiB,ceil(estimatedCopiedEvidenceBytes*1.25)+256MiB,max(0,caseStoreFreeBytes-storageReserveBytes))" },
+        "hash": { "const": "min(estimatedHashBytes,1TiB)" }, "traversal": { "const": "min(estimatedTraversalEntries,2000000)" }, "recordCatalog": { "const": "10000000 streamed rows; bounded by the TES4 record-header ceiling" },
+        "wall": { "const": "min(14400,max(900,ceil(hashBytes/max(measuredThroughputBytesPerSecond,1))*1.5+900))" },
+        "memory": { "const": "min(512MiB,effectiveMemoryBytes)" }, "metadataReaders": { "const": "4" }, "hashReaders": { "const": "2" }
+      }
+    },
+    "checkpointPolicy": {
+      "type": "object", "additionalProperties": false,
+      "required": ["intervalFiles", "intervalSeconds", "intervalHashedBytes"],
+      "properties": { "intervalFiles": { "const": 100000 }, "intervalSeconds": { "const": 1200 }, "intervalHashedBytes": { "const": 68719476736 } }
+    }
+  },
+  "definitions": {
+    "remote": { "type": "object", "additionalProperties": false, "required": ["maximumItems", "maximumItemBytes", "maximumAggregateBytes", "timeoutSeconds", "maximumRedirects"], "properties": { "maximumItems": { "const": 16 }, "maximumItemBytes": { "const": 2097152 }, "maximumAggregateBytes": { "const": 16777216 }, "timeoutSeconds": { "const": 20 }, "maximumRedirects": { "const": 5 } } },
+    "profile": { "type": "object", "additionalProperties": false, "required": ["maximumFileBytes", "maximumRefreshBytes"], "properties": { "maximumFileBytes": { "const": 33554432 }, "maximumRefreshBytes": { "const": 268435456 } } },
+    "configuration": { "type": "object", "additionalProperties": false, "required": ["maximumFileBytes", "maximumLines", "maximumEntries"], "properties": { "maximumFileBytes": { "const": 8388608 }, "maximumLines": { "const": 65536 }, "maximumEntries": { "const": 4096 } } },
+    "modMetadata": { "type": "object", "additionalProperties": false, "required": ["maximumMetadataBytes", "maximumCategoriesBytes", "maximumRefreshBytes"], "properties": { "maximumMetadataBytes": { "const": 2097152 }, "maximumCategoriesBytes": { "const": 8388608 }, "maximumRefreshBytes": { "const": 268435456 } } },
+    "parser": { "type": "object", "additionalProperties": false, "required": ["maximumPluginHeaderBytes", "maximumArchiveIndexBytes", "maximumArchiveMembers"], "properties": { "maximumPluginHeaderBytes": { "const": 16777216 }, "maximumArchiveIndexBytes": { "const": 67108864 }, "maximumArchiveMembers": { "const": 1000000 } } },
+    "virtualData": { "type": "object", "additionalProperties": false, "required": ["maximumDepth", "maximumSegmentLength", "maximumVirtualPathLength", "maximumVirtualPaths", "maximumProviderLinks"], "properties": { "maximumDepth": { "const": 64 }, "maximumSegmentLength": { "const": 255 }, "maximumVirtualPathLength": { "const": 1024 }, "maximumVirtualPaths": { "const": 2000000 }, "maximumProviderLinks": { "const": 8000000 } } },
+    "archive": { "type": "object", "additionalProperties": false, "required": ["maximumArchives", "maximumTotalMembers", "maximumAggregateIndexBytes"], "properties": { "maximumArchives": { "const": 16384 }, "maximumTotalMembers": { "const": 2000000 }, "maximumAggregateIndexBytes": { "const": 536870912 } } }
+  }
+}

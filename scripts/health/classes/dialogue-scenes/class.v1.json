@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "classId": "grid.class.dialogue-scenes",
+  "recipeVersion": "1.0.0",
+  "displayName": "Dialogue & Scenes",
+  "iconId": "grid.icon.dialogue",
+  "coverage": "Unsupported",
+  "supportedGames": [
+    "skyrimspecialedition"
+  ],
+  "selectionPolicy": {
+    "mods": {
+      "minimum": 0,
+      "maximum": null
+    },
+    "tools": {
+      "minimum": 0,
+      "maximum": null,
+      "allowedToolIds": []
+    }
+  },
+  "evidencePolicy": {
+    "requiredAnyOf": []
+  },
+  "pipelines": {
+    "diagnose": null,
+    "propose": null,
+    "execute": null,
+    "verify": null
+  }
+}

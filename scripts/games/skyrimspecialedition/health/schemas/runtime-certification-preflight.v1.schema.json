@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/skyrimspecialedition/runtime-certification-preflight.v1.schema.json",
+  "title": "Grid Skyrim runtime-certification preflight v1",
+  "type": "object",
+  "required": ["schemaVersion", "status", "eligibilityFingerprint", "processes", "paths", "writablePaths", "protectedPaths", "gates", "limits", "closePolicy", "rollbackBehavior", "issues", "semanticFingerprint"],
+  "properties": {
+    "schemaVersion": { "const": 1 }, "status": { "enum": ["Ready", "Blocked"] }, "eligibilityFingerprint": { "$ref": "#/$defs/digest" },
+    "processes": { "type": "array", "items": { "type": "object" } }, "paths": { "type": "object" }, "writablePaths": { "type": "array", "items": { "type": "string" } }, "protectedPaths": { "type": "array", "items": { "type": "string" } },
+    "gates": { "type": "array", "minItems": 8, "maxItems": 8 }, "limits": { "type": "object" }, "closePolicy": { "type": "string" }, "rollbackBehavior": { "type": "string" }, "issues": { "type": "array", "items": { "type": "string" } }, "semanticFingerprint": { "$ref": "#/$defs/digest" }
+  },
+  "$defs": { "digest": { "type": "string", "pattern": "^[A-F0-9]{64}$" } }, "additionalProperties": false
+}

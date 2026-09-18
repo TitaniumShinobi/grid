@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "grid://schemas/skyrimspecialedition/papyrus-state-evidence.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "status", "contextFingerprint", "source", "inspection", "limitations"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "status": { "const": "Observed" },
+    "contextFingerprint": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sizeBytes", "sha256", "collectedAtUtc", "beforeLastWriteTimeUtcTicks", "afterLastWriteTimeUtcTicks"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1 },
+        "sizeBytes": { "type": "integer", "minimum": 1, "maximum": 33554432 },
+        "sha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" },
+        "collectedAtUtc": { "type": "string", "format": "date-time" },
+        "beforeLastWriteTimeUtcTicks": { "type": "integer" },
+        "afterLastWriteTimeUtcTicks": { "type": "integer" }
+      }
+    },
+    "inspection": {
+      "type": "object",
+      "required": ["status", "format", "properties", "routines", "conditions", "calls", "symbols", "issues", "instructions", "stateAnalysis", "variables", "assignments"]
+    },
+    "limitations": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+  }
+}

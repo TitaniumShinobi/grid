@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/capability-proposal-draft.v1.schema.json",
+  "title": "Grid Capability Proposal Draft v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "gapId",
+    "requiredCapabilityId",
+    "requestedOutcome",
+    "status",
+    "canonicalDirectory",
+    "candidate",
+    "requiredDesignInputs",
+    "nextAction",
+    "executable",
+    "mutationAuthorized",
+    "proposalDraftSha256"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "gapId": { "type": "string", "pattern": "^gap\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+    "requiredCapabilityId": { "type": "string", "pattern": "^grid\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+    "requestedOutcome": { "type": "string", "minLength": 1 },
+    "status": { "const": "NeedsDesignEvidence" },
+    "canonicalDirectory": { "type": "string", "minLength": 1 },
+    "candidate": { "$ref": "./script-capability-candidate.v1.schema.json" },
+    "requiredDesignInputs": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "nextAction": { "type": "string", "minLength": 1 },
+    "executable": { "const": false },
+    "mutationAuthorized": { "const": false },
+    "proposalDraftSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" }
+  },
+  "additionalProperties": false
+}

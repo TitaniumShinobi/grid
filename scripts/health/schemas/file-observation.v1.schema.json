@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://grid.local/schemas/file-observation.v1.schema.json",
+  "title": "Grid diagnostic file observation v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "observationId", "caseId", "pathToken", "fileName", "observedAt", "readabilityStatus", "hashStatus", "parseStatus", "sizeBytes", "lastWriteTimeBefore", "lastWriteTimeAfter", "sha256", "parser", "warnings"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "observationId": { "type": "string", "minLength": 1 },
+    "caseId": { "type": "string", "minLength": 1 },
+    "pathToken": { "type": "string", "minLength": 1 },
+    "fileName": { "type": "string", "minLength": 1 },
+    "observedAt": { "type": "string", "format": "date-time" },
+    "readabilityStatus": { "enum": ["Readable", "Missing", "AccessDenied", "SharingViolation", "IoError", "NotAFile", "ReparsePointRefused"] },
+    "hashStatus": { "enum": ["Hashed", "SkippedByPolicy", "SkippedByLimit", "ChangedDuringRead", "Failed"] },
+    "parseStatus": { "enum": ["Valid", "Malformed", "Unsupported", "NotApplicable"] },
+    "sizeBytes": { "type": ["integer", "null"], "minimum": 0 },
+    "lastWriteTimeBefore": { "type": ["string", "null"], "format": "date-time" },
+    "lastWriteTimeAfter": { "type": ["string", "null"], "format": "date-time" },
+    "sha256": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[A-F0-9]{64}$" }] },
+    "parser": { "type": ["string", "null"] },
+    "warnings": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "grid.verification.v1",
+  "lanes": [
+    { "id": "Portable", "description": "fixture" },
+    { "id": "WindowsSource", "description": "fixture" },
+    { "id": "Distribution", "description": "fixture" }
+  ],
+  "suites": [
+    {
+      "id": "duplicate-order-a",
+      "displayName": "A",
+      "order": 10,
+      "kind": "PowerShell",
+      "path": "tests/ArchitectureConformance.Tests.ps1",
+      "lanes": ["Portable"],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Fixture"
+    },
+    {
+      "id": "duplicate-order-b",
+      "displayName": "B",
+      "order": 10,
+      "kind": "PowerShell",
+      "path": "tests/ArchitectureConformance.Tests.ps1",
+      "lanes": ["Portable"],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Fixture"
+    }
+  ]
+}

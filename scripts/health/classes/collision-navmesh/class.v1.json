@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "classId": "grid.class.collision-navmesh",
+  "recipeVersion": "1.0.0",
+  "displayName": "Collision & Navmesh",
+  "iconId": "grid.icon.collision",
+  "coverage": "Unsupported",
+  "supportedGames": [
+    "skyrimspecialedition"
+  ],
+  "selectionPolicy": {
+    "mods": {
+      "minimum": 0,
+      "maximum": null
+    },
+    "tools": {
+      "minimum": 0,
+      "maximum": null,
+      "allowedToolIds": []
+    }
+  },
+  "evidencePolicy": {
+    "requiredAnyOf": []
+  },
+  "pipelines": {
+    "diagnose": null,
+    "propose": null,
+    "execute": null,
+    "verify": null
+  }
+}

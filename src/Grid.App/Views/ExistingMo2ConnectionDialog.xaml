@@ -1,0 +1,333 @@
+<ContentDialog
+    x:Class="Grid.App.Views.ExistingMo2ConnectionDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    DefaultButton="None"
+    Title="Connect an existing MO2 installation">
+
+    <Grid
+        Width="500"
+        MaxWidth="500"
+        MinHeight="430"
+        MaxHeight="600"
+        RowSpacing="14">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Border
+            Padding="12"
+            Background="{ThemeResource ShellSurfaceBrush}"
+            CornerRadius="8"
+            AutomationProperties.Name="Existing MO2 connection disclosure">
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <FontIcon
+                    FontFamily="Segoe Fluent Icons"
+                    FontSize="15"
+                    Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}"
+                    Glyph="&#xE946;" />
+                <StackPanel Grid.Column="1" Spacing="3">
+                    <TextBlock FontWeight="SemiBold" Text="LINK IN PLACE · READ ONLY" />
+                    <TextBlock
+                        FontSize="12"
+                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                        Text="Grid links this installation without importing, moving, launching, or modifying MO2, profiles, mods, downloads, or game files."
+                        TextWrapping="Wrap" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <InfoBar
+            x:Name="OperationStatus"
+            Grid.Row="1"
+            AutomationProperties.LiveSetting="Assertive"
+            AutomationProperties.Name="MO2 connection status"
+            IsClosable="True"
+            IsOpen="False" />
+
+        <Grid Grid.Row="2">
+            <StackPanel x:Name="StepDetect" AutomationProperties.Name="MO2 onboarding step 1" Spacing="16">
+                <StackPanel Spacing="5">
+                    <TextBlock Style="{StaticResource ShellLabelStyle}" Text="1 · DETECT OR BROWSE" />
+                    <TextBlock FontSize="20" FontWeight="SemiBold" Text="Find your MO2 installation." />
+                    <TextBlock
+                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                        Text="Choose automatic detection or browse directly to the installation you trust."
+                        TextWrapping="Wrap" />
+                </StackPanel>
+
+                <StackPanel Spacing="10">
+                    <Button
+                        x:Name="DetectButton"
+                        HorizontalAlignment="Stretch"
+                        AutomationProperties.HelpText="Searches only bounded, evidence-backed Windows locations without starting MO2."
+                        AutomationProperties.Name="Detect likely MO2 installations"
+                        Click="OnDetectClicked"
+                        Content="Detect automatically"
+                        Style="{StaticResource AccentButtonStyle}" />
+                    <Button
+                        x:Name="BrowseExecutableButton"
+                        HorizontalAlignment="Stretch"
+                        AutomationProperties.Name="Browse to ModOrganizer executable"
+                        Click="OnBrowseExecutableClicked"
+                        Content="Browse to ModOrganizer.exe" />
+                    <Button
+                        x:Name="BrowseDirectoryButton"
+                        HorizontalAlignment="Stretch"
+                        AutomationProperties.Name="Browse to MO2 instance directory"
+                        Click="OnBrowseDirectoryClicked"
+                        Content="Browse to MO2 directory" />
+                </StackPanel>
+
+                <Border
+                    x:Name="StepDetectResult"
+                    Padding="10"
+                    Background="{ThemeResource ShellSurfaceBrush}"
+                    CornerRadius="6"
+                    Visibility="Collapsed">
+                    <TextBlock
+                        x:Name="StepDetectResultText"
+                        AutomationProperties.LiveSetting="Polite"
+                        AutomationProperties.Name="MO2 detection summary"
+                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                        TextWrapping="Wrap" />
+                </Border>
+
+                <Border
+                    x:Name="OperationProgress"
+                    Padding="10"
+                    Background="{ThemeResource ShellSurfaceBrush}"
+                    CornerRadius="6"
+                    Visibility="Collapsed">
+                    <Grid ColumnSpacing="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <ProgressRing
+                            x:Name="BusyIndicator"
+                            Width="20"
+                            Height="20"
+                            AutomationProperties.Name="MO2 discovery and validation progress"
+                            IsActive="False" />
+                        <TextBlock
+                            x:Name="BusyText"
+                            Grid.Column="1"
+                            VerticalAlignment="Center"
+                            AutomationProperties.LiveSetting="Polite"
+                            AutomationProperties.Name="MO2 connection progress status"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                        <Button
+                            x:Name="CancelOperationButton"
+                            Grid.Column="2"
+                            AutomationProperties.Name="Cancel current MO2 onboarding operation"
+                            Click="OnCancelOperationClicked"
+                            Content="Cancel operation"
+                            Visibility="Collapsed" />
+                    </Grid>
+                </Border>
+            </StackPanel>
+
+            <StackPanel
+                x:Name="StepSelect"
+                AutomationProperties.Name="MO2 onboarding step 2"
+                Spacing="14"
+                Visibility="Collapsed">
+                <StackPanel Spacing="5">
+                    <TextBlock Style="{StaticResource ShellLabelStyle}" Text="2 · SELECT INSTALLATION" />
+                    <TextBlock FontSize="20" FontWeight="SemiBold" Text="Choose the installation to link." />
+                    <TextBlock
+                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                        Text="Select one candidate. Nothing is connected until it passes validation."
+                        TextWrapping="Wrap" />
+                </StackPanel>
+
+                <ListView
+                    x:Name="CandidateList"
+                    MinHeight="220"
+                    MaxHeight="330"
+                    AutomationProperties.HelpText="Choose one discovered or browsed location."
+                    AutomationProperties.Name="MO2 installation candidates"
+                    SelectionChanged="OnCandidateSelectionChanged"
+                    SelectionMode="Single">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid MinHeight="64" Padding="10" ColumnSpacing="12">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Spacing="3">
+                                    <TextBlock FontWeight="SemiBold" Text="{Binding Name}" TextWrapping="Wrap" />
+                                    <TextBlock
+                                        MaxWidth="330"
+                                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                        Text="{Binding Location}"
+                                        TextTrimming="CharacterEllipsis" />
+                                </StackPanel>
+                                <TextBlock
+                                    Grid.Column="1"
+                                    MaxWidth="110"
+                                    VerticalAlignment="Center"
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    Text="{Binding Source}"
+                                    TextWrapping="Wrap" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <Border
+                    x:Name="NoCandidatesState"
+                    Padding="12"
+                    Background="{ThemeResource ShellSurfaceBrush}"
+                    CornerRadius="6">
+                    <TextBlock
+                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                        Text="No candidates are available. Go Back and detect or browse to an installation."
+                        TextWrapping="Wrap" />
+                </Border>
+            </StackPanel>
+
+            <StackPanel
+                x:Name="StepValidate"
+                AutomationProperties.Name="MO2 onboarding step 3"
+                Spacing="14"
+                Visibility="Collapsed">
+                <StackPanel Spacing="5">
+                    <TextBlock Style="{StaticResource ShellLabelStyle}" Text="3 · VALIDATE" />
+                    <TextBlock FontSize="20" FontWeight="SemiBold" Text="Verify the exact backing setup." />
+                    <TextBlock
+                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                        Text="Grid checks the selected MO2 evidence without editing it."
+                        TextWrapping="Wrap" />
+                </StackPanel>
+
+                <ScrollViewer MaxHeight="330" VerticalScrollBarVisibility="Auto">
+                    <Border
+                        x:Name="ValidationReview"
+                        Padding="14"
+                        Style="{StaticResource CardStyle}"
+                        Visibility="Collapsed">
+                        <StackPanel Spacing="10">
+                            <Grid ColumnSpacing="14" RowSpacing="8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <TextBlock Style="{StaticResource ShellLabelStyle}" Text="CLASSIFICATION" />
+                                <TextBlock x:Name="ClassificationText" Grid.Column="1" TextWrapping="Wrap" />
+                                <TextBlock Grid.Row="1" Style="{StaticResource ShellLabelStyle}" Text="MO2 APPLICATION" />
+                                <TextBlock x:Name="ApplicationPathText" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" />
+                                <TextBlock Grid.Row="2" Style="{StaticResource ShellLabelStyle}" Text="INSTANCE / BASE" />
+                                <TextBlock x:Name="InstancePathText" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" />
+                                <TextBlock Grid.Row="3" Style="{StaticResource ShellLabelStyle}" Text="GAME" />
+                                <TextBlock x:Name="GamePathText" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" />
+                                <TextBlock Grid.Row="4" Style="{StaticResource ShellLabelStyle}" Text="MO2 DIRECTORIES" />
+                                <TextBlock x:Name="DirectoryEvidenceText" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" />
+                                <TextBlock Grid.Row="5" Style="{StaticResource ShellLabelStyle}" Text="RESULT" />
+                                <TextBlock x:Name="ValidationResultText" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" />
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+                </ScrollViewer>
+
+                <Button
+                    x:Name="AuthorizePathsButton"
+                    HorizontalAlignment="Left"
+                    AutomationProperties.HelpText="Authorizes one read-only check of only the exact local configured paths listed in the validation review. A path change requires new authorization."
+                    AutomationProperties.Name="Authorize listed configured paths and revalidate"
+                    Click="OnAuthorizePathsClicked"
+                    Content="Authorize listed paths &amp; revalidate"
+                    Visibility="Collapsed" />
+            </StackPanel>
+
+            <StackPanel
+                x:Name="StepConnect"
+                AutomationProperties.Name="MO2 onboarding step 4"
+                Spacing="16"
+                Visibility="Collapsed">
+                <StackPanel Spacing="5">
+                    <TextBlock Style="{StaticResource ShellLabelStyle}" Text="4 · CONNECT" />
+                    <TextBlock FontSize="20" FontWeight="SemiBold" Text="Confirm the local Grid reference." />
+                    <TextBlock
+                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                        Text="Grid saves only the versioned reference needed to find and revalidate this installation later."
+                        TextWrapping="Wrap" />
+                </StackPanel>
+
+                <TextBox
+                    x:Name="DisplayNameBox"
+                    MaxLength="80"
+                    AutomationProperties.HelpText="A local Grid label for this installation reference. It does not rename any MO2 folder or instance."
+                    AutomationProperties.Name="Connected installation display name"
+                    Header="Grid display name"
+                    PlaceholderText="Existing MO2 installation"
+                    TextChanged="OnDisplayNameChanged" />
+
+                <Border Padding="14" Style="{StaticResource CardStyle}">
+                    <StackPanel Spacing="8">
+                        <TextBlock Style="{StaticResource ShellLabelStyle}" Text="READ-ONLY CONNECTION" />
+                        <TextBlock x:Name="FinalInstallationText" FontWeight="SemiBold" TextWrapping="Wrap" />
+                        <TextBlock
+                            x:Name="ConnectionNextStepText"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            Text="The external manager, installation, and profile remain canonical and unchanged."
+                            TextWrapping="Wrap" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="3" Margin="0,8,0,0" ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Button
+                x:Name="CancelWizardButton"
+                MinWidth="84"
+                AutomationProperties.Name="Cancel MO2 onboarding"
+                Click="OnCancelWizardClicked"
+                Content="Cancel" />
+
+            <Button
+                x:Name="BackButton"
+                Grid.Column="1"
+                MinWidth="84"
+                AutomationProperties.Name="Back in MO2 onboarding"
+                Click="OnBackClicked"
+                Content="Back"
+                Visibility="Collapsed" />
+
+            <Button
+                x:Name="NextButton"
+                Grid.Column="3"
+                MinWidth="96"
+                AutomationProperties.Name="Next in MO2 onboarding"
+                Click="OnNextClicked"
+                Content="Next"
+                IsEnabled="False"
+                Style="{StaticResource AccentButtonStyle}" />
+        </Grid>
+    </Grid>
+</ContentDialog>

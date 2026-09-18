@@ -1,0 +1,114 @@
+<Page
+    x:Class="Grid.App.Views.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    SizeChanged="OnPageSizeChanged">
+    <ScrollViewer
+        AutomationProperties.Name="Grid Home"
+        HorizontalScrollBarVisibility="Disabled"
+        VerticalScrollBarVisibility="Auto">
+        <Grid MaxWidth="1240" Padding="40,34,40,56" HorizontalAlignment="Center">
+            <StackPanel Spacing="28">
+                <Grid x:Name="HeaderGrid" ColumnDefinitions="*,Auto" RowDefinitions="Auto,Auto,Auto" ColumnSpacing="16" RowSpacing="12">
+                    <StackPanel Spacing="8">
+                        <TextBlock Text="Grid" FontSize="34" FontWeight="SemiBold" />
+                        <TextBlock
+                            Text="Choose a connected game or add an existing installation."
+                            FontSize="15"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            TextWrapping="Wrap" />
+                    </StackPanel>
+                    <Button
+                        x:Name="AddGameButton"
+                        Grid.Column="1"
+                        VerticalAlignment="Center"
+                        AutomationProperties.Name="Add game"
+                        Click="OnAddGameClicked"
+                        Content="Add game"
+                        Style="{StaticResource AccentButtonStyle}" />
+                    <Border
+                        x:Name="DevelopmentModeBadge"
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        HorizontalAlignment="Left"
+                        Padding="10,5"
+                        CornerRadius="8"
+                        Background="{ThemeResource ShellSurfaceBrush}"
+                        Visibility="Collapsed">
+                        <TextBlock Text="DEVELOPMENT DEMO" FontSize="11" FontWeight="SemiBold" />
+                    </Border>
+                </Grid>
+
+                <StackPanel Spacing="14">
+                    <Grid ColumnDefinitions="*,Auto">
+                        <StackPanel Spacing="4">
+                            <TextBlock Text="Games" Style="{StaticResource SectionTitleStyle}" />
+                            <TextBlock
+                                Text="Only games with a connected installation appear here."
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                TextWrapping="Wrap" />
+                        </StackPanel>
+                        <TextBlock x:Name="GameCountText" Grid.Column="1" VerticalAlignment="Center" Style="{StaticResource EyebrowStyle}" />
+                    </Grid>
+
+                    <GridView
+                        x:Name="GamesGrid"
+                        AutomationProperties.Name="Connected games"
+                        IsItemClickEnabled="True"
+                        ItemClick="OnGameClicked"
+                        SelectionMode="None">
+                        <GridView.ItemsPanel>
+                            <ItemsPanelTemplate><ItemsWrapGrid Orientation="Horizontal" /></ItemsPanelTemplate>
+                        </GridView.ItemsPanel>
+                        <GridView.ItemTemplate>
+                            <DataTemplate>
+                                <Border
+                                    Width="320"
+                                    MinHeight="170"
+                                    Margin="0,0,14,12"
+                                    Padding="22"
+                                    AutomationProperties.Name="{Binding AutomationName}"
+                                    Style="{StaticResource CardStyle}">
+                                    <Grid RowDefinitions="Auto,*,Auto">
+                                        <Grid ColumnDefinitions="Auto,*" ColumnSpacing="14">
+                                            <Border Width="44" Height="44" CornerRadius="12" Background="{ThemeResource ShellSurfaceBrush}">
+                                                <FontIcon Glyph="&#xE7FC;" />
+                                            </Border>
+                                            <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="3">
+                                                <TextBlock Text="CONNECTED GAME" Style="{StaticResource EyebrowStyle}" />
+                                                <TextBlock Text="{Binding Name}" FontSize="20" FontWeight="SemiBold" TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </Grid>
+                                        <TextBlock
+                                            Grid.Row="1"
+                                            Margin="0,18,0,18"
+                                            Text="{Binding InstallationSummary}"
+                                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                            TextWrapping="Wrap" />
+                                        <TextBlock Grid.Row="2" Text="OPEN WORKSPACE  →" Style="{StaticResource EyebrowStyle}" />
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+                    </GridView>
+
+                    <Border x:Name="EmptyState" Padding="28" Style="{StaticResource CardStyle}">
+                        <StackPanel Spacing="10">
+                            <TextBlock Text="No games connected" FontSize="20" FontWeight="SemiBold" />
+                            <TextBlock
+                                Text="Add an existing supported installation to begin. Grid will not create a game, profile, or health result on your behalf."
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                TextWrapping="Wrap" />
+                            <Button
+                                HorizontalAlignment="Left"
+                                AutomationProperties.Name="Add your first game"
+                                Click="OnAddGameClicked"
+                                Content="Add game"
+                                Style="{StaticResource AccentButtonStyle}" />
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://grid.local/schemas/baseline-sufficiency.v1.schema.json",
+  "title": "Grid diagnostic baseline sufficiency v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "caseId", "status", "evaluatedAt", "requiredGates", "incompleteGates", "contradictions", "nextRequiredEvidence"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "caseId": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["NotEvaluated", "SufficientForRequestedDiagnosis", "InsufficientForRequestedDiagnosis"] },
+    "evaluatedAt": { "type": ["string", "null"], "format": "date-time" },
+    "requiredGates": { "type": "array", "items": { "$ref": "#/definitions/gate" }, "uniqueItems": true },
+    "incompleteGates": { "type": "array", "items": { "$ref": "#/definitions/gate" }, "uniqueItems": true },
+    "contradictions": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "nextRequiredEvidence": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+  },
+  "definitions": {
+    "gate": { "enum": ["InstallationBaseline", "ProfileBaseline", "PluginBaseline", "AssetBaseline", "PriorCaseBaseline", "SymptomEvidenceBaseline", "RuntimeReferenceBaseline"] }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Grid request read authorization grant v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "reviewId", "requestId", "submissionId", "authorizationDigest", "approvedAt", "mutationAuthorized"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "reviewId": { "type": "string" },
+    "requestId": { "type": "string" },
+    "submissionId": { "type": "string" },
+    "authorizationDigest": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "approvedAt": { "type": "string", "minLength": 1 },
+    "mutationAuthorized": { "const": false }
+  }
+}

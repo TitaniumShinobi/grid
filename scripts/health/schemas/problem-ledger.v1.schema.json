@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/problem-ledger.v1.schema.json",
+  "title": "Grid Problem Ledger v1",
+  "type": "object",
+  "required": ["schemaVersion", "ledgerId", "gameId", "installationId", "profileId", "currentContextFingerprint", "createdAt", "updatedAt", "entries", "ledgerFingerprint"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "ledgerId": { "type": "string", "minLength": 1, "maxLength": 512 },
+    "gameId": { "type": "string", "minLength": 1, "maxLength": 256 },
+    "installationId": { "type": "string", "minLength": 1, "maxLength": 512 },
+    "profileId": { "type": "string", "minLength": 1, "maxLength": 512 },
+    "currentContextFingerprint": { "$ref": "#/$defs/sha256" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "entries": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+    "ledgerFingerprint": { "$ref": "#/$defs/sha256" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "state": { "enum": ["Claimed", "IntakeBound", "NeedsContext", "NeedsEvidence", "Diagnosed", "SolutionProposed", "Authorized", "Applied", "VerificationRequired", "Resolved", "AccountedFor"] },
+    "stringSet": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1, "maxLength": 512 } },
+    "event": {
+      "type": "object",
+      "required": ["eventId", "fromState", "toState", "authorityType", "authorityId", "contextFingerprint", "evidenceIds", "recordedAt"],
+      "properties": {
+        "eventId": { "type": "string", "minLength": 1, "maxLength": 512 },
+        "fromState": { "anyOf": [{ "$ref": "#/$defs/state" }, { "type": "null" }] },
+        "toState": { "$ref": "#/$defs/state" },
+        "authorityType": { "enum": ["User", "RequestPlanner", "Collector", "Resolver", "Proposal", "Authorization", "Executor", "Verifier", "Policy"] },
+        "authorityId": { "type": "string", "minLength": 1, "maxLength": 512 },
+        "contextFingerprint": { "$ref": "#/$defs/sha256" },
+        "evidenceIds": { "$ref": "#/$defs/stringSet" },
+        "recordedAt": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    },
+    "entry": {
+      "type": "object",
+      "required": ["issueId", "claim", "desiredOutcome", "state", "contextFingerprint", "classId", "capabilityIds", "evidenceIds", "proposalId", "authorizationId", "executionReceiptId", "verificationId", "blockers", "createdAt", "updatedAt", "history"],
+      "properties": {
+        "issueId": { "type": "string", "minLength": 1, "maxLength": 512 },
+        "claim": { "type": "string", "minLength": 1, "maxLength": 4096 },
+        "desiredOutcome": { "type": "string", "minLength": 1, "maxLength": 4096 },
+        "state": { "$ref": "#/$defs/state" },
+        "contextFingerprint": { "$ref": "#/$defs/sha256" },
+        "classId": { "type": ["string", "null"], "maxLength": 512 },
+        "capabilityIds": { "$ref": "#/$defs/stringSet" },
+        "evidenceIds": { "$ref": "#/$defs/stringSet" },
+        "proposalId": { "type": ["string", "null"], "maxLength": 512 },
+        "authorizationId": { "type": ["string", "null"], "maxLength": 512 },
+        "executionReceiptId": { "type": ["string", "null"], "maxLength": 512 },
+        "verificationId": { "type": ["string", "null"], "maxLength": 512 },
+        "blockers": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1, "maxLength": 4096 } },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" },
+        "history": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/event" } }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
+

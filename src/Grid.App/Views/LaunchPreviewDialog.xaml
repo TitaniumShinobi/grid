@@ -1,0 +1,99 @@
+<ContentDialog
+    x:Class="Grid.App.Views.LaunchPreviewDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    CloseButtonText="Close"
+    DefaultButton="Close"
+    Title="Launch preview only">
+
+    <ScrollViewer MaxHeight="680" VerticalScrollBarVisibility="Auto">
+        <StackPanel MaxWidth="760" HorizontalAlignment="Stretch" Spacing="12">
+            <InfoBar
+                x:Name="PreviewDisclosure"
+                AutomationProperties.Name="Launch preview no-execution disclosure"
+                IsClosable="False"
+                IsOpen="True" />
+
+            <Border Padding="12" Style="{StaticResource CardStyle}">
+                <StackPanel Spacing="5">
+                    <TextBlock Style="{StaticResource ShellLabelStyle}" Text="RESOLVED CONTEXT" />
+                    <TextBlock x:Name="ContextText" TextWrapping="Wrap" />
+                    <TextBlock x:Name="TargetText" FontSize="18" FontWeight="SemiBold" TextWrapping="Wrap" />
+                    <TextBlock x:Name="ProvenanceText" Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
+                </StackPanel>
+            </Border>
+
+            <Border x:Name="ExternalCommandPanel" Padding="12" Style="{StaticResource CardStyle}">
+                <StackPanel Spacing="8">
+                    <TextBlock FontSize="16" FontWeight="SemiBold" Text="Structured command preview" />
+                    <TextBlock Style="{StaticResource ShellLabelStyle}" Text="EXECUTABLE" />
+                    <TextBlock x:Name="ExecutableText" FontFamily="Consolas" TextWrapping="Wrap" />
+                    <TextBlock Style="{StaticResource ShellLabelStyle}" Text="WORKING DIRECTORY" />
+                    <TextBlock x:Name="WorkingDirectoryText" FontFamily="Consolas" TextWrapping="Wrap" />
+                    <TextBlock Style="{StaticResource ShellLabelStyle}" Text="ENVIRONMENT POLICY" />
+                    <TextBlock x:Name="EnvironmentPolicyText" TextWrapping="Wrap" />
+                    <TextBlock Style="{StaticResource ShellLabelStyle}" Text="LITERAL ARGUMENTS · ORDERED · NOT A SHELL STRING" />
+                    <ListView
+                        x:Name="ArgumentsList"
+                        AutomationProperties.Name="Ordered literal launch arguments"
+                        IsItemClickEnabled="False"
+                        SelectionMode="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Padding="4" ColumnSpacing="8">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="34" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="{Binding Index}" />
+                                    <TextBlock Grid.Column="1" FontFamily="Consolas" Text="{Binding Value}" TextWrapping="Wrap" />
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <TextBlock
+                        x:Name="NoArgumentsText"
+                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                        Text="No target arguments are represented."
+                        Visibility="Collapsed" />
+                </StackPanel>
+            </Border>
+
+            <Border x:Name="InternalRoutePanel" Padding="12" Style="{StaticResource CardStyle}" Visibility="Collapsed">
+                <StackPanel Spacing="5">
+                    <TextBlock FontSize="16" FontWeight="SemiBold" Text="Grid internal route" />
+                    <TextBlock x:Name="InternalRouteText" FontFamily="Consolas" TextWrapping="Wrap" />
+                    <TextBlock
+                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                        Text="This preview represents an internal Grid navigation route, not an external executable."
+                        TextWrapping="Wrap" />
+                </StackPanel>
+            </Border>
+
+            <StackPanel Spacing="6">
+                <TextBlock FontSize="16" FontWeight="SemiBold" Text="Future safety gates" />
+                <ListView
+                    x:Name="SafetyGatesList"
+                    AutomationProperties.Name="Future launch safety gates"
+                    IsItemClickEnabled="False"
+                    SelectionMode="None">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid MinHeight="54" Padding="7" ColumnSpacing="10">
+                                <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Spacing="2">
+                                    <TextBlock FontWeight="SemiBold" Text="{Binding Label}" TextWrapping="Wrap" />
+                                    <TextBlock FontSize="11" Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="{Binding Disposition}" />
+                                </StackPanel>
+                                <TextBlock Grid.Column="1" Text="{Binding Detail}" TextWrapping="Wrap" />
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</ContentDialog>

@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Grid authorization failure v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "failureId",
+    "grantId",
+    "leaseId",
+    "state",
+    "semanticBindingSha256",
+    "failedAt",
+    "detail"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "failureId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "grantId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "leaseId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "state": {
+      "const": "Failed"
+    },
+    "semanticBindingSha256": {
+      "type": "string",
+      "pattern": "^[A-F0-9]{64}$"
+    },
+    "failedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "detail": {
+      "type": "string"
+    }
+  }
+}

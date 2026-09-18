@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/games/skyrimspecialedition/nexus-source-resolution.v1.schema.json",
+  "title": "Grid Skyrim Nexus Source Resolution v1",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "planId",
+    "planSha256",
+    "status",
+    "summary",
+    "resolutions",
+    "credentialHandle",
+    "mutationPerformed",
+    "detail"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "planId": { "type": "string", "minLength": 1 },
+    "planSha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" },
+    "status": {
+      "enum": [
+        "AuthenticationRequired",
+        "ExactSourceLocatorsResolved",
+        "SourceIdentityIncomplete",
+        "SourceIdentityConflict",
+        "ProviderResolutionIncomplete"
+      ]
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "archiveClaimCount",
+        "exactSourceLocatorCount",
+        "unresolvedArchiveClaimCount",
+        "notFoundCount",
+        "ambiguousCount",
+        "providerFailureCount"
+      ],
+      "properties": {
+        "archiveClaimCount": { "type": "integer", "minimum": 0 },
+        "exactSourceLocatorCount": { "type": "integer", "minimum": 0 },
+        "unresolvedArchiveClaimCount": { "type": "integer", "minimum": 0 },
+        "notFoundCount": { "type": "integer", "minimum": 0 },
+        "ambiguousCount": { "type": "integer", "minimum": 0 },
+        "providerFailureCount": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "resolutions": { "type": "array", "items": { "$ref": "#/$defs/source-resolution" } },
+    "credentialHandle": {
+      "type": ["string", "null"],
+      "pattern": "^os-protected:[A-Za-z0-9._-]{1,128}$"
+    },
+    "mutationPerformed": { "const": false },
+    "detail": { "type": "string", "minLength": 1 },
+    "resolutionSha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "source-resolution": {
+      "type": "object",
+      "required": [
+        "status",
+        "gameId",
+        "nexusModId",
+        "claimedLeafName",
+        "candidateMods",
+        "consumingPlugins",
+        "sourceLocator",
+        "providerEvidenceSha256",
+        "detail"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "ExactSourceLocatorResolved",
+            "ExactArchiveClaimNotFound",
+            "ExactArchiveClaimAmbiguous",
+            "AuthenticationRequired",
+            "ProviderRequestFailed",
+            "ProviderResponseInvalid"
+          ]
+        },
+        "gameId": { "type": "string", "minLength": 1 },
+        "nexusModId": { "type": "string", "pattern": "^[1-9][0-9]*$" },
+        "claimedLeafName": { "type": "string", "minLength": 1, "pattern": "^[^\\/]+$" },
+        "candidateMods": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "consumingPlugins": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "sourceLocator": {
+          "type": ["object", "null"],
+          "properties": {
+            "provider": { "const": "Nexus" },
+            "gameId": { "type": "string", "minLength": 1 },
+            "modId": { "type": "string", "pattern": "^[1-9][0-9]*$" },
+            "fileId": { "type": "string", "pattern": "^[1-9][0-9]*$" },
+            "version": { "type": "string" },
+            "fileName": { "type": "string", "minLength": 1, "pattern": "^[^\\/]+$" },
+            "sizeKilobytesClaim": { "type": ["integer", "null"], "minimum": 1 },
+            "exactSizeBytes": { "type": "null" },
+            "exactSizeStatus": { "const": "PendingAcquisitionObservation" },
+            "fileMetadataEndpoint": { "type": "string", "format": "uri" },
+            "downloadLinkEndpoint": { "type": "string", "format": "uri" }
+          },
+          "required": [
+            "provider",
+            "gameId",
+            "modId",
+            "fileId",
+            "version",
+            "fileName",
+            "sizeKilobytesClaim",
+            "exactSizeBytes",
+            "exactSizeStatus",
+            "fileMetadataEndpoint",
+            "downloadLinkEndpoint"
+          ],
+          "additionalProperties": false
+        },
+        "providerEvidenceSha256": { "type": ["string", "null"], "pattern": "^[A-Fa-f0-9]{64}$" },
+        "detail": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    }
+  }
+}

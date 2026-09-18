@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/verification-receipt.v1.schema.json",
+  "title": "GRID verification receipt v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "receiptId", "manifestId", "lane", "configuration", "startedAtUtc", "finishedAtUtc", "durationMs", "platform", "dotnetSdk", "powerShellVersion", "overallResult", "checks"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "receiptId": { "type": "string", "minLength": 1 },
+    "manifestId": { "const": "grid.verification.v1" },
+    "lane": { "enum": ["Portable", "WindowsSource", "Distribution"] },
+    "configuration": { "enum": ["Debug", "Release"] },
+    "startedAtUtc": { "type": "string", "format": "date-time" },
+    "finishedAtUtc": { "type": "string", "format": "date-time" },
+    "durationMs": { "type": "integer", "minimum": 0 },
+    "platform": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["os", "isWindows", "architecture"],
+      "properties": {
+        "os": { "type": "string", "minLength": 1 },
+        "isWindows": { "type": "boolean" },
+        "architecture": { "type": "string", "minLength": 1 }
+      }
+    },
+    "dotnetSdk": { "type": ["string", "null"] },
+    "powerShellVersion": { "type": "string", "minLength": 1 },
+    "overallResult": { "enum": ["Passed", "Failed"] },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "displayName", "order", "category", "commandIdentity", "configuration", "startedAtUtc", "durationMs", "exitCode", "result", "logPath"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "displayName": { "type": "string", "minLength": 1 },
+          "order": { "type": "integer", "minimum": 1 },
+          "category": { "type": "string", "minLength": 1 },
+          "commandIdentity": { "type": "string", "minLength": 1 },
+          "configuration": { "enum": ["None", "Debug", "Release"] },
+          "startedAtUtc": { "type": "string", "format": "date-time" },
+          "durationMs": { "type": "integer", "minimum": 0 },
+          "exitCode": { "type": ["integer", "null"] },
+          "result": { "enum": ["Passed", "Failed", "SkippedUnsupportedPlatform", "NotRun"] },
+          "logPath": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

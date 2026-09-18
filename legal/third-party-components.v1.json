@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "ledgerId": "grid.third-party-components.v1",
+  "components": [
+    {
+      "name": "Microsoft.WindowsAppSDK",
+      "version": "1.8.260710003",
+      "source": "NuGet",
+      "usedBy": ["src/Grid.App/Grid.App.csproj"],
+      "license": "ReviewRequired",
+      "reviewState": "ReviewRequired",
+      "distributionDisposition": "Blocked",
+      "requiredAction": "Confirm the license and notices applicable to the exact distributed package contents."
+    },
+    {
+      "name": "SharpCompress",
+      "version": "0.50.4",
+      "source": "NuGet",
+      "usedBy": ["src/Grid.Mo2/Grid.Mo2.csproj", "src/Grid.Mo2/packages.lock.json"],
+      "license": "ReviewRequired",
+      "reviewState": "ReviewRequired",
+      "distributionDisposition": "Blocked",
+      "requiredAction": "Confirm the upstream license and preserve the required notice for version 0.50.4."
+    }
+  ]
+}

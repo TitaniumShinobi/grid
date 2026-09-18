@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/investigation-plan.v1.schema.json",
+  "title": "Grid InvestigationPlan v1",
+  "type": "object",
+  "required": ["schemaVersion", "caseId", "gameId", "originalRequest", "candidatePlugins", "observedForms", "collectorQueries", "missingInputs", "status", "provenance"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "status": { "enum": ["NeedsContext", "NeedsEvidence", "ReadyToCollect", "Diagnosed", "Failed"] },
+    "candidatePlugins": { "type": "array" },
+    "observedForms": { "type": "array" },
+    "collectorQueries": { "type": "array" },
+    "missingInputs": { "type": "array", "items": { "type": "string" } },
+    "provenance": { "type": "array" }
+  },
+  "additionalProperties": true
+}

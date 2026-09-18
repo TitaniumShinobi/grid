@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/games/skyrimspecialedition/community-capability-observation.v1.schema.json",
+  "title": "Grid Skyrim Nexus community capability observation v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "capabilityId", "status", "observedAtUtc", "expiresAtUtc", "candidates", "credentialHandle", "mutationPerformed", "observationSha256"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "capabilityId": { "type": "string", "pattern": "^grid\\.capability\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+    "status": { "enum": ["Observed", "Partial", "AuthenticationRequired", "ProviderRequestFailed", "ProviderResponseInvalid"] },
+    "observedAtUtc": { "type": "string", "format": "date-time" },
+    "expiresAtUtc": { "type": "string", "format": "date-time" },
+    "candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["candidateId", "provider", "gameId", "modId", "uri", "status", "version", "updatedAtUtc", "evidenceId", "detail"],
+        "properties": {
+          "candidateId": { "type": "string", "minLength": 1 },
+          "provider": { "const": "Nexus Mods" },
+          "gameId": { "const": "skyrimspecialedition" },
+          "modId": { "type": "integer", "minimum": 1, "maximum": 2147483647 },
+          "uri": { "type": "string", "format": "uri", "pattern": "^https://www\\.nexusmods\\.com/" },
+          "status": { "enum": ["Observed", "ProviderRequestFailed", "ProviderResponseInvalid"] },
+          "version": { "type": ["string", "null"] },
+          "updatedAtUtc": { "type": ["string", "null"], "format": "date-time" },
+          "evidenceId": { "type": ["string", "null"], "pattern": "^sha256:[A-F0-9]{64}$" },
+          "detail": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "credentialHandle": { "type": ["string", "null"], "pattern": "^os-protected:[A-Za-z0-9._-]{1,128}$" },
+    "mutationPerformed": { "const": false },
+    "observationSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" }
+  }
+}

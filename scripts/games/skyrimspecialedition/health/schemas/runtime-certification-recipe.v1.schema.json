@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/skyrimspecialedition/runtime-certification-recipe.v1.schema.json",
+  "title": "Grid Skyrim runtime-certification recipe v1",
+  "type": "object",
+  "required": ["schemaVersion", "recipeId", "recipeVersion", "gameId", "route", "navigation", "oracle", "captures", "limits"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "recipeId": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$" },
+    "recipeVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "gameId": { "const": "skyrimspecialedition" },
+    "route": {
+      "type": "object", "required": ["status", "routeId"],
+      "properties": { "status": { "enum": ["Available", "Unavailable"] }, "routeId": { "type": ["string", "null"] } },
+      "additionalProperties": false
+    },
+    "navigation": {
+      "type": "array", "maxItems": 256,
+      "items": {
+        "type": "object", "required": ["sequence", "action", "durationMilliseconds"],
+        "properties": {
+          "sequence": { "type": "integer", "minimum": 1, "maximum": 256 },
+          "action": { "enum": ["Wait", "MoveForward", "MoveBackward", "StrafeLeft", "StrafeRight", "TurnLeft", "TurnRight", "LookUp", "LookDown", "Jump", "ToggleHud", "CloseMenu", "CaptureScreenshot", "ObserveRuntimeReference"] },
+          "durationMilliseconds": { "type": "integer", "minimum": 0, "maximum": 5000 }
+        }, "additionalProperties": false
+      }
+    },
+    "oracle": {
+      "type": "object", "required": ["kind", "collectorName", "requiredClaims"],
+      "properties": {
+        "kind": { "enum": ["DeterministicSnapshot", "RuntimeReferenceProbe", "Unavailable"] },
+        "collectorName": { "type": ["string", "null"] },
+        "requiredClaims": {
+          "type": "array", "minItems": 1, "maxItems": 64, "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "captures": {
+      "type": "object", "required": ["maximumScreenshots", "maximumScreenshotBytes", "maximumAggregateLogBytes"],
+      "properties": {
+        "maximumScreenshots": { "type": "integer", "minimum": 0, "maximum": 6 },
+        "maximumScreenshotBytes": { "type": "integer", "minimum": 1, "maximum": 33554432 },
+        "maximumAggregateLogBytes": { "type": "integer", "minimum": 1, "maximum": 268435456 }
+      }, "additionalProperties": false
+    },
+    "limits": {
+      "type": "object", "required": ["maximumRuntimeSeconds", "maximumInputSteps"],
+      "properties": { "maximumRuntimeSeconds": { "type": "integer", "minimum": 1, "maximum": 900 }, "maximumInputSteps": { "type": "integer", "minimum": 0, "maximum": 256 } },
+      "additionalProperties": false
+    }
+  }, "additionalProperties": false
+}

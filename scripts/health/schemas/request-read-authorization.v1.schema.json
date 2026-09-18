@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Grid request read authorization v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "reviewId", "status", "requestId", "submissionId", "envelopeSha256", "planSha256", "mutationAuthorized", "scopes", "authorizationDigest"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "reviewId": { "type": "string", "pattern": "^authorization-[a-f0-9]{24}$" },
+    "status": { "const": "AwaitingAuthorization" },
+    "requestId": { "type": "string", "pattern": "^request-[a-f0-9]{24}$" },
+    "submissionId": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$" },
+    "envelopeSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "planSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "mutationAuthorized": { "const": false },
+    "scopes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["toolId", "adapter", "observationMode", "availability", "exactReadPaths", "inputs"],
+        "properties": {
+          "toolId": { "type": "string" },
+          "adapter": { "type": ["string", "null"] },
+          "observationMode": { "type": ["string", "null"] },
+          "availability": { "type": "string" },
+          "exactReadPaths": { "type": "array", "items": { "type": "string" } },
+          "inputs": { "type": "object" }
+        }
+      }
+    },
+    "authorizationDigest": { "type": "string", "pattern": "^[A-F0-9]{64}$" }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/evidence.v1.schema.json",
+  "title": "Grid Evidence v1",
+  "type": "object",
+  "required": ["schemaVersion", "evidenceId", "parameter", "value", "claim", "sourceType", "collectedAt", "contextFingerprint", "verificationStatus", "collector"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "value": { "type": "number", "minimum": 0, "maximum": 1 },
+    "verificationStatus": { "enum": ["Collected", "Verified", "Contradicted", "Stale", "Unverified", "Unavailable"] },
+    "collector": { "type": "object", "required": ["name", "version"] }
+  },
+  "additionalProperties": true
+}

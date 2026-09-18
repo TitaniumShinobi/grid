@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "grid.verification.v1",
+  "lanes": [
+    { "id": "Portable", "description": "fixture" },
+    { "id": "WindowsSource", "description": "fixture" },
+    { "id": "Distribution", "description": "fixture" }
+  ],
+  "suites": [
+    {
+      "id": "fixture-second",
+      "displayName": "Second",
+      "order": 20,
+      "kind": "PowerShell",
+      "path": "tests/ArchitectureConformance.Tests.ps1",
+      "lanes": ["Portable"],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Fixture"
+    },
+    {
+      "id": "fixture-first",
+      "displayName": "First",
+      "order": 10,
+      "kind": "DotNetRun",
+      "path": "tests/Grid.Core.Tests/Grid.Core.Tests.csproj",
+      "lanes": ["Portable"],
+      "platform": "Any",
+      "configurationMode": "Required",
+      "arguments": ["--no-build", "--no-restore"],
+      "category": "Fixture"
+    }
+  ]
+}

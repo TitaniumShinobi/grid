@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Grid authorization lease v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "leaseId",
+    "grantId",
+    "state",
+    "consumerId",
+    "semanticBindingSha256",
+    "acquiredAt",
+    "expiresAt",
+    "completedAt"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "leaseId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "grantId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "state": {
+      "enum": [
+        "Executing",
+        "Consumed",
+        "Failed"
+      ]
+    },
+    "consumerId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "semanticBindingSha256": {
+      "type": "string",
+      "pattern": "^[A-F0-9]{64}$"
+    },
+    "acquiredAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completedAt": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  }
+}

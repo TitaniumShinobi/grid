@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "recipeId": "grid.gta.setup.forever-together",
+  "recipeVersion": "1.0.0",
+  "gameEdition": "Legacy",
+  "artifacts": [
+    { "artifactId": "shvdn.asi", "fileName": "ScriptHookVDotNet.asi", "destination": "ScriptHookVDotNet.asi" },
+    { "artifactId": "shvdn.ini", "fileName": "ScriptHookVDotNet.ini", "destination": "ScriptHookVDotNet.ini" },
+    { "artifactId": "shvdn.v2", "fileName": "ScriptHookVDotNet2.dll", "destination": "ScriptHookVDotNet2.dll" },
+    { "artifactId": "shvdn.v3", "fileName": "ScriptHookVDotNet3.dll", "destination": "ScriptHookVDotNet3.dll" },
+    { "artifactId": "nativeui", "fileName": "NativeUI.dll", "destination": "scripts\\NativeUI.dll" },
+    { "artifactId": "ifruitaddon2", "fileName": "iFruitAddon2.dll", "destination": "scripts\\iFruitAddon2.dll" },
+    { "artifactId": "forever-together.dll", "fileName": "Dealien_ForeverTogether.dll", "destination": "scripts\\Dealien_ForeverTogether.dll" },
+    { "artifactId": "forever-together.ini", "fileName": "Dealien_ForeverTogether.ini", "destination": "scripts\\Dealien_ForeverTogether.ini" }
+  ],
+  "configuration": [
+    { "configurationId": "shvdn.timeout", "relativePath": "ScriptHookVDotNet.ini", "key": "ScriptTimeoutThreshold", "value": "60000" }
+  ]
+}

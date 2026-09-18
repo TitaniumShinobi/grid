@@ -1,0 +1,1240 @@
+{
+  "$schema": "./schemas/capability-manifest.v1.schema.json",
+  "schemaVersion": 1,
+  "ownerScope": {
+    "kind": "SharedHealth"
+  },
+  "supportingFiles": [
+    "scripts/health/Grid.Health.psm1",
+    "scripts/health/Grid.CaseStore.ps1",
+    "scripts/health/Grid.ResourceGovernor.ps1",
+    "scripts/health/Grid.BaselineContext.ps1",
+    "scripts/health/Grid.GameUserDataRoots.ps1",
+    "scripts/health/Invoke-GridBaseline.ps1",
+    "scripts/health/Invoke-GridModChainRepair.ps1",
+    "scripts/health/Invoke-GridRootCauseDiagnosis.ps1",
+    "scripts/health/Grid.ToolEvidence.ps1",
+    "scripts/health/Grid.FullHouseEvidenceCoverage.ps1",
+    "scripts/health/Grid.RequestExecution.ps1",
+    "scripts/health/Grid.RequestMutation.ps1",
+    "scripts/health/Grid.ProblemLedger.ps1",
+    "scripts/health/Grid.CapabilityGap.ps1",
+    "scripts/health/Grid.ProviderDiscovery.ps1",
+    "scripts/health/Invoke-GridProviderDiscovery.ps1",
+    "scripts/health/README.md"
+  ],
+  "capabilities": [
+    {
+      "capabilityId": "grid.health.case.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Invoke-GridHealth.ps1"
+        ],
+        "entryPoint": "Invoke-GridHealth.ps1"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "request"
+        ],
+        "properties": {
+          "request": {
+            "type": "string",
+            "minLength": 1
+          },
+          "gameId": {
+            "type": "string"
+          },
+          "outputRoot": {
+            "type": "string"
+          }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "caseId",
+          "diagnosticResult"
+        ]
+      },
+      "preconditions": [
+        "The operator explicitly invokes the case entry point.",
+        "Any external process launch satisfies the selected adapter contract."
+      ],
+      "dependencies": [
+        "grid.health.capability.resolve",
+        "grid.health.adapter.resolve",
+        "grid.health.case.lifecycle",
+        "grid.health.investigation-plan.materialize",
+        "grid.health.diagnostic-result.materialize"
+      ],
+      "sideEffectClassification": "ExternalProcessLaunch",
+      "requiredAuthority": {
+        "kind": "ExplicitProcessLaunch",
+        "description": "Case creation is explicit; native launch authority remains bounded by the selected game capability."
+      },
+      "rollback": {
+        "mode": "DelegatedToDependencies",
+        "description": "Remove case-local artifacts; external process handling follows the invoked collector contract."
+      },
+      "terminalStates": [
+        "NeedsContext",
+        "NeedsEvidence",
+        "ReadyToCollect",
+        "Diagnosed",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.case.lifecycle",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/New-GridDiagnosticCase.ps1"
+        ],
+        "entryPoint": "New-GridDiagnosticCase"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "rawPrompt",
+          "outputRoot",
+          "gameId"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "./schemas/case.v1.schema.json"
+      },
+      "preconditions": [
+        "OutputRoot resolves to an authorized case-data location."
+      ],
+      "dependencies": [],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Writes are restricted to the selected case directory."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only the newly created case directory or restore the prior atomic case document."
+      },
+      "terminalStates": [
+        "NeedsContext",
+        "NeedsEvidence",
+        "ReadyToCollect",
+        "Diagnosed",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.investigation-plan.materialize",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.InvestigationPlan.ps1"
+        ],
+        "entryPoint": "New-GridInvestigationPlan"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "gameId",
+          "originalRequest",
+          "capabilities"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "./schemas/investigation-plan.v2.schema.json"
+      },
+      "preconditions": [
+        "Capability bindings resolve from validated production manifests."
+      ],
+      "dependencies": [
+        "grid.health.capability.resolve"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "The plan is written only beneath its case directory."
+      },
+      "rollback": {
+        "mode": "RestoreAtomicPriorCaseFile",
+        "description": "Restore the prior InvestigationPlan document or remove the newly created document."
+      },
+      "terminalStates": [
+        "NeedsContext",
+        "NeedsEvidence",
+        "ReadyToCollect",
+        "Diagnosed",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.evidence.record",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.Evidence.ps1"
+        ],
+        "entryPoint": "Add-GridCaseEvidence"
+      },
+      "inputSchema": {
+        "$ref": "./schemas/evidence.v1.schema.json"
+      },
+      "outputSchema": {
+        "$ref": "./schemas/evidence.v1.schema.json"
+      },
+      "preconditions": [
+        "Evidence includes provenance, verification status, and a context fingerprint."
+      ],
+      "dependencies": [
+        "grid.health.case.lifecycle"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Evidence is appended only to the bound case."
+      },
+      "rollback": {
+        "mode": "RestoreAtomicPriorCaseFile",
+        "description": "Restore the prior case evidence array if persistence fails."
+      },
+      "terminalStates": [
+        "Recorded",
+        "Rejected"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.hypothesis.rank",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Invoke-GridDiagnosis.ps1"
+        ],
+        "entryPoint": "Invoke-GridDiagnosis.ps1"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "symptomType",
+          "candidates"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "candidates"
+        ]
+      },
+      "preconditions": [
+        "All ranked evidence values are explicitly supplied and bounded from 0.0 to 1.0."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Optional reports are written only to the caller-selected output path."
+      },
+      "rollback": {
+        "mode": "RemoveGeneratedReport",
+        "description": "Remove only the newly generated scoring report."
+      },
+      "terminalStates": [
+        "Ranked",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.diagnostic-result.materialize",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.DiagnosticResult.ps1"
+        ],
+        "entryPoint": "New-GridDiagnosticResult"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "contextFingerprint",
+          "evidenceFingerprint",
+          "result"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "./schemas/diagnostic-result.v1.schema.json"
+      },
+      "preconditions": [
+        "Every resolved assertion cites current deterministic evidence."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record",
+        "grid.health.remediation-proposal.materialize",
+        "grid.health.verification.record"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "The result and rendering remain case-local."
+      },
+      "rollback": {
+        "mode": "RestoreAtomicPriorCaseFile",
+        "description": "Restore prior result artifacts or remove newly created artifacts."
+      },
+      "terminalStates": [
+        "NeedsContext",
+        "NeedsEvidence",
+        "Diagnosed",
+        "Failed",
+        "Rejected"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.remediation-proposal.materialize",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.ActionLifecycle.ps1"
+        ],
+        "entryPoint": "New-GridRemediationProposal"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "contextFingerprint",
+          "evidenceFingerprint",
+          "actionType",
+          "targets"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "./schemas/remediation-proposal.v1.schema.json"
+      },
+      "preconditions": [
+        "Verified supporting evidence exists and the proposal is inert."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "None",
+      "requiredAuthority": {
+        "kind": "None",
+        "description": "Creating an inert proposal grants no execution authority."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "No external state changes."
+      },
+      "terminalStates": [
+        "AwaitingAuthorization",
+        "Unsupported",
+        "Rejected"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.remediation.authorize",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.ActionLifecycle.ps1",
+          "scripts/health/Grid.AuthorizationStore.ps1"
+        ],
+        "entryPoint": "Grant-GridProposalAuthorization"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "proposal",
+          "currentContextFingerprint",
+          "currentEvidenceFingerprint",
+          "authorizationStoreRoot",
+          "semanticBinding"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "./schemas/authorization-grant.v2.schema.json"
+      },
+      "preconditions": [
+        "Proposal, context, evidence, exact targets, semantic binding, authority class, and expiry are current.",
+        "Issuance returns a random one-time secret exactly once; only its protected proof is persisted."
+      ],
+      "dependencies": [
+        "grid.health.remediation-proposal.materialize"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "ExplicitGrantIssuance",
+        "description": "Issues a durable proposal-bound grant; the public proposal or its digest is never an executable credential."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Issuance changes only the case-local authorization store; unused grants expire and consumed grants remain auditable."
+      },
+      "terminalStates": [
+        "Authorized",
+        "Rejected",
+        "Stale"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.verification.record",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.ActionLifecycle.ps1"
+        ],
+        "entryPoint": "New-GridVerificationResult"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "proposalId",
+          "status",
+          "evidenceIds"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "./schemas/verification-result.v1.schema.json"
+      },
+      "preconditions": [
+        "The result binds the exact proposal and observed verification evidence."
+      ],
+      "dependencies": [
+        "grid.health.remediation-proposal.materialize"
+      ],
+      "sideEffectClassification": "None",
+      "requiredAuthority": {
+        "kind": "None",
+        "description": "Recording an immutable result grants no mutation authority."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Verification records are append-only audit evidence."
+      },
+      "terminalStates": [
+        "Verified",
+        "Failed",
+        "RolledBack",
+        "Incomplete"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.adapter.resolve",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Resolve-GridGameAdapter.ps1"
+        ],
+        "entryPoint": "Resolve-GridGameAdapter"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "scriptsRoot",
+          "request"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "id",
+          "manifestPath",
+          "invocationCapabilityId"
+        ]
+      },
+      "preconditions": [
+        "Adapter and capability manifests validate before module import."
+      ],
+      "dependencies": [
+        "grid.health.capability.resolve"
+      ],
+      "sideEffectClassification": "RepositoryRead",
+      "requiredAuthority": {
+        "kind": "RepositoryRead",
+        "description": "Reads only repository manifests and the explicitly selected case."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Adapter resolution is read-only."
+      },
+      "terminalStates": [
+        "Resolved",
+        "Ambiguous",
+        "Invalid"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.process.observe",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/process/Grid.Process.ps1"
+        ],
+        "entryPoint": "Wait-GridProcessObservation"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "processId"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "snapshot"
+        ]
+      },
+      "preconditions": [
+        "The caller supplies a positive process identifier."
+      ],
+      "dependencies": [],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Observation is bounded to the identified process."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Process observation is read-only."
+      },
+      "terminalStates": [
+        "Exited",
+        "TimedOut",
+        "Unavailable"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.process.close-owned",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/process/Grid.Process.ps1"
+        ],
+        "entryPoint": "Close-GridOwnedProcess"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "ownership"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "result"
+        ]
+      },
+      "preconditions": [
+        "PID, executable path, and start time still match Grid-owned launch evidence."
+      ],
+      "dependencies": [
+        "grid.health.process.observe"
+      ],
+      "sideEffectClassification": "ExternalProcessControl",
+      "requiredAuthority": {
+        "kind": "ExplicitOwnedProcessControl",
+        "description": "Normal or forced close requires explicit ownership-aware invocation."
+      },
+      "rollback": {
+        "mode": "NotReversible",
+        "description": "A closed process cannot be restored; refusal and repeated ownership checks limit harm."
+      },
+      "terminalStates": [
+        "AlreadyExited",
+        "NormalCloseSucceeded",
+        "ForceClosed",
+        "Refused",
+        "OwnershipMismatch",
+        "ModalDialogDetected",
+        "NormalCloseFailed",
+        "ForceCloseFailed"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.capability.resolve",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.Capabilities.ps1"
+        ],
+        "entryPoint": "Get-GridCapabilityDependencyClosure"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "scriptsRoot",
+          "capabilityIds"
+        ]
+      },
+      "outputSchema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "capabilityId",
+            "capabilityVersion"
+          ]
+        }
+      },
+      "preconditions": [
+        "All manifests are readable and schema version 1."
+      ],
+      "dependencies": [],
+      "sideEffectClassification": "RepositoryRead",
+      "requiredAuthority": {
+        "kind": "RepositoryRead",
+        "description": "Reads only capability manifests beneath scripts."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Registry resolution is read-only."
+      },
+      "terminalStates": [
+        "Resolved",
+        "Invalid",
+        "MissingDependency",
+        "Cycle"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.root-cause-diagnosis.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Invoke-GridRootCauseDiagnosis.ps1"
+        ],
+        "entryPoint": "Invoke-GridRootCauseDiagnosis.ps1"
+      },
+      "inputSchema": {
+        "$ref": "./schemas/root-cause-collector-request.v1.schema.json"
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "caseId",
+          "diagnosticResult",
+          "patchSpecification"
+        ]
+      },
+      "preconditions": [
+        "The input names one sealed baseline and a v2 Diagnosis plan.",
+        "The adapter exposes a manifest-bound root-cause capability."
+      ],
+      "dependencies": [
+        "grid.health.capability.resolve",
+        "grid.health.adapter.resolve",
+        "grid.health.case.lifecycle",
+        "grid.health.diagnostic-result.materialize"
+      ],
+      "sideEffectClassification": "ExternalProcessLaunch",
+      "requiredAuthority": {
+        "kind": "ExplicitProcessLaunch",
+        "description": "Launches only the fixed Grid.Diagnostics root-cause-collect command and writes only to a case-store transaction."
+      },
+      "rollback": {
+        "mode": "SealFailedTransaction",
+        "description": "External observation is read-only; incomplete case-local work is sealed Failed with its exact primitive."
+      },
+      "terminalStates": [
+        "RootCauseResolved",
+        "RootCauseFailed"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.class-request.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.RequestPlanner.ps1",
+          "scripts/health/Invoke-GridClassRequest.ps1"
+        ],
+        "entryPoint": "Invoke-GridClassRequest.ps1"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "gameId",
+          "classId"
+        ],
+        "properties": {
+          "gameId": {
+            "type": "string"
+          },
+          "installationId": {
+            "type": "string"
+          },
+          "profileId": {
+            "type": "string"
+          },
+          "classId": {
+            "type": "string"
+          },
+          "modNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "toolIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "request": {
+            "type": "string"
+          },
+          "execute": {
+            "type": "boolean"
+          }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "requestEnvelope",
+          "plan"
+        ]
+      },
+      "preconditions": [
+        "Game, Class, mod-provider, and tool selections are explicit structured input.",
+        "Execution may enter only a registered diagnosis pipeline."
+      ],
+      "dependencies": [
+        "grid.health.capability.resolve",
+        "grid.health.adapter.resolve",
+        "grid.game.skyrimspecialedition.baseline.collect"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Explicit -Execute may invoke only the recipe-bound read-only baseline collector; planning alone reads repository manifests."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Planning and baseline collection do not mutate game, profile, load order, or active mod state."
+      },
+      "terminalStates": [
+        "ReadyToCollect",
+        "NeedsContext",
+        "NeedsEvidence",
+        "UnsupportedCoverage",
+        "Completed",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.registered-coverage.scan",
+      "capabilityVersion": "1.1.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Invoke-GridRegisteredCoverage.ps1"
+        ],
+        "entryPoint": "Invoke-GridRegisteredCoverage.ps1"
+      },
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "gameId": {
+            "type": "string"
+          },
+          "execute": {
+            "type": "boolean"
+          }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "coverage",
+          "registeredCount",
+          "unsupportedCount"
+        ]
+      },
+      "preconditions": [
+        "Execution performs one CleanHouse Repair baseline and reuses that evidence across every Class backed by the same whole-profile capability.",
+        "Registered collectors that require an exact provider, FormID, EditorID, or tool evidence remain explicitly deferred rather than receiving an invented target.",
+        "Unsupported Classes remain explicit coverage gaps."
+      ],
+      "dependencies": [
+        "grid.health.class-request.execute"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Explicit -Execute invokes one read-only CleanHouse baseline; preview is repository-only, and tool selections require their separate displayed authorization path."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Coverage inspection and registered baseline collection do not mutate external state."
+      },
+      "terminalStates": [
+        "Preview",
+        "Completed",
+        "Incomplete",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.script-capability.admit",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.ScriptAdmission.ps1"
+        ],
+        "entryPoint": "Resolve-GridScriptCapabilityAdmission"
+      },
+      "inputSchema": {
+        "$ref": "./schemas/script-capability-candidate.v1.schema.json"
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "capabilityId",
+          "canonicalDirectory",
+          "proposalSha256",
+          "mutationAuthorized"
+        ]
+      },
+      "preconditions": [
+        "The candidate explicitly declares responsibility, ownership, examples, parameters, authority, and terminal states.",
+        "Runtime case identities remain data and are never admitted as production implementation."
+      ],
+      "dependencies": [
+        "grid.health.capability.resolve"
+      ],
+      "sideEffectClassification": "RepositoryRead",
+      "requiredAuthority": {
+        "kind": "RepositoryRead",
+        "description": "Classifies a candidate against the current capability registry without writing files or granting implementation authority."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Admission is deterministic read-only classification."
+      },
+      "terminalStates": [
+        "ExistingCapability",
+        "CompositionReady",
+        "ReusableProposalReady",
+        "PrivateHelperOnly",
+        "RuntimeCaseData",
+        "Rejected",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.script-capability-proposal.draft",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.ScriptAdmission.ps1"
+        ],
+        "entryPoint": "New-GridScriptCapabilityProposalDraft"
+      },
+      "inputSchema": {
+        "$ref": "./schemas/capability-gap-resolution.v1.schema.json"
+      },
+      "outputSchema": {
+        "$ref": "./schemas/capability-proposal-draft.v1.schema.json"
+      },
+      "preconditions": [
+        "The exact capability gap is routed to CreateCapabilityProposal.",
+        "The requested outcome came from structured request intake rather than inferred technical targets."
+      ],
+      "dependencies": [
+        "grid.health.capability.resolve"
+      ],
+      "sideEffectClassification": "None",
+      "requiredAuthority": {
+        "kind": "None",
+        "description": "Materializes only deterministic in-memory proposal data from an already-normalized capability gap."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "The draft is inert, non-executable, and grants no mutation authority."
+      },
+      "terminalStates": [
+        "NeedsDesignEvidence",
+        "Invalid"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.tool-registry.resolve",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.ToolEvidence.ps1"
+        ],
+        "entryPoint": "Get-GridToolRegistry"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "scriptsRoot"
+        ]
+      },
+      "outputSchema": {
+        "type": "array",
+        "items": {
+          "$ref": "./schemas/tool-definition.v1.schema.json"
+        }
+      },
+      "preconditions": [
+        "Tool definitions are repository-owned and contain no runtime paths."
+      ],
+      "dependencies": [
+        "grid.health.capability.resolve"
+      ],
+      "sideEffectClassification": "RepositoryRead",
+      "requiredAuthority": {
+        "kind": "RepositoryRead",
+        "description": "Reads only repository tool registries and capability manifests."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Registry resolution is read-only."
+      },
+      "terminalStates": [
+        "Resolved",
+        "Invalid",
+        "DuplicateToolId"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.request-read-authority.review",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.RequestExecution.ps1"
+        ],
+        "entryPoint": "New-GridRequestAuthorizationReview"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "envelope",
+          "requestPlan",
+          "scriptsRoot",
+          "submissionId",
+          "actorId",
+          "sessionId"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "./schemas/request-read-authorization.v2.schema.json"
+      },
+      "preconditions": [
+        "The structured request is ReadyToCollect.",
+        "Actor/session identity and exact adapter read inputs are explicit."
+      ],
+      "dependencies": [
+        "grid.health.tool-registry.resolve",
+        "grid.health.class-request.execute"
+      ],
+      "sideEffectClassification": "RepositoryRead",
+      "requiredAuthority": {
+        "kind": "RepositoryRead",
+        "description": "Materializes a review only; selection and review grant no external read authority."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "The review is inert and mutationAuthorized is always false."
+      },
+      "terminalStates": [
+        "AwaitingAuthorization",
+        "Rejected"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.request-evidence.execute",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.RequestExecution.ps1",
+          "scripts/health/Invoke-GridRequestSubmission.ps1"
+        ],
+        "entryPoint": "Invoke-GridRequestSubmission.ps1"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "envelope",
+          "requestPlan",
+          "authorizationReview",
+          "authorizationGrantId",
+          "authorizationSecret",
+          "actorId",
+          "sessionId",
+          "submissionId"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "./schemas/request-evidence-result.v1.schema.json"
+      },
+      "preconditions": [
+        "A current random-secret grant is Issued and bound to the exact actor/session, request, plan, scope, capability versions, inputs, and targets.",
+        "The current semantic identity matches the review and durable grant."
+      ],
+      "dependencies": [
+        "grid.health.request-read-authority.review",
+        "grid.health.tool-evidence.orchestrate",
+        "grid.health.case.lifecycle"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Requires a persisted v2 one-use grant plus its non-persisted random secret; public review digests never confer read authority."
+      },
+      "rollback": {
+        "mode": "TerminalGrant",
+        "description": "Read collection is non-mutating; an executing grant finishes Consumed or Failed and cannot be replayed. Sealed exact-identity results may be returned without rerunning collectors."
+      },
+      "terminalStates": [
+        "EvidenceComplete",
+        "EvidencePartial",
+        "EvidenceUnavailable",
+        "EvidenceFailed",
+        "ResumedSealed"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.tool-evidence.orchestrate",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.ToolEvidence.ps1"
+        ],
+        "entryPoint": "Invoke-GridToolEvidenceOrchestration"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "envelope",
+          "requestPlan",
+          "scriptsRoot",
+          "executor",
+          "bindingContext"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "./schemas/tool-evidence-run.v2.schema.json"
+      },
+      "preconditions": [
+        "Every tool is explicitly selected in a validated request envelope.",
+        "The executor is bound by the selected native adapter capability."
+      ],
+      "dependencies": [
+        "grid.health.tool-registry.resolve",
+        "grid.health.evidence.record",
+        "grid.health.process.observe"
+      ],
+      "sideEffectClassification": "ExternalProcessLaunch",
+      "requiredAuthority": {
+        "kind": "ExplicitProcessLaunch",
+        "description": "Selection grants no authority; any process adapter requires its own explicit launch boundary."
+      },
+      "rollback": {
+        "mode": "DelegatedToDependencies",
+        "description": "Evidence writes remain case-local; native collectors are read-only and preserve independent receipts."
+      },
+      "terminalStates": [
+        "EvidenceComplete",
+        "EvidencePartial",
+        "EvidenceUnavailable",
+        "EvidenceFailed"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.capability-gap.resolve",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.CapabilityGap.ps1"
+        ],
+        "entryPoint": "Resolve-GridCapabilityGap"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "gapId",
+          "gameId",
+          "requiredCapabilityId",
+          "requestedOutcome",
+          "capabilityRegistry"
+        ],
+        "properties": {
+          "gapId": { "type": "string" },
+          "gameId": { "type": "string" },
+          "requiredCapabilityId": { "type": "string" },
+          "requestedOutcome": { "type": "string" },
+          "capabilityRegistry": { "type": "array" },
+          "compositionCapabilityIds": { "type": "array" },
+          "communityCandidates": { "type": "array" },
+          "scriptAdmission": { "type": ["object", "null"] },
+          "missingInputs": { "type": "array" },
+          "mode": { "type": "string" }
+        }
+      },
+      "outputSchema": {
+        "$ref": "./schemas/capability-gap-resolution.v1.schema.json"
+      },
+      "preconditions": [
+        "The requested capability and outcome are explicit structured inputs.",
+        "Community candidates and CODE admission results are already normalized evidence."
+      ],
+      "dependencies": [
+        "grid.health.capability.resolve",
+        "grid.health.script-capability.admit",
+        "grid.health.script-capability-proposal.draft"
+      ],
+      "sideEffectClassification": "None",
+      "requiredAuthority": {
+        "kind": "None",
+        "description": "Resolution only selects a reviewable route and grants no collection, acquisition, creation, or mutation authority."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Capability-gap resolution is a pure projection over supplied evidence."
+      },
+      "terminalStates": [
+        "RegisteredCapabilityReady",
+        "CompositionReady",
+        "AcquisitionReady",
+        "CandidateSelectionRequired",
+        "CreationProposalRequired",
+        "CreationProposalReady",
+        "NeedsStructuredInput",
+        "RuntimeCaseData",
+        "Rejected"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.architecture.validate",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Test-GridCapabilityArchitecture.ps1"
+        ],
+        "entryPoint": "Test-GridCapabilityArchitecture.ps1"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "repositoryRoot"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "violations",
+          "inventory"
+        ]
+      },
+      "preconditions": [
+        "RepositoryRoot contains scripts/health and scripts/games."
+      ],
+      "dependencies": [
+        "grid.health.capability.resolve"
+      ],
+      "sideEffectClassification": "RepositoryRead",
+      "requiredAuthority": {
+        "kind": "RepositoryRead",
+        "description": "Audits repository files without modifying them."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Architecture validation is read-only."
+      },
+      "terminalStates": [
+        "Passed",
+        "Failed",
+        "Incomplete"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,941 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "grid.verification.v1",
+  "description": "Authoritative ordered inventory for repository-owned GRID verification.",
+  "lanes": [
+    {
+      "id": "Portable",
+      "description": "Platform-neutral repository checks. Does not certify WinUI, MO2 integration, installation, or distribution behavior."
+    },
+    {
+      "id": "WindowsSource",
+      "description": "Windows source verification including Windows-only PowerShell suites, solution build, executable test projects, and UI automation."
+    },
+    {
+      "id": "Distribution",
+      "description": "Reserved for later packaged/distribution verification. No distribution checks are registered in v1."
+    }
+  ],
+  "suites": [
+    {
+      "id": "architecture-conformance",
+      "displayName": "Architecture/documentation conformance",
+      "order": 10,
+      "kind": "PowerShell",
+      "path": "tests/ArchitectureConformance.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Repository"
+    },
+    {
+      "id": "verification-orchestrator",
+      "displayName": "Verification orchestrator contracts",
+      "order": 20,
+      "kind": "PowerShell",
+      "path": "tests/VerificationOrchestrator.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Repository"
+    },
+    {
+      "id": "provenance-contracts",
+      "displayName": "Provenance and distribution refusal contracts",
+      "order": 25,
+      "kind": "PowerShell",
+      "path": "tests/Provenance.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Repository"
+    },
+    {
+      "id": "shared-health-baselinedispatch",
+      "displayName": "BaselineDispatch",
+      "order": 30,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/BaselineDispatch.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-capabilityarchitecture",
+      "displayName": "CapabilityArchitecture",
+      "order": 40,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/CapabilityArchitecture.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-capabilitygap",
+      "displayName": "CapabilityGap",
+      "order": 45,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/CapabilityGap.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-casestore",
+      "displayName": "CaseStore",
+      "order": 50,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/CaseStore.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-authorizationstore",
+      "displayName": "AuthorizationStore",
+      "order": 55,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/AuthorizationStore.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-diagnosticresultcontract",
+      "displayName": "DiagnosticResultContract",
+      "order": 60,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/DiagnosticResultContract.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-evidencescoring",
+      "displayName": "EvidenceScoring",
+      "order": 70,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/EvidenceScoring.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-fullhouseevidencecoverage",
+      "displayName": "FullHouseEvidenceCoverage",
+      "order": 75,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/FullHouseEvidenceCoverage.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-gameadapterrouting",
+      "displayName": "GameAdapterRouting",
+      "order": 80,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/GameAdapterRouting.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-gameuserdataroots",
+      "displayName": "GameUserDataRoots",
+      "order": 90,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/GameUserDataRoots.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-healthclicontract",
+      "displayName": "HealthCliContract",
+      "order": 100,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/HealthCliContract.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-investigationplan",
+      "displayName": "InvestigationPlan",
+      "order": 110,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/InvestigationPlan.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-requestexecution",
+      "displayName": "RequestExecution",
+      "order": 120,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/RequestExecution.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-problemledger",
+      "displayName": "ProblemLedger",
+      "order": 125,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/ProblemLedger.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-requestplanner",
+      "displayName": "RequestPlanner",
+      "order": 130,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/RequestPlanner.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-registeredcoverage",
+      "displayName": "RegisteredCoverage",
+      "order": 135,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/RegisteredCoverage.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-resourcegovernor",
+      "displayName": "ResourceGovernor",
+      "order": 140,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/ResourceGovernor.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-scriptadmission",
+      "displayName": "ScriptAdmission",
+      "order": 150,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/ScriptAdmission.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-sharedhealthengine",
+      "displayName": "SharedHealthEngine",
+      "order": 160,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/SharedHealthEngine.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "shared-health-toolevidenceorchestration",
+      "displayName": "ToolEvidenceOrchestration",
+      "order": 170,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/ToolEvidenceOrchestration.Tests.ps1",
+      "lanes": [
+        "Portable",
+        "WindowsSource"
+      ],
+      "platform": "Any",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "portable-core-build",
+      "displayName": "Grid.Core.Tests build",
+      "order": 180,
+      "kind": "DotNetBuild",
+      "path": "tests/Grid.Core.Tests/Grid.Core.Tests.csproj",
+      "lanes": [
+        "Portable"
+      ],
+      "platform": "Any",
+      "configurationMode": "Required",
+      "arguments": [],
+      "category": "PortableDotNet"
+    },
+    {
+      "id": "portable-core-tests",
+      "displayName": "Grid.Core.Tests",
+      "order": 190,
+      "kind": "DotNetRun",
+      "path": "tests/Grid.Core.Tests/Grid.Core.Tests.csproj",
+      "lanes": [
+        "Portable"
+      ],
+      "platform": "Any",
+      "configurationMode": "Required",
+      "arguments": [
+        "--no-build",
+        "--no-restore"
+      ],
+      "category": "PortableDotNet"
+    },
+    {
+      "id": "gta-setupreadiness",
+      "displayName": "GTA V Setup Readiness",
+      "order": 195,
+      "kind": "PowerShell",
+      "path": "scripts/games/grandtheftautov/tests/GtaSetupReadiness.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "GrandTheftAutoV"
+    },
+    {
+      "id": "gta-deployment",
+      "displayName": "GTA V Authorized Deployment",
+      "order": 196,
+      "kind": "PowerShell",
+      "path": "scripts/games/grandtheftautov/tests/GtaDeployment.Tests.ps1",
+      "lanes": ["WindowsSource"],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "GrandTheftAutoV"
+    },
+    {
+      "id": "provider-discovery",
+      "displayName": "Universal provider discovery",
+      "order": 197,
+      "kind": "PowerShell",
+      "path": "scripts/health/tests/ProviderDiscovery.Tests.ps1",
+      "lanes": ["WindowsSource"],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "SharedHealth"
+    },
+    {
+      "id": "skyrim-activelineagecertification",
+      "displayName": "ActiveLineageCertification",
+      "order": 200,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/ActiveLineageCertification.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-artifactacquisition",
+      "displayName": "ArtifactAcquisition",
+      "order": 210,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/ArtifactAcquisition.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-authorized-pluginstate",
+      "displayName": "Authorized-PluginState",
+      "order": 220,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/Authorized-PluginState.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-authorized-modstate",
+      "displayName": "Authorized-ModState",
+      "order": 221,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/Authorized-ModState.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-baselineintegritydiagnosis",
+      "displayName": "BaselineIntegrityDiagnosis",
+      "order": 222,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/BaselineIntegrityDiagnosis.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-baselinefinalizationrecovery",
+      "displayName": "BaselineFinalizationRecovery",
+      "order": 223,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/BaselineFinalizationRecovery.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-componentrecoveryplan",
+      "displayName": "ComponentRecoveryPlan",
+      "order": 224,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/ComponentRecoveryPlan.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-existingtoolreport",
+      "displayName": "ExistingToolReport",
+      "order": 225,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/ExistingToolReport.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-crashsignature",
+      "displayName": "CrashSignature",
+      "order": 226,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/CrashSignature.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-diagnosticresult",
+      "displayName": "DiagnosticResult",
+      "order": 230,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/DiagnosticResult.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-recordcatalogtargets",
+      "displayName": "RecordCatalogTargets",
+      "order": 232,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/RecordCatalogTargets.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-recordrelationshipprotectedstate",
+      "displayName": "RecordRelationshipProtectedState",
+      "order": 233,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/RecordRelationshipProtectedState.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-lootexistingoutput",
+      "displayName": "LootExistingOutput",
+      "order": 240,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/LootExistingOutput.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-gameplaycapabilityassessment",
+      "displayName": "GameplayCapabilityAssessment",
+      "order": 241,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/GameplayCapabilityAssessment.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-nexussourceidentity",
+      "displayName": "NexusSourceIdentity",
+      "order": 242,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/NexusSourceIdentity.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-nexuscapabilityobservation",
+      "displayName": "NexusCapabilityObservation",
+      "order": 243,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/NexusCapabilityObservation.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-recoveryarchiveinspection",
+      "displayName": "RecoveryArchiveInspection",
+      "order": 244,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/RecoveryArchiveInspection.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-recoverysourcerefresh",
+      "displayName": "RecoverySourceRefresh",
+      "order": 245,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/RecoverySourceRefresh.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-referencesuppressionproposal",
+      "displayName": "ReferenceSuppressionProposal",
+      "order": 246,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/ReferenceSuppressionProposal.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-modchainrepair",
+      "displayName": "ModChainRepair",
+      "order": 250,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/ModChainRepair.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-pluginstatebatch",
+      "displayName": "PluginStateBatch",
+      "order": 255,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/PluginStateBatch.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-eslflag",
+      "displayName": "EslFlag",
+      "order": 257,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/EslFlag.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-reusable-diagnostics",
+      "displayName": "Reusable-Diagnostics",
+      "order": 260,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/Reusable-Diagnostics.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-rootcausediagnosis",
+      "displayName": "RootCauseDiagnosis",
+      "order": 270,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/RootCauseDiagnosis.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-runtimecertification",
+      "displayName": "RuntimeCertification",
+      "order": 280,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/RuntimeCertification.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-scriptedreferenceevidence",
+      "displayName": "ScriptedReferenceEvidence",
+      "order": 285,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/ScriptedReferenceEvidence.Tests.ps1",
+      "lanes": ["WindowsSource"],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-xedit-loaderprogress",
+      "displayName": "XEdit-LoaderProgress",
+      "order": 290,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/XEdit-LoaderProgress.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-xedit-minimalselection",
+      "displayName": "XEdit-MinimalSelection",
+      "order": 300,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/XEdit-MinimalSelection.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-xeditcollectorprovisioning",
+      "displayName": "XEditCollectorProvisioning",
+      "order": 310,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/XEditCollectorProvisioning.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "skyrim-xeditreferencesuppressionwriterprovisioning",
+      "displayName": "XEditReferenceSuppressionWriterProvisioning",
+      "order": 315,
+      "kind": "PowerShell",
+      "path": "scripts/games/skyrimspecialedition/tests/XEditReferenceSuppressionWriterProvisioning.Tests.ps1",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "None",
+      "arguments": [],
+      "category": "Skyrim"
+    },
+    {
+      "id": "windows-solution-build",
+      "displayName": "Grid.sln source build",
+      "order": 320,
+      "kind": "DotNetBuild",
+      "path": "Grid.sln",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+        "configurationMode": "Required",
+        "arguments": [
+          "-p:Platform=x64",
+          "--no-restore"
+        ],
+      "category": "Build"
+    },
+    {
+      "id": "windows-core-tests",
+      "displayName": "Grid.Core.Tests",
+      "order": 330,
+      "kind": "DotNetRun",
+      "path": "tests/Grid.Core.Tests/Grid.Core.Tests.csproj",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "Required",
+      "arguments": [
+        "-p:Platform=x64",
+        "--no-build",
+        "--no-restore"
+      ],
+      "category": "ExecutableTests"
+    },
+    {
+      "id": "windows-mo2-tests",
+      "displayName": "Grid.Mo2.Tests",
+      "order": 340,
+      "kind": "DotNetRun",
+      "path": "tests/Grid.Mo2.Tests/Grid.Mo2.Tests.csproj",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "Required",
+      "arguments": [
+        "-p:Platform=x64",
+        "--no-build",
+        "--no-restore"
+      ],
+      "category": "ExecutableTests"
+    },
+    {
+      "id": "windows-devlauncher-tests",
+      "displayName": "Grid.DevLauncher.Tests",
+      "order": 350,
+      "kind": "DotNetRun",
+      "path": "tests/Grid.DevLauncher.Tests/Grid.DevLauncher.Tests.csproj",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "Required",
+      "arguments": [
+        "-p:Platform=x64",
+        "--no-build",
+        "--no-restore"
+      ],
+      "category": "ExecutableTests"
+    },
+    {
+      "id": "windows-ui-tests",
+      "displayName": "Grid.App.UiTests",
+      "order": 360,
+      "kind": "UiDotNetRun",
+      "path": "tests/Grid.App.UiTests/Grid.App.UiTests.csproj",
+      "lanes": [
+        "WindowsSource"
+      ],
+      "platform": "Windows",
+      "configurationMode": "Required",
+      "arguments": [
+        "--no-build",
+        "--no-restore"
+      ],
+      "category": "UIAutomation"
+    }
+  ]
+}

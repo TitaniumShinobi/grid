@@ -1,0 +1,14 @@
+﻿{
+    "schemaVersion":  1,
+    "ledgerId":  "grid.asset-provenance.v1",
+    "assets":  [
+                   {
+                       "path":  "src/Grid.App/Assets/TemporaryIdentity/GridTemporary.ico",
+                       "classification":  "OriginalGridWork",
+                       "reviewState":  "Provisional",
+                       "distributionDisposition":  "Candidate",
+                       "evidence":  "The adjacent README records a temporary Grid identity constructed from a Windows-native Segoe UI Variable capital G and Grid shell colors.",
+                       "requiredAction":  "Replace with approved original branding and confirm font/icon distribution rights before release."
+                   }
+               ]
+}

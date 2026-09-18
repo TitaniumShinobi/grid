@@ -1,0 +1,16 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+AppPackages/
+BundleArtifacts/
+artifacts/
+
+# Local runtime/debug artifacts
+/Grid.exe
+/debug.log
+/tmp/
+
+# Local diagnostic/test-lab evidence
+/test-lab/

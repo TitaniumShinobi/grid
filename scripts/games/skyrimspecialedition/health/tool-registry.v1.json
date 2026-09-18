@@ -1,0 +1,161 @@
+{
+  "$schema": "../../../health/schemas/tool-definition.v1.schema.json",
+  "schemaVersion": 1,
+  "tools": [
+    {
+      "schemaVersion": 1,
+      "toolId": "grid.tool.mo2",
+      "displayName": "Mod Organizer 2",
+      "gameId": "skyrimspecialedition",
+      "adapter": "MO2Context",
+      "observationMode": "InProcessRead",
+      "rootCapabilityIds": [
+        "grid.game.skyrimspecialedition.mo2-context.collect"
+      ],
+      "supportedClassIds": [
+        "grid.class.crash-freeze",
+        "grid.class.distribution-leveled-lists",
+        "grid.class.installation-integrity",
+        "grid.class.missing-mesh",
+        "grid.class.missing-texture",
+        "grid.class.plugins-dependencies",
+        "grid.class.skse-compatibility"
+      ],
+      "limits": {
+        "timeoutSeconds": 60,
+        "maximumOutputBytes": 33554432
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "toolId": "grid.tool.sseedit",
+      "displayName": "SSEEdit",
+      "gameId": "skyrimspecialedition",
+      "adapter": "SSEEditReference",
+      "observationMode": "ExplicitProcessLaunch",
+      "rootCapabilityIds": [
+        "grid.game.skyrimspecialedition.xedit-reference.collect",
+        "grid.game.skyrimspecialedition.xedit-evidence.normalize",
+        "grid.game.skyrimspecialedition.placed-actor-reference.resolve"
+      ],
+      "supportedClassIds": [
+        "grid.class.world-objects",
+        "grid.class.npc-behavior",
+        "grid.class.scripts-save-state",
+        "grid.class.record-conflicts",
+        "grid.class.archives-metadata"
+      ],
+      "limits": {
+        "timeoutSeconds": 600,
+        "maximumOutputBytes": 33554432
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "toolId": "grid.tool.loot",
+      "displayName": "LOOT",
+      "gameId": "skyrimspecialedition",
+      "adapter": "LootExistingOutput",
+      "observationMode": "ExistingOutputRead",
+      "rootCapabilityIds": [
+        "grid.game.skyrimspecialedition.loot-existing-output.collect"
+      ],
+      "supportedClassIds": [
+        "grid.class.installation-integrity",
+        "grid.class.plugins-dependencies"
+      ],
+      "limits": {
+        "timeoutSeconds": 30,
+        "maximumOutputBytes": 16777216
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "toolId": "grid.tool.texgen",
+      "displayName": "TexGen x64 after-run report",
+      "gameId": "skyrimspecialedition",
+      "adapter": "SkyrimExistingToolReport",
+      "observationMode": "ExistingOutputRead",
+      "rootCapabilityIds": ["grid.game.skyrimspecialedition.existing-tool-report.collect"],
+      "supportedClassIds": ["grid.class.installation-integrity","grid.class.missing-texture","grid.class.archives-metadata"],
+      "limits": {"timeoutSeconds": 30,"maximumOutputBytes": 16777216}
+    },
+    {
+      "schemaVersion": 1,
+      "toolId": "grid.tool.xlodgen",
+      "displayName": "xLODGen x64 after-run report",
+      "gameId": "skyrimspecialedition",
+      "adapter": "SkyrimExistingToolReport",
+      "observationMode": "ExistingOutputRead",
+      "rootCapabilityIds": ["grid.game.skyrimspecialedition.existing-tool-report.collect"],
+      "supportedClassIds": ["grid.class.installation-integrity","grid.class.missing-texture","grid.class.world-objects"],
+      "limits": {"timeoutSeconds": 30,"maximumOutputBytes": 16777216}
+    },
+    {
+      "schemaVersion": 1,
+      "toolId": "grid.tool.dyndolod",
+      "displayName": "DynDOLOD x64 after-run report",
+      "gameId": "skyrimspecialedition",
+      "adapter": "SkyrimExistingToolReport",
+      "observationMode": "ExistingOutputRead",
+      "rootCapabilityIds": ["grid.game.skyrimspecialedition.existing-tool-report.collect"],
+      "supportedClassIds": ["grid.class.installation-integrity","grid.class.missing-texture","grid.class.world-objects"],
+      "limits": {"timeoutSeconds": 30,"maximumOutputBytes": 16777216}
+    },
+    {
+      "schemaVersion": 1,
+      "toolId": "grid.tool.bodyslide",
+      "displayName": "BodySlide batch-build report",
+      "gameId": "skyrimspecialedition",
+      "adapter": "SkyrimExistingToolReport",
+      "observationMode": "ExistingOutputRead",
+      "rootCapabilityIds": ["grid.game.skyrimspecialedition.existing-tool-report.collect"],
+      "supportedClassIds": ["grid.class.installation-integrity","grid.class.missing-mesh"],
+      "limits": {"timeoutSeconds": 30,"maximumOutputBytes": 16777216}
+    },
+    {
+      "schemaVersion": 1,
+      "toolId": "grid.tool.zedit",
+      "displayName": "zEdit merge report",
+      "gameId": "skyrimspecialedition",
+      "adapter": "SkyrimExistingToolReport",
+      "observationMode": "ExistingOutputRead",
+      "rootCapabilityIds": ["grid.game.skyrimspecialedition.existing-tool-report.collect"],
+      "supportedClassIds": ["grid.class.installation-integrity","grid.class.plugins-dependencies"],
+      "limits": {"timeoutSeconds": 30,"maximumOutputBytes": 16777216}
+    },
+    {
+      "schemaVersion": 1,
+      "toolId": "grid.tool.wrye-bash",
+      "displayName": "Wrye Bash bashed-patch report",
+      "gameId": "skyrimspecialedition",
+      "adapter": "SkyrimExistingToolReport",
+      "observationMode": "ExistingOutputRead",
+      "rootCapabilityIds": ["grid.game.skyrimspecialedition.existing-tool-report.collect"],
+      "supportedClassIds": ["grid.class.installation-integrity","grid.class.plugins-dependencies"],
+      "limits": {"timeoutSeconds": 30,"maximumOutputBytes": 16777216}
+    },
+    {
+      "schemaVersion": 1,
+      "toolId": "grid.tool.synthesis",
+      "displayName": "Synthesis after-run report",
+      "gameId": "skyrimspecialedition",
+      "adapter": "SkyrimExistingToolReport",
+      "observationMode": "ExistingOutputRead",
+      "rootCapabilityIds": ["grid.game.skyrimspecialedition.existing-tool-report.collect"],
+      "supportedClassIds": ["grid.class.installation-integrity","grid.class.plugins-dependencies"],
+      "limits": {"timeoutSeconds": 30,"maximumOutputBytes": 16777216}
+    },
+    {
+      "schemaVersion": 1,
+      "toolId": "grid.tool.sseedit-report",
+      "displayName": "SSEEdit full-profile after-load report",
+      "gameId": "skyrimspecialedition",
+      "adapter": "SkyrimExistingToolReport",
+      "observationMode": "ExistingOutputRead",
+      "rootCapabilityIds": ["grid.game.skyrimspecialedition.existing-tool-report.collect"],
+      "supportedClassIds": ["grid.class.installation-integrity","grid.class.record-conflicts","grid.class.plugins-dependencies"],
+      "limits": {"timeoutSeconds": 30,"maximumOutputBytes": 16777216}
+    }
+  ]
+}

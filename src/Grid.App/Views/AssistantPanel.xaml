@@ -1,0 +1,300 @@
+<UserControl
+    x:Class="Grid.App.Views.AssistantPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    IsTabStop="False" KeyDown="OnPanelKeyDown">
+
+    <UserControl.Resources>
+        <Style x:Key="ChatActionButtonStyle" TargetType="Button" BasedOn="{StaticResource ShellChromeButtonStyle}">
+            <Setter Property="Height" Value="32" />
+            <Setter Property="Padding" Value="10,0" />
+            <Setter Property="Background" Value="{StaticResource CardBrush}" />
+            <Setter Property="BorderBrush" Value="{StaticResource CardBorderBrush}" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="CornerRadius" Value="7" />
+        </Style>
+        <Style x:Key="ChatIconButtonStyle" TargetType="Button" BasedOn="{StaticResource ShellChromeButtonStyle}">
+            <Setter Property="Width" Value="32" />
+            <Setter Property="Height" Value="32" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="CornerRadius" Value="16" />
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Background="{ThemeResource ShellSurfaceBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Border Padding="14,3" BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="0,0,0,1">
+            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+                <StackPanel Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                    <TextBlock VerticalAlignment="Center" FontSize="13" Text="Chat" />
+                    <Border Padding="9,3" CornerRadius="4" Background="{StaticResource CardHoverBrush}">
+                        <TextBlock FontSize="12" FontWeight="SemiBold" Text="Grid" />
+                    </Border>
+                    <TextBlock x:Name="TaskTitleText" VerticalAlignment="Center" FontSize="11" Foreground="{StaticResource MutedTextBrush}" Text="New Investigation" TextTrimming="CharacterEllipsis" />
+                </StackPanel>
+                <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="1">
+                    <Button Width="30" Style="{StaticResource ShellChromeButtonStyle}" AutomationProperties.Name="Assistant options" ToolTipService.ToolTip="Options">
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="12" Glyph="&#xE712;" />
+                    </Button>
+                    <Button Width="30" Style="{StaticResource ShellChromeButtonStyle}" AutomationProperties.Name="Investigation history" Click="OnHistoryClicked" ToolTipService.ToolTip="Investigation history">
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="12" Glyph="&#xE81C;" />
+                    </Button>
+                    <Button Width="30" Style="{StaticResource ShellChromeButtonStyle}" AutomationProperties.Name="Assistant settings" IsEnabled="False" ToolTipService.ToolTip="Settings unavailable">
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="12" Glyph="&#xE713;" />
+                    </Button>
+                    <ToggleButton x:Name="FormToggleButton" Width="30" Style="{StaticResource ShellChromeToggleStyle}" AutomationProperties.Name="Toggle data intake form" Click="OnFormClicked" ToolTipService.ToolTip="Data intake form">
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="12" Glyph="&#xE8A5;" />
+                    </ToggleButton>
+                    <ToggleButton x:Name="FullScreenButton" Width="30" Style="{StaticResource ShellChromeToggleStyle}" AutomationProperties.Name="Toggle chat full screen" Click="OnFullScreenClicked" ToolTipService.ToolTip="Full screen">
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="12" Glyph="&#xE740;" />
+                    </ToggleButton>
+                    <Button x:Name="NewChatButton" Width="30" Style="{StaticResource ShellChromeButtonStyle}" AutomationProperties.Name="New Investigation" Click="OnNewChatClicked" ToolTipService.ToolTip="New Investigation">
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="12" Glyph="&#xE710;" />
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <ScrollViewer Grid.Row="1" AutomationProperties.Name="Grid chat content" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Stretch">
+            <Grid Padding="16,14,16,24" HorizontalAlignment="Stretch">
+                <StackPanel x:Name="HomeSurface" Spacing="12">
+                    <StackPanel x:Name="EmptyHome" Spacing="4" HorizontalAlignment="Center" Margin="0,30,0,0">
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="28" Foreground="{StaticResource MutedTextBrush}" Glyph="&#xE8BD;" />
+                        <TextBlock FontSize="18" FontWeight="SemiBold" Text="What should Grid investigate?" TextAlignment="Center" />
+                        <TextBlock FontSize="11" Foreground="{StaticResource MutedTextBrush}" Text="Build a deterministic request from your connected workspace." TextAlignment="Center" TextWrapping="Wrap" />
+                    </StackPanel>
+
+                    <Border x:Name="IntakeForm" Padding="12" Style="{StaticResource CardStyle}" Visibility="Collapsed" AutomationProperties.Name="Grid data intake form">
+                        <StackPanel Spacing="10">
+                            <Grid ColumnDefinitions="*,Auto">
+                                <TextBlock FontSize="13" FontWeight="SemiBold" Text="New Investigation" />
+                                <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="2">
+                                    <ToggleButton x:Name="GameScopeButton" Content="GAME" Style="{StaticResource ShellChromeToggleStyle}" Width="58" AutomationProperties.Name="Game intake" Click="OnGameScopeClicked" />
+                                    <ToggleButton x:Name="GridScopeButton" Content="GRID" Style="{StaticResource ShellChromeToggleStyle}" Width="58" AutomationProperties.Name="Grid intake" Click="OnGridScopeClicked" />
+                                </StackPanel>
+                            </Grid>
+
+                            <StackPanel x:Name="GameFields" Spacing="8">
+                                <ComboBox x:Name="GameSelector" Header="Game" DisplayMemberPath="Name" HorizontalAlignment="Stretch" SelectionChanged="OnGameSelectionChanged" AutomationProperties.Name="Select game" />
+                                <ComboBox x:Name="InstallationSelector" Header="Installation" DisplayMemberPath="Name" HorizontalAlignment="Stretch" SelectionChanged="OnInstallationSelectionChanged" AutomationProperties.Name="Select installation" />
+                                <ComboBox x:Name="ProfileSelector" Header="Profile" DisplayMemberPath="Name" HorizontalAlignment="Stretch" SelectionChanged="OnProfileSelectionChanged" AutomationProperties.Name="Select profile" />
+                                <Button x:Name="ModsButton" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" Content="Mods · None selected" AutomationProperties.Name="Select multiple mods">
+                                    <Button.Flyout>
+                                        <Flyout Placement="Bottom">
+                                            <ScrollViewer MaxHeight="320" MinWidth="280" VerticalScrollBarVisibility="Auto">
+                                                <StackPanel x:Name="ModsChecklist" Spacing="4" />
+                                            </ScrollViewer>
+                                        </Flyout>
+                                    </Button.Flyout>
+                                </Button>
+                                <Button x:Name="ToolsButton" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" Content="Tools · None selected" AutomationProperties.Name="Select multiple tools">
+                                    <Button.Flyout>
+                                        <Flyout Placement="Bottom">
+                                            <ScrollViewer MaxHeight="260" MinWidth="280" VerticalScrollBarVisibility="Auto">
+                                                <StackPanel x:Name="ToolsChecklist" Spacing="4" />
+                                            </ScrollViewer>
+                                        </Flyout>
+                                    </Button.Flyout>
+                                </Button>
+                                <ComboBox x:Name="ClassSelector" Header="Class" DisplayMemberPath="DisplayName" HorizontalAlignment="Stretch" SelectionChanged="OnClassSelectionChanged" AutomationProperties.Name="Select Class" />
+                                <ComboBox x:Name="CapabilitySelector" Header="Gameplay capability" DisplayMemberPath="DisplayName" HorizontalAlignment="Stretch" Visibility="Collapsed" SelectionChanged="OnCapabilitySelectionChanged" AutomationProperties.Name="Select gameplay capability" />
+                                <TextBox x:Name="ProblemText" Header="Problem" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="64" PlaceholderText="Describe what is wrong in plain language" TextChanged="OnProblemTextChanged" AutomationProperties.Name="Problem description" />
+                                <TextBox x:Name="ExpectedBehaviorText" Header="Expected behavior" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="52" PlaceholderText="What should happen instead?" TextChanged="OnExpectedBehaviorTextChanged" AutomationProperties.Name="Expected behavior" />
+                                <TextBox x:Name="ReproductionLocationText" Header="Reproduction or location" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="52" PlaceholderText="Where and how can the problem be reproduced?" TextChanged="OnReproductionLocationTextChanged" AutomationProperties.Name="Reproduction or location" />
+                                <TextBox x:Name="DesiredOutcomeText" Header="Desired outcome" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="52" PlaceholderText="What result do you want Grid to reach?" TextChanged="OnDesiredOutcomeTextChanged" AutomationProperties.Name="Desired outcome" />
+                                <StackPanel Spacing="5">
+                                    <Button x:Name="AttachEvidenceIntakeButton" Content="Attach screenshots or files" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" Click="OnAttachEvidenceClicked" AutomationProperties.Name="Attach Evidence" />
+                                    <ItemsControl x:Name="DraftAttachmentList" AutomationProperties.Name="Selected evidence attachments" />
+                                </StackPanel>
+                                <Border Padding="8" Background="{StaticResource CardHoverBrush}" CornerRadius="5">
+                                    <StackPanel Spacing="3">
+                                        <ComboBox x:Name="AuthorizationScopeSelector" Header="Authorization scope" HorizontalAlignment="Stretch" SelectionChanged="OnAuthorizationScopeSelectionChanged" AutomationProperties.Name="Select authorization scope">
+                                            <ComboBoxItem Content="Selected installation and profile (read-only)" Tag="SelectedInstallationAndProfileReadOnly" />
+                                        </ComboBox>
+                                        <TextBlock x:Name="DraftAuthorizationScopeText" FontSize="10" Foreground="{StaticResource MutedTextBrush}" TextWrapping="Wrap" Text="Only the selected installation, profile context, and explicitly attached files will be requested for read access." />
+                                    </StackPanel>
+                                </Border>
+                            </StackPanel>
+
+                            <StackPanel x:Name="GridFields" Spacing="5" Visibility="Collapsed">
+                                <TextBlock FontSize="12" FontWeight="SemiBold" Text="GRID development requests" />
+                                <TextBlock FontSize="11" Foreground="{StaticResource MutedTextBrush}" Text="Feature, detail, agent-tool, and Class registries are not available yet. This boundary is intentionally inactive." TextWrapping="Wrap" />
+                                <Button Content="GRID intake unavailable" IsEnabled="False" HorizontalAlignment="Stretch" AutomationProperties.Name="GRID intake unavailable" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel x:Name="HistorySurface" Spacing="10" Visibility="Collapsed" AutomationProperties.Name="Investigation history surface">
+                    <TextBlock FontSize="16" FontWeight="SemiBold" Text="Investigation history" />
+                    <TextBox PlaceholderText="Search investigations" IsEnabled="False" AutomationProperties.Name="Search investigation history unavailable" />
+                    <TextBlock x:Name="HistoryEmptyText" Foreground="{StaticResource MutedTextBrush}" Text="No deterministic investigations have been recorded locally." TextWrapping="Wrap" />
+                    <StackPanel x:Name="HistoryTaskList" Spacing="6" />
+                </StackPanel>
+
+                <StackPanel x:Name="TaskSurface" MaxWidth="860" HorizontalAlignment="Stretch" Spacing="18" Visibility="Collapsed" AutomationProperties.Name="Task transcript surface">
+                    <StackPanel x:Name="TranscriptEntries" Spacing="18" AutomationProperties.Name="Conversation messages" />
+
+                    <Border x:Name="AuthorizationReview" Padding="14" Background="{StaticResource CardBrush}" BorderBrush="{StaticResource CardBorderBrush}" BorderThickness="1" CornerRadius="10" Visibility="Collapsed" AutomationProperties.Name="Exact authorization review">
+                        <StackPanel Spacing="10">
+                            <TextBlock x:Name="AuthorizationTitle" FontSize="14" FontWeight="SemiBold" Text="Authorize exact read scope" />
+                            <TextBlock x:Name="AuthorizationStatement" FontSize="12" TextWrapping="Wrap" />
+                            <StackPanel x:Name="AuthorizationScopes" Spacing="5" />
+                            <StackPanel Orientation="Horizontal" Spacing="6" HorizontalAlignment="Right">
+                                <Button Style="{StaticResource ChatActionButtonStyle}" Content="Cancel" Click="OnRejectAuthorizationClicked" AutomationProperties.Name="Cancel authorization" />
+                                <Button x:Name="ApproveAuthorizationButton" Style="{StaticResource ChatActionButtonStyle}" Content="Authorize reads" Click="OnApproveAuthorizationClicked" AutomationProperties.Name="Authorize exact scope" />
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+
+                    <Border x:Name="DiagnosticResultPanel" Padding="0" Background="Transparent" Visibility="Collapsed" AutomationProperties.Name="Diagnostic result">
+                        <StackPanel Spacing="7">
+                            <TextBlock FontSize="14" FontWeight="SemiBold" Text="Grid" />
+                            <TextBlock Text="Affected mod(s):" FontSize="10" Foreground="{StaticResource MutedTextBrush}" />
+                            <TextBlock x:Name="AffectedModsText" TextWrapping="Wrap" />
+                            <TextBlock Text="Mod role(s):" FontSize="10" Foreground="{StaticResource MutedTextBrush}" />
+                            <TextBlock x:Name="ModRolesText" TextWrapping="Wrap" />
+                            <TextBlock Text="Finding:" FontSize="10" Foreground="{StaticResource MutedTextBrush}" />
+                            <TextBlock x:Name="FindingText" TextWrapping="Wrap" />
+                            <TextBlock Text="Solution:" FontSize="10" Foreground="{StaticResource MutedTextBrush}" />
+                            <TextBlock x:Name="SolutionText" TextWrapping="Wrap" />
+                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                <TextBlock Text="Confidence:" FontSize="10" Foreground="{StaticResource MutedTextBrush}" />
+                                <TextBlock x:Name="ConfidenceText" FontSize="10" Foreground="{StaticResource MutedTextBrush}" TextWrapping="Wrap" />
+                            </StackPanel>
+                            <Expander Header="Evidence" AutomationProperties.Name="Diagnostic evidence details">
+                                <StackPanel Padding="0,8,0,0" Spacing="5">
+                                    <TextBlock Text="Evidence:" FontSize="10" Foreground="{StaticResource MutedTextBrush}" />
+                                    <ItemsControl x:Name="FindingEvidenceList" />
+                                </StackPanel>
+                            </Expander>
+                        </StackPanel>
+                    </Border>
+
+                    <Border x:Name="CapabilityRequiredPanel" Padding="12" BorderBrush="{ThemeResource SystemFillColorCautionBrush}" BorderThickness="1" CornerRadius="8" Visibility="Collapsed" AutomationProperties.Name="Capability Required result">
+                        <StackPanel Spacing="5">
+                            <TextBlock FontSize="13" FontWeight="SemiBold" Text="Capability Required" />
+                            <TextBlock x:Name="CapabilityRequiredText" FontSize="11" TextWrapping="Wrap" />
+                        </StackPanel>
+                    </Border>
+
+                    <Border x:Name="SourceAcquisitionPanel" Padding="0" Background="Transparent" Visibility="Collapsed" AutomationProperties.Name="Repair source acquisition">
+                        <StackPanel Spacing="8">
+                            <TextBlock FontSize="14" FontWeight="SemiBold" Text="Recover missing files" />
+                            <TextBlock x:Name="SourceAcquisitionStatusText" FontSize="12" TextWrapping="Wrap" />
+                            <TextBlock x:Name="ExpectedArchiveLeafText" FontFamily="Consolas" FontSize="11" TextWrapping="Wrap" />
+                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                <Button x:Name="DownloadAvailableSourcesButton" Style="{StaticResource ChatActionButtonStyle}" Content="Download available exact sources" Click="OnDownloadAvailableSourcesClicked" AutomationProperties.Name="Download available exact recovery sources" />
+                                <Button x:Name="OpenNexusFilesButton" Style="{StaticResource ChatActionButtonStyle}" Content="Open Nexus" Click="OnOpenNexusFilesClicked" AutomationProperties.Name="Open official Nexus Files page" />
+                                <Button x:Name="RefreshRecoverySourcesButton" Style="{StaticResource ChatActionButtonStyle}" Content="Continue Repair" Click="OnRefreshRecoverySourcesClicked" AutomationProperties.Name="Continue live profile repair" />
+                            </StackPanel>
+                            <Expander Header="All exact source links">
+                                <StackPanel Padding="0,8,0,0" Spacing="5">
+                                    <TextBlock x:Name="AllSourceLinksHeading" FontSize="11" FontWeight="SemiBold" Text="All exact source links" Visibility="Collapsed" />
+                                    <StackPanel x:Name="SourceAcquisitionLinks" Spacing="4" />
+                                </StackPanel>
+                            </Expander>
+                            <TextBlock FontSize="10" Foreground="{StaticResource MutedTextBrush}" Text="Grid verifies every received archive and .meta sidecar before continuing. Downloading a source never installs or enables a mod." TextWrapping="Wrap" />
+                        </StackPanel>
+                    </Border>
+
+                    <Border x:Name="RecoveryActionManifestPanel" Padding="0" Background="Transparent" Visibility="Collapsed" AutomationProperties.Name="Complete recovery human action manifest">
+                        <StackPanel Spacing="7">
+                            <TextBlock FontSize="14" FontWeight="SemiBold" Text="Live-profile repair plan" />
+                            <TextBlock x:Name="RecoveryActionManifestSummaryText" FontSize="12" TextWrapping="Wrap" />
+                            <TextBlock FontSize="10" Foreground="{StaticResource MutedTextBrush}" Text="UNDEFEATED is the repair baseline; no original modlist is required. Nothing changes until an exact repair is reviewed and approved." TextWrapping="Wrap" />
+                            <StackPanel Orientation="Horizontal" Spacing="6">
+                                <Button x:Name="CopyRecoveryActionManifestButton" Style="{StaticResource ChatActionButtonStyle}" Content="Copy action list" Click="OnCopyRecoveryActionManifestClicked" AutomationProperties.Name="Copy complete recovery action list" />
+                            </StackPanel>
+                            <Expander Header="Complete action list" AutomationProperties.Name="Complete repair action details">
+                                <TextBox x:Name="RecoveryActionManifestTextBox" Margin="0,8,0,0" IsReadOnly="True" AcceptsReturn="True" TextWrapping="NoWrap" MaxHeight="420" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" FontFamily="Consolas" FontSize="11" AutomationProperties.Name="Complete recovery action list" />
+                            </Expander>
+                        </StackPanel>
+                    </Border>
+
+                    <Border x:Name="CapabilityAssessmentPanel" Padding="0" Background="Transparent" Visibility="Collapsed" AutomationProperties.Name="Gameplay capability coverage">
+                        <StackPanel Spacing="6">
+                            <TextBlock x:Name="CapabilityAssessmentTitleText" FontSize="13" FontWeight="SemiBold" TextWrapping="Wrap" />
+                            <TextBlock Text="Installed coverage" FontSize="10" Foreground="{StaticResource MutedTextBrush}" />
+                            <TextBlock x:Name="InstalledCapabilityStatusText" TextWrapping="Wrap" />
+                            <StackPanel x:Name="InstalledCapabilityProviderList" Spacing="4" />
+                            <TextBlock Text="Community discovery" FontSize="10" Foreground="{StaticResource MutedTextBrush}" />
+                            <TextBlock x:Name="CapabilityDiscoveryStatusText" TextWrapping="Wrap" />
+                            <StackPanel x:Name="CommunityCapabilityCandidateList" Spacing="6" />
+                        </StackPanel>
+                    </Border>
+
+                    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" HorizontalScrollMode="Auto">
+                        <StackPanel Orientation="Horizontal" Spacing="6" AutomationProperties.Name="Investigation actions">
+                            <Button x:Name="CaptureCurrentStateButton" Style="{StaticResource ChatActionButtonStyle}" Content="Capture Current State" Click="OnCaptureCurrentStateClicked" AutomationProperties.Name="Capture Current State" />
+                            <Button x:Name="DiagnoseButton" Style="{StaticResource ChatActionButtonStyle}" Content="Diagnose" Click="OnDiagnoseClicked" AutomationProperties.Name="Diagnose" />
+                            <Button x:Name="AttachEvidenceTaskButton" Style="{StaticResource ChatActionButtonStyle}" Content="Attach Evidence" Click="OnAttachEvidenceClicked" AutomationProperties.Name="Attach Evidence" />
+                            <Button x:Name="ReviewEvidenceButton" Style="{StaticResource ChatActionButtonStyle}" Content="Review Evidence" Click="OnReviewEvidenceClicked" AutomationProperties.Name="Review Evidence" />
+                            <Button x:Name="ReviewRepairButton" Style="{StaticResource ChatActionButtonStyle}" Content="Review Repair" Click="OnReviewRepairClicked" AutomationProperties.Name="Review Repair" />
+                            <Button x:Name="ApplyRepairButton" Style="{StaticResource ChatActionButtonStyle}" Content="Apply Repair" Click="OnApplyRepairClicked" AutomationProperties.Name="Apply Repair" />
+                            <Button x:Name="RollBackButton" Style="{StaticResource ChatActionButtonStyle}" Content="Roll Back" Click="OnRollBackClicked" AutomationProperties.Name="Roll Back" />
+                        </StackPanel>
+                    </ScrollViewer>
+
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <TextBlock x:Name="TaskStatusText" FontSize="10" Foreground="{StaticResource MutedTextBrush}" TextWrapping="Wrap" VerticalAlignment="Center" />
+                        <Button x:Name="ResumeTaskButton" Style="{StaticResource ChatActionButtonStyle}" Content="Resume" Visibility="Collapsed" Click="OnResumeTaskClicked" AutomationProperties.Name="Resume verified deterministic task" />
+                    </StackPanel>
+                    <TextBlock x:Name="ExecutionErrorText" Foreground="{ThemeResource SystemFillColorCriticalBrush}" TextWrapping="Wrap" Visibility="Collapsed" />
+
+                    <Expander Header="Details and evidence" AutomationProperties.Name="Details and evidence">
+                        <StackPanel Padding="0,8,0,0" Spacing="10">
+                            <TextBlock FontSize="11" Foreground="{StaticResource MutedTextBrush}" Text="Raw deterministic receipts and downloaded-archive classifications." TextWrapping="Wrap" />
+                            <StackPanel x:Name="ReceiptEntries" Spacing="8" />
+                            <Border x:Name="ArchiveCandidatePanel" Padding="10" Style="{StaticResource CardStyle}" Visibility="Collapsed" AutomationProperties.Name="Archive candidate evidence">
+                                <StackPanel Spacing="6">
+                                    <TextBlock FontSize="13" FontWeight="SemiBold" Text="Downloaded archive evidence" />
+                                    <TextBlock FontSize="10" Foreground="{StaticResource MutedTextBrush}" Text="Read-only classifications from exact archive, installed-plugin, and dependent-plugin hashes. These are gates, not install recommendations." TextWrapping="Wrap" />
+                                    <StackPanel x:Name="ArchiveCandidateList" Spacing="6" />
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </Expander>
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+
+        <StackPanel x:Name="SuggestionsSurface" Grid.Row="2" MaxWidth="860" HorizontalAlignment="Stretch" Padding="16,4" Spacing="5" AutomationProperties.Name="Investigation suggestions">
+            <Button Style="{StaticResource ChatActionButtonStyle}" HorizontalAlignment="Left" Content="Repair this profile" Tag="installation" Click="OnSuggestionClicked" AutomationProperties.Name="Run CleanHouse Repair for the whole profile" />
+            <Button Style="{StaticResource ChatActionButtonStyle}" HorizontalAlignment="Left" Content="Investigate a crash or freeze" Tag="crash" Click="OnSuggestionClicked" />
+            <Button Style="{StaticResource ChatActionButtonStyle}" HorizontalAlignment="Left" Content="Trace an asset mismatch" Tag="assets" Click="OnSuggestionClicked" />
+        </StackPanel>
+
+        <Border x:Name="ComposerSurface" Grid.Row="3" MaxWidth="860" HorizontalAlignment="Stretch" Margin="16,8,16,12" Padding="10,8" Background="{ThemeResource ShellInputBrush}" BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="1" CornerRadius="20" AutomationProperties.Name="Grid message composer">
+            <StackPanel Spacing="6">
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="7">
+                    <Button Style="{StaticResource ChatIconButtonStyle}" VerticalAlignment="Bottom" Click="OnAttachEvidenceClicked" AutomationProperties.Name="Attach Evidence from composer" ToolTipService.ToolTip="Attach evidence">
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="14" Glyph="&#xE710;" />
+                    </Button>
+                    <TextBox x:Name="ComposerText" Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="38" MaxHeight="140" Padding="4,7" Background="Transparent" BorderThickness="0" PlaceholderText="Message Grid" TextChanged="OnComposerTextChanged" AutomationProperties.Name="Problem description" />
+                    <Button Grid.Column="2" x:Name="SendButton" Style="{StaticResource ChatIconButtonStyle}" VerticalAlignment="Bottom" IsEnabled="False" AutomationProperties.Name="Start Investigation unavailable" ToolTipService.ToolTip="Start investigation" Click="OnSendClicked">
+                        <FontIcon FontFamily="Segoe Fluent Icons" FontSize="15" Glyph="&#xE74B;" />
+                    </Button>
+                </Grid>
+                <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="7">
+                    <Border x:Name="RequestPill" Padding="7,3" CornerRadius="8" Background="{StaticResource CardHoverBrush}">
+                        <StackPanel Orientation="Horizontal" Spacing="5">
+                            <FontIcon x:Name="ClassIcon" FontFamily="Segoe Fluent Icons" FontSize="11" Foreground="{StaticResource ShellAccentBrush}" Glyph="&#xE946;" />
+                            <TextBlock x:Name="RequestTitleText" FontSize="10" FontWeight="SemiBold" Foreground="{StaticResource ShellAccentBrush}" Text="New request" />
+                        </StackPanel>
+                    </Border>
+                    <TextBlock x:Name="LocationText" Grid.Column="1" VerticalAlignment="Center" FontSize="10" Foreground="{StaticResource MutedTextBrush}" TextTrimming="CharacterEllipsis" />
+                    <TextBlock x:Name="ReadinessText" Grid.Column="2" VerticalAlignment="Center" FontSize="10" Foreground="{StaticResource MutedTextBrush}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" />
+                </Grid>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</UserControl>

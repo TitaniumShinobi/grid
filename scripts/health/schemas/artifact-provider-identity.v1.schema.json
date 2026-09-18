@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/artifact-provider-identity.v1.schema.json",
+  "title": "Grid Artifact Provider Identity v1",
+  "type": "object",
+  "required": ["provider", "gameId", "modId", "fileId", "version", "fileName", "sizeBytes"],
+  "properties": {
+    "provider": { "type": "string", "minLength": 1 },
+    "gameId": { "type": "string", "minLength": 1 },
+    "modId": { "type": "string", "minLength": 1 },
+    "fileId": { "type": "string", "minLength": 1 },
+    "version": { "type": "string", "minLength": 1 },
+    "fileName": { "type": "string", "minLength": 1, "pattern": "^[^\\\\/]+$" },
+    "sizeBytes": { "type": "integer", "minimum": 1, "maximum": 1073741824 }
+  },
+  "additionalProperties": false
+}

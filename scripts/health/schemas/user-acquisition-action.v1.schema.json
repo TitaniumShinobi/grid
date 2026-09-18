@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/user-acquisition-action.v1.schema.json",
+  "title": "Grid User Acquisition Action v1",
+  "type": "object",
+  "required": ["schemaVersion", "actionId", "state", "providerIdentity", "officialUri", "managedInbox", "expectedFileName", "expectedSizeBytes", "identityEvidenceIds", "resumeToken", "createdAt", "completedAt"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "actionId": { "type": "string", "minLength": 1 },
+    "state": { "const": "PendingUserAcquisition" },
+    "providerIdentity": {
+      "type": "object",
+      "required": ["provider", "gameId", "modId", "fileId", "version", "fileName", "sizeBytes"],
+      "properties": {
+        "provider": { "type": "string", "minLength": 1 },
+        "gameId": { "type": "string", "minLength": 1 },
+        "modId": { "type": "string", "minLength": 1 },
+        "fileId": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 },
+        "fileName": { "type": "string", "minLength": 1, "pattern": "^[^\\\\/]+$" },
+        "sizeBytes": { "anyOf": [{ "type": "integer", "minimum": 1, "maximum": 1073741824 }, { "type": "null" }] },
+        "displaySize": { "type": "string", "minLength": 1 },
+        "providerMetadataStatus": { "enum": ["Verified", "RoundedDisplayOnly"] }
+      },
+      "additionalProperties": false
+    },
+    "officialUri": { "type": "string", "pattern": "^https://" },
+    "managedInbox": { "type": "string", "minLength": 1 },
+    "expectedFileName": { "type": "string", "minLength": 1 },
+    "expectedSizeBytes": { "anyOf": [{ "type": "integer", "minimum": 1, "maximum": 1073741824 }, { "type": "null" }] },
+    "identityEvidenceIds": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1, "uniqueItems": true },
+    "resumeToken": { "type": "string", "pattern": "^[A-Za-z0-9_-]{40,64}$" },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "completedAt": { "type": "null" }
+  },
+  "additionalProperties": false
+}

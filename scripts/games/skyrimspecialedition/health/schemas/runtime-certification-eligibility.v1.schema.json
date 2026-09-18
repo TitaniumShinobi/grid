@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/skyrimspecialedition/runtime-certification-eligibility.v1.schema.json",
+  "title": "Grid Skyrim runtime-certification eligibility v1",
+  "type": "object",
+  "required": ["schemaVersion", "lineage", "eligibility", "recoveryDisposition", "blockingPrimitive", "preconditions", "gates", "runtimeValidation", "readyToPlay", "protectedState", "issues", "semanticFingerprint"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "lineage": { "type": "object", "required": ["baseline", "diagnosis", "repair"], "additionalProperties": { "$ref": "#/$defs/case" } },
+    "eligibility": { "enum": ["Eligible", "PreconditionsNotMet", "InvalidLineage", "ApprovalRequired"] },
+    "recoveryDisposition": { "enum": ["None", "ResumeAvailable", "ConfigurationRequired", "AuthorizationRequired"] },
+    "blockingPrimitive": { "type": ["string", "null"] },
+    "preconditions": { "type": "array", "items": { "$ref": "#/$defs/check" } },
+    "gates": { "type": "array", "minItems": 8, "maxItems": 8, "items": { "$ref": "#/$defs/gate" } },
+    "runtimeValidation": { "enum": ["NotStarted", "Running", "Pass", "Fail", "NeedsRuntimeVerification"] },
+    "readyToPlay": { "enum": ["NotEvaluated", "false", "true"] },
+    "protectedState": { "type": "object", "required": ["status", "observations", "issues", "semanticFingerprint"], "properties": { "status": { "enum": ["Pass", "Fail"] }, "observations": { "type": "array" }, "issues": { "type": "array", "items": { "type": "string" } }, "semanticFingerprint": { "$ref": "#/$defs/digest" } }, "additionalProperties": false },
+    "issues": { "type": "array", "items": { "type": "string" } },
+    "semanticFingerprint": { "$ref": "#/$defs/digest" }
+  },
+  "$defs": {
+    "digest": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "case": { "type": "object", "required": ["caseId", "caseDirectory", "sealStatus", "manifestFileSha256", "manifestSha256"], "properties": { "caseId": { "type": "string" }, "caseDirectory": { "type": "string" }, "sealStatus": { "enum": ["Verified", "Invalid"] }, "manifestFileSha256": { "anyOf": [{ "$ref": "#/$defs/digest" }, { "type": "null" }] }, "manifestSha256": { "anyOf": [{ "$ref": "#/$defs/digest" }, { "type": "null" }] } }, "additionalProperties": false },
+    "check": { "type": "object", "required": ["name", "status", "detail", "evidenceSha256"], "properties": { "name": { "type": "string" }, "status": { "enum": ["Pass", "Fail", "Pending", "NotStarted"] }, "detail": { "type": "string" }, "evidenceSha256": { "anyOf": [{ "$ref": "#/$defs/digest" }, { "type": "null" }] } }, "additionalProperties": false },
+    "gate": { "type": "object", "required": ["name", "status", "detail"], "properties": { "name": { "enum": ["InstallationIntegrity", "CompatibilityIntegrity", "AssetIntegrity", "RecordIntegrity", "PluginIntegrity", "ProfileIntegrity", "RuntimeIntegrity", "RollbackIntegrity"] }, "status": { "enum": ["NotStarted", "Pass", "Fail", "NeedsRuntimeVerification"] }, "detail": { "type": "string" } }, "additionalProperties": false }
+  },
+  "additionalProperties": false
+}

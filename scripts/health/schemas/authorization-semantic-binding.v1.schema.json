@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Grid authorization semantic binding v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "actorId",
+    "sessionId",
+    "workspaceId",
+    "requestId",
+    "submissionId",
+    "envelopeSha256",
+    "planSha256",
+    "scopeSha256",
+    "proposalOrSpecificationId",
+    "proposalOrSpecificationSha256",
+    "capabilities",
+    "targets",
+    "normalizedInputSha256"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "actorId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "sessionId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "workspaceId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "requestId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "submissionId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "envelopeSha256": {
+      "type": "string",
+      "pattern": "^[A-F0-9]{64}$"
+    },
+    "planSha256": {
+      "type": "string",
+      "pattern": "^[A-F0-9]{64}$"
+    },
+    "scopeSha256": {
+      "type": "string",
+      "pattern": "^[A-F0-9]{64}$"
+    },
+    "proposalOrSpecificationId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "proposalOrSpecificationSha256": {
+      "type": "string",
+      "pattern": "^[A-F0-9]{64}$"
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "capabilityId",
+          "capabilityVersion",
+          "adapterId",
+          "adapterVersion"
+        ],
+        "properties": {
+          "capabilityId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "capabilityVersion": {
+            "type": "string",
+            "minLength": 1
+          },
+          "adapterId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "adapterVersion": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "targets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "normalizedInputSha256": {
+      "type": "string",
+      "pattern": "^[A-F0-9]{64}$"
+    }
+  }
+}

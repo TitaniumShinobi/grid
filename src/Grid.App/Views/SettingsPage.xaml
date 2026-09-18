@@ -1,0 +1,128 @@
+<Page
+    x:Class="Grid.App.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ScrollViewer
+        AutomationProperties.Name="Grid settings"
+        HorizontalScrollBarVisibility="Disabled"
+        VerticalScrollBarVisibility="Auto">
+        <Grid MaxWidth="900" Padding="40,34,40,56" HorizontalAlignment="Left">
+            <StackPanel Spacing="18">
+                <StackPanel Spacing="8">
+                    <TextBlock Style="{StaticResource EyebrowStyle}" Text="SETTINGS" />
+                    <TextBlock FontSize="32" FontWeight="SemiBold" Text="Application preferences" />
+                    <TextBlock
+                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                        Text="Configure Grid's local application experience. External game and mod-manager files remain outside Grid."
+                        TextWrapping="Wrap" />
+                </StackPanel>
+
+                <Border Padding="20" Style="{StaticResource CardStyle}">
+                    <StackPanel Spacing="8">
+                        <TextBlock FontSize="18" FontWeight="SemiBold" Text="External-state boundary" />
+                        <TextBlock
+                            Text="Grid only shows connected state it can observe. Connecting or disconnecting a game changes Grid's local reference; it does not import, relocate, repair, or remove the external installation."
+                            TextWrapping="Wrap" />
+                        <TextBlock
+                            FontSize="12"
+                            FontWeight="SemiBold"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            Text="Connecting stays read-only · Source downloads require the separate recovery-source setting"
+                            TextWrapping="Wrap" />
+                    </StackPanel>
+                </Border>
+
+                <Border Padding="20" Style="{StaticResource CardStyle}">
+                    <StackPanel Spacing="10">
+                        <TextBlock FontSize="18" FontWeight="SemiBold" Text="Recovery sources" />
+                        <ToggleSwitch
+                            x:Name="AutomaticSourceDownloadsToggle"
+                            Header="Download verified sources automatically"
+                            OffContent="Show direct source links"
+                            OnContent="Download when supported"
+                            Toggled="OnAutomaticSourceDownloadsToggled"
+                            AutomationProperties.Name="Download verified recovery sources automatically" />
+                        <TextBlock
+                            x:Name="AutomaticSourceDownloadsStatusText"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            TextWrapping="Wrap" />
+                        <PasswordBox
+                            x:Name="NexusApiKeyBox"
+                            Header="Nexus API key"
+                            PlaceholderText="Stored in Windows Credential Locker"
+                            PasswordRevealMode="Peek"
+                            AutomationProperties.Name="Nexus API key" />
+                        <StackPanel Orientation="Horizontal" Spacing="8">
+                            <Button Content="Save Nexus connection" Click="OnSaveNexusCredentialClicked" AutomationProperties.Name="Save Nexus connection" />
+                            <Button Content="Remove" Click="OnRemoveNexusCredentialClicked" AutomationProperties.Name="Remove Nexus connection" />
+                            <HyperlinkButton Content="Get API key" NavigateUri="https://www.nexusmods.com/users/myaccount?tab=api%20access" AutomationProperties.Name="Open Nexus API access settings" />
+                        </StackPanel>
+                        <TextBlock x:Name="NexusCredentialStatusText" Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
+                        <TextBlock
+                            FontSize="12"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            Text="Grid downloads only an exact filename resolved from the official Nexus API. Nexus accounts that cannot request unattended download links use the official Files-page fallback. Downloading never installs or enables a mod."
+                            TextWrapping="Wrap" />
+                    </StackPanel>
+                </Border>
+
+                <Expander
+                    x:Name="DiagnosticsExpander"
+                    AutomationProperties.HelpText="Shows internal catalog, adapter, observation, and lifecycle diagnostics."
+                    AutomationProperties.Name="Internal diagnostics"
+                    Header="Diagnostics"
+                    IsExpanded="False">
+                    <StackPanel Padding="0,12,0,0" Spacing="12">
+                        <TextBlock
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            Text="Technical details for troubleshooting. These values are not game health or readiness conclusions."
+                            TextWrapping="Wrap" />
+
+                        <Border Padding="16" Style="{StaticResource CardStyle}">
+                            <StackPanel Spacing="7">
+                                <TextBlock FontSize="16" FontWeight="SemiBold" Text="Catalog" />
+                                <TextBlock x:Name="CatalogSourceText" TextWrapping="Wrap" />
+                                <TextBlock x:Name="CatalogRevisionText" FontFamily="Consolas" TextWrapping="Wrap" />
+                                <TextBlock
+                                    x:Name="CatalogCountsText"
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    TextWrapping="Wrap" />
+                            </StackPanel>
+                        </Border>
+
+                        <Border Padding="16" Style="{StaticResource CardStyle}">
+                            <StackPanel Spacing="7">
+                                <TextBlock FontSize="16" FontWeight="SemiBold" Text="Connections and observations" />
+                                <TextBlock x:Name="AdapterStateText" TextWrapping="Wrap" />
+                                <TextBlock x:Name="ReferenceCountText" TextWrapping="Wrap" />
+                                <TextBlock
+                                    x:Name="ObservedProfilesText"
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    TextWrapping="Wrap" />
+                                <TextBlock
+                                    x:Name="ObservedToolsOutputsText"
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    TextWrapping="Wrap" />
+                            </StackPanel>
+                        </Border>
+
+                        <Border Padding="16" Style="{StaticResource CardStyle}">
+                            <StackPanel Spacing="7">
+                                <TextBlock FontSize="16" FontWeight="SemiBold" Text="Deterministic services" />
+                                <TextBlock x:Name="FidelityStateText" TextWrapping="Wrap" />
+                                <TextBlock x:Name="LaunchStateText" TextWrapping="Wrap" />
+                                <TextBlock x:Name="HistoryIssueText" TextWrapping="Wrap" />
+                                <TextBlock x:Name="AssistantProviderText" TextWrapping="Wrap" />
+                                <TextBlock
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    Text="The assistant has no model provider or action authority. Diagnostics do not grant execution permission."
+                                    TextWrapping="Wrap" />
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </Expander>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Grid request submission input v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "operation",
+    "caseStoreRoot"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 2
+    },
+    "operation": {
+      "enum": [
+        "Prepare",
+        "Authorize",
+        "Execute",
+        "Resume",
+        "History",
+        "ReadTask",
+        "Diagnose",
+        "AttachEvidence",
+        "CaptureState",
+        "ReviewEvidence",
+        "ReviewRepair",
+        "ApplyRepair",
+        "RollBack"
+      ]
+    },
+    "caseStoreRoot": {
+      "type": "string",
+      "minLength": 1
+    },
+    "gridDataRoot": {
+      "type": "string"
+    },
+    "gameId": {
+      "type": "string"
+    },
+    "installationId": {
+      "type": "string"
+    },
+    "profileId": {
+      "type": "string"
+    },
+    "classId": {
+      "type": "string"
+    },
+    "mods": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "request": {
+      "type": "string"
+    },
+    "problem": {
+      "type": "string",
+      "maxLength": 1048576
+    },
+    "expectedBehavior": {
+      "type": "string",
+      "maxLength": 1048576
+    },
+    "reproductionLocation": {
+      "type": "string",
+      "maxLength": 1048576
+    },
+    "desiredOutcome": {
+      "type": "string",
+      "maxLength": 1048576
+    },
+    "authorizationScope": {
+      "enum": [
+        "SelectedContext",
+        "SelectedContextAndAttachments"
+      ]
+    },
+    "captureCurrentState": {
+      "type": "boolean"
+    },
+    "attachments": {
+      "type": "array",
+      "maxItems": 32,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "mediaType": { "type": "string", "minLength": 1, "maxLength": 255 },
+          "claimedCapturedAt": { "type": ["string", "null"], "format": "date-time" },
+          "assertions": {
+            "type": "array",
+            "maxItems": 64,
+            "items": { "type": "string", "minLength": 1, "maxLength": 4096 }
+          }
+        }
+      }
+    },
+    "parentTaskId": {
+      "type": "string"
+    },
+    "submissionId": {
+      "type": "string"
+    },
+    "taskId": {
+      "type": "string"
+    },
+    "actorId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,159}$"
+    },
+    "sessionId": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,159}$"
+    },
+    "toolInputs": {
+      "type": "object"
+    },
+    "authorizationGrantId": {
+      "type": "string",
+      "pattern": "^grant-[A-Fa-f0-9]{32}$"
+    }
+  }
+}

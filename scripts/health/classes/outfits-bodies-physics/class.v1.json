@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "classId": "grid.class.outfits-bodies-physics",
+  "recipeVersion": "1.1.0",
+  "displayName": "Outfits, Bodies & Physics",
+  "iconId": "grid.icon.physics",
+  "coverage": "Registered",
+  "supportedGames": [
+    "skyrimspecialedition"
+  ],
+  "selectionPolicy": {
+    "mods": {
+      "minimum": 0,
+      "maximum": null
+    },
+    "tools": {
+      "minimum": 0,
+      "maximum": null,
+      "allowedToolIds": []
+    }
+  },
+  "evidencePolicy": {
+    "requiredAnyOf": []
+  },
+  "gameplayCapabilities": [
+    {
+      "capabilityId": "grid.capability.equipment.multiple-rings",
+      "displayName": "Wear rings on multiple fingers",
+      "intentPhrases": [
+        "rings on more than one finger",
+        "rings for more than one finger",
+        "rings on multiple fingers",
+        "wear more than one ring",
+        "wear multiple rings",
+        "multiple rings",
+        "more than one ring"
+      ]
+    }
+  ],
+  "pipelines": {
+    "diagnose": {
+      "rootCapabilityIds": [
+        "grid.game.skyrimspecialedition.gameplay-capability.assess"
+      ]
+    },
+    "propose": null,
+    "execute": null,
+    "verify": null
+  }
+}

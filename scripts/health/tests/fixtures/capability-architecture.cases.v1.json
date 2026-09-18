@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    { "name": "valid", "operation": "None", "expectedStatus": "Passed", "expectedViolation": null },
+    { "name": "prohibited-root-mods", "operation": "CreateRootMods", "expectedStatus": "Failed", "expectedViolation": "ProhibitedRootMods" },
+    { "name": "mis-scoped-mod-capability", "operation": "MisScopeMod", "expectedStatus": "Failed", "expectedViolation": "MisScopedModCapability" },
+    { "name": "concrete-case-data", "operation": "AddConcreteCaseData", "expectedStatus": "Incomplete", "expectedViolation": "ConcreteCaseData" },
+    { "name": "duplicate-capability-id", "operation": "DuplicateCapabilityId", "expectedStatus": "Failed", "expectedViolation": "DuplicateCapabilityId" },
+    { "name": "shared-direct-game-import", "operation": "AddSharedGameImport", "expectedStatus": "Failed", "expectedViolation": "SharedDirectGameImport" },
+    { "name": "missing-input-schema", "operation": "RemoveInputSchema", "expectedStatus": "Incomplete", "expectedViolation": "ManifestUnreadable" },
+    { "name": "missing-side-effect", "operation": "RemoveSideEffect", "expectedStatus": "Incomplete", "expectedViolation": "ManifestUnreadable" },
+    { "name": "mutation-without-authority-rollback", "operation": "RemoveMutationSafety", "expectedStatus": "Incomplete", "expectedViolation": "ManifestUnreadable" },
+    { "name": "unreadable-manifest-continues", "operation": "BreakManifestJson", "expectedStatus": "Incomplete", "expectedViolation": "ManifestUnreadable" },
+    { "name": "unclassified-production-file", "operation": "CreateOrphanScript", "expectedStatus": "Failed", "expectedViolation": "UnclassifiedProductionFile" }
+  ]
+}

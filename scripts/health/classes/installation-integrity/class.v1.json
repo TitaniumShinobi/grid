@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "classId": "grid.class.installation-integrity",
+  "recipeVersion": "1.1.0",
+  "displayName": "CleanHouse Repair",
+  "iconId": "grid.icon.installation",
+  "coverage": "Registered",
+  "supportedGames": [
+    "skyrimspecialedition"
+  ],
+  "selectionPolicy": {
+    "mods": {
+      "minimum": 0,
+      "maximum": null
+    },
+    "tools": {
+      "minimum": 0,
+      "maximum": null,
+      "allowedToolIds": [
+        "grid.tool.loot",
+        "grid.tool.mo2"
+      ]
+    }
+  },
+  "evidencePolicy": {
+    "requiredAnyOf": []
+  },
+  "pipelines": {
+    "diagnose": {
+      "rootCapabilityIds": [
+        "grid.game.skyrimspecialedition.baseline.collect"
+      ]
+    },
+    "propose": null,
+    "execute": null,
+    "verify": null
+  }
+}

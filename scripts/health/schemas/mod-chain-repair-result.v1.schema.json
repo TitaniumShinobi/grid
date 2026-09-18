@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "https://grid.local/schemas/health/mod-chain-repair-result.v1.schema.json",
+  "title": "Grid Mod-Chain Repair Result v1", "type": "object",
+  "required": ["schemaVersion", "runLifecycle", "repairOutcome", "mutationState", "rollbackState", "recoveryDisposition", "summary", "failures"],
+  "properties": {
+    "schemaVersion": { "const": 1 }, "runLifecycle": { "enum": ["Planned", "Running", "Completed", "Failed", "Cancelled"] },
+    "repairOutcome": { "enum": ["NotAttempted", "NoChangeRequired", "Applied", "NotApplied", "Indeterminate"] },
+    "mutationState": { "enum": ["NotStarted", "Staged", "CommitInProgress", "Committed", "PartiallyCommitted"] },
+    "rollbackState": { "enum": ["NotRequired", "Available", "InProgress", "Verified", "Failed", "Indeterminate"] },
+    "recoveryDisposition": { "enum": ["None", "AutomaticRetryAvailable", "ResumeAvailable", "RollbackAvailable", "ConfigurationRequired", "ExternalDependencyRequired", "ManualRecoveryRequired"] },
+    "summary": { "enum": ["InputsVerified", "InputsRepairedAndVerified", "RepairRolledBack", "ManualRecoveryRequired", null] },
+    "failures": { "type": "array", "items": { "$ref": "repair-failure.v1.schema.json" } }
+  }, "additionalProperties": false
+}

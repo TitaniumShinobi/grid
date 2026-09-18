@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/game-user-data-roots.v1.schema.json",
+  "title": "Grid game-owned user-data roots v1",
+  "type": "object",
+  "required": ["schemaVersion", "gameId", "displayName", "roots", "evidenceSources"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "gameId": { "type": "string", "pattern": "^[a-z0-9]+$" },
+    "displayName": { "type": "string", "minLength": 1 },
+    "roots": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["rootId", "anchor", "relativePath", "role", "collectionPolicy", "authority", "confidence", "sourceIds", "artifacts", "excludedRelativePaths"],
+        "properties": {
+          "rootId": { "type": "string", "pattern": "^[a-z][A-Za-z0-9]+$" },
+          "anchor": { "enum": ["Documents", "LocalApplicationData"] },
+          "relativePath": { "type": "string", "minLength": 1 },
+          "role": { "enum": ["UserData", "Diagnostics", "SharedLauncherDiagnostics"] },
+          "collectionPolicy": { "enum": ["ProtectedMetadataOnly", "BoundedTopLevelFiles"] },
+          "authority": { "enum": ["OfficialPrimary", "ProjectPrimary", "ObservedLocal"] },
+          "confidence": { "enum": ["Verified", "Corroborated", "Observed"] },
+          "sourceIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+          "maxFiles": { "type": "integer", "minimum": 1, "maximum": 1024 },
+          "maxFileBytes": { "type": "integer", "minimum": 1, "maximum": 33554432 },
+          "excludedRelativePaths": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+          "artifacts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["artifactId", "kind", "relativePath", "observation"],
+              "properties": {
+                "artifactId": { "type": "string", "pattern": "^[a-z][A-Za-z0-9]+$" },
+                "kind": { "enum": ["ConfigurationFile", "ProtectedDirectory", "DiagnosticFilePattern"] },
+                "relativePath": { "type": "string", "minLength": 1 },
+                "observation": { "enum": ["FullContentHash", "PresenceOnly", "BoundedRead"] },
+                "optional": { "type": "boolean" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "evidenceSources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["sourceId", "authority", "claim"],
+        "properties": {
+          "sourceId": { "type": "string", "minLength": 1 },
+          "authority": { "enum": ["OfficialPrimary", "ProjectPrimary", "ObservedLocal"] },
+          "url": { "type": "string", "format": "uri" },
+          "claim": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

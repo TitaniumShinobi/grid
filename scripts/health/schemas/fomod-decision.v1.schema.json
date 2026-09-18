@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "https://grid.local/schemas/health/fomod-decision.v1.schema.json",
+  "title": "Grid FOMOD Decision v1", "type": "object",
+  "required": ["schemaVersion", "artifactSha256", "moduleConfigSha256", "status", "selections", "fileMappings"],
+  "properties": {
+    "schemaVersion": { "const": 1 }, "artifactSha256": { "$ref": "#/$defs/sha256" }, "moduleConfigSha256": { "$ref": "#/$defs/sha256" },
+    "status": { "enum": ["Deterministic", "NotPresent", "Unsupported", "Contradictory"] },
+    "selections": { "type": "array", "items": { "type": "object", "required": ["group", "plugin"], "properties": { "group": { "type": "string" }, "plugin": { "type": "string" } }, "additionalProperties": false } },
+    "fileMappings": { "type": "array", "items": { "type": "object", "required": ["source", "destination"], "properties": { "source": { "type": "string" }, "destination": { "type": "string" } }, "additionalProperties": false } }
+  }, "$defs": { "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" } }, "additionalProperties": false
+}

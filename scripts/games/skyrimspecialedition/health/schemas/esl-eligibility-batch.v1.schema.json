@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/skyrimspecialedition/esl-eligibility-batch.v1.schema.json",
+  "title": "Grid Skyrim ESL eligibility batch v1",
+  "type": "object",
+  "required": ["schemaVersion", "status", "contextFingerprint", "pluginCount", "counts", "items", "mutationAuthorized"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "status": { "const": "Collected" },
+    "contextFingerprint": { "type": "string", "minLength": 1 },
+    "pluginCount": { "type": "integer", "minimum": 1, "maximum": 64 },
+    "counts": {
+      "type": "object",
+      "required": ["EligibleWithoutCompaction", "CompactionRequired", "Ineligible", "UnsafeEngineRisk", "AlreadyLight"],
+      "additionalProperties": { "type": "integer", "minimum": 0, "maximum": 64 }
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 64,
+      "items": {
+        "type": "object",
+        "required": ["path", "result"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "result": { "$ref": "esl-eligibility-result.v1.schema.json" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "mutationAuthorized": { "const": false }
+  },
+  "additionalProperties": false
+}

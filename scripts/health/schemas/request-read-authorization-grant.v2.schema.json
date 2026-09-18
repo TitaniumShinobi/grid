@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Grid request read authorization grant v2",
+  "allOf":[{"$ref":"authorization-grant.v2.schema.json"}]
+}

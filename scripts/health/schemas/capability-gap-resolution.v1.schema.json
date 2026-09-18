@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/capability-gap-resolution.v1.schema.json",
+  "title": "Grid capability gap resolution v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "gapId", "gameId", "requiredCapabilityId", "requestedOutcome", "mode", "status", "route", "selectedCandidateId", "compositionCapabilityIds", "missingInputs", "candidates", "evidenceIds", "autoMayContinue", "nextAction", "mutationAuthorized", "resolutionSha256"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "gapId": { "type": "string", "pattern": "^gap\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+    "gameId": { "type": "string", "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+    "requiredCapabilityId": { "type": "string", "pattern": "^grid\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+    "requestedOutcome": { "type": "string", "minLength": 1 },
+    "mode": { "enum": ["Auto", "Guided"] },
+    "status": { "enum": ["RegisteredCapabilityReady", "CompositionReady", "AcquisitionReady", "CandidateSelectionRequired", "CreationProposalRequired", "CreationProposalReady", "NeedsStructuredInput", "RuntimeCaseData", "Rejected"] },
+    "route": { "enum": ["ReuseRegisteredCapability", "ComposeRegisteredCapabilities", "AcquireVerifiedCandidate", "SelectCompatibleCandidate", "CreateCapabilityProposal", "RequestStructuredInput", "KeepRuntimeCaseData", "RejectCandidate"] },
+    "selectedCandidateId": { "type": ["string", "null"] },
+    "compositionCapabilityIds": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+    "missingInputs": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+    "candidates": { "type": "array", "items": { "type": "object" } },
+    "evidenceIds": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^sha256:[A-F0-9]{64}$" } },
+    "autoMayContinue": { "type": "boolean" },
+    "nextAction": { "type": "string", "minLength": 1 },
+    "mutationAuthorized": { "const": false },
+    "resolutionSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" }
+  }
+}

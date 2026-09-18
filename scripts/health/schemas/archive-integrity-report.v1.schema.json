@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "$id": "https://grid.local/schemas/health/archive-integrity-report.v1.schema.json",
+  "title": "Grid Archive Integrity Report v1", "type": "object",
+  "required": ["schemaVersion", "artifactId", "format", "status", "archiveSha256", "entryCount", "expandedBytes", "violations"],
+  "properties": {
+    "schemaVersion": { "const": 1 }, "artifactId": { "type": "string", "minLength": 1 }, "format": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["Verified", "Corrupt", "Truncated", "Encrypted", "Unsupported", "RejectedByPolicy"] },
+    "archiveSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" }, "entryCount": { "type": "integer", "minimum": 0 },
+    "expandedBytes": { "type": "integer", "minimum": 0 }, "violations": { "type": "array", "items": { "type": "string" } }
+  }, "additionalProperties": false
+}

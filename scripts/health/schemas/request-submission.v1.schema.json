@@ -1,0 +1,24 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Grid request submission input v1",
+  "type":"object",
+  "additionalProperties":false,
+  "required":["schemaVersion","operation","caseStoreRoot"],
+  "properties":{
+    "schemaVersion":{"const":1},
+    "operation":{"enum":["Prepare","Execute","Resume","History","ReadTask"]},
+    "caseStoreRoot":{"type":"string","minLength":1},
+    "gridDataRoot":{"type":"string"},
+    "gameId":{"type":"string"},
+    "installationId":{"type":"string"},
+    "profileId":{"type":"string"},
+    "classId":{"type":"string"},
+    "mods":{"type":"array","items":{"type":"string"}},
+    "tools":{"type":"array","items":{"type":"string"}},
+    "request":{"type":"string"},
+    "submissionId":{"type":"string"},
+    "taskId":{"type":"string"},
+    "toolInputs":{"type":"object"},
+    "authorizationDigest":{"type":"string","pattern":"^[A-Fa-f0-9]{64}$"}
+  }
+}

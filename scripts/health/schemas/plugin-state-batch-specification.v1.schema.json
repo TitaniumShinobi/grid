@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/plugin-state-batch-specification.v1.schema.json",
+  "title": "Grid Plugin State Batch Specification v1",
+  "type": "object",
+  "required": [
+    "schemaVersion", "specificationId", "specificationSha256", "caseId", "baseline",
+    "contextFingerprint", "evidenceFingerprint", "supportingEvidenceIds", "paths",
+    "requestedPlugins", "dependencyClosure", "operations", "protectedState", "slotUsage",
+    "authorization", "status"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "specificationId": { "type": "string", "pattern": "^plugin-batch-[a-f0-9]{24}$" },
+    "specificationSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "status": { "const": "AwaitingAuthorization" },
+    "supportingEvidenceIds": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "requestedPlugins": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "(?i)\\.(esm|esp|esl)$" } },
+    "dependencyClosure": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "(?i)\\.(esm|esp|esl)$" } },
+    "operations": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["sequence", "pluginName", "desiredState", "beforeState", "provider", "pluginPath", "pluginSha256", "hasLightFlag", "masters"],
+        "properties": {
+          "sequence": { "type": "integer", "minimum": 1 },
+          "pluginName": { "type": "string", "pattern": "(?i)\\.(esm|esp|esl)$" },
+          "desiredState": { "const": "Enabled" },
+          "beforeState": { "const": "Disabled" },
+          "pluginSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

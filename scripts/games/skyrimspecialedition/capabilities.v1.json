@@ -1,0 +1,2901 @@
+{
+  "$schema": "../../health/schemas/capability-manifest.v1.schema.json",
+  "schemaVersion": 1,
+  "ownerScope": {
+    "kind": "Game",
+    "gameId": "skyrimspecialedition"
+  },
+  "supportingFiles": [
+    "scripts/games/skyrimspecialedition/health/tool-registry.v1.json",
+    "scripts/games/skyrimspecialedition/health/adapter.psd1",
+    "scripts/games/skyrimspecialedition/health/collectors/Resolve-GridSkyrimRequestToolInputs.ps1",
+    "scripts/games/skyrimspecialedition/health/collectors/Resolve-GridSkyrimPlacedActorReference.ps1",
+    "scripts/games/skyrimspecialedition/health/collectors/Get-GridSkyrimPapyrusStateEvidence.ps1",
+    "scripts/games/skyrimspecialedition/health/collectors/Get-GridSkyrimScriptedReferenceEvidence.ps1",
+    "scripts/games/skyrimspecialedition/health/collectors/Get-GridSkyrimGameplayCapabilityAssessment.ps1",
+    "scripts/games/skyrimspecialedition/health/collectors/Resolve-GridSkyrimEslEligibility.ps1",
+    "scripts/games/skyrimspecialedition/health/collectors/Resolve-GridSkyrimEslEligibilityBatch.ps1",
+    "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimEslFlagProposal.ps1",
+    "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimEslFlagPlanningCase.ps1",
+    "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedEslFlag.ps1",
+    "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedEslFlagHistory.ps1",
+    "scripts/games/skyrimspecialedition/mo2/Grid.EslFlag.ps1",
+    "scripts/games/skyrimspecialedition/health/collectors/Select-GridSkyrimRecordCatalogTargets.ps1",
+    "scripts/games/skyrimspecialedition/health/actions/Resolve-GridSkyrimNexusSourceIdentity.ps1",
+    "scripts/games/skyrimspecialedition/health/schemas/papyrus-state-evidence.v1.schema.json",
+    "scripts/games/skyrimspecialedition/health/schemas/scripted-reference-evidence.v1.schema.json",
+    "scripts/games/skyrimspecialedition/health/schemas/community-capability-catalog.v1.schema.json",
+    "scripts/games/skyrimspecialedition/health/schemas/community-capability-observation.v1.schema.json",
+    "scripts/games/skyrimspecialedition/health/catalogs/community-capabilities.v1.json",
+    "scripts/games/skyrimspecialedition/health/schemas/nexus-source-resolution.v1.schema.json",
+    "scripts/games/skyrimspecialedition/health/schemas/esl-eligibility-result.v1.schema.json",
+    "scripts/games/skyrimspecialedition/health/schemas/esl-eligibility-batch.v1.schema.json",
+    "scripts/games/skyrimspecialedition/user-data-roots.v1.json"
+  ],
+  "capabilities": [
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.esl-flag-proposal.materialize",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": { "kind": "Game", "gameId": "skyrimspecialedition" },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimEslFlagProposal.ps1",
+          "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimEslFlagPlanningCase.ps1",
+          "scripts/games/skyrimspecialedition/mo2/Grid.EslFlag.ps1"
+        ],
+        "entryPoint": "New-GridSkyrimEslFlagProposal"
+      },
+      "inputSchema": { "type": "object", "required": ["eligibilityResultPath", "caseStoreRoot", "evidenceCaseDirectory", "caseId", "contextFingerprint", "mo2Root", "profile", "gameDataRoot", "outputPath"] },
+      "outputSchema": { "type": "object", "required": ["schemaVersion", "status", "specification", "specificationPath", "authorizationRequired", "changedExternalState"] },
+      "preconditions": [
+        "A current verified xEdit audit classifies the exact winning .esp as HeaderFlagOnly without an engine-risk warning.",
+        "The current MO2 provider and protected profile files are hashed into the inert proposal."
+      ],
+      "dependencies": ["grid.game.skyrimspecialedition.esl-eligibility.resolve", "grid.game.skyrimspecialedition.mo2-context.collect"],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": { "kind": "CaseDirectoryWrite", "description": "Writes only an inert exact before/after specification; it cannot modify a plugin." },
+      "rollback": { "mode": "RemoveCaseArtifacts", "description": "Remove only the generated proposal." },
+      "terminalStates": ["AwaitingAuthorization", "Refused", "Failed"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.esl-flag.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": { "kind": "Game", "gameId": "skyrimspecialedition", "tool": "sseedit" },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedEslFlag.ps1",
+          "scripts/games/skyrimspecialedition/mo2/Grid.EslFlag.ps1"
+        ],
+        "entryPoint": "Invoke-GridAuthorizedEslFlag"
+      },
+      "inputSchema": { "type": "object", "required": ["specificationPath", "currentContextFingerprint", "authorizationGrantId", "authorizationSecret", "authorizationStoreRoot", "caseStoreRoot", "semanticBinding", "transactionRoot"] },
+      "outputSchema": { "type": "object", "required": ["schemaVersion", "status", "specificationId", "pluginName", "changedExternalState", "backupPath", "beforeSha256", "afterSha256", "rollbackState"] },
+      "preconditions": [
+        "The exact proposal and current provider bytes still match the reviewed before image.",
+        "A fresh durable one-use authorization binds the exact plugin and TES4 ESL-bit transition.",
+        "The connected MO2, Skyrim, and xEdit processes are closed."
+      ],
+      "dependencies": ["grid.game.skyrimspecialedition.esl-flag-proposal.materialize", "grid.health.remediation.authorize", "grid.health.verification.record"],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": { "kind": "DurableOneUseGrant", "description": "Changes only bit 0x200 in the exact TES4 header bound by the proposal." },
+      "rollback": { "mode": "RestoreByteExactBackup", "description": "Creates and verifies a byte-exact backup before mutation and restores it on any failed postcondition." },
+      "terminalStates": ["Verified", "Planned", "Failed", "RolledBack", "Refused"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.esl-flag.history.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": { "kind": "Game", "gameId": "skyrimspecialedition", "tool": "sseedit" },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedEslFlagHistory.ps1",
+          "scripts/games/skyrimspecialedition/mo2/Grid.EslFlag.ps1"
+        ],
+        "entryPoint": "Invoke-GridAuthorizedEslFlagHistory"
+      },
+      "inputSchema": { "type": "object", "required": ["specificationPath", "transactionRoot", "direction", "authorizationGrantId", "authorizationSecret", "authorizationStoreRoot", "semanticBinding", "caseStoreRoot"] },
+      "outputSchema": { "type": "object", "required": ["schemaVersion", "status", "direction", "transitionId", "state", "revision"] },
+      "preconditions": [
+        "The exact verified apply transaction is in the Applied or Undone state required by the requested direction.",
+        "A fresh durable one-use grant binds the exact byte transition and current plugin digest.",
+        "The connected MO2, Skyrim, and xEdit processes are closed."
+      ],
+      "dependencies": ["grid.game.skyrimspecialedition.esl-flag.execute", "grid.health.remediation.authorize"],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": { "kind": "DurableOneUseGrant", "description": "Undo and Redo each require a distinct exact one-use authorization." },
+      "rollback": { "mode": "RestoreCurrentImage", "description": "A failed history transition restores and verifies the byte-exact image present before that transition." },
+      "terminalStates": ["Verified", "Planned", "Failed", "Refused"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.esl-eligibility.resolve",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Resolve-GridSkyrimEslEligibility.ps1"
+        ],
+        "entryPoint": "Resolve-GridSkyrimEslEligibility"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["evidence", "pluginName", "contextFingerprint", "caseDirectory"]
+      },
+      "outputSchema": {
+        "$ref": "health/schemas/esl-eligibility-result.v1.schema.json"
+      },
+      "preconditions": [
+        "Exactly one current verified AuditEslEligibility observation names the exact requested plugin.",
+        "The observation was produced from the selected profile context by the bounded read-only xEdit collector."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.xedit-reference.collect",
+        "grid.game.skyrimspecialedition.xedit-evidence.normalize"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Reduces verified xEdit evidence and writes only a typed eligibility result beneath the current case directory."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only the generated case-local eligibility result. No plugin is changed."
+      },
+      "terminalStates": ["AlreadyLight", "EligibleWithoutCompaction", "CompactionRequired", "Ineligible", "UnsafeEngineRisk", "Failed"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.esl-eligibility-batch.resolve",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Resolve-GridSkyrimEslEligibilityBatch.ps1"
+        ],
+        "entryPoint": "Resolve-GridSkyrimEslEligibilityBatch"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["evidence", "pluginNames", "contextFingerprint", "caseDirectory"]
+      },
+      "outputSchema": {
+        "$ref": "health/schemas/esl-eligibility-batch.v1.schema.json"
+      },
+      "preconditions": [
+        "One to 64 exact plugin names each have one current verified AuditEslEligibility observation.",
+        "All observations were produced from the same selected profile context by the bounded read-only xEdit collector."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.esl-eligibility.resolve"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Writes only per-plugin and aggregate eligibility results beneath the current case directory."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only the generated case-local eligibility results. No plugin is changed."
+      },
+      "terminalStates": ["Collected", "Failed"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.gameplay-capability.assess",
+      "capabilityVersion": "1.1.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Get-GridSkyrimGameplayCapabilityAssessment.ps1",
+          "scripts/games/skyrimspecialedition/health/catalogs/community-capabilities.v1.json"
+        ],
+        "entryPoint": "Get-GridSkyrimGameplayCapabilityAssessment"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["capabilityId", "modInventory", "profileEvidenceId"],
+        "properties": {
+          "communityObservation": { "$ref": "health/schemas/community-capability-observation.v1.schema.json" }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["schemaVersion", "capabilityId", "displayName", "installedStatus", "installedProviders", "discoveryStatus", "observedAtUtc", "communityCandidates", "evidenceIds"]
+      },
+      "preconditions": [
+        "The capability ID is an explicit structured selection and is never inferred from chat prose.",
+        "The normalized MO2 inventory and profile evidence identity describe the same captured profile.",
+        "Community candidates are emitted from current repository-reviewed sources, or from an exact current provider observation with stale compatibility explicitly unresolved."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.mo2-context.collect",
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "RepositoryRead",
+      "requiredAuthority": {
+        "kind": "RepositoryRead",
+        "description": "Reads the versioned Skyrim community-capability catalog and caller-supplied normalized profile rows; it performs no network request and changes no external state."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Assessment is read-only and cannot install, enable, disable, patch, or otherwise change the game or MO2 profile."
+      },
+      "terminalStates": ["Current", "Stale", "NotCataloged", "Failed"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.community-capability.observe",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Get-GridSkyrimNexusCapabilityObservation.ps1",
+          "scripts/games/skyrimspecialedition/health/catalogs/community-capabilities.v1.json"
+        ],
+        "entryPoint": "Get-GridSkyrimNexusCapabilityObservation"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["capabilityId", "credentialHandle"]
+      },
+      "outputSchema": {
+        "$ref": "health/schemas/community-capability-observation.v1.schema.json"
+      },
+      "preconditions": [
+        "The capability ID is an explicit structured selection and is never inferred from chat prose.",
+        "Every queried Nexus game and mod ID is an exact locator from the versioned community-capability catalog.",
+        "The Nexus credential is resolved only through an opaque OS-protected handle and is never serialized into evidence."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Queries only fixed Nexus Mods HTTPS metadata endpoints for exact cataloged candidates and records credential-free observations; no download, MO2, game, or profile state is changed."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Provider metadata observation is read-only."
+      },
+      "terminalStates": ["Observed", "Partial", "AuthenticationRequired", "ProviderRequestFailed", "ProviderResponseInvalid"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.save-created-actor.collect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Get-GridSkyrimSaveCreatedActorEvidence.ps1"
+        ],
+        "entryPoint": "Get-GridSkyrimSaveCreatedActorEvidence"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["savePath", "pluginName", "localBaseFormId", "contextFingerprint"]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["path", "evidence"]
+      },
+      "preconditions": [
+        "The caller supplies exact authorized Skyrim Special Edition save paths, one exact plugin identity, and explicit local base FormIDs.",
+        "The supplied context fingerprint identifies the installation and profile evidence to which the save observations belong."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads only the exact supplied ESS files and optionally writes normalized evidence beneath the supplied case directory; it never modifies a save."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only the optional generated case-local save evidence document."
+      },
+      "terminalStates": ["Observed", "Failed"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.placed-actor-reference.resolve",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Resolve-GridSkyrimPlacedActorReference.ps1"
+        ],
+        "entryPoint": "Resolve-GridSkyrimPlacedActorReference"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["evidence", "queryPackage", "contextFingerprint", "caseDirectory"]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["path", "result"]
+      },
+      "preconditions": [
+        "A current bounded FindReferencesToBase query has been normalized into verified xEdit evidence.",
+        "Only a sole qualifying ACHR may become a console reference target; zero or multiple candidates fail closed."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.xedit-evidence.normalize"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Writes only a deterministic placed-reference result beneath the current case directory."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only the generated placed-actor-reference result."
+      },
+      "terminalStates": ["Resolved", "Incomplete", "Ambiguous", "NotApplicable", "Failed"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.papyrus-state.inspect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Get-GridSkyrimPapyrusStateEvidence.ps1"
+        ],
+        "entryPoint": "Get-GridSkyrimPapyrusStateEvidence"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["scriptPath", "caseDirectory", "contextFingerprint"]
+      },
+      "outputSchema": {
+        "$ref": "health/schemas/papyrus-state-evidence.v1.schema.json"
+      },
+      "preconditions": [
+        "The caller supplies one exact authorized .pex or .psc path and a matching optional SHA-256.",
+        "The repository-owned Grid.Diagnostics executable is available locally."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "ExternalProcessLaunch",
+      "requiredAuthority": {
+        "kind": "ExplicitProcessLaunch",
+        "description": "Reads one exact Papyrus script, launches only the repository-owned local Grid.Diagnostics executable, and writes evidence only beneath the case directory."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only the generated case-local Papyrus state evidence and process logs."
+      },
+      "terminalStates": ["Observed", "Failed", "Refused"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.scripted-reference.observe",
+      "capabilityVersion": "1.2.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Get-GridSkyrimScriptedReferenceEvidence.ps1"
+        ],
+        "entryPoint": "Get-GridSkyrimScriptedReferenceEvidence"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["xEditEvidence", "assetInspections", "caseDirectory", "contextFingerprint"]
+      },
+      "outputSchema": {
+        "$ref": "health/schemas/scripted-reference-evidence.v1.schema.json"
+      },
+      "preconditions": [
+        "A bounded xEdit query identifies an exact FormID or EditorID and exact candidate plugins.",
+        "Papyrus files are resolved through the selected MO2 virtual-file providers by exact path."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.xedit-reference.collect",
+        "grid.game.skyrimspecialedition.xedit-evidence.normalize",
+        "grid.game.skyrimspecialedition.mo2-context.collect",
+        "grid.game.skyrimspecialedition.asset-graph.collect"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads exact plugin records and exact loose/BSA script members; writes evidence only beneath the case directory."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Observation does not change plugins, archives, scripts, saves, MO2, or the game."
+      },
+      "terminalStates": ["Observed", "Incomplete", "Unsupported", "Failed"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.nexus-source.resolve",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Resolve-GridSkyrimNexusSourceIdentity.ps1"
+        ],
+        "entryPoint": "Resolve-GridSkyrimNexusRecoveryPlanSources"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["recoveryPlan", "credentialHandle"]
+      },
+      "outputSchema": {
+        "$ref": "health/schemas/nexus-source-resolution.v1.schema.json"
+      },
+      "preconditions": [
+        "A sealed component-recovery plan supplies exact Nexus game, mod, and archive-leaf claims.",
+        "The Nexus credential is resolved only through an opaque OS-protected handle and is never serialized into evidence."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.baseline.collect",
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Queries only fixed Nexus Mods HTTPS file-list endpoints and records credential-free source locators; no archive, MO2, or game file is changed."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Provider metadata resolution is read-only."
+      },
+      "terminalStates": [
+        "AuthenticationRequired",
+        "ExactSourceLocatorsResolved",
+        "SourceIdentityIncomplete",
+        "SourceIdentityConflict",
+        "ProviderResolutionIncomplete"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.artifact.acquire",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridSkyrimArtifactAcquisition.ps1"
+        ],
+        "entryPoint": "Invoke-GridSkyrimArtifactAcquisition"
+      },
+      "inputSchema": {
+        "$ref": "../../../health/schemas/artifact-provider-identity.v1.schema.json"
+      },
+      "outputSchema": {
+        "$ref": "../../../health/schemas/artifact-acquisition-record.v1.schema.json"
+      },
+      "preconditions": [
+        "A sealed diagnosis and provider observation bind one exact game, mod, file, version, leaf, size, and optional SHA-256.",
+        "Only exact indexed local sources, one managed inbox, or an allowlisted HTTPS provider are read; credentials remain behind an opaque OS-protected handle."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "EvidenceBoundArtifactAcquisition",
+        "description": "Writes only resumable partial bytes, redacted receipts, and verified content-addressed quarantine objects beneath the configured Grid data root."
+      },
+      "rollback": {
+        "mode": "RemoveUnpromotedPartial",
+        "description": "Remove only an unpromoted partial object; verified quarantine objects and receipts remain immutable evidence."
+      },
+      "terminalStates": [
+        "Verified",
+        "PendingUserAcquisition",
+        "AuthenticationRequired",
+        "ExactArtifactUnavailable",
+        "Rejected",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.runtime-certification.eligibility.resolve",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "mo2"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Resolve-GridSkyrimCertificationEligibility.ps1"
+        ],
+        "entryPoint": "Resolve-GridSkyrimCertificationEligibility"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseStoreRoot",
+          "baselineCaseId",
+          "diagnosisCaseId",
+          "repairCaseId",
+          "expectedBaselineManifestSha256",
+          "expectedDiagnosisManifestFileSha256",
+          "expectedPatchSpecificationSha256",
+          "expectedAssetVirtualPath"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "health/schemas/runtime-certification-eligibility.v1.schema.json"
+      },
+      "preconditions": [
+        "The caller supplies the exact active baseline, diagnosis, repair, manifest, specification, and asset identities.",
+        "Only the selected sealed case lineage is inspected; case discovery and substitution are forbidden."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.artifact.acquire",
+        "grid.game.skyrimspecialedition.mod-chain-repair.execute",
+        "grid.health.case.lifecycle"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads only exact caller-supplied sealed case paths and their bound protected-state evidence; it neither launches processes nor changes MO2."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Eligibility resolution is read-only."
+      },
+      "terminalStates": [
+        "Eligible",
+        "PreconditionsNotMet",
+        "InvalidLineage",
+        "ApprovalRequired"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.runtime-certification.evaluate",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "mo2"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridSkyrimRuntimeCertification.ps1"
+        ],
+        "entryPoint": "Invoke-GridSkyrimRuntimeCertification"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "recipe",
+          "profilePlan",
+          "lineageBinding",
+          "prelaunchGates",
+          "rollbackReceipt"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "health/schemas/runtime-certification-result.v1.schema.json"
+      },
+      "preconditions": [
+        "The exact active lineage is eligible, all seven independent prelaunch gates pass, and rollback evidence binds the same context and repair.",
+        "Certification requires an allowlisted recipe, an independently verified empty save root, an exact typed MO2 profile route, unambiguous owned-process evidence, bound screenshot and log audits, and a deterministic oracle receipt covering every required claim exactly once."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.runtime-certification.eligibility.resolve",
+        "grid.game.skyrimspecialedition.mod-chain-repair.execute",
+        "grid.health.process.observe",
+        "grid.health.verification.record"
+      ],
+      "sideEffectClassification": "None",
+      "requiredAuthority": {
+        "kind": "None",
+        "description": "This capability validates supplied isolation, process, capture, log, and oracle receipts; process launch and input execution remain separate explicitly authorized operations."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Receipt evaluation does not mutate the game, MO2, profiles, or saves."
+      },
+      "terminalStates": [
+        "Certified",
+        "PreconditionsNotMet",
+        "NeedsRuntimeVerification",
+        "NotReadyToPlay",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.runtime-certification.session.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "mo2"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridSkyrimRuntimeCertificationSession.ps1"
+        ],
+        "entryPoint": "Invoke-GridSkyrimRuntimeCertificationSession"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "recipe",
+          "profilePlan",
+          "lineageBinding",
+          "prelaunchGates",
+          "rollbackReceipt",
+          "launchInvocation",
+          "authorization",
+          "expectedGameExecutablePath",
+          "expectedGameExecutableSha256",
+          "sessionRoot"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "health/schemas/runtime-certification-result.v1.schema.json"
+      },
+      "preconditions": [
+        "The exact repair-bound authorization remains current and all seven independent prelaunch gates pass.",
+        "The disposable profile target, source-indexed MO2 executable route, game executable hashes, process snapshot, recipe, evidence root, and rollback receipt are exact and bounded."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.runtime-certification.evaluate",
+        "grid.health.process.observe",
+        "grid.health.process.close-owned",
+        "grid.health.verification.record"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "OneUseProposalAuthorization",
+        "description": "The exact repair authorization also binds one consecutive disposable certification session: create and preserve one isolated profile, launch the source-indexed MO2 route, apply only allowlisted ephemeral input, write bounded capture evidence, and normally close only revalidated owned processes."
+      },
+      "rollback": {
+        "mode": "RemoveDisposableSession",
+        "description": "No normal profile or save is changed; an unlaunched disposable profile may be removed, while launched-session evidence is preserved and the underlying repair rollback remains available."
+      },
+      "terminalStates": [
+        "Certified",
+        "PreconditionsNotMet",
+        "NeedsRuntimeVerification",
+        "NotReadyToPlay",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.artifact.quarantine",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Get-GridSkyrimModChainRepairInspection.ps1"
+        ],
+        "entryPoint": "Add-GridSkyrimArtifactToQuarantine"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "quarantineRoot",
+          "expectedSha256",
+          "expectedSizeBytes",
+          "identityEvidenceIds"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "../../../health/schemas/artifact-integrity-report.v1.schema.json"
+      },
+      "preconditions": [
+        "Artifact identity, expected size, SHA-256, and provider authority derive from current sealed evidence.",
+        "Remote acquisition is bounded unauthenticated HTTPS to an exact allowlisted provider."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Evidence-bound acquisition may write exact bytes only to the configured immutable Grid quarantine; no active mod path is writable."
+      },
+      "rollback": {
+        "mode": "RemoveUnreferencedQuarantineObject",
+        "description": "An incomplete unreferenced incoming object may be removed; rejected objects and provenance receipts remain auditable."
+      },
+      "terminalStates": [
+        "Verified",
+        "Rejected",
+        "IdentityUnresolved",
+        "Unavailable"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.mod-chain-repair.inspect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Get-GridSkyrimModChainRepairInspection.ps1"
+        ],
+        "entryPoint": "Get-GridSkyrimModChainRepairInspection"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseStoreRoot",
+          "baselineCaseDirectory"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "baselineManifestSha256",
+          "components",
+          "failures"
+        ]
+      },
+      "preconditions": [
+        "The exact sealed sufficient baseline contains its InvestigationPlan, current capability bindings, inventories, provenance, and protected snapshots.",
+        "Components are derived only from plan provider seeds and sealed dependency/provider evidence; protected state is rehashed before any proposal is materialized."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.baseline.collect",
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads only exact baseline-bound component and protected paths."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Inspection is read-only."
+      },
+      "terminalStates": [
+        "InputsVerified",
+        "InstallationContextUnresolved",
+        "BaselineStale",
+        "InsufficientForRequestedDiagnosis",
+        "ExternalDependencyRequired",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.mod-chain-repair-proposal.materialize",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimModChainRepairProposal.ps1"
+        ],
+        "entryPoint": "New-GridSkyrimModChainRepairProposal"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "inspection",
+          "contextFingerprint",
+          "evidenceFingerprint",
+          "operations",
+          "outputPath"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "../../../health/schemas/mod-chain-repair-specification.v1.schema.json"
+      },
+      "preconditions": [
+        "A sealed sufficient current baseline resolves verified artifact identity, compatibility, installer decisions, exact paths, digests, and evidence bindings.",
+        "Nonempty repair operations have source, target, staging, rollback, precondition, postcondition, and protected-profile bindings; staging and rollback locations are outside the active mods root."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.mod-chain-repair.inspect",
+        "grid.health.remediation-proposal.materialize"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Writes one inert immutable repair specification; it grants no active-tree mutation authority."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "An unapproved inert specification may be removed from its case transaction."
+      },
+      "terminalStates": [
+        "InputsVerified",
+        "AwaitingAuthorization",
+        "Rejected",
+        "Stale"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.mod-chain-repair.execute",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "mo2"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedModChainRepair.ps1"
+        ],
+        "entryPoint": "Invoke-GridAuthorizedModChainRepair"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "specificationPath",
+          "authorizationGrantId",
+          "authorizationSecret",
+          "authorizationStoreRoot",
+          "semanticBinding",
+          "caseStoreRoot",
+          "transactionRoot"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "../../../health/schemas/repair-transaction-receipt.v2.schema.json"
+      },
+      "preconditions": [
+        "The exact specification, baseline seal, before hashes, protected hashes, process gate, volumes, and durable one-use authorization grant remain current.",
+        "The grant is exclusively leased and bound to exact actor/session, workspace, request, submission, envelope, plan, scope, specification, capability version, targets, and normalized input.",
+        "Every replacement is staged outside the active tree and every original is verified in rollback storage before promotion."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.mod-chain-repair-proposal.materialize",
+        "grid.health.remediation.authorize",
+        "grid.health.verification.record"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "DurableOneUseGrant",
+        "description": "Consumes an exclusive persisted grant bound to the exact repair specification and semantic context; replay and concurrent consumption fail closed."
+      },
+      "rollback": {
+        "mode": "VerifiedReverseTransaction",
+        "description": "Reverse committed operations using preserved originals and require exact prior hashes; retain journal, failed trees, and receipt."
+      },
+      "terminalStates": [
+        "InputsVerified",
+        "InputsRepairedAndVerified",
+        "RepairRolledBack",
+        "ManualRecoveryRequired"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.mod-chain-repair.history.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "mo2"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedModChainHistory.ps1"
+        ],
+        "entryPoint": "Invoke-GridAuthorizedModChainHistory"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "specificationPath",
+          "transactionRoot",
+          "direction",
+          "authorizationGrantId",
+          "authorizationSecret",
+          "authorizationStoreRoot",
+          "semanticBinding",
+          "caseStoreRoot"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["schemaVersion", "status", "direction", "transitionId", "transitionSha256", "state", "revision", "journalSha256", "completedAt"]
+      },
+      "preconditions": [
+        "The immutable repair specification, original terminal receipt and journal, baseline seal, protected hashes, current tree hashes, and history state are exact and current.",
+        "Undo requires Applied state and preserved originals; Redo requires Undone state and the exact redo trees produced by Undo.",
+        "A fresh durable one-use grant is bound to the exact direction, revision, capability version, and target paths."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.mod-chain-repair.execute",
+        "grid.health.remediation.authorize",
+        "grid.health.verification.record"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "DurableOneUseGrant",
+        "description": "Each Undo or Redo consumes a fresh grant bound to one exact verified history transition."
+      },
+      "rollback": {
+        "mode": "VerifiedReverseTransition",
+        "description": "A failed transition reverses completed renames and verifies the pre-transition state; indeterminate recovery fails closed."
+      },
+      "terminalStates": ["Planned", "Completed", "RepairHistoryRolledBack", "RepairHistoryIndeterminate"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.record-catalog.query",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Select-GridSkyrimRecordCatalogTargets.ps1"
+        ],
+        "entryPoint": "Select-GridSkyrimRecordCatalogTargets"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["catalogPath", "catalogStatus", "expectedSha256", "expectedRecordCount"],
+        "properties": {
+          "catalogPath": { "type": "string", "minLength": 1 },
+          "catalogStatus": { "enum": ["Complete", "Partial"] },
+          "expectedSha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" },
+          "expectedRecordCount": { "type": "integer", "minimum": 0, "maximum": 2000000 },
+          "recordSignature": { "type": "array", "items": { "type": "string", "pattern": "^[A-Za-z0-9_]{4}$" }, "uniqueItems": true },
+          "originPlugin": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+          "pluginName": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+          "editorId": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 512 }, "uniqueItems": true },
+          "editorIdContains": { "type": "array", "items": { "type": "string", "minLength": 1, "maxLength": 128 }, "uniqueItems": true },
+          "canonicalKey": { "type": "array", "items": { "type": "string", "pattern": "^[^|]+\\|[A-Fa-f0-9]{1,6}$" }, "uniqueItems": true },
+          "maximumMatches": { "type": "integer", "minimum": 1, "maximum": 100000 },
+          "maximumRecordsRead": { "type": "integer", "minimum": 1, "maximum": 2000000 },
+          "maximumCatalogBytes": { "type": "integer", "minimum": 1, "maximum": 2147483647 }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["status", "sourceCoverage", "sourceSha256", "recordsRead", "matches", "targets", "issues"]
+      },
+      "preconditions": [
+        "The input is the sealed bounded plugin-record-catalog NDJSON artifact from one baseline case.",
+        "At least one structured signature, plugin, EditorID, EditorID-fragment, or canonical-key filter is supplied; free-form symptom text is never converted into a record target by this capability.",
+        "Digest, record count, per-record schema, and configured bounds are verified before a complete target set is claimed."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "None",
+      "requiredAuthority": {
+        "kind": "None",
+        "description": "Reads an already authorized and sealed case-local artifact and returns an in-memory selection without external access or mutation."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "The deterministic query has no side effects."
+      },
+      "terminalStates": ["Complete", "Partial", "NoMatch", "Refused"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.repair.archive-candidate.classify",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Get-GridSkyrimArchiveCandidateAssessment.ps1"
+        ],
+        "entryPoint": "Get-GridSkyrimArchiveCandidateAssessment"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["archive", "expectedSha256", "primaryPluginName", "installedPluginSha256"],
+        "properties": {
+          "archive": { "type": "string", "minLength": 1 },
+          "expectedSha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" },
+          "primaryPluginName": { "type": "string", "minLength": 1 },
+          "primaryPluginEntry": { "type": "string", "minLength": 1 },
+          "primaryArchiveEntry": { "type": "string", "minLength": 1 },
+          "installedPluginSha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" },
+          "installedVersion": { "type": "string", "minLength": 1 },
+          "candidateVersion": { "type": "string", "minLength": 1 },
+          "dependent": { "type": "array", "items": { "type": "string", "minLength": 66 }, "uniqueItems": true },
+          "bundled": { "type": "array", "items": { "type": "string", "minLength": 3 }, "uniqueItems": true }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["schemaVersion", "status", "archiveSha256", "candidateRole", "payloadPairStatus", "mixingPolicy", "compatibilityStatus", "dependentPlugins", "requiredEvidence", "evidenceFingerprint", "evidenceId"]
+      },
+      "preconditions": [
+        "The archive path and expected digest are exact structured inputs covered by current read authority.",
+        "The installed primary and dependent plugin digests come from the current resolved profile evidence.",
+        "Explicit archive-entry paths are used when supplied; otherwise the classifier accepts only a unique plugin leaf and either an exact-stem or sole BSA/BA2 payload. Free-form text never selects entries."
+      ],
+      "dependencies": ["grid.health.evidence.record"],
+      "sideEffectClassification": "ExternalProcessLaunch",
+      "requiredAuthority": {
+        "kind": "ExplicitProcessLaunch",
+        "description": "Launches only the repository-owned Grid.Diagnostics classifier against one exact authorized archive; it does not extract, install, select FOMOD options, or mutate MO2."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Classification is read-only and produces no external state change."
+      },
+      "terminalStates": ["Complete", "SelectionRequired", "Rejected"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.recovery-source.refresh",
+      "capabilityVersion": "1.1.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Invoke-GridSkyrimRecoverySourceRefresh.ps1",
+          "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimLiveProfileRecoveryRepair.ps1"
+        ],
+        "entryPoint": "Invoke-GridSkyrimRecoverySourceRefresh"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "parentCaseId",
+          "expectedParentManifestSha256",
+          "expectedRecoveryPlanSha256",
+          "caseStoreRoot",
+          "installationId",
+          "profileId",
+          "authorizedReadPaths"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["status", "caseId", "summary"]
+      },
+      "preconditions": [
+        "The parent is a sealed component-recovery baseline whose exact manifest and plan digests match the authorized request.",
+        "Every observed archive and sidecar is an exact immediate child already named by the sealed plan beneath the authorized MO2 downloads directory."
+      ],
+      "dependencies": [
+        "grid.health.case.lifecycle",
+        "grid.health.evidence.record",
+        "grid.game.skyrimspecialedition.repair.archive-candidate.classify"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads and hashes only exact recovery archive and sidecar leaves beneath the authorized downloads directory; it never enumerates or changes the installed profile."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Source verification is read-only and writes only a sealed successor beneath the configured case store."
+      },
+      "terminalStates": ["Completed", "Failed"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.baseline.collect",
+      "capabilityVersion": "2.6.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Invoke-GridSkyrimBaseline.ps1",
+          "scripts/games/skyrimspecialedition/health/actions/Resolve-GridSkyrimBaselineIntegrityDiagnosis.ps1",
+          "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimComponentRecoveryPlan.ps1"
+        ],
+        "entryPoint": "Invoke-GridSkyrimBaseline"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "investigationPlan",
+          "caseStoreRoot",
+          "installationId",
+          "profileId",
+          "profileName",
+          "resourcePolicyVersion"
+        ],
+        "properties": {
+          "caseId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "investigationPlan": {
+            "type": "object"
+          },
+          "caseStoreRoot": {
+            "type": "string",
+            "minLength": 1
+          },
+          "installationId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "profileId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "profileName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "predecessorCaseId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hashCacheCaseId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "parentCaseIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidenceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "resourcePolicyVersion": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "caseId"
+        ]
+      },
+      "preconditions": [
+        "The v2 InvestigationPlan has Baseline purpose, binds this exact capability version, and names one installation and profile.",
+        "External reads require selected-installation semantic authority and case artifacts remain beneath the configured case-store root.",
+        "Only effective winning plugin records contribute direct assets, only established winning NIF providers contribute embedded texture dependencies, and bounded full record catalogs plus aggregate provenance remain candidate evidence rather than defect claims; incomplete components remain explicitly partial while independently verified records stay actionable.",
+        "Downloaded alternatives are admitted only as immediate archive/.meta pairs whose sidecar repository, game, and mod ID exactly match a selected lineage provider; each archive is hashed and classified independently."
+      ],
+      "dependencies": [
+        "grid.health.case.lifecycle",
+        "grid.health.evidence.record",
+        "grid.health.capability.resolve",
+        "grid.game.skyrimspecialedition.repair.archive-candidate.classify"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads only the selected installation/profile roots explicitly authorized for this baseline and writes only to the configured case store."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "External collection is read-only; an incomplete case-store transaction is sealed Failed or removed by the case-store lifecycle."
+      },
+      "terminalStates": [
+        "Planned",
+        "Running",
+        "PausedAtCheckpoint",
+        "Completed",
+        "Failed",
+        "Cancelled"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.investigation.collect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/Grid.Health.Skyrim.psm1"
+        ],
+        "entryPoint": "Invoke-GridSkyrimHealthAdapter"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "caseDirectory",
+          "investigationPlan"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "caseId"
+        ]
+      },
+      "preconditions": [
+        "The plan binds this capability version and explicit authoritative context.",
+        "Native collection requires explicit technical targets."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.mo2-context.collect",
+        "grid.game.skyrimspecialedition.xedit-query.prepare",
+        "grid.game.skyrimspecialedition.xedit-selection.prepare",
+        "grid.game.skyrimspecialedition.xedit-reference.collect",
+        "grid.game.skyrimspecialedition.xedit-evidence.normalize",
+        "grid.game.skyrimspecialedition.placed-actor-reference.resolve",
+        "grid.game.skyrimspecialedition.diagnostic-result.resolve"
+      ],
+      "sideEffectClassification": "ExternalProcessLaunch",
+      "requiredAuthority": {
+        "kind": "ExplicitProcessLaunch",
+        "description": "The operator invokes the bounded MO2/SSEEdit route; incomplete plans never launch."
+      },
+      "rollback": {
+        "mode": "DelegatedToDependencies",
+        "description": "Case artifacts are removable; launched processes are observed and never implicitly terminated."
+      },
+      "terminalStates": [
+        "NeedsContext",
+        "NeedsEvidence",
+        "ReadyToCollect",
+        "Diagnosed",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.context.probe",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Test-GridSkyrimConnectedContext.ps1"
+        ],
+        "entryPoint": "Test-GridSkyrimConnectedContext"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "mo2Root",
+          "profile"
+        ]
+      },
+      "outputSchema": {
+        "type": "boolean"
+      },
+      "preconditions": [
+        "Paths are explicit caller data."
+      ],
+      "dependencies": [],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads only the explicit MO2 root and immediate profile evidence."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Connected-context probing is read-only."
+      },
+      "terminalStates": [
+        "Matched",
+        "NotMatched",
+        "Unavailable"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.mo2-context.collect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Get-GridMO2Context.ps1"
+        ],
+        "entryPoint": "Get-GridMO2Context"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "mo2Root",
+          "profile",
+          "caseDirectory"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "fingerprint",
+          "activePlugins",
+          "loadOrder"
+        ]
+      },
+      "preconditions": [
+        "MO2 root and profile are explicit and readable."
+      ],
+      "dependencies": [],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads bounded profile and configuration evidence and writes only case-local summaries."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only generated context evidence from the case directory."
+      },
+      "terminalStates": [
+        "Collected",
+        "Unavailable",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.xedit-selection.prepare",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/New-GridXEditPluginSelection.ps1"
+        ],
+        "entryPoint": "New-GridXEditPluginSelection"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "context",
+          "targets",
+          "caseDirectory"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "pluginsPath",
+          "loadOrderPath",
+          "plugins",
+          "contextFingerprint"
+        ]
+      },
+      "preconditions": [
+        "Every target is explicit, active, unique, and has a complete recursive master closure."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.mo2-context.collect"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Writes only a bounded case-local custom plugin list and evidence."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove the generated selection directory."
+      },
+      "terminalStates": [
+        "Prepared",
+        "Refused",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.xedit-query.prepare",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/New-GridXEditQuery.ps1"
+        ],
+        "entryPoint": "New-GridXEditQuery"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "queries",
+          "caseDirectory",
+          "contextFingerprint"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "jsonPath",
+          "transportPath",
+          "queries",
+          "limits"
+        ]
+      },
+      "preconditions": [
+        "Queries use only the finite read-only operation vocabulary and bounded limits."
+      ],
+      "dependencies": [],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Writes only the query package beneath the case directory."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove the generated query package."
+      },
+      "terminalStates": [
+        "Prepared",
+        "Refused",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.xedit-reference.collect",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Start-GridXEditProbe.ps1",
+          "scripts/games/skyrimspecialedition/health/collectors/Get-GridXEditLoaderProgress.ps1",
+          "scripts/games/skyrimspecialedition/sseedit/Trace-GridReference.pas",
+          "scripts/games/skyrimspecialedition/sseedit/Trace-GridReference.manifest.json"
+        ],
+        "entryPoint": "Start-GridXEditProbe"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "context",
+          "caseDirectory",
+          "targets",
+          "queryPackage"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status"
+        ]
+      },
+      "preconditions": [
+        "SSEEdit64 identity, collector hash, query binding, minimal selection, and process state are verified."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.xedit-query.prepare",
+        "grid.game.skyrimspecialedition.xedit-selection.prepare",
+        "grid.game.skyrimspecialedition.xedit-provisioning.inspect",
+        "grid.health.process.observe"
+      ],
+      "sideEffectClassification": "ExternalProcessLaunch",
+      "requiredAuthority": {
+        "kind": "ExplicitProcessLaunch",
+        "description": "Launches only verified SSEEdit64 through the explicit MO2 route with a case-local plugin list."
+      },
+      "rollback": {
+        "mode": "DetachObservation",
+        "description": "Cancellation detaches observation; process closure is a separate ownership-authorized capability."
+      },
+      "terminalStates": [
+        "Collected",
+        "Unavailable",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.xedit-evidence.normalize",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Get-GridXEditEvidence.ps1"
+        ],
+        "entryPoint": "Get-GridXEditEvidence"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "reportPath",
+          "queryPackage",
+          "caseDirectory",
+          "contextFingerprint"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "evidence"
+        ]
+      },
+      "preconditions": [
+        "The native report is current, bounded, and bound to the same query/context."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.xedit-query.prepare",
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Normalized evidence remains in the case directory."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only the generated normalized evidence file."
+      },
+      "terminalStates": [
+        "Collected",
+        "Rejected",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.diagnostic-result.resolve",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/Resolve-GridSkyrimDiagnosticResult.ps1"
+        ],
+        "entryPoint": "Resolve-GridSkyrimDiagnosticResult"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "contextFingerprint",
+          "evidenceFingerprint",
+          "evidence"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "../../../health/schemas/diagnostic-result.v1.schema.json"
+      },
+      "preconditions": [
+        "Only current deterministic native evidence may satisfy Skyrim proof obligations."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record",
+        "grid.health.diagnostic-result.materialize",
+        "grid.health.remediation-proposal.materialize",
+        "grid.health.verification.record"
+      ],
+      "sideEffectClassification": "None",
+      "requiredAuthority": {
+        "kind": "None",
+        "description": "Resolution is deterministic and performs no launch or mutation."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "No external state changes."
+      },
+      "terminalStates": [
+        "NeedsEvidence",
+        "Diagnosed",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.plugin-state-proposal.materialize",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "mo2"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimRemediationProposal.ps1"
+        ],
+        "entryPoint": "New-GridSkyrimRemediationProposal"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "contextFingerprint",
+          "evidenceFingerprint",
+          "evidence",
+          "actionType",
+          "target"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "../../../health/schemas/remediation-proposal.v1.schema.json"
+      },
+      "preconditions": [
+        "Verified Skyrim evidence resolves an exact allowlisted action and target."
+      ],
+      "dependencies": [
+        "grid.health.remediation-proposal.materialize",
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "None",
+      "requiredAuthority": {
+        "kind": "None",
+        "description": "The proposal is inert and grants no profile-write authority."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "No external state changes."
+      },
+      "terminalStates": [
+        "AwaitingAuthorization",
+        "Unsupported",
+        "Rejected"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.plugin-state.execute",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "mo2"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedPluginState.ps1",
+          "scripts/games/skyrimspecialedition/mo2/Set-GridPluginState.ps1"
+        ],
+        "entryPoint": "Invoke-GridAuthorizedPluginState.ps1"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "proposal",
+          "currentContextFingerprint",
+          "currentEvidenceFingerprint",
+          "authorizationGrantId",
+          "authorizationSecret",
+          "authorizationStoreRoot",
+          "semanticBinding",
+          "mo2Root",
+          "profile"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "proposalId",
+          "proposalStatus",
+          "execution",
+          "verification"
+        ]
+      },
+      "preconditions": [
+        "The exact proposal and current context/evidence are bound to a non-expired durable one-use grant acquired through an exclusive execution lease."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.plugin-state-proposal.materialize",
+        "grid.health.remediation.authorize",
+        "grid.health.verification.record"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "DurableOneUseGrant",
+        "description": "Writes one profile plugins.txt only after exact actor/session/context/proposal/capability/target authorization is exclusively leased."
+      },
+      "rollback": {
+        "mode": "RestoreBackup",
+        "description": "Create a timestamped backup and restore it automatically when verification fails."
+      },
+      "terminalStates": [
+        "Verified",
+        "Incomplete",
+        "Failed",
+        "Refused"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.mod-state.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "mo2"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridConfirmedModStateChange.ps1",
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedModState.ps1",
+          "scripts/games/skyrimspecialedition/mo2/Set-GridModState.ps1"
+        ],
+        "entryPoint": "Invoke-GridConfirmedModStateChange.ps1"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "userConfirmed",
+          "confirmedAtUtc",
+          "installationId",
+          "mo2Root",
+          "profile",
+          "modName",
+          "expectedCurrentState",
+          "desiredState",
+          "gridDataRoot",
+          "actorId",
+          "sessionId"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "proposalId",
+          "proposalStatus",
+          "execution",
+          "verification"
+        ]
+      },
+      "preconditions": [
+        "The WinUI user confirmed one exact fresh profile/mod/state transition.",
+        "The selected mod resolves to exactly one non-foreign modlist.txt entry and its state still matches the reviewed state.",
+        "MO2, Skyrim, SKSE, and xEdit are closed."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.plugin-state-proposal.materialize",
+        "grid.health.remediation.authorize",
+        "grid.health.verification.record"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "DurableOneUseGrant",
+        "description": "Writes one exact profile modlist.txt marker only after fresh explicit UI confirmation and a context/evidence/target-bound one-use grant."
+      },
+      "rollback": {
+        "mode": "RestoreBackup",
+        "description": "Preserve a timestamped byte-for-byte backup and restore it automatically when verification fails."
+      },
+      "terminalStates": [
+        "Verified",
+        "Failed",
+        "Refused"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.plugin-state-batch.inspect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "mo2"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/mo2/Grid.PluginStateBatch.ps1"
+        ],
+        "entryPoint": "Get-GridPluginStateBatchInspection"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["mo2Root", "profile", "gameDataRoot", "requestedPlugins"]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["status", "paths", "dependencyClosure", "operations", "protectedState", "slotUsage"]
+      },
+      "preconditions": [
+        "Exact requested plugin identities are supplied through structured input.",
+        "The MO2 profile, mod list, load order, plugins file, game Data root, and winning TES4 headers are readable."
+      ],
+      "dependencies": [],
+      "sideEffectClassification": "None",
+      "requiredAuthority": {
+        "kind": "None",
+        "description": "Inspection reads current MO2 profile and winning plugin headers without mutation."
+      },
+      "rollback": { "mode": "NotRequired", "description": "No external state changes." },
+      "terminalStates": ["InputsVerified", "Rejected"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.plugin-state-batch-proposal.materialize",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "mo2"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimPluginStateBatchProposal.ps1",
+          "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimPluginStateBatchPlanningCase.ps1",
+          "scripts/games/skyrimspecialedition/mo2/Grid.PluginStateBatch.ps1"
+        ],
+        "entryPoint": "New-GridSkyrimPluginStateBatchProposal"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["caseStoreRoot", "baselineCaseDirectory", "caseId", "contextFingerprint", "evidenceFingerprint", "mo2Root", "profile", "gameDataRoot", "requestedPlugins", "outputPath"]
+      },
+      "outputSchema": { "$ref": "../../../health/schemas/plugin-state-batch-specification.v1.schema.json" },
+      "preconditions": [
+        "The sealed baseline contains exactly one disabled SPID-source observation for every requested plugin.",
+        "Protected profile hashes still match the sealed baseline and the dependency-closed live inspection passes slot limits."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.plugin-state-batch.inspect",
+        "grid.health.case.lifecycle"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Writes only an inert specification; it grants no profile mutation authority."
+      },
+      "rollback": { "mode": "DeleteCaseArtifact", "description": "The inert specification may be removed without touching MO2." },
+      "terminalStates": ["AwaitingAuthorization", "Rejected"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.plugin-state-batch.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "mo2"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Grid.PluginStateBatch.Commands.ps1",
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedPluginStateBatch.ps1",
+          "scripts/games/skyrimspecialedition/mo2/Set-GridPluginStateBatch.ps1",
+          "scripts/games/skyrimspecialedition/mo2/Grid.PluginStateBatch.ps1"
+        ],
+        "entryPoint": "Invoke-GridAuthorizedPluginStateBatch.ps1"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["specificationPath", "currentContextFingerprint", "currentEvidenceFingerprint", "authorizationGrantId", "authorizationSecret", "authorizationStoreRoot", "semanticBinding", "caseStoreRoot", "transactionRoot"]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["status", "specificationId", "authorizationStatus", "execution"]
+      },
+      "preconditions": [
+        "A fresh durable one-use grant binds the exact specification, target set, capability version, and normalized input.",
+        "The sealed baseline, protected hashes, winning providers, TES4 dependency closure, slot use, and process gate all revalidate immediately before commit."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.plugin-state-batch-proposal.materialize",
+        "grid.health.remediation.authorize"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "DurableOneUseGrant",
+        "description": "Atomically writes only the exact profile plugins.txt after exclusive authorization lease acquisition."
+      },
+      "rollback": {
+        "mode": "RestoreBackup",
+        "description": "A byte-exact before image is written before commit and restored automatically on any failed postcondition."
+      },
+      "terminalStates": ["Verified", "Planned", "Failed", "Refused"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.plugin-state-batch.history.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "mo2"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedPluginStateBatchHistory.ps1",
+          "scripts/games/skyrimspecialedition/mo2/Grid.PluginStateBatch.ps1"
+        ],
+        "entryPoint": "Invoke-GridAuthorizedPluginStateBatchHistory"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["specificationPath", "transactionRoot", "direction", "authorizationGrantId", "authorizationSecret", "authorizationStoreRoot", "semanticBinding", "caseStoreRoot"]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["status", "direction", "transitionId", "state", "revision"]
+      },
+      "preconditions": [
+        "The transaction is in the exact Applied or Undone state required by the requested direction.",
+        "A fresh durable one-use grant binds the exact transition and current plugins.txt digest."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.plugin-state-batch.execute",
+        "grid.health.remediation.authorize"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "DurableOneUseGrant",
+        "description": "Undo and Redo each require a distinct exact one-use authorization."
+      },
+      "rollback": {
+        "mode": "RestoreCurrentImage",
+        "description": "The transition restores its exact source bytes if post-verification fails."
+      },
+      "terminalStates": ["Verified", "Planned", "Failed", "Refused"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.xedit-provisioning.inspect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Get-GridXEditCollectorProvisioningState.ps1"
+        ],
+        "entryPoint": "Get-GridXEditCollectorProvisioningState"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "configurationPath"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "state",
+          "sourcePath",
+          "destinationPath"
+        ]
+      },
+      "preconditions": [
+        "The configured SSEEdit64 identity and bundled collector manifest are readable."
+      ],
+      "dependencies": [],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads only configured executable and collector state plus Grid-managed receipts."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Provisioning inspection is read-only."
+      },
+      "terminalStates": [
+        "Ready",
+        "Missing",
+        "Outdated",
+        "ModifiedExternally",
+        "Unavailable"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.xedit-provisioning-proposal.materialize",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/New-GridXEditCollectorProvisioningProposal.ps1"
+        ],
+        "entryPoint": "New-GridXEditCollectorProvisioningProposal"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "caseDirectory",
+          "provisioningState"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "proposalPath",
+          "authorizationRequired"
+        ]
+      },
+      "preconditions": [
+        "Provisioning state is Missing or a receipt-bound Outdated version.",
+        "The proposal is inert and never contains or derives an executable authorization credential."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.xedit-provisioning.inspect",
+        "grid.health.remediation-proposal.materialize"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Writes an inert proposal and evidence only beneath the case directory."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only the generated provisioning proposal package."
+      },
+      "terminalStates": [
+        "AwaitingAuthorization",
+        "Unsupported",
+        "Rejected"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.plugin-record-graph.collect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Invoke-GridSkyrimRootCauseCollector.ps1"
+        ],
+        "entryPoint": "Invoke-GridSkyrimRootCauseCollector"
+      },
+      "inputSchema": {
+        "$ref": "../../../health/schemas/root-cause-collector-request.v1.schema.json"
+      },
+      "outputSchema": {
+        "$ref": "../../../health/schemas/root-cause-collector-result.v1.schema.json"
+      },
+      "preconditions": [
+        "Targets are canonical record keys with an explicit bounded plugin closure and SHA-256 allowlist.",
+        "Collection is read-only and refuses resource-limit or context-binding violations."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads only the exact plan-bound plugin files and writes normalized output to the case transaction."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only unsealed case-local collector artifacts."
+      },
+      "terminalStates": [
+        "Complete",
+        "Partial",
+        "Refused",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.asset-graph.collect",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Invoke-GridSkyrimRootCauseCollector.ps1"
+        ],
+        "entryPoint": "Invoke-GridSkyrimRootCauseCollector"
+      },
+      "inputSchema": {
+        "$ref": "../../../health/schemas/root-cause-collector-request.v1.schema.json"
+      },
+      "outputSchema": {
+        "$ref": "../../../health/schemas/root-cause-collector-result.v1.schema.json"
+      },
+      "preconditions": [
+        "Every NIF, DDS, PSC, PEX, and exact archive member is supplied as an explicit virtual and canonical source path.",
+        "Archive reads and structural validation use bounded exact-member operations only."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads exact plan-bound loose assets or archive members without broad extraction."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only unsealed case-local collector artifacts."
+      },
+      "terminalStates": [
+        "Complete",
+        "Partial",
+        "Missing",
+        "Corrupt",
+        "Conflicting",
+        "Refused",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.root-cause.collect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Invoke-GridSkyrimRootCauseCollector.ps1"
+        ],
+        "entryPoint": "Invoke-GridSkyrimRootCauseCollector"
+      },
+      "inputSchema": {
+        "$ref": "../../../health/schemas/root-cause-collector-request.v1.schema.json"
+      },
+      "outputSchema": {
+        "$ref": "../../../health/schemas/root-cause-collector-result.v1.schema.json"
+      },
+      "preconditions": [
+        "The request binds a sealed baseline, installation/profile identity, explicit sources, targets, and budgets.",
+        "The fixed Grid.Diagnostics collector is the only launched process."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.plugin-record-graph.collect",
+        "grid.game.skyrimspecialedition.asset-graph.collect"
+      ],
+      "sideEffectClassification": "ExternalProcessLaunch",
+      "requiredAuthority": {
+        "kind": "ExplicitProcessLaunch",
+        "description": "Launches only the bounded offline Grid.Diagnostics collector and writes only case-store evidence."
+      },
+      "rollback": {
+        "mode": "SealFailedTransaction",
+        "description": "No external state is mutated; incomplete evidence is sealed with its exact failure."
+      },
+      "terminalStates": [
+        "Completed",
+        "Refused",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.record-relationship.investigate",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/Invoke-GridSkyrimRecordRelationshipInvestigation.ps1",
+          "scripts/games/skyrimspecialedition/health/New-GridSkyrimRecordRelationshipRequest.ps1",
+          "scripts/games/skyrimspecialedition/health/collectors/Invoke-GridSkyrimRootCauseCollector.ps1"
+        ],
+        "entryPoint": "Invoke-GridSkyrimRecordRelationshipInvestigation"
+      },
+      "inputSchema": {
+        "$ref": "../../../health/schemas/root-cause-collector-request.v1.schema.json"
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "caseId",
+          "recordGraph",
+          "assetGraph",
+          "primaryFailure"
+        ]
+      },
+      "preconditions": [
+        "A valid sealed baseline binds the installation, profile, and protected files.",
+        "The request enumerates exact source hashes, record targets, and resource limits."
+      ],
+      "dependencies": [
+        "grid.health.case.lifecycle",
+        "grid.game.skyrimspecialedition.root-cause.collect"
+      ],
+      "sideEffectClassification": "ExternalProcessLaunch",
+      "requiredAuthority": {
+        "kind": "ExplicitProcessLaunch",
+        "description": "Launches only the bounded offline Grid.Diagnostics collector and writes sealed case-store evidence."
+      },
+      "rollback": {
+        "mode": "SealFailedTransaction",
+        "description": "No external mutation occurs; incomplete evidence is sealed with its exact failed primitive."
+      },
+      "terminalStates": [
+        "RelationshipEvidenceCollected",
+        "RelationshipEvidenceFailed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.patch-specification.materialize",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimConflictPatchSpecification.ps1",
+          "scripts/games/skyrimspecialedition/health/actions/Test-GridSkyrimRootCauseContracts.ps1"
+        ],
+        "entryPoint": "New-GridSkyrimConflictPatchSpecification"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "contextFingerprint",
+          "evidenceFingerprint",
+          "evidence",
+          "recordGraph"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "../../../health/schemas/conflict-patch-specification.v1.schema.json"
+      },
+      "preconditions": [
+        "Every record edit or asset action is deterministic and bound to current collector evidence.",
+        "The result remains inert and supplies no writer or active-state authority."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record",
+        "grid.health.remediation-proposal.materialize"
+      ],
+      "sideEffectClassification": "None",
+      "requiredAuthority": {
+        "kind": "None",
+        "description": "Materialization is deterministic and performs no external state change."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "No external state changes."
+      },
+      "terminalStates": [
+        "Inert",
+        "Rejected"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.conflict-patch-specification.materialize",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimConflictPatchSpecification.ps1"
+        ],
+        "entryPoint": "New-GridSkyrimConflictPatchSpecification"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "contextFingerprint",
+          "evidenceFingerprint",
+          "evidence",
+          "recordGraph"
+        ]
+      },
+      "outputSchema": {
+        "$ref": "../../../health/schemas/conflict-patch-specification.v1.schema.json"
+      },
+      "preconditions": [
+        "Every proposed record-field change is derived from current SHA-256-bound deterministic evidence."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.patch-specification.materialize"
+      ],
+      "sideEffectClassification": "None",
+      "requiredAuthority": {
+        "kind": "None",
+        "description": "The specification is inert and supplies neither a writer nor mutation authority."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "No external state changes."
+      },
+      "terminalStates": [
+        "Inert",
+        "Rejected"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.root-cause.resolve",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/Invoke-GridSkyrimRootCauseDiagnosis.ps1",
+          "scripts/games/skyrimspecialedition/health/collectors/Invoke-GridSkyrimRootCauseCollector.ps1",
+          "scripts/games/skyrimspecialedition/health/actions/Resolve-GridSkyrimRootCause.ps1"
+        ],
+        "entryPoint": "Invoke-GridSkyrimRootCauseDiagnosis"
+      },
+      "inputSchema": {
+        "$ref": "../../../health/schemas/root-cause-collector-request.v1.schema.json"
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "caseId",
+          "diagnosticResult",
+          "patchSpecification",
+          "primaryFailure"
+        ]
+      },
+      "preconditions": [
+        "A sealed baseline, matching installation/profile, and v2 Diagnosis capability binding exist.",
+        "The fixed collector request enumerates exact targets, allowed sources, and resource limits."
+      ],
+      "dependencies": [
+        "grid.health.case.lifecycle",
+        "grid.health.evidence.record",
+        "grid.health.diagnostic-result.materialize",
+        "grid.game.skyrimspecialedition.root-cause.collect",
+        "grid.game.skyrimspecialedition.patch-specification.materialize"
+      ],
+      "sideEffectClassification": "ExternalProcessLaunch",
+      "requiredAuthority": {
+        "kind": "ExplicitProcessLaunch",
+        "description": "Launches only Grid.Diagnostics root-cause-collect with case-local request/output paths; no game, xEdit, or external writer is launched."
+      },
+      "rollback": {
+        "mode": "SealFailedTransaction",
+        "description": "No external mutation occurs; a failed transaction is sealed with bounded command evidence."
+      },
+      "terminalStates": [
+        "RootCauseResolved",
+        "RootCauseFailed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.existing-tool-report.collect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {"kind":"Game","gameId":"skyrimspecialedition"},
+      "implementation": {
+        "files": ["scripts/games/skyrimspecialedition/health/collectors/Get-GridSkyrimExistingToolReport.ps1"],
+        "entryPoint": "Get-GridSkyrimExistingToolReport"
+      },
+      "inputSchema": {
+        "type":"object",
+        "required":["toolId","candidatePaths"],
+        "properties": {
+          "toolId":{"type":"string"},
+          "candidatePaths":{"type":"array","items":{"type":"string"}},
+          "maximumOutputBytes":{"type":"integer","minimum":1},
+          "contextFingerprint":{"type":"string"}
+        }
+      },
+      "outputSchema": {"type":"object","required":["toolId","status","launchPerformed","mutationAuthorized","records"]},
+      "preconditions": [
+        "The tool is an explicit registered structured selection.",
+        "Every candidate is an exact authorized existing file path; no directory or tool launch is permitted."
+      ],
+      "dependencies": ["grid.game.skyrimspecialedition.mo2-context.collect","grid.health.evidence.record"],
+      "sideEffectClassification":"ExternalRead",
+      "requiredAuthority":{"kind":"AuthorizedExternalRead","description":"Reads only exact after-run reports and generated artifacts approved in the request review."},
+      "rollback":{"mode":"NotRequired","description":"Observation is read-only and emits uncorroborated assertions; it never repairs or launches a tool."},
+      "terminalStates":["Collected","Unavailable","Failed"]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.loot-existing-output.collect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "loot"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/collectors/Get-GridLootExistingOutput.ps1"
+        ],
+        "entryPoint": "Get-GridLootExistingOutput"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "candidatePaths"
+        ],
+        "properties": {
+          "candidatePaths": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "maximumOutputBytes": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "launchPerformed",
+          "mutationAuthorized",
+          "records"
+        ]
+      },
+      "preconditions": [
+        "Candidate files are exact authorized existing-output paths.",
+        "LOOT is not launched."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.mo2-context.collect",
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads only exact existing LOOT output files supplied by the caller."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Observation does not change LOOT, game, profile, or plugin state."
+      },
+      "terminalStates": [
+        "Collected",
+        "Unavailable",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.reference-suppression-proposal.materialize",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimReferenceSuppressionProposal.ps1",
+          "scripts/games/skyrimspecialedition/health/actions/New-GridSkyrimReferenceSuppressionPlanningCase.ps1"
+        ],
+        "entryPoint": "New-GridSkyrimReferenceSuppressionProposal"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "evidenceCaseDirectory",
+          "caseStoreRoot",
+          "caseId",
+          "contextFingerprint",
+          "targetReferences",
+          "patchPluginName",
+          "intent",
+          "outputPath"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "schemaVersion",
+          "status",
+          "specification",
+          "specificationPath",
+          "remediationProposal",
+          "authorizationRequired",
+          "changedExternalState"
+        ]
+      },
+      "preconditions": [
+        "A sealed current record graph resolves every exact REFR or ACHR winner and its source-plugin SHA-256.",
+        "Every target is active, is not already deleted or initially disabled, and has no enable parent or linked-reference hazard."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.record-relationship.investigate",
+        "grid.health.remediation-proposal.materialize"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Writes only an inert exact-reference proposal; it cannot create, enable, or modify a plugin."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only the generated proposal."
+      },
+      "terminalStates": [
+        "AwaitingAuthorization",
+        "Refused",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.xedit-provisioning.execute",
+      "capabilityVersion": "2.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedXEditCollectorProvisioning.ps1"
+        ],
+        "entryPoint": "Invoke-GridAuthorizedXEditCollectorProvisioning"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "proposalPath",
+          "authorizationGrantId",
+          "authorizationSecret",
+          "authorizationStoreRoot",
+          "semanticBinding"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "status",
+          "proposalId"
+        ]
+      },
+      "preconditions": [
+        "Source, destination, executable, hashes, receipt, exact proposal identity, and durable one-use authorization binding are current."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.xedit-provisioning.inspect",
+        "grid.game.skyrimspecialedition.xedit-provisioning-proposal.materialize",
+        "grid.health.remediation.authorize",
+        "grid.health.verification.record"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "DurableOneUseGrant",
+        "description": "Authorization covers only the exact Trace-GridReference provisioning proposal, capability version, and target binding."
+      },
+      "rollback": {
+        "mode": "RestoreOrRemoveProvisionedFile",
+        "description": "Restore the prior received file or remove a newly created invalid file when verification fails."
+      },
+      "terminalStates": [
+        "Verified",
+        "Incomplete",
+        "Failed",
+        "RolledBack",
+        "Refused"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.xedit-reference-suppression-writer-provisioning.inspect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Get-GridXEditReferenceSuppressionWriterProvisioningState.ps1",
+          "scripts/games/skyrimspecialedition/sseedit/Write-GridReferenceSuppression.pas",
+          "scripts/games/skyrimspecialedition/sseedit/Write-GridReferenceSuppression.manifest.json"
+        ],
+        "entryPoint": "Get-GridXEditReferenceSuppressionWriterProvisioningState"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "configurationPath"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "state",
+          "writerId",
+          "sourceSha256",
+          "destinationPath"
+        ]
+      },
+      "preconditions": [
+        "The caller supplies the connected MO2 configuration path.",
+        "Only the adapter-owned reviewed writer and manifest identities are accepted."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.mo2-context.collect"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads the configured SSEEdit identity, reviewed bundle, installed same-name writer, and Grid receipt only."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Inspection does not change xEdit or the game."
+      },
+      "terminalStates": [
+        "Missing",
+        "Ready",
+        "Outdated",
+        "ModifiedExternally",
+        "Unavailable"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.xedit-reference-suppression-writer-provisioning-proposal.materialize",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/New-GridXEditReferenceSuppressionWriterProvisioningProposal.ps1"
+        ],
+        "entryPoint": "New-GridXEditReferenceSuppressionWriterProvisioningProposal"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "caseId",
+          "caseDirectory",
+          "provisioningState"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "proposal",
+          "evidence",
+          "proposalPath",
+          "authorizationRequired"
+        ]
+      },
+      "preconditions": [
+        "The deterministic writer state is Missing, Outdated, or explicitly accepted ModifiedExternally."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.xedit-reference-suppression-writer-provisioning.inspect",
+        "grid.health.remediation-proposal.materialize"
+      ],
+      "sideEffectClassification": "CaseLocalWrite",
+      "requiredAuthority": {
+        "kind": "CaseDirectoryWrite",
+        "description": "Writes only the inert provisioning proposal and state evidence."
+      },
+      "rollback": {
+        "mode": "RemoveCaseArtifacts",
+        "description": "Remove only the generated proposal artifacts."
+      },
+      "terminalStates": [
+        "AwaitingAuthorization",
+        "Refused",
+        "Failed"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.xedit-reference-suppression-writer-provisioning.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedXEditReferenceSuppressionWriterProvisioning.ps1"
+        ],
+        "entryPoint": "Invoke-GridAuthorizedXEditReferenceSuppressionWriterProvisioning"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "proposalPath",
+          "authorizationGrantId",
+          "authorizationSecret",
+          "authorizationStoreRoot",
+          "semanticBinding"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "state",
+          "receiptPath",
+          "installedSha256"
+        ]
+      },
+      "preconditions": [
+        "Source, destination, executable, hashes, exact proposal identity, and durable one-use authorization binding are current."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.xedit-reference-suppression-writer-provisioning.inspect",
+        "grid.game.skyrimspecialedition.xedit-reference-suppression-writer-provisioning-proposal.materialize",
+        "grid.health.remediation.authorize",
+        "grid.health.verification.record"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "DurableOneUseGrant",
+        "description": "Authorization covers only the exact reviewed Write-GridReferenceSuppression provisioning proposal and target binding."
+      },
+      "rollback": {
+        "mode": "RestoreOrRemoveProvisionedFile",
+        "description": "Restore the prior same-name file or remove a newly created invalid file if verification fails."
+      },
+      "terminalStates": [
+        "Verified",
+        "Incomplete",
+        "Failed",
+        "RolledBack",
+        "Refused"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.reference-suppression.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition",
+        "tool": "sseedit"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedReferenceSuppression.ps1"
+        ],
+        "entryPoint": "Invoke-GridAuthorizedReferenceSuppression"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "specificationPath",
+          "currentContextFingerprint",
+          "authorizationGrantId",
+          "authorizationSecret",
+          "authorizationStoreRoot",
+          "caseStoreRoot",
+          "semanticBinding",
+          "transactionRoot"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "state",
+          "changedExternalState",
+          "patchPath",
+          "patchSha256",
+          "receiptPath",
+          "modEnabled",
+          "pluginEnabled",
+          "runtimeVerified"
+        ]
+      },
+      "preconditions": [
+        "The sealed v2 specification, evidence case, baseline, profile-state hashes, and every source-plugin SHA-256 remain exact.",
+        "The reviewed writer is provisioned and receipt-verified.",
+        "The connected MO2, Skyrim, SKSE, launcher, and xEdit processes are closed.",
+        "The transient overwrite target and final dedicated patch-mod target do not already exist."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.reference-suppression-proposal.materialize",
+        "grid.game.skyrimspecialedition.xedit-reference-suppression-writer-provisioning.inspect",
+        "grid.health.remediation.authorize",
+        "grid.health.verification.record"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "DurableOneUseGrant",
+        "description": "Authorization binds the exact references, Initially Disabled postconditions, transient overwrite path, final patch path, writer capability version, and complete specification."
+      },
+      "rollback": {
+        "mode": "RemoveGeneratedPatch",
+        "description": "On failure after xEdit exits, remove only the newly created exact patch and empty dedicated mod directory. Preserve a verified after-image for later Undo/Redo."
+      },
+      "terminalStates": [
+        "Applied",
+        "Incomplete",
+        "Failed",
+        "RolledBack",
+        "Indeterminate",
+        "Refused"
+      ]
+    },
+    {
+      "capabilityId": "grid.game.skyrimspecialedition.reference-suppression.history.execute",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "Game",
+        "gameId": "skyrimspecialedition"
+      },
+      "implementation": {
+        "files": [
+          "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedReferenceSuppressionHistory.ps1"
+        ],
+        "entryPoint": "Invoke-GridAuthorizedReferenceSuppressionHistory"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "specificationPath",
+          "transactionRoot",
+          "direction",
+          "authorizationGrantId",
+          "authorizationSecret",
+          "authorizationStoreRoot",
+          "semanticBinding",
+          "caseStoreRoot"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "state",
+          "changedExternalState",
+          "direction",
+          "patchPath",
+          "receiptPath"
+        ]
+      },
+      "preconditions": [
+        "The exact generated patch transition image and history state are present and SHA-256-valid.",
+        "The connected MO2, Skyrim, SKSE, launcher, and xEdit processes are closed.",
+        "The durable one-use grant binds the exact direction, revision, patch path, and patch digest."
+      ],
+      "dependencies": [
+        "grid.game.skyrimspecialedition.reference-suppression.execute",
+        "grid.health.remediation.authorize",
+        "grid.health.verification.record"
+      ],
+      "sideEffectClassification": "ExternalWrite",
+      "requiredAuthority": {
+        "kind": "DurableOneUseGrant",
+        "description": "Each Undo or Redo revision consumes a fresh grant bound to one exact patch transition."
+      },
+      "rollback": {
+        "mode": "RestorePriorPatchState",
+        "description": "Restore the exact pre-transition patch presence and history state if a transition fails."
+      },
+      "terminalStates": [
+        "Applied",
+        "Undone",
+        "Incomplete",
+        "Failed",
+        "RolledBack",
+        "Refused"
+      ]
+    }
+  ]
+}

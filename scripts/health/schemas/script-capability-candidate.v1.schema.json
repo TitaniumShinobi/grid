@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/script-capability-candidate.v1.schema.json",
+  "title": "Grid Script Capability Candidate v1",
+  "type": "object",
+  "required": ["requestedOperation", "capabilityId", "requestedBy", "publicCapability", "uniqueModFormat", "owner", "reusedCapabilityIds", "proposedFiles", "exampleCases", "caseSpecificIdentifiers", "parameterContract", "authority", "terminalStates"],
+  "properties": {
+    "requestedOperation": { "type": "string", "minLength": 1, "maxLength": 512 },
+    "capabilityId": { "type": "string", "pattern": "^grid\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+    "requestedBy": { "enum": ["Developer", "User", "Grid"] },
+    "publicCapability": { "type": "boolean" },
+    "uniqueModFormat": { "type": "boolean" },
+    "owner": {
+      "type": "object",
+      "required": ["kind"],
+      "properties": {
+        "kind": { "enum": ["SharedHealth", "Tool", "Game", "Mod"] },
+        "gameId": { "type": ["string", "null"] },
+        "toolId": { "type": ["string", "null"] },
+        "modId": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "reusedCapabilityIds": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+    "proposedFiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "sourceText"],
+        "properties": { "path": { "type": "string" }, "sourceText": { "type": "string" } },
+        "additionalProperties": false
+      }
+    },
+    "exampleCases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["situationId"],
+        "properties": { "situationId": { "type": "string", "minLength": 1 } },
+        "additionalProperties": false
+      }
+    },
+    "caseSpecificIdentifiers": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+    "parameterContract": { "type": ["object", "null"] },
+    "authority": { "type": ["object", "null"] },
+    "terminalStates": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+  },
+  "additionalProperties": false
+}

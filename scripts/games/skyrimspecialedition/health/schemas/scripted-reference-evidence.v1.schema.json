@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "grid://schemas/skyrimspecialedition/scripted-reference-evidence.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "contextFingerprint", "status", "limitations", "assessments", "nodes", "edges"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "contextFingerprint": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["Observed", "Incomplete", "Unsupported"] },
+    "limitations": { "type": "array", "items": { "type": "string" } },
+    "assessments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["virtualPath", "provider", "scriptName", "status", "controlledReferences", "lifecycleRoutines", "selectionVariables", "finding", "solution", "runtimeEvidenceRequired"],
+        "properties": {
+          "virtualPath": { "type": "string", "minLength": 1 },
+          "provider": { "type": "string" },
+          "scriptName": { "type": "string" },
+          "status": { "enum": ["NoReferenceStateControlObserved", "ReferenceStateControlObserved", "LifecycleReapplicationObserved", "SelectionReconciliationObserved"] },
+          "controlledReferences": { "type": "array", "items": { "type": "string" } },
+          "lifecycleRoutines": { "type": "array", "items": { "type": "string" } },
+          "selectionVariables": { "type": "array", "items": { "type": "string" } },
+          "finding": { "type": "string", "minLength": 1 },
+          "solution": { "type": "string", "minLength": 1 },
+          "runtimeEvidenceRequired": { "const": true }
+        }
+      }
+    },
+    "nodes": { "type": "array", "items": { "type": "object", "required": ["id", "kind", "label", "provider"] } },
+    "edges": { "type": "array", "items": { "type": "object", "required": ["from", "to", "kind", "evidenceId"] } }
+  }
+}

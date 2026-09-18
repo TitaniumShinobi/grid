@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/skyrimspecialedition/plugin-integrity-result.v1.schema.json",
+  "title": "Grid Skyrim bounded enabled-plugin integrity result v1",
+  "type": "object",
+  "required": ["schemaVersion", "status", "enabledPluginCount", "plugins", "implicitMasters", "issues", "semanticFingerprint"],
+  "properties": {
+    "schemaVersion": { "const": 1 }, "status": { "enum": ["Pass", "Fail"] }, "enabledPluginCount": { "type": "integer", "minimum": 0, "maximum": 2048 },
+    "plugins": { "type": "array", "items": { "type": "object" } }, "implicitMasters": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "issues": { "type": "array", "items": { "type": "string" } }, "semanticFingerprint": { "type": "string", "pattern": "^[A-F0-9]{64}$" }
+  },
+  "additionalProperties": false
+}

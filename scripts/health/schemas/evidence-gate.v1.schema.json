@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://grid.local/schemas/evidence-gate.v1.schema.json",
+  "title": "Grid diagnostic evidence gate v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "gate", "status", "required", "evidenceIds", "unavailableReasons", "contradictions", "updatedAt"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "gate": { "enum": ["InstallationBaseline", "ProfileBaseline", "PluginBaseline", "AssetBaseline", "PriorCaseBaseline", "SymptomEvidenceBaseline", "RuntimeReferenceBaseline"] },
+    "status": { "enum": ["NotStarted", "Collecting", "Complete", "CompleteWithUnavailableOptionalEvidence", "IncompleteRequiredEvidence", "Unreadable", "Contradictory", "BudgetExceeded", "NotApplicable"] },
+    "required": { "type": "boolean" },
+    "evidenceIds": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "unavailableReasons": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "contradictions": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  }
+}

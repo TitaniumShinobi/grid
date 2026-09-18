@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "classId": "grid.class.skse-compatibility",
+  "recipeVersion": "1.1.0",
+  "displayName": "SKSE Compatibility",
+  "iconId": "grid.icon.skse",
+  "coverage": "Registered",
+  "supportedGames": [
+    "skyrimspecialedition"
+  ],
+  "selectionPolicy": {
+    "mods": {
+      "minimum": 0,
+      "maximum": null
+    },
+    "tools": {
+      "minimum": 0,
+      "maximum": null,
+      "allowedToolIds": [
+        "grid.tool.mo2"
+      ]
+    }
+  },
+  "evidencePolicy": {
+    "requiredAnyOf": []
+  },
+  "pipelines": {
+    "diagnose": {
+      "rootCapabilityIds": [
+        "grid.game.skyrimspecialedition.baseline.collect"
+      ]
+    },
+    "propose": null,
+    "execute": null,
+    "verify": null
+  }
+}

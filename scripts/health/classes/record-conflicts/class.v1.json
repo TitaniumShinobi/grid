@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "classId": "grid.class.record-conflicts",
+  "recipeVersion": "1.2.0",
+  "displayName": "Record Conflicts",
+  "iconId": "grid.icon.records",
+  "coverage": "Registered",
+  "supportedGames": [
+    "skyrimspecialedition"
+  ],
+  "selectionPolicy": {
+    "mods": {
+      "minimum": 0,
+      "maximum": null
+    },
+    "tools": {
+      "minimum": 0,
+      "maximum": null,
+      "allowedToolIds": ["grid.tool.sseedit", "grid.tool.mo2"]
+    }
+  },
+  "evidencePolicy": {
+    "requiredAnyOf": []
+  },
+  "pipelines": {
+    "diagnose": { "rootCapabilityIds": ["grid.game.skyrimspecialedition.baseline.collect"] },
+    "propose": null,
+    "execute": null,
+    "verify": null
+  }
+}

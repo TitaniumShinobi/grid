@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/mod-chain-repair-specification.v1.schema.json",
+  "title": "Grid Mod-Chain Repair Specification v1",
+  "type": "object",
+  "required": ["schemaVersion", "specificationId", "caseId", "baseline", "contextFingerprint", "evidenceFingerprint", "artifactIntegrity", "fomodDecisions", "compatibilityMatrix", "operations", "protectedState", "preconditions", "postconditions", "profilePreservation", "exclusions", "authorization", "specificationSha256"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "specificationHashAlgorithm": { "type": "string", "enum": ["grid.repair-specification.portable-v1"] },
+    "specificationId": { "type": "string", "pattern": "^repair-[a-f0-9]{32}$" },
+    "caseId": { "type": "string", "minLength": 1 },
+    "baseline": {
+      "type": "object",
+      "required": ["caseDirectory", "caseId", "manifestSha256", "semanticBaselineFingerprint"],
+      "properties": {
+        "caseDirectory": { "type": "string", "minLength": 1 },
+        "caseId": { "type": "string", "minLength": 1 },
+        "manifestSha256": { "$ref": "#/$defs/sha256" },
+        "semanticBaselineFingerprint": { "$ref": "#/$defs/sha256" }
+      },
+      "additionalProperties": false
+    },
+    "contextFingerprint": { "$ref": "#/$defs/sha256" },
+    "evidenceFingerprint": { "$ref": "#/$defs/sha256" },
+    "artifactIntegrity": { "type": "array", "items": { "$ref": "artifact-integrity-report.v1.schema.json" } },
+    "fomodDecisions": { "type": "array", "items": { "$ref": "fomod-decision.v1.schema.json" } },
+    "compatibilityMatrix": { "type": "array", "items": { "$ref": "compatibility-matrix.v1.schema.json" } },
+    "operations": { "type": "array", "items": { "$ref": "#/$defs/operation" } },
+    "protectedState": { "type": "array", "items": { "$ref": "#/$defs/fileHash" } },
+    "preconditions": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "postconditions": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "profilePreservation": { "type": "array", "items": { "$ref": "#/$defs/fileHash" } },
+    "exclusions": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "authorization": {
+      "type": "object",
+      "required": ["status", "requirement"],
+      "properties": {
+        "status": { "enum": ["Required", "Consumed", "NotRequired"] },
+        "requirement": { "enum": ["ExactOneUseSpecificationAuthorization", "NoMutation"] }
+      },
+      "additionalProperties": false
+    },
+    "diagnosis": {
+      "type": "object",
+      "required": ["caseDirectory", "caseId", "manifestSha256", "manifestFileSha256", "specificationSha256", "specificationFileSha256", "evidenceFingerprint"],
+      "properties": {
+        "caseDirectory": { "type": "string", "minLength": 1 }, "caseId": { "type": "string", "minLength": 1 },
+        "manifestSha256": { "$ref": "#/$defs/sha256" }, "manifestFileSha256": { "$ref": "#/$defs/sha256" },
+        "specificationSha256": { "$ref": "#/$defs/sha256" }, "specificationFileSha256": { "$ref": "#/$defs/sha256" },
+        "evidenceFingerprint": { "$ref": "#/$defs/sha256" }
+      },
+      "additionalProperties": false
+    },
+    "recordPatch": {
+      "type": "object", "required": ["required", "status", "targetPluginName", "records"],
+      "properties": { "required": { "const": false }, "status": { "const": "NotApplicable" }, "targetPluginName": { "type": "null" }, "records": { "type": "array", "maxItems": 0 } },
+      "additionalProperties": false
+    },
+    "assetRepair": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/assetAction" } },
+    "specificationSha256": { "$ref": "#/$defs/sha256" }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "fileHash": {
+      "type": "object", "required": ["path", "sha256"],
+      "properties": { "path": { "type": "string", "minLength": 1 }, "sha256": { "$ref": "#/$defs/sha256" } },
+      "additionalProperties": false
+    },
+    "assetAction": {
+      "type": "object", "required": ["virtualPath", "action", "providerName", "expectedCurrentState", "postcondition"],
+      "properties": { "virtualPath": { "type": "string", "minLength": 1 }, "action": { "type": "string", "minLength": 1 }, "providerName": { "type": "string", "minLength": 1 }, "expectedCurrentState": { "type": "string", "minLength": 1 }, "postcondition": { "type": "string", "minLength": 1 } },
+      "additionalProperties": false
+    },
+    "operation": {
+      "type": "object",
+      "required": ["sequence", "componentId", "sourceDirectory", "targetDirectory", "stagingDirectory", "rollbackDirectory", "beforeTreeSha256", "expectedTreeSha256", "commitStrategy", "baselineEvidenceIds", "artifactSha256", "installerDecisionStatus", "sourceToDestinationMappings", "expectedFiles"],
+      "properties": {
+        "sequence": { "type": "integer", "minimum": 1 },
+        "componentId": { "type": "string", "minLength": 1 },
+        "sourceDirectory": { "type": "string", "minLength": 1 },
+        "targetDirectory": { "type": "string", "minLength": 1 },
+        "stagingDirectory": { "type": "string", "minLength": 1 },
+        "rollbackDirectory": { "type": "string", "minLength": 1 },
+        "beforeTreeSha256": { "$ref": "#/$defs/sha256" },
+        "expectedTreeSha256": { "$ref": "#/$defs/sha256" },
+        "commitStrategy": { "enum": ["SameVolumeAtomicRename", "VerifiedCopyFlushSwitch", "JournaledCompensatingRollback"] },
+        "repairStrategy": { "enum": ["TransactionalOwningModReinstall", "EvidenceBoundOverlay"] },
+        "beforeTreeState": { "enum": ["Existing", "Absent"] },
+        "baselineEvidenceIds": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+        "artifactSha256": { "$ref": "#/$defs/sha256" },
+        "installerDecisionStatus": { "enum": ["Deterministic", "NotPresent"] },
+        "sourceToDestinationMappings": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["source", "destination"], "properties": { "source": { "type": "string", "minLength": 1 }, "destination": { "type": "string", "minLength": 1 } }, "additionalProperties": false } },
+        "expectedFiles": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["path", "sha256"], "properties": { "path": { "type": "string", "minLength": 1 }, "sha256": { "$ref": "#/$defs/sha256" } }, "additionalProperties": false } },
+        "virtualAssetPostconditions": { "type": "array", "items": { "type": "object", "required": ["virtualPath", "expectedProviderDirectory", "requiredSha256", "validationKind", "validationBasis"], "properties": { "virtualPath": { "type": "string", "minLength": 1 }, "expectedProviderDirectory": { "type": "string", "minLength": 1 }, "requiredSha256": { "$ref": "#/$defs/sha256" }, "validationKind": { "enum": ["Nif", "File"] }, "validationBasis": { "enum": ["LooseFileDigest", "ExactContainerDigest"] }, "archiveRelativePath": { "type": "string", "minLength": 1 }, "archiveSha256": { "$ref": "#/$defs/sha256" }, "archiveMemberPath": { "type": "string", "minLength": 1 }, "assetEvidenceSha256": { "$ref": "#/$defs/sha256" } }, "allOf": [{ "if": { "properties": { "validationBasis": { "const": "ExactContainerDigest" } } }, "then": { "required": ["archiveRelativePath", "archiveSha256", "archiveMemberPath", "assetEvidenceSha256"] }, "else": { "not": { "anyOf": [{ "required": ["archiveRelativePath"] }, { "required": ["archiveSha256"] }, { "required": ["archiveMemberPath"] }, { "required": ["assetEvidenceSha256"] }] } } }], "additionalProperties": false } }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

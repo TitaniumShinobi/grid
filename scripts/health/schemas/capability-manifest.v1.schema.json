@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/capability-manifest.v1.schema.json",
+  "title": "Grid Capability Manifest v1",
+  "type": "object",
+  "required": ["schemaVersion", "ownerScope", "capabilities"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "ownerScope": { "$ref": "#/$defs/ownerScope" },
+    "supportingFiles": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/capability" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "ownerScope": {
+      "type": "object",
+      "required": ["kind"],
+      "properties": {
+        "kind": { "enum": ["SharedHealth", "Game", "Mod"] },
+        "gameId": { "type": "string", "minLength": 1 },
+        "modId": { "type": "string", "minLength": 1 },
+        "tool": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "schemaFragment": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "capability": {
+      "type": "object",
+      "required": [
+        "capabilityId", "capabilityVersion", "ownerScope", "implementation",
+        "inputSchema", "outputSchema", "preconditions", "dependencies",
+        "sideEffectClassification", "requiredAuthority", "rollback", "terminalStates"
+      ],
+      "properties": {
+        "capabilityId": { "type": "string", "pattern": "^grid\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$" },
+        "capabilityVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+        "ownerScope": { "$ref": "#/$defs/ownerScope" },
+        "implementation": {
+          "type": "object",
+          "required": ["files", "entryPoint"],
+          "properties": {
+            "files": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+            "entryPoint": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
+        "inputSchema": { "$ref": "#/$defs/schemaFragment" },
+        "outputSchema": { "$ref": "#/$defs/schemaFragment" },
+        "preconditions": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "dependencies": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^grid\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$" } },
+        "sideEffectClassification": { "enum": ["None", "RepositoryRead", "CaseLocalWrite", "ExternalRead", "ExternalProcessLaunch", "ExternalProcessControl", "ExternalWrite"] },
+        "requiredAuthority": {
+          "type": "object",
+          "required": ["kind", "description"],
+          "properties": {
+            "kind": { "enum": ["None", "RepositoryRead", "CaseDirectoryWrite", "AuthorizedExternalRead", "ExplicitProcessLaunch", "ExplicitOwnedProcessControl", "OneUseProposalAuthorization", "EvidenceBoundArtifactAcquisition"] },
+            "description": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
+        "rollback": {
+          "type": "object",
+          "required": ["mode", "description"],
+          "properties": {
+            "mode": { "type": "string", "minLength": 1 },
+            "description": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        },
+        "terminalStates": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 1 } }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/skyrimspecialedition/runtime-certification-result.v1.schema.json",
+  "title": "Grid Skyrim runtime-certification result v1",
+  "type": "object",
+  "required": ["schemaVersion", "caseId", "lifecycle", "certificationEligibility", "runtimeValidation", "status", "readyToPlay", "profilePlanFingerprint", "routeFingerprint", "lineage", "gates", "rollback", "profileIsolation", "ownership", "oracle", "screenshots", "logs", "issues", "semanticFingerprint"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "caseId": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "lifecycle": { "enum": ["Completed", "Failed", "Cancelled"] },
+    "certificationEligibility": { "enum": ["Eligible", "PreconditionsNotMet"] },
+    "runtimeValidation": { "enum": ["NotStarted", "NeedsRuntimeVerification", "Pass", "Fail"] },
+    "status": { "enum": ["Certified", "PreconditionsNotMet", "NeedsRuntimeVerification", "NotReadyToPlay", "Failed"] },
+    "readyToPlay": { "oneOf": [{ "type": "boolean" }, { "const": "NotEvaluated" }] },
+    "profilePlanFingerprint": { "$ref": "#/$defs/digest" },
+    "routeFingerprint": { "anyOf": [{ "$ref": "#/$defs/digest" }, { "type": "null" }] },
+    "lineage": { "type": ["object", "null"] },
+    "gates": {
+      "type": "array", "minItems": 8, "maxItems": 8,
+      "items": {
+        "type": "object", "required": ["name", "status", "evidenceSha256", "issue"],
+        "properties": {
+          "name": { "enum": ["InstallationIntegrity", "CompatibilityIntegrity", "AssetIntegrity", "RecordIntegrity", "PluginIntegrity", "ProfileIntegrity", "RuntimeIntegrity", "RollbackIntegrity"] },
+          "status": { "enum": ["Pass", "Fail", "NotEvaluated", "NotStarted", "NeedsRuntimeVerification"] },
+          "evidenceSha256": { "anyOf": [{ "$ref": "#/$defs/digest" }, { "type": "null" }] },
+          "issue": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    },
+    "rollback": { "type": ["object", "null"] },
+    "profileIsolation": { "type": ["object", "null"] },
+    "ownership": { "type": ["object", "null"] },
+    "oracle": { "type": ["object", "null"] },
+    "screenshots": { "type": ["object", "null"] },
+    "logs": { "type": ["object", "null"] },
+    "issues": { "type": "array", "items": { "type": "string" } },
+    "semanticFingerprint": { "$ref": "#/$defs/digest" }
+  },
+  "$defs": { "digest": { "type": "string", "pattern": "^[A-F0-9]{64}$" } },
+  "additionalProperties": false
+}

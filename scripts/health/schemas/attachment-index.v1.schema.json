@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://grid.local/schemas/attachment-index.v1.schema.json",
+  "title": "Grid diagnostic attachment index v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "caseId", "createdAt", "attachments"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "caseId": { "type": "string", "minLength": 1 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["attachmentId", "relativePath", "originalName", "mediaType", "sizeBytes", "sha256", "status", "suppliedAt", "claimedCapturedAt", "contextFingerprint", "assertions"],
+        "properties": {
+          "attachmentId": { "type": "string", "minLength": 1 },
+          "relativePath": { "type": "string", "minLength": 1 },
+          "originalName": { "type": "string", "minLength": 1 },
+          "mediaType": { "type": "string", "minLength": 1 },
+          "sizeBytes": { "type": "integer", "minimum": 0 },
+          "sha256": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[A-F0-9]{64}$" }] },
+          "status": { "enum": ["Imported", "Missing", "Unreadable", "Oversized", "ChangedDuringImport", "HashFailed", "UnsupportedType"] },
+          "suppliedAt": { "type": "string", "format": "date-time" },
+          "claimedCapturedAt": { "type": ["string", "null"], "format": "date-time" },
+          "contextFingerprint": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^[A-F0-9]{64}$" }] },
+          "assertions": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+          "derivedEvidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["capabilityId", "status", "relativePath", "finding", "solution", "detail"],
+              "properties": {
+                "capabilityId": { "type": "string", "minLength": 1 },
+                "status": { "enum": ["Observed", "Failed"] },
+                "relativePath": { "type": ["string", "null"] },
+                "finding": { "type": "string", "minLength": 1 },
+                "solution": { "type": "string", "minLength": 1 },
+                "detail": { "type": ["string", "null"] }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

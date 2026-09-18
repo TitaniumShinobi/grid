@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/plugin-state-batch-receipt.v1.schema.json",
+  "title": "Grid Plugin State Batch Receipt v1",
+  "type": "object",
+  "required": ["schemaVersion", "status", "transactionId", "specificationId", "specificationSha256", "pluginsFile", "beforeSha256", "afterSha256", "backupPath", "redoImagePath", "operations", "completedAt"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "status": { "const": "Verified" },
+    "specificationSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "beforeSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "afterSha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/health/artifact-acquisition-record.v1.schema.json",
+  "title": "Grid Artifact Acquisition Record v1",
+  "type": "object",
+  "required": ["schemaVersion", "acquisitionId", "state", "providerIdentity", "artifact", "recoveryDisposition"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "acquisitionId": { "type": "string", "minLength": 1 },
+    "state": { "enum": ["Planned", "PendingUserAcquisition", "Downloading", "Verified", "Rejected", "AcquisitionInterrupted", "AuthenticationRequired", "ExactArtifactUnavailable"] },
+    "providerIdentity": { "$ref": "artifact-provider-identity.v1.schema.json" },
+    "artifact": {
+      "type": ["object", "null"],
+      "properties": {
+        "artifactId": { "type": "string", "pattern": "^sha256:[A-F0-9]{64}$" },
+        "path": { "type": "string", "minLength": 1 },
+        "sizeBytes": { "type": "integer", "minimum": 1, "maximum": 1073741824 },
+        "sha256": { "type": "string", "pattern": "^[A-F0-9]{64}$" }
+      },
+      "required": ["artifactId", "path", "sizeBytes", "sha256"],
+      "additionalProperties": false
+    },
+    "identityEvidenceIds": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "provenance": { "type": "object" },
+    "recoveryDisposition": { "enum": ["None", "ResumeAvailable", "UserActionRequired", "ConfigurationRequired", "ExternalDependencyRequired"] },
+    "completedAt": { "type": ["string", "null"], "format": "date-time" }
+  },
+  "additionalProperties": false
+}
