@@ -1,4 +1,4 @@
-using Grid.DevLauncher;
+﻿using Grid.DevLauncher;
 
 namespace Grid.DevLauncher.Tests;
 
@@ -10,10 +10,11 @@ internal static class Program
         try
         {
             VerifyStartContract(root);
+            VerifyNestedLauncherContract(root);
             VerifyMissingTarget(root);
             VerifyRecursionGuard(root);
             VerifyRepositoryGuard(root);
-            Console.WriteLine("All 4 Grid.DevLauncher checks passed.");
+            Console.WriteLine("All 5 Grid.DevLauncher checks passed.");
             return 0;
         }
         catch (Exception exception)
@@ -51,6 +52,25 @@ internal static class Program
         Console.WriteLine("PASS root launcher resolves Debug and preserves literal arguments and environment.");
     }
 
+    private static void VerifyNestedLauncherContract(string root)
+    {
+        var target = CreateSyntheticRepository(root);
+        var launcherDirectory = Path.Combine(
+            root, "src", "Grid.DevLauncher", "bin", "x64", "Debug",
+            "net9.0-windows10.0.19041.0", "win-x64");
+        Directory.CreateDirectory(launcherDirectory);
+        var launcher = Path.Combine(launcherDirectory, "Grid.RootLauncher.exe");
+        File.WriteAllBytes(launcher, [0x4D, 0x5A]);
+
+        var resolution = Launcher.Resolve(launcherDirectory, launcher);
+
+        Assert(resolution.RepositoryRoot == root,
+            "Nested launcher did not resolve the ancestor repository root.");
+        Assert(resolution.TargetPath == target,
+            "Nested launcher did not resolve the Grid Debug executable.");
+
+        Console.WriteLine("PASS nested compiled launcher resolves ancestor repository root.");
+    }
     private static void VerifyMissingTarget(string root)
     {
         var target = ExpectedTarget(root);
@@ -72,11 +92,22 @@ internal static class Program
 
     private static void VerifyRepositoryGuard(string root)
     {
-        var invalidRoot = Path.Combine(root, "not-a-repository");
+        var invalidRoot = Path.Combine(
+            Path.GetTempPath(),
+            $"grid-not-a-repository-{Guid.NewGuid():N}");
         Directory.CreateDirectory(invalidRoot);
-        var exception = AssertThrows(() => Launcher.Resolve(invalidRoot, Path.Combine(invalidRoot, "Grid.exe")));
-        Assert(exception.Message.Contains("repository root", StringComparison.OrdinalIgnoreCase),
-            "The repository-boundary error was not explicit.");
+        try
+        {
+            var exception = AssertThrows(() =>
+                Launcher.Resolve(invalidRoot, Path.Combine(invalidRoot, "Grid.exe")));
+            Assert(exception.Message.Contains("repository root", StringComparison.OrdinalIgnoreCase),
+                "The repository-boundary error was not explicit.");
+        }
+        finally
+        {
+            try { Directory.Delete(invalidRoot, recursive: true); } catch { }
+        }
+
         Console.WriteLine("PASS launcher refuses an unexpected root location.");
     }
 

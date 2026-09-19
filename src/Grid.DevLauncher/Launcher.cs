@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
 namespace Grid.DevLauncher;
 
@@ -24,14 +24,8 @@ internal static class Launcher
         ArgumentException.ThrowIfNullOrWhiteSpace(launcherDirectory);
         ArgumentException.ThrowIfNullOrWhiteSpace(launcherPath);
 
-        var repositoryRoot = Path.GetFullPath(launcherDirectory).TrimEnd(Path.DirectorySeparatorChar);
         var canonicalLauncher = Path.GetFullPath(launcherPath);
-        var solutionPath = Path.Combine(repositoryRoot, "Grid.sln");
-        if (!File.Exists(solutionPath))
-        {
-            throw new LauncherConfigurationException(
-                $"Grid.exe must remain in the Grid repository root. Expected solution marker: '{solutionPath}'.");
-        }
+        var repositoryRoot = FindRepositoryRoot(launcherDirectory);
 
         var targetPath = TargetSegments.Aggregate(repositoryRoot, Path.Combine);
         targetPath = Path.GetFullPath(targetPath);
@@ -56,6 +50,23 @@ internal static class Launcher
         return new(repositoryRoot, canonicalLauncher, targetPath);
     }
 
+    private static string FindRepositoryRoot(string startDirectory)
+    {
+        var current = new DirectoryInfo(Path.GetFullPath(startDirectory));
+
+        while (current is not null)
+        {
+            if (File.Exists(Path.Combine(current.FullName, "Grid.sln")))
+            {
+                return current.FullName.TrimEnd(Path.DirectorySeparatorChar);
+            }
+
+            current = current.Parent;
+        }
+
+        throw new LauncherConfigurationException(
+            $"Could not locate the Grid repository root from '{Path.GetFullPath(startDirectory)}'. Expected an ancestor containing Grid.sln.");
+    }
     internal static ProcessStartInfo CreateStartInfo(
         string launcherDirectory,
         string launcherPath,
