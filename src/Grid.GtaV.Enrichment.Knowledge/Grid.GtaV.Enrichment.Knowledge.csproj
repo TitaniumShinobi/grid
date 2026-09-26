@@ -6,4 +6,11 @@
     <ProjectReference Include="..\Grid.Core\Grid.Core.csproj" />
     <ProjectReference Include="..\Grid.GtaV.Knowledge\Grid.GtaV.Knowledge.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <AssemblyMetadata Include="Grid.Build.Platform" Value="$(Platform)" />
+    <AssemblyMetadata Include="Grid.Build.SdkId" Value="Microsoft.NET.Sdk" />
+    <AssemblyMetadata Include="Grid.Build.SdkVersion" Value="$(NETCoreSdkVersion)" />
+    <AssemblyMetadata Include="Grid.Build.CompilerId" Value="Microsoft.CodeAnalysis.CSharp" />
+    <AssemblyMetadata Include="Grid.Build.Deterministic" Value="$(Deterministic)" />
+  </ItemGroup>
 </Project>

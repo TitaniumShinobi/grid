@@ -267,8 +267,12 @@ public static class CanonicalCatalogPackageKernel
         ArgumentNullException.ThrowIfNull(validationSummary);
         ArgumentNullException.ThrowIfNull(buildProvenance);
         if (buildProvenance.ProvenanceSchemaVersion is not (
-                CatalogBuildProvenance.CurrentSchemaVersion or CatalogBuildProvenance.DevelopmentSchemaVersion))
-            throw new ArgumentException("Schema-v6 packages require committed or explicitly developmental build provenance closure.", nameof(buildProvenance));
+                CatalogBuildProvenance.CurrentSchemaVersion or
+                CatalogBuildProvenance.DevelopmentSchemaVersion or
+                CatalogBuildProvenance.AdapterBuildReceiptSchemaVersion))
+            throw new ArgumentException(
+                "Schema-v6 packages require committed, reviewed-adapter-build, or explicitly developmental provenance closure.",
+                nameof(buildProvenance));
         if (buildProvenance.IsDevelopment && validationSummary.Status != CatalogValidationStatus.Candidate)
             throw new ArgumentException("Development-provenance schema-v6 packages must remain Candidate.", nameof(validationSummary));
         var adapterRevisions = payload.AdapterDescriptors.Select(value => value.Revision)
@@ -466,20 +470,57 @@ public static class CanonicalCatalogPackageKernel
             var committed = manifest.BuildProvenance.ProvenanceSchemaVersion ==
                                 CatalogBuildProvenance.CurrentSchemaVersion &&
                             !manifest.BuildProvenance.CommittedBuildInputs.IsEmpty &&
-                            manifest.BuildProvenance.DevelopmentBuildInputs.IsEmpty;
+                            manifest.BuildProvenance.DevelopmentBuildInputs.IsEmpty &&
+                            manifest.BuildProvenance.AdapterBuildReceipts.IsEmpty;
+            var reviewedAdapterBuild = manifest.BuildProvenance.ProvenanceSchemaVersion ==
+                                           CatalogBuildProvenance.AdapterBuildReceiptSchemaVersion &&
+                                       !manifest.BuildProvenance.CommittedBuildInputs.IsEmpty &&
+                                       manifest.BuildProvenance.DevelopmentBuildInputs.IsEmpty &&
+                                       !manifest.BuildProvenance.AdapterBuildReceipts.IsEmpty;
             var development = manifest.BuildProvenance.ProvenanceSchemaVersion ==
                                   CatalogBuildProvenance.DevelopmentSchemaVersion &&
                               manifest.BuildProvenance.CommittedBuildInputs.IsEmpty &&
                               !manifest.BuildProvenance.DevelopmentBuildInputs.IsEmpty &&
+                              manifest.BuildProvenance.AdapterBuildReceipts.IsEmpty &&
                               manifest.ValidationStatus == CatalogValidationStatus.Candidate;
-            if (!committed && !development)
-                issues.Add("Schema-v6 build provenance is neither committed closure nor non-publishable Candidate development closure.");
+            if (!committed && !reviewedAdapterBuild && !development)
+                issues.Add(
+                    "Schema-v6 build provenance is neither committed closure, reviewed adapter-build closure, nor non-publishable Candidate development closure.");
         }
+
+        VerifyAdapterBuildProvenance(manifest, payload, issues);
 
         VerifyPayloadClosure(manifest, payload, issues);
         VerifyLocationContract(manifest, payload, issues);
         VerifyProjectionContract(manifest, payload, issues);
         VerifyCrossSourceAssertions(manifest, payload, issues);
+    }
+
+    private static void VerifyAdapterBuildProvenance(
+        CatalogPackageManifest manifest,
+        CanonicalCatalogPayload payload,
+        ImmutableArray<string>.Builder issues)
+    {
+        var provenance = manifest.BuildProvenance;
+        if (provenance.ProvenanceSchemaVersion != CatalogBuildProvenance.AdapterBuildReceiptSchemaVersion)
+        {
+            if (!provenance.AdapterBuildReceipts.IsEmpty)
+                issues.Add("Historical build provenance unexpectedly carries adapter build receipts.");
+            return;
+        }
+
+        var expected = payload.AdapterDescriptors
+            .Select(value => value.AdapterArtifactDigest)
+            .Concat(manifest.AdapterRevisions.Select(value => value.AdapterArtifactDigest))
+            .Distinct()
+            .OrderBy(value => value.HexValue, StringComparer.Ordinal)
+            .ToImmutableArray();
+        var actual = provenance.AdapterBuildReceipts
+            .Select(value => value.AdapterArtifactDigest)
+            .OrderBy(value => value.HexValue, StringComparer.Ordinal)
+            .ToImmutableArray();
+        if (!expected.SequenceEqual(actual))
+            issues.Add("Adapter build provenance receipts do not exactly cover the package adapter artifacts.");
     }
 
     private static void VerifyPayloadClosure(

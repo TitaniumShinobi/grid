@@ -1,5 +1,9 @@
 using System.Collections.Immutable;
 using System.Diagnostics;
+using System.Reflection;
+using System.Reflection.Metadata;
+using System.Reflection.Metadata.Ecma335;
+using System.Runtime.Versioning;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
@@ -35,6 +39,13 @@ try
     var enrichmentAssemblyBytes = await File.ReadAllBytesAsync(
         typeof(GtaVPopulationZonesKnowledgeAdapter).Assembly.Location).ConfigureAwait(false);
     var enrichmentAdapterDigest = ContentDigest.ComputeSha256(enrichmentAssemblyBytes);
+    var adapterBuildReceipts = ImmutableArray.Create(
+        CreateAdapterBuildProvenanceReceipt(
+            typeof(GtaVWeaponsMetaKnowledgeAdapter).Assembly,
+            adapterDigest),
+        CreateAdapterBuildProvenanceReceipt(
+            typeof(GtaVPopulationZonesKnowledgeAdapter).Assembly,
+            enrichmentAdapterDigest));
     var weapons = new GtaVWeaponsMetaKnowledgeAdapter(GtaVKnowledgeEdition.Enhanced, adapterDigest);
     var locations = new GtaVMapZonesKnowledgeAdapter(adapterDigest);
     var populationZones = new GtaVPopulationZonesKnowledgeAdapter(enrichmentAdapterDigest);
@@ -170,7 +181,7 @@ try
         "grid.gta-v-enhanced.four-kind-canary.structural",
         "1",
         ContentDigest.ComputeSha256(Encoding.UTF8.GetBytes("candidate:not-qcs-evaluated:four-kind:v1")));
-    var buildProvenance = git.Provenance;
+    var buildProvenance = git.Provenance.WithAdapterBuildReceipts(adapterBuildReceipts);
     var package = CanonicalCatalogPackageKernel.CreateV6(
         CatalogPackageKind.BaseGameCatalog,
         new CatalogGameScope(
@@ -279,6 +290,115 @@ static FrozenSourceArtifact CreateFrozen(
         format,
         member.Bytes,
         acquisition.ObservedAtUtc);
+}
+
+static CatalogAdapterBuildProvenanceReceipt CreateAdapterBuildProvenanceReceipt(
+    Assembly assembly,
+    ContentDigest adapterArtifactDigest)
+{
+    var assemblyPath = assembly.Location;
+    if (string.IsNullOrWhiteSpace(assemblyPath) || !File.Exists(assemblyPath))
+        throw new InvalidDataException("The exact adapter assembly path is unavailable.");
+    if (ContentDigest.ComputeSha256(File.ReadAllBytes(assemblyPath)) != adapterArtifactDigest)
+        throw new InvalidDataException("The adapter assembly digest changed while build provenance was captured.");
+
+    var pdbPath = Path.ChangeExtension(assemblyPath, ".pdb");
+    if (!File.Exists(pdbPath))
+        throw new InvalidDataException("The exact portable PDB for the adapter assembly is unavailable.");
+    var pdbBytes = File.ReadAllBytes(pdbPath);
+    var portablePdb = ReadPortablePdbBuildMetadata(pdbBytes);
+    var compilerVersion = ReadCompilationOption(portablePdb.CompilationOptions, "compiler-version");
+    var metadata = assembly.GetCustomAttributes<AssemblyMetadataAttribute>()
+        .GroupBy(value => value.Key, StringComparer.Ordinal)
+        .ToDictionary(
+            value => value.Key,
+            value => value.Single().Value ?? throw new InvalidDataException(
+                $"Adapter assembly metadata {value.Key} is null."),
+            StringComparer.Ordinal);
+
+    string RequireMetadata(string key) =>
+        metadata.TryGetValue(key, out var value) && !string.IsNullOrWhiteSpace(value)
+            ? value
+            : throw new InvalidDataException($"Adapter assembly metadata {key} is absent.");
+
+    var deterministicText = RequireMetadata("Grid.Build.Deterministic");
+    if (!bool.TryParse(deterministicText, out var deterministicBuild) || !deterministicBuild)
+        throw new InvalidDataException("Reviewed adapter assemblies must declare a deterministic build.");
+    var sourceLinkDigest = portablePdb.SourceLink is null
+        ? (ContentDigest?)null
+        : ContentDigest.ComputeSha256(portablePdb.SourceLink);
+
+    return new CatalogAdapterBuildProvenanceReceipt(
+        CatalogAdapterBuildProvenanceReceipt.CurrentSchemaVersion,
+        adapterArtifactDigest,
+        assembly.GetName().Name ?? throw new InvalidDataException("Adapter assembly name is absent."),
+        assembly.GetName().Version?.ToString() ?? throw new InvalidDataException("Adapter assembly version is absent."),
+        assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion ??
+            throw new InvalidDataException("Adapter assembly informational version is absent."),
+        assembly.ManifestModule.ModuleVersionId.ToString("D"),
+        assembly.GetCustomAttribute<TargetFrameworkAttribute>()?.FrameworkName ??
+            throw new InvalidDataException("Adapter target framework is absent."),
+        assembly.GetCustomAttribute<AssemblyConfigurationAttribute>()?.Configuration ??
+            throw new InvalidDataException("Adapter build configuration is absent."),
+        RequireMetadata("Grid.Build.Platform"),
+        RequireMetadata("Grid.Build.CompilerId"),
+        compilerVersion,
+        RequireMetadata("Grid.Build.SdkId"),
+        RequireMetadata("Grid.Build.SdkVersion"),
+        deterministicBuild,
+        ContentDigest.ComputeSha256(pdbBytes),
+        sourceLinkDigest is null ? CatalogBuildMetadataPresence.Absent : CatalogBuildMetadataPresence.Present,
+        sourceLinkDigest,
+        ContentDigest.ComputeSha256(portablePdb.CompilationOptions),
+        ContentDigest.ComputeSha256(portablePdb.CompilationReferences));
+}
+
+static (byte[]? SourceLink, byte[] CompilationOptions, byte[] CompilationReferences)
+    ReadPortablePdbBuildMetadata(byte[] pdbBytes)
+{
+    var sourceLinkKind = new Guid("cc110556-a091-4d38-9fec-25ab9a351a6a");
+    var compilationOptionsKind = new Guid("b5feec05-8cd0-4a83-96da-466284bb4bd8");
+    var compilationReferencesKind = new Guid("7e4d4708-096e-4c5c-aeda-cb10ba6a740d");
+    using var stream = new MemoryStream(pdbBytes, writable: false);
+    using var provider = MetadataReaderProvider.FromPortablePdbStream(stream);
+    var reader = provider.GetMetadataReader();
+    var blobs = reader.GetCustomDebugInformation(MetadataTokens.EntityHandle(TableIndex.Module, 1))
+        .Select(handle => reader.GetCustomDebugInformation(handle))
+        .Select(value => (Kind: reader.GetGuid(value.Kind), Bytes: reader.GetBlobBytes(value.Value)))
+        .ToImmutableArray();
+
+    byte[]? SingleOptional(Guid kind, string name)
+    {
+        var values = blobs.Where(value => value.Kind == kind).Select(value => value.Bytes).ToArray();
+        if (values.Length > 1)
+            throw new InvalidDataException($"Portable PDB contains duplicate {name} metadata.");
+        return values.SingleOrDefault();
+    }
+
+    byte[] SingleRequired(Guid kind, string name) =>
+        SingleOptional(kind, name) ??
+        throw new InvalidDataException($"Portable PDB does not contain required {name} metadata.");
+
+    return (
+        SingleOptional(sourceLinkKind, "SourceLink"),
+        SingleRequired(compilationOptionsKind, "compilation-options"),
+        SingleRequired(compilationReferencesKind, "compilation-references"));
+}
+
+static string ReadCompilationOption(byte[] bytes, string requestedKey)
+{
+    var values = Encoding.UTF8.GetString(bytes).Split('\0');
+    if (values.Length > 0 && values[^1].Length == 0)
+        values = values[..^1];
+    if (values.Length % 2 != 0)
+        throw new InvalidDataException("Portable PDB compilation options are malformed.");
+    var matches = Enumerable.Range(0, values.Length / 2)
+        .Where(index => string.Equals(values[index * 2], requestedKey, StringComparison.Ordinal))
+        .Select(index => values[(index * 2) + 1])
+        .ToArray();
+    return matches.Length == 1 && !string.IsNullOrWhiteSpace(matches[0])
+        ? matches[0]
+        : throw new InvalidDataException($"Portable PDB compilation option {requestedKey} is absent or ambiguous.");
 }
 
 static async Task<KnowledgeExtractionResult> DiscoverAndExtractAsync(
@@ -462,6 +582,27 @@ static object CreateReport(
     sourceCommit,
     adapterAssemblyDigest = adapterAssemblyDigest.HexValue,
     enrichmentAdapterAssemblyDigest = enrichmentAdapterAssemblyDigest.HexValue,
+    adapterBuildReceipts = package.Manifest.BuildProvenance.AdapterBuildReceipts.Select(value => new
+    {
+        adapterArtifactDigest = value.AdapterArtifactDigest.HexValue,
+        value.AssemblyName,
+        value.ExactAssemblyVersion,
+        value.AssemblyInformationalVersion,
+        value.ModuleVersionId,
+        value.TargetFramework,
+        value.BuildConfiguration,
+        value.BuildPlatform,
+        value.CompilerId,
+        value.ExactCompilerVersion,
+        value.SdkId,
+        value.ExactSdkVersion,
+        value.DeterministicBuild,
+        portablePdbDigest = value.PortablePdbDigest.HexValue,
+        sourceLinkPresence = value.SourceLinkPresence.ToString(),
+        sourceLinkContentDigest = value.SourceLinkContentDigest?.HexValue,
+        compilationOptionsContentDigest = value.CompilationOptionsContentDigest.HexValue,
+        compilationReferencesContentDigest = value.CompilationReferencesContentDigest.HexValue,
+    }).ToArray(),
     acquisitionReceiptIds = payload.AcquisitionReceipts.Select(value => value.Id.Value).ToArray(),
     adapterRevisionIds = package.Manifest.AdapterRevisionIds.Select(value => value.Value).ToArray(),
     sourceRevisionIds = package.Manifest.SourceRevisionIds.Select(value => value.Value).ToArray(),

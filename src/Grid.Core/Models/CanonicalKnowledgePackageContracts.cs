@@ -116,6 +116,7 @@ public sealed record CatalogBuildProvenance
     public const int LegacySchemaVersion = 1;
     public const int CurrentSchemaVersion = 2;
     public const int DevelopmentSchemaVersion = 3;
+    public const int AdapterBuildReceiptSchemaVersion = 4;
 
     public CatalogBuildProvenance(
         string buildSystemId,
@@ -142,6 +143,7 @@ public sealed record CatalogBuildProvenance
             exactBuildSystemVersion,
             sourceCommit,
             committedBuildInputs,
+            [],
             [])
     {
     }
@@ -153,9 +155,11 @@ public sealed record CatalogBuildProvenance
         string exactBuildSystemVersion,
         string sourceCommit,
         ImmutableArray<CatalogCommittedBuildInput> committedBuildInputs,
-        ImmutableArray<CatalogDevelopmentBuildInput> developmentBuildInputs)
+        ImmutableArray<CatalogDevelopmentBuildInput> developmentBuildInputs,
+        ImmutableArray<CatalogAdapterBuildProvenanceReceipt> adapterBuildReceipts = default)
     {
-        if (provenanceSchemaVersion is not (LegacySchemaVersion or CurrentSchemaVersion or DevelopmentSchemaVersion))
+        if (provenanceSchemaVersion is not (
+                LegacySchemaVersion or CurrentSchemaVersion or DevelopmentSchemaVersion or AdapterBuildReceiptSchemaVersion))
             throw new ArgumentOutOfRangeException(nameof(provenanceSchemaVersion));
         BuildSystemId = SupportedKnowledgeFormat.RequireStrictText(buildSystemId, nameof(buildSystemId));
         ExactBuildSystemVersion = SupportedKnowledgeFormat.RequireStrictText(
@@ -171,11 +175,18 @@ public sealed record CatalogBuildProvenance
             // Historical schema-v1/v2 JSON has no developmentBuildInputs property.
             developmentBuildInputs = [];
         }
+        if (adapterBuildReceipts.IsDefault)
+        {
+            if (provenanceSchemaVersion == AdapterBuildReceiptSchemaVersion)
+                throw new ArgumentException("Adapter build receipts must be initialized.", nameof(adapterBuildReceipts));
+            // Historical schema-v1/v2/v3 JSON has no adapterBuildReceipts property.
+            adapterBuildReceipts = [];
+        }
         if (provenanceSchemaVersion == LegacySchemaVersion && !committedBuildInputs.IsEmpty)
             throw new ArgumentException("Legacy build provenance cannot carry committed input closure.", nameof(committedBuildInputs));
         if (provenanceSchemaVersion != DevelopmentSchemaVersion && !developmentBuildInputs.IsEmpty)
             throw new ArgumentException("Only development build provenance may carry worktree input closure.", nameof(developmentBuildInputs));
-        if (provenanceSchemaVersion == CurrentSchemaVersion)
+        if (provenanceSchemaVersion is CurrentSchemaVersion or AdapterBuildReceiptSchemaVersion)
         {
             if ((SourceCommit.Length is not (40 or 64)) ||
                 SourceCommit.Any(value => !Uri.IsHexDigit(value) || char.IsUpper(value)))
@@ -195,6 +206,19 @@ public sealed record CatalogBuildProvenance
             if (developmentBuildInputs.All(value => value.State == CatalogDevelopmentBuildInputState.HeadTrackedClean))
                 throw new ArgumentException("Development build provenance requires at least one dirty or untracked build input.", nameof(developmentBuildInputs));
         }
+        if (provenanceSchemaVersion == AdapterBuildReceiptSchemaVersion)
+        {
+            if (adapterBuildReceipts.IsEmpty || adapterBuildReceipts.Any(value => value is null))
+                throw new ArgumentException(
+                    "Reviewed adapter build provenance requires non-empty artifact receipts.",
+                    nameof(adapterBuildReceipts));
+        }
+        else if (!adapterBuildReceipts.IsEmpty)
+        {
+            throw new ArgumentException(
+                "Historical build provenance schemas cannot carry adapter build receipts.",
+                nameof(adapterBuildReceipts));
+        }
         var ordered = committedBuildInputs
             .OrderBy(value => value.RepositoryRelativePath, StringComparer.Ordinal)
             .ToImmutableArray();
@@ -206,9 +230,18 @@ public sealed record CatalogBuildProvenance
         if (orderedDevelopment.Select(value => value.RepositoryRelativePath).Distinct(StringComparer.Ordinal).Count() !=
             orderedDevelopment.Length)
             throw new ArgumentException("Development build input paths must be distinct.", nameof(developmentBuildInputs));
+        var orderedAdapterBuildReceipts = adapterBuildReceipts
+            .OrderBy(value => value.AdapterArtifactDigest.HexValue, StringComparer.Ordinal)
+            .ToImmutableArray();
+        if (orderedAdapterBuildReceipts.Select(value => value.AdapterArtifactDigest).Distinct().Count() !=
+            orderedAdapterBuildReceipts.Length)
+            throw new ArgumentException(
+                "Adapter build artifact digests must be distinct.",
+                nameof(adapterBuildReceipts));
         ProvenanceSchemaVersion = provenanceSchemaVersion;
         CommittedBuildInputs = ordered;
         DevelopmentBuildInputs = orderedDevelopment;
+        AdapterBuildReceipts = orderedAdapterBuildReceipts;
     }
 
     public int ProvenanceSchemaVersion { get; }
@@ -217,6 +250,7 @@ public sealed record CatalogBuildProvenance
     public string SourceCommit { get; }
     public ImmutableArray<CatalogCommittedBuildInput> CommittedBuildInputs { get; }
     public ImmutableArray<CatalogDevelopmentBuildInput> DevelopmentBuildInputs { get; }
+    public ImmutableArray<CatalogAdapterBuildProvenanceReceipt> AdapterBuildReceipts { get; }
 
     public bool IsDevelopment => ProvenanceSchemaVersion == DevelopmentSchemaVersion;
 
@@ -231,7 +265,118 @@ public sealed record CatalogBuildProvenance
             exactBuildSystemVersion,
             headCommit,
             [],
-            exactWorktreeInputs);
+            exactWorktreeInputs,
+            []);
+
+    public CatalogBuildProvenance WithAdapterBuildReceipts(
+        ImmutableArray<CatalogAdapterBuildProvenanceReceipt> adapterBuildReceipts)
+    {
+        if (ProvenanceSchemaVersion != CurrentSchemaVersion || IsDevelopment)
+            throw new InvalidOperationException(
+                "Only committed schema-v2 provenance can be strengthened with reviewed adapter build receipts.");
+        return new CatalogBuildProvenance(
+            AdapterBuildReceiptSchemaVersion,
+            BuildSystemId,
+            ExactBuildSystemVersion,
+            SourceCommit,
+            CommittedBuildInputs,
+            [],
+            adapterBuildReceipts);
+    }
+}
+
+public enum CatalogBuildMetadataPresence
+{
+    Absent = 0,
+    Present = 1,
+}
+
+/// <summary>
+/// Immutable build evidence for an exact adapter assembly. These coordinates are package provenance only and
+/// intentionally do not participate in KnowledgeAdapterRevisionId v2.
+/// </summary>
+public sealed record CatalogAdapterBuildProvenanceReceipt
+{
+    public const int CurrentSchemaVersion = 1;
+
+    [System.Text.Json.Serialization.JsonConstructor]
+    public CatalogAdapterBuildProvenanceReceipt(
+        int receiptSchemaVersion,
+        ContentDigest adapterArtifactDigest,
+        string assemblyName,
+        string exactAssemblyVersion,
+        string assemblyInformationalVersion,
+        string moduleVersionId,
+        string targetFramework,
+        string buildConfiguration,
+        string buildPlatform,
+        string compilerId,
+        string exactCompilerVersion,
+        string sdkId,
+        string exactSdkVersion,
+        bool deterministicBuild,
+        ContentDigest portablePdbDigest,
+        CatalogBuildMetadataPresence sourceLinkPresence,
+        ContentDigest? sourceLinkContentDigest,
+        ContentDigest compilationOptionsContentDigest,
+        ContentDigest compilationReferencesContentDigest)
+    {
+        if (receiptSchemaVersion != CurrentSchemaVersion)
+            throw new ArgumentOutOfRangeException(nameof(receiptSchemaVersion));
+        if (!Enum.IsDefined(sourceLinkPresence))
+            throw new ArgumentOutOfRangeException(nameof(sourceLinkPresence));
+        if ((sourceLinkPresence == CatalogBuildMetadataPresence.Present) != (sourceLinkContentDigest is not null))
+            throw new ArgumentException(
+                "SourceLink presence must agree with its exact content digest.",
+                nameof(sourceLinkContentDigest));
+        var parsedMvid = Guid.TryParseExact(moduleVersionId, "D", out var mvid) ? mvid : Guid.Empty;
+        if (parsedMvid == Guid.Empty || !string.Equals(moduleVersionId, parsedMvid.ToString("D"), StringComparison.Ordinal))
+            throw new ArgumentException("MVID must be a nonempty lowercase D-format GUID.", nameof(moduleVersionId));
+
+        ReceiptSchemaVersion = receiptSchemaVersion;
+        AdapterArtifactDigest = adapterArtifactDigest;
+        AssemblyName = SupportedKnowledgeFormat.RequireStrictText(assemblyName, nameof(assemblyName));
+        ExactAssemblyVersion = SupportedKnowledgeFormat.RequireStrictText(exactAssemblyVersion, nameof(exactAssemblyVersion));
+        AssemblyInformationalVersion = SupportedKnowledgeFormat.RequireStrictText(
+            assemblyInformationalVersion,
+            nameof(assemblyInformationalVersion));
+        ModuleVersionId = moduleVersionId;
+        TargetFramework = SupportedKnowledgeFormat.RequireStrictText(targetFramework, nameof(targetFramework));
+        BuildConfiguration = SupportedKnowledgeFormat.RequireStrictText(buildConfiguration, nameof(buildConfiguration));
+        BuildPlatform = SupportedKnowledgeFormat.RequireStrictText(buildPlatform, nameof(buildPlatform));
+        CompilerId = SupportedKnowledgeFormat.RequireStrictText(compilerId, nameof(compilerId));
+        ExactCompilerVersion = SupportedKnowledgeFormat.RequireStrictText(
+            exactCompilerVersion,
+            nameof(exactCompilerVersion));
+        SdkId = SupportedKnowledgeFormat.RequireStrictText(sdkId, nameof(sdkId));
+        ExactSdkVersion = SupportedKnowledgeFormat.RequireStrictText(exactSdkVersion, nameof(exactSdkVersion));
+        DeterministicBuild = deterministicBuild;
+        PortablePdbDigest = portablePdbDigest;
+        SourceLinkPresence = sourceLinkPresence;
+        SourceLinkContentDigest = sourceLinkContentDigest;
+        CompilationOptionsContentDigest = compilationOptionsContentDigest;
+        CompilationReferencesContentDigest = compilationReferencesContentDigest;
+    }
+
+    public int ReceiptSchemaVersion { get; }
+    public ContentDigest AdapterArtifactDigest { get; }
+    public string AssemblyName { get; }
+    public string ExactAssemblyVersion { get; }
+    public string AssemblyInformationalVersion { get; }
+    public string ModuleVersionId { get; }
+    public string TargetFramework { get; }
+    public string BuildConfiguration { get; }
+    public string BuildPlatform { get; }
+    public string CompilerId { get; }
+    public string ExactCompilerVersion { get; }
+    public string SdkId { get; }
+    public string ExactSdkVersion { get; }
+    public bool DeterministicBuild { get; }
+    public ContentDigest PortablePdbDigest { get; }
+    public CatalogBuildMetadataPresence SourceLinkPresence { get; }
+    public ContentDigest? SourceLinkContentDigest { get; }
+    public ContentDigest CompilationOptionsContentDigest { get; }
+    public ContentDigest CompilationReferencesContentDigest { get; }
 }
 
 public sealed record CatalogValidationSummary
@@ -463,8 +608,12 @@ public sealed record CatalogPackageManifest
             throw new ArgumentException("Schema-v3 and schema-v4 packages require committed build provenance closure.", nameof(buildProvenance));
         if (packageSchemaVersion == CrossSourceAssertionSchemaVersion &&
             buildProvenance.ProvenanceSchemaVersion is not (
-                CatalogBuildProvenance.CurrentSchemaVersion or CatalogBuildProvenance.DevelopmentSchemaVersion))
-            throw new ArgumentException("Schema-v6 packages require committed or explicitly developmental build provenance closure.", nameof(buildProvenance));
+                CatalogBuildProvenance.CurrentSchemaVersion or
+                CatalogBuildProvenance.DevelopmentSchemaVersion or
+                CatalogBuildProvenance.AdapterBuildReceiptSchemaVersion))
+            throw new ArgumentException(
+                "Schema-v6 packages require committed, reviewed-adapter-build, or explicitly developmental provenance closure.",
+                nameof(buildProvenance));
         if (buildProvenance.IsDevelopment && validationStatus != CatalogValidationStatus.Candidate)
             throw new ArgumentException("Development-provenance packages must remain Candidate and cannot be approved or published.", nameof(validationStatus));
         if (adapterRevisions.IsDefaultOrEmpty)
@@ -778,6 +927,36 @@ internal static class CanonicalKnowledgePackageEncoding
                     writer.AddString($"build.development-inputs.{index}.path", input.RepositoryRelativePath);
                     writer.AddContentDigest($"build.development-inputs.{index}.content", input.ExactContentDigest);
                     writer.AddInt32($"build.development-inputs.{index}.state", (int)input.State);
+                }
+            }
+            if (manifest.PackageSchemaVersion == CatalogPackageManifest.CrossSourceAssertionSchemaVersion &&
+                manifest.BuildProvenance.ProvenanceSchemaVersion ==
+                    CatalogBuildProvenance.AdapterBuildReceiptSchemaVersion)
+            {
+                writer.AddInt32("build.adapter-receipts.count", manifest.BuildProvenance.AdapterBuildReceipts.Length);
+                for (var index = 0; index < manifest.BuildProvenance.AdapterBuildReceipts.Length; index++)
+                {
+                    var receipt = manifest.BuildProvenance.AdapterBuildReceipts[index];
+                    var prefix = $"build.adapter-receipts.{index}";
+                    writer.AddInt32($"{prefix}.schema-version", receipt.ReceiptSchemaVersion);
+                    writer.AddContentDigest($"{prefix}.artifact", receipt.AdapterArtifactDigest);
+                    writer.AddString($"{prefix}.assembly-name", receipt.AssemblyName);
+                    writer.AddString($"{prefix}.assembly-version", receipt.ExactAssemblyVersion);
+                    writer.AddString($"{prefix}.assembly-informational-version", receipt.AssemblyInformationalVersion);
+                    writer.AddString($"{prefix}.mvid", receipt.ModuleVersionId);
+                    writer.AddString($"{prefix}.target-framework", receipt.TargetFramework);
+                    writer.AddString($"{prefix}.configuration", receipt.BuildConfiguration);
+                    writer.AddString($"{prefix}.platform", receipt.BuildPlatform);
+                    writer.AddString($"{prefix}.compiler-id", receipt.CompilerId);
+                    writer.AddString($"{prefix}.compiler-version", receipt.ExactCompilerVersion);
+                    writer.AddString($"{prefix}.sdk-id", receipt.SdkId);
+                    writer.AddString($"{prefix}.sdk-version", receipt.ExactSdkVersion);
+                    writer.AddInt32($"{prefix}.deterministic", receipt.DeterministicBuild ? 1 : 0);
+                    writer.AddContentDigest($"{prefix}.portable-pdb", receipt.PortablePdbDigest);
+                    writer.AddInt32($"{prefix}.source-link-presence", (int)receipt.SourceLinkPresence);
+                    writer.AddOptionalContentDigest($"{prefix}.source-link", receipt.SourceLinkContentDigest);
+                    writer.AddContentDigest($"{prefix}.compilation-options", receipt.CompilationOptionsContentDigest);
+                    writer.AddContentDigest($"{prefix}.compilation-references", receipt.CompilationReferencesContentDigest);
                 }
             }
         }
