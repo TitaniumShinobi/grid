@@ -1,4 +1,4 @@
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.Security.Cryptography;
 using System.Text;
 using Grid.Core.Models;
@@ -7,6 +7,8 @@ namespace Grid.Core.Services;
 
 public sealed class RegisteredGameCatalogService(IGridCatalogService inner,IGameInstallationRegistrationStore store):IGridCatalogService
 {
+    private static string Hash(string value) =>
+        Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(value))).ToLowerInvariant();
     public async Task<GridCatalogSnapshot> GetCatalogAsync(CancellationToken cancellationToken=default)
     {
         var catalogTask=inner.GetCatalogAsync(cancellationToken);var registrationsTask=store.LoadAsync(cancellationToken);
@@ -21,13 +23,26 @@ public sealed class RegisteredGameCatalogService(IGridCatalogService inner,IGame
             {
                 if(!adapters.Any(value=>value.Id==registration.AdapterId))adapters.Add(new(registration.AdapterId,"Provider discovery"));
                 var available=Directory.Exists(registration.InstallRoot)&&File.Exists(registration.ExecutablePath);
+                var profileId = new ProfileId($"profile.grid.{Hash(registration.InstallationId.Value)[..20]}");
+                var defaultProfile = new Profile(
+                    profileId,
+                    registration.InstallationId,
+                    registration.DisplayName,
+                    [],
+                    [],
+                    new(available ? HealthLevel.Unknown : HealthLevel.Warning,
+                        available ? "Grid profile ready" : "Installation unavailable", []),
+                    EnvironmentEntries: [],
+                    ObservedOutputs: []);
+
                 installations.Add(new(registration.InstallationId,registration.GameId,registration.AdapterId,registration.DisplayName,
-                    InstallationKind.External,WorkspaceAccessMode.ReadOnly,game.Capabilities,[],[],[],
+                    InstallationKind.External,WorkspaceAccessMode.ReadOnly,game.Capabilities,[defaultProfile],[],[],
                     new(available?HealthLevel.Unknown:HealthLevel.Warning,available?"Registered installation":"Installation unavailable",[]),
                     ProfileFeature.None,
                     new(registration.InstallRoot,available?InstallationAvailability.Available:InstallationAvailability.Missing,
                         available?$"{registration.Edition} · {registration.ProviderId}":"The registered path is currently unavailable.",
-                        InstallationProvenanceKind.ConnectedReference,registration.ReferenceId),[]));
+                        InstallationProvenanceKind.ConnectedReference,registration.ReferenceId,
+                        ProviderId: registration.ProviderId, Edition: registration.Edition),[]));
                 evidence.Add($"{registration.InstallationId.Value}:{registration.InstallRoot}:{available}");
             }
             games[index]=game with{Adapters=adapters.ToImmutable(),Installations=installations.ToImmutable()};

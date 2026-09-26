@@ -1,4 +1,4 @@
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 
 namespace Grid.Core.Models;
 
@@ -111,6 +111,7 @@ public enum ModInventoryAuthority
 public enum ModReconciliationState
 {
     Matched,
+    Managed,
     Separator,
     Foreign,
     Backup,
@@ -288,7 +289,9 @@ public sealed record InstallationMetadata(
     InstallationProvenanceKind Provenance = InstallationProvenanceKind.Mock,
     InstallationReferenceId? ReferenceId = null,
     ToolOutputObservationSummary? ToolOutputObservation = null,
-    string? ConnectionFingerprint = null);
+    string? ConnectionFingerprint = null,
+    string? ProviderId = null,
+    string? Edition = null);
 
 public sealed record ModMetadataRawValue(
     string Key,
@@ -394,6 +397,12 @@ public sealed record ProfileObservationSummary(
     ResolvedEnvironmentSummary? Environment = null,
     ToolOutputObservationSummary? ToolOutputs = null);
 
+public enum ProfileOrigin
+{
+    Grid,
+    ModOrganizer2,
+    Vortex,
+}
 public sealed record Profile(
     ProfileId Id,
     InstallationId InstallationId,
@@ -407,7 +416,8 @@ public sealed record Profile(
     LaunchTargetId? DefaultLaunchTargetId = null,
     ProfileLaunchReadiness LaunchReadiness = default,
     ProfileObservationSummary? Observation = null,
-    ImmutableArray<GeneratedOutputSummary> ObservedOutputs = default);
+    ImmutableArray<GeneratedOutputSummary> ObservedOutputs = default,
+    ProfileOrigin Origin = ProfileOrigin.Grid);
 
 public readonly record struct ConfiguredPath(
     ConfiguredPathAnchor Anchor,
@@ -771,18 +781,23 @@ public sealed class GridCatalogSnapshot
         ValidateHealth(profile.Health, $"Profile '{profile.Id}' health");
         ValidateProfileFeatures(profile.Features, $"Profile '{profile.Id}' features");
 
-        if (installation.Metadata.Provenance == InstallationProvenanceKind.ConnectedReference)
+        if (!Enum.IsDefined(profile.Origin))
+        {
+            throw new ArgumentException($"Profile '{profile.Id}' origin is invalid.");
+        }
+
+        if (profile.Origin is ProfileOrigin.ModOrganizer2 or ProfileOrigin.Vortex)
         {
             if (profile.Observation is null)
             {
-                throw new ArgumentException($"Connected profile '{profile.Id}' requires an observation summary.");
+                throw new ArgumentException($"External profile '{profile.Id}' requires an observation summary.");
             }
 
             ValidateProfileObservation(profile.Observation, profile.Id);
         }
         else if (profile.Observation is not null)
         {
-            throw new ArgumentException($"Mock profile '{profile.Id}' cannot contain a connected observation summary.");
+            throw new ArgumentException($"Grid-native profile '{profile.Id}' cannot contain an external observation summary.");
         }
 
         if (!Enum.IsDefined(profile.Lifecycle))

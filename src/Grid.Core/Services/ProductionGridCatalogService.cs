@@ -1,4 +1,4 @@
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using Grid.Core.Models;
 
 namespace Grid.Core.Services;
@@ -10,7 +10,8 @@ namespace Grid.Core.Services;
 public sealed class ProductionGridCatalogService : IGridCatalogService
 {
     public static readonly GameId SkyrimSpecialEditionId = new("game.skyrim-special-edition");
-    public static readonly GameId GrandTheftAutoVId = new("game.grand-theft-auto-v");
+    public static readonly GameId GrandTheftAutoVLegacyId = new("game.grandtheftautov-legacy");
+    public static readonly GameId GrandTheftAutoVEnhancedId = new("game.grandtheftautov-enhanced");
     public static readonly GameAdapterId ModOrganizer2AdapterId = new("adapter.mod-organizer-2");
     public static readonly GameAdapterId ProviderDiscoveryAdapterId = new("adapter.provider-discovery");
 
@@ -53,9 +54,23 @@ public sealed class ProductionGridCatalogService : IGridCatalogService
                 "No installation observed",
                 ImmutableArray<Advisory>.Empty));
 
-        var gta = new ManagedGame(
-            GrandTheftAutoVId,
-            "Grand Theft Auto V",
+        var gtaLegacy = new ManagedGame(
+            GrandTheftAutoVLegacyId,
+            "GTA V Legacy",
+            capabilities,
+            ImmutableArray.Create(new GameAdapterIdentity(ProviderDiscoveryAdapterId, "Provider discovery")),
+            ImmutableArray<ManagedInstallation>.Empty,
+            new GameToolCatalog(
+                ImmutableArray<ToolDefinition>.Empty,
+                ImmutableArray<LaunchTargetDefinition>.Empty),
+            new HealthSummary(
+                HealthLevel.Unknown,
+                "No installation observed",
+                ImmutableArray<Advisory>.Empty));
+
+        var gtaEnhanced = new ManagedGame(
+            GrandTheftAutoVEnhancedId,
+            "GTA V Enhanced",
             capabilities,
             ImmutableArray.Create(new GameAdapterIdentity(ProviderDiscoveryAdapterId, "Provider discovery")),
             ImmutableArray<ManagedInstallation>.Empty,
@@ -70,6 +85,6 @@ public sealed class ProductionGridCatalogService : IGridCatalogService
         return new GridCatalogSnapshot(
             "production.supported-games.v1",
             CatalogSourceKind.Adapter,
-            [skyrim, gta]);
+            [skyrim, gtaEnhanced, gtaLegacy]);
     }
 }

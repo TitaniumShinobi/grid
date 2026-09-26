@@ -1,4 +1,6 @@
 using System.Collections.Immutable;
+using System.Security.Cryptography;
+using System.Text;
 using Grid.Core.Models;
 using Grid.Core.Services;
 
@@ -15,21 +17,18 @@ public sealed class AssistantSessionState
     private readonly ImmutableArray<AssistantToolOption> registeredTools;
     private readonly IAssistantRequestExecutionService? executionService;
     private readonly TimeProvider timeProvider;
-    private readonly HashSet<ModId> selectedMods = [];
-    private readonly HashSet<ToolId> selectedTools = [];
-    private string? selectedClassId;
+    private readonly UserToolManagerState? userTools;
+    private readonly AssistantTicketTaxonomy taxonomy;
+    private InvestigationTicketDraft ticketDraft;
     private string? selectedCapabilityId;
-    private bool inferredClassSelection;
-    private bool inferredCapabilitySelection;
-    private string plainText = string.Empty;
-    private string expectedBehavior = string.Empty;
-    private string reproductionOrLocation = string.Empty;
-    private string desiredOutcome = string.Empty;
-    private ImmutableArray<AssistantAttachmentDraft> attachments = [];
-    private AssistantAuthorizationScope authorizationScope = AssistantAuthorizationScope.SelectedInstallationAndProfileReadOnly;
-    private GameId? selectedGameId;
-    private InstallationId? selectedInstallationId;
-    private ProfileId? selectedProfileId;
+    private string composerText = string.Empty;
+    // Milestone-2 compatibility inputs for the existing DIF/executor only. These
+    // values are never promoted into the canonical Ticket Draft and are removed
+    // when the structured Milestone-3 selectors replace the legacy controls.
+    private string legacyProblem = string.Empty;
+    private string legacyExpectedBehavior = string.Empty;
+    private string legacyReproductionOrLocation = string.Empty;
+    private string legacyDesiredOutcome = string.Empty;
     private ImmutableArray<AssistantTaskRecord> tasks = [];
     private AssistantAuthorizationReview? pendingAuthorization;
     private AssistantCaseAction? pendingAction;
@@ -43,18 +42,36 @@ public sealed class AssistantSessionState
         IEnumerable<AssistantClassOption> classes,
         IEnumerable<AssistantToolOption>? registeredTools = null,
         IAssistantRequestExecutionService? executionService = null,
-        TimeProvider? timeProvider = null)
+        TimeProvider? timeProvider = null,
+        UserToolManagerState? userTools = null,
+        AssistantTicketTaxonomy? taxonomy = null)
     {
         Context = context ?? throw new ArgumentNullException(nameof(context));
         this.catalog = catalog ?? throw new ArgumentNullException(nameof(catalog));
         this.executionService = executionService;
         this.timeProvider = timeProvider ?? TimeProvider.System;
+        this.userTools = userTools;
+        this.taxonomy = taxonomy ?? AssistantTicketTaxonomy.Empty;
+        ticketDraft = CreateEmptyTicketDraft();
         ArgumentNullException.ThrowIfNull(classes);
         this.classes = classes.OrderBy(option => option.DisplayName, StringComparer.OrdinalIgnoreCase).ToImmutableArray();
         this.registeredTools = (registeredTools ?? []).OrderBy(option => option.Name, StringComparer.OrdinalIgnoreCase).ToImmutableArray();
-        if (this.classes.Any(option => string.IsNullOrWhiteSpace(option.Id) || string.IsNullOrWhiteSpace(option.DisplayName) || string.IsNullOrWhiteSpace(option.IconId)) ||
+        if (this.classes.Any(option => string.IsNullOrWhiteSpace(option.Id) || string.IsNullOrWhiteSpace(option.DisplayName) || string.IsNullOrWhiteSpace(option.IconId) ||
+                (!option.SupportedGameIds.IsDefault && (option.SupportedGameIds.Any(string.IsNullOrWhiteSpace) ||
+                    option.SupportedGameIds.Distinct(StringComparer.Ordinal).Count() != option.SupportedGameIds.Length))) ||
             this.classes.Select(option => option.Id).Distinct(StringComparer.Ordinal).Count() != this.classes.Length)
             throw new ArgumentException("Assistant Class options must be complete and have unique stable identities.", nameof(classes));
+        if (this.registeredTools.Any(tool =>
+                string.IsNullOrWhiteSpace(tool.Name) ||
+                tool.GameCompatibility.IsDefaultOrEmpty ||
+                tool.GameCompatibility.Any(compatibility =>
+                    compatibility.EvidenceCapabilityIds.IsDefaultOrEmpty ||
+                    compatibility.EvidenceCapabilityIds.Any(string.IsNullOrWhiteSpace) ||
+                    string.IsNullOrWhiteSpace(compatibility.Provenance)) ||
+                tool.GameCompatibility.Select(compatibility => compatibility.GameId).Distinct().Count() != tool.GameCompatibility.Length) ||
+            this.registeredTools.Select(tool => tool.Id).Distinct().Count() != this.registeredTools.Length)
+            throw new ArgumentException("Assistant tool options must have unique ToolIDs and explicit canonical game compatibility evidence.", nameof(registeredTools));
+        ValidateTaxonomy(this.taxonomy);
         PrefillFromContext(context);
     }
 
@@ -120,21 +137,13 @@ public sealed class AssistantSessionState
         Surface = AssistantSurface.Home;
         IsFormVisible = false;
         IntakeScope = AssistantIntakeScope.Game;
-        selectedMods.Clear();
-        selectedTools.Clear();
-        selectedClassId = null;
+        ticketDraft = CreateEmptyTicketDraft();
         selectedCapabilityId = null;
-        inferredClassSelection = false;
-        inferredCapabilitySelection = false;
-        plainText = string.Empty;
-        expectedBehavior = string.Empty;
-        reproductionOrLocation = string.Empty;
-        desiredOutcome = string.Empty;
-        attachments = [];
-        authorizationScope = AssistantAuthorizationScope.SelectedInstallationAndProfileReadOnly;
-        selectedGameId = null;
-        selectedInstallationId = null;
-        selectedProfileId = null;
+        composerText = string.Empty;
+        legacyProblem = string.Empty;
+        legacyExpectedBehavior = string.Empty;
+        legacyReproductionOrLocation = string.Empty;
+        legacyDesiredOutcome = string.Empty;
         PrefillFromContext(Context);
         pendingAuthorization = null;
         activeTask = null;
@@ -158,56 +167,119 @@ public sealed class AssistantSessionState
 
     public void SelectGame(GameId? gameId)
     {
-        if (gameId is not null && !catalog.Games.Any(game => game.Id == gameId.Value))
-            throw new ArgumentException("The selected game is not present in the catalog.", nameof(gameId));
-        if (selectedGameId == gameId) return;
-        selectedGameId = gameId;
-        selectedInstallationId = null;
-        selectedProfileId = null;
-        selectedMods.Clear();
-        selectedTools.Clear();
-        PrefillInstallationAndProfile(Context);
-    }
+        if (gameId is not null && !GetGameOptions().Any(game => game.Id == gameId.Value))
+            throw new ArgumentException("The selected game is not connected to this account.", nameof(gameId));
+        if (ticketDraft.GameId == gameId)
+        {
+            if (gameId is not null && ticketDraft.GameProvenance != TicketSelectionProvenance.ExplicitUserSelection)
+                UpdateTicket(draft => draft with { GameProvenance = TicketSelectionProvenance.ExplicitUserSelection });
+            return;
+        }
 
-    public void SelectInstallation(InstallationId? installationId)
-    {
-        var installations = GetInstallationOptions();
-        if (installationId is not null && !installations.Any(item => item.Id == installationId.Value))
-            throw new ArgumentException("The selected installation is not present for the selected game.", nameof(installationId));
-        if (selectedInstallationId == installationId) return;
-        selectedInstallationId = installationId;
-        selectedProfileId = null;
-        selectedMods.Clear();
-        selectedTools.Clear();
-        if (installationId == Context.InstallationId && Context.ProfileId is not null)
-            selectedProfileId = Context.ProfileId;
+        var compatibleIntegratedTools = gameId is null
+            ? []
+            : Normalize(ticketDraft.IntegratedTools)
+                .Where(selection => IsIntegratedToolCompatible(selection.ToolId, gameId.Value))
+                .ToImmutableArray();
+        var compatibleReferences = Normalize(ticketDraft.ReferenceContext)
+            .Where(reference => reference.GameId is null || reference.GameId == gameId)
+            .Where(reference => reference.ModId is null)
+            .ToImmutableArray();
+
+        UpdateTicket(draft => draft with
+        {
+            GameId = gameId,
+            GameProvenance = gameId is null ? null : TicketSelectionProvenance.ExplicitUserSelection,
+            InstallationId = null,
+            InstallationProvenance = null,
+            ProfileId = null,
+            ProfileProvenance = null,
+            Mods = [],
+            IntegratedTools = compatibleIntegratedTools,
+            ConfiguredToolContext = [],
+            ReferenceContext = compatibleReferences,
+            CanonicalSelections = [],
+        });
+        PrefillInstallationAndProfile(Context);
+        SelectOnlyRegisteredClassForSelectedGame();
     }
 
     public void SelectProfile(ProfileId? profileId)
     {
-        if (profileId is not null && !GetProfileOptions().Any(item => item.Id == profileId.Value))
-            throw new ArgumentException("The selected profile is not present for the selected installation.", nameof(profileId));
-        if (selectedProfileId == profileId) return;
-        selectedProfileId = profileId;
-        selectedMods.Clear();
-        if (profileId == Context.ProfileId)
-            foreach (var modId in Context.ModIds) selectedMods.Add(modId);
+        var option = profileId is null ? null : GetProfileOptions().FirstOrDefault(item => item.Id == profileId.Value);
+        if (profileId is not null && option is null)
+            throw new ArgumentException("The selected profile is not connected to the selected game.", nameof(profileId));
+        if (ticketDraft.ProfileId == profileId && ticketDraft.InstallationId == option?.InstallationId)
+        {
+            if (profileId is not null &&
+                (ticketDraft.ProfileProvenance != TicketSelectionProvenance.ExplicitUserSelection ||
+                 ticketDraft.InstallationProvenance != TicketSelectionProvenance.DeterministicallyResolved))
+            {
+                UpdateTicket(draft => draft with
+                {
+                    ProfileProvenance = TicketSelectionProvenance.ExplicitUserSelection,
+                    InstallationProvenance = TicketSelectionProvenance.DeterministicallyResolved,
+                });
+            }
+            return;
+        }
+
+        var installationId = option?.InstallationId;
+        var allowedModOptions = GetModOptions(ticketDraft.GameId, installationId, profileId).ToDictionary(value => value.Id);
+        var compatibleMods = Normalize(ticketDraft.Mods)
+            .Where(selection => allowedModOptions.ContainsKey(selection.ModId))
+            .Select(selection => selection with { DisplayName = allowedModOptions[selection.ModId].Name })
+            .ToImmutableArray();
+        if (profileId == Context.ProfileId && installationId == Context.InstallationId)
+        {
+            var selectedIds = compatibleMods.Select(value => value.ModId).ToHashSet();
+            compatibleMods = compatibleMods.AddRange(Context.ModIds
+                .Where(id => allowedModOptions.ContainsKey(id) && selectedIds.Add(id))
+                .Select(id => new TicketModSelection(
+                    id,
+                    allowedModOptions[id].Name,
+                    TicketSelectionProvenance.ContextInherited)));
+        }
+
+        var scope = ticketDraft.GameId is GameId selectedGame && installationId is InstallationId selectedInstallation
+            ? new UserToolScope(selectedGame, selectedInstallation, profileId)
+            : null;
+        UpdateTicket(draft => draft with
+        {
+            InstallationId = installationId,
+            InstallationProvenance = installationId is null ? null : TicketSelectionProvenance.DeterministicallyResolved,
+            ProfileId = profileId,
+            ProfileProvenance = profileId is null ? null : TicketSelectionProvenance.ExplicitUserSelection,
+            Mods = compatibleMods,
+            ConfiguredToolContext = FilterConfiguredToolContext(draft.ConfiguredToolContext, scope),
+            ReferenceContext = FilterReferenceContextForMods(draft.ReferenceContext, compatibleMods),
+            CanonicalSelections = [],
+        });
     }
 
     public void SelectClass(string? classId)
     {
-        if (classId is not null && !classes.Any(option => option.Id == classId))
+        var option = classId is null ? null : classes.FirstOrDefault(value => value.Id == classId);
+        if (classId is not null && option is null)
             throw new ArgumentException("The selected Class is not registered in the Grid Class catalog.", nameof(classId));
-        if (string.Equals(selectedClassId, classId, StringComparison.Ordinal)) return;
+        if (string.Equals(ticketDraft.Class?.Id.Value, classId, StringComparison.Ordinal))
+        {
+            if (ticketDraft.Class is not null && ticketDraft.Class.Provenance != TicketSelectionProvenance.ExplicitUserSelection)
+                UpdateTicket(draft => draft with { Class = draft.Class! with { Provenance = TicketSelectionProvenance.ExplicitUserSelection } });
+            return;
+        }
         selectedCapabilityId = null;
-        selectedClassId = classId;
-        inferredClassSelection = false;
-        inferredCapabilitySelection = false;
+        UpdateTicket(draft => draft with
+        {
+            Class = option is null ? null : ToTicketClassSelection(option, TicketSelectionProvenance.ExplicitUserSelection),
+            Problem = null,
+            Timing = null,
+        });
     }
 
     public void SelectCapability(string? capabilityId)
     {
-        var selectedClass = classes.FirstOrDefault(option => option.Id == selectedClassId);
+        var selectedClass = classes.FirstOrDefault(option => option.Id == ticketDraft.Class?.Id.Value);
         var options = selectedClass?.GameplayCapabilities.IsDefault == false
             ? selectedClass.GameplayCapabilities
             : [];
@@ -215,68 +287,43 @@ public sealed class AssistantSessionState
             throw new ArgumentException("The selected gameplay capability is not registered for this Class.", nameof(capabilityId));
         if (string.Equals(selectedCapabilityId, capabilityId, StringComparison.Ordinal)) return;
         selectedCapabilityId = capabilityId;
-        inferredCapabilitySelection = false;
     }
 
     public void SetPlainText(string value) => SetProblem(value);
 
+    public void SetComposerText(string value) => composerText = value ?? string.Empty;
+
     public void SetProblem(string value)
     {
-        plainText = value ?? string.Empty;
-        InferGameplayCapabilityFromProblem();
+        legacyProblem = value ?? string.Empty;
     }
 
-    private void InferGameplayCapabilityFromProblem()
+    public void SetExpectedBehavior(string value) => legacyExpectedBehavior = value ?? string.Empty;
+
+    public void SetReproductionOrLocation(string value) => legacyReproductionOrLocation = value ?? string.Empty;
+
+    public void SetDesiredOutcome(string value) => legacyDesiredOutcome = value ?? string.Empty;
+
+    public void SelectProblem(TicketProblemSelection? problem)
     {
-        if (inferredCapabilitySelection) selectedCapabilityId = null;
-        if (inferredClassSelection) selectedClassId = null;
-        inferredCapabilitySelection = false;
-        inferredClassSelection = false;
-
-        var normalizedProblem = NormalizeIntentText(plainText);
-        if (normalizedProblem.Length == 0) return;
-
-        var eligibleClasses = selectedClassId is null
-            ? classes
-            : classes.Where(option => option.Id == selectedClassId).ToImmutableArray();
-        var matches = eligibleClasses.SelectMany(classOption =>
-        {
-            var capabilities = classOption.GameplayCapabilities.IsDefault ? [] : classOption.GameplayCapabilities;
-            return capabilities
-                .Where(capability => !(capability.IntentPhrases.IsDefaultOrEmpty) && capability.IntentPhrases.Any(phrase =>
-                    ContainsIntentPhrase(normalizedProblem, NormalizeIntentText(phrase))))
-                .Select(capability => (Class: classOption, Capability: capability));
-        }).ToArray();
-
-        if (matches.Length != 1) return;
-        if (selectedClassId is null)
-        {
-            selectedClassId = matches[0].Class.Id;
-            inferredClassSelection = true;
-        }
-        selectedCapabilityId = matches[0].Capability.Id;
-        inferredCapabilitySelection = true;
+        if (problem is not null && (ticketDraft.Class is null || problem.ClassId != ticketDraft.Class.Id))
+            throw new ArgumentException("Problem must belong to the selected Class.", nameof(problem));
+        if (ticketDraft.Problem == problem) return;
+        UpdateTicket(draft => draft with { Problem = problem });
     }
 
-    private static bool ContainsIntentPhrase(string normalizedText, string normalizedPhrase) =>
-        normalizedPhrase.Length > 0 && $" {normalizedText} ".Contains($" {normalizedPhrase} ", StringComparison.Ordinal);
-
-    private static string NormalizeIntentText(string value) => string.Join(' ',
-        new string((value ?? string.Empty).ToLowerInvariant()
-            .Select(character => char.IsLetterOrDigit(character) ? character : ' ')
-            .ToArray())
-        .Split(' ', StringSplitOptions.RemoveEmptyEntries));
-
-    public void SetExpectedBehavior(string value) => expectedBehavior = value ?? string.Empty;
-
-    public void SetReproductionOrLocation(string value) => reproductionOrLocation = value ?? string.Empty;
-
-    public void SetDesiredOutcome(string value) => desiredOutcome = value ?? string.Empty;
-
-    public void SetAuthorizationScope(AssistantAuthorizationScope scope)
+    public void SelectTiming(TicketTimingSelection? timing)
     {
-        if (!Enum.IsDefined(scope)) throw new ArgumentOutOfRangeException(nameof(scope));
-        authorizationScope = scope;
+        if (timing is not null && (ticketDraft.Class is null || timing.ClassId != ticketDraft.Class.Id))
+            throw new ArgumentException("Timing must belong to the selected Class.", nameof(timing));
+        if (ticketDraft.Timing == timing) return;
+        UpdateTicket(draft => draft with { Timing = timing });
+    }
+
+    public void SelectGoal(TicketGoalSelection? goal)
+    {
+        if (ticketDraft.Goal == goal) return;
+        UpdateTicket(draft => draft with { Goal = goal });
     }
 
     public void SetAttachments(IEnumerable<AssistantAttachmentDraft> values)
@@ -287,28 +334,172 @@ public sealed class AssistantSessionState
             .OrderBy(item => item.Path, StringComparer.OrdinalIgnoreCase)
             .ToImmutableArray();
         if (normalized.Length > 32) throw new ArgumentOutOfRangeException(nameof(values), "At most 32 evidence attachments may be selected.");
-        attachments = normalized;
+        var ticketAttachments = normalized.Select(ToTicketAttachment).ToImmutableArray();
+        if (Normalize(ticketDraft.Attachments).SequenceEqual(ticketAttachments)) return;
+        UpdateTicket(draft => draft with { Attachments = ticketAttachments });
     }
 
-    public void AddAttachment(AssistantAttachmentDraft attachment) => SetAttachments(attachments.Add(attachment));
+    public void AddAttachment(AssistantAttachmentDraft attachment) => SetAttachments(GetLegacyAttachments().Add(attachment));
 
     public void RemoveAttachment(string path)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(path);
-        attachments = attachments.Where(item => !string.Equals(item.Path, path, StringComparison.OrdinalIgnoreCase)).ToImmutableArray();
+        SetAttachments(GetLegacyAttachments().Where(item => !string.Equals(item.Path, path, StringComparison.OrdinalIgnoreCase)));
     }
 
     public void SetModSelected(ModId modId, bool selected)
     {
-        if (!GetModOptions().Any(mod => mod.Id == modId)) throw new ArgumentException("Mod is unavailable for this profile.", nameof(modId));
-        if (selected) selectedMods.Add(modId); else selectedMods.Remove(modId);
+        var option = GetModOptions().FirstOrDefault(mod => mod.Id == modId)
+            ?? throw new ArgumentException("Mod is unavailable for this profile.", nameof(modId));
+        var values = Normalize(ticketDraft.Mods).Where(value => value.ModId != modId).ToImmutableArray();
+        if (selected)
+            values = values.Add(new TicketModSelection(modId, option.Name, TicketSelectionProvenance.ExplicitUserSelection));
+        if (Normalize(ticketDraft.Mods).SequenceEqual(values)) return;
+        UpdateTicket(draft => draft with
+        {
+            Mods = values,
+            ReferenceContext = FilterReferenceContextForMods(draft.ReferenceContext, values),
+            CanonicalSelections = [],
+        });
     }
 
     public void SetToolSelected(ToolId toolId, bool selected)
     {
-        if (!GetToolOptions().Any(tool => tool.Id == toolId)) throw new ArgumentException("Tool is unavailable for this game.", nameof(toolId));
-        if (selected) selectedTools.Add(toolId); else selectedTools.Remove(toolId);
+        var option = GetToolOptions().FirstOrDefault(tool => tool.Id == toolId)
+            ?? throw new ArgumentException("Tool is unavailable for this game.", nameof(toolId));
+        var values = Normalize(ticketDraft.IntegratedTools).Where(value => value.ToolId != toolId).ToImmutableArray();
+        if (selected)
+            values = values.Add(new TicketIntegratedToolSelection(toolId, option.Name, TicketSelectionProvenance.ExplicitUserSelection));
+        if (Normalize(ticketDraft.IntegratedTools).SequenceEqual(values)) return;
+        UpdateTicket(draft => draft with { IntegratedTools = values });
     }
+
+    public void SetConfiguredToolSelected(UserToolConfigurationId configurationId, bool selected)
+    {
+        var scope = GetCurrentUserToolScope()
+            ?? throw new InvalidOperationException("Configured-tool context requires an exact Game and Installation.");
+        var configuration = userTools?.ForContext(scope, includeDisabled: true)
+            .FirstOrDefault(value => value.Id == configurationId)
+            ?? throw new ArgumentException("Configured tool is unavailable for this exact workspace.", nameof(configurationId));
+        var values = Normalize(ticketDraft.ConfiguredToolContext)
+            .Where(value => value.ConfigurationId != configurationId)
+            .ToImmutableArray();
+        if (selected) values = values.Add(ToConfiguredToolContext(configuration));
+        if (Normalize(ticketDraft.ConfiguredToolContext).SequenceEqual(values)) return;
+        UpdateTicket(draft => draft with { ConfiguredToolContext = values });
+    }
+
+    public void SetReferenceContextSelected(TicketReferenceContext context, bool selected)
+    {
+        ArgumentNullException.ThrowIfNull(context);
+        EnsureReferenceContextCompatible(context);
+        var values = Normalize(ticketDraft.ReferenceContext).Where(value => value.Id != context.Id).ToImmutableArray();
+        if (selected) values = values.Add(context);
+        if (Normalize(ticketDraft.ReferenceContext).SequenceEqual(values)) return;
+        UpdateTicket(draft => draft with { ReferenceContext = values });
+    }
+
+    public void SetCanonicalSelectorSelection(CanonicalSelectorSelection selection)
+    {
+        ArgumentNullException.ThrowIfNull(selection);
+        if (selection.SelectionKind != CanonicalSelectorSelectionKind.CanonicalRecord)
+            throw new ArgumentException("Other remains unresolved ticket context outside canonical selections.", nameof(selection));
+        var values = Normalize(ticketDraft.CanonicalSelections)
+            .Where(value => value.KnowledgeKind != selection.KnowledgeKind)
+            .Append(selection)
+            .OrderBy(value => value.KnowledgeKind)
+            .ToImmutableArray();
+        var otherKind = ToTicketReferenceKind(selection.KnowledgeKind);
+        var userContext = Normalize(ticketDraft.UserContext)
+            .Where(value => value.Kind != otherKind || value.Resolution != TicketUserContextResolution.Unresolved)
+            .ToImmutableArray();
+        UpdateTicket(draft => draft with { CanonicalSelections = values, UserContext = userContext });
+    }
+
+    public void ClearCanonicalSelectorSelection(KnowledgeKind kind)
+    {
+        if (!Enum.IsDefined(kind)) throw new ArgumentOutOfRangeException(nameof(kind));
+        var values = Normalize(ticketDraft.CanonicalSelections)
+            .Where(value => value.KnowledgeKind != kind)
+            .ToImmutableArray();
+        if (Normalize(ticketDraft.CanonicalSelections).SequenceEqual(values)) return;
+        UpdateTicket(draft => draft with { CanonicalSelections = values });
+    }
+
+    public void SetUserContextSelected(TicketUserContext context, bool selected)
+    {
+        ArgumentNullException.ThrowIfNull(context);
+        if (context.Resolution == TicketUserContextResolution.Unresolved && context.MatchedReferenceId is not null)
+            throw new ArgumentException("Unresolved user context cannot claim a matched reference identity.", nameof(context));
+        if (context.Provenance is not TicketSelectionProvenance.ExplicitUserSelection and not TicketSelectionProvenance.LegacyImported)
+            throw new ArgumentException("User context must retain explicit-user or legacy-import provenance.", nameof(context));
+        var values = Normalize(ticketDraft.UserContext)
+            .Where(value => value.Kind != context.Kind || !string.Equals(value.Value, context.Value, StringComparison.Ordinal))
+            .ToImmutableArray();
+        if (selected) values = values.Add(context);
+        if (Normalize(ticketDraft.UserContext).SequenceEqual(values)) return;
+        UpdateTicket(draft => draft with { UserContext = values });
+    }
+
+    public void SetOtherContextSelected(TicketReferenceContextKind kind, string value, bool selected)
+    {
+        var exact = string.IsNullOrWhiteSpace(value)
+            ? throw new ArgumentException("Other context requires a non-empty value.", nameof(value))
+            : value;
+        if (selected)
+        {
+            ReplaceOtherContext(kind, exact);
+            return;
+        }
+        SetUserContextSelected(new(
+            kind,
+            exact,
+            TicketUserContextResolution.Unresolved,
+            TicketSelectionProvenance.ExplicitUserSelection), selected);
+    }
+
+    public void ReplaceOtherContext(TicketReferenceContextKind kind, string? value)
+    {
+        if (!Enum.IsDefined(kind)) throw new ArgumentOutOfRangeException(nameof(kind));
+        var exact = string.IsNullOrWhiteSpace(value) ? null : value;
+        var values = Normalize(ticketDraft.UserContext)
+            .Where(candidate => candidate.Kind != kind || candidate.Resolution != TicketUserContextResolution.Unresolved)
+            .ToImmutableArray();
+        if (exact is not null)
+        {
+            values = values.Add(new(
+                kind,
+                exact,
+                TicketUserContextResolution.Unresolved,
+                TicketSelectionProvenance.ExplicitUserSelection));
+        }
+        var canonicalSelections = exact is null
+            ? Normalize(ticketDraft.CanonicalSelections)
+            : Normalize(ticketDraft.CanonicalSelections)
+                .Where(selection => selection.KnowledgeKind != ToKnowledgeKind(kind))
+                .ToImmutableArray();
+        if (Normalize(ticketDraft.UserContext).SequenceEqual(values) &&
+            Normalize(ticketDraft.CanonicalSelections).SequenceEqual(canonicalSelections)) return;
+        UpdateTicket(draft => draft with { UserContext = values, CanonicalSelections = canonicalSelections });
+    }
+
+    private static TicketReferenceContextKind ToTicketReferenceKind(KnowledgeKind kind) => kind switch
+    {
+        KnowledgeKind.Location => TicketReferenceContextKind.Location,
+        KnowledgeKind.MissionQuest => TicketReferenceContextKind.MissionOrQuest,
+        KnowledgeKind.Item => TicketReferenceContextKind.Item,
+        KnowledgeKind.Actor => TicketReferenceContextKind.Entity,
+        _ => throw new ArgumentOutOfRangeException(nameof(kind)),
+    };
+
+    private static KnowledgeKind ToKnowledgeKind(TicketReferenceContextKind kind) => kind switch
+    {
+        TicketReferenceContextKind.Location => KnowledgeKind.Location,
+        TicketReferenceContextKind.MissionOrQuest => KnowledgeKind.MissionQuest,
+        TicketReferenceContextKind.Item => KnowledgeKind.Item,
+        TicketReferenceContextKind.Entity => KnowledgeKind.Actor,
+        _ => throw new ArgumentOutOfRangeException(nameof(kind)),
+    };
 
     public void ApplySuggestion(string suggestionId)
     {
@@ -316,34 +507,21 @@ public sealed class AssistantSessionState
         Surface = AssistantSurface.Home;
         IsFormVisible = true;
         IntakeScope = AssistantIntakeScope.Game;
-        var preset = suggestionId switch
+        var classId = suggestionId switch
         {
-            "installation" => new AssistantSuggestionPreset(
-                "grid.class.installation-integrity",
-                "Audit the complete selected profile for unresolved plugin, asset, archive, load-order, record-conflict, and installation-integrity problems.",
-                "All enabled mods and plugins have complete compatible assets and dependencies, with no unresolved conflicts, missing files, or corrupt installation state.",
-                "The currently selected Skyrim Special Edition MO2 profile, including its mods, plugins, downloads, overwrite, and game Data.",
-                "Produce an evidence-backed diagnosis and a reversible repair plan. Do not change the profile until a separate repair is reviewed and approved."),
-            "crash" => new AssistantSuggestionPreset(
-                "grid.class.crash-freeze",
-                "Skyrim crashes, freezes, or becomes unresponsive in the selected profile.",
-                "The game remains stable and responsive during the same gameplay sequence.",
-                "Capture the location, action, and approximate time of the most recent crash or freeze.",
-                "Identify an evidence-backed root cause and prepare a reversible repair plan without changing the profile."),
-            "assets" => new AssistantSuggestionPreset(
-                "grid.class.asset-mismatch",
-                "An in-game object has a missing, purple, invisible, or incorrect visual asset.",
-                "The affected object renders with the intended mesh, texture, material, and appearance.",
-                "Record the affected object and the in-game location where the mismatch is visible.",
-                "Trace the winning asset provider and conflict chain, then prepare a reversible repair plan without changing the profile."),
+            "installation" => "grid.class.installation-integrity",
+            "crash" => "grid.class.crash-freeze",
+            "assets" => "grid.class.asset-mismatch",
             _ => throw new ArgumentOutOfRangeException(nameof(suggestionId)),
         };
-        selectedClassId = preset.ClassId;
+        var classOption = classes.Single(option => option.Id == classId);
+        UpdateTicket(draft => draft with
+        {
+            Class = ToTicketClassSelection(classOption, TicketSelectionProvenance.ExplicitUserSelection),
+            Problem = null,
+            Timing = null,
+        });
         selectedCapabilityId = null;
-        if (string.IsNullOrWhiteSpace(plainText)) plainText = preset.Problem;
-        if (string.IsNullOrWhiteSpace(expectedBehavior)) expectedBehavior = preset.ExpectedBehavior;
-        if (string.IsNullOrWhiteSpace(reproductionOrLocation)) reproductionOrLocation = preset.ReproductionOrLocation;
-        if (string.IsNullOrWhiteSpace(desiredOutcome)) desiredOutcome = preset.DesiredOutcome;
     }
 
     public double Resize(double requestedWidth)
@@ -361,9 +539,9 @@ public sealed class AssistantSessionState
     public void SetContext(ApplicationContextSnapshot context)
     {
         Context = context ?? throw new ArgumentNullException(nameof(context));
+        ReconcileInheritedContext(context);
         PrefillFromContext(context);
-        selectedMods.IntersectWith(GetModOptions().Select(mod => mod.Id));
-        selectedTools.IntersectWith(GetToolOptions().Select(tool => tool.Id));
+        PruneIncompatibleTicketContext();
     }
 
     public async Task LoadPersistedTasksAsync(CancellationToken cancellationToken = default)
@@ -396,7 +574,12 @@ public sealed class AssistantSessionState
             snapshot.Draft.ToolIds.Select(id => new AssistantRequestToolSelection(id, toolOptions[id].Name, "UserSelected")).ToImmutableArray(),
             snapshot.Draft.ClassId, selectedClass.RecipeVersion, snapshot.Draft.Problem, snapshot.Draft.DisplayTitle,
             snapshot.Draft.ExpectedBehavior, snapshot.Draft.ReproductionOrLocation, snapshot.Draft.DesiredOutcome,
-            snapshot.Draft.Attachments, snapshot.Draft.AuthorizationScope, snapshot.Draft.CapabilityId);
+            snapshot.Draft.Attachments, snapshot.Draft.CapabilityId,
+            snapshot.Draft.GameSelectionSource, snapshot.Draft.InstallationSelectionSource,
+            snapshot.Draft.ProfileSelectionSource, snapshot.Draft.ClassSelectionSource,
+            Normalize(ticketDraft.CanonicalSelections), Normalize(ticketDraft.UserContext)
+                .Where(context => context.Resolution == TicketUserContextResolution.Unresolved)
+                .ToImmutableArray());
         try
         {
             pendingAction = null;
@@ -621,119 +804,360 @@ public sealed class AssistantSessionState
 
     public AssistantSessionSnapshot Snapshot()
     {
-        var selectedClass = classes.FirstOrDefault(option => option.Id == selectedClassId);
+        var selectedClass = classes.FirstOrDefault(option => option.Id == ticketDraft.Class?.Id.Value);
         var readiness = ResolveReadiness(selectedClass);
-        var hasRequiredIntake = IntakeScope == AssistantIntakeScope.Game && selectedGameId is not null &&
-            selectedInstallationId is not null && selectedProfileId is not null && selectedClass is not null &&
-            !string.IsNullOrWhiteSpace(plainText);
+        var canonicalReadiness = InvestigationTicketDraftPolicy.Evaluate(ticketDraft);
+        var preview = CreateTicketPreview();
+        var modIds = Normalize(ticketDraft.Mods).Select(value => value.ModId).ToImmutableArray();
+        var toolIds = Normalize(ticketDraft.IntegratedTools).Select(value => value.ToolId).ToImmutableArray();
+        var legacyAttachments = GetLegacyAttachments();
+        var hasRequiredIntake = IntakeScope == AssistantIntakeScope.Game && ticketDraft.GameId is not null &&
+            ticketDraft.InstallationId is not null && ticketDraft.ProfileId is not null && selectedClass is not null &&
+            !string.IsNullOrWhiteSpace(legacyProblem);
+        // Removable compatibility projection for the current Milestone-2 UI and
+        // deterministic executor. Canonical readiness above comes only from the
+        // InvestigationTicketDraft and its Class + Problem + Goal policy.
         var draft = new AssistantDraftSnapshot(
-            IntakeScope, selectedGameId,
-            selectedMods.OrderBy(id => id.Value, StringComparer.Ordinal).ToImmutableArray(),
-            selectedTools.OrderBy(id => id.Value, StringComparer.Ordinal).ToImmutableArray(),
-            selectedClassId, plainText, CreateDisplayTitle(selectedClass), selectedClass?.IconId ?? "grid.icon.unknown",
+            IntakeScope, ticketDraft.GameId,
+            modIds,
+            toolIds,
+            ticketDraft.Class?.Id.Value, composerText, CreateDisplayTitle(selectedClass), selectedClass?.IconId ?? "grid.icon.unknown",
             readiness.Status, readiness.Detail,
             CanSubmit: hasRequiredIntake &&
                 readiness.Status is AssistantDraftReadiness.ReadyForDeterministicCollection or AssistantDraftReadiness.UnsupportedCoverage &&
                 executionService?.IsAvailable == true && LifecycleStage == AssistantLifecycleStage.Idle,
-            InstallationId: selectedInstallationId, ProfileId: selectedProfileId, Problem: plainText,
-            ExpectedBehavior: expectedBehavior, ReproductionOrLocation: reproductionOrLocation, DesiredOutcome: desiredOutcome,
-            Attachments: attachments, AuthorizationScope: authorizationScope, CapabilityId: selectedCapabilityId);
+            InstallationId: ticketDraft.InstallationId, ProfileId: ticketDraft.ProfileId, Problem: legacyProblem,
+            ExpectedBehavior: legacyExpectedBehavior, ReproductionOrLocation: legacyReproductionOrLocation, DesiredOutcome: legacyDesiredOutcome,
+            Attachments: legacyAttachments, CapabilityId: selectedCapabilityId,
+            GameSelectionSource: ToAssistantSelectionSource(ticketDraft.GameProvenance),
+            InstallationSelectionSource: ToAssistantSelectionSource(ticketDraft.InstallationProvenance),
+            ProfileSelectionSource: ToAssistantSelectionSource(ticketDraft.ProfileProvenance),
+            ClassSelectionSource: ToAssistantSelectionSource(ticketDraft.Class?.Provenance));
 
         return new(IsExpanded, RequestedPanelWidth, Mode, ProviderAvailability, LifecycleStage, Context,
             executionService?.IsAvailable == true
                 ? "Deterministic request execution is available. Chat and AI remain unconfigured."
                 : "Deterministic request intake is available. No production execution service is connected.",
-            Surface, IsFormVisible, IsFullScreen, draft,
-            catalog.Games.Select(game => new AssistantGameOption(game.Id, game.Name)).ToImmutableArray(),
+            Surface, IsFormVisible, IsFullScreen, ticketDraft, canonicalReadiness, composerText, draft,
+            GetGameOptions(),
             GetModOptions(), GetToolOptions(), classes, tasks.Select(task => task.Summary).ToImmutableArray(),
-            pendingAuthorization, activeTask, executionError, GetInstallationOptions(), GetProfileOptions());
+            pendingAuthorization, activeTask, executionError, GetInstallationOptions(), GetProfileOptions(),
+            GetProblemOptions(), GetTimingOptions(), GetGoalOptions(), GetConfiguredToolOptions(),
+            GetReferenceContextOptions(), preview);
     }
 
     private void PrefillFromContext(ApplicationContextSnapshot context)
     {
-        if (IntakeScope != AssistantIntakeScope.Game) return;
-        if (selectedGameId is null && context.GameId is not null) selectedGameId = context.GameId;
+        if (IntakeScope != AssistantIntakeScope.Game || context.Surface != ApplicationSurface.GameWorkspace) return;
+        if (ticketDraft.GameId is null && context.GameId is not null &&
+            GetGameOptions().Any(game => game.Id == context.GameId.Value))
+        {
+            UpdateTicket(draft => draft with
+            {
+                GameId = context.GameId,
+                GameProvenance = TicketSelectionProvenance.ContextInherited,
+            });
+        }
         PrefillInstallationAndProfile(context);
-        if (selectedGameId == context.GameId)
-            foreach (var modId in context.ModIds) selectedMods.Add(modId);
+        SelectOnlyRegisteredClassForSelectedGame();
+        if (ticketDraft.GameId == context.GameId && ticketDraft.ProfileId == context.ProfileId)
+        {
+            var options = GetModOptions().ToDictionary(value => value.Id);
+            var existing = Normalize(ticketDraft.Mods);
+            var ids = existing.Select(value => value.ModId).ToHashSet();
+            var inherited = context.ModIds
+                .Where(id => options.ContainsKey(id) && ids.Add(id))
+                .Select(id => new TicketModSelection(id, options[id].Name, TicketSelectionProvenance.ContextInherited));
+            var combined = existing.AddRange(inherited);
+            if (!existing.SequenceEqual(combined)) UpdateTicket(draft => draft with { Mods = combined });
+        }
     }
 
     private void PrefillInstallationAndProfile(ApplicationContextSnapshot context)
     {
-        if (selectedGameId != context.GameId) return;
-        if (selectedInstallationId is null && context.InstallationId is not null &&
-            GetInstallationOptions().Any(item => item.Id == context.InstallationId.Value))
-            selectedInstallationId = context.InstallationId;
-        if (selectedProfileId is null && selectedInstallationId == context.InstallationId && context.ProfileId is not null &&
-            GetProfileOptions().Any(item => item.Id == context.ProfileId.Value))
-            selectedProfileId = context.ProfileId;
+        if (context.Surface != ApplicationSurface.GameWorkspace || ticketDraft.GameId != context.GameId) return;
+        var profile = context.ProfileId is ProfileId contextProfileId && context.InstallationId is InstallationId contextInstallationId
+            ? GetProfileOptions().FirstOrDefault(item => item.Id == contextProfileId && item.InstallationId == contextInstallationId)
+            : null;
+        if (profile is not null && ticketDraft.InstallationId is null && ticketDraft.ProfileId is null)
+        {
+            UpdateTicket(draft => draft with
+            {
+                InstallationId = profile.InstallationId,
+                InstallationProvenance = TicketSelectionProvenance.ContextInherited,
+                ProfileId = profile.Id,
+                ProfileProvenance = TicketSelectionProvenance.ContextInherited,
+            });
+        }
     }
+
+    private ImmutableArray<AssistantGameOption> GetGameOptions() => catalog.Games
+        .Where(game => GetConnectedInstallations(game).Length > 0)
+        .Select(game => new AssistantGameOption(game.Id, game.Name))
+        .OrderBy(game => game.Name, StringComparer.OrdinalIgnoreCase)
+        .ToImmutableArray();
+
+    private ImmutableArray<ManagedInstallation> GetConnectedInstallations(ManagedGame game) =>
+        catalog.SourceKind == CatalogSourceKind.Mock
+            ? game.Installations
+            : game.Installations
+                .Where(installation => installation.Metadata.Provenance == InstallationProvenanceKind.ConnectedReference &&
+                    installation.Metadata.ReferenceId is not null)
+                .ToImmutableArray();
 
     private ImmutableArray<AssistantInstallationOption> GetInstallationOptions()
     {
-        var game = selectedGameId is null ? null : catalog.Games.FirstOrDefault(candidate => candidate.Id == selectedGameId.Value);
-        return game?.Installations.Select(item => new AssistantInstallationOption(item.Id, game.Id, item.Name)).ToImmutableArray() ?? [];
+        var game = ticketDraft.GameId is null ? null : catalog.Games.FirstOrDefault(candidate => candidate.Id == ticketDraft.GameId.Value);
+        return game is null ? [] : GetConnectedInstallations(game)
+            .Select(item => new AssistantInstallationOption(item.Id, game.Id, item.Name))
+            .ToImmutableArray();
     }
 
     private ImmutableArray<AssistantProfileOption> GetProfileOptions()
     {
-        if (selectedGameId is null || selectedInstallationId is null) return [];
-        var installation = catalog.Games.FirstOrDefault(game => game.Id == selectedGameId.Value)?.Installations
-            .FirstOrDefault(item => item.Id == selectedInstallationId.Value);
-        return installation?.Profiles.Select(item => new AssistantProfileOption(item.Id, installation.Id, item.Name)).ToImmutableArray() ?? [];
+        if (ticketDraft.GameId is null) return [];
+        var game = catalog.Games.FirstOrDefault(candidate => candidate.Id == ticketDraft.GameId.Value);
+        if (game is null) return [];
+        var profiles = GetConnectedInstallations(game)
+            .SelectMany(installation => installation.Profiles.Select(profile => new
+            {
+                Profile = profile,
+                Installation = installation,
+            }))
+            .ToArray();
+        var duplicateNames = profiles.GroupBy(item => item.Profile.Name, StringComparer.OrdinalIgnoreCase)
+            .Where(group => group.Count() > 1)
+            .Select(group => group.Key)
+            .ToHashSet(StringComparer.OrdinalIgnoreCase);
+        return profiles
+            .Select(item => new AssistantProfileOption(
+                item.Profile.Id,
+                item.Installation.Id,
+                item.Profile.Name,
+                item.Installation.Name,
+                duplicateNames.Contains(item.Profile.Name)))
+            .OrderBy(item => item.Name, StringComparer.OrdinalIgnoreCase)
+            .ThenBy(item => item.InstallationName, StringComparer.OrdinalIgnoreCase)
+            .ToImmutableArray();
     }
 
     private ImmutableArray<AssistantModOption> GetModOptions()
+        => GetModOptions(ticketDraft.GameId, ticketDraft.InstallationId, ticketDraft.ProfileId);
+
+    private ImmutableArray<AssistantModOption> GetModOptions(
+        GameId? gameId,
+        InstallationId? installationId,
+        ProfileId? profileId)
     {
-        var game = selectedGameId is null ? null : catalog.Games.FirstOrDefault(candidate => candidate.Id == selectedGameId.Value);
+        var game = gameId is null ? null : catalog.Games.FirstOrDefault(candidate => candidate.Id == gameId.Value);
         if (game is null) return [];
-        var installation = selectedInstallationId is null ? null : game.Installations.FirstOrDefault(candidate => candidate.Id == selectedInstallationId.Value);
-        var profile = installation is null || selectedProfileId is null ? null : installation.Profiles.FirstOrDefault(candidate => candidate.Id == selectedProfileId.Value);
+        var installation = installationId is null ? null : game.Installations.FirstOrDefault(candidate => candidate.Id == installationId.Value);
+        var profile = installation is null || profileId is null ? null : installation.Profiles.FirstOrDefault(candidate => candidate.Id == profileId.Value);
         return profile?.Mods.Where(mod => mod.Kind != ModEntryKind.Separator)
             .Select(mod => new AssistantModOption(mod.Id, mod.Name, mod.IsEnabled, mod.Kind)).ToImmutableArray() ?? [];
     }
 
     private ImmutableArray<AssistantToolOption> GetToolOptions()
     {
-        if (!registeredTools.IsEmpty) return selectedGameId is null ? [] : registeredTools;
-        var game = selectedGameId is null ? null : catalog.Games.FirstOrDefault(candidate => candidate.Id == selectedGameId.Value);
+        if (!registeredTools.IsEmpty)
+            return ticketDraft.GameId is null ? [] : registeredTools
+                .Where(tool => tool.GameCompatibility.Any(compatibility => compatibility.GameId == ticketDraft.GameId.Value))
+                .ToImmutableArray();
+        var game = ticketDraft.GameId is null ? null : catalog.Games.FirstOrDefault(candidate => candidate.Id == ticketDraft.GameId.Value);
         if (game is null) return [];
-        var installation = selectedInstallationId is null ? null : game.Installations.FirstOrDefault(candidate => candidate.Id == selectedInstallationId.Value);
+        var installation = ticketDraft.InstallationId is null ? null : game.Installations.FirstOrDefault(candidate => candidate.Id == ticketDraft.InstallationId.Value);
         return game.ToolCatalog.Tools.Select(tool =>
         {
             var configuration = installation?.ToolConfigurations.FirstOrDefault(candidate => candidate.ToolId == tool.Id);
+            var evidence = tool.AdapterIds.Select(adapter => $"catalog:{game.Id.Value}:{adapter.Value}").ToImmutableArray();
             return new AssistantToolOption(tool.Id, tool.Name, configuration?.Availability ?? AvailabilityState.Unavailable,
-                configuration?.UnavailableReason ?? "Not configured for the selected installation.");
+                configuration?.UnavailableReason ?? "Not configured for the selected installation.",
+                [new AssistantToolGameCompatibility(game.Id, evidence, "Canonical game-owned tool catalog")]);
         }).ToImmutableArray();
     }
+
+    private ImmutableArray<AssistantProblemOption> GetProblemOptions() => ticketDraft.Class is null
+        ? []
+        : Normalize(taxonomy.Problems)
+            .Where(option => option.ClassId == ticketDraft.Class.Id)
+            .OrderBy(option => option.DisplayName, StringComparer.OrdinalIgnoreCase)
+            .ThenBy(option => option.Id.Value, StringComparer.Ordinal)
+            .ToImmutableArray();
+
+    private ImmutableArray<AssistantTimingOption> GetTimingOptions() => ticketDraft.Class is null
+        ? []
+        : Normalize(taxonomy.Timings)
+            .Where(option => option.ClassId == ticketDraft.Class.Id)
+            .OrderBy(option => option.DisplayName, StringComparer.OrdinalIgnoreCase)
+            .ThenBy(option => option.Id.Value, StringComparer.Ordinal)
+            .ToImmutableArray();
+
+    private ImmutableArray<AssistantGoalOption> GetGoalOptions() => Normalize(taxonomy.Goals)
+        .OrderBy(option => option.DisplayName, StringComparer.OrdinalIgnoreCase)
+        .ThenBy(option => option.Id.Value, StringComparer.Ordinal)
+        .ToImmutableArray();
+
+    private ImmutableArray<AssistantConfiguredToolOption> GetConfiguredToolOptions()
+    {
+        var scope = GetCurrentUserToolScope();
+        if (scope is null || userTools is null) return [];
+        return userTools.ForContext(scope)
+            .Select(configuration =>
+            {
+                var context = ToConfiguredToolContext(configuration);
+                return new AssistantConfiguredToolOption(
+                    configuration.Id,
+                    configuration.Title,
+                    configuration.Scope,
+                    configuration.IsRunnable,
+                    context.IdentityStatus,
+                    context.CompatibilityStatus,
+                    context.IntegrationStatus,
+                    context.InvestigationCapabilityStatus);
+            })
+            .ToImmutableArray();
+    }
+
+    private ImmutableArray<TicketReferenceContext> GetReferenceContextOptions()
+    {
+        var modIds = Normalize(ticketDraft.Mods).Select(value => value.ModId).ToHashSet();
+        return Normalize(taxonomy.ReferenceContexts)
+            .Where(value => value.GameId is null || value.GameId == ticketDraft.GameId)
+            .Where(value => value.ModId is null || modIds.Contains(value.ModId.Value))
+            .OrderBy(value => ReferenceKindPriority(value.Kind))
+            .ThenBy(value => value.DisplayName, StringComparer.OrdinalIgnoreCase)
+            .ThenBy(value => value.Id.Value, StringComparer.Ordinal)
+            .ToImmutableArray();
+    }
+
+    private AssistantTicketPreview CreateTicketPreview()
+    {
+        var contributions = ImmutableArray.CreateBuilder<AssistantTicketNameContribution>();
+        var phrases = new List<string>();
+        var references = Normalize(ticketDraft.ReferenceContext)
+            .OrderBy(value => ReferenceKindPriority(value.Kind))
+            .ThenBy(value => value.DisplayName, StringComparer.OrdinalIgnoreCase)
+            .ThenBy(value => value.Id.Value, StringComparer.Ordinal)
+            .Take(2)
+            .ToArray();
+
+        foreach (var reference in references)
+        {
+            var phrase = CompactTitlePhrase(reference.DisplayName, 4);
+            var kind = ReferenceKindLabel(reference.Kind);
+            if (!phrase.Contains(kind, StringComparison.OrdinalIgnoreCase)) phrase = $"{phrase} {kind}";
+            phrases.Add(phrase);
+            contributions.Add(new(reference.Kind.ToString(), reference.Id.Value));
+        }
+
+        if (references.Length == 0 && ticketDraft.GameId is GameId gameId &&
+            catalog.Games.FirstOrDefault(value => value.Id == gameId) is { } game)
+        {
+            phrases.Add(CompactTitlePhrase(game.Name, 4));
+            contributions.Add(new("Game", gameId.Value));
+        }
+
+        if (ticketDraft.Problem is { } problem)
+        {
+            phrases.Add(CompactTitlePhrase(problem.DisplayName, 4));
+            contributions.Add(new("Problem", problem.Id.Value));
+        }
+        else if (ticketDraft.Class is { } selectedClass)
+        {
+            phrases.Add(CompactTitlePhrase(selectedClass.DisplayName, 4));
+            contributions.Add(new("Class", selectedClass.Id.Value));
+        }
+
+        var title = string.Join(' ', phrases.Where(value => !string.IsNullOrWhiteSpace(value)));
+        if (string.IsNullOrWhiteSpace(title)) title = "New investigation";
+        return new(
+            title,
+            ticketDraft.Class?.IconId ?? "grid.icon.unknown",
+            AssistantTicketNameProvenance.DeterministicStructuredSelections,
+            contributions.ToImmutable());
+    }
+
+    private static int ReferenceKindPriority(TicketReferenceContextKind kind) => kind switch
+    {
+        TicketReferenceContextKind.MissionOrQuest => 0,
+        TicketReferenceContextKind.Location => 1,
+        TicketReferenceContextKind.Entity => 2,
+        TicketReferenceContextKind.Item => 3,
+        _ => int.MaxValue,
+    };
+
+    private static string ReferenceKindLabel(TicketReferenceContextKind kind) => kind switch
+    {
+        TicketReferenceContextKind.MissionOrQuest => "Mission",
+        TicketReferenceContextKind.Location => "Location",
+        TicketReferenceContextKind.Entity => "Entity",
+        TicketReferenceContextKind.Item => "Item",
+        _ => "Context",
+    };
+
+    private static string CompactTitlePhrase(string value, int maximumWords) => string.Join(' ', TitleWords(value).Take(maximumWords));
 
     private (AssistantDraftReadiness Status, string Detail) ResolveReadiness(AssistantClassOption? selectedClass)
     {
         if (IntakeScope == AssistantIntakeScope.Grid)
             return (AssistantDraftReadiness.RuntimeUnavailable, "GRID development intake has no repository-owned registry or execution route yet.");
-        if (selectedGameId is null || selectedClass is null)
+        if (ticketDraft.GameId is null || selectedClass is null)
             return (AssistantDraftReadiness.Incomplete, "Choose a game and Class to complete the structured request.");
-        if (selectedInstallationId is null || selectedProfileId is null)
+        if (ticketDraft.InstallationId is null || ticketDraft.ProfileId is null)
             return (AssistantDraftReadiness.Incomplete, "Choose a connected installation and profile to establish exact collection context.");
-        if (string.IsNullOrWhiteSpace(plainText))
+        if (!SupportsSelectedGame(selectedClass))
+            return (AssistantDraftReadiness.UnsupportedCoverage, $"{selectedClass.DisplayName} does not support the selected game.");
+        if (string.IsNullOrWhiteSpace(legacyProblem))
             return (AssistantDraftReadiness.Incomplete, "Describe the problem to preserve the investigation claim.");
         var gameplayCapabilities = selectedClass.GameplayCapabilities.IsDefault ? [] : selectedClass.GameplayCapabilities;
         if (!gameplayCapabilities.IsEmpty && string.IsNullOrWhiteSpace(selectedCapabilityId))
             return (AssistantDraftReadiness.Incomplete, "Choose the exact gameplay capability to assess.");
         if (!selectedClass.IsRegistered)
             return (AssistantDraftReadiness.UnsupportedCoverage, $"{selectedClass.DisplayName} has no registered deterministic coverage; the request can be preserved with CapabilityRequired.");
-        if (selectedMods.Count < selectedClass.MinimumMods)
-            return (AssistantDraftReadiness.Incomplete, $"This Class recipe is missing {selectedClass.MinimumMods - selectedMods.Count} required mod selection(s); submission will preserve the gap.");
-        if (selectedTools.Count < selectedClass.MinimumTools)
-            return (AssistantDraftReadiness.Incomplete, $"This Class recipe is missing {selectedClass.MinimumTools - selectedTools.Count} required tool selection(s); submission will preserve the gap.");
-        if (!selectedClass.AllowedToolIds.IsDefault && selectedTools.Any(id => !selectedClass.AllowedToolIds.Contains(id)))
+        var selectedMods = Normalize(ticketDraft.Mods);
+        var selectedTools = Normalize(ticketDraft.IntegratedTools);
+        if (selectedMods.Length < selectedClass.MinimumMods)
+            return (AssistantDraftReadiness.Incomplete, $"This Class recipe is missing {selectedClass.MinimumMods - selectedMods.Length} required mod selection(s); submission will preserve the gap.");
+        if (selectedTools.Length < selectedClass.MinimumTools)
+            return (AssistantDraftReadiness.Incomplete, $"This Class recipe is missing {selectedClass.MinimumTools - selectedTools.Length} required tool selection(s); submission will preserve the gap.");
+        if (!selectedClass.AllowedToolIds.IsDefault && selectedTools.Any(selection => !selectedClass.AllowedToolIds.Contains(selection.ToolId)))
             return (AssistantDraftReadiness.UnsupportedCoverage, "One or more selected tools are outside this Class recipe's registered coverage.");
-        if (selectedTools.Any(id => !GetToolOptions().Any(tool => tool.Id == id && tool.Availability == AvailabilityState.Available)))
+        if (selectedTools.Any(selection => !GetToolOptions().Any(tool => tool.Id == selection.ToolId && tool.Availability == AvailabilityState.Available)))
             return (AssistantDraftReadiness.RuntimeUnavailable, "One or more selected tools are unavailable; submission will preserve the missing runtime capability.");
         return executionService?.IsAvailable == true
             ? (AssistantDraftReadiness.ReadyForDeterministicCollection, "Structured request complete and ready for exact read-scope review.")
             : (AssistantDraftReadiness.RuntimeUnavailable, "Structured request complete; no production execution service is connected.");
     }
+
+    private void SelectOnlyRegisteredClassForSelectedGame()
+    {
+        if (ticketDraft.GameId is null || ticketDraft.Class is not null) return;
+        var engineGameId = ToEngineGameId(ticketDraft.GameId.Value);
+        var supported = classes.Where(option => option.IsRegistered &&
+            !option.SupportedGameIds.IsDefaultOrEmpty &&
+            option.SupportedGameIds.Contains(engineGameId, StringComparer.Ordinal)).ToArray();
+        if (supported.Length == 1)
+        {
+            UpdateTicket(draft => draft with
+            {
+                Class = ToTicketClassSelection(supported[0], TicketSelectionProvenance.ContextInherited),
+            });
+        }
+    }
+
+    private bool SupportsSelectedGame(AssistantClassOption selectedClass)
+    {
+        if (ticketDraft.GameId is null || selectedClass.SupportedGameIds.IsDefaultOrEmpty) return true;
+        return selectedClass.SupportedGameIds.Contains(ToEngineGameId(ticketDraft.GameId.Value), StringComparer.Ordinal);
+    }
+
+    private static string ToEngineGameId(GameId gameId) => gameId.Value switch
+    {
+        "game.skyrim-special-edition" => "skyrimspecialedition",
+        "game.grandtheftautov-enhanced" => "grandtheftautov-enhanced",
+        "game.grandtheftautov-legacy" => "grandtheftautov-legacy",
+        _ => gameId.Value,
+    };
 
     private string CreateDisplayTitle(AssistantClassOption? selectedClass)
     {
@@ -743,10 +1167,11 @@ public sealed class AssistantSessionState
             : selectedClass.GameplayCapabilities.FirstOrDefault(option => option.Id == selectedCapabilityId);
         if (selectedCapability is not null) return string.Join(' ', TitleWords(selectedCapability.DisplayName).Take(5));
         var classWords = TitleWords(selectedClass.DisplayName).Take(4).ToArray();
-        var selectedMod = GetModOptions().FirstOrDefault(option => selectedMods.Contains(option.Id));
-        var selectedGame = selectedGameId is null
+        var selectedModIds = Normalize(ticketDraft.Mods).Select(value => value.ModId).ToHashSet();
+        var selectedMod = GetModOptions().FirstOrDefault(option => selectedModIds.Contains(option.Id));
+        var selectedGame = ticketDraft.GameId is null
             ? null
-            : catalog.Games.FirstOrDefault(game => game.Id == selectedGameId.Value);
+            : catalog.Games.FirstOrDefault(game => game.Id == ticketDraft.GameId.Value);
         var subject = selectedMod?.Name ?? selectedGame?.Name;
         if (string.IsNullOrWhiteSpace(subject)) return string.Join(' ', classWords.Take(5));
 
@@ -782,12 +1207,16 @@ public sealed class AssistantSessionState
         var authorizedMods = request.Draft.Mods.Select(item => item.ModId).ToHashSet();
         var authorizedTools = request.Draft.Tools.Select(item => item.ToolId).ToHashSet();
         if (game is null || installation is null || !profileExists ||
-            selectedGameId != request.Draft.GameId || selectedInstallationId != request.Draft.InstallationId || selectedProfileId != request.Draft.ProfileId ||
-            selectedClassId != request.Draft.ClassId || plainText != request.Draft.VerbatimUserText ||
-            expectedBehavior != request.Draft.ExpectedBehavior || reproductionOrLocation != request.Draft.ReproductionOrLocation ||
-            desiredOutcome != request.Draft.DesiredOutcome || authorizationScope != request.Draft.AuthorizationScope ||
-            !selectedMods.SetEquals(authorizedMods) || !selectedTools.SetEquals(authorizedTools) ||
-            !attachments.SequenceEqual(Normalize(request.Draft.Attachments)))
+            ticketDraft.GameId != request.Draft.GameId || ticketDraft.InstallationId != request.Draft.InstallationId || ticketDraft.ProfileId != request.Draft.ProfileId ||
+            ticketDraft.Class?.Id.Value != request.Draft.ClassId || legacyProblem != request.Draft.VerbatimUserText ||
+            legacyExpectedBehavior != request.Draft.ExpectedBehavior || legacyReproductionOrLocation != request.Draft.ReproductionOrLocation ||
+            legacyDesiredOutcome != request.Draft.DesiredOutcome || ToAssistantSelectionSource(ticketDraft.GameProvenance) != request.Draft.GameSelectionSource ||
+            ToAssistantSelectionSource(ticketDraft.InstallationProvenance) != request.Draft.InstallationSelectionSource ||
+            ToAssistantSelectionSource(ticketDraft.ProfileProvenance) != request.Draft.ProfileSelectionSource ||
+            ToAssistantSelectionSource(ticketDraft.Class?.Provenance) != request.Draft.ClassSelectionSource ||
+            !Normalize(ticketDraft.Mods).Select(value => value.ModId).ToHashSet().SetEquals(authorizedMods) ||
+            !Normalize(ticketDraft.IntegratedTools).Select(value => value.ToolId).ToHashSet().SetEquals(authorizedTools) ||
+            !GetLegacyAttachments().SequenceEqual(Normalize(request.Draft.Attachments)))
             throw new InvalidOperationException("The selected context or investigation intake changed after authorization review. Prepare a new request.");
     }
 
@@ -835,6 +1264,231 @@ public sealed class AssistantSessionState
         tasks = tasks.OrderBy(candidate => candidate.Summary.CreatedAtUtc).ToImmutableArray();
     }
 
+    private static InvestigationTicketDraft CreateEmptyTicketDraft() => new(
+        InvestigationTicketDraft.CurrentSchemaVersion,
+        new InvestigationId($"investigation.{Guid.NewGuid():N}"),
+        new TicketId($"ticket.{Guid.NewGuid():N}"),
+        1,
+        null,
+        null,
+        null,
+        Mods: [],
+        IntegratedTools: [],
+        ConfiguredToolContext: [],
+        ReferenceContext: [],
+        UserContext: [],
+        Attachments: [],
+        CanonicalSelections: []);
+
+    private void UpdateTicket(Func<InvestigationTicketDraft, InvestigationTicketDraft> update)
+    {
+        ArgumentNullException.ThrowIfNull(update);
+        var candidate = update(ticketDraft);
+        ArgumentNullException.ThrowIfNull(candidate);
+        if (candidate == ticketDraft) return;
+        candidate = candidate with { Revision = checked(ticketDraft.Revision + 1) };
+        InvestigationTicketDraftPolicy.Validate(candidate);
+        ticketDraft = candidate;
+    }
+
+    private static TicketClassSelection ToTicketClassSelection(
+        AssistantClassOption option,
+        TicketSelectionProvenance provenance) => new(
+            new TicketClassId(option.Id),
+            option.DisplayName,
+            option.IconId,
+            provenance);
+
+    private static AssistantSelectionSource ToAssistantSelectionSource(TicketSelectionProvenance? provenance) => provenance switch
+    {
+        TicketSelectionProvenance.ContextInherited => AssistantSelectionSource.ContextInherited,
+        TicketSelectionProvenance.DeterministicallyResolved => AssistantSelectionSource.DerivedFromProfile,
+        _ => AssistantSelectionSource.UserSelected,
+    };
+
+    private TicketAttachmentReference ToTicketAttachment(AssistantAttachmentDraft attachment)
+    {
+        var path = Path.GetFullPath(attachment.Path);
+        var digest = Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(path.ToUpperInvariant()))).ToLowerInvariant();
+        return new(
+            new TicketAttachmentId($"attachment.sha256.{digest}"),
+            attachment.OriginalName,
+            path,
+            attachment.MediaType,
+            attachment.SizeBytes,
+            TicketSelectionProvenance.ExplicitUserSelection);
+    }
+
+    private ImmutableArray<AssistantAttachmentDraft> GetLegacyAttachments() => Normalize(ticketDraft.Attachments)
+        .Select(value => new AssistantAttachmentDraft(
+            value.ResourceReference,
+            value.OriginalName,
+            value.MediaType,
+            value.SizeBytes))
+        .ToImmutableArray();
+
+    private bool IsIntegratedToolCompatible(ToolId toolId, GameId gameId) =>
+        registeredTools.Any(tool => tool.Id == toolId &&
+            tool.GameCompatibility.Any(compatibility => compatibility.GameId == gameId));
+
+    private UserToolScope? GetCurrentUserToolScope() =>
+        ticketDraft.GameId is GameId gameId && ticketDraft.InstallationId is InstallationId installationId
+            ? new UserToolScope(gameId, installationId, ticketDraft.ProfileId)
+            : null;
+
+    private TicketConfiguredToolContext ToConfiguredToolContext(UserToolLaunchConfiguration configuration)
+    {
+        var knowledge = userTools?.FindKnowledge(configuration.KnowledgeId);
+        var identityResolved = knowledge is
+        {
+            CanonicalToolId: not null,
+            State: >= InstalledToolIdentityState.Identified,
+        };
+        var compatibilityResolved = ticketDraft.GameId is GameId gameId &&
+            knowledge is { State: >= InstalledToolIdentityState.CompatibilityResolved } &&
+            knowledge.Compatibility.Any(value => value.GameId == gameId && value.Disposition != ToolCompatibilityDisposition.Unresolved);
+        var integrationAvailable = identityResolved && knowledge?.CanonicalToolId is ToolId toolId &&
+            ticketDraft.GameId is GameId selectedGameId && IsIntegratedToolCompatible(toolId, selectedGameId);
+
+        return new(
+            configuration.Id,
+            configuration.Title,
+            configuration.Scope,
+            configuration.BinaryPath,
+            configuration.Fingerprint,
+            configuration.IsRunnable,
+            identityResolved ? ConfiguredToolIdentityStatus.Resolved : ConfiguredToolIdentityStatus.Unresolved,
+            compatibilityResolved ? ConfiguredToolCompatibilityStatus.Resolved : ConfiguredToolCompatibilityStatus.Unresolved,
+            integrationAvailable ? ConfiguredToolIntegrationStatus.Available : ConfiguredToolIntegrationStatus.Unavailable,
+            integrationAvailable ? ConfiguredToolInvestigationCapabilityStatus.Available : ConfiguredToolInvestigationCapabilityStatus.None,
+            TicketSelectionProvenance.ExplicitUserSelection);
+    }
+
+    private static ImmutableArray<TicketConfiguredToolContext> FilterConfiguredToolContext(
+        ImmutableArray<TicketConfiguredToolContext> values,
+        UserToolScope? scope) => scope is null
+            ? []
+            : Normalize(values).Where(value => value.Scope.IsVisibleIn(scope)).ToImmutableArray();
+
+    private static ImmutableArray<TicketReferenceContext> FilterReferenceContextForMods(
+        ImmutableArray<TicketReferenceContext> values,
+        ImmutableArray<TicketModSelection> mods)
+    {
+        var ids = Normalize(mods).Select(value => value.ModId).ToHashSet();
+        return Normalize(values).Where(value => value.ModId is null || ids.Contains(value.ModId.Value)).ToImmutableArray();
+    }
+
+    private void EnsureReferenceContextCompatible(TicketReferenceContext context)
+    {
+        if (context.GameId is GameId gameId && ticketDraft.GameId != gameId)
+            throw new ArgumentException("Reference context belongs to a different canonical Game.", nameof(context));
+        if (context.ModId is ModId modId && !Normalize(ticketDraft.Mods).Any(value => value.ModId == modId))
+            throw new ArgumentException("Mod-scoped reference context requires that exact selected Mod.", nameof(context));
+    }
+
+    private void ReconcileInheritedContext(ApplicationContextSnapshot context)
+    {
+        var hasWorkspace = context.Surface == ApplicationSurface.GameWorkspace;
+        var inheritedGameChanged = ticketDraft.GameProvenance == TicketSelectionProvenance.ContextInherited &&
+            (!hasWorkspace || ticketDraft.GameId != context.GameId);
+        if (inheritedGameChanged)
+        {
+            UpdateTicket(draft => draft with
+            {
+                GameId = null,
+                GameProvenance = null,
+                InstallationId = null,
+                InstallationProvenance = null,
+                ProfileId = null,
+                ProfileProvenance = null,
+                Mods = [],
+                IntegratedTools = [],
+                ConfiguredToolContext = [],
+                ReferenceContext = Normalize(draft.ReferenceContext)
+                    .Where(value => value.GameId is null && value.ModId is null)
+                    .ToImmutableArray(),
+                CanonicalSelections = [],
+            });
+            return;
+        }
+
+        var inheritedProfileChanged =
+            (ticketDraft.InstallationProvenance == TicketSelectionProvenance.ContextInherited ||
+             ticketDraft.ProfileProvenance == TicketSelectionProvenance.ContextInherited) &&
+            (!hasWorkspace || ticketDraft.GameId != context.GameId ||
+             ticketDraft.InstallationId != context.InstallationId || ticketDraft.ProfileId != context.ProfileId);
+        if (!inheritedProfileChanged) return;
+        UpdateTicket(draft => draft with
+        {
+            InstallationId = null,
+            InstallationProvenance = null,
+            ProfileId = null,
+            ProfileProvenance = null,
+            Mods = [],
+            ConfiguredToolContext = [],
+            ReferenceContext = Normalize(draft.ReferenceContext).Where(value => value.ModId is null).ToImmutableArray(),
+            CanonicalSelections = [],
+        });
+    }
+
+    private void PruneIncompatibleTicketContext()
+    {
+        var gameExists = ticketDraft.GameId is GameId gameId && GetGameOptions().Any(value => value.Id == gameId);
+        if (ticketDraft.GameId is not null && !gameExists)
+        {
+            UpdateTicket(draft => draft with
+            {
+                GameId = null,
+                GameProvenance = null,
+                InstallationId = null,
+                InstallationProvenance = null,
+                ProfileId = null,
+                ProfileProvenance = null,
+                Mods = [],
+                IntegratedTools = [],
+                ConfiguredToolContext = [],
+                ReferenceContext = Normalize(draft.ReferenceContext)
+                    .Where(value => value.GameId is null && value.ModId is null)
+                    .ToImmutableArray(),
+                CanonicalSelections = [],
+            });
+            return;
+        }
+
+        InstallationId? installationId = ticketDraft.InstallationId is InstallationId currentInstallation &&
+            GetInstallationOptions().Any(value => value.Id == currentInstallation)
+                ? currentInstallation
+                : null;
+        var profile = ticketDraft.ProfileId is ProfileId profileId && installationId is not null
+            ? GetProfileOptions().FirstOrDefault(value => value.Id == profileId && value.InstallationId == installationId)
+            : null;
+        var profileIdValue = profile?.Id;
+        var modOptions = GetModOptions(ticketDraft.GameId, installationId, profileIdValue).ToDictionary(value => value.Id);
+        var mods = Normalize(ticketDraft.Mods)
+            .Where(value => modOptions.ContainsKey(value.ModId))
+            .Select(value => value with { DisplayName = modOptions[value.ModId].Name })
+            .ToImmutableArray();
+        var integratedTools = ticketDraft.GameId is GameId currentGame
+            ? Normalize(ticketDraft.IntegratedTools).Where(value => IsIntegratedToolCompatible(value.ToolId, currentGame)).ToImmutableArray()
+            : [];
+        var scope = ticketDraft.GameId is GameId scopedGame && installationId is InstallationId scopedInstallation
+            ? new UserToolScope(scopedGame, scopedInstallation, profileIdValue)
+            : null;
+        var candidate = ticketDraft with
+        {
+            InstallationId = installationId,
+            InstallationProvenance = installationId is null ? null : ticketDraft.InstallationProvenance,
+            ProfileId = profileIdValue,
+            ProfileProvenance = profileIdValue is null ? null : ticketDraft.ProfileProvenance,
+            Mods = mods,
+            IntegratedTools = integratedTools,
+            ConfiguredToolContext = FilterConfiguredToolContext(ticketDraft.ConfiguredToolContext, scope),
+            ReferenceContext = FilterReferenceContextForMods(ticketDraft.ReferenceContext, mods),
+            CanonicalSelections = installationId is null || profileIdValue is null ? [] : ticketDraft.CanonicalSelections,
+        };
+        if (candidate != ticketDraft) UpdateTicket(_ => candidate);
+    }
+
     private static bool DraftsMatch(AssistantRequestDraft left, AssistantRequestDraft right) =>
         left.GameId == right.GameId && left.InstallationId == right.InstallationId && left.ProfileId == right.ProfileId &&
         left.Mods.SequenceEqual(right.Mods) && left.Tools.SequenceEqual(right.Tools) &&
@@ -842,7 +1496,33 @@ public sealed class AssistantSessionState
         left.VerbatimUserText == right.VerbatimUserText && left.DisplayTitle == right.DisplayTitle &&
         left.ExpectedBehavior == right.ExpectedBehavior && left.ReproductionOrLocation == right.ReproductionOrLocation &&
         left.DesiredOutcome == right.DesiredOutcome && Normalize(left.Attachments).SequenceEqual(Normalize(right.Attachments)) &&
-        left.AuthorizationScope == right.AuthorizationScope && left.CapabilityId == right.CapabilityId;
+        left.CapabilityId == right.CapabilityId && left.GameSelectionSource == right.GameSelectionSource &&
+        left.InstallationSelectionSource == right.InstallationSelectionSource &&
+        left.ProfileSelectionSource == right.ProfileSelectionSource && left.ClassSelectionSource == right.ClassSelectionSource &&
+        Normalize(left.CanonicalSelections).SequenceEqual(Normalize(right.CanonicalSelections)) &&
+        Normalize(left.UnresolvedUserContext).SequenceEqual(Normalize(right.UnresolvedUserContext));
+
+    private void ValidateTaxonomy(AssistantTicketTaxonomy value)
+    {
+        ArgumentNullException.ThrowIfNull(value);
+        var classIds = classes.Select(option => new TicketClassId(option.Id)).ToHashSet();
+        var problems = Normalize(value.Problems);
+        var timings = Normalize(value.Timings);
+        var goals = Normalize(value.Goals);
+        var references = Normalize(value.ReferenceContexts);
+        if (problems.Any(option => string.IsNullOrWhiteSpace(option.DisplayName) || !classIds.Contains(option.ClassId)) ||
+            problems.Select(option => option.Id).Distinct().Count() != problems.Length)
+            throw new ArgumentException("Problem options require unique IDs and a registered Class.", nameof(value));
+        if (timings.Any(option => string.IsNullOrWhiteSpace(option.DisplayName) || !classIds.Contains(option.ClassId)) ||
+            timings.Select(option => option.Id).Distinct().Count() != timings.Length)
+            throw new ArgumentException("Timing options require unique IDs and a registered Class.", nameof(value));
+        if (goals.Any(option => string.IsNullOrWhiteSpace(option.DisplayName)) ||
+            goals.Select(option => option.Id).Distinct().Count() != goals.Length)
+            throw new ArgumentException("Goal options require unique IDs and display names.", nameof(value));
+        if (references.Any(option => string.IsNullOrWhiteSpace(option.DisplayName)) ||
+            references.Select(option => option.Id).Distinct().Count() != references.Length)
+            throw new ArgumentException("Reference-context options require unique IDs and display names.", nameof(value));
+    }
 
     private static ImmutableArray<T> Normalize<T>(ImmutableArray<T> values) => values.IsDefault ? [] : values;
 
@@ -913,12 +1593,5 @@ public sealed class AssistantSessionState
         if (!string.IsNullOrWhiteSpace(draft.DesiredOutcome)) lines.Add($"Desired outcome: {draft.DesiredOutcome}");
         return string.Join("\n", lines);
     }
-
-    private sealed record AssistantSuggestionPreset(
-        string ClassId,
-        string Problem,
-        string ExpectedBehavior,
-        string ReproductionOrLocation,
-        string DesiredOutcome);
 
 }

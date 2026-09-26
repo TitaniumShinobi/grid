@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using Grid.Core.Application;
 
 namespace Grid.Core.Models;
 
@@ -49,9 +50,11 @@ public enum AssistantDraftReadiness
     RuntimeUnavailable,
 }
 
-public enum AssistantAuthorizationScope
+public enum AssistantSelectionSource
 {
-    SelectedInstallationAndProfileReadOnly,
+    UserSelected,
+    ContextInherited,
+    DerivedFromProfile,
 }
 
 public enum AssistantCaseAction
@@ -80,13 +83,22 @@ public sealed record AssistantClassOption(
     int MinimumMods = 0,
     int MinimumTools = 0,
     ImmutableArray<ToolId> AllowedToolIds = default,
-    ImmutableArray<AssistantGameplayCapabilityOption> GameplayCapabilities = default);
+    ImmutableArray<AssistantGameplayCapabilityOption> GameplayCapabilities = default,
+    ImmutableArray<string> SupportedGameIds = default);
 
 public sealed record AssistantGameOption(GameId Id, string Name);
 
 public sealed record AssistantInstallationOption(InstallationId Id, GameId GameId, string Name);
 
-public sealed record AssistantProfileOption(ProfileId Id, InstallationId InstallationId, string Name);
+public sealed record AssistantProfileOption(
+    ProfileId Id,
+    InstallationId InstallationId,
+    string Name,
+    string InstallationName,
+    bool QualifyWithInstallation = false)
+{
+    public string DisplayName => QualifyWithInstallation ? $"{Name} — {InstallationName}" : Name;
+}
 
 public sealed record AssistantModOption(ModId Id, string Name, bool IsEnabled, ModEntryKind Kind);
 
@@ -94,7 +106,66 @@ public sealed record AssistantToolOption(
     ToolId Id,
     string Name,
     AvailabilityState Availability,
-    string? AvailabilityDetail);
+    string? AvailabilityDetail,
+    ImmutableArray<AssistantToolGameCompatibility> GameCompatibility = default);
+
+public sealed record AssistantToolGameCompatibility(
+    GameId GameId,
+    ImmutableArray<string> EvidenceCapabilityIds,
+    string Provenance);
+
+public sealed record AssistantProblemOption(
+    TicketProblemId Id,
+    TicketClassId ClassId,
+    string DisplayName);
+
+public sealed record AssistantTimingOption(
+    TicketTimingId Id,
+    TicketClassId ClassId,
+    string DisplayName);
+
+public sealed record AssistantGoalOption(
+    TicketGoalId Id,
+    string DisplayName);
+
+/// <summary>
+/// Empty-by-default presentation catalog for canonical Ticket selectors. GRID
+/// does not manufacture Problem, Timing, or Goal values when no approved
+/// catalog has been composed.
+/// </summary>
+public sealed record AssistantTicketTaxonomy(
+    ImmutableArray<AssistantProblemOption> Problems,
+    ImmutableArray<AssistantTimingOption> Timings,
+    ImmutableArray<AssistantGoalOption> Goals,
+    ImmutableArray<TicketReferenceContext> ReferenceContexts)
+{
+    public static AssistantTicketTaxonomy Empty { get; } = new([], [], [], []);
+}
+
+public sealed record AssistantConfiguredToolOption(
+    UserToolConfigurationId Id,
+    string DisplayName,
+    UserToolScope Scope,
+    bool IsRunnable,
+    ConfiguredToolIdentityStatus IdentityStatus,
+    ConfiguredToolCompatibilityStatus CompatibilityStatus,
+    ConfiguredToolIntegrationStatus IntegrationStatus,
+    ConfiguredToolInvestigationCapabilityStatus InvestigationCapabilityStatus);
+
+public enum AssistantTicketNameProvenance
+{
+    DeterministicStructuredSelections,
+}
+
+public sealed record AssistantTicketNameContribution(
+    string Kind,
+    string CanonicalId);
+
+public sealed record AssistantTicketPreview(
+    string Name,
+    string IconId,
+    AssistantTicketNameProvenance Provenance,
+    ImmutableArray<AssistantTicketNameContribution> Contributions);
 
 public sealed record AssistantDraftSnapshot(
     AssistantIntakeScope Scope,
@@ -115,8 +186,11 @@ public sealed record AssistantDraftSnapshot(
     string ReproductionOrLocation = "",
     string DesiredOutcome = "",
     ImmutableArray<AssistantAttachmentDraft> Attachments = default,
-    AssistantAuthorizationScope AuthorizationScope = AssistantAuthorizationScope.SelectedInstallationAndProfileReadOnly,
-    string? CapabilityId = null);
+    string? CapabilityId = null,
+    AssistantSelectionSource GameSelectionSource = AssistantSelectionSource.UserSelected,
+    AssistantSelectionSource InstallationSelectionSource = AssistantSelectionSource.UserSelected,
+    AssistantSelectionSource ProfileSelectionSource = AssistantSelectionSource.UserSelected,
+    AssistantSelectionSource ClassSelectionSource = AssistantSelectionSource.UserSelected);
 
 public sealed record AssistantTaskSummary(
     string Id,
@@ -147,8 +221,13 @@ public sealed record AssistantRequestDraft(
     string ReproductionOrLocation = "",
     string DesiredOutcome = "",
     ImmutableArray<AssistantAttachmentDraft> Attachments = default,
-    AssistantAuthorizationScope AuthorizationScope = AssistantAuthorizationScope.SelectedInstallationAndProfileReadOnly,
-    string? CapabilityId = null)
+    string? CapabilityId = null,
+    AssistantSelectionSource GameSelectionSource = AssistantSelectionSource.UserSelected,
+    AssistantSelectionSource InstallationSelectionSource = AssistantSelectionSource.UserSelected,
+    AssistantSelectionSource ProfileSelectionSource = AssistantSelectionSource.UserSelected,
+    AssistantSelectionSource ClassSelectionSource = AssistantSelectionSource.UserSelected,
+    ImmutableArray<CanonicalSelectorSelection> CanonicalSelections = default,
+    ImmutableArray<TicketUserContext> UnresolvedUserContext = default)
 {
     public string Problem => VerbatimUserText;
 }
@@ -169,13 +248,19 @@ public sealed record AssistantCanonicalRequest(
     DateTimeOffset SubmittedAtUtc,
     AssistantRequestDraft Draft);
 
+public sealed record AssistantReadResource(
+    string ResourceType,
+    string ResourceId,
+    ImmutableArray<string> Constraints = default);
+
 public sealed record AssistantReadScope(
     ToolId ToolId,
     string ProviderName,
     string? Adapter,
     string? ObservationMode,
     string Availability,
-    ImmutableArray<string> ExactReadPaths);
+    ImmutableArray<string> ExactReadPaths,
+    ImmutableArray<AssistantReadResource> ExactReadResources = default);
 
 public sealed record AssistantAuthorizationReview(
     string ReviewId,
@@ -430,6 +515,9 @@ public sealed record AssistantSessionSnapshot(
     AssistantSurface Surface,
     bool IsFormVisible,
     bool IsFullScreen,
+    InvestigationTicketDraft TicketDraft,
+    InvestigationTicketReadiness TicketReadiness,
+    string ComposerText,
     AssistantDraftSnapshot Draft,
     ImmutableArray<AssistantGameOption> Games,
     ImmutableArray<AssistantModOption> Mods,
@@ -440,4 +528,10 @@ public sealed record AssistantSessionSnapshot(
     AssistantTaskRecord? ActiveTask,
     string? ExecutionError,
     ImmutableArray<AssistantInstallationOption> Installations = default,
-    ImmutableArray<AssistantProfileOption> Profiles = default);
+    ImmutableArray<AssistantProfileOption> Profiles = default,
+    ImmutableArray<AssistantProblemOption> Problems = default,
+    ImmutableArray<AssistantTimingOption> Timings = default,
+    ImmutableArray<AssistantGoalOption> Goals = default,
+    ImmutableArray<AssistantConfiguredToolOption> ConfiguredTools = default,
+    ImmutableArray<TicketReferenceContext> ReferenceContexts = default,
+    AssistantTicketPreview? TicketPreview = null);

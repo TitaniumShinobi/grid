@@ -44,6 +44,7 @@ public readonly record struct InstallationReferenceId
 
 public readonly record struct ProfileId
 {
+    [JsonConstructor]
     public ProfileId(string value) => Value = DomainIdentifier.Require(value, nameof(value));
 
     public string Value { get; }
@@ -71,6 +72,7 @@ public readonly record struct PluginId
 
 public readonly record struct ToolId
 {
+    [JsonConstructor]
     public ToolId(string value) => Value = DomainIdentifier.Require(value, nameof(value));
 
     public string Value { get; }

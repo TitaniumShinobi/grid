@@ -1,4 +1,4 @@
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
@@ -91,13 +91,33 @@ public sealed class JsonGameInstallationRegistrationStore(string storePath) : IG
             var json=await File.ReadAllTextAsync(storePath,cancellationToken).ConfigureAwait(false);
             var document=JsonSerializer.Deserialize<StoreDocument>(json,JsonOptions) ?? throw new InvalidDataException("Registration store is empty.");
             if(document.SchemaVersion!=1 || document.Registrations is null) throw new InvalidDataException("Registration store schema is unsupported.");
-            var registrations=document.Registrations.ToImmutableArray();Validate(registrations);return new(registrations,[]);
+            var registrations=document.Registrations
+                .Select(MigrateLegacyGameIdentity)
+                .ToImmutableArray();
+            Validate(registrations);
+            return new(registrations,[]);
         }
         catch(OperationCanceledException){throw;}
         catch(Exception exception) when(exception is IOException or UnauthorizedAccessException or JsonException or InvalidDataException or ArgumentException)
         { return new([],[$"Game registrations could not be loaded ({exception.GetType().Name})."]); }
     }
 
+    private static GameInstallationRegistration MigrateLegacyGameIdentity(GameInstallationRegistration registration)
+    {
+        if (!StringComparer.Ordinal.Equals(registration.GameId.Value, "game.grand-theft-auto-v"))
+            return registration;
+
+        var currentGameId = registration.Edition.Trim() switch
+        {
+            "Legacy" => ProductionGridCatalogService.GrandTheftAutoVLegacyId,
+            "Enhanced" => ProductionGridCatalogService.GrandTheftAutoVEnhancedId,
+            _ => registration.GameId,
+        };
+
+        return currentGameId == registration.GameId
+            ? registration
+            : registration with { GameId = currentGameId };
+    }
     private async Task SaveCoreAsync(ImmutableArray<GameInstallationRegistration> registrations,CancellationToken cancellationToken)
     {
         Validate(registrations);

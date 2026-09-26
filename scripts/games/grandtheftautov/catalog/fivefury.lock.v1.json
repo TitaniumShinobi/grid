@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "package": "fivefury",
+  "exactVersion": "0.5.1",
+  "sourceRevision": "75bd2b8b99838bf8ec49afa2a82ba03f557cd584",
+  "sourceArchiveSha256": "721ce66a388c1fed2e402dfa474305e59062c515dcb49b90b855cb0df15532ba",
+  "windowsX64Wheel": "fivefury-0.5.1-cp311-abi3-win_amd64.whl",
+  "windowsX64WheelSha256": "529142f9ffa08443e424d0ef32ddc47e56e1b826698736aaff3341a9ba15972c",
+  "license": "Unlicense",
+  "acquisitionMethodId": "grid.gta-v-enhanced.rpf-member-acquisition",
+  "acquisitionMethodVersion": "4",
+  "legacyReceiptV1MethodVersion": "2"
+}

@@ -23,7 +23,11 @@ public sealed class GridApplicationSession : IDisposable
         IEnumerable<AssistantToolOption>? assistantTools = null,
         IAssistantRequestExecutionService? assistantExecutionService = null,
         WorkspaceSelection? initialSelection = null,
-        IOfflineAlertIndexStore? offlineAlertIndexStore = null)
+        IOfflineAlertIndexStore? offlineAlertIndexStore = null,
+        IUserToolConfigurationStore? userToolConfigurationStore = null,
+        IInstalledToolKnowledgeStore? installedToolKnowledgeStore = null,
+        IUserToolLaunchService? userToolLaunchService = null,
+        AssistantTicketTaxonomy? assistantTicketTaxonomy = null)
     {
         ArgumentNullException.ThrowIfNull(catalog);
         ArgumentNullException.ThrowIfNull(historyStore);
@@ -38,11 +42,27 @@ public sealed class GridApplicationSession : IDisposable
         Environment = environmentService is null ? null : new WorkspaceEnvironmentState(environmentService);
         ToolOutputs = toolOutputService is null ? null : new WorkspaceToolOutputState(toolOutputService);
         OfflineAlerts = offlineAlertIndexStore is null ? null : new OfflineAlertIndexState(offlineAlertIndexStore, timeProvider);
+        if ((userToolConfigurationStore is null) != (installedToolKnowledgeStore is null))
+            throw new ArgumentException("User-tool configuration and knowledge stores must be supplied together.");
+        UserTools = userToolConfigurationStore is null
+            ? null
+            : new UserToolManagerState(userToolConfigurationStore, installedToolKnowledgeStore!);
+        UserToolLaunch = userToolLaunchService is null || UserTools is null
+            ? null
+            : new UserToolLaunchState(userToolLaunchService, UserTools);
         FidelityAudit = fidelityAuditService is null ? null : new FidelityAuditState(fidelityAuditService);
         ExternalLaunch = launchService is null ? null : new WorkspaceLaunchState(launchService, timeProvider);
         SynchronizeEvidenceContexts();
         Context = new ApplicationContextState(Shell, Workspace, LaunchTargets, ToolOutputs);
-        Assistant = new AssistantSessionState(Context.Current, catalog, assistantClasses ?? [], assistantTools, assistantExecutionService, timeProvider);
+        Assistant = new AssistantSessionState(
+            Context.Current,
+            catalog,
+            assistantClasses ?? [],
+            assistantTools,
+            assistantExecutionService,
+            timeProvider,
+            UserTools,
+            assistantTicketTaxonomy);
         History = new HistoryState(historyStore);
     }
 
@@ -61,6 +81,10 @@ public sealed class GridApplicationSession : IDisposable
     public FidelityAuditState? FidelityAudit { get; }
 
     public WorkspaceLaunchState? ExternalLaunch { get; }
+
+    public UserToolManagerState? UserTools { get; }
+
+    public UserToolLaunchState? UserToolLaunch { get; }
 
     public ApplicationContextState Context { get; }
 
