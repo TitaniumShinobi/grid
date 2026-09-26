@@ -43,7 +43,8 @@ public sealed class GtaVPopulationZoneTerminologyAdapter
                     ["nested-rpf7-member"], ["GXT2"], [KnowledgeKind.Location],
                     supportsTerminology: true, supportsRelationships: false, supportsHierarchy: false),
             ],
-            new KnowledgeAdapterResourceLimits(MaximumGxt2Bytes, 3, 100_000, 1));
+            new KnowledgeAdapterResourceLimits(MaximumGxt2Bytes, 3, 100_000, 1),
+            KnowledgeAdapterRevisionId.CurrentAlgorithmVersion);
     }
 
     public GameKnowledgeAdapterDescriptor Descriptor { get; }

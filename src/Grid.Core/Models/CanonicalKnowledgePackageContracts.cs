@@ -1253,6 +1253,16 @@ internal static class CanonicalKnowledgePackageEncoding
         writer.AddContentDigest($"{prefix}.artifact-digest", value.AdapterArtifactDigest);
         writer.AddInt32($"{prefix}.contract-version", value.AdapterContractVersion);
         writer.AddString($"{prefix}.mapping-rules-version", value.MappingRulesVersion);
+        // Preserve the schema-v1 byte stream exactly. V2 adds an explicit algorithm marker and
+        // semantic-contract digest while retaining the artifact digest as package provenance.
+        if (value.Id.AlgorithmVersion == KnowledgeAdapterRevisionId.CurrentAlgorithmVersion)
+        {
+            writer.AddInt32($"{prefix}.identity-algorithm-version", value.Id.AlgorithmVersion);
+            writer.AddString(
+                $"{prefix}.semantic-contract-digest",
+                value.SemanticContractDigest?.Value ??
+                throw new InvalidDataException("A v2 adapter coordinate requires its semantic-contract digest."));
+        }
     }
 
     private static void AddSourceScope(

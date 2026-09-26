@@ -42,7 +42,8 @@ public sealed class GtaVAmbientPedRoleSecondaryAssertionAdapter
                     ["rpf7-member"], ["CAmbientModelSets"], [KnowledgeKind.Actor],
                     supportsTerminology: false, supportsRelationships: false, supportsHierarchy: false),
             ],
-            new KnowledgeAdapterResourceLimits(MaximumArtifactBytes, 2, 100_000, 1));
+            new KnowledgeAdapterResourceLimits(MaximumArtifactBytes, 2, 100_000, 1),
+            KnowledgeAdapterRevisionId.CurrentAlgorithmVersion);
     }
 
     public GameKnowledgeAdapterDescriptor Descriptor { get; }

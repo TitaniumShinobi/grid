@@ -18,14 +18,27 @@ public readonly record struct KnowledgeAdapterId
 
 public readonly record struct KnowledgeAdapterRevisionId
 {
-    public const int CurrentAlgorithmVersion = 1;
+    public const int LegacyAlgorithmVersion = 1;
+    public const int CurrentAlgorithmVersion = 2;
     private const string Domain = "knowledge-adapter-revision";
 
     [JsonConstructor]
-    public KnowledgeAdapterRevisionId(string value) =>
+    public KnowledgeAdapterRevisionId(string value)
+    {
+        if (value?.StartsWith($"grid.{Domain}.v{LegacyAlgorithmVersion}.sha256.", StringComparison.Ordinal) == true)
+        {
+            Value = CanonicalIdentityV1.Validate(value, Domain, LegacyAlgorithmVersion);
+            AlgorithmVersion = LegacyAlgorithmVersion;
+            return;
+        }
+
         Value = CanonicalIdentityV1.Validate(value, Domain, CurrentAlgorithmVersion);
+        AlgorithmVersion = CurrentAlgorithmVersion;
+    }
 
     public string Value { get; }
+    [JsonIgnore]
+    public int AlgorithmVersion { get; }
 
     public static KnowledgeAdapterRevisionId DeriveV1(
         KnowledgeAdapterId adapterId,
@@ -42,7 +55,7 @@ public readonly record struct KnowledgeAdapterRevisionId
         if (adapterContractVersion <= 0)
             throw new ArgumentOutOfRangeException(nameof(adapterContractVersion));
 
-        var writer = new CanonicalIdentityWriter(Domain, CurrentAlgorithmVersion);
+        var writer = new CanonicalIdentityWriter(Domain, LegacyAlgorithmVersion);
         writer.AddString("adapter-id", adapterId.Value);
         writer.AddString("exact-adapter-version", exactAdapterVersion);
         writer.AddContentDigest("adapter-artifact-digest", adapterArtifactDigest);
@@ -51,7 +64,110 @@ public readonly record struct KnowledgeAdapterRevisionId
         return new(writer.Derive());
     }
 
+    public static KnowledgeAdapterRevisionId DeriveV2(
+        KnowledgeAdapterId adapterId,
+        string exactAdapterVersion,
+        int adapterContractVersion,
+        string mappingRulesVersion,
+        KnowledgeAdapterSemanticContractDigest semanticContractDigest)
+    {
+        CanonicalKnowledgeContract.RequireIdentifier(adapterId.Value, nameof(adapterId));
+        exactAdapterVersion = CanonicalKnowledgeContract.RequireText(exactAdapterVersion, nameof(exactAdapterVersion));
+        mappingRulesVersion = CanonicalKnowledgeContract.RequireText(mappingRulesVersion, nameof(mappingRulesVersion));
+        CanonicalKnowledgeContract.RequireIdentifier(semanticContractDigest.Value, nameof(semanticContractDigest));
+        CanonicalUtf8.Validate(exactAdapterVersion);
+        CanonicalUtf8.Validate(mappingRulesVersion);
+        if (adapterContractVersion <= 0)
+            throw new ArgumentOutOfRangeException(nameof(adapterContractVersion));
+
+        var writer = new CanonicalIdentityWriter(Domain, CurrentAlgorithmVersion);
+        writer.AddString("adapter-id", adapterId.Value);
+        writer.AddString("exact-adapter-version", exactAdapterVersion);
+        writer.AddInt32("adapter-contract-version", adapterContractVersion);
+        writer.AddString("mapping-rules-version", mappingRulesVersion);
+        writer.AddString("semantic-contract-digest", semanticContractDigest.Value);
+        return new(writer.Derive());
+    }
+
     public override string ToString() => Value;
+}
+
+/// <summary>
+/// A deterministic digest of an adapter's declared game, format, capability, and resource-limit
+/// semantics. Build artifact bytes and compiler/source-control metadata are deliberately excluded.
+/// </summary>
+public readonly record struct KnowledgeAdapterSemanticContractDigest
+{
+    public const int CurrentAlgorithmVersion = 1;
+    private const string Domain = "knowledge-adapter-semantic-contract";
+
+    [JsonConstructor]
+    public KnowledgeAdapterSemanticContractDigest(string value) =>
+        Value = CanonicalIdentityV1.Validate(value, Domain, CurrentAlgorithmVersion);
+
+    public string Value { get; }
+
+    public static KnowledgeAdapterSemanticContractDigest DeriveV1(
+        ImmutableArray<GameId> supportedGameIds,
+        ImmutableArray<SupportedKnowledgeFormat> supportedFormats,
+        KnowledgeAdapterResourceLimits resourceLimits)
+    {
+        if (supportedGameIds.IsDefaultOrEmpty)
+            throw new ArgumentException("At least one supported GameId is required.", nameof(supportedGameIds));
+        if (supportedFormats.IsDefaultOrEmpty)
+            throw new ArgumentException("At least one supported format is required.", nameof(supportedFormats));
+        ArgumentNullException.ThrowIfNull(resourceLimits);
+
+        var games = supportedGameIds.OrderBy(value => value.Value, StringComparer.Ordinal).ToImmutableArray();
+        if (games.Any(value => string.IsNullOrWhiteSpace(value.Value)) || games.Distinct().Count() != games.Length)
+            throw new ArgumentException("Supported GameIds must be valid and distinct.", nameof(supportedGameIds));
+        var formats = supportedFormats
+            .OrderBy(value => value.FormatId, StringComparer.Ordinal)
+            .ThenBy(value => value.ExactFormatVersion, StringComparer.Ordinal)
+            .ToImmutableArray();
+        if (formats.Any(value => value is null) ||
+            formats.Select(value => (value.FormatId, value.ExactFormatVersion)).Distinct().Count() != formats.Length)
+            throw new ArgumentException("Supported format identity/version coordinates must be distinct.", nameof(supportedFormats));
+
+        var writer = new CanonicalIdentityWriter(Domain, CurrentAlgorithmVersion);
+        writer.AddInt32("games.count", games.Length);
+        for (var gameIndex = 0; gameIndex < games.Length; gameIndex++)
+            writer.AddString($"games.{gameIndex}", games[gameIndex].Value);
+        writer.AddInt32("formats.count", formats.Length);
+        for (var formatIndex = 0; formatIndex < formats.Length; formatIndex++)
+        {
+            var format = formats[formatIndex];
+            var prefix = $"formats.{formatIndex}";
+            writer.AddString($"{prefix}.id", format.FormatId);
+            writer.AddString($"{prefix}.version", format.ExactFormatVersion);
+            AddSortedStrings(writer, $"{prefix}.containers", format.ContainerKinds);
+            AddSortedStrings(writer, $"{prefix}.objects", format.ResourceObjectTypes);
+            writer.AddInt32($"{prefix}.knowledge-kinds.count", format.SupportedKnowledgeKinds.Length);
+            for (var kindIndex = 0; kindIndex < format.SupportedKnowledgeKinds.Length; kindIndex++)
+                writer.AddInt32($"{prefix}.knowledge-kinds.{kindIndex}", (int)format.SupportedKnowledgeKinds[kindIndex]);
+            writer.AddInt32($"{prefix}.terminology", format.SupportsTerminology ? 1 : 0);
+            writer.AddInt32($"{prefix}.relationships", format.SupportsRelationships ? 1 : 0);
+            writer.AddInt32($"{prefix}.hierarchy", format.SupportsHierarchy ? 1 : 0);
+        }
+        writer.AddInt64("limits.artifact-bytes", resourceLimits.MaximumArtifactBytes);
+        writer.AddInt32("limits.artifacts", resourceLimits.MaximumArtifacts);
+        writer.AddInt32("limits.records", resourceLimits.MaximumKnowledgeRecords);
+        writer.AddInt32("limits.relationships", resourceLimits.MaximumRelationships);
+        return new(writer.Derive());
+    }
+
+    public override string ToString() => Value;
+
+    private static void AddSortedStrings(
+        CanonicalIdentityWriter writer,
+        string prefix,
+        ImmutableArray<string> values)
+    {
+        var ordered = values.OrderBy(value => value, StringComparer.Ordinal).ToImmutableArray();
+        writer.AddInt32($"{prefix}.count", ordered.Length);
+        for (var index = 0; index < ordered.Length; index++)
+            writer.AddString($"{prefix}.{index}", ordered[index]);
+    }
 }
 
 public readonly record struct CatalogPayloadDigest

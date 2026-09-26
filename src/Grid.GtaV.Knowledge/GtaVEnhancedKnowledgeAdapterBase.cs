@@ -47,7 +47,8 @@ public abstract class GtaVEnhancedKnowledgeAdapterBase : IGameKnowledgeAdapter
                 maximumArtifactBytes,
                 maximumArtifacts,
                 maximumKnowledgeRecords,
-                maximumRelationships: 1));
+                maximumRelationships: 1),
+            KnowledgeAdapterRevisionId.CurrentAlgorithmVersion);
     }
 
     public GameKnowledgeAdapterDescriptor Descriptor { get; }

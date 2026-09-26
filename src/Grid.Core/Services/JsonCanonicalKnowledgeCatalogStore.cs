@@ -13,7 +13,7 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
     private const int CrossSourceAssertionSchemaVersion = 5;
     private const int LegacySchemaVersion = 1;
     private const int MaximumEntitiesPerCollection = 100_000;
-    private const long MaximumStoreBytes = 64L * 1024 * 1024;
+    private const long MaximumStoreBytes = 128L * 1024 * 1024;
     private static readonly ConcurrentDictionary<string, SemaphoreSlim> Gates = new(StringComparer.OrdinalIgnoreCase);
     private static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web) { WriteIndented = true };
     private readonly SemaphoreSlim gate;
@@ -1069,14 +1069,35 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
                 throw new InvalidDataException("Persisted adapter-bound source-revision coordinates are invalid.");
         }
         foreach (var descriptor in snapshot.AdapterDescriptors)
-            if (KnowledgeAdapterRevisionId.DeriveV1(
-                    descriptor.AdapterId,
-                    descriptor.ExactAdapterVersion,
-                    descriptor.AdapterArtifactDigest,
-                    descriptor.AdapterContractVersion,
-                    descriptor.MappingRulesVersion) != descriptor.RevisionId ||
+        {
+            var semanticContractDigest = KnowledgeAdapterSemanticContractDigest.DeriveV1(
+                descriptor.SupportedGameIds,
+                descriptor.SupportedFormats,
+                descriptor.ResourceLimits);
+            var rederived = descriptor.RevisionId.AlgorithmVersion switch
+            {
+                KnowledgeAdapterRevisionId.LegacyAlgorithmVersion when descriptor.Revision.SemanticContractDigest is null =>
+                    KnowledgeAdapterRevisionId.DeriveV1(
+                        descriptor.AdapterId,
+                        descriptor.ExactAdapterVersion,
+                        descriptor.AdapterArtifactDigest,
+                        descriptor.AdapterContractVersion,
+                        descriptor.MappingRulesVersion),
+                KnowledgeAdapterRevisionId.CurrentAlgorithmVersion when
+                    descriptor.Revision.SemanticContractDigest is { } declared &&
+                    declared == semanticContractDigest =>
+                    KnowledgeAdapterRevisionId.DeriveV2(
+                        descriptor.AdapterId,
+                        descriptor.ExactAdapterVersion,
+                        descriptor.AdapterContractVersion,
+                        descriptor.MappingRulesVersion,
+                        declared),
+                _ => default,
+            };
+            if (rederived != descriptor.RevisionId ||
                 !snapshot.AdapterBoundSourceRevisions.Any(value => value.AdapterRevisionId == descriptor.RevisionId))
                 throw new InvalidDataException("Persisted adapter descriptor is invalid or unreachable.");
+        }
         foreach (var source in snapshot.Sources)
             if (!snapshot.SourceRevisions.Any(value => value.SourceId == source.Id))
                 throw new InvalidDataException("Persisted catalog source is not reachable from a source revision.");

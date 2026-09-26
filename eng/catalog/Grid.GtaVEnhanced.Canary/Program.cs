@@ -16,6 +16,7 @@ try
     var fiveFuryWheel = Path.GetFullPath(RequireArgument(arguments, "fivefury-wheel"));
     var uvExecutable = Path.GetFullPath(RequireArgument(arguments, "uv-executable"));
     var outputDirectory = Path.GetFullPath(RequireArgument(arguments, "output"));
+    var historicalLibraryPath = Path.GetFullPath(RequireArgument(arguments, "historical-library"));
 
     var repositoryRoot = GitBuildProvenanceResolver.FindRepositoryRoot();
     await VerifyAcquisitionAsync(
@@ -31,11 +32,6 @@ try
     var adapterAssemblyBytes = await File.ReadAllBytesAsync(
         typeof(GtaVWeaponsMetaKnowledgeAdapter).Assembly.Location).ConfigureAwait(false);
     var adapterDigest = ContentDigest.ComputeSha256(adapterAssemblyBytes);
-    Require(string.Equals(
-            adapterDigest.HexValue,
-            "9fa42fd12be2887af07894eb09e1f2a87716b655cafb4089eaee2fb5cb93ae7f",
-            StringComparison.Ordinal),
-        "The established GTA adapter assembly changed; the 1,132-record identity baseline cannot be extended safely.");
     var enrichmentAssemblyBytes = await File.ReadAllBytesAsync(
         typeof(GtaVPopulationZonesKnowledgeAdapter).Assembly.Location).ConfigureAwait(false);
     var enrichmentAdapterDigest = ContentDigest.ComputeSha256(enrichmentAssemblyBytes);
@@ -166,7 +162,7 @@ try
         sourceScope);
     Require(payload.KnowledgeRecords.SequenceEqual(originPayload.KnowledgeRecords),
         "Secondary enrichment must not regenerate or reorder any established canonical record identity.");
-    ValidateExpectedCanary(payload);
+    ValidateExpectedCanary(payload, adapterDigest, enrichmentAdapterDigest);
     var git = GitBuildProvenanceResolver.ResolveCandidate();
 
     var validation = new CatalogValidationSummary(
@@ -199,15 +195,27 @@ try
     Require(reloadedVerification.IsStructurallyValid && reloaded.Id == package.Id,
         "The reloaded canary package failed independent structural verification.");
 
+    var historicalStore = new JsonCanonicalKnowledgeCatalogStore(historicalLibraryPath);
+    var historicalLibrary = await historicalStore.LoadAsync().ConfigureAwait(false);
+    Require(historicalLibrary.IsValid, "The immutable historical v1 shared library is invalid.");
+    ValidateHistoricalV1(historicalLibrary.Snapshot);
+    var historicalChains = CreateEvidenceChains(
+        historicalLibrary.Snapshot,
+        KnowledgeAdapterRevisionId.LegacyAlgorithmVersion);
+
     EnsureOutputDirectory(outputDirectory);
     var storePath = Path.Combine(outputDirectory, "shared-canonical-library.v5.json");
+    File.Copy(historicalLibraryPath, storePath, overwrite: false);
     var store = new JsonCanonicalKnowledgeCatalogStore(storePath);
-    var import = await store.ImportPackageAsync(0, package).ConfigureAwait(false);
+    var import = await store.ImportPackageAsync(historicalLibrary.Snapshot.Revision, package).ConfigureAwait(false);
     Require(import.Status == CanonicalCatalogImportStatus.Imported,
         $"The canary package was not atomically imported ({import.Status}: {import.Detail}).");
+    var importedLibrary = await store.LoadAsync().ConfigureAwait(false);
+    Require(importedLibrary.IsValid,
+        "The imported shared canonical library is invalid: " + string.Join("; ", importedLibrary.Issues));
     var retry = await store.ImportPackageAsync(import.Revision, package).ConfigureAwait(false);
     Require(retry.Status == CanonicalCatalogImportStatus.Unchanged,
-        "An exact package retry was not idempotent.");
+        $"An exact package retry was not idempotent ({retry.Status}: {retry.Detail}).");
     var library = await store.LoadAsync().ConfigureAwait(false);
     Require(library.IsValid, "The reloaded shared canonical library is invalid.");
     Require(library.Snapshot.FindImportedPackage(package.Id)?.Id == package.Id,
@@ -218,8 +226,21 @@ try
     foreach (var revisionId in package.Manifest.SourceRevisionIds)
         Require(library.Snapshot.FindSourceRevision(revisionId) is not null,
             "A historical package source revision is not queryable from the shared library.");
+    ValidateHistoricalV1(library.Snapshot);
+    var currentChains = CreateEvidenceChains(
+        library.Snapshot,
+        KnowledgeAdapterRevisionId.CurrentAlgorithmVersion);
 
-    var report = CreateReport(package, payload, verification, library.Snapshot, git.HeadCommit);
+    var report = CreateReport(
+        package,
+        payload,
+        verification,
+        library.Snapshot,
+        git.HeadCommit,
+        adapterDigest,
+        enrichmentAdapterDigest,
+        historicalChains,
+        currentChains);
     await WriteNewAsync(Path.Combine(outputDirectory, "canary-package.v6.json"), packageJson).ConfigureAwait(false);
     await WriteNewAsync(
         Path.Combine(outputDirectory, "canary-report.v3.json"),
@@ -277,42 +298,23 @@ static async Task<KnowledgeExtractionResult> DiscoverAndExtractAsync(
     return extraction;
 }
 
-static void ValidateExpectedCanary(CanonicalCatalogPayload payload)
+static void ValidateExpectedCanary(
+    CanonicalCatalogPayload payload,
+    ContentDigest adapterDigest,
+    ContentDigest enrichmentAdapterDigest)
 {
-    var enrichmentAdapterIds = new HashSet<string>(StringComparer.Ordinal)
-    {
-        "grid.gta-v.enhanced.population-zones",
-        "grid.gta-v.enhanced.population-zone-gxt2-secondary",
-        "grid.gta-v.enhanced.ambient-ped-npc-secondary",
-    };
-    var enrichmentRevisionIds = payload.AdapterDescriptors
-        .Where(value => enrichmentAdapterIds.Contains(value.AdapterId.Value))
-        .Select(value => value.RevisionId)
-        .ToHashSet();
-    var establishedRecords = payload.KnowledgeRecords
-        .Where(value => !string.Equals(
-            value.NativeIdentity.Namespace,
-            "rockstar.gta-v.enhanced.population-zones",
-            StringComparison.Ordinal))
-        .ToImmutableArray();
-    var establishedRevisions = payload.SourceRevisions
-        .Where(value => !enrichmentRevisionIds.Contains(value.AdapterRevisionId))
-        .ToImmutableArray();
-    var establishedAdapters = payload.AdapterDescriptors
-        .Where(value => !enrichmentRevisionIds.Contains(value.RevisionId))
-        .ToImmutableArray();
-    Require(establishedRecords.Length == 1_132 &&
-            Fingerprint(establishedRecords.Select(value => value.Id.Value)) ==
-                "a0cccd05ff5fe4c623b644011840b26f2ce63f855f548f61df7c3b97b62628be",
-        "The 1,132 established canonical KnowledgeRecordIds changed or were not preserved as an exact subset.");
-    Require(establishedRevisions.Length == 1_052 &&
-            Fingerprint(establishedRevisions.Select(value => value.Revision.Id.Value)) ==
-                "f84dcf947954dabc091b43d61aeda660bdbcbc3d660e0384196763c2bdc5a1f0",
-        "An established source revision changed or disappeared from the enriched package.");
-    Require(establishedAdapters.Length == 6 &&
-            Fingerprint(establishedAdapters.Select(value => value.RevisionId.Value)) ==
-                "026e34e89427503ed19f7dd55d965dcdc94769657167a75b360be2109ec5f4a7",
-        "One of the six established adapter revision identities changed.");
+    Require(payload.AdapterDescriptors.Length == 9 &&
+            payload.AdapterDescriptors.All(value =>
+                value.RevisionId.AlgorithmVersion == KnowledgeAdapterRevisionId.CurrentAlgorithmVersion &&
+                value.Revision.SemanticContractDigest is not null),
+        "Every reviewed GTA adapter must use the additive semantic v2 identity contract.");
+    Require(payload.AdapterDescriptors.All(value =>
+                value.AdapterArtifactDigest ==
+                    (value.AdapterId.Value.Contains("population-zone", StringComparison.Ordinal) ||
+                     value.AdapterId.Value.Contains("ambient-ped", StringComparison.Ordinal)
+                        ? enrichmentAdapterDigest
+                        : adapterDigest)),
+        "Every v2 adapter descriptor must retain the exact assembly digest that produced it.");
 
     var locationCount = payload.KnowledgeRecords.Count(value => value.Kind == KnowledgeKind.Location);
     var mapZoneCount = payload.KnowledgeRecords.Count(value =>
@@ -380,6 +382,54 @@ static void ValidateExpectedCanary(CanonicalCatalogPayload payload)
         "The GTA V Enhanced Location canary must remain two-family Partial coverage with exact terminology and no hierarchy.");
 }
 
+static void ValidateHistoricalV1(CanonicalKnowledgeCatalogSnapshot snapshot)
+{
+    const string HistoricalPackageId =
+        "grid.catalog-package.v6.sha256.871d56f389891b70ecfddb5698cb5d67679b6428e2856f9a8380fa21e6ff6d32";
+    Require(snapshot.FindImportedPackage(new CatalogPackageId(HistoricalPackageId)) is not null,
+        "The pinned historical v1 package is absent from the shared library.");
+    var v1Descriptors = snapshot.AdapterDescriptors
+        .Where(value => value.RevisionId.AlgorithmVersion == KnowledgeAdapterRevisionId.LegacyAlgorithmVersion)
+        .ToImmutableArray();
+    Require(v1Descriptors.Length == 9 && v1Descriptors.All(value => value.Revision.SemanticContractDigest is null),
+        "The nine historical adapter revisions must remain exact v1 coordinates.");
+    var enrichmentAdapterIds = new HashSet<string>(StringComparer.Ordinal)
+    {
+        "grid.gta-v.enhanced.population-zones",
+        "grid.gta-v.enhanced.population-zone-gxt2-secondary",
+        "grid.gta-v.enhanced.ambient-ped-npc-secondary",
+    };
+    var historicalV1RevisionIds = snapshot.AdapterBoundSourceRevisions
+        .Where(value => value.AdapterRevisionId.AlgorithmVersion == KnowledgeAdapterRevisionId.LegacyAlgorithmVersion)
+        .Select(value => value.Revision.Id)
+        .ToHashSet();
+    var establishedRevisionIds = snapshot.AdapterBoundSourceRevisions
+        .Where(value => value.AdapterRevisionId.AlgorithmVersion == KnowledgeAdapterRevisionId.LegacyAlgorithmVersion &&
+                        !enrichmentAdapterIds.Contains(v1Descriptors.Single(
+                            descriptor => descriptor.RevisionId == value.AdapterRevisionId).AdapterId.Value))
+        .Select(value => value.Revision.Id)
+        .ToImmutableArray();
+    var establishedRecords = snapshot.KnowledgeRecords
+        .Where(value => historicalV1RevisionIds.Contains(value.SourceRevisionId) &&
+                        !string.Equals(value.NativeIdentity.Namespace,
+                            "rockstar.gta-v.enhanced.population-zones", StringComparison.Ordinal))
+        .ToImmutableArray();
+    Require(establishedRecords.Length == 1_132 &&
+            Fingerprint(establishedRecords.Select(value => value.Id.Value)) ==
+                "a0cccd05ff5fe4c623b644011840b26f2ce63f855f548f61df7c3b97b62628be",
+        "The 1,132 historical v1 canonical records changed or disappeared.");
+    Require(establishedRevisionIds.Length == 1_052 &&
+            Fingerprint(establishedRevisionIds.Select(value => value.Value)) ==
+                "f84dcf947954dabc091b43d61aeda660bdbcbc3d660e0384196763c2bdc5a1f0",
+        "The 1,052 historical v1 source revisions changed or disappeared.");
+    Require(v1Descriptors.Count(value => !enrichmentAdapterIds.Contains(value.AdapterId.Value)) == 6 &&
+            Fingerprint(v1Descriptors
+                .Where(value => !enrichmentAdapterIds.Contains(value.AdapterId.Value))
+                .Select(value => value.RevisionId.Value)) ==
+                "026e34e89427503ed19f7dd55d965dcdc94769657167a75b360be2109ec5f4a7",
+        "The six historical v1 adapter identities changed or disappeared.");
+}
+
 static string Fingerprint(IEnumerable<string> values)
 {
     var ordered = values.OrderBy(value => value, StringComparer.Ordinal);
@@ -400,12 +450,18 @@ static object CreateReport(
     CanonicalCatalogPayload payload,
     CatalogPackageVerificationResult verification,
     CanonicalKnowledgeCatalogSnapshot library,
-    string sourceCommit) => new
+    string sourceCommit,
+    ContentDigest adapterAssemblyDigest,
+    ContentDigest enrichmentAdapterAssemblyDigest,
+    ImmutableArray<EvidenceChainReport> historicalV1EvidenceChains,
+    ImmutableArray<EvidenceChainReport> currentV2EvidenceChains) => new
 {
     schemaVersion = 3,
     gameId = package.Manifest.GameScope.GameId.Value,
     gameBuild = package.Manifest.GameScope.ExactGameVersion?.ExactRepresentation,
     sourceCommit,
+    adapterAssemblyDigest = adapterAssemblyDigest.HexValue,
+    enrichmentAdapterAssemblyDigest = enrichmentAdapterAssemblyDigest.HexValue,
     acquisitionReceiptIds = payload.AcquisitionReceipts.Select(value => value.Id.Value).ToArray(),
     adapterRevisionIds = package.Manifest.AdapterRevisionIds.Select(value => value.Value).ToArray(),
     sourceRevisionIds = package.Manifest.SourceRevisionIds.Select(value => value.Value).ToArray(),
@@ -418,6 +474,8 @@ static object CreateReport(
     structuralIssues = verification.Issues,
     sharedLibraryRevision = library.Revision,
     sharedLibraryPackageId = library.FindImportedPackage(package.Id)?.Id.Value,
+    historicalV1EvidenceChains,
+    currentV2EvidenceChains,
     locationCoverage = payload.LocationCoverageReports.Select(value => new
     {
         locationCoverageReportId = value.Id.Value,
@@ -487,6 +545,72 @@ static object CreateReport(
     }).ToArray(),
 };
 
+static ImmutableArray<EvidenceChainReport> CreateEvidenceChains(
+    CanonicalKnowledgeCatalogSnapshot snapshot,
+    int adapterIdentityAlgorithmVersion)
+{
+    var revisionAlgorithms = snapshot.AdapterBoundSourceRevisions.ToDictionary(
+        value => value.Revision.Id,
+        value => value.AdapterRevisionId.AlgorithmVersion);
+    var fileEvidence = snapshot.FileEvidenceReceipts.ToDictionary(value => value.Id);
+    var acquisitionBindings = snapshot.ArtifactAcquisitionBindings.ToDictionary(value => value.ArtifactId);
+    var acquisitionReceipts = snapshot.AcquisitionReceipts.ToDictionary(value => value.Id);
+    var chains = ImmutableArray.CreateBuilder<EvidenceChainReport>(4);
+    foreach (var kind in Enum.GetValues<KnowledgeKind>())
+    {
+        var record = snapshot.KnowledgeRecords
+            .Where(value => value.Kind == kind &&
+                            revisionAlgorithms.GetValueOrDefault(value.SourceRevisionId) == adapterIdentityAlgorithmVersion)
+            .OrderBy(value => value.Id.Value, StringComparer.Ordinal)
+            .FirstOrDefault() ?? throw new InvalidDataException(
+                $"No {kind} record exists for adapter identity v{adapterIdentityAlgorithmVersion}.");
+        var binding = snapshot.EvidenceBindings
+            .Where(value => value.KnowledgeRecordId == record.Id &&
+                            value.SourceRevisionId == record.SourceRevisionId &&
+                            value.ClaimKind == EvidenceClaimKind.KnowledgeIdentity &&
+                            value.ClaimContentId is null)
+            .OrderBy(value => value.Id.Value, StringComparer.Ordinal)
+            .FirstOrDefault() ?? throw new InvalidDataException(
+                $"The representative {kind} record has no exact identity evidence binding.");
+        Require(fileEvidence.TryGetValue(binding.EvidenceReceiptId, out var catalogReceipt),
+            $"The representative {kind} identity binding does not resolve to FILE_VERIFIED evidence.");
+        var receipt = catalogReceipt!.Receipt;
+        Require(receipt.Verification == EvidenceVerificationKind.FileVerified &&
+                receipt.SourceRevisionId == record.SourceRevisionId &&
+                string.Equals(binding.ClaimLocator, receipt.SourceFieldPath, StringComparison.Ordinal),
+            $"The representative {kind} FILE_VERIFIED receipt coordinates do not match its binding.");
+        Require(snapshot.FindSourceRevision(record.SourceRevisionId) is not null,
+            $"The representative {kind} source revision is not historically queryable.");
+        Require(acquisitionBindings.TryGetValue(receipt.SourceArtifactId, out var acquisitionBinding),
+            $"The representative {kind} artifact is not acquisition-bound.");
+        Require(acquisitionReceipts.TryGetValue(acquisitionBinding!.AcquisitionReceiptId, out var acquisitionReceipt),
+            $"The representative {kind} acquisition receipt is absent.");
+        var member = acquisitionReceipt!.Members.SingleOrDefault(value =>
+            value.ArtifactId == receipt.SourceArtifactId &&
+            value.MemberCoordinate == acquisitionBinding.MemberCoordinate);
+        Require(member is not null &&
+                member.Digest == receipt.ArtifactDigest &&
+                member.Digest == acquisitionBinding.MemberDigest &&
+                member.ByteLength == acquisitionBinding.MemberByteLength,
+            $"The representative {kind} artifact/member/acquisition digests or lengths do not close.");
+        chains.Add(new EvidenceChainReport(
+            kind.ToString(),
+            record.Id.Value,
+            binding.Id.Value,
+            catalogReceipt.Id.Value,
+            EvidenceVerificationKind.FileVerified.ToString(),
+            record.SourceRevisionId.Value,
+            receipt.SourceArtifactId.Value,
+            receipt.NativeRecordLocator,
+            receipt.SourceFieldPath,
+            acquisitionBinding.MemberCoordinate.ExactRepresentation,
+            acquisitionBinding.MemberByteLength,
+            acquisitionBinding.MemberDigest.HexValue,
+            acquisitionReceipt.Id.Value));
+    }
+    return chains.ToImmutable();
+}
+
 static async Task VerifyAcquisitionAsync(
     string uvExecutable,
     string fiveFuryWheel,
@@ -533,7 +657,7 @@ static Dictionary<string, string> ParseArguments(string[] values)
 {
     if (values.Length == 0 || values.Length % 2 != 0)
         throw new ArgumentException(
-            "Expected paired options: --game-root, --acquisition-receipt, --fivefury-wheel, --uv-executable, --output.");
+            "Expected paired options: --game-root, --acquisition-receipt, --fivefury-wheel, --uv-executable, --historical-library, --output.");
     var result = new Dictionary<string, string>(StringComparer.Ordinal);
     for (var index = 0; index < values.Length; index += 2)
     {
@@ -570,3 +694,18 @@ static async Task WriteNewAsync(string path, string content)
     await using var writer = new StreamWriter(stream, new UTF8Encoding(false, true));
     await writer.WriteAsync(content).ConfigureAwait(false);
 }
+
+internal sealed record EvidenceChainReport(
+    string KnowledgeKind,
+    string KnowledgeRecordId,
+    string EvidenceBindingId,
+    string EvidenceReceiptId,
+    string EvidenceClass,
+    string SourceRevisionId,
+    string SourceArtifactId,
+    string NativeRecordLocator,
+    string SourceFieldPath,
+    string AcquisitionMemberCoordinate,
+    long AcquisitionMemberByteLength,
+    string AcquisitionMemberSha256,
+    string AcquisitionReceiptId);

@@ -27,7 +27,8 @@ public sealed class GtaVActorDlcSecondaryAssertionAdapter
                 ["rpf7-member"], ["Gen9ExclusiveAssetsDataPeds"], [KnowledgeKind.Actor],
                 supportsTerminology: false, supportsRelationships: false, supportsHierarchy: false)],
             new KnowledgeAdapterResourceLimits(
-                GtaVGen9PedsKnowledgeAdapter.MaximumArtifactBytes, 1, 10_000, 1));
+                GtaVGen9PedsKnowledgeAdapter.MaximumArtifactBytes, 1, 10_000, 1),
+            KnowledgeAdapterRevisionId.CurrentAlgorithmVersion);
     }
 
     public GameKnowledgeAdapterDescriptor Descriptor { get; }

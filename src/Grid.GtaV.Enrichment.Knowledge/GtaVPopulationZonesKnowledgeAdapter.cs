@@ -47,7 +47,8 @@ public sealed class GtaVPopulationZonesKnowledgeAdapter : IGameKnowledgeAdapter
                 supportsTerminology: false,
                 supportsRelationships: false,
                 supportsHierarchy: false)],
-            new KnowledgeAdapterResourceLimits(MaximumArtifactBytes, 1, 10_000, 1));
+            new KnowledgeAdapterResourceLimits(MaximumArtifactBytes, 1, 10_000, 1),
+            KnowledgeAdapterRevisionId.CurrentAlgorithmVersion);
     }
 
     public GameKnowledgeAdapterDescriptor Descriptor { get; }

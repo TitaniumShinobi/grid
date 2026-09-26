@@ -95,7 +95,8 @@ public sealed record KnowledgeAdapterRevisionCoordinate
         string exactAdapterVersion,
         ContentDigest adapterArtifactDigest,
         int adapterContractVersion,
-        string mappingRulesVersion)
+        string mappingRulesVersion,
+        KnowledgeAdapterSemanticContractDigest? semanticContractDigest = null)
     {
         ExactAdapterVersion = SupportedKnowledgeFormat.RequireStrictText(
             exactAdapterVersion,
@@ -104,12 +105,26 @@ public sealed record KnowledgeAdapterRevisionCoordinate
         MappingRulesVersion = SupportedKnowledgeFormat.RequireStrictText(
             mappingRulesVersion,
             nameof(mappingRulesVersion));
-        var derived = KnowledgeAdapterRevisionId.DeriveV1(
-            adapterId,
-            ExactAdapterVersion,
-            adapterArtifactDigest,
-            adapterContractVersion,
-            MappingRulesVersion);
+        var derived = id.AlgorithmVersion switch
+        {
+            KnowledgeAdapterRevisionId.LegacyAlgorithmVersion when semanticContractDigest is null =>
+                KnowledgeAdapterRevisionId.DeriveV1(
+                    adapterId,
+                    ExactAdapterVersion,
+                    adapterArtifactDigest,
+                    adapterContractVersion,
+                    MappingRulesVersion),
+            KnowledgeAdapterRevisionId.CurrentAlgorithmVersion when semanticContractDigest is not null =>
+                KnowledgeAdapterRevisionId.DeriveV2(
+                    adapterId,
+                    ExactAdapterVersion,
+                    adapterContractVersion,
+                    MappingRulesVersion,
+                    semanticContractDigest.Value),
+            _ => throw new ArgumentException(
+                "Adapter revision identity algorithm and semantic-contract coordinate do not agree.",
+                nameof(semanticContractDigest)),
+        };
         if (derived != id)
             throw new ArgumentException("Adapter revision identity does not match its exact coordinates.", nameof(id));
 
@@ -117,6 +132,7 @@ public sealed record KnowledgeAdapterRevisionCoordinate
         AdapterId = adapterId;
         AdapterArtifactDigest = adapterArtifactDigest;
         AdapterContractVersion = adapterContractVersion;
+        SemanticContractDigest = semanticContractDigest;
     }
 
     public KnowledgeAdapterRevisionId Id { get; }
@@ -125,6 +141,7 @@ public sealed record KnowledgeAdapterRevisionCoordinate
     public ContentDigest AdapterArtifactDigest { get; }
     public int AdapterContractVersion { get; }
     public string MappingRulesVersion { get; }
+    public KnowledgeAdapterSemanticContractDigest? SemanticContractDigest { get; }
 }
 
 public sealed record KnowledgeAdapterResourceLimits
@@ -216,7 +233,8 @@ public sealed record GameKnowledgeAdapterDescriptor
         string mappingRulesVersion,
         ImmutableArray<GameId> supportedGameIds,
         ImmutableArray<SupportedKnowledgeFormat> supportedFormats,
-        KnowledgeAdapterResourceLimits resourceLimits)
+        KnowledgeAdapterResourceLimits resourceLimits,
+        int identityAlgorithmVersion = 0)
     {
         CanonicalKnowledgeContract.RequireIdentifier(adapterId.Value, nameof(adapterId));
         ExactAdapterVersion = SupportedKnowledgeFormat.RequireStrictText(exactAdapterVersion, nameof(exactAdapterVersion));
@@ -245,19 +263,40 @@ public sealed record GameKnowledgeAdapterDescriptor
         SupportedGameIds = games;
         SupportedFormats = formats;
         ResourceLimits = resourceLimits;
-        var revisionId = KnowledgeAdapterRevisionId.DeriveV1(
-            adapterId,
-            ExactAdapterVersion,
-            adapterArtifactDigest,
-            adapterContractVersion,
-            MappingRulesVersion);
+        var semanticContractDigest = KnowledgeAdapterSemanticContractDigest.DeriveV1(
+            games,
+            formats,
+            resourceLimits);
+        var effectiveIdentityAlgorithmVersion =
+            identityAlgorithmVersion == 0
+                ? KnowledgeAdapterRevisionId.LegacyAlgorithmVersion
+                : identityAlgorithmVersion;
+        var revisionId = effectiveIdentityAlgorithmVersion switch
+        {
+            KnowledgeAdapterRevisionId.LegacyAlgorithmVersion => KnowledgeAdapterRevisionId.DeriveV1(
+                adapterId,
+                ExactAdapterVersion,
+                adapterArtifactDigest,
+                adapterContractVersion,
+                MappingRulesVersion),
+            KnowledgeAdapterRevisionId.CurrentAlgorithmVersion => KnowledgeAdapterRevisionId.DeriveV2(
+                adapterId,
+                ExactAdapterVersion,
+                adapterContractVersion,
+                MappingRulesVersion,
+                semanticContractDigest),
+            _ => throw new ArgumentOutOfRangeException(nameof(identityAlgorithmVersion)),
+        };
         Revision = new KnowledgeAdapterRevisionCoordinate(
             revisionId,
             adapterId,
             ExactAdapterVersion,
             adapterArtifactDigest,
             adapterContractVersion,
-            MappingRulesVersion);
+            MappingRulesVersion,
+            effectiveIdentityAlgorithmVersion == KnowledgeAdapterRevisionId.CurrentAlgorithmVersion
+                ? semanticContractDigest
+                : null);
     }
 
     public KnowledgeAdapterId AdapterId { get; }
@@ -270,6 +309,7 @@ public sealed record GameKnowledgeAdapterDescriptor
     public KnowledgeAdapterResourceLimits ResourceLimits { get; }
     public KnowledgeAdapterRevisionCoordinate Revision { get; }
     public KnowledgeAdapterRevisionId RevisionId => Revision.Id;
+    public int IdentityAlgorithmVersion => RevisionId.AlgorithmVersion;
 
     public bool Supports(GameId gameId, KnowledgeFormatCoordinate format) =>
         SupportedGameIds.Contains(gameId) && SupportedFormats.Any(value =>

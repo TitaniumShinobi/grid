@@ -72,7 +72,8 @@ public sealed class GtaVWeaponsMetaKnowledgeAdapter : IGameKnowledgeAdapter
                 MaximumArtifactBytes,
                 maximumArtifacts: 64,
                 maximumKnowledgeRecords: 100_000,
-                maximumRelationships: 100_000));
+                maximumRelationships: 100_000),
+            KnowledgeAdapterRevisionId.CurrentAlgorithmVersion);
     }
 
     public GtaVKnowledgeEdition Edition { get; }

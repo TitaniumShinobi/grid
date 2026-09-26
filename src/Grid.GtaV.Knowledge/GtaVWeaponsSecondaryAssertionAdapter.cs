@@ -60,7 +60,8 @@ public sealed class GtaVWeaponsSecondaryAssertionAdapter
                 64L * 1024 * 1024,
                 maximumArtifacts: 3,
                 maximumKnowledgeRecords: 100_000,
-                maximumRelationships: 1));
+                maximumRelationships: 1),
+            KnowledgeAdapterRevisionId.CurrentAlgorithmVersion);
     }
 
     public GameKnowledgeAdapterDescriptor Descriptor { get; }

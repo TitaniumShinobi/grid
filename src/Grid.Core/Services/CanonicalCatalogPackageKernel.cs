@@ -354,30 +354,28 @@ public static class CanonicalCatalogPackageKernel
 
         foreach (var descriptor in payload.AdapterDescriptors)
         {
-            var rederived = KnowledgeAdapterRevisionId.DeriveV1(
-                descriptor.AdapterId,
-                descriptor.ExactAdapterVersion,
-                descriptor.AdapterArtifactDigest,
-                descriptor.AdapterContractVersion,
-                descriptor.MappingRulesVersion);
+            var semanticContractDigest = KnowledgeAdapterSemanticContractDigest.DeriveV1(
+                descriptor.SupportedGameIds,
+                descriptor.SupportedFormats,
+                descriptor.ResourceLimits);
+            var rederived = RederiveAdapterRevision(descriptor.Revision, semanticContractDigest);
             if (rederived != descriptor.RevisionId || descriptor.Revision.Id != descriptor.RevisionId ||
                 descriptor.Revision.AdapterId != descriptor.AdapterId ||
                 !string.Equals(descriptor.Revision.ExactAdapterVersion, descriptor.ExactAdapterVersion, StringComparison.Ordinal) ||
                 descriptor.Revision.AdapterArtifactDigest != descriptor.AdapterArtifactDigest ||
                 descriptor.Revision.AdapterContractVersion != descriptor.AdapterContractVersion ||
-                !string.Equals(descriptor.Revision.MappingRulesVersion, descriptor.MappingRulesVersion, StringComparison.Ordinal))
+                !string.Equals(descriptor.Revision.MappingRulesVersion, descriptor.MappingRulesVersion, StringComparison.Ordinal) ||
+                descriptor.Revision.SemanticContractDigest !=
+                    (descriptor.RevisionId.AlgorithmVersion == KnowledgeAdapterRevisionId.CurrentAlgorithmVersion
+                        ? semanticContractDigest
+                        : null))
                 issues.Add("An adapter revision identity does not match its exact coordinates.");
             if (!payload.SourceRevisions.Any(value => value.AdapterRevisionId == descriptor.RevisionId))
                 issues.Add("An adapter descriptor is not reachable from a source revision.");
         }
         foreach (var coordinate in manifest.AdapterRevisions)
         {
-            var rederived = KnowledgeAdapterRevisionId.DeriveV1(
-                coordinate.AdapterId,
-                coordinate.ExactAdapterVersion,
-                coordinate.AdapterArtifactDigest,
-                coordinate.AdapterContractVersion,
-                coordinate.MappingRulesVersion);
+            var rederived = RederiveAdapterRevision(coordinate, coordinate.SemanticContractDigest);
             if (rederived != coordinate.Id)
                 issues.Add("A manifest adapter revision identity does not match its exact coordinates.");
         }
@@ -2028,4 +2026,29 @@ public static class CanonicalCatalogPackageKernel
 
     private static bool SameIds(IEnumerable<string> left, IEnumerable<string> right) =>
         left.Order(StringComparer.Ordinal).SequenceEqual(right.Order(StringComparer.Ordinal), StringComparer.Ordinal);
+
+    private static KnowledgeAdapterRevisionId RederiveAdapterRevision(
+        KnowledgeAdapterRevisionCoordinate coordinate,
+        KnowledgeAdapterSemanticContractDigest? independentlyDerivedSemanticContractDigest) =>
+        coordinate.Id.AlgorithmVersion switch
+        {
+            KnowledgeAdapterRevisionId.LegacyAlgorithmVersion when coordinate.SemanticContractDigest is null =>
+                KnowledgeAdapterRevisionId.DeriveV1(
+                    coordinate.AdapterId,
+                    coordinate.ExactAdapterVersion,
+                    coordinate.AdapterArtifactDigest,
+                    coordinate.AdapterContractVersion,
+                    coordinate.MappingRulesVersion),
+            KnowledgeAdapterRevisionId.CurrentAlgorithmVersion when
+                coordinate.SemanticContractDigest is { } declared &&
+                independentlyDerivedSemanticContractDigest is { } derived &&
+                declared == derived =>
+                KnowledgeAdapterRevisionId.DeriveV2(
+                    coordinate.AdapterId,
+                    coordinate.ExactAdapterVersion,
+                    coordinate.AdapterContractVersion,
+                    coordinate.MappingRulesVersion,
+                    declared),
+            _ => default,
+        };
 }
