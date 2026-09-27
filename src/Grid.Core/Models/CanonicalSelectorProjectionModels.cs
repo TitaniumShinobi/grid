@@ -89,12 +89,16 @@ public static class CanonicalProjectionSemantics
     public static CanonicalOrganizationalSemanticId MissionOnlineNode { get; } = new("grid.selector.missionquest.online");
     public static CanonicalOrganizationalSemanticId MissionStoryNode { get; } = new("grid.selector.missionquest.story-mode");
     public static CanonicalOrganizationalSemanticId MissionRegisteredModNode { get; } = new("grid.selector.missionquest.registered-mod");
+    public static CanonicalOrganizationalSemanticId MissionActivityFamilyDimensionNode { get; } = new("grid.selector.missionquest.dimension.activity-family");
+    public static CanonicalOrganizationalSemanticId MissionActivityFamilyValueNode { get; } = new("grid.selector.missionquest.activity-family-value");
     public static CanonicalOrganizationalSemanticId ItemArmorNode { get; } = new("grid.selector.item.armor");
     public static CanonicalOrganizationalSemanticId ItemClothingNode { get; } = new("grid.selector.item.clothing");
     public static CanonicalOrganizationalSemanticId ItemClutterPropsNode { get; } = new("grid.selector.item.clutter-props");
     public static CanonicalOrganizationalSemanticId ItemMagicNode { get; } = new("grid.selector.item.magic");
     public static CanonicalOrganizationalSemanticId ItemNatureNode { get; } = new("grid.selector.item.nature");
     public static CanonicalOrganizationalSemanticId ItemWeaponsNode { get; } = new("grid.selector.item.weapons");
+    public static CanonicalOrganizationalSemanticId ItemSourceCategoryDimensionNode { get; } = new("grid.selector.item.dimension.source-category");
+    public static CanonicalOrganizationalSemanticId ItemSourceCategoryValueNode { get; } = new("grid.selector.item.source-category-value");
     public static CanonicalOrganizationalSemanticId ActorNpcNode { get; } = new("grid.selector.actor.npc");
     public static CanonicalOrganizationalSemanticId ActorPlayerNode { get; } = new("grid.selector.actor.player-character");
     public static CanonicalOrganizationalSemanticId ActorDlcDimensionNode { get; } = new("grid.selector.actor.dimension.dlc");
@@ -154,26 +158,51 @@ public sealed record CanonicalSelectorProjectionPolicy
     public string OrderingPolicyVersion { get; }
     public ImmutableArray<CanonicalOrganizationalDefinition> OrganizationalDefinitions { get; }
 
+    private static ImmutableArray<CanonicalOrganizationalDefinition> V1Definitions { get; } =
+    [
+        new(CanonicalProjectionSemantics.MissionDlcNode, KnowledgeKind.MissionQuest, "DLC", CanonicalProjectionSemantics.MissionDlc, null),
+        new(CanonicalProjectionSemantics.MissionModNode, KnowledgeKind.MissionQuest, "Mod", CanonicalProjectionSemantics.MissionMod, null),
+        new(CanonicalProjectionSemantics.MissionOnlineNode, KnowledgeKind.MissionQuest, "Online", CanonicalProjectionSemantics.MissionOnline, null),
+        new(CanonicalProjectionSemantics.MissionStoryNode, KnowledgeKind.MissionQuest, "Story Mode", CanonicalProjectionSemantics.MissionStoryMode, null),
+        new(CanonicalProjectionSemantics.ItemArmorNode, KnowledgeKind.Item, "Armor", CanonicalProjectionSemantics.ItemArmor, null),
+        new(CanonicalProjectionSemantics.ItemClothingNode, KnowledgeKind.Item, "Clothing", CanonicalProjectionSemantics.ItemClothing, null),
+        new(CanonicalProjectionSemantics.ItemClutterPropsNode, KnowledgeKind.Item, "Clutter/Props", CanonicalProjectionSemantics.ItemClutterProps, null),
+        new(CanonicalProjectionSemantics.ItemMagicNode, KnowledgeKind.Item, "Magic", CanonicalProjectionSemantics.ItemMagic, null),
+        new(CanonicalProjectionSemantics.ItemNatureNode, KnowledgeKind.Item, "Nature", CanonicalProjectionSemantics.ItemNature, null),
+        new(CanonicalProjectionSemantics.ItemWeaponsNode, KnowledgeKind.Item, "Weapons", CanonicalProjectionSemantics.ItemWeapons, null),
+        new(CanonicalProjectionSemantics.ActorNpcNode, KnowledgeKind.Actor, "NPC", CanonicalProjectionSemantics.ActorNpc, null),
+        new(CanonicalProjectionSemantics.ActorPlayerNode, KnowledgeKind.Actor, "Player Character", CanonicalProjectionSemantics.ActorPlayerCharacter, null),
+        new(CanonicalProjectionSemantics.ActorDlcDimensionNode, KnowledgeKind.Actor, "DLC", null, CanonicalProjectionSemantics.ActorNpcNode),
+        new(CanonicalProjectionSemantics.ActorFactionDimensionNode, KnowledgeKind.Actor, "Faction", null, CanonicalProjectionSemantics.ActorNpcNode),
+        new(CanonicalProjectionSemantics.LocationUnresolvedHierarchyNode, KnowledgeKind.Location, "Unresolved hierarchy", null, null),
+    ];
+
     public static CanonicalSelectorProjectionPolicy V1 { get; } = new(
         new("grid.canonical-selector-projection"), "1", CanonicalSelectorControlContract.V1,
         "grid.selector.order.exact-unicode-scalar", "1",
-        [
-            new(CanonicalProjectionSemantics.MissionDlcNode, KnowledgeKind.MissionQuest, "DLC", CanonicalProjectionSemantics.MissionDlc, null),
-            new(CanonicalProjectionSemantics.MissionModNode, KnowledgeKind.MissionQuest, "Mod", CanonicalProjectionSemantics.MissionMod, null),
-            new(CanonicalProjectionSemantics.MissionOnlineNode, KnowledgeKind.MissionQuest, "Online", CanonicalProjectionSemantics.MissionOnline, null),
-            new(CanonicalProjectionSemantics.MissionStoryNode, KnowledgeKind.MissionQuest, "Story Mode", CanonicalProjectionSemantics.MissionStoryMode, null),
-            new(CanonicalProjectionSemantics.ItemArmorNode, KnowledgeKind.Item, "Armor", CanonicalProjectionSemantics.ItemArmor, null),
-            new(CanonicalProjectionSemantics.ItemClothingNode, KnowledgeKind.Item, "Clothing", CanonicalProjectionSemantics.ItemClothing, null),
-            new(CanonicalProjectionSemantics.ItemClutterPropsNode, KnowledgeKind.Item, "Clutter/Props", CanonicalProjectionSemantics.ItemClutterProps, null),
-            new(CanonicalProjectionSemantics.ItemMagicNode, KnowledgeKind.Item, "Magic", CanonicalProjectionSemantics.ItemMagic, null),
-            new(CanonicalProjectionSemantics.ItemNatureNode, KnowledgeKind.Item, "Nature", CanonicalProjectionSemantics.ItemNature, null),
-            new(CanonicalProjectionSemantics.ItemWeaponsNode, KnowledgeKind.Item, "Weapons", CanonicalProjectionSemantics.ItemWeapons, null),
-            new(CanonicalProjectionSemantics.ActorNpcNode, KnowledgeKind.Actor, "NPC", CanonicalProjectionSemantics.ActorNpc, null),
-            new(CanonicalProjectionSemantics.ActorPlayerNode, KnowledgeKind.Actor, "Player Character", CanonicalProjectionSemantics.ActorPlayerCharacter, null),
-            new(CanonicalProjectionSemantics.ActorDlcDimensionNode, KnowledgeKind.Actor, "DLC", null, CanonicalProjectionSemantics.ActorNpcNode),
-            new(CanonicalProjectionSemantics.ActorFactionDimensionNode, KnowledgeKind.Actor, "Faction", null, CanonicalProjectionSemantics.ActorNpcNode),
-            new(CanonicalProjectionSemantics.LocationUnresolvedHierarchyNode, KnowledgeKind.Location, "Unresolved hierarchy", null, null),
-        ]);
+        V1Definitions);
+
+    public static CanonicalSelectorProjectionPolicy V2 { get; } = new(
+        new("grid.canonical-selector-projection"), "2", CanonicalSelectorControlContract.V1,
+        "grid.selector.order.exact-unicode-scalar", "1",
+        V1Definitions.Add(new(
+            CanonicalProjectionSemantics.ItemSourceCategoryValueNode,
+            KnowledgeKind.Item,
+            "Source category",
+            null,
+            CanonicalProjectionSemantics.ItemWeaponsNode)));
+
+    public static CanonicalSelectorProjectionPolicy V3 { get; } = new(
+        new("grid.canonical-selector-projection"), "3", CanonicalSelectorControlContract.V1,
+        "grid.selector.order.exact-unicode-scalar", "1",
+        V2.OrganizationalDefinitions.Add(new(
+            CanonicalProjectionSemantics.MissionActivityFamilyValueNode,
+            KnowledgeKind.MissionQuest,
+            "Activity family",
+            null,
+            CanonicalProjectionSemantics.MissionOnlineNode)));
+
+    public static CanonicalSelectorProjectionPolicy Current => V3;
 }
 
 public sealed record CanonicalSemanticClassificationAssertion

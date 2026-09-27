@@ -31,9 +31,11 @@ public sealed class GtaVWeaponsSecondaryAssertionAdapter
     private const string BaseLanguageRpfCoordinate = "x64b.rpf!/data/lang/american_rel.rpf";
     private const string BaseGxt2Coordinate = "x64b.rpf!/data/lang/american_rel.rpf!/global.gxt2";
     private const string RecordComparisonMethod = "grid.gta-v.meta-name.exact-utf8";
+    private readonly GtaVSupportedSourceCorpusIndex? _corpusIndex;
 
-    public GtaVWeaponsSecondaryAssertionAdapter(ContentDigest adapterArtifactDigest)
+    public GtaVWeaponsSecondaryAssertionAdapter(ContentDigest adapterArtifactDigest, GtaVSupportedSourceCorpusIndex? corpusIndex = null)
     {
+        _corpusIndex = corpusIndex;
         Descriptor = new GameKnowledgeAdapterDescriptor(
             new KnowledgeAdapterId("grid.gta-v.enhanced.weapons-gxt2-secondary"),
             "1",
@@ -87,8 +89,11 @@ public sealed class GtaVWeaponsSecondaryAssertionAdapter
         RequireArtifact(baseGxt2Artifact, BaseGxt2Coordinate,
             new KnowledgeFormatCoordinate(Gxt2FormatId, Gxt2FormatVersion));
 
-        var parsedWeapons = ParseWeapons(weaponsArtifact);
-        var gxt = ParseGxt2(baseGxt2Artifact);
+        var parsedWeapons = ParseWeapons(
+            weaponsArtifact,
+            _corpusIndex?.GetXmlDocument(weaponsArtifact, GtaVWeaponsMetaKnowledgeAdapter.MaximumArtifactBytes));
+        var gxt = _corpusIndex?.GetGxt2(baseGxt2Artifact, 64L * 1024 * 1024)
+            ?? ParseGxt2(baseGxt2Artifact);
         var records = originPayload.KnowledgeRecords
             .Where(value => value.GameId == sourceScope.GameId && value.Kind == KnowledgeKind.Item)
             .ToDictionary(value => (value.NativeIdentity.ObjectType, value.NativeIdentity.ExactRepresentation));
@@ -224,7 +229,7 @@ public sealed class GtaVWeaponsSecondaryAssertionAdapter
         FrozenSourceArtifact weaponsArtifact,
         FrozenSourceArtifact gxtArtifact,
         string targetFieldPath,
-        ParsedGxt2Entry entry,
+        GtaVIndexedGxt2Entry entry,
         SourceNativeIdentifier hashIdentity,
         TerminologyAssertion assertion,
         CanonicalCatalogPayload origin,
@@ -349,9 +354,14 @@ public sealed class GtaVWeaponsSecondaryAssertionAdapter
         return binding;
     }
 
-    private static ImmutableArray<ParsedWeapon> ParseWeapons(FrozenSourceArtifact artifact)
+    private static ImmutableArray<ParsedWeapon> ParseWeapons(FrozenSourceArtifact artifact, XDocument? indexedDocument = null)
     {
         XDocument document;
+        if (indexedDocument is not null)
+        {
+            document = indexedDocument;
+        }
+        else
         try
         {
             using var stream = new MemoryStream(artifact.ExactBytes.ToArray(), writable: false);
@@ -397,7 +407,7 @@ public sealed class GtaVWeaponsSecondaryAssertionAdapter
         return result.ToImmutable();
     }
 
-    private static ImmutableDictionary<uint, ParsedGxt2Entry> ParseGxt2(FrozenSourceArtifact artifact)
+    private static ImmutableDictionary<uint, GtaVIndexedGxt2Entry> ParseGxt2(FrozenSourceArtifact artifact)
     {
         var bytes = artifact.ExactBytes.AsSpan();
         if (bytes.Length < 16 || BinaryPrimitives.ReadUInt32LittleEndian(bytes) != Gxt2Magic)
@@ -416,7 +426,7 @@ public sealed class GtaVWeaponsSecondaryAssertionAdapter
         if (endOffset < tableEnd + 8 || endOffset > bytes.Length)
             throw new InvalidDataException("The GXT2 string block end is out of range.");
 
-        var result = ImmutableDictionary.CreateBuilder<uint, ParsedGxt2Entry>();
+        var result = ImmutableDictionary.CreateBuilder<uint, GtaVIndexedGxt2Entry>();
         var strictUtf8 = new UTF8Encoding(false, true);
         for (var index = 0; index < count; index++)
         {
@@ -437,7 +447,7 @@ public sealed class GtaVWeaponsSecondaryAssertionAdapter
                 throw new InvalidDataException("A GXT2 value is not strict UTF-8.", exception);
             }
             var field = $"rpf7-member:{artifact.SourceCoordinate.ExactRepresentation}#entries[0x{hash:X8}]/text";
-            if (!result.TryAdd(hash, new ParsedGxt2Entry(hash, text, textOffset, field)))
+            if (!result.TryAdd(hash, new GtaVIndexedGxt2Entry(hash, text, textOffset, terminator, field)))
                 throw new InvalidDataException("The GXT2 resource contains duplicate label hashes.");
         }
         return result.ToImmutable();
@@ -496,7 +506,6 @@ public sealed class GtaVWeaponsSecondaryAssertionAdapter
         string? HumanNameHash,
         string? HumanNameFieldLocator);
 
-    private sealed record ParsedGxt2Entry(uint Hash, string Text, int TextOffset, string FieldLocator);
 }
 
 public sealed record GtaVSecondaryAssertionBatch(
@@ -509,4 +518,21 @@ public sealed record GtaVSecondaryAssertionBatch(
     ImmutableArray<CatalogFileEvidenceReceipt> FileEvidenceReceipts,
     ImmutableArray<EvidenceBinding> EvidenceBindings,
     ImmutableArray<CrossSourceTargetLinkClaim> TargetLinkClaims,
-    ImmutableArray<CrossSourceCanonicalAssertion> CrossSourceAssertions);
+    ImmutableArray<CrossSourceCanonicalAssertion> CrossSourceAssertions)
+{
+    /// <summary>
+    /// Additional non-record sources needed to close secondary assertions. Existing local-only
+    /// adapters leave this empty; provider-backed adapters use it to retain their exact source.
+    /// </summary>
+    public ImmutableArray<CatalogSourceRecord> AdditionalSources { get; init; } = [];
+
+    /// <summary>
+    /// Exact REFERENCE_VERIFIED receipts emitted by provider-backed secondary adapters.
+    /// </summary>
+    public ImmutableArray<CatalogReferenceEvidenceReceipt> ReferenceEvidenceReceipts { get; init; } = [];
+
+    public ImmutableArray<UnresolvedCrossSourceClaimContent> UnresolvedCrossSourceClaimContents { get; init; } = [];
+    public ImmutableArray<UnresolvedCrossSourceEvidenceBinding> UnresolvedCrossSourceEvidenceBindings { get; init; } = [];
+    public ImmutableArray<UnresolvedCrossSourceAssertion> UnresolvedCrossSourceAssertions { get; init; } = [];
+    public ImmutableArray<CanonicalCorrelationEnvelope> CorrelationEnvelopes { get; init; } = [];
+}

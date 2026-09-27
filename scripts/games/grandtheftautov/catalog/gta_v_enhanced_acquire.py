@@ -26,28 +26,83 @@ LEGACY_SCHEMA_VERSION = 1
 GAME_ID = "game.grandtheftautov-enhanced"
 STEAM_APP_ID = "3240220"
 LOCK_PATH = Path(__file__).with_name("fivefury.lock.v1.json")
-FIXED_MEMBERS = {
-    "common.rpf": (
-        "data/ai/weapons.meta",
-        "data/levels/gta5/mapzones.xml",
+SOURCE_FAMILY_MANIFEST_PATH = Path(__file__).with_name(
+    "gta_v_enhanced_source_families.v2.json"
+)
+EXPECTED_SOURCE_FAMILY_MANIFEST_SHA256 = (
+    "a477091b010d4a80958a77a35247a520cf98b8df4d8b8c27c76c979e8be03338"
+)
+LEGACY_SOURCE_FAMILY_MANIFEST_SHA256 = "426e2559aa88b79420d65508db0c8955795805dca6c37b90993bc88b62d81be4"
+EXPECTED_FIXED_SOURCE_DECLARATIONS = {
+    ("common.rpf", "data/ai/weapons.meta"): (
+        "rockstar.gta-v.enhanced.weapons-meta",
+        "rockstar.gta-v.weapons-meta.cweaponinfoblob-xml",
+        "1",
     ),
-    # Preproduction Location source candidates only. Freezing these exact
-    # members creates acquisition provenance; it does not register pop-zone
-    # records or promote GXT2 strings into canonical terminology.
-    "x64b.rpf": (
-        "data/lang/american_rel.rpf",
-        "data/lang/american_rel.rpf!/global.gxt2",
+    ("common.rpf", "data/levels/gta5/mapzones.xml"): (
+        "rockstar.gta-v.enhanced.mapzones",
+        "rockstar.gta-v.mapzones.cmapzonescontainer-xml",
+        "1",
     ),
-    "update/update.rpf": (
-        "common/data/ai/ambientpedmodelsets.meta",
-        "common/data/levels/gta5/popzone.ipl",
-        "common/data/gen9_exclusive_assets_peds.meta",
-        "x64/patch/data/lang/american_rel.rpf",
-        "x64/patch/data/lang/american_rel.rpf!/global.gxt2",
+    ("update/update.rpf", "common/data/ai/ambientpedmodelsets.meta"): (
+        "rockstar.gta-v.enhanced.ambient-ped-model-sets",
+        "rockstar.gta-v.ambient-ped-model-sets-xml",
+        "1",
+    ),
+    ("update/update.rpf", "common/data/gen9_exclusive_assets_peds.meta"): (
+        "rockstar.gta-v.enhanced.gen9-exclusive-peds",
+        "rockstar.gta-v.gen9-exclusive-assets-peds-xml",
+        "1",
+    ),
+    ("update/update.rpf", "common/data/levels/gta5/popzone.ipl"): (
+        "rockstar.gta-v.enhanced.population-zones",
+        "rockstar.gta-v.population-zones-ipl",
+        "1",
+    ),
+    ("update/update.rpf", "x64/data/cdimages/scaleform_generic.rpf!/hud.gfx"): (
+        "rockstar.gta-v.enhanced.hud-gfx",
+        "rockstar.scaleform.gfx-v8",
+        "1",
+    ),
+    ("update/update.rpf", "x64/patch/data/lang/american_rel.rpf"): (
+        "rockstar.gta-v.enhanced.nested-localization-containers",
+        "rockstar.rpf7-container",
+        "1",
+    ),
+    ("update/update.rpf", "x64/patch/data/lang/american_rel.rpf!/global.gxt2"): (
+        "rockstar.gta-v.enhanced.patch-american-localization",
+        "rockstar.gta-v.gxt2-binary",
+        "1",
+    ),
+    ("x64b.rpf", "data/lang/american_rel.rpf"): (
+        "rockstar.gta-v.enhanced.nested-localization-containers",
+        "rockstar.rpf7-container",
+        "1",
+    ),
+    ("x64b.rpf", "data/lang/american_rel.rpf!/global.gxt2"): (
+        "rockstar.gta-v.enhanced.base-american-localization",
+        "rockstar.gta-v.gxt2-binary",
+        "1",
     ),
 }
-UGC_CONTAINER = "update/update2.rpf"
-UGC_PREFIX = "common/data/ugc/"
+EXPECTED_DYNAMIC_SOURCE_DECLARATION = (
+    "update/update2.rpf",
+    "common/data/ugc/",
+    ".ugc",
+    1052,
+    "rockstar.gta-v.enhanced.ugc-missions",
+    "rockstar.gta-v.ugc.mission-json",
+    "1",
+)
+EXPECTED_COMMON_DYNAMIC_SOURCE_DECLARATION = (
+    "common.rpf",
+    "data/ugc/",
+    ".ugc",
+    40,
+    "rockstar.gta-v.enhanced.online-activity-registry",
+    "rockstar.gta-v.ugc.mission-json",
+    "1",
+)
 
 
 def _sha256_file(path: Path) -> tuple[int, str]:
@@ -83,6 +138,198 @@ def _canonical_bytes(value: Any) -> bytes:
     return json.dumps(
         value, ensure_ascii=False, sort_keys=True, separators=(",", ":")
     ).encode("utf-8", "strict")
+
+
+def _require_exact_keys(value: dict[str, Any], required: set[str], optional: set[str], name: str) -> None:
+    actual = set(value)
+    if not required.issubset(actual) or not actual.issubset(required | optional):
+        raise ValueError(f"{name} has missing or unsupported fields")
+
+
+def _validate_dynamic_declaration(
+    coordinate: str, dynamic: dict[str, Any], family_status: dict[str, str]
+) -> None:
+    if not isinstance(dynamic, dict):
+        raise ValueError("Dynamic member declaration must be one object")
+    _require_exact_keys(
+        dynamic,
+        {"prefix", "suffix", "exactCount", "sourceFamilyId", "formatId", "exactFormatVersion"},
+        set(),
+        "dynamic member family",
+    )
+    prefix = _strict_text(dynamic["prefix"], "dynamic member prefix")
+    if not prefix.endswith("/") or _normalize_member(prefix[:-1]) + "/" != prefix:
+        raise ValueError("Dynamic member prefix must end with a slash")
+    family_id = _strict_text(dynamic["sourceFamilyId"], "dynamic source family ID")
+    if family_status.get(family_id) != "supported":
+        raise ValueError("Dynamic UGC family must be supported")
+    declaration = (
+        coordinate,
+        prefix,
+        dynamic["suffix"],
+        dynamic["exactCount"],
+        family_id,
+        _strict_text(dynamic["formatId"], "dynamic format ID"),
+        _strict_text(dynamic["exactFormatVersion"], "dynamic exact format version"),
+    )
+    if declaration not in (EXPECTED_DYNAMIC_SOURCE_DECLARATION, EXPECTED_COMMON_DYNAMIC_SOURCE_DECLARATION):
+        raise ValueError("Dynamic source coordinate has an unapproved family or format tuple")
+
+
+def _load_source_family_manifest(path: Path = SOURCE_FAMILY_MANIFEST_PATH) -> tuple[dict[str, Any], str]:
+    """Load the exact-build acquisition registry and reject ambiguous declarations."""
+    exact_bytes = path.read_bytes()
+    manifest = json.loads(exact_bytes.decode("utf-8", "strict"))
+    if not isinstance(manifest, dict):
+        raise ValueError("Source-family manifest must be one JSON object")
+    _require_exact_keys(
+        manifest,
+        {"schemaVersion", "manifestId", "gameId", "steamAppId", "steamBuildId", "sourceFamilies", "containers"},
+        set(),
+        "source-family manifest",
+    )
+    if (
+        manifest["schemaVersion"] != 2
+        or manifest["manifestId"] != "grid.gta-v-enhanced.source-families"
+        or manifest["gameId"] != GAME_ID
+        or manifest["steamAppId"] != STEAM_APP_ID
+        or manifest["steamBuildId"] != "25261616"
+    ):
+        raise ValueError("Source-family manifest identity mismatch")
+
+    valid_statuses = {"supported", "indexed-unconsumed", "diagnostic", "unsupported-declared"}
+    valid_kinds = {"Location", "MissionQuest", "Item", "Actor"}
+    families = manifest["sourceFamilies"]
+    if not isinstance(families, list) or not families:
+        raise ValueError("Source-family manifest has no source families")
+    family_ids: list[str] = []
+    family_status: dict[str, str] = {}
+    for family in families:
+        if not isinstance(family, dict):
+            raise ValueError("Source-family entry must be one object")
+        _require_exact_keys(
+            family,
+            {"sourceFamilyId", "status", "knowledgeKinds"},
+            {"reasonCode", "potentialCoverage"},
+            "source-family entry",
+        )
+        family_id = _strict_text(family["sourceFamilyId"], "source family ID")
+        status = _strict_text(family["status"], "source family status")
+        kinds = family["knowledgeKinds"]
+        if status not in valid_statuses:
+            raise ValueError(f"Unsupported source-family status: {status}")
+        if (
+            not isinstance(kinds, list)
+            or not kinds
+            or kinds != sorted(kinds)
+            or len(kinds) != len(set(kinds))
+            or any(kind not in valid_kinds for kind in kinds)
+        ):
+            raise ValueError(f"Source family has invalid knowledge kinds: {family_id}")
+        if status != "supported" and "reasonCode" not in family:
+            raise ValueError(f"Nonsupported source family requires a reason code: {family_id}")
+        if "reasonCode" in family:
+            _strict_text(family["reasonCode"], "source family reason code")
+        if "potentialCoverage" in family:
+            _strict_text(family["potentialCoverage"], "source family potential coverage")
+        family_ids.append(family_id)
+        family_status[family_id] = status
+    if family_ids != sorted(family_ids) or len(family_ids) != len(set(family_ids)):
+        raise ValueError("Source families must be unique and ordinally sorted")
+
+    containers = manifest["containers"]
+    if not isinstance(containers, list) or len(containers) != 4:
+        raise ValueError("Source-family manifest requires exactly four containers")
+    coordinates: list[str] = []
+    fixed_count = 0
+    dynamic_count = 0
+    for container in containers:
+        if not isinstance(container, dict):
+            raise ValueError("Source container declaration must be one object")
+        coordinate = _normalize_member(container.get("containerCoordinate"))
+        mode = container.get("memberMode")
+        coordinates.append(coordinate)
+        if mode in ("fixed", "fixed-and-dynamic-prefix"):
+            required = {"containerCoordinate", "memberMode", "members"}
+            if mode == "fixed-and-dynamic-prefix":
+                required.add("dynamicMembers")
+            _require_exact_keys(container, required, set(), "fixed container")
+            members = container["members"]
+            if not isinstance(members, list) or not members:
+                raise ValueError(f"Fixed source container has no members: {coordinate}")
+            paths: list[str] = []
+            for member in members:
+                if not isinstance(member, dict):
+                    raise ValueError("Fixed member declaration must be one object")
+                _require_exact_keys(
+                    member,
+                    {"memberPath", "sourceFamilyId", "formatId", "exactFormatVersion"},
+                    set(),
+                    "fixed member",
+                )
+                member_path = _normalize_member(member["memberPath"])
+                family_id = _strict_text(member["sourceFamilyId"], "member source family ID")
+                if family_id not in family_status or family_status[family_id] == "unsupported-declared":
+                    raise ValueError(f"Acquired member references an invalid source family: {family_id}")
+                format_id = _strict_text(member["formatId"], "member format ID")
+                format_version = _strict_text(
+                    member["exactFormatVersion"], "member exact format version"
+                )
+                expected = EXPECTED_FIXED_SOURCE_DECLARATIONS.get(
+                    (coordinate, member_path)
+                )
+                if expected != (family_id, format_id, format_version):
+                    raise ValueError(
+                        "Fixed source coordinate has an unapproved family or format tuple: "
+                        f"{coordinate}!/{member_path}"
+                    )
+                paths.append(member_path)
+            if paths != sorted(paths) or len(paths) != len(set(paths)):
+                raise ValueError(f"Fixed members must be unique and ordinally sorted: {coordinate}")
+            fixed_count += len(paths)
+            if mode == "fixed-and-dynamic-prefix":
+                dynamic = container["dynamicMembers"]
+                _validate_dynamic_declaration(coordinate, dynamic, family_status)
+                dynamic_count += 1
+        elif mode == "dynamic-prefix":
+            _require_exact_keys(container, {"containerCoordinate", "memberMode", "dynamicMembers"}, set(), "dynamic container")
+            dynamic = container["dynamicMembers"]
+            if not isinstance(dynamic, dict):
+                raise ValueError("Dynamic member declaration must be one object")
+            _require_exact_keys(
+                dynamic,
+                {"prefix", "suffix", "exactCount", "sourceFamilyId", "formatId", "exactFormatVersion"},
+                set(),
+                "dynamic member family",
+            )
+            _validate_dynamic_declaration(coordinate, dynamic, family_status)
+            dynamic_count += 1
+        else:
+            raise ValueError(f"Unsupported source member mode: {mode}")
+    if coordinates != sorted(coordinates) or len(coordinates) != len(set(coordinates)):
+        raise ValueError("Source containers must be unique and ordinally sorted")
+    if fixed_count != 10 or dynamic_count != 2:
+        raise ValueError("Source-family manifest requires ten fixed members and two dynamic UGC families")
+    canonical_digest = _sha256_bytes(_canonical_bytes(manifest))
+    if canonical_digest != EXPECTED_SOURCE_FAMILY_MANIFEST_SHA256:
+        raise ValueError("Source-family manifest content does not match the approved v2 registry")
+    return manifest, canonical_digest
+
+
+SOURCE_FAMILY_MANIFEST, SOURCE_FAMILY_MANIFEST_SHA256 = _load_source_family_manifest()
+FIXED_MEMBERS = {
+    container["containerCoordinate"]: tuple(member["memberPath"] for member in container["members"])
+    for container in SOURCE_FAMILY_MANIFEST["containers"]
+    if container["memberMode"] in ("fixed", "fixed-and-dynamic-prefix")
+}
+DYNAMIC_MEMBERS = {
+    container["containerCoordinate"]: container["dynamicMembers"]
+    for container in SOURCE_FAMILY_MANIFEST["containers"]
+    if container["memberMode"] in ("dynamic-prefix", "fixed-and-dynamic-prefix")
+}
+CONTAINER_COORDINATES = tuple(
+    container["containerCoordinate"] for container in SOURCE_FAMILY_MANIFEST["containers"]
+)
 
 
 def _load_lock(wheel: Path) -> dict[str, Any]:
@@ -247,18 +494,104 @@ def _entry_bytes(archive: RpfArchive, member: str) -> bytes:
     raise ValueError(f"Exact RPF member was not found: {member}")
 
 
-def _ugc_members(archive: RpfArchive) -> list[str]:
+def _ugc_members(archive: RpfArchive, prefix: str, suffix: str, exact_count: int) -> list[str]:
     result = []
     for entry in archive.iter_entries():
         if not isinstance(entry, RpfFileEntry):
             continue
         member = _normalize_member(entry.full_path.replace("\\", "/").lstrip("/"))
-        if member.startswith(UGC_PREFIX) and member.endswith(".ugc"):
+        if member.startswith(prefix) and member.endswith(suffix):
             result.append(member)
     result.sort()
-    if not result or len(result) != len(set(result)):
-        raise ValueError("UGC member discovery was empty or ambiguous")
+    if len(result) != exact_count or len(result) != len(set(result)):
+        raise ValueError(
+            f"UGC member discovery must contain exactly {exact_count} unique members"
+        )
     return result
+
+
+def _receipt_member_paths(container: dict[str, Any]) -> list[str]:
+    members = container.get("members")
+    if not isinstance(members, list) or not members:
+        raise ValueError("Container receipt has no members")
+    paths: list[str] = []
+    coordinates: list[str] = []
+    container_coordinate = _strict_text(container.get("containerCoordinate"), "container coordinate")
+    for member in members:
+        if not isinstance(member, dict):
+            raise ValueError("Receipt member must be one object")
+        path = _normalize_member(member.get("memberPath"))
+        coordinate = _strict_text(member.get("memberCoordinate"), "member coordinate")
+        if coordinate != f"{container_coordinate}!/{path}":
+            raise ValueError("Receipt member coordinate mismatch")
+        paths.append(path)
+        coordinates.append(coordinate)
+    if coordinates != sorted(coordinates) or len(coordinates) != len(set(coordinates)):
+        raise ValueError("Receipt members must be unique and ordinally sorted")
+    return paths
+
+
+def _validate_receipt_closure(receipt: dict[str, Any]) -> None:
+    """Require either the historical closure or the manifest-bound current closure."""
+    containers = receipt.get("containers")
+    if not isinstance(containers, list) or len(containers) != 4:
+        raise ValueError("Acquisition receipt requires exactly four containers")
+    coordinates = [
+        _strict_text(container.get("containerCoordinate"), "container coordinate")
+        for container in containers
+        if isinstance(container, dict)
+    ]
+    if len(coordinates) != 4 or coordinates != sorted(coordinates) or len(set(coordinates)) != 4:
+        raise ValueError("Receipt containers must be unique and ordinally sorted")
+
+    binding = receipt.get("sourceFamilyManifest")
+    current = binding == {
+            "manifestId": SOURCE_FAMILY_MANIFEST["manifestId"],
+            "schemaVersion": SOURCE_FAMILY_MANIFEST["schemaVersion"],
+            "documentSha256": SOURCE_FAMILY_MANIFEST_SHA256,
+        }
+    legacy_v1 = binding == {
+        "manifestId": "grid.gta-v-enhanced.source-families",
+        "schemaVersion": 1,
+        "documentSha256": LEGACY_SOURCE_FAMILY_MANIFEST_SHA256,
+    }
+    if binding is not None and not current and not legacy_v1:
+            raise ValueError("Receipt source-family manifest binding mismatch")
+
+    expected_fixed = {
+        coordinate: tuple(paths)
+        for coordinate, paths in FIXED_MEMBERS.items()
+    }
+    if binding is None:
+        # Historical schema-v1/v2 receipts predate diagnostic hud.gfx acquisition.
+        expected_fixed["update/update.rpf"] = tuple(
+            path for path in expected_fixed["update/update.rpf"]
+            if path != "x64/data/cdimages/scaleform_generic.rpf!/hud.gfx"
+        )
+
+    expected_coordinates = tuple(sorted(set(expected_fixed) | set(DYNAMIC_MEMBERS)))
+    if tuple(coordinates) != expected_coordinates:
+        raise ValueError("Receipt container closure does not match the source-family manifest")
+    total = 0
+    for container in containers:
+        coordinate = container["containerCoordinate"]
+        paths = _receipt_member_paths(container)
+        if coordinate in DYNAMIC_MEMBERS:
+            dynamic = DYNAMIC_MEMBERS[coordinate]
+            dynamic_paths = [path for path in paths if path.startswith(dynamic["prefix"]) and path.endswith(dynamic["suffix"])]
+            fixed_paths = [path for path in paths if path not in dynamic_paths]
+            expected_dynamic_count = dynamic["exactCount"] if current else (1052 if coordinate == "update/update2.rpf" else 0)
+            if (
+                len(dynamic_paths) != expected_dynamic_count
+                or tuple(fixed_paths) != tuple(sorted(expected_fixed.get(coordinate, ())))
+            ):
+                raise ValueError("Receipt UGC closure does not match the source-family manifest")
+        elif tuple(paths) != tuple(sorted(expected_fixed[coordinate])):
+            raise ValueError(f"Receipt fixed-member closure mismatch: {coordinate}")
+        total += len(paths)
+    expected_total = 1102 if current else (1062 if legacy_v1 else 1061)
+    if total != expected_total:
+        raise ValueError(f"Receipt must contain exactly {expected_total} frozen members")
 
 
 def _member_output(root: Path, container: str, member: str) -> Path:
@@ -266,10 +599,13 @@ def _member_output(root: Path, container: str, member: str) -> Path:
 
 
 def _container_members(archive: RpfArchive, coordinate: str) -> Iterable[str]:
-    if coordinate in FIXED_MEMBERS:
-        return FIXED_MEMBERS[coordinate]
-    if coordinate == UGC_CONTAINER:
-        return _ugc_members(archive)
+    fixed = list(FIXED_MEMBERS.get(coordinate, ()))
+    if coordinate in DYNAMIC_MEMBERS:
+        dynamic = DYNAMIC_MEMBERS[coordinate]
+        fixed.extend(_ugc_members(archive, dynamic["prefix"], dynamic["suffix"], dynamic["exactCount"]))
+        return sorted(fixed)
+    if fixed:
+        return fixed
     raise ValueError(f"Unsupported container coordinate: {coordinate}")
 
 
@@ -286,7 +622,7 @@ def acquire(args: argparse.Namespace, lock: dict[str, Any]) -> None:
 
     crypto = GameCrypto.from_game(game_root, gen9=True, use_cache=False)
     containers = []
-    for coordinate in (*FIXED_MEMBERS.keys(), UGC_CONTAINER):
+    for coordinate in CONTAINER_COORDINATES:
         path = _resolve_container(game_root, coordinate)
         container_length, container_digest = _sha256_file(path)
         archive = RpfArchive.from_path(path, crypto=crypto)
@@ -334,6 +670,11 @@ def acquire(args: argparse.Namespace, lock: dict[str, Any]) -> None:
             "methodVersion": lock["acquisitionMethodVersion"],
             "receiptSchemaVersion": SCHEMA_VERSION,
         },
+        "sourceFamilyManifest": {
+            "manifestId": SOURCE_FAMILY_MANIFEST["manifestId"],
+            "schemaVersion": SOURCE_FAMILY_MANIFEST["schemaVersion"],
+            "documentSha256": SOURCE_FAMILY_MANIFEST_SHA256,
+        },
         "containers": sorted(containers, key=lambda value: value["containerCoordinate"]),
     }
     receipt["receiptDocumentSha256"] = _sha256_bytes(_canonical_bytes(receipt))
@@ -350,6 +691,7 @@ def verify(args: argparse.Namespace, lock: dict[str, Any]) -> None:
     schema_version = receipt.get("schemaVersion")
     if schema_version not in (LEGACY_SCHEMA_VERSION, SCHEMA_VERSION) or receipt.get("gameId") != GAME_ID:
         raise ValueError("Acquisition receipt schema or GameId mismatch")
+    _validate_receipt_closure(receipt)
     method_version = (
         lock["legacyReceiptV1MethodVersion"]
         if schema_version == LEGACY_SCHEMA_VERSION

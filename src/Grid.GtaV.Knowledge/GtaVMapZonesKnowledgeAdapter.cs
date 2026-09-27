@@ -27,7 +27,7 @@ public sealed class GtaVMapZonesKnowledgeAdapter : GtaVEnhancedKnowledgeAdapterB
     private static readonly LocationSemanticVocabularyVersion SemanticVocabularyVersion = new(1);
     private static readonly LocationSourceFamilyId MapZonesSourceFamily = new(CoverageSourceFamily);
 
-    public GtaVMapZonesKnowledgeAdapter(ContentDigest adapterArtifactDigest)
+    public GtaVMapZonesKnowledgeAdapter(ContentDigest adapterArtifactDigest, GtaVSupportedSourceCorpusIndex? corpusIndex = null)
         : base(
             adapterArtifactDigest,
             "grid.gta-v.enhanced.mapzones",
@@ -38,7 +38,8 @@ public sealed class GtaVMapZonesKnowledgeAdapter : GtaVEnhancedKnowledgeAdapterB
             KnowledgeKind.Location,
             MaximumArtifactBytes,
             maximumArtifacts: 8,
-            maximumKnowledgeRecords: 10_000)
+            maximumKnowledgeRecords: 10_000,
+            corpusIndex)
     {
     }
 
@@ -209,7 +210,7 @@ public sealed class GtaVMapZonesKnowledgeAdapter : GtaVEnhancedKnowledgeAdapterB
 
     private protected override ParsedArtifact Parse(FrozenSourceArtifact artifact)
     {
-        var document = ParseXml(DecodeStrictUtf8(artifact.ExactBytes.AsSpan(), MaximumArtifactBytes));
+        var document = IndexedXml(artifact, MaximumArtifactBytes);
         var root = document.Root;
         if (root is null || root.Name != XName.Get("CMapZonesContainer"))
             throw new InvalidDataException("Only a CMapZonesContainer root is supported.");

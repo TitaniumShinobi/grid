@@ -1,5 +1,6 @@
 using System.Collections.Immutable;
 using System.Text;
+using System.Xml.Linq;
 using Grid.Core.Models;
 using Grid.Core.Services;
 
@@ -11,6 +12,7 @@ public abstract class GtaVEnhancedKnowledgeAdapterBase : IGameKnowledgeAdapter
     private const string SourceComparisonMethod = "grid.gta-v.resource-coordinate.exact-utf8";
     private readonly string _sourceObjectType;
     private readonly string _requiredCoordinateSuffix;
+    private readonly GtaVSupportedSourceCorpusIndex? _corpusIndex;
 
     private protected GtaVEnhancedKnowledgeAdapterBase(
         ContentDigest adapterArtifactDigest,
@@ -22,10 +24,13 @@ public abstract class GtaVEnhancedKnowledgeAdapterBase : IGameKnowledgeAdapter
         KnowledgeKind knowledgeKind,
         long maximumArtifactBytes,
         int maximumArtifacts,
-        int maximumKnowledgeRecords)
+        int maximumKnowledgeRecords,
+        GtaVSupportedSourceCorpusIndex? corpusIndex = null,
+        bool supportsTerminology = false)
     {
         _sourceObjectType = sourceObjectType;
         _requiredCoordinateSuffix = requiredCoordinateSuffix;
+        _corpusIndex = corpusIndex;
         Format = new KnowledgeFormatCoordinate(formatId, "1");
         Descriptor = new GameKnowledgeAdapterDescriptor(
             new KnowledgeAdapterId(adapterId),
@@ -40,7 +45,7 @@ public abstract class GtaVEnhancedKnowledgeAdapterBase : IGameKnowledgeAdapter
                 ["rpf7-member"],
                 [sourceObjectType],
                 [knowledgeKind],
-                supportsTerminology: false,
+                supportsTerminology,
                 supportsRelationships: false,
                 supportsHierarchy: false)],
             new KnowledgeAdapterResourceLimits(
@@ -60,6 +65,38 @@ public abstract class GtaVEnhancedKnowledgeAdapterBase : IGameKnowledgeAdapter
     private protected abstract string RecordNamespace { get; }
     private protected abstract string RecordComparisonMethod { get; }
     private protected abstract ParsedArtifact Parse(FrozenSourceArtifact artifact);
+
+    private protected string IndexedStrictUtf8(FrozenSourceArtifact artifact, long maximumBytes) =>
+        _corpusIndex is null
+            ? DecodeStrictUtf8(artifact.ExactBytes.AsSpan(), maximumBytes)
+            : _corpusIndex.GetStrictUtf8(artifact, maximumBytes);
+
+    private protected XDocument IndexedXml(FrozenSourceArtifact artifact, long maximumBytes) =>
+        _corpusIndex is null
+            ? ParseExactXml(DecodeStrictUtf8(artifact.ExactBytes.AsSpan(), maximumBytes), maximumBytes)
+            : _corpusIndex.GetXmlDocument(artifact, maximumBytes);
+
+    private static XDocument ParseExactXml(string text, long maximumBytes)
+    {
+        try
+        {
+            using var textReader = new StringReader(text);
+            using var reader = System.Xml.XmlReader.Create(textReader, new System.Xml.XmlReaderSettings
+            {
+                DtdProcessing = System.Xml.DtdProcessing.Prohibit,
+                XmlResolver = null,
+                MaxCharactersInDocument = maximumBytes,
+                IgnoreComments = false,
+                IgnoreProcessingInstructions = false,
+                IgnoreWhitespace = false,
+            });
+            return XDocument.Load(reader, LoadOptions.PreserveWhitespace);
+        }
+        catch (Exception exception) when (exception is System.Xml.XmlException or InvalidOperationException)
+        {
+            throw new InvalidDataException("The frozen source is not supported well-formed XML.", exception);
+        }
+    }
 
     public SourceNativeIdentifier CreateSourceCoordinate(string exactCoordinate)
     {
@@ -200,10 +237,13 @@ public abstract class GtaVEnhancedKnowledgeAdapterBase : IGameKnowledgeAdapter
         var revisionId = CatalogSourceRevisionId.DeriveV2(source.Id, null, [artifact.Id], Descriptor.RevisionId);
         var revision = new CatalogSourceRevisionRecord(revisionId, source.Id, null, [artifact.Id]);
         var records = ImmutableArray.CreateBuilder<CanonicalKnowledgeRecord>(parsed.Records.Length);
+        var terminology = ImmutableArray.CreateBuilder<TerminologyAssertion>();
         var evidence = ImmutableArray.CreateBuilder<CatalogFileEvidenceReceipt>();
         var bindings = ImmutableArray.CreateBuilder<EvidenceBinding>();
         var locationNativeTypes = ImmutableArray.CreateBuilder<SourceNativeLocationTypeAssertion>();
         var locationSemanticClassifications = ImmutableArray.CreateBuilder<LocationSemanticClassificationAssertion>();
+        var semanticClassifications = ImmutableArray.CreateBuilder<CanonicalSemanticClassificationAssertion>();
+        var organizationalValues = ImmutableArray.CreateBuilder<CanonicalOrganizationalValueAssertion>();
 
         foreach (var parsedRecord in parsed.Records.OrderBy(value => value.ObjectType, StringComparer.Ordinal)
                      .ThenBy(value => value.NativeKey, StringComparer.Ordinal))
@@ -246,6 +286,67 @@ public abstract class GtaVEnhancedKnowledgeAdapterBase : IGameKnowledgeAdapter
                 evidence,
                 bindings);
 
+            foreach (var fact in (parsedRecord.TerminologyFacts.IsDefault
+                             ? ImmutableArray<ParsedTerminologyFact>.Empty
+                             : parsedRecord.TerminologyFacts)
+                         .OrderBy(value => value.SourceFieldPath, StringComparer.Ordinal))
+            {
+                var assertion = new TerminologyAssertion(
+                    record.Id,
+                    revisionId,
+                    fact.Role,
+                    fact.VerbatimValue,
+                    fact.SourceFieldPath,
+                    fact.LanguageTag);
+                terminology.Add(assertion);
+                AddExactClaimEvidence(
+                    evidence, bindings, revisionId, artifact, record.Id,
+                    EvidenceClaimKind.Terminology,
+                    fact.RecordLocator,
+                    fact.SourceFieldPath,
+                    EvidenceClaimContentId.DeriveV1(assertion));
+            }
+
+            foreach (var fact in (parsedRecord.SemanticClassificationFacts.IsDefault
+                             ? ImmutableArray<ParsedSemanticClassificationFact>.Empty
+                             : parsedRecord.SemanticClassificationFacts)
+                         .OrderBy(value => value.SourceFieldPath, StringComparer.Ordinal))
+            {
+                var id = CanonicalSemanticClassificationAssertionId.DeriveV1(
+                    record.Id, revisionId, fact.RoleId, fact.VocabularyId, fact.VocabularyVersion,
+                    fact.MethodId, fact.MethodVersion, fact.SourceFieldPath);
+                var assertion = new CanonicalSemanticClassificationAssertion(
+                    id, record.Id, revisionId, fact.RoleId, fact.VocabularyId, fact.VocabularyVersion,
+                    fact.MethodId, fact.MethodVersion, fact.SourceFieldPath);
+                semanticClassifications.Add(assertion);
+                AddExactClaimEvidence(
+                    evidence, bindings, revisionId, artifact, record.Id,
+                    EvidenceClaimKind.SemanticClassification,
+                    fact.RecordLocator,
+                    fact.SourceFieldPath,
+                    EvidenceClaimContentId.DeriveV1(assertion));
+            }
+
+            foreach (var fact in (parsedRecord.OrganizationalValueFacts.IsDefault
+                             ? ImmutableArray<ParsedOrganizationalValueFact>.Empty
+                             : parsedRecord.OrganizationalValueFacts)
+                         .OrderBy(value => value.SourceFieldPath, StringComparer.Ordinal))
+            {
+                var id = CanonicalOrganizationalValueAssertionId.DeriveV1(
+                    record.Id, revisionId, fact.DimensionId, fact.ExactValueIdentity,
+                    fact.VerbatimDisplayValue, fact.MethodId, fact.MethodVersion, fact.SourceFieldPath);
+                var assertion = new CanonicalOrganizationalValueAssertion(
+                    id, record.Id, revisionId, fact.DimensionId, fact.ExactValueIdentity,
+                    fact.VerbatimDisplayValue, fact.MethodId, fact.MethodVersion, fact.SourceFieldPath);
+                organizationalValues.Add(assertion);
+                AddExactClaimEvidence(
+                    evidence, bindings, revisionId, artifact, record.Id,
+                    EvidenceClaimKind.OrganizationalValue,
+                    fact.RecordLocator,
+                    fact.SourceFieldPath,
+                    EvidenceClaimContentId.DeriveV1(assertion));
+            }
+
         }
 
         var unresolved = ImmutableArray.CreateBuilder<UnresolvedSourceAssertion>();
@@ -284,7 +385,7 @@ public abstract class GtaVEnhancedKnowledgeAdapterBase : IGameKnowledgeAdapter
             [new SourceArtifactRecord(artifact.Id, artifact.Digest)],
             revision,
             records.ToImmutable(),
-            [],
+            terminology.ToImmutable(),
             [],
             evidence.ToImmutable(),
             [],
@@ -298,7 +399,11 @@ public abstract class GtaVEnhancedKnowledgeAdapterBase : IGameKnowledgeAdapter
                 registration,
                 Descriptor,
                 scope,
-                [artifact.FormatBinding]),
+                [artifact.FormatBinding])
+            {
+                SemanticClassificationAssertions = semanticClassifications.ToImmutable(),
+                OrganizationalValueAssertions = organizationalValues.ToImmutable(),
+            },
             unresolved.ToImmutable());
     }
 
@@ -390,7 +495,7 @@ public abstract class GtaVEnhancedKnowledgeAdapterBase : IGameKnowledgeAdapter
             null,
             artifact.ObservedAtUtc);
 
-    private SourceNativeIdentifier CreateNativeIdentity(string objectType, string exactValue) =>
+    private protected virtual SourceNativeIdentifier CreateNativeIdentity(string objectType, string exactValue) =>
         SourceNativeIdentifier.FromExactUtf8(
             RecordNamespace,
             objectType,
@@ -509,7 +614,35 @@ public abstract class GtaVEnhancedKnowledgeAdapterBase : IGameKnowledgeAdapter
     private protected sealed record ParsedRecord(
         string ObjectType,
         string NativeKey,
-        ImmutableArray<ParsedEvidenceLocation> EvidenceLocations);
+        ImmutableArray<ParsedEvidenceLocation> EvidenceLocations,
+        ImmutableArray<ParsedTerminologyFact> TerminologyFacts = default,
+        ImmutableArray<ParsedSemanticClassificationFact> SemanticClassificationFacts = default,
+        ImmutableArray<ParsedOrganizationalValueFact> OrganizationalValueFacts = default);
+
+    private protected sealed record ParsedTerminologyFact(
+        TerminologyAssertionRole Role,
+        string VerbatimValue,
+        string SourceFieldPath,
+        string RecordLocator,
+        string? LanguageTag);
+
+    private protected sealed record ParsedSemanticClassificationFact(
+        CanonicalSemanticRoleId RoleId,
+        string VocabularyId,
+        string VocabularyVersion,
+        string MethodId,
+        string MethodVersion,
+        string SourceFieldPath,
+        string RecordLocator);
+
+    private protected sealed record ParsedOrganizationalValueFact(
+        CanonicalOrganizationalSemanticId DimensionId,
+        SourceNativeIdentifier ExactValueIdentity,
+        string? VerbatimDisplayValue,
+        string MethodId,
+        string MethodVersion,
+        string SourceFieldPath,
+        string RecordLocator);
 
     private protected sealed record ParsedEvidenceLocation(string RecordLocator, string FieldLocator);
 

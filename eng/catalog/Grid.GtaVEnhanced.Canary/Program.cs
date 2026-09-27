@@ -21,17 +21,81 @@ try
     var uvExecutable = Path.GetFullPath(RequireArgument(arguments, "uv-executable"));
     var outputDirectory = Path.GetFullPath(RequireArgument(arguments, "output"));
     var historicalLibraryPath = Path.GetFullPath(RequireArgument(arguments, "historical-library"));
+    var actorAcquisitionReceiptPath = Path.GetFullPath(RequireArgument(arguments, "actor-acquisition-receipt"));
+    var actorCorpusIndexPath = Path.GetFullPath(RequireArgument(arguments, "actor-corpus-index"));
+    var spatialAcquisitionReceiptPath = Path.GetFullPath(RequireArgument(arguments, "spatial-acquisition-receipt"));
+    var spatialCorpusIndexPath = Path.GetFullPath(RequireArgument(arguments, "spatial-corpus-index"));
+    var cloudSnapshotBundlePath = OptionalArgument(arguments, "rockstar-cloud-snapshot-bundle");
+    if (cloudSnapshotBundlePath is not null) cloudSnapshotBundlePath = Path.GetFullPath(cloudSnapshotBundlePath);
+    var allowedArguments = new HashSet<string>(StringComparer.Ordinal)
+    {
+        "game-root", "acquisition-receipt", "fivefury-wheel", "uv-executable",
+        "historical-library", "output", "rockstar-cloud-snapshot-bundle",
+        "actor-acquisition-receipt", "actor-corpus-index",
+        "spatial-acquisition-receipt", "spatial-corpus-index",
+    };
+    Require(arguments.Keys.All(allowedArguments.Contains), "The canary received an unsupported command-line option.");
 
     var repositoryRoot = GitBuildProvenanceResolver.FindRepositoryRoot();
+    var sourceFamilyManifestPath = Path.Combine(
+        repositoryRoot,
+        "scripts", "games", "grandtheftautov", "catalog", "gta_v_enhanced_source_families.v2.json");
+    var registrationSourceRegistryPath = Path.Combine(
+        repositoryRoot,
+        "scripts", "games", "grandtheftautov", "catalog", "gta_v_enhanced_registration_sources.v5.json");
+    var actorSourceFamilyManifestPath = Path.Combine(
+        repositoryRoot,
+        "scripts", "games", "grandtheftautov", "catalog", "gta_v_enhanced_actor_source_families.v1.json");
+    var spatialSourceFamilyManifestPath = Path.Combine(
+        repositoryRoot,
+        "scripts", "games", "grandtheftautov", "catalog", "gta_v_enhanced_spatial_source_families.v1.json");
+    var registrationSourceRegistry = GtaRegistrationSourceRegistry.Load(
+        registrationSourceRegistryPath,
+        sourceFamilyManifestPath,
+        actorSourceFamilyManifestPath,
+        spatialSourceFamilyManifestPath);
     await VerifyAcquisitionAsync(
         uvExecutable,
         fiveFuryWheel,
         gameRoot,
         acquisitionReceiptPath,
         repositoryRoot).ConfigureAwait(false);
+    await VerifyActorAcquisitionAsync(
+        uvExecutable,
+        fiveFuryWheel,
+        gameRoot,
+        actorAcquisitionReceiptPath,
+        repositoryRoot).ConfigureAwait(false);
+    await VerifySpatialAcquisitionAsync(
+        uvExecutable,
+        fiveFuryWheel,
+        gameRoot,
+        spatialAcquisitionReceiptPath,
+        repositoryRoot).ConfigureAwait(false);
     var acquisition = await GtaAcquisitionReceiptLoader.LoadAsync(
         acquisitionReceiptPath,
         gameRoot).ConfigureAwait(false);
+    var semanticAcquisition = GtaAcquisitionSemanticProjection.Create(acquisition, sourceFamilyManifestPath);
+    var actorAcquisition = await GtaActorAcquisitionReceiptLoader.LoadAsync(
+        actorAcquisitionReceiptPath,
+        actorCorpusIndexPath,
+        actorSourceFamilyManifestPath).ConfigureAwait(false);
+    Require(actorAcquisition.GameVersion == acquisition.GameVersion,
+        "Mounted Actor and local source acquisitions must bind the same exact build.");
+    var actorCorpusIndex = GtaVActorCorpusIndex.Load(
+        actorAcquisition.CorpusIndexBytes.AsSpan(),
+        actorAcquisition.CorpusArtifacts,
+        actorAcquisition.CorpusIndexReceiptBinding);
+    var spatialAcquisition = await GtaSpatialAcquisitionReceiptLoader.LoadAsync(
+        spatialAcquisitionReceiptPath,
+        spatialCorpusIndexPath,
+        spatialSourceFamilyManifestPath).ConfigureAwait(false);
+    Require(spatialAcquisition.GameVersion == acquisition.GameVersion,
+        "Mounted spatial and local source acquisitions must bind the same exact build.");
+    var spatialCorpusIndex = GtaVSpatialCorpusIndex.Load(
+        spatialAcquisition.CorpusIndexBytes.AsSpan(),
+        spatialAcquisition.SemanticArtifacts,
+        spatialAcquisition.CorpusIndexReceiptBinding);
 
     var adapterAssemblyBytes = await File.ReadAllBytesAsync(
         typeof(GtaVWeaponsMetaKnowledgeAdapter).Assembly.Location).ConfigureAwait(false);
@@ -51,7 +115,11 @@ try
     var populationZones = new GtaVPopulationZonesKnowledgeAdapter(enrichmentAdapterDigest);
     var ambientPedRoles = new GtaVAmbientPedRoleSecondaryAssertionAdapter(enrichmentAdapterDigest);
     var missions = new GtaVUgcMissionKnowledgeAdapter(adapterDigest);
+    var onlineActivities = new GtaVOnlineActivityRegistryKnowledgeAdapter(adapterDigest);
     var actors = new GtaVGen9PedsKnowledgeAdapter(adapterDigest);
+    var residentActors = new GtaVResidentPedsKnowledgeAdapter(adapterDigest, actorCorpusIndex);
+    var mountedDlcActors = new GtaVMountedDlcPedsKnowledgeAdapter(adapterDigest, actorCorpusIndex);
+    var mountedSpatial = new GtaVMountedSpatialKnowledgeAdapter(adapterDigest, spatialCorpusIndex);
 
     var weaponsArtifact = CreateFrozen(
         acquisition,
@@ -92,6 +160,21 @@ try
         new KnowledgeFormatCoordinate(
             GtaVWeaponsSecondaryAssertionAdapter.Gxt2FormatId,
             GtaVWeaponsSecondaryAssertionAdapter.Gxt2FormatVersion));
+    var patchLanguageRpfArtifact = CreateFrozen(
+        acquisition,
+        "update/update.rpf!/x64/patch/data/lang/american_rel.rpf",
+        coordinate => CreateSecondaryCoordinate(coordinate, "Rpf7Container"),
+        new KnowledgeFormatCoordinate("rockstar.rpf7-container", "1"));
+    var patchGxt2Artifact = CreateFrozen(
+        acquisition,
+        "update/update.rpf!/x64/patch/data/lang/american_rel.rpf!/global.gxt2",
+        coordinate => CreateSecondaryCoordinate(coordinate, "GXT2"),
+        new KnowledgeFormatCoordinate("rockstar.gta-v.gxt2-binary", "1"));
+    var hudGfxArtifact = CreateFrozen(
+        acquisition,
+        "update/update.rpf!/x64/data/cdimages/scaleform_generic.rpf!/hud.gfx",
+        coordinate => CreateSecondaryCoordinate(coordinate, "ScaleformGfxV8"),
+        new KnowledgeFormatCoordinate("rockstar.scaleform.gfx-v8", "1"));
     var missionArtifacts = acquisition.Members.Values
         .Where(value => value.Coordinate.StartsWith(
             "update/update2.rpf!/common/data/ugc/",
@@ -100,32 +183,147 @@ try
         .Select(value => CreateFrozen(acquisition, value.Coordinate, missions.CreateSourceCoordinate, missions.Format))
         .ToImmutableArray();
     Require(missionArtifacts.Length == 1052, "The exact Enhanced build must expose 1,052 acquired UGC members.");
+    var commonActivityArtifacts = acquisition.Members.Values
+        .Where(value => value.Coordinate.StartsWith("common.rpf!/data/ugc/", StringComparison.Ordinal))
+        .OrderBy(value => value.Coordinate, StringComparer.Ordinal)
+        .Select(value => CreateFrozen(acquisition, value.Coordinate, onlineActivities.CreateSourceCoordinate, onlineActivities.Format))
+        .ToImmutableArray();
+    Require(commonActivityArtifacts.Length == 40,
+        "The exact Enhanced build must expose 40 acquired common Online activity registry members.");
+    var onlineActivityArtifacts = commonActivityArtifacts.AddRange(missionArtifacts);
+    var residentActorArtifact = actorAcquisition.Artifacts[actorCorpusIndex.Resident.Artifact.SourceCoordinate];
+    var mountedDlcActorArtifacts = actorCorpusIndex.DlcPacks
+        .Select(value => actorAcquisition.Artifacts[value.Artifact.SourceCoordinate])
+        .OrderBy(value => value.Id.Value, StringComparer.Ordinal)
+        .ToImmutableArray();
+    Require(mountedDlcActorArtifacts.Length == 25,
+        "The exact Enhanced build must expose 25 mounted DLC ped metadata artifacts.");
+    var mountedActorClosureArtifacts = new[] { actorCorpusIndex.DlcListArtifact.SourceCoordinate }
+        .Concat(actorCorpusIndex.DlcPacks.SelectMany(value => new[]
+        {
+            value.Artifact.SourceCoordinate,
+            value.SetupArtifact.SourceCoordinate,
+            value.ContentArtifact.SourceCoordinate,
+        }))
+        .Select(value => actorAcquisition.Artifacts[value])
+        .DistinctBy(value => value.Id)
+        .OrderBy(value => value.Id.Value, StringComparer.Ordinal)
+        .ToImmutableArray();
+    Require(mountedActorClosureArtifacts.Length == 76,
+        "The mounted Actor assertion pass requires the exact DLC list and 25 setup/content/peds artifact triples.");
+
+    var corpusArtifacts = ImmutableArray.CreateBuilder<FrozenSourceArtifact>(onlineActivityArtifacts.Length + 10);
+    corpusArtifacts.Add(weaponsArtifact);
+    corpusArtifacts.Add(locationArtifact);
+    corpusArtifacts.Add(populationZoneArtifact);
+    corpusArtifacts.Add(actorArtifact);
+    corpusArtifacts.Add(ambientPedArtifact);
+    corpusArtifacts.Add(baseLanguageRpfArtifact);
+    corpusArtifacts.Add(baseGxt2Artifact);
+    corpusArtifacts.Add(patchLanguageRpfArtifact);
+    corpusArtifacts.Add(patchGxt2Artifact);
+    corpusArtifacts.Add(hudGfxArtifact);
+    corpusArtifacts.AddRange(missionArtifacts);
+    corpusArtifacts.AddRange(commonActivityArtifacts);
+    var sourceCorpus = new GtaVSupportedSourceCorpusIndex(corpusArtifacts.ToImmutable());
+    var enrichmentCorpus = new GtaVEnrichmentSourceCorpusIndex(sourceCorpus);
+    _ = sourceCorpus.GetGxt2(patchGxt2Artifact, GtaVPopulationZoneTerminologyAdapter.MaximumGxt2Bytes);
+
+    // The bootstrap instances above supply exact coordinate/format factories only. Registration
+    // itself uses one immutable corpus so every supported artifact representation is parsed once
+    // and queried by every applicable adapter.
+    weapons = new GtaVWeaponsMetaKnowledgeAdapter(GtaVKnowledgeEdition.Enhanced, adapterDigest, sourceCorpus);
+    locations = new GtaVMapZonesKnowledgeAdapter(adapterDigest, sourceCorpus);
+    populationZones = new GtaVPopulationZonesKnowledgeAdapter(enrichmentAdapterDigest, enrichmentCorpus);
+    ambientPedRoles = new GtaVAmbientPedRoleSecondaryAssertionAdapter(enrichmentAdapterDigest, enrichmentCorpus);
+    missions = new GtaVUgcMissionKnowledgeAdapter(adapterDigest, sourceCorpus);
+    onlineActivities = new GtaVOnlineActivityRegistryKnowledgeAdapter(adapterDigest, sourceCorpus);
+    actors = new GtaVGen9PedsKnowledgeAdapter(adapterDigest, sourceCorpus);
 
     var weaponsResult = await DiscoverAndExtractAsync(weapons, [weaponsArtifact], acquisition.GameVersion).ConfigureAwait(false);
     var locationResult = await DiscoverAndExtractAsync(locations, [locationArtifact], acquisition.GameVersion).ConfigureAwait(false);
     var populationZoneResult = await DiscoverAndExtractAsync(
         populationZones, [populationZoneArtifact], acquisition.GameVersion).ConfigureAwait(false);
-    var missionResult = await DiscoverAndExtractAsync(missions, missionArtifacts, acquisition.GameVersion).ConfigureAwait(false);
+    var missionBatch = await DiscoverAndExtractWithDiscoveryAsync(
+        missions, missionArtifacts, acquisition.GameVersion).ConfigureAwait(false);
+    var missionResult = missionBatch.Extraction;
+    var onlineActivityBatch = await DiscoverAndExtractWithDiscoveryAsync(
+        onlineActivities, onlineActivityArtifacts, acquisition.GameVersion).ConfigureAwait(false);
+    var onlineActivityResult = onlineActivityBatch.Extraction;
+    var missionCoverageLedger = RegistrationMissionQuestSourceLedger.Create(
+        onlineActivityArtifacts,
+        missionBatch.Discovery,
+        onlineActivityBatch.Discovery);
     var actorResult = await DiscoverAndExtractAsync(actors, [actorArtifact], acquisition.GameVersion).ConfigureAwait(false);
+    var residentActorResult = await DiscoverAndExtractAsync(
+        residentActors, [residentActorArtifact], acquisition.GameVersion).ConfigureAwait(false);
+    var mountedDlcActorResult = await DiscoverAndExtractAsync(
+        mountedDlcActors, mountedDlcActorArtifacts, acquisition.GameVersion).ConfigureAwait(false);
+    var mountedSpatialResult = await DiscoverAndExtractAsync(
+        mountedSpatial, spatialAcquisition.SemanticArtifacts, acquisition.GameVersion).ConfigureAwait(false);
+    var mountedSpatialMetrics = mountedSpatial.LastMetrics ??
+        throw new InvalidDataException("Mounted spatial extraction did not expose deterministic coverage metrics.");
     var extractions = ImmutableArray.Create(
-        weaponsResult, locationResult, populationZoneResult, missionResult, actorResult);
+        weaponsResult, locationResult, populationZoneResult, missionResult, onlineActivityResult, actorResult,
+        residentActorResult, mountedDlcActorResult, mountedSpatialResult);
 
-    var payloadArtifactIds = extractions
+    // Keep the complete verified semantic binding set available while secondary adapters
+    // add their already-acquired localization and relationship artifacts. The package
+    // projection narrows this set to the artifacts present at each deterministic stage.
+    var baseAcquisitionBindings = semanticAcquisition.Bindings;
+    var baseBoundArtifactIds = baseAcquisitionBindings
+        .Select(value => value.ArtifactId)
+        .ToHashSet();
+    var actorSemanticAcquisition = GtaActorAcquisitionReceiptLoader.NarrowTo(
+        actorAcquisition,
+        new[] { residentActorArtifact.Id }
+            .Concat(mountedActorClosureArtifacts.Select(value => value.Id))
+            // The historical acquisition already receipts one mounted ped artifact. A
+            // content-addressed artifact has exactly one acquisition binding in a package;
+            // retain that established binding instead of adding a second receipt path for
+            // identical bytes acquired again by the Actor corpus pass.
+            .Where(value => !baseBoundArtifactIds.Contains(value)));
+    var alreadyBoundArtifactIds = baseBoundArtifactIds
+        .Concat(actorSemanticAcquisition.Bindings.Select(value => value.ArtifactId))
+        .ToHashSet();
+    var spatialSemanticAcquisition = GtaSpatialAcquisitionReceiptLoader.NarrowTo(
+        spatialAcquisition,
+        spatialAcquisition.SemanticArtifacts
+            .Select(value => value.Id)
+            .Where(value => !alreadyBoundArtifactIds.Contains(value)));
+    var allAcquisitionReceipts = semanticAcquisition.Receipts
+        .AddRange(actorSemanticAcquisition.Receipts)
+        .AddRange(spatialSemanticAcquisition.Receipts)
+        .OrderBy(value => value.Id.Value, StringComparer.Ordinal)
+        .ToImmutableArray();
+    var allAcquisitionBindings = baseAcquisitionBindings
+        .AddRange(actorSemanticAcquisition.Bindings)
+        .AddRange(spatialSemanticAcquisition.Bindings)
+        .OrderBy(value => value.ArtifactId.Value, StringComparer.Ordinal)
+        .ToImmutableArray();
+    var primaryArtifactIds = extractions
         .SelectMany(value => value.CanonicalRegistrations)
         .SelectMany(value => value.Registration.Artifacts)
         .Select(value => value.Id)
-        .ToHashSet();
-    var acquisitionBindings = acquisition.Bindings
-        .Where(value => payloadArtifactIds.Contains(value.ArtifactId))
+        .Distinct()
+        .OrderBy(value => value.Value, StringComparer.Ordinal)
         .ToImmutableArray();
+    var missingPrimaryBindings = primaryArtifactIds
+        .Where(value => allAcquisitionBindings.Count(binding => binding.ArtifactId == value) != 1)
+        .Select(value => $"{value.Value}:{allAcquisitionBindings.Count(binding => binding.ArtifactId == value)}")
+        .ToArray();
+    Require(missingPrimaryBindings.Length == 0,
+        "Primary registration artifacts require one acquisition binding each: " +
+        string.Join(",", missingPrimaryBindings));
     var originPayload = GtaVKnowledgePackageProjection.CreatePayload(
         extractions,
-        acquisition.Receipts,
-        acquisitionBindings);
+        allAcquisitionReceipts,
+        allAcquisitionBindings);
+    Console.WriteLine("RegistrationStage=PrimaryPayload");
     var sourceScope = KnowledgeSourceScope.BaseGame(
         ProductionGridCatalogService.GrandTheftAutoVEnhancedId,
         acquisition.GameVersion);
-    var secondaryAdapter = new GtaVWeaponsSecondaryAssertionAdapter(adapterDigest);
+    var secondaryAdapter = new GtaVWeaponsSecondaryAssertionAdapter(adapterDigest, sourceCorpus);
     var secondary = secondaryAdapter.Extract(
         originPayload,
         sourceScope,
@@ -135,19 +333,32 @@ try
     var weaponEnrichedPayload = GtaVKnowledgePackageProjection.AddSecondaryAssertions(
         originPayload,
         secondary,
-        acquisition.Receipts,
-        acquisition.Bindings);
-    var actorSecondaryAdapter = new GtaVActorDlcSecondaryAssertionAdapter(adapterDigest);
-    var actorSecondary = actorSecondaryAdapter.Extract(
+        allAcquisitionReceipts,
+        allAcquisitionBindings);
+    Console.WriteLine("RegistrationStage=WeaponTerminology");
+    var weaponsOrganizationAdapter = new GtaVWeaponsOrganizationSecondaryAssertionAdapter(adapterDigest, sourceCorpus);
+    var weaponsOrganization = weaponsOrganizationAdapter.Extract(
         weaponEnrichedPayload,
+        sourceScope,
+        weaponsArtifact);
+    var weaponOrganizedPayload = GtaVKnowledgePackageProjection.AddSecondaryAssertions(
+        weaponEnrichedPayload,
+        weaponsOrganization,
+        allAcquisitionReceipts,
+        allAcquisitionBindings);
+    Console.WriteLine("RegistrationStage=WeaponOrganization");
+    var actorSecondaryAdapter = new GtaVActorDlcSecondaryAssertionAdapter(adapterDigest, sourceCorpus);
+    var actorSecondary = actorSecondaryAdapter.Extract(
+        weaponOrganizedPayload,
         sourceScope,
         actorArtifact);
     var actorEnrichedPayload = GtaVKnowledgePackageProjection.AddSecondaryAssertions(
-        weaponEnrichedPayload,
+        weaponOrganizedPayload,
         actorSecondary,
-        acquisition.Receipts,
-        acquisition.Bindings);
-    var populationTerminologyAdapter = new GtaVPopulationZoneTerminologyAdapter(enrichmentAdapterDigest);
+        allAcquisitionReceipts,
+        allAcquisitionBindings);
+    Console.WriteLine("RegistrationStage=HistoricalActorDlc");
+    var populationTerminologyAdapter = new GtaVPopulationZoneTerminologyAdapter(enrichmentAdapterDigest, enrichmentCorpus);
     var populationTerminology = populationTerminologyAdapter.Extract(
         actorEnrichedPayload,
         sourceScope,
@@ -157,23 +368,73 @@ try
     var populationEnrichedPayload = GtaVKnowledgePackageProjection.AddSecondaryAssertions(
         actorEnrichedPayload,
         populationTerminology,
-        acquisition.Receipts,
-        acquisition.Bindings);
+        allAcquisitionReceipts,
+        allAcquisitionBindings);
+    Console.WriteLine("RegistrationStage=PopulationTerminology");
     var ambientActorRoles = ambientPedRoles.Extract(
         populationEnrichedPayload,
         sourceScope,
         actorArtifact,
         ambientPedArtifact);
-    var payload = GtaVEnrichmentCoverageProjection.ApplyConsolidatedLocationCoverage(
+    var localPayloadBeforeMountedActorAssertions = GtaVEnrichmentCoverageProjection.ApplyConsolidatedLocationCoverage(
         GtaVKnowledgePackageProjection.AddSecondaryAssertions(
             populationEnrichedPayload,
             ambientActorRoles,
-            acquisition.Receipts,
-            acquisition.Bindings),
+            allAcquisitionReceipts,
+            allAcquisitionBindings),
         sourceScope);
+    Console.WriteLine("RegistrationStage=AmbientActorRoles");
+    var mountedActorAdapter = new GtaVMountedActorSecondaryAssertionAdapter(adapterDigest, actorCorpusIndex);
+    var mountedActorResult = mountedActorAdapter.Extract(
+        localPayloadBeforeMountedActorAssertions,
+        sourceScope,
+        residentActorArtifact,
+        mountedActorClosureArtifacts,
+        actorArtifact);
+    var localPayload = mountedActorResult.Batches.Aggregate(
+        localPayloadBeforeMountedActorAssertions,
+        (current, batch) => GtaVKnowledgePackageProjection.AddSecondaryAssertions(
+            current, batch, allAcquisitionReceipts, allAcquisitionBindings));
+    Console.WriteLine("RegistrationStage=MountedActorAssertions");
+    GtaVRockstarCloudSnapshotBundle? cloudSnapshot = null;
+    GtaVCloudJobHeaderSecondaryAssertionResult? cloudResult = null;
+    RegistrationCloudMissionCoverage? cloudCoverage = null;
+    object? referenceSourceIndexReport = null;
+    var payload = localPayload;
+    if (cloudSnapshotBundlePath is not null)
+    {
+        var establishedFmnm = localPayload.KnowledgeRecords
+            .Where(value => value.Kind == KnowledgeKind.MissionQuest &&
+                            string.Equals(value.NativeIdentity.Namespace,
+                                "rockstar.gta-v.enhanced.ugc-mission", StringComparison.Ordinal) &&
+                            string.Equals(value.NativeIdentity.ObjectType,
+                                "UGCMissionFmnm", StringComparison.Ordinal))
+            .Select(value => value.NativeIdentity.ExactRepresentation)
+            .OrderBy(value => value, StringComparer.Ordinal)
+            .ToImmutableArray();
+        Require(establishedFmnm.Length == 987 &&
+                establishedFmnm.Distinct(StringComparer.Ordinal).Count() == establishedFmnm.Length,
+            "Cloud registration requires the exact 987 established fmnm identities.");
+        cloudSnapshot = GtaVRockstarCloudSnapshotBundleLoader.Load(
+            cloudSnapshotBundlePath,
+            registrationSourceRegistry.RockstarCloudJobs.ApprovedSchemaDescriptorBytes,
+            establishedFmnm);
+        referenceSourceIndexReport = RegistrationReferenceSourceIndexReport.Create(
+            cloudSnapshot, registrationSourceRegistry);
+        var cloudAdapter = new GtaVCloudJobHeaderSecondaryAssertionAdapter(adapterDigest);
+        cloudResult = cloudAdapter.Extract(localPayload, sourceScope, cloudSnapshot);
+        payload = GtaVKnowledgePackageProjection.AddSecondaryAssertions(
+            localPayload,
+            cloudResult.Batch,
+            allAcquisitionReceipts.Add(cloudSnapshot.AcquisitionReceipt),
+            allAcquisitionBindings.Add(cloudSnapshot.AcquisitionBinding));
+        cloudCoverage = RegistrationCloudMissionCoverage.Create(cloudSnapshot, cloudResult);
+    }
     Require(payload.KnowledgeRecords.SequenceEqual(originPayload.KnowledgeRecords),
         "Secondary enrichment must not regenerate or reorder any established canonical record identity.");
-    ValidateExpectedCanary(payload, adapterDigest, enrichmentAdapterDigest);
+    ValidateExpectedCanary(
+        payload, adapterDigest, enrichmentAdapterDigest, mountedActorResult,
+        mountedSpatialMetrics, cloudResult);
     var git = GitBuildProvenanceResolver.ResolveCandidate();
 
     var validation = new CatalogValidationSummary(
@@ -181,7 +442,9 @@ try
         "grid.gta-v-enhanced.four-kind-canary.structural",
         "1",
         ContentDigest.ComputeSha256(Encoding.UTF8.GetBytes("candidate:not-qcs-evaluated:four-kind:v1")));
-    var buildProvenance = git.Provenance.WithAdapterBuildReceipts(adapterBuildReceipts);
+    var buildProvenance = git.Provenance.IsDevelopment
+        ? git.Provenance
+        : git.Provenance.WithAdapterBuildReceipts(adapterBuildReceipts);
     var package = CanonicalCatalogPackageKernel.CreateV6(
         CatalogPackageKind.BaseGameCatalog,
         new CatalogGameScope(
@@ -205,6 +468,19 @@ try
     var reloadedVerification = CanonicalCatalogPackageKernel.Verify(reloaded);
     Require(reloadedVerification.IsStructurallyValid && reloaded.Id == package.Id,
         "The reloaded canary package failed independent structural verification.");
+    object coverageReport = RegistrationCoverageReport.Create(
+        package,
+        missionCoverageLedger,
+        sourceFamilyManifestPath,
+        actorSourceFamilyManifestPath,
+        spatialSourceFamilyManifestPath,
+        registrationSourceRegistry);
+    if (cloudCoverage is not null && cloudSnapshot is not null)
+    {
+        coverageReport = RegistrationCloudMissionCoverageProjection.Apply(
+            coverageReport, registrationSourceRegistry, cloudCoverage);
+    }
+    var sourceIndexReport = RegistrationSourceIndexReport.Create(acquisition, sourceFamilyManifestPath);
 
     var historicalStore = new JsonCanonicalKnowledgeCatalogStore(historicalLibraryPath);
     var historicalLibrary = await historicalStore.LoadAsync().ConfigureAwait(false);
@@ -215,6 +491,10 @@ try
         KnowledgeAdapterRevisionId.LegacyAlgorithmVersion);
 
     EnsureOutputDirectory(outputDirectory);
+    // Persist the already structurally verified immutable package before attempting the
+    // append-only store import. A rejected import can then be audited without weakening
+    // the store or rebuilding source inputs through a separate diagnostic path.
+    await WriteNewAsync(Path.Combine(outputDirectory, "canary-package.v6.json"), packageJson).ConfigureAwait(false);
     var storePath = Path.Combine(outputDirectory, "shared-canonical-library.v5.json");
     File.Copy(historicalLibraryPath, storePath, overwrite: false);
     var store = new JsonCanonicalKnowledgeCatalogStore(storePath);
@@ -252,10 +532,21 @@ try
         enrichmentAdapterDigest,
         historicalChains,
         currentChains);
-    await WriteNewAsync(Path.Combine(outputDirectory, "canary-package.v6.json"), packageJson).ConfigureAwait(false);
     await WriteNewAsync(
         Path.Combine(outputDirectory, "canary-report.v3.json"),
         JsonSerializer.Serialize(report, options)).ConfigureAwait(false);
+    await WriteNewAsync(
+        Path.Combine(outputDirectory, "registration-coverage.v1.json"),
+        JsonSerializer.Serialize(coverageReport, options)).ConfigureAwait(false);
+    await WriteNewAsync(
+        Path.Combine(outputDirectory, "registration-source-index.v1.json"),
+        JsonSerializer.Serialize(sourceIndexReport, options)).ConfigureAwait(false);
+    if (referenceSourceIndexReport is not null)
+    {
+        await WriteNewAsync(
+            Path.Combine(outputDirectory, "registration-reference-index.v1.json"),
+            JsonSerializer.Serialize(referenceSourceIndexReport, options)).ConfigureAwait(false);
+    }
 
     Console.WriteLine($"PackageId={package.Id.Value}");
     Console.WriteLine($"CatalogRevisionId={package.Manifest.CatalogRevisionId.Value}");
@@ -264,9 +555,31 @@ try
     Console.WriteLine($"MissionQuests={payload.KnowledgeRecords.Count(value => value.Kind == KnowledgeKind.MissionQuest)}");
     Console.WriteLine($"Items={payload.KnowledgeRecords.Count(value => value.Kind == KnowledgeKind.Item)}");
     Console.WriteLine($"Actors={payload.KnowledgeRecords.Count(value => value.Kind == KnowledgeKind.Actor)}");
+    Console.WriteLine($"MountedActorResidentRecords={mountedActorResult.Metrics.ResidentRecordCount}");
+    Console.WriteLine($"MountedActorDlcRecords={mountedActorResult.Metrics.DlcRecordCount}");
+    Console.WriteLine($"MountedActorNpcClassifications={mountedActorResult.Metrics.NpcClassificationCount}");
+    Console.WriteLine($"MountedActorPlayerCharacterClassifications={mountedActorResult.Metrics.PlayerCharacterClassificationCount}");
+    Console.WriteLine($"MountedActorGen9Correlations={mountedActorResult.Metrics.Gen9ResidentCorrelationCount}");
+    Console.WriteLine($"MountedSpatialArchetypes={mountedSpatialMetrics.ArchetypeCount}");
+    Console.WriteLine($"MountedSpatialRooms={mountedSpatialMetrics.RoomCount}");
+    Console.WriteLine($"MountedSpatialInstances={mountedSpatialMetrics.InstanceCount}");
+    Console.WriteLine($"MountedSpatialContainedBy={mountedSpatialMetrics.ContainedByCount}");
+    Console.WriteLine($"MountedSpatialResolvedInstanceOf={mountedSpatialMetrics.ResolvedInstanceOfCount}");
+    Console.WriteLine($"MountedSpatialUnresolvedInstanceOf={mountedSpatialMetrics.UnresolvedInstanceOfCount}");
+    Console.WriteLine($"MountedSpatialConnectsTo={mountedSpatialMetrics.ConnectsToCount}");
     Console.WriteLine($"LibraryRevision={library.Snapshot.Revision}");
     Console.WriteLine($"ValidationStatus={package.Manifest.ValidationStatus}");
     Console.WriteLine($"StructurallyValid={verification.IsStructurallyValid}");
+    Console.WriteLine("RegistrationCoverage=registration-coverage.v1.json");
+    Console.WriteLine("RegistrationSourceIndex=registration-source-index.v1.json");
+    if (referenceSourceIndexReport is not null)
+    {
+        Console.WriteLine("RegistrationReferenceIndex=registration-reference-index.v1.json");
+        Console.WriteLine($"RockstarCloudMatchedTargets={cloudResult!.Metrics.ExactMatchedTargetRecordCount}");
+        Console.WriteLine($"RockstarCloudTitledTargets={cloudResult.Metrics.TitledTargetRecordCount}");
+        Console.WriteLine($"RockstarCloudFamilyOrganizedTargets={cloudResult.Metrics.FamilyOrganizedTargetRecordCount}");
+        Console.WriteLine($"RockstarCloudUnmatchedTargets={cloudResult.Metrics.UnmatchedTargetRecordCount}");
+    }
     return 0;
 }
 catch (Exception exception)
@@ -406,6 +719,16 @@ static async Task<KnowledgeExtractionResult> DiscoverAndExtractAsync(
     ImmutableArray<FrozenSourceArtifact> artifacts,
     SourceNativeVersion gameVersion)
 {
+    var batch = await DiscoverAndExtractWithDiscoveryAsync(adapter, artifacts, gameVersion).ConfigureAwait(false);
+    return batch.Extraction;
+}
+
+static async Task<(SourceDiscoveryResult Discovery, KnowledgeExtractionResult Extraction)>
+    DiscoverAndExtractWithDiscoveryAsync(
+        IGameKnowledgeAdapter adapter,
+        ImmutableArray<FrozenSourceArtifact> artifacts,
+        SourceNativeVersion gameVersion)
+{
     var gameId = ProductionGridCatalogService.GrandTheftAutoVEnhancedId;
     var discovery = await adapter.DiscoverAsync(new PreproductionSourceDiscoveryRequest(
         gameId, gameVersion, null, null, artifacts)).ConfigureAwait(false);
@@ -415,15 +738,21 @@ static async Task<KnowledgeExtractionResult> DiscoverAndExtractAsync(
         gameId, gameVersion, null, null, adapter.Descriptor, artifacts)).ConfigureAwait(false);
     Require(extraction.CoverageState != KnowledgeCoverageState.Unsupported && !extraction.CanonicalRegistrations.IsEmpty,
         $"Adapter {adapter.Descriptor.AdapterId.Value} produced no canonical registrations.");
-    return extraction;
+    return (discovery, extraction);
 }
 
 static void ValidateExpectedCanary(
     CanonicalCatalogPayload payload,
     ContentDigest adapterDigest,
-    ContentDigest enrichmentAdapterDigest)
+    ContentDigest enrichmentAdapterDigest,
+    GtaVMountedActorSecondaryAssertionResult mountedActorResult,
+    GtaVMountedSpatialMetrics mountedSpatial,
+    GtaVCloudJobHeaderSecondaryAssertionResult? cloudResult)
 {
-    Require(payload.AdapterDescriptors.Length == 9 &&
+    var mountedActor = mountedActorResult.Metrics;
+    var cloud = cloudResult?.Batch;
+    var expectedAdapterCount = 15 + (cloud is null ? 0 : 1);
+    Require(payload.AdapterDescriptors.Length == expectedAdapterCount &&
             payload.AdapterDescriptors.All(value =>
                 value.RevisionId.AlgorithmVersion == KnowledgeAdapterRevisionId.CurrentAlgorithmVersion &&
                 value.Revision.SemanticContractDigest is not null),
@@ -443,17 +772,21 @@ static void ValidateExpectedCanary(
     var populationZoneCount = payload.KnowledgeRecords.Count(value =>
         value.Kind == KnowledgeKind.Location &&
         string.Equals(value.NativeIdentity.Namespace, "rockstar.gta-v.enhanced.population-zones", StringComparison.Ordinal));
-    Require(locationCount == 138,
-        $"The exact source revisions did not produce 41 map-zone and 97 ordinal-exact population-zone Location records " +
-        $"(actual total {locationCount}, map-zone {mapZoneCount}, population-zone {populationZoneCount}).");
-    Require(payload.KnowledgeRecords.Count(value => value.Kind == KnowledgeKind.MissionQuest) == 987,
-        "The exact source revision did not produce 987 MissionQuest records.");
+    var mountedSpatialRecordCount = mountedSpatial.ArchetypeCount + mountedSpatial.RoomCount + mountedSpatial.InstanceCount;
+    Require(locationCount == 138 + mountedSpatialRecordCount,
+        $"The exact source revisions did not preserve 41 map zones and 97 population zones while adding every " +
+        $"mounted MLO archetype, room, and instance (actual total {locationCount}, map-zone {mapZoneCount}, " +
+        $"population-zone {populationZoneCount}, mounted {mountedSpatialRecordCount}).");
+    Require(payload.KnowledgeRecords.Count(value => value.Kind == KnowledgeKind.MissionQuest) == 1057,
+        "The exact source revisions did not preserve 987 fmnm identities and add 70 exact Online activity registry records.");
     Require(payload.KnowledgeRecords.Count(value => value.Kind == KnowledgeKind.Item) == 102,
         "The exact source revision did not preserve 102 Item records.");
-    Require(payload.KnowledgeRecords.Count(value => value.Kind == KnowledgeKind.Actor) == 2,
-        "The exact source revision did not produce two Actor records.");
+    Require(payload.KnowledgeRecords.Count(value => value.Kind == KnowledgeKind.Actor) == 1120 &&
+            mountedActor.ResidentRecordCount == 683 && mountedActor.DlcRecordCount == 435,
+        "The mounted Actor corpus did not preserve two historical records and add 683 resident plus 435 DLC records.");
     var recordsById = payload.KnowledgeRecords.ToDictionary(value => value.Id);
-    Require(payload.TerminologyAssertions.Length == 149 &&
+    var cloudTitleCount = cloud?.TerminologyAssertions.Length ?? 0;
+    Require(payload.TerminologyAssertions.Length == 219 + cloudTitleCount &&
             payload.TerminologyAssertions.All(value => value.KnowledgeRecordId != default) &&
             payload.TerminologyAssertions.Count(value =>
                 recordsById[value.KnowledgeRecordId].Kind == KnowledgeKind.Item) == 53 &&
@@ -461,45 +794,119 @@ static void ValidateExpectedCanary(
                 recordsById[value.KnowledgeRecordId].Kind == KnowledgeKind.Location &&
                 value.Role == TerminologyAssertionRole.PrimaryName &&
                 string.Equals(value.LanguageTag, "en-US", StringComparison.Ordinal)) == 96 &&
+            payload.TerminologyAssertions.Count(value =>
+                recordsById[value.KnowledgeRecordId].Kind == KnowledgeKind.MissionQuest &&
+                value.Role == TerminologyAssertionRole.PrimaryName) == 70 + cloudTitleCount &&
+            payload.TerminologyAssertions.Count(value =>
+                recordsById[value.KnowledgeRecordId].Kind == KnowledgeKind.MissionQuest &&
+                value.Role == TerminologyAssertionRole.PrimaryName &&
+                string.Equals(value.LanguageTag, "und", StringComparison.Ordinal)) == 70 &&
             payload.TerminologyAssertions.All(value =>
-                recordsById[value.KnowledgeRecordId].Kind is KnowledgeKind.Item or KnowledgeKind.Location),
-        "The exact secondary evidence must preserve 53 weapon names and add 96 population-zone names.");
-    Require(payload.RelationshipAssertions.Length == 91 &&
-            payload.RelationshipAssertions.Count(value => value.Resolution == CanonicalResolutionState.Resolved) == 27 &&
-            payload.RelationshipAssertions.Count(value => value.Resolution == CanonicalResolutionState.Unresolved) == 64,
-        "The existing weapons relationship semantics changed.");
+                recordsById[value.KnowledgeRecordId].Kind is KnowledgeKind.Item or KnowledgeKind.Location or KnowledgeKind.MissionQuest),
+        "The exact evidence must preserve 149 prior names, 70 FILE titles, and every admitted provider title.");
+    var mountedSpatialRelationshipCount = mountedSpatial.ContainedByCount +
+        mountedSpatial.ResolvedInstanceOfCount + mountedSpatial.UnresolvedInstanceOfCount +
+        mountedSpatial.ConnectsToCount;
+    Require(payload.RelationshipAssertions.Length == 91 + mountedSpatialRelationshipCount &&
+            payload.RelationshipAssertions.Count(value => value.Resolution == CanonicalResolutionState.Resolved) ==
+                27 + mountedSpatial.ContainedByCount + mountedSpatial.ResolvedInstanceOfCount +
+                mountedSpatial.ConnectsToCount &&
+            payload.RelationshipAssertions.Count(value => value.Resolution == CanonicalResolutionState.Unresolved) ==
+                64 + mountedSpatial.UnresolvedInstanceOfCount,
+        "The existing weapons and mounted spatial relationship semantics changed.");
     Require(payload.UnresolvedSourceAssertions.Length == 60,
         "The exact UGC source revision did not retain 60 unresolved mission resources.");
-    Require(payload.ReferenceEvidenceReceipts.IsEmpty, "The local-file canary cannot contain reference evidence.");
+    Require(payload.ReferenceEvidenceReceipts.Length == (cloud?.ReferenceEvidenceReceipts.Length ?? 0),
+        "REFERENCE_VERIFIED evidence must be absent locally or exactly closed by the verified cloud batch.");
+    var cloudClassificationCount = cloud?.SemanticClassifications.Length ?? 0;
     Require(payload.SemanticClassificationAssertions.Count(value =>
                 value.RoleId == CanonicalProjectionSemantics.ItemWeapons) == 91 &&
             payload.SemanticClassificationAssertions.Count(value =>
-                value.RoleId == CanonicalProjectionSemantics.ActorNpc) == 2 &&
-            payload.SemanticClassificationAssertions.Length == 93,
-        "The exact evidence must preserve 91 Weapons classifications and add two NPC classifications.");
-    Require(payload.OrganizationalValueAssertions.Length == 16 &&
-            payload.OrganizationalValueAssertions.All(value =>
-                value.DimensionId == CanonicalProjectionSemantics.ActorDlcDimensionNode),
-        "The exact Actor DLCData fields must produce 16 DLC organizational-value assertions.");
-    Require(payload.CrossSourceAssertions.Length == 258 &&
-            payload.CrossSourceTargetLinkClaims.Length == 244,
+                value.RoleId == CanonicalProjectionSemantics.ActorNpc) == 1117 &&
+            payload.SemanticClassificationAssertions.Count(value =>
+                value.RoleId == CanonicalProjectionSemantics.ActorPlayerCharacter) == 3 &&
+            payload.SemanticClassificationAssertions.Count(value =>
+                value.RoleId == CanonicalProjectionSemantics.MissionOnline) == 70 + cloudClassificationCount &&
+            payload.SemanticClassificationAssertions.Length == 1281 + cloudClassificationCount &&
+            mountedActor.PlayerCharacterClassificationCount == 3 &&
+            mountedActor.NpcClassificationCount == 1115 &&
+            mountedActor.UnclassifiedRecordCount == 0,
+        "The exact evidence must preserve local classifications and every admitted provider Online classification.");
+    var cloudOrganizationCount = cloud?.OrganizationalValues.Length ?? 0;
+    Require(payload.OrganizationalValueAssertions.Length == 1014 + cloudOrganizationCount &&
+            payload.OrganizationalValueAssertions.Count(value =>
+                value.DimensionId == CanonicalProjectionSemantics.ActorDlcDimensionNode) == 451 &&
+            payload.OrganizationalValueAssertions.Count(value =>
+                value.DimensionId == CanonicalProjectionSemantics.ItemSourceCategoryDimensionNode) == 91 &&
+            payload.OrganizationalValueAssertions.Count(value =>
+                value.DimensionId == GtaVWeaponsOrganizationSecondaryAssertionAdapter.GroupDimension) == 62 &&
+            payload.OrganizationalValueAssertions.Count(value =>
+                value.DimensionId == GtaVWeaponsOrganizationSecondaryAssertionAdapter.SlotDimension) == 63 &&
+            payload.OrganizationalValueAssertions.Count(value =>
+                value.DimensionId == GtaVWeaponsOrganizationSecondaryAssertionAdapter.NavigateOrderEntryDimension) == 112 &&
+            payload.OrganizationalValueAssertions.Count(value =>
+                value.DimensionId == GtaVWeaponsOrganizationSecondaryAssertionAdapter.NavigateOrderNumberDimension) == 112 &&
+            payload.OrganizationalValueAssertions.Count(value =>
+                value.DimensionId == GtaVWeaponsOrganizationSecondaryAssertionAdapter.BestOrderEntryDimension) == 54 &&
+            payload.OrganizationalValueAssertions.Count(value =>
+                value.DimensionId == GtaVWeaponsOrganizationSecondaryAssertionAdapter.BestOrderNumberDimension) == 54 &&
+            payload.OrganizationalValueAssertions.Count(value =>
+                value.DimensionId == CanonicalProjectionSemantics.MissionActivityFamilyDimensionNode) ==
+                    15 + cloudOrganizationCount &&
+            payload.OrganizationalValueAssertions.Where(value =>
+                value.DimensionId == CanonicalProjectionSemantics.MissionActivityFamilyDimensionNode)
+                .All(value => value.VerbatimDisplayValue is not null) &&
+            payload.OrganizationalValueAssertions.Where(value =>
+                value.DimensionId != CanonicalProjectionSemantics.ActorDlcDimensionNode &&
+                value.DimensionId != CanonicalProjectionSemantics.MissionActivityFamilyDimensionNode)
+                .All(value => value.VerbatimDisplayValue is null) &&
+            mountedActor.DlcOrganizationalValueCount == 435,
+        "The exact organization fields must preserve local values and every admitted provider family.");
+    Require(payload.CrossSourceAssertions.Length == 2359 + (cloud?.CrossSourceAssertions.Length ?? 0) &&
+            payload.CrossSourceTargetLinkClaims.Length == 2054 + (cloud?.TargetLinkClaims.Length ?? 0),
         "Every secondary claim requires an exact envelope and exact origin target link.");
+    Require(payload.CorrelationEnvelopes.Length == 2 &&
+            mountedActor.Gen9ResidentCorrelationCount == 2 &&
+            payload.CorrelationEnvelopes.All(value =>
+                value.Record.Outcome == CorrelationOutcome.Correlated &&
+                value.Record.MemberIds.Length == 2),
+        "The two historical Gen9 Actors must correlate without identity replacement to resident records.");
+    Require(payload.UnresolvedCrossSourceClaimContents.Length ==
+                (cloud?.UnresolvedCrossSourceClaimContents.Length ?? 0) &&
+            payload.UnresolvedCrossSourceEvidenceBindings.Length ==
+                (cloud?.UnresolvedCrossSourceEvidenceBindings.Length ?? 0) &&
+            payload.UnresolvedCrossSourceAssertions.Length ==
+                (cloud?.UnresolvedCrossSourceAssertions.Length ?? 0),
+        "Unmatched or ambiguous cloud objects must remain exact unresolved cross-source assertions.");
     Require(payload.SourceNativeLocationTypeAssertions.Count(value =>
                 string.Equals(value.ExactNativeType.ExactRepresentation, "CMapZone", StringComparison.Ordinal)) == 41 &&
             payload.SourceNativeLocationTypeAssertions.Count(value =>
                 string.Equals(value.ExactNativeType.ExactRepresentation, "zone", StringComparison.Ordinal)) == 97 &&
-            payload.SourceNativeLocationTypeAssertions.Length == 138,
-        "The exact Location sources did not preserve 41 CMapZone and 97 population-zone native types.");
-    Require(payload.LocationSemanticClassificationAssertions.Length == 138 &&
-            payload.LocationSemanticClassificationAssertions.All(value =>
-                value.RoleId == LocationSemanticRoles.AreaZone),
-        "The exact Location source revisions did not produce 138 area-zone classifications.");
+            payload.SourceNativeLocationTypeAssertions.Length == 138 + mountedSpatialRecordCount,
+        "The exact Location sources did not preserve the area-zone native types and add every mounted spatial native type.");
+    Require(payload.LocationSemanticClassificationAssertions.Length ==
+                138 + mountedSpatial.ArchetypeCount + mountedSpatial.RoomCount + (2 * mountedSpatial.InstanceCount) &&
+            payload.LocationSemanticClassificationAssertions.Count(value =>
+                value.RoleId == LocationSemanticRoles.AreaZone) == 138 &&
+            payload.LocationSemanticClassificationAssertions.Count(value =>
+                value.RoleId == LocationSemanticRoles.Room) == mountedSpatial.RoomCount &&
+            payload.LocationSemanticClassificationAssertions.Count(value =>
+                value.RoleId == LocationSemanticRoles.Instance) == mountedSpatial.InstanceCount &&
+            payload.LocationSemanticClassificationAssertions.Count(value =>
+                value.RoleId == LocationSemanticRoles.Interior) ==
+                mountedSpatial.ArchetypeCount + mountedSpatial.InstanceCount,
+        "The exact mounted spatial source revisions did not produce the expected independently evidenced roles.");
     Require(payload.LocationCoverageReports is [{ Status: LocationCoverageStatus.Partial }] &&
             payload.LocationCoverageReports[0].Terminology is
-                { TotalRecordCount: 138, PrimaryNamedRecordCount: 96, IdentifierOnlyRecordCount: 42 } &&
-            payload.LocationCoverageReports[0].SourceFamilies.Length == 2 &&
-            payload.LocationCoverageReports[0].Hierarchy.NotProvidedBySource,
-        "The GTA V Enhanced Location canary must remain two-family Partial coverage with exact terminology and no hierarchy.");
+                { PrimaryNamedRecordCount: 96 } &&
+            payload.LocationCoverageReports[0].Terminology.TotalRecordCount == locationCount &&
+            payload.LocationCoverageReports[0].Terminology.IdentifierOnlyRecordCount == locationCount - 96 &&
+            payload.LocationCoverageReports[0].SourceFamilies.Length == 5 &&
+            payload.LocationCoverageReports[0].Hierarchy.SourceProvidedEdgeCount ==
+                mountedSpatial.ContainedByCount + mountedSpatial.ResolvedInstanceOfCount +
+                mountedSpatial.UnresolvedInstanceOfCount &&
+            !payload.LocationCoverageReports[0].Hierarchy.NotProvidedBySource,
+        "The GTA V Enhanced Location canary must remain Partial while truthfully adding mounted spatial hierarchy.");
 }
 
 static void ValidateHistoricalV1(CanonicalKnowledgeCatalogSnapshot snapshot)
@@ -668,13 +1075,38 @@ static object CreateReport(
         locationNativeTypeAssertions = payload.SourceNativeLocationTypeAssertions.Length,
         locationSemanticClassifications = payload.LocationSemanticClassificationAssertions.Length,
         locationCoverageReports = payload.LocationCoverageReports.Length,
+        locationCoverageSourceFamilies = payload.LocationCoverageReports.Sum(value => value.SourceFamilies.Length),
+        locationContainedByRelationships = payload.RelationshipAssertions.Count(value =>
+            value.SemanticId == LocationRelationshipSemantics.ContainedBy),
+        locationInstanceOfRelationships = payload.RelationshipAssertions.Count(value =>
+            value.SemanticId == LocationRelationshipSemantics.InstanceOf),
+        locationConnectsToRelationships = payload.RelationshipAssertions.Count(value =>
+            value.SemanticId == LocationRelationshipSemantics.ConnectsTo),
+        locationResolvedInstanceOfRelationships = payload.RelationshipAssertions.Count(value =>
+            value.SemanticId == LocationRelationshipSemantics.InstanceOf &&
+            value.Resolution == CanonicalResolutionState.Resolved),
+        locationUnresolvedInstanceOfRelationships = payload.RelationshipAssertions.Count(value =>
+            value.SemanticId == LocationRelationshipSemantics.InstanceOf &&
+            value.Resolution == CanonicalResolutionState.Unresolved),
         itemSemanticClassifications = payload.SemanticClassificationAssertions.Count(value =>
             value.RoleId == CanonicalProjectionSemantics.ItemWeapons),
         actorSemanticClassifications = payload.SemanticClassificationAssertions.Count(value =>
+            value.RoleId == CanonicalProjectionSemantics.ActorNpc ||
+            value.RoleId == CanonicalProjectionSemantics.ActorPlayerCharacter),
+        actorNpcClassifications = payload.SemanticClassificationAssertions.Count(value =>
             value.RoleId == CanonicalProjectionSemantics.ActorNpc),
-        actorDlcOrganizationalValues = payload.OrganizationalValueAssertions.Length,
+        actorPlayerCharacterClassifications = payload.SemanticClassificationAssertions.Count(value =>
+            value.RoleId == CanonicalProjectionSemantics.ActorPlayerCharacter),
+        actorDlcOrganizationalValues = payload.OrganizationalValueAssertions.Count(value =>
+            value.DimensionId == CanonicalProjectionSemantics.ActorDlcDimensionNode),
+        weaponOrganizationalValues = payload.OrganizationalValueAssertions.Count(value =>
+            value.DimensionId != CanonicalProjectionSemantics.ActorDlcDimensionNode &&
+            value.DimensionId != CanonicalProjectionSemantics.MissionActivityFamilyDimensionNode),
+        missionActivityFamilyOrganizationalValues = payload.OrganizationalValueAssertions.Count(value =>
+            value.DimensionId == CanonicalProjectionSemantics.MissionActivityFamilyDimensionNode),
         crossSourceAssertions = payload.CrossSourceAssertions.Length,
         crossSourceTargetLinks = payload.CrossSourceTargetLinkClaims.Length,
+        correlations = payload.CorrelationEnvelopes.Length,
     },
     records = payload.KnowledgeRecords.Select(value => new
     {
@@ -694,7 +1126,13 @@ static ImmutableArray<EvidenceChainReport> CreateEvidenceChains(
         value => value.Revision.Id,
         value => value.AdapterRevisionId.AlgorithmVersion);
     var fileEvidence = snapshot.FileEvidenceReceipts.ToDictionary(value => value.Id);
-    var acquisitionBindings = snapshot.ArtifactAcquisitionBindings.ToDictionary(value => value.ArtifactId);
+    var acquisitionBindings = snapshot.ArtifactAcquisitionBindings
+        .GroupBy(value => value.ArtifactId)
+        .ToDictionary(
+            value => value.Key,
+            value => value.OrderBy(item => item.MemberCoordinate.ExactRepresentation, StringComparer.Ordinal)
+                .ThenBy(item => item.AcquisitionReceiptId.Value, StringComparer.Ordinal)
+                .ToImmutableArray());
     var acquisitionReceipts = snapshot.AcquisitionReceipts.ToDictionary(value => value.Id);
     var chains = ImmutableArray.CreateBuilder<EvidenceChainReport>(4);
     foreach (var kind in Enum.GetValues<KnowledgeKind>())
@@ -720,10 +1158,28 @@ static ImmutableArray<EvidenceChainReport> CreateEvidenceChains(
                 receipt.SourceRevisionId == record.SourceRevisionId &&
                 string.Equals(binding.ClaimLocator, receipt.SourceFieldPath, StringComparison.Ordinal),
             $"The representative {kind} FILE_VERIFIED receipt coordinates do not match its binding.");
-        Require(snapshot.FindSourceRevision(record.SourceRevisionId) is not null,
+        var sourceRevision = snapshot.FindSourceRevision(record.SourceRevisionId);
+        Require(sourceRevision is not null,
             $"The representative {kind} source revision is not historically queryable.");
-        Require(acquisitionBindings.TryGetValue(receipt.SourceArtifactId, out var acquisitionBinding),
+        Require(acquisitionBindings.TryGetValue(receipt.SourceArtifactId, out var candidateAcquisitionBindings),
             $"The representative {kind} artifact is not acquisition-bound.");
+        var matchingAcquisitionBindings = candidateAcquisitionBindings!
+            .Where(value =>
+            {
+                var coordinatePrefix =
+                    $"rpf7-member:{value.MemberCoordinate.ExactRepresentation}#";
+                return receipt.NativeRecordLocator.StartsWith(coordinatePrefix, StringComparison.Ordinal) &&
+                       receipt.SourceFieldPath.StartsWith(coordinatePrefix, StringComparison.Ordinal);
+            })
+            .ToImmutableArray();
+        var matchingCoordinateGroups = matchingAcquisitionBindings
+            .GroupBy(value => value.MemberCoordinate)
+            .ToImmutableArray();
+        Require(matchingCoordinateGroups.Length == 1,
+            $"The representative {kind} FILE_VERIFIED receipt does not identify one exact acquired member coordinate.");
+        var acquisitionBinding = matchingCoordinateGroups[0]
+            .OrderBy(value => value.AcquisitionReceiptId.Value, StringComparer.Ordinal)
+            .First();
         Require(acquisitionReceipts.TryGetValue(acquisitionBinding!.AcquisitionReceiptId, out var acquisitionReceipt),
             $"The representative {kind} acquisition receipt is absent.");
         var member = acquisitionReceipt!.Members.SingleOrDefault(value =>
@@ -794,11 +1250,96 @@ static async Task VerifyAcquisitionAsync(
         $"Independent container-to-member acquisition verification failed: {error.Trim()} {output.Trim()}".Trim());
 }
 
+static async Task VerifyActorAcquisitionAsync(
+    string uvExecutable,
+    string fiveFuryWheel,
+    string gameRoot,
+    string receiptPath,
+    string repositoryRoot)
+{
+    var script = Path.Combine(
+        repositoryRoot,
+        "scripts", "games", "grandtheftautov", "catalog", "gta_v_enhanced_actor_acquire.py");
+    using var process = new Process
+    {
+        StartInfo = new ProcessStartInfo
+        {
+            FileName = uvExecutable,
+            WorkingDirectory = repositoryRoot,
+            UseShellExecute = false,
+            RedirectStandardOutput = true,
+            RedirectStandardError = true,
+            CreateNoWindow = true,
+        },
+    };
+    process.StartInfo.Environment["UV_CACHE_DIR"] = Path.Combine(
+        Path.GetTempPath(), "grid-gta-enhanced-canary-uv-cache");
+    foreach (var argument in new[]
+             {
+                 "run", "--offline", "--python", "3.11", "--with", fiveFuryWheel, "python", script,
+                 "verify", "--game-root", gameRoot, "--fivefury-wheel", fiveFuryWheel,
+                 "--receipt", receiptPath,
+             })
+        process.StartInfo.ArgumentList.Add(argument);
+    Require(process.Start(), "The mounted Actor acquisition verifier could not be started.");
+    var standardOutput = process.StandardOutput.ReadToEndAsync();
+    var standardError = process.StandardError.ReadToEndAsync();
+    await process.WaitForExitAsync().ConfigureAwait(false);
+    var output = await standardOutput.ConfigureAwait(false);
+    var error = await standardError.ConfigureAwait(false);
+    Require(process.ExitCode == 0,
+        $"Independent mounted Actor acquisition verification failed: {error.Trim()} {output.Trim()}".Trim());
+}
+
+static async Task VerifySpatialAcquisitionAsync(
+    string uvExecutable,
+    string fiveFuryWheel,
+    string gameRoot,
+    string receiptPath,
+    string repositoryRoot)
+{
+    var script = Path.Combine(
+        repositoryRoot,
+        "scripts", "games", "grandtheftautov", "catalog", "gta_v_enhanced_spatial_acquire.py");
+    using var process = new Process
+    {
+        StartInfo = new ProcessStartInfo
+        {
+            FileName = uvExecutable,
+            WorkingDirectory = repositoryRoot,
+            UseShellExecute = false,
+            RedirectStandardOutput = true,
+            RedirectStandardError = true,
+            CreateNoWindow = true,
+        },
+    };
+    process.StartInfo.Environment["UV_CACHE_DIR"] = Path.Combine(
+        Path.GetTempPath(), "grid-gta-enhanced-canary-uv-cache");
+    foreach (var argument in new[]
+             {
+                 "run", "--offline", "--python", "3.11", "--with", fiveFuryWheel, "python", script,
+                 "verify", "--game-root", gameRoot, "--fivefury-wheel", fiveFuryWheel,
+                 "--receipt", receiptPath,
+             })
+        process.StartInfo.ArgumentList.Add(argument);
+    Require(process.Start(), "The mounted spatial acquisition verifier could not be started.");
+    var standardOutput = process.StandardOutput.ReadToEndAsync();
+    var standardError = process.StandardError.ReadToEndAsync();
+    await process.WaitForExitAsync().ConfigureAwait(false);
+    var output = await standardOutput.ConfigureAwait(false);
+    var error = await standardError.ConfigureAwait(false);
+    Require(process.ExitCode == 0,
+        $"Independent mounted spatial acquisition verification failed: {error.Trim()} {output.Trim()}".Trim());
+}
+
 static Dictionary<string, string> ParseArguments(string[] values)
 {
     if (values.Length == 0 || values.Length % 2 != 0)
         throw new ArgumentException(
-            "Expected paired options: --game-root, --acquisition-receipt, --fivefury-wheel, --uv-executable, --historical-library, --output.");
+            "Expected paired options: --game-root, --acquisition-receipt, --fivefury-wheel, --uv-executable, " +
+            "--historical-library, --actor-acquisition-receipt, --actor-corpus-index, " +
+            "--spatial-acquisition-receipt, --spatial-corpus-index, --output, " +
+            "and optional --rockstar-cloud-snapshot-bundle.");
     var result = new Dictionary<string, string>(StringComparer.Ordinal);
     for (var index = 0; index < values.Length; index += 2)
     {
@@ -816,6 +1357,9 @@ static string RequireArgument(IReadOnlyDictionary<string, string> values, string
         throw new ArgumentException($"Missing required --{name} value.");
     return value;
 }
+
+static string? OptionalArgument(IReadOnlyDictionary<string, string> values, string name) =>
+    values.TryGetValue(name, out var value) && !string.IsNullOrWhiteSpace(value) ? value : null;
 
 static void Require(bool condition, string message)
 {

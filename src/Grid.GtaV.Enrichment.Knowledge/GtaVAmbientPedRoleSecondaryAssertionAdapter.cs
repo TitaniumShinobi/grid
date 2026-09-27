@@ -23,9 +23,11 @@ public sealed class GtaVAmbientPedRoleSecondaryAssertionAdapter
     public const long MaximumArtifactBytes = 32L * 1024 * 1024;
     private const string ActorVocabularyId = "grid.actor-role";
     private const string ActorVocabularyVersion = "1";
+    private readonly GtaVEnrichmentSourceCorpusIndex? _corpusIndex;
 
-    public GtaVAmbientPedRoleSecondaryAssertionAdapter(ContentDigest adapterArtifactDigest)
+    public GtaVAmbientPedRoleSecondaryAssertionAdapter(ContentDigest adapterArtifactDigest, GtaVEnrichmentSourceCorpusIndex? corpusIndex = null)
     {
+        _corpusIndex = corpusIndex;
         AmbientFormat = new KnowledgeFormatCoordinate(FormatId, ExactFormatVersion);
         Descriptor = new GameKnowledgeAdapterDescriptor(
             new KnowledgeAdapterId("grid.gta-v.enhanced.ambient-ped-npc-secondary"),
@@ -77,9 +79,13 @@ public sealed class GtaVAmbientPedRoleSecondaryAssertionAdapter
             ambientModelSetsArtifact, CreateSourceCoordinate(), AmbientFormat);
 
         var records = origin.KnowledgeRecords
-            .Where(value => value.GameId == sourceScope.GameId && value.Kind == KnowledgeKind.Actor)
+            .Where(value => value.GameId == sourceScope.GameId &&
+                value.Kind == KnowledgeKind.Actor &&
+                string.Equals(value.NativeIdentity.Namespace,
+                    GtaVGen9PedsKnowledgeAdapter.NativeIdentityNamespace, StringComparison.Ordinal) &&
+                string.Equals(value.NativeIdentity.ObjectType, "PedModelName", StringComparison.Ordinal))
             .ToDictionary(value => value.NativeIdentity.ExactRepresentation, StringComparer.Ordinal);
-        if (records.Count == 0) throw new InvalidDataException("No established Actor records are available.");
+        if (records.Count == 0) throw new InvalidDataException("No established Gen9 Actor records are available.");
         var originRevisions = records.Values.Select(value => value.SourceRevisionId).Distinct().ToImmutableArray();
         if (originRevisions.Length != 1 || !origin.SourceRevisions.Any(value =>
                 value.Revision.Id == originRevisions[0] &&
@@ -94,7 +100,9 @@ public sealed class GtaVAmbientPedRoleSecondaryAssertionAdapter
             Descriptor.RevisionId, sourceScope,
             [actorOriginArtifact.FormatBinding, ambientModelSetsArtifact.FormatBinding]);
 
-        var memberships = Parse(ambientModelSetsArtifact)
+        var memberships = Parse(
+                ambientModelSetsArtifact,
+                _corpusIndex?.Sources.GetXmlDocument(ambientModelSetsArtifact, MaximumArtifactBytes))
             .Where(value => records.ContainsKey(value.ActorNativeIdentity))
             .OrderBy(value => value.ActorNativeIdentity, StringComparer.Ordinal)
             .ThenBy(value => value.ActorFieldPath, StringComparer.Ordinal)
@@ -193,9 +201,14 @@ public sealed class GtaVAmbientPedRoleSecondaryAssertionAdapter
             links.ToImmutable(), envelopes.ToImmutable());
     }
 
-    private static ImmutableArray<AmbientMembership> Parse(FrozenSourceArtifact artifact)
+    private static ImmutableArray<AmbientMembership> Parse(FrozenSourceArtifact artifact, XDocument? indexedDocument = null)
     {
         XDocument document;
+        if (indexedDocument is not null)
+        {
+            document = indexedDocument;
+        }
+        else
         try
         {
             var text = GtaVEnrichmentParsing.DecodeStrictUtf8(

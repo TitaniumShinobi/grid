@@ -1,4 +1,5 @@
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
+using System.Text.Json;
 using Grid.Core.Application;
 using Grid.Core.Models;
 using Grid.Core.Services;
@@ -6,21 +7,112 @@ using MockLaunchTargetState = Grid.Core.Application.LaunchTargetSelectionState;
 using MockWorkspaceSessionState = Grid.Core.Application.WorkspaceSessionState;
 
 var checks = 0;
+checks += CanonicalKnowledgeKernelChecks.Run();
+checks += CanonicalLocationContractChecks.Run();
+checks += CanonicalSelectorAndInstructionChecks.Run();
+checks += await CanonicalKnowledgeCatalogStoreChecks.RunAsync();
+checks += await CanonicalCatalogPackageImportChecks.RunAsync();
+checks += await CrossSourceCanonicalAssertionChecks.RunAsync();
+checks += await UniversalKnowledgeContractChecks.RunAsync();
+checks += InvestigationTicketDraftChecks.Run();
+checks += await AssistantCanonicalDraftStateChecks.RunAsync();
 var service = new MockGridCatalogService();
 var catalog = await service.GetCatalogAsync();
 
 var productionService = new ProductionGridCatalogService();
 var stageOneProductionCatalog = await productionService.GetCatalogAsync();
 Assert(stageOneProductionCatalog.SourceKind == CatalogSourceKind.Adapter, "Production identifies adapter-backed catalog provenance.");
-Assert(stageOneProductionCatalog.Games.Length == 2, "Production declares Skyrim and GTA onboarding definitions.");
+Assert(stageOneProductionCatalog.Games.Length == 3, "Production declares Skyrim, GTA V Enhanced, and GTA V Legacy onboarding definitions.");
 Assert(stageOneProductionCatalog.Games.All(game => game.Installations.IsEmpty), "A clean production catalog contains zero installations.");
 Assert(stageOneProductionCatalog.Games.SelectMany(game => game.Installations).All(installation =>
     installation.Metadata.Provenance != InstallationProvenanceKind.Mock), "Production contains no mock installation provenance.");
-Assert(stageOneProductionCatalog.Games.Any(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVId),
-    "Production exposes the GTA registration target without fabricating an installation.");
+Assert(stageOneProductionCatalog.Games.Any(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVLegacyId),
+    "Production exposes the GTA V Legacy registration target without fabricating an installation.");
+Assert(stageOneProductionCatalog.Games.Any(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVEnhancedId),
+    "Production exposes the GTA V Enhanced registration target without fabricating an installation.");
 Assert(stageOneProductionCatalog.Games.All(game => game.Installations.IsEmpty),
     "A clean production Home projection has no connected-game cards or fabricated status values.");
 
+var legacyMigrationFixture = Path.Combine(Path.GetTempPath(), "grid-game-registration-migration-" + Guid.NewGuid().ToString("N"));
+try
+{
+    var migrationStorePath = Path.Combine(legacyMigrationFixture, "connections", "game-installations.v1.json");
+    Directory.CreateDirectory(Path.GetDirectoryName(migrationStorePath)!);
+
+    var oldLegacyReference = new InstallationReferenceId("reference.game.legacy-migration");
+    var oldLegacyInstallation = new InstallationId("installation.game.legacy-migration");
+    var oldEnhancedReference = new InstallationReferenceId("reference.game.enhanced-migration");
+    var oldEnhancedInstallation = new InstallationId("installation.game.enhanced-migration");
+    var legacyRoot = Path.Combine(legacyMigrationFixture, "Grand Theft Auto V");
+    var enhancedRoot = Path.Combine(legacyMigrationFixture, "Grand Theft Auto V Enhanced");
+    Directory.CreateDirectory(legacyRoot);
+    Directory.CreateDirectory(enhancedRoot);
+
+    var oldTimestamp = new DateTimeOffset(2026, 9, 19, 0, 32, 34, TimeSpan.Zero);
+
+    var oldStoreJson = JsonSerializer.Serialize(new
+    {
+        schemaVersion = 1,
+        registrations = new object[]
+        {
+            new
+            {
+                schemaVersion = 1,
+                referenceId = oldLegacyReference,
+                installationId = oldLegacyInstallation,
+                gameId = new GameId("game.grand-theft-auto-v"),
+                adapterId = ProductionGridCatalogService.ProviderDiscoveryAdapterId,
+                displayName = "Grand Theft Auto V · Legacy",
+                edition = "Legacy",
+                providerId = "steam",
+                installRoot = legacyRoot,
+                executablePath = Path.Combine(legacyRoot, "GTA5.exe"),
+                managerProviderIds = new[] { "vortex" },
+                registeredAtUtc = oldTimestamp,
+            },
+            new
+            {
+                schemaVersion = 1,
+                referenceId = oldEnhancedReference,
+                installationId = oldEnhancedInstallation,
+                gameId = new GameId("game.grand-theft-auto-v"),
+                adapterId = ProductionGridCatalogService.ProviderDiscoveryAdapterId,
+                displayName = "Grand Theft Auto V · Enhanced",
+                edition = "Enhanced",
+                providerId = "steam",
+                installRoot = enhancedRoot,
+                executablePath = Path.Combine(enhancedRoot, "GTA5_Enhanced.exe"),
+                managerProviderIds = new[] { "vortex" },
+                registeredAtUtc = oldTimestamp.AddSeconds(1),
+            },
+        },
+    }, new JsonSerializerOptions(JsonSerializerDefaults.Web) { WriteIndented = true });
+
+    await File.WriteAllTextAsync(migrationStorePath, oldStoreJson);
+
+    var migrated = await new JsonGameInstallationRegistrationStore(migrationStorePath).LoadAsync();
+
+    Assert(migrated.Issues.IsEmpty && migrated.Registrations.Length == 2,
+        "Legacy generic GTA registrations load through the current compatibility path.");
+    Assert(migrated.Registrations.Any(value =>
+            value.InstallationId == oldLegacyInstallation &&
+            value.ReferenceId == oldLegacyReference &&
+            value.GameId == ProductionGridCatalogService.GrandTheftAutoVLegacyId &&
+            value.ManagerProviderIds.SequenceEqual(["vortex"]) &&
+            value.RegisteredAtUtc == oldTimestamp),
+        "Legacy GTA migration preserves stable identities, manager relationships, and timestamp.");
+    Assert(migrated.Registrations.Any(value =>
+            value.InstallationId == oldEnhancedInstallation &&
+            value.ReferenceId == oldEnhancedReference &&
+            value.GameId == ProductionGridCatalogService.GrandTheftAutoVEnhancedId &&
+            value.ManagerProviderIds.SequenceEqual(["vortex"]) &&
+            value.RegisteredAtUtc == oldTimestamp.AddSeconds(1)),
+        "Enhanced GTA migration preserves stable identities, manager relationships, and timestamp.");
+}
+finally
+{
+    if (Directory.Exists(legacyMigrationFixture)) Directory.Delete(legacyMigrationFixture, recursive: true);
+}
 var registrationFixture = Path.Combine(Path.GetTempPath(), "grid-game-registration-" + Guid.NewGuid().ToString("N"));
 try
 {
@@ -30,24 +122,111 @@ try
     await File.WriteAllTextAsync(executable, "fixture");
     var registrationStore = new JsonGameInstallationRegistrationStore(Path.Combine(registrationFixture, "connections", "game-installations.v1.json"));
     var firstRegistration = await registrationStore.RegisterAsync(
-        ProductionGridCatalogService.GrandTheftAutoVId,
+        ProductionGridCatalogService.GrandTheftAutoVLegacyId,
         ProductionGridCatalogService.ProviderDiscoveryAdapterId,
-        "Grand Theft Auto V · Legacy", "Legacy", "steam", gameRoot, executable, ["vortex"]);
+        "GTA V Legacy", "Legacy", "steam", gameRoot, executable, ["vortex"]);
     var loadedRegistrations = await registrationStore.LoadAsync();
     Assert(loadedRegistrations.Issues.IsEmpty && loadedRegistrations.Registrations.Length == 1,
         "Reviewed game registration persists as one Grid-owned reference.");
     Assert(firstRegistration.ManagerProviderIds.SequenceEqual(["vortex"]),
         "Registration retains reviewed manager relationships.");
     await registrationStore.RegisterAsync(
-        ProductionGridCatalogService.GrandTheftAutoVId,
+        ProductionGridCatalogService.GrandTheftAutoVLegacyId,
         ProductionGridCatalogService.ProviderDiscoveryAdapterId,
-        "Grand Theft Auto V · Legacy", "Legacy", "steam", gameRoot, executable, ["vortex"]);
+        "GTA V Legacy", "Legacy", "steam", gameRoot, executable, ["vortex"]);
     Assert((await registrationStore.LoadAsync()).Registrations.Length == 1,
         "Canonical game identity makes repeated registration idempotent.");
     var registeredCatalog = await new RegisteredGameCatalogService(new ProductionGridCatalogService(), registrationStore).GetCatalogAsync();
-    var registeredGta = registeredCatalog.Games.Single(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVId);
+    var registeredGta = registeredCatalog.Games.Single(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVLegacyId);
     Assert(registeredGta.Installations.Length == 1 && registeredGta.Installations[0].Metadata.Provenance == InstallationProvenanceKind.ConnectedReference,
-        "Persisted GTA registration projects into the production catalog as an external read-only installation.");
+        "Persisted GTA V Legacy registration projects into the production catalog as an external read-only installation.");
+    Assert(registeredGta.Installations[0].Profiles is [{ Name: "GTA V Legacy" }],
+        "Add Game creates one new GRID profile named after the selected game instead of adopting an existing manager profile.");
+    Assert(registeredCatalog.Games.Single(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVEnhancedId).Installations.IsEmpty,
+        "Registering GTA V Legacy does not implicitly register GTA V Enhanced.");
+
+    AssistantToolOption[] assistantToolFixtures =
+        [
+            new(new ToolId("grid.tool.skyrim-only"), "Skyrim-only fixture", AvailabilityState.Available, null,
+                [new(ProductionGridCatalogService.SkyrimSpecialEditionId, ["grid.game.skyrimspecialedition.fixture"], "Fixture game contract")]),
+            new(new ToolId("grid.tool.legacy-only"), "Legacy-only fixture", AvailabilityState.Available, null,
+                [new(ProductionGridCatalogService.GrandTheftAutoVLegacyId, ["grid.game.grandtheftautov.legacy.fixture"], "Fixture game contract")]),
+            new(new ToolId("grid.tool.multi-game"), "Explicit multi-game fixture", AvailabilityState.Available, null,
+                [
+                    new(ProductionGridCatalogService.GrandTheftAutoVLegacyId, ["grid.game.grandtheftautov.legacy.fixture"], "Fixture game contract"),
+                    new(ProductionGridCatalogService.GrandTheftAutoVEnhancedId, ["grid.game.grandtheftautov.enhanced.fixture"], "Fixture game contract"),
+                ]),
+        ];
+    var accountIntake = new AssistantSessionState(
+        ApplicationContextSnapshot.Home,
+        registeredCatalog,
+        [],
+        assistantToolFixtures);
+    var accountIntakeSnapshot = accountIntake.Snapshot();
+    Assert(
+        accountIntakeSnapshot.Games is [{ Id: var connectedGameId }] && connectedGameId == ProductionGridCatalogService.GrandTheftAutoVLegacyId,
+        "New Investigation projects only account-owned connected games, not the supported Game Catalog.");
+    accountIntake.SelectGame(ProductionGridCatalogService.GrandTheftAutoVLegacyId);
+    Assert(
+        accountIntake.Snapshot().Profiles is [{ InstallationId: var connectedInstallationId }] && connectedInstallationId == firstRegistration.InstallationId,
+        "A selected connected game exposes only profiles owned by its connected installations.");
+    accountIntake.SelectProfile(registeredGta.Installations.Single().Profiles.Single().Id);
+    var selectedAccountIntake = accountIntake.Snapshot();
+    Assert(
+        selectedAccountIntake.Draft.InstallationId == firstRegistration.InstallationId &&
+        selectedAccountIntake.Draft.InstallationSelectionSource == AssistantSelectionSource.DerivedFromProfile &&
+        selectedAccountIntake.Draft.ProfileSelectionSource == AssistantSelectionSource.UserSelected,
+        "Explicit profile selection deterministically derives the hidden canonical installation identity with truthful provenance.");
+    Assert(selectedAccountIntake.Mods.IsEmpty,
+        "A connected GRID game profile without observed mods exposes no fabricated mod choices.");
+    Assert(
+        selectedAccountIntake.Tools.Select(tool => tool.Id.Value).Order().SequenceEqual(["grid.tool.legacy-only", "grid.tool.multi-game"]),
+        "Tool choices require exact canonical GameID compatibility and do not leak Skyrim-only definitions.");
+
+    var enhancedRoot = Path.Combine(registrationFixture, "Grand Theft Auto V Enhanced");
+    Directory.CreateDirectory(enhancedRoot);
+    var enhancedExecutable = Path.Combine(enhancedRoot, "GTA5_Enhanced.exe");
+    await File.WriteAllTextAsync(enhancedExecutable, "fixture");
+    var enhancedStore = new JsonGameInstallationRegistrationStore(Path.Combine(registrationFixture, "enhanced-account", "connections", "game-installations.v1.json"));
+    await enhancedStore.RegisterAsync(
+        ProductionGridCatalogService.GrandTheftAutoVEnhancedId,
+        ProductionGridCatalogService.ProviderDiscoveryAdapterId,
+        "GTA V Enhanced", "Enhanced", "steam", enhancedRoot, enhancedExecutable, ["vortex"]);
+    var enhancedCatalog = await new RegisteredGameCatalogService(new ProductionGridCatalogService(), enhancedStore).GetCatalogAsync();
+    var enhancedIntake = new AssistantSessionState(ApplicationContextSnapshot.Home, enhancedCatalog, [], assistantToolFixtures);
+    enhancedIntake.SelectGame(ProductionGridCatalogService.GrandTheftAutoVEnhancedId);
+    enhancedIntake.SelectProfile(enhancedCatalog.Games
+        .Single(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVEnhancedId)
+        .Installations.Single().Profiles.Single().Id);
+    Assert(
+        enhancedIntake.Snapshot().Games is [{ Id: var enhancedGameId }] &&
+        enhancedGameId == ProductionGridCatalogService.GrandTheftAutoVEnhancedId &&
+        enhancedIntake.Snapshot().Mods.IsEmpty &&
+        enhancedIntake.Snapshot().Tools.Select(tool => tool.Id.Value).SequenceEqual(["grid.tool.multi-game"]),
+        "GTA V Enhanced intake remains account-scoped, exposes no fabricated mods, and excludes Legacy-only and Skyrim-only tools.");
+    AssertThrows<ArgumentException>(
+        () => _ = new AssistantSessionState(ApplicationContextSnapshot.Home, registeredCatalog, [],
+            [new(new ToolId("grid.tool.unbound"), "Unbound fixture", AvailabilityState.Available, null)]),
+        "Tool definitions without canonical game compatibility evidence fail closed.");
+
+    var connectedProfile = registeredGta.Installations.Single().Profiles.Single();
+    var workstationIntake = new AssistantSessionState(
+        new ApplicationContextSnapshot(
+            ApplicationSurface.GameWorkspace,
+            registeredGta.Id,
+            firstRegistration.InstallationId,
+            connectedProfile.Id,
+            [], null, null, null, null, null, null, null, null),
+        registeredCatalog,
+        []);
+    Assert(
+        workstationIntake.Snapshot().Draft is
+        {
+            GameSelectionSource: AssistantSelectionSource.ContextInherited,
+            InstallationSelectionSource: AssistantSelectionSource.ContextInherited,
+            ProfileSelectionSource: AssistantSelectionSource.ContextInherited,
+        },
+        "An unambiguous active workstation inherits canonical Game, Installation, and Profile identities truthfully.");
     var vortexRoot = Path.Combine(registrationFixture, "Vortex staging");
     Directory.CreateDirectory(vortexRoot);
     Directory.CreateDirectory(Path.Combine(vortexRoot, "Menyoo 2.0"));
@@ -55,7 +234,7 @@ try
     await vortexStore.ConnectAsync(firstRegistration.InstallationId, vortexRoot);
     var vortexCatalogService = new VortexCatalogService(new RegisteredGameCatalogService(new ProductionGridCatalogService(), registrationStore), vortexStore);
     var vortexCatalog = await vortexCatalogService.GetCatalogAsync();
-    var vortexInstallation = vortexCatalog.Games.Single(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVId).Installations.Single();
+    var vortexInstallation = vortexCatalog.Games.Single(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVLegacyId).Installations.Single();
     Assert(vortexInstallation.AdapterId == VortexCatalogService.AdapterId && vortexInstallation.Profiles.Single().Mods.Length == 1,
         "A connected Vortex staging directory projects its current GTA mod inventory.");
     Assert(vortexInstallation.Profiles.Single().Mods.Single().Kind == ModEntryKind.UnlistedDirectory && !vortexInstallation.Profiles.Single().Mods.Single().IsEnabled,
@@ -63,13 +242,59 @@ try
     var firstVortexRevision = vortexCatalog.Revision;
     Directory.CreateDirectory(Path.Combine(vortexRoot, "Community Script Hook V .NET"));
     vortexCatalog = await vortexCatalogService.GetCatalogAsync();
-    Assert(vortexCatalog.Revision != firstVortexRevision && vortexCatalog.Games.Single(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVId).Installations.Single().Profiles.Single().Mods.Length == 2,
+    Assert(vortexCatalog.Revision != firstVortexRevision && vortexCatalog.Games.Single(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVLegacyId).Installations.Single().Profiles.Single().Mods.Length == 2,
         "A later catalog observation includes Vortex mods added after initial registration.");
     Assert(await vortexStore.RemoveAsync(firstRegistration.InstallationId) && (await vortexStore.LoadAsync()).Connections.IsEmpty,
         "Disconnecting Vortex removes only Grid's Vortex connection record.");
+
+    var deploymentRoot = Path.Combine(gameRoot, "mods", "source", "content");
+    Directory.CreateDirectory(deploymentRoot);
+    await File.WriteAllTextAsync(
+        Path.Combine(deploymentRoot, "vortex.deployment.json"),
+        JsonSerializer.Serialize(new
+        {
+            instance = "fixture-vortex-instance",
+            version = 1,
+            deploymentMethod = "hardlink_activator",
+            gameId = "fixture-game",
+            stagingPath = vortexRoot,
+            targetPath = deploymentRoot,
+            files = new object[]
+            {
+                new { relPath = "ScriptHookVDotNet.asi", source = "ScriptHookVDotNet-v3.7.0-nightly.189", target = "ScriptHookVDotNetv370nightly189" },
+                new { relPath = "assembly.xml", source = "__merged", target = "zzz_merge" },
+            },
+        }));
+
+    var automaticallyObservedCatalog = await vortexCatalogService.GetCatalogAsync();
+    var automaticallyObservedInstallation = automaticallyObservedCatalog.Games
+        .Single(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVLegacyId)
+        .Installations.Single();
+
+    var automaticallyObservedMods = automaticallyObservedInstallation.Profiles.Single().Mods;
+
+    Assert(
+        automaticallyObservedInstallation.AdapterId == VortexCatalogService.AdapterId &&
+        automaticallyObservedMods.Length == 1 &&
+        automaticallyObservedMods.Single().Name == "ScriptHookVDotNet-v3.7.0-nightly.189",
+        "Vortex deployment metadata projects manager-authoritative source mods instead of staging infrastructure.");
+
+    Assert(
+        automaticallyObservedMods.Single().Kind == ModEntryKind.Mod &&
+        automaticallyObservedMods.Single().Inventory?.Authority == ModInventoryAuthority.ManagerAuthoritative &&
+        automaticallyObservedMods.Single().Inventory?.Reconciliation == ModReconciliationState.Managed &&
+        automaticallyObservedMods.Single().Priority is null,
+        "Vortex managed mods remain authoritative without fabricating a manager priority.");
+
+    Assert(
+        automaticallyObservedMods.All(mod => !mod.Name.StartsWith("__", StringComparison.OrdinalIgnoreCase)),
+        "Vortex generated merge infrastructure is excluded from the mod inventory.");
+
+    Assert((await vortexStore.LoadAsync()).Connections.IsEmpty,
+        "Automatic Vortex reconciliation remains read-only and does not fabricate a persisted connection.");
     File.Delete(executable);
     registeredCatalog = await new RegisteredGameCatalogService(new ProductionGridCatalogService(), registrationStore).GetCatalogAsync();
-    Assert(registeredCatalog.Games.Single(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVId).Installations[0].Metadata.Availability == InstallationAvailability.Missing,
+    Assert(registeredCatalog.Games.Single(game => game.Id == ProductionGridCatalogService.GrandTheftAutoVLegacyId).Installations[0].Metadata.Availability == InstallationAvailability.Missing,
         "A missing registered executable remains visible with missing availability.");
     Assert(await registrationStore.RemoveAsync(firstRegistration.InstallationId) && (await registrationStore.LoadAsync()).Registrations.IsEmpty,
         "Disconnect removes only the selected Grid-owned game registration.");
@@ -164,6 +389,7 @@ var observedAtUtc = new DateTimeOffset(2026, 8, 25, 12, 0, 0, TimeSpan.Zero);
 var connectedProfiles = undefeated.Profiles
     .Select((profile, index) => profile with
     {
+        Origin = ProfileOrigin.ModOrganizer2,
         Observation = new(
             ProfileObservationStatus.Complete,
             index == 0 ? ManagerProfileState.Active : ManagerProfileState.Inactive,
@@ -1026,7 +1252,7 @@ ModInventoryObservation Inventory(
         warnings.Length,
         warnings,
         metadata,
-        new(updateState, "LOCAL METADATA · NOT ONLINE VERIFIED", metadata?.ProviderTimestampUtc, NetworkChecked: false));
+        new(updateState, "LOCAL METADATA Â· NOT ONLINE VERIFIED", metadata?.ProviderTimestampUtc, NetworkChecked: false));
 
 var inventorySeparatorId = new ModId("mod.connected.separator");
 var inventoryMatchedId = new ModId("mod.connected.matched");
@@ -1808,7 +2034,7 @@ Assert(
     intakeSnapshot.Draft.Scope == AssistantIntakeScope.Game && intakeSnapshot.Classes.Length == 2,
     "The assistant opens one GAME intake draft on Chat Home using injected Class registry data.");
 applicationSession.Assistant.SelectClass("grid.class.installation-integrity");
-applicationSession.Assistant.SetPlainText("Verbatim user evidence.");
+applicationSession.Assistant.SetComposerText("Verbatim user evidence.");
 foreach (var mod in intakeSnapshot.Mods.Take(2)) applicationSession.Assistant.SetModSelected(mod.Id, true);
 var populatedDraft = applicationSession.Assistant.Snapshot().Draft;
 var expectedStructuredModCount = intakeSnapshot.Draft.ModIds
@@ -1846,20 +2072,56 @@ var suggestionAssistant = new AssistantSessionState(
         new("grid.class.asset-mismatch", "Asset Mismatch", "grid.icon.asset", true),
     ],
     executionService: new TestAssistantRequestExecutionService());
+
+var uniquelySupportedClassAssistant = new AssistantSessionState(
+    gameContext,
+    catalog,
+    [
+        new("grid.class.crash-freeze", "Crash & Freeze", "grid.icon.crash", true,
+            SupportedGameIds: ["skyrimspecialedition"]),
+        new("grid.class.unsupported-fixture", "Unsupported fixture", "grid.icon.fixture", false,
+            SupportedGameIds: ["skyrimspecialedition"]),
+    ],
+    executionService: new TestAssistantRequestExecutionService());
+Assert(
+    uniquelySupportedClassAssistant.Snapshot().Draft.ClassId == "grid.class.crash-freeze" &&
+    uniquelySupportedClassAssistant.Snapshot().Draft.ClassSelectionSource == AssistantSelectionSource.ContextInherited &&
+    uniquelySupportedClassAssistant.Snapshot().Draft.GameSelectionSource == AssistantSelectionSource.ContextInherited,
+    "A connected game deterministically selects its Class only when exactly one registered Class supports it.");
+uniquelySupportedClassAssistant.SetProblem("This prose must remain only a user claim.");
+Assert(
+    uniquelySupportedClassAssistant.Snapshot().Draft.ClassId == "grid.class.crash-freeze",
+    "Editing the claim cannot select or reclassify the deterministic game-bound Class.");
+
+var ambiguousSupportedClassAssistant = new AssistantSessionState(
+    gameContext,
+    catalog,
+    [
+        new("grid.class.crash-freeze", "Crash & Freeze", "grid.icon.crash", true,
+            SupportedGameIds: ["skyrimspecialedition"]),
+        new("grid.class.installation-integrity", "Installation Integrity", "grid.icon.installation", true,
+            SupportedGameIds: ["skyrimspecialedition"]),
+    ],
+    executionService: new TestAssistantRequestExecutionService());
+ambiguousSupportedClassAssistant.SetProblem("This text mentions a crash but cannot choose a Class.");
+Assert(
+    ambiguousSupportedClassAssistant.Snapshot().Draft.ClassId is null,
+    "A game with multiple registered Classes requires structured selection; prose cannot break the ambiguity.");
+
 suggestionAssistant.ApplySuggestion("installation");
 var cleanHousePreset = suggestionAssistant.Snapshot().Draft;
 Assert(
     cleanHousePreset.ClassId == "grid.class.installation-integrity" &&
-    !string.IsNullOrWhiteSpace(cleanHousePreset.Problem) &&
-    !string.IsNullOrWhiteSpace(cleanHousePreset.ExpectedBehavior) &&
-    !string.IsNullOrWhiteSpace(cleanHousePreset.ReproductionOrLocation) &&
-    !string.IsNullOrWhiteSpace(cleanHousePreset.DesiredOutcome),
-    "The whole-profile CleanHouse suggestion populates every investigation field instead of only selecting a Class.");
+    string.IsNullOrWhiteSpace(cleanHousePreset.Problem) &&
+    string.IsNullOrWhiteSpace(cleanHousePreset.ExpectedBehavior) &&
+    string.IsNullOrWhiteSpace(cleanHousePreset.ReproductionOrLocation) &&
+    string.IsNullOrWhiteSpace(cleanHousePreset.DesiredOutcome),
+    "A suggestion selects only its canonical Class and does not write invisible legacy prose.");
 suggestionAssistant.SetProblem("Preserve this user-authored problem.");
 suggestionAssistant.ApplySuggestion("installation");
 Assert(
     suggestionAssistant.Snapshot().Draft.Problem == "Preserve this user-authored problem.",
-    "Applying a suggestion does not overwrite an existing user-authored field.");
+    "Applying a suggestion does not mutate executor compatibility prose.");
 
 var capabilityAssistant = new AssistantSessionState(
     gameContext,
@@ -1870,36 +2132,71 @@ var capabilityAssistant = new AssistantSessionState(
     executionService: new TestAssistantRequestExecutionService());
 capabilityAssistant.ToggleForm();
 capabilityAssistant.SelectClass("grid.class.outfits-bodies-physics");
+Assert(capabilityAssistant.Snapshot().Draft.ClassSelectionSource == AssistantSelectionSource.UserSelected,
+    "An explicit Class selection retains user-selected provenance.");
 capabilityAssistant.SetPlainText("Can this profile use rings for more than one finger?");
 Assert(
-    capabilityAssistant.Snapshot().Draft.CanSubmit &&
     capabilityAssistant.Snapshot().Draft.ClassId == "grid.class.outfits-bodies-physics" &&
+    capabilityAssistant.Snapshot().Draft.CapabilityId is null &&
+    !capabilityAssistant.Snapshot().Draft.CanSubmit,
+    "Verbatim problem prose cannot select a registered gameplay capability or make the request executable.");
+capabilityAssistant.SelectCapability("grid.capability.equipment.multiple-rings");
+Assert(
+    capabilityAssistant.Snapshot().Draft.CanSubmit &&
     capabilityAssistant.Snapshot().Draft.CapabilityId == "grid.capability.equipment.multiple-rings",
-    "An unambiguous catalog-owned intent phrase binds the exact registered gameplay capability without inventing mod selections.");
+    "Only the structured capability selector binds the registered gameplay capability.");
 capabilityAssistant.SetPlainText("Diagnose a body mesh problem instead.");
 Assert(
     capabilityAssistant.Snapshot().Draft.ClassId == "grid.class.outfits-bodies-physics" &&
-    capabilityAssistant.Snapshot().Draft.CapabilityId is null,
-    "Editing away an inferred phrase clears only the inferred capability while preserving a manually selected Class.");
+    capabilityAssistant.Snapshot().Draft.CapabilityId == "grid.capability.equipment.multiple-rings",
+    "Editing verbatim prose cannot alter an explicitly selected Class or capability.");
 
 var assistantExecution = new TestAssistantRequestExecutionService();
+var executableTaxonomy = new AssistantTicketTaxonomy(
+    [new(new TicketProblemId("grid.problem.crash"), new TicketClassId("grid.class.installation-integrity"), "Crash")],
+    [new(new TicketTimingId("grid.timing.after-leaving-activity"), new TicketClassId("grid.class.installation-integrity"), "After leaving an activity")],
+    [new(new TicketGoalId("grid.goal.identify-evidence-backed-cause"), "Identify evidence-backed cause")],
+    []);
 var executableAssistant = new AssistantSessionState(
     gameContext,
     catalog,
     [new("grid.class.installation-integrity", "Installation Integrity", "grid.icon.installation", true, "1.0.0", 1)],
-    [new(new ToolId("grid.tool.mo2"), "Mod Organizer 2", AvailabilityState.Available, null)],
+    [new(new ToolId("grid.tool.mo2"), "Mod Organizer 2", AvailabilityState.Available, null,
+        [new(skyrim.Id, ["grid.game.skyrimspecialedition.mo2-context.collect"], "Fixture canonical compatibility")])],
     assistantExecution,
-    new FixedTimeProvider(new DateTimeOffset(2026, 9, 2, 12, 0, 0, TimeSpan.Zero)));
+    new FixedTimeProvider(new DateTimeOffset(2026, 9, 2, 12, 0, 0, TimeSpan.Zero)),
+    taxonomy: executableTaxonomy);
 executableAssistant.ToggleForm();
 executableAssistant.SelectClass("grid.class.installation-integrity");
+executableAssistant.SelectProblem(new(
+    new TicketProblemId("grid.problem.crash"), new TicketClassId("grid.class.installation-integrity"),
+    "Crash", TicketSelectionProvenance.ExplicitUserSelection));
+executableAssistant.SelectTiming(new(
+    new TicketTimingId("grid.timing.after-leaving-activity"), new TicketClassId("grid.class.installation-integrity"),
+    "After leaving an activity", TicketSelectionProvenance.ExplicitUserSelection));
+executableAssistant.SelectGoal(new(
+    new TicketGoalId("grid.goal.identify-evidence-backed-cause"),
+    "Identify evidence-backed cause", TicketSelectionProvenance.ExplicitUserSelection));
 var executableOptions = executableAssistant.Snapshot();
 executableAssistant.SetModSelected(executableOptions.Mods[0].Id, true);
 if (executableOptions.Tools.FirstOrDefault(tool => tool.Availability == AvailabilityState.Available) is { } availableTool)
     executableAssistant.SetToolSelected(availableTool.Id, true);
-executableAssistant.SetPlainText("This remains a user claim until evidence supports it.");
+executableAssistant.SetComposerText("This remains a user claim until evidence supports it.");
 executableAssistant.SetExpectedBehavior("The profile should have complete compatible assets.");
 executableAssistant.SetReproductionOrLocation("The selected installation and profile.");
 executableAssistant.SetDesiredOutcome("Produce a read-only evidence-backed diagnosis.");
+var authorizedCanonicalSelection = new CanonicalSelectorSelection(
+    CanonicalSelectorSelectionKind.CanonicalRecord,
+    KnowledgeKind.Location,
+    new CatalogRevisionId("grid.catalog-revision.v5.sha256." + new string('5', 64)),
+    new CatalogCompositionId("composition.authorization-drift.fixture"),
+    CanonicalSelectorProjectionPolicy.V1.Id,
+    CanonicalSelectorProjectionPolicy.V1.ExactVersion,
+    new CanonicalNavigationPathId("grid.canonical-navigation-path.v1.sha256." + new string('6', 64)),
+    new KnowledgeRecordId("grid.knowledge-record.v1.sha256." + new string('7', 64)),
+    null);
+executableAssistant.SetCanonicalSelectorSelection(authorizedCanonicalSelection);
+executableAssistant.ReplaceOtherContext(TicketReferenceContextKind.Entity, "exact unresolved actor");
 Assert(executableAssistant.Snapshot().Draft.CanSubmit,
     "A complete registered request is submittable only when a real deterministic execution service is available.");
 await executableAssistant.PrepareSubmissionAsync();
@@ -1907,11 +2204,39 @@ var authorizationSnapshot = executableAssistant.Snapshot();
 Assert(
     authorizationSnapshot.Surface == AssistantSurface.Task &&
     authorizationSnapshot.PendingAuthorization is { MutationAuthorized: false } &&
+    authorizationSnapshot.PendingAuthorization.Request.Draft.VerbatimUserText == "This remains a user claim until evidence supports it." &&
+    authorizationSnapshot.PendingAuthorization.Request.Draft.CanonicalSelections.SequenceEqual([authorizedCanonicalSelection]) &&
+    authorizationSnapshot.PendingAuthorization.Request.Draft.UnresolvedUserContext.Single().Value == "exact unresolved actor" &&
     authorizationSnapshot.ActiveTask?.Transcript.Any(entry => entry.Kind == AssistantTranscriptKind.UserClaim &&
         entry.Text.Contains("Expected behavior: The profile should have complete compatible assets.", StringComparison.Ordinal) &&
         entry.Text.Contains("Reproduction or location: The selected installation and profile.", StringComparison.Ordinal) &&
         entry.Text.Contains("Desired outcome: Produce a read-only evidence-backed diagnosis.", StringComparison.Ordinal)) == true,
     "Submission prepares an exact non-mutating authorization review and renders every structured instruction as a user claim.");
+executableAssistant.SetComposerText("changed after authorization review");
+await AssertThrowsAsync<InvalidOperationException>(
+    () => executableAssistant.ApproveSubmissionAsync(),
+    "Changing the visible composer claim after review invalidates authorization.");
+executableAssistant.SetComposerText("This remains a user claim until evidence supports it.");
+executableAssistant.ReplaceOtherContext(TicketReferenceContextKind.Entity, "changed unresolved actor");
+await AssertThrowsAsync<InvalidOperationException>(
+    () => executableAssistant.ApproveSubmissionAsync(),
+    "Changing unresolved Other context after review invalidates authorization.");
+executableAssistant.ReplaceOtherContext(TicketReferenceContextKind.Entity, "exact unresolved actor");
+var changedCanonicalSelection = new CanonicalSelectorSelection(
+    authorizedCanonicalSelection.SelectionKind,
+    authorizedCanonicalSelection.KnowledgeKind,
+    authorizedCanonicalSelection.CatalogRevisionId,
+    authorizedCanonicalSelection.CatalogCompositionId,
+    authorizedCanonicalSelection.ProjectionPolicyId,
+    authorizedCanonicalSelection.ProjectionPolicyVersion,
+    authorizedCanonicalSelection.SelectedPathId,
+    new KnowledgeRecordId("grid.knowledge-record.v1.sha256." + new string('8', 64)),
+    null);
+executableAssistant.SetCanonicalSelectorSelection(changedCanonicalSelection);
+await AssertThrowsAsync<InvalidOperationException>(
+    () => executableAssistant.ApproveSubmissionAsync(),
+    "Changing canonical record coordinates after review invalidates authorization.");
+executableAssistant.SetCanonicalSelectorSelection(authorizedCanonicalSelection);
 await executableAssistant.ApproveSubmissionAsync();
 var completedAssistant = executableAssistant.Snapshot();
 Assert(
@@ -2425,6 +2750,73 @@ Assert(
     tamperedAlertState.Snapshot is null && tamperedAlertState.PersistenceIssue?.Contains("integrity", StringComparison.OrdinalIgnoreCase) == true,
     "A tampered cached offline alert index is rejected instead of rendered as trusted evidence.");
 
+var userToolRoot = Path.Combine(Path.GetTempPath(), $"grid-user-tools-{Guid.NewGuid():N}");
+Directory.CreateDirectory(userToolRoot);
+try
+{
+    var userToolStore = new JsonUserToolConfigurationStore(Path.Combine(userToolRoot, "connections", "tool-launch-configurations.v1.json"));
+    var userKnowledgeStore = new JsonInstalledToolKnowledgeStore(Path.Combine(userToolRoot, "evidence", "tool-identity-resolutions.v1.json"));
+    var userTools = new UserToolManagerState(userToolStore, userKnowledgeStore);
+    await userTools.LoadAsync();
+    var gtaEnhancedContext = new UserToolScope(new("game.grandtheftautov-enhanced"), new("installation.gta-enhanced"), new("profile.gta-enhanced"));
+    var gtaEnhancedOtherProfile = new UserToolScope(gtaEnhancedContext.GameId, gtaEnhancedContext.InstallationId, new("profile.gta-enhanced.other"));
+    var gtaEnhancedInstallationScope = new UserToolScope(gtaEnhancedContext.GameId, gtaEnhancedContext.InstallationId, null);
+    var gtaLegacyContext = new UserToolScope(new("game.grandtheftautov-legacy"), new("installation.gta-legacy"), new("profile.gta-legacy"));
+    var gtaEnhancedOtherInstallation = new UserToolScope(gtaEnhancedContext.GameId, new("installation.gta-enhanced.other"), gtaEnhancedContext.ProfileId);
+    var emptyTool = new UserToolLaunchConfiguration(
+        UserToolLaunchConfiguration.CurrentSchemaVersion,
+        new("user-tool.empty"),
+        "New Executable",
+        null,
+        null,
+        [],
+        true,
+        gtaEnhancedInstallationScope,
+        DateTimeOffset.UtcNow,
+        DateTimeOffset.UtcNow,
+        1);
+    var runnableTool = emptyTool with
+    {
+        Id = new("user-tool.fixture"),
+        Title = "Fixture Tool",
+        BinaryPath = Path.Combine(userToolRoot, "fixture.exe"),
+        StartInPath = userToolRoot,
+    };
+    File.WriteAllBytes(runnableTool.BinaryPath!, [0x4d, 0x5a]);
+    var currentProfileTool = emptyTool with { Id = new("user-tool.current-profile"), Title = "Current profile tool", Scope = gtaEnhancedContext };
+    var otherProfileTool = emptyTool with { Id = new("user-tool.other-profile"), Title = "Other profile tool", Scope = gtaEnhancedOtherProfile };
+    var saveTools = await userTools.ReplaceConfigurationsAsync([emptyTool, runnableTool, currentProfileTool, otherProfileTool]);
+    Assert(saveTools.Succeeded && !emptyTool.IsRunnable && runnableTool.IsRunnable,
+        "User tool configurations distinguish configured empty entries from runnable exact executable entries.");
+    Assert(userTools.ForContext(gtaEnhancedContext).Select(value => value.Id).ToHashSet().SetEquals([emptyTool.Id, runnableTool.Id, currentProfileTool.Id]) &&
+        userTools.ForContext(gtaEnhancedOtherProfile).Select(value => value.Id).ToHashSet().SetEquals([emptyTool.Id, runnableTool.Id, otherProfileTool.Id]) &&
+        userTools.ForContext(gtaLegacyContext).IsEmpty && userTools.ForContext(gtaEnhancedOtherInstallation).IsEmpty,
+        "Installation tools remain visible across profiles while profile tools, other installations, and other canonical games remain isolated.");
+
+    var competingStore = new JsonUserToolConfigurationStore(Path.Combine(userToolRoot, "connections", "tool-launch-configurations.v1.json"));
+    var competingSnapshot = await competingStore.LoadAsync();
+    var firstWriter = await competingStore.ReplaceAsync(competingSnapshot.Revision, competingSnapshot.Configurations);
+    var staleWriter = await userToolStore.ReplaceAsync(saveTools.Revision, [emptyTool]);
+    Assert(firstWriter.Succeeded && staleWriter.Status == UserToolSaveStatus.Conflict,
+        $"User tool persistence uses optimistic concurrency and rejects stale editor replacement (first={firstWriter.Status}:{firstWriter.Detail}; stale={staleWriter.Status}:{staleWriter.Detail}).");
+
+    await userTools.LoadAsync();
+    var userToolLaunchService = new TestUserToolLaunchService();
+    var userLaunchState = new UserToolLaunchState(userToolLaunchService, userTools);
+    var currentRunnable = userTools.Configurations.Configurations.Single(value => value.Id == runnableTool.Id);
+    var launched = await userLaunchState.LaunchAsync(currentRunnable, gtaEnhancedContext);
+    var launchedAfterProfileChange = await userLaunchState.LaunchAsync(currentRunnable, gtaEnhancedOtherProfile);
+    var crossGame = await userLaunchState.LaunchAsync(currentRunnable, gtaLegacyContext);
+    var crossInstallation = await userLaunchState.LaunchAsync(currentRunnable, gtaEnhancedOtherInstallation);
+    Assert(launched.Succeeded && launchedAfterProfileChange.Succeeded && userToolLaunchService.LaunchCount == 2 &&
+        crossGame.Status == UserToolLaunchStatus.Stale && crossInstallation.Status == UserToolLaunchStatus.Stale,
+        $"Installation-scoped manual launch remains available across profiles without ToolID compatibility knowledge and rejects other games/installations (launch={launched.Status}; profile-change={launchedAfterProfileChange.Status}; count={userToolLaunchService.LaunchCount}; game={crossGame.Status}; installation={crossInstallation.Status}).");
+}
+finally
+{
+    Directory.Delete(userToolRoot, true);
+}
+
 Console.WriteLine($"All {checks} Grid.Core checks passed.");
 return;
 
@@ -2777,6 +3169,18 @@ sealed class TestWorkspaceLaunchService : IWorkspaceLaunchService
             ExternalLaunchSessionStatus.Completed,
             session,
             session.Detail));
+    }
+}
+
+sealed class TestUserToolLaunchService : IUserToolLaunchService
+{
+    public int LaunchCount { get; private set; }
+
+    public Task<UserToolLaunchResult> LaunchAsync(UserToolLaunchConfiguration configuration, UserToolLaunchRequest request, CancellationToken cancellationToken = default)
+    {
+        cancellationToken.ThrowIfCancellationRequested();
+        LaunchCount++;
+        return Task.FromResult(new UserToolLaunchResult(UserToolLaunchStatus.Started, 42, "Fixture started."));
     }
 }
 

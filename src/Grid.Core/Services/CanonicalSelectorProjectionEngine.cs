@@ -237,7 +237,35 @@ public static class CanonicalSelectorProjectionEngine
                 }
                 else
                 {
-                    AddRecord(input, graph, AddStaticOrganization(input, graph, graph.Root, semantic.Value), record);
+                    var familyRoot = AddStaticOrganization(input, graph, graph.Root, semantic.Value);
+                    if (role == CanonicalProjectionSemantics.MissionOnline &&
+                        input.Policy.OrganizationalDefinitions.Any(value =>
+                            value.KnowledgeKind == KnowledgeKind.MissionQuest &&
+                            value.SemanticId == CanonicalProjectionSemantics.MissionActivityFamilyValueNode &&
+                            value.ParentSemanticId == CanonicalProjectionSemantics.MissionOnlineNode))
+                    {
+                        var activities = input.OrganizationalValueAssertions
+                            .Where(value => value.KnowledgeRecordId == record.Id &&
+                                            value.DimensionId == CanonicalProjectionSemantics.MissionActivityFamilyDimensionNode)
+                            .OrderBy(value => value.Id.Value, StringComparer.Ordinal)
+                            .ToImmutableArray();
+                        if (!activities.IsEmpty)
+                        {
+                            foreach (var activity in activities)
+                            {
+                                var activityNode = AddDynamicOrganization(
+                                    input, graph, familyRoot,
+                                    CanonicalProjectionSemantics.MissionActivityFamilyValueNode,
+                                    activity.ExactValueIdentity,
+                                    activity.VerbatimDisplayValue ?? activity.ExactValueIdentity.ExactRepresentation,
+                                    activity.VerbatimDisplayValue is not null);
+                                AddRecord(input, graph, activityNode, record);
+                            }
+                            placed = true;
+                            continue;
+                        }
+                    }
+                    AddRecord(input, graph, familyRoot, record);
                     placed = true;
                 }
             }
@@ -258,9 +286,48 @@ public static class CanonicalSelectorProjectionEngine
                 .Select(value => value!.Value)
                 .Distinct()
                 .ToImmutableArray();
-            if (nodes.IsEmpty) AddRecord(input, graph, graph.Root, record);
-            else foreach (var node in nodes)
-                AddRecord(input, graph, AddStaticOrganization(input, graph, graph.Root, node), record);
+            if (nodes.IsEmpty)
+            {
+                AddRecord(input, graph, graph.Root, record);
+                continue;
+            }
+
+            foreach (var node in nodes)
+            {
+                var familyNode = AddStaticOrganization(input, graph, graph.Root, node);
+                if (node != CanonicalProjectionSemantics.ItemWeaponsNode ||
+                    !input.Policy.OrganizationalDefinitions.Any(value =>
+                        value.KnowledgeKind == KnowledgeKind.Item &&
+                        value.SemanticId == CanonicalProjectionSemantics.ItemSourceCategoryValueNode &&
+                        value.ParentSemanticId == CanonicalProjectionSemantics.ItemWeaponsNode))
+                {
+                    AddRecord(input, graph, familyNode, record);
+                    continue;
+                }
+
+                var categories = input.OrganizationalValueAssertions
+                    .Where(value =>
+                        value.KnowledgeRecordId == record.Id &&
+                        value.DimensionId == CanonicalProjectionSemantics.ItemSourceCategoryDimensionNode)
+                    .OrderBy(value => value.Id.Value, StringComparer.Ordinal)
+                    .ToImmutableArray();
+                if (categories.IsEmpty)
+                {
+                    AddRecord(input, graph, familyNode, record);
+                    continue;
+                }
+
+                foreach (var category in categories)
+                {
+                    var valueNode = AddDynamicOrganization(
+                        input, graph, familyNode,
+                        CanonicalProjectionSemantics.ItemSourceCategoryValueNode,
+                        category.ExactValueIdentity,
+                        category.VerbatimDisplayValue ?? category.ExactValueIdentity.ExactRepresentation,
+                        category.VerbatimDisplayValue is not null);
+                    AddRecord(input, graph, valueNode, record);
+                }
+            }
         }
     }
 
@@ -462,7 +529,9 @@ public static class CanonicalSelectorProjectionEngine
             throw new InvalidDataException("Selector projection package is no longer structurally valid.");
         if (input.CatalogRevisionId != input.VerifiedPackage.Manifest.CatalogRevisionId)
             throw new InvalidDataException("Selector projection revision is not the verified package revision.");
-        if (!PolicyEquivalent(input.Policy, CanonicalSelectorProjectionPolicy.V1))
+        if (!PolicyEquivalent(input.Policy, CanonicalSelectorProjectionPolicy.V1) &&
+            !PolicyEquivalent(input.Policy, CanonicalSelectorProjectionPolicy.V2) &&
+            !PolicyEquivalent(input.Policy, CanonicalSelectorProjectionPolicy.V3))
             throw new InvalidDataException("The selector projection policy revision is unsupported or its immutable content changed.");
         if (input.KnowledgeRecords.IsDefault || input.TerminologyAssertions.IsDefault ||
             input.RelationshipAssertions.IsDefault || input.SourceRevisions.IsDefault ||

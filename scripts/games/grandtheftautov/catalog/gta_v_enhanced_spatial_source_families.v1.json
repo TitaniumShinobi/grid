@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "grid.gta-v-enhanced.spatial-source-families",
+  "gameId": "game.grandtheftautov-enhanced",
+  "steamAppId": "3240220",
+  "steamBuildId": "25261616",
+  "sourceFamilyId": "rockstar.gta-v.enhanced.mounted-mlo-interior-graph",
+  "mountScope": "effective-dlclist-dlcpacks-levels-gta5-rpf-file-declarations",
+  "formats": {
+    "dlcList": { "formatId": "rockstar.gta-v.dlc-list-xml", "exactFormatVersion": "1" },
+    "dlcSetup": { "formatId": "rockstar.gta-v.dlc-setup-xml", "exactFormatVersion": "1" },
+    "dlcContent": { "formatId": "rockstar.gta-v.dlc-content-xml", "exactFormatVersion": "1" },
+    "nestedRpf": { "formatId": "rockstar.rpf7", "exactFormatVersion": "7" },
+    "ytyp": { "formatId": "rockstar.gta-v.ytyp-pso", "exactFormatVersion": "1" },
+    "ymap": { "formatId": "rockstar.gta-v.ymap-pso", "exactFormatVersion": "1" },
+    "ymf": { "formatId": "rockstar.gta-v.ymf-pso", "exactFormatVersion": "1" }
+  },
+  "exactBuildClosure": {
+    "spatialPackCount": 79,
+    "declaredSpatialRpfCount": 1294,
+    "nestedRpfResolvedCount": 1056,
+    "ytypArtifactCount": 210,
+    "ymapArtifactCount": 847,
+    "ymfArtifactCount": 478,
+    "discoveredYmfArtifactCount": 485,
+    "equivalentDuplicateArtifactCount": 7,
+    "mloArchetypeCount": 252,
+    "mloRoomCount": 1116,
+    "mloPortalCount": 1821,
+    "mloInstanceCount": 847,
+    "ymfRelationshipCount": 36858,
+    "unsupportedOutcomeCount": 246
+  },
+  "unsupportedFamilies": [
+    {
+      "sourceFamilyId": "rockstar.gta-v.enhanced.base-resident-spatial-mounts",
+      "reasonCode": "outside-v1-dlclist-dlcpacks-closure",
+      "potentialKnowledge": "base-game MLO archetypes, rooms, portals, and placements"
+    },
+    {
+      "sourceFamilyId": "rockstar.gta-v.enhanced.interior-proxy-cache",
+      "reasonCode": "not-consumed-by-v1-spatial-decoder",
+      "potentialKnowledge": "interior registration and proxy relationships"
+    }
+  ]
+}

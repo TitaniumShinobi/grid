@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "manifestId": "grid.gta-v-enhanced.source-families",
+  "gameId": "game.grandtheftautov-enhanced",
+  "steamAppId": "3240220",
+  "steamBuildId": "25261616",
+  "sourceFamilies": [
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.ambient-ped-model-sets", "status": "supported", "knowledgeKinds": ["Actor"] },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.base-american-localization", "status": "supported", "knowledgeKinds": ["Item", "Location"] },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.gen9-exclusive-peds", "status": "supported", "knowledgeKinds": ["Actor"] },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.hud-gfx", "status": "diagnostic", "knowledgeKinds": ["Item"], "reasonCode": "weapon-category-localization-bridge-unproven", "potentialCoverage": "Weapon-wheel category terminology" },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.mapzones", "status": "supported", "knowledgeKinds": ["Location"] },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.mlo-interior-graph", "status": "unsupported-declared", "knowledgeKinds": ["Location"], "reasonCode": "mounted-ytyp-ymap-ymf-not-acquired", "potentialCoverage": "Interiors, rooms, placed instances, and spatial relationships" },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.mounted-ped-registry", "status": "unsupported-declared", "knowledgeKinds": ["Actor"], "reasonCode": "mounted-ped-metadata-not-acquired", "potentialCoverage": "General NPC and Player Character registration" },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.nested-localization-containers", "status": "indexed-unconsumed", "knowledgeKinds": ["Item", "Location", "MissionQuest"], "reasonCode": "container-provenance-only", "potentialCoverage": "Nested localization container provenance" },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.online-activity-registry", "status": "supported", "knowledgeKinds": ["MissionQuest"], "potentialCoverage": "Exact shipped Online activity and playlist titles" },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.patch-american-localization", "status": "indexed-unconsumed", "knowledgeKinds": ["Actor", "Item", "Location", "MissionQuest"], "reasonCode": "no-approved-cross-source-link", "potentialCoverage": "Patch-localized terminology" },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.population-zones", "status": "supported", "knowledgeKinds": ["Location"] },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.rockstar-cloud-job-registry", "status": "unsupported-declared", "knowledgeKinds": ["MissionQuest"], "reasonCode": "provider-response-acquisition-not-approved", "potentialCoverage": "Exact titles and activity families for fmnm mission identities" },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.ugc-missions", "status": "supported", "knowledgeKinds": ["MissionQuest"], "reasonCode": "five-unsupported-document-shapes", "potentialCoverage": "UGC mission identities and unresolved mission resources" },
+    { "sourceFamilyId": "rockstar.gta-v.enhanced.weapons-meta", "status": "supported", "knowledgeKinds": ["Item"] }
+  ],
+  "containers": [
+    {
+      "containerCoordinate": "common.rpf",
+      "memberMode": "fixed-and-dynamic-prefix",
+      "members": [
+        { "memberPath": "data/ai/weapons.meta", "sourceFamilyId": "rockstar.gta-v.enhanced.weapons-meta", "formatId": "rockstar.gta-v.weapons-meta.cweaponinfoblob-xml", "exactFormatVersion": "1" },
+        { "memberPath": "data/levels/gta5/mapzones.xml", "sourceFamilyId": "rockstar.gta-v.enhanced.mapzones", "formatId": "rockstar.gta-v.mapzones.cmapzonescontainer-xml", "exactFormatVersion": "1" }
+      ],
+      "dynamicMembers": { "prefix": "data/ugc/", "suffix": ".ugc", "exactCount": 40, "sourceFamilyId": "rockstar.gta-v.enhanced.online-activity-registry", "formatId": "rockstar.gta-v.ugc.mission-json", "exactFormatVersion": "1" }
+    },
+    {
+      "containerCoordinate": "update/update.rpf",
+      "memberMode": "fixed",
+      "members": [
+        { "memberPath": "common/data/ai/ambientpedmodelsets.meta", "sourceFamilyId": "rockstar.gta-v.enhanced.ambient-ped-model-sets", "formatId": "rockstar.gta-v.ambient-ped-model-sets-xml", "exactFormatVersion": "1" },
+        { "memberPath": "common/data/gen9_exclusive_assets_peds.meta", "sourceFamilyId": "rockstar.gta-v.enhanced.gen9-exclusive-peds", "formatId": "rockstar.gta-v.gen9-exclusive-assets-peds-xml", "exactFormatVersion": "1" },
+        { "memberPath": "common/data/levels/gta5/popzone.ipl", "sourceFamilyId": "rockstar.gta-v.enhanced.population-zones", "formatId": "rockstar.gta-v.population-zones-ipl", "exactFormatVersion": "1" },
+        { "memberPath": "x64/data/cdimages/scaleform_generic.rpf!/hud.gfx", "sourceFamilyId": "rockstar.gta-v.enhanced.hud-gfx", "formatId": "rockstar.scaleform.gfx-v8", "exactFormatVersion": "1" },
+        { "memberPath": "x64/patch/data/lang/american_rel.rpf", "sourceFamilyId": "rockstar.gta-v.enhanced.nested-localization-containers", "formatId": "rockstar.rpf7-container", "exactFormatVersion": "1" },
+        { "memberPath": "x64/patch/data/lang/american_rel.rpf!/global.gxt2", "sourceFamilyId": "rockstar.gta-v.enhanced.patch-american-localization", "formatId": "rockstar.gta-v.gxt2-binary", "exactFormatVersion": "1" }
+      ]
+    },
+    {
+      "containerCoordinate": "update/update2.rpf",
+      "memberMode": "dynamic-prefix",
+      "dynamicMembers": { "prefix": "common/data/ugc/", "suffix": ".ugc", "exactCount": 1052, "sourceFamilyId": "rockstar.gta-v.enhanced.ugc-missions", "formatId": "rockstar.gta-v.ugc.mission-json", "exactFormatVersion": "1" }
+    },
+    {
+      "containerCoordinate": "x64b.rpf",
+      "memberMode": "fixed",
+      "members": [
+        { "memberPath": "data/lang/american_rel.rpf", "sourceFamilyId": "rockstar.gta-v.enhanced.nested-localization-containers", "formatId": "rockstar.rpf7-container", "exactFormatVersion": "1" },
+        { "memberPath": "data/lang/american_rel.rpf!/global.gxt2", "sourceFamilyId": "rockstar.gta-v.enhanced.base-american-localization", "formatId": "rockstar.gta-v.gxt2-binary", "exactFormatVersion": "1" }
+      ]
+    }
+  ]
+}

@@ -3,6 +3,7 @@ using System.Collections.Immutable;
 using System.Globalization;
 using System.Text;
 using Grid.Core.Models;
+using Grid.GtaV.Knowledge;
 
 namespace Grid.GtaV.Enrichment.Knowledge;
 
@@ -13,9 +14,20 @@ internal static class GtaVEnrichmentParsing
     internal const uint Gxt2Magic = 0x47585432;
     internal static readonly UTF8Encoding StrictUtf8 = new(false, true);
 
-    internal static ImmutableArray<PopulationZone> ParsePopulationZones(FrozenSourceArtifact artifact)
+    internal static ImmutableArray<PopulationZone> ParsePopulationZones(
+        FrozenSourceArtifact artifact,
+        GtaVEnrichmentSourceCorpusIndex? corpusIndex = null) =>
+        corpusIndex is null
+            ? ParsePopulationZonesUncached(artifact, null)
+            : corpusIndex.GetPopulationZones(artifact);
+
+    internal static ImmutableArray<PopulationZone> ParsePopulationZonesUncached(
+        FrozenSourceArtifact artifact,
+        GtaVSupportedSourceCorpusIndex? sourceIndex)
     {
-        var text = DecodeStrictUtf8(artifact.ExactBytes.AsSpan(), GtaVPopulationZonesKnowledgeAdapter.MaximumArtifactBytes);
+        var text = sourceIndex is null
+            ? DecodeStrictUtf8(artifact.ExactBytes.AsSpan(), GtaVPopulationZonesKnowledgeAdapter.MaximumArtifactBytes)
+            : sourceIndex.GetStrictUtf8(artifact, GtaVPopulationZonesKnowledgeAdapter.MaximumArtifactBytes);
         var lines = text.Replace("\r\n", "\n", StringComparison.Ordinal).Replace('\r', '\n').Split('\n');
         if (lines.Length < 3 || lines[0] != "zone")
             throw new InvalidDataException("A population-zone resource must start with the exact zone section header.");
@@ -67,8 +79,20 @@ internal static class GtaVEnrichmentParsing
         return result.ToImmutable();
     }
 
-    internal static ImmutableDictionary<uint, Gxt2Entry> ParseGxt2(FrozenSourceArtifact artifact, long maximumBytes)
+    internal static ImmutableDictionary<uint, Gxt2Entry> ParseGxt2(
+        FrozenSourceArtifact artifact,
+        long maximumBytes,
+        GtaVSupportedSourceCorpusIndex? sourceIndex = null)
     {
+        if (sourceIndex is not null)
+            return sourceIndex.GetGxt2(artifact, maximumBytes).ToImmutableDictionary(
+                value => value.Key,
+                value => new Gxt2Entry(
+                    value.Value.Hash,
+                    value.Value.Text,
+                    value.Value.TextOffset,
+                    value.Value.TextLength,
+                    value.Value.FieldLocator));
         var bytes = artifact.ExactBytes.AsSpan();
         if (bytes.Length > maximumBytes || bytes.Length < 16 ||
             BinaryPrimitives.ReadUInt32LittleEndian(bytes) != Gxt2Magic)

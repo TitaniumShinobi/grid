@@ -548,6 +548,8 @@ public sealed record AdapterBoundCanonicalCatalogRegistration
     public KnowledgeAdapterRevisionId AdapterRevisionId => AdapterDescriptor.RevisionId;
     public KnowledgeSourceScope SourceScope { get; }
     public ImmutableArray<SourceArtifactFormatBinding> ArtifactFormats { get; }
+    public ImmutableArray<CanonicalSemanticClassificationAssertion> SemanticClassificationAssertions { get; init; } = [];
+    public ImmutableArray<CanonicalOrganizationalValueAssertion> OrganizationalValueAssertions { get; init; } = [];
 }
 
 public sealed record CanonicalCorrelationEnvelope

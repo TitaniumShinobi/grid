@@ -13,7 +13,7 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
     private const int CrossSourceAssertionSchemaVersion = 5;
     private const int LegacySchemaVersion = 1;
     private const int MaximumEntitiesPerCollection = 100_000;
-    private const long MaximumStoreBytes = 128L * 1024 * 1024;
+    private const long MaximumStoreBytes = 512L * 1024 * 1024;
     private static readonly ConcurrentDictionary<string, SemaphoreSlim> Gates = new(StringComparer.OrdinalIgnoreCase);
     private static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web) { WriteIndented = true };
     private readonly SemaphoreSlim gate;
@@ -1532,8 +1532,12 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
         binding.ClaimKind == EvidenceClaimKind.OrganizationalValue &&
         binding.KnowledgeRecordId == assertion.KnowledgeRecordId &&
         binding.SourceRevisionId == assertion.SourceRevisionId &&
-        string.Equals(binding.ClaimLocator, assertion.SourceFieldPath, StringComparison.Ordinal) &&
+        IsExactOrStructuredChildLocator(binding.ClaimLocator, assertion.SourceFieldPath) &&
         binding.ClaimContentId == EvidenceClaimContentId.DeriveV1(assertion);
+
+    private static bool IsExactOrStructuredChildLocator(string locator, string claimLocator) =>
+        string.Equals(locator, claimLocator, StringComparison.Ordinal) ||
+        locator.StartsWith(claimLocator + "/", StringComparison.Ordinal);
 
     private static bool BindingTargets(EvidenceBinding binding, CrossSourceTargetLinkClaim claim) =>
         binding.ClaimKind == EvidenceClaimKind.CrossSourceTargetLink &&
@@ -1728,7 +1732,11 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
         left.RevisionId == right.RevisionId &&
         left.AdapterId == right.AdapterId &&
         string.Equals(left.ExactAdapterVersion, right.ExactAdapterVersion, StringComparison.Ordinal) &&
-        left.AdapterArtifactDigest == right.AdapterArtifactDigest &&
+        // v2 identity deliberately separates deterministic adapter semantics from incidental
+        // build bytes. Exact producing DLLs remain in each package's build-provenance receipt;
+        // the append-only store may therefore retain its first descriptor representation.
+        (left.RevisionId.AlgorithmVersion == KnowledgeAdapterRevisionId.CurrentAlgorithmVersion ||
+         left.AdapterArtifactDigest == right.AdapterArtifactDigest) &&
         left.AdapterContractVersion == right.AdapterContractVersion &&
         string.Equals(left.MappingRulesVersion, right.MappingRulesVersion, StringComparison.Ordinal) &&
         left.SupportedGameIds.SequenceEqual(right.SupportedGameIds) &&

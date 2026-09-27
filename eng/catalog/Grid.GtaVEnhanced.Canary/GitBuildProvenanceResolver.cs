@@ -11,8 +11,16 @@ internal static class GitBuildProvenanceResolver
         "src/Grid.Core",
         "src/Grid.GtaV.Enrichment.Knowledge",
         "src/Grid.GtaV.Knowledge",
+        "eng/catalog/Invoke-GridGtaVEnhancedRegistration.ps1",
         "eng/catalog/Grid.GtaVEnhanced.Canary",
         "scripts/games/grandtheftautov/catalog/gta_v_enhanced_acquire.py",
+        "scripts/games/grandtheftautov/catalog/gta_v_enhanced_actor_acquire.py",
+        "scripts/games/grandtheftautov/catalog/gta_v_enhanced_spatial_acquire.py",
+        "scripts/games/grandtheftautov/catalog/gta_v_enhanced_actor_source_families.v1.json",
+        "scripts/games/grandtheftautov/catalog/gta_v_enhanced_spatial_source_families.v1.json",
+        "scripts/games/grandtheftautov/catalog/gta_v_enhanced_source_families.v1.json",
+        "scripts/games/grandtheftautov/catalog/gta_v_enhanced_source_families.v2.json",
+        "scripts/games/grandtheftautov/catalog/gta_v_enhanced_registration_sources.v5.json",
         "scripts/games/grandtheftautov/catalog/fivefury.lock.v1.json",
     ];
 

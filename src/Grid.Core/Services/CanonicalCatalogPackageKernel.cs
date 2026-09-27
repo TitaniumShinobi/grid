@@ -1559,6 +1559,16 @@ public static class CanonicalCatalogPackageKernel
                     binding.SourceRevisionId == envelope.AssertingSourceRevisionId &&
                     binding.ClaimKind == envelope.ClaimKind &&
                     binding.ClaimContentId == envelope.UnderlyingClaimContentId);
+            var compositeAssertionEvidenceClosed =
+                envelope.AssertionKind != CrossSourceCanonicalAssertionKind.OrganizationalValue ||
+                payload.OrganizationalValueAssertions
+                    .Where(value => EvidenceClaimContentId.DeriveV1(value) == envelope.UnderlyingClaimContentId)
+                    .Any(value => CompositeClaimLocatorSetClosed(
+                        value.SourceFieldPath,
+                        selectedBindings.Where(binding =>
+                                binding.ClaimKind == EvidenceClaimKind.OrganizationalValue &&
+                                binding.ClaimContentId == envelope.UnderlyingClaimContentId)
+                            .Select(binding => binding.ClaimLocator)));
             var targetLinkClaimContentId = EvidenceClaimContentId.DeriveV1(targetLinkClaim);
             var hasTargetCoordinateEvidence = selectedBindings.Any(binding =>
                 binding.KnowledgeRecordId == target.Id &&
@@ -1616,6 +1626,7 @@ public static class CanonicalCatalogPackageKernel
                 referencedReceiptIds.Any(id => !receipts.ContainsKey(id)) ||
                 !hasOriginIdentityEvidence ||
                 !hasAssertionEvidence ||
+                !compositeAssertionEvidenceClosed ||
                 !hasTargetCoordinateEvidence ||
                 !hasAssertingCoordinateEvidence ||
                 !regularBindingsValid ||
@@ -1690,7 +1701,9 @@ public static class CanonicalCatalogPackageKernel
                     (unresolved.CorrelationRecordIds.IsEmpty
                         ? binding.TargetAttemptId is null
                         : binding.TargetAttemptId == expectedAttemptId) &&
-                    string.Equals(binding.ExactLocator, claim.SourceFieldPath, StringComparison.Ordinal) &&
+                    (claim.AssertionKind == CrossSourceCanonicalAssertionKind.OrganizationalValue
+                        ? IsExactOrStructuredChildLocator(binding.ExactLocator, claim.SourceFieldPath)
+                        : string.Equals(binding.ExactLocator, claim.SourceFieldPath, StringComparison.Ordinal)) &&
                     UnresolvedCrossSourceEvidenceBindingId.DeriveV1(
                         binding.EvidenceReceiptId, binding.AssertingSourceRevisionId,
                         binding.ClaimContentId, binding.TargetAttemptId, binding.AssertionKind, binding.ExactLocator,
@@ -1706,7 +1719,13 @@ public static class CanonicalCatalogPackageKernel
                     !correlation.SupportingEvidenceReceiptIds.IsEmpty &&
                     correlation.SupportingEvidenceReceiptIds.All(receiptId => selected.Any(binding =>
                         binding.EvidenceReceiptId == receiptId && binding.TargetAttemptId == expectedAttemptId)));
-            if (!bindingsClosed || !correlationsClosed || !correlationEvidenceClosed ||
+            var compositeUnresolvedEvidenceClosed =
+                claim.AssertionKind != CrossSourceCanonicalAssertionKind.OrganizationalValue ||
+                CompositeClaimLocatorSetClosed(
+                    claim.SourceFieldPath,
+                    selected.Select(binding => binding.ExactLocator));
+            if (!bindingsClosed || !compositeUnresolvedEvidenceClosed ||
+                !correlationsClosed || !correlationEvidenceClosed ||
                 referenced.Length != declared.Length || !referenced.SequenceEqual(declared))
                 issues.Add("An unresolved cross-source assertion lacks exact evidence closure.");
         }
@@ -1981,9 +2000,13 @@ public static class CanonicalCatalogPackageKernel
     private static bool KnownOrganizationalDimensionMatchesKind(
         CanonicalOrganizationalSemanticId dimensionId,
         KnowledgeKind kind) =>
-        dimensionId != CanonicalProjectionSemantics.ActorDlcDimensionNode &&
-        dimensionId != CanonicalProjectionSemantics.ActorFactionDimensionNode ||
-        kind == KnowledgeKind.Actor;
+        dimensionId == CanonicalProjectionSemantics.ItemSourceCategoryDimensionNode
+            ? kind == KnowledgeKind.Item
+            : dimensionId == CanonicalProjectionSemantics.MissionActivityFamilyDimensionNode
+                ? kind == KnowledgeKind.MissionQuest
+            : dimensionId != CanonicalProjectionSemantics.ActorDlcDimensionNode &&
+              dimensionId != CanonicalProjectionSemantics.ActorFactionDimensionNode ||
+              kind == KnowledgeKind.Actor;
 
     private static bool TargetsExactClaim(EvidenceBinding binding, CanonicalCatalogPayload payload) =>
         binding.ClaimKind switch
@@ -2054,8 +2077,22 @@ public static class CanonicalCatalogPackageKernel
         binding.ClaimKind == EvidenceClaimKind.OrganizationalValue &&
         binding.KnowledgeRecordId == assertion.KnowledgeRecordId &&
         binding.SourceRevisionId == assertion.SourceRevisionId &&
-        string.Equals(binding.ClaimLocator, assertion.SourceFieldPath, StringComparison.Ordinal) &&
+        IsExactOrStructuredChildLocator(binding.ClaimLocator, assertion.SourceFieldPath) &&
         binding.ClaimContentId == EvidenceClaimContentId.DeriveV1(assertion);
+
+    private static bool IsExactOrStructuredChildLocator(string locator, string claimLocator) =>
+        string.Equals(locator, claimLocator, StringComparison.Ordinal) ||
+        locator.StartsWith(claimLocator + "/", StringComparison.Ordinal);
+
+    private static bool CompositeClaimLocatorSetClosed(
+        string claimLocator,
+        IEnumerable<string> evidenceLocators)
+    {
+        var locators = evidenceLocators.Distinct(StringComparer.Ordinal).ToImmutableArray();
+        return locators.Any(value => string.Equals(value, claimLocator, StringComparison.Ordinal)) ||
+               locators.Length >= 2 && locators.All(value =>
+                   value.StartsWith(claimLocator + "/", StringComparison.Ordinal));
+    }
 
     private static bool Targets(EvidenceBinding binding, CrossSourceTargetLinkClaim claim) =>
         binding.ClaimKind == EvidenceClaimKind.CrossSourceTargetLink &&

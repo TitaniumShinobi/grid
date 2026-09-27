@@ -227,7 +227,10 @@ public sealed record AssistantRequestDraft(
     AssistantSelectionSource ProfileSelectionSource = AssistantSelectionSource.UserSelected,
     AssistantSelectionSource ClassSelectionSource = AssistantSelectionSource.UserSelected,
     ImmutableArray<CanonicalSelectorSelection> CanonicalSelections = default,
-    ImmutableArray<TicketUserContext> UnresolvedUserContext = default)
+    ImmutableArray<TicketUserContext> UnresolvedUserContext = default,
+    TicketProblemSelection? ProblemSelection = null,
+    TicketTimingSelection? TimingSelection = null,
+    TicketGoalSelection? GoalSelection = null)
 {
     public string Problem => VerbatimUserText;
 }

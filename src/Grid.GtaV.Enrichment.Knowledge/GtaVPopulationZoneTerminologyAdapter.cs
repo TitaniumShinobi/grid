@@ -19,9 +19,11 @@ public sealed class GtaVPopulationZoneTerminologyAdapter
     public const string BaseLanguageRpfCoordinate = "x64b.rpf!/data/lang/american_rel.rpf";
     public const string BaseGxt2Coordinate = "x64b.rpf!/data/lang/american_rel.rpf!/global.gxt2";
     public const long MaximumGxt2Bytes = 64L * 1024 * 1024;
+    private readonly GtaVEnrichmentSourceCorpusIndex? _corpusIndex;
 
-    public GtaVPopulationZoneTerminologyAdapter(ContentDigest adapterArtifactDigest)
+    public GtaVPopulationZoneTerminologyAdapter(ContentDigest adapterArtifactDigest, GtaVEnrichmentSourceCorpusIndex? corpusIndex = null)
     {
+        _corpusIndex = corpusIndex;
         Descriptor = new GameKnowledgeAdapterDescriptor(
             new KnowledgeAdapterId("grid.gta-v.enhanced.population-zone-gxt2-secondary"),
             "1", adapterArtifactDigest, 1, "population-zone-american-gxt2-terminology-v1",
@@ -84,13 +86,13 @@ public sealed class GtaVPopulationZoneTerminologyAdapter
                 GtaVWeaponsSecondaryAssertionAdapter.Gxt2FormatId,
                 GtaVWeaponsSecondaryAssertionAdapter.Gxt2FormatVersion));
 
-        var groups = GtaVEnrichmentParsing.ParsePopulationZones(populationZonesArtifact)
+        var groups = GtaVEnrichmentParsing.ParsePopulationZones(populationZonesArtifact, _corpusIndex)
             .GroupBy(value => value.NameLabel, StringComparer.Ordinal)
             .ToDictionary(
                 value => value.Key,
                 value => value.OrderBy(item => item.LabelFieldLocator, StringComparer.Ordinal).ToImmutableArray(),
                 StringComparer.Ordinal);
-        var gxt = GtaVEnrichmentParsing.ParseGxt2(baseGxt2Artifact, MaximumGxt2Bytes);
+        var gxt = GtaVEnrichmentParsing.ParseGxt2(baseGxt2Artifact, MaximumGxt2Bytes, _corpusIndex?.Sources);
         var records = origin.KnowledgeRecords
             .Where(value => value.GameId == sourceScope.GameId &&
                             value.Kind == KnowledgeKind.Location &&

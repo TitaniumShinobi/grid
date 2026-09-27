@@ -15,9 +15,10 @@ public sealed class GtaVGen9PedsKnowledgeAdapter : GtaVEnhancedKnowledgeAdapterB
     public const string ParserIdentityVersion = "1";
     public const string FormatId = "rockstar.gta-v.gen9-exclusive-assets-peds-xml";
     public const string ExactFormatVersion = "1";
+    public const string NativeIdentityNamespace = "rockstar.gta-v.enhanced.gen9-exclusive-peds";
     public const long MaximumArtifactBytes = 16L * 1024 * 1024;
 
-    public GtaVGen9PedsKnowledgeAdapter(ContentDigest adapterArtifactDigest)
+    public GtaVGen9PedsKnowledgeAdapter(ContentDigest adapterArtifactDigest, GtaVSupportedSourceCorpusIndex? corpusIndex = null)
         : base(
             adapterArtifactDigest,
             "grid.gta-v.enhanced.gen9-exclusive-peds",
@@ -28,19 +29,20 @@ public sealed class GtaVGen9PedsKnowledgeAdapter : GtaVEnhancedKnowledgeAdapterB
             KnowledgeKind.Actor,
             MaximumArtifactBytes,
             maximumArtifacts: 8,
-            maximumKnowledgeRecords: 10_000)
+            maximumKnowledgeRecords: 10_000,
+            corpusIndex)
     {
     }
 
     private protected override string ParserId => ParserIdentity;
     private protected override string ParserVersion => ParserIdentityVersion;
     private protected override KnowledgeKind KnowledgeKind => KnowledgeKind.Actor;
-    private protected override string RecordNamespace => "rockstar.gta-v.enhanced.gen9-exclusive-peds";
+    private protected override string RecordNamespace => NativeIdentityNamespace;
     private protected override string RecordComparisonMethod => "grid.gta-v.ped-model-name.exact-utf8";
 
     private protected override ParsedArtifact Parse(FrozenSourceArtifact artifact)
     {
-        var document = ParseXml(DecodeStrictUtf8(artifact.ExactBytes.AsSpan(), MaximumArtifactBytes));
+        var document = IndexedXml(artifact, MaximumArtifactBytes);
         var root = document.Root;
         if (root is null || root.Name != XName.Get("Gen9ExclusiveAssetsDataPeds"))
             throw new InvalidDataException("Only a Gen9ExclusiveAssetsDataPeds root is supported.");

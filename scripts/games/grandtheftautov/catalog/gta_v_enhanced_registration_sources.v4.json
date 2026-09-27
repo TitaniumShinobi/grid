@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 4,
+  "manifestId": "grid.gta-v-enhanced.registration-sources",
+  "gameId": "game.grandtheftautov-enhanced",
+  "steamAppId": "3240220",
+  "steamBuildId": "25261616",
+  "localSourceFamilyManifest": {
+    "manifestId": "grid.gta-v-enhanced.source-families",
+    "schemaVersion": 2,
+    "documentSha256": "a477091b010d4a80958a77a35247a520cf98b8df4d8b8c27c76c979e8be03338"
+  },
+  "actorSourceFamilyManifest": {
+    "manifestId": "grid.gta-v-enhanced.actor-source-families",
+    "schemaVersion": 1,
+    "documentSha256": "63fe8c6a97c011cb70a62e0f88e22bcb1e42fb70fcac86dbb7d450aebc3c50ce"
+  },
+  "referenceSources": [
+    {
+      "sourceFamilyId": "rockstar.gta-v.enhanced.rockstar-cloud-job-registry",
+      "status": "supported-optional",
+      "knowledgeKinds": ["MissionQuest"],
+      "providerSourceId": "rockstar.gta-v.enhanced.rockstar-cloud-job-registry",
+      "endpointTemplateId": "rockstar.gta-online.job-header-registry",
+      "exactEndpointTemplateVersion": "1",
+      "platform": "pc",
+      "locale": "en-US",
+      "visibilityScopes": ["global-authorized-nonpersonalized", "global-public"],
+      "authenticationScopes": ["none", "nonpersonalized-provider-session"],
+      "snapshotSchemaId": "grid.gta-v.rockstar-cloud-job-snapshot",
+      "receiptSchemaId": "grid.gta-v.rockstar-cloud-job-snapshot-receipt",
+      "scopeModes": ["exact-target-set", "global-registry"],
+      "schemaDescriptor": {
+        "schemaVersion": 1,
+        "schemaId": "grid.gta-v.rockstar-cloud-job-header.schema",
+        "formatId": "rockstar.gta-v.rockstar-cloud-job-snapshot-json",
+        "exactFormatVersion": "1",
+        "objectsPointer": "/jobs",
+        "providerObjectIdentityPointer": "/contentId",
+        "nativeRevisionPointer": "/revision",
+        "fmnmPointer": "/fmnm",
+        "titlePointer": "/title",
+        "activityFamilyIdentityPointer": "/activityFamily/id",
+        "activityFamilyLabelPointer": "/activityFamily/label",
+        "onlineScopePointer": "/online"
+      }
+    }
+  ]
+}

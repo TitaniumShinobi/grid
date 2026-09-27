@@ -1,0 +1,11 @@
+var checks = await GtaVWeaponsMetaKnowledgeChecks.RunAsync();
+checks += await GtaVEnhancedSourceKnowledgeChecks.RunAsync();
+checks += await GtaVSecondaryAssertionChecks.RunAsync();
+checks += await GtaVEnrichmentIntegrationChecks.RunAsync();
+checks += await GtaVCorpusIndexChecks.RunAsync();
+checks += await GtaVOnlineActivityRegistryChecks.RunAsync();
+checks += GtaVRockstarCloudSnapshotBundleChecks.Run();
+checks += await GtaVMountedActorRegistrationChecks.RunAsync();
+checks += await GtaVMountedSpatialRegistrationChecks.RunAsync();
+checks += await GtaVAcquisitionAndGitProvenanceChecks.RunAsync();
+Console.WriteLine($"All {checks} GTA V knowledge checks passed.");

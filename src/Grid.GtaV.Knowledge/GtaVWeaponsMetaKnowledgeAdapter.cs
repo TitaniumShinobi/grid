@@ -33,10 +33,12 @@ public sealed class GtaVWeaponsMetaKnowledgeAdapter : IGameKnowledgeAdapter
 
     private readonly GameId _gameId;
     private readonly string _editionNamespace;
+    private readonly GtaVSupportedSourceCorpusIndex? _corpusIndex;
 
     public GtaVWeaponsMetaKnowledgeAdapter(
         GtaVKnowledgeEdition edition,
-        ContentDigest adapterArtifactDigest)
+        ContentDigest adapterArtifactDigest,
+        GtaVSupportedSourceCorpusIndex? corpusIndex = null)
     {
         if (!Enum.IsDefined(edition)) throw new ArgumentOutOfRangeException(nameof(edition));
 
@@ -50,6 +52,7 @@ public sealed class GtaVWeaponsMetaKnowledgeAdapter : IGameKnowledgeAdapter
         _editionNamespace = edition == GtaVKnowledgeEdition.Legacy
             ? "rockstar.gta-v.legacy"
             : "rockstar.gta-v.enhanced";
+        _corpusIndex = corpusIndex;
 
         var editionId = edition == GtaVKnowledgeEdition.Legacy ? "legacy" : "enhanced";
         Descriptor = new GameKnowledgeAdapterDescriptor(
@@ -118,7 +121,7 @@ public sealed class GtaVWeaponsMetaKnowledgeAdapter : IGameKnowledgeAdapter
 
             try
             {
-                if (ParseWeaponsMeta(artifact.ExactBytes.AsSpan(), artifact.SourceCoordinate.ExactRepresentation).IsEmpty)
+                if (ParseWeaponsMeta(GetWeaponsDocument(artifact), artifact.SourceCoordinate.ExactRepresentation).IsEmpty)
                 {
                     unsupported.Add(new(artifact.Id, "gta.weapons-meta.no-supported-records"));
                     continue;
@@ -202,7 +205,8 @@ public sealed class GtaVWeaponsMetaKnowledgeAdapter : IGameKnowledgeAdapter
         KnowledgeSourceScope sourceScope,
         FrozenSourceArtifact artifact)
     {
-        var parsedRecords = ParseWeaponsMeta(artifact.ExactBytes.AsSpan(), artifact.SourceCoordinate.ExactRepresentation);
+        var document = GetWeaponsDocument(artifact);
+        var parsedRecords = ParseWeaponsMeta(document, artifact.SourceCoordinate.ExactRepresentation);
         if (parsedRecords.IsEmpty)
             throw new InvalidDataException("The weapons.meta resource contains no supported CWeaponInfo or CAmmoInfo records.");
         if (parsedRecords.Length > Descriptor.ResourceLimits.MaximumKnowledgeRecords)
@@ -417,9 +421,7 @@ public sealed class GtaVWeaponsMetaKnowledgeAdapter : IGameKnowledgeAdapter
             issues.Add(new(issueCode, "No canonical output was emitted.")));
     }
 
-    private static ImmutableArray<ParsedWeaponsRecord> ParseWeaponsMeta(
-        ReadOnlySpan<byte> bytes,
-        string resourceCoordinate)
+    private static XDocument ParseWeaponsMetaDocument(ReadOnlySpan<byte> bytes)
     {
         if (bytes.IsEmpty || bytes.Length > MaximumArtifactBytes)
             throw new InvalidDataException("The frozen weapons.meta artifact has an invalid size.");
@@ -444,6 +446,18 @@ public sealed class GtaVWeaponsMetaKnowledgeAdapter : IGameKnowledgeAdapter
             throw new InvalidDataException("The frozen resource is not a supported well-formed weapons.meta XML document.", exception);
         }
 
+        return document;
+    }
+
+    private XDocument GetWeaponsDocument(FrozenSourceArtifact artifact) =>
+        _corpusIndex is null
+            ? ParseWeaponsMetaDocument(artifact.ExactBytes.AsSpan())
+            : _corpusIndex.GetXmlDocument(artifact, MaximumArtifactBytes);
+
+    private static ImmutableArray<ParsedWeaponsRecord> ParseWeaponsMeta(
+        XDocument document,
+        string resourceCoordinate)
+    {
         if (document.Root is null || document.Root.Name != XName.Get("CWeaponInfoBlob"))
             throw new InvalidDataException("Only a CWeaponInfoBlob weapons.meta root is supported.");
         if (document.Root.DescendantsAndSelf().Any(value => value.Name.Namespace != XNamespace.None) ||

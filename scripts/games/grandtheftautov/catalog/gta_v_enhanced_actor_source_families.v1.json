@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "grid.gta-v-enhanced.actor-source-families",
+  "gameId": "game.grandtheftautov-enhanced",
+  "steamAppId": "3240220",
+  "steamBuildId": "25261616",
+  "sourceFamilyId": "rockstar.gta-v.enhanced.mounted-ped-registry",
+  "exactResidentRecordCount": 683,
+  "exactDlcRecordCount": 435,
+  "residentCandidates": [
+    {
+      "sourceCoordinate": "update/update.rpf!/x64/data/peds.ymt",
+      "sourceTier": 2,
+      "expectedByteLength": 240764,
+      "expectedSha256": "af6db187add474915996977c4f91293bf8c7465dd79aea48cb01e2e9ea58a25c",
+      "formatId": "rockstar.gta-v.ped-model-init-data-list-pso",
+      "exactFormatVersion": "1"
+    },
+    {
+      "sourceCoordinate": "x64a.rpf!/data/peds.ymt",
+      "sourceTier": 3,
+      "expectedByteLength": 240596,
+      "expectedSha256": "abec57fa062f8a5e43bc7844281ae6cabc3e77175954e7c538738f7cb78d5ffe",
+      "formatId": "rockstar.gta-v.ped-model-init-data-list-pso",
+      "exactFormatVersion": "1"
+    }
+  ],
+  "mountGraph": {
+    "dlcListSourceCoordinate": "update/update.rpf!/common/data/dlclist.xml",
+    "dlcListExpectedByteLength": 4310,
+    "dlcListExpectedSha256": "86a6bb9c5c8858404fd7d73b9116fb6f31a683023f058082892a9e710e1bccbc",
+    "exactOccurrenceCount": 104,
+    "exactUniqueCasefoldedPathCount": 103,
+    "exactPlatformOccurrenceCount": 10,
+    "exactDlcPacksOccurrenceCount": 94,
+    "exactPhysicalDlcPacksCount": 92,
+    "exactPedMetadataRegistrationCount": 25,
+    "duplicateNormalizedMountPaths": [
+      "dlcpacks:/mp2025_01_g9ec/"
+    ],
+    "declaredPhysicalContainerExceptions": [
+      "dlcpacks:/patchbvh00/"
+    ],
+    "pedMetadataPacks": [
+      "mp2023_01",
+      "mp2023_02",
+      "mp2024_01",
+      "mp2024_02",
+      "mp2025_01",
+      "mp2025_02",
+      "mp2026_01",
+      "mpapartment",
+      "mpbattle",
+      "mpbiker",
+      "mpchristmas2017",
+      "mpchristmas2018",
+      "mpchristmas3",
+      "mpexecutive",
+      "mpgunrunning",
+      "mpheist",
+      "mpheist3",
+      "mpheist4",
+      "mpimportexport",
+      "mplowrider",
+      "mpsecurity",
+      "mpsmuggler",
+      "mpsum2",
+      "mptuner",
+      "mpvinewood"
+    ]
+  },
+  "formats": {
+    "dlcList": {
+      "formatId": "rockstar.gta-v.dlc-list-xml",
+      "exactFormatVersion": "1"
+    },
+    "dlcSetup": {
+      "formatId": "rockstar.gta-v.dlc-setup-xml",
+      "exactFormatVersion": "1"
+    },
+    "dlcContent": {
+      "formatId": "rockstar.gta-v.dlc-content-xml",
+      "exactFormatVersion": "1"
+    },
+    "dlcPedMetadata": {
+      "formatId": "rockstar.gta-v.ped-model-init-data-list-xml",
+      "exactFormatVersion": "1"
+    }
+  }
+}

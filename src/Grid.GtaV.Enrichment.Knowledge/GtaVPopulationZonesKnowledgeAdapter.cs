@@ -27,9 +27,11 @@ public sealed class GtaVPopulationZonesKnowledgeAdapter : IGameKnowledgeAdapter
     private static readonly LocationSemanticRoleId AreaZoneRole = new(AreaZoneSemanticRole);
     private static readonly LocationSemanticVocabularyVersion VocabularyVersion = new(1);
     private static readonly LocationSourceFamilyId SourceFamily = new(CoverageSourceFamily);
+    private readonly GtaVEnrichmentSourceCorpusIndex? _corpusIndex;
 
-    public GtaVPopulationZonesKnowledgeAdapter(ContentDigest adapterArtifactDigest)
+    public GtaVPopulationZonesKnowledgeAdapter(ContentDigest adapterArtifactDigest, GtaVEnrichmentSourceCorpusIndex? corpusIndex = null)
     {
+        _corpusIndex = corpusIndex;
         Format = new KnowledgeFormatCoordinate(FormatId, ExactFormatVersion);
         Descriptor = new GameKnowledgeAdapterDescriptor(
             new KnowledgeAdapterId("grid.gta-v.enhanced.population-zones"),
@@ -224,8 +226,8 @@ public sealed class GtaVPopulationZonesKnowledgeAdapter : IGameKnowledgeAdapter
             [], []);
     }
 
-    private static ImmutableArray<PopulationZoneGroup> ParseGroups(FrozenSourceArtifact artifact) =>
-        GtaVEnrichmentParsing.ParsePopulationZones(artifact)
+    private ImmutableArray<PopulationZoneGroup> ParseGroups(FrozenSourceArtifact artifact) =>
+        GtaVEnrichmentParsing.ParsePopulationZones(artifact, _corpusIndex)
             .GroupBy(value => value.NameLabel, StringComparer.Ordinal)
             .OrderBy(value => value.Key, StringComparer.Ordinal)
             .Select(value => new PopulationZoneGroup(

@@ -24,6 +24,12 @@ internal sealed record FrozenMember(
 
 internal static class GtaAcquisitionReceiptLoader
 {
+    private const string SourceFamilyManifestRelativePath =
+        "scripts/games/grandtheftautov/catalog/gta_v_enhanced_source_families.v2.json";
+    private const string ExpectedSourceFamilyManifestSha256 =
+        "a477091b010d4a80958a77a35247a520cf98b8df4d8b8c27c76c979e8be03338";
+    private const string LegacySourceFamilyManifestSha256 =
+        "426e2559aa88b79420d65508db0c8955795805dca6c37b90993bc88b62d81be4";
     private const string ExpectedGameId = "game.grandtheftautov-enhanced";
     private const string ExpectedAppId = "3240220";
     private const string ExpectedToolVersion = "0.5.1";
@@ -52,6 +58,9 @@ internal static class GtaAcquisitionReceiptLoader
         Require(receiptSchemaVersion is 1 or 2, "Unsupported acquisition receipt schema.");
         Require(root.GetProperty("gameId").GetString() == ExpectedGameId, "Acquisition receipt GameId mismatch.");
         VerifyDocumentDigest(root);
+        var sourceManifest = LoadSourceFamilyManifest();
+        var closureVersion = VerifySourceFamilyManifestBinding(root, receiptSchemaVersion, sourceManifest);
+        VerifyMemberCoordinateClosure(root, sourceManifest, closureVersion);
 
         var platform = root.GetProperty("platformObservation");
         Require(platform.GetProperty("provider").GetString() == "valve.steam", "Acquisition provider mismatch.");
@@ -185,8 +194,9 @@ internal static class GtaAcquisitionReceiptLoader
                     memberValue.Digest));
         }
 
-        Require(receipts.Count == 4 && frozenMembers.Count == 1061,
-            "The Enhanced canary acquisition must contain exactly four containers and 1,061 members.");
+        var expectedMemberCount = closureVersion switch { 2 => 1102, 1 => 1062, _ => 1061 };
+        Require(receipts.Count == 4 && frozenMembers.Count == expectedMemberCount,
+            $"The Enhanced canary acquisition must contain exactly four containers and {expectedMemberCount:N0} members.");
         return new ValidatedGtaAcquisition(
             gameVersion,
             observedAt,
@@ -195,6 +205,339 @@ internal static class GtaAcquisitionReceiptLoader
             frozenMembers.ToImmutable(),
             fingerprints.Distinct().OrderBy(value => value.Value, StringComparer.Ordinal).ToImmutableArray());
     }
+
+    internal static (string ManifestId, int SchemaVersion, string DocumentSha256) SourceFamilyManifestIdentity()
+    {
+        var manifest = LoadSourceFamilyManifest();
+        return (manifest.ManifestId, manifest.SchemaVersion, manifest.DocumentSha256);
+    }
+
+    internal static (string ManifestId, int SchemaVersion, string DocumentSha256) SourceFamilyManifestIdentity(
+        string manifestPath)
+    {
+        var manifest = LoadSourceFamilyManifest(manifestPath);
+        return (manifest.ManifestId, manifest.SchemaVersion, manifest.DocumentSha256);
+    }
+
+    private static SourceFamilyManifest LoadSourceFamilyManifest(string? manifestPath = null)
+    {
+        var path = manifestPath;
+        if (path is null)
+        {
+            var repositoryRoot = GitBuildProvenanceResolver.FindRepositoryRoot();
+            path = Path.Combine(
+                repositoryRoot,
+                SourceFamilyManifestRelativePath.Replace('/', Path.DirectorySeparatorChar));
+        }
+        path = Path.GetFullPath(path);
+        var bytes = File.ReadAllBytes(path);
+        using var document = JsonDocument.Parse(bytes, new JsonDocumentOptions
+        {
+            AllowTrailingCommas = false,
+            CommentHandling = JsonCommentHandling.Disallow,
+            MaxDepth = 32,
+        });
+        var root = document.RootElement;
+        RequireExactProperties(root,
+            ["schemaVersion", "manifestId", "gameId", "steamAppId", "steamBuildId", "sourceFamilies", "containers"],
+            []);
+        var schemaVersion = root.GetProperty("schemaVersion").GetInt32();
+        var manifestId = RequireText(root.GetProperty("manifestId"), "source-family manifest ID");
+        Require(schemaVersion == 2 &&
+                manifestId == "grid.gta-v-enhanced.source-families" &&
+                root.GetProperty("gameId").GetString() == ExpectedGameId &&
+                root.GetProperty("steamAppId").GetString() == ExpectedAppId &&
+                root.GetProperty("steamBuildId").GetString() == "25261616",
+            "Source-family manifest identity mismatch.");
+
+        var validStatuses = new HashSet<string>(
+            ["supported", "indexed-unconsumed", "diagnostic", "unsupported-declared"],
+            StringComparer.Ordinal);
+        var validKinds = new HashSet<string>(["Location", "MissionQuest", "Item", "Actor"], StringComparer.Ordinal);
+        var familyStatus = new Dictionary<string, string>(StringComparer.Ordinal);
+        var familyIds = new List<string>();
+        foreach (var family in root.GetProperty("sourceFamilies").EnumerateArray())
+        {
+            RequireExactProperties(family,
+                ["sourceFamilyId", "status", "knowledgeKinds"],
+                ["reasonCode", "potentialCoverage"]);
+            var familyId = RequireText(family.GetProperty("sourceFamilyId"), "source family ID");
+            var status = RequireText(family.GetProperty("status"), "source family status");
+            Require(validStatuses.Contains(status), "Unsupported source-family status.");
+            var kinds = family.GetProperty("knowledgeKinds").EnumerateArray()
+                .Select(value => RequireText(value, "source family knowledge kind"))
+                .ToArray();
+            Require(kinds.Length != 0 &&
+                    kinds.SequenceEqual(kinds.OrderBy(value => value, StringComparer.Ordinal)) &&
+                    kinds.Distinct(StringComparer.Ordinal).Count() == kinds.Length &&
+                    kinds.All(validKinds.Contains),
+                "Source-family knowledge kinds must be nonempty, unique, known, and ordinally sorted.");
+            Require(status == "supported" || family.TryGetProperty("reasonCode", out _),
+                "Nonsupported source families require a reason code.");
+            if (family.TryGetProperty("reasonCode", out var reason))
+                _ = RequireText(reason, "source family reason code");
+            if (family.TryGetProperty("potentialCoverage", out var potential))
+                _ = RequireText(potential, "source family potential coverage");
+            Require(familyStatus.TryAdd(familyId, status), "Duplicate source-family ID.");
+            familyIds.Add(familyId);
+        }
+        Require(familyIds.Count != 0 &&
+                familyIds.SequenceEqual(familyIds.OrderBy(value => value, StringComparer.Ordinal)),
+            "Source families must be ordinally sorted.");
+
+        var containers = ImmutableArray.CreateBuilder<SourceContainerDeclaration>();
+        var containerCoordinates = new List<string>();
+        var fixedCount = 0;
+        var dynamicCount = 0;
+        foreach (var container in root.GetProperty("containers").EnumerateArray())
+        {
+            var coordinate = RequireText(container.GetProperty("containerCoordinate"), "source container coordinate");
+            ValidateRelativeCoordinate(coordinate);
+            var mode = RequireText(container.GetProperty("memberMode"), "source member mode");
+            containerCoordinates.Add(coordinate);
+            if (mode is "fixed" or "fixed-and-dynamic-prefix")
+            {
+                RequireExactProperties(container,
+                    mode == "fixed"
+                        ? ["containerCoordinate", "memberMode", "members"]
+                        : ["containerCoordinate", "memberMode", "members", "dynamicMembers"], []);
+                var members = ImmutableArray.CreateBuilder<string>();
+                foreach (var member in container.GetProperty("members").EnumerateArray())
+                {
+                    RequireExactProperties(member,
+                        ["memberPath", "sourceFamilyId", "formatId", "exactFormatVersion"], []);
+                    var memberPath = RequireText(member.GetProperty("memberPath"), "source member path");
+                    ValidateRelativeCoordinate(memberPath);
+                    var familyId = RequireText(member.GetProperty("sourceFamilyId"), "member source family ID");
+                    Require(familyStatus.TryGetValue(familyId, out var status) && status != "unsupported-declared",
+                        "Acquired member references an invalid source family.");
+                    var formatId = RequireText(member.GetProperty("formatId"), "source member format ID");
+                    var formatVersion = RequireText(
+                        member.GetProperty("exactFormatVersion"), "source member format version");
+                    var expected = ExpectedFixedSourceDeclaration(coordinate, memberPath);
+                    Require(expected is not null &&
+                            familyId == expected.Value.FamilyId &&
+                            formatId == expected.Value.FormatId &&
+                            formatVersion == expected.Value.FormatVersion,
+                        $"Fixed source coordinate has an unapproved family or format tuple: {coordinate}!/{memberPath}");
+                    members.Add(memberPath);
+                }
+                var exactMembers = members.ToImmutable();
+                Require(!exactMembers.IsEmpty &&
+                        exactMembers.SequenceEqual(exactMembers.OrderBy(value => value, StringComparer.Ordinal)) &&
+                        exactMembers.Distinct(StringComparer.Ordinal).Count() == exactMembers.Length,
+                    "Fixed source members must be unique and ordinally sorted.");
+                fixedCount += exactMembers.Length;
+                if (mode == "fixed-and-dynamic-prefix")
+                {
+                    var dynamic = ParseDynamicDeclaration(container.GetProperty("dynamicMembers"), coordinate, familyStatus);
+                    dynamicCount++;
+                    containers.Add(new SourceContainerDeclaration(
+                        coordinate, exactMembers, dynamic.Prefix, dynamic.Suffix, dynamic.Count));
+                }
+                else
+                {
+                    containers.Add(new SourceContainerDeclaration(coordinate, exactMembers, null, null, 0));
+                }
+            }
+            else if (mode == "dynamic-prefix")
+            {
+                RequireExactProperties(container, ["containerCoordinate", "memberMode", "dynamicMembers"], []);
+                var dynamic = ParseDynamicDeclaration(container.GetProperty("dynamicMembers"), coordinate, familyStatus);
+                dynamicCount++;
+                containers.Add(new SourceContainerDeclaration(
+                    coordinate, ImmutableArray<string>.Empty, dynamic.Prefix, dynamic.Suffix, dynamic.Count));
+            }
+            else
+            {
+                throw new InvalidDataException("Unsupported source member mode.");
+            }
+        }
+        Require(containers.Count == 4 && fixedCount == 10 && dynamicCount == 2 &&
+                containerCoordinates.SequenceEqual(containerCoordinates.OrderBy(value => value, StringComparer.Ordinal)) &&
+                containerCoordinates.Distinct(StringComparer.Ordinal).Count() == containerCoordinates.Count,
+            "Source-family manifest requires four ordered containers, ten fixed members, and two dynamic UGC families.");
+
+        using var canonical = new MemoryStream();
+        using (var writer = new Utf8JsonWriter(canonical)) WriteCanonical(writer, root);
+        var documentSha256 = Convert.ToHexStringLower(SHA256.HashData(canonical.ToArray()));
+        Require(documentSha256 == ExpectedSourceFamilyManifestSha256,
+            "Source-family manifest content does not match the approved v2 registry.");
+        return new SourceFamilyManifest(
+            manifestId,
+            schemaVersion,
+            documentSha256,
+            containers.ToImmutable());
+    }
+
+    private static (string FamilyId, string FormatId, string FormatVersion)? ExpectedFixedSourceDeclaration(
+        string containerCoordinate,
+        string memberPath) =>
+        (containerCoordinate, memberPath) switch
+        {
+            ("common.rpf", "data/ai/weapons.meta") =>
+                ("rockstar.gta-v.enhanced.weapons-meta",
+                    "rockstar.gta-v.weapons-meta.cweaponinfoblob-xml", "1"),
+            ("common.rpf", "data/levels/gta5/mapzones.xml") =>
+                ("rockstar.gta-v.enhanced.mapzones",
+                    "rockstar.gta-v.mapzones.cmapzonescontainer-xml", "1"),
+            ("update/update.rpf", "common/data/ai/ambientpedmodelsets.meta") =>
+                ("rockstar.gta-v.enhanced.ambient-ped-model-sets",
+                    "rockstar.gta-v.ambient-ped-model-sets-xml", "1"),
+            ("update/update.rpf", "common/data/gen9_exclusive_assets_peds.meta") =>
+                ("rockstar.gta-v.enhanced.gen9-exclusive-peds",
+                    "rockstar.gta-v.gen9-exclusive-assets-peds-xml", "1"),
+            ("update/update.rpf", "common/data/levels/gta5/popzone.ipl") =>
+                ("rockstar.gta-v.enhanced.population-zones",
+                    "rockstar.gta-v.population-zones-ipl", "1"),
+            ("update/update.rpf", "x64/data/cdimages/scaleform_generic.rpf!/hud.gfx") =>
+                ("rockstar.gta-v.enhanced.hud-gfx", "rockstar.scaleform.gfx-v8", "1"),
+            ("update/update.rpf", "x64/patch/data/lang/american_rel.rpf") =>
+                ("rockstar.gta-v.enhanced.nested-localization-containers",
+                    "rockstar.rpf7-container", "1"),
+            ("update/update.rpf", "x64/patch/data/lang/american_rel.rpf!/global.gxt2") =>
+                ("rockstar.gta-v.enhanced.patch-american-localization",
+                    "rockstar.gta-v.gxt2-binary", "1"),
+            ("x64b.rpf", "data/lang/american_rel.rpf") =>
+                ("rockstar.gta-v.enhanced.nested-localization-containers",
+                    "rockstar.rpf7-container", "1"),
+            ("x64b.rpf", "data/lang/american_rel.rpf!/global.gxt2") =>
+                ("rockstar.gta-v.enhanced.base-american-localization",
+                    "rockstar.gta-v.gxt2-binary", "1"),
+            _ => null,
+        };
+
+    private static (string Prefix, string Suffix, int Count) ParseDynamicDeclaration(
+        JsonElement dynamic,
+        string coordinate,
+        IReadOnlyDictionary<string, string> familyStatus)
+    {
+        RequireExactProperties(dynamic,
+            ["prefix", "suffix", "exactCount", "sourceFamilyId", "formatId", "exactFormatVersion"], []);
+        var prefix = RequireText(dynamic.GetProperty("prefix"), "dynamic source prefix");
+        Require(prefix.EndsWith('/') && !prefix.Contains('\\') &&
+                !prefix.Split('/').Any(segment => segment is "." or ".."),
+            "Dynamic source prefix is noncanonical.");
+        var suffix = RequireText(dynamic.GetProperty("suffix"), "dynamic source suffix");
+        var exactCount = dynamic.GetProperty("exactCount").GetInt32();
+        var familyId = RequireText(dynamic.GetProperty("sourceFamilyId"), "dynamic source family ID");
+        var formatId = RequireText(dynamic.GetProperty("formatId"), "dynamic source format ID");
+        var formatVersion = RequireText(dynamic.GetProperty("exactFormatVersion"), "dynamic source format version");
+        var valid = coordinate switch
+        {
+            "common.rpf" => prefix == "data/ugc/" && exactCount == 40 &&
+                            familyId == "rockstar.gta-v.enhanced.online-activity-registry",
+            "update/update2.rpf" => prefix == "common/data/ugc/" && exactCount == 1052 &&
+                                     familyId == "rockstar.gta-v.enhanced.ugc-missions",
+            _ => false,
+        };
+        Require(valid && suffix == ".ugc" && familyStatus.GetValueOrDefault(familyId) == "supported" &&
+                formatId == "rockstar.gta-v.ugc.mission-json" && formatVersion == "1",
+            "Dynamic UGC source declaration mismatch.");
+        return (prefix, suffix, exactCount);
+    }
+
+    private static int VerifySourceFamilyManifestBinding(
+        JsonElement root,
+        int receiptSchemaVersion,
+        SourceFamilyManifest manifest)
+    {
+        if (!root.TryGetProperty("sourceFamilyManifest", out var binding))
+            return 0;
+        Require(receiptSchemaVersion == 2, "Only schema-v2 receipts can bind a source-family manifest.");
+        RequireExactProperties(binding, ["manifestId", "schemaVersion", "documentSha256"], []);
+        var manifestId = binding.GetProperty("manifestId").GetString();
+        var schema = binding.GetProperty("schemaVersion").GetInt32();
+        var digest = binding.GetProperty("documentSha256").GetString();
+        if (manifestId == manifest.ManifestId && schema == manifest.SchemaVersion && digest == manifest.DocumentSha256)
+            return 2;
+        Require(manifestId == "grid.gta-v-enhanced.source-families" && schema == 1 &&
+                digest == LegacySourceFamilyManifestSha256,
+            "Receipt source-family manifest binding mismatch.");
+        return 1;
+    }
+
+    private static void VerifyMemberCoordinateClosure(
+        JsonElement root,
+        SourceFamilyManifest manifest,
+        int closureVersion)
+    {
+        var receivedContainers = root.GetProperty("containers").EnumerateArray().ToArray();
+        Require(receivedContainers.Length == manifest.Containers.Length,
+            "Acquisition receipt container count mismatch.");
+        var total = 0;
+        for (var index = 0; index < manifest.Containers.Length; index++)
+        {
+            var expected = manifest.Containers[index];
+            var received = receivedContainers[index];
+            var coordinate = RequireText(received.GetProperty("containerCoordinate"), "container coordinate");
+            Require(coordinate == expected.Coordinate, "Receipt containers are missing, extra, or reordered.");
+            var members = received.GetProperty("members").EnumerateArray().ToArray();
+            var paths = members.Select(member => RequireText(member.GetProperty("memberPath"), "member path")).ToArray();
+            var coordinates = members.Select(member => RequireText(member.GetProperty("memberCoordinate"), "member coordinate"))
+                .ToArray();
+            Require(coordinates.SequenceEqual(coordinates.OrderBy(value => value, StringComparer.Ordinal)) &&
+                    coordinates.Distinct(StringComparer.Ordinal).Count() == coordinates.Length,
+                "Receipt members must be unique and ordinally sorted.");
+            Require(members.Zip(paths).All(pair =>
+                    pair.First.GetProperty("memberCoordinate").GetString() == $"{coordinate}!/{pair.Second}"),
+                "Receipt member coordinate mismatch.");
+            if (expected.DynamicPrefix is not null)
+            {
+                var dynamicCount = closureVersion == 2
+                    ? expected.DynamicCount
+                    : expected.Coordinate == "update/update2.rpf" ? 1052 : 0;
+                var dynamicPaths = paths.Where(path =>
+                        path.StartsWith(expected.DynamicPrefix, StringComparison.Ordinal) &&
+                        path.EndsWith(expected.DynamicSuffix!, StringComparison.Ordinal))
+                    .ToArray();
+                var fixedPaths = paths.Except(dynamicPaths, StringComparer.Ordinal).ToArray();
+                Require(dynamicPaths.Length == dynamicCount && fixedPaths.SequenceEqual(expected.FixedMembers),
+                    "Receipt UGC closure does not match the source-family manifest.");
+            }
+            else
+            {
+                var expectedMembers = expected.FixedMembers;
+                if (closureVersion == 0)
+                    expectedMembers = expectedMembers
+                        .Where(path => path != "x64/data/cdimages/scaleform_generic.rpf!/hud.gfx")
+                        .ToImmutableArray();
+                Require(paths.SequenceEqual(expectedMembers),
+                    $"Receipt fixed-member closure mismatch: {coordinate}");
+            }
+            total += paths.Length;
+        }
+        Require(total == (closureVersion switch { 2 => 1102, 1 => 1062, _ => 1061 }),
+            "Acquisition member closure count mismatch.");
+    }
+
+    private static void RequireExactProperties(
+        JsonElement value,
+        IEnumerable<string> required,
+        IEnumerable<string> optional)
+    {
+        Require(value.ValueKind == JsonValueKind.Object, "Manifest value must be an object.");
+        var requiredSet = required.ToHashSet(StringComparer.Ordinal);
+        var allowed = requiredSet.Concat(optional).ToHashSet(StringComparer.Ordinal);
+        var actual = value.EnumerateObject().Select(property => property.Name).ToArray();
+        Require(requiredSet.All(name => actual.Contains(name, StringComparer.Ordinal)) &&
+                actual.All(allowed.Contains) &&
+                actual.Distinct(StringComparer.Ordinal).Count() == actual.Length,
+            "Manifest object has missing, duplicate, or unsupported fields.");
+    }
+
+    private sealed record SourceContainerDeclaration(
+        string Coordinate,
+        ImmutableArray<string> FixedMembers,
+        string? DynamicPrefix,
+        string? DynamicSuffix,
+        int DynamicCount);
+
+    private sealed record SourceFamilyManifest(
+        string ManifestId,
+        int SchemaVersion,
+        string DocumentSha256,
+        ImmutableArray<SourceContainerDeclaration> Containers);
 
     private static void VerifySteamManifest(JsonElement expected, string gameRoot, int receiptSchemaVersion)
     {

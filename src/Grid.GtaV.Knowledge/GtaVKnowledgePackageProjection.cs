@@ -24,7 +24,7 @@ public static class GtaVKnowledgePackageProjection
         return new CanonicalCatalogPayload(
             origin.EffectiveCoverage,
             DistinctBy(origin.AdapterDescriptors.Add(secondary.AdapterDescriptor), value => value.RevisionId.Value),
-            origin.Sources,
+            DistinctBy(origin.Sources.Concat(secondary.AdditionalSources), value => value.Id.Value),
             artifacts,
             DistinctBy(origin.SourceRevisions.Add(secondary.SourceRevision), value => value.Revision.Id.Value),
             origin.KnowledgeRecords,
@@ -32,9 +32,9 @@ public static class GtaVKnowledgePackageProjection
                 value => EvidenceClaimContentId.DeriveV1(value).Value),
             origin.RelationshipAssertions,
             DistinctBy(origin.FileEvidenceReceipts.Concat(secondary.FileEvidenceReceipts), value => value.Id.Value),
-            origin.ReferenceEvidenceReceipts,
+            DistinctBy(origin.ReferenceEvidenceReceipts.Concat(secondary.ReferenceEvidenceReceipts), value => value.Id.Value),
             DistinctBy(origin.EvidenceBindings.Concat(secondary.EvidenceBindings), value => value.Id.Value),
-            origin.CorrelationEnvelopes,
+            DistinctBy(origin.CorrelationEnvelopes.Concat(secondary.CorrelationEnvelopes), value => value.Id.Value),
             origin.UnresolvedSourceAssertions,
             acquisition.Receipts,
             acquisition.Bindings)
@@ -58,9 +58,15 @@ public static class GtaVKnowledgePackageProjection
                 origin.CrossSourceAssertions.Concat(secondary.CrossSourceAssertions), value => value.Id.Value),
             CrossSourceTargetLinkClaims = DistinctBy(
                 origin.CrossSourceTargetLinkClaims.Concat(secondary.TargetLinkClaims), value => value.Id.Value),
-            UnresolvedCrossSourceClaimContents = origin.UnresolvedCrossSourceClaimContents,
-            UnresolvedCrossSourceEvidenceBindings = origin.UnresolvedCrossSourceEvidenceBindings,
-            UnresolvedCrossSourceAssertions = origin.UnresolvedCrossSourceAssertions,
+            UnresolvedCrossSourceClaimContents = DistinctBy(
+                origin.UnresolvedCrossSourceClaimContents.Concat(secondary.UnresolvedCrossSourceClaimContents),
+                value => value.Id.Value),
+            UnresolvedCrossSourceEvidenceBindings = DistinctBy(
+                origin.UnresolvedCrossSourceEvidenceBindings.Concat(secondary.UnresolvedCrossSourceEvidenceBindings),
+                value => value.Id.Value),
+            UnresolvedCrossSourceAssertions = DistinctBy(
+                origin.UnresolvedCrossSourceAssertions.Concat(secondary.UnresolvedCrossSourceAssertions),
+                value => value.Id.Value),
         };
     }
 
@@ -137,6 +143,12 @@ public static class GtaVKnowledgePackageProjection
                 value => value.Id.Value),
             LocationCoverageReports = DistinctBy(
                 extractionValues.SelectMany(value => value.LocationCoverageReports),
+                value => value.Id.Value),
+            SemanticClassificationAssertions = DistinctBy(
+                values.SelectMany(value => value.SemanticClassificationAssertions),
+                value => value.Id.Value),
+            OrganizationalValueAssertions = DistinctBy(
+                values.SelectMany(value => value.OrganizationalValueAssertions),
                 value => value.Id.Value),
         };
     }

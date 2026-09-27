@@ -14,9 +14,11 @@ public sealed class GtaVActorDlcSecondaryAssertionAdapter
     public const string MethodId = "grid.gta-v.gen9-ped-dlc-membership";
     public const string MethodVersion = "1";
     private const string Coordinate = "update/update.rpf!/common/data/gen9_exclusive_assets_peds.meta";
+    private readonly GtaVSupportedSourceCorpusIndex? _corpusIndex;
 
-    public GtaVActorDlcSecondaryAssertionAdapter(ContentDigest adapterArtifactDigest)
+    public GtaVActorDlcSecondaryAssertionAdapter(ContentDigest adapterArtifactDigest, GtaVSupportedSourceCorpusIndex? corpusIndex = null)
     {
+        _corpusIndex = corpusIndex;
         Descriptor = new GameKnowledgeAdapterDescriptor(
             new KnowledgeAdapterId("grid.gta-v.enhanced.gen9-ped-dlc-secondary"),
             "1", adapterArtifactDigest, 1, "ped-dlc-organizational-values-v1",
@@ -51,9 +53,13 @@ public sealed class GtaVActorDlcSecondaryAssertionAdapter
             throw new InvalidDataException("Actor DLC facts require the exact acquired Enhanced peds artifact.");
 
         var records = origin.KnowledgeRecords
-            .Where(value => value.GameId == sourceScope.GameId && value.Kind == KnowledgeKind.Actor)
+            .Where(value => value.GameId == sourceScope.GameId &&
+                value.Kind == KnowledgeKind.Actor &&
+                string.Equals(value.NativeIdentity.Namespace,
+                    GtaVGen9PedsKnowledgeAdapter.NativeIdentityNamespace, StringComparison.Ordinal) &&
+                string.Equals(value.NativeIdentity.ObjectType, "PedModelName", StringComparison.Ordinal))
             .ToDictionary(value => value.NativeIdentity.ExactRepresentation, StringComparer.Ordinal);
-        if (records.Count == 0) throw new InvalidDataException("No established Actor records are available.");
+        if (records.Count == 0) throw new InvalidDataException("No established Gen9 Actor records are available.");
         var revisions = records.Values.Select(value => value.SourceRevisionId).Distinct().ToImmutableArray();
         if (revisions.Length != 1 || !origin.SourceRevisions.Any(value =>
                 value.Revision.Id == revisions[0] && value.Revision.ArtifactIds.Contains(artifact.Id)))
@@ -71,7 +77,7 @@ public sealed class GtaVActorDlcSecondaryAssertionAdapter
         var bindings = ImmutableArray.CreateBuilder<EvidenceBinding>();
         var links = ImmutableArray.CreateBuilder<CrossSourceTargetLinkClaim>();
         var envelopes = ImmutableArray.CreateBuilder<CrossSourceCanonicalAssertion>();
-        foreach (var fact in Parse(artifact))
+        foreach (var fact in Parse(artifact, _corpusIndex?.GetXmlDocument(artifact, GtaVGen9PedsKnowledgeAdapter.MaximumArtifactBytes)))
         {
             if (!records.TryGetValue(fact.ActorNativeIdentity, out var target))
                 throw new InvalidDataException("A DLC membership cannot target an absent established Actor.");
@@ -141,9 +147,14 @@ public sealed class GtaVActorDlcSecondaryAssertionAdapter
             links.ToImmutable(), envelopes.ToImmutable());
     }
 
-    private static ImmutableArray<ActorDlcFact> Parse(FrozenSourceArtifact artifact)
+    private static ImmutableArray<ActorDlcFact> Parse(FrozenSourceArtifact artifact, XDocument? indexedDocument = null)
     {
         XDocument document;
+        if (indexedDocument is not null)
+        {
+            document = indexedDocument;
+        }
+        else
         try
         {
             using var stream = new MemoryStream(artifact.ExactBytes.ToArray(), writable: false);

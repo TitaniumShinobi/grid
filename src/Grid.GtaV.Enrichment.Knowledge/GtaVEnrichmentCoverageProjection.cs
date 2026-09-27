@@ -1,6 +1,7 @@
 using System.Collections.Immutable;
 using Grid.Core.Models;
 using Grid.Core.Services;
+using Grid.GtaV.Knowledge;
 
 namespace Grid.GtaV.Enrichment.Knowledge;
 
@@ -8,6 +9,8 @@ namespace Grid.GtaV.Enrichment.Knowledge;
 public static class GtaVEnrichmentCoverageProjection
 {
     public const string ConsolidatedManifestVersion = "gta-v-enhanced-mapzones-and-population-zones-v1";
+    public const string SpatialConsolidatedManifestVersion =
+        "gta-v-enhanced-mapzones-population-zones-mounted-mlo-spatial-v1";
 
     public static CanonicalCatalogPayload ApplyConsolidatedLocationCoverage(
         CanonicalCatalogPayload payload,
@@ -23,11 +26,30 @@ public static class GtaVEnrichmentCoverageProjection
         if (sourceScope.GameId != ProductionGridCatalogService.GrandTheftAutoVEnhancedId ||
             sourceScope.ScopeKind != KnowledgeSourceScopeKind.BaseGame)
             throw new InvalidDataException("Consolidated GTA Location coverage requires the Enhanced base-game scope.");
-        if (payload.LocationCoverageReports.Length != 2 ||
+        if (payload.LocationCoverageReports.Length is not (2 or 3) ||
             payload.LocationCoverageReports.Any(value => value.Manifest.SourceScope != sourceScope))
-            throw new InvalidDataException("Exactly the map-zone and population-zone coverage reports are required.");
+            throw new InvalidDataException("Exactly the two base Location reports and optional mounted-spatial report are required.");
 
         var reports = payload.LocationCoverageReports.OrderBy(value => value.Id.Value, StringComparer.Ordinal).ToImmutableArray();
+        var expectedBaseFamilies = new HashSet<LocationSourceFamilyId>
+        {
+            new(GtaVMapZonesKnowledgeAdapter.CoverageSourceFamily),
+            new(GtaVPopulationZonesKnowledgeAdapter.CoverageSourceFamily),
+        };
+        var expectedSpatialFamilies = new HashSet<LocationSourceFamilyId>
+        {
+            new(GtaVMountedSpatialKnowledgeAdapter.ArchetypeSourceFamily),
+            new(GtaVMountedSpatialKnowledgeAdapter.InstanceSourceFamily),
+            new(GtaVMountedSpatialKnowledgeAdapter.YmfSourceFamily),
+        };
+        var reportFamilyIds = reports.SelectMany(value => value.SourceFamilies)
+            .Select(value => value.SourceFamilyId).ToHashSet();
+        var hasSpatial = reports.Length == 3;
+        var expectedFamilies = hasSpatial
+            ? expectedBaseFamilies.Concat(expectedSpatialFamilies).ToHashSet()
+            : expectedBaseFamilies;
+        if (!reportFamilyIds.SetEquals(expectedFamilies))
+            throw new InvalidDataException("The Location reports do not contain the exact supported source-family set.");
         var terminologyDescriptor = payload.AdapterDescriptors.Single(value =>
             value.AdapterId == new KnowledgeAdapterId("grid.gta-v.enhanced.population-zone-gxt2-secondary"));
         var terminologyRevision = payload.SourceRevisions.Single(value =>
@@ -66,8 +88,8 @@ public static class GtaVEnrichmentCoverageProjection
                 value.MissingArtifactCount,
                 value.AmbiguousClassificationCount);
         }).OrderBy(value => value.SourceFamilyId.Value, StringComparer.Ordinal).ToImmutableArray();
-        if (declarations.Select(value => value.SourceFamilyId).Distinct().Count() != 2 ||
-            families.Select(value => value.SourceFamilyId).Distinct().Count() != 2 ||
+        if (declarations.Select(value => value.SourceFamilyId).Distinct().Count() != expectedFamilies.Count ||
+            families.Select(value => value.SourceFamilyId).Distinct().Count() != expectedFamilies.Count ||
             !declarations.Select(value => value.SourceFamilyId).SequenceEqual(families.Select(value => value.SourceFamilyId)))
             throw new InvalidDataException("The Location reports do not contain two distinct matching source families.");
 
@@ -76,8 +98,10 @@ public static class GtaVEnrichmentCoverageProjection
             ContentDigest.ComputeSha256("grid.location.coverage.qcs.pending"u8));
         var manifest = new LocationCoverageManifest(
             LocationCoverageManifestId.DeriveV1(
-                sourceScope, ConsolidatedManifestVersion, false, validation, declarations),
-            sourceScope, ConsolidatedManifestVersion, false, validation, declarations);
+                sourceScope, hasSpatial ? SpatialConsolidatedManifestVersion : ConsolidatedManifestVersion,
+                false, validation, declarations),
+            sourceScope, hasSpatial ? SpatialConsolidatedManifestVersion : ConsolidatedManifestVersion,
+            false, validation, declarations);
         var recordIds = families.SelectMany(value => value.EmittedLocationRecordIds).ToHashSet();
         var actualRecords = payload.KnowledgeRecords
             .Where(value => value.GameId == sourceScope.GameId && value.Kind == KnowledgeKind.Location)

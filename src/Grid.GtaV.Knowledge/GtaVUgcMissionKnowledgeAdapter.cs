@@ -17,7 +17,7 @@ public sealed class GtaVUgcMissionKnowledgeAdapter : GtaVEnhancedKnowledgeAdapte
     public const long MaximumArtifactBytes = 32L * 1024 * 1024;
     private const string MissingNativeIdentityReason = "rockstar.gta-v.ugc.mission-native-identity-missing";
 
-    public GtaVUgcMissionKnowledgeAdapter(ContentDigest adapterArtifactDigest)
+    public GtaVUgcMissionKnowledgeAdapter(ContentDigest adapterArtifactDigest, GtaVSupportedSourceCorpusIndex? corpusIndex = null)
         : base(
             adapterArtifactDigest,
             "grid.gta-v.enhanced.ugc-mission",
@@ -28,7 +28,8 @@ public sealed class GtaVUgcMissionKnowledgeAdapter : GtaVEnhancedKnowledgeAdapte
             KnowledgeKind.MissionQuest,
             MaximumArtifactBytes,
             maximumArtifacts: 10_000,
-            maximumKnowledgeRecords: 10_000)
+            maximumKnowledgeRecords: 10_000,
+            corpusIndex)
     {
     }
 
@@ -40,7 +41,7 @@ public sealed class GtaVUgcMissionKnowledgeAdapter : GtaVEnhancedKnowledgeAdapte
 
     private protected override ParsedArtifact Parse(FrozenSourceArtifact artifact)
     {
-        var text = DecodeStrictUtf8(artifact.ExactBytes.AsSpan(), MaximumArtifactBytes);
+        var text = IndexedStrictUtf8(artifact, MaximumArtifactBytes);
         JsonDocument document;
         try
         {
