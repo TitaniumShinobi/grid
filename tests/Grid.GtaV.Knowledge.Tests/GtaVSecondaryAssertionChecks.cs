@@ -205,11 +205,12 @@ internal static class GtaVSecondaryAssertionChecks
             composition, payload.KnowledgeRecords.Select(value => value.Id).ToImmutableArray(), [], "1");
         var projection = CanonicalSelectorProjectionEngine.CreateVerifiedInput(
             package, composition, CanonicalSelectorProjectionPolicy.V1, applicability);
+        var locale = new CanonicalTerminologyLocalePreference("en-US", ["en"]);
         CanonicalSelectorResult Query(KnowledgeKind kind, CanonicalNavigationPathId? path = null) =>
             CanonicalSelectorProjectionEngine.Query(projection, new CanonicalSelectorQuery(
                 package.Manifest.CatalogRevisionId, composition, kind,
                 CanonicalSelectorProjectionPolicy.V1.Id, CanonicalSelectorProjectionPolicy.V1.ExactVersion,
-                path, null, IncludeIdentifierOnly: true, InspectionMode: false));
+                path, null, IncludeIdentifierOnly: true, InspectionMode: false, locale));
         var itemRoot = Query(KnowledgeKind.Item);
         var weaponsNode = itemRoot.ImmediateChildren.Single(value =>
             value.OrganizationalSemanticId == CanonicalProjectionSemantics.ItemWeaponsNode);
@@ -231,7 +232,7 @@ internal static class GtaVSecondaryAssertionChecks
             CanonicalSelectorProjectionEngine.Query(projectionV2, new CanonicalSelectorQuery(
                 package.Manifest.CatalogRevisionId, composition, kind,
                 CanonicalSelectorProjectionPolicy.V2.Id, CanonicalSelectorProjectionPolicy.V2.ExactVersion,
-                path, null, IncludeIdentifierOnly: true, InspectionMode: false));
+                path, null, IncludeIdentifierOnly: true, InspectionMode: false, locale));
         var v2Weapons = QueryV2(KnowledgeKind.Item).ImmediateChildren.Single(value =>
             value.OrganizationalSemanticId == CanonicalProjectionSemantics.ItemWeaponsNode);
         var pistolCategory = QueryV2(KnowledgeKind.Item, v2Weapons.PathId).ImmediateChildren.Single();

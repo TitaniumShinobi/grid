@@ -4,6 +4,9 @@ using Grid.Core.Services;
 
 internal static class CanonicalSelectorAndInstructionChecks
 {
+    private static CanonicalTerminologyLocalePreference EnglishLocale { get; } =
+        new("en-US", ["en"]);
+
     public static int Run()
     {
         var checks = 0;
@@ -152,7 +155,7 @@ internal static class CanonicalSelectorAndInstructionChecks
                 new CanonicalSelectorQuery(
                     categoryFixture.CatalogRevisionId, categoryFixture.CompositionId, KnowledgeKind.Item,
                     CanonicalSelectorProjectionPolicy.V2.Id, CanonicalSelectorProjectionPolicy.V2.ExactVersion,
-                    path, null, true, false));
+                    path, null, true, false, EnglishLocale));
         var categoryWeapons = QueryV2(null).ImmediateChildren.Single(value =>
             value.OrganizationalSemanticId == CanonicalProjectionSemantics.ItemWeaponsNode);
         var exactCategory = QueryV2(categoryWeapons.PathId).ImmediateChildren.Single();
@@ -185,7 +188,7 @@ internal static class CanonicalSelectorAndInstructionChecks
                 new CanonicalSelectorQuery(
                     missionFamilyFixture.CatalogRevisionId, missionFamilyFixture.CompositionId,
                     KnowledgeKind.MissionQuest, CanonicalSelectorProjectionPolicy.V3.Id,
-                    CanonicalSelectorProjectionPolicy.V3.ExactVersion, path, null, true, false));
+                    CanonicalSelectorProjectionPolicy.V3.ExactVersion, path, null, true, false, EnglishLocale));
         var online = QueryV3(null).ImmediateChildren.Single(value =>
             value.OrganizationalSemanticId == CanonicalProjectionSemantics.MissionOnlineNode);
         var exactPlaylist = QueryV3(online.PathId).ImmediateChildren.Single();
@@ -358,6 +361,52 @@ internal static class CanonicalSelectorAndInstructionChecks
                identicalRecords.Select(value => value.KnowledgeRecordId!.Value.Value).SequenceEqual(
                    identicalRecords.Select(value => value.KnowledgeRecordId!.Value.Value).Order(StringComparer.Ordinal)),
             "Identical exact terminology is tie-broken by immutable canonical identity without renaming rows.");
+
+        var englishName = new TerminologyAssertion(
+            fixture.UnclassifiedItem.Id, fixture.SourceRevisionId, TerminologyAssertionRole.PrimaryName,
+            "English Exact", "/item/multilingual/en-us", "en-US");
+        var spanishName = new TerminologyAssertion(
+            fixture.UnclassifiedItem.Id, fixture.SourceRevisionId, TerminologyAssertionRole.PrimaryName,
+            "Español exacto", "/item/multilingual/es-es", "es-ES");
+        var undeterminedName = new TerminologyAssertion(
+            fixture.UnclassifiedItem.Id, fixture.SourceRevisionId, TerminologyAssertionRole.PrimaryName,
+            "Aprendendo os esquemas", "/item/multilingual/und", "und");
+        var sourceDefaultName = new TerminologyAssertion(
+            fixture.UnclassifiedItem.Id, fixture.SourceRevisionId, TerminologyAssertionRole.PrimaryName,
+            "Source default", "/item/multilingual/default");
+        var multilingual = (fixture with
+        {
+            Terms = fixture.Terms.AddRange(ImmutableArray.Create(
+                englishName, spanishName, undeterminedName, sourceDefaultName)),
+        }).Repackage();
+        var englishProjection = Query(multilingual, KnowledgeKind.Item, null, true)
+            .ImmediateChildren.Single(value => value.KnowledgeRecordId == fixture.UnclassifiedItem.Id);
+        var spanishProjection = Query(
+                multilingual, KnowledgeKind.Item, null, true, locale:
+                new CanonicalTerminologyLocalePreference("es-ES", ["es"]))
+            .ImmediateChildren.Single(value => value.KnowledgeRecordId == fixture.UnclassifiedItem.Id);
+        var frenchProjection = Query(
+                multilingual, KnowledgeKind.Item, null, true, locale:
+                new CanonicalTerminologyLocalePreference("fr-FR", ["fr"]))
+            .ImmediateChildren.Single(value => value.KnowledgeRecordId == fixture.UnclassifiedItem.Id);
+        Assert(englishProjection.DisplayAnchor == "English Exact" &&
+               spanishProjection.DisplayAnchor == "Español exacto" &&
+               frenchProjection.DisplayAnchor == "Source default" &&
+               englishProjection.ExactTerminologyAssertions.Contains(spanishName) &&
+               englishProjection.ExactTerminologyAssertions.Contains(undeterminedName) &&
+               !englishProjection.HasTerminologyConflict,
+            "Projection selects exact requested locale, then approved fallback, then source default while preserving multilingual assertions and excluding undetermined language.");
+        var noDefault = (multilingual with
+        {
+            Terms = multilingual.Terms.Remove(sourceDefaultName).Remove(englishName),
+        }).Repackage();
+        var identifierFallback = Query(noDefault, KnowledgeKind.Item, null, true)
+            .ImmediateChildren.Single(value => value.KnowledgeRecordId == fixture.UnclassifiedItem.Id);
+        Assert(identifierFallback.DisplayKind == CanonicalNavigationDisplayKind.NativeIdentifier &&
+               identifierFallback.DisplayAnchor == fixture.UnclassifiedItem.NativeIdentity.ExactRepresentation,
+            "An English query never substitutes unrelated Spanish or undetermined terminology when English is absent.");
+        AssertThrows<ArgumentException>(() => new CanonicalTerminologyLocalePreference("und", []),
+            "An undetermined language cannot be requested as a presentation locale.");
         AssertThrows<ArgumentException>(() => CanonicalSelectorProjectionEngine.Query(
                 fixture.ToInput(),
                 fixture.Query(KnowledgeKind.Item) with { CatalogCompositionId = new("other-composition") }),
@@ -745,13 +794,15 @@ internal static class CanonicalSelectorAndInstructionChecks
         KnowledgeKind kind,
         CanonicalNavigationPathId? path,
         bool includeIdentifierOnly,
-        string? search = null) => CanonicalSelectorProjectionEngine.Query(
+        string? search = null,
+        CanonicalTerminologyLocalePreference? locale = null) => CanonicalSelectorProjectionEngine.Query(
         fixture.ToInput(),
         fixture.Query(kind) with
         {
             CurrentPathId = path,
             IncludeIdentifierOnly = includeIdentifierOnly,
             SearchText = search,
+            TerminologyLocale = locale ?? EnglishLocale,
         });
 
     private static string NodeCoordinate(CanonicalNavigationNode value) => string.Join(
@@ -872,7 +923,8 @@ internal static class CanonicalSelectorAndInstructionChecks
             null,
             null,
             true,
-            false);
+            false,
+            EnglishLocale);
 
         public static Fixture Create()
         {
@@ -911,7 +963,7 @@ internal static class CanonicalSelectorAndInstructionChecks
 
             var locationName = new TerminologyAssertion(
                 locationParent.Id, revisionId, TerminologyAssertionRole.PrimaryName,
-                "  Zône—Exact  ", "/location/name", "fr");
+                "  Zône—Exact  ", "/location/name", "en");
             var itemAlpha = new TerminologyAssertion(
                 item.Id, revisionId, TerminologyAssertionRole.PrimaryName, "Alpha", "/item/name/a", "en");
             var itemZulu = new TerminologyAssertion(

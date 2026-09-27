@@ -440,6 +440,49 @@ public sealed record CanonicalNavigationNode
     public bool HasTerminologyConflict { get; }
 }
 
+public sealed record CanonicalTerminologyLocalePreference
+{
+    public CanonicalTerminologyLocalePreference(
+        string requestedLanguageTag,
+        ImmutableArray<string> approvedLanguageFallbackTags)
+    {
+        RequestedLanguageTag = ValidatePresentationLanguageTag(
+            requestedLanguageTag, nameof(requestedLanguageTag));
+        if (approvedLanguageFallbackTags.IsDefault)
+            throw new ArgumentException("Approved language fallbacks must be initialized.",
+                nameof(approvedLanguageFallbackTags));
+
+        var seen = new HashSet<string>(StringComparer.Ordinal) { RequestedLanguageTag };
+        var fallbacks = ImmutableArray.CreateBuilder<string>(approvedLanguageFallbackTags.Length);
+        foreach (var value in approvedLanguageFallbackTags)
+        {
+            var fallback = ValidatePresentationLanguageTag(value, nameof(approvedLanguageFallbackTags));
+            if (!seen.Add(fallback))
+                throw new ArgumentException(
+                    "Requested and fallback language tags must be distinct.",
+                    nameof(approvedLanguageFallbackTags));
+            fallbacks.Add(fallback);
+        }
+        ApprovedLanguageFallbackTags = fallbacks.ToImmutable();
+    }
+
+    public string RequestedLanguageTag { get; }
+    public ImmutableArray<string> ApprovedLanguageFallbackTags { get; }
+
+    private static string ValidatePresentationLanguageTag(string value, string parameterName)
+    {
+        value = CanonicalKnowledgeContract.RequireText(value, parameterName);
+        CanonicalUtf8.Validate(value);
+        if (string.Equals(value, "und", StringComparison.OrdinalIgnoreCase) ||
+            value[0] == '-' || value[^1] == '-' || value.Contains("--", StringComparison.Ordinal) ||
+            value.Any(character => character != '-' && !char.IsAsciiLetterOrDigit(character)))
+            throw new ArgumentException(
+                "A presentation language must be an explicit language tag other than 'und'.",
+                parameterName);
+        return value;
+    }
+}
+
 public sealed record CanonicalSelectorQuery(
     CatalogRevisionId CatalogRevisionId,
     CatalogCompositionId CatalogCompositionId,
@@ -449,7 +492,8 @@ public sealed record CanonicalSelectorQuery(
     CanonicalNavigationPathId? CurrentPathId,
     string? SearchText,
     bool IncludeIdentifierOnly,
-    bool InspectionMode);
+    bool InspectionMode,
+    CanonicalTerminologyLocalePreference TerminologyLocale);
 
 public sealed record CanonicalSelectorResult(
     CatalogRevisionId CatalogRevisionId,
@@ -462,7 +506,8 @@ public sealed record CanonicalSelectorResult(
     CanonicalNavigationPathId? ParentPathId,
     CanonicalNavigationNode CurrentNode,
     ImmutableArray<CanonicalNavigationNode> ImmediateChildren,
-    KnowledgeCoverageState CoverageState);
+    KnowledgeCoverageState CoverageState,
+    CanonicalTerminologyLocalePreference TerminologyLocale);
 
 public enum CanonicalSelectorSelectionKind { CanonicalRecord = 0, OtherContext = 1 }
 
