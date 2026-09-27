@@ -24,6 +24,9 @@ public static class CanonicalCatalogPackageKernel
     public static CatalogPayloadDigest ComputePayloadDigestV6(CanonicalCatalogPayload payload) =>
         CanonicalKnowledgePackageEncoding.DerivePayloadDigestV6(payload);
 
+    public static CatalogPayloadDigest ComputePayloadDigestV7(CanonicalCatalogPayload payload) =>
+        CanonicalKnowledgePackageEncoding.DerivePayloadDigestV7(payload);
+
     public static CanonicalCatalogPackage CreateV2(
         CatalogPackageKind packageKind,
         CatalogGameScope gameScope,
@@ -300,6 +303,53 @@ public static class CanonicalCatalogPackageKernel
         return package;
     }
 
+    public static CanonicalCatalogPackage CreateV7(
+        CatalogPackageKind packageKind,
+        CatalogGameScope gameScope,
+        CatalogModScope? modScope,
+        ImmutableArray<CatalogPackageId> requiredBasePackageIds,
+        string compositionPolicyVersion,
+        CanonicalCatalogPayload payload,
+        CatalogValidationSummary validationSummary,
+        CatalogBuildProvenance buildProvenance)
+    {
+        ArgumentNullException.ThrowIfNull(payload);
+        ArgumentNullException.ThrowIfNull(validationSummary);
+        ArgumentNullException.ThrowIfNull(buildProvenance);
+        if (buildProvenance.ProvenanceSchemaVersion != CatalogBuildProvenance.AdapterBuildReceiptSchemaVersion)
+            throw new ArgumentException(
+                "Schema-v7 packages require reviewed adapter-build provenance closure.",
+                nameof(buildProvenance));
+        if (payload.AdapterDescriptors.Any(value =>
+                value.RevisionId.AlgorithmVersion != KnowledgeAdapterRevisionId.CurrentAlgorithmVersion))
+            throw new ArgumentException(
+                "Schema-v7 packages require semantic adapter revision identities.",
+                nameof(payload));
+        var adapterRevisions = payload.AdapterDescriptors.Select(value => value.Revision)
+            .OrderBy(value => value.Id.Value, StringComparer.Ordinal).ToImmutableArray();
+        var adapterRevisionIds = adapterRevisions.Select(value => value.Id).ToImmutableArray();
+        var sourceRevisionIds = payload.SourceRevisions.Select(value => value.Revision.Id)
+            .OrderBy(value => value.Value, StringComparer.Ordinal).ToImmutableArray();
+        var payloadDigest = ComputePayloadDigestV7(payload);
+        var catalogRevisionId = CatalogRevisionId.DeriveV7(
+            packageKind, gameScope, modScope, payload.EffectiveCoverage,
+            adapterRevisionIds, sourceRevisionIds, requiredBasePackageIds,
+            compositionPolicyVersion, payloadDigest);
+        var manifest = new CatalogPackageManifest(
+            CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion,
+            catalogRevisionId, packageKind, gameScope, modScope, payload.EffectiveCoverage,
+            adapterRevisions, sourceRevisionIds, requiredBasePackageIds,
+            compositionPolicyVersion, payloadDigest, validationSummary.Status,
+            validationSummary.PolicyId, validationSummary.ExactPolicyVersion,
+            validationSummary.ResultDigest, buildProvenance);
+        var package = new CanonicalCatalogPackage(
+            CanonicalKnowledgePackageEncoding.DerivePackageId(manifest), manifest, payload, validationSummary);
+        var verification = Verify(package);
+        if (!verification.IsStructurallyValid)
+            throw new InvalidDataException($"Catalog package is invalid: {string.Join("; ", verification.Issues)}");
+        return package;
+    }
+
     public static CatalogPackageVerificationResult Verify(CanonicalCatalogPackage? package)
     {
         var issues = ImmutableArray.CreateBuilder<string>();
@@ -342,6 +392,7 @@ public static class CanonicalCatalogPackageKernel
             CatalogPackageManifest.LocationContractSchemaVersion => ComputePayloadDigestV4(payload),
             CatalogPackageManifest.ProjectionContractSchemaVersion => ComputePayloadDigestV5(payload),
             CatalogPackageManifest.CrossSourceAssertionSchemaVersion => ComputePayloadDigestV6(payload),
+            CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion => ComputePayloadDigestV7(payload),
             _ => throw new InvalidDataException("Unsupported package schema version."),
         };
         if (payloadDigest != manifest.PayloadDigest)
@@ -377,6 +428,10 @@ public static class CanonicalCatalogPackageKernel
             if (!payload.SourceRevisions.Any(value => value.AdapterRevisionId == descriptor.RevisionId))
                 issues.Add("An adapter descriptor is not reachable from a source revision.");
         }
+        if (manifest.PackageSchemaVersion == CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion &&
+            payload.AdapterDescriptors.Any(value =>
+                value.RevisionId.AlgorithmVersion != KnowledgeAdapterRevisionId.CurrentAlgorithmVersion))
+            issues.Add("Schema-v7 packages require semantic adapter revision identities.");
         foreach (var coordinate in manifest.AdapterRevisions)
         {
             var rederived = RederiveAdapterRevision(coordinate, coordinate.SemanticContractDigest);
@@ -439,6 +494,16 @@ public static class CanonicalCatalogPackageKernel
                 manifest.RequiredBasePackageIds,
                 manifest.CompositionPolicyVersion,
                 manifest.PayloadDigest),
+            CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion => CatalogRevisionId.DeriveV7(
+                manifest.PackageKind,
+                manifest.GameScope,
+                manifest.ModScope,
+                manifest.EffectiveCoverage,
+                manifest.AdapterRevisionIds,
+                manifest.SourceRevisionIds,
+                manifest.RequiredBasePackageIds,
+                manifest.CompositionPolicyVersion,
+                manifest.PayloadDigest),
             _ => throw new InvalidDataException("Unsupported package schema version."),
         };
         if (revisionId != manifest.CatalogRevisionId)
@@ -458,6 +523,16 @@ public static class CanonicalCatalogPackageKernel
                 issues.Add("Schema-v2 packages cannot carry schema-v3 acquisition provenance.");
             if (manifest.BuildProvenance.ProvenanceSchemaVersion != CatalogBuildProvenance.LegacySchemaVersion)
                 issues.Add("Schema-v2 package build provenance is invalid.");
+        }
+        else if (manifest.PackageSchemaVersion == CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion)
+        {
+            var reviewedAdapterBuild = manifest.BuildProvenance.ProvenanceSchemaVersion ==
+                                           CatalogBuildProvenance.AdapterBuildReceiptSchemaVersion &&
+                                       !manifest.BuildProvenance.CommittedBuildInputs.IsEmpty &&
+                                       manifest.BuildProvenance.DevelopmentBuildInputs.IsEmpty &&
+                                       !manifest.BuildProvenance.AdapterBuildReceipts.IsEmpty;
+            if (!reviewedAdapterBuild)
+                issues.Add("Schema-v7 packages require reviewed adapter-build provenance closure.");
         }
         else if (manifest.PackageSchemaVersion != CatalogPackageManifest.CrossSourceAssertionSchemaVersion &&
                  (manifest.BuildProvenance.ProvenanceSchemaVersion != CatalogBuildProvenance.CurrentSchemaVersion ||
@@ -716,7 +791,8 @@ public static class CanonicalCatalogPackageKernel
         if (manifest.PackageSchemaVersion is not (CatalogPackageManifest.CurrentSchemaVersion or
             CatalogPackageManifest.LocationContractSchemaVersion or
             CatalogPackageManifest.ProjectionContractSchemaVersion or
-            CatalogPackageManifest.CrossSourceAssertionSchemaVersion))
+            CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+            CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion))
             return;
         if (payload.AcquisitionReceipts.IsEmpty || payload.ArtifactAcquisitionBindings.IsEmpty)
         {
@@ -800,7 +876,8 @@ public static class CanonicalCatalogPackageKernel
         CatalogPackageManifest manifest,
         CanonicalCatalogPayload payload) =>
         SourceScopeMatchesManifest(sourceScope, manifest) ||
-        manifest.PackageSchemaVersion == CatalogPackageManifest.CrossSourceAssertionSchemaVersion &&
+        manifest.PackageSchemaVersion is (CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+            CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion) &&
         manifest.PackageKind == CatalogPackageKind.ModCatalogExtension &&
         sourceScope.ScopeKind == KnowledgeSourceScopeKind.BaseGame &&
         sourceScope.ExactModIdentity is null &&
@@ -817,7 +894,8 @@ public static class CanonicalCatalogPackageKernel
         CatalogPackageManifest manifest,
         CanonicalCatalogPayload payload) =>
         SourceScopeMatchesManifest(report.Manifest.SourceScope, manifest) ||
-        manifest.PackageSchemaVersion == CatalogPackageManifest.CrossSourceAssertionSchemaVersion &&
+        manifest.PackageSchemaVersion is (CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+            CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion) &&
         manifest.PackageKind == CatalogPackageKind.ModCatalogExtension &&
         report.Manifest.SourceScope.ScopeKind == KnowledgeSourceScopeKind.BaseGame &&
         report.Manifest.SourceScope.ExactModIdentity is null &&
@@ -843,7 +921,8 @@ public static class CanonicalCatalogPackageKernel
 
         if (manifest.PackageSchemaVersion is not (CatalogPackageManifest.LocationContractSchemaVersion or
             CatalogPackageManifest.ProjectionContractSchemaVersion or
-            CatalogPackageManifest.CrossSourceAssertionSchemaVersion))
+            CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+            CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion))
         {
             if (hasLocationContractContent)
                 issues.Add("Only schema-v4 or schema-v5 packages may carry frozen Location contract content.");
@@ -1231,7 +1310,8 @@ public static class CanonicalCatalogPackageKernel
             !payload.InstructionConflictGroups.IsEmpty;
 
         if (manifest.PackageSchemaVersion is not (CatalogPackageManifest.ProjectionContractSchemaVersion or
-            CatalogPackageManifest.CrossSourceAssertionSchemaVersion))
+            CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+            CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion))
         {
             if (hasProjectionContent)
                 issues.Add("Only schema-v5 packages may carry selector projection or Instructions assertions.");
@@ -1341,7 +1421,8 @@ public static class CanonicalCatalogPackageKernel
                 !SourceScopeMatchesManifest(assertion.SourceScope, manifest) ||
                 !sourceLocatorClosed ||
                 assertion.ApplicableRecordIds.Any(id => !records.ContainsKey(id)) ||
-                manifest.PackageSchemaVersion == CatalogPackageManifest.CrossSourceAssertionSchemaVersion &&
+                manifest.PackageSchemaVersion is (CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+                    CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion) &&
                 assertion.ApplicableRecordIds.Any(id =>
                     records[id].SourceRevisionId != assertion.SourceRevisionId &&
                     !HasMatchingCrossSourceEnvelope(
@@ -1422,7 +1503,8 @@ public static class CanonicalCatalogPackageKernel
             issues.Add("Unresolved cross-source collections must be initialized.");
             return;
         }
-        if (manifest.PackageSchemaVersion != CatalogPackageManifest.CrossSourceAssertionSchemaVersion)
+        if (manifest.PackageSchemaVersion is not (CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+            CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion))
         {
             if (!payload.CrossSourceAssertions.IsEmpty || !payload.CrossSourceTargetLinkClaims.IsEmpty ||
                 !payload.UnresolvedCrossSourceClaimContents.IsEmpty ||
@@ -1746,7 +1828,8 @@ public static class CanonicalCatalogPackageKernel
         CrossSourceCanonicalAssertionKind kind,
         EvidenceClaimContentId claimContentId) =>
         record.SourceRevisionId == assertingSourceRevisionId ||
-        manifest.PackageSchemaVersion == CatalogPackageManifest.CrossSourceAssertionSchemaVersion &&
+        manifest.PackageSchemaVersion is (CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+            CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion) &&
         HasMatchingCrossSourceEnvelope(payload, record, assertingSourceRevisionId, kind, claimContentId);
 
     private static bool HasMatchingCrossSourceEnvelope(
@@ -1772,7 +1855,8 @@ public static class CanonicalCatalogPackageKernel
         if (record.SourceRevisionId == binding.SourceRevisionId) return true;
         if (binding.ClaimKind == EvidenceClaimKind.KnowledgeIdentity ||
             binding.ClaimContentId is not EvidenceClaimContentId claimContentId ||
-            manifest.PackageSchemaVersion != CatalogPackageManifest.CrossSourceAssertionSchemaVersion)
+            manifest.PackageSchemaVersion is not (CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+                CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion))
             return false;
         return binding.ClaimKind == EvidenceClaimKind.CrossSourceTargetLink
             ? payload.CrossSourceAssertions.Any(value =>

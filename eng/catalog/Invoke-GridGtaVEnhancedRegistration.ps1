@@ -340,7 +340,7 @@ $spatialAcquisition2 = Get-TreeManifest -Root (Join-Path $runRoots[1] 'spatial-a
 Assert-EquivalentManifest -Left $spatialAcquisition1 -Right $spatialAcquisition2 -Name 'Spatial acquisition'
 
 $requiredOutputs = @(
-    'canary-package.v6.json',
+    'canary-package.v7.json',
     'canary-report.v3.json',
     'registration-coverage.v1.json',
     'registration-source-index.v1.json',

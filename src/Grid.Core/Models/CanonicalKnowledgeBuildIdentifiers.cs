@@ -178,6 +178,7 @@ public readonly record struct CatalogPayloadDigest
     public const int LocationContractAlgorithmVersion = 4;
     public const int ProjectionContractAlgorithmVersion = 5;
     public const int CrossSourceAssertionAlgorithmVersion = 6;
+    public const int AdapterProvenanceBoundaryAlgorithmVersion = 7;
     private const string Domain = "catalog-payload";
 
     [JsonConstructor]
@@ -202,7 +203,9 @@ public readonly record struct CatalogPayloadDigest
             return CanonicalIdentityV1.Validate(value, domain, LocationContractAlgorithmVersion);
         if (value?.StartsWith($"grid.{domain}.v{ProjectionContractAlgorithmVersion}.sha256.", StringComparison.Ordinal) == true)
             return CanonicalIdentityV1.Validate(value, domain, ProjectionContractAlgorithmVersion);
-        return CanonicalIdentityV1.Validate(value, domain, CrossSourceAssertionAlgorithmVersion);
+        if (value?.StartsWith($"grid.{domain}.v{CrossSourceAssertionAlgorithmVersion}.sha256.", StringComparison.Ordinal) == true)
+            return CanonicalIdentityV1.Validate(value, domain, CrossSourceAssertionAlgorithmVersion);
+        return CanonicalIdentityV1.Validate(value, domain, AdapterProvenanceBoundaryAlgorithmVersion);
     }
 }
 
@@ -214,6 +217,7 @@ public readonly record struct CatalogRevisionId
     public const int LocationContractAlgorithmVersion = 4;
     public const int ProjectionContractAlgorithmVersion = 5;
     public const int CrossSourceAssertionAlgorithmVersion = 6;
+    public const int AdapterProvenanceBoundaryAlgorithmVersion = 7;
     private const string Domain = "catalog-revision";
 
     [JsonConstructor]
@@ -426,6 +430,39 @@ public readonly record struct CatalogRevisionId
         return new(writer.Derive());
     }
 
+    public static CatalogRevisionId DeriveV7(
+        CatalogPackageKind packageKind,
+        CatalogGameScope gameScope,
+        CatalogModScope? modScope,
+        KnowledgeCoverageState effectiveCoverage,
+        ImmutableArray<KnowledgeAdapterRevisionId> adapterRevisionIds,
+        ImmutableArray<CatalogSourceRevisionId> sourceRevisionIds,
+        ImmutableArray<CatalogPackageId> requiredBasePackageIds,
+        string compositionPolicyVersion,
+        CatalogPayloadDigest payloadDigest)
+    {
+        ArgumentNullException.ThrowIfNull(gameScope);
+        if (!Enum.IsDefined(packageKind)) throw new ArgumentOutOfRangeException(nameof(packageKind));
+        if (!Enum.IsDefined(effectiveCoverage) || effectiveCoverage == KnowledgeCoverageState.Unsupported)
+            throw new ArgumentOutOfRangeException(nameof(effectiveCoverage));
+        ValidateInitialized(adapterRevisionIds, nameof(adapterRevisionIds));
+        ValidateInitialized(sourceRevisionIds, nameof(sourceRevisionIds));
+        ValidateInitialized(requiredBasePackageIds, nameof(requiredBasePackageIds));
+        compositionPolicyVersion = CanonicalKnowledgeContract.RequireText(compositionPolicyVersion, nameof(compositionPolicyVersion));
+        CanonicalKnowledgeContract.RequireIdentifier(payloadDigest.Value, nameof(payloadDigest));
+        var writer = new CanonicalIdentityWriter(Domain, AdapterProvenanceBoundaryAlgorithmVersion);
+        writer.AddInt32("package-kind", (int)packageKind);
+        CanonicalKnowledgePackageEncoding.AddGameScope(writer, "game-scope", gameScope);
+        CanonicalKnowledgePackageEncoding.AddOptionalModScope(writer, "mod-scope", modScope);
+        writer.AddInt32("effective-coverage", (int)effectiveCoverage);
+        CanonicalKnowledgePackageEncoding.AddSortedIds(writer, "adapter-revisions", adapterRevisionIds.Select(value => value.Value));
+        CanonicalKnowledgePackageEncoding.AddSortedIds(writer, "source-revisions", sourceRevisionIds.Select(value => value.Value));
+        CanonicalKnowledgePackageEncoding.AddSortedIds(writer, "required-base-packages", requiredBasePackageIds.Select(value => value.Value));
+        writer.AddString("composition-policy-version", compositionPolicyVersion);
+        writer.AddString("payload-digest", payloadDigest.Value);
+        return new(writer.Derive());
+    }
+
     public override string ToString() => Value;
 
     private static void ValidateInitialized<T>(ImmutableArray<T> values, string parameterName)
@@ -442,6 +479,7 @@ public readonly record struct CatalogPackageId
     public const int LocationContractAlgorithmVersion = 4;
     public const int ProjectionContractAlgorithmVersion = 5;
     public const int CrossSourceAssertionAlgorithmVersion = 6;
+    public const int AdapterProvenanceBoundaryAlgorithmVersion = 7;
     private const string Domain = "catalog-package";
 
     [JsonConstructor]

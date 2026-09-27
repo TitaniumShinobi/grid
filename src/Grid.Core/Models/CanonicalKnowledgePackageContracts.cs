@@ -574,6 +574,7 @@ public sealed record CatalogPackageManifest
     public const int LocationContractSchemaVersion = 4;
     public const int ProjectionContractSchemaVersion = 5;
     public const int CrossSourceAssertionSchemaVersion = 6;
+    public const int AdapterProvenanceBoundarySchemaVersion = 7;
 
     public CatalogPackageManifest(
         int packageSchemaVersion,
@@ -593,7 +594,7 @@ public sealed record CatalogPackageManifest
         ContentDigest validationResultDigest,
         CatalogBuildProvenance buildProvenance)
     {
-        if (packageSchemaVersion is not (LegacySchemaVersion or CurrentSchemaVersion or LocationContractSchemaVersion or ProjectionContractSchemaVersion or CrossSourceAssertionSchemaVersion))
+        if (packageSchemaVersion is not (LegacySchemaVersion or CurrentSchemaVersion or LocationContractSchemaVersion or ProjectionContractSchemaVersion or CrossSourceAssertionSchemaVersion or AdapterProvenanceBoundarySchemaVersion))
             throw new ArgumentOutOfRangeException(nameof(packageSchemaVersion));
         if (!Enum.IsDefined(packageKind)) throw new ArgumentOutOfRangeException(nameof(packageKind));
         if (!Enum.IsDefined(validationStatus)) throw new ArgumentOutOfRangeException(nameof(validationStatus));
@@ -613,6 +614,11 @@ public sealed record CatalogPackageManifest
                 CatalogBuildProvenance.AdapterBuildReceiptSchemaVersion))
             throw new ArgumentException(
                 "Schema-v6 packages require committed, reviewed-adapter-build, or explicitly developmental provenance closure.",
+                nameof(buildProvenance));
+        if (packageSchemaVersion == AdapterProvenanceBoundarySchemaVersion &&
+            buildProvenance.ProvenanceSchemaVersion != CatalogBuildProvenance.AdapterBuildReceiptSchemaVersion)
+            throw new ArgumentException(
+                "Schema-v7 packages require reviewed adapter-build provenance closure.",
                 nameof(buildProvenance));
         if (buildProvenance.IsDevelopment && validationStatus != CatalogValidationStatus.Candidate)
             throw new ArgumentException("Development-provenance packages must remain Candidate and cannot be approved or published.", nameof(validationStatus));
@@ -727,9 +733,21 @@ internal static class CanonicalKnowledgePackageEncoding
     {
         ArgumentNullException.ThrowIfNull(payload);
         var writer = new CanonicalIdentityWriter("catalog-payload", CatalogPayloadDigest.PreviousAlgorithmVersion);
+        AddBasePayload(writer, payload, includeAdapterArtifactDigest: true);
+        return CatalogPayloadDigest.FromCanonicalWriter(writer);
+    }
 
+    private static void AddBasePayload(
+        CanonicalIdentityWriter writer,
+        CanonicalCatalogPayload payload,
+        bool includeAdapterArtifactDigest)
+    {
         writer.AddInt32("effective-coverage", (int)payload.EffectiveCoverage);
-        AddAdapterDescriptors(writer, "adapter-descriptors", payload.AdapterDescriptors);
+        AddAdapterDescriptors(
+            writer,
+            "adapter-descriptors",
+            payload.AdapterDescriptors,
+            includeAdapterArtifactDigest);
 
         writer.AddInt32("sources.count", payload.Sources.Length);
         for (var index = 0; index < payload.Sources.Length; index++)
@@ -814,7 +832,6 @@ internal static class CanonicalKnowledgePackageEncoding
         AddBindings(writer, payload.EvidenceBindings);
         AddCorrelations(writer, payload.CorrelationEnvelopes);
         AddUnresolved(writer, payload.UnresolvedSourceAssertions);
-        return CatalogPayloadDigest.FromCanonicalWriter(writer);
     }
 
     public static CatalogPayloadDigest DerivePayloadDigestV3(CanonicalCatalogPayload payload)
@@ -873,6 +890,34 @@ internal static class CanonicalKnowledgePackageEncoding
         return CatalogPayloadDigest.FromCanonicalWriter(writer);
     }
 
+    public static CatalogPayloadDigest DerivePayloadDigestV7(CanonicalCatalogPayload payload)
+    {
+        ArgumentNullException.ThrowIfNull(payload);
+        var writer = new CanonicalIdentityWriter(
+            "catalog-payload",
+            CatalogPayloadDigest.AdapterProvenanceBoundaryAlgorithmVersion);
+        AddBasePayload(writer, payload, includeAdapterArtifactDigest: false);
+        AddAcquisitionReceipts(writer, payload.AcquisitionReceipts);
+        AddArtifactAcquisitionBindings(writer, payload.ArtifactAcquisitionBindings);
+        AddLocationNativeTypes(writer, payload.SourceNativeLocationTypeAssertions);
+        AddLocationClassifications(writer, payload.LocationSemanticClassificationAssertions);
+        AddRecordLifecycleAssertions(writer, payload.RecordLifecycleAssertions);
+        AddCorrelatedRelationships(writer, payload.CorrelatedRelationshipEnvelopes);
+        AddLocationCoverageReports(writer, payload.LocationCoverageReports);
+        AddSemanticClassifications(writer, payload.SemanticClassificationAssertions);
+        AddRecordContributions(writer, payload.RecordContributionAssertions);
+        AddOrganizationalValues(writer, payload.OrganizationalValueAssertions);
+        AddInstructions(writer, payload.InstructionAssertions);
+        AddInstructionBindings(writer, payload.InstructionEvidenceBindings);
+        AddInstructionConflicts(writer, payload.InstructionConflictGroups);
+        AddCrossSourceTargetLinkClaims(writer, payload.CrossSourceTargetLinkClaims);
+        AddCrossSourceAssertions(writer, payload.CrossSourceAssertions);
+        AddUnresolvedCrossSourceClaims(writer, payload.UnresolvedCrossSourceClaimContents);
+        AddUnresolvedCrossSourceBindings(writer, payload.UnresolvedCrossSourceEvidenceBindings);
+        AddUnresolvedCrossSourceAssertions(writer, payload.UnresolvedCrossSourceAssertions);
+        return CatalogPayloadDigest.FromCanonicalWriter(writer);
+    }
+
     public static CatalogPackageId DerivePackageId(CatalogPackageManifest manifest)
     {
         ArgumentNullException.ThrowIfNull(manifest);
@@ -883,6 +928,7 @@ internal static class CanonicalKnowledgePackageEncoding
             CatalogPackageManifest.LocationContractSchemaVersion => CatalogPackageId.LocationContractAlgorithmVersion,
             CatalogPackageManifest.ProjectionContractSchemaVersion => CatalogPackageId.ProjectionContractAlgorithmVersion,
             CatalogPackageManifest.CrossSourceAssertionSchemaVersion => CatalogPackageId.CrossSourceAssertionAlgorithmVersion,
+            CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion => CatalogPackageId.AdapterProvenanceBoundaryAlgorithmVersion,
             _ => throw new ArgumentOutOfRangeException(nameof(manifest)),
         };
         var writer = new CanonicalIdentityWriter("catalog-package", algorithmVersion);
@@ -907,7 +953,8 @@ internal static class CanonicalKnowledgePackageEncoding
         if (manifest.PackageSchemaVersion is CatalogPackageManifest.CurrentSchemaVersion or
             CatalogPackageManifest.LocationContractSchemaVersion or
             CatalogPackageManifest.ProjectionContractSchemaVersion or
-            CatalogPackageManifest.CrossSourceAssertionSchemaVersion)
+            CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+            CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion)
         {
             writer.AddInt32("build.provenance-schema-version", manifest.BuildProvenance.ProvenanceSchemaVersion);
             writer.AddInt32("build.inputs.count", manifest.BuildProvenance.CommittedBuildInputs.Length);
@@ -929,7 +976,8 @@ internal static class CanonicalKnowledgePackageEncoding
                     writer.AddInt32($"build.development-inputs.{index}.state", (int)input.State);
                 }
             }
-            if (manifest.PackageSchemaVersion == CatalogPackageManifest.CrossSourceAssertionSchemaVersion &&
+            if (manifest.PackageSchemaVersion is (CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+                    CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion) &&
                 manifest.BuildProvenance.ProvenanceSchemaVersion ==
                     CatalogBuildProvenance.AdapterBuildReceiptSchemaVersion)
             {
@@ -1382,13 +1430,18 @@ internal static class CanonicalKnowledgePackageEncoding
     private static void AddAdapterDescriptors(
         CanonicalIdentityWriter writer,
         string prefix,
-        ImmutableArray<GameKnowledgeAdapterDescriptor> values)
+        ImmutableArray<GameKnowledgeAdapterDescriptor> values,
+        bool includeAdapterArtifactDigest)
     {
         writer.AddInt32($"{prefix}.count", values.Length);
         for (var index = 0; index < values.Length; index++)
         {
             var value = values[index];
-            AddAdapterRevisionCoordinate(writer, $"{prefix}.{index}.revision", value.Revision);
+            AddAdapterRevisionCoordinate(
+                writer,
+                $"{prefix}.{index}.revision",
+                value.Revision,
+                includeAdapterArtifactDigest);
             AddSortedIds(writer, $"{prefix}.{index}.games", value.SupportedGameIds.Select(item => item.Value));
             writer.AddInt32($"{prefix}.{index}.formats.count", value.SupportedFormats.Length);
             for (var formatIndex = 0; formatIndex < value.SupportedFormats.Length; formatIndex++)
@@ -1424,12 +1477,14 @@ internal static class CanonicalKnowledgePackageEncoding
     private static void AddAdapterRevisionCoordinate(
         CanonicalIdentityWriter writer,
         string prefix,
-        KnowledgeAdapterRevisionCoordinate value)
+        KnowledgeAdapterRevisionCoordinate value,
+        bool includeAdapterArtifactDigest = true)
     {
         writer.AddString($"{prefix}.id", value.Id.Value);
         writer.AddString($"{prefix}.adapter-id", value.AdapterId.Value);
         writer.AddString($"{prefix}.adapter-version", value.ExactAdapterVersion);
-        writer.AddContentDigest($"{prefix}.artifact-digest", value.AdapterArtifactDigest);
+        if (includeAdapterArtifactDigest)
+            writer.AddContentDigest($"{prefix}.artifact-digest", value.AdapterArtifactDigest);
         writer.AddInt32($"{prefix}.contract-version", value.AdapterContractVersion);
         writer.AddString($"{prefix}.mapping-rules-version", value.MappingRulesVersion);
         // Preserve the schema-v1 byte stream exactly. V2 adds an explicit algorithm marker and

@@ -282,6 +282,157 @@ internal static class UniversalKnowledgeContractChecks
                    v2A.ResourceLimits,
                    KnowledgeAdapterRevisionId.CurrentAlgorithmVersion).RevisionId,
             "Reviewed build coordinates remain provenance-only and cannot churn semantic v2 adapter identity.");
+        async Task<(CanonicalCatalogPayload Payload, GameKnowledgeAdapterDescriptor Descriptor)> ExtractV7PayloadAsync(
+            ContentDigest adapterArtifactDigest,
+            string mappingRulesVersion = "fixture.mapping.v1")
+        {
+            var fixtureAdapter = new ConformanceFixtureAdapter(
+                adapterArtifactDigest,
+                mappingRulesVersion,
+                KnowledgeAdapterRevisionId.CurrentAlgorithmVersion);
+            var fixtureExtraction = await fixtureAdapter.ExtractAsync(new PreproductionKnowledgeExtractionRequest(
+                ConformanceFixtureAdapter.GameId,
+                gameVersion,
+                null,
+                null,
+                fixtureAdapter.Descriptor,
+                [artifact]));
+            Assert(fixtureExtraction.CanonicalRegistrations.Length == 1,
+                "The v7 fixture extracts one complete adapter-bound registration.");
+            return (WithLocationCoverage(
+                    WithAcquisition(ToPayload(fixtureExtraction), [acquisitionReceipt], [acquisitionBinding]),
+                    validation),
+                fixtureAdapter.Descriptor);
+        }
+
+        var (v7PayloadA, v7DescriptorA) = await ExtractV7PayloadAsync(v2ArtifactA);
+        var (v7PayloadB, v7DescriptorB) = await ExtractV7PayloadAsync(v2ArtifactB);
+        var v7ProvenanceA = buildProvenanceV2.WithAdapterBuildReceipts(
+            [CreateAdapterBuildReceipt(v7DescriptorA.AdapterArtifactDigest)]);
+        var v7ProvenanceB = new CatalogBuildProvenance(
+                CatalogBuildProvenance.CurrentSchemaVersion,
+                buildProvenanceV2.BuildSystemId,
+                "2-reviewed-rebuild",
+                new string('c', 40),
+                [new CatalogCommittedBuildInput("src/Grid.Core/Grid.Core.csproj", new string('d', 40))])
+            .WithAdapterBuildReceipts([CreateAdapterBuildReceipt(v7DescriptorB.AdapterArtifactDigest, alternateBuild: true)]);
+        var v7PackageA = CanonicalCatalogPackageKernel.CreateV7(
+            CatalogPackageKind.BaseGameCatalog,
+            new CatalogGameScope(ConformanceFixtureAdapter.GameId, gameVersion, [artifactId]),
+            null,
+            [],
+            "grid.composition.v1",
+            v7PayloadA,
+            validation,
+            v7ProvenanceA);
+        var v7PackageB = CanonicalCatalogPackageKernel.CreateV7(
+            CatalogPackageKind.BaseGameCatalog,
+            new CatalogGameScope(ConformanceFixtureAdapter.GameId, gameVersion, [artifactId]),
+            null,
+            [],
+            "grid.composition.v1",
+            v7PayloadB,
+            validation,
+            v7ProvenanceB);
+        Assert(v7DescriptorA.RevisionId == v7DescriptorB.RevisionId &&
+               v7DescriptorA.AdapterArtifactDigest != v7DescriptorB.AdapterArtifactDigest &&
+               v7PackageA.Manifest.PayloadDigest == v7PackageB.Manifest.PayloadDigest &&
+               v7PackageA.Manifest.CatalogRevisionId == v7PackageB.Manifest.CatalogRevisionId &&
+               v7PackageA.Id != v7PackageB.Id &&
+               CanonicalCatalogPackageKernel.Verify(v7PackageA).IsStructurallyValid &&
+               CanonicalCatalogPackageKernel.Verify(v7PackageB).IsStructurallyValid,
+            "Schema-v7 semantic payload/catalog identity survives truthful DLL and reviewed-build provenance changes while package-instance identity changes.");
+        Assert(v7PackageA.Manifest.PackageSchemaVersion ==
+                   CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion &&
+               v7PackageA.Manifest.PayloadDigest.Value.StartsWith(
+                   "grid.catalog-payload.v7.sha256.", StringComparison.Ordinal) &&
+               v7PackageA.Manifest.CatalogRevisionId.Value.StartsWith(
+                   "grid.catalog-revision.v7.sha256.", StringComparison.Ordinal) &&
+               v7PackageA.Id.Value.StartsWith("grid.catalog-package.v7.sha256.", StringComparison.Ordinal),
+            "Schema-v7 uses explicit additive payload, catalog, and package identity domains.");
+
+        var (semanticMutationPayload, semanticMutationDescriptor) = await ExtractV7PayloadAsync(
+            v2ArtifactA,
+            "fixture.mapping.semantic-change.v7");
+        var semanticMutationPackage = CanonicalCatalogPackageKernel.CreateV7(
+            CatalogPackageKind.BaseGameCatalog,
+            new CatalogGameScope(ConformanceFixtureAdapter.GameId, gameVersion, [artifactId]),
+            null,
+            [],
+            "grid.composition.v1",
+            semanticMutationPayload,
+            validation,
+            buildProvenanceV2.WithAdapterBuildReceipts(
+                [CreateAdapterBuildReceipt(semanticMutationDescriptor.AdapterArtifactDigest)]));
+        Assert(semanticMutationPackage.Manifest.PayloadDigest != v7PackageA.Manifest.PayloadDigest &&
+               semanticMutationPackage.Manifest.CatalogRevisionId != v7PackageA.Manifest.CatalogRevisionId,
+            "Changing the adapter's versioned semantic mapping changes schema-v7 payload and catalog identity.");
+
+        var originalTerm = v7PayloadA.TerminologyAssertions.Single();
+        var v7CanonicalChangedTerm = new TerminologyAssertion(
+            originalTerm.KnowledgeRecordId,
+            originalTerm.SourceRevisionId,
+            originalTerm.Role,
+            originalTerm.VerbatimValue + " changed",
+            originalTerm.SourceFieldPath,
+            originalTerm.LanguageTag,
+            originalTerm.NativeStringIdentifier);
+        var oldTermBinding = v7PayloadA.EvidenceBindings.Single(value =>
+            value.ClaimKind == EvidenceClaimKind.Terminology);
+        var changedTermClaim = EvidenceClaimContentId.DeriveV1(v7CanonicalChangedTerm);
+        var changedTermBinding = new EvidenceBinding(
+            EvidenceBindingId.DeriveV2(
+                oldTermBinding.EvidenceReceiptId,
+                oldTermBinding.ClaimKind,
+                oldTermBinding.KnowledgeRecordId,
+                oldTermBinding.SourceRevisionId,
+                oldTermBinding.ClaimLocator,
+                changedTermClaim),
+            oldTermBinding.EvidenceReceiptId,
+            oldTermBinding.ClaimKind,
+            oldTermBinding.KnowledgeRecordId,
+            oldTermBinding.SourceRevisionId,
+            oldTermBinding.ClaimLocator,
+            changedTermClaim);
+        var canonicalMutationPayload = CanonicalCatalogPackageImportChecks.CopyPayload(
+            v7PayloadA,
+            terminologyAssertions: [v7CanonicalChangedTerm],
+            evidenceBindings: v7PayloadA.EvidenceBindings
+                .Where(value => value.Id != oldTermBinding.Id)
+                .Append(changedTermBinding)
+                .ToImmutableArray());
+        var canonicalMutationPackage = CanonicalCatalogPackageKernel.CreateV7(
+            CatalogPackageKind.BaseGameCatalog,
+            new CatalogGameScope(ConformanceFixtureAdapter.GameId, gameVersion, [artifactId]),
+            null,
+            [],
+            "grid.composition.v1",
+            canonicalMutationPayload,
+            validation,
+            v7ProvenanceA);
+        Assert(canonicalMutationPackage.Manifest.PayloadDigest != v7PackageA.Manifest.PayloadDigest &&
+               canonicalMutationPackage.Manifest.CatalogRevisionId != v7PackageA.Manifest.CatalogRevisionId,
+            "Changing evidence-bound canonical terminology changes schema-v7 payload and catalog identity.");
+
+        var tamperedArtifactProvenance = v7PackageA with
+        {
+            Payload = CanonicalCatalogPackageImportChecks.CopyPayload(
+                v7PackageA.Payload,
+                adapterDescriptors: [v7DescriptorB]),
+        };
+        Assert(!CanonicalCatalogPackageKernel.Verify(tamperedArtifactProvenance).IsStructurallyValid,
+            "Schema-v7 verification rejects a substituted adapter build receipt even though semantic identity is unchanged.");
+        AssertThrows<ArgumentException>(() => CanonicalCatalogPackageKernel.CreateV7(
+                CatalogPackageKind.BaseGameCatalog,
+                new CatalogGameScope(ConformanceFixtureAdapter.GameId, gameVersion, [artifactId]),
+                null,
+                [],
+                "grid.composition.v1",
+                payloadV3,
+                validation,
+                reviewedBuildProvenance),
+            "Schema-v7 rejects historical artifact-bound v1 adapter identities rather than reinterpreting them.");
+
         var packageV3 = CanonicalCatalogPackageKernel.CreateV3(
             CatalogPackageKind.BaseGameCatalog,
             new CatalogGameScope(ConformanceFixtureAdapter.GameId, gameVersion, [artifactId]),
@@ -303,6 +454,52 @@ internal static class UniversalKnowledgeContractChecks
                reloadedPackageV3.Id == packageV3.Id &&
                CanonicalCatalogPackageKernel.Verify(reloadedPackageV3).IsStructurallyValid,
             "Schema-v3 acquisition and build provenance round-trip without reinterpretation.");
+
+        var historicalV6 = CanonicalCatalogPackageKernel.CreateV6(
+            CatalogPackageKind.BaseGameCatalog,
+            new CatalogGameScope(ConformanceFixtureAdapter.GameId, gameVersion, [artifactId]),
+            null,
+            [],
+            "grid.composition.v1",
+            WithLocationCoverage(payloadV3, validation),
+            validation,
+            reviewedBuildProvenance);
+        var historicalV6Id = historicalV6.Id;
+        var historicalV6Json = System.Text.Json.JsonSerializer.Serialize(historicalV6);
+        var historicalV6Reloaded = System.Text.Json.JsonSerializer.Deserialize<CanonicalCatalogPackage>(historicalV6Json);
+        Assert(historicalV6Reloaded is not null && historicalV6Reloaded.Id == historicalV6Id &&
+               historicalV6Reloaded.Manifest.PayloadDigest == historicalV6.Manifest.PayloadDigest &&
+               CanonicalCatalogPackageKernel.Verify(historicalV6Reloaded).IsStructurallyValid,
+            "Historical schema-v6 identity and verification remain unchanged after adding schema v7.");
+
+        var mixedVersionStorePath = Path.Combine(
+            Path.GetTempPath(), "grid-v6-v7-store-" + Guid.NewGuid().ToString("N"), "catalog.json");
+        try
+        {
+            var mixedVersionStore = new JsonCanonicalKnowledgeCatalogStore(mixedVersionStorePath);
+            var v6Import = await mixedVersionStore.ImportPackageAsync(0, historicalV6);
+            var v7Import = await mixedVersionStore.ImportPackageAsync(v6Import.Revision, v7PackageA);
+            var v7Retry = await mixedVersionStore.ImportPackageAsync(v7Import.Revision, v7PackageA);
+            var provenanceOnlyImport = await mixedVersionStore.ImportPackageAsync(v7Import.Revision, v7PackageB);
+            var mixedVersionReload = await new JsonCanonicalKnowledgeCatalogStore(mixedVersionStorePath).LoadAsync();
+            Assert(v6Import.Status == CanonicalCatalogImportStatus.Imported &&
+                   v7Import.Status == CanonicalCatalogImportStatus.Imported &&
+                   v7Retry.Status == CanonicalCatalogImportStatus.Unchanged &&
+                   v7Retry.Revision == v7Import.Revision &&
+                   provenanceOnlyImport.Status == CanonicalCatalogImportStatus.Invalid &&
+                   provenanceOnlyImport.Revision == v7Import.Revision &&
+                   mixedVersionReload.IsValid &&
+                   mixedVersionReload.Snapshot.FindImportedPackage(historicalV6.Id) is not null &&
+                   mixedVersionReload.Snapshot.FindImportedPackage(v7PackageA.Id) is not null &&
+                   mixedVersionReload.Snapshot.FindImportedPackage(v7PackageB.Id) is null,
+                "Store schema v5 round-trips historical v6 plus v7, keeps exact retry idempotent, and rejects a provenance-only zero-revision package mutation.");
+        }
+        finally
+        {
+            var mixedVersionStoreDirectory = Path.GetDirectoryName(mixedVersionStorePath)!;
+            if (Directory.Exists(mixedVersionStoreDirectory)) Directory.Delete(mixedVersionStoreDirectory, true);
+        }
+
         var wrongCoordinate = SourceNativeIdentifier.FromExactUtf8(
             "grid.test.member",
             "member-coordinate",
@@ -972,27 +1169,35 @@ internal static class UniversalKnowledgeContractChecks
         return new(EvidenceReceiptId.DeriveV1(receipt), receipt);
     }
 
-    private static CatalogAdapterBuildProvenanceReceipt CreateAdapterBuildReceipt(ContentDigest artifactDigest) =>
+    private static CatalogAdapterBuildProvenanceReceipt CreateAdapterBuildReceipt(
+        ContentDigest artifactDigest,
+        bool alternateBuild = false) =>
         new(
             CatalogAdapterBuildProvenanceReceipt.CurrentSchemaVersion,
             artifactDigest,
             "Grid.Conformance.Adapter",
             "1.0.0.0",
-            "1.0.0+fixture",
-            "11111111-2222-3333-4444-555555555555",
+            alternateBuild ? "1.0.0+fixture.rebuilt" : "1.0.0+fixture",
+            alternateBuild
+                ? "66666666-7777-8888-9999-aaaaaaaaaaaa"
+                : "11111111-2222-3333-4444-555555555555",
             ".NETCoreApp,Version=v9.0",
-            "Debug",
+            alternateBuild ? "Release" : "Debug",
             "x64",
             "Microsoft.CodeAnalysis.CSharp",
-            "4.14.0-fixture",
+            alternateBuild ? "4.14.1-fixture" : "4.14.0-fixture",
             "Microsoft.NET.Sdk",
-            "9.0.301",
+            alternateBuild ? "9.0.302" : "9.0.301",
             true,
-            ContentDigest.ComputeSha256("fixture-pdb"u8),
-            CatalogBuildMetadataPresence.Absent,
-            null,
-            ContentDigest.ComputeSha256("fixture-compilation-options"u8),
-            ContentDigest.ComputeSha256("fixture-compilation-references"u8));
+            ContentDigest.ComputeSha256(alternateBuild ? "fixture-pdb-rebuilt"u8 : "fixture-pdb"u8),
+            alternateBuild ? CatalogBuildMetadataPresence.Present : CatalogBuildMetadataPresence.Absent,
+            alternateBuild ? ContentDigest.ComputeSha256("fixture-sourcelink-rebuilt"u8) : null,
+            ContentDigest.ComputeSha256(alternateBuild
+                ? "fixture-compilation-options-rebuilt"u8
+                : "fixture-compilation-options"u8),
+            ContentDigest.ComputeSha256(alternateBuild
+                ? "fixture-compilation-references-rebuilt"u8
+                : "fixture-compilation-references"u8));
 
     private static CanonicalCatalogPayload WithAcquisition(
         CanonicalCatalogPayload value,
@@ -1013,6 +1218,65 @@ internal static class UniversalKnowledgeContractChecks
         value.UnresolvedSourceAssertions,
         receipts,
         bindings);
+
+    private static CanonicalCatalogPayload WithLocationCoverage(
+        CanonicalCatalogPayload value,
+        CatalogValidationSummary qcsValidation)
+    {
+        var descriptor = value.AdapterDescriptors.Single();
+        var revision = value.SourceRevisions.Single();
+        var locations = value.KnowledgeRecords
+            .Where(record => record.Kind == KnowledgeKind.Location)
+            .OrderBy(record => record.Id.Value, StringComparer.Ordinal)
+            .ToImmutableArray();
+        var familyId = new LocationSourceFamilyId("grid.conformance.fixture.locations");
+        var declaration = new LocationSourceFamilyDeclaration(
+            familyId,
+            revision.ArtifactFormats.Single().Format,
+            descriptor.RevisionId,
+            true,
+            value.Artifacts.Select(artifact => artifact.Id).ToImmutableArray(),
+            [revision.Revision.Id],
+            []);
+        var manifestId = LocationCoverageManifestId.DeriveV1(
+            revision.SourceScope,
+            "1",
+            false,
+            qcsValidation,
+            [declaration]);
+        var manifest = new LocationCoverageManifest(
+            manifestId,
+            revision.SourceScope,
+            "1",
+            false,
+            qcsValidation,
+            [declaration]);
+        var family = new LocationSourceFamilyCoverage(
+            familyId,
+            value.Artifacts.Select(artifact => artifact.Id).ToImmutableArray(),
+            [revision.Revision.Id],
+            locations.Length,
+            locations.Length,
+            locations.Length,
+            locations.Select(record => record.Id).ToImmutableArray(),
+            [],
+            [],
+            0,
+            0,
+            0,
+            0);
+        var report = LocationCoverageReport.Create(
+            manifest,
+            [family],
+            [new LocationSemanticCategoryCoverage(null, null,
+                locations.Select(record => record.Id).ToImmutableArray(), locations.Length)],
+            new LocationTerminologyCoverage(locations.Length, 1, 0, locations.Length - 1, 0),
+            new LocationHierarchyCoverage(0, 0, 0, 0, true),
+            [new LocationRelationshipCoverage(
+                new RelationshipSemanticId("grid.relationship.parent"), 1, 1, 0, 1, 0, 0)],
+            []);
+        return value with { LocationCoverageReports = [report] };
+    }
 
     private static GameKnowledgeAdapterDescriptor MutateDescriptor(
         GameKnowledgeAdapterDescriptor value,
@@ -1037,14 +1301,17 @@ internal static class UniversalKnowledgeContractChecks
         public const string ExactFixtureContent = "id=child\nname=  Café—North  \nparent=parent\nid=parent\nunknown=opaque-42\n";
         public static readonly GameId GameId = new("game.conformance.fixture");
 
-        public ConformanceFixtureAdapter()
+        public ConformanceFixtureAdapter(
+            ContentDigest? adapterArtifactDigest = null,
+            string mappingRulesVersion = "fixture.mapping.v1",
+            int adapterRevisionAlgorithmVersion = KnowledgeAdapterRevisionId.LegacyAlgorithmVersion)
         {
             Descriptor = new GameKnowledgeAdapterDescriptor(
                 new KnowledgeAdapterId("grid.adapter.conformance-fixture"),
                 "1.0-exact",
-                ContentDigest.ComputeSha256("grid-conformance-fixture-adapter"u8),
+                adapterArtifactDigest ?? ContentDigest.ComputeSha256("grid-conformance-fixture-adapter"u8),
                 1,
-                "fixture.mapping.v1",
+                mappingRulesVersion,
                 [GameId],
                 [new SupportedKnowledgeFormat(
                     FormatId,
@@ -1055,7 +1322,8 @@ internal static class UniversalKnowledgeContractChecks
                     supportsTerminology: true,
                     supportsRelationships: true,
                     supportsHierarchy: true)],
-                new KnowledgeAdapterResourceLimits(4096, 1, 8, 8));
+                new KnowledgeAdapterResourceLimits(4096, 1, 8, 8),
+                adapterRevisionAlgorithmVersion);
         }
 
         public GameKnowledgeAdapterDescriptor Descriptor { get; }

@@ -44,7 +44,8 @@ public static class CanonicalSelectorProjectionEngine
                 $"Selector projection requires a structurally verified catalog package: {string.Join("; ", verification.Issues)}");
         if (package.Manifest.PackageSchemaVersion is not (
                 CatalogPackageManifest.ProjectionContractSchemaVersion or
-                CatalogPackageManifest.CrossSourceAssertionSchemaVersion))
+                CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+                CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion))
             throw new InvalidDataException("Selector projection requires an evidence-closed semantic payload.");
         if (catalogCompositionId != applicability.CompositionId)
             throw new ArgumentException("Projection composition and applicability coordinates must match.", nameof(applicability));
@@ -525,7 +526,8 @@ public static class CanonicalSelectorProjectionEngine
         if (!verification.IsStructurallyValid ||
             input.VerifiedPackage.Manifest.PackageSchemaVersion is not (
                 CatalogPackageManifest.ProjectionContractSchemaVersion or
-                CatalogPackageManifest.CrossSourceAssertionSchemaVersion))
+                CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
+                CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion))
             throw new InvalidDataException("Selector projection package is no longer structurally valid.");
         if (input.CatalogRevisionId != input.VerifiedPackage.Manifest.CatalogRevisionId)
             throw new InvalidDataException("Selector projection revision is not the verified package revision.");

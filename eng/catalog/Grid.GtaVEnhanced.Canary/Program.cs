@@ -445,7 +445,7 @@ try
     var buildProvenance = git.Provenance.IsDevelopment
         ? git.Provenance
         : git.Provenance.WithAdapterBuildReceipts(adapterBuildReceipts);
-    var package = CanonicalCatalogPackageKernel.CreateV6(
+    var package = CanonicalCatalogPackageKernel.CreateV7(
         CatalogPackageKind.BaseGameCatalog,
         new CatalogGameScope(
             ProductionGridCatalogService.GrandTheftAutoVEnhancedId,
@@ -494,7 +494,7 @@ try
     // Persist the already structurally verified immutable package before attempting the
     // append-only store import. A rejected import can then be audited without weakening
     // the store or rebuilding source inputs through a separate diagnostic path.
-    await WriteNewAsync(Path.Combine(outputDirectory, "canary-package.v6.json"), packageJson).ConfigureAwait(false);
+    await WriteNewAsync(Path.Combine(outputDirectory, "canary-package.v7.json"), packageJson).ConfigureAwait(false);
     var storePath = Path.Combine(outputDirectory, "shared-canonical-library.v5.json");
     File.Copy(historicalLibraryPath, storePath, overwrite: false);
     var store = new JsonCanonicalKnowledgeCatalogStore(storePath);
