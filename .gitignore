@@ -20,3 +20,7 @@ artifacts/
 
 # Local diagnostic/test-lab evidence
 /test-lab/
+
+# Python bytecode (catalog acquire scripts)
+**/__pycache__/
+*.pyc
