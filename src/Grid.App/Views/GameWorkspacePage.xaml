@@ -2,12 +2,24 @@
     x:Class="Grid.App.Views.GameWorkspacePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Grid.App.Controls"
     KeyDown="OnWorkspaceKeyDown"
     Unloaded="OnWorkspaceUnloaded"
     SizeChanged="OnWorkspaceSizeChanged">
 
-    <Grid Padding="5,0,5,5">
-        <Grid x:Name="ReadyState" Visibility="Collapsed">
+    <Grid AutomationProperties.Name="Workstation layout root">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="5" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="5" />
+        </Grid.RowDefinitions>
+        <Grid x:Name="ReadyState" Grid.Column="1"
+              AutomationProperties.Name="Workstation content"
+              Visibility="Collapsed">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
@@ -45,6 +57,7 @@
                         <RowDefinition Height="24" />
                     </Grid.RowDefinitions>
                     <Border x:Name="ModWindow"
+                            AutomationProperties.Name="Mod pane body"
                             Background="{ThemeResource ShellWorkbenchBrush}"
                             BorderBrush="{ThemeResource ShellDividerBrush}"
                             BorderThickness="1"
@@ -202,6 +215,7 @@
                                 <RowDefinition Height="*" />
                             </Grid.RowDefinitions>
                             <Grid
+                                AutomationProperties.Name="Mod pane header"
                                 Height="28"
                                 Background="{ThemeResource ShellWorkbenchBrush}">
                                 <Grid.ColumnDefinitions>
@@ -358,17 +372,33 @@
                         </StackPanel>
                       </Grid>
                     </Border>
-                    <Border Grid.Row="2" Width="280" Height="24" HorizontalAlignment="Right"
-                            Background="{ThemeResource ShellWorkbenchBrush}" BorderBrush="#454545"
-                            BorderThickness="1" CornerRadius="4">
-                        <AutoSuggestBox x:Name="ModSearchBox" MinHeight="0" Padding="6,0"
-                                 VerticalAlignment="Stretch" Background="Transparent" BorderThickness="0"
-                                 CornerRadius="3" FontSize="12" VerticalContentAlignment="Center"
-                                 TextBoxStyle="{StaticResource ShellSearchTextBoxStyle}"
-                                 AutomationProperties.HelpText="Search represented mod names, categories, sources, and installed versions."
-                                 AutomationProperties.Name="Search mods" PlaceholderText="Search mods"
-                                 TextChanged="OnModSearchTextChanged" />
-                    </Border>
+                    <Grid Grid.Row="2" Height="24" ColumnSpacing="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Border x:Name="ActiveModLcd" Width="59" Height="22" Padding="4,1"
+                                VerticalAlignment="Center" Background="#090909"
+                                BorderBrush="#454545" BorderThickness="1" CornerRadius="2"
+                                AutomationProperties.Name="Active mods">
+                            <controls:SevenSegmentDisplay x:Name="ActiveModCountDisplay"
+                                                          DigitCount="5"
+                                                          HorizontalAlignment="Center"
+                                                          VerticalAlignment="Center" />
+                        </Border>
+                        <Border x:Name="ModSearchShell" Grid.Column="1" Width="280" Height="24" HorizontalAlignment="Right"
+                                MaxWidth="280"
+                                Background="{ThemeResource ShellWorkbenchBrush}" BorderBrush="#454545"
+                                BorderThickness="1" CornerRadius="4">
+                            <AutoSuggestBox x:Name="ModSearchBox" MinHeight="0" Padding="6,0"
+                                     VerticalAlignment="Stretch" Background="Transparent" BorderThickness="0"
+                                     CornerRadius="3" FontSize="12" VerticalContentAlignment="Center"
+                                     TextBoxStyle="{StaticResource ShellSearchTextBoxStyle}"
+                                     AutomationProperties.HelpText="Search represented mod names, categories, sources, and installed versions."
+                                     AutomationProperties.Name="Search mods" PlaceholderText="Search mods"
+                                     TextChanged="OnModSearchTextChanged" />
+                        </Border>
+                    </Grid>
                 </Grid>
 
                 <Thumb
@@ -474,10 +504,10 @@
                         <TabView
                             x:Name="EnvironmentTabs"
                             Grid.Row="0"
-                            Margin="-9,0,0,0"
                             Background="{ThemeResource ShellWorkbenchBrush}"
                             AutomationProperties.Name="Profile environment tabs"
                             IsAddTabButtonVisible="False"
+                            Loaded="OnEnvironmentTabsLoaded"
                             TabWidthMode="SizeToContent"
                             SelectionChanged="OnEnvironmentTabSelectionChanged"
                             TabCloseRequested="OnUnexpectedTabCloseRequested">
@@ -490,7 +520,7 @@
                                         IsClosable="False"
                                         ToolTipService.ToolTip="{Binding Description}">
                                         <Border x:Name="EnvironmentWindow"
-                                                Margin="9,0,0,0"
+                                                AutomationProperties.Name="Plugin pane body"
                                                 Background="{ThemeResource ShellWorkbenchBrush}"
                                                 BorderThickness="0">
                                         <Grid Padding="0">
@@ -499,6 +529,7 @@
                                                 <RowDefinition Height="*" />
                                             </Grid.RowDefinitions>
                                             <Grid
+                                                AutomationProperties.Name="Plugin pane header"
                                                 Height="28"
                                                 Background="{ThemeResource ShellWorkbenchBrush}"
                                                 Visibility="{Binding HeaderVisibility}">
@@ -581,7 +612,7 @@
                         </TabView>
                       </Grid>
                       <Border x:Name="EnvironmentWindowOutline"
-                              Margin="0,30,0,0"
+                              AutomationProperties.Name="Plugin pane outline"
                               Background="Transparent"
                               BorderBrush="{ThemeResource ShellDividerBrush}"
                               BorderThickness="1"
@@ -589,23 +620,43 @@
                               IsHitTestVisible="False"
                               Canvas.ZIndex="20" />
                     </Grid>
-                    <Border Grid.Row="2" Width="280" Height="24" HorizontalAlignment="Right"
-                            Background="{ThemeResource ShellWorkbenchBrush}" BorderBrush="#454545"
-                            BorderThickness="1" CornerRadius="4">
-                        <AutoSuggestBox x:Name="EnvironmentSearchBox" MinHeight="0" Padding="6,0"
-                                 VerticalAlignment="Stretch" Background="Transparent" BorderThickness="0"
-                                 CornerRadius="3" FontSize="12" VerticalContentAlignment="Center"
-                                 TextBoxStyle="{StaticResource ShellSearchTextBoxStyle}"
-                                 AutomationProperties.HelpText="Filter the current resolved Plugins, Archives, or Data evidence without changing MO2 order."
-                                 AutomationProperties.Name="Search resolved environment" PlaceholderText="Search plugins"
-                                 TextChanged="OnEnvironmentSearchTextChanged" />
-                    </Border>
+                    <Grid Grid.Row="2" Height="24" ColumnSpacing="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Border x:Name="ActivePluginLcd" Width="49" Height="22" Padding="4,1"
+                                VerticalAlignment="Center" Background="#090909"
+                                BorderBrush="#454545" BorderThickness="1" CornerRadius="2"
+                                AutomationProperties.Name="Active plugins">
+                            <controls:SevenSegmentDisplay x:Name="ActivePluginCountDisplay"
+                                                          DigitCount="4"
+                                                          DigitWidth="7.5"
+                                                          DigitHeight="15"
+                                                          DigitSpacing="3"
+                                                          HorizontalAlignment="Center"
+                                                          VerticalAlignment="Center" />
+                        </Border>
+                        <Border x:Name="EnvironmentSearchShell" Grid.Column="1" Width="280" Height="24" HorizontalAlignment="Right"
+                                MaxWidth="280"
+                                Background="{ThemeResource ShellWorkbenchBrush}" BorderBrush="#454545"
+                                BorderThickness="1" CornerRadius="4">
+                            <AutoSuggestBox x:Name="EnvironmentSearchBox" MinHeight="0" Padding="6,0"
+                                     VerticalAlignment="Stretch" Background="Transparent" BorderThickness="0"
+                                     CornerRadius="3" FontSize="12" VerticalContentAlignment="Center"
+                                     TextBoxStyle="{StaticResource ShellSearchTextBoxStyle}"
+                                     AutomationProperties.HelpText="Filter the current resolved Plugins, Archives, or Data evidence without changing MO2 order."
+                                     AutomationProperties.Name="Search resolved environment" PlaceholderText="Search plugins"
+                                     TextChanged="OnEnvironmentSearchTextChanged" />
+                        </Border>
+                    </Grid>
                 </Grid>
             </Grid>
         </Grid>
 
         <Border
             x:Name="UnavailableState"
+            Grid.Column="1"
             MaxWidth="720"
             Padding="26"
             HorizontalAlignment="Center"
@@ -627,6 +678,7 @@
 
         <Border
             x:Name="EmptyProfileState"
+            Grid.Column="1"
             MaxWidth="720"
             Padding="26"
             HorizontalAlignment="Center"
@@ -644,6 +696,7 @@
 
         <Border
             x:Name="NoModListState"
+            Grid.Column="1"
             MaxWidth="720"
             Padding="26"
             HorizontalAlignment="Center"

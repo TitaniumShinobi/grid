@@ -1,0 +1,39 @@
+[[LEAD]]
+'''Panorama Dr''' is a street running northwest to southeast running from [[Sandy Shores]] into the [[Grand Senora Desert]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to [[Algonquin Blvd]], [[Alhambra Dr]], [[Cholla Rd]], [[East Joshua Rd]], [[Joshua Rd]], [[Marina Dr]], [[Route 68]], [[Smoke Tree Rd]] and [[Zancudo Ave]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Abandoned Motel]]
+| [[Sandy Shores]]
+| [[Algonquin Blvd]]
+| Motel (<small>former</small>)
+|-
+| [[Flywheels Garage]]
+| [[Grand Senora Desert]]
+|
+| Garage
+|-
+| [[Sandy Shores Airfield]]
+| [[Grand Senora Desert]]
+|
+| Airfield
+|-
+| [[Sandy Shores Fire Station]]
+| [[Sandy Shores]]
+| [[Alhambra Dr]]
+| Fire station
+|-
+| [[Yellow Jack Inn]]
+| [[Grand Senora Desert]]
+| 
+| Bar
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Blaine County

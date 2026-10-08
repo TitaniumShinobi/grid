@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=HeritageWay-GTAV.png
+|caption=Western stretch of Heritage Way.
+|games={{Games|V=y|O=y}}
+|start=[[Marathon Avenue]]
+|end=[[Dorset Drive]]
+|map=<gallery>
+HeritageWay-GTAV-Map.png|Map
+HeritageWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Heritage Way''' is a two-way [[List of Street Names|street]] in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Backlot City]] <small>(east entrance)</small>
+*[[Richards Majestic]] <small>(corner of Movie Star Way)</small>
+*[[Weazel Plaza]] <small>(corner of Movie Star Way)</small>
+
+[[SECTION:2:Businesses]]
+*[[Aiongold]]
+*[[Bean Machine]]
+*[[Brawls]] <small>(corner of Dorset Drive)</small>
+*[[Didier Sachs (HD Universe)|Didier Sachs]]
+*[[International Online Unlimited]] <small>(corner of Dorset Drive)</small>
+*[[Penris]]
+*[[Schlongberg Sachs]] <small>(corner of Movie Star Way)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{infobox location
+|type = motel
+|image = DreamViewMotel-GTAV-BuildingFront.jpg
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|location = [[Route 1|Great Ocean Highway]], [[Paleto Bay]]
+|caption = The motel as seen from the [[Route 1|Great Ocean Highway]].
+}}
+
+[[LEAD]]
+'''Dream View Motel''' is a motel in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Motels

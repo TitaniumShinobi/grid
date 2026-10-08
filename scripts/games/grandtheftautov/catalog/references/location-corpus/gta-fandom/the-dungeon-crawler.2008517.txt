@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|name = The Dungeon Crawler
+|image = TheDungeonCrawler-GTAV-Logo.png
+|founded = [[1996]]
+|owner = [[Bruce Spade]]
+|type = Nightclub
+|business = y
+|activebiz = y
+|games = {{Games|V=y|O=y}}
+|location = [[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''The Dungeon Crawler''' is a nightclub featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Landmarks
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Nightclubs

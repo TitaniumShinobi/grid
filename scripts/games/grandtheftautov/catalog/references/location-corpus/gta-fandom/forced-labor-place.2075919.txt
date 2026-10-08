@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = ForcedLaborPlace-GTAV-Street.jpg
+|caption = 
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|start = [[Capital Boulevard]]
+|end = [[Innocence Boulevard]] and [[Orchardville Avenue]]
+|map=
+<gallery>
+ForcedLaborPlace-GTAV-Map.png|Map
+ForcedLaborPlace-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Forced Labor Place''' is a road in [[La Mesa]], [[East Los Santos (HD Universe)|East Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It begins at the [[Capital Boulevard]], passes through the [[Fridgit|Fridgit Ice & Storage]] and ends at [[Innocence Boulevard]] and [[Orchardville Avenue]].
+
+[[SECTION:2:Businesses]]
+*[[Fridgit|Fridgit Ice & Storage]]
+
+{{clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

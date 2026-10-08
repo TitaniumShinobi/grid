@@ -1,0 +1,61 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = state
+|name           = State of Liberty
+|image          = StateofLiberty-GTAIV-Montage.png
+|caption        = Clockwise from top: skyline of [[Algonquin]] including the [[Statue of Happiness]], [[Rotterdam Tower]], [[Broker Bridge]] at night, [[Funland]] in [[Firefly Island]], [[South Bohan]], [[Francis International Airport (HD Universe)|Francis International Airport]] and [[Middle Park]].
+|aka            = 
+*Liberty
+*Liberty State
+*Liberty City State
+*LI
+|games          = {{Games|IV=y|EFLC=y|CW=y}}
+|mentioned      = {{Games|V=y|O=y}}
+|seal           = 
+|seal2          = 
+|flag           = 
+|governor       = 
+*[[Greg Johnson]] {{Small|(formerly)}}
+*[[Greg R. Smith]] {{Small|(formerly)}}
+|established    = 
+|country        = [[United States of America]]
+|capital        = 
+|pop            = 
+|motto          = "The State of Happiness"{{Ref|name=licenseO|type=texturedata|ref=Liberty license plate texture introduced in the [[GTA Online: Arena War|Arena War]] update in {{O}}:<br><code>update/x64/dlcpacks/mpchristmas2018/dlc.rpf/x64/levels/gta5/props/prop_arena_fences_wasteland.rpf</code>}}
+}}
+
+[[LEAD]]
+The '''State of Liberty''', also known as '''Liberty State''',{{Ref|name=state|ref=At least five entities confirm the "Liberty State" name in the HD Universe:
+*[[Liberty State Delivery]]
+*[[Liberty State Pavilion Towers]]
+*[[Liberty State Natural History Museum]]
+*Liberty State Institute of Food Hygiene
+*[[Pavel]] in ''[[Grand Theft Auto Online|GTA Online]]''}}''' Liberty City State''',{{Ref|name=licenseIV|ref=The license plate texture from ''GTA IV''.}} or simply '''Liberty''', is a state located in the [[United States of America]], featured in {{IV}}, {{EFLC}} and {{CW}}.
+
+[[SECTION:2:Known Cities and Areas]]
+*[[Liberty City (HD Universe)|Liberty City]]
+**[[Algonquin]]
+**[[Broker]]
+**[[Dukes]]
+**[[Bohan]]
+*[[The Carraways]] <small>(Mentioned only, including East Carraway)</small>
+*[[Upstate Liberty (HD Universe)|Upstate Liberty]] <small>(Mentioned only)</small>
+
+[[SECTION:2:Nearby States]]
+The neighboring [[State of Alderney]], based on the {{WP|New Jersey|State of New Jersey}}, is located immediately to the west of [[Algonquin]], separated only by the [[West River]]. Roadways that connect Liberty City with Alderney include the [[Booth Tunnel]] and the [[Hickey Bridge]].
+
+[[SECTION:3:Scrapped ''GTA IV'' Tri-State Concept]]
+[[File:NikTaylor-GTAIV-OriginalConceptMap.jpg|thumb|200px|Nik Taylor's early concept drawings of the Tri-State area.]]
+{{Quote|When GTA4 first hit the drawing board, Rockstar North's art director opened a map featuring Liberty City surrounded by countryside the size of New York state. "It was fucking enormous," says [Sam] Houser. "You had the Catskills, the Adirondacks.... I'd only been to the Adirondacks once — it took me six hours to get there. It's fucking miles away." The megamap was the logical step after San Andreas and its super-sized three-city world.|Interview with [[Sam Houser]] {{nd}} Electronic Gaming Monthly, 2008.}}
+During the early concepts prior to the start of ''Grand Theft Auto IV''{{'}}s development, [[Rockstar North]]'s original idea was to create a condensed version of the entire {{WP|New York metropolitan area}} (a.k.a. the Tri-State area), including the neighboring states of New Jersey and Connecticut as part of the game's setting.
+
+Early drawings of the concept Tri-State map were included in the official website of Rockstar North's lead artist [[Nik Taylor]], including areas of Upstate New York, including the {{WP|Adirondack Mountains}}, the {{WP|Catskill Mountains}} and the city of {{WP|Buffalo, New York|Buffalo}}.
+
+The idea was later scrapped in favor of a more grounded and dark themed storyline in Liberty City. A portion of the State of Alderney is kept for the game's Mafia-themed portion of the storyline inspired by ''{{WP|The Sopranos}}''.
+
+One of the leftovers from the original map concept could be the zone name "Liberty" displayed instead of "Liberty City" when the player moves away from the metropolitan area. Another remnant is the size of the available game map hardcoded by its default limits; its size is carried over from {{SA}} and also consists of a square shaped area with a total size of 36000000 square in-game units. Despite that big of an area being freely available to developers' disposal, the final metropolitan area utilizes significantly less than that, with the rest of the area being filled with water – this water is not hardcoded and is instead defined by the <code>water.dat</code> file. The geometric center (centroid) of the entire playable area is located at the [[Grand Easton Terminal]], despite it not being the center of the Liberty City metropolitan area. This can be seen in this {{URL|https://www.gtagaming.com/images/1863/1230285495_1.jpg|screenshot}}.
+
+[[CATEGORIES]]
+Locations in GTA Chinatown Wars
+Locations in GTA IV
+States

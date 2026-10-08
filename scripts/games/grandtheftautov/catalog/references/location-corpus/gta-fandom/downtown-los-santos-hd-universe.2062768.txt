@@ -1,0 +1,148 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = district
+|name           = Downtown Los Santos
+|sign           = 
+|image          = DowntownLosSantos-GTAV-Montage.png
+|caption        = Clockwise from top: skyline of [[Pillbox Hill]], [[Simmet Alley]], [[FIB Headquarters]] fountain plaza, [[Power Street]], [[Legion Square]].
+|aka            = Downtown
+|games          = {{games|V=y|O=y}}
+|location       = [[Los Santos (HD Universe)|Los Santos]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]].
+|seal           = 
+|seal2          = 
+|flag           = 
+|mayor          = 
+|president      = 
+|established    = 
+|country        = 
+|state          = 
+|county         = 
+|capital        = 
+|pop            = 
+|motto          = 
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Downtown.ogg
+|unlockedby     = 
+|unlockedafter  = 
+|map            = <gallery>
+Downtown-IngameGPS-GTAV-Map.png|Downtown Los Santos
+Downtown-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption    = Location on the map (in-game GPS). The neighborhoods of Downtown Los Santos: <font color=red>Pillbox Hill</font>, <font color=d063e0>Legion Square</font>, <font color=yellow>Mission Row</font> and <font color=green>Textile City</font>. The <font color=060cf8>small area in the north</font><sup>{{H:title|Simply referred to as Downtown in the in-game GPS|(?)}}</sup> denotes the border between Downtown and Vinewood.
+}}
+
+[[LEAD]]
+'''Downtown Los Santos''' is a district appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in the heart of [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[SECTION:2:Neighborhoods]]
+*[[Mission Row]] (''{{WP|Skid Row, Los Angeles|Skid Row}}'')
+*[[Pillbox Hill]] (''{{WP|Bunker Hill, Los Angeles|Bunker Hill}}'')
+*[[Textile City]] (''{{WP|Fashion District, Los Angeles|Fashion District}}'')
+
+[[SECTION:2:Places of Interest]]
+*[[Legion Square]] ''({{WP|Pershing Square (Los Angeles)|Pershing Square}})''
+*[[Mission Row Police Station]] and [[Impound Garage]]
+*[[Pillbox Hill Garage]]
+*[[Pillbox Hill Medical Center]] ''({{WP|California Hospital Medical Center}})''
+*[[Pillbox North Station]] <small>(under construction)</small>
+*[[Simmet Alley]] ''({{WP|Santee Alley}})''
+*[[Ten Cent Theater]] ''({{WP|Million Dollar Theater}})''
+
+[[SECTION:2:Landmarks]]
+
+
+[[SECTION:3:Skyscrapers and Corporate Buildings]]
+*[[3 Alta Street Tower]] ''({{WP|File:Towers on Fig.jpg|801 Tower}})''
+*[[707 Vespucci]] ''(800 Wilshire Boulevard)''
+*[[Arcadius Business Center]] ''({{WP|Westin Bonaventure|Westin Bonaventure Hotel}})''
+*[[Daily Globe]] Headquarters ''(Figueroa Courtyard)''
+*[[FIB Headquarters]]'' ({{WP|One California Plaza}})''
+*[[IAA Headquarters]] ''({{WP|Two California Plaza}})''
+*[[Lombank Building (GTA V)|Lombank Building]] ''({{WP|File:HSBC Building, 7th and Figueroa, Los Angeles, CA, 2012.jpg|Figueroa Tower}})''
+*[[Maze Bank Tower]] ''({{WP|US Bank Tower}})''
+*[[Mile High Club]] ''({{WP|JW Marriott Hotels|JW Marriott}} & {{WP|Ritz-Carlton Hotel Company|Ritz-Carlton}} hotels)'' <small>(under construction)</small>
+*[[Penris Building]] ''({{WP|File:1000 Wilshire.jpg|1000 Wilshire}})''
+*[[LS Quik|Quik House]] ''(888 W 6th St)''
+*[[Schlongberg Sachs Center]] ''({{WP|Citigroup Center (Los Angeles)|Citigroup Center}})''
+*[[Tinkle Building]] ''({{WP|AT&T Switching Center|AT&amp;T Madison Complex Tandem Office}})''
+*[[Union Depository]] ''(Mellon Bank Center)''
+
+[[SECTION:3:Hotels]]
+*[[Alesandro Hotel]] ''({{WP|Subway Terminal Building}})''
+*[[Banner Hotel & Spa]] ''(Luxe City Center Hotel)''
+*[[The Celtica Hotel]] ''(Chester Williams Building)''
+*[[Elkridge Hotel]]
+*[[The Emissary]] ''({{WP|Millennium Biltmore Hotel}})''
+*[[Hookah Palace]] ''(Figueroa Hotel)''
+*[[Hotel Wisdahl]] ''(Case Hotel)''
+*[[Templar Hotel]]s ''(Hotel Rosslyn)''
+
+[[SECTION:2:Businesses]]
+{{Columns
+|
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Bean Machine]]
+*[[Bite!]]
+*[[Brawls]]
+*[[Caesars Auto Parking]]
+*[[Café Redemption]]
+*[[Cheap Shot Coffee]]
+*[[Chihuahua Hotdogs]]
+*[[Cool Beans]]
+*[[Crucial Fix]]
+*[[Didier Sachs (HD Universe)|Didier Sachs]]
+*[[Digital Den]]
+*Downtown [[Liquor Deli]]
+*[[Escapism Travel]] ''(City National Bank)''
+*Fap
+*[[Fleeca|Fleeca Bank]]
+*[[Get Aweigh]]
+*[[GoPostal]]
+*[[Ground & Pound Café]] (x2)
+*[[Gruppe Sechs (HD Universe)|Gruppe Sechs]]
+*[[Happy Shark]]
+|
+*[[Krapea]] ''({{WP|Metropolitan Building (Los Angeles)|Metropolitan Building}})''
+*[[LS Quik]]
+*Mama's Grocery
+*[[Paper Clips]]
+*[[Pizza This]]
+*[[Post OP|Post OP Couriers]]
+*[[Premium Deluxe Motorsport]] ''(Toyota Downtown)''
+*[[Ranch (HD Universe)|Ranch]]
+*[[Richards Majestic Productions]]
+*[[Rimmers]]
+*[[Robert Dazzler International Jewelry Exchange]] ''(International Jewelry Center)''
+*[[Rusty Brown's Ring Donuts (HD Universe)|Rusty Brown's Ring Donuts]]
+*[[Sanders Motorcycles]]
+*[[Slaughter, Slaughter & Slaughter]] ''(Pacific Financial Center)''
+*[[Pillbox Hill Garage|Vapid of Los Santos]] ''(Honda of Downtown Los Angeles)''
+*[[The Vault]] ''({{WP|Farmers and Merchants Bank of Los Angeles|Farmers and Merchants Bank}})''
+*[[Wolfs International Realty]] ''(631 S Olive St)''
+*Wraps Fresh
+}}
+
+[[SECTION:2:Roads and Streets]]
+*[[Adam's Apple Boulevard]]
+*[[Alta Street]]
+*[[Atlee Street]]
+*[[Elgin Avenue]]
+*[[Fantastic Place]]
+*[[Integrity Way]]
+*[[Little Bighorn Avenue]]
+*[[Low Power Street]]
+*[[Peaceful Street]]
+*[[Power Street]]
+*[[San Andreas Avenue]]
+*[[Sinner Street]]
+*[[Sinners Passage]]
+*[[Strawberry Avenue]]
+*[[Swiss Street]]
+*[[Vespucci Boulevard]]
+
+[[CATEGORIES]]
+Districts
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Zones

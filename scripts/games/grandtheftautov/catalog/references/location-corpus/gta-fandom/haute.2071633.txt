@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = restaurant
+|name          = Haute
+|sign          = Haute-GTAV-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Fine dining
+|founded       = 
+|founder       = 
+|owner         = 
+|taglines      = 
+|status        = active
+|phone         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+|accessible    = No
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Haute''' is a fine dining restaurant chain that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+DelPerroPlazaRestaurant-GTAVee.jpg|[[Red Desert Avenue]] and [[Bay City Avenue]], [[Del Perro Plaza (restaurant)|Del Perro Plaza]], [[Del Perro]].
+Haute-GTAV-WestVinewood.jpg|[[Eclipse Boulevard]] and [[Las Lagunas Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fine dining restaurant chains

@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = Cazafortunas Tequila
+|sign          = 
+|image         = CazafortunasTequila-GTAO-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpheist4}}}}
+|mentioned     = 
+|business_type = {{WP|Tequila}}
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Cazafortunas''' is a brand of tequila in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Online: The Cayo Perico Heist

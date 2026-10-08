@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = gtavsubway
+|type           = subwaystation
+|name           = Pillbox North Station
+|sign           = 
+|image          = PillboxNorthStation-GTAV.png
+|caption        = '''Pillbox North Station''' in ''[[Grand Theft Auto V]]''.
+|aka            = Pillbox North
+|games          = {{games|V=y|O=y}}
+|location       = [[Downtown Los Santos]]
+|status         = construction
+|pscanner       = 
+|use            = 
+|owner          = 
+|operator       = [[Los Santos Transit]]
+|occupants      = 
+|businesses     = 
+|employees      = 
+|station_type   = Subway station
+|platforms      = 
+|tracks         = 2
+|lines          = 
+|transfer       = 
+|clockwise      = [[Strawberry Station]]
+|anticlockwise  = [[Burton Station]]
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = <gallery>
+PillboxNorthStation-GTAV-Map.png|Pillbox North Station
+PillboxNorthStation-GTAV-LSTMap.png|LST Map
+</gallery>
+|map_caption    = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''Pillbox North Station''' is an underground [[Los Santos Transit]] station in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Downtown Los Santos (HD Universe)|Downtown Los Santos]]. The station is under construction during the events of the game and as such remains closed.
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Subway stations

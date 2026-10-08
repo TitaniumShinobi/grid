@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Non-Stop-Pop FM
+|logo         = NonStopPopFM-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Vinewood (HD Universe)|Vinewood]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = ''Pop hits from the 80s, 90s, Noughties, and today.''
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:Pop radio stations|Pop]]
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = [[AJ Allen]] <small>(voice imaging)</small>
+|artwork      = 
+|cast         = 
+|frequency    = 100.7 FM
+|host         = [[Cara Delevingne]]
+|product      = 
+|radio_tracks = 
+*16 <small>(original version)</small>
+*42 <small>([[Grand Theft Auto V: Enhanced Edition|enhanced version]])</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+'''Non-Stop-Pop''' is a [[Radio Stations in GTA V|radio station]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that plays pop, dance and R&B music spanning from the '80s to the early 2010s.
+
+[[CATEGORIES]]
+Dynamic mix radio stations
+Media in GTA Online
+Media in GTA V
+Pop radio stations
+Rhythm and blues radio stations

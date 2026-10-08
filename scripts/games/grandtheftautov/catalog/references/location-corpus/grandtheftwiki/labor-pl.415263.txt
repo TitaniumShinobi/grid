@@ -1,0 +1,19 @@
+[[LEAD]]
+'''Labor Pl'''  is a street, running west to north east, from [[Cypress Flats]] (west) to [[El Burro Heights]] (north east) in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to the [[Amarillo Way]], [[El Rancho Blvd]] [[Elysian Fields Freeway]], [[Orchardville Ave]] and [[Tower Way]].
+
+[[SECTION:2:Business]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Grand Banks Steel Inc.]]
+| [[Cypress Flats]]
+| [[Orchardville Ave]]
+| Steelworks
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

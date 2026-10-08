@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Hang Ten
+|restaurant  = y
+|status         = active
+|sign           = HangTen-GTAV-Logo.png
+|image          = HangTen-GTAV.png
+|caption        = Overview of the building.
+|location       = [[Great Ocean Highway]], [[Chumash]], [[Los Santos County]]
+|accessible     = No
+|games          = {{games|V=y|O=y}}
+|map            = HangTen-GTAV-Map.png
+|map_caption    = Location on the map (red).
+|file_name      = <code>ch1_01_surfshack</code>
+}}
+
+[[LEAD]]
+'''Hang Ten''' is a diner and surf shop in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on the [[Great Ocean Highway]], [[Chumash]], [[Los Santos County]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos County
+Buildings in GTA V in Los Santos County
+Diners
+Fast casual restaurants

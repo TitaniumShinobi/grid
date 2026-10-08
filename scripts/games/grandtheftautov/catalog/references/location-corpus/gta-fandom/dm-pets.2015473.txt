@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|image = DMPets-GTAV.jpg
+|name = DM Pets
+|taglines = 
+|type = Pet Store
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]'' <small>(Formerly)</small>
+|locations = [[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''DM Pets''' is a former exotic pet specialist located next to Vinewood Records on [[Eclipse Boulevard]] in the [[Los Santos (HD Universe)|Los Santos]] neighborhood of [[West Vinewood]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is located a couple of blocks away from the nightclub [[Tequi-la-la]], and is going out of business, according to signs. Its telephone number is shown to be 1-999-DMXPETS.
+
+After [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] Update in [[2019]], it was replaced by the [[Arcades|8-Bit Arcade]] in the [[Grand Theft Auto V: Enhanced Edition|Enhanced Version]] of ''GTA Online''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Former locations in GTA Online
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

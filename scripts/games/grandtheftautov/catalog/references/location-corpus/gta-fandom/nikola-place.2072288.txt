@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|name        = Nikola Place
+|image       = NikolaPlace-GTAVee.jpg
+|caption     = The street as seen from the east.
+|games       = {{Games|V=y|O=y}}
+|start       = [[East Mirror Drive]] and [[Nikola Avenue]]
+|end         = - {{Small|(dead-end)}}
+|map         =
+<gallery>
+NikolaPlace-GTAV-Map.png|Map
+NikolaPlace-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Nikola Place''' is a short residential street in [[Mirror Park]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Cul-de-sacs
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

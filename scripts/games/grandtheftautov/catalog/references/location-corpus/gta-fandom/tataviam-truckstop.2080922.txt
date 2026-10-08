@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|name        = Tataviam Truckstop
+|image       = TataviamTruckstop-GTAVee.jpg
+|caption     = Aerial view from the south.
+|games       = {{Games|V=y|O=y}}
+|Name Change = TRUCK STOP
+|location    = [[Tataviam Mountains]], [[Los Santos County]]
+|map         = Tatavaiam_Truckstop_GTAV_Satellite_Map.png
+|map_caption = Satellite map.
+}}
+
+[[LEAD]]
+The '''Tataviam Truckstop''' is a collection of businesses located in an expanded central median on the [[Palomino Freeway]] in [[Los Santos County]] in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]] {{Small|(accessible interior)}}
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]] {{Small|(accessible interior)}}
+*[[Bishop's Chicken]]
+*[[RON|RON gas station]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County

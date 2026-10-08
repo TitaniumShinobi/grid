@@ -339,11 +339,27 @@ public readonly record struct KnowledgeRecordId
 {
     public const int CurrentAlgorithmVersion = 1;
     private const string Domain = "knowledge-record";
+    public const string RegistrationEntityPrefix = "grid.registration.entity.v1.";
 
     [JsonConstructor]
-    public KnowledgeRecordId(string value) => Value = CanonicalIdentityV1.Validate(value, Domain);
+    public KnowledgeRecordId(string value) =>
+        Value = TryValidateRegistrationEntityBacked(value) ?? CanonicalIdentityV1.Validate(value, Domain);
 
     public string Value { get; }
+
+    public static bool IsRegistrationEntityBacked(string value) =>
+        TryValidateRegistrationEntityBacked(value) is not null;
+
+    internal static string? TryValidateRegistrationEntityBacked(string? value)
+    {
+        if (value is null || !value.StartsWith(RegistrationEntityPrefix, StringComparison.Ordinal) ||
+            value.Length != RegistrationEntityPrefix.Length + 64)
+            return null;
+        var digest = value[RegistrationEntityPrefix.Length..];
+        if (digest.Any(character => !Uri.IsHexDigit(character) || char.IsUpper(character)))
+            throw new ArgumentException("Registration-backed knowledge record identity digest must be lowercase hexadecimal.", nameof(value));
+        return value;
+    }
 
     public static KnowledgeRecordId DeriveV1(
         GameId gameId,
@@ -366,6 +382,40 @@ public readonly record struct KnowledgeRecordId
         writer.AddInt32("knowledge-kind", (int)knowledgeKind);
         writer.AddString("native-record-id", nativeRecordIdentityId.Value);
         return new(writer.Derive());
+    }
+
+    public static string DeriveRegistrationBackedLocationEntityId(CanonicalKnowledgeRecord record)
+    {
+        ArgumentNullException.ThrowIfNull(record);
+        if (record.Kind != KnowledgeKind.Location)
+            throw new ArgumentException("Registration-backed publication ids apply only to Location records.", nameof(record));
+        return CanonicalRegistrationEncoding.Identity(
+            record.Kind.ToString(),
+            record.GameId.Value,
+            record.NativeIdentity.Namespace,
+            record.NativeIdentity.ExactRepresentation);
+    }
+
+    public static bool MatchesPackageIdentity(CanonicalKnowledgeRecord record)
+    {
+        ArgumentNullException.ThrowIfNull(record);
+        if (NativeRecordIdentityId.DeriveV1(record.GameId, record.NativeIdentity) != record.NativeRecordIdentityId)
+            return false;
+        var derived = DeriveV1(
+            record.GameId,
+            record.GameVersion,
+            record.ModVersion,
+            record.SourceRevisionId,
+            record.Kind,
+            record.NativeRecordIdentityId);
+        if (record.Id == derived)
+            return true;
+        if (!IsRegistrationEntityBacked(record.Id.Value) || record.Kind != KnowledgeKind.Location)
+            return false;
+        return string.Equals(
+            record.Id.Value,
+            DeriveRegistrationBackedLocationEntityId(record),
+            StringComparison.Ordinal);
     }
 
     public override string ToString() => Value;

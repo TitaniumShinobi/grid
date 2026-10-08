@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = The Party Basket
+|image = ThePartyBasket-GTAV-AltaStreet.jpg
+|type = Costume Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Alta Street]], [[Downtown Vinewood]]
+}}
+
+[[LEAD]]
+'''The Party Basket''' is a costume store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

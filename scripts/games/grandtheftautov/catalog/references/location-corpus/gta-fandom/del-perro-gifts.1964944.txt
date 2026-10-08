@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox location
+|type      = giftshop
+|name      = Del Perro Gifts
+|image     = DelPerroGifts-GTAV-Logo.png
+|games     = {{Games|V=y|O=y}}
+|locations = [[Del Perro Beach]], [[Del Perro]]
+}}
+
+[[LEAD]]
+'''Del Perro Gifts''' is a gift store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Gift stores

@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|name = The Pink Cage Motel
+|sign=ThePinkCage-Sign-GTAV.png
+|image = <gallery>
+ThePinkCageMotel-FrontView-GTAV.PNG|Day
+ThePinkCage-FrontView-Night-GTAV.png|Night
+</gallery>
+|caption = The Pink Cage Motel as seen from Meteor Street.
+|type = Motel
+|games = {{Games|V=y|O=y}}
+|location = [[Alta]], [[Vinewood (HD Universe)|Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''The Pink Cage Motel''' is a motel in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on the intersection of [[Hawick Avenue]] and [[Meteor Street]], opposite of a [[Fleeca|Fleeca Bank]] in [[Alta]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Motels

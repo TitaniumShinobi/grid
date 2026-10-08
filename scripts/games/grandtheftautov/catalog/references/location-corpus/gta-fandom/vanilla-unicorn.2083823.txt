@@ -1,0 +1,70 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Vanilla Unicorn
+|image = VanillaUnicorn-GTAV-Logo.png
+|caption = 
+|price = 
+*$10 <small>(drinks)</small>
+*$40 <small>(private dance)</small>
+|lcn = {{BAWSAQ/Slider}} '''UNI'''
+|parkingcap = 2
+|occupants = 
+*[[Wade Hebert]]
+*[[The Families]]
+*[[Street Punks]]
+*[[Armenian Mob]] <small>([[Security Contract: Recover Valuables|Briefly]])</small>
+|employees = 
+*[[Juliet (GTA V)|Juliet]]
+*[[Infernus (Stripper)|Infernus]]
+*[[Sapphire]]
+*[[Nikki]]
+*[[Fufu]]
+*[[Chastity]]
+*[[Cheetah (Stripper)|Cheetah]]
+*[[Peach]]
+*Filly Stirrups
+*Daisy Cutter
+*Unnamed Stripper #1
+*Unnamed Stripper #2
+*DJ Paddock Punter
+*DJ Mare
+*Unnamed Bar Girl
+|games = {{Games|V=y|O=y}}
+|owner = 
+*[[Trevor Philips]]
+*[[Leon (GTA V)|Leon]] <small>([[Hang Ten|Formerly]])</small> 
+|type = stripclub
+|status = active
+|founded = [[1984]]
+|location = [[Elgin Avenue]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|taglines = ''"Seeing is relieving"'' <small>(Website)</small>
+}}
+
+[[LEAD]]
+'''Vanilla Unicorn''' is a [[strip club]] featured in {{V}} and {{O}}. In ''GTA V'', the player can buy stocks from them in the [[Lcn-exchange.com]] website.
+
+[[SECTION:2:As a Safehouse]]
+Following [[Hang Ten]], Trevor "acquires" the Vanilla Unicorn as a safehouse, replacing [[Floyd's Apartment]], which loses its function as a [[Safehouses in GTA V|safehouse]] in the mission. Once acquired (at no cost to the player), Trevor can roam freely around the backrooms of the club.
+
+Other features of the club as a safehouse:
+*Trevor can have unlimited drinks at the bar, until he passes out.
+*Trevor does not have to pay for drinks or private dances.
+*All three protagonists can touch the lap dancers without being thrown out.
+*The strippers' changing room doubles as Trevor's wardrobe (although only stripper gear is visible on the racks, Trevor's regular wardrobe cache is available).
+*All of the characters can use the rear entrance to the club. 
+*The back office has a saving location, the couch, plus a [[health]] pack. Strangely, although there is a [[Computers|computer]] in the office, it cannot be used to access the [[Internet in GTA V|internet]].
+*The parking lot on the north side can store up to two vehicles. Sometimes Trevor's [[Bodhi]] will be seen parked in the parking area to the east, but vehicles will not be saved if parked there. Note that the other two characters can access the vehicles parked in the lot as well, but only Trevor can park them to be saved.
+*Wade will be found in one of the lap dance alcoves with two dancers draped over him. He will also be present if Franklin and Michael visit, and will make references to Trevor if they pass close by.
+
+However, if the player chooses to [[Something Sensible|kill]] Trevor for [[Steve Haines]], the strip club is no longer usable as a safehouse, reverting back to a strip club since Trevor is dead thus removing all available features from post-Hang Ten.
+
+Unlike other safehouses, if Michael or Franklin fires their weapon inside or at the parking after Hang Ten, Trevor will not call or text them to stop.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Properties
+Properties in GTA V
+Safehouses
+Safehouses in GTA V
+Strip clubs

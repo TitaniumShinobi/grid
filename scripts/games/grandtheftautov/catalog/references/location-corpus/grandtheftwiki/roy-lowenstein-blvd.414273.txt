@@ -1,0 +1,94 @@
+[[LEAD]]
+'''Roy Lowenstein Blvd''' is a street in [[Los Santos in GTA V|Los Santos]] that runs from [[Davis]] in the southwest to [[Rancho]] in the northeast. The street has connections to [[Carson Ave]], [[Covenant Ave]], [[Dutch London St]], [[Innocence Blvd]], [[Little Bighorn Ave]] and [[Macdonald St]]. The [[Ballas]] control the part of the street in Davis while the [[Los Santos Vagos]] control the area in Rancho.
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Auto Parts]]
+| [[Davis]]
+| 
+| Automobile parts
+|-
+| [[Bean's Market]]
+| [[Rancho]]
+|
+| Convenience store
+|-
+| [[Cabinets & Carpets]]
+| [[Rancho]]
+| [[Carson Ave]]
+| Furniture
+|-
+| [[Cent Carpet]]
+| [[Rancho]]
+| [[Innocence Blvd]]
+| Furniture
+|-
+| [[Diego's]]
+| [[Davis]]
+| [[Dutch London St]]
+| Garage
+|-
+| [[Discount Beauty Store]]
+| [[Rancho]]
+| [[Macdonald St]]
+| Beauty salon
+|-
+| [[East Los Santos Appliances]]
+| [[Rancho]]
+| 
+| Electronics
+|-
+| [[Express Laundering]]
+| [[Davis]]
+|
+| Laundromat
+|-
+| [[Hayes Auto Body Shop]]
+| [[Rancho]]
+| [[Carson Ave]]
+| Garage
+|-
+| [[Hearty Taco]]
+| [[Davis]]/[[Rancho]]
+| [[Dutch London St]]
+| Food and drink
+|-
+| [[Hi-men]]
+| [[Rancho]]
+|
+| Nightclub
+|-
+| [[LSPD Auto Impound]]
+| [[Rancho]]
+| [[Innocence Blvd]]
+| Law enforcement
+|-
+| [[Malismo Appliances]]
+| [[Davis]]
+|
+| Electronics
+|-
+| [[Motel (Rancho)|Motel]]
+| [[Rancho]]
+| [[Macdonald St]]
+| Motel
+|-
+| [[Trinculo Clothing]]
+| [[Rancho]]
+| 
+| Clothing
+|-
+| Unnamed convenience sore
+| [[Rancho]]
+| 
+| Convenience store
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

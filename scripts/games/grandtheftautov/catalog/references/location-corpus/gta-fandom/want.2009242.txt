@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = creditcard
+|name          = Want
+|sign          = Want-GTASAde-LogoTexture.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpchristmas2018}}|SA={{DE}}|VI=y}}
+|mentioned     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Want''' is a credit card company that appears in {{O}} as part of the [[GTA Online: Arena War|Arena War]] update, {{TDE|SA}}, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Arena War
+Businesses in GTA VI
+Credit card companies

@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = hangar
+|status         = active
+|sign           = McKenzieFieldHangar-GTAVee-Signage.jpg
+|image          = McKenzieFieldHangar-GTAVee-Header.jpg
+|games          = {{Games|V=y}}
+|location       = [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|owner          = [[Trevor Philips]] <small>(optional; formerly)</small>
+|hangarcap      = 1 <small>([[Cuban 800]])</small> 
+|runways        = 1
+|price          = [[Money|$]]150,000
+|income         = 
+*$7,000 per air mission
+*$5,000 per ground mission
+|unlockedafter  = [[Nervous Ron]]
+|structure_type = Smuggling Import/Export
+}}
+
+[[LEAD]]
+'''McKenzie Field Hangar '''is a hangar located at [[McKenzie Field]] Airstrip in the small rural town of [[Grapeseed]] in [[State of San Andreas (HD Universe)|San Andreas]], featured in {{V}}.
+
+[[SECTION:3:Property management]]
+{{Main|Arms Trafficking Ground|Arms Trafficking Air}}
+Once the hangar has been purchased it can be used for Arms Trafficking missions by land or air. There is a Dune Buggy for the land missions and a Cuban 800 for the air deliveries. After finishing a delivery Trevor is paid $5000 for land deliveries and $7000 for air deliveries. Completing air deliveries quickly awards a time bonus of $125, accuracy with drops gives additional $125 bonus and flying below radar on missions that require it give yet another $125.
+
+Unlike other properties that generate varying levels of income on a regular basis, these missions are the only way to generate income from the hangar. The trade-off is that the owner doesn't have to worry about being summoned to deal with various issues and can engage in the missions at his leisure or ignore them after completing the first set. Having said that, McKenzie Field won't pay off its purchase price until Trevor has completed twenty air deliveries or thirty ground deliveries (or combinations thereof).
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Hangars
+Properties in GTA V

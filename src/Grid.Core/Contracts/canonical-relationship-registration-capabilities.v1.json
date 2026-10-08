@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "ownerScope": { "kind": "CanonicalRegistration" },
+  "modelProposalBoundary": {
+    "description": "Model/AUTO may propose relationship candidates only. Canonical edges require admitted evidence and MDBO resolution.",
+    "allowedStages": ["proposal", "evidence-acquisition", "relationship-resolution", "verification"],
+    "forbiddenStages": ["direct-canonical-write", "publication-without-evidence"]
+  },
+  "capabilities": [
+    {
+      "capabilityId": "grid.registration.relationship.discover-evidence",
+      "capabilityVersion": "1.0.0",
+      "l1Lineage": ["grid.registration-engine", "grid.canonical-registration.v1"],
+      "semanticParent": "grid.registration-engine",
+      "realization": "Grid.Core.Services.IRegistrationEvidenceAdapter.ExtractAsync",
+      "sufficiency": "Admitted source artifacts with entity and relationship claims",
+      "verificationContract": "Source bytes, adapter coordinates, and verification basis remain exact"
+    },
+    {
+      "capabilityId": "grid.registration.relationship.resolve-endpoints",
+      "capabilityVersion": "1.0.0",
+      "l1Lineage": ["grid.registration-engine", "grid.canonical-registration.v1"],
+      "semanticParent": "grid.registration.relationship.discover-evidence",
+      "realization": "Grid.Core.Services.CanonicalRegistrationEngine.Evaluate",
+      "sufficiency": "Correlated entity identities from the same candidate input",
+      "verificationContract": "Endpoint keys resolve to exactly one admitted entity or remain unresolved"
+    },
+    {
+      "capabilityId": "grid.registration.relationship.resolve-canonical",
+      "capabilityVersion": "1.0.0",
+      "l1Lineage": ["grid.registration-engine", "grid.canonical-registration.v1"],
+      "semanticParent": "grid.registration.relationship.resolve-endpoints",
+      "realization": "Grid.Core.Services.CanonicalRegistrationEngine.Evaluate",
+      "sufficiency": "Evidence-backed relationship claims with resolved endpoints",
+      "verificationContract": "Verification basis separate from correlation outcome; provenance retained on each edge"
+    },
+    {
+      "capabilityId": "grid.registration.relationship.validate-graph",
+      "capabilityVersion": "1.0.0",
+      "l1Lineage": ["grid.registration-engine", "grid.canonical-registration.v1"],
+      "semanticParent": "grid.registration.relationship.resolve-canonical",
+      "realization": "Grid.Core.Services.CanonicalRelationshipGraphValidator.Validate",
+      "sufficiency": "Complete registration candidate with admitted entities and edges",
+      "verificationContract": "Fail closed on cycles, duplicates, missing endpoints, and cross-game conflicts"
+    },
+    {
+      "capabilityId": "grid.registration.relationship.project-navigation",
+      "capabilityVersion": "1.0.0",
+      "l1Lineage": ["grid.registration-engine", "grid.canonical-registration.v1"],
+      "semanticParent": "grid.registration.relationship.validate-graph",
+      "realization": "Grid.Core.Services.CanonicalRegistrationPreparationBuilder.BuildAsync",
+      "sufficiency": "Verified candidate and explicit navigation context",
+      "verificationContract": "Prepared paths derive from admitted hierarchy edges only; alternate views and filters remain separate"
+    },
+    {
+      "capabilityId": "grid.registration.location-relationship.resolve",
+      "capabilityVersion": "1.0.0",
+      "l1Lineage": ["grid.registration-engine", "grid.location-relationship.registration.v1"],
+      "semanticParent": "grid.registration.relationship.resolve-canonical",
+      "realization": "Grid.Core.Services.CanonicalLocationRelationshipRegistrationEngine.Resolve",
+      "sufficiency": "Validated catalog payload and exact Location correlation keys",
+      "verificationContract": "Native identity and primary terminology correlation without display-name merge"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Larrys Lean Pork
+|image     = LarrysLeanPork-GTAV-Logo.png
+|caption   = '''Larrys Lean Pork''' logo.
+|taglines  = 
+|type      = Meat Packing
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Larrys Lean Pork''' is a meat packing business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Meat companies

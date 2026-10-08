@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = 1001 North Rockford Drive
+|type           = house
+|image          = 1001NorthRockfordDrive-GTAOe.png
+|caption        = Overview of the mansion.
+|games          = {{Games|V=y|O=y}}
+|location       = [[North Rockford Drive]], [[Richman (HD Universe)|Richman]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|occupants      = 
+*[[The Professionals]] <small>({{O}})</small>
+|structure_type = Mansion
+|architecture   = [[:Category:Spanish Revival buildings|Spanish revival]]
+|floors         = 2
+|accessible     = No
+|file_name      = 
+*<code>ch1_06f_hs01a</code> <small>(mansion)</small>
+*<code>ch1_06f_hs01b</code> <small>(courtyard)</small>
+|coords         = -1871.375,210.9785,87.14861
+|map            = 1001NorthRockfordDrive-GTAV-Map.png
+|map_caption    = Location on the map (red) in {{V}}.
+}}
+
+[[LEAD]]
+'''1001 North Rockford Drive''' is a mansion appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mansions
+Spanish Revival buildings

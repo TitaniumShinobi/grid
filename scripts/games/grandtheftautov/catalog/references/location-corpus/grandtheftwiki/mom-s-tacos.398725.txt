@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 200x200px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Mom's Tacos
+|type = [[:Category:Restaurants|Fast food restaurant]]
+|owner = 
+|location = '''[[Los Santos in GTA V|Los Santos]]'''<br />Corner of [[Carson Ave]] and [[Jamestown St]] in [[Rancho]]<br />Corner of [[Davis Ave]] and [[Innocence Blvd]] in [[Davis]]<br />[[El Rancho Blvd]] in [[El Burro Heights]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Mom's Tacos''' is a [[:Category:Restaurants|fast food restaurant]] chain store in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The chain has restaurants at the corner of [[Carson Ave]] and [[Jamestown St]], on the corner of [[Davis Ave]] and [[Innocence Blvd]], and a third on [[El Rancho Blvd]]. The company's phone number is 310-555-1035.
+
+
+
+
+[[Type::Business| ]]
+[[Location::Davis Ave| ]]
+[[Location::Innocence Blvd| ]]
+[[Location::El Rancho Blvd| ]]
+[[Location::Carson Ave| ]]
+[[Location::Jamestown St| ]]
+[[Location::Rancho| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Restaurants

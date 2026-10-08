@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox location
+|Name Change = CHURCH AND CEMETERY
+|image       = LudendorffChurchandCemetery-GTAOe.png
+|caption     = '''Ludendorff Church and Cemetery''' in ''[[Grand Theft Auto Online]]''.
+|games       = {{Games|V=y|O={{EEEV}}{{DLC|mp2024_01}}}}
+|location    = [[Ludendorff]], [[State of North Yankton|North Yankton]]
+|accessible  = No
+|map         = LudendorffChurchandCemetery-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Ludendorff Church and Cemetery''' is a Catholic church and [[Cemeteries|cemetery]] located in [[Ludendorff]], [[North Yankton]], appearing in {{V}} and appears as a [[Survival]] mode setting in {{O}} as part of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update.
+
+[[CATEGORIES]]
+Cemeteries
+Churches
+Locations in GTA Online in Ludendorff
+Locations in GTA V in Ludendorff

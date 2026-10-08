@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = Tour de Force
+|image        = TourdeForce-GTAO-Thumbnail.png
+|location     = [[State of San Andreas (HD Universe)|San Andreas]]
+|game           = {{games|O=y}}
+|type           = CasinoWork
+|fail         = 
+|for          = [[Agatha Baker]]
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] <small>(organization)</small>
+*1 to 8 players <small>(motorcycle club)</small>
+|todo         = 
+*Go to the <span class="v-hud-location">[Location]</span>.
+*Wait for the <span class="v-hud-friendly">high roller</span> to enter the helicopter.
+*Fly the high roller to the <span class="v-hud-location">landmarks</span>.
+*Focus on the landmark.
+*Take the high roller to the <span class="v-hud-location">Casino</span>.
+|reward = 
+*[[Money|Cash]], [[Chips]], and [[Reputation|RP]].
+|target = 
+}}
+
+[[LEAD]]
+'''Tour de Force''' is a secret [[Casino Work]] mission featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update. It is a freeroam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

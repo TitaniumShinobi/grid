@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = {{PAGENAME}}
+|image     = VinewoodWigs-GTASAde-Logo.png
+|type      = Wig Store
+|games     = ''[[Grand Theft Auto: San Andreas]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Fifth Avenue]], [[Market (3D Universe)|Market]]
+}}
+
+[[LEAD]]
+'''Vinewood Wigs''' is a business appearing in ''[[Grand Theft Auto: San Andreas]]'', ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto: San Andreas'']]
+<gallery position="center" widths="270px">
+VinewoodWigs-GTASA.jpg|[[Fifth Avenue]], [[Market (3D Universe)|Market]]
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+<gallery position="center" widths="270px">
+VinewoodWigs-GTAV.jpg|[[Bay City Avenue]], [[Vespucci Canals]]
+</gallery>
+
+[[pl:Vinewood Wigs]]
+[[de:Vinewood Wigs]]
+[[ru:Vinewood Wigs]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Stores

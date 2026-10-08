@@ -1,0 +1,77 @@
+[[INFOBOX]]
+{{Infobox_location
+|name  = Vespucci Canals
+|image = VespucciCanals-GTAV.png
+|caption = Overview of Vespucci Canals.
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|location = [[Vespucci]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-VespucciCanals.ogg
+|map           = <gallery>
+VespucciCanals-IngameGPS-GTAV-Map.png|Vespucci Canals
+VespucciCanals-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+The '''Vespucci Canals''' are a series of waterways located in the district of [[Vespucci]], [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The Vespucci Canals are made up of several residential homes built on small islands surrounded by water. The neighbourhood is not very large but is affluent.
+
+[[SECTION:2:Roads and Streets]]
+*[[Aguja Street]]
+*[[Bay City Avenue]]
+*[[Conquistador Street]]
+*[[Cortes Street]]
+*[[Imagination Court]]
+*[[Invention Court]]
+*[[Palomino Avenue]]
+*[[Prosperity Street]]
+*[[San Andreas Avenue]]
+*[[Vespucci Boulevard]]
+
+[[SECTION:2:Businesses]]
+*[[Al Dente's]]
+*[[Alphabetz]]
+*[[Binco (HD Universe)|Binco]]
+*[[BraZillions Lingerie]]
+*[[Calabrone Cyclery]]
+*[[Cool Beans]]
+*[[Dickies Bagels]]
+*[[The Directors Cut Hair Salon]]
+*[[Doctor Kush]]
+*[[Ex Post Facto]]
+*[[Farmer Giles]]
+*[[Fat Losers Liposuction]]
+*[[Fruit of the Vine]]
+*[[The Germinator Plants & Gardens]]
+*[[Heroin Chic]]
+*[[Ice Maiden]]
+*[[Jane's Unique Boutique]]
+*[[Just Pants]]
+*[[Lettuce Be]]
+*[[Limey's Juice and Smoothies]]
+*[[Marlins Cafe]]
+*[[Noodle Exchange]]
+*[[Period Rags]]
+*[[Pipe Dreams]]
+*[[The Pit]]
+*[[Pot-Heads Seafood Restaurant]]
+*[[Prawn Vivant]]
+*[[Rob's Liquor]]
+*[[Shatner Shoes]]
+*[[The Split Kipper]]
+*[[Surfries Diner]]
+*[[Swallow]]
+*[[Taco Libre]]
+*[[Trinculo Clothing]]
+*[[Venetian]]
+*[[Vespucci Sports]]
+*[[Wandlust]]
+*[[The Well Hung Gallery]]
+*[[Wigwam Burger]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

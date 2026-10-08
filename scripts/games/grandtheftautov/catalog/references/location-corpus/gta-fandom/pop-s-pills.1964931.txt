@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = pharmacy
+|name          = Pop's Pills
+|sign          = PopsPills-Logo-GTAV.png
+|image         = 
+|games         = {{games|V=y|O=y}}
+|locations     = [[State of San Andreas (HD Universe)|State of San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|vehicles      = [[Benson (HD Universe)|Benson]]
+|taglines      = 
+|status        = active
+|accessible    = No
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Pop's Pills''' is a pharmacy chain that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Pop'sPills-GTAV-Hawick.png|[[Alta Street]] and [[Spanish Avenue]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+Pop'sPills-GTAV-PaletoBay.png|[[Paleto Bay Rest Stop]], [[Great Ocean Highway]], [[Paleto Bay]], [[Blaine County]].
+</gallery>
+
+[[de:Pop’s Pills]]
+[[es:Pop's Pills]]
+[[pl:Pop's Pills]]
+[[ru:Pop's Pills]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pharmacy chains

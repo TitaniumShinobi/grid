@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleproducts
+|name          = Coolhand Lube
+|sign          = Coolhand-Lube-Motor-Oil-GTAV-Logo.png
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|business_type = Motor oil
+|founded       = 
+|taglines      = "''no 'failure to lubricate'...Guaranteed''"
+|status        = active
+|website       = 
+}}
+
+[[LEAD]]
+'''Coolhand Lube''' is an engine lubricant brand that appears in {{VO}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle products manufacturers

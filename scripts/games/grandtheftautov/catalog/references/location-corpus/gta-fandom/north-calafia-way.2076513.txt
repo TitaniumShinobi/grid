@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image= <gallery>
+NorthCalafiaWay-GTAV-From-the-east.png|East end
+NorthCalafiaWay-GTAV-From-the-west.png|West end
+</gallery>
+|caption=[[Mount Chiliad (HD Universe)|Mount Chiliad]] from North Calafia Way. 
+|games={{Games|V=y|O=y}}
+|start=[[Seaview Road]] corner [[Grapeseed Main Street]], [[Grapeseed]]
+|end=[[Calafia Bridge]], [[Blaine County]]
+|map=<gallery>
+NorthCalafiaWay-GTAV-Map.png|Map
+NorthCalafiaWay-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''North Calafia Way''' is a two-way dirt road located between [[Mount Chiliad (HD Universe)|Mount Chiliad]] and the [[Alamo Sea]] in an unincorporated area of [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

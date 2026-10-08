@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox business
+| name = LSPD Auto Impound
+| image = LSPDAutoImpound-GTAV-Rancho-lot.jpg
+| size = 400x400px
+| caption = The [[Rancho]] impound lot seen from the [[Roy Lowenstein Blvd]] entrance.
+| game_1 = GTA V
+| game_2 = GTA Online
+| type = Auto impound
+| owner = [[LSPD in GTA V|Los Santos Police Department]]<br />[[Franklin Clinton]] (<small>[[Rancho]], player choice</small>)
+| location = [[Innocence Blvd]]/[[Roy Lowenstein Blvd]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]]<br />[[Sinner St]]/[[Vespucci Blvd]] in [[Mission Row]], Los Santos
+| affiliation = [[LSPD in GTA V|Los Santos Police Department]]
+| missions = [[Pulling Favors]]<br />[[Pulling Another Favor]]<br />[[Pulling Favors Again]]<br />[[Still Pulling Favors]]<br />[[Pulling One Last Favor]]
+| employee = [[JB Bradshaw]] (<small>Rancho</small>)<br />Unnamed dispatcher (<small>Rancho</small>)
+}}
+
+[[LEAD]]
+The '''LSPD Auto Impound''' are two automobile impounds operated and controlled by the [[LSPD in GTA V|Los Santos Police Department]], which appear in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The LSPD outsource the Rancho lot to certain individuals. The first impound lot is at the [[Mission Row Police Station]] at the corner of [[Sinner St]] and [[Vespucci Blvd]] in [[Mission Row]]. The second is located at the [[Davis Sheriff's Station]] on the corner of [[Innocence Blvd]] and [[Roy Lowenstein Blvd]] in [[Rancho]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Emergency Services in GTA V

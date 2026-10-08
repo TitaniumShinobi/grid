@@ -1,5 +1,6 @@
 using System.Collections.Immutable;
 using Grid.Core.Models;
+using Grid.Core.Services;
 
 namespace Grid.Core.Application;
 
@@ -151,7 +152,7 @@ public static class InvestigationTicketDraftPolicy
         EnsureUnique(Normalize(draft.ConfiguredToolContext), value => value.ConfigurationId.Value, "configured-tool identity", issues);
         EnsureUnique(Normalize(draft.ReferenceContext), value => value.Id.Value, "reference-context identity", issues);
         EnsureUnique(Normalize(draft.Attachments), value => value.Id.Value, "attachment identity", issues);
-        EnsureUnique(Normalize(draft.CanonicalSelections), value => value.KnowledgeKind.ToString(), "canonical selector kind", issues);
+        EnsureUniqueCanonicalSelections(Normalize(draft.CanonicalSelections), issues);
 
         foreach (var mod in Normalize(draft.Mods))
             RequireText(mod.DisplayName, "Mod display name", issues);
@@ -171,6 +172,7 @@ public static class InvestigationTicketDraftPolicy
                 issues.Add($"Reference context '{reference.Id}' crosses the Ticket Draft Game boundary.");
         }
 
+        var scaffoldPaths = new HashSet<(TicketReferenceContextKind Kind, string Path)>();
         foreach (var userContext in Normalize(draft.UserContext))
         {
             RequireText(userContext.Value, "User context value", issues);
@@ -183,6 +185,17 @@ public static class InvestigationTicketDraftPolicy
                 issues.Add("Unresolved user context cannot claim a matched reference identity.");
             if (userContext.Resolution == TicketUserContextResolution.Matched && userContext.MatchedReferenceId is null)
                 issues.Add("Matched user context requires a reference identity.");
+            if (userContext.ScaffoldPathId is { } scaffoldPath)
+            {
+                if (string.IsNullOrWhiteSpace(scaffoldPath) || scaffoldPath.Length > 512)
+                    issues.Add("Scaffold path must be non-empty and at most 512 characters.");
+                if (userContext.Resolution != TicketUserContextResolution.Unresolved ||
+                    userContext.Provenance != TicketSelectionProvenance.ExplicitUserSelection ||
+                    userContext.MatchedReferenceId is not null)
+                    issues.Add("Scaffold context must remain explicit, unresolved user context without a matched reference.");
+                if (!scaffoldPaths.Add((userContext.Kind, scaffoldPath)))
+                    issues.Add("Scaffold selections must be unique within their selector.");
+            }
         }
 
         foreach (var attachment in Normalize(draft.Attachments))
@@ -193,14 +206,27 @@ public static class InvestigationTicketDraftPolicy
                 issues.Add($"Attachment '{attachment.Id}' cannot have a negative size.");
         }
 
-        foreach (var selection in Normalize(draft.CanonicalSelections))
+        var canonicalSelections = Normalize(draft.CanonicalSelections);
+        if (!canonicalSelections.IsEmpty)
+        {
+            if (draft.GameId is null)
+                issues.Add("Canonical selector selections require a canonical Game.");
+            if (draft.GameProvenance is null)
+                issues.Add("Canonical selector selections require Game selection provenance.");
+        }
+
+        foreach (var selection in canonicalSelections)
         {
             if (selection.SelectionKind != CanonicalSelectorSelectionKind.CanonicalRecord ||
                 selection.KnowledgeRecordId is null || selection.SelectedPathId is null)
                 issues.Add("Ticket canonical selector selections must retain a canonical record and navigation path.");
-            if (selection.ProjectionPolicyId != CanonicalSelectorProjectionPolicy.V1.Id ||
-                !string.Equals(selection.ProjectionPolicyVersion, CanonicalSelectorProjectionPolicy.V1.ExactVersion, StringComparison.Ordinal))
+            if (!CanonicalSelectorProjectionPolicyResolver.IsSupportedPolicy(
+                    selection.ProjectionPolicyId, selection.ProjectionPolicyVersion))
                 issues.Add("Ticket canonical selector selection uses an unsupported projection policy.");
+            if (draft.GameId is GameId gameId &&
+                !CanonicalSelectorProjectionPolicyResolver.MatchesGamePolicy(
+                    gameId, selection.KnowledgeKind, selection.ProjectionPolicyId, selection.ProjectionPolicyVersion))
+                issues.Add("Ticket canonical selector selection uses a projection policy that does not match the selected Game.");
             var otherKind = selection.KnowledgeKind switch
             {
                 KnowledgeKind.Location => TicketReferenceContextKind.Location,
@@ -234,6 +260,29 @@ public static class InvestigationTicketDraftPolicy
     {
         if (string.IsNullOrWhiteSpace(value))
             issues.Add($"{description} must be non-empty.");
+    }
+
+    private static void EnsureUniqueCanonicalSelections(
+        ImmutableArray<CanonicalSelectorSelection> values,
+        ImmutableArray<string>.Builder issues)
+    {
+        var seenNonLocationKinds = new HashSet<string>(StringComparer.Ordinal);
+        var seenLocationRecords = new HashSet<string>(StringComparer.Ordinal);
+        foreach (var value in values)
+        {
+            if (value.KnowledgeKind == KnowledgeKind.Location)
+            {
+                if (value.KnowledgeRecordId is not { } recordId || value.SelectedPathId is not { } pathId)
+                    continue;
+                var key = $"{recordId.Value}:{pathId.Value}";
+                if (!seenLocationRecords.Add(key))
+                    issues.Add("Ticket Draft contains duplicate Location canonical selections.");
+                continue;
+            }
+
+            if (!seenNonLocationKinds.Add(value.KnowledgeKind.ToString()))
+                issues.Add("Ticket Draft contains duplicate canonical selector kind selections.");
+        }
     }
 
     private static void EnsureUnique<T>(

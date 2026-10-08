@@ -1,0 +1,383 @@
+[[INFOBOX]]
+{{Infobox business
+|image = GunVanWeek-GTAOe-Header.jpg
+|status = active
+|games = {{Games|O=y}}
+|operator = [[Gun Van Seller]]
+|location = [[State of San Andreas (HD Universe)|Southern San Andreas]]
+|founded = [[2023]]
+}}
+
+[[LEAD]]
+The '''Gun Van''' is a mobile business in {{O}}, added as part of the continuation of the [[GTA Online: Los Santos Drug Wars|Los Santos Drug Wars]] update released during [[Gun Van Week]] on January 12, 2023.
+
+[[SECTION:2:Locations]]
+{{Quote|Just so you know, I don't like staying in one spot for too long.|Seller.}}
+There are 30 possible spawn locations for the van. 
+
+The van will change location every day around 06:00 UTC starting from January 12th, 2023, and will be at the new location on any new session started after its movement time. Players joining sessions that started prior to the move time will see it revert back to the previous location even if they have been in a newer session with the new location.
+{| class="article-table sortable" style="width: 99%; margin: auto;"
+|-
+!colspan=5|<div class="stretch-img"></div>
+|-
+! scope="col"|{{H:title|In order of appearance.|Ref Number}}
+! scope="col"|ID
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|<span id="Location 01">01</span>
+|9
+|[[Palmer-Taylor Power Station]]
+|[[File:GunVan-GTAOe-01-PalmerTaylorPowerStation.png|center|200px]]
+|[[File:GunVan-GTAOe-01-PalmerTaylorPowerStation-Map.png|center|200px]]
+|-
+|<span id="Location 02">02</span>
+|27
+|[[Hookies]]<br>[[North Chumash]]
+|[[File:GunVan-GTAOe-02-Hookies.png|center|200px]]
+|[[File:GunVan-GTAOe-02-Hookies-Map.png|center|200px]]
+|-
+|<span id="Location 03">03</span>
+|15
+|[[Land Act Reservoir]]<br>(north end)
+|[[File:GunVan-GTAOe-03-LandActReservoir.png|center|200px]]
+|[[File:GunVan-GTAOe-03-LandActReservoir-Map.png|center|200px]]
+|-
+|<span id="Location 04">04</span>
+|11
+|[[Thomson Scrapyard]]
+|[[File:GunVan-GTAOe-04-ThomsonScrapyard.png|center|200px]]
+|[[File:GunVan-GTAOe-04-ThomsonScrapyard-Map.png|center|200px]]
+|-
+|<span id="Location 05">05</span>
+|29
+|[[Hearty Taco]]<br>[[Mirror Park]]
+|[[File:GunVan-GTAOe-05-HeartyTaco.png|center|200px]]
+|[[File:GunVan-GTAOe-05-HeartyTaco-Map.png|center|200px]]
+|-
+|<span id="Location 06">06</span>
+|17
+|[[Terminal]]<br>(southwest corner)
+|[[File:GunVan-GTAOe-06-Terminal.png|center|200px]]
+|[[File:GunVan-GTAOe-06-Terminal-Map.png|center|200px]]
+|-
+|<span id="Location 07">07</span>
+|5
+|[[Vinewood Sign (HD Universe)|Vinewood Sign]]
+|[[File:GunVan-GTAOe-07-VinewoodSign.png|center|200px]]
+|[[File:GunVan-GTAOe-07-VinewoodSign-Map.png|center|200px]]
+|-
+|<span id="Location 08">08</span>
+|1
+|[[No Marks Cleaners]]<br>[[Paleto Bay]]
+|[[File:GunVan-GTAOe-08-NoMarksCleanersPaletoBay.png|center|200px]]
+|[[File:GunVan-GTAOe-08-NoMarksCleanersPaletoBay-Map.png|center|200px]]
+|-
+|<span id="Location 09">09</span>
+|19
+|[[Popular Street]]<br>[[La Mesa]]
+|[[File:GunVan-GTAOe-09-LaMesa.png|center|200px]]
+|[[File:GunVan-GTAOe-09-LaMesa-Map.png|center|200px]]
+|-
+|<span id="Location 10">10</span>
+|7
+|[[Paleto Forest Lumber Yard]]<br>[[Paleto Forest]]
+|[[File:GunVan-GTAOe-10-PaletoForest.png|center|200px]]
+|[[File:GunVan-GTAOe-10-PaletoForest-Map.png|center|200px]]
+|-
+|<span id="Location 11">11</span>
+|3
+|[[Merle Abrahams]]' house<br>[[Armadillo Avenue]]/[[Cholla Springs Avenue]], [[Sandy Shores]]
+|[[File:GunVan-GTAOe-11-SandyShores.png|center|200px]]
+|[[File:GunVan-GTAOe-11-SandyShores-Map.png|center|200px]]
+|-
+|<span id="Location 12">12</span>
+|21
+|[[Magellan Avenue]]/[[Conquistador Street]], [[Vespucci Beach]]
+|[[File:GunVan-GTAOe-12-VespucciBeach.png|center|200px]]
+|[[File:GunVan-GTAOe-12-VespucciBeach-Map.png|center|200px]]
+|-
+|<span id="Location 13">13</span>
+|12
+|[[Car Scrapyard]]<br>[[El Burro Heights]]
+|[[File:GunVan-GTAOe-13-ElBurroHeights.png|center|200px]]
+|[[File:GunVan-GTAOe-13-ElBurroHeights-Map.png|center|200px]]
+|-
+|<span id="Location 14">14</span>
+|13
+|[[LT Weld Supply Co.]]/[[Lester's Warehouse]]<br>[[Murrieta Heights]]
+|[[File:GunVan-GTAOe-14-MurrietaHeights.png|center|200px]]
+|[[File:GunVan-GTAOe-14-MurrietaHeights-Map.png|center|200px]]
+|-
+|<span id="Location 15">15</span>
+|14
+|[[Walker]] Ocean Store<br>[[Port of Los Santos]]
+|[[File:GunVan-GTAOe-15-PortOfLS.png|center|200px]]
+|[[File:GunVan-GTAOe-15-PortOfLS-Map.png|center|200px]]
+|-
+|<span id="Location 16">16</span>
+|25
+|[[Caesars Auto Parking]]<br>[[Little Seoul]]
+|[[File:GunVan-GTAOe-16-LittleSeoul.png|center|200px]]
+|[[File:GunVan-GTAOe-16-LittleSeoul-Map.png|center|200px]]
+|-
+|<span id="Location 17">17</span>
+|4
+|Dirt road overlooking [[Larry's RV Sales]]<br>[[Grand Senora Desert]]
+|[[File:GunVan-GTAOe-17-GrandSenoraDesert.png|center|200px]]
+|[[File:GunVan-GTAOe-17-GrandSenoraDesert-Map.png|center|200px]]
+|-
+|<span id="Location 18">18</span>
+|28
+|Public toilets west of [[Procopio Truck Stop]]<br>[[Procopio Beach]]
+|[[File:GunVan-GTAOe-18-ProcopioBeach.png|center|200px]]
+|[[File:GunVan-GTAOe-18-ProcopioBeach-Map.png|center|200px]]
+|-
+|<span id="Location 19">19</span>
+|16
+|[[Fridgit]], [[Forced Labor Place]]<br>[[La Mesa]]
+|[[File:GunVan-GTAOe-19-FridgitLaMesa.png|center|200px]]
+|[[File:GunVan-GTAOe-19-FridgitLaMesa-Map.png|center|200px]]
+|-
+|<span id="Location 20">20</span>
+|23
+|Parking garage south of [[Oriental Theater]]<br>[[Downtown Vinewood]]
+|[[File:GunVan-GTAOee-20-DowntownVinewood.jpg|center|200px]]
+|[[File:GunVan-GTAOee-20-DowntownVinewood-Map.jpg|center|200px]]
+|-
+|<span id="Location 21">21</span>
+|26
+|Abandoned auto service garage, [[Joshua Road]]<br>[[Alamo Sea]]
+|[[File:GunVan-GTAOee-21-AlamoSea.jpg|center|200px]]
+|[[File:GunVan-GTAOee-21-AlamoSea-Map.jpg|center|200px]]
+|-
+|<span id="Location 22">22</span>
+|6
+|Behind [[Ink Inc.]] Tattoos, [[Chumash Plaza]]<br>[[Chumash]]
+|[[File:GunVan-GTAOee-22-Chumash.jpg|center|200px]]
+|[[File:GunVan-GTAOee-22-Chumash-Map.jpg|center|200px]]
+|-
+|<span id="Location 23">23</span>
+|18
+|[[Rogers Salvage & Scrap]]<br>[[La Puerta]]
+|[[File:GunVan-GTAOe-23-LaPuerta.png|center|200px]]
+|[[File:GunVan-GTAOe-23-LaPuerta-Map.png|center|200px]]
+|-
+|<span id="Location 24">24</span>
+|10
+|Under the [[Fort Zancudo Approach Road]] bridge<br>[[Fort Zancudo]]
+|[[File:GunVan-GTAOee-24-FortZancudo.jpg|center|200px]]
+|[[File:GunVan-GTAOee-24-FortZancudo-Map.jpg|center|200px]]
+|-
+|<span id="Location 25">25</span>
+|8
+|Next to [[Ortega's Trailer]]<br>[[Zancudo River]]
+|[[File:GunVan-GTAOee-25-ZancudoRiver.jpg|center|200px]]
+|[[File:GunVan-GTAOee-25-ZancudoRiver-Map.jpg|center|200px]]
+|-
+|<span id="Location 26">26</span>
+|30
+|In a alley next to [[Bishop's Chicken]]<br>[[Davis]]
+|[[File:GunVan-GTAOee-26-Davis.jpg|center|200px]]
+|[[File:GunVan-GTAOee-26-Davis-Map.jpg|center|200px]]
+|-
+|<span id="Location 27">27</span>
+|20
+|On a carport in an alleyway between [[Cougar Avenue]] and [[Bay City Avenue]]<br>[[Del Perro]]
+|[[File:GunVan-GTAOee-27-DelPerro.jpg|center|200px]]
+|[[File:GunVan-GTAOee-27-DelPerro-Map.jpg|center|200px]]
+|-
+|<span id="Location 28">28</span>
+|22
+|Parking above [[J's Bonds]]<br>[[West Vinewood]]
+|[[File:GunVan-GTAOee-28-WestVinewood.jpg|center|200px]]
+|[[File:GunVan-GTAOee-28-WestVinewood-Map.jpg|center|200px]]
+|-
+|<span id="Location 29">29</span>
+|2
+|Behind the [[Discount Store]]<br>[[Grapeseed]]
+|[[File:GunVan-GTAOee-29-Grapeseed.jpg|center|200px]]
+|[[File:GunVan-GTAOee-29-Grapeseed-Map.jpg|center|200px]]
+|-
+|<span id="Location 30">30</span>
+|24
+|24 hour parking<br>[[Pillbox Hill]]
+|[[File:GunVan-GTAOee-30-PillboxHill.jpg|center|200px]]
+|[[File:GunVan-GTAOee-30-PillboxHill-Map.jpg|center|200px]]
+|}
+
+[[SECTION:3:Disabled Locations]]
+During certain periods certain locations are disabled, which means that they will not be selected as a possible location by the game.
+{| class="article-table sortable"; margin: auto;"
+|-
+!colspan=4|
+|-
+! scope="col"|ID
+! scope="col"|Period
+|-
+|[[#Location 22|6]] and [[#Location 20|23]]
+|January 12th, 2023 - June 12th, 2023
+|-
+|[[#Location 07|5]]
+|June 22nd, 2023 - October 18th, 2023
+|-
+|[[#Location 07|5]], [[#Location 22|6]] and [[#Location 20|23]]
+|October 19th, 2023 - December 11th, 2023
+|-
+|[[#Location 17|4]]
+|December 12th, 2023 - ''Unknown''
+|}
+
+[[SECTION:3:Calendar]]
+<div class="HideFandomMobile">Enable Desktop View to see the calendar.
+March 16th, 2026: [[#Location 03]]
+</div>
+<div class="nomobile">
+
+[[SECTION:4:2026]]
+<tabber>
+March=
+{|class="zebratable"
+!scope=col style="width:14.25%;"|S
+!scope=col style="width:14.25%;"|M
+!scope=col style="width:14.25%;"|T
+!scope=col style="width:14.25%;"|W
+!scope=col style="width:14.25%;"|T
+!scope=col style="width:14.25%;"|F
+!scope=col style="width:14.25%;"|S
+|-
+|1<br>[[#Location 14]]
+|2<br>[[#Location 08]]
+|3<br>[[#Location 09]]
+|4<br>[[#Location 03]]
+|5<br>[[#Location 11]]
+|6<br>[[#Location 12]]
+|7<br>[[#Location 01]]
+|-
+|8<br>[[#Location 30]]
+|9<br>[[#Location 20]]
+|10<br>[[#Location 04]]
+|11<br>[[#Location 10]]
+|12<br>[[#Location 16]]
+|13<br>[[#Location 14]]
+|14<br>[[#Location 08]]
+|-
+|15<br>[[#Location 02]]
+|16<br>[[#Location 03]]
+|17<br>
+|18<br>
+|19<br>
+|20<br>
+|21<br>
+|-
+|22<br>
+|23<br>
+|24<br>
+|25<br>
+|26<br>
+|27<br>
+|28<br>
+|-
+|29<br>
+|30<br>
+|31<br>
+|-|
+February=
+{|class="zebratable"
+!scope=col style="width:14.25%;"|S
+!scope=col style="width:14.25%;"|M
+!scope=col style="width:14.25%;"|T
+!scope=col style="width:14.25%;"|W
+!scope=col style="width:14.25%;"|T
+!scope=col style="width:14.25%;"|F
+!scope=col style="width:14.25%;"|S
+|-
+|1<br>[[#Location 03]]
+|2<br>[[#Location 04]]
+|3<br>[[#Location 05]]
+|4<br>[[#Location 06]]
+|5<br>[[#Location 03]]
+|6<br>[[#Location 08]]
+|7<br>[[#Location 09]]
+|-
+|8<br>[[#Location 10]]
+|9<br>[[#Location 16]]
+|10<br>[[#Location 12]]
+|11<br>[[#Location 01]]
+|12<br>[[#Location 02]]
+|13<br>[[#Location 03]]
+|14<br>[[#Location 04]]
+|-
+|15<br>[[#Location 05]]
+|16<br>[[#Location 06]]
+|17<br>[[#Location 14]]
+|18<br>[[#Location 08]]
+|19<br>[[#Location 09]]
+|20<br>[[#Location 07]]
+|21<br>[[#Location 11]]
+|-
+|22<br>[[#Location 12]]
+|23<br>[[#Location 01]]
+|24<br>[[#Location 02]]
+|25<br>[[#Location 20]]
+|26<br>[[#Location 04]]
+|27<br>[[#Location 05]]
+|28<br>[[#Location 16]]
+|-|
+January=
+{|class="zebratable"
+!scope=col style="width:14.25%;"|S
+!scope=col style="width:14.25%;"|M
+!scope=col style="width:14.25%;"|T
+!scope=col style="width:14.25%;"|W
+!scope=col style="width:14.25%;"|T
+!scope=col style="width:14.25%;"|F
+!scope=col style="width:14.25%;"|S
+|-
+|
+|
+|
+|
+|1<br>[[#Location 20]]
+|2<br>[[#Location 04]]
+|3<br>[[#Location 05]]
+|-
+|4<br>[[#Location 06]]
+|5<br>[[#Location 14]]
+|6<br>[[#Location 08]]
+|7<br>[[#Location 09]]
+|8<br>[[#Location 03]]
+|9<br>[[#Location 11]]
+|10<br>[[#Location 12]]
+|-
+|11<br>[[#Location 01]]
+|12<br>[[#Location 29]]
+|13<br>[[#Location 20]]
+|14<br>[[#Location 04]]
+|15<br>[[#Location 05]]
+|16<br>[[#Location 16]]
+|17<br>[[#Location 14]]
+|-
+|18<br>[[#Location 08]]
+|19<br>[[#Location 02]]
+|20<br>[[#Location 03]]
+|21<br>[[#Location 11]]
+|22<br>[[#Location 12]]
+|23<br>[[#Location 06]]
+|24<br>[[#Location 13]]
+|-
+|25<br>[[#Location 20]]
+|26<br>[[#Location 04]]
+|27<br>[[#Location 10]]
+|28<br>[[#Location 16]]
+|29<br>[[#Location 14]]
+|30<br>[[#Location 01]]
+|31<br>[[#Location 02]]
+|}
+</tabber>
+</div>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Stores

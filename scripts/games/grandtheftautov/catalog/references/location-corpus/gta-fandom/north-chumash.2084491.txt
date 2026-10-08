@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox location
+|type        = town
+|image       = NorthChumash-GTAV.png
+|caption     = Aerial view of North Chumash.
+|games       = {{Games|V=y|O=y}}
+|pscanner    = PoliceScanner-GTAV-Neighborhood-NorthChumash.ogg
+|location    = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map         = 
+<gallery>
+NorthChumash-GTAV-IngameGPS-Map.png|North Chumash
+NorthChumash-GTAV-IngameGPS-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''North Chumash''' is a small unincorporated community located in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]], that appears in {{V}} and {{O}}. It is situated north of [[Fort Zancudo]], southwest of the [[Chiliad Mountain State Wilderness]], west of [[Mount Josiah]] and sits on the coastline of the [[Pacific Ocean (HD Universe)|Pacific Ocean]].
+
+[[SECTION:2:Roads and Streets]]
+*[[Great Ocean Highway]]
+
+[[SECTION:2:Purchasable Properties]]
+
+
+[[SECTION:3:''Grand Theft Auto V'']]
+The Hookies bar and seafood restaurant is available for purchase by [[Michael De Santa]] or [[Franklin Clinton]] for [[Money|$]]600,000 after completing the mission [[Nervous Ron]] but not by Trevor Philips, due to his violent conflict with [[The Lost MC|The Lost]], who use Hookies as an area of congregation.
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+The two-car garage [[2000 Great Ocean Highway]], located next to Hookies, is available for the [[GTA Online Protagonist|player]] to purchase for $31,500.
+
+[[SECTION:2:Businesses]]
+*[[Hookies]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Towns
+Zones

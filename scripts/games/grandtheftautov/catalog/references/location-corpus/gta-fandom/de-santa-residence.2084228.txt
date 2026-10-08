@@ -1,0 +1,54 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = V
+|safehouse      = y
+|type           = mansion
+|name           = De Santa Residence
+|sign           = 
+|image          = DeSantaResidence-GTAV.png
+|caption        = The De Santa Residence.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Portola Drive]], [[Rockford Hills]], [[Los Santos County]]
+|occupants      = 
+*[[Michael De Santa]]
+*[[Amanda De Santa]]
+*[[Jimmy De Santa]] {{Small|(formerly)}}
+*[[Tracey De Santa]] {{Small|(formerly)}}
+|floors         = 2
+|rooms          = 8
+|architecture   = [[:Category:Spanish Revival buildings|Spanish Revival]]
+|garagecap      = Two cars/three motorcycles
+|accessible     = Yes
+|canplayerstore = Yes
+|unlockedby     = [[Complications]]
+}}
+
+[[LEAD]]
+The '''De Santa Residence''' is a [[Safehouses in GTA V|safehouse]] in {{V}}, which also appears in {{O}}. It is the home of famous [[Vinewood (HD Universe)|Vinewood]] film producer [[Michael De Santa]] and his family.
+
+[[SECTION:3:Interior]]
+<gallery position="center" spacing="small" caption="Ground floor" widths="250px">
+Michael'sMansion-GTAV-Hallway.PNG|Hallway and entrance.
+Michael'sMansion-GTAV-Kitchen.PNG|Kitchen.
+Michael'sMansion-GTAV-LivingRoom.PNG|Lounge.
+Michael'sMansion-GTAV-DiningRoom.PNG|Dining area.
+Michael'sMansion-GTAV-Stairs.PNG|Stairway.
+</gallery>
+
+<gallery position="center" spacing="small" caption="Upper level" widths="250px">
+Michael'sMansion-GTAV-Landing.PNG|Landing.
+Michael'sMansion-GTAV-Tracey'sBedroom.PNG|Tracey's bedroom.
+Michael'sMansion-GTAV-Bathroom.PNG|Bathroom.
+Michael'sMansion-GTAV-Jimmy'sBedroom.PNG|[[Jimmy De Santa|Jimmy]]'s bedroom.
+Michael'sMansion-GTAV-MainBedroom.PNG|Main bedroom.
+Michael'sMansion-GTAV-Closet.PNG|Closet.
+</gallery>
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mansions
+Safehouses
+Spanish Revival buildings

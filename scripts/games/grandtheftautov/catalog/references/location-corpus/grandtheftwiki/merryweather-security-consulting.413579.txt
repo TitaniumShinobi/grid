@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Military-GTAV.png
+|size = 300px
+|caption = Merryweather mercenaries guarding a [[Titan]] in GTA Online
+|game_1 = GTA V
+|game_2 = GTA O
+|name = Merryweather Security Consulting
+|type = Civilian security contractor<br />Private military company
+|owner = [[Don Percival]] (<small>founder/CEO</small>)<br />[[Devin Weston]] (<small>minority shareholder</small>)
+|location = [[Los Santos in GTA V|Los Santos]]
+|affiliation = [[Devin Weston]]
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Merryweather Security Consulting''' is a civilian security firm and private military contractor in [[Los Santos in GTA V|Los Santos]] in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. In GTA V, the company serves as a major antagonistic faction due to its ownership by [[Devin Weston]], one of the two main [[antagonist]]s.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Businesses listed on the LCN in GTA V
+Gangs in GTA V
+Military

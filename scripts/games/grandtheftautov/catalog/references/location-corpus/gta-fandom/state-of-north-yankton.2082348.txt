@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{infobox location
+|type     = state
+|name     = North Yankton
+|image    = StateofNorthYankton-GTAOe-GTAVe-Montage.jpg
+|caption  = Clockwise from top: Snow-capped hills of North Yankton, [[Ludendorff Church and Cemetery]], the town of [[Ludendorff]] at night, agricultural scene on the outskirts of town, a [[Freight Train]] passing by the railroad, a frozen river and the "[[The Ludendorff Beaver|Midwest's Biggest Beaver]]".
+|games    = {{Games|V=y|O={{EEEV}}{{DLC|mp2024_01}}}}
+|country  = [[United States of America]]
+|capital  = Unknown
+|governor = Unknown
+|pscanner = PoliceScanner-GTAV-Neighborhood-NorthYankton.ogg
+}}
+
+[[LEAD]]
+The '''State of North Yankton''' is a state that appears in ''[[Grand Theft Auto V]]'', being featured in the missions [[Prologue]] and [[Bury the Hatchet]], and appears as a seasonal [[Survival]] mode setting in ''[[Grand Theft Auto Online]]'' as part of the continuation of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update.
+
+[[SECTION:2:Known Towns]]
+*[[Ludendorff]]
+
+{{Clr}}
+
+[[SECTION:4:Cemetery Shootout]]
+North Yankton is visited again in [[2013]] during the mission [[Bury the Hatchet]] by Trevor, who was determined to find out who was really buried in Michael's grave after the bank robbery, despite Michael's attempts to talk him out of it. Michael followed him in an attempt to stop him. Trevor arrives at the cemetery and exhumes the grave, and his suspicions are confirmed when he opens the coffin and finds Brad Snider's body inside. Following this, the two were attacked by [[Los Santos Triads|Triads]] who were hunting for Trevor; Trevor escaped from the cemetery, leaving Michael to fight the Triads alone. Michael fights his way through the Triads, but he is captured when he reaches his [[Asea]], due to it being immobilized by Trevor.
+
+[[CATEGORIES]]
+Locations in GTA Online
+Locations in GTA V
+States
+Zones

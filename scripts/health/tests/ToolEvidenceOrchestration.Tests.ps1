@@ -9,6 +9,37 @@ Assert-Equal 11 $registry.Count 'Skyrim must register MO2, LOOT, SSEEdit, and al
 Assert-Equal 'grid.tool.bodyslide,grid.tool.dyndolod,grid.tool.loot,grid.tool.mo2,grid.tool.sseedit,grid.tool.sseedit-report,grid.tool.synthesis,grid.tool.texgen,grid.tool.wrye-bash,grid.tool.xlodgen,grid.tool.zedit' (@($registry.toolId) -join ',') 'Tool IDs must be stable and sorted.'
 Assert-Equal 'ExistingOutputRead' @($registry | Where-Object toolId -eq 'grid.tool.loot')[0].observationMode 'LOOT must remain an existing-output observer.'
 Assert-True (@($registry|Where-Object{$_.adapter -eq 'SkyrimExistingToolReport' -and $_.observationMode -eq 'ExistingOutputRead'}).Count -eq 8) 'All new after-run tool families must remain read-only existing-output observers.'
+Assert-True (@($registry | Where-Object {
+    @($_.compatibility).Count -ne 1 -or
+    [string]$_.compatibility[0].gameId -cne 'game.skyrim-special-edition' -or
+    @($_.compatibility[0].evidenceCapabilityIds).Count -eq 0 -or
+    [string]::IsNullOrWhiteSpace([string]$_.compatibility[0].provenance)
+}).Count -eq 0) 'Every Skyrim tool must carry exact canonical GameID compatibility evidence.'
+$skyrimMo2 = @(Resolve-GridToolEvidencePlan -ToolIds @('grid.tool.mo2') -GameId 'skyrimspecialedition' -ClassId 'grid.class.installation-integrity' -ScriptsRoot $scriptsRoot)
+Assert-Equal 'Available' $skyrimMo2[0].availability 'MO2 must remain available for its explicitly supported canonical Skyrim game.'
+$enhancedMo2 = @(Resolve-GridToolEvidencePlan -ToolIds @('grid.tool.mo2') -GameId 'grandtheftautov-enhanced' -ClassId 'grid.class.installation-integrity' -ScriptsRoot $scriptsRoot)
+Assert-Equal 'UnsupportedForGame' $enhancedMo2[0].availability 'A Skyrim tool must fail closed for canonical GTA V Enhanced.'
+$legacyMo2 = @(Resolve-GridToolEvidencePlan -ToolIds @('grid.tool.mo2') -GameId 'grandtheftautov-legacy' -ClassId 'grid.class.installation-integrity' -ScriptsRoot $scriptsRoot)
+Assert-Equal 'UnsupportedForGame' $legacyMo2[0].availability 'A Skyrim tool must fail closed for canonical GTA V Legacy.'
+
+$syntheticCapabilities = @(
+    [pscustomobject]@{ capabilityId='grid.game.fixture.legacy.observe'; ownerScope=[pscustomobject]@{ kind='Game'; gameId='game.grandtheftautov-legacy' } },
+    [pscustomobject]@{ capabilityId='grid.game.fixture.enhanced.observe'; ownerScope=[pscustomobject]@{ kind='Game'; gameId='game.grandtheftautov-enhanced' } }
+)
+$syntheticMultiGameTool = [pscustomobject]@{
+    schemaVersion=2; toolId='grid.tool.fixture-multi-game'; displayName='Fixture multi-game tool'; adapter='FixtureRead'; observationMode='InProcessRead'
+    rootCapabilityIds=@('grid.game.fixture.legacy.observe','grid.game.fixture.enhanced.observe')
+    supportedClassIds=@('grid.class.installation-integrity')
+    compatibility=@(
+        [pscustomobject]@{ gameId='game.grandtheftautov-legacy'; evidenceCapabilityIds=@('grid.game.fixture.legacy.observe'); provenance='Fixture Legacy contract.' },
+        [pscustomobject]@{ gameId='game.grandtheftautov-enhanced'; evidenceCapabilityIds=@('grid.game.fixture.enhanced.observe'); provenance='Fixture Enhanced contract.' }
+    )
+    limits=[pscustomobject]@{ timeoutSeconds=1; maximumOutputBytes=1 }
+}
+Assert-True (Test-GridToolDefinition -Definition $syntheticMultiGameTool -CapabilityRegistry $syntheticCapabilities).IsValid 'A multi-game tool is valid only when each canonical GameID has independent capability evidence.'
+$unboundTool = $syntheticMultiGameTool | Select-Object * -ExcludeProperty compatibility
+$unboundTool | Add-Member -NotePropertyName compatibility -NotePropertyValue @() -Force
+Assert-True (-not (Test-GridToolDefinition -Definition $unboundTool -CapabilityRegistry $syntheticCapabilities).IsValid) 'A tool without explicit compatibility evidence must fail closed.'
 $envelope = New-GridRequestEnvelope -GameId 'skyrimspecialedition' -InstallationId 'installation.fixture' -ProfileId 'profile.fixture' -ClassId 'grid.class.installation-integrity' -ClassRecipeVersion '1.1.0' -ModNames @('Fixture One') -ToolIds @('grid.tool.loot','grid.tool.mo2')
 $plan = Resolve-GridRequestPlan -Envelope $envelope -ScriptsRoot $scriptsRoot
 Assert-Equal 'ReadyToCollect' $plan.status 'Registered compatible multi-tool selection must plan.'

@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = sanitation
+|name          = DEP
+|sign          = DEP-GTAOe-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|O={{UN|cutcontent}} {{EEEV}} {{DLC|mpheist3}}}}
+|mentioned     = 
+|locations     = 
+|business_type = Waste collections and disposal
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''DEP''' is a waste disposal company that was cut from ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Diamond Casino Heist
+Sanitation companies

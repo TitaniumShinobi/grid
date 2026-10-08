@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Piercings
+|image = Piercings-GTAV-Logo.png
+|type = Piercing Shop
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Piercings''' is a piercing shop in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tattoo parlors

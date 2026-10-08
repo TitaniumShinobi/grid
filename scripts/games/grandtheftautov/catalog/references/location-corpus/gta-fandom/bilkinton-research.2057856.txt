@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Bilkinton Research
+|image = BilkintonResearch-GTAV-Logo.png
+|darklogo = y
+|type = Pharmaceuticals
+|lcn = {{BAWSAQ/Slider}} '''BIL'''
+|ceo = [[Brett Lowrey]]
+|games = ''[[Grand Theft Auto V]]''
+}}
+
+[[LEAD]]
+'''Bilkinton Research''' is a pharmaceutical company that appears in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Pharmaceutical companies

@@ -1,0 +1,53 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Grotti Automobile
+|sign          = 
+|image_label   = V
+|image         = Grotti-GTAV-Logo.png
+|caption       = '''Grotti''' logo in {{VO}}.
+|image_label2  = IV
+|image2        = Logo-IV-Grotti.png
+|caption2      = '''Grotti''' logo in {{IV}}.
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = [[Grotti Showroom]], [[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+|business_type = 
+*Automotive manufacturer
+*Watercraft manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Grotti Automobile''' is an [[Italy|Italian]] luxury vehicle manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+*The [[Grotti Showroom#Grand Theft Auto IV and Grand Theft Auto: Chinatown Wars|Grotti Showroom]] in [[Middle Park East]] on [[Bismarck Avenue]] resembles the {{WP|New York City}} {{WP|Ferrari}}/{{WP|Maserati}} showroom in the {{WP|Upper East Side}} of {{WP|Manhattan}} on {{WP|Park Avenue (Manhattan)|Park Avenue}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Chinatown Wars'']]
+*[[Grotti Showroom]], [[Bismarck Avenue]] and [[Pyrite Street]], [[Middle Park East]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]].
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+*[[Luxury Autos]], [[Mad Wayne Thunder Drive]] and [[Eastbourne Way]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

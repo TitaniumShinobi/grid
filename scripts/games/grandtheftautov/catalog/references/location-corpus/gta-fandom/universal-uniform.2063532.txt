@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|shop=y
+|clothesshop=y
+|business=y
+|activebiz=y
+|name={{PAGENAME}}
+|image=UniversalUniform-GTAV-Logo.png
+|location=[[Del Perro]]<br>[[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible=No
+|games={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Universal Uniform''' is a clothing brand in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' with stores located in [[Del Perro]] and [[Burton]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Locations]]
+<gallery position="center" widths="270px" spacing="small">
+UniversalUniform-GTAV-DelPerro.png|[[Prosperity Street Promenade]] and [[San Andreas Avenue]], [[Del Perro]].
+UniversalUniform-GTAV-HawickAve.png|[[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands
+Media in GTA Online
+Media in GTA V
+Websites

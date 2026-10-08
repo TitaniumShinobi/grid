@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = ZancudoBridge-GTAV.png
+|caption = Overview of the bridge.
+|games = {{Games|V=y|O=y}}
+|bridge = y
+|location = [[Lago Zancudo]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = <gallery>
+ZancudoBridge-GTAV-Map.png|Map
+ZancudoBridge-GTAV-SatteliteMap.png|Sattelite view
+</gallery>
+|map_caption   = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Zancudo Bridge''' is a bridge appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[SECTION:3:Flight School]]
+*Moving Landing [[Flight School]] mission.
+
+[[CATEGORIES]]
+Box girder bridges
+Road bridges
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

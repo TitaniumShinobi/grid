@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|image = JJsForkliftRepair-Logo-GTAV.png
+|type = Forklift Repair Shop
+|games = {{Games|V=y|O=y}}
+|locations = [[Crusade Road]], [[Strawberry]]
+|taglines = ''"When a prong goes wrong, call JJ's Forklift Repair"''
+}}
+
+[[LEAD]]
+'''JJ's Forklift Repair''' is an auto-repair shop in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mod shops

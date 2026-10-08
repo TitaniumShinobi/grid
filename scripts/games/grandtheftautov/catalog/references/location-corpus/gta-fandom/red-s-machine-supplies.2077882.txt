@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|structure_type = Scrap yard
+|name           = Red's Machine Supplies
+|sign           = 
+|image          = Red'sMachineSupplies-GTAVee-Entrance.jpg
+|caption        = The scrapyard as seen from Paleto Boulevard.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Paleto Boulevard]], [[Paleto Bay]]
+|opened         = 
+|products       = 
+|taglines       = 
+|architecture   = 
+|floors         = 
+|accessible     =
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Red's Machine Supplies''' is a pickup and auto [[Scrap Yards|salvage yard]] in {{V}} and {{O}} that is located in [[Paleto Bay]], [[Blaine County]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Scrap yards

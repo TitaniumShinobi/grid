@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = Dream Tower
+|image =
+<gallery>
+DreamTower-GTAVee-Front.png|Front
+DreamTower-GTAVee-Rear.png|Rear
+</gallery>
+|caption = 
+|appearances = {{Games|V=y|O=y}}
+|style = Medium-end apartment
+|garage = 6 vehicles <br /> 2 bikes
+|price = $134,000
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = Rank 5
+|game = O
+|apartment = y
+|location = [[Ginger Street]] and [[Vespucci Boulevard]], [[Little Seoul]]
+}}
+
+[[LEAD]]
+The '''Dream Tower''' is a 13-story white residential building in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Apartments in GTA Online
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mid-rise buildings
+Safehouses

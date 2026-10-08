@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Übermacht
+|sign          = 
+<gallery>
+Ubermacht-GTAV-TextLogo.png|Modern
+Ubermacht-GTAIV-OldTextLogo.png|Old
+</gallery>
+|image_label   = Modern
+|image         = Revolter-GTAV-detail.png
+|caption       = [[2017]]–present logo.
+|image_label2  = Old
+|image2        = Ubermacht-Logo-Chrome.png
+|caption2      = Pre–[[2012]] logo.
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+*Automotive manufacturer
+*Heavy machinery manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|divisions     = 
+*[[Sentinel Tuning Division]]
+*Übermacht Performance Tuning Department
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = ''"The Design Of Driving"''<br>''"Automatic Arrogance..."''<br>''"Just Think..."''
+|bawsaq        = {{BAWSAQ/Slider}} '''UMA'''
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Übermacht''' ([[BAWSAQ]]: UMA) is a [[Germany|German]] automotive and heavy machinery manufacturer appearing in the {{HD}} of the {{S}}. The player can buy stocks from them on the [[Bawsaq.com]] website in ''GTA V''.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

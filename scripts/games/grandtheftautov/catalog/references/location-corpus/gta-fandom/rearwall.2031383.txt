@@ -1,0 +1,75 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = fashion
+|name          = Rearwall
+|sign          = Rearwall-Logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     =
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[San Andreas]]
+([[#Locations|See more]])
+|business_type = Outdoor wear
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Rearwall''' is a fashion brand in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+Rearwall-GTAIV-Willis.png|'''Rearwall''' store in [[Willis]], [[Dukes]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small" widths="270px">
+RearWall-GTAV-Store.png|'''Rearwall''' store in ''Grand Theft Auto V''.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Clothing store chains
+Fashion brands

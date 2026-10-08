@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|name = Gav's Ca$h Exchange
+|type = Pawn Shop
+|owner = 
+|location = [[Elgin Ave]]/[[Innocence Blvd]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]<br />[[Jamestown St]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Gav's Ca$h Exchange''' is a pawn shop in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company has stores on the corner of [[Elgin Ave]] and [[Innocence Blvd]] in [[Strawberry]], and on [[Jamestown St]] in [[Rancho]].
+
+
+
+[[Type::Business| ]]
+[[Location::Elgin Ave| ]]
+[[Location::Innocence Blvd| ]]
+[[Location::Strawberry| ]]
+[[Location::Jamestown St| ]]
+[[Location::Rancho| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image= PicturePerfectDrive-GTAV-ULSAView.jpg
+|caption=Picture Perfect Drive near intersection with [[Richman Street]], and [[University of San Andreas, Los Santos|ULSA]] in the background.
+|games={{Games|V=y|O=y}}
+|start=[[Milton Road]]
+|end=[[North Rockford Drive]]
+|map=<gallery>
+PicturePerfectDrive-GTAV-Map.png|Map
+PicturePerfectDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Picture Perfect Drive''', also known as '''Picture Perfect Way''', is a [[List of Street Names|street]] located in [[Richman (HD Universe)|Richman]], [[Vinewood Hills]] and [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Gang Attack]] <small>(near intersection with Cockingend Drive)</small>
+*[[The Richman Hotel|Richman Hotel]]
+*[[Richman Mansion]]
+*[[University of San Andreas, Los Santos|University of San Andreas]] (ULSA)
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

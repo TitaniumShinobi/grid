@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name           = Güffy
+|image          = Guffy-GTAO-Logo3.png
+|type           = clothingstore
+|business_type  = Designer clothing brand
+|games          = {{Games|O=y|VI=y}}
+}}
+
+[[LEAD]]
+'''Güffy''' (pronounced "goofy"), also referred to as '''Güffy G''', is a clothes designer in {{O}}, added as part of the [[GTA Online: Import/Export|Import/Export]] update, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Import/Export
+Businesses in GTA VI
+Clothing in GTA Online
+Fashion brands

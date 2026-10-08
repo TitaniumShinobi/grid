@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = SCRAPYARD
+|business = y
+|activebiz = y
+|type = Scrapyard
+|games = {{Games|V=y|O=y}}
+|image = CarScrapyard-GTAV-Warehouse.jpg
+|caption = 
+|owner = [[Michael De Santa]] <small>(optional)</small><br>[[Franklin Clinton]] <small>(optional)</small><br> [[Trevor Philips]] <small>(optional)</small>
+|image_size = 300
+|employees = Wesley
+|price = $275,000
+|income = $150 per car destroyed
+|location = [[El Burro Heights]]
+|name = Car Scrapyard}}
+
+[[LEAD]]
+The '''Car Scrapyard''' is a scrapyard in ''[[Grand Theft Auto V]]'' located in [[El Burro Heights]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], south-west of the [[Murrieta Oil Field]]. It is a low to medium-quality investment.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Properties
+Properties in GTA V
+Scrap yards

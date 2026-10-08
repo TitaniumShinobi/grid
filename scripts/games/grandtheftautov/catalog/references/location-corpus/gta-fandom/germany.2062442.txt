@@ -1,0 +1,12 @@
+[[INFOBOX]]
+{{Infobox country
+|common_name              = Germany
+|image_flag               = Flag_of_Germany.svg}}
+
+[[LEAD]]
+The '''Federal Republic of Germany''' (German: '''Bundesrepublik Deutschland'''), more commonly known as '''Germany''' (German: '''Deutschland'''), is a country in western [[Europe]], and is the most populous country in the European Union (EU). Its capital and largest city is Berlin. The country is bordered by the [[Netherlands]] to the northwest, [[Belgium]], [[Luxembourg]] and [[France]] to the west, [[Switzerland]] to the southwest, [[Austria]] to the southeast, [[Czech Republic]] and [[Poland]] to the east and [[Denmark]] to the north.
+
+Germany uses the [[USK]] rating system to rate all ''[[Grand Theft Auto]]'' releases, with the majority of the series being rated USK 16+. Due to concerns over violent video games, most ''GTA'' games since {{III}} have been edited for release in Germany. Some examples include: the removal of blood, pedestrians no longer dropping money when killed, no headshots, some missions removed, some weapons missing, and a lack of additional functionality.
+
+[[CATEGORIES]]
+European countries

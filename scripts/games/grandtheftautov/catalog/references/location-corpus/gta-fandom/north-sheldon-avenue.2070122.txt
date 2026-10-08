@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=NorthSheldonAvenue-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Mad Wayne Thunder Drive]] and [[Ace Jones Drive]]
+|end=[[Milton Road]]
+|map=<gallery>
+NorthSheldonAvenue-GTAV-Map.png|Map
+NorthSheldonAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''North Sheldon Avenue''' is a residential [[List of Street Names|street]] in [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*A [[Vinewood Hills Dog Exercise Park|dog exercise park]] can be found on the northeast side of the street, near the connection with Normandy Drive.
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

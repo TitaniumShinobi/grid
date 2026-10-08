@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = NEDS
+|sign          = 
+|image         = Neds-GTAO-LogosShadow.png
+|caption       = 
+|aka           = Nitrous Enhanced Drive Systems
+|games         = {{games|O={{EEEV}} {{DLC|mp2024_01}}|VI=y}}
+|mentioned     = 
+|business_type = [[Nitro]]us-based performance modifications
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Nitrous Enhanced Drive Systems''' ('''NEDS''') is a vehicle performance and parts company appearing in {{O}} as part of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Bottom Dollar Bounties
+Businesses in GTA VI
+Vehicle parts manufacturers

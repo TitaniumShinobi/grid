@@ -1,0 +1,54 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|type          = airline
+|name          = FlyUS
+|sign          = 
+|image_label   = VI
+|image         = FlyUS-GTASAde-AltLogo.png
+|caption       = '''FlyUS''' logo in {{TDE|SA}} and {{VI}}.
+|image_label2  = IV
+|image2        = FlyUS-GTAV-Logo.png
+|caption2      = '''FlyUS''' logo in {{IV}}, {{V}}, and {{O}}.
+|aka           = FlyU6 <small>(email, ''GTA Chinatown Wars'')</small>
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Francis International Airport (HD Universe)|Francis International Airport]], [[Dukes]], [[Liberty City (HD Universe)|Liberty City]]
+*[[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Commercial airliner
+|founded       = [[1983]]
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+<center>'''[[:Category:Airport vehicles|Ground support]]'''</center>
+*[[Perennial (FlyUS)|Perennial]] (FlyUS)
+*[[Feroci (FlyUS)|Feroci]] (FlyUS)
+*[[Airtug]]
+*[[Ripley]]
+<center>'''[[:Category:Airplanes|Airplanes]]'''</center>
+*[[Jet]]
+*[[Shamal]]
+*[[Static Planes|Numerous static aircraft]]
+|weapons       = 
+|taglines      = 
+*"''Live a little, fly with US''"
+*"''Sit back, relax, and shut up''"
+|bawsaq        = 
+|lcn           = {{BAWSAQ/Slider}} '''FUS'''
+|status        = active
+}}
+
+[[LEAD]]
+'''FlyUS''' (stylised as '''flyUS''' and sometimes misspelled as '''FlyU6''') is a commercial airliner appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Airlines
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Commercials

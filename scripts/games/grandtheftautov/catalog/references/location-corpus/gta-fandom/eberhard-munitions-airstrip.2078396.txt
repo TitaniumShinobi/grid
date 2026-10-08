@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|type        = airfield
+|image       = EberhardMunitionsAirstrip-GTAOe.png
+|caption     = Eberhard Munitions Airstrip in {{O}}.
+|games       = {{Games|O=y}}
+|location    = [[Tongva Hills]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|established = [[2025]]
+|owner       = [[Eberhard Munitions]]
+|file_name   = <code>m24_2_mp2024_02_additions_airstrip</code>
+|map         = EberhardMunitionsAirstrip-GTAOe-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Eberhard Munitions Airstrip''' is a small dirt airstrip in [[Tongva Hills]], [[Los Santos County]], appearing in {{O}} as part of the continuation of the [[GTA Online: Agents of Sabotage|Agents of Sabotage]] update.
+
+[[CATEGORIES]]
+Airports
+Locations in GTA Online in Los Santos County
+Locations in GTA Online: Agents of Sabotage

@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 300x300px
+|caption = 
+|game_1 = GTA V
+|name = Hair and Nail Studio
+|type = Hairdressers and Beauty salon
+|owner = 
+|location = [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Hair and Nail Studio''' is a hairdressers and beauty salon located on [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

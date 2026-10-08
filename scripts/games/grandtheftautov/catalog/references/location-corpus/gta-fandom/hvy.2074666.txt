@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = HVY
+|image   = 
+<gallery>
+HVY-GTAO-Logo.png|Logo 1
+Name-IV-HVY.png|Logo 2
+</gallery>
+|caption       = '''HVY''' text logo in ''[[Grand Theft Auto Online]]''.
+|aka           = HVY Industries
+|games         = {{games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+*Vehicle manufacturer
+*Heavy equipment manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+*[[#Vehicles|Vehicles]]
+*[[#Static Vehicles|Heavy equipment]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = {{BAWSAQ/Slider}} '''HVY'''
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''HVY Industries''' is an [[America]]n heavy equipment and vehicle manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Agricultural Companies
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Heavy equipment manufacturers
+Vehicle manufacturers

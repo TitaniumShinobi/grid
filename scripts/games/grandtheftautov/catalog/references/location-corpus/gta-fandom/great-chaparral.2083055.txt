@@ -1,0 +1,52 @@
+[[INFOBOX]]
+{{Infobox location
+|image           = GreatChaparral-GTAV-LookingWest.png
+|caption         = Overview of Great Chaparral facing west.
+|location        = [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games           = {{Games|V=y|O=y}}
+|type            = region
+|map             = <gallery>
+GreatChaparral-IngameGPS-GTAV-Map.png|Great Chaparral
+GreatChaparral-IngameGPS-GTAV-LosSantosCountyMap.png|Los Santos County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+|map2            = <gallery>
+GreatChaparral-GTAV-OfficialMap-TheManual.png
+</gallery>
+|map_caption2   = Location on the map ([[GTAV: The Manual]]).
+|pscanner       = PoliceScanner-GTAV-Neighborhood-GreatChaparral.ogg
+}}
+
+[[LEAD]]
+'''Great Chaparral''' is an area in [[Los Santos County]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Roads and Streets]]
+*[[Baytree Canyon Road]]
+*[[Fort Zancudo Approach Road]]
+*[[Galileo Road]]
+*[[Route 68]]
+*[[Joshua Road]]
+*[[Senora Road]]
+
+[[SECTION:2:Places of Interest]]
+*[[Arthur's Pass Trails]]
+*[[Baytree Canyon]]
+*[[Cherry Pie Farm]]
+*[[Foreclosed Farm]]
+*[[Hill Valley Church]]
+*[[Mine Shaft]]
+*[[TPI Meth Lab]]
+*[[Martin Madrazo's Lock-up]]
+
+[[SECTION:2:Businesses]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]] <small>([[Zancudo River]])</small>
+*[[Discount Store]] <small>([[Zancudo River]])</small>
+*[[Big O Fruit Juice|Big O Juice Stand]] <small>([[Vinewood Hills]])</small>
+*[[Stoner Cement Works]] (Senora Road facility). <small>([[Grand Senora Desert]])</small>
+
+[[CATEGORIES]]
+Highlands
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Neighborhoods
+Zones

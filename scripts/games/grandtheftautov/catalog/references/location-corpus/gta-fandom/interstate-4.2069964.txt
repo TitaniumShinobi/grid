@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = INTERSTATE HIGHWAY
+|name              = Interstate 4
+|image2            = Interstate 4 shield.svg
+|caption2          = Interstate 4 shield
+|image             = 
+|caption           = 
+|games             = {{Games|V=y|O=y}}
+|highway_eastend   = {{rmark|US|15}} - [[Palomino Highlands]]
+|highway_westend   = {{rmark|I|5}} - [[Little Seoul]], [[Strawberry]], [[La Puerta]]
+|highway_junctions = 
+*{{rmark|SA|17}} - [[La Mesa]]
+*{{rmark|US|20}} and {{rmark|I|2}} - [[Murrieta Heights]], [[La Mesa]] 
+|pscanner    = 
+|map         = 
+|mapcaption  = Location on the map (red) in {{V}}.
+}}
+
+[[LEAD]]
+'''Interstate 4''', also known as '''I-4''' and the '''Olympic Freeway''', is a freeway in [[Los Santos (HD Universe)|Los Santos]] and the southeast of [[Blaine County]] in {{V}} and {{O}}.
+
+[[SECTION:2:Route description]]
+Interstate 4 runs between [[Interstate 5]] to the west and the [[Palomino Highlands]] to the east. It is co-signed with [[U.S. Route 15]] east of [[San Andreas State Route 17]] until the I-4 designation ends at [[Sustancia Road]].
+
+I-4 begins at a {{WP|Interchange (road)|semi-directional T interchange}} with the upper deck of [[Interstate 5]]. The Olympic Freeway, as it's called in Los Santos, borders the [[Downtown Los Santos (HD Universe)|Downtown]] and [[South Los Santos]] areas. It is completely elevated with four lanes on each side and the [[Los Santos Transit]] Arrow line and [[Strawberry Station]] running along the freeway's median.
+
+Once it leaves the downtown area, It crosses [[San Andreas State Route 17]] at a "scissor-loop" interchange before flying over the {{WP|Four Level Interchange|Four Level Interchange}}-inspired intersection of [[U.S. Route 20]] and [[Interstate 2]] one thousand feet later. At this interchange, the route loses two lanes in each direction, and becomes co-signed with [[U.S. Route 15]]. From this point, it becomes the [[Palomino Freeway]], a rural highway that bisects the [[Tataviam Mountains]] and [[Palomino Highlands]]. Interstate 4 ends at a two-stack semi-directional T interchange with [[Sustancia Road]].
+
+Although the Interstate system connects all of Los Santos, it is not possible to drive directly on Interstate 4 to Los Santos International Airport. To get there, the player must intersect with Interstate 5 in Little Seoul, then drive approximately 1400 ft and exit to [[San Andreas State Route 22]] and immediately exit to [[San Andreas State Route 19]].
+
+The speed limit on Interstate 4 is 60 mp/h or 100 km/h.
+
+[[CATEGORIES]]
+Freeways
+Interstates
+Structures in GTA Online in San Andreas
+Structures in GTA V in San Andreas

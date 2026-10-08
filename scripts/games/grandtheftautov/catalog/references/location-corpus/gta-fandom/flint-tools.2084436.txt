@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = tools
+|name          = Flint Tools
+|sign          = 
+|image         = Flint-GTAO-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpimportexport}}}}
+|mentioned     = 
+|business_type = Automotive tools and garage equipment
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Flint Tools''' is a tools manufacturer appearing in {{O}} as part of the [[GTA Online: Import/Export|Import/Export]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Import/Export
+Tool manufacturers

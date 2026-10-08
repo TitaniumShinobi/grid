@@ -1,0 +1,329 @@
+[[LEAD]]
+'''Vespucci Blvd''' is a street in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The boulevard starts in [[Murrieta Heights]] in the east and ends in [[Vespucci Beach]] in the southwest running through [[La Mesa]], [[Mission Row]], [[Legion Square]],  [[Pillbox Hill]], [[Little Seoul]] and [[Vespucci Canals]]. There are connections to [[Bay City Ave]], [[Calais Ave]], [[Decker St]], [[Elgin Ave]], [[El Rancho Blvd]], [[Fantastic Pl]], [[Ginger St]], [[Low Power St]], [[Magellan Ave]], [[Palomino Ave]], [[Peaceful St]], [[Popular St]], [[Power St]], [[Sinner St]], [[South Rockford Dr]], [[Strawberry Ave]], [[Supply St]] and the [[Vespucci Beach Boardwalk]]. The boulevard also runs under the [[La Puerta Freeway]], and over the [[Del Perro Freeway]], [[Little Bighorn Ave]] and the [[Los Santos River]]. It is based off Olympic Blvd in Los Angeles
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[2057 Vespucci Blvd]]
+| [[Little Seoul]]
+| [[Palomino Ave]]
+| Residence
+|-
+| [[24/7]]
+| [[Little Seoul]]
+|
+| Convenience store
+|-
+| [[A&R Market]]
+| [[Vespucci Beach]]
+| [[Magellan Ave]]
+| Convenience store
+|-
+| [[Ammu-Nation]]
+| [[La Mesa]]
+|
+| Weapons
+|-
+| [[Arirang Plaza]]
+| [[Little Seoul]]
+|
+| Plaza
+|-
+| [[Bar Fes & Restaurant]]
+| [[Pillbox Hill]]
+|
+| Food and drink
+|-
+| [[Bean Machine]]
+| [[Pillbox Hill]]
+|
+| Food and drink
+|-
+| [[Bean Machine]]
+| [[Little Seoul]]
+| [[Palomino Ave]]
+| Food and drink
+|-
+| [[Bean Machine]]
+| [[Little Seoul]]
+|
+| Food and drink
+|-
+| [[Bean Machine]]
+| [[Pillbox Hill]]
+| [[Elgin Ave]]
+| Food and drink
+|-
+| [[Big Dan Vision Optometry]]
+| [[Little Seoul]]
+|
+| Healthcare
+|-
+| [[Bite!]]
+| [[Pillbox Hill]]
+|
+| Food and drink
+|-
+| [[Blick]]
+| [[Little Seoul]]
+|
+| Electronics
+|-
+| [[Caesars Auto Parking]]
+| [[Little Seoul]]
+| [[Calais Ave]]
+| Parking lot
+|-
+| [[Ca$h Advance Loans]]
+| [[Mission Row]]
+|
+| Loans
+|-
+| [[Chihuahua Hotdogs]]
+| [[Pillbox Hill]]
+|
+| Food and drink
+|-
+| [[Darnell Bros.]]
+| [[La Mesa]]
+| [[Popular St]]
+| Clothing factory
+|-
+| [[Digital Den]]
+| [[Little Seoul]]
+| [[Palomino Ave]]
+| Electronics
+|-
+| [[Downtown Liquor Deli]]
+| [[Mission Row]]
+| [[Sinner St]]
+| Food and drink
+|-
+| [[Dream Tower]]
+| [[Little Seoul]]
+| [[Ginger St]]
+| Residential
+|-
+| data-sort-value="Emissary, The"| [[The Emissary]]
+| [[Pillbox Hill]]
+| 
+| Hotel
+|-
+| [[Family Pharmacy]]
+| [[Mission Row]]
+| [[Fantastic Pl]]
+| Pharmacy
+|-
+| [[FLEECA]]
+| [[Pillbox Hill]]
+|
+| Bank
+|-
+| [[Frenchie's Restaurant]]
+| [[Pillbox Hill]]
+| [[Elgin Ave]]
+| Food and drink
+|-
+| [[Go Postal]]
+| [[Pillbox Hill]]
+| [[Peaceful St]]
+| Postal service
+|-
+| [[Ground & Pound Café]]
+| [[Mission Row]]
+| 
+| Food and drink
+|-
+| [[Gruppe Sechs]]
+| [[Pillbox Hill]]
+| [[Alta St]]
+| Security
+|-
+| [[Hearty Taco]]
+| [[Murrieta Heights]]
+| [[El Rancho Blvd]]
+| Food and drink
+|-
+| [[Hookah Palace]]
+| [[Pillbox Hill]]
+| [[Power St]]
+| Hotel
+|-
+| [[Hotel Wisdahl]]
+| [[Pillbox Hill]]
+| [[Elgin Ave]]
+| Hotel
+|-
+| [[Instant Shoe Repair]]
+| [[Pillbox Hill]]
+| [[Strawberry Ave]]
+| Clothing
+|-
+| [[J's Bonds]]
+| [[Mission Row]]
+|
+| Bail bonds
+|-
+| [[J's Bonds]]
+| [[Mission Row]]
+|
+| Bail bonds
+|-
+| [[Kayton Banking Group]]
+| [[Little Seoul]]
+| [[Ginger St]]
+| Bank
+|-
+| [[La Puerta Apartments]]<br />(<small>under construction</small>)
+| [[Little Seoul]]
+| [[Calais Ave]]
+| Residential
+|-
+| [[Léyer]]
+| [[La Mesa]]
+|
+| Beauty supplies
+|-
+| [[Limey's]]
+| [[Mission Row]]
+| [[Strawberry Ave]]
+| Food and drink
+|-
+| [[Lombank]]
+| [[Pillbox Hill]]
+| [[Low Power St]]/[[Power St]]
+| Bank
+|-
+| [[Look-See Opticians]]
+| [[Little Seoul]]
+|
+| Healthcare
+|-
+| [[LS Quik]]
+| [[Pillbox Hill]]
+| [[Peaceful St]]
+| Newspaper
+|-
+| [[Lucky Plucker]]
+| [[Little Seoul]]
+| [[Palomino Ave]]
+| Food and drink
+|-
+| [[Maibatsu|Maibatsu Motors Inc.]]
+| [[Murrieta Heights]]
+| [[Supply St]]
+| Automobile manufacturer
+|-
+| [[Maze Bank]]
+| [[Pillbox Hill]]
+| [[Low Power St]]/[[Power St]]
+| Bank
+|-
+| [[Mile High Club]]<br />(<small>under construction</small>)
+| [[Pillbox Hill]]
+| [[Alta St]]/[[Power St]]
+| Club
+|-
+| data-sort-value="Moda, La"| [[La Moda]]
+| [[Pillbox Hill]]
+|
+|
+|-
+| [[National Transfer & Storage Co.]]
+| [[La Mesa]]
+| [[Popular St]]
+| Storage
+|-
+| [[O'Deas Pharmacy]]
+| [[Mission Row]]
+|
+| Pharmacy
+|-
+| [[Pipe Down Cigars]]
+| [[Mission Row]]
+|
+| Smoking
+|-
+| [[Post Op]]
+| [[Pillbox Hill]]
+| [[Alta St]]
+| Postal service
+|-
+| [[RON]] filling station
+| [[La Mesa]]
+| [[Popular St]]
+| Filling station
+|-
+| [[Rusty Brown's Ring Donuts]]
+| [[Mission Row]]
+|
+| Food and drink
+|-
+| [[Save-a-¢ent]]
+| [[Little Seoul]]
+|
+| Discount store
+|-
+| [[San Andreas Parking Counsel]] multi-storey car park
+| [[Little Seoul]]
+| 
+| Car park
+|-
+| [[S.Ho Korean Noodle House]]
+| [[Little Seoul]]
+|
+| Food and drink
+|-
+| [[Spines Bookshop]]
+| [[Pillbox Hill]]
+|
+| Book store
+|-
+| [[Sunshine Apartments]]
+| [[Little Seoul]]
+| [[Ginger St]]
+| Residential
+|-
+| [[Templar Hotel]]
+| [[Mission Row]]
+| [[Fantastic Pl]]
+| Hotel
+|-
+| [[TW@]] Internet Café
+| [[Little Seoul]]
+|
+| Internet café
+|-
+| [[TW@]] Internet Café
+| [[Little Seoul]]
+|
+| Internet café
+|-
+| data-sort-value="Vault, The"| [[The Vault]]
+| [[Mission Row]]
+| [[Strawberry Ave]]
+| Nightclub
+|-
+| data-sort-value="Vault, The"| [[The Venetian]]
+| [[Vespucci Canals]]/[[Vespucci Beach]]
+| [[Magellan Ave]]/[[Vespucci Beach Boardwalk]]
+| Hotel
+|-
+| [[Vespucci Police Station]]
+| [[Vespucci Canals]]
+| [[South Rockford Dr]]
+| Law enforcement
+|-
+| [[Yogarishima]]
+| [[Little Seoul]]
+| [[Calais Ave]]
+| Clothing
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

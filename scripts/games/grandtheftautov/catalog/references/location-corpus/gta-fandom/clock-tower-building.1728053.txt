@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = ClockTowerBuilding-GTAV.png
+|caption        = The building, as seen from Vespucci.
+|games          = {{games|V=y|O=y}}
+|location       = [[San Andreas Avenue]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|use            = Office Building
+|height         = Unknown
+}}
+
+[[LEAD]]
+The '''Clock Tower Building''' is a high-rise office & residential building in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is located on [[San Andreas Avenue]] in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Art Deco buildings
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Landmarks
+Mid-rise buildings
+Unnamed buildings

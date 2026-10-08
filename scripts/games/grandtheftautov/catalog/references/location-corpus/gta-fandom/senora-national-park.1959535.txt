@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Senora National Park
+|location = [[Grand Senora Desert]], [[Blaine County]]
+|image = 
+<gallery>
+SenoraNationalPark-GTAV-AerialView.png|Aerial view
+SenoraNationalPark-GTAV.png|Sign
+</gallery>
+|games = {{Games|V=y|O=y}}
+|Name Change=NATIONAL PARK}}
+
+[[LEAD]]
+The '''Senora National Park''' is a large desert wilderness area and national park in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in the [[Grand Senora Desert]] and [[Sandy Shores]], [[Blaine County]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+National parks

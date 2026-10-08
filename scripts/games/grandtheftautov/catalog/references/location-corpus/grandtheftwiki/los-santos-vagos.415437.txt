@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{infobox gang
+| image = LosSantosVagos-GTASA-members.jpg
+| caption = Members of the Los Santos Vagos in GTA San Andreas.
+| game = SA
+| game2 = V
+| game3 = O
+| locations = [[Las Colinas]]<br>[[Los Flores]]<br>[[East Beach]]<br>[[El Corona]] <small>(after "[[The Green Sabre]]" mission)</small> <br>[[Little Mexico]] <small>(after "[[The Green Sabre]]" mission)</small> <br>[[Unity Station]] <small>(after "[[The Green Sabre]]" mission)</small> <br> [[Cypress Flats]] <small>(HD Universe)</small> <br> [[East Los Santos in GTA V|East Los Santos]] <small>(HD Universe)</small> <br> [[El Burro Heights]] <small>(HD Universe)</small> <br> [[Rancho]] <small>(HD Universe)</small> <br> [[Strawberry]] <small>(HD Universe, sometimes)</small>
+| leaders = Unknown
+| type = Hispanic Street gang
+| enemies = [[Varrios Los Aztecas]]<br> [[Grove Street Families]]<br>[[Ballas]]<br>[[San Fierro Triads]]<br>[[Da Nang Boys]]
+| affiliations = [[Ballas]]<br> [[Russian Mafia]]<br> [[San Fierro Rifa]]<br> [[Loco Syndicate]] <small>(? - 1992)</small> <br>[[C.R.A.S.H.]] <small>(? - 1992)</small> <br>[[Big Smoke]] <small>(1992)</small> <br> [[The Lost Brotherhood]] <small>(HD Universe)</small>
+| colors = Yellow
+| cars = [[Hermes]]<br>[[Tornado]]<br>[[Oceanic]]
+| weapons = [[Pistol]]<br>[[Micro Uzi]] <small>(gang war only)</small> <br>[[Baseball bat]] <small>(gang war only)</small> <br>[[Pump Action Shotgun]] <small>(gang war only)</small> <br>[[AK-47]] <small>(gang war only)</small> <br>[[MP5]] <small>(gang war/missions only)</small> <br>[[M16|M4]] <small>([[End of the Line]] mission only)</small>
+| businesses = Drug trafficking/manufacturing<br>Protection
+| fronts = [[Big Smoke's Crack Palace]]<br>[[East Los Santos]] gang house
+| members = [[Big Poppa]] <small>(deceased)</small><br> [[Freddy (GTA SA)|Freddy]] <small>(deceased)</small> <br> [[Esteban Jimenez]] <small>(HD Universe)</small> <br> [[H]] <small>(HD Universe)</small> <br> [[Gustavo Mota]] <small>(HD Universe, formerly)</small> <br>[[Jose (GTA V)|Jose]] <small>(HD Universe, deceased)</small> <br> 
+}}
+
+[[LEAD]]
+The '''Los Santos Vagos''' (also known as the '''LSV''' or just the '''Vagos''') is a Los Santos-based Hispanic street gang in [[Grand Theft Auto: San Andreas]] and [[Grand Theft Auto V]].
+
+[[CATEGORIES]]
+Gangs in GTA San Andreas
+Gangs in GTA V
+Latino Gangs
+Street Gangs

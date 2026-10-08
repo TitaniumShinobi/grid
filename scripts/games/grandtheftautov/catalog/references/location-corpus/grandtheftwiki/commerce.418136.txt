@@ -1,0 +1,35 @@
+[[LEAD]]
+'''Commerce''' is a district in [[Los Santos in GTA III Era|Los Santos]], [[San Andreas in GTA III Era|San Andreas]]. It surrounds the area of [[Pershing Square]]. North of Commerce is [[Downtown Los Santos in GTA III Era|Downtown Los Santos]], while south of Commerce is [[Verdant Bluffs]]. West of Commerce are [[Verona Beach]], [[Market, Los Santos|Market]] and [[Los Santos Conference Center|Conference Center]], while to the east are the districts of [[Little Mexico]] and [[Idlewood]]. As the name suggests, the district is a commercial district; a lot of businesses and office buildings are found in this area, and there are almost no residences found in the area. Commerce is based on the [[wp:Civic Center, Los Angeles|Civic Center]] and [[wp:Commerce, California|Commerce]] districts of Los Angeles.
+
+[[SECTION:2:Businesses]]
+*[[Atrium]]
+*Estate Jewelry
+*[[Fifth Ave Antiques]]
+*[[Gangsta Bail Bonds]]
+*[[I Didn’t Do It Bail Bonds]]
+*[[Los Santos Jewelry Mart]]
+*[[Roboi's Food Mart]]
+*[[Qwikbonds]]
+*[[Ugaladajara Jewelry Plaza]]
+*[[Vinewood Bail Bonds]]
+*Vinewood Wigs
+*[[Will's Snack Shop]]
+*[[Yars Jewelry]]
+
+[[SECTION:2:Neighbouring areas]]
+{{Location
+|Centre    = Conference Center
+|North     = [[Market, Los Santos|Market]]
+|Northeast = [[Pershing Square]]
+|East      = [[Los Santos City Hall|City Hall]]
+|Southeast = [[El Corona]]
+|South     = [[Verdant Bluffs]]
+|Southwest = [[Verona Beach]]
+|West      = Verona Beach
+|Northwest = [[Marina, Los Santos|Marina]]
+}}
+
+{{Los Santos}}
+
+[[CATEGORIES]]
+Areas in Los Santos

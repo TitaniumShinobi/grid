@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = 
+|name          = Kronos
+|sign          = 
+|image_label   = 
+|image         = Kronos-Logo.png
+|caption       = 
+|image_label2  = 
+|image2        = 
+|aka           = 
+|games         = {{Games|IV=y|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Legion Square]], [[Los Santos (HD Universe)| Los Santos]]
+|business_type = Watch and clock manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = The Gigante<br>Ära<br>Geneve
+|vehicles      = 
+|weapons       = 
+|taglines      = ''"The end of time"''
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Kronos''' is a Swiss watch manufacturer in the {{S}} that appears in the {{HD}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores
+Companies

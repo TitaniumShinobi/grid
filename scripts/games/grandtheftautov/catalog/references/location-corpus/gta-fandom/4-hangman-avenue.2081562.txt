@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 4 Hangman Avenue
+|image = 4HangmanAvenue-GTAO-Exterior.jpg
+|caption = The house's exterior.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Townhouse
+|garage = 6 vehicles <br /> 2 bikes
+|price = $175,000|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5}}
+
+[[LEAD]]
+'''4 Hangman Avenue''' is a house available to buy in ''[[Grand Theft Auto Online]]'' via the [[Dynasty 8|Dynasty 8 Real Estate]] website, or the sign outside the driveway. It is part of the [[Independence Day Special]].
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online

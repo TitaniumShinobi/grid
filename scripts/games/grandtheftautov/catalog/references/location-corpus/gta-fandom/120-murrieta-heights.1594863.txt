@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 120 Murrieta Heights
+|image = Dynasty8-GTAV-HighEnd-Image-0120MurrietaHeights.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = High-end garage
+|garage = 10 vehicles <br> 3 bikes
+|price = [[Money|$]]150,000
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5
+|map         = 120MurrietaHeights-GTAV-Map.jpg
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''120 Murrieta Heights''' is a warehouse complex in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Garages in GTA Online
+Properties in GTA Online
+Warehouses

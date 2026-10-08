@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = POLICE STATION
+|style          = 
+|type           = policestation
+|image       = RockfordHillsPoliceStation-GTAV.png
+|games          = {{Games|V=y|O=y}}
+|caption     = 
+|location    = [[Eastbourne Way]] and [[Abe Milton Parkway]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|map         = RockfordHillsPoliceStation-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Rockford Hills Police Station''' is a police station of the [[Los Santos Police Department (HD Universe)|Los Santos Police Department]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Locations in GTA V in Los Santos
+Police stations

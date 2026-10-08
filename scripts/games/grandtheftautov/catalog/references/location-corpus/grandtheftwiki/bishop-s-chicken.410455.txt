@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 300x300px
+|caption = 
+|game_1 = GTA V
+|name = Bishop's Chicken
+|type = [[:Category:Restaurants|Fast food restaurant]]
+|owner = 
+|location = [[Davis Ave]]/[[Macdonald St]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]<br />[[Tataviam Mountains]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Bishop's Chicken''' is a fast food restaurant chain appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company has locations at the corner of [[Davis Ave]] and [[Macdonald St]] in [[Davis]], [[Los Santos in GTA V|Los Santos]] and another in the [[Tataviam Mountains]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

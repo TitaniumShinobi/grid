@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{infobox business
+|image = PixelEmporium-GTAO-Logo.png
+|taglines = ''Level Up Your Arcade.''
+|founder = [[Lester Crest]]
+|type = Arcade Machine Sale Business
+|games =''[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Pixel Emporium''' is an arcade machine marketplace featured in ''[[Grand Theft Auto Online]]'' added as a part of [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update.
+
+[[CATEGORIES]]
+Arcade Games
+Media in GTA Online
+Websites

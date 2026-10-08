@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Liquors
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = Convenience store
+|owner = 
+|location = [[Brouge Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Liquors''' is a convenience store located on [[Brouge Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The store sells liquor, sundries, lottery tickets and has a delicatessen. There is a small area for customers to park their vehicles behind the store.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

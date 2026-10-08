@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox_location
+|type       = restaurant
+|sign       = TheSplitKipper-GTAV-Logo.png
+|image      = 
+|caption    =
+|games      = {{Games|V=y|O=y}}
+|location   = [[Bay City Avenue]], [[Vespucci Canals]]
+|accessible = No
+|status     = active
+}}
+
+[[LEAD]]
+'''The Split Kipper''' is a seafood restaurant that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Casual restaurants
+Seafood restaurants

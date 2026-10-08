@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=Views-SupplyStreet-GTAV.png
+|caption=End to end views of the street.
+|games={{Games|V=y|O=y}}
+|start=[[Popular Street]]
+|end=Popular Street
+|map=<gallery>
+SupplyStreet-GTAV-Map.png|Map
+SupplyStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Supply Street''' is an industrial [[List of Street Names|street]] that runs through [[La Mesa]], [[Murrieta Heights]] and [[Mirror Park]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[120 Murrieta Heights]]
+
+[[SECTION:2:Businesses]]
+*[[Casey's Diner]]
+*[[Liquor Market]] <small>(corner of [[Popular Street]])</small>
+*[[Maibatsu Corporation (HD Universe)|Maibatsu Motors Inc.]]
+*Mufflers & Tires Auto Shop
+*Scale
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

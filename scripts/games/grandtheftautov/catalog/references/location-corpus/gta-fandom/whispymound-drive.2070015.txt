@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=WhispymoundDr-GTAV-Mansion.jpg
+|caption=South entrance to Whispymound Drive on [[Wild Oats Drive]] with [[Franklin Clinton|Franklin's]] [[3671 Whispymound Drive|mansion]] in the background.
+|games={{Games|V=y|O=y}}
+|start=[[Wild Oats Drive]]
+|end=[[Baytree Canyon Road]]
+|map=<gallery>
+WhispymoundDrive-GTAV-Map.png|Map
+WhispymoundDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Whispymound Drive''' is a southwest-northeast [[List of Street Names|road]] located in [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox location
+|image   = CrystalHeights-GTAV.jpg
+|games   = {{Games|V=y|O=y}}
+|location= [[Chamberlain Hills]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Crystal Heights''' is an apartment complex in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on the street of [[Forum Drive]] in [[Chamberlain Hills]], [[Los Santos (HD Universe)|Los Santos]]. The complex is right next to the [[All Swell]] apartment complex.
+
+[[CATEGORIES]]
+Housing Projects
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

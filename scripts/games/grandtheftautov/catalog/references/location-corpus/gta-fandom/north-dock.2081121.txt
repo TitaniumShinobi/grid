@@ -1,0 +1,107 @@
+[[INFOBOX]]
+{{Infobox location
+|mpheist4 inf escape = y
+|image = CayoPerico-GTAO-NorthDock.png
+|caption = Overview of North Dock.
+|games = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location = [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|map           = <gallery>
+NorthDock-GTAO-Map.png|North Dock
+NorthDock-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption   = Location on the map (red).
+}}
+
+[[LEAD]]
+'''North Dock''' is a boatyard in [[Cayo Perico]], [[Colombia]], which appears as an [[:Category:Infiltration Points in The Cayo Perico Heist|infiltration]] and [[:Category:Escape Points in The Cayo Perico Heist|escape point]] for [[The Cayo Perico Heist]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Points of Interest]]
+{{Main|Heist Prep: Gather Intel#Points of Interest}}
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Bolt Cutters
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|On a rusty generator at North Dock.
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location6.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location6Map.png|center|thumb]]
+|-
+|2
+|On a wooden boat at North Dock.
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location7.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location7Map.png|center|thumb]]
+|-
+|3
+|At a large fuel tank in east North Dock.
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location8.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location8Map.png|center|thumb]]
+|}
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Grappling Equipment
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|On a water tower at North Dock.
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location7.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location7Map.png|center|thumb]]
+|-
+|2
+|On a building in North Dock.
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location8.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location8Map.png|center|thumb]]
+|-
+|3
+|On a tower in south North Dock.
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location9.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location9Map.png|center|thumb]]
+|}
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Guard Clothing
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|Next to some wooden pallets in front of a house at North Dock.
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location5.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location5Map.png|center|thumb]]
+|-
+|2
+|Next to a building in east North Dock.
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location6.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location6Map.png|center|thumb]]
+|-
+|3
+|Next to a small red wooden boat in North Dock.
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location7.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location7Map.png|center|thumb]]
+|}
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Supply Truck
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|Next to a building in North Dock.
+|[[File:TheCayoPericoHeist-GTAO-SupplyTruck-Location2.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-SupplyTruck-Location2Map.png|center|thumb]]
+|}
+
+[[CATEGORIES]]
+Escape Points in The Cayo Perico Heist
+Infiltration Points in The Cayo Perico Heist
+Locations in GTA Online in Cayo Perico
+Seaports

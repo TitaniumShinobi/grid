@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = drink
+|name          = Rainé
+|sign          = Rainé-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|V=y|O=y}}
+|mentioned     = 
+|business_type = {{WP|Bottled water}}
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = 
+|taglines      = 
+*"''L'eau du ciel''"
+|bawsaq        = 
+|lcn           = {{BAWSAQ/Slider}} '''RAI'''
+|status        = active
+}}
+
+[[LEAD]]
+'''Rainé''' is a bottled water manufacturer featured in ''[[Grand Theft Auto IV]]'', ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The player can buy stocks from them on the [[Liberty City National Exchange]] website in ''Grand Theft Auto V''.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Water brands

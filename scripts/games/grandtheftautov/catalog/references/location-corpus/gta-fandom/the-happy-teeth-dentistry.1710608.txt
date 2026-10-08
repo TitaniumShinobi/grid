@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = HappyTeethDentistry-GTAV.jpg
+|name = The Happy Teeth Dentistry
+|taglines = 
+|type = Dentist
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[South Rockford Drive]], [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''The Happy Teeth Dentistry''' is a dentist in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Dental practices

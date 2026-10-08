@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = HIGHWAY
+|name              = Los Santos Freeway
+|number            = 
+|caption2          = 
+|image             = LosSantosFreeway-GTAV.png
+|caption           = 
+|games             = {{Games|V=y|O=y}}
+|highway_northend  = [[Senora Freeway]]
+|highway_southend  = [[Strawberry Avenue]]
+|highway_junctions = 
+|pscanner    = 
+|map         = LosSantosFreeway-GTAV-Map.jpg
+|mapcaption  = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+|altnames    = 
+}}
+
+[[LEAD]]
+The '''Los Santos Freeway''' (co-signed [[Interstate System in GTA V|I-1]] and [[Route 13]]) is a freeway in [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[SECTION:2:Route description]]
+The highway begins from the south on [[Strawberry Avenue]], at the intersection with the [[Del Perro Freeway]] in [[Textile City]]. It begins as a six lane urban freeway traveling through northeast, intersecting the [[Vinewood Racetrack|Racetrack]] and the [[Vinewood Bowl]]. It then begins to turn north while narrowing to a rural four-lane freeway at the [[Route 18]] interchange, as it skirts along the western edge of the [[Tataviam Mountains]]. This part is co-signed with [[Route 13]]. At the intersection of the [[Palomino Freeway]], I-1 loses its concurrency, and the freeway continues as the [[Senora Freeway]].
+
+[[CATEGORIES]]
+Freeways
+Locations in GTA Online in Los Santos
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos
+Locations in GTA V in Los Santos County

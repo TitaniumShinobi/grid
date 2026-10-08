@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=MadWayneThunderDrive-GTAV.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Ace Jones Drive]] and [[North Sheldon Avenue]]
+|end=[[Dorset Drive]] and [[Heritage Way]]
+|map=<gallery>
+MadWayneThunderDrive-GTAV-Map.png|Map
+MadWayneThunderDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Mad Wayne Thunder Drive''' is a [[List of Street Names|street]] in [[Vinewood Hills]] and [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Rockford Hills Sign]] - corner of [[Boulevard Del Perro]].
+
+[[SECTION:2:Businesses]]
+*[[Bob Mulét]]
+*[[Cougari]]
+*[[Didier Sachs (HD Universe)|Didier Sachs]]
+*[[Lombank]]
+*[[Luxury Autos]]
+*[[Mors Mutual Insurance]]
+*[[Pegasus|Pegasus Concierge]]
+*[[Pfister Design]] 
+*[[Record A Studios]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

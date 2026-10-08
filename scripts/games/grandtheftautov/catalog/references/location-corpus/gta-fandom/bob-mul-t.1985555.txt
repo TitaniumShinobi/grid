@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|business = y
+|activebiz = y
+|name = Bob Mulét
+|caption = The logo
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = Yes
+|altnames = 
+|products = Beauty products
+|bawsaq = 
+|oldcaption = Vertical logo
+|lcn = {{BAWSAQ/Slider}} '''BOM'''
+|ceo = Bob Mulét
+|image = Bmlogo-GTAV.png
+|darklogo = y
+|image_size = 300
+|condition = Active
+|taglines = 
+|games = {{Games|V=y|O=y}}
+|type = Hair & Beauty Salon
+|map = 
+|reference = 
+|oldlogo = BobMulet-GTAV-Logo-Texture1.png
+|oldlogo1 = BobMulet-GTAV-Logo-Texture2.png
+|oldlogo2 = BobMulet-GTAV-Logo-Texture3.png
+}}
+
+[[LEAD]]
+'''Bob Mulét''' is a high-end hair and beauty salon in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+BobMulet-GTAV-DaylightFront.png|[[Mad Wayne Thunder Drive]] in [[Rockford Hills]].
+</gallery>
+
+[[CATEGORIES]]
+Barber shops
+Businesses in GTA Online
+Businesses in GTA V
+Salons

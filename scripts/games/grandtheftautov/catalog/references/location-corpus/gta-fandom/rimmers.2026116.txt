@@ -1,0 +1,82 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = n
+|type          = fashion
+|name          = 
+|sign          = Rimmers-Logo.svg
+|image_label   = v
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     =
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = [[1974]] {{Small|(see logo)}}
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = "''Sight for sore eyes''"
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Rimmers''' is a clothes and sunglasses manufacturer in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Location Influences]]
+*The [[Suffolk]] location is based on the {{WP|Sunglass Hut}} branch at {{URL|https://maps.app.goo.gl/w8rUJ1RcD27Wp5Bf9|157 Spring Street}} in {{WP|SoHo, Manhattan}}. This is also the building that inspired the [[Yogarishima]] branch nearby and the [[Back Passage-Garnet Street Clothing Store]].
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|Rimmers-GTAIV-CityHall.jpg|'''Rimmers''' at [[233 Liberty Lane]], [[Calcium Street]] and [[Liberty Lane]], [[City Hall (GTA IV)|City Hall]].
+|Rimmers-GTAIV-MiddleParkEast.jpg|'''Rimmers''' on [[Bismarck Avenue]] and [[Nickel Street]], [[Middle Park East]].
+|Rimmers-GTAIV-Purgatory.jpg|'''Rimmers''' on [[Frankfort Avenue]] and [[West Way]], [[Purgatory]].
+|Rimmers-GTAIV-StarJunction.jpg|'''Rimmers''' at the [[Bawsaq Building]], [[Burlesque]], [[Star Junction]].
+|JacksonCooperBuilding-GTAIV-Storefronts.png|'''Rimmers''' at the [[Cooper Jackson Building]], Burlesque, Star Junction.
+|Rimmers-GTAIV-Suffolk.png|'''Rimmers''' on [[Feldspar Street]], [[Suffolk]] ([[:File:Rimmers-GTAIV-SuffolkBuilding.png|building view]].)
+}}
+{{Gallery
+|game = VO
+|Rimmers-GTAV-Burton.png|'''Rimmers''' on [[Hawick Avenue]], [[Burton]] {{Small|(opening soon)}}.
+|Rimmers-GTAV-MissionRow.png|'''Rimmers''' on [[Atlee Street]], [[Mission Row]].
+|RimmersSunglasses-GTAVee.png|'''Rimmers''' on [[Vespucci Beach Sidewalk]], [[Vespucci Beach]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

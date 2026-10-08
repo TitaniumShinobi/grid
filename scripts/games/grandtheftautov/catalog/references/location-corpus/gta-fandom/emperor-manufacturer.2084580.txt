@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = 
+|name = Emperor Motors
+|image = Emperor-GTAO-Logo.png
+|type = vehicles
+|founded = [[1986]]
+|games = {{games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|business_type = Vehicle manufacturer
+|products      = [[#Vehicles|Vehicles]]
+|reference = {{WP|Lexus}}
+}}
+
+[[LEAD]]
+'''Emperor''' (Japanese: '''エンペラー''', Hepburn: '''Enperā''') is a [[Japan|Japanese]] automobile manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

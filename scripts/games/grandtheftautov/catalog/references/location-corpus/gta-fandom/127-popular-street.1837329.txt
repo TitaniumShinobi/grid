@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|lightlogo = y
+|image          = 127PopularStreet-GTAOee-PopularStreetSide.png
+|games          = {{Games|V=y|O=y}}
+|type           = warehouse
+|location       = [[Popular Street]] and [[Vespucci Boulevard]], [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]]
+|structure_type = Industrial building
+|caption        = Building viewed from Popular Street.
+|map            = 127PopularStreet-GTAV-Map.jpg
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+'''127 Popular Street''' is an industrial building that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos

@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|lightlogo = y
+|image = LamarsDepot-GTAOee-Front.jpg
+|image_size =
+|games = {{Games|V=y|O=y}}
+|location = [[Murrieta Heights]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+|type = depot
+|caption = Front view of the depot.
+|owner = [[Lamar Davis]]
+}}
+
+[[LEAD]]
+'''Lamar's Depot''' is a depot appearing in {{V}} and {{O}}, owned by [[Lamar Davis]]. It is part of a large warehouse located on the border of [[Murrieta Heights]] and [[El Burro Heights]]. The depot is in the Murrieta Heights (west) side of the warehouse.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Warehouses

@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|warehouse = y
+|lightlogo = y
+|image = Lester'sWarehouse-GTAO.png
+|image_size =
+|games = {{Games|V=y|O=y}}
+|location = [[Murrieta Heights]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+|caption = Overview of the warehouse.
+|owner = [[Lester Crest]]
+}}
+
+[[LEAD]]
+'''Lester's Warehouse''' is a warehouse in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is located in [[Murrieta Heights]] and owned by [[Lester Crest]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Warehouses

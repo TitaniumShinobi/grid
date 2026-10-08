@@ -1,0 +1,58 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = neighborhood
+|name           = Murrieta Heights
+|sign           = 
+|image          = MurrietaHeights-GTAV.png
+|caption        = Overview of '''Murrieta Heights''' in {{V}}.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|established    = 
+|state          = [[State of San Andreas (HD Universe)|San Andreas]]
+|county         = [[Los Santos County]]
+|city           = [[Los Santos (HD Universe)|Los Santos]]
+|pop            = 
+|motto          = 
+|pscanner       = PoliceScanner-GTAV-Neighborhood-MurrietaHeights.ogg
+|pscannernotes  = 
+|map            = 
+<gallery>
+MurrietaHeights-GTAV-Map.png|Murrieta Heights
+MurrietaHeights-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Murrieta Heights''' is a neighborhood in the [[East Los Santos|east region]] of [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], appearing in {{V}} and {{O}}. It borders [[El Burro Heights]] to the south, [[Mirror Park]] and [[East Vinewood]] to the north, [[Tataviam Mountains]] to the east, and [[La Mesa]] to the west.
+
+[[SECTION:2:Places of Interest]]
+*[[120 Murrieta Heights]]
+*[[Grand Banks Steel Foundry]]
+*[[Lester's Warehouse]]
+*[[Murrieta Oil Field]]
+
+[[SECTION:2:Roads and Streets]]
+*[[El Rancho Boulevard]]
+*[[Labor Place]]
+*[[Palomino Freeway]]
+*[[San Andreas Avenue]]
+*[[Supply Street]]
+*[[Vespucci Boulevard]]
+
+[[SECTION:2:Businesses]]
+*[[Auto Repairs]]
+*[[Hardwood & Lumber Supply]]
+*[[LT Weld Supply Co.]]
+*[[Maibatsu Factory]]
+*[[Rob's Liquor]]
+*[[RON]] gas station
+*[[Thorns]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

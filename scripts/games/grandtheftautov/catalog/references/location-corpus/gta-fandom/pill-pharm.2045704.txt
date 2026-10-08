@@ -1,0 +1,88 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = pharmacy
+|name          = Pill-Pharm
+|sign          = 
+|image         = PillPharm-Logo.png
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[State of Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations_2|See more]])
+|business_type = 
+|founded       = 
+|ceo           = 
+|employees     = 
+|taglines      = 
+*"''Swallow - It's Good For You.''"
+*"''Pop On In - It's Good For You.''"
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = [[File:Bleeter GTAVpc pillpharm.png|40px|right]] @pillpharm
+|lifeinvader   = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Pill-Pharm''' is a pharmacy chain appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+<div class="mw-collapsible-content">
+*The [[Koresh Square]] branch in [[Alderney City]] is based on the now-closed Valu-Plus store formerly located at {{URL|https://maps.app.goo.gl/G6FfCeX4oiZRN4VdA|697 Broad Street}} in {{WP|Newark, New Jersey}}.
+*The [[Frankfort Avenue]] and [[Jade Street]] branch in [[Star Junction]] is based on the now-closed {{WP|Duane Reade}} pharmacy formerly located at {{URL|https://maps.app.goo.gl/5EMwsS7KNeCRmimA7|661 8th Avenue}} in {{WP|Hell's Kitchen, Manhattan}}.
+*The [[Luddite Row]] branch in [[Lower Easton]] is based on the now-closed Fancy Pharmacy formerly located at {{URL|https://maps.app.goo.gl/1EdZGMS6BZNCKtrWA|131 Essex Street}} in the {{WP|Lower East Side}}.
+*The [[Deadwood Street]] branch in [[South Slopes]] is modeled after the now-closed {{WP|Rite Aid}} pharmacy formerly located at {{URL|https://maps.app.goo.gl/2F6NsYgew47KM2kR6|725 Manhattan Avenue}} in {{WP|Greenpoint, Brooklyn}}.
+*The [[Dukes Boulevard]] branch in [[East Island City]] is modeled after the Astoria Plaza located at {{URL|https://maps.app.goo.gl/PR8kmo4ACB962Vpm9|28-56 Steinway Street}} in {{WP|Astoria, Queens}}.
+</div>
+</div>
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|PillPharm-GTAIV-AlderneyCityKoreshSq.jpg|[[Koresh Square]], [[Alderney City]], [[State of Alderney|Alderney]].
+|PillPharm-GTAIV-LeftwoodFranklinSt.jpg|[[Franklin Street (Alderney)|Franklin Street]], [[Leftwood]], Alderney.
+|PillPharm-GTAIV-LeftwoodLongJohnAve.jpg|[[Long John Avenue]], Leftwood, Alderney {{Small|([[:File:PillPharm-GTAIV-LeftwoodLongJohnAveNight.jpg|night view]].)}}
+|PillPharm-GTAIV-Easton.png|[[Albany Avenue]] and [[Hematite Street]], [[Easton]], [[Algonquin]].
+|PillPharm-GTAIV-LowerEastonEmerald.png|[[Emerald Street]] and Albany Avenue, [[Lower Easton]], Algonquin.
+|PillPharm-GTAIV-LowerEastonFeldspar.png|[[Feldspar Street]] and [[Luddite Row]], Lower Easton, Algonquin.
+|PillPharm-GTAIV-FrankfurtAve&WarditeSt2.jpg|[[Frankfort Avenue]] and [[Wardite Street]], [[Northwood]], Algonquin.
+|PillPharm-GTAIV-FrankfurtAve&WarditeSt1.png|[[Frankfort Avenue]] and [[Wardite Street]], [[Northwood]], Algonquin.
+|PillPharm-GTAIV-MiddleParkEast.png|[[Bismarck Avenue]], [[Middle Park East]], Algonquin.
+|PillPharm-GTAIV-Purgatory.png|[[Frankfort Avenue]], [[Purgatory]], Algonquin.
+|PillPharm-GTAIV-StarJunction.jpg|[[Frankfort Avenue]] and [[Jade Street]], [[Star Junction]], Algonquin.
+|PillPharm-GTAIV-BohanIndustrial.png|[[Alcatraz Avenue]], [[Industrial (GTA IV)|Industrial]], [[Bohan]] {{Small|([[:File:PillPharm-GTAIV-BohanIndustrialNight.png|night view]].)}}
+|PillPharm-GTAIV-Outlook.png|[[Deadwood Street]], [[South Slopes]], [[Broker]].
+|PillPharm-GTAIV-Steinway.jpg|[[Dukes Boulevard]], [[East Island City]], [[Dukes]].
+|PillPharm-GTAIV-Willis.png|[[Big Willis Mall]], [[Saratoga Avenue]], [[Willis]], Dukes.
+}}
+{{Gallery
+|game = CW
+|PillPharm-GTACW-Easton.png|[[Albany Avenue]] and [[Hematite Street]], [[Easton]], [[Algonquin]].
+|AlDente's-GTACW-AbsentTheExchangeColumbusAve.png|[[Columbus Avenue]] and [[Amethyst Street]], [[The Exchange (GTA IV)|The Exchange]], Algonquin.
+|PillPharm-GTACW-LowerEastonFeldspar.png|[[Feldspar Street]] and Albany Avenue, [[Lower Easton]], Algonquin.
+|PillPharm-GTACW-MiddleParkEast.png|[[Bismarck Avenue]], [[Middle Park East]], Algonquin.
+|PillPharm-GTACW-FrankfurtAve&WarditeSt1.png|[[Frankfort Avenue]] and [[Wardite Street]], [[Northwood]], Algonquin.
+|PillPharm-GTACW-Purgatory.png|Frankfort Avenue, [[Purgatory]], Algonquin.
+|PillPharm-GTACW-StarJunction.png|Frankfort Avenue and [[Jade Street]], [[Star Junction]], Algonquin.
+|PillPharm-GTACW-Outlook.png|[[Deadwood Street]], [[Outlook]], [[Broker]].
+|PillPharm-GTACW-EIC.png|[[Dukes Boulevard]], [[East Island City]], [[Dukes]].
+|PillPharm-GTACW-Willis.png|[[Big Willis Mall]], [[Saratoga Avenue]], [[Willis]], Dukes.
+}}
+{{Gallery
+|game = VO
+|PillPharm-GTAVee-DorsetDriveOfficeBuilding.png|[[Dorset Drive]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Pharmacy chains
+Smuggled Items in GTA Online

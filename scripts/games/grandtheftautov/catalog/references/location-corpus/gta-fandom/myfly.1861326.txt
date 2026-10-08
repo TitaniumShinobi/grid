@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = airline
+|name          = MyFly
+|sign          = 
+|image         = MyFly-GTAV-logo.jpg
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Regional airliner
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+<center>'''[[:Category:Airplanes|Aircraft]]'''</center>
+*[[Shamal]]
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''MyFly''' is a regional airline in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Airlines
+Businesses in GTA Online
+Businesses in GTA V

@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=UnionRoad-Street-GTAV.jpg
+|caption=Union Road at its intersection with the [[Senora Freeway]].
+|games={{Games|V=y|O=y}}
+|start=[[Senora Freeway]], [[San Chianski Mountain Range]]
+|end=[[Grapeseed Main Street]] corner [[Joad Lane]], [[Grapeseed]]
+|map=<gallery>
+UnionRoad-GTAV-Map.png|Map
+UnionRoad-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Union Road''' is a two-way road located in the [[San Chianski Mountain Range]] and [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Lucky Jim's Ranch]]
+*[[O'Neil Ranch]]
+
+[[SECTION:2:Businesses]]
+*[[HJ Silos Galileo Park]]
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

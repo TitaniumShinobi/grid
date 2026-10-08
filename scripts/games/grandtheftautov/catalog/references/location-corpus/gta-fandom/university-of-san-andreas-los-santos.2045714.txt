@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = university
+|name           = University of San Andreas, Los Santos
+|sign           = 
+|image          = ULSA-GTAVe-Overview.png
+|seal           = [[File:ULSA-GTAV-Logo.png|thumb|center|100px|University seal.]]
+|caption        = 
+|aka            = {{H:title|Order of the text on the seal|The University of Los Santos, San Andreas}}<br>{{H:title|Signage on campus|ULSA}}<br>{{H:title|T-Shirts|USALS}}<br>{{H:title|Pedestrian dialogue & football team pennant, likely developer oversight|UCLS}}
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Richman Street]], [[Richman (GTA V)|Richman]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|opened         = 
+|motto          = 
+*''Quisque comoedus est''
+*''Resumo ad nauseam''
+}}
+
+[[LEAD]]
+The '''University of San Andreas, Los Santos''' ('''ULSA''', '''USALS'''), also referred to as '''The University of Los Santos, San Andreas''', or sometimes '''UCLS''' is a university appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Education
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Universities

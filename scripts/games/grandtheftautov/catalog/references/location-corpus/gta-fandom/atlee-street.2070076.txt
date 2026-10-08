@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=AtleeStreet-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Little Bighorn Avenue]], [[Mission Row]]
+|end=[[Strawberry Avenue]], Mission Row
+|map=<gallery>
+AtleeStreet-GTAV-Map.png|Map
+AtleeStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Atlee Street''' is a [[List of Street Names|street]] in [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}. It runs from [[Little Bighorn Avenue]] in the east to [[Strawberry Avenue]] in the west. The street also connects to [[Sinner Street]]. The street is one-way between Strawberry Avenue and Sinner Street. The one-way section is home to a large number of small jewelry stores.
+
+[[SECTION:2:Places of Interest]]
+*[[Mission Row Police Station]] <small>(corner of Sinner Street)</small>
+
+[[SECTION:2:Businesses]]
+*[[Bean Machine]]
+*Dallas Fashion <small>(corner of Sinner Street)</small>
+*[[Elkridge Hotel]] <small>(corner of Strawberry Avenue)</small>
+*Gear and Clothing
+*Gem's Jewelry (x2)
+*[[Happy Shark]]
+*Hot Rocks
+*Ice Planet Jewelry
+*Jilguero Jewelers
+*L.S. Gentstyle (x2)
+*[[Little Gems Jewelry]]
+*The Look Depository <small>(corner of Little Bighorn Avenue)</small>
+*[[Noodle Exchange]] <small>(corner of Strawberry Avenue)</small>
+*[[Pizza This...]]
+*[[Rimmers]]
+*Ring Midas
+*[[Sneaky Footwear]]
+*Sound Sanctuary Ind.
+*[[Supersonic]]
+*Timesnatchers
+*Wholesale Mart
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

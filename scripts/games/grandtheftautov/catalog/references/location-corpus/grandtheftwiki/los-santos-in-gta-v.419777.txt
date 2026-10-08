@@ -1,0 +1,64 @@
+[[INFOBOX]]
+{{infobox city|
+| name = Los Santos in GTA V
+| image = [[File:LosSantos-GTAV-firsttrailer.jpg|300px]]
+| caption = 
+| games = [[Grand Theft Auto V]]
+| name = Los Santos 
+| pop = 4,000,000
+| state = [[San Andreas in GTA V|San Andreas]]
+| motto = Unknown
+}}
+
+[[LEAD]]
+'''Los Santos''' is a fictional city in the state of [[San Andreas in GTA V|San Andreas]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The city is bordered by [[Blaine County]] to the north and the [[Pacific Ocean]] to the east, south and west. The city has various cultures visible throughout from the film-making [[Vinewood in GTA V|Vinewood]] to the gang-controlled areas like [[Strawberry]]. The city of Davis is located within Los Santos. Los Santos is based on the real-life city of [[:wp:Los Angeles|Los Angeles, California]]. A different version of Los Santos previously [[Los Santos in GTA III Era|appeared]] in [[Grand Theft Auto: San Andreas]].
+
+[[SECTION:2:Neighborhoods]]
+* [[Alta]] (''[[:wp:Los Feliz|Los Feliz]]'')
+* [[Backlot City]] (''[[:wp:Culver City|Culver City]]'')
+* [[Banning]] (''[[:wp:Wilmington, Los Angeles|Wilmington]]'')
+* [[Burton]] (''[[:wp:Beverly Grove, Los Angeles|Beverly Grove]]'')
+* [[Chamberlain Hills]] (''[[:wp:Baldwin Village (Los Angeles)|Baldwin Village]]'')
+* [[Cypress Flats]] (''[[:wp:Long Beach, California|Long Beach]]'')
+* [[Davis]] (''[[:wp:Compton, California|Compton]]'')
+* [[Del Perro]] (''[[:wp:Santa Monica, California|Santa Monica]]'')
+* [[Downtown Los Santos in GTA V|Downtown Los Santos]] (''[[:wp:Downtown Los Angeles|Downtown Los Angeles]]'')
+* [[Downtown Vinewood]] (''[[:wp:Hollywood, Los Angeles|Downtown Hollywood]]'')
+* [[East Los Santos in GTA V|East Los Santos]] (''[[:wp:East Los Angeles (region)|East Los Angeles]]'')
+* [[East Vinewood]] (''[[:wp:East Hollywood, Los Angeles|East Hollywood]]'')
+* [[El Burro Heights]] (''[[:wp:Signal Hill, California|Signal Hill]]'')
+* [[Elysian Island]] (''[[:wp:Terminal Island, Los Angeles|Terminal Island]]'')
+* [[Hawick]] (''[[:wp:Melrose, Los Angeles|Melrose]]'')
+* [[La Mesa]] (''[[:wp:El Sereno, Los Angeles|El Sereno]]'')
+* [[La Puerta]] (''[[:wp:Marina Del Rey|Marina Del Rey]]/[[:wp:San Pedro, Los Angeles|San Pedro]]'')
+* [[Legion Square]] (''[[:wp:Pershing Square, Los Angeles|Pershing Square]]'')
+* [[Little Seoul]] (''[[:wp:Koreatown, Los Angeles|Koreatown]]'')
+* [[Los Santos International Airport in GTA V|Los Santos International Airport]] (''[[:wp:Los Angeles International Airport|Los Angeles International Airport]]'')
+* [[Mirror Park]] (''[[:wp:Echo Park, Los Angeles|Echo Park]]'')
+* [[Mission Row]] (''[[:wp:Skid Row, Los Angeles|Skid Row]]'')
+* [[Morningwood]] (''[[:wp:Westwood, Los Angeles|Westwood]]'')
+* [[Murrieta Heights]] (''[[:wp:Boyle Heights, Los Angeles|Boyle Heights]]'')
+* [[Murrieta Oil Field]] (''[[:wp:Long Beach Oil Fields|Long Beach Oil Fields]]'')
+* [[Pacific Bluffs]] (''[[:wp:Pacific Palisades, Los Angeles|Pacific Palisades]]'')
+* [[Pillbox Hill]] (''[[:wp:Bunker Hill, Los Angeles|Bunker Hill]]'')
+* [[Port of Los Santos]] (''[[:wp:Port of Los Angeles|Port of Los Angeles]]'')
+* [[Rancho]] (''[[:wp:Watts, Los Angeles|Watts]]'')
+* [[Richman in GTA V|Richman]] (''[[:wp:Bel-Air, Los Angeles|Bel-Air]]'')
+* [[Rockford Hills]] (''[[:wp:Beverly Hills, California|Beverly Hills]]'')
+* [[Strawberry]] (''[[:wp:Crenshaw, Los Angeles|Crenshaw]]'')
+* [[Terminal]] (''[[:wp:Long Beach Harbor|Long Beach Harbor]]'')
+* [[Textile City]] (''[[:wp:Fashion District, Los Angeles|Fashion District]]'')
+* [[Vespucci]] (''[[:wp:Venice, Los Angeles|Venice]]'')
+* [[Vespucci Canals]] (''[[:wp:Venice Canals|Venice Canals]]'')
+* [[Vinewood in GTA V|Vinewood]] (''[[:wp:Hollywood, Los Angeles|Hollywood]]'')
+* [[Vinewood Hills]] (''[[:wp:Hollywood Hills, Los Angeles|Hollywood Hills]]'')
+* [[West Vinewood]] (''[[:wp:West Hollywood|West Hollywood]]'')
+
+[[SECTION:2:Landmarks]]
+{{main|Landmarks in Los Santos in GTA V}}
+Many landmarks from the [[:wp:Greater Los Angeles Area|Greater Los Angeles Area]] appear in Los Santos in GTA V. See [[Landmarks in Los Santos in GTA V]] for a full list.
+
+[[CATEGORIES]]
+Cities
+Locations
+Los Santos in GTA V

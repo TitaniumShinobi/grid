@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = electronics
+|name          = Premier
+|sign          = 
+|image         = Premier-Logo-GTAO.png
+|caption       = 
+|aka           = 
+|games         = {{games|O=y}}
+|mentioned     = 
+|business_type = Electronics Manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Premier''' is an electronics and software company featured in ''[[Grand Theft Auto Online]]'' added as part of the [[GTA Online: After Hours|After Hours]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Electronics companies
+Nightclubs

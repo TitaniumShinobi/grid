@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = DISPENSARY
+|style         = 
+|type          = 
+|name          = Smoke on the Water Prescription Cannabis
+|sign          = Smoke-on-the-Water-Logo.png
+|image         = GTA-5-Smoke-on-the-Water.png
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Vespucci Beach Sidewalk]], [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = Cannabis dispensary
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+*[[Franklin Clinton]] <small>(Owner, optional)</small>
+*[[Jared]] <small>(Manager)</small>
+|price         = $204,000
+|income        = $9,300 per week
+|products      = 
+|vehicles      = [[Pony (Smoke On The Water)|Pony]]
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|unlockedby    = [[Friends Reunited]]
+}}
+
+[[LEAD]]
+'''Smoke on the Water''' is a medical [[Weed|marijuana]] dispensary, located on the [[Vespucci Beach Sidewalk]], [[Vespucci Beach]] in [[Los Santos (HD Universe)|Los Santos]] in {{VO}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pharmacies
+Properties in GTA V

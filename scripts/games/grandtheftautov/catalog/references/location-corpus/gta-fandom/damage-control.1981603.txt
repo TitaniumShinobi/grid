@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = Damage Control
+|image        = DamageControl-GTAO-Thumbnail.png
+|location     = [[State of San Andreas (HD Universe)|San Andreas]]
+|game           = {{games|O=y}}
+|type           = CasinoWork
+|fail         = 
+|for          = [[Agatha Baker]]
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] <small>(organization)</small>
+*1 to 8 players <small>(motorcycle club)</small>
+|todo         = 
+*Enter the <span class="v-hud-friendly">truck</span>.
+*Deliver the truck to the <span class="v-hud-location">Casino</span>.
+|reward = 
+*[[Money|Cash]], [[Chips]], and [[Reputation|RP]].
+|target = 
+}}
+
+[[LEAD]]
+'''Damage Control''' is a secret [[Casino Work]] mission featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update. It is a freeroam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[SECTION:3:Possible Locations]]
+<gallery position="center" hideaddbutton="true" spacing="small" widths="270px">
+DamageControl-GTAO-Harmony.png|[[Harmony]].
+</gallery>
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

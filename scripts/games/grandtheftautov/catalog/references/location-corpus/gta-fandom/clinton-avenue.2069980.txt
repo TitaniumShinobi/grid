@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = ClintonAve-GTAV-PitchersView.jpg
+|caption = Clinton Avenue, with [[Pitchers]] on the right.
+|games = {{Games|V=y|O=y}}
+|start = [[Elgin Avenue]], [[Vinewood Hills]]
+|end = [[Las Lagunas Boulevard]], [[Downtown Vinewood]]
+|map = <gallery>
+ClintonAvenue-GTAV-Map.png|Map
+ClintonAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Clinton Avenue''' is a two-way [[List of Street Names|street]] in [[Vinewood Hills]] and [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses and Places]]
+'''Downtown Vinewood'''
+*[[24/7 (HD Universe)|24/7]] <small>(enterable)</small>
+*[[Abandoned FIB Lockup]] <small>(behind the [[Vinewood Wax Haven]])</small>
+*[[Adult XXX Book Store]]
+*[[Butch]]
+*[[Discount Beauty Store]] <small>(at the Globe Oil gas station)</small>
+*[[Fruit of the Vine]]
+*[[Gem's Jewelry]]
+*[[Glitterati]]
+*[[Globe Oil]] [[Filling Stations|gas station]] <small>(corner of Fenwell Place)</small>
+*[[Happy Shark]]
+*[[Ice Planet Jewelry]]
+*[[Mano a Mano]]
+*[[Muscle Gymnasium]]
+*[[Paradise Sauna]]
+*[[Pitchers]] <small>(corner of Alta Street)</small>
+*[[S.F.T. Pawn]] <small>(corner of Power Street)</small>
+*[[Tool Shed]]
+*[[Up-n-Atom Burger]] <small>(corner of Las Lagunas Boulevard)</small>
+*[[Von Crastenburg Hotel]] <small>(corners of Power Street and Meteor Street)</small>
+*[[Wysiwig]]
+
+'''Vinewood Hills'''
+*[[CNT Building]] <small>(corner of Elgin Avenue)</small>
+*[[LSDWP Vinewood Substation|LSDWP Substation]] <small>(corner of Elgin Avenue)</small>
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

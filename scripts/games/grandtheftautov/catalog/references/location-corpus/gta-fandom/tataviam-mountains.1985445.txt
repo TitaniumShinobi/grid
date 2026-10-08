@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox location
+|image = TataviamMountains-GTAV-Montage.png
+|caption = Clockwise from top: overview of the area, [[Land Act Dam]] and [[Land Act Reservoir|Reservoir]], [[Tataviam Truckstop]].
+|location      = [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games         = {{Games|V=y|O=y}}
+|type          = highlands
+|pscanner      = PoliceScanner-GTAV-Neighborhood-TataviamMountains.ogg
+|map           = <gallery>
+TataviamMountains-IngameGPS-GTAV-Map.png|Tataviam Mountains
+TataviamMountains-IngameGPS-GTAV-LosSantosCountyMap.png|Los Santos County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+The '''Tataviam Mountains''' is a mountain range featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is located east of [[Los Santos (HD Universe)|Los Santos]], between [[Los Santos Freeway (HD Universe)|Los Santos Freeway]] and [[Palomino Freeway]].
+
+[[SECTION:2:Places of Interest]]
+*[[Land Act Dam]] ({{WP|Pacoima Dam}})
+*[[Land Act Reservoir]] (Pacoima Reservoir)
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Bishop's Chicken]]
+*[[RON|RON gas station]]
+
+[[CATEGORIES]]
+Highlands
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Neighborhoods
+Zones

@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = storage
+|name          = Carson Self Storage
+|sign          = CarsonSelfStorage-GTAV-Sign.png
+|image         = 
+|caption       =
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = *[[Brouge Avenue]], [[Davis]], [[Los Santos County]]
+*[[Senora Freeway]], [[Blaine County]]
+|business_type = Self-storage company
+|founded       =
+|founder       =
+|taglines      = ''"For all of your storage requirements!"''
+|status        = active
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Carson Self Storage''' is a self-storage company in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+CarsonSelfStorage-GTAVe-Davis.png|[[Brouge Avenue]], [[Davis]].
+CarsonSelfStorage-GTAVe-BlaineCounty.png|[[Senora Freeway]], [[Blaine County]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Storage companies

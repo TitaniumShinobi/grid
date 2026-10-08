@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = 
+|name          = Classic Edition
+|sign          = Classic-Edition-GTAO-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpstunt}}}}
+|mentioned     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|taglines      = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Classic Edition (C.E.)''' is an unspecified business appearing in {{O}} as part of the [[GTA Online: Cunning Stunts|Cunning Stunts]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Cunning Stunts

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Laser Prints
+|image = LaserPrints-GTAV.jpg
+|type = printshop
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|location = [[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Laser Prints''' is a closed printing store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Print shops

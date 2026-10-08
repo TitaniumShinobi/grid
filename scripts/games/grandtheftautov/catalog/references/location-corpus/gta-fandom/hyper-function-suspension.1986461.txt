@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Hyper Function Suspension
+|sign          = HFS-GTAO-Logo.png
+|oldcaption4   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpstunt}}}}
+|mentioned     = 
+|business_type = Suspension manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Hyper Function Suspension (HFS)''' is a suspension manufacturer appearing in {{O}}, as part of the [[GTA Online: Cunning Stunts|Cunning Stunts]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Cunning Stunts
+Vehicle parts manufacturers

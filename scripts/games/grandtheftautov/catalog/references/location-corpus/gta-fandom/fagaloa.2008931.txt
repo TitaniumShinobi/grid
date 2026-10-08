@@ -1,0 +1,87 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name                = Fagaloa
+|front_image         = Fagaloa-GTAO-front.png
+|rear_image          = Fagaloa-GTAO-rear.png
+|caption             = A '''Fagaloa''' in ''[[Grand Theft Auto Online]]''.
+|class               = [[:Category:Sports Classics class|Sports Classics]] {{Small|(''GTA Online'')}}
+|body_style          = [[:Category:Station wagons|2-door station wagon]]
+|capacity            = 2 {{Small|(driver and passenger)}}
+|manufacturer        = [[Vulcar]]
+|price               = [[Money|$]]335,000 {{Small|([[Southern San Andreas Super Autos]]; [[#Locations|no longer available]])}}
+|games               = {{Games|O={{EEEV}} {{DLC|mpassault}}}}
+|type            = midsize
+|make_year           = 1950s
+|swankness           = 1/5
+|dashtype            = Peyote {{Small|(needle)}}<br>[[File:Peyote-Dials-GTAV.png|thumb|center|170px]]<br>Peyote {{Small|(dial texture)}}<br>[[File:Peyote-GTAV-DialSet.png|thumb|center|170px]]
+|inttxd              = Peyote White
+|wheeltype           = Muscle
+|flags               = 
+{{Flags|FLAG_CARGOBOB_HOOK_UP_CHASSIS}}<br>
+{{Flags|FLAG_INCREASE_CAMBER_WITH_SUSPENSION_MOD}}<br>
+|modelsets           = 
+|modelname           = fagaloa
+|handlingname        = FAGALOA
+|textlabelname       = FAGALOA
+|roadspawn           = No
+|roadspawnmaxcol     = 10
+|roadspawnfreq       = 5
+|roadspawntrailer    = 
+|roadspawnidendis    = 20
+|roadspawndrivers    = 
+|roadspawngroups     = 
+|roadspawnlicense    = Standard White - 100%
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The [[Vulcar]] '''Fagaloa''' is a two-door station wagon added to ''[[Grand Theft Auto Online]]'' as part of the [[GTA Online: Southern San Andreas Super Sport Series|Southern San Andreas Super Sport Series]] update.
+
+[[SECTION:2:Locations]]
+*Available for purchase from [[Southern San Andreas Super Autos]] for [[Money|$]]335,000.
+**No longer available; [[:Category:Vehicles removed for purchase in GTA Online: San Andreas Mercenaries|removed]] from the website as part of the [[GTA Online: San Andreas Mercenaries|San Andreas Mercenaries]] update.
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Fagaloa
+|manufacturer  = Vulcar
+|class         = Sports Classics 
+|image         = Fagaloa-GTAO-RGSC-MainNew.jpg
+|caption       = Main image (after 2019).
+|image2        = Fagaloa-GTAO-RGSC-Action.jpg
+|caption2      = "Action" image.
+|image3        = Fagaloa-GTAO-RGSC-Main.jpg
+|caption3      = Main image (prior to 2019).
+|speed         = 64.386162
+|accel         = 52.499996
+|braking       = 25.833332
+|traction      = 71.969696
+|seats         = 2
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = sssa
+|schematic     = GenericEstate
+}}
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Fagaloa}}
+{{Defaultradio|game=O|defaultgroup=country}}
+
+[[CATEGORIES]]
+Mid-size cars
+Shooting brakes
+Sports Classics class
+Station wagons
+Vehicles in GTA Online: Southern San Andreas Super Sport Series
+Vehicles manufactured by Vulcar
+Vehicles manufactured in the 1950s
+Vehicles purchasable from Premium Deluxe Motorsport
+Vehicles purchasable from Southern San Andreas Super Autos
+Vehicles removed for purchase in GTA Online: San Andreas Mercenaries

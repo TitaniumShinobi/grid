@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox location
+|image = BraddockFarm-AerialandGround2Def-GTAV.png
+|games = {{Games|V=y|O=y}}
+|location = [[Braddock Pass]], [[Mount Chiliad (HD Universe)|Mount Chiliad]], [[Blaine County]]
+|accessible = Yes
+}}
+
+[[LEAD]]
+'''Braddock Farm''' is a small farm in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located at the base of [[Mount Chiliad (HD Universe)|Mount Chiliad]] in [[Braddock Pass]], [[Blaine County]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

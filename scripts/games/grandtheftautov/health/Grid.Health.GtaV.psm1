@@ -2,11 +2,24 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 $gameRoot = Split-Path -Parent $PSScriptRoot
+$script:GridGtaScriptsRoot = Split-Path -Parent (Split-Path -Parent $gameRoot)
+$sharedHealthRoot = Join-Path $script:GridGtaScriptsRoot 'health'
+. (Join-Path $sharedHealthRoot 'Grid.GameUserDataRoots.ps1')
+. (Join-Path $sharedHealthRoot 'Grid.Evidence.ps1')
+. (Join-Path $sharedHealthRoot 'Grid.DiagnosticResult.ps1')
+. (Join-Path $sharedHealthRoot 'Grid.DiagnosticAssessment.ps1')
+. (Join-Path $sharedHealthRoot 'Grid.WindowsEvidence.ps1')
+. (Join-Path $sharedHealthRoot 'collectors\Get-GridWindowsApplicationFailureEvidence.ps1')
+. (Join-Path $sharedHealthRoot 'collectors\Get-GridWindowsErrorReportingEvidence.ps1')
+. (Join-Path $sharedHealthRoot 'collectors\Get-GridWindowsProcessModuleEvidence.ps1')
 $collectorRoot = Join-Path $PSScriptRoot 'collectors'
 . (Join-Path $collectorRoot 'Test-GridGtaConnectedContext.ps1')
 . (Join-Path $collectorRoot 'Get-GridGtaInstallationInventory.ps1')
 . (Join-Path $collectorRoot 'Get-GridGtaInstallationSet.ps1')
 . (Join-Path $collectorRoot 'Resolve-GridGtaSetupReadiness.ps1')
+. (Join-Path $collectorRoot 'Resolve-GridGtaRequestContext.ps1')
+. (Join-Path $collectorRoot 'Get-GridGtaCrashInvestigationEvidence.ps1')
+. (Join-Path $collectorRoot 'Resolve-GridGtaCrashAssessment.ps1')
 $setupRoot = Join-Path $gameRoot 'setup'
 . (Join-Path $setupRoot 'New-GridGtaDeploymentPlan.ps1')
 . (Join-Path $setupRoot 'Invoke-GridAuthorizedGtaDeployment.ps1')
@@ -58,4 +71,44 @@ function Invoke-GridGtaHealthAdapter {
     }
 }
 
-Export-ModuleMember -Function Test-GridGtaConnectedContext, Get-GridGtaInstallationId, Get-GridGtaInstallationInventory, Get-GridGtaInstallationSet, Resolve-GridGtaSetupReadiness, Invoke-GridGtaBaseline, Invoke-GridGtaHealthAdapter, New-GridGtaDeploymentPlan, Invoke-GridAuthorizedGtaDeployment
+function Invoke-GridGtaCrashInvestigation {
+    <#
+    .SYNOPSIS
+    Runs the authorized read-only GTA crash evidence callback.
+    .DESCRIPTION
+    The shared request transaction owns case persistence and receipts. This
+    adapter returns evidence and an unresolved deterministic assessment; it
+    never launches the game, writes a case, or performs remediation.
+    #>
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory)][string]$Request,
+        [Parameter(Mandatory)][string]$CaseId,
+        [Parameter(Mandatory)][string]$CaseDirectory,
+        [Parameter(Mandatory)]$ResolvedContext,
+        [datetime]$SinceUtc = ([datetime]::UtcNow.AddDays(-120)),
+        [hashtable]$KnownFolders,
+        $ApplicationFailureEvidence,
+        $WindowsErrorReportingEvidence,
+        $ProcessModuleEvidence
+    )
+    if ([string]$ResolvedContext.status -cne 'Resolved') {
+        return [pscustomobject][ordered]@{
+            Tool = 'Grid.Health.GtaV'; Status = 'NeedsContext'; TerminalState = 'NeedsContext'; CaseId = $CaseId
+            CaseDirectory = $CaseDirectory; Evidence = @(); DiagnosticResult = $null
+            Detail = 'The authorized callback did not receive a resolved account-connected GTA context.'; ChangedExternalState = $false
+        }
+    }
+    $package = Get-GridGtaCrashInvestigationEvidence -Context $ResolvedContext -KnownFolders $KnownFolders -SinceUtc $SinceUtc `
+        -ApplicationFailureEvidence $ApplicationFailureEvidence -WindowsErrorReportingEvidence $WindowsErrorReportingEvidence `
+        -ProcessModuleEvidence $ProcessModuleEvidence
+    $assessment = Resolve-GridGtaCrashAssessment -EvidencePackage $package -CaseId $CaseId
+    [pscustomobject][ordered]@{
+        Tool = 'Grid.Health.GtaV'; Status = 'Completed'; TerminalState = 'EvidencePartial'; CaseId = $CaseId
+        CaseDirectory = $CaseDirectory; Evidence = @($package.evidence); EvidencePackage = $package
+        Assessment = $assessment; DiagnosticResult = $assessment.diagnosticResult
+        Detail = $assessment.nextObservation; ChangedExternalState = $false
+    }
+}
+
+Export-ModuleMember -Function Test-GridGtaConnectedContext, Get-GridGtaInstallationId, Get-GridGtaInstallationInventory, Get-GridGtaInstallationSet, Resolve-GridGtaSetupReadiness, Resolve-GridGtaRequestContext, Get-GridGtaCrashInvestigationEvidence, Resolve-GridGtaCrashAssessment, Invoke-GridGtaCrashInvestigation, Invoke-GridGtaBaseline, Invoke-GridGtaHealthAdapter, New-GridGtaDeploymentPlan, Invoke-GridAuthorizedGtaDeployment

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = GalileoHouse-GTAV.png
+|caption        = Front view of the building.
+|games          = {{games|V=y|O=y}}
+|location       = [[Hawick]], [[Los Santos (HD Universe)|Los Santos]]
+|height         = 36.3 m
+|use            = Office building<br>Residential building
+}}
+
+[[LEAD]]
+'''Galileo House''' is a building that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mid-rise buildings

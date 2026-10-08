@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Avalon Laundry & Dry Cleaners
+|image     = AvalonLaundry-GTAV.jpg
+|caption   = '''Avalon Laundry & Dry Cleaners'''
+|taglines  = 
+|type      = [[Laundromats|Laundromat]]
+|games     = {{Games|V=y|O=y}}
+|locations = [[Dutch London Street]], [[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+|reference = 
+}}
+
+[[LEAD]]
+'''Avalon Laundry & Dry Cleaners''' is a dry cleaner in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Dry cleaners

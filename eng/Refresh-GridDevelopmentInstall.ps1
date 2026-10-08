@@ -64,26 +64,14 @@ if ($LASTEXITCODE -ne 0) { throw "DevelopmentInstallPublishFailed: Grid.App exit
 if ($LASTEXITCODE -ne 0) { throw "DevelopmentInstallPublishFailed: Grid.Diagnostics exit code $LASTEXITCODE." }
 
 $publishedScripts = Join-Path $stageRoot 'RequestEngine\scripts'
-$nextScripts = Join-Path $stageRoot 'RequestEngine\scripts.next'
-if (Test-Path -LiteralPath $nextScripts) { Remove-Item -LiteralPath $nextScripts -Recurse -Force }
-New-Item -ItemType Directory -Path $nextScripts -Force | Out-Null
-Copy-Item -Path (Join-Path $repositoryRoot 'scripts\*') -Destination $nextScripts -Recurse -Force
-
-$scriptsSwapped = $false
-for ($attempt = 1; $attempt -le 10 -and -not $scriptsSwapped; $attempt++) {
-    try {
-        if (Test-Path -LiteralPath $publishedScripts) {
-            Remove-Item -LiteralPath $publishedScripts -Recurse -Force
-        }
-        Move-Item -LiteralPath $nextScripts -Destination $publishedScripts
-        $scriptsSwapped = $true
-    }
-    catch {
-        if ($attempt -eq 10) {
-            throw "DevelopmentInstallScriptStageLocked: unable to replace the staged RequestEngine scripts after $attempt attempts. $($_.Exception.Message)"
-        }
-        Start-Sleep -Milliseconds 500
-    }
+$forbiddenRuntimeScripts = @(Get-ChildItem -LiteralPath $publishedScripts -Recurse -File | Where-Object {
+    $_.FullName -match '[\\/]catalog[\\/]' -or
+    $_.FullName -match '[\\/]tests[\\/]' -or
+    $_.FullName -match '[\\/]__pycache__[\\/]' -or
+    $_.Extension -eq '.pyc'
+})
+if ($forbiddenRuntimeScripts.Count -gt 0) {
+    throw ('DevelopmentInstallPreproductionContentRefused: ' + (($forbiddenRuntimeScripts | ForEach-Object FullName) -join ', '))
 }
 
 foreach ($required in @('Grid.exe','Grid.Core.dll','Grid.Mo2.dll','Grid.pri','RequestEngine\bin\Grid.Diagnostics.exe')) {

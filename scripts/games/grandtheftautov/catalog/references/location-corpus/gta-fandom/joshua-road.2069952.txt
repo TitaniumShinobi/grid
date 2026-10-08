@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=JoshuaRd-GTAV-SCW.jpg
+|caption=Joshua Road, and [[Stoner Cement Works]] on the right.
+|games={{Games|V=y|O=y}}
+|start=[[Panorama Drive]] and [[East Joshua Road]]
+|end=[[Route 68 Approach]]
+|map=<gallery>
+JoshuaRoad-GTAV-Map.png|Map
+JoshuaRoad-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Joshua Road''' is a two-way road in {{V}} and {{O}}. The street starts at intersection of [[Panorama Drive]] and [[East Joshua Road]] in [[Sandy Shores]] then travels westward throughout the [[Grand Senora Desert]] then ends at [[Route 68]] in [[Harmony]], where it continues as [[Senora Road]]. 
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = Your Dead Family
+|Name Change   = WEBSITE
+|image         = YourDeadFamily-GTAV-Logo.png
+|size          = 205px
+|games         = {{games|V=y|O=y}}
+|taglines      = 
+|locations     = 
+|bleeter = [[File:Bleeter GTAVpc YourDeadFamily.png|40px]] @YourDeadFamily
+|website       = www.yourdeadfamily.com
+}}
+
+[[LEAD]]
+'''Your Dead Family''' is a [[Websites in GTA V|website]] in ''[[Grand Theft Auto V]]'' dedicated to tracing the ancestry of the user.
+
+[[CATEGORIES]]
+Media in GTA V
+Websites

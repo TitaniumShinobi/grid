@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Larry's RV Sales
+|image = LarrysRVSales-GTAV.png
+|type = dealership
+|opened = [[1971]]
+|games = {{games|V=y|O=y}}
+|location = [[U.S. Route 68]], [[Harmony]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|products = [[#Vehicles|Vehicles]]
+}}
+
+[[LEAD]]
+'''Larry's RV Sales''' is a used motorhome dealership featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle dealerships

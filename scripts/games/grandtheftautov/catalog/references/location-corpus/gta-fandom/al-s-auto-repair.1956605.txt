@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = auto shop
+|name          = Al's Auto Repair
+|sign          = 
+|image         = Al'sAutoReapir-GTAO-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{games|O=y}}
+|mentioned     = 
+|business_type = Auto Repair Shop
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Al's''' is an auto repair shop that appears in {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Mod shop brands

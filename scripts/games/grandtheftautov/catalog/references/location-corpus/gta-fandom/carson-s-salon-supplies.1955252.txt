@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = CarsonsSalonSupplies-Logo-GTAV.png
+|name = Carson's Salon Supplies
+|taglines = 
+|type = Salon
+|games = {{Games|V=y|O=y}}
+|locations = [[Davis]]
+}}
+
+[[LEAD]]
+'''Carson's Salon Supplies & Hair Color Center''', otherwise known as '''Carson's Salon Supplies''' is a hair salon located on [[Carson Avenue]] in [[Davis]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Barber shops
+Businesses in GTA Online
+Businesses in GTA V
+Salons

@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|image = LamarDavisHouse-GTAVe.png
+|type = house
+|games = {{Games|V=y|O=y}}
+|location = [[Forum Drive]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+|owner = [[Lamar Davis]]
+|floors = 1
+|structure_type = Bungalow
+|architecture   = [[:Category:Ranch-style buildings|Ranch-style]]
+}}
+
+[[LEAD]]
+'''Lamar Davis' House''' is a property owned by [[Lamar Davis]] in {{V}} and {{O}}, which is located on [[Forum Drive]] in [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Homes
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Ranch-style buildings
+Single-family homes

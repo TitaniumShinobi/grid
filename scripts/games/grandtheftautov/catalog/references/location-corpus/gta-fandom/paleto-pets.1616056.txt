@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Paleto Pets
+|image = PaletoPets-GTAV.jpg
+|type = Veterinary clinic
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]]
+}}
+
+[[LEAD]]
+'''Paleto Pets''' is a veterinary clinic located on [[Paleto Boulevard]] in [[Paleto Bay]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

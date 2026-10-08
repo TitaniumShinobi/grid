@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|business = y
+|activebiz = y
+|type = Watchmaker
+|name = Pendulus
+|altnames =
+|taglines = Unstoppable Gravity<br>{{H:title|What goes around, comes around|plus ça change plus ç'est la même chose}}
+|reference = Tissot
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|condition = Active 
+|products = 
+|bawsaq = 
+|image = Pendulus-GTAV-Logo.PNG
+|darklogo = y
+|caption = The logo
+|image_size = 300
+|games = {{Games|V=y|O=y}}
+|oldlogo = Pendulus-GTAV-ClockDoorEmblem.png
+|oldcaption = The eastern entrance clock logo.
+|map = 
+}}
+
+[[LEAD]]
+'''Pendulus''' is a luxury watch manufacturer featured in {{V}} and {{O}}.
+
+[[SECTION:2:Location]]
+<gallery position="center" spacing="small" widths="270px">
+PendulusStore-GTAV-RockfordHills.png|[[Rockford Drive]] and [[Carcer Way]], [[Rockford Hills]] [[:File:Pendulus-GTAV-NightFront.png|(night view)]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing

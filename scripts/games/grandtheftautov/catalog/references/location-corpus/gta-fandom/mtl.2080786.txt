@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = MTL
+|sign          = Logo-IV-MTL.png
+|image         = Name-IV-MTL.png
+|caption       = '''MTL''' text logo in {{IV}}.
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Vehicle manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''MTL''' is a heavy-duty vehicle manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|type       = restaurant
+|name       = The Pink Sandwich
+|image      = ThePinkSandwich-GTAV-Logo.png
+|games      = {{Games|V=y|O=y}}
+|location   = [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No}}
+
+[[LEAD]]
+'''The Pink Sandwich''' is a restaurant in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]] in [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Bistros
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Contemporary casual restaurants

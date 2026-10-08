@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Auto Exotic
+|image = AutoExotic-GTAV-Logo.png
+|type = modshop
+|games = {{Games|V=y|O=y}}
+|locations = [[Hawick]]
+|reference = 
+}}
+
+[[LEAD]]
+'''Auto Exotic''' is an auto repair shop located on [[Elgin Avenue]] in [[Hawick]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Mod shop brands

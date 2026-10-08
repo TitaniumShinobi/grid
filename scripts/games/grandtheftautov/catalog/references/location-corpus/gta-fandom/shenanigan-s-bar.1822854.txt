@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|nightclub = n
+|bar = y
+|business = y
+|activebiz = y
+|type = Bar
+|games = {{Games|V=y|O=y}}
+|image = Shenanigans_Bar_GTAV_Signage.png
+|location = [[Strawberry Avenue]], [[Legion Square]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Shenanigan's Bar''' is a wine and cocktail bar in [[Legion Square]], [[Los Santos (HD Universe)|Los Santos]] in the [[State of San Andreas (HD Universe)|State of San Andreas]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Bars
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos

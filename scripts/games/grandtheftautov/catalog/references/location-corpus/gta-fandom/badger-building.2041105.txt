@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = BadgerBuilding-GTAV-PS4.jpg
+|caption        = The building in the enhanced version.
+|games          = {{Games|V=y|O=y}}
+|location       = [[Hawick]], [[Los Santos (HD Universe)|Los Santos]]
+|use            = [[Badger]] Headquarters
+|height         = 
+|floors         = 15
+}}
+
+[[LEAD]]
+The '''Badger Building''', also known as the '''Badger Tower''', is a high-rise building located at the corner of [[Elgin Avenue]] and [[Spanish Avenue]] in [[Hawick]], [[Los Santos (HD Universe)|Los Santos]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Googie buildings
+High-rise buildings
+Landmarks

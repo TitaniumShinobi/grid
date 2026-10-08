@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = MANUFACTURER
+|name = Mammoth
+|image = File:Mammoth-GTAO-Logo.png
+|type = Automotive
+|games = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|reference   = {{WP|Hummer}}<br>{{WP|AM General}}
+}}
+
+[[LEAD]]
+'''Mammoth''' is an automotive and aircraft company in the {{HD}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Upcoming content in GTA VI
+Vehicle manufacturers

@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Canal Treats
+|image = CanalTreats-GTAV-Logo.png
+|type = Souvenir Store
+|games = {{Games|V=y|O=y}}
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Canal Treats''' is a souvenir store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

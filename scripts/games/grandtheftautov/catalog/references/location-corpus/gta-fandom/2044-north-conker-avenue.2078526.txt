@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 2044 North Conker Avenue
+|image = 2044NorthConkerAvenue-AerialView-GTAO.png
+|caption = Aerial view of the stilt house.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = High-end apartment
+|garage = * 10 vehicles<br>* 3 bicycles
+|price = $762,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|location=[[North Conker Avenue]], [[Vinewood Hills]]
+}}
+
+[[LEAD]]
+'''2044 North Conker Avenue''' is a stilt house [[Safehouses in GTA Online|safehouse]] located on [[North Conker Avenue]] in [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], featured in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online
+Stilt houses

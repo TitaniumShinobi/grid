@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Aftermath Guns & Accessories
+|sign      = AftermathGunsandAccessories-GTAOe-Logo1.png
+|type      = weapons
+|games     = {{games|O={{EEEV}} {{DLC|mpsecurity}}}}
+|locations =
+}}
+
+[[LEAD]]
+'''Aftermath''' is weapons manufacturer appearing in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Contract|The Contract]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Contract
+Weapon manufacturers

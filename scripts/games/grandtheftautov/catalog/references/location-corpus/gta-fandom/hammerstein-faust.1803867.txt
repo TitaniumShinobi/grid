@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Hammerstein & Faust
+|type = Law Firm
+|taglines = "''It's time to slip and fall into the good life''"
+|lcn = {{BAWSAQ/Slider}} '''HAF'''
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]
+|image = Hammerstein&Faust-GTAV-Logo.png
+|business_type = Law firm
+|employees = Tony Faust
+|website = [[Hammersteinfaust.com]]
+}}
+
+[[LEAD]]
+'''Hammerstein & Faust''' is a law firm in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The [[GTA Online Protagonist|player]] can buy stocks from them on the [[Lcn-exchange.com]] website.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Law firms

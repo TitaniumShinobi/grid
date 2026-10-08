@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = nightclub
+|name           = Penal Colony
+|sign           = PenalColony-GTAV-Logo.png
+|image          = PenalColony-GTAVe-Day.png
+|games          = {{Games|V=y|O=y}}
+|location       = [[Abe Milton Parkway]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|taglines       = ''"Come on in and get banged up"''
+|accessible     = No
+|status         = active
+}}
+
+[[LEAD]]
+'''Penal Colony''' is a gay nightclub that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Nightclubs

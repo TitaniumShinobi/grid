@@ -69,6 +69,18 @@ public sealed record CanonicalSelectorControlContract
 
 public static class CanonicalProjectionSemantics
 {
+    public static CanonicalSemanticRoleId SelectorPlayerAddressable { get; } = new("grid.selector.player-addressable");
+    public static CanonicalSemanticRoleId MissionPlaylist { get; } = new("grid.missionquest.playlist");
+    public static CanonicalSemanticRoleId ItemVehicles { get; } = new("grid.item.family.vehicles");
+    public static CanonicalSemanticRoleId ActorNamedCharacter { get; } = new("grid.actor.type.named-character");
+    public static CanonicalSemanticRoleId ActorGenericType { get; } = new("grid.actor.type.generic");
+    public static CanonicalOrganizationalSemanticId ItemVehiclesNode { get; } = new("grid.selector.item.vehicles");
+    public static CanonicalOrganizationalSemanticId ItemVehicleClassDimensionNode { get; } = new("grid.selector.item.dimension.vehicle-class");
+    public static CanonicalOrganizationalSemanticId ItemVehicleClassValueNode { get; } = new("grid.selector.item.vehicle-class-value");
+    public static CanonicalOrganizationalSemanticId ActorNamedCharacterNode { get; } = new("grid.selector.actor.named-character");
+    public static CanonicalOrganizationalSemanticId ActorGenericTypeNode { get; } = new("grid.selector.actor.generic-type");
+    public static CanonicalOrganizationalSemanticId ActorSourceCategoryDimensionNode { get; } = new("grid.selector.actor.dimension.source-category");
+    public static CanonicalOrganizationalSemanticId ActorSourceCategoryValueNode { get; } = new("grid.selector.actor.source-category-value");
     public static CanonicalSemanticRoleId MissionDlc { get; } = new("grid.missionquest.family.dlc");
     public static CanonicalSemanticRoleId MissionMod { get; } = new("grid.missionquest.family.mod");
     public static CanonicalSemanticRoleId MissionOnline { get; } = new("grid.missionquest.family.online");
@@ -202,7 +214,60 @@ public sealed record CanonicalSelectorProjectionPolicy
             null,
             CanonicalProjectionSemantics.MissionOnlineNode)));
 
-    public static CanonicalSelectorProjectionPolicy Current => V3;
+    public static CanonicalSelectorProjectionPolicy V4 { get; } = new(
+        new("grid.canonical-selector-projection"), "4", CanonicalSelectorControlContract.V1,
+        "grid.selector.order.exact-unicode-scalar", "1",
+        V3.OrganizationalDefinitions.AddRange(new CanonicalOrganizationalDefinition[] {
+            new(CanonicalProjectionSemantics.ItemVehiclesNode, KnowledgeKind.Item, "Vehicles", CanonicalProjectionSemantics.ItemVehicles, null),
+            new(CanonicalProjectionSemantics.ItemVehicleClassValueNode, KnowledgeKind.Item, "Vehicle class", null, CanonicalProjectionSemantics.ItemVehiclesNode),
+            new(CanonicalProjectionSemantics.ActorNamedCharacterNode, KnowledgeKind.Actor, "Named Characters", CanonicalProjectionSemantics.ActorNamedCharacter, CanonicalProjectionSemantics.ActorNpcNode),
+            new(CanonicalProjectionSemantics.ActorGenericTypeNode, KnowledgeKind.Actor, "Generic Actor Types", CanonicalProjectionSemantics.ActorGenericType, CanonicalProjectionSemantics.ActorNpcNode),
+            new(CanonicalProjectionSemantics.ActorSourceCategoryValueNode, KnowledgeKind.Actor, "Source category", null, CanonicalProjectionSemantics.ActorGenericTypeNode),
+        }));
+
+    private static ImmutableArray<CanonicalOrganizationalDefinition> GtaEnhancedSelectorDefinitions { get; } =
+        V1Definitions
+            .Where(value => value.KnowledgeKind is not KnowledgeKind.Item ||
+                            value.SemanticId == CanonicalProjectionSemantics.ItemWeaponsNode ||
+                            value.SemanticId == CanonicalProjectionSemantics.ItemClothingNode)
+            .Concat(V2.OrganizationalDefinitions.Where(value =>
+                value.SemanticId == CanonicalProjectionSemantics.ItemSourceCategoryValueNode))
+            .Concat(V3.OrganizationalDefinitions.Where(value =>
+                value.SemanticId == CanonicalProjectionSemantics.MissionActivityFamilyValueNode))
+            .Concat(V4.OrganizationalDefinitions.Where(value =>
+                value.SemanticId == CanonicalProjectionSemantics.ItemVehiclesNode ||
+                value.SemanticId == CanonicalProjectionSemantics.ItemVehicleClassValueNode ||
+                value.SemanticId == CanonicalProjectionSemantics.ActorNamedCharacterNode ||
+                value.SemanticId == CanonicalProjectionSemantics.ActorGenericTypeNode ||
+                value.SemanticId == CanonicalProjectionSemantics.ActorSourceCategoryValueNode))
+            .DistinctBy(value => (value.KnowledgeKind, value.SemanticId))
+            .OrderBy(value => value.KnowledgeKind)
+            .ThenBy(value => value.SemanticId.Value, StringComparer.Ordinal)
+            .ToImmutableArray();
+
+    /// <summary>GTA-specific fourth-row taxonomy (Mission/Location/Actor org + GTA item families only).</summary>
+    public static CanonicalSelectorProjectionPolicy GtaEnhanced { get; } = new(
+        new("grid.canonical-selector-projection"), "5", CanonicalSelectorControlContract.V1,
+        "grid.selector.order.exact-unicode-scalar", "1",
+        GtaEnhancedSelectorDefinitions);
+
+    public static CanonicalSelectorProjectionPolicy Current => V4;
+
+    /// <summary>Prepared Location presentation requires resolved localized names; other kinds retain their policy.</summary>
+    public static CanonicalSelectorProjectionPolicy LocationPrepared { get; } = new(
+        new("grid.canonical-selector-projection"), "6", CanonicalSelectorControlContract.V1,
+        "grid.selector.order.exact-unicode-scalar", "1",
+        GtaEnhancedSelectorDefinitions);
+
+    public bool RequiresNamedLocationPresentation => string.Equals(ExactVersion, "6", StringComparison.Ordinal);
+
+    public bool UsesGtaEnhancedRecordAdmission =>
+        string.Equals(ExactVersion, "4", StringComparison.Ordinal) ||
+        string.Equals(ExactVersion, "5", StringComparison.Ordinal) ||
+        string.Equals(ExactVersion, "6", StringComparison.Ordinal);
+
+    public bool SupportsActorNamedGenericNpcOrganization =>
+        OrganizationalDefinitions.Any(value => value.SemanticId == CanonicalProjectionSemantics.ActorNamedCharacterNode);
 }
 
 public sealed record CanonicalSemanticClassificationAssertion
@@ -307,16 +372,20 @@ public sealed record CanonicalOrganizationalValueAssertion
         string? verbatimDisplayValue,
         string methodId,
         string methodVersion,
-        string sourceFieldPath)
+        string sourceFieldPath,
+        string? languageTag = null)
     {
         ArgumentNullException.ThrowIfNull(exactValueIdentity);
         if (verbatimDisplayValue is not null) CanonicalUtf8.Validate(verbatimDisplayValue);
         MethodId = CanonicalKnowledgeContract.RequireText(methodId, nameof(methodId));
         MethodVersion = CanonicalKnowledgeContract.RequireText(methodVersion, nameof(methodVersion));
         SourceFieldPath = CanonicalKnowledgeContract.RequireText(sourceFieldPath, nameof(sourceFieldPath));
-        var expected = CanonicalOrganizationalValueAssertionId.DeriveV1(
-            knowledgeRecordId, sourceRevisionId, dimensionId, exactValueIdentity,
-            verbatimDisplayValue, MethodId, MethodVersion, SourceFieldPath);
+        LanguageTag = languageTag is null ? null : new CanonicalTerminologyLocalePreference(languageTag, []).RequestedLanguageTag;
+        var expected = languageTag is null
+            ? CanonicalOrganizationalValueAssertionId.DeriveV1(knowledgeRecordId, sourceRevisionId, dimensionId,
+                exactValueIdentity, verbatimDisplayValue, MethodId, MethodVersion, SourceFieldPath)
+            : CanonicalOrganizationalValueAssertionId.DeriveV2(knowledgeRecordId, sourceRevisionId, dimensionId,
+                exactValueIdentity, verbatimDisplayValue, MethodId, MethodVersion, SourceFieldPath, languageTag);
         if (id != expected) throw new ArgumentException("Organizational value assertion ID does not match its exact claim.", nameof(id));
         Id = id;
         KnowledgeRecordId = knowledgeRecordId;
@@ -332,6 +401,8 @@ public sealed record CanonicalOrganizationalValueAssertion
     public CanonicalOrganizationalSemanticId DimensionId { get; }
     public SourceNativeIdentifier ExactValueIdentity { get; }
     public string? VerbatimDisplayValue { get; }
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public string? LanguageTag { get; }
     public string MethodId { get; }
     public string MethodVersion { get; }
     public string SourceFieldPath { get; }
@@ -598,4 +669,6 @@ public sealed class CanonicalSelectorProjectionInput
     public ImmutableArray<CanonicalOrganizationalValueAssertion> OrganizationalValueAssertions { get; }
     public ImmutableArray<CrossSourceCanonicalAssertion> CrossSourceAssertions { get; }
     public CanonicalApplicabilityProjection Applicability { get; }
+    internal Services.CanonicalSelectorProjectionState? RuntimeState { get; private set; }
+    internal void InitializeRuntimeState() => RuntimeState = new(this);
 }

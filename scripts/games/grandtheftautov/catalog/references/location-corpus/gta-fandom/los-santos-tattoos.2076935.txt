@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Los Santos Tattoos
+|image = LosSantosTattoos-GTAV-Logo1.png
+|type = tattooparlor
+|games = {{Games|V=y|O=y}}
+|location = [[El Burro Heights]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible=Yes
+}}
+
+[[LEAD]]
+'''Los Santos Tattoos''' is a [[Tattoo Parlors|tattoo parlor]] featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Tattoo parlors

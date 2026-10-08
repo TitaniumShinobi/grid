@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Cent Carpet
+|image     = CentCarpet-GTAV-Logo.png
+|caption   = '''Cent Carpet''' logo.
+|taglines  = 
+|type      = Carpet Store
+|games     = {{Games|V=y|O=y}}
+|locations = 
+*[[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Cent Carpet''' is a carpet store chain in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+CentCarpet-GTAV-Davis.jpg|[[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+CentCarpet-GTAV-Rancho.jpg|[[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+</gallery>
+
+
+
+
+[[ru:Cent Carpet]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Carpet store chains

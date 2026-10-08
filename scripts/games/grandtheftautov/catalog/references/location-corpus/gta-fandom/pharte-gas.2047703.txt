@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|sign     = PharteGas-GTAV-Sign.png
+|image    = PharteGas-GTAV-Logo.png
+|type     = gasoline
+|status   = active
+|games    = {{Games|IV=y|EFLC=y|V=y|O=y}}
+|taglines = ''"It's perfectly natural"''<br>''"Taken from humans by humans"''
+}}
+
+[[LEAD]]
+'''Pharte Gas''' is a gas company in {{IV}}, {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+Pharte Gas have an office and a warehouse, both located in [[Port Tudor]], [[State of Alderney|Alderney]]:
+
+<gallery position="center" spacing="small" widths="270px" bordercolor="#2F6A19">
+PharteGas-GTAIV-Office.png|'''Pharte Gas''' office in [[Port Tudor]], Alderney.
+PharteGas-GTAIV-Warehouse.png|'''Pharte Gas''' warehouse in Port Tudor, Alderney.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Petroleum companies

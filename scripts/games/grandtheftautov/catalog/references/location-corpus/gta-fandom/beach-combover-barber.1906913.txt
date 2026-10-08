@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|image     = BeachcomboverBarbers-GTAV-Logo.png
+|caption   = 
+|name      = Beach Combover Barbers
+|type      = Barber Shop
+|games     = ''[[Grand Theft Auto V]]''
+|locations = [[Magellan Avenue]], [[Vespucci]], [[Los Santos (HD Universe)|Los Santos]]
+|reference = 
+|size      = 250px
+}}
+
+[[LEAD]]
+'''Beach Combover Barbers''' is a barber shop located on [[Magellan Avenue]] in [[Vespucci]], [[Los Santos (HD Universe)|Los Santos]]. It shares the same interior and haircut options as [[Herr Kutz Barber]], [[O'Sheas Barbers Shop]] and [[Hair on Hawick]] shop.
+{{clr}}
+
+[[CATEGORIES]]
+Barber shops
+Businesses in GTA V
+Salons

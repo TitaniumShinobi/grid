@@ -1,0 +1,55 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Channel X
+|logo         = ChannelX-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{Games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = ''Real Punk. Real West Coast.''
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:Punk radio stations|Punk]]
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 99.1 FM
+|host         = [[Keith Morris]]
+|product      = 
+|radio_tracks = 
+*12 <small>(original version)</small>
+*18 <small>([[Grand Theft Auto V: Enhanced Edition|enhanced version]])</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+'''Channel X ''' is a [[Radio Stations in GTA V|radio station]] featured in {{V}} and {{O}} that plays {{WP|punk rock}}.
+
+[[SECTION:3:Radio Station]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nations]] with shooting ranges
+*[[Tequi-la-la]]
+*[[Skate Parks]] in [[Hawick]]
+*Auto Repairs
+*[[Tattoo Parlors]]
+*[[Port of Los Santos]]
+*A small condo on [[Vitus Street]].
+*Room 25 at the Perrera Motel
+
+[[CATEGORIES]]
+Dynamic mix radio stations
+Media in GTA Online
+Media in GTA V
+Punk radio stations

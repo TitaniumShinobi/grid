@@ -410,16 +410,55 @@ public sealed class AssistantSessionState
         ArgumentNullException.ThrowIfNull(selection);
         if (selection.SelectionKind != CanonicalSelectorSelectionKind.CanonicalRecord)
             throw new ArgumentException("Other remains unresolved ticket context outside canonical selections.", nameof(selection));
-        var values = Normalize(ticketDraft.CanonicalSelections)
-            .Where(value => value.KnowledgeKind != selection.KnowledgeKind)
-            .Append(selection)
-            .OrderBy(value => value.KnowledgeKind)
-            .ToImmutableArray();
+        var values = selection.KnowledgeKind == KnowledgeKind.Location
+            ? Normalize(ticketDraft.CanonicalSelections)
+                .Where(value => value.KnowledgeKind != KnowledgeKind.Location)
+                .Append(selection)
+                .ToImmutableArray()
+            : Normalize(ticketDraft.CanonicalSelections)
+                .Where(value => value.KnowledgeKind != selection.KnowledgeKind)
+                .Append(selection)
+                .OrderBy(value => value.KnowledgeKind)
+                .ToImmutableArray();
         var otherKind = ToTicketReferenceKind(selection.KnowledgeKind);
         var userContext = Normalize(ticketDraft.UserContext)
             .Where(value => value.Kind != otherKind || value.Resolution != TicketUserContextResolution.Unresolved)
             .ToImmutableArray();
         UpdateTicket(draft => draft with { CanonicalSelections = values, UserContext = userContext });
+    }
+
+    public void ToggleCanonicalLocationSelection(CanonicalSelectorSelection selection)
+    {
+        ArgumentNullException.ThrowIfNull(selection);
+        if (selection.KnowledgeKind != KnowledgeKind.Location ||
+            selection.SelectionKind != CanonicalSelectorSelectionKind.CanonicalRecord)
+            throw new ArgumentException("Location toggle requires a canonical Location record selection.", nameof(selection));
+        var existing = Normalize(ticketDraft.CanonicalSelections);
+        var duplicate = existing.FirstOrDefault(value =>
+            value.KnowledgeKind == KnowledgeKind.Location &&
+            value.KnowledgeRecordId == selection.KnowledgeRecordId &&
+            value.SelectedPathId == selection.SelectedPathId);
+        var values = duplicate is not null
+            ? existing.Where(value => value != duplicate).ToImmutableArray()
+            : existing.Add(selection);
+        var userContext = Normalize(ticketDraft.UserContext)
+            .Where(value => value.Kind != TicketReferenceContextKind.Location ||
+                            value.Resolution != TicketUserContextResolution.Unresolved)
+            .ToImmutableArray();
+        if (Normalize(ticketDraft.CanonicalSelections).SequenceEqual(values) &&
+            Normalize(ticketDraft.UserContext).SequenceEqual(userContext)) return;
+        UpdateTicket(draft => draft with { CanonicalSelections = values, UserContext = userContext });
+    }
+
+    public void RemoveCanonicalLocationSelection(KnowledgeRecordId recordId, CanonicalNavigationPathId pathId)
+    {
+        var values = Normalize(ticketDraft.CanonicalSelections)
+            .Where(value => value.KnowledgeKind != KnowledgeKind.Location ||
+                            value.KnowledgeRecordId != recordId ||
+                            value.SelectedPathId != pathId)
+            .ToImmutableArray();
+        if (Normalize(ticketDraft.CanonicalSelections).SequenceEqual(values)) return;
+        UpdateTicket(draft => draft with { CanonicalSelections = values });
     }
 
     public void ClearCanonicalSelectorSelection(KnowledgeKind kind)
@@ -430,6 +469,85 @@ public sealed class AssistantSessionState
             .ToImmutableArray();
         if (Normalize(ticketDraft.CanonicalSelections).SequenceEqual(values)) return;
         UpdateTicket(draft => draft with { CanonicalSelections = values });
+    }
+
+    public void ToggleScaffoldContext(TicketReferenceContextKind kind, string pathId, string displayPath)
+    {
+        if (!Enum.IsDefined(kind)) throw new ArgumentOutOfRangeException(nameof(kind));
+        if (string.IsNullOrWhiteSpace(pathId) || pathId.Length > 512)
+            throw new ArgumentException("Scaffold path must contain 1 to 512 non-whitespace characters.", nameof(pathId));
+        if (string.IsNullOrWhiteSpace(displayPath))
+            throw new ArgumentException("Scaffold display path must be non-empty.", nameof(displayPath));
+        var existing = Normalize(ticketDraft.UserContext);
+        var selected = existing.Any(value => value.Kind == kind && value.ScaffoldPathId == pathId);
+        var values = selected
+            ? existing.Where(value => value.Kind != kind || value.ScaffoldPathId != pathId).ToImmutableArray()
+            : existing.Add(new(kind, displayPath, TicketUserContextResolution.Unresolved,
+                TicketSelectionProvenance.ExplicitUserSelection) { ScaffoldPathId = pathId });
+        var canonical = selected
+            ? Normalize(ticketDraft.CanonicalSelections)
+            : Normalize(ticketDraft.CanonicalSelections).Where(value => value.KnowledgeKind != ToKnowledgeKind(kind)).ToImmutableArray();
+        UpdateTicket(draft => draft with { UserContext = values, CanonicalSelections = canonical });
+    }
+
+    public void AppendOtherContext(TicketReferenceContextKind kind, string text)
+    {
+        if (!Enum.IsDefined(kind)) throw new ArgumentOutOfRangeException(nameof(kind));
+        if (string.IsNullOrWhiteSpace(text)) throw new ArgumentException("Other context must be non-empty.", nameof(text));
+        var exact = text.Trim();
+        var existing = Normalize(ticketDraft.UserContext);
+        if (existing.Any(value => value.Kind == kind && value.ScaffoldPathId is null &&
+            value.Resolution == TicketUserContextResolution.Unresolved && value.Value == exact)) return;
+        var values = existing.Add(new(kind, exact, TicketUserContextResolution.Unresolved,
+            TicketSelectionProvenance.ExplicitUserSelection));
+        var canonical = Normalize(ticketDraft.CanonicalSelections)
+            .Where(value => value.KnowledgeKind != ToKnowledgeKind(kind)).ToImmutableArray();
+        UpdateTicket(draft => draft with { UserContext = values, CanonicalSelections = canonical });
+    }
+
+    public void RemoveReferenceContext(TicketReferenceContextKind kind, string value, string? scaffoldPathId)
+    {
+        if (!Enum.IsDefined(kind)) throw new ArgumentOutOfRangeException(nameof(kind));
+        var existing = Normalize(ticketDraft.UserContext);
+        var values = existing.Where(context => context.Kind != kind ||
+            context.Resolution != TicketUserContextResolution.Unresolved ||
+            (scaffoldPathId is not null
+                ? context.ScaffoldPathId != scaffoldPathId
+                : context.ScaffoldPathId is not null || context.Value != value)).ToImmutableArray();
+        if (existing.SequenceEqual(values)) return;
+        UpdateTicket(draft => draft with { UserContext = values });
+    }
+
+    public void AppendLocationOtherContext(string value)
+    {
+        var exact = string.IsNullOrWhiteSpace(value)
+            ? throw new ArgumentException("Other context requires a non-empty value.", nameof(value))
+            : value.Trim();
+        var values = Normalize(ticketDraft.UserContext)
+            .Where(context => context.Kind != TicketReferenceContextKind.Location ||
+                              context.Resolution != TicketUserContextResolution.Unresolved ||
+                              !string.Equals(context.Value, exact, StringComparison.Ordinal))
+            .ToImmutableArray()
+            .Add(new(
+                TicketReferenceContextKind.Location,
+                exact,
+                TicketUserContextResolution.Unresolved,
+                TicketSelectionProvenance.ExplicitUserSelection));
+        var canonicalSelections = Normalize(ticketDraft.CanonicalSelections)
+            .Where(selection => selection.KnowledgeKind != KnowledgeKind.Location)
+            .ToImmutableArray();
+        UpdateTicket(draft => draft with { UserContext = values, CanonicalSelections = canonicalSelections });
+    }
+
+    public void RemoveLocationOtherContext(string value)
+    {
+        var values = Normalize(ticketDraft.UserContext)
+            .Where(context => context.Kind != TicketReferenceContextKind.Location ||
+                              context.Resolution != TicketUserContextResolution.Unresolved ||
+                              !string.Equals(context.Value, value, StringComparison.Ordinal))
+            .ToImmutableArray();
+        if (Normalize(ticketDraft.UserContext).SequenceEqual(values)) return;
+        UpdateTicket(draft => draft with { UserContext = values });
     }
 
     public void SetUserContextSelected(TicketUserContext context, bool selected)
@@ -551,6 +669,38 @@ public sealed class AssistantSessionState
         ReconcileInheritedContext(context);
         PrefillFromContext(context);
         PruneIncompatibleTicketContext();
+    }
+
+    /// <summary>
+    /// When the intake form is open away from the workstation route, inherit the
+    /// persisted workspace Game/Installation/Profile so canonical runtime matching
+    /// can evaluate without forcing an explicit ticket re-selection.
+    /// </summary>
+    public void PrefillIntakeFromWorkspaceSelection(WorkspaceSelection selection)
+    {
+        if (!IsFormVisible || IntakeScope != AssistantIntakeScope.Game || ticketDraft.GameId is not null) return;
+        if (selection.GameId is not GameId gameId || !GetGameOptions().Any(game => game.Id == gameId)) return;
+        UpdateTicket(draft => draft with
+        {
+            GameId = gameId,
+            GameProvenance = TicketSelectionProvenance.ContextInherited,
+        });
+        var workspaceContext = new ApplicationContextSnapshot(
+            ApplicationSurface.GameWorkspace,
+            selection.GameId,
+            selection.InstallationId,
+            selection.ProfileId,
+            [],
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null);
+        PrefillInstallationAndProfile(workspaceContext);
+        SelectOnlyRegisteredClassForSelectedGame();
     }
 
     public async Task LoadPersistedTasksAsync(CancellationToken cancellationToken = default)

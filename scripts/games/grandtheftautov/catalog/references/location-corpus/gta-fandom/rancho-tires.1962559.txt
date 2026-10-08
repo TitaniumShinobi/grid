@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Rancho Tires
+|image     = RanchoTires-GTAV-Logo.png
+|caption   = '''Rancho Tires''' logo.
+|taglines  = 
+|type      = Auto Repairs
+|games     = {{Games|V=y|O=y}}
+|locations = [[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Rancho Tires''' is an auto repair shop in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mod shops

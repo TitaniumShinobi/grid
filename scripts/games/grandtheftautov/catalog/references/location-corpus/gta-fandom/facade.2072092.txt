@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{infobox business
+|Name Change = MOBILE PHONE
+|name    = Facade
+|image   = 
+<gallery>
+Facade-Logo.svg|Logo 1
+FacadeLogo-White.png|Logo 2 
+</gallery>
+|games   = {{Games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|bawsaq  = {{BAWSAQ/Slider}} '''FAC'''
+|founded =
+}}
+
+[[LEAD]]
+'''Facade''' (Stylized as '''FACADE''', pronounced "fasad") is a technology corporation appearing in {{IV}}, {{EFLC}}, {{V}}, {{O}}, and due to appear in {{VI}}.
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+In {{IV}}, two of the company's products, "[[Wing It]]" presentation software and Babybuilder 1.0, are advertised on the in-game [[Radio Stations in GTA IV|radio]] and on billboards.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Commercials
+Communications
+Electronics companies
+Operating Systems
+Phone companies

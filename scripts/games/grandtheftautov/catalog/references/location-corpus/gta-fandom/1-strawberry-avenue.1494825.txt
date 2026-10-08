@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 1 Strawberry Avenue
+|image = Dynasty8-GTAV-LowEnd-Image-1StrawberryAve.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end garage
+|garage = 2 vehicles <br> 1 bike
+|price = [[Money|$]]26,000
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''1 Strawberry Avenue''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is accessed through an alley connected to [[Duluoz Avenue]] in [[Paleto Bay]], located between [[Herr Kutz Barber]] and [[Arcades|Pixel Pete's Fun Time Arcade]] (formerly [[Helmut's European Autos]]).. The Dynasty 8 listing's address is incorrect however, as [[Strawberry Avenue]] is a street located in [[South Los Santos]].
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]26,000 and can store 2 [[Personal Vehicles]] and one [[Pedal and Metal Cycles|Bicycle]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

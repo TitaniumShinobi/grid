@@ -1,0 +1,5094 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change    = VEHICLE DEALERSHIP
+|name           = {{HUDIcons|game=O|carshowroom|yellow}} Premium Deluxe Motorsport
+|image          = PremiumDeluxeMotorsport-GTAOe-Logo.png
+|ceo            = [[Simeon Yetarian]]
+|locations      = [[Power Street]] and [[Adam's Apple Boulevard]], [[Pillbox Hill]], [[Downtown Los Santos (HD Universe)|Downtown]], [[Los Santos (HD Universe)|Los Santos]]
+|games          = {{Games|V=y|O=y}}
+|products       = [[#Vehicles|Vehicles]]
+|map            = PremiumDeluxeMotorsport-GTAV-Map.png
+|map_caption    = Location on the map (red).
+|accessible     = Yes
+|map2           = PremiumDeluxeMotorsport-InteriorMap-GTAV.png
+|map_caption2   = Interior.
+|taglines       = "''No Credit? No Problem!''"
+|employees      = [[Sacha Yetarian]]
+|lifeinvader    = [[Lifeinvader/Premium Deluxe Motorsport|Premium Deluxe Motorsport]] [[File:LifeInvader_GTAV_Premium_Deluxe_Motorsport.png|40px|right|link=Lifeinvader/Premium Deluxe Motorsport]]
+|bleeter        = [[File:Bleeter GTAVpc PremiumDeluxeMotorsport.png|40px|right]] @PremiumDeluxeMotorsport
+|status         = active
+}}
+
+[[LEAD]]
+'''Premium Deluxe Motorsport''' is a vehicle dealership in {{V}} and {{O}} . It is owned by [[Simeon Yetarian]].
+
+[[SECTION:2:Business Buildings]]
+*[[Simeon's Delivery Garage]]
+
+[[SECTION:4:Test Drive and Purchase]]
+{{Help Text|Premium Deluxe Motorsport {{HUDIcons|game=O|carshowroom|yellow}} is now open. View, test drive and purchase vehicles inside the showroom.}} 
+The vehicles are available for test drive and purchase in a weekly rotation of five selected vehicles. The vehicle prices recorded here may include any discounts applied during event weeks, and as a result may differ from their standard retail price.
+
+{{Help Text|Purchasing this vehicle will also unlock the livery.}}
+Starting with the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update, vehicles that have hidden or locked liveries applied will now permanently unlock said livery when purchased.
+
+[[SECTION:5:2026]]
+{| class="zebratable mw-collapsible sortable" style="width: 100%"
+!rowspan="2"|{{H:title|Commencement date|Week}}
+!rowspan="2"|Image
+! colspan="4" |Test Drives<br><nowiki>*</nowiki> Denotes a vehicle not otherwise available to purchase.<br>
+|-
+!Vehicle
+!Price
+!Livery
+!Wheel
+|-
+| rowspan="5" |12 March 2026
+| rowspan="5" |[[File:CommunitySeriesShowcaseWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Nagasaki]] [[Hot Rod Blazer]]*
+|$69,000
+|N/A
+|
+|-
+|[[Weeny]] [[Dynasty]]*
+|$471,660
+|Oye Taxi
+|
+|-
+|[[Grotti (HD Universe)|Grotti]] [[Stinger]]*
+|$850,000
+|N/A
+|
+|-
+|[[Dinka]] [[Jester]]*
+|$240,000
+|N/A
+|
+|-
+|[[Benefactor]] [[Surano]]*
+|$110,000
+|N/A
+|
+|-
+| rowspan="5" |5 March 2026
+| rowspan="5" |[[File:X-tremeWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Vapid]] [[Blade (car)|Blade]]*
+|$160,000
+|N/A
+|
+|-
+|[[Canis]] [[Seminole Frontier]]*
+|$699,660
+|Sunset Stripes
+|
+|-
+|[[Vapid]] [[Riata]]*
+|$402,800
+|[[Shrewsbury|Shrewsbury Hunter]]
+|
+|-
+|[[Vapid]] [[Retinue]]*
+|$644,580
+|[[RON|Ron Performance]]
+|
+|-
+|[[Liberty City Cycles|LCC]] [[Avarus]]*
+|$134,240
+|Red Flames
+|
+|-
+| rowspan="5" |26 February 2026
+| rowspan="5" |[[File:DriftEventWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Karin]] [[Calico GTF]]
+|$1,522,470
+|[[Fukaru|Fukaru Rally]]
+|
+|-
+|[[Emperor (HD Universe)|Emperor]] [[Vectre]]
+|$1,363,830
+|Cattana Black
+|
+|-
+|[[Maibatsu Corporation (HD Universe)|Maibatsu]] [[Penumbra FF]]
+|$1,406,789
+|Maibatsu
+|
+|-
+|[[Dinka]] [[Postlude]]
+|$1,022,610
+|Fukaru Racecar
+|
+|-
+|[[Annis]] [[ZR-350]]
+|$1,247,750
+|Annis Racing Tribal Alt
+|
+|-
+| rowspan="5" |19 February 2026
+| rowspan="5" |[[File:BikerBonusesWeekFebruary2026-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Enus]] [[Cognoscenti]]
+|$254,000
+|N/A
+|
+|-
+|[[Albany]] [[Alpha (HD Universe)|Alpha]]*
+|$150,000
+|N/A
+|
+|-
+|[[Western Motorcycle Company|Western]] [[Zombie Bobber]]*
+|$121,800
+|Outline Pinstripe
+|
+|-
+|[[Enus]] [[Super Diamond]]*
+|$250,000
+|N/A
+|
+|-
+|[[Dewbauchee]] [[JB 700]]*
+|$350,000
+|N/A
+|
+|-
+| rowspan="5" |12 February 2026
+| rowspan="5" |[[File:ItaliClassicWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Liberty City Cycles|LCC]] [[Innovation]]*
+|$119,800
+|N/A
+|
+|-
+|[[Declasse]] [[Tulip]]*
+|$767,800
+|The Good
+|
+|-
+|[[Vapid]] [[Hustler]]*
+|$678,820
+|Purple Flames
+|
+|-
+|[[Vulcar]] [[Fagaloa]]*
+|$403,090
+|Vulcar Racing
+|
+|-
+|[[Dinka]] [[Thrust]]
+|$83,550
+|N/A
+|
+|-
+| rowspan="5" |5 February 2026
+| rowspan="5" |[[File:DeadlineDuetWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Dinka]] [[Enduro]]*
+|$48,000
+|N/A
+|
+|-
+|[[Western Motorcycle Company|Western]] [[Rat Bike]]*
+|$48,000
+|N/A
+|
+|-
+|[[Declasse]] [[Tornado Rat Rod]]*
+|$378,000
+|N/A
+|
+|-
+|[[Hijak]] [[Ruston]]*
+|$476,450
+|N/A
+|
+|-
+|[[Lampadati]] [[Michelli GT]]*
+|$1,245,520
+|Heritage Racer
+|
+|-
+| rowspan="5" |29 January 2026
+| rowspan="5" |[[File:OddJobsWeekJanuary2026-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Pegassi]] [[Pizza Boy (HD Universe)|Pizza Boy]]
+|$0
+|N/A
+|Soildus (rear)
+|-
+|[[Declasse]] [[Lifeguard]]*
+|$885,130
+|N/A
+|
+|-
+|[[Annis]] [[Hardy]]
+|$1,434,560
+|Taxi Import
+|
+|-
+|[[Übermacht]] [[Cypher (Drift Tune)]]
+|$1,403,700
+|Drift Taxi
+|
+|-
+|[[Karin]] [[190z]]*
+|$920,000
+|None
+|
+|-
+| rowspan="5" |22 January 2026
+| rowspan="5" |[[File:EveronRSWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Pegassi]] [[Esskey]]*
+|$290,789
+|Red Retro Stripe
+|
+|-
+|[[Dinka]] [[Verus]]*
+|$214,800
+|90s Sandbox
+|
+|-
+|[[Karin]] [[Everon RS]]
+|$1,690,650
+|Mosh Mosh
+|
+|-
+|[[Weeny]] [[Dynasty]]*
+|$1,229,150
+|Oye Taxi
+|
+|-
+|[[Överflöd]] [[Entity XF]]*
+|$795,000
+|N/A
+|
+|-
+| rowspan="5" |15 January 2026
+| rowspan="5" |[[File:MansionRaidWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Dewbauchee]] [[Rapid GT]]*
+|$172,900
+|N/A
+|
+|-
+|[[Vapid]] [[Blade (car)|Blade]]*
+|$164,480
+|N/A
+|
+|-
+|[[Canis]] [[Kalahari]]*
+|$50,990
+|N/A
+|
+|-
+|[[Dundreary]] [[Landstalker XL]]*
+|$1,229,150
+|None
+|
+|-
+|[[Liberty City Cycles|LCC]] [[Avarus]]*
+|$136,520
+|Ornate Stripe
+|
+|-
+| rowspan="5" |8 January 2026
+| rowspan="5" |[[File:HandsOnCarWashWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Invetero]] [[Coquette BlackFin]]*
+|$714,210
+|N/A
+|
+|-
+|[[Dewbauchee]] [[Exemplar]]*
+|$240,700
+|N/A
+|
+|-
+|[[Vapid]] [[Retinue]]*
+|$652,120
+|[[Xero|Team Xero]]
+|
+|-
+|[[Canis]] [[Seminole]]*
+|$713,480
+|N/A
+|
+|-
+|[[Western Motorcycle Company|Western]] [[Wolfsbane]]*
+|$121,789
+|Major Milspec
+|
+|}
+
+[[SECTION:5:2025]]
+{| class="zebratable mw-collapsible sortable mw-collapsed" style="width: 100%"
+!rowspan="2"|{{H:title|Commencement date|Week}}
+!rowspan="2"|Image
+! colspan="4" |Test Drives<br><nowiki>*</nowiki> Denotes a vehicle not otherwise available to purchase.<br>
+|-
+!Vehicle
+!Price
+!Livery
+!Wheel
+|-
+| rowspan="5" |18 December 2025
+| rowspan="5" |[[File:FestiveSurprise2025-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Pfister (HD Universe)|Pfister]] [[Comet S2 Cabrio]]
+|$1,797,000
+|Santa's New Sled
+|Stock
+|-
+|[[HVY]] [[Nightshark]]
+|$1,264,100
+|Deck the Halls
+|Stock
+|-
+|[[BF]] [[Dune FAV]]
+|$850,000
+$0 (<small>for [[Criminal Enterprise Starter Pack|CESP]] owners)</small>
+|It's a Wrap
+|Stock
+|-
+|[[Ocelot]] [[Ardent]]
+|$1,154,920
+|Candy Cane
+|Chicane
+|-
+|[[Albany]] [[Alpha (HD Universe)|Alpha]]*
+|$150,000
+|N/A
+|Stock
+|-
+| rowspan="5" |10 December 2025
+| rowspan="5" |[[File:ASafehouseInTheHills-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Vapid]] [[Hustler]]
+|$664,380
+|Hustle Time
+|Classic Rod
+|-
+|[[Western Motorcycle Company|Western]] [[Rat Bike]]
+|$48,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Rapid GT Classic]]
+|$910,650
+|Hotrod
+|Stock
+|-
+|[[Dinka]] [[Enduro]]
+|$48,000
+|N/A
+|Stock
+|-
+|[[Ocelot]] [[Locust (HD Universe)|Locust]]
+|$1,654,689
+|[[Narc]]
+|Mercie ch.Lip
+|-
+| rowspan="5" |27 November 2025
+| rowspan="5" |[[File:ASuperyachtLifeWeekNovember2025-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Dewbauchee]] [[Champion]]
+|$1,749,780
+|[[Fukaru|Fukaru Motorsport]]
+|Big Mamba
+|-
+|[[Benefactor]] [[LM87]]
+|$2,102,750
+|[[Debonaire]]
+|Giga Mesh
+|-
+|[[Pegassi]] [[Tezeract]]
+|$1,719,510
+|[[Globe Oil]]
+|Stock
+|-
+|[[Pegassi]] [[Ignus]]
+|$1,700,900
+|Triple Stripes
+|Carbon Z
+|-
+|[[Progen]] [[Emerus]]
+|$1,986,880
+|Hexagon Blue
+|Supa Gee
+|-
+| rowspan="5" |20 November 2025
+| rowspan="5" |[[File:TheDiamondCasinoHeistWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Lampadati]] [[Furore GT]]*
+|$461,390
+|N/A
+|GT Chrome
+|-
+|[[Western Motorcycle Company|Western]] [[Cliffhanger]]*
+|$259,200
+|Stunt
+|Stock
+|-
+|[[Bravado]] [[Verlierer]]*
+|$718,680
+|N/A
+|Carbon Cheetah R
+|-
+|[[Hijak]] [[Ruston]]*
+|$464,350
+|N/A
+|Super Five
+|-
+|[[Liberty City Cycles|LCC]] [[Innovation]]*
+|$92,500
+|N/A
+|Stock
+|-
+| rowspan="5" |13 November 2025
+| rowspan="5" |[[File:NewListingsWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Vapid]] [[Riata]]*
+|$424,550
+|[[Republican Space Rangers|Space Cadet]]
+|Lightweight Steelie
+|-
+|[[Pegassi]] [[Esskey]]*
+|$287,370
+|Orange Retro Fade
+|Stock
+|-
+|[[BF]] [[Bifta]]*
+|$98,800
+|N/A
+|Mountain Man
+|-
+|[[Dinka]] [[Jester]]*
+|$259,240
+|N/A
+|Carbon Shadow
+|-
+|[[Coil]] [[Brawler]]*
+|$715,000
+|N/A
+|Stock
+|-
+| rowspan="5" |6 November 2025
+| rowspan="5" |[[File:CayoPericoWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Grotti (HD Universe)|Grotti]] [[Cheetah (HD Universe)|Cheetah]]*
+|$660,000
+|N/A
+|Wangen Master
+|-
+|[[Enus]] [[Cognoscenti Cabrio]]*
+|$197,250
+|N/A
+|Dash VIP
+|-
+|[[Western Motorcycle Company|Western]] [[Daemon (custom)]]*
+|$183,159
+|Major Milspec
+|Loops (front)
+|-
+|[[Dinka]] [[Thrust]]*
+|$75,000
+|N/A
+|Stock
+|-
+|[[Invetero]] [[Coquette BlackFin]]*
+|$711,580
+|N/A
+|Classic Rod
+|-
+| rowspan="5" |30 October 2025
+| rowspan="5" |[[File:Halloween2025Week5-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Grotti (HD Universe)|Grotti]] [[GT500]]*
+|$813,810
+|Grotti Commercial Livery
+|Stock
+|-
+|[[Dewbauchee]] [[Seven-70]]*
+|$705,260
+|N/A
+|Obey RS
+|-
+|[[Albany]] [[Franken Stange]]*
+|$448,000
+|Midnight Potion
+|Conical Turbofan
+|-
+|[[Declasse]] [[Tornado Rat Rod]]*
+|$272,250
+|N/A
+|Old School (front)
+|-
+|[[Chariot]] [[Romero Hearse]]*
+|$37,340
+|N/A
+|Endo v.1
+|-
+| rowspan="5" |23 October 2025
+| rowspan="5" |[[File:Halloween2025Week4-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Declasse]] [[Vamos]]*
+|$622,789
+|Sure It's Safe?
+|Stock
+|-
+|[[Vulcar]] [[Fagaloa]]*
+|$363,500
+|Vulcar Racing
+|Fairle
+|-
+|[[Albany]] [[Franken Stange]]*
+|$414,480
+|Midnight Potion
+|Big Worm
+|-
+|[[Declasse]] [[Tornado Rat Rod]]*
+|$264,600
+|N/A
+|Dukes (front)
+|-
+|[[Chariot]] [[Romero Hearse]]*
+|$31,500
+|N/A
+|Stock
+|-
+| rowspan="5" |16 October 2025
+| rowspan="5" |[[File:Halloween2025Week3-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Ocelot]] [[Locust (HD Universe)|Locust]]*
+|$1,630,840
+|N/A
+|Endo v.1
+|-
+|[[Vapid]] [[Peyote Gasser]]*
+|$843,240
+|[[Flywheels Garage]]
+|Classic Rod (front)
+|-
+|[[Albany]] [[Franken Stange]]*
+|$408,150
+|Spider Trap
+|Old School
+|-
+|[[Declasse]] [[Tornado Rat Rod]]*
+|$268,950
+|N/A
+|Dodman (front)
+|-
+|[[Chariot]] [[Romero Hearse]]*
+|$41,360
+|N/A
+|Ice Kid
+|-
+| rowspan="5" |9 October 2025
+| rowspan="5" |[[File:Halloween2025Week2-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Declasse]] [[Tulip]]*
+|$739,660
+|Outlaw
+|Stock
+|-
+|[[BF]] [[Raptor]]*
+|$685,700
+|Hidden Six
+|Dukes
+|-
+|[[Chariot]] [[Romero Hearse]]*
+|$31,500
+|N/A
+|Stock
+|-
+|[[Albany]] [[Franken Stange]]*
+|$429,080
+|Blazing Death
+|Stock
+|-
+|[[Declasse]] [[Tornado Rat Rod]]*
+|$264,600
+|N/A
+|Stock
+|-
+| rowspan="5" |2 October 2025
+| rowspan="5" |[[File:Halloween2025Week1-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Canis]] [[Seminole Frontier]]*
+|$700,800
+|Siberia
+|Stock
+|-
+|[[Vapid]] [[Clique]]*
+|$938,300
+|Los Santos Racer
+|Dukes
+|-
+|[[Albany]] [[Franken Stange]]*
+|$429,080
+|Hell's Furnace
+|Classic Rod
+|-
+|[[Declasse]] [[Tornado Rat Rod]]*
+|$264,600
+|N/A
+|Stock
+|-
+|[[Chariot]] [[Romero Hearse]]*
+|$31,500
+|N/A
+|Stock
+|-
+| rowspan="5" |25 September 2025
+| rowspan="5" |[[File:SuzumeWeekSeptember2025-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Lampadati]] [[Michelli GT]]*
+|$1,265,110
+|Gammi Forapundo
+|Avalanche
+|-
+|[[Bravado]] [[Verlierer]]*
+|$695,000
+|N/A
+|Stock
+|-
+|[[Överflöd]] [[Entity XF]]*
+|$795,000
+|N/A
+|Stock
+|-
+|[[Karin]] [[190z]]*
+|$932,330
+|Classic Rally
+|Split Six
+|-
+|[[Invetero]] [[Coquette]]*
+|$138,000
+|N/A
+|Stock
+|-
+| rowspan="5" |18 September 2025
+| rowspan="5" |[[File:NeighborhoodWatchWeek2-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Vulcar]] [[Warrener]]*
+|$120,000
+|N/A
+|Stock
+|-
+|[[Dinka]] [[Verus]]*
+|$233,900
+|90s Sandbox
+|Stock
+|-
+|[[Dundreary]] [[Landstalker XL]]*
+|$1,239,380
+|Two-Tone Paint
+|Bippu
+|-
+|[[Invetero]] [[Coquette BlackFin]]*
+|$695,000
+|N/A
+|Old School
+|-
+|[[Hijak]] [[Ruston]]*
+|$437,050
+|N/A
+|Stock
+|-
+| rowspan="5" |11 September 2025
+| rowspan="5" |[[File:NeighborhoodWatchWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Enus]] [[Stafford]]*
+|$1,294,800
+|Neoclassical
+|Stock
+|-
+|[[Nagasaki]] [[Hot Rod Blazer]]*
+|$85,800
+|N/A
+|Retro Steelie
+|-
+|[[Grotti (HD Universe)|Grotti]] [[GT500]]*
+|$806,660
+|Single Side Stripe
+|Stock
+|-
+|[[Vapid]] [[Blade (car)|Blade]]*
+|$160,000
+|N/A
+|Stock
+|-
+|[[Coil]] [[Brawler]]*
+|$736,100
+|N/A
+|Drag SPL
+|-
+| rowspan="5" |4 September 2025
+| rowspan="5" |[[File:CayoPericoSurvivalWeek2-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Liberty City Cycles|LCC]] [[Hexer]]*
+|$39,500
+|N/A
+|Razer (front)
+|-
+|[[Western Motorcycle Company|Western]] [[Cliffhanger]]*
+|$272,875
+|Stunt
+|Holy Spoke (front)
+|-
+|[[Benefactor]] [[Surano]]*
+|$143,000
+|N/A
+|Mercie Concave
+|-
+|[[Liberty City Cycles|LCC]] [[Avarus]]*
+|$135,380
+|Blue Flames
+|Stock
+|-
+|[[Weeny]] [[Dynasty]]*
+|$477,310
+|Flares
+|Spooner
+|-
+| rowspan="5" |28  August 2025
+| rowspan="5" |[[File:CayoPericoSurvivalWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Declasse]] [[Vamos]]
+|$621,650
+|Raceway Queen
+|Stock
+|-
+|[[Dewbauchee]] [[Seven-70]]
+|$695,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Riata]]
+|$404,070
+|Blue Double Stripe
+|Amazon
+|-
+|[[Dewbauchee]] [[Rapid GT]]
+|$132,000
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Zombie Bobber]]
+|$118,380
+|Blue Flames
+|Stock
+|-
+| rowspan="5" |21  August 2025
+| rowspan="5" |[[File:EndOfSummerGiveawayWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Annis]] [[S80RR]]
+|$1,605,010
+|[[Chepalle]]
+|Retro Turbofan
+|-
+|[[Pegassi]] [[Ignus]]
+|$1,678,380
+|Black Stripes
+|Stock
+|-
+|[[Nagasaki]] [[Shinobi]]
+|$1,518,510
+|Race Nagasaki
+|Stock
+|-
+|[[Ocelot]] [[Locust (HD Universe)|Locust]]
+|$1,685,910
+|[[Jackal Racing|Jackal]]
+|Truffade Concave
+|-
+|[[Grotti (HD Universe)|Grotti]] [[Turismo Omaggio]]
+|$1,738,180
+|Grotti Classic Stripes
+|Cheetah R
+|-
+| rowspan="5" |14  August 2025
+| rowspan="5" |[[File:DriftWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Declasse]] [[Drift Walton L35]]
+|$63,650
+|[[Manor]] Drifter
+|Conical Turbofan w/ [[Fukaru]] White
+|-
+|[[Bravado]] [[Gauntlet Hellfire]]
+|$774,640
+|Raceway Hero
+|Fairle
+|-
+|[[Vapid]] [[Dominator FX]]
+|$370,030
+|Old School
+|Stock
+|-
+|[[Annis]] [[Hardy]]
+|$1,401,660
+|Taxi Import
+|Stock
+|-
+|[[Dinka]] [[Chavos V6]]
+|$735,650
+|[[Rapefest Quark Zoom|Shiny Wasabi]] Fitment
+|Stock
+|-
+| rowspan="5" |7  August 2025
+| rowspan="5" |[[File:RapidGTXWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Lampadati]] [[Michelli GT]]*
+|$1,253,449
+|[[Stronzo]]
+|Spooner
+|-
+|[[Vapid]] [[Peyote Gasser]]*
+|$825,520
+|Smokey Peyote
+|Stock
+|-
+|[[Vulcar]] [[Fagaloa]]*
+|$370,030
+|Rusted
+|Chromatic Z
+|-
+|[[Karin]] [[190z]]*
+|$908,120
+|N/A
+|Deep Five
+|-
+|[[Dinka]] [[Enduro]]*
+|$48,000
+|N/A
+|Stock
+|-
+| rowspan="5" |31 July 2025
+| rowspan="5" |[[File:OddJobsWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Vapid]] [[FMJ]]*
+|$1,050,000
+|N/A
+|Stock
+|-
+|[[Invetero]] [[Coquette BlackFin]]*
+|$417,000
+|N/A
+|Stock
+|-
+|[[Bravado]] [[Verlierer]]*
+|$417,000
+|N/A
+|Stock
+|-
+|[[Överflöd]] [[Entity XF]]*
+|$477,000
+|N/A
+|Stock
+|-
+|[[Canis]] [[Seminole Frontier]]*
+|$428,460
+|Sunset Stripes
+|Stock
+|-
+| rowspan="5" |24 July 2025
+| rowspan="5" |[[File:CayoPericoMotorWarsWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Grotti (HD Universe)|Grotti]] [[GT500]]*
+|$804,380
+|[[Italy|Italia]]
+|Stock
+|-
+|[[Vapid]] [[Hustler]]*
+|$644,380
+|Yellow Flames
+|Stock
+|-
+|[[Vapid]] [[Blade (car)|Blade]]*
+|$160,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[JB 700]]*
+|$350,000
+|N/A
+|Stock
+|-
+|[[Liberty City Cycles|LCC]] [[Innovation]]*
+|$92,500
+|N/A
+|Stock
+|-
+| rowspan="5" |17 July 2025
+| rowspan="5" |[[File:MrFaberWorkWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Ocelot]] [[Lynx]]*
+|$1,735,000
+|None
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Wolfsbane]]*
+|$113,240
+|Red Flames
+|Stock
+|-
+|[[Pegassi]] [[Vacca]]*
+|$240,000
+|N/A
+|Stock
+|-
+|[[Canis]] [[Bodhi]]*
+|$25,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Retinue]]*
+|$637,800
+|[[Xero|Team Xero]]
+|Stock
+|-
+| rowspan="5" |10 July 2025
+| rowspan="5" |[[File:SmokeOnTheWaterWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Dewbauchee]] [[Rapid GT Classic]]*
+|$910,650
+|Hotrod
+|Stock
+|-
+|[[Vulcar]] [[Warrener]]*
+|$120,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Massacro]]*
+|$275,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Rapid GT (cabrio)]]*
+|$140,000
+|N/A
+|Stock
+|-
+|[[Nagasaki]] [[Hot Rod Blazer]]*
+|$69,000
+|N/A
+|Stock
+|-
+| rowspan="5" |3 July 2025
+| rowspan="5" |[[File:IndependenceDay2025-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Bravado]] [[Banshee GTS]]
+|$2,010,020
+|GTS Stripes
+|Stock
+|-
+|[[Declasse]] [[Vigero ZX Convertible]]
+|$2,321,789
+|Declasse Pace Car
+|Stock
+|-
+|[[Willard (HD Universe manufacturer)|Willard]] [[Eudora]]
+|$1,275,080
+|Classic Blue Pinstripes
+|Stock
+|-
+|[[Declasse]] [[Scramjet]]
+|$4,057,059
+|Classic Flames
+|Deep Five
+|-
+|[[Coil]] [[Cyclone]]
+|$1,914,510
+|Inverted Body Stripes
+|Stock
+|-
+| rowspan="5" |26 June 2025
+| rowspan="5" |[[File:SuzumeWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Vapid]] [[Peyote Gasser]]*
+|$824,380
+|Old School Gasser
+|Stock
+|-
+|[[Annis]] [[Minimus]]
+|$1,417,000
+|None
+|Stock
+|-
+|[[Lampadati]] [[Furore GT]]*
+|$448,000
+|N/A
+|Stock
+|-
+|[[Declasse]] [[Walton L35 Stock]]
+|$1,324,220
+|None
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[LSCM Cheetah Classic]]
+|$1,962,500
+|LSCM x Yeti
+|Stock
+|-
+| rowspan="5" |17 June 2025
+| rowspan="5" |[[File:MoneyFronts-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Karin]] [[190z]]*
+|$933,770
+|[[Amigas|Amigas Watermark]]
+|Deep Five
+|-
+|[[Karin]] [[Woodlander]]
+|$1,634,939
+|Karin Performance
+|Stock
+|-
+|[[Ocelot]] [[Locust (HD Universe)|Locust]]*
+|$1,625,000
+|N/A
+|Stock
+|-
+|[[Übermacht]] [[Sentinel GTS]]
+|$2,197,080
+|Drift Show
+|Stock
+|-
+|[[Annis]] [[Hardy]]
+|$1,402,800
+|[[Hardstand]] 300.5
+|Stock
+|-
+| rowspan="5" |5 June 2025
+| rowspan="5" |[[File:DiamondCasinoBonusesWeekJune2025-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Liberty City Cycles|LCC]] [[Hexer]]*
+|$15,000
+|N/A
+|Stock
+|-
+|[[Hijak]] [[Ruston]]*
+|$437,050
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Blade (car)|Blade]]*
+|$160,000
+|N/A
+|Stock
+|-
+|[[Vulcar]] [[Fagaloa]]*
+|$359,510
+|Vulcar Racing
+|Stock
+|-
+|[[Vapid]] [[Hustler]]*
+|$645,520
+|Purple Flames
+|Stock
+|-
+| rowspan="5" |29 May 2025
+| rowspan="5" |[[File:ExecutiveBonusesWeekMay2025-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Liberty City Cycles|LCC]] [[Avarus]]*
+|$143,360
+|Flamed Patina
+|Stock
+|-
+|[[Liberty City Cycles|LCC]] [[Innovation]]*
+|$92,500
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Esskey]]*
+|$287,370
+|Orange Retro Fade
+|Stock
+|-
+|[[Vapid]] [[Bullet]]*
+|$155,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[FMJ]]*
+|$1,750,000
+|N/A
+|Stock
+|-
+| rowspan="5" |22 May 2025
+| rowspan="5" |[[File:ASuperyachtLifeWeekMay2025-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Grotti (HD Universe)|Grotti]] [[Cheetah (HD Universe)|Cheetah]]*
+|$650,000
+|N/A
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[GT500]]*
+|$810,080
+|[[Gaulle]]
+|Stock
+|-
+|[[Överflöd]] [[Entity XF]]*
+|$795,000
+|N/A
+|Stock
+|-
+|[[Weeny]] [[Dynasty]]*
+|$475,650
+|Horn OK Please
+|Stock
+|-
+|[[Enus]] [[Super Diamond]]*
+|$250,000
+|N/A
+|Stock
+|-
+| rowspan="5" |15 May 2025
+| rowspan="5" |[[File:TheFIBFilesWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Vapid]] [[Retinue]]*
+|$638,370
+|[[RON|Ron Performance]]
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[Stinger]]*
+|$850,000
+|N/A
+|Stock
+|-
+|[[Enus]] [[Stafford]]*
+|$1,292,520
+|Radials
+|Stock
+|-
+|[[Nagasaki]] [[Hot Rod Blazer]]*
+|$69,000
+|N/A
+|Stock
+|-
+|[[Ocelot]] [[Lynx]]*
+|$1,780,600
+|[[Ocelot|Ocelot Racing]]
+|Stock
+|-
+| rowspan="5" |8 May 2025
+| rowspan="5" |[[File:TheDataLeaksWeekMay2025-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Dewbauchee]] [[Seven-70]]*
+|$695,000
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Vacca]]*
+|$259,240
+|N/A
+|Carbon Shadow
+|-
+|[[Vapid]] [[Clique]]*
+|$933,510
+|[[Rimm Paint|Rimm Paint Racer]]
+|Stock
+|-
+|[[Dewbauchee]] [[Rapid GT Classic]]*
+|$910,080
+|[[Globe Oil]]
+|Stock
+|-
+|[[Dinka]] [[Jester]]*
+|$240,000
+|N/A
+|Stock
+|-
+| rowspan="5" |1 May 2025
+| rowspan="5" |[[File:OpenWheelRacesWeekMay2025-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Invetero]] [[Coquette]]*
+|$138,000
+|N/A
+|Stock
+|-
+|[[Canis]] [[Kalahari]]*
+|$40,000
+|N/A
+|Stock
+|-
+|[[Albany]] [[Roosevelt]]*
+|$750,000
+|N/A
+|Stock
+|-
+|[[Benefactor]] [[Streiter]]*
+|$500,000
+|N/A
+|Stock
+|-
+|[[BF]] [[Raptor]]*
+|$652,850
+|N/A
+|Endo v.2
+|-
+| rowspan="5" |24 April 2025
+| rowspan="5" |[[File:TerrorbyteClientJobsWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Vapid]] [[Riata]]*
+|$403,370
+|Dawn Camo
+|Stock
+|-
+|[[Canis]] [[Bodhi]]*
+|$25,000
+|N/A
+|Stock
+|-
+|[[Lampadati]] [[Pigalle]]*
+|$400,000
+|N/A
+|Stock
+|-
+|[[Übermacht]] [[Revolter]]*
+|$1,669,310
+|Large Digital
+|Stock
+|-
+|[[Declasse]] [[Tornado Rat Rod]]*
+|$378,000
+|N/A
+|Stock
+|-
+| rowspan="5" |17 April 2025
+| rowspan="5" |[[File:HuntingPackGetLamarWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Benefactor]] [[XLS]]*
+|$253,000
+|N/A
+|Stock
+|-
+|[[Lampadati]] [[Viseris]]*
+|$875,000
+|N/A
+|Stock
+|-
+|[[Enus]] [[Cognoscenti Cabrio]]*
+|$202,000
+|N/A
+|Stock
+|-
+|[[Declasse]] [[Vamos]]*
+|$623,030
+|Double Black Stripes
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Cliffhanger]]*
+|$225,000
+|N/A
+|Stock
+|-
+| rowspan="5" |10 April 2025
+| rowspan="5" |[[File:HeistsWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Declasse]] [[Tulip]]*
+|$744,140
+|Classic Stripes Black
+|Stock
+|-
+|[[Coil]] [[Voltic]]*
+|$150,000
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Rat Bike]]*
+|$48,000
+|N/A
+|Stock
+|-
+|[[Lampadati]] [[Michelli GT]]*
+|$1,260,960
+|Works Racer
+|Stock
+|-
+|[[Coil]] [[Raiden]]*
+|$1,375,000
+|N/A
+|Stock
+|-
+| rowspan="5" |3 April 2025
+| rowspan="5" |[[File:HSWRacesWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Liberty City Cycles|LCC]] [[Avarus]]*
+|$143,360
+|Flamed Patina
+|Stock
+|-
+|[[Benefactor]] [[Feltzer]]*
+|$145,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Hustler]]*
+|$666,090
+|Custom Racer
+|Stock
+|-
+|[[Dewbauchee]] [[Rapid GT]]*
+|$132,000
+|N/A
+|Stock
+|-
+|[[Dinka]] [[Jester (Racecar)]]*
+|$355,750
+|N/A
+|Stock
+|-
+| rowspan="5" |27 March 2025
+| rowspan="5" |[[File:AirFreightCargoWeekMarch2025-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Dewbauchee]] [[Massacro]]*
+|$275,000
+|N/A
+|Stock
+|-
+|[[Dinka]] [[Akuma]]*
+|$9,000
+|N/A
+|Stock
+|-
+|[[Liberty City Cycles|LCC]] [[Innovation]]*
+|$92,500
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Rapid GT (cabrio)]]*
+|$140,000
+|N/A
+|Stock
+|-
+|[[Pfister (HD Universe)|Pfister]] [[Comet]]*
+|$100,000
+|N/A
+|Stock
+|-
+| rowspan="5" |20 March 2025
+| rowspan="5" |[[File:TheTitanJobWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Albany]] [[Alpha (HD Universe)|Alpha]]*
+|$150,000
+|N/A
+|Stock
+|-
+|[[Dinka]] [[Verus]]*
+|$216,510
+|Winter Camo
+|Stock
+|-
+|[[Pegassi]] [[Esskey]]*
+|$287,939
+|Blue Retro Fade
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[Cheetah (HD Universe)|Cheetah]]*
+|$650,000
+|N/A
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[GT500]]*
+|$809,510
+|Grotti Commercial Livery
+|Stock
+|-
+| rowspan="5" |13 March 2025
+| rowspan="5" |[[File:ArmsTraffickingWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Vapid]] [[Contender]]*
+|$250,000
+|N/A
+|Stock
+|-
+|[[Ocelot]] [[Swinger]]*
+|$934,080
+|[[Globe Oil]]
+|Stock
+|-
+|[[Dewbauchee]] [[JB 700]]*
+|$350,000
+|N/A
+|Stock
+|-
+|[[Invetero]] [[Coquette BlackFin]]*
+|$695,000
+|N/A
+|Stock
+|-
+|[[Progen]] [[Tyrus]]*
+|$2,550,000
+|N/A
+|Stock
+|-
+| rowspan="5" |4 March 2025
+| rowspan="5" |[[File:OscarGuzmanFliesAgainWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Vapid]] [[Clique]]*
+|$934,080
+|Arrow Racer
+|Stock
+|-
+|[[Benefactor]] [[Surano]]*
+|$110,000
+|N/A
+|Stock
+|-
+|[[BF]] [[Bifta]]*
+|$75,000
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Vacca]]*
+|$240,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Seven-70]]*
+|$695,000
+|N/A
+|Stock
+|-
+| rowspan="5" |27 February 2025
+| rowspan="5" |[[File:GunrunningBonusesWeekFebruary2025-GTAOe-PDMSStock.jpg|200px|center]]
+|[[Vulcar]] [[Fagaloa]]*
+|$335,000
+|None
+|Stock
+|-
+|[[Karin]] [[190z]]*
+|$923,370
+|Blue [[Jackal Racing]]
+|Stock
+|-
+|[[Enus]] [[Super Diamond]]*
+|$250,000
+|N/A
+|Stock
+|-
+|[[Enus]] [[Stafford]]*
+|$1,294,800
+|Neoclassical
+|Stock
+|-
+|[[Benefactor]] [[Streiter]]*
+|$500,000
+|N/A
+|Stock
+|-
+| rowspan="5" |20 February 2025
+| rowspan="5" |[[File:UranusLozSpeedWeek-GTAOe-PDMSStock.jpg|200px|center]]
+|[[Albany]] [[Hermes]]*
+|$396,160
+|Blue Flames
+|Stock
+|-
+|[[Nagasaki]] [[Hot Rod Blazer]]*
+|$69,000
+|N/A
+|Stock
+|-
+|[[Invetero]] [[Coquette]]*
+|$138,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Bullet]]*
+|$155,000
+|N/A
+|Stock
+|-
+|[[Weeny]] [[Dynasty]]*
+|$338,939
+|Speedy
+|Stock
+|-
+| rowspan="5" |13 February 2025
+| rowspan="5" |[[File:ValentinesDay2025-GTAOe-PDMSStock.jpg|200px|center]]
+|[[Benefactor]] [[Schafter LWB]]*
+|$208,000
+|N/A
+|Stock
+|-
+|[[Dinka]] [[Thrust]]*
+|$75,000
+|N/A
+|Stock
+|-
+|[[Dinka]] [[Jester]]*
+|$240,000
+|N/A
+|Stock
+|-
+|[[BF]] [[Raptor]]*
+|$648,000
+|N/A
+|Stock
+|-
+|[[Ocelot]] [[Lynx]]*
+|$1,735,000
+|None
+|Stock
+|-
+| rowspan="5" |6 February 2025
+| rowspan="5" |[[File:DriftRacingWeek-GTAOe-PDMSStock.jpg|200px|center]]
+|[[Übermacht]] [[Cypher]]
+|$837,120
+|Red Pinstripe
+|Stock
+|-
+|[[RUNE]] [[Cheburek]]
+|$120,880
+|Crimson Star
+|Stock
+|-
+|[[Fathom]] [[FR36]]
+|$1,150,939
+|[[Fukaru]]
+|Stock
+|-
+|[[Benefactor]] [[Vorschlaghammer]]
+|$1,811,660
+|White Benefactor Racing
+|Stock
+|-
+|[[Karin]] [[Futo GTX]]
+|$854,130
+|Delivery Boy
+|Stock
+|-
+| rowspan="5" |30 January 2025
+| rowspan="5" |[[File:DragRacesWeekJanuary2025-GTAOe-PDMSStock.jpg|200px|center]]
+|[[Dinka]] [[Jester (Racecar)]]*
+|$245,000
+|N/A
+|Stock
+|-
+|[[Coil]] [[Voltic]]*
+|$150,000
+|N/A
+|Stock
+|-
+|[[Progen]] [[GP1]]*
+|$882,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Massacro (Racecar)]]*
+|$385,000
+|N/A
+|Stock
+|-
+|[[Enus]] [[Cognoscenti Cabrio]]*
+|$185,000
+|N/A
+|Stock
+|-
+| rowspan="5" |23 January 2025
+| rowspan="5" |[[File:YearOfTheSnakeWeek-GTAOe-PDMSStock.jpg|200px|center]]
+|[[Dewbauchee]] [[Rapid GT]]*
+|$132,000
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Daemon]]*
+|$167,240
+|N/A
+|Stock
+|-
+|[[Hijak]] [[Ruston]]*
+|$308,050
+|N/A
+|Stock
+|-
+|[[Canis]] [[Bodhi]]*
+|$25,000
+|N/A
+|Stock
+|-
+|[[Dundreary]] [[Landstalker XL]]*
+|$1,243,939
+|Blood Splatter
+|Stock
+|-
+| rowspan="5" |16 January 2025
+| rowspan="5" |[[File:TheBruteForceFileWeek-GTAOe-PDMSStock.jpg|200px|center]]
+|[[Pegassi]] [[Esskey]]*
+|$287,370
+|Orange Retro Fade
+|Stock
+|-
+|[[Liberty City Cycles|LCC]] [[Hexer]]*
+|$15,000
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Wolfsbane]]*
+|$117,800
+|Outline Pinstripe
+|Stock
+|-
+|[[Gallivanter]] [[Baller LE]]
+|$74,500
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Hustler]]*
+|$330,740
+|Basic Pinstripe
+|Stock
+|-
+| rowspan="5" |9 January 2025
+| rowspan="5" |[[File:FireboltASPWeek-GTAOee-PDMSStock-NoAd.jpg|200px|center]]
+|[[Western Motorcycle Company|Western]] [[Rat Bike]]*
+|$48,000
+|N/A
+|Stock
+|-
+|[[Liberty City Cycles|LCC]] [[Innovation]]*
+|$92,500
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Rapid GT (cabrio)]]*
+|$140,000
+|N/A
+|Stock
+|-
+|[[Benefactor]] [[XLS]]*
+|$126,500
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Massacro]]*
+|$137,500
+|N/A
+|Stock
+|-
+| rowspan="5" |2 January 2025
+| rowspan="5" |[[File:TheBlackBoxFileWeek-GTAOe-PDMSStock.jpg|200px|center]]
+|[[Declasse]] [[Tulip]]*
+|$736,240
+|Classic Stripes Black
+|Stock
+|-
+|[[Übermacht]] [[Zion Classic]]*
+|$812,000
+|None
+|Stock
+|-
+|[[Dewbauchee]] [[Exemplar]]*
+|$205,000
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Vacca]]*
+|$240,000
+|N/A
+|Stock
+|-
+|[[Annis]] [[Hellion]]*
+|$853,240
+|White Stripes
+|Stock
+|}
+
+[[SECTION:5:2024]]
+{| class="zebratable mw-collapsible sortable mw-collapsed" style="width: 100%"
+!rowspan="2"|{{H:title|Commencement date|Week}}
+!rowspan="2"|Image
+! colspan="4" |Test Drives<br /><nowiki>*</nowiki> Denotes a vehicle not otherwise available to purchase.<br />
+|-
+!Vehicle
+!Price
+!Livery
+!Wheels
+|-
+| rowspan="5" |19 December 2024
+| rowspan="5" |[[File:FestiveSurprise2024-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dewbauchee]] [[JB 700]]*
+|$245,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Clique]]*
+|$909,000
+|[[Special Liveries in GTA Online/Vehicles#Part of Arena War|Merry Cliquemas]]
+|Stock
+|-
+|[[Vysser]] [[Neo]]*
+|$1,898,370
+|Track Day
+|Stock
+|-
+|[[Albany]] [[Alpha (HD Universe)|Alpha]]*
+|$150,000
+|N/A
+|Stock
+|-
+|[[Übermacht]] [[Revolter]]*
+|$966,000
+|[[Special Liveries in GTA Online/Vehicles#Part of After Hours|Blue Tartan]]
+|Stock
+|-
+| rowspan="5" |10 December 2024
+| rowspan="5" |[[File:AgentsOfSabotage-GTAOee-PDMSStock-NoAd.jpg|175px|center]]
+|[[Dinka]] [[Chavos V6]]
+|$1,438,240
+|White Skirt Stripes
+|Stock
+|-
+|[[Vapid]] [[Contender]]*
+|$250,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Retinue]]*
+|$453,870
+|[[RON|Ron Performance]]
+|Stock
+|-
+|[[Ocelot]] [[Swinger]]*
+|$933,510
+|The Ocelot
+|Stock
+|-
+|[[Schyster]] [[Deviant]]*
+|$535,939
+|[[Arrow Gasoline]]
+|Stock
+|-
+| rowspan="5" |5 December 2024
+| rowspan="5" |[[File:BountyBonusesWeekDecember2024-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Invetero]] [[Coquette BlackFin]]*
+|$695,000
+|N/A
+|Stock
+|-
+|[[Dinka]] [[Thrust]]*
+|$75,000
+|N/A
+|Stock
+|-
+|[[Weeny]] [[Dynasty]]*
+|$340,650
+|Horn OK Please
+|Stock
+|-
+|[[Enus]] [[Stafford]]*
+|$890,400
+|[[Special Liveries in GTA Online/Vehicles#Part of After Hours|Oh Enus!]]
+|Stock
+|-
+|[[Progen]] [[Tyrus]]*
+|$1,819,200
+|[[Debonaire]] Livery
+|Stock
+|-
+| rowspan="5" |28 November 2024
+| rowspan="5" |[[File:TheHeistChallenge2024Week4-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Benefactor]] [[Surano]]*
+|$55,000
+|N/A
+|Stock
+|-
+|[[Emperor (manufacturer)|Emperor]] [[ETR1]]*
+|$997,500
+|None
+|Stock
+|-
+|[[Dewbauchee]] [[Rapid GT Classic]]*
+|$467,580
+|[[Globe Oil]]
+|Stock
+|-
+|[[Vapid]] [[Bullet]]*
+|$77,500
+|N/A
+|Stock
+|-
+|[[Canis]] [[Kalahari]]*
+|$20,000
+|N/A
+|Stock
+|-
+| rowspan="5" |21 November 2024
+| rowspan="5" |[[File:TheHeistChallenge2024Week3-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Överflöd]] [[Imorgon]]*
+|$2,186,660
+|Stuck In The '90s
+|Stock
+|-
+|[[Dinka]] [[Enduro]]*
+|$48,000
+|N/A
+|Stock
+|-
+|[[Enus]] [[Cognoscenti 55]]*
+|$154,000
+|N/A
+|Stock
+|-
+|[[Enus]] [[Cognoscenti]]*
+|$254,000
+|N/A
+|Stock
+|-
+|[[RUNE]] [[Cheburek]]*
+|$164,380
+|Crimson Star
+|Stock
+|-
+| rowspan="5" |14 November 2024
+| rowspan="5" |[[File:TheHeistChallenge2024Week2-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Lampadati]] [[Viseris]]*
+|$612,500
+|N/A
+|Stock
+|-
+|[[Übermacht]] [[SC1]]*
+|$1,122,100
+|N/A
+|Stock
+|-
+|[[Annis]] [[Savestra]]*
+|$712,380
+|The 'Savestra'
+|Stock
+|-
+|[[Albany]] [[Hermes]]*
+|$554,380
+|Ghost Flames
+|Stock
+|-
+|[[Benefactor]] [[Streiter]]*
+|$500,000
+|N/A
+|Stock
+|-
+| rowspan="5" |7 November 2024
+| rowspan="5" |[[File:TheHeistChallenge2024Week1-GTAOe-PDMSStock.jpg|175px|center]]
+|[[BF]] [[Raptor]]
+|$453,600
+|N/A
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[Stinger]]*
+|$595,000
+|N/A
+|Stock
+|-
+|[[Lampadati]] [[Michelli GT]]*
+|$878,020
+|Heritage Racer
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Zombie Bobber]]*
+|$75,720
+|Stealthy Snake
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Rat Bike]]*
+|$455,000
+|N/A
+|Stock
+|-
+| rowspan="5" |31 October 2024
+| rowspan="5" |[[File:Halloween2024Week5-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Albany]] [[Fränken Stange]]*
+|$400,500
+|Spider Trap
+|Stock
+|-
+|[[BF]] [[Weevil]]
+|$634,080<br />$481,830<br /><small>(Trade Price)</small>
+|Forgotten Racer
+|Stock
+|-
+|[[Declasse]] [[Tornado Rat Rod]]
+|$185,000
+|N/A
+|Stock
+|-
+|[[Enus]] [[Super Diamond]]*
+|$125,000
+|N/A
+|Stock
+|-
+|[[Albany]] [[Lurcher]]
+|$455,000
+|The Ripper
+|Stock
+|-
+| rowspan="5" |24 October 2024
+| rowspan="5" |[[File:Halloween2024Week4-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Hijak]] [[Ruston]]*
+|$437,050
+|N/A
+|Stock
+|-
+|[[Liberty City Cycles|LCC]] [[Sanctus]]
+|$1,418,740
+|None
+|<small>Front: Street Special<br>Rear: Stock</small>
+|-
+|[[Enus]] [[Cognoscenti Cabrio]]*
+|$185,000
+|N/A
+|Stock
+|-
+|[[Dundreary]] [[Landstalker XL]]*
+|$1,240,520
+|Flame Livery
+|Stock
+|-
+|[[Benefactor]] [[XLS]]*
+|$253,000
+|N/A
+|Stock
+|-
+| rowspan="5" |17 October 2024
+| rowspan="5" |[[File:Halloween2024Week3-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Chariot]] [[Romero's Hearse]]
+|$31,500
+|N/A
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[Cheetah (HD Universe)|Cheetah]]*
+|$650,000
+|N/A
+|Stock
+|-
+|[[Canis]] [[Bodhi]]*
+|$25,000
+|N/A
+|Stock
+|-
+|[[Benefactor]] [[Stirling GT]]*
+|$709,289
+|Thousand Mile Hero
+|Stock
+|-
+|[[Declasse]] [[Scramjet]]
+|$4,047,800
+|Red Pinstripes
+|Stock
+|-
+| rowspan="5" |10 October 2024
+| rowspan="5" |[[File:Halloween2024Week2-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Benefactor]] [[Schafter LWB]]*
+|$208,000
+|N/A
+|Stock
+|-
+|[[Declasse]] [[Tornado Rat Rod]]
+|$264,600
+|N/A
+|Stock
+|-
+|[[Weeny]] [[Issi Sport]]*
+|$651,270
+|Cherenkov Lime
+|Stock
+|-
+|[[Shitzu]] [[Hakuchou]]*
+|$82,000
+|N/A
+|Stock
+|-
+|[[Liberty City Cycles|LCC]] [[Sanctus]]
+|$1,425,360
+|None
+|<small>Front: Street Special<br>Rear: Stock</small>
+|-
+| rowspan="5" |3 October 2024
+| rowspan="5" |[[File:Halloween2024Week1-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Chariot]] [[Romero's Hearse]]
+|$31,500
+|N/A
+|Stock
+|-
+|[[Liberty City Cycles|LCC]] [[Sanctus]]
+|$1,400,500
+|None
+|<small>Front: Street Special<br>Rear: Stock</small>
+|-
+|[[Declasse]] [[Tornado Rat Rod]]
+|$264,600
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Daemon]]*
+|$170,080
+|N/A
+|Stock
+|-
+|[[Annis]] [[Hellion]]*
+|$860,650
+|Nightmare
+|Stock
+|-
+| rowspan="5" |26 September 2024
+| rowspan="5" |[[File:AssaultOnATT-16WeekSeptember2024-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Karin]] [[190z]]*
+|$650,520
+|'It's Lower'
+|Stock
+|-
+|[[Dinka]] [[Thrust]]*
+|$75,000
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Torero]]*
+|$698,600
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Riata]]*
+|$403,370
+|Dawn Camo
+|Stock
+|-
+|[[Vapid]] [[Hustler]]*
+|$645,520
+|Purple Flames
+|Stock
+|-
+| rowspan="5" |19 September 2024
+| rowspan="5" |[[File:BountyBonusesWeekSeptember2024-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dewbauchee]] [[Massacro]]*
+|$275,000
+|N/A
+|Stock
+|-
+|[[Liberty City Cycles|LCC]] [[Avarus]]*
+|$142,789
+|Major Milspec
+|Stock
+|-
+|[[Lampadati]] [[Viseris]]*
+|$875,000
+|N/A
+|Stock
+|-
+|[[Ocelot]] [[Swinger]]*
+|$660,810
+|The Ocelot
+|Stock
+|-
+|[[Schyster]] [[Deviant]]*
+|$533,660
+|Negative Stripes
+|Stock
+|-
+| rowspan="5" |12 September 2024
+| rowspan="5" |[[File:ExecutiveBonusesWeekSeptember2024-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dewbauchee]] [[Exemplar]]*
+|$205,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[JB 700]]*
+|$350,000
+|N/A
+|Stock
+|-
+|[[Enus]] [[Stafford]]*
+|$786,000
+|Neoclassical
+|Stock
+|-
+|[[Declasse]] [[Tulip]]*
+|$739,660
+|Outlaw
+|Stock
+|-
+|[[Pegassi]] [[Infernus]]*
+|$440,000
+|N/A
+|Stock
+|-
+| rowspan="5" |5 September 2024
+| rowspan="5" |[[File:BikerBonusesWeekSeptember2024-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Ocelot]] [[Locust (HD Universe)|Locust]]*
+|$1,645,520
+|Yellow Stripe
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Zombie Bobber]]*
+|$125,220
+|Stealthy Snake
+|Stock
+|-
+|[[Übermacht]] [[Zion Classic]]*
+|$812,000
+|None
+|Stock
+|-
+|[[Liberty City Cycles|LCC]] [[Innovation]]*
+|$9250,000
+|N/A
+|Stock
+|-
+|[[Vulcar]] [[Fagaloa]]*
+|$358,939
+|[[Scooter Brothers|Scooter Bro's Racer]]
+|Stock
+|-
+| rowspan="5" |29 August 2024
+| rowspan="5" |[[File:GunrunningBonusesWeekAugust2024-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Lampadati]] [[Tigon]]*
+|$1,411,650
+|Flames
+|Stock
+|-
+|[[Nagasaki]] [[Hot Rod Blazer]]*
+|$120,000
+|N/A
+|Stock
+|-
+|[[Bravado]] [[Verlierer]]*
+|$695,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Rapid GT Classic]]*
+|$904,380
+|Classic Stripes Black
+|Stock
+|-
+|[[Pegassi]] [[Vacca]]*
+|$240,000
+|N/A
+|Stock
+|-
+| rowspan="5" |22 August 2024
+| rowspan="5" |[[File:AssaultOnATT-16Week-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dinka]] [[Jester]]*
+|$240,000
+|N/A
+|Stock
+|-
+|[[Dinka]] [[Double T]]*
+|$12,000
+|N/A
+|Stock
+|-
+|[[Överflöd]] [[Imorgon]]*
+|$2,189,510
+|[[Kisama Beer]]
+|Stock
+|-
+|[[Übermacht]] [[SC1]]*
+|$1,603,000
+|N/A
+|Stock
+|-
+|[[Vulcar]] [[Warrener]]*
+|$120,000
+|N/A
+|Stock
+|-
+| rowspan="5" |15 August 2024
+| rowspan="5" |[[File:NightclubBonusesWeekAugust2024-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Albany]] [[Alpha (HD Universe)|Alpha]]*
+|$150,000
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Wolfsbane]]*
+|$118,939
+|Patriot Paintover
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[Stinger]]*
+|$850,000
+|N/A
+|Stock
+|-
+|[[Dundreary]] [[Landstalker XL]]*
+|$1,244,510
+|[[Sessanta Nove]]
+|Stock
+|-
+|[[Canis]] [[Seminole Frontier]]*
+|$700,800
+|Siberia
+|Stock
+|-
+| rowspan="5" |8 August 2024
+| rowspan="5" |[[File:BountyBonusesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Annis]] [[Savestra]]*
+|$1,012,800
+|Classic Racing Livery
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Cliffhanger]]*
+|$225,000
+|None
+|Stock
+|-
+|[[Vulcar]] [[Nebula Turbo]]
+|$820,370
+|Keeping It Real
+|Stock
+|-
+|[[Declasse]] [[Lifeguard]]*
+|$865,000
+|N/A
+|Stock
+|-
+|[[BF]] [[Bifta]]*
+|$75,000
+|N/A
+|Stock
+|-
+| rowspan="5" |1 August 2024
+| rowspan="5" |[[File:VorschlaghammerWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Benefactor]] [[Streiter]]*
+|$500,000
+|N/A
+|Stock
+|-
+|[[Dinka]] [[Enduro]]*
+|$48,000
+|N/A
+|Stock
+|-
+|[[BF]] [[Raptor]]*
+|$648,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Seven-70]]*
+|$695,000
+|N/A
+|Stock
+|-
+|[[Declasse]] [[Tornado Rat Rod]]*
+|$378,000
+|N/A
+|Stock
+|-
+| rowspan="5" |25 July 2024
+| rowspan="5" |[[File:PizzaDeliveryWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Vapid]] [[Retinue]]*
+|$633,240
+|Wide Body Stripe
+|Stock
+|-
+|[[Coil]] [[Cyclone]]*
+|$1,910,520
+|Dual Blue Stripes
+|Stock
+|-
+|[[RUNE]] [[Cheburek]]*
+|$164,380
+|Crimson Star
+|Stock
+|-
+|[[Truffade]] [[Z-Type]]*
+|$665,000
+|N/A
+|Stock
+|-
+|[[Canis]] [[Kalahari]]*
+|$40,000
+|N/A
+|Stock
+|-
+| rowspan="5" |18 July 2024
+| rowspan="5" |[[File:CastigatorWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Enus]] [[Cognoscenti]]*
+|$254,000
+|N/A
+|Stock
+|-
+|[[Liberty City Cycles|LCC]] [[Hexer]]*
+|$15,000
+|N/A
+|Stock
+|-
+|[[Obey]] [[9F Cabrio]]*
+|$130,000
+|N/A
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[Stinger GT]]*
+|$612,500
+|N/A
+|Stock
+|-
+|[[Gallivanter]] [[Baller LE]]*
+|$149,000
+|N/A
+|Stock
+|-
+| rowspan="5" |11 July 2024
+| rowspan="5" |[[File:LawEnforcementVehiclesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Coil]] [[Brawler]]*
+|$715,000
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Esskey]]*
+|$290,789
+|Red Retro Stripe
+|Stock
+|-
+|[[Obey]] [[9F]]*
+|$120,000
+|N/A
+|Stock
+|-
+|[[Överflöd]] [[Entity XF]]*
+|$556,500
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Contender]]*
+|$250,000
+|N/A
+|Stock
+|-
+| rowspan="5" |4 July 2024
+| rowspan="5" |[[File:IndependenceDay2024-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Declasse]] [[Vamos]]*
+|$618,800
+|Classic Flames
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Sovereign]]*
+|$60,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Caracara 4x4]]
+|$900,650
+|Painted US Flag
+|Stock
+|-
+|[[Enus]] [[Cognoscenti 55]]*
+|$154,000
+|N/A
+|Stock
+|-
+|[[Weeny]] [[Dynasty]]*
+|$338,370
+|Flames
+|Stock
+|-
+| rowspan="5" |25 June 2024
+| rowspan="5" |[[File:BottomDollarBounties-GTAOee-PDMSStock-NoAd.jpg|175px|center]]
+|[[Enus]] [[Paragon S]]
+|$2,010,000
+|None
+|Stock
+|-
+|[[Invetero]] [[Coquette BlackFin]]*
+|$486,500
+|N/A
+|Stock
+|-
+|[[Lampadati]] [[Furore GT]]*
+|$448,000
+|N/A
+|Stock
+|-
+|[[Enus]] [[Cognoscenti Cabrio]]*
+|$185,000
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Faggio Sport]]*
+|$47,500
+|N/A
+|Stock
+|-
+| rowspan="5" |20 June 2024
+| rowspan="5" |[[File:DragandDriftRacesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dewbauchee]] [[Rapid GT (cabrio)]]*
+|$140,000
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Rat Bike]]*
+|$48,000
+|N/A
+|Stock
+|-
+|[[Enus]] [[Super Diamond]]*
+|$250,000
+|N/A
+|Stock
+|-
+|[[Progen]] [[Tyrus]]*
+|$2,584,200
+|[[Debonaire]] Livery
+|Stock
+|-
+|[[Canis]] [[Bodhi]]*
+|$25,000
+|N/A
+|Stock
+|-
+| rowspan="5" |13 June 2024
+| rowspan="5" |[[File:TheDataLeaksWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Grotti (HD Universe)|Grotti]] [[GT500]]*
+|$809.510
+|Grotti Commercial Livery
+|Stock
+|-
+|[[Dinka]] [[Akuma]]*
+|$9,000
+|N/A
+|Stock
+|-
+|[[Lampadati]] [[Michelli GT]]*
+|$754,380
+|Works Racer
+|Stock
+|-
+|[[Pfister (HD Universe)|Pfister]] [[Comet]]*
+|$100,000
+|N/A
+|Stock
+|-
+|[[Canis]] [[Seminole Frontier]]*
+|$700,800
+|Siberia
+|Stock
+|-
+| rowspan="5" |6 June 2024
+| rowspan="5" |[[File:LSCarMeetSeriesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dinka]] [[Verus]]*
+|$217,650
+|Nature Reserve
+|Stock
+|-
+|[[Emperor (manufacturer)|Emperor]] [[ETR1]]*
+|$1,197,000
+|None
+|Stock
+|-
+|[[Shitzu]] [[Hakuchou]]*
+|$82,000
+|N/A
+|Stock
+|-
+|[[Karin]] [[190z]]*
+|$919,380
+|Orange 190z
+|Stock
+|-
+|[[Annis]] [[Savestra]]*
+|$1,008,240
+|Yellow Stripe
+|Stock
+|-
+| rowspan="5" |30 May 2024
+| rowspan="5" |[[File:BenefactorWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Benefactor]] [[Feltzer]]*
+|$87,000
+|N/A
+|Stock
+|-
+|[[Benefactor]] [[Stirling GT]]*
+|$610,650
+|Track Day Warrior
+|Stock
+|-
+|[[Benefactor]] [[Schafter LWB]]*
+|$124,800
+|N/A
+|Stock
+|-
+|[[Benefactor]] [[Schafter V12]]
+|$69,600
+|N/A
+|Stock
+|-
+|[[Benefactor]] [[XLS]]*
+|$151,800
+|N/A
+|Stock
+|-
+| rowspan="5" |23 May 2024
+| rowspan="5" |[[File:DewbaucheeWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dewbauchee]] [[Exemplar]]*
+|$205,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[JB 700]]*
+|$350,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Massacro]]*
+|$275,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Rapid GT (cabrio)]]*
+|$140,000
+|None
+|Stock
+|-
+|[[Dewbauchee]] [[Rapid GT]]*
+|$132,000
+|N/A
+|Stock
+|-
+| rowspan="5" |16 May 2024
+| rowspan="5" |[[File:SalvageYardRobberiesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Enus]] [[Stafford]]*
+|$1,295,370
+|Gothic Decor
+|Stock
+|-
+|[[Nagasaki]] [[Hot Rod Blazer]]*
+|$69,000
+|N/A
+|Stock
+|-
+|[[Lampadati]] [[Pigalle]]*
+|$400,000
+|N/A
+|Stock
+|-
+|[[Dinka]] [[Double T]]*
+|$12,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Riata]]*
+|$380,000
+|None
+|Stock
+|-
+| rowspan="5" |9 May 2024
+| rowspan="5" |[[File:ASuperyachtLifeWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Lampadati]] [[Viseris]]*
+|$875,000
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Bati Custom|801RR]]*
+|$15,675
+|[[Stronzo]] (Respray)
+|Stock
+|-
+|[[Ocelot]] [[Swinger]]*
+|$656,820
+|Classic Ocelot Stripes
+|Stock
+|-
+|[[Vulcar]] [[Warrener]]*
+|$120,000
+|N/A
+|Stock
+|-
+|[[BF]] [[Bifta]]*
+|$75,000
+|N/A
+|Stock
+|-
+| rowspan="5" |2 May 2024
+| rowspan="5" |[[File:OpenWheelRacesWeekMay2024-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Schyster]] [[Deviant]]*
+|$532,520
+|Classic White Stripes
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Wolfsbane]]*
+|$121,220
+|Stealthy Snake
+|Stock
+|-
+|[[Übermacht]] [[SC1]]*
+|$1,122,100
+|N/A
+|Stock
+|-
+|[[Übermacht]] [[Zion Classic]]*
+|$590,060
+|Übermacht
+|Stock
+|-
+|[[Dundreary]] [[Landstalker XL]]*
+|$876,800
+|[[Yeti]] Mall Ninja
+|Stock
+|-
+| rowspan="5" |25 April 2024
+| rowspan="5" |[[File:NightclubBonusesWeekApril2024-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Grotti (HD Universe)|Grotti]] [[Carbonizzare]]*
+|$195,000
+|N/A
+|Stock
+|-
+|[[Dinka]] [[Enduro]]*
+|$48,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Rapid GT Classic]]*
+|$644,580
+|[[Globe Oil]]
+|Stock
+|-
+|[[Vulcar]] [[Fagaloa]]*
+|$354,380
+|Retro
+|Stock
+|-
+|[[Bravado]] [[Buffalo S]]*
+|$96,000
+|N/A
+|Stock
+|-
+| rowspan="5" |18 April 2024
+| rowspan="5" |[[File:420Week-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Obey]] [[Omnis e-GT]]
+|$1,102,080
+|Street Style
+|Stock
+|-
+|[[Penaud]] [[La Coureuse]]
+|$1,415,800
+|French Racing Stripe
+|Stock
+|-
+|[[Överflöd]] [[Imorgon]]*
+|$2,183,240
+|Overflod Stripes
+|Stock
+|-
+|[[Coil]] [[Voltic]]*
+|$150,000
+|N/A
+|Stock
+|-
+|[[Coil]] [[Raiden]]*
+|$825,000
+|N/A
+|Stock
+|-
+| rowspan="5" |11 April 2024
+| rowspan="5" |[[File:ExecutiveBonusesWeekApril2024-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Enus]] [[Cognoscenti]]*
+|$254,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Clique]]*
+|$928,380
+|Vapid Stripes
+|Stock
+|-
+|[[Vapid]] [[Hustler]]*
+|$643,240
+|Basic Pinstripe
+|Stock
+|-
+|[[Übermacht]] [[Revolter]]*
+|$1,127,000
+|None
+|Stock
+|-
+|[[Dewbauchee]] [[Seven-70]]*
+|$695,000
+|None
+|Stock
+|-
+| rowspan="5" |4 April 2024
+| rowspan="5" |[[File:TransformRacesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Pegassi]] [[Torero]]*
+|$598,800
+|N/A
+|Stock
+|-
+|[[Dinka]] [[Thrust]]*
+|$75,000
+|N/A
+|Stock
+|-
+|[[Declasse]] [[Tulip]]*
+|$736,240
+|Classic Stripes Black
+|Stock
+|-
+|[[Ocelot]] [[XA-21]]*
+|$2,375,000
+|N/A
+|Stock
+|-
+|[[RUNE]] [[Cheburek]]*
+|$166,660
+|[[ProLaps (HD Universe)|ProLaps]]
+|Stock
+|-
+| rowspan="5" |28 March 2024
+| rowspan="5" |[[File:FreemodeChallengesAndEventsWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Western Motorcycle Company|Western]] [[Zombie Bobber]]*
+|$119,520
+|Ghost Flames
+|Stock
+|-
+|[[Canis]] [[Kalahari]]*
+|$40,000
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Innovation]]*
+|$92,500
+|N/A
+|Stock
+|-
+|[[Benefactor]] [[XLS]]*
+|$253,000
+|N/A
+|Stock
+|-
+|[[Gallivanter]] [[Baller LE]]*
+|$149,000
+|N/A
+|Stock
+|-
+| rowspan="5" |21 March 2024
+| rowspan="5" |[[File:MotorWarsWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Western Motorcycle Company|Western]] [[Rat Bike]]*
+|$48000
+|N/A
+|Stock
+|-
+|[[Benefactor]] [[Stirling GT]]*
+|$1,004,070
+|Yeti Camo
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Cliffhanger]]*
+|$225,000
+|None
+|Stock
+|-
+|[[Hijak]] [[Ruston]]*
+|$437,050
+|Blue Flames
+|Stock
+|-
+|[[Canis]] [[Seminole Frontier]]*
+|$698,520
+|Desert Stripes
+|Stock
+|-
+| rowspan="5" |14 March 2024
+| rowspan="5" |[[File:TheCluckinBellFarmRaidMissionsWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dinka]] [[Jester (Racecar)]]*
+|$350,000
+|N/A
+|Stock
+|-
+|[[Liberty City Cycles|LCC]] [[Avarus]]*
+|$135,380
+|Blue Flames
+|Stock
+|-
+|[[Vapid]] [[Retinue]]*
+|$634,380
+|Double Body Stripe
+|Stock
+|-
+|[[Albany]] [[Hermes]]*
+|$556,660
+|Blue Flames
+|Stock
+|-
+|[[Enus]] [[Cognoscenti (Armored)]]*
+|$558,000
+|N/A
+|Stock
+|-
+| rowspan="5" |7 March 2024
+| rowspan="5" |[[File:TheCluckinBellFarmRaidWeek-GTAOee-PDMSStock-NoAd.jpg|175px|center]]
+|[[Annis]] [[Savestra]]*
+|$1,009,380
+|The 'Savestra'
+|Stock
+|-
+|[[Karin]] [[190z]]*
+|$919,380
+|Orange 190z
+|Stock
+|-
+|[[Pegassi]] [[Esskey]]*
+|$290,789
+|Red Retro Stripe
+|Stock
+|-
+|[[Enus]] [[Super Diamond]]*
+|$250,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Blade (car)|Blade]]*
+|$160,000
+|N/A
+|Stock
+|-
+| rowspan="5" |29 February 2024
+| rowspan="5" |[[File:DriftandDragRacesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Penaud]] [[La Coureuse]]
+|$2,009,380
+|White La Coureuse
+|Stock
+|-
+|[[Karin]] [[Futo GTX]]
+|$1,590,000<br />$1,192,500<br /><small>(Trade Price)</small>
+|None
+|Stock
+|-
+|[[Annis]] [[Euros]]
+|$1,106,789<br />$836,789<br /><small>(Trade Price)</small>
+|Drift Tribe
+|Stock
+|-
+|[[Dinka]] [[Jester RR]]
+|$1,206,510<br />$911,010<br /><small>(Trade Price)</small>
+|JDM
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[Stinger TT]]
+|$1,448,520
+|Red Stripes
+|Stock
+|-
+| rowspan="5" |22 February 2024
+| rowspan="5" |[[File:ImpalerSZWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Enus]] [[Paragon R]]*
+|$659,150
+|Doing Busy Work
+|Stock
+|-
+|[[Übermacht]] [[Zion Classic]]*
+|$586,640
+|[[Premier (company)|Premier Electronics]]
+|Stock
+|-
+|[[Vysser]] [[Neo]]*
+|$1,897,800
+|[[Fukaru]] [[Crowex]]
+|Stock
+|-
+|[[Vapid]] [[Peyote Gasser]]*
+|$586,300
+|Blacktop Burner
+|Stock
+|-
+|[[Annis]] [[Hellion]]*
+|$602,740
+|White Stripes
+|Stock
+|-
+| rowspan="5" |15 February 2024
+| rowspan="5" |[[File:BallerST-DWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[BF]] [[Raptor]]*
+|$453,600
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Bagger]]*
+|$16,000
+|N/A
+|Stock
+|-
+|[[Ocelot]] [[Locust (HD Universe)|Locust]]*
+|$1,645,520
+|Yellow Stripe
+|Stock
+|-
+|[[Declasse]] [[Vamos]]*
+|$437,720
+|White Side Stripes
+|Stock
+|-
+|[[Declasse]] [[Lifeguard]]*
+|$865,000
+|N/A
+|Stock
+|-
+| rowspan="5" |8 February 2024
+| rowspan="5" |[[File:YearOfTheDragonWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Pegassi]] [[Zorrusso]]*
+|$1,944,380
+|Black Stripe
+|Stock
+|-
+|[[Dewbauchee]] [[JB 700]]*
+|$350,000
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Vacca]]*
+|$240,000
+|N/A
+|Stock
+|-
+|[[Albany]] [[Roosevelt]]*
+|$525,000
+|N/A
+|Stock
+|-
+|[[Dundreary]] [[Landstalker XL]]*
+|$878,510
+|[[Sessanta Nove]]
+|Stock
+|-
+| rowspan="5" |1 February 2024
+| rowspan="5" |[[File:PremiumDeluxeRepoWorkWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Pegassi]] [[Infernus]]*
+|$308,000
+|N/A
+|Stock
+|-
+|[[Vulcar]] [[Nebula Turbo]]*
+|$576,140
+|The 70s Called
+|Stock
+|-
+|[[Bravado]] [[Verlierer]]*
+|$486,500
+|N/A
+|Stock
+|-
+|[[Överflöd]] [[Imorgon]]*
+|$1,537,160
+|Stuck In The '90s
+|Stock
+|-
+|[[Coil]] [[Raiden]]*
+|$962,500
+|N/A
+|Stock
+|-
+| rowspan="5" |25 January 2024
+| rowspan="5" |[[File:DragRacesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Canis]] [[Kalahari]]*
+|$40,000
+|N/A
+|Stock
+|-
+|[[Karin]] [[Futo]]*
+|$27,240
+|Classic Decals
+|Stock
+|-
+|[[Imponte (HD Universe)|Imponte]] [[Ruiner]]*
+|$35,650
+|Black Two Tone
+|Stock
+|-
+|[[Dinka]] [[Jester (Racecar)]]*
+|$350,000
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Torero]]*
+|$698,600
+|N/A
+|Stock
+|-
+| rowspan="5" |18 January 2024
+| rowspan="5" |[[File:TowTruckServicesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Übermacht]] [[Zion]]*
+|$60,000
+|N/A
+|Stock
+|-
+|[[Maibatsu Corporation (HD Universe)|Maibatsu]] [[Sanchez]]*
+|$8,000
+|N/A
+|Stock
+|-
+|[[Benefactor]] [[Schafter]]*
+|$65,000
+|N/A
+|Stock
+|-
+|[[Albany]] [[Washington]]*
+|$15,000
+|N/A
+|Stock
+|-
+|[[Declasse]] [[Premier]]*
+|$10,000
+|N/A
+|Stock
+|-
+| rowspan="5" |11 January 2024
+| rowspan="5" |[[File:CavalcadeXLWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Enus]] [[Cognoscenti 55 (Armored)]]*
+|$277,200
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Wolfsbane]]*
+|$95,000
+|N/A
+|Stock
+|-
+|[[Vulcar]] [[Warrener]]*
+|$120,000
+|N/A
+|Stock
+|-
+|[[Übermacht]] [[Zion Cabrio]]*
+|$65,000
+|N/A
+|Stock
+|-
+|[[Invetero]] [[Coquette BlackFin]]*
+|$486,500
+|N/A
+|Stock
+|-
+| rowspan="5" |4 January 2024
+| rowspan="5" |[[File:ParkRangerWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Benefactor]] [[Schafter LWB]]*
+|$145,600
+|N/A
+|Stock
+|-
+|[[Liberty City Choppers|LCC]] [[Hexer]]*
+|$15,000
+|N/A
+|Stock
+|-
+|[[Weeny]] [[Dynasty]]*
+|$471,660
+|Oye Taxi
+|Stock
+|-
+|[[Gallivanter]] [[Baller LE (Armored)]]*
+|$374,000
+|N/A
+|Stock
+|-
+|[[Benefactor]] [[XLS (Armored)]]*
+|$175,370
+|N/A
+|Stock
+|}
+
+[[SECTION:5:2023]]
+{| class="zebratable mw-collapsible sortable mw-collapsed" style="width: 100%"
+!rowspan="2"|{{H:title|Commencement date|Week}}
+!rowspan="2"|Image
+! colspan="4" |Test Drives<br /><nowiki>*</nowiki> Denotes a vehicle not otherwise available to purchase.<br />
+|-
+!Vehicle
+!Price
+!Livery
+!Wheels
+|-
+| rowspan="5" |21 December 2023
+| rowspan="5" |[[File:FestiveSurprise2023-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Ocelot]] [[Ardent]]
+|$460,000
+|[[Special Liveries in GTA Online/Vehicles#Part of The Doomsday Heist|It's a Wrap]]
+|Stock
+|-
+|[[Benefactor]] [[Streiter]]*
+|$200,000
+|N/A
+|Stock
+|-
+|[[Lampadati]] [[Pigalle]]*
+|$160,000
+|N/A
+|Stock
+|-
+|[[Bravado]] [[Dorado]]
+|$1,400,080
+|Tribal Flames Halftone
+|Stock
+|-
+|[[Vapid]] [[Riata]]*
+|$175,370
+|Dawn Camo
+|Stock
+|-
+| rowspan="5" |12 December 2023
+| rowspan="5" |[[File:TheChopShop-GTAOee-PDMSStock-NoAd.jpg|175px|center]]
+|[[Declasse]] [[Vigero ZX Convertible]]
+|$2,318,939
+|Grille Slats
+|Stock
+|-
+|[[Vapid]] [[Aleutian]]
+|$1,860,080
+|Vapid Action
+|Stock
+|-
+|[[Vapid]] [[Dominator GT]]
+|$2,214,380
+|Red Edged Racing Stripes
+|Stock
+|-
+|[[Karin]] [[Vivanite]]
+|$1,605,000
+|None
+|Stock
+|-
+|[[Declasse]] [[Impaler LX]]
+|$1,486,660
+|Purple Arachnid Pinstripe
+|Stock
+|-
+| rowspan="5" |30 November 2023
+| rowspan="5" |[[File:ProjectOverthrowWeekNovember2023-GTAOee-PDMSStock-NoAd.jpg|175px|center]]
+|[[Penaud]] [[La Coureuse]]
+|$2,015,650
+|La Coureuse Pattern
+|Stock
+|-
+|[[Bravado]] [[Buffalo EVX]]
+|$1,735,939
+|Black Camo
+|Stock
+|-
+|[[Annis]] [[300R]]
+|$929,370
+|No.26
+|Stock
+|-
+|[[Invetero]] [[Coquette D10]]
+|$1,475,300
+|Yellow Invetero Stripe
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[Visione]]
+|$1,598,939
+|Unlucky For Some
+|Stock
+|-
+| rowspan="5" |23 November 2023
+| rowspan="5" |[[File:DiamondCasinoBonusesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Överflöd]] [[Zeno]]
+|$2,845,080
+|[[Motor Market]]
+|Stock
+|-
+|[[Karin]] [[Sultan RS Classic]]
+|$1,789,000
+|[[Special Liveries in GTA Online/Vehicles#Part of Los Santos Tuners|Karin Performance, Pink]]
+|Stock
+|-
+|[[Pegassi]] [[Ignus]]
+|$2,790,080
+|Speed Stripes
+|Stock
+|-
+|[[Pegassi]] [[Toreador]]
+|$4,275,080
+|[[Special Liveries in GTA Online/Vehicles#Part of The Cayo Perico Heist|Shark Camo]]
+|Stock
+|-
+|[[Bravado]] [[Hotring Hellfire]]
+|$1,828,240
+|3 Redwood
+|Stock
+|-
+| rowspan="5" |16 November 2023
+| rowspan="5" |[[File:TheDoomsdayHeistWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Grotti (HD Universe)|Grotti]] [[Furia]]
+|$2,765,650<br />$2,080,650<br /><small>(Trade Price)</small>
+|Masterpiece
+|Stock
+|-
+|[[Vapid]] [[Clique Wagon]]
+|$746,370
+|Dark Mahogany Panels
+|Stock
+|-
+|[[Progen]] [[Emerus]]
+|$1,675,080
+|Hexagon Blue
+|Stock
+|-
+|[[Pegassi]] [[Tezeract]]
+|$2,847,800
+|[[Meinmacht]]
+|Stock
+|-
+|[[Declasse]] [[Vigero ZX]]
+|$1,966,380
+|Black Stripes
+|Stock
+|-
+| rowspan="5" |9 November 2023
+| rowspan="5" |[[File:Sprunk&eColaWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Grotti (HD Universe)|Grotti]] [[Cheetah (HD Universe)|Cheetah]]*
+|$325,000
+|N/A
+|Stock
+|-
+|[[Bravado]] [[Banshee (HD Universe)|Banshee]]
+|$130,650
+$25,650 (<small>for [[Criminal Enterprise Starter Pack|CESP]] owners)</small>
+|Yellow Racing Stripes
+|Stock
+|-
+|[[Pegassi]] [[Infernus]]*
+|$220,000
+|N/A
+|Stock
+|-
+|[[Vysser]] [[Neo]]*
+|$993,240
+|N/A
+|Stock
+|-
+|[[Ocelot]] [[Locust (HD Universe)|Locust]]*
+|$1,159,380
+|Black Stripe
+|Stock
+|-
+| rowspan="5" |2 November 2023
+| rowspan="5" |[[File:ShortTripsWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Pfister (HD Universe)|Pfister]] [[Astron]]
+|$1,601,660
+|Black Pfister Stripes
+|Stock
+|-
+|[[Declasse]] [[Granger 3600LX]]
+|$2,020,520<br />$1,520,520<br /><small>(Trade Price)</small>
+|Racing Stripes
+|Stock
+|-
+|[[Obey]] [[I-Wagen]]
+|$1,743,939
+|I-Wagen Alt
+|Stock
+|-
+|[[Nagasaki]] [[Shinobi]]
+|$2,502,160
+|Street 1100
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Reever]]
+|$1,159,380
+|White Stripes
+|Stock
+|-
+| rowspan="5" |26 October 2023
+| rowspan="5" |[[File:Halloween2023Week4-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Albany]] [[Fränken Stange]]
+|$290,500
+|Spider Trap
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Zombie Bobber]]*
+|$67,740
+|Red Flames
+|Stock
+|-
+|[[Declasse]] [[Tornado Rat Rod]]*
+|$189,000
+|N/A
+|Stock
+|-
+|[[Chariot]] [[Romero's Hearse]]*
+|$22,500
+|N/A
+|Stock
+|-
+|[[Dundreary]] [[Landstalker XL]]*
+|$1,243,939
+|Blood Splatter
+|Stock
+|-
+| rowspan="5" |19 October 2023
+| rowspan="5" |[[File:Halloween2023Week3-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Lampadati]] [[Furore GT]]*
+|$268,800
+|N/A
+|Stock
+|-
+|[[Lampadati]] [[Pigalle]]*
+|$400,000
+|N/A
+|Stock
+|-
+|[[Lampadati]] [[Felon GT]]*
+|$95,000
+|N/A
+|Stock
+|-
+|[[Lampadati]] [[Michelli GT]]*
+|$755,520
+|Heritage Racer
+|Stock
+|-
+|[[Lampadati]] [[Felon]]*
+|$90,000
+|N/A
+|Stock
+|-
+| rowspan="5" |12 October 2023
+| rowspan="5" |[[File:Halloween2023Week2-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Ocelot]] [[F620]]*
+|$80,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Exemplar]]*
+|$205,000
+|N/A
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[Carbonizzare]]*
+|$195,000
+|N/A
+|Stock
+|-
+|[[Enus]] [[Cognoscenti Cabrio]]*
+|$185,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[FMJ]]*
+|$1,050,000
+|N/A
+|Stock
+|-
+| rowspan="5" |5 October 2023
+| rowspan="5" |[[File:Halloween2023Week1-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Pegassi]] [[Infernus Classic]]
+|$556050
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Oppressor]]
+|$2,725,650<br />$2,093,319<br /><small>(Trade Price)</small>
+|Nature Reserve
+|Stock
+|-
+|[[Pegassi]] [[Torero XO]]
+|$1,760,220
+|Monochrome
+|Stock
+|-
+|[[Pegassi]] [[Monroe]]
+|$490,800
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Reaper]]
+|$957,000
+|N/A
+|Stock
+|-
+| rowspan="5" |28 September 2023
+| rowspan="5" |[[File:BusinessProductionBoostsWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Toundra]] [[Panthere]]
+|$2,191,660
+|Tricolor
+|Stock
+|-
+|[[Penaud]] [[La Coureuse]]
+|$2,010,520
+|White Thick Racing Stripe
+|Stock
+|-
+|[[Benefactor]] [[Feltzer]]*
+|$145,000
+|N/A
+|Stock
+|-
+|[[Imponte (HD Universe)|Imponte]] [[Ruiner ZZ-8]]
+|$946,800
+|White Tribal Race Stripes
+|Stock
+|-
+|[[Dinka]] [[Sugoi]]
+|631,380
+|Checker Stripes
+|Stock
+|-
+| rowspan="5" |21 September 2023
+| rowspan="5" |[[File:AutoShopBonusesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Benefactor]] [[Stirling GT]]*
+|$608,370
+|Offset Black Stripes
+|Stock
+|-
+|[[Invetero]] [[Coquette BlackFin]]*
+|$695,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Clique]]*
+|$1,846,480
+|Vapid Stripes
+|Stock
+|-
+|[[Pfister (HD Universe)|Pfister]] [[Comet]]*
+|$100,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Hustler]]*
+|$644,380
+|Yellow Flames
+|Stock
+|-
+| rowspan="5" |14 September 2023
+| rowspan="5" |[[File:GTAVAnniversaryWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Obey]] [[9F]]*
+|$60,000
+|N/A
+|Stock
+|-
+|[[Bravado]] [[Buffalo S]]*
+|$96,000
+|N/A
+|Stock
+|-
+|[[Obey]] [[Tailgater]]*
+|$55,000
+|N/A
+|Stock
+|-
+|[[Bravado]] [[Hotring Hellfire]]
+|$1,846,480
+|60 [[Ragga Rum]]
+|Stock
+|-
+|[[Canis]] [[Bodhi]]*
+|$25,000
+|N/A
+|Stock
+|-
+| rowspan="5" |7 September 2023
+| rowspan="5" |[[File:AcidLabMissionBonusesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Annis]] [[300R]]
+|$2,097,800
+|No.26
+|Stock
+|-
+|[[Weeny]] [[Issi Rally]]
+|$1,309,580
+|[[Stance Andreas]]
+|Stock
+|-
+|[[Dinka]] [[Kanjo SJ]]
+|$849,360<br />$643,860<br /><small>(Trade Price)</small>
+|[[Atomic]] 11
+|Stock
+|-
+|[[Declasse]] [[Tahoma Coupe]]
+|$1,525,650
+|Red Vines
+|Stock
+|-
+|[[Dinka]] [[Jester RR]]
+|$1,995,080<br />$1,502,580<br /><small>(Trade Price)</small>
+|44 Racer
+|Stock
+|-
+| rowspan="5" |31 August 2023
+| rowspan="5" |[[File:NightclubBonusesWeekAugust2023-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Lampadati]] [[Viseris]]*
+|$875,000
+|N/A
+|Stock
+|-
+|[[Weeny]] [[Issi Sport]]*
+|$915,240
+|White Stripes
+|Stock
+|-
+|[[Übermacht]] [[Zion Classic]]*
+|$428,800
+|[[Estancia Cigars]]
+|Stock
+|-
+|[[Declasse]] [[Tulip]]*
+|$455,310
+|[[Tenshun]]
+|Stock
+|-
+|[[Declasse]] [[Lifeguard]]*
+|$519,000
+|N/A
+|Stock
+|-
+| rowspan="5" |24 August 2023
+| rowspan="5" |[[File:BikerBonusesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Pegassi]] [[Faggio Mod]]*
+|$80,080
+|Faded Empire
+|Stock
+|-
+|[[Nagasaki]] [[Shotaro]]
+|$2,250,000
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Powersurge]]
+|$1,147,439
+|Shark Mouth Camo
+|Stock
+|-
+|[[BF]] [[Raptor]]*
+|$324,000
+|N/A
+|Stock
+|-
+|[[Coil]] [[Cyclone]]*
+|$1,910,520
+|Dual Blue Stripes
+|Stock
+|-
+| rowspan="5" |17 August 2023
+| rowspan="5" |[[File:ExecutiveBonusesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Enus]] [[Cognoscenti 55]]*
+|$154,000
+|N/A
+|Stock
+|-
+|[[Progen]] [[Itali GTB (HD Universe)|Itali GTB]]
+|$832,300
+|N/A
+|Stock
+|-
+|[[Enus]] [[Cognoscenti (Armored)]]*
+|$558,000
+|N/A
+|Stock
+|-
+|[[Benefactor]] [[Schafter LWB]]*
+|$208,000
+|N/A
+|Stock
+|-
+|[[Benefactor]] [[XLS (Armored)]]*
+|$313,200
+|N/A
+|Stock
+|-
+| rowspan="5" |10 August 2023
+| rowspan="5" |[[File:AssaultOnCayoPericoWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Mammoth]] [[Squaddie]]
+|$1,155,080<br />$872,580<br /><small>(Trade Price)</small>
+|Urban Warrior
+|Stock
+|-
+|[[Pegassi]] [[Zorrusso]]*
+|$1,944,380
+|Black Stripe
+|Stock
+|-
+|[[Declasse]] [[Walton L35]]
+|$1,693,370
+|Chroma Hunter
+|Stock
+|-
+|[[HVY]] [[Insurgent]]
+|$465,000
+|N/A
+|Stock
+|-
+|[[HVY]] [[Nightshark]]
+|$747,000
+|None
+|Stock
+|-
+| rowspan="5" |4 August 2023
+| rowspan="5" |[[File:GTAOnlineBonusesAugust2023-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Declasse]] [[Tulip M-100]]
+|$1,682,510
+|Black Double Stripes
+|Stock
+|-
+|[[Invetero]] [[Coquette]]*
+|$138,000
+|N/A
+|Stock
+|-
+|[[Schyster]] [[Deviant]]*
+|$276,520
+|Classic White Stripes
+|Stock
+|-
+|[[Vapid]] [[Blade (car)|Blade]]*
+|$160,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Peyote Gasser]]*
+|$508,650
+|Valiant Vapid
+|Stock
+|-
+| rowspan="5" |27 July 2023
+| rowspan="5" |[[File:2023SummerRacingEventWeek2-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Pfister (HD Universe)|Pfister]] [[Growler]]
+|$1,627,000<br />$1,220,250<br /><small>(Trade Price)</small>
+|[[Special Liveries in GTA Online/Vehicles#Part of Los Santos Tuners|Kisama Graffiti]]
+|Stock
+|-
+|[[Dinka]] [[RT3000]]
+|$1,738,870<br />$1,309,620<br /><small>(Trade Price)</small>
+|[[Meinmacht]] Street Car
+|Stock
+|-
+|[[Pegassi]] [[Monroe]]
+|$490,000
+|N/A
+|Stock
+|-
+|[[Progen]] [[PR4]]
+|$2,483,300
+|Team [[Progen]]/[[Dinka]]
+|Stock
+|-
+|[[Declasse]] [[BR8]]
+|$3,423,939
+|[[eCola (HD Universe)|eCola]]
+|Stock
+|-
+| rowspan="5" |20 July 2023
+| rowspan="5" |[[File:LaCoureuseWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Ocelot]] [[Pariah]]
+|$1,015,660
+|Red Race Stripes
+|Stock
+|-
+|[[Vapid]] [[Dominator ASP]]
+|$1,242,500<br />$931,875<br /><small>(Trade Price)</small>
+|[[Special Liveries in GTA Online/Vehicles#Part of Los Santos Tuners|Python]]
+|Stock
+|-
+|[[Maibatsu Corporation (HD Universe)|Maibatsu]] [[Penumbra FF]]
+|$1,405,080
+|[[Auto Exotic]]
+|Stock
+|-
+|[[Ocelot]] [[R88]]
+|$2,201,020
+|[[Escalera Rent-A-Car|Escalera]]
+|Stock
+|-
+|[[Declasse]] [[DR1]]
+|$2,123,550
+|Declassefy
+|Stock
+|-
+| rowspan="5" |13 July 2023
+| rowspan="5" |[[File:ArmoredTrucksWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dinka]] [[Akuma]]*
+|$9,000
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Cliffhanger]]*
+|$270,600
+|[[LTD Gasoline|LTD Gas]]
+|Stock
+|-
+|[[Shitzu]] [[Hakuchou]]*
+|$82,000
+|N/A
+|Stock
+|-
+|[[Överflöd]] [[Imorgon]]*
+|$1,299,000
+|None
+|Stock
+|-
+|[[Dewbauchee]] [[Riata]]*
+|$403,939
+|Woodland Camo
+|Stock
+|-
+| rowspan="5" |6 July 2023
+| rowspan="5" |[[File:ProjectOverthrowWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Vapid]] [[Hustler]]*
+|$644,380
+|Yellow Flames
+|Stock
+|-
+|[[Ocelot]] [[Swinger]]*
+|$930,660
+|Commercial Racing Livery
+|Stock
+|-
+|[[Lampadati]] [[Michelli GT]]*
+|$1,244,380
+|Works Racer
+|Stock
+|-
+|[[Albany]] [[Hermes]]*
+|$400,150
+|Kinky Kelly
+|Stock
+|-
+|[[Dewbauchee]] [[JB 700]]*
+|$350,000
+|N/A
+|Stock
+|-
+| rowspan="5" |29 June 2023
+| rowspan="5" |[[File:IndependenceDay2023-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Annis]] [[RE-7B]]*
+|$2,520,600
+|[[Pegasus]] Livery
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Sovereign]]
+|$60,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Bullet]]*
+|$155,000
+|N/A
+|Stock
+|-
+|[[Truffade]] [[Z-Type]]*
+|$950,000
+|N/A
+|Stock
+|-
+|[[Karin]] [[Boor]]
+|$1,305,650
+|Star-Spangled Patriot
+|Stock
+|-
+| rowspan="5" |22 June 2023
+| rowspan="5" |[[File:BuffaloEVXWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Enus]] [[Paragon R]]*
+|$926,660
+|Spitting Fire
+|Stock
+|-
+|[[Dinka]] [[Verus]]*
+|$220,500
+|Naval Geometric
+|Stock
+|-
+|[[Truffade]] [[Nero]]
+|$1,008,000
+|N/A
+|Stock
+|-
+|[[Declasse]] [[Vamos]]*
+|$622,789
+|Sure It's Safe?
+|Stock
+|-
+|[[Annis]] [[Hellion]]*
+|$858,370
+|[[Coolhand Lube|Lube and 69]]
+|Stock
+|-
+| rowspan="5" |13 June 2023
+| rowspan="5" |[[File:SanAndreasMercenaries-GTAOee-PDMSStock-NoAd.jpg|175px|center]]
+|[[Vapid]] [[Clique Wagon]]
+|$1,228,370
+|Dark Mahogany Panels
+|Stock
+|-
+|[[Vapid]] [[Ratel]]
+|$1,898,080
+|[[Atomic]] Firecracker
+|Stock
+|-
+|[[Declasse]] [[Walton L35]]
+|$1,692,800
+|Retro Vibes
+|Stock
+|-
+|[[Dundreary]] [[Landstalker XL]]*
+|$732,000
+|[[Special Liveries in GTA Online/Vehicles#Part of The Los Santos Summer Special|Dolla Dolla]]
+|Stock
+|-
+|[[Classique]] [[Broadway]]
+|$577,800
+|None
+|Stock
+|-
+| rowspan="5" |8 June 2023
+| rowspan="5" |[[File:FlightBonusesWeek2-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dinka]] [[Blista Kanjo]]
+|$605,650<br />$460,650<br /><small>(Trade Price)</small>
+|[[Dinka|Dinka Race Team]]
+|Stock
+|-
+|[[Lampadati]] [[Novak]]
+|$447,260
+|[[Meinmacht]]
+|Stock
+|-
+|[[Pegassi]] [[Toros]]
+|$521,939
+|[[Fukaru]] Ranger
+|Stock
+|-
+|[[Imponte (HD Universe)|Imponte]] [[Beater Dukes]]
+|$403,650
+|Flames
+|Stock
+|-
+|[[Canis]] [[Kamacho]]
+|$366,660
+|70s Flashback
+|Stock
+|-
+| rowspan="5" |1 June 2023
+| rowspan="5" |[[File:FlightBonusesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dundreary]] [[Virgo Classic]]
+|$165,000
+|N/A
+|Stock
+|-
+|[[Nagasaki]] [[Chimera]]
+|$228,240
+|Red Flames
+|Stock
+|-
+|[[Bravado]] [[Banshee (HD Universe)|Banshee]]
+|$129,510
+$24,510 (<small>for [[Criminal Enterprise Starter Pack|CESP]] owners)</small>
+|Black Racing Stripes
+|Stock
+|-
+|[[Declasse]] [[Gang Burrito]]
+|$65,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Baller ST]]
+|$908,240<br />$685,740<br /><small>(Trade Price)</small>
+|Stripes
+|Stock
+|-
+| rowspan="5" |25 May 2023
+| rowspan="5" |[[File:FreemodeEventBonusesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Karin]] [[Futo GTX]]
+|$1,608,240<br />$1,210,740<br /><small>(Trade Price)</small>
+|Classic Decals
+|Stock
+|-
+|[[Coil]] [[Cyclone]]
+|$1,346,939
+|Black Body Stripes
+|Stock
+|-
+|[[Pegassi]] [[Vacca]]
+|$240,000
+|N/A
+|Stock
+|-
+|[[Übermacht]] [[Zion Classic]]
+|$834,800
+|[[Estancia Cigars]]
+|Stock
+|-
+|[[Vapid]] [[Contender]]
+|$250,000
+|N/A
+|Stock
+|-
+| rowspan="5" |11 May 2023
+| rowspan="5" |[[File:LosSantosTunersBonusesWeekMay2023-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dinka]] [[Blista Kanjo]]
+|$580,000<br />$435,000<br /><small>(Trade Price)</small>
+|[[Special Liveries in GTA Online/Vehicles#Part of Los Santos Tuners|Street Samurai]]
+|Stock
+|-
+|[[Vulcar]] [[Warrener HKR]]
+|$1,283,370<br />$968,370<br /><small>(Trade Price)</small>
+|[[Arrow Gasoline|Arrow]] Stripes
+|Stock
+|-
+|[[Annis]] [[Remus]]
+|$1,389,380<br />$1,046,880<br /><small>(Trade Price)</small>
+|Racing Stripes
+|Stock
+|-
+|[[Dinka]] [[Jester RR]]
+|$1,990,520<br />$1,498,020<br /><small>(Trade Price)</small>
+|White Shopping List
+|Stock
+|-
+|[[Pfister (HD Universe)|Pfister]] [[Comet S2]]
+|$1,897,380<br />$1,005,330<br /><small>(Trade Price)</small>
+|White Pfister Stripe
+|Stock
+|-
+| rowspan="5" |11 May 2023
+| rowspan="5" |[[File:GTAOnlineBonusesMay2023-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dundreary]] [[Virgo Classic]] {{H:title|The ad shows the Vigero instead of the Virgo Classic|Note}}
+|$165,000
+|N/A
+|Stock
+|-
+|[[Declasse]] [[Tahoma Coupe]]
+|$1,073,939
+|Classic Pinstripes
+|Stock
+|-
+|[[Willard (HD Universe manufacturer)|Willard]] [[Faction]]
+|$36,000
+|N/A
+|Stock
+|-
+|[[Declasse]] [[Moonbeam (HD Universe)|Moonbeam]]
+|$32,500
+|N/A
+|Stock
+|-
+|[[Ocelot]] [[Locust (HD Universe)|Locust]]
+|$1,160,300
+|[[Escalera Rent-A-Car|Escalera]]
+|Stock
+|-
+| rowspan="5" |4 May 2023
+| rowspan="5" |[[File:AirFreightCargoWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Declasse]] [[Impaler]]
+|$355,774<br />$273,439<br /><small>(Trade Price)</small>
+|Classic Flames
+|Stock
+|-
+|[[Vapid]] [[Retinue]]
+|$637,800
+|[[Xero|Team Xero]]
+|Stock
+|-
+|[[Vapid]] [[Flash GT]]
+|$1,197,580
+|[[Junk Energy Drink|Junk]] "21"
+|Stock
+|-
+|[[Dinka]] [[Jester]]
+|$240,000
+|N/A
+|Stock
+|-
+|[[Übermacht]] [[Sentinel XS (HD Universe)|Sentinel XS]]
+|$86,220
+|[[Jackal Racing]]
+|Stock
+|-
+| rowspan="5" |28 April 2023
+| rowspan="5" |[[File:LastDoseHardModeWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Declasse]] [[Tulip M-100]]
+|$1,261,740
+|Black Center Stripes
+|Stock
+|-
+|[[Invetero]] [[Coquette D10]]
+|$1,530,520
+|Twin Black Racing Stripes
+|Stock
+|-
+|[[Enus]] [[Stafford]]
+|$1,294,800
+|Neoclassical
+|Stock
+|-
+|[[Weeny]] [[Issi Rally]]
+|$1,855,520
+|Weeny Chequered Flag
+|Stock
+|-
+|[[Karin]] [[Kuruma (Armored)]]
+|$453,863<br />$366,250<br /><small>(Trade Price)</small>
+|N/A
+|Stock
+|-
+| rowspan="5" |20 April 2023
+| rowspan="5" |[[File:ShakeUpAndTopMarksWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dinka]] [[Blista Kanjo]]
+|$600,520<br />$455,520<br /><small>(Trade Price)</small>
+|Clubman Racer
+|Stock
+|-
+|[[Karin]] [[Sultan Classic]]
+|$1,736,240<br />$1,307,880<br /><small>(Trade Price)</small>
+|[[Karin]] Stripes
+|Stock
+|-
+|[[Progen]] [[T20]]
+|$2,200,000
+|N/A
+|Stock
+|-
+|[[Declasse]] [[Mamba]]
+|$1,014,380
+|Black Stripes
+|Stock
+|-
+|[[Vulcar]] [[Nebula Turbo]]
+|$576,140
+|The 70s Called
+|Stock
+|-
+| rowspan="5" |13 April 2023
+| rowspan="5" |[[File:BoorWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Pegassi]] [[Reaper]]
+|$1,116,500
+|N/A
+|Stock
+|-
+|[[Pegassi]] [[Tempesta]]
+|$1,329,000
+|N/A
+|Stock
+|-
+|[[Übermacht]] [[Zion Classic]]
+|$812,000
+|None
+|Stock
+|-
+|[[Vapid]] [[Flash GT]]
+|$1,695,520
+|Classic Flags w/ Stripes
+|Stock
+|-
+|[[Ocelot]] [[Swinger]]
+|$932,370
+|[[Hawk & Little]]
+|Stock
+|-
+| rowspan="5" |06 April 2023
+| rowspan="5" |[[File:GunrunningBonusesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[HVY]] [[Nightshark]]
+|$871,500
+|None
+|Stock
+|-
+|[[Vapid]] [[Dominator GTX]]
+|$725,000
+|N/A
+|Stock
+|-
+|[[Ocelot]] [[Virtue]]
+|$3,005,650<br />$2,260,650<br /><small>(Trade Price)</small>
+|Camo
+|Stock
+|-
+|[[Vapid]] [[GB200]]
+|$963,370
+|Red Rally
+|Stock
+|-
+|[[Annis]] [[Savestra]]
+|$1,102,800
+|Classic Racing Livery
+|Stock
+|-
+| rowspan="5" |30 March 2023
+| rowspan="5" |[[File:GTAOnlineBonusesMarch2023-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Vapid]] [[Retinue Mk II]]
+|$1,640,520<br />$1,235,520<br /><small>(Trade Price)</small>
+|Vapid Classics
+|Stock
+|-
+|[[Progen]] [[GP1]]
+|$882,000
+|N/A
+|Stock
+|-
+|[[Enus]] [[Windsor]]
+|$845,000
+$0 (<small>for [[Criminal Enterprise Starter Pack|CESP]] owners)</small>
+|None
+|Stock
+|-
+|[[Enus]] [[Windsor Drop]]
+|$630,000
+|N/A
+|Stock
+|-
+|[[Annis]] [[Elegy RH8]]
+|$95,000
+$0 (<small>for [[Rockstar Games Social Club|Social Club]]-registered players)</small>
+|N/A
+|Stock
+|-
+| rowspan="5" |23 March 2023
+| rowspan="5" |[[File:DrugWarsBonusesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Willard (HD Universe manufacturer)|Willard]] [[Eudora]]
+|$1,250,000
+|None
+|Stock
+|-
+|[[Übermacht]] [[Rebla GTS]]
+|$730,650
+|Split Siberia
+|Stock
+|-
+|[[Weeny]] [[Issi Classic]]
+|$381,660<br />$291,660<br /><small>(Trade Price)</small>
+|Performance Weeny
+|Stock
+|-
+|[[Benefactor]] [[Streiter]]
+|$500,000
+|N/A
+|Stock
+|-
+|[[Dewbauchee]] [[Rapid GT|Rapid GT Cabrio]]
+|$140,000
+|N/A
+|Stock
+|-
+| rowspan="5" |16 March 2023
+| rowspan="5" |[[File:LastDoseWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Invetero]] [[Coquette D10]]
+|$1,532,800
+|Black Invetero Stripe
+|Stock
+|-
+|[[Pegassi]] [[Toros]]
+|$519,660
+|Blue Vandal
+|Stock
+|-
+|[[Vapid]] [[Bullet]]
+|$155,000 
+|N/A
+|Stock
+|-
+|[[Hijak]] [[Ruston]]
+|$215,000
+|N/A
+|Stock
+|-
+|[[Willard (HD Universe manufacturer)|Willard]] [[Eudora]]
+|$1,275,080
+|Classic Blue Pinstripes
+|Stock
+|-
+| rowspan="5" |09 March 2023
+| rowspan="5" |[[File:HotringEveronWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Karin]] [[Hotring Everon]]
+|$1,825,910<br />$1,378,410<br /><small>(Trade Price)</small>
+|62 [[Ragga Rum]]
+|Stock
+|-
+|[[Declasse]] [[Hotring Sabre]]
+|$568,570<br />$433,695<br /><small>(Trade Price)</small>
+|30 [[Flint Tools]]
+|Stock
+|-
+|[[Dundreary]] [[Landstalker XL]]
+|$1,344,510
+|[[Sessanta Nove]]
+|Stock
+|-
+|[[Annis]] [[Hellion]]
+|$566,689
+|[[Globe Oil|Globe Ranger]]
+|Stock
+|-
+|[[Pfister (HD Universe)|Pfister]] [[Comet]]
+|$100,000
+|N/A
+|Stock
+|-
+| rowspan="5" |03 March 2023
+| rowspan="5" |[[File:TheContractBonusesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Lampadati]] [[Viseris]]
+|$525,000
+|N/A
+|Stock
+|-
+|[[Vapid]] [[Ellie]]
+|$363,510<br />$278,760<br /><small>(Trade Price)</small>
+|No. "60" Dense
+|Stock
+|-
+|[[Progen]] [[Itali GTB (HD Universe)|Itali GTB]]
+|$1,289,000
+|N/A
+|Stock
+|-
+|[[Pfister (HD Universe)|Pfister]] [[Comet Safari]]
+|$737,360
+|3 Color Outline 
+|Stock
+|-
+|[[Dewbauchee]] [[Seven-70]]
+|$695,000
+|N/A
+|Stock
+|-
+| rowspan="5" |23 February 2023
+| rowspan="5" |[[File:NightclubBonusesWeekFebruary2023-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Albany]] [[Hermes]]
+|$535,000
+|[[Special Liveries in GTA Online/Vehicles#Exclusive liveries for the pre-existing vehicles|Amazing Albany II]] 
+|Stock
+|-
+|[[Emperor (manufacturer)|Emperor]] [[ETR1]]
+|$1,496,250
+|None
+|Stock
+|-
+|[[Declasse]] [[Tahoma Coupe]]
+|$1,125,000
+|None
+|Stock
+|-
+|[[Vapid]] [[FMJ]]
+|$1,312,500
+|N/A
+|Stock
+|-
+|[[Declasse]] [[Yosemite]]
+|$381,990
+|Yellow Flames
+|Stock
+|-
+| rowspan="5" |16 February 2023
+| rowspan="5" |[[File:EclipseBlvdGarageWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Toundra]] [[Panthere]]
+|$2,192,800
+|White Pinstripe
+|Stock
+|-
+|[[Dinka]] [[Kanjo SJ]]
+|$982,370<br />$742,620<br /><small>(Trade Price)</small>
+|SA White Waves
+|Stock
+|-
+|[[Pegassi]] [[Toros]]
+|$517,380
+|Orange Toros
+|Stock
+|-
+|[[Vapid]] [[Hustler]]
+|$645,520
+|Purple Flames
+|Stock
+|-
+|[[Imponte (HD Universe)|Imponte]] [[Nightshade]]
+|$409,500
+|N/A
+|Stock
+|-
+| rowspan="5" |09 February 2023
+| rowspan="5" |[[File:BroadwayWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Albany]] [[Roosevelt Valor]]
+|$638,300
+|N/A
+|Stock
+|-
+|[[Classique]] [[Broadway]]
+|$948,939
+|[[Los Santos Customs|LS Customs]], Black
+|Stock
+|-
+|[[Överflöd]] [[Entity MT]]
+|$1,789,620
+|Red Pinstripe 
+|Stock (Painted Yellow)
+|-
+|[[Übermacht]] [[Zion Classic]]
+|$812,000
+|None
+|Stock
+|-
+|[[Vapid]] [[Peyote Gasser]]
+|$546,050
+|Blacktop Burner
+|Stock
+|-
+| rowspan="5" |02 February 2023
+| rowspan="5" |[[File:GTAOnlineBonusesFebruary2023-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Karin]] [[Everon]]
+|$1,497,800<br />$1,129,050<br /><small>(Trade Price)</small>
+|Fast Black Race Stripes
+|Stock
+|-
+|[[Ocelot]] [[Penetrator]]
+|$880,000
+|N/A
+|Stock
+|-
+|[[Gallivanter]] [[Baller ST]]
+|$916,220<br />$693,720<br /><small>(Trade Price)</small>
+|For King...
+|Stock
+|-
+|[[Bravado]] [[Youga Classic]]
+|$116,880
+|Orange Retro Stripe
+|Stock
+|-
+|[[Declasse]] [[Tulip]]
+|$525,400
+|The Good 
+|Stock (Painted Yellow)
+|-
+| rowspan="5" |26 January 2023
+| rowspan="5" |[[File:IssiRallyWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Pegassi]] [[Zentorno]]
+|$460,080
+|Rampage Racing
+|Stock
+|-
+|[[Benefactor]] [[Schlagen GT]]
+|$1,318,240
+|Red Stripes
+|Stock
+|-
+|[[Declasse]] [[Vamos]]
+|$618,380
+|Double Black Stripes
+|Stock
+|-
+|[[Schyster]] [[Deviant]]
+|$532,520
+|Classic White Stripes 
+|Stock
+|-
+|[[Declasse]] [[Impaler]]
+|$352,355<br />$270,020<br /><small>(Trade Price)</small>
+|Classic Stripes
+|Stock
+|-
+| rowspan="5" |19 January 2023
+| rowspan="5" |[[File:TaxiWorkWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Pfister (HD Universe)|Pfister]] [[811]]
+|$794,500
+|N/A
+|Stock
+|-
+|[[Karin]] [[Sultan RS Classic]]
+|$1,808,380<br />$1,361,130<br /><small>(Trade Price)</small>
+|Karin Stripe
+|Stock
+|-
+|[[Pegassi]] [[Ignus]]
+|$2,785,520
+|Triple Stripes
+|Stock [Painted Straw Brown]
+|-
+|[[Dinka]] [[Sugoi]]
+|$1,249,650<br />$942,650<br /><small>(Trade Price)</small>
+|Red Warrior
+|Stock
+|-
+|[[Dewbauchee]] [[Champion]]
+|$3,014,380<br />$2,295,630<br /><small>(Trade Price)</small>
+|Dewbauchee Stripes
+|Stock
+|-
+| rowspan="5" |12 January 2023
+| rowspan="5" |[[File:GunVanWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Vapid]] [[Dominator ASP]]
+|$1,267,010<br />$956,385<br /><small>(Trade Price)</small>
+|Blue Flame Livery
+|Stock
+|-
+|[[Grotti (HD Universe)|Grotti]] [[Furia]]
+|$2,765,650<br />$2,080,650<br /><small>(Trade Price)</small>
+|Masterpiece
+|Stock
+|-
+|[[Declasse]] [[Drift Tampa]]
+|$1,029,200
+|Ragga Rum
+|Stock
+|-
+|[[Enus]] [[Windsor]]
+|$845,100
+|None (Yeti Mall Ninja Livery in advertising)
+|Stock
+|-
+|[[Declasse]] [[Hotring Sabre]]
+|$854,510<br />$647,010<br /><small>(Trade Price)</small>
+|65 Lucky Plucker
+|Stock
+|-
+| rowspan="5" |5 January 2023
+| rowspan="5" |[[File:GTAOnlineBonusesJanuary2023-GTAOe-PDMSStock-NoAd.png|175px|center]]
+|[[HVY]] [[Nightshark]]
+|$933,750
+|None
+|Stock
+|-
+|[[Mammoth]] [[Patriot Mil-Spec]]
+|$1,300,740<br />$980,115<br /><small>(Trade Price)</small>
+|Military Issue
+|Stock
+|-
+|[[Bravado]] [[Greenwood (HD Universe)|Greenwood]]
+|$1,486,660<br />$1,120,410<br /><small>(Trade Price)</small>
+|Pinstripe
+|Stock
+|-
+|[[Declasse]] [[Granger 3600LX]]
+|$1,405,080<br />$1,060,080<br /><small>(Trade Price)</small>
+|Patriot Beer
+|Stock
+|-
+|[[Obey]] [[Omnis e-GT]]
+|$1,820,080
+|Street Style
+|Stock
+|}
+
+[[SECTION:5:2022]]
+{| class="zebratable mw-collapsible sortable mw-collapsed" style="width: 100%"
+!rowspan="2"|{{H:title|Commencement date|Week}}
+!rowspan="2"|Image
+! colspan="4" |Test Drives<br /><nowiki>*</nowiki> Denotes a vehicle not available to purchase.<br />
+|-
+!Vehicle
+!Price
+!Livery
+!Wheels
+|-
+| rowspan="5" |29 December 2022
+| rowspan="5" |[[File:PowersurgeWeek-GTAOe-PDMSStock-NoAd.png|175px|center]]
+|[[Canis]] [[Kamacho]]
+|$241,500
+|None
+|Stock
+|-
+|[[Karin]] [[Futo GTX]]
+|$1,137,510<br />$859,260<br /><small>(Trade Price)</small>
+|Team Auto Exotic
+|Stock
+|-
+|[[Coil]] [[Brawler]]
+|$715,000
+|N/A <small>(+ Limo Window Tint )</small>
+|Stock
+|-
+|[[Benefactor]] [[Dubsta 6x6]]
+|$174,300
+|N/A
+|Stock
+|-
+|[[Nagasaki]] [[Outlaw]]
+|$1,292,510<br />$975,510<br /><small>(Trade Price)</small>
+|Winter Camo
+|Stock
+|-
+| rowspan="5" |22 December 2022
+| rowspan="5" |[[File:FestiveSurprise2022-GTAOe-PDMSStock-NoAd.png|175px|center]]
+|[[Ocelot]] [[Ardent]]
+|$1,157,500
+|[[Special Liveries in GTA Online/Vehicles#Part of The Doomsday Heist|Tartan]] <small>(+ Limo Window Tint)</small>
+|Stock
+|-
+|[[Vapid]] [[Clique]]
+|$909,000
+|[[Special Liveries in GTA Online/Vehicles#Part of Arena War|Merry Cliquemas]]
+|Stock
+|-
+|[[Ocelot]] [[Stromberg (car)|Stromberg]]
+|$2,237,245<br />$1,684,000<br /><small>(Trade Price)</small>
+|None <small>(+ Limo Tint Windows)</small>
+|Stock
+|-
+|[[Maxwell]] [[Vagrant]]
+|$2,248,770<br />$1,695,270<br /><small>(Trade Price)</small>
+|[[Special Liveries in GTA Online/Vehicles#Part of After Hours|Blue Tartan]]
+|Stock
+|-
+|[[Pegassi]] [[Toros]]
+|$367,980
+|Orange Toros
+|Stock
+|-
+| rowspan="5" |13 December 2022
+| rowspan="5" |[[File:LosSantosDrugWars-GTAOe-ReleaseEventWeek-PDMSStock-NoAd.png|175px|center]]
+|[[Benefactor]] [[Krieger]]
+|$2,896,660
+|[[Sessanta Nove]]
+|Stock
+|-
+|[[Karin]] [[Everon]]
+|$1,498,939
+|[[Children of the Mountain]]
+|Stock
+|-
+|[[Zirconium]] [[Journey II]]
+|$790,000<br />$592,500<br /><small>(Trade Price)</small>
+|None
+|Stock
+|-
+|[[BF]] [[Surfer Custom]]
+|$590,000<br />$442,500<br /><small>(Trade Price)</small>
+|None
+|Stock
+|-
+|[[Annis]] [[300R]]
+|$2,075,000
+|None
+|Stock
+|-
+| rowspan="5" |8 December 2022
+| rowspan="5" |[[File:GTAOnlineBonusesDecember2022Part2-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Declasse]] [[Draugur]]
+|$1,309,000<br />$981,750<br /><small>(Trade Price)</small>
+|None
+|Stock
+|-
+|[[Dewbauchee]] [[Champion]]
+|$2,115,880<br />$1,591,755<br /><small>(Trade Price)</small>
+|Dewbauchee Stripes 
+|Stock
+|-
+|[[Pfister (HD Universe)|Pfister]] [[Astron]]
+|$1,129,370
+|Black Astron Stripes
+|Stock
+|-
+|[[Lampadati]] [[Cinquemila]]
+|$1,240,800
+|Faded Purple
+|Stock
+|-
+|[[Pegassi]] [[Ignus]]
+|$1,954,880
+|Black Stripes
+|Stock
+|-
+| rowspan="5" |1 December 2022
+| rowspan="5" |[[File:GTAOnlineBonusesDecember2022Part1-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Declasse]] [[Yosemite]]
+|$339,500
+|None
+|Stock
+|-
+|[[Bravado]] [[Gauntlet Classic]]
+|$449,880<br />$342,255<br /><small>(Trade Price)</small>
+|White 445
+|Stock
+|-
+|[[Dinka]] [[Jester Classic]]
+|$573,520
+|White 90s Graphics
+|Stock
+|-
+|[[Bravado]] [[Youga Classic]]
+|$161,010
+|Surf's Up
+|Stock
+|-
+|[[Dewbauchee]] [[Specter]]
+|$599,000
+|N/A
+|Stock
+|-
+| rowspan="5" |22 November 2022
+| rowspan="5" |[[File:TheHeistChallenge2022-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Bravado]] [[Buffalo STX]]
+|$2,150,000<br />$1,612,500<br /><small>(Trade Price)</small>
+|None
+|Stock
+|-
+|[[Maxwell]] [[Vagrant]]
+|$2,239,650<br />$1,686,150<br /><small>(Trade Price)</small>
+|Nature Reserve
+|Stock
+|-
+|[[Canis]] [[Seminole Frontier]]
+|$678,000
+|None
+|Stock
+|-
+|[[Vapid]] [[Flash GT]]
+|$1,695,520
+|Classic Flags w/ Stripes
+|Stock
+|-
+|[[Vulcar]] [[Warrener HKR]]
+|$1,260,000<br />$945,000<br /><small>(Trade Price)</small>
+|None
+|Stock
+|-
+| rowspan="5" |17 November 2022
+| rowspan="5" |[[File:TheHeistsEventWeek3-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Grotti (HD Universe)|Grotti]] [[Brioso 300]]
+|$446,730<br />$339,630<br /><small>(Trade Price)</small>
+|White Stripes
+|Stock
+|-
+|[[Annis]] [[Savestra]]
+|$693,000
+|None
+|Stock
+|-
+|[[Declasse]] [[Vamos]]
+|$443,989
+|Sure It's Safe?
+|Stock
+|-
+|[[Överflöd]] [[Entity XF]]
+|$556,500
+|N/A
+|Stock
+|-
+|[[Maibatsu Corporation (HD Universe)|Maibatsu]] [[Manchez Scout]]
+|$180,300
+|90s Sandbox
+|Stock
+|-
+| rowspan="5" |10 November 2022
+| rowspan="5" |[[File:TheHeistsEventWeek2-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dinka]] [[Kanjo SJ]]
+|$1,370,000<br />$1,027,500<br /><small>(Trade Price)</small>
+|None
+|Stock
+|-
+|[[Pfister (HD Universe)|Pfister]] [[Comet Safari]]
+|$739,070
+|Arid Theater
+|Stock
+|-
+|[[Lampadati]] [[Komoda]]
+|$1,190,000<br />$892,500<br /><small>(Trade Price)</small>
+|None
+|Stock
+|-
+|[[Pegassi]] [[Ignus]]
+|$2,784,380
+|Black Stripes
+|Stock
+|-
+|[[Dinka]] [[Blista Kanjo]]
+|$429,370<br/>$327,870<br /><small>(Trade Price)</small>
+|Highway Hunter
+|Stock
+|-
+| rowspan="5" |3 November 2022
+| rowspan="5" |[[File:TheHeistsEventWeek1-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Karin]] [[Sultan RS Classic]]
+|$1,789,000<br />$1,341,750<br /><small>(Trade Price)</small>
+|None
+|Stock
+|-
+|[[Vapid]] [[Hustler]]
+|$434,490
+|Basic Pinstripe
+|Stock
+|-
+|[[Übermacht]] [[Cypher]]
+|$1,550,000<br />$1,162,500<br /><small>(Trade Price)</small>
+|[[Special Liveries in GTA_Online/Vehicles#Part of Los Santos Tuners|Fleeca Circuit]]
+|Stock (painted White)
+|-
+|[[Albany]] [[Hermes]]
+|$393,880
+|Ghost Flames
+|Stock
+|-
+|[[Übermacht]] [[Sentinel Classic]]
+|$428,030<br/>$322,405<br /><small>(Trade Price)</small>
+|Total Fire
+|Inferno (Sport), painted Black
+|-
+| rowspan="5" |27 October 2022
+| rowspan="5" |[[File:Halloween2022Week4-GTAOe-PDMSStock.jpg|175px|center]]
+|[[BF]] [[Weevil]]
+|$545,939<br />$415,439<br /><small>(Trade Price)</small>
+|Evil Weevil
+|Stock
+|-
+|[[Lampadati]] [[Pigalle]]
+|$280,000
+|N/A
+|Stock
+|-
+|[[Albany]] [[Lurcher]]
+|$362,000
+|Hangman's Grave
+|Stock
+|-
+|[[LCC]] [[Sanctus]]
+|$1,216,380
+|Blue Flames
+|Stock
+|-
+|[[Dinka]] [[RT3000]]
+|$1,743,500<br/>$1,314,750<br /><small>(Trade Price)</small>
+|Total Fire
+|Stock
+|-
+| rowspan="5" |20 October 2022
+| rowspan="5" |[[File:Halloween2022Week3-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Übermacht]] [[Zion Classic]]
+|$431,650
+|Faux-Rust
+|Stock
+|-
+|[[Shitzu]] [[Defiler]]
+|$430,240<br />$327,240<br /><small>(Trade Price)</small>
+|None
+|Stock
+|-
+|[[Declasse]] [[Tampa]]
+|$187,500
+|N/A
+|Stock
+|-
+|[[Western Motorcycle Company|Western]] [[Zombie|Zombie Chopper]]
+|$172,920
+|Ghost Flames
+|Webs (Front Wheel Only)
+|-
+|[[Karin]] [[Everon]]
+|$1,057,010<br/>$798,885<br /><small>(Trade Price)</small>
+|Harsh Souls
+|Stock
+|-
+| rowspan="5" |13 October 2022
+| rowspan="5" |[[File:Halloween2022Week2-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Nagasaki]] [[Outlaw]]
+|$791,010<br/>$600,810<br /><small>(Trade Price)</small>
+|Rusted
+|Stock
+|-
+|[[Dinka]] [[Veto Classic]]
+|$563,789
+|Corruption
+|Stock
+|-
+|[[Vapid]] [[Guardian]]
+|$375,000
+|N/A
+|Stock
+|-
+|[[Karin]] [[Kuruma (HD Universe)|Kuruma]]
+|$119,510
+|Paint Drip
+|Stock
+|-
+|[[Vapid]] [[Dominator GTT]]
+|$882,500<br/>669,000<br /><small>(Trade Price)</small>
+|70s Street Machine
+|Stock
+|-
+| rowspan="5" |06 October 2022
+| rowspan="5" |[[File:Halloween2022Week1-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Rune]] [[Cheburek]]
+|$98,150
+|Rusted
+|Stock
+|-
+|[[Benefactor]] [[Streiter]]
+|$350,000
+|N/A
+|Stock
+|-
+|[[Karin]] [[Calico GTF]]
+|$1,419,870<br/>$1,070,745<br /><small>(Trade Price)</small>
+|Tribal Purple Halftone
+|Stock
+|-
+|[[Bravado]] [[Banshee (HD Universe)|Banshee]]
+|$129,510
+$24,510 (<small>for [[Criminal Enterprise Starter Pack|CESP]] owners)</small>
+|Black Racing Stripes
+|Stock
+|-
+|[[Benefactor]] [[Glendale (HD Universe)|Glendale]]
+|$200,000
+|N/A
+|Stock
+|-
+| rowspan="5" |29 September 2022
+| rowspan="5" |[[File:JunkEnergySkydivesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Benefactor]] [[Dubsta]]<nowiki>*</nowiki>
+|$70,000
+|N/A
+|Stock
+|-
+|[[Bravado]] [[Greenwood (HD Universe)|Greenwood]]
+|$1,854,620<br />$1,488,370<br /><small>(Trade Price)</small>
+|Classic Full Stripes
+|Stock
+|-
+|[[Übermacht]] [[Sentinel XS (HD Universe)|Sentinel XS]]
+|$85,650
+|[[CNT]]
+|Stock
+|-
+|[[Bravado]] [[Youga Classic]]
+|$219,510
+|Surf’s Up
+|Stock
+|-
+|[[Vapid]] [[Retinue Mk II]]
+|$1,640,520<br/>$1,235,520<br /><small>(Trade Price)</small>
+|Vapid Classics
+|Stock
+|-
+| rowspan="5" |22 September 2022
+| rowspan="5" |[[File:KanjoSJ&PostludeWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Annis]] [[Euros]]
+|$1,100,520<br />$830,520<br /><small>(Trade Price)</small>
+|[[Arrow Gasoline|Arrow]] Stripes
+|Stock
+|-
+|[[Imponte (HD Universe)|Imponte]] [[Phoenix (HD Universe)|Phoenix]]<nowiki>*</nowiki>
+|$20,000
+|N/A
+|Stock
+|-
+|[[Bravado]] [[Gauntlet Classic]]
+|$634,380<br />$480,630<br /><small>(Trade Price)</small>
+|White 445
+|Stock
+|-
+|[[Declasse]] [[Vamos]]
+|$622,789
+|Sure It's Safe?
+|Stock
+|-
+|[[Karin]] [[Previon]]
+|$1,550,780<br/>$1,178,280<br /><small>(Trade Price)</small>
+|[[Stance Andreas]] Alt
+|Gravel Trap (Track)
+|-
+| rowspan="5" |15 September 2022
+| rowspan="5" |[[File:CommunitySeriesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Dinka]] [[Veto Modern]]
+|$995,000
+|<nowiki>#</nowiki>14 [[eCola (HD Universe)|eCola]]
+<small>{{H:title|Free during that event week|Value $0}}</small>
+|Stock
+|-
+|[[Vapid]] [[Peyote Gasser]]
+|$827,800
+|Blacktop Burner
+|Stock
+|-
+|[[Annis]] [[Hellion]]
+|$860,650
+|Nightmare
+|Stock
+|-
+|[[Weeny]] [[Issi Sport]]
+|$466,740
+|White Stripes
+|Stock
+|-
+|[[Obey]] [[Omnis]]
+|$735,200
+$0 (<small>for [[Criminal Enterprise Starter Pack|CESP]] owners)</small>
+|Classic Rally
+|Stock
+|-
+| rowspan="5" |08 September 2022
+| rowspan="5" |[[File:NightclubBonusesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Gallivanter]] [[Baller]]<nowiki>*</nowiki><br />(1st generation)
+|$90,000
+|N/A 
+|Stock
+|-
+|[[Canis]] [[Seminole Frontier]]
+|$697,380
+|Old Wood
+|Stock
+|-
+|[[Dinka]] [[Sugoi]]
+|$1,245,660<br />$939,660<br /><small>(Trade Price)</small>
+|Wave
+|Stock
+|-
+|[[Dinka]] [[Blista Kanjo]]
+|$599,380<br />$454,380<br /><small>(Trade Price)</small>
+|Shopping List
+|Stock
+|-
+|[[Declasse]] [[Tulip]]
+|$454,170
+|The Bad
+|{{H:title|Painted red - paint retained when purchased|Stock}}
+|-
+| rowspan="5" |01 September 2022
+| rowspan="5" |[[File:VigeroZXWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Canis]] [[Mesa (HD Universe)|Mesa]]<nowiki>*</nowiki>
+|$30,000
+|N/A 
+|Stock
+|-
+|[[Imponte (HD Universe)|Imponte]] [[Beater Dukes]]
+|$212,939
+|White Stripes
+|Stock
+|-
+|[[Bravado]] [[Banshee (HD Universe)|Banshee]]
+|$87,510
+$24,510 (<small>for [[Criminal Enterprise Starter Pack|CESP]] owners)</small>
+|Black Racing Stripes
+|Stock
+|-
+|[[Dundreary]] [[Landstalker XL]]
+|$1,240,520
+|Flame Livery
+|Stock
+|-
+|[[Declasse]] [[Vigero ZX]]
+|$1,947,000
+|None
+|Stock
+|-
+| rowspan="5" |25 August 2022
+| rowspan="5" |[[File:Brioso300WidebodyWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Ocelot]] [[Jugular (HD Universe)|Jugular]]
+|$875,740<br />$661,365<br /><small>(Trade price)</small>
+|Sport Stripe
+|Stock
+|-
+|[[Benefactor]] [[Schwartzer]]
+|$80,000
+|None
+|Stock
+|-
+|[[Vapid]] [[Dominator ASP]]
+|$1,798,370<br />$1,354,620<br /><small>(Trade price)</small>
+|Black Classic Sports Stripe
+|Stock
+|-
+|[[Bravado]] [[Buffalo STX]]
+|$2,150,000<br />$1,612,500<br /><small>(Trade price)</small>
+|[[Sprunk (HD Universe)|Sprunk]] Racing<br/><small>{{H:title|Free during that event week|Value $0}}</small>
+|Stock
+|-
+|[[Lampadati]] [[Michelli GT]]
+|$1,225,000
+|Vintage [[eCola (HD Universe)|eCola]]<br/><small>{{H:title|Free during that event week|Value $0}}</small>
+|Stock
+|-
+| rowspan="5" |18 August 2022
+| rowspan="5" |[[File:RuinerZZ8Week-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Vapid]] [[Speedo]]<nowiki>*</nowiki>
+|$15,000
+|N/A
+|Stock
+|-
+|[[Weeny]] [[Dynasty]]
+|$471,660
+|Oye Taxi
+|Stock
+|-
+|[[Vulcar]] [[Fagaloa]]
+|$353,240
+|None
+|Classic Rod (Lowrider)
+|-
+|[[Karin]] [[Sultan Classic]]
+|$1,055,880<br />$798,180<br /><small>(Trade price)</small>
+|Tribal Throwback
+|Apex (Tuner)
+|-
+|[[Declasse]] [[Impaler]]
+|$220,841
+|Lowrider
+|Classic Five (Muscle)
+|-
+| rowspan="5" |11 August 2022
+| rowspan="5" |[[File:CayoPericoSeriesWeek-GTAOe-PDMSStock.jpg|175px|center]]
+|[[Declasse]] [[Tornado]] convertible<nowiki>*</nowiki>
+|$30,000
+|None
+|Stock
+|-
+|[[Vulcar]] [[Nebula Turbo]]
+|$826,150
+|Oodles of Doodles
+|Classic Five (Muscle)
+|-
+|[[Annis]] [[Remus]]
+|$1,390,520<br />$1,048,020<br /><small>(Trade price)</small>
+|[[Premier (company)|Premier]] Stripe
+|Stock
+
+|-
+|[[Enus]] [[Cognoscenti]]
+|$167,800
+|N/A
+|Fagorme (SUV)
+|-
+|[[Benefactor]] [[Stirling GT]]
+|$999,510
+|Simple Black Roundel
+|Stock
+|-
+| rowspan="5" |04 August 2022
+| rowspan="5" |[[File:SM722Week-GTAOe-PDMTestRides.png|175px|center]]
+|[[Benefactor]] [[Dubsta#Dubsta2|Dubsta2]]<nowiki>*</nowiki>
+|$75,000
+|None
+|Stock
+|-
+|[[Cheval]] [[Picador]]
+|$31,800
+|Pinstripes
+|Stock
+|-
+|[[Albany]] [[Hermes]]
+|$342,660
+|Blue Flames
+|Stock
+|-
+|[[Bravado]] [[Gauntlet Hellfire]]
+|$770,080
+|Too Much Free Time
+|Stock
+|-
+|[[Maibatsu Corporation (HD Universe)|Maibatsu]] [[Penumbra FF]]
+|$920,939
+|Sakura Tree 
+|Stock
+|}
+
+Some test drives may be painted in rare colors that cannot be applied in any mod shops, which can be secured permanently by purchasing these vehicles directly. These paint jobs are mostly derived from the traffic default colors of the cars themselves.
+{| class="zebratable mw-collapsible sortable mw-collapsed" style="width: 100%"
+!{{H:title|Commencement date|Week}}
+!Test Drive
+!Color Set<br/>{{CarColV/Title|extended=y}}
+!Ref.
+!Notes
+|-
+|29 December 2022
+|[[Canis]] [[Kamacho]]
+|{{CarColV|extended=y|36|0|18|112|1|132}}
+|
+|The wheel color will revert to default alloy color after switching sessions on PC version.
+|-
+|22 December 2022
+|[[Ocelot]] [[Ardent]]
+|{{CarColV|extended=y|11|0|87|112|1|132}}
+|
+|The wheel color will revert to default alloy color after switching sessions on PC version.
+|-
+|17 November 2022
+|[[Annis]] [[Savestra]]
+|{{CarColV|extended=y|90|90|12|12|1|132}}
+|
+|The wheel color will revert to default alloy color after switching sessions on PC version.
+|-
+|18 August 2022
+|[[Weeny]] [[Dynasty]]
+|{{CarColV|extended=y|98|93|0|0|1|132}}
+|
+|
+|}
+
+[[SECTION:3:Building]]
+<gallery position="center" spacing="small" widths="270px">
+Artwork-SimeonYetarian-GTAV.jpg|Artwork of '''Premium Deluxe Motorsport'''.
+SM722Week-GTAOe-PremiumDeluxeMotorsportAdvert.jpg|Advert for '''Premium Deluxe Motorsport''' in ''GTA Online'' from the [[SM722 Week]] event.
+</gallery>
+
+<gallery position="center" spacing="small" widths="250px" caption="Exterior">
+PremiumDeluxeMotorsport-GTAOe-2022.png|Front view of the dealership (2022).
+PremiumDeluxeMotorsport-GTAV.png|Front view of the dealership (2013).
+PremiumDeluxeMotorsport-GTA5.png|Power Street entrance.
+PremiumDeluxeMotorsport-GTAV-BackEntrance.png|Back entrance.
+</gallery>
+
+<gallery position="center" spacing="small" caption="Interior" widths="250px">
+PremiumDeluxeMotorsport-GTAV-Interior3.png|Showroom.
+PremiumDeluxeMotorsport-GTAV-Interior1.png|Reception desk with a computer, mouse and keyboard.
+PremiumDeluxeMotorsport-GTAV-Interior2.png|Glass table, leather couches and wall-mounted plasma television.
+PDMotorsport-GTAV-Office1.png|Office #1.
+PremiumDeluxeMotorsport-GTAV-Office.png|Office #2.
+PremiumDeluxeMotorsport-GTAV-Garage.png|The repair garage.
+PremiumDeluxeMotorsport-GTAV-NeonSign.png|Wooden shelves and neon sign.
+PremiumDeluxeMotorsport-GTAV-PDMSign.PNG|Neon sign.
+PremiumDeluxeMotorsport-GTAV-Photos.png|Black and white framed photos.
+MotionLotion-GTAV-Products.png|[[Motion Lotion]] and [[U Lube It]] products on a shelf.
+</gallery>
+
+<gallery position="center" spacing="small" widths="250px" caption="Brochures">
+Obey-GTAV-Brochure.PNG|[[Obey]].
+Benefactor Bravado-GTAV-Brochure.PNG|[[Benefactor]] and [[Bravado]].
+Benefactor-GTAV-Brochure.PNG|[[Benefactor]].
+Karin-GTAV-Brochure.PNG|[[Karin]]
+Ubermacht-GTAV-Brochure.PNG|[[Übermacht]]
+</gallery>
+
+<gallery position="center" spacing="small" widths="270px" caption="Branded Merchandise">
+PremiumDeluxeMotorsport-GTAV-Shirts2.PNG|Cabinet of shirts.
+PremiumDeluxeMotorsport-GTAV-Shirts1.PNG|Cabinet of shirts.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle dealerships

@@ -1,0 +1,89 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = restaurant
+|name          = Pizza This...
+|sign          = PizzaThis.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[State of Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Pizza restaurant chain
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      =
+*"''Get stuffed''"
+*"''You'll have it our way''"
+*"''A pizza you can't refuse''"
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Pizza This...''' is an [[Italy|Italian]] pizza restaurant chain featured in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game   = IV
+|header =
+|PizzaThis...-GTAIV-Berchem-exterior.jpg|'''Pizza This...''' in [[Berchem]], Alderney.
+|PizzaThis...-GTAIV-Leftwood-exterior.jpg|'''Pizza This...''' in [[Leftwood]], [[State of Alderney|Alderney]].
+|PizzaThis...-GTAIV-Willis-exterior.jpg|'''Pizza This...''' at the [[Big Willis Mall]] in [[Willis]], [[Dukes]].
+}}
+{{Gallery
+|game   = CW
+|header =
+|PizzaThis...-GTACW-Willis.png|'''Pizza This...''' at the Big Willis Mall in Willis, Dukes.
+}}
+{{Gallery
+|game   = VO
+|header =
+|PizzaThis-Vinewood-GTAV.png|'''Pizza This...''' in [[Downtown Vinewood]], [[Vinewood (HD Universe)|Vinewood]].
+|DailyGlobe-Vinewood-GTAV.png|'''Pizza This...''' in [[Downtown Vinewood]], [[Vinewood (HD Universe)|Vinewood]].
+|PizzaThis-GTAV-MissionRow.png|'''Pizza This...''' [[Mission Row]].
+|PizzaThis-GTAV-DelPerro.png|'''Pizza This...''' in [[Del Perro Beach]], [[Del Perro]].
+|PizzaThis-GTAV-VinewoodPlaza.png|'''Pizza This...''' in [[Vinewood Plaza]], [[Spanish Avenue]], [[Hawick]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurant chains
+Pizzerias

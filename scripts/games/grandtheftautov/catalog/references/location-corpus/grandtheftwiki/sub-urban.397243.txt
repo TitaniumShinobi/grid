@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{infobox business|
+|image = SubUrban-GTASA-logo.png
+|size = 200x200px
+|caption = The Sub Urban logo in [[Grand Theft Auto: San Andreas]].
+|game_1 = GTA San Andreas
+|game_2 = GTA V
+|game_3 = GTA Online
+|name = Sub Urban<br />Sub Urban Clothing
+|type = [[:Category:Clothing Stores|Clothing store]]
+|owner = 
+|location = '''[[3D Universe]]'''<br />[[Creek]], [[Las Venturas]]<br />[[Jefferson, Los Santos|Jefferson]], [[Los Santos in GTA III Era|Los Santos]]<br />[[Hashbury]], [[San Fierro]]<br />'''[[HD Universe]]'''<br />[[Hawick Ave]] in [[Alta]], [[Los Santos in GTA V|Los Santos]]<br />[[Del Perro]], [[Los Santos in GTA V|Los Santos]]<br />[[Harmony]], [[Blaine County]]<br />[[Chumash]]
+|affiliation = [[White Widow]] (<small>owned by Sub Urban</small>)
+|missions = [[Friend Request]]
+|employee = 
+}}
+
+[[LEAD]]
+'''Sub Urban''' is a [[:Category:Clothing Stores|clothing store]] in [[Grand Theft Auto: San Andreas]] and [[Grand Theft Auto V]].
+
+[[CATEGORIES]]
+Businesses in Blaine County
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in Los Santos in GTA III Era
+Businesses in Los Santos in GTA V
+Clothing Stores
+Clothing in GTA San Andreas

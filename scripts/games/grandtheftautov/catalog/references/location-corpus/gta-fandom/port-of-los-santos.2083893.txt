@@ -1,0 +1,68 @@
+[[INFOBOX]]
+{{Infobox location
+|type       = district
+|image      = PortOfLosSantos-GTAVee-Montage.jpg
+|caption    = Clockwise from top: [[Jetsam Terminal Headquarters]], the [[Post OP Depository]] on [[Elysian Island]], [[Los Santos Naval Port]], the neighborhood of [[Banning]], [[Pier 400]] with the [[Miriam Turner Overpass]] in the background.
+|altnames   = 
+*Port of South Los Santos
+*Los Santos Harbor
+*Port City
+|games      = {{games|V=y|O=y}}
+|location   = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-PortofSouthLosSantos.ogg
+|map        = 
+<gallery>
+PortofLosSantos-IngameGPS-GTAV-Map.png|Port of Los Santos
+PortofLosSantos-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption = Location on the map (in-game GPS). The neighborhoods of Port of Los Santos: <font color=6dbf66>Banning</font>, <font color=red>Elysian Island</font> and <font color=6268e2>Terminal</font>.
+}}
+
+[[LEAD]]
+The '''Port of Los Santos''', also known as '''Port of South Los Santos''', '''Los Santos Harbor''', or '''Port City''', is the major seaport for the [[Los Santos (HD Universe)|City of Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Places of Interest]]
+*[[Jetsam Terminal Headquarters]]
+*[[Los Santos Marine]] ''(Southwest Marine)''
+*[[Los Santos Naval Port]]
+*[[Ocean Motion]]
+*[[Pacific Allied Shipyard]]
+*[[Pier 400]] Powerstation ''(Seaside Avenue Power Station)''
+*Plaice Place Building ''(Seaside Avenue Building)''
+*Plaice Place Pier ''(Seaside Avenue Pier)''
+*[[Simeon's Delivery Garage]]
+*[[The Port Authority of Los Santos]] ''(Southwest Marine Warehouse)''
+*Westdocks [[Pier 400]] ''(Port of Los Angeles Warehouse N.1)''
+
+[[SECTION:2:Businesses]]
+*[[Alpha Mail]]
+*[[Bristols]] Coke Storage
+*[[Bugstars]]
+*[[D-Rail]]
+*[[Jetsam]]
+*[[Pacific Bait]]
+*[[Post OP]]
+*[[United States Post]]
+*[[Walker]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Abattoir Avenue]]
+*[[Bucaneer Way]] ''(Navy Way)''
+*[[Chum Street]]
+*[[Chupacabra St]]reet
+*[[Plaice Place]] ''(Seaside Avenue)''
+*[[Signal Street]]
+*[[Voodoo Place]]
+
+[[SECTION:2:Bridges]]
+*[[Elysian Freeway Bridge]] ''({{WP|Gerald Desmond Bridge}})''
+*[[Elysian Island Train Bridge]] ''({{WP|Henry Ford Bridge}})''
+*[[Miriam Turner Overpass]] ''({{WP|Vincent Thomas Bridge}})''
+*[[Signal Street]] Bridge ''({{WP|Commodore Schuyler F. Heim Bridge}})''
+
+[[CATEGORIES]]
+Districts
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Seaports
+Zones

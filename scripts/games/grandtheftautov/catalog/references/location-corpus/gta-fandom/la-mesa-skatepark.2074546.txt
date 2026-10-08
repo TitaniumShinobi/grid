@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = La Mesa Skatepark
+|type           = park
+|image          = LaMesaSkatepark-GTAVe.png
+|caption        = Overview of the park.
+|location       = [[Popular Street]], [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games          = {{Games|V=y|O=y}}
+|file_name      = <code>id2_10_park</code>
+|coords         = 734.2147,-1218.327,25.99421
+|map            = LaMesaSkatepark-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''La Mesa Skatepark''' is a recreational [[Skate Parks|skate park]] appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Skate parks
+Urban parks

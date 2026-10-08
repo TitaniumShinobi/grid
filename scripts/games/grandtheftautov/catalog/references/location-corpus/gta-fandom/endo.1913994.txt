@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Endo
+|image         = ENDO-GTO-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|oldlogo2      = 
+|oldcaption2   = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|V=y|O=y}}
+|mentioned     = 
+|business_type = Vehicle modifications
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[#Products|Wheels]]
+|weapons       = 
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Endo''' is a vehicle parts and performance company appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle parts manufacturers

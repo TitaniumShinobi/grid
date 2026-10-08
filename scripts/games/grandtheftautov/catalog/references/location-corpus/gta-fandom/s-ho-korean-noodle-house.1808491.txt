@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|name        = Simon Ho
+|image       = SimonHo-GTAV-Logo.png
+|caption     = Logo sign.
+|games       = {{Games|V=y|O=y}}
+|location    = [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+|structure_type = Korean restaurant
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Simon Ho Korean Noodle House''' (Korean: 사이먼흐) is a [[South Korea|Korean]] restaurant chain that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+S.HoKoreanNoodleHouse-GTAV-SouthRockfordDrive.png|South Rockford Drive.
+S.HoKoreanNoodleHouse-GTAV-PalominoAvenue.png|Palomino Avenue.
+S.HoKoreanNoodleHouse-GTAV-KaytonTowers.png|San Andreas Avenue.
+</gallery>
+
+[[CATEGORIES]]
+Asian-themed restaurants
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurants

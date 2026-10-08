@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   =
+|type          = alcohol
+|name          = Stronzo
+|sign          = StronzoBeer-GTAO-NewLogo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = {{WP|Beer}}
+|founded       = [[1888]]
+|founder       = 
+|ceo           = 
+|taglines      = ''Birra forte d'Italia''
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Stronzo''' is an [[Italy|Italian]] brand of beer in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI

@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = supermarket
+|name           = Willie's Supermarket
+|sign           = 
+|image          = WilliesSupermarket-GTAVe-Overview.png 
+|caption        = Overview of the supermarket from [[Paleto Boulevard]].
+|aka            = Willie's Pharmacy
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]]
+|taglines       = 
+|use            = Supermarket & pharmacy
+|status         = active
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Willie's Supermarket''' is a supermarket and pharmacy in {{V}} and {{O}}, located on [[Paleto Boulevard]] in [[Paleto Bay]], [[Blaine County]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Pharmacies
+Supermarkets

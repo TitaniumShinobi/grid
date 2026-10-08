@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox location
+|name         = Richman
+|image        = Richman-GTAVee.jpg
+|caption      = 
+|altnames     = {{H:title|By Karl Kelly's Lifeinvader profile|Richman Hills}}
+|games        = {{games|V=y|O=y}}
+|type         = neighborhood
+|location     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner     = PoliceScanner-GTAV-Neighborhood-Richman.ogg
+|map          = 
+<gallery>
+Richman-IngameGPS-GTAV-Map.png|Richman
+Richman-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption  = Location on the map (in-game GPS). The <font color=060cf8>GWC and Golfing Society</font> is also part of <font color=red>Richman</font>.
+|map2         = Richman-Satellite-GTAV.png
+|map_caption2 = Satellite view of '''Richman''' (official manual).
+}}
+
+[[LEAD]]
+'''Richman''' is a neighborhood located in [[Los Santos (HD Universe)|Los Santos]], featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Roads and Streets]]
+*[[Americano Way]]
+*[[Greenwich Place]]
+*[[Hardy Way]]
+*[[Mad Wayne Thunder Drive]]
+*[[North Rockford Drive]]
+*[[Picture Perfect Drive]]
+*[[Richman Street]]
+*[[Sam Austin Drive]]
+*[[West Eclipse Boulevard]]
+
+[[SECTION:2:Places of Interest]]
+*[[Richman Mansion]]
+*[[University of San Andreas, Los Santos]]
+
+[[SECTION:2:Businesses]]
+*[[Los Santos Golf Club]]
+*[[The Richman Hotel]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

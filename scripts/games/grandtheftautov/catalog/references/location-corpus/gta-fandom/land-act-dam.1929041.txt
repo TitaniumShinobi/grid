@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = LandActDam-GTAV-East.png
+|games         = {{Games|V=y|O=y}}
+|type          = dam
+|location = [[Tataviam Mountains]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+The '''Land Act Dam''' is an arch concrete dam in the [[Los Santos River]], featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It holds the [[Land Act Reservoir]], the main source of water in the city of [[Los Santos (HD Universe)|Los Santos]], in the middle of the [[Tataviam Mountains]]. It is connected by pipe to what looks like a filtering plant beside the [[Los Santos Freeway]]. It is located in [[Los Santos County]], east of the city. A dirt path runs through its crest, connecting it to  [[East Vinewood]], the Los Santos Freeway and the [[Palomino Freeway]].
+
+[[CATEGORIES]]
+Dams
+Structure zones
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

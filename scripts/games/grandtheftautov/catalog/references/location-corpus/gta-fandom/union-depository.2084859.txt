@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|style     = darklogo
+|image     = UnionDepository-GTAV-Logo.png
+|games     = {{Games|V=y|O=y}}
+|locations = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = Central bank
+}}
+
+[[LEAD]]
+The '''Union Depository''' is a bank in {{V}} and {{O}}, with an office on 17 [[Power Street]] in [[Pillbox Hill]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]].
+
+[[CATEGORIES]]
+Banking companies
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Businesses in GTA Online
+Businesses in GTA V
+Skyscrapers

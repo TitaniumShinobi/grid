@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{infobox location
+|type           = church
+|name           = Rancho Church
+|image          = RanchoChurch-GTAVe.png
+|games          = {{Games|V=y|O=y}}
+|location       = [[Innocence Boulevard]] and [[Jamestown Street]], [[Rancho]]
+|architecture   = [[:Category:Modernist buildings|Modernist]]
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Rancho Church''' is a church that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Churches
+Modernist buildings

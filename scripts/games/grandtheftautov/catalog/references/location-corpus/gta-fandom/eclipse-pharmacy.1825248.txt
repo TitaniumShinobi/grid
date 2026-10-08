@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|accessible = No
+|name = Eclipse Pharmacy
+|image = EclipsePharmacy-GTAV-MirrorPark-Logo-Texture.png
+|type = Pharmacy
+|games = {{Games|V=y|O=y}}
+|location = [[Mirror Park Boulevard]], [[Mirror Park]]
+|phone = *555-0143
+*555-0149
+*555-0107 (fax number)
+}}
+
+[[LEAD]]
+'''[[Eclipse Pharmacy]]''' is a pharmacy that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pharmacies

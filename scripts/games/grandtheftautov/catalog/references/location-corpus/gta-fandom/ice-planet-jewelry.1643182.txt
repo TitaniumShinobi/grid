@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Ice Planet Jewelry
+|image = IcePlanetJewelry-GTAV.jpg
+|type = Jewelry store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Clinton Avenue]], [[Downtown Vinewood]]
+}}
+
+[[LEAD]]
+'''Ice Planet Jewelry''' is a jewelry store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

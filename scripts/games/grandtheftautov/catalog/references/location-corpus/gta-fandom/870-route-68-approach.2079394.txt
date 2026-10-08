@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 870 Route 68 Approach
+|image = Dynasty8-GTAV-Medium-Image-870Route68Approach.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = {{Games|V=y|O=y}}
+|style = Medium garage
+|garage = 6 vehicles <br> 2 bikes
+|price = [[Money|$]]62,500
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5
+}}
+
+[[LEAD]]
+'''870 Route 68 Approach''' is a [[Garages in GTA Online|purchasable garage]] in {{O}}.
+
+[[SECTION:2:Property Information]]
+The garage is located in a small industrial site in [[Harmony]], situated between the [[Route 68 Approach]] and [[Joshua Road]]. The site is accessed via a dirt road off Joshua Road. It also sits across the street from [[Stoner Cement Works]]' Harmony location.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]62,500 and can store 6 [[Personal Vehicles]] and two [[Pedal and Metal Cycles|Bicycles]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

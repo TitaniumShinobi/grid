@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    =
+|landmark       = y
+|type           = statue
+|name           = Faswan
+|image          = PortolaDrive-GTAV-Faswan.png
+|caption        = '''Faswan''' statue in ''[[Grand Theft Auto V]]''.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Portola Drive]] & [[Eastbourne Way]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+|structure_type = [[:Category:Sculptures|Statue]]
+|height         = 
+|file_name      = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''"Faswan"''' is a statue and landmark in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Landmarks
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Sculptures

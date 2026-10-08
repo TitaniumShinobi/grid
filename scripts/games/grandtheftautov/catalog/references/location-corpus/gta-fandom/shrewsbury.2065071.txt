@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|name = [[File:ShrewsburyShotguns-GTAV-Logo.png|220px]]
+|image = Shrewsbury-GTAO-Logo.png
+|bawsaq = {{BAWSAQ/Slider}} '''SHR'''
+|founded = 19th Century
+|type = weapons
+|games = {{Games|V=y|O=y|VI=y}}
+|reference = {{WP|Winchester Repeating Arms Company}}
+}}
+
+[[LEAD]]
+'''Shrewsbury''' is an American firearm manufacturer in {{V}}, {{O}} and {{VI}}. The player can buy stocks of the company at the [[Bawsaq.com]] website.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Explosives manufacturers
+Smuggled Items in GTA Online
+Weapon manufacturers

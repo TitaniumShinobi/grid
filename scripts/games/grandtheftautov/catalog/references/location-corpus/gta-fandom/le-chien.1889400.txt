@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Le Chien
+|type = Fashion Company
+|image = LeChien-GTAIV-Logo.png 
+|taglines = "''Smell Like A Bitch''"<br>"''Make-up de Paris''"
+|games = ''[[Grand Theft Auto IV]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Rockford Plaza]], [[Las Lagunas Boulevard]], [[Burton]]
+}}
+
+[[LEAD]]
+'''Le Chien''' ("The Dog" in French) is a high fashion clothing company in ''[[Grand Theft Auto IV]]'', ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores
+Fashion brands

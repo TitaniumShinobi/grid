@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox structure
+|name       = Autopia Parkway
+|image      =
+<gallery>
+AutopiaParkway-GTAVee-Banning.jpg|Banning
+AutopiaParkway-GTAVee-LaPuerta.jpg|La Puerta
+</gallery>
+|caption    = 
+|games      = {{Games|V=y|O=y}}
+|start      = [[Davis Avenue]], [[Davis]]
+|end        = [[Greenwich Parkway]], [[Los Santos International Airport (HD Universe)|LSIA]]
+|map        =
+<gallery>
+AutopiaParkway-GTAV-Map.png|Map
+AutopiaParkway-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+}}
+
+[[LEAD]]
+'''Autopia Parkway''' is a road in the [[Los Santos International Airport (HD Universe)|LSIA]] district, [[Banning]], [[La Puerta]] and [[Davis]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Maze Bank Arena]]
+
+[[SECTION:2:Businesses]]
+*Auto Repairs
+*[[Big House Storage Inc.]] {{Small|(corner of [[Exceptionalists Way]])}}
+*[[The Secure Unit]]
+*[[Von Crastenburg Hotel]] {{Small|(corner of [[Greenwich Parkway]])}}
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

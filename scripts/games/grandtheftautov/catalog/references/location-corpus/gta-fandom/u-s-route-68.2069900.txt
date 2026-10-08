@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change = HIGHWAY
+|image2=Route 68 shield.svg
+|number=68
+|highway_westend={{GTA V road/marker|US|1}} near [[Lago Zancudo]]
+|highway_junctions={{GTA V road/marker|US|11}} - [[Tongva Valley]]
+|highway_eastend={{GTA V road/marker|US|13}} and {{GTA V road/marker|I|1}} near [[Davis Quartz]]
+|games={{Games|V=y|O=y}}
+|map=<gallery>
+Route68-GTAV-Map.png|Map
+Route68-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''U.S. Route 68''' is an east-west rural [[Numbered Highways in GTA V|numbered highway]] in the state of [[State of San Andreas (HD Universe)|San Andreas]] and appears in {{V}} and {{O}}. The highway passes through rural desert areas of the state and the small town of [[Harmony]]. Route 68 also acts as the border between [[Los Santos County]] and [[Blaine County]].
+
+The [[Random Events in GTA V#Stag Do Running Man|random event]] of the [[Groom in Trouble]] can be found on this road.
+
+[[SECTION:2:Places of Interest]]
+*[[Bolingbroke Penitentiary]]
+*[[Rebel Radio Building]]
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Animal Ark]]
+*[[Checkout!]]
+*[[Discount Store]]
+*[[Dollar Pills]]
+*[[Eastern Motel]]
+*[[Fleeca]]
+*[[Larry's RV Sales]]
+*[[Liquor Jr. Market]]
+*[[Los Santos Customs]]
+*[[Globe Oil#Grand Theft Auto V|Route 68 Store]]
+*[[Scoops Liquor Barn]]
+*[[Sub Urban (HD Universe)|Sub Urban]]
+*[[The Motor Hotel]]
+*[[The Paint Shop]]
+*[[The Taco Farmer]]
+*[[Xero]]
+
+[[CATEGORIES]]
+Highways
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

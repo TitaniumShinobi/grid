@@ -1,0 +1,79 @@
+[[INFOBOX]]
+{{Infobox location
+|name         = Morningwood
+|image        = Morningwood-GTAVee.jpg
+|caption      = 
+|games        = {{Games|V=y|O=y}}
+|type         = neighborhood
+|location     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner     = PoliceScanner-GTAV-Neighborhood-Morningwood.ogg
+|map          = 
+<gallery>
+Morningwood-IngameGPS-GTAV-Map.png|Morningwood
+Morningwood-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption  = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Morningwood''' is a neighborhood in northern [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is bordered by [[Richman (HD Universe)|Richman]] to the north, [[Backlot City]] to the south, [[Del Perro]] to the west, and [[Rockford Hills]] to the east.
+
+[[SECTION:2:Roads and Streets]]
+*[[Cougar Avenue]]
+*[[Morningwood Boulevard]]
+*[[North Rockford Drive]]
+*[[Perth Street]]
+*[[Prosperity Street]]
+*[[South Rockford Drive]]
+*[[West Eclipse Boulevard]]
+
+[[SECTION:2:Places of Interest]]
+*[[1237 Prosperity Street]]
+*[[Betta Pharmaceuticals|Betta]] Building (Westwood Medical Plaza)
+*[[Elgin House]] (Wilshire House)
+*[[Tivoli Cinema]] (Fox Bruin Theater)
+*[[University of San Andreas, Los Santos|ULSA]] Annexe (UCLA Extension)
+*[[Weazel Morningwood]] ({{WP|Fox Theater, Westwood Village|Fox Village Theatre}})
+
+[[SECTION:2:Businesses]]
+*[[Bean Machine]] (BJ's Pizza Grill)
+*[[Binco (HD Universe)|Binco]]
+*[[Bite!]]
+*[[Café Redemption]]
+*[[Café Vespucci]] (The Janns Dome)
+*[[The Cherry Popper Ice Cream Company (HD Universe)|Cherry Popper]] (Sandbag's Gourmet Sandwiches)
+*[[Dickies Bagels]]
+*[[Enoteca Kerplonk]]
+*Foreign Attire (The Tanning Club)
+*[[Fruit of the Vine]]
+*[[Fuque]] (Saint Pucchi Sposa)
+*[[The Grain of Truth]]
+*[[Ground & Pound Café]]
+*[[Gusset]] (Victoria's Secret)
+*[[G&B]] ({{WP|American Apparel}})
+*[[Homme Gina]]
+*[[Las Cuadras]]
+*Laser Prints
+*[[Limey's Juice and Smoothies]]
+*[[Los Santos Office Supply Co.]]
+*L.S. Gentstyle (Weyburn Clock Tower)
+*[[The Mighty Bush]]
+*[[Miss T]]
+*[[Noodle Exchange]]
+*Oldie But Goodie Antiquities
+*Outdoor Action
+*[[Ponsonbys]]
+*[[Radge]]
+*[[Rear Wall]]
+*[[Rob's Liquor]]
+*[[RON]]
+*[[Save-A-Cent]]
+*[[Vankhov]]
+*[[Viendemorte]] (Tanino Ristorante)
+*[[XYZ Store]] (Westwood Driving School/{{WP|Verizon Wireless}})
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

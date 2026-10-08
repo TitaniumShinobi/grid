@@ -1,0 +1,52 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Maze Bank Arena
+|image          = 
+<gallery>
+MazeBankArena-GTAO-ArenaWar.png|2018
+MazeBankArena-GTAV.png|2013
+</gallery>
+|caption        = The '''Maze Bank Arena''' as seen from the northeast.
+|games          = {{Games|V=y|O=y}}
+|type           = stadium
+|landmark       = y
+|location       = [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-MazeBankArena.ogg
+|pscanner2      = PoliceScanner-GTAV-Neighborhood-MazeBankStadium.ogg
+|map            =
+<gallery>
+MazeBankArena-IngameGPS-GTAV-Map.png|Maze Bank Arena
+MazeBankArena-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption    = Location on the map (in-game GPS).
+|products       = Entertainment
+|businesses     =
+*[[Los Santos Panic]]
+*[[Fame or Shame]]
+*[[Arena War]] {{Small|(''GTA Online'')}}
+|owner          = [[Maze Bank]]
+|accessible     = Yes (only during [[Fame or Shame (mission)|Fame or Shame]] and [[Arena War]] modes)
+|status         = active
+}}
+
+[[LEAD]]
+The '''Maze Bank Arena''' is a large sports arena located in [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:4:Arena War]]
+*All [[Arena War]] events, added with the [[GTA Online: Arena War|Arena War]] update, take place inside the arena.
+*[[Repo - Sasquashed]]
+
+[[SECTION:4:The Diamond Casino & Resort]]
+*[[Project 4808E: Arena]]
+
+[[SECTION:4:The Chop Shop]]
+*[[The Duggan Robbery]]
+**[[Planning Work: VIP Pass]]
+**[[The Duggan Robbery/Finale|The Duggan Robbery]]
+
+[[CATEGORIES]]
+Building zones
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Landmarks
+Stadiums

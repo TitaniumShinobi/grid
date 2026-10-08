@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = Sand Castle
+|sign          = SandCastle-GTAO-Logo.png
+|aka           = 
+|games         = {{Games|O={{DLC|mpimportexport}}{{EEEV}}}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Sand Castle''' is a clothing brand in ''[[Grand Theft Auto Online]]'' introduced in the [[GTA Online: Import/Export|Import/Export]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Import/Export
+Fashion brands

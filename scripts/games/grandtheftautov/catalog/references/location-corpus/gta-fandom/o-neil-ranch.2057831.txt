@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|name = O'Neil Ranch
+|image = O'NeilHouse-GTAV.png
+|games = {{Games|V=y|O=y}}
+|location = [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|condition = Rebuilt
+|floors = 2
+|type = farm
+|occupants = '''? - 2013:'''
+*[[Elwood O'Neil]] 
+*[[Walton O'Neil]] 
+*[[Wynn O'Neil]] 
+*Ernie O'Neil 
+*Earl O'Neil 
+*[[Dale O'Neil]] 
+*[[Doyle O'Neil]] 
+*Daryl O'Neil 
+*Dan O'Neil 
+*Dalton O'Neil 
+*Don O'Neil 
+*Ned O'Neil 
+*Larry O'Neil 
+*Cletus O'Neil 
+*Chester O'Neil 
+'''2020 - present day:'''
+*[[Leroy O'Neil]] 
+*Remaining [[O'Neil Brothers]]
+}}
+
+[[LEAD]]
+The '''O'Neil Ranch''' is a ranch located in [[Grapeseed]], [[Blaine County]], in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Farms
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

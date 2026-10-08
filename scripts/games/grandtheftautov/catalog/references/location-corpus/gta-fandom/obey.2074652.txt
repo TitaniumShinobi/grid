@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicles
+|name          = Obey
+|sign          = 
+|image         = Obey-Logo-Badge-GTAO.png
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y|VI=y}}
+|locations     = 
+|business_type = Automotive manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|taglines      = "''Redefining Style.''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Obey''' is a [[Germany|German]] luxury automotive manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

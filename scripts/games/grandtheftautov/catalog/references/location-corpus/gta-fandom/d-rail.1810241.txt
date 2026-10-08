@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image=D-Rail GTA V.png
+|locations=[[Los Santos (HD Universe)|Los Santos]]
+|type=Railway company
+|games=''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''D-Rail''' is a railroad company featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Ground transportation
+Railroad companies
+Warehouses

@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = DelPerroBeach-GTAV.png
+|location = [[Del Perro]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|pscanner       = PoliceScanner-GTAV-Neighborhood-DelPerroBeach.ogg
+|map           = <gallery>
+DelPerroBeach-IngameGPS-GTAV-Map.png|Del Perro Beach
+DelPerroBeach-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Del Perro Beach''' is a large beach located in [[Del Perro]], [[Los Santos County]], that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Places of Interest]]
+*[[Del Perro Beach Lifeguard Station]]
+*[[Del Perro Pier]]
+*[[Pleasure Pier]]
+
+[[SECTION:2:Businesses]]
+*[[Del Perro Gifts]]
+*[[Del Perro Pier Food Market]]
+*[[Del Perro Pier Surf 'N' Stuff]]
+*[[Dune-O's Beach Cafe]]
+*Hand Made Jewelery
+*[[Los Santos Style]]
+*[[Out of Towners]]
+*[[Pizza This...]]
+*Tattoo Store
+*[[The Beachfront Market]]
+
+[[CATEGORIES]]
+Beaches
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

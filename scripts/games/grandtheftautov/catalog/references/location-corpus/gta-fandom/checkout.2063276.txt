@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = supermarket
+|name          = Checkout!
+|image         = Checkout-GTAV-Logo.png
+|taglines      = "''Shopping for busy people''"
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Leftwood]], [[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Checkout!''' is a supermarket chain in {{HD}} of {{S}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|Checkout!-GTAIV-Alderney.jpg|[[Beaverhead Avenue]], [[Leftwood]], [[State of Alderney|Alderney]]. {{Small|([[:File:Checkout-GTAIV-AlderneyNight.png|night view]])}}
+|Checkout!-GTAIV-HematiteStreet.png|[[Hematite Street]], [[The Triangle]], [[Algonquin]].
+|StarJunction-GTAIV-Checkout.jpg|[[Frankfort Avenue]], [[Star Junction]], Algonquin.
+|Checkout!-GTAIV-ZirconiumBuilding.png|[[Zirconium Building]], [[Columbus Avenue]], [[Lancet]], Algonquin.
+}}
+{{Gallery
+|game = VO
+|Checkout-GTAV-Morningwood.jpg|[[Boulevard Del Perro]], [[Morningwood]].
+|Checkout-GTAV-Strawberry.jpg|[[Innocence Boulevard]], [[Strawberry]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Supermarket chains

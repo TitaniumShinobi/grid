@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|purchasable   = 
+|type          = technology
+|name          = 
+|sign          = Amitec-GTAO-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpvinewood}}}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Amitec''' is a technology company appearing in {{O}} as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino & Resort]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Diamond Casino & Resort
+Technology companies

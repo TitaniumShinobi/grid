@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox_business
+|sign = MusclePeach-GTAV-Logo.png
+|image = MusclePeach-GTAV-Logo1.png
+|type = Juice Bar & Restaurant
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+[[Muscle Peach]] is a juice bar and restaurant featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

@@ -1,0 +1,154 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name              = Vagrant
+|front_image       = Vagrant-GTAO-front.png
+|rear_image        = Vagrant-GTAO-rear.png
+|caption           = A '''Vagrant''' in {{O}}.
+|class             = [[:Category:Off-Road class|Off-Road]] {{Small|(''GTA Online'')}}
+|body_style        = Off-road buggy
+|capacity          = 2 {{Small|(driver and passenger)}}
+|manufacturer      = [[Maxwell]]
+|price             = [[Money|$]]1,228,400<br>$921,300 {{Small|([[#Locations|trade price]])}}<br>{{Small|([[Southern San Andreas Super Autos]])}}
+|games             = {{Games|O={{EEEV}} {{DLC|mpheist3}}}}
+|type              = buggy
+|variants          = 
+|radar_icon        = {{HUDIcons|game=O|buggy2}}
+|swankness         = 5/5
+|dashtype          = Race {{Small|(needle)}}<br>[[File:Race-Dials-GTAV.png|thumb|center|170px]]<br>Generic Race Digital {{Small|(dial texture)}}<br>[[File:GenRaceDigital-GTAV-DialSet.png|thumb|center|170px]]
+|inttxd            = Race Generic
+|carcols           = {{Expand||
+{{CarColV/Title|extended=y}}
+{{CarColV|extended=y|no=1|4|4|134|156|160|160}}
+{{CarColV/Title}}
+{{CarColV|no=2|0|0|10|156}}
+{{CarColV|no=3|1|1|10|156}}
+{{CarColV|no=4|2|2|7|156}}
+{{CarColV|no=5|3|3|5|156}}
+{{CarColV|no=6|6|6|111|156}}
+{{CarColV|no=7|111|111|111|156}}
+{{CarColV|no=8|4|4|111|156}}
+{{CarColV|no=9|61|61|67|156}}
+{{CarColV|no=10|32|32|28|156}}
+{{CarColV|no=11|27|27|32|156}}
+{{CarColV|no=12|64|64|54|156}}
+{{CarColV|no=13|5|5|111|156}}
+{{CarColV|no=14|6|6|111|156}}<br>
+}}
+|wheeltype         = Sport
+|flags             = {{Expand||
+{{Flags|FLAG_SPORTS}}<br>
+{{Flags|FLAG_SPAWN_ON_TRAILER}}<br>
+{{Flags|FLAG_RICH_CAR}}<br>
+{{Flags|FLAG_NO_BROKEN_DOWN_SCENARIO}}<br>
+{{Flags|FLAG_CAN_HAVE_NEONS}}<br>
+{{Flags|FLAG_EXTRAS_REQUIRE}}<br>
+{{Flags|FLAG_NO_HEAVY_BRAKE_ANIMATION}}<br>
+{{Flags|FLAG_PEDS_INSIDE_CAN_BE_SET_ON_FIRE_MP}}<br>
+}}
+|modelsets         = 
+|modelname         = vagrant
+|handlingname      = VAGRANT
+|textlabelname     = VAGRANT
+|roadspawn         = No
+|roadspawnmaxcol   = 1
+|roadspawnfreq     = 30
+|roadspawntrailer  = 
+|roadspawnidendis  = 20
+|roadspawndrivers  = 
+|roadspawngroups   = 
+|roadspawnlicense  = Standard White - 100%
+|engineacceleration = 
+|exhaustacceleration = 
+|idle              = 
+|deceleration      = 
+}}
+
+[[LEAD]]
+The [[Maxwell]] '''Vagrant''' is an off-road buggy featured in {{O}} as part of [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update.
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Vagrant
+|manufacturer  = Maxwell
+|class         = Off-Road 
+|image         = Vagrant-GTAO-RGSC-MainNew.jpg
+|caption       = Main image.
+|image2        = Vagrant-GTAO-RGSC-Action.jpg
+|caption2      = "Action" image.
+|speed         = 80.294907
+|accel         = 83.125
+|braking       = 20.833332
+|traction      = 71.21212
+|seats         = 2
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = sssa
+|schematic     = GenericVagrant
+
+
+}}
+
+[[SECTION:3:The Diamond Casino Heist]]
+*Two pre-modified variants of the Vagrant can be chosen as getaway vehicles to steal for [[The Diamond Casino Heist]]. They are one of the four sets of vehicles driver [[Chester McCoy]] randomly allocates for the player.
+
+{{ModelSet
+|modelset_file        = 
+|modelset_name        = Casino Heist 1
+|modelset_colorset    = 
+{{CarColV/Title|extended=y}}
+{{CarColV|extended=y|138|138|0|112|0|132}}
+|modelset_window      = {{No}}
+|modelset_livery      = See Modkit
+|modelset_modkit      = 
+{{Modkit
+|chassis       = Light Bar
+|exhaust       = Quad Exit
+|lfender       = Primary Mirrors
+|rfender       = Primary Fenders
+|grille        = Secondary Trunk
+|hood          = Carbon Hood
+|livery        = Orange Shade Camo
+|plate         = 22IUD069 - Standard White
+}}
+}}
+{{ModelSet
+|modelset_file        = 
+|modelset_name        = Casino Heist 2
+|modelset_colorset    = 
+{{CarColV/Title|extended=y}}
+{{CarColV|extended=y|111|106|0|112|0|132}}
+|modelset_window      = {{No}}
+|modelset_livery      = See Modkit
+|modelset_modkit      = 
+{{Modkit
+|exhaust       = Ribbed Back Box
+|lfender       = Carbon Mirrors
+|rfender       = Primary Fenders
+|livery        = Zancudo Camo
+|plate         = 84USA531 - Standard White
+|roof          = Spare Wheel
+}}
+}}
+{{Gallery
+|Vagrant-GTAO-front-CasinoHeist1.png|'''Vagrant''' variation 1 in [[The Diamond Casino Heist]]. {{Small|([[:File:Vagrant-GTAO-rear-CasinoHeist1.png|Rear quarter view]])}}
+|Vagrant-GTAO-front-CasinoHeist2.png|'''Vagrant''' variation 2 in The Diamond Casino Heist. {{Small|([[:File:Vagrant-GTAO-rear-CasinoHeist2.png|Rear quarter view]])}}
+}}
+
+[[SECTION:2:Locations]]
+*Available for purchase from [[Southern San Andreas Super Autos]] for [[Money|$]]1,228,400 or for $921,300 after completing [[The Diamond Casino Heist]] as the Heist Leader and using the Vagrant as a getaway vehicle.
+
+[[SECTION:3:The Diamond Casino Heist]]
+*[[The Diamond Casino Heist]] {{nd}} Should the [[GTA Online Protagonist|player]] employ [[Chester McCoy]] as the driver, he may request the player to steal two Vagrants as getaway vehicles.
+
+[[CATEGORIES]]
+Buggies
+Off-Road class
+Off-roading vehicles
+Vehicles in GTA Online: The Diamond Casino Heist
+Vehicles manufactured by Maxwell
+Vehicles purchasable from Premium Deluxe Motorsport
+Vehicles purchasable from Southern San Andreas Super Autos

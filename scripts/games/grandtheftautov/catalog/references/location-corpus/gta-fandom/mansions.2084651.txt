@@ -1,0 +1,113 @@
+[[INFOBOX]]
+{{Infobox location
+|safehouse      = y
+|style          = O
+|type           = mansion
+|name           = {{HUDIcons|game=O|mansion}} Mansions
+|image          = Mansions-GTAOe.gif
+|caption        = 
+|games          = {{Games|O={{EEEV}} {{DLC|mp2025_02}}}}
+|use            = 
+|owner          = {{GTAOP}} {{Small|(determinant)}}
+|operator       = [[Prix Luxury]]
+|occupants      = 
+*[[Prix Luxury AI Concierge]]
+*Prix Luxury Security
+*Personal Barber
+*Personal Tattoo Artist
+*Personal Vehicle Workshop Mechanic
+*Pets {{Small|(determinant)}}
+|architecture   = [[:Category:Contemporary buildings|Contemporary]]
+|length         = 
+|height         = 
+|area           = 
+|size           = 
+|floors         = 
+|levels         = 4
+|rooms          = 
+|garagecap      = 
+*20 vehicles each
+*1 helicopter each
+|parkingcap     = 
+|accessible     = Yes
+|canplayerstore = Yes
+|price          = [[Money|$]]11,500,000{{nd}}12,800,000
+|unlockedby     = 
+|unlockedafter  = 
+}}
+
+[[LEAD]]
+'''Mansions''' are purchasable [[Safehouses in GTA Online|safehouses]] in {{O}}, introduced in the [[GTA Online: A Safehouse in the Hills|A Safehouse in the Hills]] update.
+
+[[SECTION:3:Locations]]
+{| class="wikitable"
+!Mansion
+!Image
+!Location
+!Price
+!In-game Description
+|-
+|[[The Tongva Estate]]
+|[[File:Mansions-GTAOe-TheTongvaEstate.png|220px|center]]
+|[[Buen Vino Road]], [[Tongva Hills]]
+|$11,500,000
+|{{Quote|Perched loftily atop the Tongva Hills and a stone's throw away from San Andreas Wine County, you'll be able to smell the fragant aroma of this year's vintage yet comfortably ignore the complaints of disgruntled grape pickers.}}
+|-
+|[[The Vinewood Residence]]
+|[[File:Mansions-GTAOe-TheVinewoodResidence.png|220px|center]]
+|[[Marlowe Drive]], [[Vinewood Hills]]
+|$12,200,000
+|{{Quote|Close to Los Santos, while avoiding those in the wrong tax bracket, this magnificent hillside mansion allows you to bask in the proud heritage of the city, the rich landscape of the rolling hills, and the alluring glow of the Vinewood sign.}}
+|-
+|[[Richman Villa]]
+|[[File:Mansions-GTAOe-RichmanVilla.png|220px|center]]
+|[[Ace Jones Drive]], Vinewood Hills
+|$12,800,000
+|{{Quote|This sprawling residence grants you a luxurious double life that only unelected officials can afford. Indulge in the vibrant hedonism offered in the city, then retreat home for more hedonism, but this time private with all your home comforts.}}
+|}
+
+[[SECTION:3:Master Control Terminal]]
+The Master Control Terminal is located in the office on the first floor, used for management of all other businesses ([[Special Cargo]], [[Vehicle Cargo]], [[Motorcycle Clubs|Motorcycle Club]] businesses, [[Supplies]], [[Air Freight Cargo]], and [[Nightclubs|Nightclub]] businesses). Players can check the supplies' level for all applicable fronts, plus popularity for the nightclub.
+
+[[SECTION:3:Garage]]
+Each Mansion grants a garage space that can store up to 20 vehicles. Using the Vehicle Management menu available on the garage, the player can place 2 of the stored vehicles in the driveway of the Mansion and 1 of the stored vehicles in the Podium, which is purchased separately as an upgrade.
+
+[[SECTION:3:Trophy Room]]
+{{Main|/Trophies}}
+A Trophy Room is located near the entrance of the Mansion. It is used to showcase the player's achievements (including two achievements related to the player's {{V}} story progress, tracked from the {{URL|https://socialclub.rockstargames.com/games/gtav/pc/career/accomplishments|Accomplishments}} section on [[Rockstar Games Social Club]]) and the player's owned properties, all marked with pin points on a 3D map of [[State of San Andreas (HD Universe)|Southern San Andreas]].
+
+There are a total of 32 trophies and 36 Career Progress plaques to unlock. However, the player can only choose between 5 cabinet slots and 8 wall slots to place them. Career Progress plaques are only available in the [[PlayStation 5]], [[Xbox Series X and Series S]] and PC Enhanced versions.
+
+[[SECTION:3:Additional Rooms]]
+
+
+[[SECTION:4:Armory]]
+{{Quote|While having a room dedicated to each of the 27 amendments would be technically possible in a house this size, the second comes as standard. Comes with a Mk II Weapon Workshop and a place to buy and modify a wide range of weapons.}}
+For $720,000, an Armory can be purchased. Only available for players who own an [[Agencies|Agency]], which introduces the Armory.
+
+It is located on Basement Level 1, and is complete with a [[Weapon Workshop]], which offer an array of customization options for weapons and the ability to upgrade select weapons to [[:Category:Mk II Weapons|Mk II variants]], a Gun Locker to hide or show specific purchased weapons on the [[Weapon Wheel]], and the option to browse gear equipment. The ability to purchase regular weapons and ammo is not available.
+
+[[SECTION:4:Arcade]]
+{{Quote|Some people find it hard to be overstimulated in a house the size of shopping mall, but never fear: the relentless bombardment of neon pixels and blaring 8-bit soundtracks are only a click away.}}
+For $950,000, an Arcade can be purchased. Only available for players who own an [[Arcades|Arcade]] business and completed its [[Arcades/Setup: Equipment|setup mission]], which introduces [[Pixel Emporium]].
+
+It is located on the Lower Floor, and is used to store arcade cabinets available from Pixel Emporium in the Arcade business.
+
+[[SECTION:4:Podium]]
+{{Quote|When taking respite from motoring across Los Santos, place your most prized automobile on a literal pedestal so that you and your guests can marvel at its exquisite frame, the exceptional engineering, the supreme craftsmanship, and the astronomical service change.}}
+For $650,000, a Podium can be purchased. It is located on the Lower Floor, and is used to put a vehicle owned by the player on display. Using the Vehicle Management menu available on the garage, the player can place a vehicle of their choice in the podium.
+
+[[SECTION:4:Vehicle Workshop]]
+{{Quote|As part of the Vinewood uber-elite, the only finger you should be lifting is the one to select which vehicle you'll upgrade, so enhance your car's cosmetics and performance without ever leaving the front door. GTA+ Members also have access to Benny's Original Motor Works, Hao's Special Works, Drift Tuning, and Missile Lock-On Jammer upgrades.}}
+For $880,000, a Vehicle Workshop can be purchased. It is located on Basement Level 2, serving as a workshop dedicated to [[Vehicle Customization in GTA V|vehicle customization]]. Exclusively to [[GTA+]] members, players can customize vehicles with Missile Lock-On Jammers, Drift Tuning upgrades, and customizations available from [[Benny's Original Motor Works]] and [[Hao's Special Works]].
+
+Unlike the in-property workshops available at [[Agencies]] and [[Offices|executive offices]] and the [[Arena Workshop]], vehicles do not need to be first parked in the associated garages (requiring an empty parking spot) to use the workshop. They can be parked simply on the driveway of the mansion, and the option to use the workshop will be given without changing the vehicle's home garage.
+
+[[SECTION:4:Art Studio]]
+{{Quote|Upgrade your Mansion with the Art Studio, a versatile new space that serves as your base of operations for this Heist. Once acquired, expert counterfeiter Yong-Rae will begin creating convincing replicas to replace your Primary Targets so that Kortz Center staff will be none the wiser.}}
+For $4,700,000, an Art Studio can be purchased. It is located on Basement Level 2, and is used as a base of operations to set up [[The Kortz Center Heist]].
+
+[[CATEGORIES]]
+Buildings in GTA Online: A Safehouse in the Hills
+Gameplay in GTA Online: A Safehouse in the Hills
+Safehouses in GTA Online

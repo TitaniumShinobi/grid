@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|park = y
+|name = Two Hoots Falls
+|image = TwoHootsFalls-GTAVee-Sign.jpg
+|caption = 
+|image_size = 300
+|location = [[Tongva Valley]], [[Los Santos County]]
+|games = {{Games|V=y|O=y}}
+|map = 
+}}
+
+[[LEAD]]
+'''Two Hoots Falls''' is a small park and waterfall located in [[Tongva Valley]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+National parks

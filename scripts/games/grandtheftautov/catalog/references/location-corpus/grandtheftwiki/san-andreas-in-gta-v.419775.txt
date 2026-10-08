@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{infobox state|
+|image = [
+|games = [[Grand Theft Auto V]]<br />[[Grand Theft Auto Online]]
+|name = San Andreas
+}}
+
+[[LEAD]]
+The '''State of San Andreas''' is a fictional West Coast state in the [[United States]]. The state is based on [[wp:California|California]] and [[wp:Nevada|Nevada]]. Only the southern half of the state is present in the events of [[Grand Theft Auto V]].
+
+[[SECTION:2:List of Cities, Towns, and Counties]]
+
+
+[[SECTION:3:Southern San Andreas]]
+*'''[[Los Santos County]]'''
+*'''[[Los Santos in GTA V|Los Santos]]'''
+*[[Davis|City of Davis]]
+*[[Chumash]]
+
+
+*'''[[Blaine County]]'''
+*[[Grapeseed]]
+*[[Harmony]]
+*[[North Chumash]]
+*[[Paleto Bay]]
+*[[Sandy Shores]]
+
+[[CATEGORIES]]
+San Andreas in GTA V

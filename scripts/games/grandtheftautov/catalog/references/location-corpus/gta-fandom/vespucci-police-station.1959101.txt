@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = policestation
+|image          =VespucciPoliceStation-GTAV.png
+|caption        =
+|use            =Police station
+|location       =[[San Andreas Avenue]], [[South Rockford Drive]] and [[Vespucci Boulevard]], [[Vespucci]], [[Los Santos (HD Universe)|Los Santos]]
+|games          ={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''Vespucci Police Station''' is a branch of the [[Los Santos Police Department (HD Universe)|Los Santos Police Department]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:4:The Chop Shop]]
+*[[The Cluckin' Bell Farm Raid]]
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Police stations

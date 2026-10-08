@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox location
+|image       = MountHaanRadioTower-GTAVe-NorthWest.png
+|caption     = View of the compound from the north west.
+|games       = {{Games|V=y|O=y}}
+|type        = tower
+|height      = 93m
+|location    = [[Mount Haan]], [[Vinewood Hills]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|structure_type       = 
+*Radio broadcasting tower
+*Secured compound
+|file_name   = 
+*<code>ch2_03_radio_tower_01</code> <small>(tower)</small>
+*<code>ch2_03_hut02</code> <small>(smaller arrays and buildings)</small>
+|map         = MountHaanRadioTower-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Mount Haan Radio Tower''' is a radio broadcasting tower compound in {{V}} and {{O}}, located at the summit of [[Mount Haan]], [[Vinewood Hills]], [[Los Santos County]].
+
+[[CATEGORIES]]
+Radio towers
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

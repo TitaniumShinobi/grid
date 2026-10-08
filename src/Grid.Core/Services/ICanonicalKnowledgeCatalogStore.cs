@@ -14,5 +14,6 @@ public interface ICanonicalKnowledgeCatalogStore
     Task<CanonicalCatalogImportResult> ImportPackageAsync(
         long expectedRevision,
         CanonicalCatalogPackage package,
+        CatalogPackageId? retireImportedPackageId = null,
         CancellationToken cancellationToken = default);
 }

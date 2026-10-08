@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Pipe Dreams
+|type = Smokes supplies store
+|owner = 
+|location = [[Alta St]]/[[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]<br />[[Bay City Ave]]/[[Invention Ct]] in [[Vespucci Canals]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Pipe Dreams''' is a smokers supplies store located on the corner of [[Alta St]] and [[Hawick Ave]] in [[Hawick]], and on the corner of [[Bay City Ave]] and [[Invention Ct]] in [[Vespucci Canals]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+
+
+[[Type::Business| ]]
+[[Location::Alta St| ]]
+[[Location::Hawick Ave| ]]
+[[Location::Hawick| ]]
+[[Location::Bay City Ave| ]]
+[[Location::Invention Ct| ]]
+[[Location::Vespucci Canals| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

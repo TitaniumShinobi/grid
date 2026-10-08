@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|purchasable   = 
+|type          = fashion
+|name          = Couture Criminalli
+|sign          = CoutureCriminalli-GTAV-Logo-Texture.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Eastbourne Way]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = High-end clothing and accessories
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Couture Criminalli''' is a high-end retail store appearing in {{VO}}.
+
+[[SECTION:2:Location]]
+<gallery position="center" spacing="small" widths="270px">
+CriminalliCouture-GTAV-DaylightFront.png|[[Eastbourne Way]] ([[:File:CriminalliCouture-GTAV-NightFront.png|night view]]).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores
+Fashion brands

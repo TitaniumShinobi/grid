@@ -1,0 +1,62 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = amusementpark
+|name           = Pleasure Pier
+|sign           = PleasurePier-GTAVe-Logo.png
+|image          = PleasurePier-GTAVe-DayView.png
+|caption        = Entrance to Pleasure Pier.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = {{Games|VI=y}}
+|location       = [[Del Perro Pier]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|price          = 
+|income         = 
+|condition      = 
+|products       = 
+|taglines       = 
+*''It's Totally Beachin''
+*''A Great Place to Re-Wax''
+*''Get High The Del Perro Way''
+*''Sun, Sea, And Starfish''
+*''Free Sunshine Daily''
+|bawsaq         = 
+|lcn            = 
+|status         = active
+|owner          = 
+|operator       = 
+|occupants      = 
+|businesses     = [[#Businesses]]
+|employees      = 
+}}
+
+[[LEAD]]
+'''Pleasure Pier''' is a famous amusement park in {{VO}} in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Businesses]]
+*[[Bean Machine]]
+*[[Beefy Bill's Burger Bar]]
+*[[Burger Shot (HD Universe)|Burger Shot]]
+*[[The Cherry Popper Ice Cream Company (HD Universe)|The Cherry Popper Ice Cream Company]]
+*[[Chihuahua Hotdogs]]
+*[[Cluckin' Bell (HD Universe)|Cluckin' Bell]]
+*[[Coast Cutters]]
+*[[Cream Pie]]
+*[[Hung Drawn & Quarters]]
+*[[Lagoon's Diner]]
+*[[Mug Shots]]
+*[[Sharkies Bites]]
+*[[Soak N Spoke]]
+*[[The Big Puffa Seafood]]
+*[[The Sea Word Souvenirs]]
+
+[[CATEGORIES]]
+Amusement parks
+Landmarks
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Recreation

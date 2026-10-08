@@ -1,0 +1,57 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 169logo
+|type          = shipping
+|name          = Post OP
+|sign          = PostOP-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]]
+*[[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]]
+*[[Blaine County]]
+([[#Locations|See more]])
+|business_type = Shipping Company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = {{BAWSAQ/Slider}} '''POP'''
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Post OP''' is a shipping company in the {{HD}} of the {{S}}. The player can buy stocks from them on the [[Lcn-exchange.com]] website in ''GTA V''.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" width="270px">
+PostOPWarehouse-GTAIV.png|[[Post OP Alderney Depot]], [[Port Tudor]], [[State of Alderney]].
+PostOPOffice-GTAIV.png|Office on [[Iron Street]]-[[Frankfort Avenue]], [[Liberty City (HD Universe)|Liberty City]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+<gallery position="center">
+PostOP_Southeast_Terminal_GTAVe.jpg|[[Terminal]], [[Port of Los Santos]], [[Los Santos (HD Universe)|Los Santos]].
+PostOP-GTAV-port.jpg|[[Post OP Depository]], [[Plaice Place]], [[Port of Los Santos]], Los Santos.
+PostOPCouriersBuilding-GTAV-MazeBank.PNG|[[Post OP Couriers Building]], [[Pillbox Hill]], Los Santos.
+PostOP-GTAV-BlaineCountyDepot.jpg|[[Blaine County Depot|Post OP Blaine County Depot]], [[Paleto Bay]], [[Blaine County]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Delivery companies

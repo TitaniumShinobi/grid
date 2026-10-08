@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = alcohol
+|name          = 
+|sign          = AlcoHolla-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Alcoholic energy drink company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = [[#Products|Products]]
+|vehicles      = 
+|weapons       = 
+|taglines      = "''The Drink of the Streets!''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = [[Lifeinvader/Alcoholla|Alcoholla]] [[File:Lifeinvader-GTAV-Alcoholla tiny.png|40px|right|link=Lifeinvader/Alcoholla]]
+}}
+
+[[LEAD]]
+'''Alcoholla''' is a brand of alcoholic energy drink in the {{HD}}.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA V
+Commercials

@@ -1,0 +1,77 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = CayoPerico-GTAO-CropFields.jpg
+|caption = Overview of Crop Fields.
+|games = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location = [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|map           = <gallery>
+CropFields-GTAO-Map.png|Crop Fields
+CropFields-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption   = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Crop Fields''' is a drug plantation area in [[Cayo Perico]], [[Colombia]], introduced in [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update for ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Points of Interest]]
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Bolt Cutters
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|On a shelf in a small building.
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location9.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location9Map.png|center|thumb]]
+|-
+|2
+|On the ground under a small shed at the [[Crop Fields]].
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location10.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location10Map.png|center|thumb]]
+|-
+|3
+|Beneath the guard tower east of the fields.
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location11.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location11Map.png|center|thumb]]
+|}
+
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Grappling Equipment
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|On some boxes at the Crop Fields.
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location11.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location11Map.png|center|thumb]]
+|}
+
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Cutting Powder
+|-
+! scope="col" |Ref Number
+! scope="col" |Location
+! scope="col" |Image
+! scope="col" |Map
+|-
+|1
+|At the eastern storage area at the Crop Fields.
+|[[File:TheCayoPericoHeist-GTAO-CuttingPowder-Location1.png|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-CuttingPowder-Location1Map.png|thumb]]
+|-
+|2
+|Inside a cocaine processing building in the east side, near the Crop Fields.
+|[[File:TheCayoPericoHeist-GTAO-CuttingPowder-Location2.png|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-CuttingPowder-Location2Map.png|thumb]]
+|}
+
+[[CATEGORIES]]
+Farms
+Locations in GTA Online in Cayo Perico

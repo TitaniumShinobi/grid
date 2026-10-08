@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|constructionsite = y
+|name             = Alta Construction Site
+|image            = STDContractors-GTAV-Alta.png
+|caption          = Overview of the site.
+|type             = Construction site, [[STD Contractors]]
+|games            = {{Games|V=y|O=y}}
+|location         = [[Alta Street]], [[Alta]], [[Los Santos (HD Universe)|Los Santos]]
+|map              = AltaConstructionSite-GTAV-Map.png
+|map_caption      = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Alta Construction Site''' is an unspecified building site under construction by [[STD Contractors]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[Alta]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Construction sites
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

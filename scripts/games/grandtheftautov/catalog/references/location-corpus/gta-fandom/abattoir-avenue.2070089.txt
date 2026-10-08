@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=<gallery position="center">
+AbattoirAvenue-GTAV-SouthEnd.jpg|South end
+AbattoirAvenue-GTAV-NorthEnd.jpg|North end
+</gallery>
+|games={{Games|V=y|O=y}}
+|start = [[Chum Street]] in [[Cypress Flats]]
+|end = [[Elysian Island]]
+|length=0.32 mi (525 m)
+|map=<gallery>
+AbattoirAvenue-GTAV-Map.png|Map
+AbattoirAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Abattoir Avenue''' is a road in [[Cypress Flats]] and the [[Port of Los Santos]] that appears in {{V}} and {{O}}. It runs from [[Chum Street]] in the northeast to [[Elysian Island]] in the south.
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

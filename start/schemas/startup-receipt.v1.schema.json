@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/startup-receipt.v1.schema.json",
+  "title": "GRID startup receipt v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "manifestId",
+    "startupId",
+    "startedAtUtc",
+    "finishedAtUtc",
+    "durationMs",
+    "readiness",
+    "stages",
+    "digest"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "manifestId": { "const": "grid.startup-receipt.v1" },
+    "startupId": { "type": "string", "minLength": 1 },
+    "startedAtUtc": { "type": "string", "format": "date-time" },
+    "finishedAtUtc": { "type": "string", "format": "date-time" },
+    "durationMs": { "type": "integer", "minimum": 0 },
+    "readiness": { "enum": ["READY", "BLOCKED", "AUTH_REQUIRED"] },
+    "blockedReason": { "type": ["string", "null"] },
+    "executableIdentity": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["assemblyVersion", "processPath"],
+      "properties": {
+        "assemblyVersion": { "type": "string" },
+        "processPath": { "type": "string" }
+      }
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["stageId", "outcome", "startedAtUtc", "durationMs"],
+        "properties": {
+          "stageId": { "type": "string", "minLength": 1 },
+          "outcome": { "enum": ["completed", "skipped", "failed", "indeterminate"] },
+          "startedAtUtc": { "type": "string", "format": "date-time" },
+          "finishedAtUtc": { "type": ["string", "null"], "format": "date-time" },
+          "durationMs": { "type": "integer", "minimum": 0 },
+          "workClassification": {
+            "type": ["string", "null"],
+            "enum": [
+              null,
+              "REGISTRATION",
+              "STARTUP_REQUIRED",
+              "BACKGROUND_OPTIONAL",
+              "STALE_REFRESH",
+              "REBUILD"
+            ]
+          },
+          "detail": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "digest": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" }
+  }
+}

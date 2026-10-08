@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Pacific Bluffs Country Club
+|location = [[Route 1|Great Ocean Highway]], [[Pacific Bluffs]]
+|games = {{Games|V=y|O=y}}
+|image = PacificBluffsClub-GTAV.jpg
+|caption = Front view of the country club.
+|oldlogo2 = PacificBluffsCountryClub-GTAV-Logo.png
+|ceo =
+|opentimes = }}
+
+[[LEAD]]
+The '''Pacific Bluffs Country Club''' is an unenterable members-only country club in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located on the [[Route 1|Great Ocean Highway]] in [[Pacific Bluffs]], in the outskirts of [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:3:''GTA Online'': The Diamond Casino & Resort]]
+{{Quote|我曾經差點在這個鄉村俱樂部被殺，一次就夠了！|Tao Cheng, in [[Casino - Strong Arm Tactics]]. <small>(English: "I almost got killed at this country club once already. Never again.")</small>}}
+[[File:Casino-StrongArmTactics-GTAO-TaoMentionsTheThirdWay.ogg|center|noicon]]
+In the middle of the [[Casino - Strong Arm Tactics|shootout]] against [[Avery Duggan]]'s bodyguards, [[Agatha Baker]] calls the [[GTA Online Protagonist|Online Players]] to tell them that she was dropped off at the Pacific Bluffs Country Club, as the Chengs are members there. She asks them to come meet her at the club, while also questioning the sound of gunfire in the background. After the team kills all of Avery's guards, they, Tao, and his [[Tao Cheng's Translator|translator]] get into a [[Cognoscenti]] and make a getaway to the country club while also dealing with more of Avery's guards.
+
+While driving Tao and his translator to the Pacific Bluffs Country Club to meet up with Ms. Baker, Tao will mention that he almost got killed at this country club once. This references the events of The Third Way, where Franklin killed Tao's father Wei Cheng at the same club, therefore confirming Option C as the [[Canon|canon]] ending of ''GTA V''.
+
+[[SECTION:4:The Diamond Casino & Resort]]
+*[[Casino - Strong Arm Tactics]] {{nd}} [[Agatha Baker|Ms. Baker]] waits for the players, [[Tao Cheng]], and [[Tao Cheng's Translator|his translator]] to arrive here, after a shootout at the [[Marlowe Vineyards]].
+*[[Bargaining Chips]] {{nd}} One of the possible targets in the mission, who owns a pink [[Faggio (HD Universe)|Faggio]], can be found around the club's buildings.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Private members clubs

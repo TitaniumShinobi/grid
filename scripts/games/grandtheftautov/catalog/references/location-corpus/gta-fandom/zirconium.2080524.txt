@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = 
+|sign          = Name-IV-Zirconium.png
+|image         = Logo-IV-Zirconium.png
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = [[Zirconium Building]], [[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+|business_type = Automotive manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Zirconium''' is an [[United States of America|American]] automotive manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+{{Gallery
+|ZirconiumBuilding-GTAIV.png|[[Zirconium Building]], [[Lancet]], [[Algonquin]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

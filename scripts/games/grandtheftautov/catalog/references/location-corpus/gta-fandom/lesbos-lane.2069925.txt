@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=LesbosLane-GTAV-MountainView.jpg
+|caption=Lesbos Lane, with [[Mount Chiliad (HD Universe)|Mount Chiliad]] in the background.
+|games={{Games|V=y|O=y}}
+|start=[[Marina Drive]]
+|end=[[Algonquin Boulevard]]
+|map=<gallery>
+LesbosLane-GTAV-Map.png|Map
+LesbosLane-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Lesbos Lane''' is a two-way street in [[Sandy Shores]], [[Blaine County]], in {{V}} and {{O}}. The street begins at [[Marina Drive]] and ends at [[Algonquin Boulevard]], running parallel to [[Meringue Lane]]. There is nothing of general interest on this street except from an occasional trailer.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

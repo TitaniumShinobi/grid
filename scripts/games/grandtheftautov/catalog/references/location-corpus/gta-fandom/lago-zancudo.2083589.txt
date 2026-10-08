@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = LagoZancudo-GTAV.png
+|caption = 
+|games = {{Games|V=y|O=y}}
+|lake = y
+|pscanner       = PoliceScanner-GTAV-Neighborhood-LagoZancudo.ogg
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = <gallery>
+LagoZancudo-GTAV-IngameGPS-Map.png|Lago Zancudo
+LagoZancudo-GTAV-IngameGPS-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Lago Zancudo''', which translates as '''Mosquito Lake''', is an undeveloped area located in [[Blaine County]] in the state of [[State of San Andreas (HD Universe)|San Andreas]] within {{V}} and {{O}}. Its slogan is "Bringing a Taste of [[Mexico]] to the [[United States of America|U.S.A]]."
+
+[[CATEGORIES]]
+Lakes
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Swamps
+Zones

@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=InesenoRd-GTAV.jpg
+|caption=Ineseno Road, with a [[24/7 (HD Universe)|24/7]] store on the right.
+|games={{Games|V=y|O=y}}
+|start=[[Great Ocean Highway]]
+|end=Great Ocean Highway
+|map=<gallery>
+InesenoRoad-GTAV-Map.png|Map
+InesenoRoad-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Ineseno Road''' is a two-way residential street appearing in {{V}} and {{O}}, located in [[Chumash]], [[Los Santos County]], that begins and ends at [[Route 1]].
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]] <small>(accessible interior)</small>
+*[[Belinda Mays Beauty Salon]]
+*[[Mom's Pie Diner]]
+*[[No Marks Cleaners]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

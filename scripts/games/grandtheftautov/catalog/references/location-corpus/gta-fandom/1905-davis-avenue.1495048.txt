@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 1905 Davis Avenue
+|image = Dynasty8-GTAV-Medium-Image-1905DavisAve.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Medium garage
+|garage = 6 vehicles <br> 2 bikes
+|price = [[Money|$]]75,000
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''1905 Davis Avenue''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located on the northern end of the [[Mosley Auto Service]] building in [[Strawberry]], with the garage entrance facing [[Carson Avenue]].
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]75,000 and can store 6 [[Personal Vehicles]] and two [[Pedal and Metal Cycles|Bicycles]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

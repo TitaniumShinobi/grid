@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox structure
+|image       = SustanciaRoad-GTAV.png
+|caption     = Western stretch of the road in East Los Santos.
+|games       = {{Games|V=y|O=y}}
+|start       = [[El Rancho Boulevard]] and [[Innocence Boulevard]]
+|end         = [[Palomino Freeway]]
+|map         = 
+<gallery>
+SustanciaRoad-GTAV-Map.png|Map
+SustanciaRoad-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Sustancia Road''' is a road in [[East Los Santos (HD Universe)|East Los Santos]] and the [[Palomino Highlands]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[12 Sustancia Road]]
+*[[NOOSE Headquarters]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos
+Structures in GTA V in Los Santos County

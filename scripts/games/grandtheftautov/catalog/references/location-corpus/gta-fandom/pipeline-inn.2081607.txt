@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|type     = restaurant
+|name     = Pipeline Inn
+|image    = ThePipelineInn-GTAV-Logo.png
+|games    = {{Games|V=y|O=y}}
+|location = [[Route 1|Great Ocean Highway]], [[Pacific Bluffs]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Pipeline Inn''' is a restaurant and bar in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Casual restaurants
+Seafood restaurants

@@ -5,33 +5,66 @@
   "displayName": "Grand Theft Auto V / GTA Online",
   "roots": [
     {
-      "rootId": "gtavUserData",
+      "rootId": "gtavEnhancedUserData",
+      "anchor": "Documents",
+      "relativePath": "Rockstar Games/GTAV Enhanced",
+      "role": "UserData",
+      "collectionPolicy": "ProtectedMetadataOnly",
+      "authority": "ObservedLocal",
+      "confidence": "Observed",
+      "sourceIds": ["observedGtaVEnhancedRoot"],
+      "excludedRelativePaths": ["Profiles"],
+      "artifacts": [
+        { "artifactId": "enhancedSettings", "kind": "ConfigurationFile", "relativePath": "settings.xml", "observation": "FullContentHash", "optional": true },
+        { "artifactId": "enhancedProfiles", "kind": "ProtectedDirectory", "relativePath": "Profiles", "observation": "PresenceOnly", "optional": true }
+      ]
+    },
+    {
+      "rootId": "gtavEnhancedCrashDiagnostics",
+      "anchor": "LocalApplicationData",
+      "relativePath": "Rockstar Games/GTAV Enhanced/CrashLogs",
+      "role": "Diagnostics",
+      "collectionPolicy": "BoundedTopLevelFiles",
+      "authority": "ObservedLocal",
+      "confidence": "Observed",
+      "sourceIds": ["observedGtaVEnhancedCrashRoot"],
+      "excludedRelativePaths": [],
+      "maxFiles": 64,
+      "maxFileBytes": 33554432,
+      "artifacts": [
+        { "artifactId": "enhancedCrashContext", "kind": "DiagnosticFilePattern", "relativePath": "crashcontext.log", "observation": "BoundedRead", "optional": true },
+        { "artifactId": "enhancedCrashDump", "kind": "DiagnosticFilePattern", "relativePath": "*.dmp", "observation": "BoundedRead", "optional": true }
+      ]
+    },
+    {
+      "rootId": "gtavLegacyUserData",
       "anchor": "Documents",
       "relativePath": "Rockstar Games/GTA V",
       "role": "UserData",
       "collectionPolicy": "ProtectedMetadataOnly",
       "authority": "ObservedLocal",
       "confidence": "Observed",
-      "sourceIds": ["observedGtaVRoot"],
+      "sourceIds": ["observedGtaVLegacyRoot"],
       "excludedRelativePaths": ["Profiles"],
       "artifacts": [
-        { "artifactId": "settings", "kind": "ConfigurationFile", "relativePath": "settings.xml", "observation": "FullContentHash", "optional": true }
+        { "artifactId": "legacySettings", "kind": "ConfigurationFile", "relativePath": "settings.xml", "observation": "FullContentHash", "optional": true },
+        { "artifactId": "legacyProfiles", "kind": "ProtectedDirectory", "relativePath": "Profiles", "observation": "PresenceOnly", "optional": true }
       ]
     },
     {
-      "rootId": "gtavDiagnostics",
+      "rootId": "gtavLegacyDiagnostics",
       "anchor": "Documents",
       "relativePath": "Rockstar Games/GTA V",
       "role": "Diagnostics",
       "collectionPolicy": "BoundedTopLevelFiles",
       "authority": "ObservedLocal",
       "confidence": "Observed",
-      "sourceIds": ["observedGtaVRoot"],
+      "sourceIds": ["observedGtaVLegacyRoot"],
       "excludedRelativePaths": [],
       "maxFiles": 16,
       "maxFileBytes": 33554432,
       "artifacts": [
-        { "artifactId": "gameLauncherLog", "kind": "DiagnosticFilePattern", "relativePath": "launcher.log", "observation": "BoundedRead", "optional": true }
+        { "artifactId": "legacyGameLauncherLog", "kind": "DiagnosticFilePattern", "relativePath": "launcher.log", "observation": "BoundedRead", "optional": true }
       ]
     },
     {
@@ -44,31 +77,37 @@
       "confidence": "Verified",
       "sourceIds": ["rockstarWindowsTroubleshooting"],
       "excludedRelativePaths": [],
-      "maxFiles": 8,
+      "maxFiles": 16,
       "maxFileBytes": 33554432,
       "artifacts": [
-        { "artifactId": "launcherLog", "kind": "DiagnosticFilePattern", "relativePath": "launcher.log", "observation": "BoundedRead", "optional": true },
-        { "artifactId": "prelauncherLog", "kind": "DiagnosticFilePattern", "relativePath": "prelauncher.log", "observation": "BoundedRead", "optional": true }
+        { "artifactId": "launcherLog", "kind": "DiagnosticFilePattern", "relativePath": "launcher*.log", "observation": "BoundedRead", "optional": true },
+        { "artifactId": "prelauncherLog", "kind": "DiagnosticFilePattern", "relativePath": "prelauncher*.log", "observation": "BoundedRead", "optional": true }
+      ]
+    },
+    {
+      "rootId": "rockstarLauncherLocalDiagnostics",
+      "anchor": "LocalApplicationData",
+      "relativePath": "Rockstar Games/Launcher",
+      "role": "SharedLauncherDiagnostics",
+      "collectionPolicy": "BoundedTopLevelFiles",
+      "authority": "ObservedLocal",
+      "confidence": "Observed",
+      "sourceIds": ["observedRockstarLauncherLocalRoot"],
+      "excludedRelativePaths": [],
+      "maxFiles": 16,
+      "maxFileBytes": 33554432,
+      "artifacts": [
+        { "artifactId": "launcherStubLog", "kind": "DiagnosticFilePattern", "relativePath": "stub.log", "observation": "BoundedRead", "optional": true },
+        { "artifactId": "launcherServiceLog", "kind": "DiagnosticFilePattern", "relativePath": "service_user_log.txt", "observation": "BoundedRead", "optional": true },
+        { "artifactId": "launcherDxDiag", "kind": "DiagnosticFilePattern", "relativePath": "dxdiag.txt", "observation": "BoundedRead", "optional": true }
       ]
     }
   ],
   "evidenceSources": [
-    {
-      "sourceId": "observedGtaVRoot",
-      "authority": "ObservedLocal",
-      "claim": "Current local evidence identifies Documents/Rockstar Games/GTA V as this managed GTA variant's user-data root; this does not establish a production adapter connection."
-    },
-    {
-      "sourceId": "rockstarLegacyUserData",
-      "authority": "OfficialPrimary",
-      "url": "https://support.rockstargames.com/articles/4YCEXeZHZXBkQuzdTJcqLB/rockstar-games-error-code-17",
-      "claim": "Rockstar documents the separate GTAV Legacy settings/profile root as Documents/Rockstar Games/GTAV; it is provenance, not an alias for the observed GTA V variant."
-    },
-    {
-      "sourceId": "rockstarWindowsTroubleshooting",
-      "authority": "OfficialPrimary",
-      "url": "https://support.rockstargames.com/articles/7rGZwcW07ewePNQ70Ytxe6/system-files-for-windows-pc-troubleshooting",
-      "claim": "Rockstar documents GTAV launcher.log and shared Rockstar Games Launcher logs beneath Documents/Rockstar Games."
-    }
+    { "sourceId": "observedGtaVEnhancedRoot", "authority": "ObservedLocal", "claim": "Current local filesystem evidence identifies Documents/Rockstar Games/GTAV Enhanced as the Enhanced edition user-data root; protected profile and save contents remain excluded." },
+    { "sourceId": "observedGtaVEnhancedCrashRoot", "authority": "ObservedLocal", "claim": "Current local filesystem evidence identifies LocalApplicationData/Rockstar Games/GTAV Enhanced/CrashLogs as an Enhanced edition diagnostic root." },
+    { "sourceId": "observedGtaVLegacyRoot", "authority": "ObservedLocal", "claim": "Current local filesystem evidence identifies Documents/Rockstar Games/GTA V as the Legacy edition root on this device; it is not an alias for Enhanced." },
+    { "sourceId": "observedRockstarLauncherLocalRoot", "authority": "ObservedLocal", "claim": "Current local filesystem evidence identifies LocalApplicationData/Rockstar Games/Launcher as a shared bounded launcher diagnostic root." },
+    { "sourceId": "rockstarWindowsTroubleshooting", "authority": "OfficialPrimary", "url": "https://support.rockstargames.com/articles/7rGZwcW07ewePNQ70Ytxe6/system-files-for-windows-pc-troubleshooting", "claim": "Rockstar documents GTAV launcher logs and shared Rockstar Games Launcher logs beneath Documents/Rockstar Games." }
   ]
 }

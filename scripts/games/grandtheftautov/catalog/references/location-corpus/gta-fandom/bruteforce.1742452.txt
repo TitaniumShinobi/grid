@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|image = GTA V BruteForce Wordmark.png
+|name= BruteForce
+|taglines = ''"Busting through the backdoor since [[1998]]"''
+|type = Password cracker
+|games=''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''BruteForce''' is a software used for cracking passwords in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Features
+Features in GTA Online
+Features in GTA V
+In-Game Products

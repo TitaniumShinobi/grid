@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = KoreanPavilion-GTAV.png
+|caption        = The gazebo as seen from Vespucci Boulevard.
+|landmark       = y
+|aka            = Seouljeong (서울정)
+|games          = {{Games|V=y|O=y}}
+|location       = [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+The '''Korean Pavilion''' is a monument and landmark featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Landmarks
+Monuments
+Structures in GTA Online
+Structures in GTA V

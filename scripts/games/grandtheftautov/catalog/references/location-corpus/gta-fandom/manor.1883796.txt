@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = Manor
+|sign          = Manor-GTAO-Logo.png
+|aka           = Manor Dem
+|games         = {{Games|O={{DLC|mpimportexport}}{{EEEV}}}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Manor''' is a clothing brand appearing in {{O}} as part of the [[GTA Online: Import/Export|Import/Export]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Import/Export
+Fashion brands

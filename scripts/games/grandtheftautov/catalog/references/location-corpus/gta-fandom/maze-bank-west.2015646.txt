@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|image = MazeBankWest-GTAV.png
+|caption = The building on Prosperity Street.
+|games = {{Games|V=y|O=y}}
+|location = [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|use = Maze Bank offices
+}}
+
+[[LEAD]]
+'''Maze Bank West''' is a high-rise office building in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Properties in GTA Online
+Safehouses in GTA Online

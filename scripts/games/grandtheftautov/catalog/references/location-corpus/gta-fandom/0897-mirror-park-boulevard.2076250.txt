@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 0897 Mirror Park Boulevard
+|image = Dynasty8-GTAV-LowEnd-Image-0897MirrorParkBlvd.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end garage
+|garage = 2 vehicles <br> 1 bike
+|price = [[Money|$]]35,000
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5
+}}
+
+[[LEAD]]
+'''0897 Mirror Park Boulevard''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located on the side the [[Downtown Cab Co.]] Depot in [[Mirror Park]] facing [[Mirror Park Boulevard]]. It sits adjacent to [[BJ's Market]].
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]34,000 and can store two [[Personal Vehicles]] and one [[Pedal and Metal Cycles|Bicycle]].
+
+[[CATEGORIES]]
+Garages in GTA Online
+Properties
+Properties in GTA Online

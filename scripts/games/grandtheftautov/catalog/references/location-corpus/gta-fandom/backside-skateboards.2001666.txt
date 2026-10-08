@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = fashion
+|name          = Backside Skateboards
+|image_label   = V
+|image         = BacksideSkateboards-GTAV-Logo.png
+|caption       = Logo in {{VO}}.
+|image_label2  = IV
+|image2        = BacksideSkateboards-GTAIV-Logo.png
+|caption2      = Logo in {{IV}}.
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Skateboard company
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|divisions     = [[Backside Surf Co.]]
+|products      = [[#Merchandise|Merchandise]]
+|taglines      = "''Skate it like a man''"
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+|accessible    = 
+}}
+
+[[LEAD]]
+'''Backside Skateboards''' is a skateboard and apparel company appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Fashion brands

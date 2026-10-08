@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox location
+|image = CayoPerico-GTAO-Lighthouse.png
+|caption = The lighthouse in Cayo Perico.
+|games = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location = [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|map           = <gallery>
+Lighthouse-GTAO-Map.png|Lighthouse
+Lighthouse-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption   = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Cayo Perico Lighthouse''' is a landmark in [[Cayo Perico]], [[Colombia]], that appears in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Points of Interest]]
+{{Main|Heist Prep: Gather Intel#Points of Interest}}
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Grappling Equipment
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|Under the stairs of the lighthouse.
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location14.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location14Map.png|center|thumb]]
+|}
+
+[[CATEGORIES]]
+Landmarks
+Lighthouses
+Locations in GTA Online in Cayo Perico

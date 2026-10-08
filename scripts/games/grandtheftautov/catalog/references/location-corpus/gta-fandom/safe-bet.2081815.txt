@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = Safe Bet
+|image        = SafeBet-GTAO-Thumbnail.png
+|location     = [[State of San Andreas (HD Universe)|San Andreas]]
+|game         = {{Games|O=y}}
+|type         = CasinoWork
+|fail         = 
+|for          = [[Agatha Baker]]
+|unlockedby   = Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] {{Small|(organization)}}
+*1 to 8 players {{Small|(motorcycle club)}}
+|todo         = 
+*Go to <span class="v-hud-location">[Location]</span>.
+*Escort the <span class="v-hud-friendly">security van</span> to the Casino.
+|reward       = 
+*[[Money|Cash]]
+*[[Chips]]
+*[[Reputation|RP]].
+|target       = Container
+}}
+
+[[LEAD]]
+'''Safe Bet''' is a [[Casino Work]] mission featured in {{O}} as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino & Resort]] update. It is a freeroam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[SECTION:4:Locations]]
+{{Gallery
+|SafeBet-GTAO-LSIA.png|[[Los Santos International Airport (HD Universe)|Los Santos International Airport]].
+|SafeBet-GTAO-CypressFlats.png|[[Cypress Flats]].
+}}
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

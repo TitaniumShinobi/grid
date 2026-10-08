@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = creditcard
+|name          = Limit
+|sign          = Limit-GTAV-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y|SA={{DE}}|VI=y}}
+|mentioned     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Limit''' is a credit card company appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Credit card companies

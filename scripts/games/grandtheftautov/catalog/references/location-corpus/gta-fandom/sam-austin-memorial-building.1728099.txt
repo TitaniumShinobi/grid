@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|office = y
+|image          = Sam_Austin_Memorial_Building_GTAV_View.png
+|caption        = The building viewed from ground level
+|games          = {{games|V=y|O=y}}
+|location       = [[Backlot City]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|operator       = [[Richards Majestic Productions]] offices
+|floors         = 4
+}}
+
+[[LEAD]]
+The '''Sam Austin Memorial Building''' is a building in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Low-rise buildings

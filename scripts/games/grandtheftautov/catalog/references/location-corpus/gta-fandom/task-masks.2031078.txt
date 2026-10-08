@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox mission
+|Name Change  = TASK
+|name         = Masks
+|image        = SalvageYardRobberies-GTAOe-Task-Masks-Infobox.png
+|location     = [[Vespucci Movie Masks]]
+|game           = {{games|O=y}}
+|type           = mp2023_02
+|fail         = N/A
+|for          = {{For|game=O|robberytask-masks}}
+|unlockedby   = 
+|protagonists = *1 [[GTA Online Protagonist|player]]
+|todo         = 
+|target = Masks
+}}
+
+[[LEAD]]
+'''Masks''' is an optional task for [[Salvage Yard Robberies]], featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Chop Shop|The Chop Shop]] update.
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Chop Shop

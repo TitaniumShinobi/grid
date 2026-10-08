@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 140 Zancudo Avenue
+|image = 140 Zancudo Avenue 1.jpg
+|caption = The house as it appears in ''[[Grand Theft Auto Online]]''
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end house
+|garage = 2 vehicles <br> 1 bike
+|price = $121,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = [[Rank]] 5
+|safehouse = y
+|location = [[Zancudo Avenue]], [[Sandy Shores]], [[Blaine County]]
+}}
+
+[[LEAD]]
+'''140 Zancudo Avenue''' is a [[Safehouses in GTA Online|safehouse]] located on [[Zancudo Avenue]] in [[Sandy Shores]], [[Blaine County]], featured in the [[Independence Day Special]] for ''[[Grand Theft Auto Online]]''.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]121,000 and includes a 2-car garage.
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online

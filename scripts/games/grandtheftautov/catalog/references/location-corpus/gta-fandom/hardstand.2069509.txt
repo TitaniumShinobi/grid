@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = tools
+|name          = Hardstand
+|sign          = 
+|image         = HardStand-GTAO-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpimportexport}}}}
+|mentioned     = 
+|locations     = 
+|business_type = Lift system manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Hardstand''' is a hydraulic lift manufacturer appearing in {{O}} as part of the [[GTA Online: Import/Export|Import/Export]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Import/Export
+Tool manufacturers

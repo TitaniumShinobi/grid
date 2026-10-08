@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = HerrKutz-GTAV-MirrorPark-exterior.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Herr Kutz
+|type = [[:Category:Barbers|Barber shop]]
+|owner = 
+|location = [[Carson Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]<br />[[Mirror Park]], [[Los Santos in GTA V|Los Santos]]<br />[[Paleto Blvd]] in [[Paleto Bay]], [[Blaine County]]
+|affiliation = 
+|missions = 
+|employee = [[Donna]] (<small>barber</small>)
+}}
+
+[[LEAD]]
+'''Herr Kutz''' is a chain of [[:Category:Barbers|barber shops]] with branches on [[Carson Ave]] in [[Davis]] and [[Mirror Park]], [[Los Santos in GTA V|Los Santos]] and  on [[Paleto Blvd]] in [[Paleto Bay]], [[Blaine County]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The only employee of all three shops is [[Donna]], who suffers from myopia and frequently injures clients. The player can "stalk" Herr Kutz on the real-world [[Lifeinvader]] [http://www.lifeinvader.com website] and receive a free haircut for [[Franklin Clinton]], [[Michael De Santa]] or [[Trevor Philips]] at Herr Kutz.
+
+[[CATEGORIES]]
+Businesses in Blaine County
+Businesses in GTA V
+Businesses in Los Santos in GTA V

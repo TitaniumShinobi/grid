@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|safehouse      = 
+|type           = dealership
+|name           = Vapid of Los Santos
+|sign           = VapidOfLosSantos-GTAVe-Texture.png
+|image          = VapidOfLosSantos-GTAVe-Overview-Day.png
+|caption        = Exterior of the building. ([[:File:VapidOfLosSantos-GTAVe-Overview-Night.png|Night view]])
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Adam's Apple Boulevard]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]]
+|use            = 
+|owner          = 
+|operator       =
+|occupants      = [[Trevor Philips]] <small>(optional)</small>
+|map            = VapidOfLosSantos-GTAV-Map.png
+|map_caption    = Location on the map (red).
+|file_name      = sc1_00e_bld1
+}}
+
+[[LEAD]]
+'''Vapid of Los Santos''' is an auto dealership appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle dealerships

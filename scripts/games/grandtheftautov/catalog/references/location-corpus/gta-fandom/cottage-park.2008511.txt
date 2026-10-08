@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|park = y
+|name = Cottage Park
+|sign = CottagePark-GTAV-Sign.png
+|image = CottagePark-GTAV.png
+|games = {{Games|V=y|O=y}}
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Cottage Park''' is a public park operated by the City of Los Santos Parks Department in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Urban parks

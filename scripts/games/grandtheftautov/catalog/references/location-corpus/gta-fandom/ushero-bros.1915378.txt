@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|name = Ushero Bros.
+|caption = The logo
+|location = [[Portola Drive]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|altnames = 
+|products = 
+|bawsaq = 
+|image = UsheroBros-GTAV-Logo.png
+|darklogo = y
+|image_size = 300
+|condition = Active
+|taglines = 
+|reference = 
+|games = {{Games|V=y|O=y}}
+|type = Fashion handbag retailer
+|map = 
+}}
+
+[[LEAD]]
+'''Ushero Bros.''' is a high-class handbag retail store appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Location]]
+<gallery position="center" spacing="small" widths="270px">
+UsheroBros-GTAV-DaylightFront.png|[[Portola Drive]] (night [[:File:UsheroBros-GTAV-NightFront.png|view]]).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = modshop
+|name           = The Chrome Dome
+|sign           = TheChromeDome-GTAV-Sign.png
+|image          = TheChromeDome-GTAVee-FrontView.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Paleto Boulevard]], [[Paleto Bay]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type  = 
+|taglines       = 
+|phone          = 1-999-CHROMER {{Small|(1-999-247-6637)}}
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''The Chrome Dome''' is an auto repair shop in {{V}} and {{O}}, located in [[Paleto Bay]], [[Blaine County]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Mod shops

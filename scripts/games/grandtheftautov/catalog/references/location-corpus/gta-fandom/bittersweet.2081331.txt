@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = MOBILE PHONE
+|name     = bitterSweet
+|image    = BitterSweet-logo.png
+|games    = {{Games|IV=y|CW=y|V=y|O=y}}
+|caption  = 
+|bawsaq   = {{BAWSAQ/Slider}} '''BTR'''
+|taglines = ''"Be Everywhere. And Nowhere"''
+}}
+
+[[LEAD]]
+'''bitterSweet''' ([[BAWSAQ]]: BTR) is a phone company in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series, advertised heavily in ''[[Grand Theft Auto IV]]''. The player can buy their stocks from [[Bawsaq.com]] in ''GTA V''.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Communications
+Electronics companies
+Phone companies

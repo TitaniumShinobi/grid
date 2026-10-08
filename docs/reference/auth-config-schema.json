@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "grid.auth.config.schema.json",
+  "title": "Grid desktop auth options (AuthOptions)",
+  "description": "Schema for the Grid desktop auth settings file (config/grid.auth.config.json). Mirrors core/features/users/auth/AuthOptions.cs. Contains NO secrets — the desktop is a public OAuth client.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["baseUrl", "clientId", "loopbackHost", "loopbackPort", "loopbackPath"],
+  "properties": {
+    "baseUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "AUTH authority origin, e.g. https://signin.grid.app (no trailing slash)."
+    },
+    "clientId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Public client id registered in the AUTH deployment publicClients[]."
+    },
+    "loopbackHost": {
+      "type": "string",
+      "enum": ["127.0.0.1", "localhost", "::1"],
+      "default": "127.0.0.1"
+    },
+    "loopbackPort": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 65535,
+      "default": 51706,
+      "description": "Port whose http://127.0.0.1:PORT origin must also be present in the AUTH deployment's allowedOrigins (magic email links land here)."
+    },
+    "loopbackPath": {
+      "type": "string",
+      "default": "/grid-natives-callback",
+      "description": "Native callback path; must match the AUTH public client loopback path."
+    },
+    "scope": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["openid", "profile", "email"]
+    },
+    "sessionCookieName": { "type": "string", "default": "auth_sid" },
+    "refreshCookieName": { "type": "string", "default": "auth_rid" },
+    "refreshSkewSeconds": { "type": "integer", "default": 30 },
+    "presentationFallback": {
+      "type": "array",
+      "description": "Order used only when AUTH discovery is unreachable.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["provider", "label"],
+        "properties": {
+          "provider": { "type": "string" },
+          "label": { "type": "string" },
+          "enabled": { "type": "boolean", "default": true },
+          "available": { "type": "boolean", "default": false },
+          "reason": { "type": "string" }
+        }
+      }
+    }
+  }
+}

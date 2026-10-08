@@ -1,0 +1,51 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = realestate
+|name          = Prix Luxury Real Estate
+|sign          = 
+|image         = ASafehouseInTheHills-GTAOe-PrixLuxuryRealEstate.jpg
+|caption       = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mp2025_01}}}}
+|mentioned     = 
+|locations     = {{Location|v-lsc|2}}
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[Mansions]]
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|website       = {{URL|http://prixluxuryrealestate.com/|prixluxuryrealestate.com}}
+}}
+
+[[LEAD]]
+'''Prix Luxury Real Estate''' is a real estate company appearing in {{O}} as part of the [[GTA Online: Money Fronts|Money Fronts]] update.
+
+[[SECTION:2:Properties]]
+{{Main|Mansions}}
+{{Quote|More than just a personal monument to your criminal accomplishments, a mansion from Prix Luxury Real Estate features sprawling outdoor spaces and meticulously designed interiors with a state-of-the-art AI Assistant to aid with professional and personal tasks that maximize your potential.|[[Rockstar Newswire]]
+{{URL|https://www.rockstargames.com/newswire/article/51358a55o2o11o/gta-online-a-safehouse-in-the-hills-coming-december-10|announcement post}} for [[A Safehouse in the Hills]].}}
+{|class="wikitable" width="100%"
+!width="200px"|Image
+!Location
+|-
+|[[File:ASafehouseInTheHills-GTAOe-TheTongvaEstate.jpg|thumb|center|200px]]
+|[[The Tongva Estate]], [[Buen Vino Road]], [[Tongva Hills]]
+|-
+|[[File:ASafehouseInTheHills-GTAOe-RichmanVilla.jpg|thumb|center|200px]]
+|[[Richman Villa]], [[Ace Jones Drive]], [[Vinewood Hills]]
+|-
+|[[File:ASafehouseInTheHills-GTAOe-TheVinewoodResidence.jpg|thumb|center|200px]]
+|[[The Vinewood Residence]], [[Marlowe Drive]], Vinewood Hills
+|}
+
+[[CATEGORIES]]
+Businesses in GTA Online: Money Fronts
+Real estate companies

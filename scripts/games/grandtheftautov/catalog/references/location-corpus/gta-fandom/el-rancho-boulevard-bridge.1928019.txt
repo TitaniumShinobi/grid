@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = ElRanchoBoulevardBridge-GTAV.png
+|caption = Overview of the bridge.
+|games = {{Games|V=y|O=y}}
+|bridge = y
+|location = [[Cypress Flats]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = ElRanchoBoulevardBridge-GTAV-Map2.png
+|map_caption   = Location on the map (red) in Grand Theft Auto V.
+}}
+
+[[LEAD]]
+The '''El Rancho Boulevard Bridge''' is a bridge in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Arch bridges
+Road bridges
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

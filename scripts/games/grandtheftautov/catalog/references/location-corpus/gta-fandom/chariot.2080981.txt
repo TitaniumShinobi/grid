@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Chariot
+|sign          = Chariot-Logo-GTAO.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Coachbuilder
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Chariot''' is an automotive {{WP|coachbuilder}} appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle manufacturers

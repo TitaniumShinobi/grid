@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{infobox business
+|name      = Slab
+|image     = Slab-GTAO-ShoeLogo.png
+|taglines  = ''"Grindin' since 68"''
+|type      = fashion
+|games     = {{games|O={{EEEV}} {{DLC|mpchristmas3}}}}
+|founded   = [[1968]]
+|locations = 
+|status    = active
+}}
+
+[[LEAD]]
+'''Slab''' is a clothing brand appearing in {{O}} as part of the [[GTA Online: Los Santos Drug Wars|Los Santos Drug Wars]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Los Santos Drug Wars
+Fashion brands

@@ -1,0 +1,52 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = TOWN
+|image = Harmony-GTAV-Montage.png
+|caption = Clockwise from top: View of East Harmony from the [[Rebel Radio Building]], Harmony sign, trailer park, [[Larry's RV Sales]], [[Eastern Motel]] sign.
+|games = {{Games|V=y|O=y}}
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Harmony.ogg
+|map             = <gallery>
+Harmony-IngameGPS-GTAV-Map.png|Harmony
+Harmony-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Harmony''' is a small town located in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]], that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:4:Casino Heist]]
+*[[Heist Prep: Gruppe Sechs Gear Part 1]] {{nd}} one of possible locations to find the Gruppe Sechs [[Securicar (HD Universe)|Stockade]].
+
+[[SECTION:2:Road and Streets]]
+*[[Joshua Road]]
+*[[Route 68]]
+*[[Senora Road]]
+
+[[SECTION:2:Places of Interest]]
+*[[Harmony Truck Stop]]
+*[[Stoner Cement Works]]
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*[[Animal Ark]]
+*[[Discount Store]]
+*[[Dollar Pills]]
+*[[Eastern Motel]]
+*[[Fleeca]]
+*[[Globe Oil]]
+*[[Larry's RV Sales]]
+*[[Liquor Jr. Market]]
+*[[Los Santos Customs]]
+*[[Scoops Liquor Barn]]
+*[[Sub Urban (HD Universe)|Suburban]]
+*[[The Motor Motel]]
+*[[The Taco Farmer]]
+*[[Xero]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Towns
+Zones

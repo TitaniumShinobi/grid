@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Fashion Star
+|image = FashionStar-GTAV-Logo.png
+|type = Clothing Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Fashion Star''' is a clothing store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

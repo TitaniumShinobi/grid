@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = utility
+|name          = The Mighty Bush Landscaping Provisions
+|sign          = TheMightyBush-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations_2|See more]])
+|business_type = Landscaping & gardening services
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+*[[Carlos (GTA V)|Carlos]]
+|vehicles      = 
+*[[Bison (The Mighty Bush)]]
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''The Mighty Bush Landscaping Provisions''' is a landscaping & gardening service appearing in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+The company's offices in Burton and Morningwood are based on {{URL|https://maps.app.goo.gl/HrasnWosK8Xo6BHg9|8905 Melrose Avenue}} in {{WP|West Hollywood}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+TheMightyBush-GTAV-Burton.png|[[Abe Milton Parkway]], [[Burton]].
+TheMightyBush-GTAV-Morningwood.png|[[West Eclipse Boulevard]], [[Morningwood]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Utility companies

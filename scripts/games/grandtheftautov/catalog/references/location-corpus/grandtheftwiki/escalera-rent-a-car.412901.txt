@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Escalera Rent-A-Car
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = Car rental
+|owner = 
+|location = [[Greenwich Pkwy]] in [[Los Santos International Airport in GTA V|Los Santos International Airport]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Escalera Rent-A-Car''' is a car rental company located on [[Greenwich Pkwy]] in [[Los Santos International Airport in GTA V|Los Santos International Airport]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company rents out cars from the following car manufacturers: [[Albany]], [[Benefactor]], [[BF]], [[Brute]], [[Declasse]], [[Dundreary]], [[Emperor (manufacturer)|Emperor]] (misspelled as ''Emporer''), [[Enus]], [[Fathom]], [[Imponte]], [[Obey]], [[Ubermacht]] and [[Vapid]]. A [[Rental Shuttle Bus]] displaying the company logo can be occasionally be seen driving around the airport.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

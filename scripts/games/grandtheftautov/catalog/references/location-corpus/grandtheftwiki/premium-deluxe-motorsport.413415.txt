@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Premium Deluxe Motorsport
+|image = PremiumDeluxeMotorsport-GTAV-exterior.jpg
+|size = 450px
+|caption = Premium Deluxe Motorsport in GTA V.
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = [[:Category:Auto Dealerships|Auto dealership]]
+|owner = [[Simeon Yetarian]]
+|location = [[Adam's Apple Blvd]]/[[Power St]] in [[Pillbox Hill]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = '''GTA Online'''<br />[[Ballas to the Wall]]<br />[[Chasers]]<br />[[It Takes a Thief]]<br />[[Rich Men in Richman]]<br />[[Rockford Roll]]<br />[[Where Credit's Due]]<br />[[All in the Game]]<br />[[El Burro Heists]]<br />[[Gentry Does It]]<br />[[Blow Up]]<br />[[Chasers II]]<br />[[Blow Up II]]<br />[[Blow Up III]]<br />'''GTA V'''<br />[[Franklin and Lamar]]<br />[[Repossession]]<br />[[Complications]]<br />[[Random Event - Simeon Yetarian|Random event]]
+|employee = [[Sacha Yetarian]]<br />[[Anak Horozian]]<br />[[Protagonist (GTA Online)]] (<small>former</small>)<br />[[Franklin Clinton]] (<small>former</small>)<br />[[Lamar Davis]] (<small>former</small>)
+}}
+
+[[LEAD]]
+'''Premium Deluxe Motorsport''' (abbreviated PDM) is a vehicle dealership located at the corner of [[Adam's Apple Blvd]] and [[Power St]] in [[Pillbox Hill]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company is owned by [[Simeon Yetarian]].
+
+[[CATEGORIES]]
+Auto Dealerships
+Businesses in GTA V
+Businesses in Los Santos in GTA V

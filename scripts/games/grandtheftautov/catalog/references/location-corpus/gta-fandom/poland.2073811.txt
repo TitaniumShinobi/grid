@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox country
+|common_name     = Poland
+|image_flag      = Flag of Poland.svg
+|currency_ingame = Polish złoty
+}}
+
+[[LEAD]]
+The '''Republic of Poland''' (Polish: '''Rzeczpospolita Polska'''), more commonly known as '''Poland''' (Polish: '''Polska'''), is a country located in {{WP|Central Europe}}. A member of the {{WP|European Union}} since 2004, it is bordered by [[Germany]] to the west; the [[Czech Republic]] and [[Slovakia]] to the south; [[Ukraine]] and [[Belarus]] to the east; and the Baltic Sea, Kaliningrad Oblast (a [[Russia]]n exclave) and Lithuania to the north-east.
+
+Poland is occasionally mentioned in the {{S}}, usually through characters' surnames.
+
+[[CATEGORIES]]
+European countries

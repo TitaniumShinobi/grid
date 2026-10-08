@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = security
+|name          = Bobcat Security
+|sign          = BobcatSecurity-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Ludendorff]], [[State of North Yankton|North Yankton]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Secured transport & home security
+|founded       = [[1969]]
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+*[[Jaspers]]
+*[[Alex (GTA V)|Alex]]
+*[[Unnamed GTA V Bobcat security guard|Unnamed security guard]]
+|vehicles      = 
+*[[Stockade (snow)]]
+*[[Bobcat Security Stockade]]
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Bobcat Security''' is a security company appearing in {{VO}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Security companies

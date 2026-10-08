@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{infobox business
+|name      = Dickies Bagels
+|image     = DickiesBagles-GTAV-Logo1.png
+|games     = {{Games|V=y|O=y}}
+|founded   = [[2012]] <small>(possibly)</small>
+|type      = Bagel restaurant chains
+|locations = [[Morningwood Boulevard]], [[Morningwood]]<br> 
+[[Bay City Avenue]], [[Vespucci Canals]]
+}}
+
+[[LEAD]]
+'''Dickies Bagels''' is a deli in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths=270px>
+DickiesBagels-GTAV-Morningwood.png|[[Morningwood Boulevard]], [[Morningwood]].
+DickiesBagels-GTAV-Vespucci.png|[[Bay City Avenue]], [[Vespucci Canals]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurant chains

@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Candybox-GTAIV-logo.png
+|size = 200px
+|game_1 = GTA Vice City Stories
+|game_2 = GTA IV
+|game_3 = GTA Chinatown Wars
+|game_4 = GTA V
+|game_5 = GTA Online
+|name = Candybox
+|type = [[:Category:Food|Food manufacturer]]
+|owner = 
+|location = '''[[HD Universe]]'''<br />[[Burlesque]], [[Star Junction]], [[Liberty City in GTA IV Era|Liberty City]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Candybox''' is a company that manufactures confectioneries in [[Grand Theft Auto: Vice City Stories]], [[Grand Theft Auto IV]], [[Grand Theft Auto: Chinatown Wars]] and [[Grand Theft Auto V]]. The company is on the [[BAWSAQ]] stock exchange and has a store on [[Burlesque]] in [[Star Junction]], [[Algonquin]]. They have been "tantalising American tongues" since [[1927]]. Boxes of its products can be seen in any supermarket in GTA Vice City Stories, and its logo can be seen on [[Mule]] trucks around [[Liberty City in GTA IV Era|Liberty City]] and [[Los Santos in GTA V|Los Santos]]. Candybox is a parody of [[:wp:The Hershey Company|Hershey]], and the Candybox Store in [[Burlesque]] is based on the [[:wp:File:Hershey's en Times Square.jpg|Hershey's store in Times Square]].
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA V
+Businesses in GTA Vice City Stories
+Businesses in Liberty City in GTA IV Era
+Food

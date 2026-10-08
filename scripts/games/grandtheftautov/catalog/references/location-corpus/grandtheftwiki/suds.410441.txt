@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 300x300px
+|caption = 
+|game_1 = GTA V
+|name = Suds
+|type = Laundry/Laundromat
+|owner = 
+|location = [[Innocence Blvd]]/[[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Suds''' is a laundry business located at the corner of [[Innocence Blvd]] and [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The business may be linked to the nearby [[Suds Law Laundromat]] located further south on Strawberry Ave. The company is a specialist on knitted items and drapery.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

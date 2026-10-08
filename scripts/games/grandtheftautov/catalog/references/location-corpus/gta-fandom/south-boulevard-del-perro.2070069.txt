@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=SouthBoulevardDelperro-Street-GTAV.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Boulevard Del Perro]]
+|end=[[Abe Milton Parkway]] and [[Milton Road]]
+|map=<gallery>
+SouthBoulevardDelPerro-GTAV-Map.png|Map
+SouthBoulevardDelPerro-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''South Boulevard Del Perro''' is a [[List of Street Names|street]] in [[Rockford Hills]] and [[Burton]], [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+'''Rockford Hills'''
+*[[The Archipelago]] <small>(corner of Movie Star Way)</small>
+*[[Lifeinvader Office]] <small>(corners of Boulevard Del Perro and Dorset Drive)</small>
+*[[Rockford Hills Fire Station]] <small>(corner of Rockford Drive)</small>
+
+[[SECTION:2:Businesses]]
+'''Rockford Hills'''
+*[[AKAN Records]] <small>(corners of Movie Star Way and Dorset Drive)</small>
+*[[Croq-A-Hoop]] <small>(corner of Portola Drive)</small>
+*[[Didier Sachs (HD Universe)|Didier Sachs]] <small>(corner of Mad Wayne Thunder Drive)</small>
+*[[Enema]] <span style="font-size:12px;">(at the Archipelago)</span>
+*[[Jonny Tung]] <small>(corner of Dorset Drive)</small>
+*[[Lombank]] <small>(corner of Mad Wayne Thunder Drive)</small>
+*[[Maracas]] <small>(corner of Portola Drive)</small>
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

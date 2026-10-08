@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Stance Andreas
+|image_label   = Main
+|image         = StanceAndreas-GTAO-Logo1.png
+|caption       = 
+|image_label2  = Alternate
+|image2        = StanceAndreas-GTAO-Logo2.png
+|caption2      = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mptuner}}}}
+|mentioned     = 
+|business_type = Wheel manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|products      = [[#Products|Wheels]]
+|vehicles      = 
+|taglines      = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Stance Andreas''' (Japanese: '''スタンスアンドレアス''') is a [[Japan]]ese wheel manufacturer appearing in {{O}} as part of the [[GTA Online: Los Santos Tuners|Los Santos Tuners]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Los Santos Tuners
+Vehicle parts manufacturers

@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 300x300px
+|game_1 = GTA V
+|name = Family Dental
+|type = Dental surgery
+|owner = 
+|location = [[Innocence Blvd]]/[[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Family Dental''' is a dental surgery located at the corner of [[Innocence Blvd]] and [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The [[Phone Numbers|phone number]] for the surgery is ''555-1107'', which will always be busy. The surgery is headed by Dr. [[P. McCavity]] D.D.S.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

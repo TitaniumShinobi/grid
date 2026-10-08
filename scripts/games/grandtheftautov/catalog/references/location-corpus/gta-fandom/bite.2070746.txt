@@ -1,0 +1,73 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = fastfood
+|name          = Bite!
+|sign          = 
+|image_label   = O
+|image         = Bite-GTAOe-2019Logo.png
+|caption       = '''Bite!''' logo used in {{O}} and {{VI}}.
+|image_label2  = IV
+|image2        = Bite!-Logo-GTAV.png
+|caption2      = '''Bite!''' logo used in {{IV}} and {{V}}.
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|V=y|O=y|SA={{DE}}|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[State of Alderney]]
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas|San Andreas]]
+*[[Vice City (HD Universe)|Vice City]], [[State of Leonida|Leonida]]
+([[#Locations|See more]])
+|business_type = Fast-food sandwiches and salads
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = "''it's big''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Bite!''' is a fast food chain appearing in the {{HD}} of the {{S}}, specializing in sandwiches, wraps and salads.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:[[State of Alderney|Alderney]]]]
+<gallery position="center" spacing="small" widths="250px">
+Bite!-GTAIV-Alderney-SacramentoAveEast.jpg|'''Bite!''' at the [[Leftwood Theater]], [[Sacramento Avenue]], [[Leftwood]].
+Bite!-GTAIV-Alderney-ManzanoRd.jpg|'''Bite!''' on Sacramento Avenue, Leftwood.
+Bite!-GTAIV-Alderney-BeaverheadAve.jpg|'''Bite!''' on [[Beaverhead Avenue]], [[Westdyke]].
+Bite!-GTAIV-Alderney-CaribooAve.jpg|'''Bite!''' on [[Cariboo Ave]], [[Westdyke]].
+</gallery>
+
+[[SECTION:3:[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]]]
+<gallery position="center" spacing="small" widths="270px">
+Bite-GTAIV-NothernGardens.jpg|'''Bite!''' at the [[Northern Gardens Community Office]], [[Northern Gardens]], [[Bohan]]
+</gallery>
+
+[[SECTION:3:[[Los Santos (HD Universe)|Los Santos]], [[San Andreas]]]]
+<gallery position="center" spacing="small" widths="250px">
+Bite!-Limey's-GTAV.png|[[Boulevard Del Perro]], [[Rockford Hills]].
+PostOPCouriersBuilding-GTAV-Bite.PNG|[[Post OP Couriers Building]], [[Vespucci Boulevard]], [[Pillbox Hill]].
+Bite-vinewoodplaza-GTAV.jpg|[[Vinewood Plaza]], [[Spanish Avenue]], [[Hawick]].
+Bite-delperro-plaza-GTAV.jpg|[[Del Perro Plaza]], [[Boulevard Del Perro]], [[Del Perro]].
+Bite-store-Alta-GTAV.jpg|[[Hawick Avenue]], [[Alta]].
+Bite-rockford-plaza-GTAV.jpg|[[Rockford Plaza]], [[San Vitus Boulevard]], [[Burton]]
+Bite-Sinner-st-GTAV.jpg|[[Sinner Street]], [[Mission Row]]
+BITE-Mirror-park-GTAV.jpg|[[Mirror Park Boulevard]], [[Mirror Park]]
+BITE-IAA-building-GTAV.jpg|[[IAA Headquarters]], [[Pillbox Hill]]
+Bite-pillbox-Hill-GTAV.jpg|Near the [[IAA Headquarters]], [[Pillbox Hill]]
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Fast-food restaurants

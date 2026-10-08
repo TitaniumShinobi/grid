@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = dentist
+|name           = Family Dental
+|sign           = FamilyDental-GTAV-Logo.png
+|image          = FamilyDental-GTAV.jpg
+|caption        = '''Family Dental''' in {{V}}.
+|aka            = 
+|games          = {{games|V=y|O=y}}
+|location       = [[Chamberlain Mall]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|taglines       = 
+|status         = active
+|use            = 
+|owner          = 
+|operator       = [[Family Pharmacy]]
+|employees      = Dr. P. McCavity D.D.S
+|structure_type = 
+|architecture   = 
+|phone          = 555-1107
+|opentimes      = 
+|accessible     = No
+|file_name      = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Family Dental''' is a dental practice operated by [[Family Pharmacy]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Dental practices

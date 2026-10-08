@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox structure
+|image       = MacdonaldStreet-GTAVee.jpg
+|caption     = The street as seen from Davis Avenue.
+|games       = {{Games|V=y|O=y}}
+|start       = [[Forum Drive]] and [[Strawberry Avenue]], [[Strawberry]]
+|end         = [[Little Bighorn Avenue]], [[Rancho]]
+|map         = 
+<gallery>
+MacdonaldStreet-GTAV-Map.png|Map
+MacdonaldStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Macdonald Street''' is a street in [[South Los Santos]] featured in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Davis Fire Station]]
+
+[[SECTION:2:Businesses]]
+*[[Bishop's Chicken]] {{Small|(corner of [[Davis Avenue]])}}
+*[[La Vaca Loca]]
+*[[Rancho Tires]]
+*[[RON]] {{Small|(corner of Davis Avenue)}}
+*[[Suds Law Laundromat]]
+*[[Timmy's Flowers]] {{Small|(corner of [[Strawberry Avenue]])}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

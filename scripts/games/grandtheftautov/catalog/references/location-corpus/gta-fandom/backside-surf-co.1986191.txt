@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = SPORTS EQUIPMENT COMPANY
+|style         = 
+|type          = 
+|name          = 
+|sign          = 
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = Backside Surfboards
+|games         = {{games|O={{EEEV}} {{DLC|mpheist4}}}}
+|mentioned     = 
+|business_type = Surfboarding company
+|founded       = 
+|founder       = 
+|owner         = [[Backside Skateboards]]
+|products      = [[#Products|Surfboards]]
+|taglines      = "''Surf it like a man''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Backside Surf Co.''' is a surfboarding company appearing in {{O}} as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Cayo Perico Heist
+Sports equipment manufacturers
+Subsidiary companies

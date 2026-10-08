@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|image    = PalominoHighlands-GTAV-Montage.png
+|caption  = Clockwise from top: unspoiled nature, [[Senora Freeway]], [[NOOSE Headquarters]].
+|location = [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games    = {{Games|V=y|O=y}}
+|type     = highlands
+|map      = 
+<gallery>
+PalominoHighlands-IngameGPS-GTAV-Map.png|Palomino Highlands
+PalominoHighlands-IngameGPS-GTAV-LosSantosCountyMap.png|Los Santos County
+</gallery>
+|map_caption = Location on the map (In-game GPS). The <font color=blue>NOOSE Headquarters</font> is part of <font color=red>Palomino Highlands</font>.
+|pscanner    = PoliceScanner-GTAV-Neighborhood-PalominoHighlands.ogg
+}}
+
+[[LEAD]]
+The '''Palomino Highlands''' are a hilly, undeveloped region in {{V}} and {{O}} located in southeast [[Los Santos County]]. It is bordered by the [[Pacific Ocean (HD Universe)|Pacific Ocean]] to the east, and by the [[Palomino Freeway]] and the city of [[Los Santos (HD Universe)|Los Santos]] to the west.
+
+[[SECTION:2:Places of Interest]]
+*[[12 Sustancia Road]]
+*[[NOOSE Headquarters]]
+*[[Murrieta Oil Field]]
+*Underwater steamship [[Wrecks|wreckage]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Elysian Fields Freeway]]
+*[[El Burro Boulevard]]
+*[[El Rancho Boulevard]]
+*[[Sustancia Road]]
+
+[[CATEGORIES]]
+Highlands
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Neighborhoods
+Zones

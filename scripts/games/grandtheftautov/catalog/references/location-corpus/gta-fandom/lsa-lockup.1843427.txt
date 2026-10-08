@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|name = LSA Lockup
+|image = <gallery>
+LSALockup-GTAOe.png|2023
+LSALockup-GTAVe.png|2013
+</gallery>
+|owner        = [[Los Santos Angels]] <small>(since 2023)</small>
+|type         = warehouse
+|location     = [[El Burro Heights]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games        = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''LSA Lockup''' is a warehouse in [[El Burro Heights]], [[Los Santos (HD Universe)|Los Santos]], appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Warehouses

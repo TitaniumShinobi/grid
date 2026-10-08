@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = realestate
+|name          = Josh Bernstein Realty
+|sign          = 
+|image         = JoshBernsteinRealty-GTAVe-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|business_type = Real Estate
+|founded       = 
+|founder       = 
+|ceo           = [[Josh Bernstein]] 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+|phone         = 
+|website       = 
+}}
+
+[[LEAD]]
+'''Josh Bernstein Realty''' is a real estate company appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Real estate companies

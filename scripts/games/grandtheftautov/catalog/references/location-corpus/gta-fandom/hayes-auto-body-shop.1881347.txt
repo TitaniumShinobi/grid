@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Hayes Auto Body Shop
+|image = HayesAutoBodyShop-GTAV-Logo.png
+|games = {{Games|V=y|O=y}}
+|locations =
+*[[Davis]]
+*[[Del Perro]]
+}}
+
+[[LEAD]]
+'''Hayes Auto Body Shop''' is an auto repair business in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+HayesAutoRepairShop-Front-GTAV.jpg|[[Prosperity Street]] and [[Boulevard Del Perro]], [[Del Perro]] (front view).
+HayesAutoRepairShop-Side-GTAV.jpg|Side view of the shop in Del Perro.
+HayesAutoBodyShop-GTAV-SouthLS.png|[[Roy Lowenstein Boulevard]] and [[Carson Avenue]], [[Davis]].
+</gallery>
+
+
+
+
+[[de:Hayes Auto Body Shop]]
+[[ru:Hayes Auto Body Shop]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Mod shop brands

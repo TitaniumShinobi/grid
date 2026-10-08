@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = Lobon Sportswear
+|image         = LobonSportswear-GTAV-Logo.png
+|aka           = 
+|games         = {{Games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Sportswear
+|founded       = 
+|products      = 
+|taglines      = 
+|status        = active
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Lobon Sportswear''' is a clothing brand featured in {{V}} and {{O}}, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Fashion brands

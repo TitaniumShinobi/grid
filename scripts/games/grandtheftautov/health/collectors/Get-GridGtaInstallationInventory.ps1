@@ -20,14 +20,30 @@ function Get-GridGtaInstallationInventory {
         throw "GtaInstallationNotFound: '$root' is not a directory."
     }
 
-    function Get-ObservedFile([string]$Name, [string[]]$Candidates) {
+    function Get-GridLocalFileSha256([string]$Path) {
+        $stream = [IO.File]::Open($Path, [IO.FileMode]::Open, [IO.FileAccess]::Read, [IO.FileShare]::ReadWrite -bor [IO.FileShare]::Delete)
+        $sha = [Security.Cryptography.SHA256]::Create()
+        try { return ([BitConverter]::ToString($sha.ComputeHash($stream))).Replace('-', '') }
+        finally { $sha.Dispose(); $stream.Dispose() }
+    }
+
+    function Get-ObservedFile([string]$Name, [string[]]$Candidates, [switch]$Hash) {
         $matches = @($Candidates | Where-Object { Test-Path -LiteralPath $_ -PathType Leaf } | Select-Object -Unique)
         $path = if ($matches.Count -gt 0) { [IO.Path]::GetFullPath($matches[0]) } else { $null }
         $version = $null
         if ($path) {
             try { $version = [Diagnostics.FileVersionInfo]::GetVersionInfo($path).FileVersion } catch { $version = $null }
         }
-        [pscustomobject]@{ name = $Name; present = [bool]$path; path = $path; version = $version; matches = @($matches) }
+        $metadata = $null
+        if ($path) {
+            $item = Get-Item -LiteralPath $path -Force -ErrorAction Stop
+            $metadata = [pscustomobject][ordered]@{
+                length = [long]$item.Length
+                lastWriteTimeUtc = $item.LastWriteTimeUtc.ToString('o')
+                sha256 = if ($Hash) { Get-GridLocalFileSha256 -Path $path } else { $null }
+            }
+        }
+        [pscustomobject]@{ name = $Name; present = [bool]$path; path = $path; version = $version; metadata = $metadata; matches = @($matches) }
     }
 
     $legacyPath = Join-Path $root 'GTA5.exe'
@@ -38,7 +54,7 @@ function Get-GridGtaInstallationInventory {
     $scripts = Join-Path $root 'scripts'
 
     $components = @(
-        Get-ObservedFile 'GameExecutable' @($legacyPath, $enhancedPath)
+        Get-ObservedFile 'GameExecutable' @($legacyPath, $enhancedPath) -Hash
         Get-ObservedFile 'AsiLoader' @((Join-Path $root 'dinput8.dll'))
         Get-ObservedFile 'OpenIvAsi' @((Join-Path $root 'OpenIV.asi'))
         Get-ObservedFile 'ScriptHookV' @((Join-Path $root 'ScriptHookV.dll'))
@@ -76,8 +92,37 @@ function Get-GridGtaInstallationInventory {
         } else { $timeout.status = 'Unset' }
     }
 
+    $steam = [pscustomobject][ordered]@{ present = $false; appId = $null; path = $null; buildId = $null; stateFlags = $null; lastUpdated = $null; metadata = $null }
+    $commonRoot = Split-Path -Parent $root
+    if ((Split-Path -Leaf $commonRoot) -ieq 'common') {
+        $steamAppsRoot = Split-Path -Parent $commonRoot
+        $appId = if ($edition -eq 'Enhanced') { '3240220' } elseif ($edition -eq 'Legacy') { '271590' } else { $null }
+        if ($appId) {
+            $manifestPath = Join-Path $steamAppsRoot ("appmanifest_{0}.acf" -f $appId)
+            if (Test-Path -LiteralPath $manifestPath -PathType Leaf) {
+                $manifestItem = Get-Item -LiteralPath $manifestPath -Force -ErrorAction Stop
+                $manifestText = Get-Content -LiteralPath $manifestPath -Raw -ErrorAction Stop
+                function Get-AcfValue([string]$Name) {
+                    $match = [regex]::Match($manifestText, '(?im)^\s*"' + [regex]::Escape($Name) + '"\s+"([^"]*)"\s*$')
+                    if ($match.Success) { return $match.Groups[1].Value }
+                    return $null
+                }
+                $steam = [pscustomobject][ordered]@{
+                    present = $true; appId = $appId; path = $manifestPath
+                    buildId = Get-AcfValue 'buildid'; stateFlags = Get-AcfValue 'StateFlags'; lastUpdated = Get-AcfValue 'LastUpdated'
+                    metadata = [pscustomobject][ordered]@{ length = [long]$manifestItem.Length; lastWriteTimeUtc = $manifestItem.LastWriteTimeUtc.ToString('o'); sha256 = Get-GridLocalFileSha256 -Path $manifestPath }
+                }
+            }
+        }
+    }
+
+    $recentTopLevelEntries = @(Get-ChildItem -LiteralPath $root -Force -ErrorAction Stop |
+        Sort-Object @{ Expression = 'LastWriteTimeUtc'; Descending = $true }, Name | Select-Object -First 64 | ForEach-Object {
+            [pscustomobject][ordered]@{ name = $_.Name; kind = if ($_.PSIsContainer) { 'Directory' } else { 'File' }; length = if ($_.PSIsContainer) { $null } else { [long]$_.Length }; lastWriteTimeUtc = $_.LastWriteTimeUtc.ToString('o') }
+        })
+
     [pscustomobject]@{
-        schemaVersion = 1
+        schemaVersion = 2
         gameId = 'grandtheftautov'
         installationId = Get-GridGtaInstallationId -RootPath $root -Edition $edition
         observedAtUtc = (Get-Date).ToUniversalTime().ToString('o')
@@ -88,5 +133,8 @@ function Get-GridGtaInstallationInventory {
         menyooDataPresent = Test-Path -LiteralPath (Join-Path $root 'menyooStuff') -PathType Container
         components = @($components)
         scriptTimeoutThreshold = $timeout
+        steam = $steam
+        recentTopLevelEntries = $recentTopLevelEntries
+        changedExternalState = $false
     }
 }

@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox_business
+|image     = RingOfFire-ChiliHouse-GTAV-Logo.png|Logo
+|caption   = Logo of the restaurant.
+|games     = {{Games|V=y|O=y}}
+|type      = restaurant
+|locations = [[Innocence Boulevard]] and [[Strawberry Avenue]], [[Davis]]
+|taglines  = "Incinerate Your Insides."
+|accessible = No
+}}
+
+[[LEAD]]
+'''Ring of Fire Chili House''' is a chili restaurant brand appearing in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+*The [[Davis]] location is a rendition of {{URL|https://maps.app.goo.gl/yk3fiaga63cZcpe16|3630 Crenshaw Boulevard}} in the {{WP|Crenshaw, Los Angeles|Crenshaw}} neighborhood of {{WP|Los Angeles}}, {{WP|California}}, which has since been demolished.
+
+{{Clear}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast casual restaurant chains

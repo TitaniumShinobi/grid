@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = SEMI
+|sign          = 
+|image_label   = IV
+|image         = SEMI-Logo-2008.png
+|caption       = Logo in {{IV}} and {{CW}}.
+|image_label2  = SA
+|image2        = SEMI-Logo.svg
+|caption2      = Logo in {{SA}}.
+|image_label3  = III
+|image3        = SEMI-GTA3-logo.png
+|caption3      = Logo in {{III}}.
+|image_label4  = 
+|image4        = 
+|caption4      = 
+|aka           = 
+|games         = {{Games|III=y|SA=y|IV=y|EFLC=y|CW=y|O={{EEEV}} {{DLC|mpsum}}}}
+|mentioned     = 
+|locations     = [[Fortside]], [[Bohan]], [[Liberty City (HD Universe)|Liberty City]] {{Small|({{HD}})}}
+|business_type = Sportswear
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|products      = 
+|vehicles      = [[Mule]] {{Small|(''GTA San Andreas'')}}
+|taglines      = 
+*"''Come first every time''"
+*"''Bend the rules''"
+*"''Play hard''"
+|status        = 
+|accessible    = 
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''SEMI''' is a sportswear company appearing in {{III}}, {{SA}}, {{IV}}, {{CW}}, and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA III
+Businesses in GTA IV
+Businesses in GTA Online: Los Santos Summer Special
+Businesses in GTA San Andreas
+Clothing store chains
+Fashion brands

@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change = ROAD
+|image=
+|caption=
+|games=''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|start=[[Great Ocean Highway]], [[North Chumash]]
+|end=[[Route 68]], [[Great Chaparral]]
+|map=<gallery>
+ZancudoTrail-GTAV-Map.png|Map
+ZancudoTrail-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Zancudo Trail''' is a two-way unpaved road in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', running from the [[Great Ocean Highway]] in [[North Chumash]] to [[Route 68]] in [[Great Chaparral]]. A large portion of it runs alongside the [[Zancudo River]] and the [[Lago Zancudo]] wetlands.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

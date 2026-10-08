@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox location
+|sign       = TheFreakshop-GTAOe-MuralTexture.png
+|image      = TheFreakshop-GTAOee-Front.png
+|name       = The Freakshop
+|type       = warehouse
+|founded    = [[2022]]
+|founder    = [[Dax]] <small>(Head of the [[Fooliganz]])</small>
+|games      = {{Games|O=y}}
+|location   = [[Mirror Park Railyard]], [[Mirror Park]]
+|map        = TheFreakshop-GTAOe-LocationMap.png
+|map_caption = Location
+|map2        = TheFreakshop-GTAOe-InteriorMap.png
+|map_caption2 = Interior layout
+}}
+
+[[LEAD]]
+'''The Freakshop''' is a large warehouse in {{O}} added in the [[GTA Online: Los Santos Drug Wars|Los Santos Drug Wars]] update.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Warehouses

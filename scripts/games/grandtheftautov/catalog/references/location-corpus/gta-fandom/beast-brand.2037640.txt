@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = sportsequipment
+|name          = Beast
+|sign          = 
+|image         = Beast-GTAO-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpvinewood}}|VI=y}}
+|mentioned     = 
+|business_type = Weightlifing equipment manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Beast''' is a weightlifing equipment manufacturer appearing in {{O}} as part of the [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Diamond Casino & Resort
+Businesses in GTA VI
+Sports equipment manufacturers

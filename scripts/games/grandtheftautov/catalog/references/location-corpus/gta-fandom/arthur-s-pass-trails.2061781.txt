@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox location
+|image = Arthur'sPassTrails-GTAVee.jpg
+|caption = Central part of the hiking trail.
+|games = {{Games|V=y|O=y}}
+|location = [[Vinewood Hills]] and [[Great Chaparral]], [[Los Santos County]]
+}}
+
+[[LEAD]]
+The '''Arthur's Pass Trails''' is a hiking trail in the sub-district of [[Galileo Park]] in [[Vinewood Hills]] and [[Great Chaparral]], [[Los Santos County]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Pixtro Corporation
+|image = PIXTRO-GTAO-Logo.png
+|type = Video Game Developer
+|games = ''[[Grand Theft Auto Online]]''
+|oldlogo1 = 
+|oldcaption1 =
+}}
+
+[[LEAD]]
+'''Pixtro''' is a video game developer featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Diamond Casino Heist
+Video game developers

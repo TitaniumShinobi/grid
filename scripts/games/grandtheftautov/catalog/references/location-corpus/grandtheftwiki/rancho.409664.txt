@@ -1,0 +1,72 @@
+[[LEAD]]
+'''Rancho''' is a primarily Hispanic neighbourhood in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. Rancho has borders to [[Strawberry]] to the north, [[La Mesa]] to the east, [[Cypress Flats]] to the south east, [[Banning]] to the south and [[Davis]] to the west.
+
+[[SECTION:2:Streets]]
+*[[Capital Blvd]]
+*[[Carson Ave]]
+*[[Davis Ave]]
+*[[Dutch London St]]
+*[[El Rancho Blvd]]
+*[[Innocence Blvd]]
+*[[Jamestown St]]
+*[[Little Bighorn Ave]]
+*[[Macdonald St]]
+*[[Roy Lowenstein Blvd]]
+
+[[SECTION:2:Businesses]]
+*[[Atomic]]
+*[[Avalon Laundry & Cleaners]]
+*[[The Beacon Theatre]]
+*[[Bean's Market]]
+*[[Beer & Wine]]
+*[[Bilingsgate Motel]]
+*[[Cabinets & Carpets]]
+*[[Cent Carpet]]
+*[[Chantelle's Beauty Salon]]
+*[[Davis Electricals]]
+*[[Discount Beauty Store]]
+*[[Discount Carpet Center]]
+*[[Hearty Taco]]
+*[[Discount Carpet Center]]
+*[[East Los Santos Appliances]]
+*[[Gav's Ca$h Exchange]]
+*[[Hayes Auto Body Shop]]
+*[[Hitmen (GTA V)|Hitmen]]
+*[[Laundromat (GTA V)|Laundromat]]
+*[[Liquor]]
+*[[Long Pig Mini Market]]
+*[[LSPD Auto Impound]]
+*[[Mexican and American]] x2
+*[[Mom's Tacos]]
+*[[South LS Liquor]]
+*[[Toke-a-mon Smokers Emporium]]
+*[[Tony's Carpets]]
+*[[Trinculo Clothing]]
+
+[[SECTION:2:Places of interest]]
+*[[Davis Sheriff's Station]]
+*[[Department of Water and Power Cit of Los Santos]]
+*[[Rancho Church]]
+*[[Strawberry Mortuary]]
+
+[[SECTION:2:Neighbouring areas]]
+{{Location
+|Centre    = Rancho
+|North     = [[Strawberry]]
+|Northeast = [[La Mesa]]
+|East      = [[La Mesa]]
+|Southeast = [[Cypress Flats]]
+|South     = [[Banning]]
+|Southwest = [[Davis]]
+|West      = [[Davis]]
+|Northwest = [[Davis]]
+}}
+
+{{Navboxes
+|title= Navigation
+|list1=
+{{Los Santos in GTA V|state=collapsed}}
+}}
+
+[[CATEGORIES]]
+Areas in Los Santos in GTA V

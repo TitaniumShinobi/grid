@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|image        = MirrorParkRailyard-GTAV.png
+|games        = {{Games|V=y|O=y}}
+|type         = neighborhood
+|location     = [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map          = 
+|map_caption  = 
+}}
+
+[[LEAD]]
+The '''Mirror Park Railyard''' is a railroad yard that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Rail yards
+Zones

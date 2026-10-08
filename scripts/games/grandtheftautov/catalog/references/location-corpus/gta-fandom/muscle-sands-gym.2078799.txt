@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|image = MuscleSandsGym-GTAVee.jpg
+|caption =
+|name = Muscle Sands Gym
+|taglines = 
+|type = Gym
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Muscle Sands Gym''' is an outdoor [[Gyms|gym]] located on the [[Vespucci Beach Sidewalk]] in [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]] and featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Gyms
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

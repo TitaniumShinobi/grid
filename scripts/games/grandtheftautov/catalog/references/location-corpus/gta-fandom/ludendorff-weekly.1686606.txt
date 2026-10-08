@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Ludendorff Weekly Logo GTAV.png
+|type = Newspaper Company
+|games = ''[[Grand Theft Auto V]]''
+|locations = [[Ludendorff]], [[North Yankton]]
+}}
+
+[[LEAD]]
+'''Ludendorff Weekly''' is the weekly local newspaper of [[Ludendorff]], [[State of North Yankton|North Yankton]] in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Newspaper publishers

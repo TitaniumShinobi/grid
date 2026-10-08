@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = StonerCementWorks-GTAV-JoshuaRd-exterior.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Stoner Cement Works
+|type = Industrial plant
+|owner = 
+|location = [[Joshua Rd]] in the [[Grand Senora Desert]], [[Blaine County]]
+|affiliation = 
+|missions = [[An American Welcome]]<br />[[Caida Libre]]<br />[[Industrial Plant]]
+|employee = Two "illegal immigrants"
+}}
+
+[[LEAD]]
+'''Stoner Cement Works''' are two industrial cement works plants in the [[Grand Senora Desert]], [[Blaine County]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The cement works were established in [[1952]] with one located on [[Senora Rd]] and another on [[Joshua Rd]]. The Joshua Rd plant contains a number of shipping containers, including from [[Bilgeco]]. A [[Letter Scraps|letter scrap]] can be found on the top platform of the Joshua Rd plant.
+
+[[CATEGORIES]]
+Businesses in Blaine County
+Businesses in GTA V

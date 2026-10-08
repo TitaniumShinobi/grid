@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{infobox business
+|name = Gabriela's Market
+|image = GabrielasMarket-GTAV-Logo.jpg
+|caption =
+|taglines = 
+|type = grocerystore
+|games = {{games|V=y|O=y}}
+|locations = 
+[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|status = active
+}}
+
+[[LEAD]]
+'''Gabriela's Market''' is a grocery store chain in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Gabriela'sMarket-GTAV-Strawberry.png|[[Forum Drive]] and [[Strawberry Avenue]], [[Strawberry]].
+GabrielasMarket-GTAV-EastVinewood.jpg|[[Mirror Park Boulevard]], [[Mirror Park]]/[[East Vinewood]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Grocery store chains

@@ -70,6 +70,8 @@
             </ResourceDictionary.ThemeDictionaries>
             <!-- Canonical inset from a panel outline to controls or child windows. -->
             <Thickness x:Key="ShellPanelContentInset">5</Thickness>
+            <!-- Canonical inset for the one tab-and-controls row inside a panel outline. -->
+            <Thickness x:Key="ShellInteriorHeaderInset">3,3,3,0</Thickness>
             <Style x:Key="SectionTitleStyle" TargetType="TextBlock">
                 <Setter Property="FontSize" Value="18" />
                 <Setter Property="FontWeight" Value="SemiBold" />
@@ -240,7 +242,7 @@
             <Style x:Key="ShellTabViewItemStyle" TargetType="TabViewItem">
                 <Setter Property="Height" Value="24" />
                 <Setter Property="MinHeight" Value="24" />
-                <Setter Property="Margin" Value="0,3,3,3" />
+                <Setter Property="Margin" Value="0,0,3,0" />
                 <Setter Property="Padding" Value="6,0" />
                 <Setter Property="CornerRadius" Value="4" />
                 <Setter Property="HorizontalContentAlignment" Value="Left" />

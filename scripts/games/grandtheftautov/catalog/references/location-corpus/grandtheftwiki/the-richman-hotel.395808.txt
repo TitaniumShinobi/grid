@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox business|
+|image = TheRichmanHotel-GTAV-prerelease.jpg
+|size = 350x350px
+|game_1 = GTA V
+|name = The Richman Hotel
+|type = [[:Category:Hotels|Hotel]]
+|owner = 
+|location = [[Richman in GTA V|Richman]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''The Richman Hotel''' is a [[Richman in GTA V|Richman]], [[Los Santos in GTA V|Los Santos]] hotel in [[Grand Theft Auto V]]. It is based on [[wp:The_Beverly_Hills_Hotel|The Beverly Hills Hotel]].
+
+[[Jimmy De Santa]] frequents The Richman Hotel, as he is picked up there on countless occasions for hang-outs. It is assumed that this is where Jimmy stayed when the De Santa family temporarily left the [[De Santa House]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Hotels

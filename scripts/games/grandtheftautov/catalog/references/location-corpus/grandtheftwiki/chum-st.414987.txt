@@ -1,0 +1,24 @@
+[[LEAD]]
+'''Chum St''' is a street, running west to east, from [[Elysian Island]] in the west to [[Cypress Flats]] in the east in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to [[Abattoir Ave]], [[Buccaneer Way]], [[Chupacabra St]], [[Plaice Pl]], [[Popular St]] and [[Signal St]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Merryweather Security Consulting]]
+| [[Elysian Island]]
+| [[Chupacabra St]]
+| Security
+|-
+| [[RON]] (<small>storage</small>)
+| [[Elysian Island]]
+| [[Chupacabra St]]
+| Energy and fuel
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

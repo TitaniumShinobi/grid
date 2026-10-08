@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox location
+|type        = militarybase
+|name        = Fort Zancudo
+|image       = FortZancudo-GTAV-Montage.png
+|caption     = Clockwise from top: Aerial view of Fort Zancudo, the memorial at the [[Fort Zancudo Sculptures]], [[Fort Zancudo Fire Station]], the main barracks, entrance from the [[GOH]].
+|games       = {{Games|V=y|O=y}}
+|location    = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|runways     = 2 {{Small|(smaller runway located at the [[Pacific Ocean (HD Universe)|ocean]] end of the main runway, being designed for smaller jets)}}
+|occupants   = 
+*[[Brincat]]
+*[[Fort Zancudo colonel|Unnamed Colonel]]
+*[[Clark]]
+*[[Nolan]]
+*[[Lloyd]]
+*[[Starkie]]
+*[[Solarin]]
+*{{GTAOP}} {{Small|(determinant)}}
+*[[Charlie Reed]] {{Small|(determinant)}}
+|map         = <gallery>
+FortZancudo-GTAV-IngameGPS-Map.png|Fort Zancudo
+FortZancudo-GTAV-IngameGPS-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption = Location on the map (in-game GPS).
+|pscanner    = PoliceScanner-GTAV-Neighborhood-FortZancudo.ogg
+}}
+
+[[LEAD]]
+'''Fort Zancudo''' is a [[Military (HD Universe)|U.S. military]] installation operated by the {{WP|United States Army|Army}}, the {{WP|United States Marine Corps|Marine Corps}}, and the {{WP|United States Air Force|Air Force}} featured in {{V}} and {{O}}.
+
+[[SECTION:3:Location]]
+[[File:FortZancudoSatellite.png|thumb|Satellite image of '''Fort Zancudo''' and surrounding areas.]]
+
+Fort Zancudo is located on the outskirts of the [[Lago Zancudo]] swamps and at the base of [[Mount Josiah]] in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+It is bordered by the [[Zancudo River]] towards the south, as well as [[U.S. Route 1|Route 1]] on the west with the Great Ocean Highway passing underneath the runway of the base via a tunnel. There is also a [[Fort Zancudo Sculptures|memorial]] that can be found by the [[Fort Zancudo Approach Road]].
+
+[[SECTION:4:The San Andreas Flight School Update]]
+*[[Flight School]] {{nd}} Fort Zancudo features in the Engine Failure mission, in which the player must land a [[Miljet]] with a dual engine failure at the base without crashing.
+*[[Stunt - Double Loop]]
+*[[Stunt - Plummet]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Military airbases
+Restricted locations
+Unlockable locations
+Zones

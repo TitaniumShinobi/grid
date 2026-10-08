@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business
+|image     = TheFishNet-GTAV-Logo.png
+|games     = {{Games|V=y|O=y}}
+|type      = Seafood restaurant chain
+|locations = [[Del Perro]]<br>[[Hawick]]
+}}
+
+[[LEAD]]
+'''The Fish Net''' is a seafood restaurant chain in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" widths="270px" spacing="small">
+TheFishNet-GTAV-DelPerro.png|[[Prosperity Street Promenade]] and [[Red Desert Avenue]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]].
+TheFishNet-GTAV-Hawick.png|[[Hawick Avenue]], [[Hawick]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Casual restaurant chains

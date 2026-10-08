@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicles
+|name          = Vysser
+|image         = Vysser-GTAO-BadgeLogo.png
+|caption       = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpvinewood}}}}
+|locations     = 
+|business_type = Automotive manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|taglines      = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Vysser''' is a [[Netherlands|Dutch]] automotive manufacturer appearing in {{O}} as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino & Resort]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Diamond Casino & Resort
+Vehicle manufacturers

@@ -1,0 +1,56 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fastfood
+|name          = Lucky Plucker
+|image_label   = O
+|image         = LuckyPlucker-GTAO-Logo.png
+|caption       = 
+|image_label2  = V
+|image2        = LuckyPlucker-GTAV-Logo.png
+|caption2      = Pre-2018 logo.
+|aka           = 
+|games         = {{Games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[Port Gellhorn]], [[State of Leonida|Leonida]]
+([[#Locations_2|See more]])
+|business_type = Fast food chicken restaurant
+|founded       = 
+|founder       = 
+|taglines      = "''All our chickens are well and truly plucked''"
+|status        = active
+|accessible    = 
+|lcn           = 
+}}
+
+[[LEAD]]
+'''Lucky Plucker''' is a fast-food chain specializing in fried chicken appearing in {{V}} and {{O}}, and due to appear in {{VI}}.
+
+[[SECTION:3:Locations]]
+{{H4|game=VO}}
+*The buildings housing the [[Davis]] and [[Little Seoul]] branches are modeled after the former Haven Burgers at {{URL|https://maps.app.goo.gl/nMzwwhhSaXwpW1Ty8|3515 Obama Boulevard}} in the {{WP|Crenshaw, Los Angeles|Crenshaw District}} of {{WP|Los Angeles}}, {{WP|California}}, which has since been demolished.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+Lucky Plucker have two outlets in [[Los Santos (HD Universe)|Los Santos]]; one in [[Little Seoul]], and one in [[Davis]]. The two building remain almost identical in design, albeit the Little Seoul branch is said to be "opening soon" and still has signs of renovation. Both outlets have large menu screens mounted on the walls and on a sign at one corner of the building. In the original version of the game, both buildings had the same menu, bearing a blue scheme and relatively worn and dirty. In the enhanced version of the game, the menu texture was since updated at the Little Seoul branch, copying the menu board from [[Horny's Burgers]], but remains the same at the Davis branch.
+
+<gallery position="center" spacing="small" widths="270px">
+LuckyPlucker-GTAV-Davis.png|[[Strawberry Avenue]], [[Davis]]. (<small>[[:File:LuckyPlucker-GTAV-Davis-Map.png|Map]]</small>)
+LuckyPlucker-GTAV-LittleSeoul.png|[[Palomino Avenue]] and [[Vespucci Boulevard]], [[Little Seoul]]. (<small>[[:File:LuckyPlucker-GTAV-LittleSeoul-Map.png|Map]]</small>)
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto VI'']]
+<gallery position="center" spacing="small" widths="270px">
+LuckyPlucker-GTAVI-Trailer1.png|A '''Lucky Plucker''' branch along [[Interstate 404]] in [[Port Gellhorn]], [[State of Leonida|Leonida]], as seen in the [[Grand Theft Auto VI/Trailers#Trailer 1|first trailer]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Chicken restaurants
+Fast-food restaurant chains

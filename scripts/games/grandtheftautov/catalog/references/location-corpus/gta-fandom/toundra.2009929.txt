@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Toundra
+|sign          = Toundra-GTAO-TextLogo.png
+|image_label   = 
+|image         = Toundra-GTAO-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpchristmas3}}}}
+|mentioned     = 
+|locations     = 
+|business_type = Automotive manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|divisions     = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Toundra''' is a [[France|French]] automotive manufacturer appearing in {{O}} as part of the [[GTA Online: Los Santos Drug Wars|Los Santos Drug Wars]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Los Santos Drug Wars
+Vehicle manufacturers

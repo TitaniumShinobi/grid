@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Miss T
+|image = MissT-GTAIV-Logo.png
+| taglines = "''Clothing to be carried away in''"
+|type = Clothing Company
+|games = ''[[Grand Theft Auto IV]]<br>[[Grand Theft Auto: Chinatown Wars]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Liberty City (HD Universe)|Liberty City]]<br>[[Los Santos (HD Universe)|Los Santos]]
+|reference = {{WP|Miss Sixty}}
+}}
+
+[[LEAD]]
+'''Miss T''' is an urban clothing brand in [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Grand Theft Auto: Chinatown Wars'']]
+;''Grand Theft Auto IV''
+<gallery position="center" spacing="small" widths="250px">
+MissT-GTAIV-ColumbusAve.png|[[East Tower]], [[Columbus Avenue]], [[Middle Park East]], [[Algonquin]].
+MissT-GTAIV-MiddleParkEast2-exterior.jpg|[[Albany Avenue]], next to the [[Middle Park East Safehouse]], [[Middle Park East]], [[Algonquin]].
+MissT-GTAIV-Chinatown.jpg|[[Calcium Street]] and [[Amsterdam Lane]], [[Chinatown (GTA IV)|Chinatown]], [[Algonquin]].
+MissT-GTAIV-TheExchange.jpg|[[Barium Street]] and [[Borlock Road]], [[The Exchange (GTA IV)|The Exchange]], [[Algonquin]].
+MissT-GTAIV-CityHall.png|[[Liberty Lane]], between [[Emerald Street]] and [[Diamond Street]], [[City Hall (GTA IV)|City Hall]], [[Algonquin]].
+</gallery>
+;''Grand Theft Auto: Chinatown Wars''
+<gallery position="center" spacing="small" widths="250px">
+TheWorldsAStooge-GTACW-SS0.jpg|[[Columbus Avenue]], between [[Obsidian Street]] and [[Nickel Street]], [[Middle Park East]], [[Algonquin]].
+ImageNeeded.png|[[Albany Avenue]], next to the [[Middle Park East Safehouse]], [[Middle Park East]], [[Algonquin]].
+ImageNeeded.png|[[Calcium Street]] and [[Amsterdam Lane]], [[Chinatown (GTA IV)|Chinatown]], [[Algonquin]].
+ImageNeeded.png|[[Barium Street]] and [[Borlock Road]], [[The Exchange (GTA IV)|The Exchange]], [[Algonquin]].
+MissT-GTACW-CityHall.png|[[Liberty Lane]], between [[Emerald Street]] and [[Diamond Street]], [[City Hall (GTA IV)|City Hall]], [[Algonquin]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+<gallery position="center" spacing="small" widths="250px">
+MissT-GTAVe-ProsperityStreetPromenade.png|[[Prosperity Street Promenade]] and [[Marathon Avenue]], [[Del Perro]].
+MissT-GTAV-CougarAve.jpg|[[Cougar Avenue]], [[Morningwood]].
+MissT-GTAV-Vinewood.png|[[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Vinewood (HD Universe)|Vinewood]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in TBOGT
+Businesses in TLAD
+Clothing store chains
+Fashion brands

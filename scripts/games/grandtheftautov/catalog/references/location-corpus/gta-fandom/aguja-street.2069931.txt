@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=AgujaSt-GTAV.jpg
+|caption=Aguja Street as seen from the west, intersecting [[Magellan Avenue]], and [[Al Dente's]] on the left.
+|games={{Games|V=y|O=y}}
+|start=[[Goma Street]]
+|end=[[Magellan Avenue]]
+|map=<gallery>
+AgujaStreet-GTAV-Map.png|Map
+AgujaStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Aguja Street''' is a [[List of Street Names|street]] in [[La Puerta]], [[Vespucci]] and [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+'''La Puerta:'''
+*Bigv Surf Shop
+*[[La Spada]]
+*Pony & Trap Accountancy
+
+'''Vespucci Canals:'''
+*[[Al Dente's]]
+*[[Crucial Fix]]
+*[[Doctor Kush]]
+*Farmer Giles 
+*[[Ice Maiden]]
+*[[Lombank]]
+*Marlins Cafe
+*[[The Pit]]
+*Vespucci Fashion
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

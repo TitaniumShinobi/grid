@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=GalileoRoad-Street-GTAV.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Mount Vinewood Drive]]
+|end=[[Baytree Canyon Road]]
+|map=<gallery>
+GalileoRoad-GTAV-Map.png|Map
+GalileoRoad-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Galileo Road''' is a two-way road in {{V}} and {{O}}, located in [[Great Chaparral]] in [[Los Santos County]] that begins at [[Mount Vinewood Drive]] and ends at [[Baytree Canyon Road]].
+
+It is the start point of a race in [[Offroad Races]].
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

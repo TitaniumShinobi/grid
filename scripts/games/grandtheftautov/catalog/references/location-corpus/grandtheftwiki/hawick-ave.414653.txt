@@ -1,0 +1,434 @@
+[[LEAD]]
+'''Hawick Ave''' is a street in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The avenue runs northwest to southeast through the [[West Vinewood]], [[Burton]], [[Hawick]], and [[Alta]] neighbourhoods with connections to [[Alta Pl]], [[Alta St]], [[Eastbourne Way]], [[Elgin Ave]], [[Laguna Pl]], [[Las Lagunas Blvd]], [[Meteor St]], [[Milton Rd]], [[Power St]], and [[San Vitus Blvd]]. The road is a continuation of [[Boulevard Del Perro]] in the northwest and [[Popular St]] in the southeast.
+
+[[SECTION:2:Places]]
+* [[Eclipse Lodge Apartments]] (<small>residential building</small>)
+* [[Los Santos Corner]] (<small>shopping complex</small>)
+* [[Rockford Plaza]] (<small>shopping complex</small>)
+
+[[SECTION:2:Businesses]]
+{| class="wikitable sortable"
+! Business name
+! Location
+! class="unsortable"| Street
+! Business type
+|-
+| [[24/7]]
+| [[Alta]]
+| [[Alta St]]
+| Convenience store
+|-
+| [[Acting Up]]
+| [[Hawick]]
+|
+| Acting school
+|-
+| [[Airbrush Tanning]]
+| [[Burton]]
+| [[Las Lagunas Blvd]]
+| Tanning salon
+|-
+| [[Al Dente's]]
+| [[Burton]]
+|
+| Food and drink
+|-
+| [[Alphabetz]]
+| [[Hawick]]
+|
+| Clothing
+|-
+| data-sort-value="Bianco, Les"| [[Les Biano]]
+| [[Burton]]
+| [[Las Lagunas Blvd]]
+| Food and drink
+|-
+| [[Bite!]]
+| [[Alta]]
+| [[Alta St]]
+| Food and drink
+|-
+| [[Bourgeois Bicycles]]
+| [[Burton]]
+|
+| Bicycle sales
+|-
+| [[Brah]]
+| [[Hawick]]
+|
+| Clothing
+|-
+| [[CaCa]]
+| [[Burton]]
+|
+| Clothing
+|-
+| data-sort-value="Casting Couch Actress Agency, The"| [[The Casting Couch Actress Agency]]
+| [[Hawick]]
+| [[Las Lagunas Blvd]]
+| Agency
+|-
+| [[Ca$h Advance Loans]]
+| [[Hawick]]
+| [[Las Lagunas Blvd]]
+| Agency
+|-
+| [[Cell Phones Sales and Repair]]
+| [[Burton]]
+| 
+| Mobile/Cell Phone
+|-
+| [[Cockatoos]]
+| [[Burton]]
+| [[Eastbourne Way]]
+| Nightclub
+|-
+| [[Croq-A-Hoop]]
+| [[Burton]]
+| 
+| Clothing
+|-
+| [[Crucial Fix Coffee House]]
+| [[Alta]]
+| [[Power St]]
+| Food and drink
+|-
+| [[Curbcrawler Skateboards]]
+| [[Burton]]
+| 
+| Skateboards
+|-
+| [[Del Perro Boulevard Gallery]]
+| [[Burton]]
+| 
+| Gallery
+|-
+| [[Dentistry]]
+| [[Hawick]]
+| [[Las Lagunas Blvd]]
+| Healthcare
+|-
+| [[Discount Kitchen Supplies]]
+| [[Burton]]
+| 
+| Furniture
+|-
+| [[Dollar Pills]]
+| [[Alta]]
+| [[Alta St]]
+| Pharmacy
+|-
+| [[Double Denim]]
+| [[Burton]]
+| 
+| Clothing
+|-
+| [[Echo Rock]]
+| [[Alta]]
+| 
+| Bank
+|-
+| [[Epsilon Society]]
+| [[Hawick]]
+| 
+| Cult
+|-
+| [[Filly]]
+| [[Alta]]
+| 
+| 
+|-
+| data-sort-value="Fish Net, The"| [[The Fish Net]]
+| [[Hawick]]
+| 
+| Food and drink
+|-
+| [[FLEECA]]
+| [[Burton]]
+| 
+| Bank
+|-
+| [[FLEECA]]
+| [[Alta]]
+| 
+| Bank
+|-
+| [[Flickers Comics]]
+| [[Hawick]]
+| 
+| Comic store
+|-
+| [[Floor Skin]]
+| [[West Vinewood]]
+| 
+| Furniture
+|-
+| [[Fruit Machine]]
+| [[Burton]]
+| 
+| Food and drink
+|-
+| [[Fruit on the Vine]]
+| [[Burton]]
+| 
+| Food and drink
+|-
+| [[Fuds]]
+| [[Hawick]]
+| [[Las Lagunas Blvd]]
+| Clothing
+|-
+| [[Gear and Clothing]]
+| [[Hawick]]
+| [[Alta St]]
+| Clothing
+|-
+| [[Hair on Hawick]]
+| [[Hawick]]
+| 
+| Barbers
+|-
+| [[Harsh Souls]]
+| [[Alta]]
+| 
+| Clothing
+|-
+| [[Hawaiian Snow]]
+| [[Alta]]
+| [[Power St]]
+| Clothing
+|-
+| [[Heat]]
+| [[Hawick]]
+| [[Alta Pl]]
+| Clothing
+|-
+| [[High Time]]
+| [[Alta]]
+| 
+| Smoking
+|-
+| [[Hippy Feet]]
+| [[Alta]]
+| 
+| Clothing
+|-
+| [[Ink Inc.]]
+| [[Hawick]]
+| 
+| Tattoo parlor
+|-
+| [[Inspector Knickers]]
+| [[Alta]]
+| 
+| Clothing
+|-
+| [[J's Bonds]]
+| [[West Vinewood]]
+| [[Milton Rd]]
+| Bail bonds
+|-
+| [[Know Wear]]
+| [[Hawick]]
+| 
+| Clothing
+|-
+| [[Kushy Farmacy]]
+| [[Burton]]
+| [[Las Lagunas Blvd]]
+| Pharmacy
+|-
+| [[Lârss & Elbö]]
+| [[Hawick]]
+| [[Alta St]]
+| Furniture
+|-
+| [[Lettuce Be]]
+| [[Hawick]]
+| [[Laguna Pl]]
+| Food and drink
+|-
+| [[Liquor]]
+| [[Hawick]] / [[Burton]]
+| [[Las Lagunas Blvd]]
+| Food and drink
+|-
+| [[Little Teapot]]
+| [[Burton]]
+| [[Milton Rd]]
+| Food and drink
+|-
+| [[Los Santos Jeans]]
+| [[Hawick]]
+| 
+| Clothing
+|-
+| [[Mattress of Fact]]
+| [[Hawick]]
+| 
+| Furniture
+|-
+| [[Molar Flair Dentist]]
+| [[Alta]]
+| [[Alta St]]
+| Healthcare
+|-
+| [[Mountebank Gallery]]
+| [[Alta]]
+| [[Power St]]
+| Gallery
+|-
+| [[Oeuvre Gallery]]
+| [[Alta]] / [[Hawick]]
+| [[Power St]]
+| Gallery
+|-
+| [[Period Rags]]
+| [[Hawick]]
+| [[Laguna Pl]]
+| Clothing
+|-
+| [[Periscope]]
+| [[Burton]]
+| 
+| 
+|-
+| [[Pikeys]]
+| [[Burton]]
+| 
+| Clothing
+|-
+| [[Pipe Dreams]]
+| [[Hawick]]
+| [[Alta St]]
+| Smoking
+|-
+| data-sort-value="Pink Cage Motel, The"| [[The Pink Cage Motel]]
+| [[Alta]]
+| [[Meteor St]]
+| Motel
+|-
+| [[Pirate Music]]
+| [[Burton]]
+| [[Eastbourne Way]]
+| Music
+|-
+| [[Rametim]]
+| [[Alta]]
+| 
+| Clothing
+|-
+| [[Ranch]]
+| [[Burton]]
+| 
+| Clothing
+|-
+| [[Rimmers]]
+| [[Burton]]
+| 
+| Clothing
+|-
+| [[San Andreas Gallery of Modern Art]]
+| [[Burton]] / [[West Vinewood]]
+| [[San Vitus Blvd]]
+| Gallery
+|-
+| [[Serenity Wellness]]
+| [[West Vinewood]]
+| 
+| Healthcare
+|-
+| [[Sneaky Footwear]]
+| [[Burton]]
+| 
+| Clothing
+|-
+| [[Sub Urban]]
+| [[Alta]]
+| 
+| Clothing
+|-
+| [[Swallow]]
+| [[Burton]]
+| 
+| Clothing
+|-
+| [[Talon Scout Nails]]
+| [[Alta]]
+| [[Alta St]]
+| Nail salon
+|-
+| [[Tax Lawyers]]
+| [[Burton]]
+| [[Las Lagunas Blvd]]
+| Lawyers
+|-
+| [[Thor Toys]]
+| [[Burton]]
+| 
+| Toy store
+|-
+| [[Trey Baker]]
+| [[Hawick]]
+| 
+| Food and drink
+|-
+| [[Twinkle Toes]]
+| [[Hawick]]
+| [[Las Lagunas Blvd]]
+| Clothing
+|-
+| [[Twinkle Toes]]
+| [[Hawick]]
+| 
+| Clothing
+|-
+| [[Universal Uniform]]
+| [[Burton]]
+| 
+| Clothing
+|-
+| [[Vinewood Bar and Grill]]
+| [[Burton]]
+| [[San Vitus Blvd]]
+| Food and drink
+|-
+| [[Vinewood Music]]
+| [[Hawick]]
+| [[Alta St]]
+| Music
+|-
+| [[Vinewood Sports]]
+| [[Hawick]]
+| 
+| Clothing
+|-
+| [[Vinylism]]
+| [[Hawick]]
+| 
+| Music
+|-
+| [[Walk of Fame]]
+| [[Alta]]
+| [[Alta St]]
+| Clothing
+|-
+| [[White Widow]]
+| [[Alta]]
+| [[Power St]]
+| Clothing
+|-
+| [[Xhoti]]
+| [[Alta]]
+| 
+| Clothing
+|-
+| [[Yeti]]
+| [[Burton]]
+| 
+| Clothing
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

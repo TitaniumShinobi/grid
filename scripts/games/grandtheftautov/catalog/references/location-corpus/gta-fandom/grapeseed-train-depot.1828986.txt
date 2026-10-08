@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = Headhunter-GTAO-Countryside-GrapeseedTrainDepotStationaryTarget.png
+|games = {{Games|V=y|O=y}}
+|location = [[Union Road]], [[Grapeseed]]/[[San Chianski Mountain Range]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+The '''Grapeseed Train Depot''' is a railroad depot that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The depot is used to store railroad cars and locomotives in [[Grapeseed]], [[Blaine County]], north of the [[HJ Silos Galileo Park]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Rail yards

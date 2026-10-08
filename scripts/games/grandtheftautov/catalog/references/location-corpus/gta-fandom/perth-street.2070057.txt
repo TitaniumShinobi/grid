@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=PerthStreet-GTAV.png
+|caption=Perth Street, seen from [[Morningwood Boulevard]].
+|games={{Games|V=y|O=y}}
+|start=[[Morningwood Boulevard]]
+|end=[[North Rockford Drive]]
+|map=<gallery>
+PerthStreet-GTAV-Map.png|Map
+PerthStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Perth Street''' is a [[List of Street Names|street]] in [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[The Grain of Truth]] <small>(corner of North Rockford Drive)</small>
+*[[Homme Gina]] <small>(corner of Morningwood Boulevard)</small>
+*L.S. Gentstyle <small>(corner of Morningwood Boulevard)</small>
+*[[RON]] [[Filling Stations|gas station]] <small>(corner of North Rockford Drive)</small>
+*[[Vankhov|Vankhov Jewelry]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

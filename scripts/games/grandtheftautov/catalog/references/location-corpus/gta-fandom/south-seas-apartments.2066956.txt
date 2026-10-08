@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|type = lowrise
+|image = SouthSeasApartment-GTAV.png
+|caption = Overview of the apartment complex (post–[[The Paleto Score|Paleto Score]]).
+|games = {{Games|V=y|O=y}}
+|location = [[Cascabel Avenue]], [[Paleto Bay]], [[Blaine County]]
+|phone = 1-999-SOUTHCA (1-999-768-8422)
+|status = defunct
+|use = Apartment complex
+}}
+
+[[LEAD]]
+'''South Seas Apartments''' is a small apartment complex located on [[Cascabel Avenue]] in [[Paleto Bay]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Destroyed buildings
+Low-rise buildings

@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = elecstore
+|name           = Davis Electricals
+|sign           = DavisElectricals-GTAV-Logo.png
+|image          = DavisElectricals-GTAV.jpg
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Carson Avenue]], [[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|taglines       = "''Best area prices''"
+|structure_type = 
+|architecture   = 
+|phone          = 384-555-0144
+|accessible     = No
+|file_name      = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Davis Electricals''' is an electronics store in {{VO}}, located in [[Rancho]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Electronics stores

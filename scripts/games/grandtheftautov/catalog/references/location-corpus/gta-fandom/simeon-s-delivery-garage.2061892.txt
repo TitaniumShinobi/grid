@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox location
+|type = garage
+|name = Simeon's Delivery Garage
+|image = Simeon'sDeliveryGarage-GTAOee.jpg
+|caption = Exterior of the garage.
+|games = {{Games|V=y|O=y}}
+|location = [[Terminal]], [[Los Santos (HD Universe)|Los Santos]]
+|owner = [[Simeon Yetarian]]
+|accessible     = Yes {{Small|(only in GTA Online)}}
+|map            = Simeon-0.JPG
+|map_caption    = Map location.
+}}
+
+[[LEAD]]
+'''Simeon's Delivery Garage''' is a makeshift garage located in the 3rd space of the red warehouse located in [[Terminal]], [[Los Santos (HD Universe)|Los Santos]], featured in {{O}}.
+
+[[CATEGORIES]]
+Features
+Features in GTA Online
+Garages
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

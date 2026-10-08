@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = Trevor's Trailer
+|image = TrevorTrailer-GTAV.png
+|caption = Trevor Philips' Trailer.
+|aka = {{H:title|By Michael|Corrugated Metal Death Shack}}
+{{H:title|By Trevor|Casa Philips}}
+|style = Trailer
+|occupants = [[Trevor Philips]] <small>({{H:title|As of 2022|Occasionally}})</small><br>[[Michael De Santa]] <small>(temporarily)</small><br>[[Patricia Madrazo]] <small>(temporarily)</small>
+|unlocked = [[Mr. Philips]]
+|garage = Two vehicles
+|location=[[Zancudo Avenue]], [[Sandy Shores]], [[Blaine County]]
+|game=V
+|appearances={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Trevor's Trailer''' is a [[Safehouses in GTA V|safehouse]] featured in {{V}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Safehouses
+Safehouses in GTA V
+Single-family homes

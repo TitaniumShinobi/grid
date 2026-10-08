@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image= Prattle-GTAV-NewsFeedLogo.png
+|caption=Logo of Prattle
+|type=Celebrity gossip magazine
+|games=''[[Grand Theft Auto V]]''
+|reference = {{WP|People_(magazine)|People}}
+|taglines = ''100% Tittle Tattle''
+}}
+
+[[LEAD]]
+'''''Prattle''''' is a gossip magazine which talks about [[Wave of Celebrity in the HD Universe|celebrities]] in the [[HD Universe]]. It is featured in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Magazines
+Media

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Lowenstein Pictures
+|ceo = [[Roy Lowenstein]] 
+|founded = 1920s
+|type = entertainment
+|mentioned = {{Games|V=y}}
+|locations = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|status = defunct}}
+
+[[LEAD]]
+'''Lowenstein Pictures''' is a defunct film studio mentioned in {{V}} that operated in [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Destroyed buildings
+Studios

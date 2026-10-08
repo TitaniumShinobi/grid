@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|business = y
+|activebiz = n
+|image = Flywheels-GTAV-Logo-0.png
+|caption = 
+|name = Flywheels Garage
+|bawsaq =
+|type = garage
+|founded = 
+|owner = 
+|price = 
+|employees = [[G. James]], [[J. Donner]], [[Garage Mechanic|J. Jones]]
+|games = {{Games|V=y|O=y}}
+|location = [[Sandy Shores Airfield]]
+|oldlogo1 = Flywheels-GTAV-OldLogo.png
+|oldcaption1 = Alternative signage
+}}
+
+[[LEAD]]
+'''Flywheels Garage''' is a garage appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Garages

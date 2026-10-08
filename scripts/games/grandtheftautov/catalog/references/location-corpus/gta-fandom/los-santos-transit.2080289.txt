@@ -1,0 +1,61 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|purchasable   = 
+|type          = publictransit
+|name          = Los Santos Transit
+|sign          = Los_Santos_Transit_Logo.png
+|image         = 
+|caption       = 
+|aka           = Los Santos Transit Authority
+LS Metro
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]]
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|vehicles      = 
+*[[Bus (HD Universe)|Bus]]
+*[[Metrotrain]]
+|weapons       = 
+|taglines      = 
+|bawsaq        = {{BAWSAQ/Slider}} '''LST'''
+|lcn           = 
+|status        = Active
+}}
+
+[[LEAD]]
+'''Los Santos Transit''' is the transportation authority network in [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]] in {{V}} and {{O}}. The player can buy stocks from them at the [[Bawsaq.com]] website in ''GTA V''.
+
+[[SECTION:2:Stations]]
+*[[Davis Station]] {{nd}} [[Carson Avenue]], [[Davis]].
+*[[Pillbox South Station]] {{nd}} [[Alta Street]], [[Pillbox Hill]].
+*[[Little Seoul Station]] {{nd}} [[San Andreas Avenue]], [[Little Seoul]].
+*[[Del Perro Station]] {{nd}} [[Prosperity Street]], [[Del Perro]].
+*[[Portola Drive Station]] {{nd}} [[Portola Drive]], [[Rockford Hills]].
+*[[Burton Station]] {{nd}} [[San Vitus Boulevard]], [[Burton]].
+*[[Pillbox North Station]] (Closed/Under Construction) - [[Downtown Los Santos (GTA V)|Downtown]].
+*[[Strawberry Station]] {{nd}} [[Olympic Freeway]] and [[Strawberry Ave]]nue, [[Strawberry]].
+*[[Puerto Del Sol Station]] {{nd}} [[Innocence Boulevard]], [[Little Seoul]].
+*[[LSIA Parking Station]] {{nd}} [[Los Santos International Airport (HD Universe)|Los Santos International Airport]] car-park.
+*[[LSIA Terminal 4 Station]] {{nd}} [[New Empire Way]], [[Los Santos International Airport (HD Universe)|Los Santos International Airport]].
+
+[[SECTION:3:Interior maps]]
+<gallery position="center" spacing="small" widths="250px">
+LSMetroTunnels-InteriorMap-GTAV.png|Underground tunnels.
+LSMetroStation-InteriorMap-GTAV.png|Burton Station map layout.
+LSMetroStation2-InteriorMap-GTAV.png|Portola Drive Station map layout.
+LSMetroStation3-InteriorMap-GTAV.png|Del Perro Station map layout.
+LSMetroStation4-InteriorMap-GTAV.png|Little Seoul Station map layout.
+LSMetroStation5-InteriorMap-GTAV.png|LSIA Parking Station map layout.
+LSMetroStation6-InteriorMap-GTAV.png|LSIA Terminal 4 Station map layout.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Public transportation companies

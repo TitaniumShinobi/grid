@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Fern's Foreign & Domestic
+|image       = 
+<gallery>
+ForeignDomestic-GTAV-Overview.jpg|Compound
+Foreign&Domestic-GTAV-Logo.png|Logo
+</gallery>
+|type        = Manufacturing company
+|games       = {{Games|V=y|O=y}}
+|locations   = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|map         = Foreign&Domestic-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Fern's Foreign & Domestic''' is an industrial manufacturing company in {{V}} and {{O}} located in [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Warehouses

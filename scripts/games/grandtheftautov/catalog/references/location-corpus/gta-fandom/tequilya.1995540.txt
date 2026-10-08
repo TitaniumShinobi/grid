@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = Tequilya
+|sign          = Tequilya-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|V=y|O=y}}
+|mentioned     = 
+|business_type = Tequila
+|founded       = [[1969]]{{fact}}
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = "''This worm has turned Tequilya''"
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Tequilya''' is a [[Mexico|Mexican]] tequila brand that appears in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V

@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox_business
+|image = MaisonRicard-GTAVe-FullView.png
+|type = Unknown
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Legion Square]], [[Mission Row]]
+}}
+
+[[LEAD]]
+'''Maison Ricard''' is an unknown business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mid-rise buildings

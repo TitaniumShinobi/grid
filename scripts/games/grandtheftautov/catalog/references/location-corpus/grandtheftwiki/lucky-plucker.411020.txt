@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = LuckyPlucker-GTAV-StrawberryAve-exterior.jpg
+|size = 300x300px
+|caption = The Strawberry Ave outlet.
+|game_1 = GTA V
+|name = Lucky Plucker
+|type = [[:Category:Restaurants|Restaurant]]
+|owner = 
+|location = [[Palomino Ave]]/[[Vespucci Blvd]] in [[Little Seoul]], [[Los Santos in GTA V|LosS antos]]<br />[[Strawberry Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Lucky Plucker''' is a fast food restaurant chain, specialising in fried chicken, which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. There are restaurants at the corner of [[Palomino Ave]] and [[Vespucci Blvd]] in [[Little Seoul]] and [[Strawberry Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Restaurants

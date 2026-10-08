@@ -1,0 +1,82 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = restaurant
+|name          = Out of Towners
+|sign          = OutofTowners-GTAV-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+*O.o.T.
+*Out of Towners Welcome
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Casual dining
+|founded       = 
+|founder       = 
+|ceo           = 
+|taglines      = 
+*''Eat it and beat it''
+*''Take-out preferred''
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Out of Towners''', abbreviated as '''O.o.T.''' and sometimes referred to as '''Out of Towners Welcome''', is a bar and restaurant chain appearing in ''[[Grand Theft Auto IV]]'', ''[[Grand Theft Auto: Chinatown Wars]]'', ''[[Grand Theft Auto V]]'', and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+{{Under Construction}}
+{| class="article-table" border="1" cellpadding="1" cellspacing="1" style="float: left; width: 90%;"
+|-
+! scope="col" |Image
+! scope="col" |Location
+! scope="col" |Map
+! scope="col" |Description
+|-
+|[[File:Out_of_Towners_GTAIV_StarJunction.jpg|center|210px]]
+|Corner of [[Star Junction]] and [[Denver-Exeter Avenue]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]]
+|[[File:Out_of_Towners_GTAIV_StarJunction_Map.jpg|thumb|center|200px]]
+|A prime corner site in Star Junction, decorated externally with the standard green and white striped theme and logo emblazoned on the upper facade. Interior is not accessible in ''GTA IV''. Exterior signs include the tagline, "Eat it and beat it", "Take-out preferred" and "Leaving Parties".
+|-
+|[[File:Out_of_Towners_GTAIV_Columbus_Avenue.jpg|center|210px]]
+|[[Columbus Avenue]], [[Liberty City (HD Universe)|Liberty City]]. Between [[Leopolds]] and [[Fanny Crabs]]
+|[[File:Out_of_Towners_GTAIV_Columbus_Avenue_Map.jpg|thumb|center|200px]]
+|Located at the southern end of Columbus Avenue, there are no distinguishable features at this site apart from the standard chain exterior design features and colors. Interior is not accessible in ''GTA IV''.
+|-
+|[[File:OOT-frankfort-LC-GTA-TBOGT.jpg|center|210px]]
+|Corner of [[Frankfort Avenue]] and [[Manganese Street]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]]
+|[[File:OOT_GTAIV_FrankfortSt_Map.jpg|thumb|center|200px]]
+|A multi-level bar with a street entrance on Frankfort Avenue, but no other street-level presence. It appears to occupy both upper floors of the building. Neon beer advertising can be seen in the windows.
+|-
+|[[File:OOT-DENVER-EXETER-GTAIVtbogt.jpg|center|210px]][[File:OOT-kunzitest-GTAIVtbogt.jpg|center|210px]]
+|[[Kunzite Street]], and [[Denver-Exeter Avenue]] surrounding [[Burger Shot (HD Universe)|Burger Shot]], [[Star Junction]], [[Algonquin]]
+|[[File:OOT_GTAIV_Denver_Exeter_Kunzite_St_Map.png|thumb|center|200px]]
+|Street frontages on either side of the corner Burger Shot appear to be connected behind the Burger Shot building.
+|-
+|[[File:Out_of_Towners_GTAVe_Top_Entry.jpg|center|210px]]<br/><small>([[:File:OutOfTowners-GTAVe-DelPerroPier-NightView.png|Night view]])</small>
+|[[Red Desert Avenue]], [[Del Perro Pier]], [[Del Perro Beach]], [[Los Santos (HD Universe)|Los Santos]].
+|[[File:Out_of_Towners_GTAV_Del_Perro_Map.jpg|thumb|center|200px]]
+|
+*In ''GTA V'', the restaurant sells [[Dusche Gold]] and [[Logger Beer]], though it cannot be entered. 
+*The building is two stories high and has two entrances: one on the beach and one on the pier.
+*It is modeled after {{WP|Bubba Gump Shrimp Company}}, a seafood restaurant on {{WP|Santa Monica Pier}}.
+|}
+
+{{clr}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Casual restaurant chains

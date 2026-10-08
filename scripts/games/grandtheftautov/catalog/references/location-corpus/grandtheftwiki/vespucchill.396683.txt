@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Vespucchill
+|type = Beach/souvenir shop<br />Smoker supplies store<br />Food store
+|owner = 
+|location = Boardwalk of [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]]<br />[[Magellan Ave]] in [[Vespucci]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Vespucchill''' is a business with stores on the boardwalk of [[Vespucci Beach]] and on [[Magellan Ave]] in [[Vespucci]], both in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The store at the boardwalk has the appearance of a beach and souvenir shop while the Magellan Ave store is listed as a ''smoke shop''. The sign for both stores, however, suggests that is a store to purchase food and drink.
+
+
+
+[[Type::Business| ]]
+[[Location::Vespucci Beach| ]]
+[[Location::Vespucci| ]]
+[[Location::Magellan Ave| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

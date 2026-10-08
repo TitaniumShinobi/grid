@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=SamAustinDrive2-GTAV.png
+|caption=Eastern stretch.
+|games={{Games|V=y|O=y}}
+|start=[[West Eclipse Boulevard]]
+|end=- <small>(dead-end)</small>
+|map=<gallery>
+SamAustinDrive-GTAV-Map.png|Map
+SamAustinDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Sam Austin Drive''' is a two-way [[List of Street Names|street]] located in the district of [[Richman (HD Universe)|Richman]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Cul-de-sacs
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

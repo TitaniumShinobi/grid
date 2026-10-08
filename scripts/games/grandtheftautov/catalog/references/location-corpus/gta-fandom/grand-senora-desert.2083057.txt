@@ -1,0 +1,74 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|type           = region
+|name           = 
+|sign           = 
+|image          = GrandSenoraDesert-GTAV-Montage.png
+|caption        = Clockwise from top: aerial view, [[Bolingbroke Penitentiary]], [[Redwood Lights Track]], [[Satellite Relay Station]], [[Sandy Shores Airfield]].
+|aka            = Grand''e'' Senora Desert
+|games          = {{games|V=y|O=y}}
+|location       = [[Blaine County]] and [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]].
+|seal           = 
+|seal2          = 
+|flag           = 
+|mayor          = 
+|president      = 
+|established    = 
+|country        = 
+|state          = 
+|county         = 
+|capital        = 
+|pop            = 
+|motto          = ''A good place to get lost''
+|pscanner       = PoliceScanner-GTAV-Neighborhood-GrandSenoraDesert.ogg
+|unlockedby     = 
+|unlockedafter  = 
+|map            = <gallery>
+GrandSenoraDesert-IngameGPS-GTAV-Map.png|Grand Senora Desert
+GrandSenoraDesert-IngameGPS-GTAV-BlaineCountyMap.jpg|Blaine County
+</gallery>
+|map_caption    = Location on the map (in-game GPS). <font color="blue">Bolingbroke Penitentiary</font> and <font color="yellow">Redwood Lights Track</font> are located in Grand Senora Desert. 
+}}
+
+[[LEAD]]
+The '''Grand Senora Desert''' (also named '''Grande Senora Desert''') is a desert region appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', covering the counties of [[Los Santos County]] and [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[SECTION:2:Places of Interest]]
+*[[Lester's Safehouse]]
+*[[Rebel Radio Building]]
+*[[Sandy Shores Airfield]]
+*[[Satellite Relay Station]] ([[Facilities#The 10th Facility|IAA Facility]])
+*[[Senora National Park]] including [[Beam Me Up]]
+*[[Thomson Scrapyard]]
+*[[Stoner Cement Works]]
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*[[Checkout!]]
+*[[Flywheels Garage]]
+*[[Yellow Jack Inn]]
+*[[You Tool]]
+*[[Yucca Motel]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Algonquin Boulevard]]
+*[[Baytree Canyon Road]]
+*[[Cat-Claw Avenue]]
+*[[Cholla Road]]
+*[[Joshua Road]]
+*[[Mount Haan Road]]
+*[[Nowhere Road]]
+*[[Route 68]]
+*[[Senora Freeway]]
+*[[Smoke Tree Road]]
+
+[[CATEGORIES]]
+Districts
+Locations in GTA Online in Blaine County
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Blaine County
+Locations in GTA V in Los Santos County
+Zones

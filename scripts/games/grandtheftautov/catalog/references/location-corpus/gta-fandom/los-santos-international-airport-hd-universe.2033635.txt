@@ -1,0 +1,185 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = airport
+|name           = Los Santos International Airport
+|sign           = LSIA-logo-GTAV.png
+|image          = LSIA-GTAVee-Montage.jpg
+|caption        = Clockwise from top: LSIA Terminal 4, [[Sightings Bar & Restaurant]], the letters "LSIA" along [[Davis Avenue]], [[Von Crastenburg Hotel]], [[Jet]] landing on Runway 12R.
+|aka            = 
+*LSIA
+*LSX
+*LS Airport
+|games          = {{games|V=y|O=y}}
+|location       = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|status         = active
+|pscanner       = PoliceScanner-GTAV-Neighborhood-LosSantosInternational.ogg
+|pscanner2      = PoliceScanner-GTAV-Neighborhood-LosSantosInternationalAirport.ogg
+|pscanner3      = PoliceScanner-GTAV-Neighborhood-LosSantosInternationalAirport2.ogg
+|use            = 
+|owner          = 
+|operator       = 
+|occupants      = 
+|businesses     = 
+*[[Adios Airlines]]
+*[[FlyUS]]
+*[[VIP Charter Jets]]
+*[[Pegasus Concierge]]
+*[[Dineasoar]]
+*[[Devin Weston Jet Charter]]
+*[[Bilgeco]]
+*[[Jetsam]]
+*[[Alpha Mail]]
+*[[GoPostal]]
+*[[Opium Nights]]
+*[[Von Crastenburg Hotel]]
+*[[Touchdown Car Rentals]]
+*[[Escalera Rent-A-Car]]
+*[[Xero]]
+*[[Flight School|State of San Andreas Flight School]]
+*[[Sightings Bar & Restaurant]]
+|employees      = 
+|airport_type   = Public
+|runways        = 3
+|helipads       = 3
+|taxiways       = 24
+|terminals      = 4
+|hangars        = 6
+|unlockedby     = 
+|unlockedafter  = Purchasing a Hangar <small>(''GTA V'')</small>
+|file_name      = <code>ap1</code>
+|interior       = 
+|coords         = -1257.532,-2704.938,56.73241
+|map            = 
+<gallery>
+LosSantosInternationalAirport-IngameGPS-GTAV-Map.png|LSIA
+LosSantosInternationalAirport-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption    = LSIA on the in-game GPS (red).
+|map2           = LSIA-GTAV-Satellite.png
+|map_caption2   = Satellite view of LSIA
+}}
+
+[[LEAD]]
+'''Los Santos International Airport''' ({{WP|IATA airport code|IATA}}: '''LSIA''' or '''LSX''') is an international airport located in the city of [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], located to the west of the [[Port of Los Santos|port]] and to the south of [[La Puerta]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The LSIA district is also the location of the nearby warehouses, restaurants, and hotels.
+
+Like its [[3D Universe]] rendition, it is based on the {{WP|Los Angeles International Airport|Los Angeles International Airport (LAX)}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:Exterior]]
+The exterior of the airport, where the entrance to the main terminals are located, can be found northeast of the runways. It displays most of the influence in Los Angeles International Airport, with the roads layout and buildings being nearly a carbon copy of the real airport, including [[Sightings Bar & Restaurant|one]] extremely similar to the {{WP|Theme Building}} and a control tower also very similar to the real one.
+
+The two U-shaped roads, one overlapping the other in an upper floor, come from [[Interstate 5]] and circle all the 4 main airport terminals and two large accessible parking garages. The control tower is located Between both garages. Also centered near the parking garages and the aforementioned buildings is an exterior parking lot with two [[AT-400]]-like airliners reproduced in a giant sculpture. These are surrounded by multiple light towers, based on those placed in LAX. The [[Opium Nights |Opium Nights]] and [[Von Crastenburg Hotel|Von Crastenburg hotels]] can be found north of the terminal roads.
+
+There are three entrance gates for the airport tarmac located near the roads, two in the main access roads and one at the back behind the LSIA branch of the [[Los Santos Customs]], which automatically open in Story Mode when approached but are closed in Online (unless the [[GTA Online Protagonist|player]] has a [[Pegasus Lifestyle Management]] vehicle waiting for them inside or has purchased a [[Hangars|Hangar]]), meaning the player will have to jump across or drive through the weak fences surrounding it.
+
+{{Clear}}
+<gallery position="center" hideaddbutton="true" spacing="small">
+LSIA-GTAV-exterior1.jpg|Overview of the exterior.
+LSIA-GTAV-exterior2.jpg|View from the Sightings Bar & Restaurant.
+LSIA-GTAV-exterior3.jpg|View from the control tower.
+LSIA-GTAV-exterior4.jpg|The Sightings Bar & Restaurant, with the AT-400 based statues next to it.
+LSIA-GTAV-exterior5.jpg|The lower road leading to the terminals.
+LSIA-GTAV-SatelliteView.jpg|Satellite view.
+</gallery>
+
+[[SECTION:3:Terminals]]
+There are four main terminals surrounding the U-shaped roads on the northeastern area of the airport, with different airlines assigned to them. None of the main terminals have interiors and, independently from the assigned airliners, the Jets that spawn on the tarmac facet of the terminals are random.
+
+'''Terminal 1:''' [[Air Herler]], [[Caipira Airways]]
+
+'''Terminal 2:''' San Fierro Air*, [[Air Emu]]
+
+'''Terminal 3:''' [[MyFly]], [[Adios Airlines]]
+
+'''Terminal 4:''' [[FlyUS]], Los Santos Air*
+
+''* Does not appear.''
+
+Behind terminal 4, close to some helipads, a staircase can be climbed, which leads to a long corridor that goes directly to the terminal's roof. It has vending machines and benches where sometimes pedestrians can be found sitting. It can be a particularly good spot for hiding and resisting [[Bounties|bounties]] in Online.
+
+A smaller terminal can be found near the southern hangars of the airport, between the Concierge and Michael's Pegasus hangars. This terminal also features a small interior: By walking up on stairs behind it, a short L-shaped hallway can be accessed. Similar to the latter, it contains a few benches where two pedestrians can be found sitting, vending machines and a ladder that grants access to a hatch to the roof of the structure. 
+
+<gallery position="center" hideaddbutton="true" spacing="small">
+LSIA-GTAV-terminal4.jpg|Terminal 4 as seen from the main road.
+LSIA-GTAV-passengers.jpg|Passengers outside the terminal
+LSIA-GTAV-secondaryterminal.jpg|Exterior of the secondary terminal, with the staircase leading up to its small interior.
+LSIA-GTAV-terminalinterior.jpg|The interior of the secondary terminal.
+</gallery>
+
+[[SECTION:3:Tarmac, Runways and Helipads]]
+The airport has two vast tarmacs, the north covering most of the area near the terminals and the south covering large private hangars. Multiple aircraft spawn in both areas, such as the [[Jet]]s, [[Shamal]]s, a [[Velum]] and a [[Mammatus]]. [[Ripley]]s and airport buses can also be seen roaming around the tarmac and surrounding roads (See [[Los Santos International Airport (HD Universe)#Vehicles|vehicles]] for more information).
+
+There are three runways in the airport, Runway 3 in the northwest, facing the north and two larger, parallel ones, Runways 12-L in the north and 12-R in the far south, both facing west. Runway 3 is for small, private jets using the main terminals' tarmac, 12-L for large, commercial planes in the main terminals and 12-R for private hangars at the southern tarmac. In Story Mode, small jets, either a Shamal or [[Luxor]] land in Runway 3, parking in front of Terminal 2 and large commercial planes similar to a real-life Boeing 747 land and take off in 12-R. When landing, it parks in front of the large, easternmost hangar.
+
+There are also multiple helipads, three at the north beside the airport, one near the very end of Runway 12-R, and two beside Franklin's hangar. However, the player cannot store any helicopters and will despawn regularly after landing.
+
+Despite being arguably the most realistic airport in the series, the runways themselves appear to be quite small and aren't long enough for an international airport. They appear to be only 1 to 1.5 km. The tarmac is also too small to fit the [[Jet]], having its tail end usually sticking out. Another problem is that when a large aircraft lands in Runway 12-R, it parks on the tarmac in a way that blocks players in Story Mode from entering the end of the runway from their hangar and taking off. The vehicles can't taxi through some parts of the tarmac due to lack of space in the airport itself. Making the airport look as real as possible would require a much larger amount of space, probably being twice or three times the size. 
+
+<gallery position="center" hideaddbutton="true" spacing="small">
+LSIA-GTAV-tarmac1.jpg|Northern view, with aircraft from all four main airlines parked around the terminals.
+LSIA-GTAV-tarmac2.jpg|Eastern view over the tarmac.
+LSIA-GTAV-tarmac4.jpg|South view, with the private jet runway visible on the left.
+LSIA-GTAV-tarmac3.jpg|The exterior of the secondary terminal.
+LSIA-GTAV-tarmac5.jpg|The two main runways.
+</gallery>
+
+[[SECTION:3:Hangars]]
+There is a total of six hangars, most of them lined up together in the southern area of the airport, three of which can be entered by the player. The biggest hangar, located near one of the entrances, belongs to [[Devin Weston]] and includes a corridor with multiple stacked boxes that leads to a locker room. A [[Forklift (HD Universe)|forklift]] can be found in this same corridor. The hangar might also be used by FlyUS as the company's logo can be found on the back of it.
+
+The other two interactable hangars, in the southern area, can be purchased by Michael and Franklin for aircraft to be stored and, when purchased through the in-game internet, spawned there. Franklin's hangar is also featured in the multiplayer mission [[A Titan of a Job]] as the location where [[Merryweather]] is keeping a [[Titan]] and Michael's hangar is featured in [[The Los Santos Connection]], where a crew is storing cocaine and vehicles. Two [[Stretch]] limos, one white and one black, spawn in front of Michael's hangar.
+
+Directly east of the southern row of hangars, in the southeast corner of the airport, is a concrete pad that appears to be the planned location for another hangar. Construction-related vehicles will often spawn on the pad. 
+
+<gallery position="center" hideaddbutton="true" spacing="small">
+LSIA-GTAV-hangars1.jpg|Overview of the south hangars.
+LSIA-gtav-hangars2.jpg|Hangars with the FlyUS and Adios Air logo.
+LSIA-GTAV-devinhangar.jpg|Devin Weston's hangar.
+DevinHangar-InteriorMap-GTAV.png|Devin Weston's hangar. Main area (Left) and platforms level (Right).
+LSIA-GTAV-michaelhangar.jpg|Michael's hangar.
+LSIA-GTAV-franklinhangar.jpg|Franklin's hangar.
+</gallery>
+
+[[SECTION:3:Cargo Bay]]
+The cargo bay of the airport is located in the northwest area, left of Runway 3. It includes multiple {{WP|Unit load device|unit loading devices}} stacked up together and a small inaccessible storage building. A scrapped, heavily burnt front section of a Jet can be found in the area, being a training prop for firefighters as commonly found in airports, west of the [[Los Santos International Airport Fire Station|fire station]]. There is also a radar tower near the building.
+
+In ''GTA Online'', aircraft purchased from [[Elitás Travel]] and [[Warstock Cache & Carry]] spawn here if the player requests them while inside the area of Los Santos.
+
+<gallery position="center" hideaddbutton="true" spacing="small">
+LSIA-GTAV-cargo1.jpg|Overview of the cargo bay.
+LSIA-GTAV-cargo2.jpg|Stacked up unit loading devices.
+LSIA-GTAV-cargo3.jpg|Northeast view, with the burnt training prop visible.
+LSIA-GTAV-cargovestra.jpg|A [[Vestra]] spawned by calling Pegasus in Online.
+</gallery>
+
+[[SECTION:2:Roads and Streets]]
+*[[Autopia Parkway]]
+*[[Exceptionalists Way]]
+*[[Greenwich Parkway]]
+*[[New Empire Way]]
+
+[[SECTION:2:Businesses]]
+*[[Alpha Mail]]
+*[[Big House Storage Inc.]]
+*[[Bilgeco]]
+*[[Dineasoar]]
+*[[Escalera Rent-A-Car]]
+*[[Jetsam]]
+*[[Los Santos Customs]]
+*[[Opium Nights |Opium Nights Hotel]]
+*[[Poppy House|Poppy House Restaurant]]
+*[[Sightings Bar & Restaurant]]
+*[[Touchdown Car Rentals]]
+*[[Von Crastenburg Hotel]]
+*[[Xero|Xero Gas]]
+
+[[CATEGORIES]]
+Airports
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Restricted locations
+Unlockable locations
+Zones

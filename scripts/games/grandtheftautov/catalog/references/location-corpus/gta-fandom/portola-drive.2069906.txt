@@ -1,0 +1,53 @@
+[[INFOBOX]]
+{{Infobox structure
+|image      = 
+<gallery>
+PortolaDrive-GTAV-OverviewLookingNorth.png|Looking north
+PortolaDrive-GTAV-ShoppingOverviewLookingSouth.png|Looking south
+</gallery> 
+|games      = {{Games|V=y|O=y}}
+|start      = [[West Eclipse Boulevard]], [[Rockford Hills]]
+|end        = [[Dorset Drive]], Rockford Hills
+|map=<gallery>
+PortolaDrive-GTAV-Map.png|Map
+PortolaDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Portola Drive''' is a [[List of Street Names|street]] in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[De Santa Residence]] <small>(corners of [[West Eclipse Boulevard]] and [[Edwood Way]])</small>
+*[[Portola Drive Station]] <small>(corners of [[Boulevard Del Perro]] and [[South Boulevard Del Perro]])</small>
+*[[Rockford Hills Church]] <small>(corners of [[Caesars Place]] and Boulevard Del Perro)</small>
+*[[Rockford Hills Sign]] <small>(corners of [[Mad Wayne Thunder Drive]] and Boulevard Del Perro)</small>
+
+[[SECTION:2:Businesses]]
+*[[Caca]] <small>(through to [[Little Portola]])</small>
+*[[Café Redemption]] <small>(through to Little Portola)</small>
+*[[Croq-A-Hoop]] <small>(corner of South Boulevard Del Perro)</small>
+*[[Dalique]]
+*[[Farshtunken International]]
+*[[Gussét]] <small>(corner of [[Eastbourne Way]])</small>
+*[[Helga Kreppsohle]]
+*[[Homme Gina]] <small>(corner of Little Portola)</small>
+*[[Jonny Tung]] <small>(corner of [[Carcer Way]] through to Little Portola)</small>
+*[[Judith Mantovani]]
+*[[Maracas]] <small>(corner of South Boulevard Del Perro)</small>
+*[[Percii]]
+*[[Perseus]] <small>(corner of [[Dorset Drive]])</small>
+*[[Ponsonbys]] <small>(accessible interior)</small>
+*[[Sessanta Nove]] <small>(corner of Eastbourne Way)</small>
+*[[Swallow]] <small>(through to Little Portola)</small>
+*[[Ushero Bros]]
+*[[Val-de-Grâce]] <small>(corner of Eastbourne Way)</small>
+*[[TSLC]] <small>(corner of Dorset Drive)</small>
+*[[Winfrey Castiglione]] <small>(through to Little Portola)</small>
+*[[Wup et Dux]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

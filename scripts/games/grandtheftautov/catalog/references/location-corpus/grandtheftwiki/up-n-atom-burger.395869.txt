@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox Restaurant
+|Name= Up-n-Atom Burger
+|image= [[File:Up-n-AtomBurger-GTAV-trailer-firsttrailer.jpg|200px]]
+|comment_image= An Up-n-Atom Burger logo on a truck as depicted in the first GTA V trailer.
+|featured= [[Grand Theft Auto V]]
+|locations= [[Los Santos in GTA V Era|Los Santos]]
+|menu= Burgers
+|price=
+}}
+
+[[LEAD]]
+'''Up-n-Atom Burger''' is a fast-food restaurant chain in the [[HD Universe]] and appears in [[Los Santos in GTA V|Los Santos]] in [[Grand Theft Auto V]]. The first restaurant opened in [[1950]] in Los Santos. The company is a parody of California-based [[:wp:In-N-Out Burger|In-N-Out Burger]]. Their slogan is "''Once it pings, eat like kings''", implying their food is microwave-cooked. This is also a reference to the bells used in some fast-food restaurants to notify an order is ready. The restaurant can not be entered by the player. 
+
+<gallery width="auto" perrow="3" style="font-size:95%; padding:0; text-align:left" widths="180">
+File:Up-n-AtomBurger-GTAV-exterior-secondtrailer.png|An Up-n-Atom outlet from the second trailer.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in Los Santos in GTA V
+Food
+Restaurants

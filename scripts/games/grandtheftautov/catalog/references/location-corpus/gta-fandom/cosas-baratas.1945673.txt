@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|name        = Cosas Baratas
+|Name Change = DISCOUNT STORE
+|image       = CosasBaratas-GTAV.jpg
+|caption     = 
+|taglines    = 
+|games       = {{Games|V=y|O=y}}
+|location    = [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+|status      = active
+|accessible  = No
+}}
+
+[[LEAD]]
+'''Cosas Baratas''' (lit. ''Cheap Stuff'' in {{WP|Spanish language|Spanish}}) is a Hispanic discount store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

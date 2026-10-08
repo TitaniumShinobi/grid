@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|name      = Ace Liquor
+|image     = 
+<gallery>
+AceLiquor-GTAVe-FrontDay.png|Day
+AceLiquor-GTAVe-FrontNight.png|Night
+</gallery>
+|type      = liquorstore
+|games     = {{Games|V=y|O=y}}
+|locations = [[Algonquin Boulevard]], [[Sandy Shores]], [[Blaine County]]
+}}
+
+[[LEAD]]
+'''Ace Liquor''' (also known as '''Liquor Ace''') is a small, run-down liquor store that appears in {{V}} and {{O}}.
+
+[[SECTION:3:The Diamond Casino & Resort]]
+In [[2019]], the lab was used by a heist crew to plan a heist on [[The Diamond Casino & Resort]]. After [[Best Laid Plans|tracking down]] the heist crew members, the protagonist finds the heist planning room and kills the heist crew members.
+
+[[SECTION:4:The Diamond Casino & Resort]]
+*[[Casino Work]] {{nd}} [[Best Laid Plans]]
+
+[[CATEGORIES]]
+Liquor stores
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

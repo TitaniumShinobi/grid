@@ -1,0 +1,55 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = LasLagunasBlvd-GTAV.jpg
+|start = [[San Andreas Avenue]]
+|end = [[Baytree Canyon Road]]
+|games={{Games|V=y|O=y}}
+|map=<gallery>
+LasLagunasBoulevard-GTAV-Map.png|Map
+LasLagunasBoulevard-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Las Lagunas Boulevard''' is a two-way street in [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}, that passes through [[Pillbox Hill]], [[Burton]], [[Hawick]], [[West Vinewood]] and [[Downtown Vinewood]].
+
+[[SECTION:2:Businesses]]
+'''Burton:'''
+*[[Café Austère]]
+*[[Cluckin' Bell (HD Universe)|Cluckin' Bell]]
+*[[Croq-A-Hoop]]
+*Facials & Extras
+*Fads
+*[[Le Chien]]
+*[[Nail Bar & Spa]]
+*[[Ponsonbys]]
+*Tax Lawyers
+*[[Tophes]]
+*Twinkle Toes
+
+'''Downtown Vinewood'''
+*[[Up-n-Atom Burger]]
+
+'''Pillbox Hill'''
+*[[Arcadius Business Center]]
+*[[Daily Globe|Daily Globe International]]
+
+'''West Vinewood'''
+*[[Bishop's WTF?!]]
+*[[Haute]] (corner of Eclipse Boulevard)
+*[[Vinewood Garage]]
+
+[[SECTION:2:Places of Interest]]
+*[[2143 Las Lagunas Boulevard]] (Hawick)
+*[[Elgin House]] (West Vinewood)
+*[[Gentry Manor Hotel]] (West Vinewood, corner of Eclipse Boulevard)
+*[[924 Las Lagunas Boulevard|Harvey Molina's apartment]] (West Vinewood)
+*[[Rockford Plaza]] (Burton)
+*[[Vinewood Garage]] (West Vinewood)
+*[[Vinewood Museum]] (West Vinewood)
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

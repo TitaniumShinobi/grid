@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Liquor Jr. Market
+|sign        = LiquorJrMarket-GTAV-Logo.png
+|image       = LiquorJrMarket-GTAOe.png
+|caption     = Overview of the building.
+|type        = Liquor store
+|games       = {{Games|V=y|O=y}}
+|locations   = [[U.S. Route 68]], [[Harmony]], [[Los Santos County]]
+}}
+
+[[LEAD]]
+'''Liquor Jr. Market''' is a liquor store appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Liquor stores
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County

@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Bristols
+|image     = BristolsFuelStorage-GTAV-Logo.png
+|type      = storage
+|status    = active
+|games     = {{Games|V=y|O=y}}
+|caption   = '''Bristols''' logo.
+|locations = [[Port of Los Santos]], [[Elysian Island]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Bristols''', also known as '''Bristols Fuel Storage''' and '''Bristols Coke Storage''', is a storage company in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Petroleum companies

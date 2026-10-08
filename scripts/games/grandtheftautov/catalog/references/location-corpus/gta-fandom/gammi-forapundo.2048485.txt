@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = Gammi Forapundo
+|style         = darklogo
+|image_label   = 
+|image         = GammiForapundo-GTAV-Logo.png
+|caption       = The '''Gammi Forapundo''' logo.
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpassault}}}}
+|mentioned     = {{Games|V=y}}
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = 
+|taglines      = 
+|status        = 
+|phone         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = [[File:Lifeinvader-GTAV-Gammi_Forapundo.png|40px|right]] [[Lifeinvader/Gammi Forapundo|Gammi Forapundo]]
+|snapmatic     = 
+|opentimes     = 
+|accessible    = 
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''Gammi Forapundo''' is an [[Italy|Italian]] fashion brand mentioned in {{V}} and appearing in {{O}} as part of the [[GTA Online: Southern San Andreas Super Sport Series|Southern San Andreas Super Sport Series]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Southern San Andreas Super Sport Series
+Businesses in GTA V
+Fashion brands

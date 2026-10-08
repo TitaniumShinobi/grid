@@ -1,0 +1,121 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = district
+|name           = Vespucci
+|sign           = 
+|image          = Vespucci-GTAV-Montage.png
+|caption        = Clockwise from top: [[Magellan Avenue]], [[Vespucci Canals]], [[Vespucci Beach]], [[Vespucci Beach Sidewalk]], [[Puerto Del Sol]].
+|aka            = 
+|games          = {{games|V=y|O=y}}
+|location       = [[Los Santos (HD Universe)|Los Santos]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|seal           = 
+|seal2          = 
+|flag           = 
+|mayor          = 
+|president      = 
+|established    = 
+|country        = 
+|state          = 
+|county         = 
+|capital        = 
+|pop            = 
+|motto          = 
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Vespucci.ogg
+|unlockedby     = 
+|unlockedafter  = 
+|map            = <gallery>
+Vespucci-IngameGPS-GTAV-Map.png|Vespucci
+Vespucci-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS). The neighborhoods of Vespucci: <font color=red>Vespucci Beach</font> and <font color=green>Vespucci Canals</font>. <font color=grey>Puerto Del Sol</font> does not have in-game map boundaries, and it is mistakenly referred to be part of [[La Puerta]]. The <font color=blue>small unnamed area</font><sup>{{H:title|Simply referred to as Vespucci in the in-game GPS|(?)}}</sup> is part of Vespucci Beach.
+}}
+
+[[LEAD]]
+'''Vespucci''' is a district appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in western [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[SECTION:2:Roads and Streets]]
+*[[Aguja Street]]
+*[[Conquistador Street]]
+*[[Cortes Street]]
+*[[Goma Street]]
+*[[Imagination Court]]
+*[[Invention Court]]
+*[[Magellan Avenue]]
+*[[Melanoma Street]]
+*[[Palomino Avenue]]
+*[[San Andreas Avenue]]
+*[[South Rockford Drive]]
+*[[Vespucci Boulevard]]
+*[[Vitus Street]]
+
+[[SECTION:2:Places of Interest]]
+*[[Muscle Sands Gym]] (Muscle Beach)
+*[[Puerto Del Sol Marina]]
+*Rub Street Apartments (Marquesas Apartments)
+*Tug Street Apartments (The Dolphin Marina)
+*Vespucci Beach Skatepark (Venice Beach Skate Park)
+*[[Vespucci Helipad]]
+*[[Vespucci Police Station]] (Venice Beach Police Station)
+*Vespucci Beach Playground (Venice Beach Playground)
+*Vespucci Beach Public Restrooms (Venice Beach Restrooms)
+*Vespucci Beach Pyramids (Venice Beach Pyramids)
+*Vespucci Beach Lifeguard Tower (Venice Beach Lifeguard Tower)
+*[[Vespucci Beach Recreation Center]] (Venice Beach Recreation Center)
+*[[Vespucci Beach Sidewalk Market]] (Venice Beach Sidewalk Market)
+*Vespucci Beach Tennis Courts (Venice Beach Tennis Courts)
+*[[Vista Del Mar Apartments]] (Bar Harbor Apartments)
+
+[[SECTION:2:Businesses]]
+*[[Al Dente's]] (Danny's Deli)
+*AM (Forever Venice)
+*[[Beach Combover Barber]]
+*[[Beachwalk Bistro]] (Sidewalk Cafe)
+*[[Binco (HD Universe)|Binco]]
+*B.L.T-shirts (Ocean View Casual Shop)
+*[[Burger Shot (HD Universe)|Burger Shot]]
+*[[Coconut Cafe]] (Benice)
+*Coral Reefers Smokeshop
+*Doctor Kush (Townhouse Cocktails)
+*Farmer Giles (Windward Farms)
+*[[Fleeca|Fleeca Bank]]
+*[[Heroin Chic]]
+*Icemaiden (Bondi BBQ)
+*Italia Nails
+*KOI Retreat and Spa
+*[[La Spada]] (Killer Shrimp & Killer Cafe)
+*[[Liquor Hole]]
+*[[Lombank]]
+*Major Organics
+*Marlins Cafe (Cafe Collage)
+*[[Nut Buster]]
+*[[Paper Clips]]
+*Paper Scissors Rock Hair Salon
+*Pink Palms Beach Shop (Ocean Blue Shop)
+*[[The Pit]] (Tattoo Asylum)
+*Potheads Seafood Restaurant (Canal Club Sushi Bar)
+*[[Puerto Del Sol Yacht Club]] (Marina City Club)
+*Puerto Del Sol Yacht Club House (California Yacht Club)
+*The Rockpool (The Lightning Bolt)
+*Shark Bites (Big Daddy's Pizza)
+*Shorefeet
+*[[Taco Libre]]
+*The Venetian Vespucci Beach (Shutters On The Beach)
+*Vespucci Blooms
+*Vespucci Hotel Rooms (Venice Beach Suites & Hotel)
+*Vespucci Ink (Ocean Front Tattoo)
+*[[Vespucci Mall]]
+*Vespucci Market (Venice Beach Mart)
+*[[Vespucci Movie Masks]] (Venice Beach Arts)
+*[[Vespucci Sports]]
+*Vespucci Tattoos (House of Ink)
+*Vespucci Toys (Toyota Tent Event)
+*[[The Viceroy Hotels & Resorts]] (The Ritz Carlton)
+*[[Wigwam Burger]]
+
+[[CATEGORIES]]
+Districts
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Zones

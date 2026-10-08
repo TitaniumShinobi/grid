@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|type           = mountainrange
+|name           = San Chianski Mountain Range
+|sign           = 
+|image          = SanChianskiMountainRange-GTAV-Montage.png
+|caption        = Clockwise from top: aerial view, [[Humane Labs and Research]], [[RON Alternates Wind Farm]], [[Palmer-Taylor Power Station]], [[Davis Quartz]].
+|aka            = 
+|games          = {{games|V=y|O=y}}
+|location       = [[Blaine County]] and [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|seal           = 
+|seal2          = 
+|flag           = 
+|mayor          = 
+|president      = 
+|established    = 
+|country        = 
+|state          = 
+|county         = 
+|capital        = 
+|pop            = 
+|motto          = 
+|pscanner       = PoliceScanner-GTAV-Neighborhood-SanChianskiMountainRange.ogg
+|unlockedby     = 
+|unlockedafter  = 
+|map            = <gallery>
+SanChianskiMountainRange-IngameGPS-GTAV-Map.png|San Chianski Mountain Range
+SanChianskiMountainRange-IngameGPS-GTAV-BlaineCountyMap.jpg|Blaine County
+</gallery>
+|map_caption    = Location on the map (in-game GPS). Locations in San Chianski Mountain Range: <font color="green">Humane Labs and Research</font>, <font color="orange">Davis Quartz</font>, <font color="yellow">RON Alternates Wind Farm</font> and <font color="blue">Palmer-Taylor Power Station</font>.
+}}
+
+[[LEAD]]
+The '''San Chianski Mountain Range''' is a mountain range appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located on the eastern coast of [[State of San Andreas (HD Universe)|San Andreas]]. It is bordered by the [[Grand Senora Desert]] to the west and the [[Pacific Ocean]] to the east.
+
+[[CATEGORIES]]
+Districts
+Locations in GTA Online in Blaine County
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Blaine County
+Locations in GTA V in Los Santos County
+Mountains
+Zones

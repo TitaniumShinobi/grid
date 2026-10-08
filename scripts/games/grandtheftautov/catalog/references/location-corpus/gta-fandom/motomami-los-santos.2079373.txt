@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = MOTOMAMI Los Santos
+|logo         = MOTOMAMILosSantos-GTAOe-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{Games|O={{EEEV}} {{DLC|mpsecurity}}}}
+|mentioned    = 
+|locations    = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = 
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:Latin radio stations|Latin]]
+|established  = 15 December [[2021]]
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 
+|host         = 
+*[[ROSALÍA]]
+*[[Arca]]
+|product      = 
+|radio_tracks = 33
+|radio_length = 
+}}
+
+[[LEAD]]
+'''MOTOMAMI Los Santos''' is a [[Radio Stations in GTA Online|radio station]] featured in {{O}} as part of [[GTA Online: The Contract|The Contract]] update.{{Ref|name=update|type=rockstarweb|ref={{URL|https://www.rockstargames.com/newswire/article/51ko839o8aaa77/|Rockstar Games Newswire}}}}
+
+[[CATEGORIES]]
+Dynamic mix radio stations
+Latin radio stations
+Media in GTA Online: The Contract

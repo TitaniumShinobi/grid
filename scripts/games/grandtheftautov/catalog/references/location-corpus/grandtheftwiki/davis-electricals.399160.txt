@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|name = Davis Electricals
+|type = Electronics store
+|owner = 
+|location = [[Carson Ave]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Davis Electricals''' is an electronics store, selling new items and buying second hand electronics for sale later, located on [[Carson Ave]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company phone number is ''[[Phone Numbers|384-555-0144]]'' with the player receiving a "We're not here. Call back later!" voice mail message.
+
+
+
+[[Type::Business| ]]
+[[Location::Carson Ave| ]]
+[[Location::Rancho| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

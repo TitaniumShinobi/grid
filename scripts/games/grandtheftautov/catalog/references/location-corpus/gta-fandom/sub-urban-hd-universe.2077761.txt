@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = Suburban
+|image_label   = V
+|image         = Stock-SUB.png
+|caption       = '''Suburban''' logo in {{VO}}.
+|image_label2  = IV
+|image2        = SubUrban-GTAIV-DesignerSlaveLogo.png
+|caption2      = '''Sub Urban''' logo in {{IV}}.
+|aka           = Sub Urban <small>(formerly)</small>
+|type          = clothingstore
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations     = [[State of San Andreas (HD Universe)|State of San Andreas]]
+|bawsaq         = {{BAWSAQ/Slider}} '''SUB'''
+|status        = active
+}}
+
+[[LEAD]]
+'''Suburban''', formerly known as '''Sub Urban''', ([[BAWSAQ]]: '''SUB''') is a clothing store chain and fashion brand mentioned in {{IV}}, {{EFLC}}, {{CW}}, and appearing in {{V}} and {{O}}.
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+Suburban is first mentioned on the [[Designerslave.com]] [[Websites in GTA IV|website]] as "Sub Urban", the owner of the [[White Widow]] fashion brand. It is sold in the [[Go Out]] store on [[East Island City]], retaining the logo of its previous [[Sub Urban (3D Universe)|3D Universe counterpart]].
+
+An alternate logo also exists in ''Grand Theft Auto IV'', which features the name in block letters, although "Sub" and "Urban" remained separate. This logo would serve as a prototype for the logo that would debut in ''Grand Theft Auto V''.
+
+[[SECTION:3:Locations]]
+{{H4|game=VO}}
+*The buildings housing the [[Alta]] and [[Chumash]] branches are modeled after the former Melrose Spa, an infamous gay bathhouse that operated at {{URL|https://maps.app.goo.gl/JMNVv6A3wniF3EwB6|7269 Melrose Avenue}} in the {{WP|Melrose Avenue#Melrose District|Melrose District}} of {{WP|Los Angeles}}, {{WP|California}}, until its closure in 2017; it has since been completely replaced by a differently designed structure.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="250px">
+Suburban-GTAVee-DelPerro.jpg|'''Suburban''' at [[Prosperity Street Promenade]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]].
+Suburban-GTAVee-Alta.jpg|'''Suburban''' on [[Hawick Avenue]], [[Alta]], Los Santos.
+HarmonyPlaza-GTAV-Suburban.png|'''Suburban''' at [[Harmony Plaza]] on [[Route 68]], [[Harmony]], [[Blaine County]].
+Suburban-GTAVee-Chumash.jpg|'''Suburban''' at [[Chumash Plaza]] on [[Route 1]], [[Chumash]], [[Los Santos County]].
+Suburban-GTAVee-LittleSeoul.jpg|'''Suburban''' at [[Korean Plaza]] on [[Calais Avenue]], [[Little Seoul]], Los Santos. (inaccessible)
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+<gallery position="center" spacing="small" widths="250px">
+SubUrban-GTAIV-logo.png|Alternative '''Sub Urban''' logo in ''Grand Theft Auto IV''.
+DesignerSlaveWebsite-GTAIV-SubUrban.jpg|Fake '''Sub Urban''' on [[Designer Slave]] website in ''Grand Theft Auto IV'' (Street Slaves section).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains

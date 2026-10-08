@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = dealership
+|name          = Southern San Andreas Super Autos
+|sign          = SSASA-GTAO-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[State of San Andreas (HD Universe)|Southern San Andreas]]
+|business_type = Online vehicle retailer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = Sammy Keller
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = "''Meeting your vehicular needs.''"
+|status        = Active
+|website       = southernsanandreassuperautos.com
+}}
+
+[[LEAD]]
+'''Southern San Andreas Super Autos''' is a vehicles sales business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The player can purchase vehicles from them via their website '''southernsanandreassuperautos.com'''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses with websites
+Vehicle dealerships

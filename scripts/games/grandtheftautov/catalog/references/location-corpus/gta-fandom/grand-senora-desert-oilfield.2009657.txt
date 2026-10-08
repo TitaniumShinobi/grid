@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|name          = Grand Senora Desert Oilfield
+|type          = oilfield
+|image         = GrandSenoraDesertOilfield-GTAVe.png
+|caption       = Overview of the oil field.
+|games         = {{Games|V=y|O=y}}
+|location      = [[Grand Senora Desert]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = GrandSenoraDesertOilfield-GTAV-Map.png
+|map_caption   = Location on the map in {{V}}.
+}}
+
+[[LEAD]]
+The '''Grand Senora Desert Oilfield''' is an industrial oil field appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Bunkers|Grand Senora Oilfields Bunker]]
+*[[Bunkers|Grand Senora Desert Bunker]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = furniture
+|name           = Aladdin's Cave
+|image          = AladdinsCave-GTAVee.png
+|games          = {{Games|V=y|O=y}}
+|location       = [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = No
+|status         = defunct
+|file_name      = <code>hw1_11_build01.ydr</code>
+}}
+
+[[LEAD]]
+'''Aladdin's Cave''' is a furniture store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Furniture stores

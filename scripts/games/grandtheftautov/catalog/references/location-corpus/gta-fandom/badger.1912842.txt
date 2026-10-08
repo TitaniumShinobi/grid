@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = phone
+|name          = Badger
+|sign          = Badger-logo.png
+|image         = 
+|caption       = 
+|aka           = 
+*Badger Communications
+*Badger Network Services <small>(email, ''GTA Chinatown Wars'')</small>
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Badger Building]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+[[#Products|Products]]
+|taglines      = "''Wider coverage than Tinkle''"
+|bawsaq        = {{BAWSAQ/Slider}} '''BDG'''
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Badger''' is a phone and telecommunications company appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" bordercolor="#c00000" spacing="small" widths="270px">
+BadgerBuilding-GTA-V.jpg|[[Badger Building]], [[Hawick]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Communications
+Phone companies

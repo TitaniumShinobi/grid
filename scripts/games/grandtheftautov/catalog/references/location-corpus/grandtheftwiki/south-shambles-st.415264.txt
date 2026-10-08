@@ -1,0 +1,24 @@
+[[LEAD]]
+'''South Shambles St''' is a street, running north to south, from [[El Burro Heights]] to [[Cypress Flats]] in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to [[El Rancho Blvd]] and [[Hanger Way]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Jet Abrasives, Inc.]]
+| [[Cypress Flats]]/[[El Burro Heights]]
+| [[El Rancho Blvd]]
+| Abrasives supplier
+|-
+| [[Wholesale Office Furniture]]
+| [[El Burro Heights]]
+|
+| Furniture
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

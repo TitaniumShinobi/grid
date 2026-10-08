@@ -1,0 +1,54 @@
+[[INFOBOX]]
+{{Infobox structure
+|name        = Dorset Drive
+|image       =
+<gallery>
+DorsetDrive-GTAVee-East.jpg|East
+DorsetDrive-GTAVee-West.jpg|West
+</gallery>
+|games       = {{Games|V=y|O=y}}
+|start       = [[West Eclipse Boulevard]], [[Richman (HD Universe)|Richman]]
+|end         = [[Las Lagunas Boulevard]], [[Burton]]
+|map         =
+<gallery>
+DorsetDrive-GTAV-Map.png|Map
+DorsetDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Dorset Drive''' is a street located in [[Richman (HD Universe)|Richman]], [[Rockford Hills]] and [[Burton]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Dorset Drive Office Building]]
+*[[Lifeinvader Office]] {{Small|(corners of Boulevard Del Perro and South Boulevard Del Perro)}}
+*[[Los Santos Golf Club]] {{Small|(main entrance)}}
+*[[Mount Zonah Medical Center]] {{Small|(corners of [[Rockford Drive]] and Dorset Place)}}
+*[[Portola Trinity Medical Center]] {{Small|(corner of Marathon Avenue)}}
+*[[Rockford Dorset Hotel]] {{Small|(corner of Palomino Avenue)}}
+*[[Rockford Plaza]] {{Small|(corner of San Vitus Boulevard)}}
+*[[Von Crastenburg Hotel]] {{Small|(corner of Boulevard Del Perro)}}
+*[[Weazel Dorset]]
+
+[[SECTION:2:Businesses]]
+*[[AKAN Records]] {{Small|(corner of South Boulevard Del Perro)}}
+*[[Augury Insurance]]
+*[[Brawls]] {{Small|(corner of Heritage Way)}}
+*[[Chébs Eaterie]]
+*[[Cougari]] {{Small|(corner of Mad Wayne Thunder Drive)}}
+*[[International Online Unlimited]] {{Small|(corner of Heritage Way)}}
+*[[Jonny Tung]] {{Small|(corner of South Boulevard Del Perro)}}
+*[[KnoWay]] {{Small|(''GTA Online'')}}
+*[[Leopolds]] {{Small|(corner of Palomino Avenue)}}
+*[[Mors Mutual Insurance]] {{Small|(corner of Mad Wayne Thunder Drive)}}
+*[[Perseus]] {{Small|(corner of Portola Drive)}}
+*[[Pill-Pharm]]
+*[[Tim Vapid]] {{Small|(corner of Rockford Drive)}}
+*[[TSLC]] {{Small|(corner of Portola Drive)}}
+*[[Viendemorte]] {{Small|(corner of San Vitus Boulevard)}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

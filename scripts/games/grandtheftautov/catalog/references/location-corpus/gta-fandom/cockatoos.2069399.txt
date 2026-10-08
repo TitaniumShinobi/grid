@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|name       = Cockatoos
+|image      =
+<gallery>
+Cockatoos-GTAV-Logo.png|Logo
+Cockatoos-GTAVee.jpg|Building
+</gallery>
+|type       = nightclub
+|games      = {{Games|V=y|O=y}}
+|location   = [[Hawick Avenue]] and [[Eastbourne Way]], [[Burton]]
+|map        = Cockatoos-GTAV-Map.png
+|accessible = No
+}}
+
+[[LEAD]]
+'''Cockatoos''' is a [[nightclub]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Nightclubs

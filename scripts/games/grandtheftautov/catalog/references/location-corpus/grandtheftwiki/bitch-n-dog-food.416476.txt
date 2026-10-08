@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{infobox business|
+| image = Bitch'n'DogFood-GTAIII-factory.jpg
+| size = 350x350px
+| game_1 = GTA III
+| game_2 = GTA Vice City
+| game_3 = GTA San Andreas
+| game_4 = GTA Liberty City Stories
+| game_5 = GTA Vice City Stories
+| game_6 = GTA V
+| name = Bitch'n' Dog Food
+| type = Pet food
+| owner = [[Marty Chonks]]<br />[[Donald Love]] and [[Love Media]]
+| location = [[Trenton]], [[Portland]], [[Liberty City in GTA III Era|Liberty City]] <br /> [[Raven Abattoir]], [[Los Santos in GTA V|Los Santos]], [[San Andreas in GTA V|San Andreas]] 
+| affiliation = 
+| missions = [[The Crook]]<br />[[The Thieves]]<br />[[The Wife]]<br />[[Her Lover]] <br /> [[Fresh Meat]] <small>(product only)</small>
+| employee = 
+}}
+
+[[LEAD]]
+'''Bitch 'n' Dog Food''' is a dog food producing company first introduced in [[Grand Theft Auto III]] with products still available in the [[HD Universe]] as seen in [[Grand Theft Auto V]].
+
+[[CATEGORIES]]
+Businesses in 3D Universe
+Businesses in GTA III
+Businesses in GTA Liberty City Stories
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA Vice City
+Businesses in GTA Vice City Stories
+Businesses in HD Universe
+Businesses in Liberty City in 3D Universe
+Criminal Businesses
+Factories
+In-Game Products

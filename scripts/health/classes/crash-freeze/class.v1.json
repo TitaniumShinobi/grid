@@ -1,12 +1,14 @@
 {
   "schemaVersion": 1,
   "classId": "grid.class.crash-freeze",
-  "recipeVersion": "1.1.0",
+  "recipeVersion": "1.2.0",
   "displayName": "Crash & Freeze",
   "iconId": "grid.icon.crash",
   "coverage": "Registered",
   "supportedGames": [
-    "skyrimspecialedition"
+    "skyrimspecialedition",
+    "grandtheftautov-enhanced",
+    "grandtheftautov-legacy"
   ],
   "selectionPolicy": {
     "mods": {
@@ -26,9 +28,17 @@
   },
   "pipelines": {
     "diagnose": {
-      "rootCapabilityIds": [
-        "grid.game.skyrimspecialedition.baseline.collect"
-      ]
+      "gameRootCapabilityIds": {
+        "skyrimspecialedition": [
+          "grid.game.skyrimspecialedition.baseline.collect"
+        ],
+        "grandtheftautov-enhanced": [
+          "grid.game.grandtheftautov.crash-investigation.collect"
+        ],
+        "grandtheftautov-legacy": [
+          "grid.game.grandtheftautov.crash-investigation.collect"
+        ]
+      }
     },
     "propose": null,
     "execute": null,

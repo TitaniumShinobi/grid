@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox vehicle
+| name = Rental Shuttle Bus
+| front_image = RentalShuttleBus-GTAV-front.jpg
+| image_size = 300
+| caption = A Rental Shuttle Bus in [[Grand Theft Auto V|GTA V]].
+| rear_image = 
+| vehicle_type = Civilian bus
+| body_style = 
+| capacity = 10 (driver and nine passengers)
+| manufacturer = [[Brute]]
+| game_1 = GTA V
+}}
+
+[[LEAD]]
+The '''[[Brute]] Rental Shuttle Bus''' is an [[Los Santos International Airport in GTA V|airport]] shuttle bus in [[Grand Theft Auto V]].
+
+{{Navboxes
+|title= Navigation
+|list1=
+{{vehicles|state=collapsed}}
+{{gtav vehicles|state=collapsed}}
+}}
+
+[[CATEGORIES]]
+Buses
+Vehicles
+Vehicles in GTA V

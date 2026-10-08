@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|type = Fashion retailer
+|name = Tatas on Portola
+|altnames =
+|taglines = 
+|reference = 
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|condition = Active 
+|products = 
+|bawsaq = 
+|image = TatasOnPortola-GTAV-Logo-Texture.png
+|darklogo = y
+|caption = The logo
+|image_size = 300
+|games = {{Games|V=y|O=y}}
+|map = 
+}}
+
+[[LEAD]]
+'''{{PAGENAME}}''' is a high-end fashion store appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Location]]
+Contrary to their name, their store is not located on Portola Drive.
+
+<gallery position="center" spacing="small" widths="270px">
+TatasOnPortola-GTAV-DaylightFront.png|[[Dorset Drive]] ([[:File:TatasOnPortola-GTAV-NightFront.png|night view]]).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

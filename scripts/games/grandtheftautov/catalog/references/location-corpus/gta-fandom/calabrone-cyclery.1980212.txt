@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = BICYCLE SHOP
+|type           = 
+|name           = Calabrone Cyclery
+|sign           = 
+|image          = CLS-GTAV-Store.png
+|caption        = View of the exterior from Bay City Avenue.
+|aka            = Calabrone Los Santos
+|games          = {{games|V=y|O=y}}
+|location       = [[Bay City Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+|products       = 
+|taglines       = "''Everything for track and road cycling''"
+|status         = 
+|structure_type = 
+|architecture   = 
+|accessible     = No
+|file_name      = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Calabrone Cyclery''' is a bicycle shop that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Vehicle dealerships

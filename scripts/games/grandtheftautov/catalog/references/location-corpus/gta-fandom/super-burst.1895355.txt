@@ -1,0 +1,13 @@
+[[INFOBOX]]
+{{Infobox business
+|image = SuperBurst-GTAO-Logo.png
+|type = [[Fireworks]] manufacturing company.
+|games = ''[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Super Burst''' is a [[Fireworks]] manufacturing company featured in ''[[Grand Theft Auto Online]].''
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Explosives manufacturers

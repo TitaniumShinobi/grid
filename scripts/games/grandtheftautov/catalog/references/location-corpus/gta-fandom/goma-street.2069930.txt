@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=GomaSt-GTAV-FloydsApartment.jpg
+|caption=Goma Street, as seen from the south, and [[Floyd's Apartment]] on the right.
+|games={{Games|V=y|O=y}}
+|start=[[Vespucci Beach Sidewalk]]
+|end=[[Palomino Avenue]]
+|map=<gallery>
+GomaStreet-GTAV-Map.png|Map
+GomaStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Goma Street''' is a [[List of Street Names|street]] in [[La Puerta]], [[Vespucci Canals]] and [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Floyd's Apartment]]
+
+[[SECTION:2:Businesses]]
+'''Vespucci Beach:'''
+*J's T-Shirts
+*Muscle Peach Juice Bar and Restaurant
+*Tattoo Body Art and Piercing
+*[[The Sundae Post]]
+
+'''La Puerta:'''
+*[[La Spada]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

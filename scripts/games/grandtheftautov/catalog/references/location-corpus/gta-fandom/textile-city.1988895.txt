@@ -1,0 +1,63 @@
+[[INFOBOX]]
+{{Infobox location
+|name  = Textile City
+|image = TextileCity-GTAV-Mashup.png
+|caption = 
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|location = [[Downtown Los Santos (HD Universe)|Downtown]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-TextileCity.ogg
+|map           = <gallery>
+TextileCity-IngameGPS-GTAV-Map.png|Textile City
+TextileCity-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Textile City''' is a small commerce neighborhood in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Downtown Los Santos (HD Universe)|Downtown Los Santos]]. It borders [[Alta]] to the north, [[Mission Row]] to the south, [[Pillbox Hill]] to the west and [[La Mesa]] to the east.
+
+[[SECTION:2:Roads and Streets]]
+*[[Integrity Way]]
+*[[Little Bighorn Avenue]]
+*[[San Andreas Avenue]]
+*[[Sinner Street]]
+*[[Sinners Passage]]
+*[[Strawberry Ave]]nue
+
+[[SECTION:2:Places of Interest]]
+*[[Dashound Bus Center]]
+*[[Mirror Park Rail Yard]]
+*[[Simmet Alley]]
+*[[Ten Cent Theater]]
+*[[San Andreas Avenue Bridge]]
+
+[[SECTION:2:Businesses]]
+*The Ace Hole
+*[[Alesandro Hotel]]
+*[[The Bean Machine]]
+*[[Binco (HD Universe)|Binco]]
+*[[Broker (brand)|Broker]]
+*[[Digital Den]]
+*[[Elkridge Hotel]]
+*Finger Rings Jewelers
+*Food Market
+*Foxy Phones
+*[[Foxy's Theater]]
+*Gem's Jewelry
+*[[Gyro Day Hot Food]]
+*[[Krapea]]
+*[[Los Santos Office Supply Co.]]
+*Mama's Grocery
+*[[Ranch (HD Universe)|Ranch]]
+*[[Robert Dazzler International Jewelry Exchange]]
+*Santos Farmacia
+*Vinewood Records
+*Wall Fabric Fashion
+*Wholesale Mart
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

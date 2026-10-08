@@ -1,0 +1,202 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|Name Change = AGENCY
+|name = Agency
+|image = Agencies-GTAOe.gif
+|caption = 
+|style = {{HUDIcons|game=O|agency|animated=y}} Agency
+|occupants = [[Franklin Clinton]]<br>[[GTA Online Protagonist|''GTA Online'' Protagonist]]<br>[[Imani]]<br>Agency Receptionists<br>[[Agency Security Guard]]<br>[[Chop]]
+|price = [[Money|$]]2,010,000 - $2,830,000
+|game = gtaofreemode
+}}
+
+[[LEAD]]
+A '''Celebrity Solution Agency''' (or simply '''Agency''') is a purchasable property in ''[[Grand Theft Auto Online]]'' added as part of [[GTA Online: The Contract|The Contract]] update.
+
+[[SECTION:4:Office Level]]
+The stairs lead to the upper area of the agency office, where most of the business features are located. Directly in front of the stairs is Franklin's office, with he and Chop sometimes seen here (if the dog is sitting up, the player can pet Chop for an RP award bonus and one-time achievement). Next to it, there is a meeting room, similar to the one from the [[Offices]], except with a TV that can be used. Near this area there is the player's office and a [[computer]] can be found on the desk to access the [[F. Clinton and Partner]] network, where [[Security Contracts]] and the [[The Contract: Dr. Dre|VIP Contract]] can be started. Past the player's office there is a set of stairs that lead to the second floor (11th floor in the elevators). A [[Telescope]] is available to look out the window; to the left of the telescope the player can lean on the rail looking down at the level below.
+
+[[SECTION:3:Garage Levels]]
+The garage is a three-level basement area where the player can store 20 [[Personal Vehicles]]. A stairway at one end allows access to each level. Elevators are available on each level to leave the building or access the Agency office space. If the workshop is owned, players can access it by entering any of their parked vehicles.
+
+[[SECTION:4:-1]]
+The first storage area has 5 spaces. 4 of the parking spaces on this level are reserved. The first space is marked "F. Clinton" and is usually occupied by Franklin's [[Buffalo STX]] or [[Bagger]]. The player cannot access Franklin's vehicles. Next to this is a "Partner" space reserved for the player, then a "Company Car" space for the agency [[Jubilee]], which will be parked and available for use (though it cannot be modified in the workshop). The final two spaces are marked "Visitor", with the first reserved for mission vehicles, such as [[Ben Brooks]]' [[Ben Brooks' Lawyer|lawyer]]'s [[Super Diamond]], and the second occupied by [[Dr. Dre]]'s dark green [[Champion]] as [[The Contract: Dr. Dre|his contract missions]] are progressed.
+
+[[SECTION:5:Workshop]]
+The topmost floor also holds the optional [[Weaponized Vehicle Workshop|Vehicle Workshop]], staffed by the [[Agency Mechanic]], with a laptop with access to the [[Imani Tech]] vehicle list.
+
+[[SECTION:4:-2]]
+The middle floor is dedicated to 10 player vehicles and has a vehicle management pad to switch vehicles around between spaces on all three of the floors.
+
+[[SECTION:4:-3]]
+The lower floor is a storage area for another 9 of the player's vehicles, with a reserved "Staff" space where [[Imani]]'s [[Reever]] may be found parked. Lamar's [[Emperor (HD Universe)|Emperor]] can also sometimes be found there instead of the Reever.
+
+[[SECTION:3:Locations]]
+<div class="stretch-img">[[File:Dynasty8Executive-GTAOe-AllAgencies.png]]</div>
+All Agencies on [[Dynasty 8 Executive]].
+{| class="wikitable"
+!Agency
+!Image
+!Location
+!Price
+!In-game Description
+|-
+|[[Little Seoul]]
+|[[File:Agency-GTAOe-LittleSeoul.png|220px|center]]
+|[[Little Seoul Tower]]<br/>Corner [[San Andreas Avenue]] and [[Palomino Avenue]].
+|$2,010,000
+|"''This grade-A office comes with the delightful addition of Little Seoul ambience, a soothing mix of nightlife, gang crime, and the howling curbside breakdowns of lonely businessmen.''"
+|-
+|[[Vespucci Canals]]
+|[[File:Agency-GTAOe-VespucciCanals.png|220px|center]]
+|[[Celltowa Building]]<br/>Corner [[South Rockford Drive]] and [[San Andreas Avenue]].
+|$2,145,000
+|"''Want to add some European glamor to your agency? It's never been easier with these two simple steps: 1. Pick a spot in Vespucci Canals. 2. Start day-drinking. Eccolo!''"
+|-
+|[[Rockford Hills]]
+|[[File:Agency-GTAOe-RockfordHills.png|220px|center]]
+|Unnamed building<br/>Corner [[Marathon Avenue]] and [[Movie Star Way]].
+|$2,415,000
+|"''For many, the bad part about Rockford Hills is its population of wealthy celebrities endlessly complaining about their problems. For you, the good part about Rockford Hills is the population of wealthy celebrities endlessly complaining about their problems.''"
+|-
+|[[Hawick]]
+|[[File:Agency-GTAOe-Hawick.png|220px|center]]
+|[[Galileo House]]<br/>Corner [[Spanish Avenue]] and [[Meteor Street]].
+|$2,830,000
+|"''This luxurious office space in Galileo House offers splendid views of shameless commercialism at its finest. You know you've made it when you're side by side with Queefstat.''"
+|}
+
+[[SECTION:3:Interiors]]
+{| class="wikitable"
+!Option
+!Description
+!Image
+!Price
+|-
+|Art
+|''Pick from three distinctive collections of paintings, prints and sculptures all guaranteed to leave you contemplating, what is art and where's the line?''
+|{{Gallery
+|Agency-GTAOe-Power&MoneyArt.png|Power & Money $195,000*
+|Agency-GTAOe-Pop&HypeArt.png|Pop & Hype $265,000
+|Agency-GTAOe-Loyalty&RespectArt.png|Loyalty & Respect $340,000
+}}
+|3 different options:
+$195,000 - $340,000
+|-
+|Wallpaper
+|''Get ready to create the illusion of unique style and exceptional taste with a catalog of wallpapers that scream We Have So Much Money We Will Plaster It To The Walls.''
+|{{Gallery
+|Agency-GTAOe-FloralWallpaper.png|Floral $187,500*
+|Agency-GTAOe-MarbleWallpaper.png|Marble $208,500
+|Agency-GTAOe-GeometricWallpaper.png|Geometric $232,500
+|Agency-GTAOe-DesignerWallpaper.png|Designer $259,500
+|Agency-GTAOe-PresidentialWallpaper.png|Presidential $286,500
+|Agency-GTAOe-ExoticWallpaper.png|Exotic $322,500
+|Agency-GTAOe-TiledWallpaper.png|Tiled $360,000
+|Agency-GTAOe-OrganicWallpaper.png|Organic $400,500
+|Agency-GTAOe-RoyalWallpaper.png|Royal $442,500
+}}
+|9 different options:
+$187,500 - $442,500
+|-
+|Highlight
+|''Choose from a palette of sophisticated colors, featuring elegant favorites like Gallery Gray, Bodacious Brown, and Rectum Red.''
+|{{Gallery
+|Agency-GTAOe-CharcoalHighlight.png|Charcoal*
+|Agency-GTAOe-SageHighlight.png|Sage
+|Agency-GTAOe-GreenHighlight.png|Green
+|Agency-GTAOe-GrayHighlight.png|Gray
+|Agency-GTAOe-PurpleHighlight.png|Purple
+|Agency-GTAOe-RedHighlight.png|Red
+|Agency-GTAOe-BrownHighlight.png|Brown
+|Agency-GTAOe-AshHighlight.png|Ash
+|Agency-GTAOe-MossHighlight.png|Moss
+}}
+|9 different options each for $100,000
+|-
+|Armory
+|''You might be asking yourself, is it standard practice for an agency to have its own in-house armory and weapons expert? Of course! How do you think these deals get done.''
+|[[File:Agency-GTAOe-ArmoryOption.png|thumb|300px]]
+|$720,000
+|-
+|Accommodation
+|''You know the drill. Work. Sleep. Get Rich, Repeat. Keeping it all in arm's reach isn't lazy. It's business efficiency.''
+|[[File:Agency-GTAOe-AccomodationOption.png|thumb|300px]]
+|$275,000
+|-
+|Vehicle Workshop
+|''Fashionable office? Check. Loyal clients? Check. A workshop to transform vehicles into highly defensive, extremely dangerous weapons of mass desctruction? Check.''
+|[[File:Agency-GTAOe-VehicleWorkshopOption.png|thumb|300px]]
+|$800,000
+|}
+<nowiki>*</nowiki> Set by default on the initial purchase. Only charges when switching back during the renovation.
+
+[[SECTION:3:Interior]]
+
+
+[[SECTION:4:Overview]]
+{{Gallery
+|Agencies-GTAOe-OfficeLevelOverview.png|Office level.
+|Agencies-GTAOe-OfficeReceptionArea.png|Reception area.
+|Agencies-GTAOe-FranklinsOffice.png|[[Franklin Clinton|Franklin]]'s office.
+|Agencies-GTAOe-PlayersOffice.png|[[GTA Online Protagonist]]'s office.
+|Agencies-GTAOe-PlayerOfficeTrophyCollection.png|The player's office with trophy collection.
+|Agencies-GTAOe-ConferenceRoom.png|Conference room.
+|Agencies-GTAOe-Kitchen.png|Office kitchen area.
+|Agencies-GTAOe-Stairwell.png|Stairwell to Operations level.
+|Agencies-GTAOe-OperationsLevelOverview.png|Operations level.
+|Agencies-GTAOe-OperationsBar.png|Operations break area.
+|Agencies-GTAOe-OperationsLoungeRoom.png|Operations lounge room.
+|Agencies-GTAOe-Armory.png|Armory.
+|Agencies-GTAOe-OperationsEmptyArmory.png|Operations board rooms (if the Armory is not purchased).
+|Agencies-GTAOe-PersonalQuarters.png|Personal quarters.
+|Agencies-GTAOe-PersonalQuartersBed.png|Bed and telescope.
+|Agencies-GTAOe-PersonalQuartersCloset.png|Personal closet.
+|Agencies-GTAOe-PersonalBathroom.png|Personal bathroom.
+|Agencies-GTAOe-VehicleWorkshop.png|Vehicle workshop in the garage.
+|Agencies-GTAOe-GarageNoWorkshopWall.png|Walled off area in the garage (if the workshop is not purchased).
+|Agencies-GTAOe-ParkingSignage-FranklinAndPartner.png|"F. Clinton" and "Partner" parking signs on the top floor of the garage, added in [[GTA Online: The Criminal Enterprises|The Criminal Enterprises]] update.
+|Agencies-GTAOe-ParkingSignage-CompanyCarAndVisitors.png|"Company Car" and two "Visitor" parking signs on the top floor of the garage, added in The Criminal Enterprises update.
+|Agencies-GTAOe-ParkingSignage-Staff.png|"Staff" parking sign on the bottom of the garage, added in The Criminal Enterprises update.
+}}
+
+[[SECTION:4:Details]]
+{{Gallery
+|Agencies-GTAOe-FranklinsOffice-PlaqueWall.png|Wall of plaques in Franklin's office, featuring [[Los Santos Corkers Baseball Club|Los Santos Corkers]] baseball jerseys and gold records for [[Kill.D.Sac]] and [[Corner Killahz]].
+|Agencies-GTAOe-FranklinsOffice-Shelves1.png|Shelf in Franklin's office, featuring a photograph of [[Denise Clinton]].
+|Agencies-GTAOe-FranklinsOffice-Shelves2.png|Another shelf in Franklin's office, featuring a framed drawing of the "We Missed You" graffiti in [[Chamberlain Hills]].
+|Agencies-GTAOe-FranklinsOffice-ChopDrawing.png|Drawing of [[Chop]] hanging in Franklin's office, referencing the ''Grand Theft Auto Online'' [[Entry Screen]] background of [[:File:EntryScreen-GTAO-TextureFiles-ChopChamberlainHills.png|Chop with a ripped Los Santos Panic jersey]].
+|Agencies-GTAOe-FranklinsOffice-PDMPlaque.png|Franklin's [[Premium Deluxe Motorsport]] Employee of The Month plaque.
+|Agencies-GTAOe-FranklinsOffice-Computer.png|Franklin's computer, featuring a background of Chop and a [[ZiT]] music player.
+|Agencies-GTAOe-FranklinsOffice-Poster.png|"You Own Los Santos" poster, appearing to be a modified version of the "Los Santos Owns You" poster found in Franklin's [[3671 Whispymound Drive|home]].
+|LamarDavis-GTAOe-AgencyIdle.png|[[Lamar Davis]] smoking with [[Chop]] in the Operations lounge room.
+}}
+
+[[SECTION:4:Trophies and Collectibles]]
+{{Gallery
+|OnCourse-GTAOe-PlayerGolfBag.png|A [[ProLaps (HD Universe)|ProLaps]] golf bag that appears in the [[GTA Online Protagonist|player]]'s office after completing [[On Course]].
+|InvestigationTheMarina-GTAOe-EvidencePhoto.png|Evidence photo on the player's desk after completing [[Investigation: The Marina]].
+|NightlifeLeak-GTAOe-ClubPromoterBackpack.png|The [[Club Promoter]]'s backpack in the player's office after completing [[Nightlife Leak/Finale|The Nightlife Leak]].
+|InvestigationTheCountryClub-GTAOe-MansionPhoto.png|Photo of [[Richman Mansion]] on the player's desk after completing [[Investigation: The Country Club]].
+|InvestigationTheCountryClub-GTAOe-LimoDriverWallet.png|Wallet of the limo driver on the player's desk after completing Investigation: The Country Club (replaces the mansion photo).
+|InvestigationGuestList-GTAOe-LawyerCarKeys.png|[[Ben Brooks' Lawyer]]'s [[Super Diamond|car]] keys on the player's desk after completing [[Investigation: Guest List]].
+|InvestigationDavis-GTAOe-FeudBobblehead.png|A [[Feud Baseball Team]] bobblehead on the player's desk after completing [[Investigation: Davis]].
+|InvestigationTheBallas-GTAOe-BoarsBobblehead.png|A [[Boars Baseball Club]] bobblehead on the player's desk after completing [[Investigation: The Ballas]].
+|StudioTime-GTAOe-AndersonPaakDrumstick.png|[[Anderson .Paak]]'s drumstick on the player's desk after completing the [[Studio Time]].
+|Agencies-GTAOe-PlayerOffice-SafePhones&Laptop.jpg|The three target phones and laptop in the player's Agency Safe.
+|NightlifeLeak-GTAOe-GospelGoldRecord.png|Gold record of "Gospel (feat. Eminem)" in the player's office after completing the [[Nightlife Leak/Finale|Nightlife Leak]].
+|HighSocietyLeak-GTAOe-TheScenicRouteGoldRecord.png|Gold record of "The Scenic Route (feat. Rick Ross & [[Anderson .Paak]])" in the player's office after completing the [[High Society Leak/Finale|High Society Leak]].
+|SouthCentralLeak-GTAOe-BlackPrivilegeGoldRecord.png|Gold record of "Black Privilege" in the player's office after completing the [[South Central Leak/Finale|South Central Leak]].
+|StudioTime-GTAOe-ETAGoldRecord.png|Gold record of "ETA (feat. Anderson .Paak, [[Snoop Dogg]], & Busta Rhymes)" in the player's office after completing [[Studio Time]].
+|DontFuckWithDre-GTAOe-FallinUpGoldRecord.png|Gold record of "Fallin' Up (feat. THURZ & Cocoa Sarai)" in the player's office after completing [[Don't Fuck With Dre]].
+|TheDataLeaks-GTAOe-DiamondMindGoldRecord.png|Gold Record of "Diamond Mind (feat. Nipsey Hussle & Ty Dolla Sign)" in the player's office after completing all of [[The Contract: Dr. Dre|The Data Leaks]] missions.
+|ShortTrips-GTAOe-SeedCapitalTrophy.png|A model of the sign on the exterior of [[LD Organics]], trophy for completing [[Short Trip - Seed Capital]].
+|ShortTrips-GTAOe-FireItUpTrophy.png|A small marijuana plant, trophy for completing [[Short Trip - Fire It Up]].
+|ShortTrips-GTAOe-OGKushTrophy.png|A model of the LD Organics [[Youga Custom]], trophy for completing [[Short Trip - OG Kush]].
+|Agency-GTAOe-BonusTrophy-50Contracts.png|A trophy that appears on the player's desk upon completing 50 [[Security Contracts]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Locations in GTA Online in Los Santos
+Properties in GTA Online

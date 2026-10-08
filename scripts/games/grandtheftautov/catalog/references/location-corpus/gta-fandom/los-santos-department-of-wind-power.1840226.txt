@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = utility
+|name          = Los Santos Department of Wind Power
+|sign          = LSDWP-GTAV-WindPower.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Wind turbine services
+|founded       = 
+|founder       = 
+|owner         = [[Los Santos Department of Water & Power]]
+|employees     = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+The '''Los Santos Department of Wind Power''' is the company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that makes and maintains the various wind turbines seen in places such as the [[RON Alternates Wind Farm]]. It is a subsidiary of the [[Los Santos Department of Water & Power]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Utility companies

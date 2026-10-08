@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=KimbleHillDrive-GTAV.png
+|caption=Kimble Hill Drive as seen from the west.
+|games=''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|start=[[Lake Vinewood Drive]]
+|end=[[Milton Road]]
+|map=<gallery>
+KimbleHillDrive-GTAV-Map.png|Map
+KimbleHillDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Kimble Hill Drive''' is a two-way [[List of Street Names|street]] located in [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

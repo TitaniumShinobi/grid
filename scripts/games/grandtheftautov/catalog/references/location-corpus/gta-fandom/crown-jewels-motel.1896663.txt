@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Crown Jewels Motel
+|image = CrownJewelsMotel-GTAV.jpg
+|caption = Front view of the motel.
+|location = [[Bay City Avenue]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|games = {{Games|V=y|O=y}}
+|type = motel
+|accessible = No
+}}
+
+[[LEAD]]
+'''Crown Jewels Motel''' is a motel in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Motels

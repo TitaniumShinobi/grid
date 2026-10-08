@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|type           = entertainment
+|name           = Partial Pictures
+|image          = PartialPictures-GTAOe-Logo.png
+|caption        = Partial Pictures logo in {{O}}.
+|business_type  = Film production company
+|games          = {{Games|V=y|O=y}}
+|status         = active
+|locations      = 
+}}
+
+[[LEAD]]
+'''Partial Pictures''' is a film production company appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Film production companies

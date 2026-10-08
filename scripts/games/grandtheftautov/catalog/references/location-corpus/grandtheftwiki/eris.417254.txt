@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{infobox business|
+| image = Eris-GTASA-logo.png
+| size = 300x300px
+| caption = The Eris logo circa [[1992]], GTA San Andreas.
+| name = Eris
+| game_1 = GTA III
+| game_2 = GTA San Andreas
+| game_3 = GTA IV
+| game_4 = GTA V
+| type = Shoe manufacturing
+| owner = 
+| location = '''[[3D Universe]]'''<br />[[Rodeo]], [[Los Santos in GTA III Era|Los Santos]]<br/ >'''[[HD Universe]]'''<br />[[Schottler]], [[Liberty City in GTA IV Era|Liberty City]]
+| affiliation = 
+| missions = 
+| employee = 
+}}
+
+[[LEAD]]
+'''Eris''' is a shoe manufacturing company featured in [[Grand Theft Auto III]], [[Grand Theft Auto: San Andreas]], and [[Grand Theft Auto IV]].
+
+[[CATEGORIES]]
+Businesses in 3D Universe
+Businesses in GTA III
+Businesses in GTA IV
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in HD Universe
+Businesses in Liberty City in HD Universe
+Businesses in Los Santos in 3D Universe
+Clothing Stores
+Corporations
+In-Game Products

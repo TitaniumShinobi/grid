@@ -1,0 +1,63 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = entertainment
+|name          = Conglomerated National Television
+|image_label   = V
+|image         = CNT-GTAV-Logo.png
+|caption       = CNT logo in {{VO}}.
+|image_label2  = IV
+|image2        = CNT-GTAIV-Logo.png
+|caption2      = CNT logo in {{IV}}.
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     =
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[San Andreas]]
+([[#Locations|See more]])
+|business_type = Television network
+|founded       = [[1974]]
+|founder       = 
+|ceo           = 
+|owner         = 
+|products      = 
+|taglines      = 
+*"''Where America vegetates''"
+*"''Making TV from anything since '74''"
+|bawsaq        = 
+*{{BAWSAQ/Slider}} '''CNTU''' (''GTA IV'')
+*{{BAWSAQ/Slider}} '''CNT''' (''GTA V'')
+|status        = active
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Conglomerated National Television''', more commonly known by its abbreviation '''CNT''', is a television network appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+*The [[CNT Building]] in {{VO}} is seemingly a rendition of the CNN Building located at {{URL|https://maps.app.goo.gl/C56M2vp8RvMM6c5B6|6430 Sunset Boulevard}} in the {{WP|Hollywood, Los Angeles|Hollywood}} district of {{WP|Los Angeles}}, {{WP|California}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game   = IV
+|header =
+|BurlesqueJadeBldg-GTAIV-Overview.png|[[CNT Studios]], [[The Triangle]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]].
+}}
+{{Gallery
+|game   = VO
+|header =
+|CNTBuilding-GTAV.png|[[CNT Building]], [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+TV broadcasting companies

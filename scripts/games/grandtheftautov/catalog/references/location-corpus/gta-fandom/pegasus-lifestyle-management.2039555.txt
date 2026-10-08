@@ -1,0 +1,90 @@
+[[INFOBOX]]
+{{Infobox business
+|image = PegasusConcierge-GTAV-Logo2.png
+|caption =
+|name = Pegasus Lifestyle Management
+|bawsaq = 
+|taglines = 
+|type = Specialty Vehicle Delivery
+|founded = 
+|founder = 
+|ceo =
+|games = {{Games|O=y}}
+|locations = [[Los Santos (HD Universe)|Los Santos]], [[Blaine County]]
+|reference =
+}}
+
+[[LEAD]]
+'''Pegasus Lifestyle Management''' is a feature in {{O}} operated by [[Pegasus]].
+
+[[SECTION:2:Delivery Locations]]
+{{Under Construction}}
+Various additional delivery locations were added in the [[Freemode Events Update]].
+{| class="wikitable"
+! colspan="4" align="center" |''Pegasus Delivery Locations''
+|-
+! rowspan="1" |Air (Fixed-wing aircraft)
+!Map Images
+|-
+|
+*Multiple locations in [[Los Santos International Airport (HD Universe)|Los Santos International Airport]]:
+**Devin Weston's Hangar.
+**Franklin's Hangar.
+**Cargo-hold (north-west section)
+**Several spots and positions within the LSIA, Sandy Shores Airfield and McKenzie Field Hangar, such as at the end of runways (as of the [[Freemode Events Update]] {{nd}} <small>Xbox One/PlayStation 4 and PC only</small>)
+*[[Sandy Shores Airfield]]
+*[[McKenzie Field Hangar]]
+*[[Fort Zancudo]], if the player has an access pass through owning a Zancudo hangar.
+|
+|-
+!Air (helicopters)
+!
+|-
+|
+*At the large [[Vespucci Police Station]] parking lot at [[San Andreas Avenue]] and [[South Rockford Drive]] in [[Vespucci]].
+*At the helipads in [[Los Santos International Airport (HD Universe)|LSIA]].
+*On top of the roof of the [[Central Los Santos Medical Center]] at [[Innocence Boulevard]] in [[Strawberry]].
+*[[Sandy Shores Airfield]].
+*On top of the helipad of the [[NOOSE Headquarters]] in [[Palomino Highlands]].
+*[[Vespucci Helipad]] (multiple spawn points).
+*Behind the [[Paleto Bay Sheriff's Office]].
+*[[McKenzie Field Hangar]].
+*[[Fort Zancudo]], if the player has an access pass through owning a Zancudo hangar.
+*On an helipad at the end of the [[Los Santos Naval Port]] (two spawn points).
+'''''Note:''' After the [[Ill-Gotten Gains Part 1]] Update, the [[Hydra]] can spawn in these locations as well as the airport locations.''
+|
+|-
+!Land
+!
+|-
+|
+*[[Vinewood Racetrack]].
+*Two possible parking locations in front of the [[Vinewood Bowl|Vinewood Theater]].
+*Small construction yard east of the [[Vespucci Police Station]].
+*Vespucci Police Station (formerly).
+*In the [[Dashound Bus Center]] (enhanced version only).
+*By the [[Puerto Del Sol Marina|pier]] in [[Vespucci Beach]].
+*On the dirt path next to [[Fort Zancudo]].
+*Inside [[Fort Zancudo]], if the player has an access pass through owning a Zancudo hangar
+*In the [[Palmer-Taylor Power Station]] (3 possible spawn points).
+*[[Redwood Lights Track]].
+*Construction Yard opposite the [[Clucking Bell Farms]] in [[Paleto Bay]].
+*[[Los Santos Naval Port]] (beside some containers outside the warehouse).
+*Parking lot/pool at [[Backlot City]].
+|
+|-
+!Water
+!
+|-
+|
+*[[Galilee]] Docks.
+*[[Puerto Del Sol Yacht Club]].
+*[[Sonar Collections Dock]].
+*[[Los Santos Naval Port]].
+|
+|}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Features
+Features in GTA Online

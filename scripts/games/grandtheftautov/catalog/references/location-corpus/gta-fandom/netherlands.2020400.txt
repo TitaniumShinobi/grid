@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox country
+|native_name = Nederland <sup>(Dutch)</sup>
+|common_name = Netherlands
+|image_flag = Flag of the Netherlands.svg
+|capital = {{WP|Amsterdam}}
+}}
+
+[[LEAD]]
+The '''Netherlands''' is a country located in {{WP|Western Europe}}. A founding member of the {{WP|European Union}}, the country is bordered by [[Germany]] to the east, [[Belgium]] to the south, and the North Sea to the north-west.
+
+The Netherlands are occasionally mentioned in the ''Grand Theft Auto'' series, usually through mentions of Amsterdam or the history of [[Liberty City (HD Universe)|Liberty City]].
+
+[[SECTION:4:''Grand Theft Auto: Liberty City Stories'']]
+*In the mission [[Overdose of Trouble]], [[Maria Latore|Maria]] mentions she has been getting some new pills from Holland.
+
+[[SECTION:4:''Grand Theft Auto: Vice City Stories'']]
+*There is a chain of coffee shops in [[Vice City (3D Universe)|Vice City]] called [[Old Amsterdam Coffee Shop]].
+*The clothing shop [[T&A Men]] is based on the Dutch international clothing brand {{WP|C&A}}.
+
+[[CATEGORIES]]
+European countries

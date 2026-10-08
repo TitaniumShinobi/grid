@@ -1,0 +1,74 @@
+[[INFOBOX]]
+{{Infobox location
+|name  = Pillbox Hill
+|image = PillboxHill-GTAV.png
+|caption = Overview of Pillbox Hill.
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|location = [[Downtown Los Santos (HD Universe)|Downtown]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-PillboxHill.ogg
+|map           = <gallery>
+PillboxHill-IngameGPS-GTAV-Map.png|Pillbox Hill
+PillboxHill-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Pillbox Hill''' is the largest neighborhood in [[Downtown Los Santos (HD Universe)|Downtown Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. Pillbox Hill is based on the real-life neighborhood of {{WP|Bunker Hill, Los Angeles}}.
+
+[[SECTION:2:Roads and Streets]]
+*[[Adam's Apple Boulevard]]
+*[[Alta Street]]
+*[[Elgin Avenue]]
+*[[Integrity Way]]
+*[[Low Power Street]]
+*[[Peaceful Street]]
+*[[Power Street]]
+*[[San Andreas Avenue]]
+*[[Strawberry Ave]]nue
+*[[Swiss Street]]
+*[[Vespucci Boulevard]]
+
+[[SECTION:2:Places of Interest]]
+*[[3 Alta Street]]
+*[[707 Vespucci]]
+*[[FIB Headquarters]]
+*[[IAA Headquarters]]
+*[[Integrity Tower]]
+*[[Lombank Building (GTA V)|Lombank Building]]
+*[[Maze Bank Tower]]
+*[[Pillbox Hill Garage]]
+*[[Pillbox Hill Medical Center]]
+*[[Quik House]]
+
+[[SECTION:2:Businesses]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Bite!]]
+*[[Brawls]]
+*[[Caesars Auto Parking]]
+*[[Café Redemption]]
+*[[The Celtica Hotel]]
+*Cheap Shot Coffee
+*[[Crucial Fix]]
+*[[Digital Den]]
+*Downtown Liquor Deli
+*[[The Emissary|The Emissary Hotel]]
+*[[Escapism Travel]]
+*[[Fleeca|Fleeca Bank]]
+*[[Ground & Pound Café]]
+*[[Happy Shark]]
+*[[Hookah Palace]]
+*[[Hotel Wisdahl]]
+*[[Paper Clips]]
+*[[Post OP|Post OP Couriers]]
+*[[Premium Deluxe Motorsport]]
+*[[Slaughter, Slaughter & Slaughter]]
+*[[Union Depository]]
+*[[Wolfs International Realty]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

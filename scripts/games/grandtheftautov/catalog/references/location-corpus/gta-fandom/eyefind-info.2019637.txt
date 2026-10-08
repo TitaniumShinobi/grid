@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+|bawsaq = {{BAWSAQ/Slider}} '''EYE'''
+|type = Website, Search Engine
+|name = eyefind
+|taglines = "''For when you should be working.''"
+|games = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|image = Eyefind.info-GTA4-logo.PNG
+|size = 250px
+|ceo = [[Trip Hammer]]
+|reference=Google, Yahoo!, Microsoft Bing}}
+
+[[LEAD]]
+'''eyefind.info''' is the main web portal (see websites in [[Websites in GTA IV|''Grand Theft Auto IV'']], [[Websites in GTA V|''Grand Theft Auto V'']] and [[Websites in GTA Online|''Grand Theft Auto Online'']]) and search engine in-game. The player can buy stocks from them through the [[Bawsaq.com]] website in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Media in GTA IV
+Media in GTA Online
+Media in GTA V
+Websites

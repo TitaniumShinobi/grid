@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox organization
+|image = CarsonAvenueFamilies-GTAOe.png
+|caption = Carson Avenue Families in {{O}}.
+|games = {{Games|V=y|O=y}}
+|locations = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|leader = [[The Boss (Families)|The Boss]]
+|aka = CAF
+|type = gang
+|gang_type = Set of [[The Families]]
+|enemies = 
+*[[Chamberlain Gangster Families]]
+*[[Forum Drive Families]]
+*[[Ballas (HD Universe)|Ballas]]
+*[[Los Santos Vagos (HD Universe)|Los Santos Vagos]]
+|affiliations = 
+*{{GTAOP}}
+*Sanchez
+|colors = Green
+|vehicles =
+*[[Coquette]] <small>(''GTA Online'') ([[Chasers]] only)</small> 
+|weapons = 
+|members = 
+*Tyson 
+*Lil' Digga
+*Moe
+*Sherlaine
+*P.G.
+*Morgan
+*Delancey
+*OG Johnson
+|Name Change = GANG SET OF [[The Families|THE FAMILIES]]
+|status = active
+}}
+
+[[LEAD]]
+The '''Carson Avenue Families (CAF)''' are a street gang in {{V}} and {{O}}, originally formed in [[Carson Avenue]] from [[The Families]] gang.
+
+[[CATEGORIES]]
+Afro-descendant organizations
+Gangs
+Organizations in GTA Online
+Organizations in GTA V

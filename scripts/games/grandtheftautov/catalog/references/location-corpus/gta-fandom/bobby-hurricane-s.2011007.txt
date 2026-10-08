@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fastfood
+|name          = Bobby Hurricane's
+|image         = BobbyHuricanes-GTAO-Logo.png
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpchristmas2018}}|VI=y}}
+|locations     = [[Vice Beach]], [[Leonida]]
+([[#Locations_2|See more]])
+|business_type = Diner chain
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = 
+|taglines      = 
+|status        = active
+|phone         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+|accessible    = 
+}}
+
+[[LEAD]]
+'''Bobby Hurricane's''' is a fast-food restaurant chain appearing in {{O}} as part of the [[GTA Online: Arena War|Arena War]] update, and due to appear in {{VI}}.
+
+[[SECTION:3:Locations]]
+{{H4|''Grand Theft Auto VI''}}
+*The [[Vice Beach (HD Universe)|Vice Beach]] location at the [[Unnamed GTA VI Scarface-inspired hotel|Scarface-inspired hotel]] seen in the [[Grand Theft Auto VI/Trailers#Trailer 2|second trailer]] is a rendition of the former Johnny Rockets restaurant at {{URL|https://maps.app.goo.gl/na6gguWuCNg7WEg97|728 Ocean Drive}} in {{WP|Miami Beach, Florida|Miami Beach}}, {{WP|Florida}}, which was ordered to shut down due to health violations on January 28, 2016.{{Ref|name = johnny-rockets-ordered-shut|type = website|date = 02/01/2016|url  = https://www.local10.com/news/2016/02/01/miami-beach-johnny-rockets-among-several-places-ordered-shut/|ref  = Miami Beach Johnny Rockets among several places ordered shut<br>{{WP|WPLG|WPLG Local 10}}}} The site is now occupied by a {{WP|CVS Pharmacy}} branch, which opened on February 9, 2018.{{Ref|name = cvspharmacy-scarface-hotel-1|type = website|date = 04/17/2017|url  = https://www.miaminewtimes.com/news/scarfaces-chainsaw-scene-location-on-ocean-drive-is-turning-into-a-cvs-9275818|ref  = "''Scarface''{{'}}s Chainsaw Scene Location on Ocean Drive Is Turning Into a CVS" - Miami New Times, April 14, 2017}}{{Ref|name = cvspharmacy-scarface-hotel-2|type = website|date = 02/09/2018|url  = https://infinitycollective.com/infinity-real-estate-revitalizes-iconic-728-ocean-drive/|ref  = Infinity Real Estate Revitalizes Iconic 728 Ocean Drive <nowiki>|</nowiki> Infinity Collective}}
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto VI'']]
+{{Gallery/draft
+|BobbyHurricanes-GTAVI-Trailer2.png|A '''Bobby Hurricane's''' restaurant in [[Vice Beach]] seen in the [[Grand Theft Auto VI/Trailers#Trailer 2|second trailer]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online: Arena War
+Businesses in GTA VI
+Fast-food restaurant chains

@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox business
+|name         = Sumo
+|image_label  = O
+|image        = Sumo-GTAO-Logo.png
+|caption      = Logo in {{O}} and {{VI}}.
+|image_label2 = SA
+|image2       = Sumo-GTASA-logo.jpg
+|caption2     = Sumo logo in the {{3D}}, circa [[1992]].
+|image_label3 = III
+|image3       = Sumo-GTA3-billboard.png
+|caption3     = Logo in the {{3D}}, circa [[1986]]–[[2001]].
+|type         = electronics
+|games        = {{games|III=y|VC=y|SA=y|IV=y|O={{EEEV}} {{DLC|mplowrider}}|VI=y}}
+|locations    = [[LVA Freight Depot]], [[Las Venturas (3D Universe)|Las Venturas]], [[State of San Andreas (3D Universe)|San Andreas]]
+|taglines     = "''The Industry Heavyweight''"
+
+}}
+
+[[LEAD]]
+'''Sumo''' (Japanese: スモ) is a [[Japan|Japanese]] electronics company featured in {{III}}, {{VC}}, {{SA}}, {{IV}}, {{O}}, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA III
+Businesses in GTA IV
+Businesses in GTA Online: Lowriders
+Businesses in GTA San Andreas
+Businesses in GTA VI
+Businesses in GTA Vice City
+Communications
+Electronics companies
+Phone companies

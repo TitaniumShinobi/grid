@@ -1,0 +1,57 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = phone
+|name          = Whiz Wireless Communication
+|sign          = 
+|image         = Whiz-logo.png
+|caption       = '''Whiz''' logo prior to {{VI}}.
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Port Gellhorn]], [[Leonida]]
+([[#Locations_2|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+*[[Whiz Cellphone]]
+*[[Whiz High Speed Phone]]
+|taglines      = 
+*"''Whiz is stronger than Tinkle!''"
+*"''What's in your Whiz flip?''"
+*"''Take a Whiz anywhere''"
+*"''Do the social vibe...''"
+|bawsaq        = {{BAWSAQ/Slider}} '''WIZ'''
+|lcn           = 
+|bleeter       = [[File:Bleeter_GTAVpc_WhizWireless.png|40px]] @WhizWireless
+|status        = active
+}}
+
+[[LEAD]]
+'''Whiz Wireless Communication''' ([[BAWSAQ]]: '''WIZ'''), commonly shortened to '''Whiz''',  is a telecommunications company appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+{{H4|''Grand Theft Auto VI''}}
+*The [[Crossroad Park Minimall]] store in [[Port Gellhorn]] appears to be influenced by the {{WP|Boost Mobile}} store in the now-demolished {{URL|https://maps.app.goo.gl/yZcUtkxFTnsMBPHB9|Callaway Village Square}} mall in {{WP|Callaway, Florida}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto VI'']]
+<gallery position="center" spacing="small" widths="270px"">
+CrossroadParkMinimall-GTAVI-Trailer2-1.png|[[Crossroad Park Minimall]] (left), [[Port Gellhorn]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Communications
+Phone companies

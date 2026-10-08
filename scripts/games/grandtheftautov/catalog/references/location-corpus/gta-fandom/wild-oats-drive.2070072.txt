@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=WildOatsDrive-East-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Didion Drive]]
+|end=[[Baytree Canyon Road]]
+|map=<gallery>
+WildOatsDrive-GTAV-Map.png|Map
+WildOatsDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Wild Oats Drive''' is a two-way residential [[List of Street Names|street]] that is located south of [[3671 Whispymound Drive|Franklin's Mansion]] in [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

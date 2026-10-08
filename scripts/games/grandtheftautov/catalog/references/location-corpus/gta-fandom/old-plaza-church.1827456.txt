@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{infobox location
+|church     = y
+|lightlogo  = y
+|image          = MexicanMarket-GTAVee-Church.jpg|The old church in the north of the '''plaza'''.
+|games          = {{games|V=y|O=y}}
+|location       = [[Old Mexican Plaza]], [[Alta]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = No
+}}
+
+[[LEAD]]
+The '''old plaza church''' is an unnamed church appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Churches
+Spanish Revival buildings

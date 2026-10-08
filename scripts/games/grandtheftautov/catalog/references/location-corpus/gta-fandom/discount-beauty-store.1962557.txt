@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Discount Beauty Store
+|image     = DiscountBeautyStore-GTAV-Logo.png
+|type      = Beauty Store
+|games     = {{Games|V=y|O=y}}
+|locations = 
+*[[Downtown Vinewood]]
+*[[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+The '''Discount Beauty Store''' is a beauty store chain in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

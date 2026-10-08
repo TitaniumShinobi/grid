@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox location
+|type        = restaurant
+|image       = 
+|caption     = 
+|sign        = JavaUpdate-GTAVe-Sign.png
+|name        =
+|opened      = [[2004]]
+|games       = {{Games|V=y|O=y}}
+|location    = [[Boulevard Del Perro]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|map         = 
+|map_caption = 
+}}
+
+[[LEAD]]
+The '''Java Update Coffeeshop''' (stylized as '''{java.update();}''') is a coffee shop in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Cafés

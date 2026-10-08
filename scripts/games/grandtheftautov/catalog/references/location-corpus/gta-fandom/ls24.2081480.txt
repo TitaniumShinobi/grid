@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|image = LS24-GTAV-NewsFeedLogo.png
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[State of San Andreas (HD Universe)|San Andreas]]
+|type = Newspaper
+}}
+
+[[LEAD]]
+'''LS24''' is a newspaper based in [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Newspaper publishers

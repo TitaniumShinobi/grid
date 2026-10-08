@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|name = Swallow
+|caption = The logo
+|location = '''[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]:'''
+*[[Burton]]
+*[[Del Perro]]
+*[[Rockford Hills]]
+*[[Vespucci Canals]]
+|accessible = No
+|altnames = 
+|products = 
+|bawsaq = 
+|image = Swallow-GTAV-Logo.png
+|darklogo = y
+|image_size = 300
+|condition = Active
+|taglines = ''"Beautiful brainless beachwear"''
+|reference = {{WP|Hollister Co.}}
+|games = {{Games|V=y|O=y}}
+|type = Beach fashion retailer
+|map = 
+|map caption = 
+|oldlogo = SwallowLogo-GTAV.png
+|oldcaption = Alternative logo.
+|oldlogo1 = Swallow Branding GTAV.png
+|oldcaption1 = Swallow Los Santos logo.
+}}
+
+[[LEAD]]
+'''Swallow''' is a clothing brand and clothing store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center">
+Swallow-GTAV-Burton.jpg|[[Hawick Avenue]], [[Burton]].
+Swallow-GTAV-DelPerro.jpg|[[Marathon Avenue]], [[Del Perro]].
+Swallow-GTAV-PortolaDrive-DaylightFront.png|[[Little Portola]]/[[Portola Drive]], [[Rockford Hills]].([[:File:Swallow-GTAV-NightFront.png|At night]]) ([[:File:Swallow-GTAV-LittlePortolaSide.png|Little Portola side]])
+Swallow-GTAV-SanAndreasAve.jpg|[[San Andreas Avenue]], [[Vespucci Canals]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

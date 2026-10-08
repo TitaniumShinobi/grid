@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = CAMP
+|name        = Altruist Camp
+|image       = AltruistCamp-GTAV.png
+|caption     =
+|games       = {{Games|V=y|O=y}}
+|location    = [[Chiliad Mountain State Wilderness]], [[State of San Andreas (HD Universe)|San Andreas]]
+|occupants   = [[Altruist Cult|Altruists]]
+|accessible  = Yes
+}}
+
+[[LEAD]]
+The '''Altruist Camp''' is the main headquarters of the [[Altruist Cult]], situated in the heart of the [[Chiliad Mountain State Wilderness]] in [[State of San Andreas (HD Universe)|San Andreas]] in {{V}} and {{O}}.
+
+[[SECTION:4:The Diamond Casino & Resort]]
+*[[Casino Work]]
+**[[Undisclosed Cargo]]
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[Yung Ancestor: Dead Weight]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

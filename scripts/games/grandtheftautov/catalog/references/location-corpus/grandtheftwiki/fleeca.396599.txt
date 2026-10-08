@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{infobox business|
+|image = FLEECA-GTAIV-logo.jpg
+|size = 200x200px
+|caption = The FLEECA logo in GTA IV.
+|game_1 = GTA IV
+|game_2 = GTA V
+|game_3 = GTA Online
+|name = FLEECA
+|type = Financial services company/[[:Category:Banks|Bank]]
+|owner = 
+|location = [[Hawick Ave]] in [[Alta]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''FLEECA''' is a financial services company in the [[HD Universe]]. The company's credit card division is a parody of [[wp:Visa, Inc.|Visa, Inc]]. Russian customers who pre-ordered [[Grand Theft Auto IV]] received a [[Niko Bellic]] FLEECA card with his name, serial no., length of validity and date of commission. FLEECA has three [[Radio Stations in GTA IV#Advertisements|radio ads]] which includes its slogan "FLEECA, it's time to start paying". On the door of [[TW@]] internet cafes and in many other stores in the [[Liberty City in GTA IV Era|city]], FLEECA credit cards are accepted there. FLEECA comes from the word "fleece," which means to con or trick people out of [[money]].
+
+In [[Grand Theft Auto V]], FLEECA appears as a full fledged bank. [[Franklin Clinton]] is a customer with FLEECA Bank and can access his most recent financial history from their website or any [[Automated Teller Machine|ATM]].
+
+[[CATEGORIES]]
+Banks
+Businesses in GTA IV
+Businesses in GTA V
+Businesses in Liberty City in GTA IV Era
+Businesses in Los Santos in GTA V
+In-Game Products

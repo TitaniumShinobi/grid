@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image       = Doortech-GTAO-Logo.png
+|caption     = 
+|bawsaq      = 
+|type        = Door manufacturer
+|games       = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|oldlogo1    = 
+|oldcaption1 = 
+|taglines    = ''"Leaders in door technology"''
+}}
+
+[[LEAD]]
+'''Doortech''' is a company making doors in [[Grand Theft Auto V|''Grand Theft Auto V'']] and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

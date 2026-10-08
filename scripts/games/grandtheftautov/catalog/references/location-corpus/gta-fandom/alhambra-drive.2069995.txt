@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=AlhambraDr-GTAV-MedicalCenter.jpg
+|caption=View of Alhambra Drive.
+|games={{Games|V=y|O=y}}
+|start=[[Marina Drive]]
+|end= [[Panorama Drive]]
+|map=<gallery>
+AlhambraDrive-GTAV-Map.png|Map
+AlhambraDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Alhambra Drive''' is a major two-way street in {{V}} and {{O}}, located in [[Sandy Shores]] that begins at [[Marina Drive]] and ends at [[Panorama Drive]].
+
+[[SECTION:2:Places of Interest]]
+*[[Sandy Shores Sheriff's Station]]
+*[[Sandy Shores Medical Center]]
+*[[Sandy Shores Fire Station]]
+
+[[SECTION:2:Businesses]]
+*[[24-Hour Chinese Restaurant]]
+*[[Sandy's Gas Station]]
+*[[24/7 (HD Universe)|Sandy Shores 24/7]]
+*[[Barbers#Low-End_Barbers|O'Sheas Barber Shop]]
+*[[Otto's Auto Parts]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

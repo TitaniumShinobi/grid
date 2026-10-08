@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox location
+|type         = facility
+|name         = Mount Chiliad Launch Facility
+|image        = MountChiliadLaunchFacility-GTAO-Overview.png
+|games        = {{Games|O=y}}
+|location     = [[Mount Chiliad (HD Universe)|Mount Chiliad]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|occupants    = [[Military (HD Universe)|Military]] <small>(Formerly)</small><br>[[Avon Hertz]] 
+[[Cliffford]] 
+[[Cliffford Mercenaries]] <small>([[ULP - Cleanup|Formerly]])</small>
+|map          =
+|map_caption  = 
+|pscanner     = 
+}}
+
+[[LEAD]]
+The '''Mount Chiliad Launch Facility''' is a former secret U.S. nuclear launch facility in ''[[Grand Theft Auto Online]]'', inside of [[Mount Chiliad (HD Universe)|Mount Chiliad]] in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[SECTION:3:Rooms]]
+<gallery position="center" spacing="small" widths="250px">
+MountChiliadLaunchFacility-GTAO-Tunnels1.png|The tunnel leading to the facility.
+MountChiliadLaunchFacility-GTAO-Tunnels2.png|Approaching the end of the tunnel.
+MountChiliadLaunchFacility-GTAO-TunnelEnd.png|The area after the tunnel.
+MountChiliadLaunchFacility-GTAO-Entrance.png|The next area.
+MountChiliadLaunchFacility-GTAO-Tunnels3.png|The hallway leading to the hangar and the further tunnels.
+MountChiliadLaunchFacility-GTAO-TunnelFork.png|The fork in the tunnels.
+MountChiliadLaunchFacility-GTAO-Hangar1.png|First part of the hangar.
+MountChiliadLaunchFacility-GTAO-Hangar2.png|Second hangar area, with covered [[V-65 Molotok]]s.
+MountChiliadLaunchFacility-GTAO-Hangar3.png|The furthermost part of the hangar, with covered [[Pyro]]s.
+MountChiliadLaunchFacility-GTAO-Tunnels4.png|The tunnel to the left of the hangar.
+MountChiliadLaunchFacility-GTAO-Tunnels5.png|Continuation of the tunnel.
+MountChiliadLaunchFacility-GTAO-Tunnels6.png|A small building in the tunnel.
+MountChiliadLaunchFacility-GTAO-Tunnels7.png|Further down the tunnel.
+MountChiliadLaunchFacility-GTAO-ClosedDoor.png|The closed door at the end of the tunnels, which is opened by Cliffford during [[The Doomsday Scenario]].
+MountChiliadLaunchFacility-GTAO-StorageArea.png|A storage area, which acts as a passageway between the tunnels and the server area.
+MountChiliadLaunchFacility-GTAO-GroundFloor.png|Ground floor of the server area.
+MountChiliadLaunchFacility-GTAO-FirstFloor.png|First floor.
+MountChiliadLaunchFacility-GTAO-Servers.png|The servers on the first floor which need to be hacked.
+MountChiliadLaunchFacility-GTAO-SecondFloor.png|Second floor. One of the four terminals is visible, which are used to control the Orbital Cannon during The Doomsday Scenario.
+MountChiliadLaunchFacility-GTAO-SecurityCheckpoint.png|The security checkpoint following the server room.
+MountChiliadLaunchFacility-GTAO-Hallway.png|Hallways leading to the rocket.
+MountChiliadLaunchFacility-GTAO-RocketSiloArea.png|The area around the rocket.
+MountChiliadLaunchFacility-GTAO-Rocket.png|The rocket itself.
+</gallery>
+
+[[CATEGORIES]]
+Abandoned buildings
+Buildings in GTA Online: The Doomsday Heist
+Facilities

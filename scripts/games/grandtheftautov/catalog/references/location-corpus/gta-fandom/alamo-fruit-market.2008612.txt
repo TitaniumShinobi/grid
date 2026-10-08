@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Alamo_Fruit_Market_GTAV_Overview.jpg
+|caption = 
+|name = Alamo Fruit Market
+|taglines = 
+|type = Fruit market
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|reference =
+|map = Alamo_Fruit_Market_GTAV_Location.jpg.png
+}}
+
+[[LEAD]]
+The '''Alamo Fruit Market''' is a fruit market located in [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Locations in GTA V in Blaine County

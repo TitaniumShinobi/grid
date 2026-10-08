@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change = ROAD
+|image=ElGordoDrive-GTAV-NoordAansig.png
+|caption=
+|games=''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|start=[[Catfish View]]
+|end=-
+|map=<gallery>
+ElGordoDrive-GTAV-Map.png|Map
+ElGordoDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''El Gordo Drive'''  is an unpaved road in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[Blaine County]] that begins at [[Catfish View]] and ends at the [[Mount Gordo]] trails.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

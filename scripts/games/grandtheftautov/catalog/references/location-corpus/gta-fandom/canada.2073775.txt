@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox country
+|common_name     = Canada
+|image_flag      = Flag of Canada.svg
+|currency_ingame = Canadian dollar
+}}
+
+[[LEAD]]
+'''Canada''' is a country located in {{WP|North America}}. It shares two land borders with the [[United States of America|United States]], via the {{WP|contiguous United States}} to the south and the US state of {{WP|Alaska}} to the north-west, and a separate border with {{WP|Greenland}} (a part of [[Denmark]]) in the north via {{WP|Hans Island}}.
+
+''[[Grand Theft Auto]]'' games are released in Canada on the same day as the United States.
+
+Canada is currently home to one Rockstar studio, [[Rockstar Toronto]], which developed the PC versions of {{IV}} and {{EFLC}}. Another Rockstar studio was located in [[Rockstar Vancouver|Vancouver]] until [[2012]], when production merged with the Toronto studio.
+
+[[SECTION:4:''Grand Theft Auto: Vice City'']]
+*[[K-Chat]] host [[Amy Sheckenhausen]] states that her mother is half-Canadian (making herself quarter-Canadian), after guest [[Thor]] hints that the Americans should have pillaged Canada.
+*During an interview on [[Vice City Public Radio]], evangelist [[Pastor Richards]] complains that "our newspapers are run by Canadians with an agenda".
+
+[[SECTION:4:''Grand Theft Auto: Vice City Stories'']]
+*On radio station [[V-Rock (3D Universe)|V-Rock]], [[Lazlow Jones (3D Universe)|Lazlow Jones]] mentions that station host [[Couzin Ed]] keeps telling him to move to Canada.
+
+[[CATEGORIES]]
+North American countries

@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|name        = Los Santos Bag Co.
+|image       = 
+<gallery>
+LosSantosBagCo-GTAVee.jpg|Building
+LosSantosBagCo-GTAV-Logo.png|Logo
+</gallery>
+|type        = factory
+|games       = {{Games|V=y|O=y}}
+|location    = [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible  = No
+|map         = LosSantosBagCo-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Los Santos Bag Co.''' is a bag manufacturing company in {{V}} and {{O}} located in [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Factory buildings
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

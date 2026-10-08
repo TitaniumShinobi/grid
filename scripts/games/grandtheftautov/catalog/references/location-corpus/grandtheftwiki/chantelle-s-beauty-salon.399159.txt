@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|name = Chantelle's Beauty Salon
+|type = Beauty salon
+|owner = 
+|location = [[Carson Ave]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = [[Where Credit's Due]]
+|employee = 
+}}
+
+[[LEAD]]
+'''Chantelle's Beauty Salon''' is a beauty salon located on [[Carson Ave]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. During the mission [[Where Credit's Due]] in GTA Online, the [[Protagonist (GTA Online)|protagonist(s)]] repossess a pink [[Zion]] for [[Simeon Yetarian]] from the beauty salon.
+
+
+
+[[Type::Business| ]]
+[[Location::Carson Ave| ]]
+[[Location::Rancho| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

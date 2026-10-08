@@ -1,0 +1,69 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = Rancho-GTAV.png
+|caption = Overview of Rancho.
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Rancho.ogg
+|location = [[South Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = <gallery>
+Rancho-IngameGPS-GTAV-Map.png|Rancho
+Rancho-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Rancho''' is a neighbourhood in southern [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is bordered by [[Strawberry]] to the north, [[Cypress Flats]] to the southeast, [[La Mesa]] to the northeast, and [[Davis]] to the west.
+
+[[SECTION:2:Places of Interest]]
+*[[Rancho Church]]
+*[[Rancho Projects]]
+*[[Rancho Towers]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Carson Avenue]]
+*[[Dutch London Street]]
+*[[El Rancho Boulevard]]
+*[[Innocence Boulevard]]
+*[[Jamestown Street]]
+*[[Little Bighorn Avenue]]
+*[[Macdonald Street]]
+*[[Roy Lowenstein Boulevard]]
+
+[[SECTION:2:Businesses]]
+*Auto Parts
+*[[Avalon Laundry & Dry Cleaners]]
+*[[Beacon Theatre]]
+*Bean's Market
+*[[Bilingsgate Motel]]
+*[[Cent Carpet]]
+*[[Chantelle's Beauty Salon]]
+*[[Davis Electricals]]
+*[[Discount Beauty Store]]
+*Discount Carpet Cleaner
+*East Los Santos Appliances
+*[[Gav's Cash Exchange]]
+*[[Hearty Taco]] (northern location)
+*[[Hearty Taco]] (southern location)
+*[[Hi-Men]]
+*[[Gav's Cash Exchange]]
+*[[Liquor Deli]]
+*[[Los Santos Department of Water & Power]]
+*[[Longpig Mini Market]]
+*[[Mom's Famous Tacos]]
+*[[Rancho Tires]]
+*[[South LS Liquor]]
+*[[Strawberry Mortuary]]
+*[[Smokers Emporium|Toke-a-mon Smokers Emporium]]
+*[[Tony's Carpets]]
+*[[Davis Sheriff's Station|Towing Impound]]
+*Trinculo Clothing
+*While-U-Wait Express Dry Cleaning (northern location)
+*While-U-Wait Express Dry Cleaning (southern location)
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

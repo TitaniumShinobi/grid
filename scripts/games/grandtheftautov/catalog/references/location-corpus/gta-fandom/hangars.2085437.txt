@@ -1,0 +1,65 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|image = Hangar-GTAO-Interior.PNG
+|style = {{HUDIcons|game=O|smhangar|animated=y}} Aircraft hangar
+|occupants = 
+[[Ron Jakowski]]<br>
+{{GTAOP}}<br>
+[[Charlie Reed]]<br>
+[[Rooster McCraw]]<br>
+[[Motorcycle Clubs]] <small>(determinant)</small><br>
+[[Organizations]] <small>(determinant)</small>
+|price = [[Money|$]]1,200,000 - $5,670,000
+|game = O
+}}
+
+[[LEAD]]
+'''Hangars''' are purchasable properties in {{O}} added in the [[GTA Online: Smuggler's Run|Smuggler's Run]] update.
+
+[[SECTION:3:Locations]]
+{| class="wikitable"
+! width="100%" align="center" colspan="5" | Hangars
+|-
+! width="9%" |Hangar
+! width="9%" |Location
+! width="30%" |Image
+! width="44%" |In-game description
+! width="8%" |Price
+|-
+|LSIA Hangar A17
+|[[Los Santos International Airport (HD Universe)|Los Santos International Airport]]
+|[[File:Hangars-GTAO-LSIAA17.jpg|250px|center]]
+|''More tons of contraband enter and leave San Andreas via LSIA than any other point in the state, so if you were looking for the high stakes table, you just found it. Time to pull up a chair.''
+|$1,200,000
+|-
+|LSIA Hangar 1
+|Los Santos International Airport
+|[[File:Hangars-GTAO-LSIA1.jpg|250px|center]]
+|''If you've ever flown out of LSIA, it will come as no surprise that most of the infrastructure has been auctioned off to career criminals. Beat the check-in lines, dodge the taxes, moon the cops: this is commercial flying as it should be.''
+|$1,525,000
+|-
+|Fort Zancudo Hangar 3499
+|[[Fort Zancudo]]
+|[[File:Hangars-GTAO-Zancudo3499.jpg|250px|center]]
+|''Have you viewed too many lifeless, cookie-cutter properties? Are you looking for something with a bit more character? This wonderful property is chock full of history, from the residual nerve agents in the brickwork to the previous occupant's fingernails sunk lovingly into the concrete floor. Please note: this hangar provides the buyer with low level clearance to Fort Zancudo.''
+|$2,650,000
+|-
+|Fort Zancudo Hangar 3497
+|Fort Zancudo
+|[[File:Hangars-GTAO-Zancudo3497.jpg|250px|center]]
+|''Right at the heart of one of the IAA's most exclusive and sought-after black sites, these industrial premises are perfect for the ambitious entrepreneur on the hunt for an address to impress. Just think of the wow-factor when you lead your clients past those lines of hooded detainees. Please note: this hangar provides the buyer with low level clearance to Fort Zancudo.''
+|$2,085,000
+|-
+|Fort Zancudo Hangar A2
+|Fort Zancudo
+|[[File:Hangars-GTAO-ZancudoA2.jpg|250px|center]]
+|''When it comes to hiding in plain sight, it doesn't get much plainer than the largest military installation in the state. On the plus side, they won't ask if you won't tell, and if you need to do any advanced interrogation you're welcome to borrow the bucket. Please note: this hangar provides the buyer with low level clearance to Fort Zancudo.''
+|$3,250,000
+|}
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA Online in Los Santos
+Hangars
+Properties
+Safehouses

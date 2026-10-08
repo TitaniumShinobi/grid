@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Snapper's Delight
+|image     = SnappersDelight-GTAV.jpg
+|caption   = '''Snapper's Delight'''
+|taglines  = 
+|type      = Photographic Retailer
+|games     = {{Games|V=y|O=y}}
+|locations = [[Chamberlain Hills]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Snapper's Delight''' is a photographic retailer in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics companies

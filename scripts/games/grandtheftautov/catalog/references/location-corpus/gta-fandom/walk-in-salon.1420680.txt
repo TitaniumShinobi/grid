@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Walk-in Salon
+|image       = WalkInSalon-GTAV-Right.jpg
+|type        = Salon
+|games       = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|lcn         = 
+|locations   = [[Bay City Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Walk-in Salon''' is a business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Salons

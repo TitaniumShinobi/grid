@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|type = Fashion retailer
+|name = Maracas
+|altnames =
+|taglines = 
+|reference = 
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|condition = Active 
+|products = 
+|bawsaq = 
+|image = Maracas-GTAV-Logo.png
+|oldlogo = Maracas-GTAV-Logo-Texture.png
+|darklogo = y
+|caption = The logo
+|image_size = 300
+|games = {{Games|V=y|O=y}}
+|map = 
+}}
+
+[[LEAD]]
+'''Maracas''' is a fashion store in [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]] appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Location]]
+<gallery position="center" spacing="small" widths="270px">
+Maracas-GTAV-DaylightFront.png|[[Portola Drive]] and [[South Boulevard Del Perro]] (night [[:File:Maracas-GTAV-NightFront.png|view]]).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores
+Stores

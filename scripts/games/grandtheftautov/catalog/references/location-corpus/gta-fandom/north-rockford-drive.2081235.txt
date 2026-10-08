@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = NorthRockfordDrive-GTAV-NorthView.jpg
+|caption = The street, as seen from [[West Eclipse Boulevard]].
+|games = {{Games|V=y|O=y}}
+|start = [[Marlowe Drive]] and [[Tongva Drive]]
+|end = [[San Andreas Avenue]] and [[South Rockford Drive]]
+|map =
+<gallery>
+NorthRockfordDrive-GTAV-Map.png|Map
+NorthRockfordDrive-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''North Rockford Drive''' is a long avenue located in [[Richman Glen]], [[Richman (HD Universe)|Richman]], [[Morningwood]] and [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[1001 North Rockford Drive]] <small>(Richman)</small>
+*[[Backlot City]] <small>(western entrance, intersection of Red Desert Avenue)</small>
+*[[Del Perro City Hall]] <small>(Del Perro, corners of Marathon Avenue and Red Desert Avenue)</small>
+*[[Elgin House]] <small>(Del Perro, corner of Marathon Avenue)</small>
+*[[Hill Valley Church]] <small>(corner of West Eclipse Boulevard)</small>
+*Kortz Center gateway <small>(Kortz Drive, Richman)</small>
+*[[Las Cuadras]] <small>(Morningwood)</small>
+
+[[SECTION:2:Businesses]]
+
+
+[[SECTION:3:Del Perro]]
+*[[Binco (HD Universe)|Binco]] <small>(corner of Boulevard Del Perro)</small>
+*Panache Laundry <small>(corner of Boulevard Del Perro)</small>
+*[[Maze Bank]] Building <small>(corner of Marathon Avenue)</small>
+*[[Save-A-Cent]] <small>(corner of Boulevard Del Perro)</small>
+
+[[SECTION:3:Morningwood]]
+*Chido! <small>(corner of Cougar Avenue)</small>
+*Oldie But Goodie <small>(corner of West Eclipse Boulevard)</small>
+*Outdoor Action
+*[[RON]] [[Filling Stations|filling station]] <small>(corner of Perth Street)</small>
+*[[Woody's Autos]] <small>(corner of Boulevard Del Perro)</small>
+
+[[SECTION:3:Richman Glen]]
+*[[Limited Service]] <small>(accessible interior, corner of Banham Canyon Drive)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

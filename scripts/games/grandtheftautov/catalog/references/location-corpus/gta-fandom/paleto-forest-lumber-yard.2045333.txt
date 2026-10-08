@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|name          = Paleto Forest Lumber Yard
+|type          = lumberyard
+|image         = PaletoForestLumberYard-GTAVe.png
+|caption       = Entrance to the lumber yard.
+|games         = {{Games|V=y|O=y}}
+|location      = [[Paleto Forest]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = PaletoForestLumberYard-GTAV-Map.png
+|map_caption   = Approximate location on the map (red).
+}}
+
+[[LEAD]]
+The '''Paleto Forest Lumber Yard''' is a lumber yard appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Building yards
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

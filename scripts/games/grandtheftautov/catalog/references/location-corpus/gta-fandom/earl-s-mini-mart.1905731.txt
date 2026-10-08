@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{infobox location
+|image = Earl'sMiniMart-GTAV.png
+|type = gasstation
+|games = {{games|V=y|O=y}}
+|location = [[Senora Freeway]], [[Grand Senora Desert]], [[Blaine County]]
+|status = defunct
+}}
+
+[[LEAD]]
+'''Earl's Mini-Mart''' is a [[Filling Stations|gas station]] and liquor store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Gas stations
+Liquor stores

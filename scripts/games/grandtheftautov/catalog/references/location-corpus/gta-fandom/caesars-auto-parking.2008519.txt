@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Caesars Auto Parking
+|image = CaesarsParking-GTAV-Logo.png
+|type = Parking Company
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]}}
+
+[[LEAD]]
+'''Caesars Auto Parking''' is a parking company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|Caesar'sAutoParking-GTAV-LittleSeoul.png|[[Vespucci Boulevard]] and [[Calais Avenue]], [[Little Seoul]].
+|Caesar'sAutoParking-GTAV-Downtown.png|[[Adam's Apple Boulevard]], [[Pillbox Hill]].
+|CaesarsParking-GTAV-SpanishAve.png|[[Spanish Avenue]], [[Downtown Vinewood]].
+}}
+
+[[ru:Caesars Auto Parking]]
+[[pl:Caesars Auto Parking‎‎]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Companies
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

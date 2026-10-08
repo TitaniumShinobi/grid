@@ -520,6 +520,16 @@ public sealed record GtaVSecondaryAssertionBatch(
     ImmutableArray<CrossSourceTargetLinkClaim> TargetLinkClaims,
     ImmutableArray<CrossSourceCanonicalAssertion> CrossSourceAssertions)
 {
+    public ImmutableArray<RelationshipAssertion> RelationshipAssertions { get; init; } = [];
+    public CanonicalCatalogPayload ApplyTo(CanonicalCatalogPayload origin,
+        ImmutableArray<SourceAcquisitionReceipt> receipts,
+        ImmutableArray<SourceArtifactAcquisitionBinding> bindings)
+    {
+        var projected = GtaVKnowledgePackageProjection.AddSecondaryAssertions(origin, this, receipts, bindings);
+        return projected with { RelationshipAssertions = origin.RelationshipAssertions.Concat(RelationshipAssertions)
+            .DistinctBy(value => EvidenceClaimContentId.DeriveV1(value).Value)
+            .OrderBy(value => EvidenceClaimContentId.DeriveV1(value).Value, StringComparer.Ordinal).ToImmutableArray() };
+    }
     /// <summary>
     /// Additional non-record sources needed to close secondary assertions. Existing local-only
     /// adapters leave this empty; provider-backed adapters use it to retain their exact source.
@@ -535,4 +545,7 @@ public sealed record GtaVSecondaryAssertionBatch(
     public ImmutableArray<UnresolvedCrossSourceEvidenceBinding> UnresolvedCrossSourceEvidenceBindings { get; init; } = [];
     public ImmutableArray<UnresolvedCrossSourceAssertion> UnresolvedCrossSourceAssertions { get; init; } = [];
     public ImmutableArray<CanonicalCorrelationEnvelope> CorrelationEnvelopes { get; init; } = [];
+    public ImmutableArray<CanonicalKnowledgeRecord> AdditionalKnowledgeRecords { get; init; } = [];
+    public ImmutableArray<AdapterBoundCatalogSourceRevisionRecord> AdditionalSourceRevisions { get; init; } = [];
+    public ImmutableArray<LocationCoverageReport> AdditionalLocationCoverageReports { get; init; } = [];
 }

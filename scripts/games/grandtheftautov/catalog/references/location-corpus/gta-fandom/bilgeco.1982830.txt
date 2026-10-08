@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = shipping
+|name          = Bilgeco
+|sign          = Bilgeco-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Port of Los Santos]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[Los Santos International Airport (HD Universe)|LSIA]], Los Santos, San Andreas
+*[[PortViceCity]], [[Vice City (HD Universe)|Vice City]], [[Vice-Dale County]], [[State of Leonida|Leonida]]
+|business_type = Shipping company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Bilgeco''' is a shipping company appearing in {{VO}}, and is due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Shipping companies

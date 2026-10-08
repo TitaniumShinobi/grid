@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = Fake News
+|image        = FakeNews-GTAO-Thumbnail.png
+|location     = [[State of San Andreas (HD Universe)|San Andreas]]
+|game         = {{Games|O=y}}
+|type         = CasinoWork
+|fail         = 
+|for          = [[Agatha Baker]]
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] {{Small|(organization)}}
+*1 to 8 players {{Small|(motorcycle club)}}
+|todo         = 
+*Find the reporter at one of the <span class="v-hud-location">locations</span>.
+*Tail the reporter's <span class="v-hud-friendly">news van</span>.
+*Follow the <span class="v-hud-friendly">reporter</span> to a quiet spot.
+*Take out the <span class="v-hud-enemy">reporter</span>.
+*Search the reporter for his <span class="v-hud-pickup">wallet</span>.
+*Leave the area.
+|reward = 
+*$6,500 [[Money|Cash]]
+*5,000 [[Chips]]
+*[[Reputation|RP]]
+|target = Container
+}}
+
+[[LEAD]]
+'''Fake News''' is a [[Casino Work]] mission featured in {{O}} as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino & Resort]] update. It is a freeroam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[SECTION:3:Possible Van Locations]]
+<gallery position="center" spacing="small" widths="250px">
+FakeNews-GTAO-VanLocation-CypressFlats.png|[[Cypress Flats]].
+FakeNews-GTAO-VanLocation-DailyGlobe.png|[[Daily Globe]] building in [[Pillbox Hill]].‎
+FakeNews-GTAO-VanLocation-GWCandGolfingSociety.png|[[GWC and Golfing Society]].
+FakeNews-GTAO-VanLocation-KortzCenter.png|[[Kortz Center]].
+FakeNews-GTAO-VanLocation-LaFuenteBlanca.png|[[La Fuente Blanca]].
+FakeNews-GTAO-VanLocation-LaMesa.png|[[La Mesa]].
+FakeNews-GTAO-VanLocation-LittleSeoul.png|[[Little Seoul]].
+FakeNews-GTAO-VanLocation-LSIA.png|[[Los Santos International Airport (HD Universe)|Los Santos International Airport]].
+FakeNews-GTAO-VanLocation-MazeBankArena.png|[[Maze Bank Arena]].
+FakeNews-GTAO-VanLocation-Terminal.png|[[Terminal]].
+</gallery>
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

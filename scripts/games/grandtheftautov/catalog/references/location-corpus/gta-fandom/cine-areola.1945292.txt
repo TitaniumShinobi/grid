@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|safehouse      = 
+|type           = cinema
+|name           = Cine Areola
+|sign           = 
+|image          = CinemaAreola-GTAV.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = No
+|opentimes      = 
+|owner          = 
+|price          = 
+|occupants      = 
+|businesses     = 
+|employees      = 
+|status         = defunct
+|unlockedby     = 
+}}
+
+[[LEAD]]
+The '''Cine Areola''' is a cinema in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located on [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]] in [[Vinewood (HD Universe)|Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Theatres

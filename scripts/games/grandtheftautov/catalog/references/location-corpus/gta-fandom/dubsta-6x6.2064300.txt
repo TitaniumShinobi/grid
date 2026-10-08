@@ -1,0 +1,100 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|front_image         = Dubsta6x6-GTAV-front.png
+|rear_image          = Dubsta6x6-GTAV-rear.png
+|caption             = A '''Dubsta 6x6''' in ''[[Grand Theft Auto V]]''.
+|class               =  [[:Category:Off-Road class|Off-Road]] {{Small|(''GTA V'' and ''GTA Online'')}}
+|body_style          = [[:Category:Crew cabs|4-door SUT/pickup truck]]
+|capacity            = 6 {{Small|(driver and 5 passengers)}}
+|manufacturer        = [[Benefactor]]
+|price               = [[Money|$]]249,000 {{Small|([[Warstock Cache & Carry]])}}
+|games               = {{Games|V={{DLC|mphipster}}|O={{DLC|mphipster}}}}
+|type            = lighttruck
+|swankness           = 
+|dashtype            = Cavalcade {{Small|(needle)}}<br>[[File:Cavalcade-Dials-GTAV.png|thumb|center|170px]]<br>Cavalcade {{Small|(dial texture)}}<br>[[File:Cavalcade-GTAV-DialSet.png|thumb|center|170px]]
+|inttxd              = Cavalcade
+|wheeltype           = Off-Road
+|flags               = 
+{{Flags|FLAG_PARKING_SENSORS}}<br>
+{{Flags|FLAG_RICH_CAR}}<br>
+{{Flags|FLAG_IS_OFFROAD_VEHICLE}}<br>
+{{Flags|FLAG_IS_BULKY}}<br>
+{{Flags|FLAG_RECESSED_HEADLIGHT_CORONAS}}<br>
+|modelsets           = 
+|modelname           = dubsta3
+|handlingname        = DUBSTA3
+|textlabelname       = DUBSTA3
+|roadspawn           = No
+|roadspawnmaxcol     = 
+|roadspawnfreq       = 
+|roadspawntrailer    = 
+|roadspawnidendis    = 
+|roadspawndrivers    = 
+|roadspawngroups     = 
+|roadspawnlicense    = 
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The [[Benefactor]] '''Dubsta 6x6''' is an off-road pick-up truck featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' as part of [[The "I'm Not a Hipster" Update]].
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto V'']]
+'''Original version'''
+*Available in every [[protagonist]]'s garage after installing The "I'm Not a Hipster" Update in single player.
+'''Enhanced version'''
+*Can be bought from [[Warstock Cache & Carry]] for [[Money|$]]249,000.
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+*Can be purchased for $249,000 from Warstock Cache & Carry.
+**Prior to the [[Cunning Stunts: Special Vehicle Circuit]] update, the vehicle could only be purchased after reaching [[rank]] 100.
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Dubsta 6x6
+|manufacturer  = Benefactor
+|class         = Off-Road 
+|image         = Dubsta6x6-GTAV-RGSC-MainNew.jpg
+|caption       = Main image (after 2019).
+|image2        = Dubsta6x6-GTAV-RGSC-Action.jpg
+|caption2      = "Action" image for ''GTA V''.
+|image3        = Dubsta6x6-GTAO-RGSC-Action.jpg
+|caption3      = "Action" image for ''GTA Online''.
+|image4        = Dubsta6x6-GTAV-RGSC-Main.jpg
+|caption4      = Main image (prior to 2019).
+|speed         = 73.507538
+|accel         = 70
+|braking       = 20
+|traction      = 60.606064
+|seats         = 6
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = ws
+|schematic     = Dubsta3
+}}
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Dubsta 6x6}}
+{{Defaultradio|game=VO|defaultgroup=rap}}
+
+[[CATEGORIES]]
+All wheel drive vehicles
+Crew cabs
+Light trucks
+Off-Road class
+Off-roading vehicles
+Vehicles eligible for Imani Tech upgrades
+Vehicles in GTA Online: The "I'm Not a Hipster" Update
+Vehicles in GTA V: The "I'm Not a Hipster" Update
+Vehicles manufactured by Benefactor
+Vehicles purchasable from Premium Deluxe Motorsport
+Vehicles purchasable from Warstock Cache & Carry

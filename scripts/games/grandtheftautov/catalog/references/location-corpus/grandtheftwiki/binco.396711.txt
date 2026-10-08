@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Binco-GTASA-logo.gif
+|size = 250x250px
+|game_1 = GTA San Andreas
+|game_2 = GTA IV
+|game_3 = GTA V
+|name = Binco
+|type = [[:Category:Clothing Stores|Clothing]]
+|owner = 
+|location = [[Ganton]], [[Los Santos in GTA III Era|Los Santos]]<br />[[Juniper Hill]], [[San Fierro]]<br />[[Las Venturas Airport]], [[Las Venturas]]<br />[[Redsands East]], [[Las Venturas]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Binco''' is a comparatively low-priced clothing store that the player may visit in [[Grand Theft Auto: San Andreas]]. Binco was also intended to appear in [[Grand Theft Auto IV]], however it was replaced with the [[Russian Shop]] for unknown reasons. Binco logos still remain around the city, however, including on vans. Binco reemerges in [[Grand Theft Auto V]] as one of the available clothing stores.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in Las Venturas
+Businesses in Los Santos in GTA III Era
+Businesses in San Fierro
+Businesses listed on the BAWSAQ in GTA V
+Clothing Stores
+Clothing in GTA San Andreas

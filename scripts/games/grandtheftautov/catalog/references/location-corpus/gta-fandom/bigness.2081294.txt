@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = fashion
+|name          = Bigness
+|sign          = Bigness Logo Camo.jpg
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpimportexport}}}}
+|mentioned     = 
+|locations     = 
+|business_type = Fashion brand
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = [[#Merchandise|Merchandise]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Bigness''' is a fashion brand appearing in {{O}} as part of the [[GTA Online: Import/Export|Import/Export]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Import/Export
+Fashion brands

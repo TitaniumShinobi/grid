@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Clappers
+|image = Clappers-GTAV.png
+|caption = Clappers as seen from Vinewood Boulevard.
+|type = Nightclub
+|games = ''[[Grand Theft Auto V]]''
+|locations = [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]] and [[Power Street]], [[Downtown Vinewood]]
+}}
+
+[[LEAD]]
+'''Clappers''' is a restaurant and nightclub in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurants
+Nightclubs

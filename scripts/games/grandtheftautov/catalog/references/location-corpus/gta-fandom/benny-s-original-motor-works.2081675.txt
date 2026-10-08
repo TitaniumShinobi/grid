@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = vehiclecustoms
+|name          = Benny's Original Motor Works
+|sign          = BennysOriginalMotorWorks-GTAO-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|O=y}}
+|mentioned     = 
+|locations     = [[Alta Street]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = 
+|founded       = [[2005]]
+|founder       = 
+|taglines      = 
+|status        = Active
+}}
+
+[[LEAD]]
+'''Benny's Original Motor Works''' is a vehicle customization and tuning shop introduced into {{O}} in the [[GTA Online: Lowriders|Lowriders]] update.
+
+[[SECTION:3:Interior]]
+<gallery position="center" spacing="small" widths="250px">
+Benny'sOriginalMotorWorks-GTAO-WorkTable3.png|A worktable featuring a car battery, wrench, several oil containers, a blow torch, a [[Power Metal]] tool box, an exhaust with silencer/catalyst, a Power Metal drill case, Power Metal tool chest, and a vice.
+Benny'sOriginalMotorWorks-GTAO-WorkTable2.png|A worktable featuring a vice, fan, wrench and a twin-cam 4 cylinder engine. Another exhaust can be found on the shelves, as well as a six-spoke rim and numerous boxes.
+Benny'sOriginalMotorWorks-GTAO-WorkTable1.png|A worktable with 3 large exhaust pipes and catalysts, angle grinder, as well as a large pegboard with several tools.
+Benny'sOriginalMotorWorks-GTAO-Workshop1.png|Primary workshop with main showroom/roof display, as well as a [[Banshee (HD Universe)|Banshee]] on a car lift.
+Benny'sOriginalMotorWorks-GTAO-Workshop2.png|The secondary workshop with numerous worktables, an engine hoist, a hydraulic car lift with a supercharged [[Peyote]] and a covered [[Cheetah (HD Universe)|Cheetah]].
+Benny'sOriginalMotorWorks-GTAO-TyreRack.png|Tyre rack found on the secondary workshop, as well as an engine hoist and several bumpers, hoods, catalysts, and a compressor.
+Benny'sOriginalMotorWorks-GTAO-ToolCabinets.png|Two large tool cabinets, one being a Power Metal chest. A hydraulic lift can be seen.
+Benny'sOriginalMotorWorks-GTAO-Room1.png|Another smaller workshop room with several car parts, tables, cabinets and shelves. Numerous banners can be seen hanging from the walls.
+Benny'sOriginalMotorWorks-GTAO-Peyote.png|A supercharged Peyote on the hydraulic car lift, along with a covered Cheetah.
+Benny'sOriginalMotorWorks-GTAO-License.png|Business license.
+Benny'sOriginalMotorWorks-GTAO-Landing.png|Landing with several weight lifts, seating area, drum kit, vending machine and a tyre stack.
+Benny'sOriginalMotorWorks-GTAO-Information.png|Information found on the wall on the left of the entrance.
+Benny'sOriginalMotorWorks-GTAO-Engine.png|The twin-cam 4 cylinder engine seen on the table, also found at [[Los Santos Customs]].
+Benny'sOriginalMotorWorks-GTAO-Bumpers2.png|Numerous bumpers.
+Benny'sOriginalMotorWorks-GTAO-Bumpers1.png|Bumpers and three large gas canisters.
+Benny'sOriginalMotorWorks-GTAO-Banshee.png|A Banshee found on a car lift with the hood being resprayed.
+VoodooCustom-GTAO-Advert-2020.jpg|Official screenshot from 2020, featuring a Voodoo Custom inside the workshop.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online: Lowriders
+Businesses with websites
+Mod shop brands
+Vehicle dealerships

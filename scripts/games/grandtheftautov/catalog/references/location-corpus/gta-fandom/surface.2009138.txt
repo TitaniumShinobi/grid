@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Surface-GTAV-Logo-Texture.png
+|type = Clothing Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Eclipse Boulevard]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Surface''' is a clothing store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located next to [[Specs Pest]] on [[Eclipse Boulevard]] in [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Stores

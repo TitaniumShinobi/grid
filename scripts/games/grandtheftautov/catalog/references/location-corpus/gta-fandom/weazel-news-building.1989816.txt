@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = WeazelNewsBuilding-GTAV.png
+|games          = {{Games|V=y|O=y}}
+|location       = [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = No
+|operator       = [[Weazel]]
+|use            = Weazel News Headquarters
+}}
+
+[[LEAD]]
+'''Weazel News Building''' is the main broadcasting building for the [[Weazel News]] network in {{V}} and {{O}}.
+
+It is located on [[Palomino Avenue]], [[Lindsay Circus]] and [[Calais Avenue]] in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]. The building is where all of the news is recorded. The Weazel News Building cannot be entered and plays no role in the story, except for giving out news coverage on the [[Radio Stations in GTA V|radio]]. It has a helipad on its roof.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Low-rise buildings

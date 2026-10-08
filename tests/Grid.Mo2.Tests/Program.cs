@@ -5,6 +5,12 @@ using Grid.Mo2.Infrastructure;
 using Grid.Mo2.Models;
 using Grid.Mo2.Services;
 
+if (args.Length == 2 && args[0].Equals("--inspect-profile-read-only", StringComparison.Ordinal))
+{
+    Console.WriteLine(await Mo2ProfileEnvironmentResolutionChecks.InspectReadOnlyAsync(args[1]));
+    return 0;
+}
+
 var checks = 0;
 var failures = new List<string>();
 
@@ -836,6 +842,20 @@ foreach (var profileCheck in await Mo2ProfileChecks.RunAsync())
     {
         failures.Add($"{profileCheck.Name}: {profileCheck.Failure.GetType().Name}: {profileCheck.Failure.Message}");
         Console.WriteLine($"FAIL {profileCheck.Name}");
+    }
+}
+
+foreach (var environmentResolutionCheck in await Mo2ProfileEnvironmentResolutionChecks.RunAsync())
+{
+    checks++;
+    if (environmentResolutionCheck.Failure is null)
+    {
+        Console.WriteLine($"PASS {environmentResolutionCheck.Name}");
+    }
+    else
+    {
+        failures.Add($"{environmentResolutionCheck.Name}: {environmentResolutionCheck.Failure.GetType().Name}: {environmentResolutionCheck.Failure.Message}");
+        Console.WriteLine($"FAIL {environmentResolutionCheck.Name}");
     }
 }
 

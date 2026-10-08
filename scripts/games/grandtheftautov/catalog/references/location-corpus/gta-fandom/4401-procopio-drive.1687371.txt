@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 4401 Procopio Drive
+|image = 4401ProcopioDrive-GTAV.png
+|caption = General view of the house.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|location = [[Procopio Drive]], [[Paleto Bay]], [[Blaine County]]
+|style = Medium-end house
+|garage = 6 vehicles <br> 2 bikes
+|price = $165,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = [[Rank]] 5
+}}
+
+[[LEAD]]
+'''4401 Procopio Drive''' is a [[Safehouses in GTA Online|safehouse]] in ''[[Grand Theft Auto Online]]'' located on [[Procopio Drive]] in [[Paleto Bay]], [[Blaine County]], featured in the [[Independence Day Special]] update.
+
+It is available for purchase through [[Dynasty 8]]'s website, dynasty8realestate.com for [[Money|$]]165,000 and includes a 6-car garage.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Properties in GTA Online
+Safehouses in GTA Online

@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = HARDWARE STORE
+|style         = 
+|type          = 
+|name          = Davis Hardware
+|sign          = DavisHardware-GTAV-Logo.png
+|image         = DavisHardwareStore-GTAVe.png
+|caption       = Storefront in [[Chumash Plaza]].
+|aka           = Hardware
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Chumash Plaza]], [[Chumash]], [[Los Santos County]]
+|business_type = Hardware and houseware store
+|founded       = [[1954]]
+|founder       = B. Davids
+|taglines      = ''"Family Owner Since 1954"''
+|status        = active
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Davis Hardware''' is a hardware store appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Hardware stores

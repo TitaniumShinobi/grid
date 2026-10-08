@@ -1,0 +1,70 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = medicine
+|name          = Betta Pharmaceuticals
+|sign          = BettaPharmaceuticals-GTAIV-Logo.svg
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations_2|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = [[Mark Eastman]] <small>(before [[2001]])</small>
+|owner         =
+|divisions     = [[Betta Life Pharmacy]]
+|employees     = 
+|products      = [[#Products|Pharmaceuticals]]
+|vehicles      = [[Mule]]
+|weapons       = 
+|taglines      = "''Makes Everything Betta''"
+|bawsaq        = {{BAWSAQ/Slider}} '''BET'''
+|lcn           = 
+|status        = 
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|opentimes     = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Betta Pharmaceuticals''' is a pharmaceutical company that appears in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Stock Market]]
+In ''GTA V'', the player can buy and sell stocks from Betta Pharmaceuticals on the [[Bawsaq.com|BAWSAQ website]]. Their main competitor on the stock market appears to be [[Bilkinton Research]]. The Betta Pharmaceuticals stock is affected by the events of [[The Hotel Assassination]], part of [[Lester Crest]]'s [[Lester's Assassinations|assassination missions]].
+
+[[SECTION:3:Locations]]
+*The [[BOABO]], [[Broker]] facility in {{IV}} is seemingly a rendition of {{URL|https://maps.app.goo.gl/dXZ8BBbxehk1hL1u9|80 Richards Street}} in {{WP|Red Hook, Brooklyn|Red Hook}}, {{WP|Brooklyn}}.
+
+{{Clear}}
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" bordercolor="#FF8000" spacing="small" widths="270px">
+BettaPharmaceuticals-GTAIV-BOABO.jpg|[[BOABO]], [[Broker]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" bordercolor="#FF8000" spacing="small" widths="270px">
+BAWSAQBuilding-GTAV.png|[[Boulevard Del Perro]], [[Rockford Hills]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Pharmaceutical companies

@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Timmy's Flowers
+|image     = TimmysFlowers-GTAV-Exterior.jpg
+|caption   = '''Timmy's Flowers'''
+|taglines  = 
+|type      = Florist
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+}}
+
+[[LEAD]]
+'''Timmy's Flowers''' is a flower shop in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Flower shops

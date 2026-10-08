@@ -1,0 +1,192 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = WarehouseInterior2-GTAO-SS1.png
+|type           = safehouse
+|structure_type = {{HUDIcons|game=O|warehouse|animated=y}} Warehouse
+|occupants      = 
+*[[Lupe]]
+*[[Warehouse Staff]]
+*{{GTAOP}}
+*[[Motorcycle Clubs]] {{Small|(determinant)}}
+*[[Organizations]] {{Small|(determinant)}}
+|price          = 
+*[[Money|$]]250,000 - $400,000 (small)
+*$880,000 - $1,017,000 (medium)
+*$1,900,000 - $3,500,000 (large)
+|games          = {{Games|O=y}}
+}}
+
+[[LEAD]]
+'''Warehouses''' are purchasable properties featured in {{O}} added as part of the [[GTA Online: Further Adventures in Finance and Felony|Further Adventures in Finance and Felony]] update. They are available to buy once the player registers as a CEO and buys an [[Office]].
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:Map]]
+<gallery position="center" widths="270px">
+Finance&Felony-Colorcoded.jpg|Map of all '''warehouses'''.
+</gallery>
+
+[[SECTION:3:Small Warehouses - 16 Crates]]
+{| class="article-table" style="width: 100%;"
+!Name
+!Images
+!Description
+!Price
+!Location
+|-
+|Convenience Store Lockup
+|[[File:Warehouses-GTAO-Small-Rancho-ConvenienceStoreLockup.png|center|200px]]
+|"''The previous owner was a compulsive hoarder, and the last time anyone set foot in here people listened to CDs and got their porn in magazines. We're guessing you'll have some clearing out to do - but hey, it's almost cheap.''"
+|$250,000
+|[[Rancho]]
+|-
+|[[120 Murrieta Heights|Celltowa Unit]]
+|[[File:Warehouses-GTAO-Small-LaMesa-CelltowaUnit.png|center|200px]]
+|"''Buy it as unregistered storage in a shabby industrial area with minimal police presence; sell it a couple years later to an ex-yuppie who wants to start a low-fi artisan espresso bar in an edgy part of town. The American dream lives on.''"
+|$318,000
+|[[La Mesa]]
+|-
+|White Widow Garage
+|[[File:Warehouses-GTAO-Small-LaPuerta-WhiteWidowGarage.png|center|200px]]
+|"''For the businessman in need of privacy, what could be less conspicuous than a second rate hipster boutique in the heart of Vespucci? Generic and obnoxious: the perfect urban camouflage.''"
+|$360,000
+|[[La Puerta]]
+|-
+|[[Pacific Bait]] Storage
+|[[File:Warehouses-GTAO-Small-ElysianIsland-PacificBaitStorage.png|center|200px]]
+|"''Sure, it was recently declared a biohazard - but no cop with a functioning sense of smell is going to come snooping around here, and nothing confuses sniffer dogs like a room full of maggots and rotting fish.''"
+|$376,000
+|[[Elysian Island]]
+|-
+|[[Pier 400]] Utility Building
+|[[File:Warehouses-GTAO-Small-ElysianIsland-Pier400UtilityBuilding.png|center|200px]]
+|"''If you can ignore the ankle deep water and toxic mold this is a nice quiet location for some perfectly legitimate commodities brokering.''"
+|$392,000
+|[[Elysian Island]]
+|-
+|Foreclosed Garage
+|[[File:Warehouses-GTAO-Small-WestVinewood-ForeclosedGarage.png|center|200px]]
+|"''A neighborhood of self-obsessed, unobservant millionaires with extensive drug habits. When you think about it, Vinewood makes an ideal location for a cache of pretty much whatever you like.''"
+|$400,000
+|[[West Vinewood]]
+|}
+
+[[SECTION:3:Medium Warehouse - 42 Crates]]
+{| class="article-table" style="width: 100%;"
+!Name
+!Images
+!Description
+!Price
+!Location
+|-
+|GEE Warehouse
+|[[File:Warehouses-GTAO-Medium-ElBurroHeights-GEEWarehouse.png|center|200px]]
+|"''For some, it's a smog-ridden shanty town on the outskirts of LS; for you, it's a center of modern entrepreneurship and competitive industry with no red tape and a rock-bottom price. You are the visionary, this is the vision.''"
+|$880,000
+|[[El Burro Heights]]
+|-
+|Derriere Lingerie Backlot
+|[[File:Warehouses-GTAO-Medium-DelPerro-DerriereLingerieBacklot.png|center|200px]]
+|"''Sure, other importers have bigger warehouses - but can any of them say they just drove their goods right into the back of Derriere lingerie? Just think of the Lifeinvader status updates.''"
+|$902,000
+|[[Del Perro]]
+|-
+|Fridgit Annexe
+|[[File:Warehouses-GTAO-Medium-LaPuerta-FridgitAnnexe.png|center|200px]]
+|"''Whether you need a place to stash a trunk full of body parts or keep a perfectly chilled case of beer, setting up shop next to a cold storage facility has its benefits.''"
+|$925,000
+|[[La Puerta]]
+|-
+|Discount Retail Unit
+|[[File:Warehouses-GTAO-Medium-DowntownVinewood-DiscountRetailUnit.png|center|200px]]
+|"''Small businesses are struggling across America, so when a store owner seizes the opportunity to start a space sharing initiative with his local drug cartel it's your patriotic duty to support that classic entrepreneurial spirit.''"
+|$948,000
+|[[Downtown Vinewood]]
+|-
+|Disused Factory Outlet
+|[[File:Warehouses-GTAO-Medium-Strawberry-DisusedFactoryOutlet.png|center|200px]]
+|"''Sure, high-street retailers are dying, but the endless supply of boarded up storefronts are a gift to arms dealers and meth labs up and down the country. Be a part of some real urban regeneration.''"
+|$971,000
+|[[Strawberry]]
+|-
+|LS Marine Building 3
+|[[File:Warehouses-GTAO-Medium-ElysianIsland-LSMarineBuilding3.png|center|200px]]
+|"''This charming, white paneled warehouse in the heart of a thriving dockland has been used as a smuggler's drop since the days when your grampa got sent to the chair. Join criminal history today.''"
+|$994,000
+|[[Elysian Island]]
+|-
+|Old Power Station
+|[[File:Warehouses-GTAO-Medium-Rancho-OldPowerStation.png|center|200px]]
+|"''Space, drama, privacy: an old power plant is perfect for everything from gun running to ivory smuggling - and thanks to the green lobby, this one is selling off space at rock bottom prices.''"
+|$1,000,000
+|[[Rancho]]
+|-
+|Railyard Warehouse
+|[[File:Warehouses-GTAO-Medium-LaMesa-RailyardWarehouse.png|center|200px]]
+|"''Invest now for great access to infrastructure, poor street lighting and an endless stream of cheap, undocumented labor from every migrant and freighthopper passing through town.''"
+|$1,017,000
+|[[La Mesa]]
+|}
+
+[[SECTION:3:Large Warehouse - 111 Crates]]
+{| class="article-table" style="width: 100%;"
+!Name
+!Images
+!Description
+!Price
+!Location
+|-
+|Wholesale Furniture
+|[[File:Warehouses-GTAO-Large-CypressFlats-WholesaleFurniture.png|center|200px]]
+|"''Act now for 7000 square feet of grey concrete storage where the only distinguishing feature is a complete lack of distinguishing features. If you want to go unnoticed, look no further.''"
+|$1,900,000
+|[[Cypress Flats]]
+|-
+|West Vinewood Backlot
+|[[File:Warehouses-GTAO-Large-WestVinewood-WestVinewoodBacklot.png|center|200px]]
+|"''There's no more fashionable place to overdose in the whole state, and there's no better example of hiding in plain sight than stockpiling a hundredweight of world-class narcotics in the backroom.''"
+|$2,135,000
+|[[West Vinewood]]
+|-
+|Xero Gas Factory
+|[[File:Warehouses-GTAO-Large-LSIA-XeroGasFactory.png|center|200px]]
+|"''The economy is stronger than it's ever been, there isn't a nationwide fossil fuel crisis, and Xero Gas have a huge amount of warehouse space on the market for no particular reason. Long-term let available.''"
+|$2,365,000
+|[[Los Santos International Airport (HD Universe)|LSIA]]
+|-
+|Logistics Depot
+|[[File:Warehouses-GTAO-Large-LaMesa-LogisticsDepot.png|center|200px]]
+|"''Forget the driftwood furniture and candlesticks made from wine bottles: take upcycling to the next level and reduce your footprint by converting this disused freight depot into a world-class black market storage facility.''"
+|$2,600,000
+|[[La Mesa]]
+|-
+|Bilgeco Warehouse
+|[[File:Warehouses-GTAO-Large-LSIA-BilgecoWarehouse.png|center|200px]]
+|"''Ah, the salt breeze, the seamen on the dockside, the endless ranks of unmarked shipping containers bound for unregistered ports across the Far East. The romance of the ocean never dies.''"
+|$2,825,000
+|[[Los Santos International Airport (HD Universe)|LSIA]]
+|-
+|Walker & Sons Warehouse
+|[[File:Warehouses-GTAO-Large-Banning-Walker&SonsWarehouse.png|center|200px]]
+|"''Tucked away among the heavy industry and widespread birth defects of the most toxic stretch of coastline in the state, this spacious property is perfect for the discerning trader with something really big to hide.''"
+|$3,040,000
+|[[Banning]]
+|-
+|[[Cypress Warehouses]]
+|[[File:Warehouses-GTAO-Large-CypressFlats-CypressWarehouses.png|center|200px]]
+|"''This one has it all: size, location, access. You can comfortably roll a mid-size body from here to the ocean without breaking a sweat. What more could you want?''"
+|$3,265,000
+|[[Cypress Flats]]
+|-
+|[[Darnell Bros.|Darnell Bros Warehouse]]
+|[[File:Warehouses-GTAO-Large-LaMesa-DarnelBrosWarehouse.png|center|200px]]
+|"''Once little more than a respectable, home-grown family business, Darnell Bros has since blossomed into a front for some of the most innovative criminal activity in the city. With neighbors like these you're on your way to the top.''"
+|$3,500,000
+|[[La Mesa]]
+|}
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online
+Warehouses

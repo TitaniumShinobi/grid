@@ -1,0 +1,105 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = INCORPORATED CITY
+|name = City of Davis
+|image = Davis-GTAV-Montage.png
+|caption = Clockwise from top: overview of the city, [[Grove Street (HD Universe)|Grove Street]] cul-de-sac, residential area, [[Davis City Hall]], [[Carson Avenue]].
+|aka = Davis
+Ganton
+|country = [[United States of America]]
+|county = [[Los Santos County]]
+|state=[[State of San Andreas (HD Universe)|San Andreas]]
+|games = {{Games|V=y|O=y}}
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Davis.ogg
+|map           = <gallery>
+Davis-IngameGPS-GTAV-Map.png|Davis
+Davis-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+|location=South Los Santos|condition=Poor}}
+
+[[LEAD]]
+The '''City of Davis''', simply referred to as '''Davis''', is an incorporated city in southern [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]], appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+'''Davis''' is believed to have been called '''Ganton'''.
+
+[[SECTION:2:Roads and Streets]]
+*[[Brouge Avenue]]
+*[[Carson Avenue]]
+*[[Covenant Avenue]]
+*[[Davis Ave]]nue
+*[[Grove Street (HD Universe)|Grove Street]]
+*[[Innocence Boulevard]]
+*[[Macdonald Street]]
+*[[Roy Lowenstein Boulevard]]
+
+[[SECTION:2:Places of Interest]]
+*[[Davis City Hall]]
+*[[Davis Courts Building]]
+*[[Davis Fire Station]]
+*[[Davis High School]] (unseen)
+*[[Davis Mega Mall]]
+*[[Davis Plaza]]
+*[[City of Davis Public Library|Davis Public Library]]
+*[[Davis Sheriff/Police Station]]
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*[[Bad Day Goods]]
+*[[Bishop's Chicken]]
+*Brouge Iron Works Inc.
+*Cabinets & Carpets
+*[[Carson's Salon Supplies]]
+*Carson Self Storage
+*[[Cent Carpet]]
+*[[Chringo's Carpets]]
+*[[Click Lovers]]
+*[[Cluckin' Bell (HD Universe)|Cluckin' Bell]]
+*[[Cosas Baratas]]
+*[[Davis Mega Mall]]
+*[[Discount Carpet Center]]
+*[[Discount Depot]]
+*Discount Jewels
+*[[Discount Store]]
+*[[Dollar Pills]]
+*[[East Side Wigs]]
+*Edzell Foundation
+*[[Family Pharmacy]]
+*[[Fowl Mouthed]]
+*Furniture & Nails
+*[[Happy Shark]]
+*[[Hayes Auto Body Shop]]
+*[[Hearty Taco]]
+*[[Herr Kutz Barber]]
+*[[La Vaca Loca]]
+*[[Licensed Sex Shop]]
+*[[Limited LTD Service]]
+*[[Liquor Deli]]
+*[[Locksmith (GTA V)]]
+*[[LSPD Auto Impound]]
+*[[Lucky Plucker]]
+*[[Mosley Auto Service]]
+*[[Nails (GTA V)|Nails]]
+*[[Panache Laundering]]
+*[[Porn Crackers]]
+*[[Ring of Fire Chili House]]
+*[[RON]] [[Filling Station|gas station]]
+*[[Ronnie's Luxury Car Wash]]
+*[[Ruedas De Fuego]]
+*[[Save-A-Cent]]
+*[[She Nails Surprise Facial]]
+*[[Sheet Yourself Laundromat]]
+*[[Suds Law Laundromat]]
+*[[The Molarstation Dentistry]]
+*[[The Taco Farmer]]
+*[[Timmy's Flowers]]
+*[[Totally Rental]]
+*[[Yum Fish]]
+*[[Zany-Z's]]
+
+[[CATEGORIES]]
+Cities
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

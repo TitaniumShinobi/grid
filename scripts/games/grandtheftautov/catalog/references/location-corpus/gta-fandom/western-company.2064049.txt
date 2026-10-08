@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Western Company
+|sign          = WesternCompany-GTAO-Logo.png
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Aerospace manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|divisions     = [[Western Motorcycle Company]]
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Western Company''' is an [[United States of America|American]] aerospace manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Agricultural Companies
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

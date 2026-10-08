@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = drink
+|name          = Junk Energy Drink
+|sign          = Junk-Logo-GTAO.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = Junk
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = Energy drinks
+|vehicles      = 
+|weapons       = 
+|taglines      = ''"The Quick Fix"''<br>''"The Halftime Quick Fix"''
+|bawsaq        = 
+|lcn           = 
+|website       = www.junkenergydrink.com
+|bleeter       = [[File:Bleeter GTAVpc JunkEnergyDrink.png|40px]] @JunkEnergyDrink
+|status        = active
+}}
+
+[[LEAD]]
+'''Junk''' is an energy drink and soft drink manufacturer appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Energy drinks
+Food
+In-Game Products
+Media in GTA Online
+Media in GTA V
+Websites

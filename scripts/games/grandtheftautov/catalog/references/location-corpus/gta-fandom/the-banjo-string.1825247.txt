@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|accessible = No
+|name = The Banjo String
+|image = TheBanjoString-GTAV-MirrorPark-Logo-Texture.png
+|type = Musical Instruments Store
+|games = {{Games|V=y|O=y}}
+|location = [[Mirror Park Boulevard]], [[Mirror Park]]
+|phone = 323-555-0166
+}}
+
+[[LEAD]]
+'''[[The Banjo String]]''' is a musical instruments store that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

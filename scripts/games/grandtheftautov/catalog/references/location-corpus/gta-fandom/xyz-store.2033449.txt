@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = elecstore
+|name          = XYZ Store
+|sign          = XYZStore-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = *[[Morningwood]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = Video game retailer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''XYZ Store''' is a video game retailer in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:3:Location Influences]]
+*The [[Morningwood]] location is based on the Verizon Wireless store at {{URL|https://maps.app.goo.gl/h7RTzz77EjG3nshq6|1095 Broxton Avenue}} in Westwood Village, Los Angeles.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+<gallery position="center" widths="270px" pacing="small" bordercolor="#BD1716">
+XYZStore-GTAV-MorningwoodBuilding.png|[[Morningwood Boulevard]] & [[Cougar Avenue]], [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics stores

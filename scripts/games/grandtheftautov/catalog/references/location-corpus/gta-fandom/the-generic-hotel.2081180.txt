@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = TheGenericHotel-GTAV.png
+|name = The Generic Hotel
+|type = Hotel
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = [[West Vinewood]]
+}}
+
+[[LEAD]]
+'''The Generic Hotel''' is a hotel in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located at the corner of [[Eclipse Boulevard]] and [[Milton Road]] in [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Hotels
+Hotels in GTA Online

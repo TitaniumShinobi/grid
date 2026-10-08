@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = RBS Performance
+|sign          = RBSPerformance-GTAO-Logo.png
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpchristmas2017}}}}
+|mentioned     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|status        = 
+}}
+
+[[LEAD]]
+'''RBS Performance''' is a vehicle performance and parts company appearing in {{O}} as part of [[GTA Online: The Doomsday Heist|The Doomsday Heist]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Doomsday Heist
+Vehicle parts manufacturers

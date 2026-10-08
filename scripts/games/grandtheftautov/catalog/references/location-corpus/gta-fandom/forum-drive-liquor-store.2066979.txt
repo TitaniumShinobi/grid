@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|name       = Forum Drive Liquor Store
+|image      = ForumDriveLiquorStore-GTAV-Front.jpg
+|caption    = The Forum Drive liquor store, with [[Tonya Wiggins]] standing outside.
+|type       = liquorstore
+|games      = {{Games|V=y|O=y}}
+|location   = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|status     = active
+|accessible = No
+}}
+
+[[LEAD]]
+The unnamed '''Forum Drive liquor store''' is a liquor store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Liquor stores

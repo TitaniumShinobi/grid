@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Ray's Electronics
+|image = RaysElectronics-GTAV-Logo.png
+|type = Electronics Store
+|games = {{Games|V=y|O=y}}
+|locations = [[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]]
+}}
+
+[[LEAD]]
+'''Ray's Electronics''' is a hardware store in [[Paleto Bay]], [[Blaine County]], that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics stores

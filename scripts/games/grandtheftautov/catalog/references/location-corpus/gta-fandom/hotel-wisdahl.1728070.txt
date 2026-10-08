@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = HotelWisdahl-GTAV.png
+|caption        = The hotel as seen from the southeast.
+|games          = {{games|V=y|O=y}}
+|location       = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]]
+|use            = Hotel
+}}
+
+[[LEAD]]
+The '''Hotel Wisdahl''' is a building in [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hotels

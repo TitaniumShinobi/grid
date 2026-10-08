@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Vinylism
+|type = [[:Category:Music Stores|Record store]]
+|owner = 
+|location = [[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Vinylism''', also known as '''Vinylism Record Store''', was a store located on [[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The store presumably shut down shortly before the events of GTA V and GTA Online as the store front remains although a ''Now Leasing'' sign is next to the company sign.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Music Stores

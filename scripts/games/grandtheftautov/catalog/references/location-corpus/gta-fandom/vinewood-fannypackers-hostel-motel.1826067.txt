@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|hotel = y
+|name = Vinewood Fannypackers Hostel & Motel 
+|image = VinewoodFannypackers-GTAVe-SignTexture.png
+|games = {{Games|V=y|O=y}}
+|location = [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+}}
+
+[[LEAD]]
+'''Vinewood Fannypackers Hostel & Motel''' is a hostel and motel in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Motels

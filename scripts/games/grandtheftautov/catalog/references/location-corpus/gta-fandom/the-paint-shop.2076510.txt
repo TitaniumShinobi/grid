@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|image = ThePaintShop-Logo-GTAV.png
+|name = The Paint Shop
+|taglines = 
+|type = Paint Store
+|games = {{Games|V=y|O=y}}
+|locations =
+*[[Grapeseed]]
+*[[Zancudo River]]
+}}
+
+[[LEAD]]
+'''The Paint Shop''' is a chain of paint shops appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Stores

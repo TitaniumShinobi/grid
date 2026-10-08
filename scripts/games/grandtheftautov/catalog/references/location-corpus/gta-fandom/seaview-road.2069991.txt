@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=SeaviewRoad-Street-GTAV.jpg
+|caption=Seaview Road during a storm.
+|games={{Games|V=y|O=y}}
+|start=[[East Joshua Road]], [[Grapeseed]]
+|end=[[North Calafia Way]] corner [[Grapeseed Main Street]], Grapeseed
+|map=<gallery>
+SeaviewRoad-GTAV-Map.png|Map
+SeaviewRoad-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Seaview Road''' is a two-way road located in [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Grapeseed Cow Farm]]
+*[[Shady Tree Farm]]
+
+[[SECTION:2:Businesses]]
+*[[Alamo Fruit Market]]
+*[[R L Hunter & Sons]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

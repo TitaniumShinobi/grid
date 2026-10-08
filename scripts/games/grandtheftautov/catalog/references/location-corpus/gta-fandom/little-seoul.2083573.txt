@@ -1,0 +1,92 @@
+[[INFOBOX]]
+{{Infobox_location
+|name  = Little Seoul
+|image = LittleSeoul-GTAVee.jpg
+|caption = 
+|games = {{Games|V=y|O=y}}
+|neighborhood = y
+|pscanner       = PoliceScanner-GTAV-Neighborhood-LittleSeoul.ogg
+|location = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = <gallery>
+LittleSeoul-IngameGPS-GTAV-Map.png|Little Seoul
+LittleSeoul-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Little Seoul''' (Korean: 리틀 서울) is a neighborhood in [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Places of Interest]]
+*[[0325 South Rockford Drive]]
+*[[2057 Vespucci Boulevard]]
+*[[7302 San Andreas Avenue]]
+*[[Betsy O'Neil Pavilion]] ''(Dorothy Chandler Pavilion)''
+*[[Celltowa Building]] ''(Beaudry Building)''
+*[[Decker Park]]
+*[[Dream Tower]] ''(Wilshire Christian Manor)''
+*[[Kayton]] Bank Building/[[Korean Plaza]] ''(Koreatown Plaza)''
+*[[Kayton Towers]] ''(Central Plaza)''
+*[[Korean Pavilion]] ''(Korean Pavilion & Gardens)''
+*[[La Puerta Apartments]]
+*[[Little Seoul Church]] ''(Wilshire Christian Church)''
+*[[Little Seoul Tower]] '' (Equitable Life Building)''
+*Lombank Offices ''(Wilshire Colonnade)''
+*Sunshine Apartments ''(The Abbey Building)''
+*[[Wiwang Tower]] ''(5900 Wilshire & Aon Center)''
+*[[Valdez Theater]] ''(Wiltern Theatre)''
+*[[Weazel News Building]]
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Arirang Plaza]]
+*[[Bean Machine]]
+*[[Big Dan Vision Optometry]]
+*[[Blick]]
+*[[BSC Machine Maintenance]]
+*[[Caesars Auto Parking]]
+*[[The Cherry Popper Ice Cream Company (HD Universe)|Cherry Popper Ice Cream Company]]
+*[[Digital Den]]
+*[[Eugenics Incorporated]]
+*Greenback
+*[[Heat]]
+*[[Hit 'n' Run Coffee]]
+*[[Hwan Cafe]]
+*KO Casuals
+*Lady 'n' Boy Hair Salon
+*Leather Goods
+*[[Limited LTD Service]]
+*[[Little Seoul Strip Mall]]
+*[[Lombank]]
+*[[Los Santos Hoard House]]
+*[[Lucky Plucker]]
+*[[Pirate Music]]
+*[[S. Ho Korean Noodle House]] ''(Guelaguetza Mexican Restaurant)''
+*[[Save-A-Cent]]
+*[[Sneaky Footwear]]
+*[[Snr. Buns]] ''(Wilshire International Food Court)''
+*[[Taco Bomb]]
+*[[Thor Toys]]
+*[[TW@ (HD Universe)|TW@]]
+*[[TW@ (HD Universe)|Wan Ka Internet Cafe]]
+*[[Yogarishima]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Adam's Apple Boulevard]]
+*[[Calais Avenue]]
+*[[Decker Street]]
+*[[Eastbourne Way]]
+*[[Ginger Street]]
+*[[Innocence Boulevard]]
+*[[Lindsay Circus]]
+*[[Palomino Avenue]]
+*[[San Andreas Avenue]]
+*[[South Rockford Drive]]
+*[[Vespucci Boulevard]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

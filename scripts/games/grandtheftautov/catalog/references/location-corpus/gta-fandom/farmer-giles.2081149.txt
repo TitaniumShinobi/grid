@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Farmer Giles
+|image = FarmerGiles-GTAV-Vespucci-Logo-Texture.png
+|type = Organic Food Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Bay City Avenue]], [[Vespucci Canals]]
+}}
+
+[[LEAD]]
+'''Farmer Giles''' is an organic food store that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

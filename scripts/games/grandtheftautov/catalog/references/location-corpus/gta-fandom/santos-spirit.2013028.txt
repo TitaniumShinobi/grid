@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image     = Santos Spirit logo GTA V.png
+|type      = Railroad company
+|games     = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Santos Spirit Railway Company''' is a railroad company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that operates in [[Los Santos (HD Universe)|Los Santos]]. Their logo can be seen on [[Freight Train (boxcar)|boxcars]] hauled by [[Freight Train]]s.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Railroad companies

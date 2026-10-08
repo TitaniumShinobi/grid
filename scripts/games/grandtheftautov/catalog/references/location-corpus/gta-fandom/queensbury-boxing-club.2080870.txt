@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = BUSINESS
+|name = Queensbury Boxing Club
+|image = QueensburyBoxingClub-GTAV-Logo.png
+|type = Boxing Club
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|taglines = ''"Train hard, smash them in the ring."''
+}}
+
+[[LEAD]]
+'''Queensbury Boxing Club''' is a boxing club advertised on the radio in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Sports clubs

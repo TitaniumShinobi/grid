@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Crucial Fix Coffee House
+|type = Coffee shop
+|owner = 
+|location = [[Aguja St]] in [[Vespucci]], [[Los Santos in GTA V|Los Santos]]<br />[[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]<br />[[San Andreas Ave]]/[[Strawberry Ave]] in [[Pillbox Hill]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Crucial Fix Coffee House''' is a chain of [[Jamaica|Jamaican]] coffee shops established in [[1983]] with branches on [[Aguja St]] in [[Vespucci]] and [[Hawick Ave]] in [[Alta]], both in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+
+
+[[Type::Business| ]]
+[[Location::Aguja St| ]]
+[[Location::Hawick Ave| ]]
+[[Location::San Andreas Ave| ]]
+[[Location::Strawberry Ave| ]]
+[[Location::Vespucci| ]]
+[[Location::Hawick| ]]
+[[Location::Pillbox Hill| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

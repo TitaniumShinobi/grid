@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|style          = 
+|type           = policestation
+|image          = PaletoBaySheriff'sOffice-GTAV.png
+|caption        = Front view of the station.
+|location       = [[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games          = {{Games|V=y|O=y}}
+|map            = PaletoBaySheriff'sOffice-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Paleto Bay Sheriff's Office''' is a sheriff station in {{V}} and {{O}}, located on the intersection of [[Paleto Boulevard]] and [[Route 1]] in [[Paleto Bay]]. It is a branch of the [[Los Santos County Sheriff|Los Santos County Sheriff's Department]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Police stations

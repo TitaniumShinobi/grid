@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|marina = y
+|business = y
+|activebiz = y
+|name = Sonar Collections Dock
+|image = SonarCollectionsDock-GTAV.png
+|price = $250,000
+|income = $23,000 per nuclear waste collected
+|owner = [[Michael De Santa]] <small>(optional)</small><br>[[Franklin Clinton]] <small>(optional)</small><br> [[Trevor Philips]] <small>(optional)</small>
+|type = Dock
+|marinacap = 2 <small>([[Submersible]] and [[Dinghy (HD Universe)|Dinghy]])</small>
+|games = {{Games|V=y|O=y}}
+|location = [[Paleto Cove]], [[Blaine County]]}}
+
+[[LEAD]]
+'''Sonar Collections Dock''' is a [[Properties in GTA V|purchasable dock]] in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Properties
+Properties in GTA V

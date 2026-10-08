@@ -1,0 +1,53 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = heliport
+|name           = Vespucci Helipad
+|sign           = 
+|image          = VespucciHelipad-GTAVe-Overview.png
+|caption        = Overview of the helipad.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Shank Street]], [[Puerto Del Sol]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|price          = $419,850
+|income         =
+|condition      = 
+|products       = 
+|taglines       = 
+|status         = active
+|owner          = 
+*[[Michael De Santa]] <small>(Optional)</small>
+*[[Franklin Clinton]] <small>(Optional)</small>
+|operator       = 
+|occupants      = 
+|businesses     = 
+*[[Higgins Helitours]]
+*[[Pegasus Concierge]]
+|employees      = 
+|opentimes      = 
+|capacity       = 
+|garagecap      = 
+|hangarcap      = 
+|marinacap      = 
+|parkingcap     = 
+|accessible     = Yes
+|canplayerstore = Yes
+|helipads       = 6
+|terminals      = 
+|hangars        = 1
+}}
+
+[[LEAD]]
+The '''Vespucci Helipad''' is a helipad in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is located on [[Shank Street]] in [[Puerto Del Sol]], [[Vespucci]]. It is also a purchasable [[Properties in GTA V|property]] in ''Grand Theft Auto V''.
+
+[[CATEGORIES]]
+Heliports
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Properties
+Properties in GTA V

@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = BS Maximum
+|sign          = 
+|image         = BSMaximum-GTAOee-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mp2025_01}}}}
+|mentioned     = 
+|business_type = Motor oil and lubricants
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''BS Maximum''' (Japanese: BS最大) is a [[Japan]]ese motor oil and engine lubricant company appearing in {{O}} as part of the [[GTA Online: Money Fronts|Money Fronts]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Money Fronts
+Vehicle products manufacturers

@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = utility
+|name          = Los Santos Department of Nuclear Power
+|sign          = LSDNP-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Nuclear energy utilities
+|founded       = 
+|founder       = 
+|owner         = [[Los Santos Department of Water & Power]]
+|employees     = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+The '''Los Santos Department of Nuclear Power''' is a public utility company that is in charge of nuclear material in the [[State of San Andreas (HD Universe)|State of San Andreas]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Utility companies

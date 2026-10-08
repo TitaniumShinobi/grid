@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=CatfishView-GTAV.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Grapeseed Avenue]]
+|end=-
+|map=<gallery>
+CatfishView-GTAV-Map.png|Map
+CatfishView-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Catfish View''' is a road in [[Blaine County]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

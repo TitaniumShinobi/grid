@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|name       = The Music Locker
+|image      = 
+<gallery>
+TheMusicLocker-GTAO-Thumbnail.png|Interior
+TheMusicLocker-GTAO-Logo.svg|Logo
+</gallery>
+|games      = {{Games|O=y}}
+|location   = [[The Diamond Casino & Resort]], [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|founded    = December 15, [[2020]]
+|taglines   = ''"Keep it locked."''
+|accessible = Yes
+|owner      = [[Thornton Duggan]]
+|status     = active
+|type       = nightclub
+}}
+
+[[LEAD]]
+'''The Music Locker''' is an underground nightclub in [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]], in {{O}}, introduced in [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Businesses in GTA Online
+Nightclubs
+Radio broadcasting buildings

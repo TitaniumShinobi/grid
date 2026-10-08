@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = BaySideDrugs-GTAV.jpg
+|caption = 
+|name = Bay Side Drugs
+|taglines = 
+|type = Pharmacy
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = [[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]]
+|reference =
+|size = }}
+
+[[LEAD]]
+'''Bay Side Drugs''' is a drug store featured in ''[[Grand Theft Auto V]]'', located on [[Paleto Boulevard]] in [[Paleto Bay]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Pharmacies

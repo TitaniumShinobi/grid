@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change    = TEXTILE STORE CHAIN
+|type           = 
+|name           = Lace of Diamonds
+|sign           = 
+|image          = LaceOfDiamonds-GTAV-Logo.png
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|locations      = [[Textile City]], [[Los Santos (HD Universe)|Los Santos]]
+|established    =
+|taglines       =
+|status         = active
+|phone          = 
+*626-555-0164
+*626-555-0165
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Lace of Diamonds''' is a chain of textile stores in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = V
+|LaceOfDiamonds-GTAVee-Store1.png|[[Simmet Alley]], [[Textile City]], [[Los Santos (HD Universe)|Los Santos]].
+|LaceOfDiamonds-GTAVee-Store2.png|Second store on Simmet Alley.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Stores

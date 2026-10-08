@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = SHOE STORE CHAIN
+|type          = 
+|name          = Shatner Shoes
+|sign          = 
+|image         = ShatnerShoes-GTAV-Logo.png
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Vespucci Canals]], Los Santos
+|business_type = 
+|taglines      = 
+|status        = active
+|phone         = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Shatner Shoes''' is a chain of women's shoe stores in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+*The Downtown Vinewood branch's location is based on {{URL|https://maps.app.goo.gl/kyrDKFzFFBhQjdrb9|6638 Hollywood Boulevard}} in the {{WP|Cherokee Building|Hollywood Cherokee Building}}.
+*The Vespucci Canals branch is modeled after {{URL|https://maps.app.goo.gl/DErNdWJULDLTKEEQ6|1327 Abbot Kinney Boulevard}} in {{WP|Venice, Los Angeles}}.
+
+{{Clear}}
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+ShatnerShoes-GTAV-VespucciCanals.png|[[Bay City Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]].
+JonnyBags&ShatnerShoes-GTAVee-Vinewood.png|[[Vinewood India Building]], [[Vinewood Boulevard]], [[Downtown Vinewood]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains

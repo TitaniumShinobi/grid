@@ -2,5 +2,10 @@
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
   </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Contracts\canonical-registration-checklist.v1.json"
+                      LogicalName="Grid.Core.Contracts.canonical-registration-checklist.v1.json" />
+    <EmbeddedResource Include="Contracts\canonical-relationship-registration-capabilities.v1.json"
+                      LogicalName="Grid.Core.Contracts.canonical-relationship-registration-capabilities.v1.json" />
+  </ItemGroup>
 </Project>
-

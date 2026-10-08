@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = HELITOUR COMPANY
+|style         = lightlogo
+|name          = Higgins Helitours Los Santos
+|image         = HigginsHelitoursLosSantos-GTAOe-Logo.png
+|games         = {{games|V=y|O=y}}
+|locations     = [[Vespucci Helipad]], [[Puerto Del Sol]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Helicopter tourism
+|owner         = [[Higgins Helitours]]
+|employees     = 
+|products      = 
+|vehicles      = 
+*[[Helitours Maverick|Higgins Helitours Maverick]]
+*[[Conada]]
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Higgins Helitours Los Santos''' is a subsidiary of [[Higgins Helitours]] appearing in {{V}} and featured in {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Subsidiary companies

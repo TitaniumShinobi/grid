@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Cherenkov Vodka
+|image = CherenkovVodka-GTAOee-NewLogo.png
+|caption = Logo in circa 2023 (GTA VI).
+|type = alcohol
+|taglines = ''"Warms you to the core"''
+|founded   = [[1958]]
+|games = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+}}
+
+[[LEAD]]
+'''Cherenkov Vodka''' is a vodka company featured in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI

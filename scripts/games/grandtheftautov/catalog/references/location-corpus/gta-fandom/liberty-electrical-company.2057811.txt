@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = utility
+|name          = Liberty Electrical Company
+|sign          = 
+|image         = Libel-GTAIV-SocialClubAvatar.png
+|caption       = LIBEL logo avatar on [[Rockstar Games Social Club]].
+|aka           = LibEl
+|games         = {{Games|IV=y|EFLC=y|O={{DLC|mpbiker}}}}
+|mentioned     = 
+|locations     = [[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+|business_type = Electricity & power utilities
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = [[Mel Toblowsky]] <small>(foreman)</small>
+|vehicles      = [[Burrito (HD Universe)|Burrito]]
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+The '''Liberty Electrical Company''', commonly abbreviated as '''LibEl''', is an electricity company that appears in {{IV}}, its [[Grand Theft Auto: Episodes from Liberty City|episodes]] and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online: Bikers
+Utility companies

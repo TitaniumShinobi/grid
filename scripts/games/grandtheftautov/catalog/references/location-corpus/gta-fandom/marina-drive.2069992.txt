@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox structure
+|image= AlamoSea-GTAV-Sunset.jpg
+|caption= 
+|games={{Games|V=y|O=y}}
+|start=[[East Joshua Road]]
+|end=-
+|map=<gallery>
+MarinaDrive-GTAV-Map.png|Map
+MarinaDrive-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Marina Drive''' is a two-way street in {{V}} and {{O}}, in [[Sandy Shores]] that begins at [[East Joshua Road]], passing through [[Algonquin Boulevard]], [[Zancudo Avenue]], and [[Panorama Drive]] and dead ends at west near [[Stab City]].
+
+[[SECTION:2:Businesses]]
+*[[Liquor Market]]
+*[[The Boat House]]
+
+[[SECTION:2:Places of Interest]]
+*[[Alamo Sea Marina]]
+
+[[CATEGORIES]]
+Cul-de-sacs
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

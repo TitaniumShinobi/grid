@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|lightlogo = y
+|image = PillboxHillPublicParkingLot-GTAOee-LookfromVespucci.jpg
+|image_size =
+|games = {{Games|V=y|O=y}}
+|location = [[Alta Street]] and [[Vespucci Boulevard]], [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]]
+|type     = 
+|accessible = Yes
+|caption = Parking Lot viewed from Vespucci Boulevard.
+|map         = PillboxHillPublicParkingLot-GTAV-Map.jpg
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Pillbox Hill Public Parking Lot''' is a parking lot that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Parking garages
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

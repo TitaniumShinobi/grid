@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|image    = JoshMansion-GTAV.png
+|games    = {{Games|V=y|O=y}}
+|location = [[West Eclipse Boulevard]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|owner    = [[Josh Bernstein]] <small>(Formerly)</small> 
+}}
+
+[[LEAD]]
+'''Josh Bernstein's House''' is a mansion located on [[West Eclipse Boulevard]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]].''
+
+[[SECTION:3:The Diamond Casino & Resort]]
+As of [[2019]], the mansion has been repaired and it is now owned by an unnamed [[Corrupt Judge|crooked judge]] who is trying to shut down the [[The Diamond Casino & Resort]] to cover his gambling debt. The player is instructed by [[Agatha Baker]] to go to the judge's mansion, which could be either Josh Bernstein's house or another mansion located on [[Sam Austin Drive]] or [[Steele Way]]. Once there, they need to quietly take out the security guards. Once the guards are taken care of, the protagonist successfully intimidates the judge, who loses consciousness and collapses to the ground. The protagonist then leaves the area, after which the mission ends and Agatha calls the protagonist to thank them.
+
+[[SECTION:4:The Diamond Casino & Resort]]
+*[[Casino Work]]
+*[[Judgment Call]]
+
+
+
+
+
+[[ru:Дом Джоша Бернстайна]]
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Homes
+Mansions

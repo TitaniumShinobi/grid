@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = railway
+|name          = Go Loco Railroad
+|sign          = GoLoco-Logo-Clean-Tagline-GTAV.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Railway company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = [[Freight Train]] 
+|weapons       = 
+|taglines      = "''We aim not to go off the rails''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Go Loco Railroad''' is a railroad company appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Location]]
+{{Gallery
+|GoLocoRailroad-GTAVee-LaMesa.jpg|[[Innocence Boulevard]], [[La Mesa]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Railroad companies

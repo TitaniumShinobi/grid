@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = Garage Innocence Boulevard
+|image = Dynasty8-GTAV-LowEnd-Image-GarageInnocenceBlvd.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end garage
+|garage = 2 vehicles <br> 1 bike
+|price = [[Money|$]]34,000
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''Garage Innocence Boulevard''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located at the [[Globe Oil]] gas station on the corner of [[Alta Street]] and [[Innocence Boulevard]] in [[La Puerta]]. It shares the building with a [[Discount Beauty Store]]. Unlike most other Garage and [[Apartments|Apartment]] properties, it is not listed under a full address on [[Dynasty 8]].
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]34,000 and can store 2 [[Personal Vehicles]] and one [[Pedal and Metal Cycles|Bicycle]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

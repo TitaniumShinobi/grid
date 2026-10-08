@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{infobox business
+|name = Crucial Fix
+|image = CrucialFix-GTAV-Logo.png
+|caption =
+|taglines = 
+|type = Coffee house
+|founded = [[1983]]
+|founder = 
+|ceo = 
+|games = ''[[Grand Theft Auto V]] <br> [[Grand Theft Auto Online]]''
+|locations = [[Pillbox Hill]] <br> [[Aguja Street]], [[Vespucci]] <br> [[Hawick Avenue]], [[Alta]]
+}}
+
+[[LEAD]]
+'''Crucial Fix''' is a [[Jamaica]]n café chain that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+CrucialFix-GTAV.jpg|[[The Celtica Hotel]], [[Strawberry Ave]] and [[San Andreas Avenue]], [[Pillbox Hill]].
+CrucialFix-GTAV-Vespucci.png|[[Aguja Street]], [[Vespucci]].
+CrucialFix-GTAV-Alta.jpg|[[Hawick Avenue]], [[Alta]].
+CrucialFix-GTAV-Logo1.png|Logo.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Café chains

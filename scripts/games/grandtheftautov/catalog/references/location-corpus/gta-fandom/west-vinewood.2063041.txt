@@ -1,0 +1,84 @@
+[[INFOBOX]]
+{{Infobox_location
+|name         = West Vinewood
+|image        = WestVinewood-GTAV.png
+|caption      = Overview of West Vinewood.
+|games        = {{Games|V=y|O=y}}
+|type         = neighborhood
+|location     = [[Vinewood (HD Universe)|Vinewood]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner     = PoliceScanner-GTAV-Neighborhood-WestVinewood.ogg
+|map          = 
+<gallery>
+WestVinewood-IngameGPS-GTAV-Map.png|West Vinewood
+WestVinewood-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption  = Location on the map (in-game GPS).
+|map2         = WestVinewood-GTAV-SatelliteView.jpg
+|map_caption2 = Satellite view of West Vinewood.
+}}
+
+[[LEAD]]
+'''West Vinewood''' is a middle to upper class neighbourhood in [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], featured in {{V}} and {{O}}. It is bordered by [[Rockford Hills]] to the west, [[Burton]] to the south, [[Vinewood Hills]] to the north, and [[Downtown Vinewood]] and [[Hawick]] to the east.
+
+[[SECTION:2:Places of Interest]]
+*[[0184 Milton Road]]
+*[[1561 San Vitas Street]]
+*[[Eclipse Medical Tower]] 
+*[[Eclipse Towers]] 
+*[[924 Las Lagunas Boulevard]]
+*[[The Royale]]
+*[[The Tahitian]]
+*[[Tinsel Towers]]
+
+[[SECTION:2:Businesses]]
+*[[Bean Machine]] 
+*Betta Life
+*[[Binco (HD Universe)|Binco]]
+*Bocchino on Eclipse
+*[[Bullhead]]
+*[[Digital Den]]
+*[[DM Pets]]
+*[[The Dungeon Crawler]] 
+*[[Eclipse Liquor and Deli]]
+*[[Eclipse Lounge]] 
+*Ellen's Liquor Lover 
+*[[FriedMind Pharmaceuticals HQ]]
+*[[Full Moon Film Theater]] 
+*[[The Generic Hotel]] 
+*[[Gentry Manor Hotel]] 
+*[[Hardcore Comic Store]] 
+*[[Haute]]
+*[[Hornbills]] 
+*[[J's Bonds]]
+*[[Pegasus Concierge Hotel]] 
+*[[Last Train in Los Santos]] 
+*[[Les Bianco]]
+*[[Liquor Hole]]
+*Pipe Line
+*[[Pitchers]]
+*[[Society]]
+*Specs Pest
+*[[Spitroasters Meathouse]] 
+*[[Split Sides West]] 
+*[[Tequi-la-la]] 
+*[[Vinewood Garage]] 
+*Vinewood Records
+
+[[SECTION:2:Roads and Streets]]
+*[[Didion Drive]]
+* [[Eclipse Boulevard]]
+*[[Gentry Lane]]
+*[[Las Lagunas Boulevard]]
+*[[North Archer Avenue]]
+*[[Milton Road]]
+*[[San Vitus Boulevard]]
+*[[South Mo Milton Drive]]
+*[[Spanish Avenue]]
+*[[Strangeways Drive]]
+*[[West Eclipse Boulevard]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

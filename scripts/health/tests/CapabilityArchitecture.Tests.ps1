@@ -91,6 +91,6 @@ Assert-Equal 'ExplicitGrantIssuance' ([string]$authorizationContract.requiredAut
 $gameManifest = Read-Manifest (Join-Path $scriptsRoot 'games\skyrimspecialedition\capabilities.v1.json')
 $durableGrantCapabilities = @($gameManifest.capabilities | Where-Object { ([string]$_.requiredAuthority.kind) -eq 'DurableOneUseGrant' })
 Assert-True ($durableGrantCapabilities.Count -ge 3) 'Mutation capabilities that consume hardened grants must remain registered with DurableOneUseGrant authority.'
-Assert-Equal 90 $production.capabilityCount 'The approved semantic capability map must contain 90 operations, including the eight GTA V capabilities.'
+Assert-Equal 100 $production.capabilityCount 'The approved semantic capability map must contain 100 operations, including MDBO registry resolve, installed-tool observation, GTA crash, and shared Windows evidence capabilities.'
 Assert-True (@($production.inventory | Where-Object classification -eq 'Unclassified').Count -eq 0) 'Production inventory must contain no unclassified files.'
 Write-Host 'PASS: production capability inventory is complete, deterministic, and read-only.'

@@ -11,6 +11,25 @@ failure cannot erase evidence collected by another tool.
 $script:GridToolDefinitionStates = @('Available','Unavailable','Misconfigured','UnsupportedForGame','UnsupportedForClass')
 $script:GridToolRunStates = @('Collected','Unavailable','Failed')
 
+function Resolve-GridToolCatalogGameId {
+    [CmdletBinding()]
+    param([Parameter(Mandatory)][ValidateNotNullOrEmpty()][string]$GameId)
+    switch ($GameId.Trim().ToLowerInvariant()) {
+        'skyrimspecialedition' { 'game.skyrim-special-edition' }
+        'game.skyrim-special-edition' { 'game.skyrim-special-edition' }
+        'grandtheftautov-enhanced' { 'game.grandtheftautov-enhanced' }
+        'game.grandtheftautov-enhanced' { 'game.grandtheftautov-enhanced' }
+        'grandtheftautov-legacy' { 'game.grandtheftautov-legacy' }
+        'game.grandtheftautov-legacy' { 'game.grandtheftautov-legacy' }
+        default {
+            if ($GameId -notmatch '^game\.[a-z0-9]+(?:[.-][a-z0-9]+)*$') {
+                throw "CanonicalGameIdUnresolved: '$GameId'."
+            }
+            $GameId.Trim().ToLowerInvariant()
+        }
+    }
+}
+
 
 function Get-GridToolEvidenceSha256 {
     [CmdletBinding()]
@@ -27,20 +46,43 @@ function Get-GridToolEvidenceSha256 {
 
 function Test-GridToolDefinition {
     [CmdletBinding()]
-    param([Parameter(Mandatory)]$Definition)
+    param([Parameter(Mandatory)]$Definition, [Parameter(Mandatory)][object[]]$CapabilityRegistry)
     $errors = New-Object Collections.Generic.List[string]
-    foreach ($name in @('schemaVersion','toolId','displayName','gameId','adapter','observationMode','rootCapabilityIds','supportedClassIds','limits')) {
+    foreach ($name in @('schemaVersion','toolId','displayName','compatibility','adapter','observationMode','rootCapabilityIds','supportedClassIds','limits')) {
         if ($null -eq $Definition.PSObject.Properties[$name]) { $errors.Add("Missing tool-definition field: $name") }
     }
     if ($errors.Count -gt 0) { return [pscustomobject]@{ IsValid = $false; Errors = @($errors) } }
-    if ([int]$Definition.schemaVersion -ne 1) { $errors.Add('Unsupported tool-definition schemaVersion.') }
+    if ([int]$Definition.schemaVersion -ne 2) { $errors.Add('Unsupported tool-definition schemaVersion.') }
     if ([string]$Definition.toolId -notmatch '^grid\.tool\.[a-z0-9]+(?:[.-][a-z0-9]+)*$') { $errors.Add("Invalid toolId '$($Definition.toolId)'.") }
-    if ([string]$Definition.gameId -notmatch '^[a-z0-9]+(?:[.-][a-z0-9]+)*$') { $errors.Add('Invalid gameId.') }
     if ([string]$Definition.adapter -notmatch '^[A-Za-z][A-Za-z0-9-]+$') { $errors.Add('Invalid adapter identity.') }
     if ([string]$Definition.observationMode -notin @('InProcessRead','ExistingOutputRead','ExplicitProcessLaunch')) { $errors.Add('Invalid observationMode.') }
     if (@($Definition.rootCapabilityIds).Count -eq 0) { $errors.Add('At least one rootCapabilityId is required.') }
     foreach ($id in @($Definition.rootCapabilityIds)) { if ([string]$id -notmatch '^grid\.[a-z0-9]+(?:[.-][a-z0-9]+)*$') { $errors.Add("Invalid rootCapabilityId '$id'.") } }
     foreach ($id in @($Definition.supportedClassIds)) { if ([string]$id -notmatch '^grid\.class\.[a-z0-9]+(?:[.-][a-z0-9]+)*$') { $errors.Add("Invalid supported classId '$id'.") } }
+    $seenGames = @{}
+    if (@($Definition.compatibility).Count -eq 0) { $errors.Add('At least one canonical game compatibility record is required.') }
+    foreach ($compatibility in @($Definition.compatibility)) {
+        foreach ($name in @('gameId','evidenceCapabilityIds','provenance')) {
+            if ($null -eq $compatibility.PSObject.Properties[$name]) { $errors.Add("Missing tool compatibility field: $name") }
+        }
+        $gameId = [string]$compatibility.gameId
+        if ($gameId -notmatch '^game\.[a-z0-9]+(?:[.-][a-z0-9]+)*$') { $errors.Add("Invalid canonical compatibility gameId '$gameId'."); continue }
+        if ($seenGames.ContainsKey($gameId)) { $errors.Add("Duplicate canonical compatibility gameId '$gameId'.") } else { $seenGames[$gameId] = $true }
+        if ([string]::IsNullOrWhiteSpace([string]$compatibility.provenance)) { $errors.Add("Compatibility provenance is required for '$gameId'.") }
+        $evidenceIds = @($compatibility.evidenceCapabilityIds)
+        if ($evidenceIds.Count -eq 0) { $errors.Add("Compatibility evidence is required for '$gameId'.") }
+        if (@($evidenceIds | Sort-Object -Unique).Count -ne $evidenceIds.Count) { $errors.Add("Compatibility evidence IDs must be unique for '$gameId'.") }
+        foreach ($evidenceId in $evidenceIds) {
+            if ([string]$evidenceId -notin @($Definition.rootCapabilityIds)) { $errors.Add("Compatibility evidence '$evidenceId' is not a root capability for '$($Definition.toolId)'."); continue }
+            $matches = @($CapabilityRegistry | Where-Object { [string]$_.capabilityId -ceq [string]$evidenceId })
+            if ($matches.Count -ne 1) { $errors.Add("Compatibility evidence '$evidenceId' is not uniquely registered."); continue }
+            $owner = $matches[0].ownerScope
+            if ([string]$owner.kind -cne 'Game' -or
+                (Resolve-GridToolCatalogGameId -GameId ([string]$owner.gameId)) -cne $gameId) {
+                $errors.Add("Compatibility evidence '$evidenceId' is not owned by canonical game '$gameId'.")
+            }
+        }
+    }
     foreach ($field in @('timeoutSeconds','maximumOutputBytes')) { if ([long]$Definition.limits.$field -lt 1) { $errors.Add("Tool limit '$field' must be positive.") } }
     [pscustomobject]@{ IsValid = ($errors.Count -eq 0); Errors = @($errors) }
 }
@@ -50,12 +92,13 @@ function Get-GridToolRegistry {
     param([Parameter(Mandatory)][string]$ScriptsRoot)
     $definitions = New-Object Collections.Generic.List[object]
     $seen = @{}
-    foreach ($path in @(Get-ChildItem -LiteralPath (Join-Path $ScriptsRoot 'games') -Filter 'tool-registry.v1.json' -File -Recurse -ErrorAction SilentlyContinue | Sort-Object FullName)) {
+    $capabilities = @(Get-GridCapabilityRegistry -ScriptsRoot $ScriptsRoot)
+    foreach ($path in @(Get-ChildItem -LiteralPath (Join-Path $ScriptsRoot 'games') -Filter 'tool-registry.v2.json' -File -Recurse -ErrorAction SilentlyContinue | Sort-Object FullName)) {
         try { $document = Get-Content -LiteralPath $path.FullName -Raw | ConvertFrom-Json -ErrorAction Stop }
         catch { throw "ToolRegistryUnreadable: '$($path.FullName)'. $($_.Exception.Message)" }
-        if ([int]$document.schemaVersion -ne 1) { throw "ToolRegistryInvalid: '$($path.FullName)' has an unsupported schemaVersion." }
+        if ([int]$document.schemaVersion -ne 2) { throw "ToolRegistryInvalid: '$($path.FullName)' has an unsupported schemaVersion." }
         foreach ($definition in @($document.tools)) {
-            $validation = Test-GridToolDefinition -Definition $definition
+            $validation = Test-GridToolDefinition -Definition $definition -CapabilityRegistry $capabilities
             if (-not $validation.IsValid) { throw "ToolRegistryInvalid: '$($path.FullName)'. $($validation.Errors -join ' ')" }
             $key = ([string]$definition.toolId).ToLowerInvariant()
             if ($seen.ContainsKey($key)) { throw "DuplicateToolId: '$($definition.toolId)'." }
@@ -78,6 +121,7 @@ function Resolve-GridToolEvidencePlan {
     $selected = @(Get-GridCanonicalStringArray -Value $ToolIds -MaximumCount 64 | ForEach-Object { $_.ToLowerInvariant() })
     $tools = @(Get-GridToolRegistry -ScriptsRoot $ScriptsRoot)
     $capabilities = @(Get-GridCapabilityRegistry -ScriptsRoot $ScriptsRoot)
+    $catalogGameId = Resolve-GridToolCatalogGameId -GameId $GameId
     $rows = New-Object Collections.Generic.List[object]
     foreach ($id in $selected) {
         $match = @($tools | Where-Object { [string]$_.toolId -ieq $id })
@@ -87,7 +131,7 @@ function Resolve-GridToolEvidencePlan {
         }
         $definition = $match[0]
         $availability = 'Available'; $reason = $null; $order = [int]::MaxValue
-        if ([string]$definition.gameId -ine $GameId) { $availability = 'UnsupportedForGame'; $reason = "Tool does not support game '$GameId'." }
+        if (@($definition.compatibility | Where-Object { [string]$_.gameId -ceq $catalogGameId }).Count -ne 1) { $availability = 'UnsupportedForGame'; $reason = "Tool does not have canonical compatibility evidence for game '$catalogGameId'." }
         elseif ([string]$ClassId -notin @($definition.supportedClassIds)) { $availability = 'UnsupportedForClass'; $reason = "Tool is not registered for Class '$ClassId'." }
         else {
             try {

@@ -3,10 +3,12 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using Grid.Core.Application;
 using Grid.Core.Models;
+using Grid.App.Controls;
 using Grid.App.Services;
 using Grid.Mo2.Models;
 using Grid.Mo2.Services;
 using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Automation;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
 using Microsoft.UI.Xaml.Input;
@@ -25,7 +27,7 @@ public sealed partial class GameWorkspacePage : Page
     private const double LeftPaneMinimum = 380;
     private const double RightPaneMinimum = 320;
     private const double SplitterWidth = 4;
-    private const double PageHorizontalPadding = 0;
+    private const double PageHorizontalReservedSpace = 10;
 
     private readonly record struct FilterChoice<T>(string Label, T Value);
     private readonly record struct ScrollPosition(double HorizontalOffset, double VerticalOffset);
@@ -52,6 +54,7 @@ public sealed partial class GameWorkspacePage : Page
     private bool _permitsDevelopmentCommands;
     private bool _modStateMutationRunning;
     private bool _isStacked;
+    private bool _usesElevatedTopBaseline;
     private double? _userLeftPaneWidth;
     private ImmutableArray<PluginEntry> _resolvedPlugins = [];
     private ImmutableArray<ResolvedArchiveEntry> _resolvedArchives = [];
@@ -115,6 +118,14 @@ public sealed partial class GameWorkspacePage : Page
         _catalogRefreshRequested = catalogRefreshRequested;
         _contextChanged = contextChanged;
         _notificationRaised = notificationRaised;
+        var activeModCount = profile?.Mods.Count(mod => mod.Kind == ModEntryKind.Mod && mod.IsEnabled) ?? 0;
+        var activePluginCount = profile?.Plugins.Count(plugin => plugin.IsEnabled) ?? 0;
+        ActiveModCountDisplay.Text = activeModCount.ToString(System.Globalization.CultureInfo.InvariantCulture);
+        ActivePluginCountDisplay.Text = activePluginCount.ToString(System.Globalization.CultureInfo.InvariantCulture);
+        AutomationProperties.SetName(ActiveModCountDisplay, $"{activeModCount:N0} active mods");
+        AutomationProperties.SetName(ActivePluginCountDisplay, $"{activePluginCount:N0} active plugins");
+        AutomationProperties.SetHelpText(ActiveModCountDisplay, $"{activeModCount:N0} active mods");
+        AutomationProperties.SetHelpText(ActivePluginCountDisplay, $"{activePluginCount:N0} active plugins");
         _workspaceState.SynchronizeContext();
         _collapsedSeparators.Clear();
         _suppressUiEvents = true;
@@ -1533,6 +1544,15 @@ public sealed partial class GameWorkspacePage : Page
     private void OnWorkspaceSizeChanged(object sender, SizeChangedEventArgs e) =>
         ApplyResponsiveLayout(e.NewSize.Width);
 
+    public static bool SupportsElevatedTopBaseline(double width) =>
+        Math.Max(0, width - PageHorizontalReservedSpace) >= StackThreshold;
+
+    public void SetElevatedTopBaseline(bool enabled)
+    {
+        _usesElevatedTopBaseline = enabled;
+        ApplyResponsiveLayout(ActualWidth);
+    }
+
     private void ApplyResponsiveLayout(double width)
     {
         if (width <= 0 || PaneLayout is null)
@@ -1540,11 +1560,16 @@ public sealed partial class GameWorkspacePage : Page
             return;
         }
 
-        var contentWidth = Math.Max(0, width - PageHorizontalPadding);
+        // The root grid owns two real 5 px layout columns. Size the pane columns
+        // against that same authoritative content rectangle so their requested
+        // widths cannot overflow and merely be clipped by the root.
+        var contentWidth = Math.Max(0, width - PageHorizontalReservedSpace);
         var shouldStack = contentWidth < StackThreshold;
         if (shouldStack)
         {
             _isStacked = true;
+            ApplyCompactFilterWidths(contentWidth, contentWidth);
+            PaneLayout.Margin = new Thickness(0);
             PaneSplitter.Visibility = Visibility.Collapsed;
             EnvironmentPane.Margin = new Thickness(0, SplitterWidth, 0, 0);
             LeftPaneColumn.Width = new GridLength(1, GridUnitType.Star);
@@ -1560,8 +1585,14 @@ public sealed partial class GameWorkspacePage : Page
         }
 
         _isStacked = false;
+        var elevatedTopBaseline = _usesElevatedTopBaseline;
+        PaneLayout.Margin = elevatedTopBaseline
+            ? new Thickness(0, 5, 0, 0)
+            : new Thickness(0);
         PaneSplitter.Visibility = Visibility.Visible;
-        EnvironmentPane.Margin = new Thickness(0);
+        EnvironmentPane.Margin = elevatedTopBaseline
+            ? new Thickness(0, 33, 0, 0)
+            : new Thickness(0);
         Microsoft.UI.Xaml.Controls.Grid.SetRow(ModPane, 0);
         Microsoft.UI.Xaml.Controls.Grid.SetColumn(ModPane, 0);
         Microsoft.UI.Xaml.Controls.Grid.SetRow(PaneSplitter, 0);
@@ -1575,8 +1606,29 @@ public sealed partial class GameWorkspacePage : Page
         var available = Math.Max(0, contentWidth - SplitterWidth);
         var desiredLeft = _userLeftPaneWidth ?? available * 0.5;
         var left = Math.Clamp(desiredLeft, LeftPaneMinimum, available - RightPaneMinimum);
+        var right = Math.Max(RightPaneMinimum, available - left);
+        ApplyCompactFilterWidths(left, right);
         LeftPaneColumn.Width = new GridLength(left);
-        RightPaneColumn.Width = new GridLength(Math.Max(RightPaneMinimum, available - left));
+        RightPaneColumn.Width = new GridLength(right);
+    }
+
+    private void ApplyCompactFilterWidths(double modPaneWidth, double environmentPaneWidth)
+    {
+        const double footerColumnSpacing = 5;
+        const double preferredFilterWidth = 280;
+        ModSearchShell.Width = Math.Min(
+            preferredFilterWidth,
+            Math.Max(0, modPaneWidth - ActiveModLcd.Width - footerColumnSpacing));
+        EnvironmentSearchShell.Width = Math.Min(
+            preferredFilterWidth,
+            Math.Max(0, environmentPaneWidth - ActivePluginLcd.Width - footerColumnSpacing));
+    }
+
+    private void OnEnvironmentTabsLoaded(object sender, RoutedEventArgs e)
+    {
+        // Normalize only the native header list. The pane body and its established
+        // right-edge/corner allocation remain owned by EnvironmentWindowOutline.
+        ShellTabGeometry.ApplyInteriorHeader(EnvironmentTabs, "Plugin panel tab strip");
     }
 
     private void OnSplitterDragDelta(object sender, DragDeltaEventArgs e)

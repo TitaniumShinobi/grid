@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=MirrorPlace-GTAV.png
+|caption=Mirror Place as seen from the south.
+|games={{Games|V=y|O=y}}
+|start=[[West Mirror Drive]]
+|end=[[Nikola Avenue]]
+|map=<gallery>
+MirrorPlace-GTAV-Map.png|Map
+MirrorPlace-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Mirror Place''' is a short residential [[List of Street Names|street]] in [[Mirror Park]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

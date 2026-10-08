@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox_location
+|name  = Lake Vinewood
+|image = LakeVinewood-GTAV.png
+|location = [[Vinewood Hills]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games = {{Games|V=y|O=y}}
+|type = lake
+|pscanner    = 
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''Lake Vinewood''', also known as the '''Vinewood Reservoir''' is a reservoir in located in [[Vinewood Hills]], [[Los Santos County]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Reservoirs
+Zones

@@ -1,0 +1,11 @@
+[[INFOBOX]]
+{{Infobox country
+|image_flag = Flag_of_Sweden.svg
+|currency_ingame = Swedish krona
+}}
+
+[[LEAD]]
+The '''Kingdom of Sweden''', simply known as '''Sweden''', is a {{WP|Scandinavia|Scandinavian}} country in [[Europe|Northern Europe]]. Stockholm is the capital of Sweden. Sweden borders [[Norway]] and [[Finland]], and is connected to [[Denmark]] by a bridge-tunnel across the Öresund. At 450,295 square kilometres (173,860 sq mi), Sweden is the third-largest country in the {{WP|European Union}} by area, with a total population of about 10 million.
+
+[[CATEGORIES]]
+European countries

@@ -1,0 +1,84 @@
+[[LEAD]]
+'''Macdonald St''' is a street in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street runs from [[Strawberry]] in the west to [[Rancho]] in the east, running through [[Davis]]. The street has connections to [[Brouge Ave]], [[Davis Ave]], [[Jamestown St]], [[Little Bighorn Ave]], [[Roy Lowenstein Blvd]] and [[Strawberry Ave]]. The [[Los Santos Vagos]] have control of the eastern side of the street while [[The Families]] control the western most tip.
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Atomic]]
+| [[Rancho]]
+| [[Little Bighorn Ave]]
+| Garage
+|-
+| [[Bishop's Chicken]]
+| [[Davis]]
+| [[Davis Ave]]
+| Food and drink
+|-
+| [[City of Davis Courts Building]]
+| [[Davis]]/[[Rancho]]
+|
+| Law enforcement
+|-
+| [[City of Davis Public Library]]
+| [[Davis]]
+| [[Davis Ave]]
+| Library
+|-
+| [[Davis Fire Station]]
+| [[Davis]]
+|
+| Fire station
+|-
+| [[Discount Beauty Store]]
+| [[Rancho]]
+| [[Roy Lowenstein Blvd]]
+| Beauty salon
+|-
+| [[GO and WASH]]
+| [[Davis]]
+|
+| Car wash
+|-
+| [[Hayes Autos]]
+| [[Rancho]]
+|
+| Garage
+|-
+| [[Liquor, Beer & Wine]]
+| [[Rancho]]
+| [[Jamestown St]]
+| Food and drink
+|-
+| [[Motel (Rancho)|Motel]]
+| [[Rancho]]
+| [[Roy Lowenstein Blvd]]
+| Motel
+|-
+| [[RON]] filling station
+| [[Davis]]
+| [[Davis Ave]]
+| Filling station
+|-
+| [[Suds Law Laundromat]]
+| [[Davis]]
+| 
+| Laundromat
+|-
+| [[Timmy's Flowers]]
+| [[Davis]]/[[Strawberry]]
+| [[Strawberry Ave]]
+| Florists
+|-
+| data-sort-value="Vaca Loca, La"| [[La Vaca Loca]]
+| [[Davis]]
+|
+| Food and drink
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

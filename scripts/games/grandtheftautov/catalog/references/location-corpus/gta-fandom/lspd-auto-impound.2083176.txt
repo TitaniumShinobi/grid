@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+miscplacename = TOWING IMPOUND
+|business = y
+|activebiz = y
+|name = LSPD Auto Impound
+|image = LSPDAutoImpound-GTAV.png
+|owner = [[Franklin Clinton]] <small>(optional)</small>
+|price = $150,000
+|income = $500 per towed car
+|employees = [[Rodney (GTA V)|Rodney]]<br>[[JB Bradshaw]]
+|caption =
+|type = Towing Impound
+|games = {{Games|V=y|O=y}}
+|location = [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+|unlocked by = [[Pulling One Last Favor]]<br>[[Friends Reunited]]
+}}
+
+[[LEAD]]
+The '''LSPD Auto Impound''' (also known as '''Davis Towing Impound''') is a towing company featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Gameplay in GTA V
+Properties
+Properties in GTA V

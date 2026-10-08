@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|name = The C Bomb
+|image = TheCBomb-GTAV.jpg
+|type = shop
+|caption = The store during the day.
+|games = {{Games|V=y|O=y}}
+|location = [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''The 'C'* Bomb''' is a store in {{V}} and {{O}}, located in [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+The store is not enterable and plays no role in the storyline. The name is a reference to the swear word 'c***'.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Stores

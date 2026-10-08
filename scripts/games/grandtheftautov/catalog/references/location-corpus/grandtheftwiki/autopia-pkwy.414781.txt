@@ -1,0 +1,39 @@
+[[LEAD]]
+'''Autopia Pkwy''' is a street in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The parkway runs from [[Davis Ave]] in [[Davis]] to [[Greenwich Pkwy]] in [[Los Santos International Airport in GTA V|Los Santos International Airport]], running through [[Banning]], [[Maze Bank Arena]], [[Elysian Island]] and [[La Puerta]]. There are two other connections with [[Dutch London St]] and [[Exceptionalists Way]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Auto Repairs]]
+| [[Elysian Island]]
+|
+| Garage
+|-
+| [[Big House Storage Inc]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+| [[Exceptionalists Way]]
+| Storage
+|-
+| [[Maze Bank Arena]]
+| [[Maze Bank Arena]]
+| [[Davis Ave]]
+| Arena
+|-
+| data-sort-value="Secure Unit, The"| [[The Secure Unit]]
+| [[Banning]]
+|
+| Storage
+|-
+| [[Von Crastenburg Hotel]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+| [[Greenwich Pkwy]
+| Hotel
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

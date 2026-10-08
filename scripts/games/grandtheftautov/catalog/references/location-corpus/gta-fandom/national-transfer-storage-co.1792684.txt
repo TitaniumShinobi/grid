@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = National Transfer & Storage Co.
+|image = NationalTransfer&StorageCo-GTAVe-Logo.png 
+|taglines = "''Cut Rate Inter-State''"
+|type     = Storage Facility<br>Transfer Services<br>Import Services
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|location = [[Popular Street]] and [[Vespucci Boulevard]], [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''National Transfer & Storage Co.''' is a storage and transfer company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Storage companies

@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Lârss & Elbö
+|image     = Lârss&Elbö-GTAV-Logo.png
+|caption   =
+|games     = {{Games|V=y|O=y}}
+|type      = furniture
+|locations = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+{{Small|(see [[#Locations|Locations]])}}
+|taglines = 
+}}
+
+[[LEAD]]
+'''Lârss & Elbö''' is a furniture company in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|Lârss&Elbö-GTAVee-Hawick.jpg|[[Hawick Avenue]], [[Hawick]].
+|Lârss_&_Elbö_GTAV_Del_Perro_Store.jpg|[[Prosperity Street Promenade]], [[Del Perro]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Furniture companies
+Furniture store chains

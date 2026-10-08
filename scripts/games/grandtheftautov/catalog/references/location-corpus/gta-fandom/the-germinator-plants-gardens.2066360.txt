@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|image     = TheGerminator-GTAV-Sign.png
+|type      = hwstore
+|games     = {{Games|V=y|O=y}}
+|location  = [[Bay City Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+|phone     = 310-555-0188
+|taglines  = "''I'll be bark''"
+}}
+
+[[LEAD]]
+'''The Germinator Plants & Gardens''' is a garden store featured in {{V}}, located in [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hardware stores

@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 300x300px
+|caption = 
+|game_1 = GTA V
+|name = Hayes Autos<br />Hayes Auto
+|type = [[:Category:Garages|Auto repair garage]]
+|owner = 
+|location = [[Macdonald St]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]]<br />[[Little Bighorn Ave]] in [[La Mesa]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Hayes Autos''' is an auto repair garage on [[Little Bighorn Ave]] in [[La Mesa]] and [[Macdonald St]] in [[Rancho, [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The garage is used, and possibly owned, by [[Devin Weston]] who has [[Franklin Clinton]], [[Michael De Santa]], [[Trevor Philips]] and [[Lamar Davis]] deliver stolen cars to the garage before they are transported into [[Blaine County]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Garages

@@ -1,0 +1,88 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = district
+|name           = East Los Santos
+|sign           = 
+|image          = EastLosSantos-GTAV-Montage.png
+|caption        = Clockwise from top: [[Popular Street]], part of [[La Mesa]], East Los Santos graffiti, [[Murrieta Oil Field]], houses in [[El Burro Heights]].
+|aka            = East LS
+|games          = {{Games|V=y|O=y}}
+|location       = [[Los Santos (HD Universe)|Los Santos]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|seal           = 
+|seal2          = 
+|flag           = 
+|mayor          = 
+|president      = 
+|established    = 
+|country        = 
+|state          = 
+|county         = 
+|capital        = 
+|pop            = 
+|motto          = 
+|pscanner       = PoliceScanner-GTAV-Neighborhood-EastLosSantos.ogg
+|unlockedby     = 
+|unlockedafter  = 
+|map            = <gallery>
+EastLosSantos-IngameGPS-GTAV-Map.png|East Los Santos
+EastLosSantos-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption    = Location on the map (in-game GPS). The neighborhoods of East Los Santos: <font color=6dbf66>La Mesa</font>, <font color=6268e2>Murrieta Heights</font>, <font color=yellow>Cypress Flats</font> and <font color=red>El Burro Heights</font>. The <font color=a4d1ab>small area in the center</font> is {{H:title|Referred simply as San Andreas in the radar|unnamed}} in GTA V. This was later fixed in GTA Online, now being part of <font color=6dbf66>La Mesa</font>.
+}}
+
+[[LEAD]]
+'''East Los Santos''' is a large district appearing in {{V}} and {{O}}, located in [[Los Santos (HD Universe)|Los Santos]].
+
+It consists of many smaller sub-districts and neighbourhoods. East Los Santos is bordered by [[Mirror Park]] and the [[Tataviam Mountains]] to the north, [[South Los Santos]] to the west and southwest, the [[Port of Los Santos]] to the south, and the [[Palomino Highlands]] to the east. East Los Santos sits at the eastern edge of the Los Santos metropolitan area, and meets the border of urban and rural.
+
+[[SECTION:2:Places of Interest]]
+*[[Go Loco Railroad]]
+*[[Grand Banks Steel Foundry]]
+*[[La Mesa]] Water Tower ({{WP|Vernon, California|Vernon}} Water Tower)
+*[[Lester's House]]
+*McGrory Furniture Building
+*[[Murrieta Oil Field]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Amarillo Vista]]
+*[[Amarillo Way]]
+*[[Capital Boulevard]]
+*[[Dry Dock Street]]
+*[[El Rancho Boulevard]]
+*[[Fudge Lane]]
+*[[Hanger Way]]
+*[[Innocence Boulevard]]
+*[[Labor Place]]
+*[[Orchardville Avenue]]
+*[[Popular Street]]
+*[[South Shambles Street]]
+*[[Tower Way]]
+
+[[SECTION:2:Businesses]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*Auto Glass and Body Shop
+*[[Big G Goods]]
+*[[CMC|Central Milling Company]]
+*[[Cool Beans]]
+*[[Darnell Bros.|Darnell Bros Clothing Company]] (Southwestern Bag Co., Matteo St.)
+*Darnell Bros Warehouse
+*[[Fridgit]]
+*Hallert Bros Warehouse
+*[[Liquor Market]]
+*Los Santos Bag Co. (Southwestern Bag Co., E. 6th St.)
+*[[Los Santos Customs]]
+*[[Maibatsu Corporation (HD Universe)|Maibatsu Motors Inc.]] (Zohar Industries, Inc.)
+*Meltz Pharmacy
+*[[National Transfer and Storage Co.]]
+*[[Pisswasser|Pisswasser Factory]] (Centennial Mills)
+*Soyler Textile
+*Thorn's Warehouse
+*Vitreous Glass Masters (Owens Illinois Glass)
+
+[[CATEGORIES]]
+Districts
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Zones

@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = fashion
+|name          = Sessanta Nove
+|sign          = SessantaNove-GTAV-Logo-Texture.png
+|image         = SessantaNove-GTAV-LogoWords-Texture.png
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Sessanta Nove''' is a fashion label in the [[HD Universe]] appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', and due to appear in ''[[Grand Theft Auto VI]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+SessantaNove-GTAV-DaylightFront.png|[[Portola Drive]] and [[Eastbourne Way]], [[Rockford Hills]] ([[:File:SessantaNove-GTAV-NightFront.png|Night view]]).
+</gallery>
+
+[[SECTION:3:Location Influences]]
+*The building on [[Portola Drive]] is based on Louis Vuitton's flagship Beverly Hills store at {{URL|https://maps.app.goo.gl/xyF6Vaooxjcenqcc8|295 North Rodeo Drive}}, as it appeared prior to being remodeled in 2014.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Fashion brands

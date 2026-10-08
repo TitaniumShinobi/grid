@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business
+|image = DoubleDenim-GTAV-Logo2.png
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Burton]], [[Los Santos (HD Universe)|Los Santos]]<br>[[Del Perro]], Los Santos
+|type = Clothing
+}}
+
+[[LEAD]]
+'''Double Denim''' is a clothing company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" widths="270px" spacing="small">
+DoubleDenim-GTAV-DelPerro.png|[[Prosperity Street Promenade]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]. Based on the now-closed  {{WP|Benetton Group|United Colors of Benetton}} store located at 1318 {{WP|Third Street Promenade}} in {{WP|Santa Monica, California|Santa Monica}}, {{WP|California}}.
+DoubleDenim-GTAV-Burton.png|[[Hawick Avenue]], [[Burton]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

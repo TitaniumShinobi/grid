@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = electronics
+|name          = ONO
+|sign          = Ono-Logo-GTAV.png
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpstunt}}|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Industrial & commerical electronics
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = [[#Products|Products]]
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''ONO''' (Japanese: オノ) is a [[Japan]]ese electronics company appearing in {{O}} as part of the [[GTA Online: Cunning Stunts|Cunning Stunts]] update, and is due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Cunning Stunts
+Businesses in GTA VI
+Electronics companies

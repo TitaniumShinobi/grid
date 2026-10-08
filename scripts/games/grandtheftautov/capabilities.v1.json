@@ -9,13 +9,18 @@
     "scripts/games/grandtheftautov/health/collectors/Get-GridGtaInstallationInventory.ps1",
     "scripts/games/grandtheftautov/health/collectors/Get-GridGtaInstallationSet.ps1",
     "scripts/games/grandtheftautov/health/collectors/Resolve-GridGtaSetupReadiness.ps1",
+    "scripts/games/grandtheftautov/health/collectors/Resolve-GridGtaRequestContext.ps1",
+    "scripts/games/grandtheftautov/health/collectors/Get-GridGtaCrashInvestigationEvidence.ps1",
+    "scripts/games/grandtheftautov/health/collectors/Resolve-GridGtaCrashAssessment.ps1",
+    "scripts/games/grandtheftautov/health/schemas/gta-crash-evidence.v1.schema.json",
     "scripts/games/grandtheftautov/Invoke-GridGtaSetupReadiness.ps1",
     "scripts/games/grandtheftautov/setup/New-GridGtaDeploymentPlan.ps1",
     "scripts/games/grandtheftautov/setup/Invoke-GridAuthorizedGtaDeployment.ps1",
     "scripts/games/grandtheftautov/setup/recipes/forever-together.v1.json",
     "scripts/games/grandtheftautov/discovery.steam.v1.json",
     "scripts/games/grandtheftautov/tests/GtaDeployment.Tests.ps1",
-    "scripts/games/grandtheftautov/tests/GtaSetupReadiness.Tests.ps1"
+    "scripts/games/grandtheftautov/tests/GtaSetupReadiness.Tests.ps1",
+    "scripts/games/grandtheftautov/tests/GtaCrashInvestigation.Tests.ps1"
   ],
   "capabilities": [
     {
@@ -73,6 +78,62 @@
       "requiredAuthority": { "kind": "None", "description": "Reduces supplied observations into deterministic setup guidance." },
       "rollback": { "mode": "NotRequired", "description": "Pure readiness assessment." },
       "terminalStates": ["Ready", "Incomplete", "Blocked"]
+    },
+    {
+      "capabilityId": "grid.game.grandtheftautov.request-context.resolve",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": { "kind": "Game", "gameId": "grandtheftautov" },
+      "implementation": { "files": ["scripts/games/grandtheftautov/health/collectors/Resolve-GridGtaRequestContext.ps1"], "entryPoint": "Resolve-GridGtaRequestContext" },
+      "inputSchema": { "type": "object", "required": ["connectedRegistration"] },
+      "outputSchema": { "type": "object", "required": ["status", "gameId", "installationId", "profileId", "edition", "contextFingerprint", "authorizedReadPaths", "exactReadResources"] },
+      "preconditions": ["The shared authenticated request engine supplies the exact account-scoped connected registration; this resolver never searches an account store."],
+      "dependencies": [],
+      "sideEffectClassification": "None",
+      "requiredAuthority": { "kind": "None", "description": "Validates structured account-owned identities and deterministically resolves the exact read scope without accessing external state." },
+      "rollback": { "mode": "NotRequired", "description": "Pure identity and scope resolution." },
+      "terminalStates": ["Resolved", "Failed"]
+    },
+    {
+      "capabilityId": "grid.game.grandtheftautov.crash-evidence.collect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": { "kind": "Game", "gameId": "grandtheftautov" },
+      "implementation": { "files": ["scripts/games/grandtheftautov/health/collectors/Get-GridGtaCrashInvestigationEvidence.ps1"], "entryPoint": "Get-GridGtaCrashInvestigationEvidence" },
+      "inputSchema": { "type": "object", "required": ["context"] },
+      "outputSchema": { "type": "object", "required": ["schemaVersion", "gameId", "installationId", "profileId", "contextFingerprint", "status", "evidence", "changedExternalState"] },
+      "preconditions": ["The context is an exact account-owned registration resolved by the GTA adapter.", "The shared request engine consumed an exact read grant covering every filesystem and logical resource."],
+      "dependencies": ["grid.game.grandtheftautov.request-context.resolve"],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": { "kind": "AuthorizedExternalRead", "description": "Reads only declared edition-qualified roots and shared bounded Windows failure sources; it never launches or controls the game." },
+      "rollback": { "mode": "NotRequired", "description": "Read-only evidence collection." },
+      "terminalStates": ["Collected", "Partial", "Unavailable"]
+    },
+    {
+      "capabilityId": "grid.game.grandtheftautov.crash-investigation.assess",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": { "kind": "Game", "gameId": "grandtheftautov" },
+      "implementation": { "files": ["scripts/games/grandtheftautov/health/collectors/Resolve-GridGtaCrashAssessment.ps1"], "entryPoint": "Resolve-GridGtaCrashAssessment" },
+      "inputSchema": { "type": "object", "required": ["evidencePackage", "caseId"] },
+      "outputSchema": { "type": "object", "required": ["schemaVersion", "caseId", "state", "assertions", "nextObservation", "diagnosticResult", "changedExternalState"] },
+      "preconditions": ["Every diagnostic observation is provenance-bearing and bound to the same current context fingerprint."],
+      "dependencies": ["grid.game.grandtheftautov.crash-evidence.collect"],
+      "sideEffectClassification": "None",
+      "requiredAuthority": { "kind": "None", "description": "Pure deterministic reduction; component presence alone cannot resolve cause." },
+      "rollback": { "mode": "NotRequired", "description": "Pure assessment." },
+      "terminalStates": ["InsufficientEvidence", "SupportedHypothesis", "ProvenCause"]
+    },
+    {
+      "capabilityId": "grid.game.grandtheftautov.crash-investigation.collect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": { "kind": "Game", "gameId": "grandtheftautov" },
+      "implementation": { "files": ["scripts/games/grandtheftautov/health/Grid.Health.GtaV.psm1"], "entryPoint": "Invoke-GridGtaCrashInvestigation" },
+      "inputSchema": { "type": "object", "required": ["request", "caseId", "caseDirectory", "resolvedContext"] },
+      "outputSchema": { "type": "object", "required": ["Status", "TerminalState", "CaseId", "Evidence", "DiagnosticResult", "Detail", "ChangedExternalState"] },
+      "preconditions": ["The shared request transaction owns case persistence and receipts.", "The exact read authorization was consumed before invoking this callback."],
+      "dependencies": ["grid.game.grandtheftautov.crash-investigation.assess"],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": { "kind": "AuthorizedExternalRead", "description": "Composes bounded existing historical evidence first and returns it to the shared transaction without creating a second case." },
+      "rollback": { "mode": "NotRequired", "description": "Read-only callback." },
+      "terminalStates": ["NeedsContext", "NeedsEvidence", "Failed"]
     },
     {
       "capabilityId": "grid.game.grandtheftautov.setup-deployment.plan",

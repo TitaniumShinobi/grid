@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = gtavsubway
+|type           = subwaystation
+|name           = Portola Drive Station
+|sign           = 
+|image          = <gallery>
+PortolaDriveStation-GTAV-EastEntrance.png|Entrance (east)
+PortolaDriveStation-GTAV-WestEntrance.png|Entrance (west)
+PortolaDriveStation-GTAV-Platform.png|Platform
+</gallery>
+|caption        = '''Portola Drive Station''' in {{V}}.
+|aka            = Portola
+|games          = {{Games|V=y|O=y}}
+|location       = [[Boulevard Del Perro]] and [[South Boulevard Del Perro]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|status         = active
+|pscanner       = 
+|use            = 
+|owner          = 
+|operator       = [[Los Santos Transit]]
+|occupants      = 
+|businesses     = 
+|employees      = 
+|station_type   = Subway station
+|platforms      = 1
+|tracks         = 2
+|lines          = 
+|transfer       = 
+|clockwise      = [[Burton Station]]
+|anticlockwise  = [[Del Perro Station]]
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = <gallery>
+PortolaDriveStation-GTAV-Map.png|Portola Drive Station
+PortolaDriveStation-GTAV-LSTMap.png|LST Map
+</gallery>
+|map_caption    = Location on the map (red) in {{V}}.
+}}
+
+[[LEAD]]
+'''Portola Drive Station''' is an underground [[Los Santos Transit]] station in {{V}} and {{O}} located in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Subway stations

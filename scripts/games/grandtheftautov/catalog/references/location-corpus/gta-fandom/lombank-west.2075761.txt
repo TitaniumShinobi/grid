@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|image = LombankWest-GTAV.png
+|caption = The building as seen from the south.
+|games = {{Games|V=y|O=y}}
+|location = [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|use = Lombank offices
+}}
+
+[[LEAD]]
+'''Lombank West''' is a high-rise office building in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+High-rise buildings
+Properties in GTA Online
+Safehouses in GTA Online

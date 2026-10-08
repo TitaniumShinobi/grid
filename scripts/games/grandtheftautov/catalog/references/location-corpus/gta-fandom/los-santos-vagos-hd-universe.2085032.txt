@@ -1,0 +1,154 @@
+[[INFOBOX]]
+{{Infobox organization
+|name         = Los Santos Vagos
+|image        = Vagos-Logo-GTAV.png
+|caption      =
+|games        = {{Games|V=y|O=y}}
+|type         = gang
+|aka          =
+*{{H:title|Abbreviated in-game|LSV}}
+*Vagos
+*Lazy Saints
+|locations    =
+*[[Rancho]]
+*Central [[Cypress Flats]]
+|gang_type    = [[Mexico|Mexican]] Street Gang
+|enemies      =
+*[[The Families]]
+**[[Franklin Clinton]]{{Ref|name=FranklinandLamar|ref=[[Repossession]] (''GTA V'') and [[Short Trips]] missions ([[GTA Online: The Contract|The Contract]] update, ''GTA Online'').}}
+**[[Lamar Davis]]{{Ref|name=FranklinandLamar}}
+*[[Ballas (HD Universe)|Ballas]] {{Small|([[GTA Online: Lowriders|Lowrider]] missions)}}
+*[[Varrios Los Aztecas (HD Universe)|Varrios Los Aztecas]]{{Fact}}
+*[[Marabunta Grande]]{{Fact}}
+*[[The Lost MC]] {{Small|(''GTA V'')}}{{Fact}}
+*{{GTAOP}}
+*[[Organizations]] {{Small|(''GTA Online'')}}
+*[[Motorcycle Clubs]] {{Small|(''GTA Online'')}}
+*[[Street Punks]] {{Small|(''GTA Online'')}} {{Small|(formerly)}}{{Ref|name=StreetPunks|ref=Based on the [[Random Event: Drug Vehicle]] (the [[GTA Online: Los Santos Summer Special|Los Santos Summer Special]] update), in [[2020]], the Vagos are one of the three gangs that the Street Punks steal a drug vehicle from. But in [[2022]], in the [[Nightclub Management: Eliminate the drug operation]] mission ([[GTA Online: The Criminal Enterprises|The Criminal Enterprises]] update), the Vagos can be one of the three gangs that the Street Punks make a deal with, indicating that the relationship between the two gangs has normalized.}}
+*[[Martin Madrazo]] {{Small|(''GTA Online'')}} {{Ref|name=Madrazo|ref=In [[2024]], during the events of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update, in the [[Dispatch Work]]: [[Possession for Sale]] mission, members of the Vagos and Madrazo Cartel can be seen making a drug deal, indicating good relations between the gangs. However, a short time later, Martin Madrazo can [[Madrazo Hits|order]] (these missions were released slightly later than Dispatch Work) the player to kill a Vagos gang member, which may indicate that either the relationship between the gangs deteriorated very quickly, or that Martin has a personal score to settle with the victim.}}
+**[[Madrazo Cartel]] {{Small|(''GTA Online'')}} {{Small|(probably)}}{{Ref|name=Madrazo}}
+|affiliations = 
+*[[The Professionals]]{{Ref|name=Professionals|ref=[[Dish the Dirt]]}}
+*[[The Lost MC]] {{Small|(''GTA Online'')}}{{Ref|name=TheLost|ref=[[Flood in the LS River]], [[Pier Pressure]], [[Violent Duct]]}}
+*[[Bahama Mamas]] {{Small|(''GTA Online'')}}
+*[[Ballas (HD Universe)|Ballas]] {{Small|(''GTA Online'')}}{{Ref|name=Ballas|ref=[[Deal Breaker (GTA Online)|Deal Breaker]]}}
+*[[Street Punks]] {{Small|(''GTA Online'')}}{{Ref|name=StreetPunks}}
+*[[Madrazo Cartel]] {{Small|(''GTA Online'')}} {{Small|(probably formerly)}}{{Ref|name=Madrazo}}
+|colors       = Yellow
+|vehicles     = 
+*[[Bagger]]
+*[[Bison]] {{Small|([[Repossession]] only)}}
+*[[Penumbra]] {{Small|(Repossession only)}}
+*[[Baller]]
+*[[Barrage]] {{Small|(''GTA Online'')}}
+*[[BMX (HD Universe)|BMX]]
+*[[Buccaneer (HD Universe)|Buccaneer]] ([[Buccaneer Custom|Custom]] {{Small|(''GTA Online'')}})
+*[[Cavalcade]]
+*[[Emperor (HD Universe)|Emperor]]
+*[[Half-track]] {{Small|(''GTA Online'')}}
+*[[Manana]]
+*[[Peyote]]
+*[[Tornado]] ([[Tornado Custom|Custom]] {{Small|(''GTA Online'')}})
+*[[Vigero]]
+*[[Sabre Turbo Custom]] {{Small|(''GTA Online'')}}
+*[[Virgo Classic Custom]] {{Small|(''GTA Online'')}}
+*[[Landstalker XL]] {{Small|(''GTA Online'')}}
+*[[Faction Custom]] {{Small|(''GTA Online'')}}
+*[[Phoenix (HD Universe)|Phoenix]] {{Small|(''GTA Online'')}}
+*[[Contender]] {{Small|(''GTA Online'')}}
+*[[Granger]] {{Small|(''GTA Online'')}}
+*[[Voodoo Custom]] {{Small|(''GTA Online'')}}
+*[[Huntley S]] {{Small|(''GTA Online'')}}
+*[[Weaponized Tampa]] {{Small|(''GTA Online'')}}
+*[[PCJ 600]] {{Small|(''GTA Online'')}}
+*[[Youga Classic]] {{Small|(''GTA Online'')}}
+*[[Baller ST]] {{Small|(''GTA Online'')}}
+*[[Frogger]] {{Small|(''GTA Online'')}}
+*[[Cargobob (HD Universe)|Cargobob]] {{Small|(''GTA Online'')}}
+*[[SuperVolito]] {{Small|(''GTA Online'')}}
+*[[Buzzard Attack Chopper]] {{Small|(''GTA Online'')}}
+*[[Dinghy (HD Universe)|Dinghy]] {{Small|([[Nervous Ron]] & ''GTA Online'')}}
+*[[Tropic]] {{Small|(''GTA Online'')}}
+*[[Velum 5-Seater]] {{Small|(''GTA Online'')}}
+*[[Primo Custom]] {{Small|(''GTA Online'')}}
+|weapons      = 
+*[[Knife]]
+*[[Baseball Bat]]
+*[[Pistol (HD Universe)|Pistol]]
+*[[Pump Shotgun]]
+*[[Sawed-Off Shotgun]]
+*[[Assault Shotgun]]
+*[[Micro SMG (HD Universe)|Micro SMG]]
+*[[Machine Pistol]]
+*[[SMG (HD Universe)|SMG]]
+*[[MG]]
+*[[Combat MG]]
+*[[Assault Rifle]]
+*[[Carbine Rifle]]
+*[[Special Carbine]]
+*[[Minigun]]
+*[[Sniper Rifle]]
+|businesses   = 
+*Street robberies{{Ref|name=Robberies|ref=[[Random Events in GTA V#Gang Intimidation|Random Event: Gang Intimidation]]}}
+*Drug trafficking
+*Weapons trafficking
+*Contraband
+*Vehicles trafficking
+*Document forgery 
+|fronts       = 
+*[[Los Santos Vagos Auto Shop|Auto Shop]] in [[Cypress Flats]]/[[La Mesa]]
+*[[Rancho Projects]]
+*[[McKenzie Field Hangar]] {{Small|(formerly)}}
+|members      = 
+*[[Edgar Carlos]] 
+*[[Jose Carlos]] 
+*[[Pedro Carlos]] 
+*[[Little Al]] 
+*[[Vagos Eulogist]] 
+*[[Mateo Brothers]] 
+*[[Vagos Driver]] 
+*[[Esteban Jimenez]] 
+*[[Gustavo Mota]] {{Small|(formerly)}}
+*[[Gustavo]]
+*[[Alonzo (GTA V)|Alonzo]] 
+*[[Luis Francesco]] {{Small|(possibly)}}
+*[[Alphonse]] 
+*[[Jose (GTA V)|Jose]] 
+*Luis 
+*[[Lupe]] {{Small|(formerly)}}
+*Lupe's unnamed brother
+*Lupe's unnamed cousin
+|leader       = 
+*[[Edgar Carlos]] {{Small|(unknown set)}}
+*[[North Side Vagos leader|Unnamed leader]] {{Small|(NSV set)}}
+*[[Vagos Gang Leader]] {{Small|(unknown set)}}
+|status=active}}
+
+[[LEAD]]
+The '''Los Santos Vagos''', also known as '''LSV''' or the '''Vagos''', are a large [[Mexico|Mexican]] street gang appearing in {{V}} and {{O}}. They are said to be the largest Hispanic street gang in [[Los Santos (HD Universe)|Los Santos]] and are rumored to have connections with some major Mafia groups, according to [[The Underbelly Of Paradise]] [[Television in GTA V|TV]] program. Vagos are supporters of [[LS Pounders]] football team, as they wear different clothes with their logos and a yellow coloured T-shirt to match.
+
+[[SECTION:2:Territory]]
+The Vagos control almost the entire neighborhood of Rancho. However, the [[Varrios Los Aztecas (HD Universe)|Varrios Los Aztecas]] are sometimes seen in northern Rancho. Jamestown Street and the [[Rancho Projects]] in the southern part of Rancho are particular hotspots for Vagos activity, as well as various backalleys like Cypress Flats. In the storyline mission [[Repossession]], Vagos are found in [[Vespucci Beach]]. However, after the mission is completed, Vagos will be replaced by [[Marabunta Grande]]. In a phone call between a female member and her brother, it's revealed that LSV has also started expanding its influence into [[Las Venturas (HD Universe)|Las Venturas]].{{Ref|name=ped|type=audiodata|ref=''g_f_y_vagos_01_latino_mini_01.awc<br>PHONE_CONV5_CHAT2_01''}}
+
+Los Santos Vagos members can be seen drinking, driving cars, hanging out in groups of two-five on the sidewalk, smoking cigarettes and [[Weed|marijuana]] and drinking [[Pißwasser]]. They are easily identified by their modern urban attire. Although LSV is characterized as a largely Mexican American street gang, they also include members of [[Guatemala]]n origin.
+
+[[SECTION:4:The Diamond Casino & Resort]]
+*[[Casino Work]]: [[Recovery Time]] {{Small|(possible enemies)}}
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[The Diamond Casino Heist]]
+**[[Heist Prep: Unmarked Weapons (The Diamond Casino Heist)|Heist Prep: Unmarked Weapons]]
+**[[Casino Heist]]
+***[[Casino Heist - Aggressive|Aggressive]] {{Small|(if chosen as the buyers)}}
+***[[Casino Heist - The Big Con|The Big Con]] {{Small|(if chosen as the buyers)}}
+***[[Casino Heist - Silent & Sneaky|Silent & Sneaky]] {{Small|(if chosen as the buyers)}}
+
+[[SECTION:4:The Chop Shop]]
+*[[The Gangbanger Robbery]]
+**[[The Gangbanger Robbery/Finale]] {{Small|(one of the three possible enemies)}}
+
+[[CATEGORIES]]
+Gangs
+Latino-descendant organizations
+Organizations in GTA Online
+Organizations in GTA V

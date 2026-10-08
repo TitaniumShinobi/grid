@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Los Santos Hoard House
+|image = LosSantosHoardHouse-GTAV-Logo.svg
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|type = Moving & storage company
+}}
+
+[[LEAD]]
+'''Los Santos Hoard House''' is a business in [[State of San Andreas (HD Universe)|San Andreas]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

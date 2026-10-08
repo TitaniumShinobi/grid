@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = hospital
+|name           = Mount Zonah Medical Center
+|sign           = MountZonahMedicalCenter-GTAV-Logo.png
+|image          = MountZonahMedicalCenter-GTAV.png
+|caption        = 
+|location       = [[Dorset Drive]], [[Rockford Drive]] & [[Abe Milton Parkway]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|games          = {{Games|V=y|O=y}}
+|size           = General hospital
+|map            = MountZonahMedicalCenter-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Mount Zonah Medical Center''' is a general hospital in {{VO}}, located in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hospitals

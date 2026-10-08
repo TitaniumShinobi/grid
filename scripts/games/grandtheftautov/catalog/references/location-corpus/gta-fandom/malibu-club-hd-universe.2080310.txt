@@ -1,0 +1,54 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = nightclub
+|name           = Malibu Club
+|sign           = 
+|image          = MalibuClub-GTAO-Logo.png
+|caption        = The Malibu Club logo in {{O}}.
+|aka            = 
+|games          = {{Games|VI=y}}
+|mentioned      = {{Games|O={{EEEV}} {{DLC|mpstunt}}}}
+|location       = [[Vice-Dale County]], [[State of Leonida|Leonida]]
+|opened         = 
+|price          = 
+|condition      = 
+|products       = 
+|taglines       = 
+|status         = active
+|pscanner       = 
+|owner          = 
+|operator       = 
+|occupants      = 
+|employees      = 
+|structure_type = 
+|architecture   = 
+|floors         = 
+|rooms          = 
+|phone          = 
+|opentimes      = 
+|capacity       = 
+|garagecap      = 
+|parkingcap     = 
+|accessible     = 
+|canplayerstore = 
+|unlockedby     = 
+|unlockedafter  = 
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+The '''Malibu Club''' is a nightclub due to appear in {{VI}}, located in [[Vice-Dale County]], [[State of Leonida|Leonida]].
+
+[[CATEGORIES]]
+Buildings in GTA VI in Vice-Dale County
+Businesses in GTA Online
+Businesses in GTA VI
+Nightclubs

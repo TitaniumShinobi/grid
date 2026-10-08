@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|image = DailyRag-GTAV-Logo.svg
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = [[State of San Andreas (HD Universe)|San Andreas]]
+|type = Newspaper
+}}
+
+[[LEAD]]
+The '''Daily Rag''' is a newspaper based in [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Newspaper publishers

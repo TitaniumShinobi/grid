@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = auto shop
+|name          = Glass Heroes Auto Repairs
+|sign          = 
+|image         = GlassHeroes-GTAV-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|business_type = Auto Repair Shop
+|founded       = [[1956]]
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = ''"We never crack under pressure"''
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Glass Heroes Auto Repairs''' is an auto repair shop in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mod shops

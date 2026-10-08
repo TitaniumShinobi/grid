@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Vinewood Music
+|type = [[:Category:Music Stores|Music store]]
+|owner = 
+|location = [[Alta St]]/[[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Vinewood Music''' is a [[:Category:Music Stores|music store]] located on the corner of [[Alta St]] and [[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]. The company was established in [[1991]], describes itself as the 'suppliers of (the) finest Rock N' Roll' and also sells comics.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Music Stores

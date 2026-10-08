@@ -1,0 +1,254 @@
+[[LEAD]]
+'''Innocence Blvd''' is a street in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The boulevard runs from [[La Puerta]] in the west to [[Cypress Flats]] in the east, running through [[Strawberry]], [[Davis]], [[Rancho]], [[La Mesa]] and [[Little Seoul]]. The street has connections to [[Alta St]], [[Amarillo Vista]], [[Amarillo Way]], [[Calais Ave]], [[Crusade Rd]], [[Davis Ave]], [[Elgin Ave]], [[Jamestown St]], [[La Puerta Freeway]], [[Orchardville Ave]], [[Popular St]], [[Power St]], [[Roy Lowenstein Blvd]], [[Strawberry Ave]] and [[Tower Way]]. The street also runs over [[Little Bighorn Ave]] and the [[Elysian Fields Freeway]]. The area in Strawberry is controlled by [[The Families]] while in [[Cypress Flats]] it is controlled by the [[Los Santos Vagos]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[24/7]]
+| [[Strawberry]]
+|
+| Convenience store
+|-
+| [[Aguila Burrito]]
+| [[Strawberry]]
+| [[Strawberry Ave]]
+| Food and drink
+|-
+| [[Bad Day Goods]]
+| [[Davis]]
+| [[Davis Ave]]
+| Discount store
+|-
+| [[Bilingsgate Motel]]
+| [[Rancho]]
+|
+| Motel
+|-
+| [[Cart-L Farmacia]]
+| [[Chamberlain Hills]]
+| [[Carson Ave]]
+| Pharmacy
+|-
+| [[Cent Carpet]]
+| [[Rancho]]
+| [[Roy Lowenstein Blvd]]
+| Furniture
+|-
+| [[Central Los Santos Medical Center]]
+| [[Davis]]/[[Strawberry]]
+| [[Davis Ave]]/[[Crusade Rd]]
+| Healthcare
+|-
+| [[Checkout!]]
+| [[Strawberry]]
+| [[Strawberry Ave]]
+| Supermarket
+|-
+| [[City Paints.Inc]]
+| [[Strawberry]]
+|
+| Furniture
+|-
+| [[Click Lovers]]
+| [[Davis]]
+| [[Davis Ave]]
+| Electronics
+|-
+| [[Cluckin' Bell]]
+| [[Chamberlain Hills]]
+| [[Carson Ave]]
+| Food and drink
+|-
+| [[County of Los Santos Coroner]]
+| [[Davis]]
+| [[Crusade Rd]]
+| Coroner's office
+|-
+| [[Davis City Hall]]
+| [[Davis]]
+| [[Davis Ave]]
+| Government
+|-
+| [[Davis Sheriff's Station]]
+| [[Davis]]/[[Rancho]]
+| 
+| Law enforcement
+|-
+| [[Discount Beauty Store]]
+| [[La Puerta]]
+| [[Alta St]]
+| Beauty salon
+|-
+| [[Discount Store]]
+| [[Strawberry]]
+| [[Strawberry Ave]]
+| Clothing
+|-
+| [[Family Dental]]
+| [[Strawberry]]
+| [[Strawberry Ave]]
+| Healthcare
+|-
+| [[Fern's]]
+| [[Strawberry]]
+| [[Elgin Ave]]
+| Import/Export
+|-
+| [[Flints Autos]]
+| [[Strawberry]]
+| [[Power St]]
+| Garage
+|-
+| [[Fowl Mouthed]]
+| [[Davis]]
+| [[Davis Ave]]
+| Food and drink
+|-
+| [[Fridgit]]
+| [[Cypress Flats]]
+| [[Popular St]]
+| Storage
+|-
+| [[Gav's Ca$h Exchange]]
+| [[Strawberry]]
+| 
+| Pawn
+|-
+| [[Glass Heroes]]
+| [[Strawberry]]
+| 
+| Garage
+|-
+| [[Globe Oil]]
+| [[La Puerta]]
+| [[Alta St]]
+| Filling station
+|-
+| [[Go Loco]]
+| [[Cypress Flats]]
+| 
+| Transport
+|-
+| [[Hands On Car Wash]]
+| [[Strawberry]]
+| 
+| Car wash
+|-
+| [[Happy Shark Bail Bonds]]
+| [[Chamberlain Hills]]/[[Strawberry]]
+| [[Carson Ave]]
+| Bail bonds
+|-
+| [[Los Santos Coroner Souvenirs]]
+| [[Strawberry]]
+| 
+| Souvenir store
+|-
+| [[Los Santos Office Supply Co.]]
+| [[Strawberry]]
+|
+| Office supplies
+|-
+| [[Los Santos Tattoos]]
+| [[El Burro Heights]]
+| [[El Rancho Blvd]]
+| Tattoo parlour
+|-
+| [[LS Paper Co.]]
+| [[Strawberry]]
+| 
+| Office supplies
+|-
+| [[LSPD Auto Impound]]
+| [[Rancho]]
+| [[Roy Lowenstein Blvd]]
+| Law enforcement
+|-
+| [[Mom's Tacos]]
+| [[Davis]]
+| [[Davis Ave]]
+| Food and drink
+|-
+| [[Pißwasser]]
+| [[Cypress Flats]]
+| [[Popular St]]
+| Food and drink factory
+|-
+| [[Porn Crackers]]
+| [[Davis]]
+| [[Davis Ave]]
+| Adult
+|-
+| [[Puerto Del Sol Station]]
+| [[Little Seoul]]
+| 
+| Metro station
+|-
+| [[Ring of Fire Chili House]]
+| [[Davis]]
+| [[Strawberry Ave]]
+| Food and drink
+|-
+| [[Sheet Yourself Laundromat]]
+| [[Davis]]
+| [[Davis Ave]]
+| Laundromat
+|-
+| [[She Nails]]
+| [[Davis]]
+| [[Davis Ave]]
+| Beauty salon
+|-
+| [[Snapper's Delight]]
+| [[Chamberlain Hills]]
+| [[Carson Ave]]
+| Photography
+|-
+| [[Straight & Direct]]
+| [[Strawberry]]
+| [[Alta St]]
+| Plumbing supplies
+|-
+| [[Strawberry Mortuary]]
+| [[Rancho]]
+| [[Davis Ave]]
+| Mortuary
+|-
+| [[Suds Cleaners]]
+| [[Strawberry]]
+| [[Strawberry Ave]]
+| Cleaners
+|-
+| [[Tire Nutz]]
+| [[Strawberry]]
+| [[Power St]]
+| Garage
+|-
+| [[Video Alcove]]
+| [[Chamberlain Hills]]
+| [[Carson Ave]]
+| Entertainment
+|-
+| [[Vine Print]]
+| [[Strawberry]]
+|
+| Print works
+|-
+| [[Wok It Off]]
+| [[Chamberlain Hills]]
+| [[Carson Ave]]
+| Food and drink
+|-
+| [[Zany-Z's Hot Dealz]]
+| [[Davis]]
+| [[Davis Ave]]
+| Discount store
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

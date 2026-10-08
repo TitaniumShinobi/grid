@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace     = y
+|miscplacename = TOUR COMPANY
+|business      = y
+|activebiz     = y
+|name          = Vinewood Star Tours
+|image         = VinewoodStarTours-GTAV-Logo.png
+|type          = Touring Company
+|games         = {{Games|V=y|O=y}}
+|location      = [[Downtown Vinewood]]
+|price         = [[Money|$]]40
+|taglines      = "20 Amazing ports of call."<br><small>(12 on PS3/Xbox360)</small><br> "Stalk celebrities from the comfort of a bus" 
+|map = VinewoodStarTours-GTAV-Map.png
+}}
+
+[[LEAD]]
+'''Vinewood Star Tours''' is a company running guided bus tours of famous Vinewood locations in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tourism companies

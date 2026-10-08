@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Coil
+|sign          = Coil-GTAO-Logo.png
+|image         = Coil-GTAO-TextLogo.png
+|caption       = '''Coil''' text logo in ''[[Grand Theft Auto V]]''.
+|image2        = CoilArmsDivision-GTAO-TextLogo.png
+|caption2      = '''Coil Arms Division''' text logo in ''[[Grand Theft Auto Online]]''.
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+*Vehicle manufacturer
+*Weapon manufacturer
+*Electric toothbrush manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+*[[#Vehicles|Vehicles]]
+*[[#Weapons|Weapons]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Coil''' is an [[United States of America|American]] automotive and weapon manufacturer appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Explosives manufacturers
+Vehicle manufacturers
+Weapon manufacturers

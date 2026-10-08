@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Fallen Angels
+|image     = FallenAngels-GTAV.jpg
+|caption   = '''Fallen Angels'''
+|taglines  = NO ANGEL IS TURNED AWAY
+|type      = Evangelical Organization
+|games     = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Fallen Angels''' is an evangelical organization in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

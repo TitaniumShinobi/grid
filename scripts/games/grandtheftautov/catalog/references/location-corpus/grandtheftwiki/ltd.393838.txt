@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{infobox business|
+|image = LTD-GTAV-BrougeAve-fillingstation.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = LTD
+|type = [[Filling Stations|Gasoline retailer]]
+|owner = 
+|location = [[Brouge Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]<br />[[Little Seoul]], [[Los Santos in GTA V|Los Santos]]<br />[[Mirror Park]], [[Los Santos in GTA V|Los Santos]]<br />[[Banham Canyon]], [[Blaine County]]<br />[[Grapeseed]], [[Blaine County]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''LTD''', also known as '''Limited Gasoline''', is a [[Filling Stations|gasoline retailer]] based in [[Los Santos in GTA V|Los Santos]]. The garages do not become open to the player to enter until after the introductory missions for both [[Franklin Clinton]] and [[Michael De Santa]] have been completed. Each station has a [[Jerry Can|jerry can]] between gas pumps that can be collected for use as a weapon later. The convenience store can be used to purchase health snacks and sodas to replenish a characters health, use an [[Automated Teller Machine|ATM]] to check the characters bank balance or to access the internet via computer in a back office, although this may increase the players [[Wanted Level in GTA V|wanted level]]. The store can also be robbed, usually netting between [[Money|$]]120 and $950.
+
+[[SECTION:2:Locations]]
+*[[Little Seoul]] (Carwash/[[Ammu-Nation]])
+*[[Brouge Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]
+*In [[Mirror Park]], across the street from the dirt road to the [[Tataviam Mountains]].
+*Where the main thoroughfare through [[Richman Glen]] intersects with the road through [[Banham Canyon]].
+*[[Grapeseed]], [[Blaine County]]
+
+[[CATEGORIES]]
+Businesses in Blaine County
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in Los Santos in GTA V

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = LT Weld Supply Co.
+|image = LTWeldSupplyCo.-GTAV.PNG
+|type = Welding Tools Supplier
+|games = {{games|V=y|O=y}}
+|locations = [[Capital Boulevard]], [[El Burro Heights]]
+|map = LTWeldSupplyCo.-GTAV-Map.png
+}}
+
+[[LEAD]]
+'''LT Weld Supply Company''' is a welding tools supplier in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located on [[Capital Boulevard]] in [[East Los Santos (HD Universe)|East Los Santos]].
+
+[[CATEGORIES]]
+Building yards
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos

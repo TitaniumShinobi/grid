@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Perrera Beach Motel
+|image = PerreraBeachMotel-GTAVe.png
+|caption = Overview of the Perrera Beach Motel.
+|type = Motel
+|games = {{Games|V=y|O=y}}
+|location = [[Bay City Avenue]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+The '''Perrera Beach Motel''' is a motel in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[Heist Prep: Vault Keycards|Heist Prep: Vault Keycards - Duggans' Goons]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Motels

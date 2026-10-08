@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = City Paints Inc.
+|image     = CityPaintsInc-GTAV.jpg
+|caption   = '''City Paints Inc.'''
+|taglines  = 
+|type      = DIY Store
+|games     = {{Games|V=y|O=y}}
+|locations = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''City Paints Inc.''' is a DIY store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

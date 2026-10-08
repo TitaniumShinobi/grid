@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|name = Winfrey Castiglione
+|caption = The logo
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|altnames = 
+|products = Designer fashion
+|bawsaq = 
+|image = WinfreyCastiglione-GTAV-Logo.png
+|lightlogo = y
+|image_size = 300
+|condition = Active
+|taglines = 
+|games = {{Games|V=y|O=y}}
+|type = Fashion retailer
+|reference = Brunello Cucinelli
+|map = 
+|oldlogo = 
+|oldcaption = 
+}}
+
+[[LEAD]]
+'''Winfrey Castiglione''' is a fashion store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+WinfreyCastiglione-GTAV-DaylightFront.png|[[Portola Drive]] location. ([[:File:WinfreyCastiglione-GTAV-NightFront.png|At night]]) - [[:File:WinfreyCastiglione-GTAV-LittlePortolaSide.png|Little Portola entry]]
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = vehiclecustoms
+|name          = Hao's Special Works
+|sign          = HaosSpecialWorks-GTAOee-VehicleBadge.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|O={{EEV}}}}
+|mentioned     = 
+|locations     = [[LS Car Meet]], [[Cypress Flats]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = 
+|founded       = [[2022]]
+|founder       = [[Hao]]
+|taglines      = 
+|status        = Active
+}}
+
+[[LEAD]]
+'''Hao's Special Works''' is a vehicle customization and tuning shop in {{O}}, introduced in the initial release of the [[Expanded & Enhanced Edition]] for [[PlayStation 5]] and [[Xbox Series X and Series S|Xbox Series X{{!}}S]].
+
+[[CATEGORIES]]
+Businesses in GTA Online: Expanded and Enhanced Edition
+Mod shop brands

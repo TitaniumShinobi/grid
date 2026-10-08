@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=FortZancudoApproachRoad-GTAV.jpg
+|caption=The Fort Zancudo Approach Road.
+|games={{Games|V=y|O=y}}
+|start=[[Route 68]]
+|end=[[Fort Zancudo]]
+|map=<gallery>
+FortZancudoApproachRoad-GTAV-Map.png|Map
+FortZancudoApproachRoad-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Fort Zancudo Approach Road''' is a two-way bridge/[[List of Street Names|road]] located in [[Blaine County]] in {{V}} and {{O}}, that begins at [[Route 68]] in [[Great Chaparral]] and ends at one of the entrances of [[Fort Zancudo]].
+
+The Approach Road has an [[Ammu-Nation (HD Universe)|Ammu-Nation]] store next to it located on [[Route 68]], which is ironic, as the player might buy armor and ammo here in order to raid the military base.
+
+[[CATEGORIES]]
+Road bridges
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County
+Truss bridges

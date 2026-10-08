@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicles
+|name          = Progen
+|sign          = Progen-GTAO-Logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V={{DLC|mpluxe2}}|O={{DLC|mpluxe2}}}}
+|mentioned     = 
+|locations     = 
+|business_type = Automotive manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|taglines      = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Progen''' is a [[United Kingdom|British]] automotive manufacturer appearing in {{V}} and {{O}} as part of the [[Ill-Gotten Gains Part 2]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Ill-Gotten Gains Part 2
+Businesses in GTA V: Ill-Gotten Gains Part 2
+Vehicle manufacturers

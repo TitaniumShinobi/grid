@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|type = entertainment
+|image = MeTV-GTA4-logo.png
+|name = Music Entertainment Television
+|aka = MeTV
+|business_type = Music and entertainment television network
+|games = {{Games|VCS=y|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|locations = [[MeTV Building]], [[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+}}
+
+[[LEAD]]
+'''Music Entertainment Television''' ('''MeTV''') is a music and entertainment television station which has been mentioned in {{VCS}}, {{IV}}, {{EFLC}}, {{V}}, {{O}}, and due to appear in {{VI}}.
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+Little is known of the ''GTA Vice City Stories'' rendition of MeTV, except that a news branch of the network, known as '''MeTV News''' is primarily featured on the official website of GTA Vice City Stories as a faux news channel reporting on events, features, and [[Characters in GTA Vice City Stories|characters]] in the games. MeTV News is hosted by [[Jenny Mitchell]], with [[Phil Herrick]] as a reporter.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+{{Gallery
+|MeTVBuilding-GTAIV-Overview.png|[[MeTV Building]], [[Star Junction]], [[Algonquin]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Businesses in GTA Vice City Stories
+TV broadcasting companies

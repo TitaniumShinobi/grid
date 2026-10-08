@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{infobox business|
+| image = 
+| size = 
+| game_1 = GTA Vice City
+| game_2 = GTA San Andreas
+| game_3 = GTA Vice City Stories
+| game_4 = GTA IV
+| game_5 = GTA V
+| name = Partial Pictures
+| type = Film Studio
+| owner = 
+| location = [[Vice City in HD Universe|Vice City]]
+| affiliation =
+| missions = 
+| employee = [[Jack Howitzer]] (<small>actor</small>)
+}}
+
+[[LEAD]]
+'''Partial Pictures''' is a production company presumably based in the [[Vice City in GTA IV Era|Vice City]], and may be a parody of [[wp:Paramount Pictures|Paramount Pictures]]. Not much else is known about the company other than they were most prominent in the 80s.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA Vice City
+Businesses in GTA Vice City Stories
+Businesses in Vice City in HD Universe
+Film Production Companies

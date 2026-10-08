@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Liquor Deli
+|image= LiquorDeli-GTASAde-Logo.png
+|type = Liquor store
+|games = ''[[Grand Theft Auto: San Andreas]]''<br>''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = '''3D Universe:'''<br>[[Idlewood]], [[Los Santos (3D Universe)|Los Santos]]<br>[[Vinewood Boulevard (3D Universe)|Vinewood Boulevard]], [[Market (3D Universe)|Market]], Los Santos<br>'''HD Universe:'''<br>[[Paleto Bay]], [[Blaine County]]
+}}
+
+[[LEAD]]
+'''Liquor Deli''' is a chain of liquor stores that appears in both the [[3D Universe|3D]] and [[HD Universe]]s of the ''[[Grand Theft Auto]]'' series, appearing in ''[[Grand Theft Auto: San Andreas]]'', ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Liquor store chains

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name= VOLTlab
+|image = VOLTlab-GTAO-Logo.png
+|type = Signal box software.
+|games=''[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''VOLTlab''' is a signal box software featured in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Features
+Features in GTA Online
+In-Game Products

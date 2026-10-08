@@ -1,0 +1,116 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|Name Change     = 
+|style           = 
+|name            = 
+|image_label     = V
+|front_image     = Scorcher-GTAV-front.png
+|rear_image      = Scorcher-GTAV-rear.png
+|caption         = A '''Scorcher''' in {{VO}}.
+|image_label2    = VI
+|front_image2    = Scorcher-GTAVI-Trailer1.png
+|rear_image2     = 
+|caption2        = A '''Scorcher''' in the [[Grand Theft Auto VI/Trailers#Trailer 1|first trailer]] for {{VI}}.
+|class               = [[:Category:Cycles class|Cycles]] {{Small|(''GTA V'' and ''GTA Online'')}}
+|body_style          = Hardtail mountain bike
+|capacity            = 1 {{Small|(rider)}}
+|manufacturer        = [[PED Cycles]]
+|price               = 
+*[[Money|$]]1,000 {{Small|(''GTA V'')}} {{Small|([[Pedal and Metal Cycles]])}}
+*$2,000 {{Small|(''GTA Online'')}} {{Small|(Pedal and Metal Cycles)}}
+|games               = {{Games|V=y|O=y|VI=y}}
+|type            = bicycle
+|swankness           = 1/5
+|dashtype            = 
+|inttxd              = 
+|wheeltype           = Motorcycle
+|flags               = 
+{{Expand||
+{{Flags|FLAG_NO_BOOT}}<br>
+{{Flags|FLAG_EXTRAS_STRONG}}<br>
+{{Flags|FLAG_IGNORE_ON_SIDE_CHECK}}<br>
+{{Flags|FLAG_AVERAGE_CAR}}<br>
+{{Flags|FLAG_HEADLIGHTS_USE_ACTUAL_BONE_POS}}<br>
+{{Flags|FLAG_DONT_TIMESLICE_WHEELS}}<br>
+}}
+|modelsets           = 
+|modelname           = scorcher
+|handlingname        = SCORCHER
+|textlabelname       = SCORCHER
+|roadspawn           = Yes
+|roadspawnmaxcol     = 10
+|roadspawnfreq       = 30
+|roadspawntrailer    = 
+|roadspawnidendis    = 20
+|roadspawndrivers    = 
+|roadspawngroups     = 
+|roadspawnlicense    = Standard White - 100%
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The [[PED Cycles]] '''Scorcher''' is a hardtail mountain bike appearing in {{V}} and {{O}}, and due to appear in {{VI}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto V'']]
+*Can be purchased from [[Pedal and Metal Cycles]] for [[Money|$]]1,000.
+*On the trails and roads in the [[Chiliad Mountain State Wilderness]] and [[Paleto Forest]].
+*Sometimes seen in front of [[De Santa Residence|Michael's mansion]].
+**It is also possible to see it when switching to Michael at later stages of the game, where is seen arriving at the mansion with Jimmy. His bike is a Scorcher.
+*Next to the [[El Gordo Lighthouse]], in front of [[Ursula|Ursula's]] house, along with a [[Surfer]] and a [[Tractor]].
+*Sometimes seen in bike paths of areas such as [[Vespucci Beach]], [[Rockford Hills]], [[Mirror Park]] and [[Del Perro]].
+*Two can be found at the mountain bike rentals shack in front of the [[Pala Springs Aerial Tramway]] in [[Paleto Forest]].
+*Can always be found at the [[Mr. Spoke Bike Rental|bike rental place]] where Jimmy brings the player to in the mission [[Daddy's Little Girl]].
+*Can be obtained in the mission [[Did Somebody Say Yoga?]] if the player decides to use it to return to the mansion. Can be stored in the garage.
+*Can be kept after the [[Random Events in GTA V#Bike Thief City|Random Events - Bike Thief City]] by not returning the bike to [[Gray Nicholson]].
+*Trevor can keep his bike after completing his part of the [[Strangers and Freaks]] mission [[Exercising Demons]].
+**One still can follow [[Mary-Ann Quinn]] after this mission and steal her own Scorcher. The player cannot jack it, though, so one must attack her in order to dismount the bike, then Trevor will be able to get it.
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+*Can be purchased from Pedal and Metal Cycles for $2,000.
+*Rarely seen in the same free-roam locations as in story mode. Riding a Scorcher around these areas increase the chance of finding another one.
+*Scorchers can be seen being ridden along the dirt tracks that are surrounding the wind turbines in [[Sandy Shores]] during the day.
+
+[[SECTION:2:Rockstar Games Social Club]]
+
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+{{RSSC
+|name          = Scorcher
+|manufacturer  = 
+|class         = Cycles 
+|image         = Scorcher-GTAV-RGSC-MainNew.jpg
+|caption       = Main image (after 2019).
+|image2        = Scorcher-GTAV-RGSC-Action.jpg
+|caption2      = "Action" image for ''GTA V''.
+|image3        = Scorcher-GTAO-RGSC-Action.jpg
+|caption3      = "Action" image for ''GTA Online''.
+|image4        = Scorcher-GTAV-RGSC-Main.jpg
+|caption4      = Main image (prior to 2019).
+|speed         = 29.510324
+|accel         = 21.25
+|braking       = 46.666668
+|traction      = 31.060606
+|seats         = 1
+|garage        = y
+|moddable      = n
+|premium       = n
+|super         = n
+|buy           = y
+|sell          = n
+|dealer        = pm
+}}
+
+[[CATEGORIES]]
+Bicycles
+Cycles class
+Vehicles in GTA Online
+Vehicles in GTA V
+Vehicles in GTA VI
+Vehicles manufactured by PED Cycles
+Vehicles purchasable from Pedal and Metal Cycles

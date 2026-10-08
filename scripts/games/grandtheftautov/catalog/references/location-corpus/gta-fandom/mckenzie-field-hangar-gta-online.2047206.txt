@@ -1,0 +1,51 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = hangar
+|status         = active
+|safehouse      = y
+|name           = [[File:Blips-GTAO-McKenzieFieldHangar.png|25px]] McKenzie Field Hangar
+|image          = McKenzieFieldHangar-GTAOee-Header.jpg
+|games          = {{Games|O={{EEEV}} {{DLC|mp2024_02}}}}
+|location       = [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|owner          = 
+*[[Trevor Philips]] <small>(optional; formerly)</small>
+*{{GTAOP}}
+|runways        = 1
+|accessible     = Yes
+|price          = 
+*[[Money|$]]1,475,000
+}}
+
+[[LEAD]]
+'''McKenzie Field Hangar '''is a purchasable property located at [[McKenzie Field]], [[Grapeseed]], featured in {{O}} as part of the continuation of the [[GTA Online: Agents of Sabotage|Agents of Sabotage]] update, released on March 4, 2025, during the [[Oscar Guzman Flies Again Week]].
+
+[[SECTION:3:Property management]]
+In early 2025, [[Ron Jakowski]] texts his occasional business acquaintance, the {{GTAOP}}, upset after discovering the hangar business is going to be put up for sale. Ron is particularly hung up on the fact the hangar has always been "Trevor's place", and Ron has never trusted [[Oscar Guzman]], nor considered him loyal. Ron closes the message with a request that the Protagonist let him know who ends up buying the hangar, should they find out.
+
+{{Quote|Did you hear the McKenzie Field Hangar's coming up for sale? That's Trevor's place! It's always been Trevor's place! I never did trust that Oscar asshole. No loyalty! If you hear who ends up buying it let me know...|Ron's text message to the player.}}
+
+Ultimately, the Protagonist themself purchases the hangar and begins running [[Arms Trafficking]] jobs alongside Oscar. The hangar is also used to plan and execute the [[Oscar Guzman Flies Again]] mission strand, which revolves around sabotaging [[Eberhard|Eberhard Munitions]]' hold on the illegal arms trade in [[State of San Andreas (HD Universe)|Southern San Andreas]] and stealing their [[Titan 250 D]] gunship.
+
+[[SECTION:3:Interior and Exterior]]
+<gallery position="center" spacing="small" widths="270px">
+McKenzieFieldHangar-GTAOee-Hangar.jpg|Main Hangar building.
+McKenzieFieldHangar-GTAOee-OutsideOfficeEntry.jpg|Outside office entry.
+McKenzieFieldHangar-GTAOee-InsideOfficeEntry.jpg|Inside office entry.
+McKenzieFieldHangar-GTAOee-Office.jpg|Office interior.
+McKenzieFieldHangar-GTAOee-DeskWithSnacks.jpg|[[Snacks]] on the desk.
+McKenzieFieldHangar-GTAOee-TVWithConsole.jpg|TV with console.
+McKenzieFieldHangar-GTAOee-Crate.jpg|Crate.
+McKenzieFieldHangar-GTAOee-HangarDesk.jpg|Hangar desk.
+McKenzieFieldHangar-GTAOee-TrevorsBlazer.jpg|[[Trevor Philips|Trevor's]] [[Blazer]].
+McKenzieFieldHangar-GTAOee-TPI1000Plate.jpg|TPI1000 plate on the blazer.
+McKenzieFieldHangar-GTAOee-RequestAircraftsPanel.jpg|Request Aircrafts panel.
+McKenzieFieldHangar-GTAOee-RequestAircraftsMenu.jpg|Request Aircrafts menu.
+</gallery>
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Businesses in GTA Online
+Hangars
+Properties in GTA Online
+Properties in GTA V

@@ -1,0 +1,420 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = city
+|name           = City of Los Santos
+|sign           = 
+|image          = LosSantos-GTAVee-Montage.jpg
+|caption        = Clockwise from top: the [[Downtown Los Santos (HD Universe)|Downtown Los Santos]] skyline at sunset, [[Mirror Park]], the [[Los Santos City Hall (HD Universe)|Los Santos City Hall]] at night, [[Vespucci Beach]], [[Galileo Observatory]],  [[Old Mexican Plaza]], [[Vinewood Sign (HD Universe)|Vinewood Sign]].
+|seal           = [[File:LosSantosSeal-GTAV.png|center|thumb|100px|The official [[Los Santos Seal|seal for the City of Los Santos]].]]
+|seal2          = [[File:LosSantosSeal.png|center|thumb|100px|Alternative seal of Los Santos.]]
+|flag           = [[File:CityOfLosSantos-GTAV-Flag.png|center|thumb|150px|[[Flag of Los Santos|City flag of Los Santos]].]]
+|aka            = 
+*Los Santos
+*LS
+*LS City
+|games          = {{Games|V=y|O=y}}
+|location       = 
+|mayor          = 
+|president      = 
+|established    = [[1781]]{{Ref|name=established|ref=According to city seal}}
+|country        = [[United States of America]]
+|state          = [[State of San Andreas (HD Universe)|San Andreas]]
+|county         = [[Los Santos County]]
+|capital        = 
+|pop            = 4,000,000 {{Small|(estimated)}} {{Fact|where?}}
+|motto          = ''"Bulimic capital of America"''{{Fact|where?}}
+|taglines       = 
+|pscanner       = 
+|unlockedby     =
+*[[Franklin and Lamar]] {{Small|(''GTA V'')}}
+*[[Character Creator]] {{Small|(''GTA Online'')}}
+|unlockedafter  = 
+|map            =
+<gallery>
+LosSantos-GTAV-Map.jpg|Map
+LosSantos-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption    = Map of the City of Los Santos.
+}}
+
+[[LEAD]]
+The '''City of Los Santos''', commonly known as '''Los Santos''' and often abbreviated as '''L.S.''', is a major [[:Category:Cities|city]] featured in {{V}} and {{O}}, located in the southern region of the [[State of San Andreas (HD Universe)|State of San Andreas]]. 
+
+The city serves as the county seat of [[Los Santos County]], the most developed and populated county in the southern part of San Andreas.
+__TOC__
+
+[[SECTION:2:Geography]]
+{{Quote|Welcome to Los Santos. The city of cellulose, sand, and cellulite removal. From dead starlets in Vinewood to the gangbangers in Davis and Strawberry, and terror cells in Chumash to the drunken tourists in Del Perro Pier, it's time to take a look inside this cesspit of destroyed dreams, drug-addled degenerates, and deluded desperados that make up this great city of lights.|[[Steve Haines]] on [[The Underbelly Of Paradise]]}}
+
+Los Santos is divided into 40 districts and neighborhoods, some of which were incorporated communities that merged into the city. 
+
+{| class="wikitable"
+|[[File:DowntownLosSantos-GTAVee.jpg|400px|link=Downtown Los Santos (HD Universe)]]
+|
+'''[[Downtown Los Santos (HD Universe)|Downtown Los Santos]]''' ({{WP|Downtown Los Angeles}})<br>
+
+Downtown is the financial center of Los Santos and its most urbanized area, with the presence of the tallest high-rises in the city, including the huge [[Maze Bank Tower]], the [[FIB Headquarters|FIB]] and [[IAA Headquarters|IAA]] buildings, the [[Union Depository]] and the [[Mile High Club]], still under construction. The district is divided into the neighborhoods of [[Pillbox Hill]], [[Mission Row]], [[Textile City]] and [[Legion Square]].
+|-
+|[[File:SouthLosSantos-GTAVee.jpg|400px|link=South Los Santos]]
+|
+'''[[South Los Santos]]''' ({{WP|South Los Angeles}})<br>
+
+An economically depressed, predominantly African-American area of the city, characterized by street gangs and low-income housing projects. South Los Santos is divided into the neighborhoods of [[Strawberry]], [[Rancho]], [[Chamberlain Hills]] and [[Banning]], and also contains the incorporated city of [[Davis]].
+|-
+|[[File:EastLosSantos-GTAVee.jpg|400px|link=East Los Santos (HD Universe)]]
+|
+'''[[East Los Santos (HD Universe)|East Los Santos]]''' ({{WP|East Los Angeles, California|East Los Angeles}})<br>
+
+A large district with a high concentration of Latino residents and a strong gang presence, in particular the [[Los Santos Vagos (HD Universe)|Los Santos Vagos]] and the [[Marabunta Grande]]. Although the district is primarily industrial, it has been experiencing gentrification over the last years. East Los Santos is split into the neighborhoods of [[La Mesa]], [[Cypress Flats]], [[El Burro Heights]] and [[Murrieta Heights]].
+|-
+|[[File:RockfordHills-GTAVee.jpg|400px|link=Rockford Hills]]
+|
+'''[[Rockford Hills]]''' ({{WP|Beverly Hills, California|Beverly Hills}})<br>
+
+Predominantly a shopping and residential area, Rockford Hills is an affluent incorporated city that merged into Los Santos. The iconic [[Portola Drive]] is a major tourist attraction in the city. The district also contains the smaller neighbourhood of [[Burton]] in the southeast.
+|-
+|[[File:Vinewood-GTAVee.jpg|400px|link=Vinewood (HD Universe)]]
+|
+'''[[Vinewood (HD Universe)|Vinewood]]''' ({{WP|Hollywood}})<br>
+
+A large and affluent district, famous for being the home of the entertainment industry and for its theaters and nightclubs. Vinewood is divided into the neighborhoods of [[Alta]], [[Hawick]], [[Downtown Vinewood]], [[West Vinewood]], [[East Vinewood]] and [[Mirror Park]].
+|-
+|[[File:VinewoodHills-GTAVee.jpg|400px|link=Vinewood Hills]]
+|
+'''[[Vinewood Hills]]''' ({{WP|Hollywood Hills}})<br>
+
+Notable for its views of Los Santos, the iconic [[Vinewood Sign (HD Universe)|Vinewood Sign]] and its expensive homes and celebrity inhabitants.
+|-
+|[[File:Richman-GTAVee.jpg|400px|link=Richman (HD Universe)]]
+|
+'''[[Richman (HD Universe)|Richman]]''' ({{WP|Bel Air, Los Angeles|Bel Air}}, {{WP|Holmby Hills, Los Angeles|Holmby Hills}})<br>
+
+A rich, high-class neighborhood known for its large luxury mansions. The [[Los Santos Golf Club]] is located here, making it an exclusive recreation area.
+|-
+|[[File:Morningwood-GTAVee.jpg|400px|link=Morningwood]]
+|
+'''[[Morningwood]]''' ({{WP|Westwood, Los Angeles|Westwood}})<br>
+
+A quiet and wealthy commercial and residential neighborhood, known for its historic theaters.
+|-
+|[[File:LittleSeoul-GTAVee.jpg|400px|link=Little Seoul]]
+|
+'''[[Little Seoul]]''' ({{WP|Koreatown, Los Angeles|Koreatown}}, {{WP|Wilshire, Los Angeles|Wilshire}})<br>
+
+Located in Central Los Santos, Little Seoul is a middle class district with an ethnically diverse population, home to Korean and Asian immigrants.
+|-
+|[[File:DelPerro-GTAVee.jpg|400px|link=Del Perro]]
+|
+'''[[Del Perro]]''' ({{WP|Santa Monica, California|Santa Monica}})<br>
+
+A laidback, trendy beachfront community widely known for its beach and the world famous [[Pleasure Pier]].
+|-
+|[[File:Vespucci-GTAVee.jpg|400px|link=Vespucci]]
+|
+'''[[Vespucci]]''' ({{WP|Venice, Los Angeles|Venice}})<br>
+
+A residential, commercial and recreational beachfront neighborhood known for its canals, beaches and a world-famous [[Vespucci Beach Sidewalk|front walk]]. Vespucci is split into the neighborhoods of [[Vespucci Beach]], [[Vespucci Canals]] and [[Puerto Del Sol]].
+|-
+|[[File:LaPuerta-GTAVee.jpg|400px|link=La Puerta]]
+|
+'''[[La Puerta]]''' ({{WP|San Pedro, Los Angeles|San Pedro}})<br>
+
+A community with strong roots in the fishing and longshoring industry, La Puerta is primarily industrial and sparsely populated. The district is the home of the [[Maze Bank Arena]].
+|-
+|[[File:LosSantosInternationalAirport-GTAVee.jpg|400px|link=Los Santos International Airport (HD Universe)]]
+|
+'''[[Los Santos International Airport (HD Universe)|Los Santos International Airport]]''' ({{WP|Los Angeles International Airport}})<br>
+
+One of the busiest airports in the world. The LSIA district is also the location of the airport's nearby warehouses, hotels and restaurants.
+|-
+|[[File:PortOfLosSantos-GTAVee.jpg|400px|link=Port of Los Santos]]
+|
+'''[[Port of Los Santos]]''' ({{WP|Port of Los Angeles}})<br>
+
+The major seaport for the city of Los Santos and the busiest port in America. It is split into two areas: [[Elysian Island]], the location of [[Pier 400]], the [[Los Santos Naval Port|Naval Port]], shipyards and various warehouses, and [[Terminal]], a maritime container terminal.
+|-
+|[[File:PacificBluffs-GTAVee.jpg|400px|link=Pacific Bluffs]]
+|
+'''[[Pacific Bluffs]]''' ({{WP|Pacific Palisades, Los Angeles|Pacific Palisades}})<br>
+
+Home to the world-famous [[Kortz Center]] museum, Pacific Bluffs is the entrance gate to western Los Santos. Like neighboring Richman, it is predominantly a high-class residential district with a low population density.
+|}
+
+[[SECTION:3:Neighborhoods]]
+
+
+[[SECTION:4:Downtown Los Santos]]
+{|
+| valign="top" | 
+{| class="wikitable-sortable" style="font-size: 85%; padding: 20px; background-color: #333333;" width="300"
+! style="background-color: #111111;" width="125" |Neighborhood Name
+! style="background-color: #111111;" |Archetype's Name
+|-
+|[[Pillbox Hill]]|| ({{WP|Bunker Hill, Los Angeles|Bunker Hill}})
+|-
+|[[Mission Row]]||({{WP|Skid Row, Los Angeles|Skid Row}})
+|}
+| valign="top" |
+{| class="wikitable-sortable" style="font-size: 85%; padding: 20px; background-color: #333333;" width="300"
+! style="background-color: #111111;" width="125" |Neighborhood Name
+! style="background-color: #111111;" |Archetype's Name
+|-
+|[[Textile City]]||({{WP|Fashion District, Los Angeles|Fashion District}})
+|-
+|[[Legion Square]]|| ({{WP|Pershing Square (Los Angeles)|Pershing Square}})
+|}
+|}
+
+[[SECTION:4:Vinewo]]
+{|
+| valign="top" |
+{| class="wikitable-sortable" style="font-size: 85%; padding: 20px; background-color: #333333;" width="300"
+! style="background-color: #111111;" width="125" |Neighborhood Name
+! style="background-color: #111111;" |Archetype's Name
+|-
+|[[Downtown Vinewood]]||({{WP|Hollywood}})
+|-
+|[[West Vinewood]]||({{WP|West Hollywood, California|West Hollywood}})
+|-
+|[[East Vinewood]]||({{WP|East Hollywood, Los Angeles|East Hollywood}})
+|}
+| valign="top" |
+{| class="wikitable-sortable" style="font-size: 85%; padding: 20px; background-color: #333333;"
+! style="background-color: #111111;" width="100" |District Name
+! style="background-color: #111111;" |Archetype's Name
+|-
+|[[Alta]]||({{WP|Olvera Street}})
+|-
+|[[Hawick]]||({{WP|Melrose Avenue|Melrose District}})
+|-
+|[[Mirror Park]]||({{WP|Echo Park, Los Angeles|Echo Park}})
+|}
+|}
+
+[[SECTION:4:South Los Santos]]
+{|
+| valign="top" |
+{| class="wikitable-sortable" style="font-size: 85%; padding: 20px; background-color: #333333;" width="300"
+! style="background-color: #111111;" width="125" |Neighborhood Name
+! style="background-color: #111111;" |Archetype's Name
+|-
+|[[Davis]]||({{WP|Compton, California|Compton}})
+|-
+|[[Strawberry]]||({{WP|Crenshaw, Los Angeles|Crenshaw}}, {{WP|Inglewood, California|Inglewood}})
+|-
+|[[Chamberlain Hills]]||({{WP|Baldwin Village, Los Angeles|Baldwin Village}}, {{WP|Baldwin Hills, Los Angeles|Baldwin Hills}})
+|}
+| valign="top" |
+{| class="wikitable-sortable" style="font-size: 85%; padding: 20px; background-color: #333333;" width="300"
+! style="background-color: #111111;" width="125" |Neighborhood Name
+! style="background-color: #111111;" |Archetype's Name
+|-
+|[[Rancho]]||({{WP|Watts, Los Angeles|Watts}}, {{WP|Florence, Los Angeles|Florence}})
+|-
+|[[Banning]]|| ({{WP|Wilmington, Los Angeles|Wilmington}})
+|}
+|}
+
+[[SECTION:4:East Los Santos]]
+{|
+| valign="top" |
+{| class="wikitable-sortable" style="font-size: 85%; padding: 20px; background-color: #333333;" width="300"
+! style="background-color: #111111;" width="125" |Neighborhood Name
+! style="background-color: #111111;" |Archetype's Name
+|-
+|[[La Mesa]]||({{WP|Arts District, Los Angeles|Arts District}})
+|-
+|[[Cypress Flats]]||({{WP|Vernon, California|Vernon}}, {{WP|Long Beach, California|Long Beach}})
+|}
+| valign="top" |
+{| class="wikitable-sortable" style="font-size: 85%; padding: 20px; background-color: #333333;" width="300"
+! style="background-color: #111111;" width="125" |Neighborhood Name
+! style="background-color: #111111;" |Archetype's Name
+|-
+|[[El Burro Heights]]|| ({{WP|Ladera Heights, California|Ladera Heights}})
+|-
+|[[Murrieta Heights]]||({{WP|Montecito Heights, Los Angeles|Montecito Heights}})
+|}
+|}
+
+[[SECTION:4:Vespucci]]
+{|
+| valign="top" |
+{| class="wikitable-sortable" style="font-size: 85%; padding: 20px; background-color: #333333;" width="300"
+! style="background-color: #111111;" width="125" |Neighborhood Name
+! style="background-color: #111111;" |Archetype's Name
+|-
+|[[Vespucci Beach]]||({{WP|Venice, Los Angeles#Venice Beach|Venice Beach}})
+|-
+|[[Vespucci Canals]]||({{WP|Venice Canal Historic District|Venice Canals}})
+|-
+|[[Puerto Del Sol]]|| ({{WP|Marina del Rey, California|Marina del Rey}})
+|}
+|}
+
+[[SECTION:2:Landmarks and Sightings]]
+
+
+[[SECTION:3:Skyscrapers and corporate buildings]]
+[[File:LosSantos-GTAV-SouthLS.jpg|thumb|300px|A view of Los Santos.]]
+
+Los Santos is not as renowned as [[Liberty City (HD Universe)|Liberty City]] for its cityscape, but many important companies as well as government agencies [[Federal Investigation Bureau|FIB]] and [[International Affairs Agency|IAA]] are headquartered here. Most of the city's high rises are located in [[Downtown Los Santos (HD Universe)|Downtown LS]], and the rest are scattered throughout the nearby districts of [[Little Seoul]] and [[Rockford Hills]].
+
+*[[3 Alta Street Tower]] ({{WP|:File:Towers on Fig.jpg|801 Tower}})
+*[[707 Vespucci]] (800 Wilshire Boulevard)
+*[[Arcadius Business Center]] ({{WP|Westin Bonaventure|Westin Bonaventure Hotel}})
+*[[Badger Building]] ({{WP|Capitol Records Building}})
+*[[FIB Headquarters]] ({{WP|One California Plaza}})
+*[[IAA Headquarters]] ({{WP|Two California Plaza}})
+*[[Little Seoul Tower]] ({{WP|Equitable Life Building (Los Angeles)|Equitable Life Building}})
+*[[Lombank West]] (100 Wilshire Building)
+*[[Lombank Building (GTA V)|Lombank Building]] ({{WP|:File:HSBC Building, 7th and Figueroa, Los Angeles, CA, 2012.jpg|Figueroa Tower}})
+*[[Maze Bank Tower]] ({{WP|US Bank Tower}})
+*[[Mile High Club]] ({{WP|JW Marriott Hotels|JW Marriott}} & {{WP|Ritz-Carlton Hotel Company|Ritz-Carlton}} hotels) {{Small|(under construction)}}
+*[[Penris Building]] ({{WP|:File:1000 Wilshire.jpg|Wedbush Securities Building}})
+*[[Richards Majestic|Richards Majestic Tower]] ({{WP|Constellation Place}})
+*[[Schlongberg Sachs Center]] ({{WP|Citigroup Center (Los Angeles)|Citigroup Center}})
+*[[Union Depository Tower]] (Mellon Bank Center & {{WP|Gas Company Tower}})
+*[[Weazel Plaza]] ({{WP|Fox Plaza, Los Angeles|Fox Plaza}})
+*[[Wiwang Tower]] ({{WP|5900 Wilshire|Variety Building}} & {{WP|Aon Center (Los Angeles)|Aon Center}})
+
+[[SECTION:3:Hotels]]
+Los Santos, especially the northern side of the city, is praised for its high quality hotels. There are many famous hotel chains such as the one owned by the affluent [[Von Crastenburg Family]].
+
+*[[Banner Hotel & Spa]] ({{WP|Fairmont Miramar Hotel & Bungalows}})
+*[[The Emissary]] ({{WP|Millennium Biltmore Hotel}})
+*[[The Generic Hotel]] ({{WP|Standard Hotel}})
+*[[Gentry Manor Hotel]] ({{WP|Chateau Marmont Hotel}})
+*[[Hookah Palace]] (Figueroa Hotel)
+*[[Opium Nights]] (Sheraton Gateway Hotel)
+*[[Pegasus Concierge Hotel]] ({{WP|Sunset Tower}})
+*[[The Richman Hotel]] ({{WP|Beverly Hills Hotel}})
+*[[Rockford Dorset Hotel]] ({{WP|Beverly Wilshire Hotel}})
+*[[Von Crastenburg Hotel]] ({{WP|Hollywood Roosevelt Hotel}})
+
+[[SECTION:3:Residential buildings]]
+Aside from houses, there are also large apartment buildings for people to live in. These buildings are typically high-end and go up to thousands of dollars in price, except the low-rise housing projects of [[South Los Santos]].
+
+*[[Dream Tower]] (Wilshire Christian Manor)
+*[[Eclipse Towers]] (Sierra Towers)
+*[[Kayton Towers]] (Central Plaza)
+*[[Rancho Projects]] ({{WP|Nickerson Gardens}})
+*[[Tinsel Towers]] (Sierra Towers) {{Small|(shortened version)}}
+*[[Weazel Plaza]] ({{WP|Fox Plaza, Los Angeles|Fox Plaza}})
+
+[[SECTION:3:Recreation and sports]]
+[[File:MazeBankArena-GTAV.jpg|thumb|Maze Bank Arena.]]
+
+Los Santos is not only famous for its film culture, but also its sports. There are many famous sports teams in Los Santos that have fans arguing about them on [[Lifeinvader]].
+
+[[SECTION:4:Sports teams]]
+*[[Boars Baseball Club]] ({{WP|Los Angeles Angels}})
+*[[Los Santos Squeezers]]
+*[[Los Santos Pounders]] ({{WP|Los Angeles Rams}})
+*[[Los Santos Corkers Baseball Club]] ({{WP|Los Angeles Dodgers}})
+*[[Feud Baseball Team]]
+*[[Los Santos Kings]] ({{WP|Los Angeles Kings}})
+*[[Los Santos Benders]] ({{WP|LA Galaxy}})
+*[[U.C.L.S. Bookworms]] ({{WP|UCLA Bruins football|UCLA  Bruins}})
+*[[Los Santos Panic]] ({{WP|Los Angeles Lakers}})
+*[[Los Santos Jardineros]] ({{WP|Los Angeles FC}})
+*[[Los Santos Shrimps]] ({{WP|Los Angeles Clippers}})
+
+[[SECTION:4:Locations]]
+*[[Del Perro Plaza]] (Portofino Plaza)
+*[[Los Santos Golf Club]] ({{WP|Los Angeles Country Club}})
+*[[Maze Bank Arena]] ({{WP|The Forum (Inglewood)|Great Western Forum}} & {{WP|Los Angeles Memorial Coliseum}})
+*[[Pleasure Pier]] ({{WP|Pacific Park}})
+*[[Puerto Del Sol Yacht Club]] (Marina City Club)
+*[[Rockford Plaza]] ({{WP|Beverly Center}})
+*[[Vinewood Bowl]] ({{WP|Hollywood Bowl}})
+*[[Vinewood Racetrack]] ({{WP|Hollywood Park Racetrack}})
+
+[[SECTION:3:Art and Culture]]
+Before the Internet age, people went to the various theatres of Los Santos to see movies. These theatres have been used since the 20th century and are what made the [[Vinewood (HD Universe)|Vinewood]] film industry famous. There are also art museums and galleries located throughout LS.
+
+*[[Betsy O'Neil Pavilion]] ({{WP|Dorothy Chandler Pavilion}})
+*[[Doppler|Doppler Cinema]] ({{WP|Hollywood Pacific Theatre}})
+*[[Kortz Center]] ({{WP|Getty Center}})
+*[[Oriental Theater]] ({{WP|TCL Chinese Theatre}})
+*[[San Andreas Gallery of Modern Art|San Andreas Gallery of Modern Art (SAGMA)]] ({{WP|Pacific Design Center}})
+*[[Sisyphus Theater]] ({{WP|Greek Theatre (Los Angeles)|Greek Theatre}})
+*[[Ten Cent Theater]] ({{WP|Million Dollar Theater}})
+*[[Tivoli Cinema]] ({{WP|Fox Bruin Theater}})
+*[[Valdez Theater]] ({{WP|Pellissier Building and Wiltern Theatre|Wiltern Theater}})
+*[[Whirligig Theater]] ({{WP|El Capitan Theatre}})
+*[[Weazel Morningwood]] ({{WP|Fox Theater, Westwood Village}})
+
+[[SECTION:3:Government]]
+Each of the incorporated cities within the Los Santos metropolitan area has a representative city hall, while the center of the government of the city is located in [[Alta]]:
+
+*[[Los Santos City Hall (HD Universe)|Los Santos City Hall]] ({{WP|Los Angeles City Hall}})
+**[[Davis City Hall]] (Compton City Hall)
+**[[Del Perro City Hall]] (Santa Monica City Hall)
+**[[Rockford Hills City Hall]] ({{WP|:File:Beverly Hills City Hall, LA, CA, jjron 21.03.2012.jpg|Beverly Hills City Hall}})
+
+[[SECTION:3:Iconic landmarks]]
+[[File:Vinewood-Sign-Background.jpg|thumb|Vinewood.]]
+There are also many tourist traps in LS. These landmarks are what gave LS a glamorous image.
+
+*[[Rancho Towers]] ({{WP|Watts Towers}})
+*[[Sightings Bar & Restaurant]] ({{WP|Theme Building}})
+*[[Tequi-la-la]] ({{WP|Whisky a Go Go}})
+*[[Bishop's WTF?!]] ({{WP|Ripley's Believe It or Not!}})
+*[[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]] ({{WP|Hollywood Boulevard}})
+*[[Vinewood Sign (HD Universe)|Vinewood Sign]] ({{WP|Hollywood Sign}})
+
+[[SECTION:3:Important Highways/Streets]]
+:''See [[Interstate System in GTA V|Interstate System in ''GTA V'']] and [[List of Street Names]] for more information.''
+
+Los Santos is also known for its heavy traffic congestion and a large system of freeways, interstates, and highways that run throughout the city. Commuters can be seen here day and night.
+{{Columns
+|
+*[[La Puerta Freeway]] ({{WP|Interstate 110 and State Route 110 (California)|Harbor Freeway}})
+*[[Elysian Fields Freeway]] ({{WP|California State Route 47|Seaside Freeway}})
+*[[Los Santos Freeway (HD Universe)|Los Santos Freeway]] ({{WP|Hollywood Freeway}})
+*[[Del Perro Freeway]] ({{WP|Interstate 10 in California#Santa Monica Freeway|Santa Monica Freeway}})
+*[[Olympic Freeway]] ({{WP|Interstate 105 (California)|Glen Anderson/Century Freeway}})
+*[[Palomino Freeway]] ({{WP|Interstate 710|Long Beach Freeway}})
+*[[Senora Freeway]] ({{WP|California State Route 111|State Route 111}})
+*[[Great Ocean Highway]] ({{WP|California State Route 1#Los Angeles and Ventura counties|East Pacific Coast Highway}})
+*[[Bay City Avenue]] ({{WP|Ocean Avenue (Santa Monica)|Ocean Avenue}})
+*[[Carson Avenue]] (Willowbrook Avenue)
+*[[Dorset Drive]] ({{WP|Wilshire Boulevard}})
+*[[Eclipse Boulevard]] ({{WP|Sunset Strip}})
+
+|
+*[[Elgin Avenue]] ({{WP|Hill Street (Los Angeles)|Hill Street}}
+*[[Hawick Avenue]] ({{WP|Melrose Avenue}})
+*[[Innocence Boulevard]] (Marengo Street)
+*[[Marlowe Drive]] ({{WP|Mulholland Drive}})
+*[[North Rockford Drive]] ({{WP|Interstate 405 (California)|Interstate 405}})
+*[[Palomino Avenue]] {{WP|Sepulveda Avenue}})
+*[[Popular Street]] ({{WP|Alameda Street}})
+*[[Portola Drive]] ({{WP|Rodeo Drive}})
+*[[San Andreas Avenue]] ({{WP|Wilshire Boulevard}})
+*[[South Rockford Drive]] ({{WP|Lincoln Boulevard (Los Angeles County)|Lincoln Boulevard}})
+*[[Strawberry Avenue]] ({{WP|Crenshaw Boulevard}})
+*[[Vespucci Boulevard]] ({{WP|Venice Boulevard}})
+*[[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]] ({{WP|Hollywood Boulevard}})
+*[[West Eclipse Boulevard]] ({{WP|Sunset Boulevard}})
+
+}}
+
+[[SECTION:2:Choice of City]]
+When Rockstar Games started to conceptualize ''Grand Theft Auto V'', they felt that they still had work to do in San Andreas. [[Dan Houser]], the English Vice President of Rockstar Games along with his brother, [[Sam Houser]], as well as the VP of Creativity, had given his idea on creating a new Los Santos this time around:
+
+''"Sam, my brother, more than anyone, but also the lead artist Aaron Garbut, were both really interested in the idea of doing a proper Los Angeles. We felt we hadn't done that with San Andreas - which were these very small, sketch like cities. Los Angeles and the surrounding countryside would be very interesting, giving us good themes to play on, and lots of good, different gameplay environments - something that allude to aspects of GTA IV and allude to some aspects of San Andreas, but still very fresh and different from the both of them."''
+
+Dan Houser also stated that, ''"The geography you could get outside Los Angeles is spectacular. The contrast between desert/rural Southern California, inland from L.A. and just a bit north, compared to L.A., gives you a great microcosm of red state/blue state theme - different vibes culturally as much as geographically. I think this would be good about this location."''
+
+When asked about what elements were Rockstar Games comfortable with leaving behind and what elements they wanted to preserve from {{SA}}, Rockstar Games' Aaron Garbut said that they wanted the new world of Los Santos to feel ''"very fresh"'' and that their reference for the world of [[Liberty City (HD Universe)|Liberty City]] in ''Grand Theft Auto IV'' ''"wasn't the city from the earlier games."'' Aaron also stated that this version Los Santos is an, ''"entirely fresh game world waiting to be explored and experienced."''
+
+Once asked what is difference between Los Santos in GTA: San Andreas and in ''GTA V'', Aaron stated that the focus of San Andreas was gang culture, while the focus of ''GTA V'' is about contemporary culture of L.A. as a whole, with the difference between the two is that ''GTA V'' is ''"so much broader."''
+
+[[CATEGORIES]]
+Cities
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Zones

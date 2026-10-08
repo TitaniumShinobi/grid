@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = cinema
+|name           = Ten Cent Theater
+|sign           = 
+|image          = TenCentTheater-GTAV-OfficialScreenshot.png
+|caption        = The cinema at night.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Sinner Street]] and [[Integrity Way]], [[Textile City]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]]
+|accessible     = Yes
+|opentimes      = 10:00 AM - 10:00 PM
+|owner          = [[Michael De Santa]] <small>(optional)</small>
+|price          = 
+*$25 <small>(movie)</small>
+*FREE <small>(movie, exclusively for Michael after purchasing property)</small>
+*$20,000,000 <small>(property)</small>
+|income         = $264,000
+|occupants      = 
+|businesses     = 
+|employees      = Santiago <small>(manager)</small>
+|floors    = 14
+|file_name = <code>dt1_14_build4</code>
+|status         = active
+|unlockedby     = [[Fame or Shame (mission)|Fame or Shame]] <small>(unlocked for purchase)</small>
+}}
+
+[[LEAD]]
+The '''Ten Cent Theater''' is a cinema featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Cinemas
+Landmarks
+Properties
+Properties in GTA V
+Theatres

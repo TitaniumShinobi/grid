@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|name  = Get Aweigh
+|sign  = GetAweigh-GTAV-Logo.png
+|type  = dealership
+|games = {{Games|V=y|O=y}}
+|locations = [[Adam's Apple Boulevard]], [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]]
+|products = 
+*Watercraft
+*Surfboards
+*Fishing equipment
+}}
+
+[[LEAD]]
+'''Get Aweigh''' is an international boating dealership that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle dealerships

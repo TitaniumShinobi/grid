@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|image = <gallery>
+RonJakowskisTrailer-GTAOe.png|2020
+RonJakowskisTrailer-GTAVe.png|2013
+</gallery>
+|type = house
+|structure_type = Trailer
+|games = {{Games|V=y|O=y}}
+|location = [[Zancudo Avenue]], [[Sandy Shores]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|owner = [[Ron Jakowski]]
+}}
+
+[[LEAD]]
+'''Ron Jakowski's Trailer''' is the mobile home of conspiracist [[Ron Jakowski]] that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Homes
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

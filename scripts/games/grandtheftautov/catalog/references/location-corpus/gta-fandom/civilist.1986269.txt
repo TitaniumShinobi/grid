@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = Civilist
+|sign          = 
+|image         = CivilistBerlinLogo.png
+|caption       = Real-world logo.
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpheist4}}}}
+|mentioned     = 
+|locations     = {{WP|Berlin}}, [[Germany]]
+|business_type = 
+*Skate shop
+*Streetwear
+|founded       = [[2009]]
+|founder       = 
+*Alex Flach
+*Andreas Hesse
+|ceo           = 
+|products      = 
+|taglines      = 
+|status        = active
+|website       = {{URL|https://www.civilistberlin.com/|www.civilistberlin.com}} <small>(real-world website)</small>
+}}
+
+[[LEAD]]
+'''Civilist''' is a real-world{{Ref|name = civilist-newswire}} skate shop and streetwear label from {{WP|Berlin}}, [[Germany]], that appears in {{O}} as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Cayo Perico Heist
+Fashion brands
+Real-world companies

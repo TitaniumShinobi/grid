@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Kendall Cranks
+|image         = KendallCranks-GTAO-OfficalStockistSign.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpchristmas2018}}}} 
+|mentioned     = 
+|business_type = Crankshaft manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|weapons       = 
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Kendall Cranks''' is an automotive parts company that appears in {{O}} as part of the [[GTA Online: Arena War|Arena War]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Arena War
+Vehicle parts manufacturers

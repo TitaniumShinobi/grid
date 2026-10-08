@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Las Mentiras
+|image = LasMentiras-GTAV-Logo.png
+|bawsaq = 
+|type = Newspaper
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]
+|taglines = 
+|reference = {{WP|The Onion}}
+}}
+
+[[LEAD]]
+'''Las Mentiras''' is a newspaper featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Newspaper publishers

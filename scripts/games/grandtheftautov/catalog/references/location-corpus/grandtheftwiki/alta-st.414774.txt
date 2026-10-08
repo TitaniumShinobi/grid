@@ -1,0 +1,234 @@
+[[LEAD]]
+'''Alta St''' is a long north-south street in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street begins in [[Downtown Vinewood]] in the north and ends in [[Maze Bank Arena]] in the south also running through [[Hawick]], [[Alta]], [[Vinewood in GTA V|Vinewood]], [[Pillbox Hill]], [[Strawberry]] and [[La Puerta]]. The street, which continues as [[Baytree Canyon Rd]], has connections to [[Adam's Apple Blvd]], [[Clinton Ave]], [[Davis Ave]], [[Hawick Ave]], [[Innocence Blvd]], [[Integrity Way]], [[Occupation Ave]], [[Power St]], [[San Andreas Ave]], [[South Arsenal St]], [[Spanish Ave]], [[Vespucci Blvd]], and [[Vinewood Blvd]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[24/7]]
+| [[Alta]]
+| [[Hawick Ave]]
+| Convenience store
+|-
+| [[3 Alta Street]]
+| [[Pillbox Hill]]
+| 
+| Residential
+|-
+| [[Arcadius Business Center]]
+| [[Pillbox Hill]]
+| [[San Andreas Ave]]
+| Business center
+|-
+| [[Banner Hotel & Spa]]
+| [[Pillbox Hill]] 
+| [[Adam's Apple Blvd]]
+| Hotel
+|-
+| [[Bean Machine]]
+| [[Pillbox Hill]]
+|
+| Food and drink
+|-
+| [[Bite!]]
+| [[Alta]]
+| [[Hawick Ave]]
+| Food and drink
+|-
+| [[Brawls]]
+| [[Pillbox Hill]]
+| 
+| Clothing
+|-
+| [[Café Redemption]]
+| [[Pillbox Hill]]
+|
+| Food and drink
+|-
+| [[Designer Slave]]
+| [[Downtown Vinewood]]
+| [[Vinewood Blvd]]
+| Clothing
+|-
+| [[Didier Sachs]]
+| [[Pillbox Hill]]
+|
+| Clothing
+|-
+| [[Discount Beauty Store]]
+| [[La Puerta]]
+| [[Innocence Blvd]]
+| Beauty salon
+|-
+| [[Dollar Pills]]
+| [[Alta]]
+| [[Hawick Ave]]
+| Pharmacy
+|-
+| [[Fashion Vinewood]]
+| [[Downtown Vinewood]]
+| [[Vinewood Blvd]]
+| Clothing
+|-
+| [[Gear and Clothing]]
+| [[Hawick]]
+| [[Hawick Ave]]
+| Clothing
+|-
+| [[Globe Oil]] filling station
+| [[La Puerta]]
+| [[Innocence Blvd]]
+| Filling station
+|-
+| [[Go Postal]]
+| [[Downtown Vinewood]]
+| 
+| Postal service
+|-
+| [[Gruppe Sechs]]
+| [[Pillbox Hill]]
+| [[Vespucci Blvd]]
+| Security
+|-
+| [[Lârss & Elbö]]
+| [[Hawick]]
+| [[Hawick Ave]]
+| Furniture
+|-
+| [[Larrys Lean Pork]]
+| [[Strawberry]]
+|
+| Food and drink
+|-
+| [[Long Pig Mini Market]]
+| [[Strawberry]]
+|
+| Convenience store
+|-
+| [[Maze Bank]]
+| [[Pillbox Hill]]
+| [[San Andreas Ave]]/[[Vespucci Blvd]]
+| Bank
+|-
+| [[Mile High Club]]
+| [[Pillbox Hill]]
+| [[Vespucci Blvd]]
+| Club (under construction)
+|-
+| [[Miss T]]
+| [[Downtown Vinewood]]
+| [[Vinewood Blvd]]
+| Clothing
+|-
+| [[Molar Flair Dentist]]
+| [[Alta]]
+| [[Hawick Ave]]
+| Healthcare
+|-
+| [[Motel (Alta)|Motel]]
+| [[Alta]]
+| [[Occupation Ave]]
+| Motel
+|-
+| [[Pacific Standard]]
+| [[Downtown Vinewood]]
+| [[Vinewood Blvd]]
+| Bank
+|-
+| data-sort-value="Party Basket, The"| [[The Party Basket]]
+| [[Downtown Vinewood]]
+|
+| Clothing
+|-
+| [[Pillbox South Station]]
+| [[Pillbox Hill]]
+|
+| Metro station
+|-
+| [[Pipe Dreams]]
+| [[Hawick]]
+| [[Hawick Ave]]
+| Smoking
+|-
+| [[Pitchers]]
+| [[Downtown Vinewood]]
+| [[Clinton Ave]]
+| Bar
+|-
+| [[Pop's Pills]]
+| [[Downtown Vinewood]]
+| [[Spanish Ave]]
+| Pharmacy
+|-
+| [[Post Op]]
+| [[Pillbox Hill]]
+| [[Vespucci Blvd]]
+| Postal service
+|-
+| [[Rogers Salvage and Scrap]]
+| [[La Puerta]]
+| [[South Arsenal St]]
+| Scrap
+|-
+| [[Schlongberg Sachs]]
+| [[Pillbox Hill]]
+|
+| Bank
+|-
+| [[Singleton's]]
+| [[Downtown Vinewood]]
+|
+| Bar
+|-
+| [[South L.S. Recycling & Document Destruction]]
+| [[La Puerta]]
+|
+| Recycling center
+|-
+| [[Southern Tile]]
+| [[Strawberry]]
+|
+| Furniture
+|-
+| [[Straight & Direct]]
+| [[Strawberry]]
+| [[Innocence Blvd]]
+| Plumbing supplies
+|-
+| [[Talon Scout Nails]]
+| [[Alta]]/[[Hawick]]
+| [[Hawick Ave]]
+| Beauty salon
+|-
+| [[Tinkle]]
+| [[Pillbox Hill]]
+| [[Integrity Way]]
+| Phones
+|-
+| [[Union Depository]]
+| [[Pillbox Hill]]
+| [[San Andreas Ave]]
+| Bank
+|-
+| [[Vinewood Fantasies]]
+| [[Downtown Vinewood]]
+|
+| Adult
+|-
+| [[Vinewood Music]]
+| [[Hawick]]
+| [[Hawick Ave]]
+| Music
+|-
+| [[Walk of Fame]]
+| [[Alta]]
+| [[Hawick Ave]]
+| Clothing
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

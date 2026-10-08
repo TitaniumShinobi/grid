@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox business|
+|image = NewDoBarberShop-GTAV-MirrorPark-exterior.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = New Do Barber Shop
+|type = [[:Category:Barbers|Barber salon]]
+|owner = 
+|location = [[East Mirror Dr]] in [[Mirror Park]], [[Los Santos in GTA V|Los Santos]]<br />[[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''New Do Barber Shop''' is an inaccesible [[:Category:Barbers|barber salon]] on [[East Mirror Dr]] in [[Mirror Park]] and in [[Strawberry]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Barbers
+Businesses in GTA V
+Businesses in HD Universe
+Businesses in Los Santos in GTA V

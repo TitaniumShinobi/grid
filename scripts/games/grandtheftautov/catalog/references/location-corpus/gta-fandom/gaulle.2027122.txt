@@ -1,0 +1,93 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = jewelrystore
+|name          = 
+|sign          = Gaulle-Logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Leftwood]], [[State of Alderney|Alderney]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 069-555-0122
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Gaulle''' is a jewellery and watch brand featured in the {{3D}} and {{HD}} of the {{S}}.
+
+[[SECTION:4:[[State of Alderney|Alderney]]]]
+*[[Sacramento Avenue]], [[Leftwood]]
+
+[[SECTION:3:Locations]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'']]
+*The store in [[Willis]], [[Dukes]] resembles {{WP|Chateau Jewelers}} in Forest Hills, Queens, New York.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="250px">
+Gaulle-GTAIV-Leftwood.png|'''Gaulle''' in [[Leftwood]], [[State of Alderney|Alderney]].
+Gaulle-GTAIV-HattonGardens.png|'''Gaulle''' in [[Hatton Gardens]], Algonquin.
+Gaulle-GTAIV-Lancaster.png|'''Gaulle''' in [[Lancaster]], Algonquin.
+Gaulle-GTAIV-DenverExeter&ManganeseSt.png|'''Gaulle''' on [[Denver-Exeter Avenue]] & [[Manganese Street]], [[Star Junction]], [[Algonquin]].
+Gaulle-GTAIV-ColumbusCenter.png|'''Gaulle''' at the [[Columbus Center]], Star Junction, Algonquin.
+Gaulle-GTAIV-Willis.png|'''Gaulle''' in [[Willis]], [[Dukes]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="250px">
+ImageNeeded.png|'''Gaulle''' in Hatton Gardens, Algonquin.
+ImageNeeded.png|'''Gaulle''' in Lancaster, Algonquin.
+ImageNeeded.png|'''Gaulle''' at the Columbus Center, Star Junction, Algonquin.
+Gaulle-GTACW-StarJunction-ManganeseSt.png|'''Gaulle''' on Denver-Exeter Avenue & Manganese Street, Star Junction, Algonquin.
+ImageNeeded.png|'''Gaulle''' in Willis, Dukes.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Jewelry store chains

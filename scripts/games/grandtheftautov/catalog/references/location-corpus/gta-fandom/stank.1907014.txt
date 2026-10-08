@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = Stank
+|sign          = 
+|image         = Stank-GTAV-Logo.png
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = 
+|taglines      = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Stank''' is a clothing brand that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" bordercolor="#80b934" widths="270px">
+Stank-GTAVee-VespucciCanals.png|[[Bay City Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing in GTA Online
+Fashion brands

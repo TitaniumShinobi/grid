@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = fashion
+|name          = CaCa
+|sign          = Caca-GTAV-Logo.png
+|darklogo      = y
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Fashion brand
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = [[#Merchandise|Merchandise]]
+|taglines      = ''Cherish it.''
+|bawsaq        = 
+|lcn           = 
+|status        =  Active
+}}
+
+[[LEAD]]
+'''Caca''' (stylized as <sup>C</sup><sub>a</sub><sup>C</sup><sub>a</sub>) is a fashion brand featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Caca-GTAV-RockfordHills.jpg|[[Little Portola]]/[[Portola Drive]] in [[Rockford Hills]]. ([[:File:Caca-GTAV-Portola-NightFront.png|As seen at night]]).
+Caca-GTAV-Burton.jpg|[[Hawick Avenue]] and [[San Vitus Boulevard]] in [[Burton]].
+</gallery>
+
+[[SECTION:3:Locations]]
+*The [[Portola Drive]] building is based on 240 North {{WP|Rodeo Drive}} (occupied by {{WP|Jimmy Choo}}).
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

@@ -1,0 +1,11 @@
+[[INFOBOX]]
+{{Infobox country
+|image_flag      = Flag of Venezuela.svg
+|currency_ingame = Venezuelan bolivar
+}}
+
+[[LEAD]]
+The '''Bolivarian Republic of Venezuela''', simply known as '''Venezuela''', is a country on the northern coast of South America. It is bordered on the north by the Caribbean Sea and the Atlantic Ocean, on the south by [[Brazil]], on the west by [[Colombia]], Trinidad and Tobago to the north-east and on the east by Guyana.
+
+[[CATEGORIES]]
+South American countries

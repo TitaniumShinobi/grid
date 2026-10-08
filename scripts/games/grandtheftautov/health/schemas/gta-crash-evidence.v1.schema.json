@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/games/grandtheftautov/gta-crash-evidence.v1.schema.json",
+  "title": "GRID GTA V crash investigation evidence v1",
+  "type": "object",
+  "required": ["schemaVersion", "gameId", "installationId", "profileId", "edition", "contextFingerprint", "collectedAtUtc", "status", "sinceUtc", "inventory", "declaredArtifacts", "evidence", "changedExternalState"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "gameId": { "enum": ["game.grandtheftautov-enhanced", "game.grandtheftautov-legacy"] },
+    "installationId": { "type": "string", "minLength": 1 },
+    "profileId": { "type": "string", "minLength": 1 },
+    "edition": { "enum": ["Enhanced", "Legacy"] },
+    "contextFingerprint": { "type": "string", "pattern": "^[A-F0-9]{64}$" },
+    "collectedAtUtc": { "type": "string", "format": "date-time" },
+    "status": { "enum": ["Collected", "Partial", "Unavailable"] },
+    "sinceUtc": { "type": "string", "format": "date-time" },
+    "inventory": { "type": "object" },
+    "declaredArtifacts": { "type": "array", "items": { "type": "object" } },
+    "windowsApplicationFailures": { "type": ["object", "array", "null"] },
+    "windowsErrorReporting": { "type": ["object", "array", "null"] },
+    "runtimeModules": { "type": ["object", "array", "null"] },
+    "evidence": { "type": "array", "minItems": 1, "items": { "type": "object" } },
+    "changedExternalState": { "const": false }
+  },
+  "additionalProperties": false
+}

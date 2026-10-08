@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = RingofFireChiliHouse-GTAV-Davis-exterior.jpg
+|size = 300x300px
+|game_1 = GTA V
+|name = Ring of Fire Chili House
+|type = [[:Category:Restaurants|Restaurant]]
+|owner = 
+|location = [[Innocence Blvd]]/[[Strawberry Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Ring of Fire Chili House''' is a restaurant located at the corner of [[Innocence Blvd]] and [[Strawberry Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Restaurants

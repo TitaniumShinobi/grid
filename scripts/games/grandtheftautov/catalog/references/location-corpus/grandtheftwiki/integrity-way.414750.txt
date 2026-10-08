@@ -1,0 +1,49 @@
+[[LEAD]]
+'''Integrity Way''' is a street in [[Textile City]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. There are connections to [[Little Bighorn Ave]], [[Low Power St]], [[Simmet Alley]], [[Sinner St]] and [[Strawberry Ave]]. The street runs underneath [[Swiss St]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Broker (business)|Broker]]
+| [[Textile City]]
+| [[Sinner St]]
+| Clothing
+|-
+| [[Dashound Bus Center]]
+| [[Textile City]]
+|
+| Transport
+|-
+| [[Mirror Park Rail Yard]]
+| [[Textile City]]/[[La Mesa]]
+| [[Little Bighorn Ave]]
+| Transport
+|-
+| [[Simmet Alley]]
+| [[Pillbox Hill]]
+|
+| Alley
+|-
+| [[Tinkle]]
+| [[Pillbox Hill]]
+| [[Alta St]]
+| Phones
+|-
+| [[Vinewood Records]]
+| [[Textile City]]
+| [[Strawberry Ave]]
+| Music
+|-
+| [[Wall Fabric Fashion]]
+| [[Textile City]]
+| [[Simmet Alley]]
+| Fabric
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

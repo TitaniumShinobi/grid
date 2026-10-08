@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|house = y
+|lightlogo = y
+|image = TahirJavansHouse-GTAV-StreetView.png
+|image_size =
+|games = {{Games|V=y|O=y}}
+|location = [[Ineseno Road]], [[Chumash]], [[Los Santos County]]
+|accessible = Yes <small>(mission only)</small>
+|caption =
+|owner = [[Tahir Javan]]
+|floors = 3
+}}
+
+[[LEAD]]
+'''Tahir Javan's House''' is a property in [[State of San Andreas (HD Universe)|San Andreas]] appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:3:Interior]]
+The interior is not visible outside of missions as the east facing windows are covered by blue Venetian blinds.
+
+As soon as [[By the Book]] is triggered by [[Steve Haines]]' phone call, the blinds are removed and the interior of level two and three are visible and accessible to the player (before they travel to the warehouse where [[Ferdinand Kerimov]] is being held). After [[Michael De Santa]] and [[Dave Norton]] have coffee during the mission, the interior of the house becomes occupied by the attendees of the party, but it can no longer be accessed by Michael as the mission will fail as soon as he gets too close to the house and immediately reverts to the inaccessible version after the mission failure is cleared.
+
+On the second floor, there are two externally-visible rooms: the southeastern room is sparsely furnished with a few chairs and a glass-topped dining table and a large green cabinet; the northeastern room contains a large boardroom-style table and chairs and a large flat-screen television is on the west wall flanked by tall speakers. There is also a large empty room behind these rooms on the west side that can be seen when entering the building on the second level. The main third level room contains a light colored corner sofa along with a side cabinet, a sculpture, and another large flat-screen TV and speakers on the north wall, and a coffee table which is only there during the party. There is a smaller empty room on the north side of the third level.
+
+[[CATEGORIES]]
+Homes
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County

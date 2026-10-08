@@ -1,0 +1,50 @@
+[[LEAD]]
+'''Exceptionalists Way''' is a street, running northeast to southwest, in [[Los Santos International Airport in GTA V|Los Santos International Airport]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to [[Autopia Pkwy]], [[Greenwich Pkwy]] and [[New Empire Way]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Alpha Mail]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+|
+| Postal service
+|-
+| [[Big House Storage Inc]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+| [[Autopia Pkwy]]
+| Storage
+|-
+| [[Bilgeco]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+|
+| Shipping
+|-
+| [[Jetsam]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+|
+| Shipping
+|-
+|-
+| [[Opium Nights Hotel]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+| [[Greenwich Pkwy]]
+| Hotel
+|-
+| [[Poppy House Restaurant]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+|
+| Food and drink
+|-
+| [[Touchdown Car Rentals]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+| [[Greenwich Pkwy]]
+| Automobile rental
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

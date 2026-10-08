@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = Severance
+|image        = Severance-GTAO-Thumbnail.png
+|location     = [[State of San Andreas (HD Universe)|San Andreas]]
+|game           = {{games|O=y}}
+|type           = CasinoWork
+|fail         = 
+|for          = [[Agatha Baker]]
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] <small>(organization)</small>
+*1 to 8 players <small>(motorcycle club)</small>
+|todo         = 
+*Go to the <span class="v-hud-location">croupier's apartment</span>.
+*Take out the <span class="v-hud-enemy">croupier</span>.
+*Collect the <span class="v-hud-pickup">stolen cash</span>.
+*Lose the Cops.
+*Deliver the stolen cash to the <span class="v-hud-location">Casino</span>.
+|reward = 
+*[[Money|Cash]], [[Chips]], and [[Reputation|RP]].
+|target = [[Croupier]]
+}}
+
+[[LEAD]]
+'''Severance''' is a [[Casino Work]] mission featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update. It is a freeroam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[SECTION:3:Possible Croupier Locations]]
+<gallery position="center" hideaddbutton="true" spacing="small" widths="270px">
+Severance-GTAO-Apartment-ChamberlainHills.png|Location in [[Chamberlain Hills]]. The croupier will flee from the alleyway to the left of the building.
+Severance-GTAO-Apartment-Rancho.png|Location in [[Rancho]]. The target will flee from the alleyway to the left of the house.
+Severance-GTAO-Apartment-VespucciBeach.png|Location in [[Vespucci Beach]]. The target will flee from the alleyway to the left of the red building.
+</gallery>
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

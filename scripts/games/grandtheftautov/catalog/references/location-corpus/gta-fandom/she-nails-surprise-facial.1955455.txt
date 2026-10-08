@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = She Nails Surprise Facials
+|image     = SheNailsSurpriseFacials-GTAV-Logo.png
+|caption   = '''She Nails Surprise Facials''' logo.
+|taglines  = 
+|type      = Beauty Salon
+|games     = {{Games|V=y|O=y}}
+|locations = [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''She Nails Surprise Facials''' is a beauty salon in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Salons

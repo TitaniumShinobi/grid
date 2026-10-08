@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|name = Bilingsgate Motel
+|type = [[:Category:Motels|Motel]]
+|owner = 
+|location = [[Innocence Blvd]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = [[Closing the Deal]]<br />[[Surreal Estate]]
+|employee = 
+}}
+
+[[LEAD]]
+The '''Bilingsgate Motel''' is a [[:Category:Motels|motel]] located on [[Innocence Blvd]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. [[Trevor Philips]] meets former real estate agent [[Josh Bernstein]] at the motel and has sex with Bernstein's wife after destroying signs from Bernstein's former partner [[Lenny Avery]] and returns for the same purpose after [[Closing the Deal|beating up]] Avery. An [[eCola]] vending machine, which the player can purchase a soda from, can be found at the motel. The motel also offers a [[Badger]] public payphone, a [[Candy Box]] vending machine and colour televisions.
+
+
+
+
+[[Type::Business| ]]
+[[Location::Innocence Blvd| ]]
+[[Location::Rancho| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Motels

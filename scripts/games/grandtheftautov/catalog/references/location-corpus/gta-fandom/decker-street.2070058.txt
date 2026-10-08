@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=DeckerStreet-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[San Andreas Avenue]]
+|end=[[South Rockford Drive]]
+|map=<gallery>
+DeckerStreet-GTAV-Map.png|Map
+DeckerStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Decker Street''' is a [[List of Street Names|street]] in {{V}} and {{O}}, located in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+*[[Decker Park]]
+*[[Korean Pavilion]] <small>(corner of Vespucci Boulevard)</small>
+*[[Wiwang Tower]] <small>(corner of San Andreas Avenue)</small>
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

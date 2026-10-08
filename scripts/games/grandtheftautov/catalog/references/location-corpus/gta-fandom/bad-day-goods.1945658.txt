@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Bad Day Goods
+|image = BadDayGoods-GTAV-Logo.png
+|caption = '''Bad Day Goods''' logo.
+|taglines = 
+|type = Pawn Shop
+|games = {{Games|V=y|O=y}}
+|locations = [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Bad Day Goods''' is a pawn shop in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

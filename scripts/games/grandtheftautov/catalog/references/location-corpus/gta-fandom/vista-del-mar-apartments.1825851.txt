@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox location
+|image = VistaDelMarApartments-GTAV.png
+|caption = View of the front of the apartment complex.
+|games = {{Games|V=y|O=y}}
+|location = [[Bay City Avenue]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+The '''Vista Del Mar Apartments''' is an apartment complex that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

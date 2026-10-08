@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=BaitStreet-GTAV.jpg
+|caption=
+|games=''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|start=[[Autopia Parkway]]
+|end=[[The Secure Unit]]
+|map=<gallery>
+BaitStreet-GTAV-Map.png|Map
+BaitStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Bait Street'''  is a road in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]] that begins at [[Autopia Parkway]] and ends at [[The Secure Unit]] storage facility. It serves as a security entrance for the facility.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

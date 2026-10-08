@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=SouthShamblesStreet-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[El Rancho Boulevard]]
+|end=[[Hanger Way]]
+|map=<gallery>
+SouthShamblesStreet-GTAV-Map.png|Map
+SouthShamblesStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''South Shambles Street''' is a two-way [[List of Street Names|street]] in [[Cypress Flats]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[1623 South Shambles Street]], a 10 car garage available from [[Dynasty 8]].
+
+[[SECTION:2:Businesses]]
+*Office Furniture
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

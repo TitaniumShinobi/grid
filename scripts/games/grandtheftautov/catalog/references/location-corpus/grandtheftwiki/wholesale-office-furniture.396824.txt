@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Wholesale Office Furniture
+|type = Furniture store
+|owner = 
+|location = [[South Shambles St]] in [[Cypress Flats]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Wholesale Office Furniture''' is an office furniture store located on [[South Shambles St]] in [[Cypress Flats]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+
+
+[[Type::Business| ]]
+[[Location::South Shambles St| ]]
+[[Location::Cyprus Flats| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

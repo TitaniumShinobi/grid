@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleproducts
+|name          = Demonoil
+|sign          = Demonoil-GTAO-Logo.png
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpchristmas2018}}|VI=y}}
+|mentioned     = 
+|business_type = Motor oil
+|founded       = 
+|founder       = 
+|ceo           = 
+|taglines      = "''Driving without lube is hell''"<br>"''Keeping your engine clean and responsive''"
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Demonoil''' is an engine lubricant brand that appears in {{O}} as part of the [[GTA Online: Arena War|Arena War]] update, and due to appear in {{VI}}.
+
+[[SECTION:3:''Grand Theft Auto: Vice City – The Definitive Edition'']]
+{{Version|section=y|game=VC|version=de}}
+Demonoil later makes a brief appearance in {{TDE|VC}} on a model calendar in the [[Print Works]] featuring its branding, replacing the [[Pervelli Calendar]] brand from the original. As with other {{HD}} [[Grove Street Games/Errors/BrandsTable|brand appearances]] in ''The Definitive Edition'' trilogy, this appearance is considered [[Canon|non-canon]] to the {{3D}}.
+
+[[SECTION:3:''Grand Theft Auto: Vice City – The Definitive Edition'']]
+<gallery position="center" spacing="small" widths="270px">
+Demonoil-GTAVCde-CalendarApril.png|'''Demonoil'''-branded calendar from {{TDE|VC}}.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online: Arena War
+Businesses in GTA VI
+Exclusive Definitive Edition Content in GTA Vice City
+Vehicle products manufacturers

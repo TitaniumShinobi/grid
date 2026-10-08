@@ -1,0 +1,72 @@
+[[INFOBOX]]
+{{Infobox_location
+|name  = East Vinewood
+|image = EastVinewood-GTAV-Montage.png
+|caption = Clockwise from top: Overview, [[Mirror Park]] sign & lake, [[Mirror Park Railyard]], [[Vinewood Racetrack]], [[The Lost MC Clubhouse (East Vinewood)|Lost MC Clubhouse]] and the [[Downtown Cab Co.]] depot.
+|location = [[Vinewood (HD Universe)|Vinewood]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|pscanner       = PoliceScanner-GTAV-Neighborhood-EastVinewood.ogg
+|map           = <gallery>
+EastVinewood-IngameGPS-GTAV-Map.png|East Vinewood
+EastVinewood-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS). The <font color=0f43ee>Vinewood Racetrack</font>, <font color=3d8f27>Mirror Park</font> and <font color=3d8f27>Mirror Park Rail Yard</font> are part of <font color=red>East Vinewood</font>.
+}}
+
+[[LEAD]]
+'''East Vinewood''' is a suburb located in [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The neighbourhood contains the sub-district of [[Mirror Park]], the park of the same name and the [[Vinewood Racetrack]]. It is bordered by [[La Mesa]] and [[Murrieta Heights]] to the south, the [[Tataviam Mountains]] to the east, [[Vinewood Hills]] to the north and [[Downtown Vinewood]], [[Alta]] and [[Hawick]] to the west.
+
+[[SECTION:2:Places of Interest]]
+*[[Broker Park]]
+*Electricity Transformer Station
+*[[Mirror Park]]
+*[[Mirror Park Rail Yard]]
+*[[Downtown Cab Co]]
+*[[The Lost MC Clubhouse (East Vinewood)|The Lost MC Clubhouse]]
+*[[Vinewood Racetrack]]
+
+[[SECTION:2:Businesses]]
+*Aladdin's Cave Furniture ('A' Quality Furniture)
+*Auto Repairs (European Auto Centre)
+*[[The Banjo String]]
+*[[Betta Pharmaceuticals|Betta Life Pharmacy]]
+*[[Better Oral]]
+*[[BJ's Market]] (Bob's Market)
+*[[Bite!]]
+*[[Cool Beans]] (Intelligentsia Coffee)
+*[[Digital Den]]
+*[[Downtown Cab Co]] (United Independent Taxis)
+*[[Eclipse Pharmacy]] (Sun Lake Drugs)
+*[[Hearty Taco]]
+*[[Herr Kutz Barber]]
+*[[Horny's Burgers]]
+*[[Leroy's Electricals]]
+*[[Limited LTD Service|Limited LTD]]
+*[[Mile High Organics]]
+*[[Mini Retro]]
+*[[Mirror Fashion]]
+*[[Mirror Park Tavern]] (Silverlake Lounge)
+*[[New Do Barber Shop]] (El Figurin Barber Shop)
+*[[Reflex Nails]]
+*[[Squeeze One Out]]
+*[[Starlite Motel]] (Sunset Pacific Motel)
+*[[The Diamond Casino & Resort]] (formerly [[Vinewood Casino|Be Lucky: Los Santos]])
+*[[The Music Locker]]
+*[[Vinewood Sole]]
+
+[[SECTION:2:Roads and Streets]]
+[[File:EastVinewood-Location-GTAV.png|thumb|East Vinewood location.]]
+*[[Bridge Street]]
+*[[Glory Way]]
+*[[Mirror Park Boulevard]]
+*[[Popular Street]]
+*[[Tangerine Street]]
+*[[Vinewood Park Drive]]
+*[[York Street]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

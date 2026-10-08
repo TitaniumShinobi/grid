@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Imponte
+|image         = Imponte-GTAO-Logo.png
+|aka           = 
+|games         = {{games|IV=y|CW=y|EFLC=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Automotive manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|divisions     = Imponte Racing
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = defunct
+}}
+
+[[LEAD]]
+'''Imponte''' is an [[United States of America|American]] automotive manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

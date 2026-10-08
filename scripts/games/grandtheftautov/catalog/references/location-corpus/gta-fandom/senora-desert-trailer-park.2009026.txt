@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace=y
+|miscplacename = TRAILER PARK
+|image = SenoraDesertTrailerPark-GTAVe-Sign.png
+|taglines = Live the Dream
+|name = Senora Desert Trailer Park
+|pscanner = PoliceScanner-GTAVe-SenoraWindFarmTrailerPark.ogg
+|altnames = Senora Wind Farm Trailer Park
+|location = [[RON Alternates Wind Farm]], [[Los Santos County]]
+|games = {{Games|V=y|O=y}}
+|owner = 
+|occupants = [[Omega]]<br>[[Hippies]]
+|map =SenoraDesertTrailerPark-GTAV-Map.png
+|map_caption = Location
+}}
+
+[[LEAD]]
+The '''Senora Desert Trailer Park''' (also known as the '''Senora Wind Farm Trailer Park''' and the '''Hippy Camp''') is a small community located in [[Los Santos County]], appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Trailer parks

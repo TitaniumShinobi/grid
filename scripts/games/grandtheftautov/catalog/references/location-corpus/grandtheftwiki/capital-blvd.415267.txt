@@ -1,0 +1,104 @@
+[[LEAD]]
+'''Capital Blvd''' is a street in [[Los Santos in GTA V|Los Santos]], which runs from [[Strawberry]] in the west to [[El Burro Heights]] in the east, running through [[Rancho]] and [[La Mesa]]. There are connections to [[Crusade Rd]], [[Davis Ave]], [[El Rancho Blvd]], [[Little Bighorn Ave]], [[Popular St]] and [[Strawberry Ave]], while Capital Blvd goes over the [[Elysian Fields Fwy]] at its eastern most part.
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[AGL Refrigerated Storage]]
+| [[La Mesa]]/[[Strawberry]]
+| [[Little Bighorn Ave]]
+| Storage
+|-
+| [[Auto Repairs]]
+| [[La Mesa]]
+|
+| Garage
+|-
+| [[Berts Tool Supply Co.]]
+| [[Strawberry]]
+| [[Crusade Rd]]
+| DIY
+|-
+| [[Central Los Santos Medical Center]]
+| [[Davis]]/[[Rancho]]/[[Strawberry]]
+| [[Crusade Rd]]/[[Davis Ave]]
+| Healthcare
+|-
+| Central Los Santos Medical Center multi-storey car park
+| [[Strawberry]]
+| [[Crusade Rd]]
+| Car park
+|-
+| [[Discount Carpet Center]]
+| [[Rancho]]
+| [[Davis Ave]]
+| Furniture
+|-
+| [[Dragon Apartments]]
+| [[Strawberry]]
+|
+| Hotel
+|-
+| [[El Burro Heights Fire Station]]
+| [[El Burro Heights]]
+| [[El Rancho Blvd]]
+| Fire station
+|-
+| [[Los Santos Bag Co.]]
+| [[La Mesa]]
+| [[Popular St]]
+| Clothing
+|-
+| [[L. T. Weld Supply Co.]]
+| [[El Burro Heights]]/[[Murrieta Heights]]
+| [[El Rancho Blvd]]
+| Manufacturing
+|-
+| [[Panache Laundering]]
+| [[La Mesa]]/[[Rancho]]
+| [[Little Bighorn Ave]]
+| Laundromat
+|-
+| [[RON]] filling station
+| [[El Burro Heights]]
+| [[El Rancho Blvd]]
+| Filling station
+|-
+| [[San An Taqueria]]
+| [[La Mesa]]
+|
+| Food and drink
+|-
+| [[St. Fiacre Hospital]]
+| [[El Burro Heights]]/[[La Mesa]]
+|
+| Healthcare
+|-
+| [[Stacey's Flower Emporium]]
+| [[Strawberry]]
+|
+| Florists
+|-
+| [[Thorns]]
+| [[El Burro Heights]]
+|
+| 
+|-
+| [[Tits N Bobs]]
+| [[Strawberry]]
+|
+| Food and drink
+|-
+| [[Xero]] filling station
+| [[Strawberry]]
+| [[Strawberry Ave]]
+| Filling station
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

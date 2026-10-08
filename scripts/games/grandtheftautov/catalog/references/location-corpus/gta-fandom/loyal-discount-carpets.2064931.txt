@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change   = 
+|type          = carpetstore
+|name          = Loyal Discount Carpets
+|image         = LoyalDiscountCarpets-GTAVee.png
+|games         = {{Games|V=y|O=y}}
+|location      = [[Boulevard Del Perro]], {{Location|v-morningwood|2}}
+|opened        =
+|taglines      = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Loyal Discount Carpets''' is a carpet store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Carpet stores

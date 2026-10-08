@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 300x300px
+|game_1 = GTA V
+|name = Liquor, Beer & Wine
+|type = Off licence
+|owner = 
+|location = [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Liquor, Beer & Wine''' is an off licence located on [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

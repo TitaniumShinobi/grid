@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox business
+|style          = O
+|type           = 
+|name           = Smoke on the Water
+|sign           = 
+|image          = GTA-5-Smoke-on-the-Water.png
+|caption        = 
+|aka            = 
+|games          = {{Games|O={{EEEV}} {{DLC|mp2025_01}}}}
+|location       = [[Vespucci Beach Sidewalk]], [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|price          = [[Money|$]]850,000
+|income         = 
+|condition      = 
+|status         = active
+|use            = [[File:Blips-GTAO-SmokeontheWater.png|25px]] Weed Shop
+|owner          = {{GTAOP}}
+|occupants      = [[Raf De Angelis]]
+|architecture   = 
+|garagecap      = 
+|accessible     = Yes
+|canplayerstore = No
+|unlockedafter  = Purchasing [[Hands On Car Wash (GTA Online)|Hands On Car Wash]] from [[Maze Bank Foreclosures]]
+}}
+
+[[LEAD]]
+'''Smoke on the Water''' is a purchasable property in {{O}} added in the [[GTA Online: Money Fronts|Money Fronts]] update.
+
+[[SECTION:2:Locations]]
+{| class="wikitable"
+! width="100%" align="center" colspan="5" | Hands On Car Wash
+|-
+! width="15%" |Higgins Helitours Location
+! colspan="2" width="30%" |Image
+! width="45%" |In-game description
+! width="10%" |Price
+|-
+|[[Vespucci Beach]]
+|[[File:SmokeontheWaterProperty-GTAO-Exterior.png|220px|center]]
+|[[File:SmokeontheWaterProperty-GTAO-Interior.png|220px|center]]
+|''Team workflow? Touching base? End of play? With Smoke on the Water you can say goodbye to corporate jargon and put your feet up, be your own boss, and spark up a generous amount of your own 100-percent legal product (and conduct your own revenue audits, too). The customers are chilled, the produce is good, and with Vespucci Beach right on your shopfront, the business will flow through the doors all by itself.''
+|$850,000
+|}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Fronts
+Pharmacies
+Properties in GTA Online

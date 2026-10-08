@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = sportsequipment
+|name          = Gainz
+|sign          = 
+|image         = Gainz-GTAO-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpchristmas2018}}|VI=y}}
+|mentioned     = 
+|business_type = Weightlifing equipment manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Gainz''' is a weightlifing equipment manufacturer appearing in {{O}} as part of the [[GTA Online: Arena War|Arena War]] update, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Arena War
+Businesses in GTA VI
+Sports equipment manufacturers

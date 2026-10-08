@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = SouthMoMiltonDr-GTAV-SouthEnd.jpg
+|caption = South end at [[Eclipse Boulevard]], showing [[Eclipse Medical Tower]] on the right and [[Eclipse Towers]] in the background.
+|games = {{Games|V=y|O=y}}
+|start = [[Mad Wayne Thunder Drive]]
+|end = [[West Eclipse Boulevard]] and [[Eclipse Boulevard]]
+|map = <gallery>
+SouthMoMiltonDrive-GTAV-Map.png|Map
+SouthMoMiltonDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''South Mo Milton Drive''' is a [[List of Street Names|street]] in [[West Vinewood]], [[Rockford Hills]] and [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[0504 South Mo Milton Drive]]
+*[[Eclipse Medical Tower]]
+*[[Eclipse Towers]]
+
+[[SECTION:2:Businesses]]
+*[[Bean Machine]]
+*[[Schlongberg Sachs]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = BEACH
+|image = ProcopioBeach-GTAV.png
+|caption = 
+|games = {{Games|V=y|O=y}}
+|location = [[Paleto Bay]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-ProcopioBeach.ogg
+|map             = <gallery>
+ProcopioBeach-IngameGPS-GTAV-Map.png|Procopio Beach
+ProcopioBeach-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+|map2           = Satellite-ProcopioBeach-GTAV.png
+|map_caption2   = Satellite view of the beach area.
+}}
+
+[[LEAD]]
+'''Procopio Beach''' is a beach in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in northern [[Blaine County]], east of [[Paleto Bay]]. It is located off the [[Great Ocean Highway]] and is located east of the [[Procopio Promenade]]. It includes the [[Procopio Truck Stop]].
+
+[[CATEGORIES]]
+Beaches in GTA Online
+Beaches in GTA V
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Zones

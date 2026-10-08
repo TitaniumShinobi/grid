@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = BOOK STORE
+|type           = 
+|name           = Adult XXX Book Store
+|sign           = 
+|image          = AdultXXXBookStore-GTAV.jpg
+|caption        = View of the exterior.
+|aka            = 
+|games          = {{games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Clinton Avenue]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|condition      = 
+|status         = defunct
+|structure_type = 
+|architecture   = 
+|phone          = 
+|accessible     = No
+|file_name      = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+The '''Adult XXX Book Store''' is a shuttered adult book store in {{V}} and {{O}}, located in [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Adult stores
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|image = WristAction-GTAV-Logo.png
+|type = Sports magazine
+|games = ''[[Grand Theft Auto IV]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Wrist Action''' is a sports magazine featured in ''[[Grand Theft Auto IV]]'', ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Magazines
+Media

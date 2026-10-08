@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=CortesSt-GTAV-WestView.jpg
+|caption=Cortes Street, as seen from the [[Vespucci Beach Sidewalk|Vespucci Beach walkway]].
+|games={{Games|V=y|O=y}}
+|start=[[Bay City Avenue]]
+|end=[[Vespucci Beach Sidewalk]]
+|map=<gallery>
+CortesStreet-GTAV-Map.png|Map
+CortesStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Cortes Street '''is a [[List of Street Names|street]] in [[Vespucci Beach]] and [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Fruit of the Vine]]
+*Fruity Dance Studio
+*[[Nut Buster]] <small>(corner of Magellan Avenue)</small>
+*Pot-Heads Seafood Restaurant <small>(corner of Bay City Avenue)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

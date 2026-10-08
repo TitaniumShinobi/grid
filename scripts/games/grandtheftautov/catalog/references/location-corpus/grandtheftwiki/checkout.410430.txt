@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Checkout!-GTAIV-Leftwood-exterior.jpg
+|size = 300x300px
+|caption = Checkout! branch in [[Leftwood]], [[Alderney]] appearing in [[Grand Theft Auto IV]].
+|game_1 = GTA IV
+|game_2 = GTA V
+|name = Checkout!
+|type = Supermarket chain
+|owner = 
+|location = [[Columbus Ave]]/[[Jade St]] in [[Lancet]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Frankfort Ave]] in [[Star Junction]], Liberty City<br />[[Hematite St]] in Star Junction, Liberty City<br />[[Beaverhead Ave]] in [[Leftwood]], [[Alderney]]<br />[[Innocence Blvd]]/[[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Checkout!''' is a chain of mini-supermarkets located in [[Liberty City in GTA IV Era|Liberty City]], [[Alderney]] and [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto IV]] and [[Grand Theft Auto V]]. It sells products from brands such as [[Dusche Gold]] and [[Redwood Cigarettes]]. The store's motto is "''Shopping for busy people''", and is open from 9am till 5pm.
+
+[[SECTION:2:Locations]]
+*[[Zirconium Building]], [[Columbus Ave]]-[[Jade St]] intersection, [[Lancet]], [[Algonquin]].
+*[[Frankfort Ave]], [[Star Junction]], Algonquin.
+*[[Hematite St]], Star Junction, Algonquin.
+*[[Beaverhead Ave]], [[Leftwood]], Alderney.
+*[[Innocence Blvd]]-[[Strawberry Ave]] intersection, [[Strawberry]], [[Los Santos in GTA V|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in Alderney
+Businesses in GTA IV
+Businesses in GTA V
+Businesses in Liberty City in GTA IV Era
+Businesses in Los Santos in GTA V
+Supermarkets

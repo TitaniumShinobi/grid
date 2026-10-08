@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = furniture
+|name           = Mattress of Fact
+|sign           = MattressOfFact-GVTAVe-Signage.png 
+|image          = MattressOfFact-GTAV.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Hawick Avenue]], [[Hawick]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = [[1969]]
+|use            = Mattress & furniture store
+|taglines       = 
+|status         = active
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Mattress of Fact''' is a mattress and furniture store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Furniture stores

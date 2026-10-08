@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=PanoramaDr-GTAV-AirfieldView.jpg
+|caption=[[Sandy Shores Airfield]] entrance on Panorama Drive.
+|games={{Games|V=y|O=y}}
+|start=[[Marina Drive]]
+|end=[[Route 68]]
+|map=<gallery>
+PanoramaDrive-GTAV-Map.png|Map
+PanoramaDrive-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Panorama Drive''' is a [[List of Street Names|street]] in {{V}} and {{O}}, located in [[Sandy Shores]], [[Blaine County]]. The street begins at [[Marina Drive]] and crosses [[Algonquin Boulevard]], passing through [[East Joshua Road]] and [[Joshua Road]] in Sandy Shores, [[Smoke Tree Road]] in [[Grand Senora Desert]] and ends at [[Route 68]]. The entrance to the [[Sandy Shores Airfield]] is located on this street.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

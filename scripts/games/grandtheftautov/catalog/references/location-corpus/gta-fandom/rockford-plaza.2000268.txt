@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox location
+|sign           = RockfordPlaza-GTAV-Logo.png
+|image          = RockfordPlaza-GTAV.png
+|games          = {{games|V=y|O=y}}
+|location       = [[Burton]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = Yes {{Small|([[Ponsonbys]])}}
+|caption        = Rockford Plaza as seen from the northwest.
+}}
+
+[[LEAD]]
+'''Rockford Plaza '''is a large and high-end shopping center featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[Heist Prep: Security Intel]]
+
+[[SECTION:4:The Chop Shop]]
+*[[Planning Work: Police Maverick]] <small>(Possible location)</small>
+
+[[SECTION:2:Businesses]]
+*[[Bite!]]
+*[[Café Austère]]
+*[[Cluckin' Bell (HD Universe)|Cluckin' Bell]]
+*[[Croq-A-Hoop]]
+*[[Didier Sachs (HD Universe)|Didier Sachs]]
+*[[Le Chien]]
+*[[Les Bianco]]
+*[[Ponsonbys]] <small>(accessible interior)</small>
+*[[Tophes]]
+*[[TSLC]] <small>(no store frontage)</small>
+*[[Viendemorte]]
+*[[Vinewood Bar & Grill]]
+*[[White Widow]]
+
+[[SECTION:2:Stations]]
+*The [[Burton Station]] is located near the main entrance to the mall.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Shopping malls

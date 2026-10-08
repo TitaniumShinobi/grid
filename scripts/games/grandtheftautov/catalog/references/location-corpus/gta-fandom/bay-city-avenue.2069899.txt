@@ -1,0 +1,94 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=BayCityAvenue-DelPerro-GTAV.png
+|caption=Bay City Avenue in Del Perro.
+|games={{Games|V=y|O=y}}
+|start=[[West Eclipse Boulevard]], [[Pacific Bluffs]]
+|end=[[Vespucci Beach Sidewalk]]
+|map=<gallery>
+BayCityAvenue-GTAV-Map.png|Map
+BayCityAvenue-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Bay City Avenue''' is a major [[List of Street Names|avenue]] in {{V}} and {{O}}, located in west [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+'''Del Perro'''
+*[[Banner Hotel & Spa]] <small>(corners of Boulevard Del Perro and Cougar Avenue)</small>
+*[[Bluff Tower|Bluff Tower Office Complex]] <small>(corner of Marathon Avenue)</small>
+*[[Del Perro Plaza (restaurant)|Del Perro Plaza]] <small>(corner of Red Desert Avenue)</small>
+*[[Lombank West]] <small>(corner of Boulevard Del Perro)</small>
+*[[Tree Tops Apartments]]
+'''Vespucci Canals'''
+*[[Venetian|The Venetian]] <small>(corner of Conquistador Street)</small>
+'''La Puerta'''
+*[[Vista Del Mar Apartments]] <small>(corner of Rub Street)</small>
+
+[[SECTION:2:Businesses]]
+'''Del Perro'''
+{{Columns
+|
+*[[Acorns Into Oaks]]
+*[[Cool Beans]] <small>(corner of San Andreas Avenue)</small>
+*[[Crown Jewels Motel]]
+*[[Giovanni's Italian Restaurant]] <small>(corner of Sandcastle Way)</small>
+*[[Haute]] <small>(at Del Perro Plaza, corner of Red Desert Avenue)</small>
+|
+*[[Hedera Hotel]]
+*[[Maze Bank]]
+*[[Perrera Beach Motel]] <small>(corner of Marathon Avenue)</small>
+*[[Pescado Rojo]] <small>(corner of Red Desert Avenue)</small>
+*[[Sumac Restaurant]]
+}}
+
+'''Vespucci Canals'''
+{{Columns
+|
+*[[Amnesiac]]
+*[[Binco (HD Universe)|Binco]] <small>(corner of Palomino Avenue)</small>
+*[[Books & Movie Posters]]
+*[[BraZillions Lingerie]]
+*[[Calabrone Cyclery]]
+*[[Cool Beans]] <small>(corner of Imagination Court)</small>
+*[[Dickies Bagels]]
+*[[Ex Post Facto]]
+*[[Heroin Chic]] <small>(corner of Palomino Avenue)</small>
+*[[Jane's Unique Boutique]]
+*[[Just Pants]]
+*[[Lettuce Be]]
+*[[Limey's Juice and Smoothies|Limey's Juice Bar]]
+*[[Marlins Cafe|Marlins Café]]
+*[[Mr. Gibson's Wandlust]]
+*[[Noodle Exchange]]
+|
+*[[Period Rags]]
+*[[Pipe Dreams]] <small>(corner of Invention Court)</small>
+*[[Pot-Heads Seafood Restaurant|Pot-Heads Seafood]] <small>(corner of Cortes Street)</small>
+*[[Prawn Vivant]] <small>(corner of Imagination Court)</small>
+*[[Shatner Shoes]]
+*[[Smokies]]
+*[[Stank]]
+*[[Surfries Diner]] <small>(corner of Conquistador Street)</small>
+*[[Taco Libre]] <small>(corner of Palomino Avenue)</small>
+*[[The Directors Cut Hair Salon|The Directors Cut]]
+*[[The Split Kipper]]
+*[[The Well Hung Gallery]]
+*[[Trinculo Clothing]]
+*[[Vespucci Book Store]]
+*[[Vespucci Market]] <small>(corner of Aguja Street)</small>
+*[[Vinewood Wigs]]
+*[[Wysiwig]]
+}}
+
+'''La Puerta'''
+*[[Coconut Café]] <small>(corner of Goma Street)</small>
+*[[KOI Retreat & Spa]] <small>(corner of Tug Street)</small>
+*[[Walk-in Salon]]
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

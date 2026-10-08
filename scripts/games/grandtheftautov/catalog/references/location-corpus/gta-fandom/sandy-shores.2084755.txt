@@ -1,0 +1,93 @@
+[[INFOBOX]]
+{{Infobox location
+|name        = Sandy Shores
+|image       = SandyShores-GTAV-Montage.png
+|caption     = Clockwise from top: Sandy Shores at sunset, a [[24/7 (HD Universe)|24/7]] branch in Sandy Shores, [[Beam Me Up]], [[Algonquin Boulevard]], welcome sign.
+|type        = town
+|games       = {{Games|V=y|O=y}}
+|location    = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|motto       = ''"We Have Liquor"''
+|pop         = 3,010 {{Small|(formerly)}}
+|pscanner    = PoliceScanner-GTAV-Neighborhood-SandyShores.ogg
+|map         = 
+<gallery>
+SandyShores-IngameGPS-GTAV-Map.png|Sandy Shores
+SandyShores-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Sandy Shores''' is a small desert town located on the northern edge of the [[Grand Senora Desert]] in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Roads and Streets]]
+*[[Algonquin Boulevard]]
+*[[Alhambra Drive]]
+*[[Armadillo Avenue]]
+*[[Cholla Springs Avenue]]
+*[[East Joshua Road]]
+*[[Joshua Road]]
+*[[Lesbos Lane]]
+*[[Lolita Avenue]]
+*[[Marina Drive]]
+*[[Meringue Lane]]
+*[[Mountain View Drive]]
+*[[Niland Avenue]]
+*[[Panorama Drive]]
+*[[Zancudo Avenue]]
+
+[[SECTION:2:Purchasable Properties]]
+Only one property is available for purchase in ''Grand Theft Auto Online'' from [[Dynasty 8]]:
+*[[140 Zancudo Avenue]]
+
+Two businesses are available from [[Maze Bank Foreclosures]]:
+*47 [[Algonquin Boulevard]] [[Motorcycle Clubs]] [[Clubhouses|Clubhouse]];
+*[[Facilities|Facility]] east of Beam Me Up (technically outside the Sandy Shores area).
+
+[[SECTION:2:Places of Interest]]
+*[[Alamo Sea Marina]]
+*[[Beam Me Up]]
+*[[Blaine County Radio]]
+*[[Sandy Shores Airfield]]
+*[[Sandy Shores Beach Front Recreation Area]]
+*[[Sandy Shores Fire Station]]
+*[[Sandy Shores Sheriff's Station]]
+*[[Sandy Shores Medical Center]]
+*[[Smack Shack]]
+*[[7184 Cholla Springs Avenue]]
+*[[7953 Algonquin Boulevard]]
+
+[[SECTION:2:Businesses]]
+*Active
+**[[24/7 (HD Universe)|24/7]]
+**[[24-Hour Chinese Restaurant]]
+**[[Ace Liquor]]/Liquor Ace
+**[[Alamo Tattoo Studio]]
+**[[Auto Repair Shop]]
+**[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+**[[Beths Dog Grooming]]
+**[[Liquor Market]]
+**[[O'Sheas Barbers Shop]]
+**[[Sandy's Gas Station]]
+**[[Seaton Sand's Automobile Services]]
+**[[Trevor Philips Enterprises]]
+**[[Unnamed Liquor Grocery Store]]
+
+*Inactive/Unknown
+**[[Derelict Auto Service Garage]]
+**[[Abandoned Hardware Store]]
+**[[Abandoned Mexican Fast Food Restaurant]]
+**[[Aunt Tammy's]] 
+**[[Auto Repairs]]
+**[[Derelict Motel]]
+**[[Jean's Liquor Store]]
+**[[Otto's Auto Parts]]
+**[[The Boat House]]
+**[[Yucca Motel]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Towns
+Zones

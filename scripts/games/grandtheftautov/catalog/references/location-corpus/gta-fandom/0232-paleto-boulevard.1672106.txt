@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 0232 Paleto Boulevard
+|image = 0232PaletoBoulevard-GTAV.png
+|caption = The exterior of the house
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end house
+|garage = 2 vehicles <br> 1 bike
+|price = $121,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = [[Rank]] 5
+|location= [[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]]
+}}
+
+[[LEAD]]
+'''0232 Paleto Boulevard''' is a [[Safehouses in GTA Online|safehouse]] located on [[Paleto Boulevard]] in [[Paleto Bay]], [[Blaine County]], featured in the [[Independence Day Special]] for ''[[Grand Theft Auto Online]]''. Discounting business/mission-related properties, it is currently the northernmost purchaseable safehouse in San Andreas, being slightly further north than the two nearby safehouses on [[Procopio Drive]].
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]121,000 and includes a 2-car garage.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online

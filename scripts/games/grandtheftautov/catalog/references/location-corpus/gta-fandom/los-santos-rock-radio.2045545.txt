@@ -1,0 +1,69 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Los Santos Rock Radio
+|logo         = LosSantosRockRadio-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{Games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = ''Get on the good ship power pop and rock.''
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:Classic rock radio stations|Classic rock]]
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 102.3 FM
+|host         = [[Kenny Loggins]]
+|product      = 
+|radio_tracks = 
+*23 {{Small|(original version)}}
+*38 {{Small|([[Grand Theft Auto V: Enhanced Edition|enhanced version]])}}
+|radio_length = 
+}}
+
+[[LEAD]]
+'''Los Santos Rock Radio''' is a [[Radio Stations in GTA V|radio station]] in {{V}} and {{O}} that plays {{WP|classic rock}} and {{WP|pop rock}}.
+
+[[SECTION:3:Radio Station]]
+*The station can be heard at the following locations:
+**[[Los Santos Fire Department|Fire Stations]]
+**[[Offroad Races]]
+**[[Stock Car Racing|Stock Car Races]]
+**Certain [[Ammu-Nation (HD Universe)|Ammu-Nation]] stores
+**[[The Big Puffa Seafood]]
+**[[Checkout!]] clothing stores
+**The [[Mr. Spoke Bike Rental]] stand.
+**Vinewood Music
+**[[Snr. Buns]]
+**[[Rob's Liquor]]
+**[[Trevor's Trailer]]
+**[[Liquor Ace]]
+**[[Hookies]]
+**[[Floyd's Apartment]]
+**[[Vespucci Surfing]]
+**[[Out of Towners]]
+**[[Pipeline Inn]]
+**[[The Bay Bar (Paleto Bay)|The Bay Bar]]
+**[[The Pizza Coven]]
+**[[A.M. Beer|AM Beer]] building
+**[[Marlins Cafe]]
+
+[[CATEGORIES]]
+Classic rock radio stations
+Dynamic mix radio stations
+Media in GTA Online
+Media in GTA V

@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = AMAP Auto Parts
+|image         = AMAP-GTAO-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mp2024_01}}}} 
+|mentioned     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|weapons       = 
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''AMAP Auto Parts''' is an automotive parts company appearing in {{O}} as part of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Bottom Dollar Bounties
+Vehicle parts manufacturers

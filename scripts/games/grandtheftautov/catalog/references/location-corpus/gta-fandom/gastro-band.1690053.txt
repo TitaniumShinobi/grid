@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Gastro Band
+|image = GastroBrand-StockMarket-GTAV.png
+|darklogo = y
+|type = Weight Loss Program
+|taglines = "''Slice and dice your problems away''"
+|lcn = {{BAWSAQ/Slider}} '''GAS'''
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Gastro Band''' is a surgical program to control weight featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. Not much is known about it, apart from some radio commercials and the fact that the player can buy stocks from them in the [[Lcn-exchange.com]] website.
+{{Clr}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

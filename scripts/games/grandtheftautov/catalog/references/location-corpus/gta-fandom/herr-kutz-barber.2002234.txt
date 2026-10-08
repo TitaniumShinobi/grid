@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|image = HerrKutzBarber-GTAV-Logo.PNG
+|caption = 
+|name = Herr Kutz Barber
+|taglines = 
+|type = Barber Shop
+|founded = 
+|founder = 
+|ceo = 
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Davis]], [[Los Santos (HD Universe)|Los Santos]]<br>[[Mirror Park]], [[Los Santos (HD Universe)|Los Santos]]<br>[[Paleto Bay]], [[Blaine County]]
+|reference =
+|lifeinvader = [[Lifeinvader/Herr Kutz|Herr Kutz]][[File:Lifeinvader-GTAV-Herr Kutz.png|40px|right|link=Lifeinvader/Herr Kutz]]
+|size = }}
+
+[[LEAD]]
+'''Herr Kutz Barber''' is a chain of barber shops featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="250px">
+Barbers-GTAVee-HerrKutzBarber-Davis.jpg|[[Carson Avenue]], [[Davis]]
+Barbers-GTAVee-HerrKutzBarber-MirrorPark.jpg|[[Mirror Park Boulevard]], [[Mirror Park]]
+Barbers-GTAVee-HerrKutzBarber-PaletoBay.jpg|[[Paleto Boulevard]], [[Paleto Bay]]
+</gallery>
+
+[[CATEGORIES]]
+Barber shops
+Businesses in GTA Online
+Businesses in GTA V
+Salons

@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|business = y
+|activebiz = n
+|image = SandysGasStation-GTAV-Signage.png
+|caption = 
+|name = Sandy's Gas Station
+|bawsaq =
+|type = gasstation
+|founded = 
+|owner = 
+|price = 
+|employees =
+|games = {{games|V=y|O=y}}
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|image_size = 300px
+}}
+
+[[LEAD]]
+'''Sandy's Gas Station''' is a large [[Filling Stations|gas station]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on the corner of [[Alhambra Drive]] and [[Marina Drive]] in [[Sandy Shores]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Gas stations

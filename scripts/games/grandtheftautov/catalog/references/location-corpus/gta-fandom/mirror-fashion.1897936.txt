@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|accessible = No
+|name = Mirror Fashion
+|image = MirrorFashion-GTAV-Sign.png
+|type = clothesshop
+|games = {{Games|V=y|O=y}}
+|location = [[Mirror Park Boulevard]], [[Mirror Park]]
+|status = active
+}}
+
+[[LEAD]]
+'''[[Mirror Fashion]]''' is a clothing store that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Clothing stores

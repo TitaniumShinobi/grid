@@ -1,0 +1,791 @@
+{
+  "schemaVersion": 1,
+  "kind": "grid-vortex-bundled-catalog-foundation",
+  "source": {
+    "repository": "Nexus-Mods/Vortex",
+    "tag": "v2.6.3",
+    "commit": "aa459b9499224bde07e5119d715b463bfae92c5e",
+    "license": "GPL-3.0"
+  },
+  "semantics": {
+    "catalogMembershipDoesNotImplyInstallation": true,
+    "catalogMembershipDoesNotImplyConnection": true,
+    "gridNativeIdentityOverridesUpstream": true
+  },
+  "entries": [
+    {
+      "sourcePackage": "game-7daystodie",
+      "displayName": "7 Days to Die",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-7daystodie/package.json",
+      "upstreamKey": "7daystodie",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-ahatintime",
+      "displayName": "A Hat in Time",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-ahatintime/package.json",
+      "upstreamKey": "ahatintime",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-baldursgate3",
+      "displayName": "Baldur's Gate 3",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-baldursgate3/package.json",
+      "upstreamKey": "baldursgate3",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-battletech",
+      "displayName": "Battletech",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-battletech/package.json",
+      "upstreamKey": "battletech",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-bladeandsorcery",
+      "displayName": "Blade & Sorcery",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-bladeandsorcery/package.json",
+      "upstreamKey": "bladeandsorcery",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-bloodstainedritualofthenight",
+      "displayName": "Bloodstained: Ritual of the Night",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-bloodstainedritualofthenight/package.json",
+      "upstreamKey": "bloodstainedritualofthenight",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-breakingwheel",
+      "displayName": "Breaking Wheel",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-breakingwheel/package.json",
+      "upstreamKey": "breakingwheel",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-codevein",
+      "displayName": "Code Vein",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-codevein/package.json",
+      "upstreamKey": "codevein",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-conanexiles",
+      "displayName": "Conan Exiles",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-conanexiles/package.json",
+      "upstreamKey": "conanexiles",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-cyberpunk2077",
+      "displayName": "Cyberpunk 2077",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-cyberpunk2077/package.json",
+      "upstreamKey": "cyberpunk2077",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-daggerfallunity",
+      "displayName": "Daggerfall Unity",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-daggerfallunity/package.json",
+      "upstreamKey": "daggerfallunity",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-darksouls",
+      "displayName": "Dark Souls",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-darksouls/package.json",
+      "upstreamKey": "darksouls",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-darksouls2",
+      "displayName": "Dark Souls II",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-darksouls2/package.json",
+      "upstreamKey": "darksouls2",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-darkestdungeon",
+      "displayName": "Darkest Dungeon",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-darkestdungeon/package.json",
+      "upstreamKey": "darkestdungeon",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-dawnofman",
+      "displayName": "Dawn of Man",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-dawnofman/package.json",
+      "upstreamKey": "dawnofman",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-dmc5",
+      "displayName": "Devil May Cry 5",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-dmc5/package.json",
+      "upstreamKey": "dmc5",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-divinityoriginalsin2",
+      "displayName": "Divinity: Original Sin 2",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-divinityoriginalsin2/package.json",
+      "upstreamKey": "divinityoriginalsin2",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-dragonage2",
+      "displayName": "Dragon Age 2",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-dragonage2/package.json",
+      "upstreamKey": "dragonage2",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-dragonage",
+      "displayName": "Dragon Age: Origins",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-dragonage/package.json",
+      "upstreamKey": "dragonage",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-dragons-dogma",
+      "displayName": "Dragon's Dogma: Dark Arisen",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-dragons-dogma/package.json",
+      "upstreamKey": "dragons-dogma",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-elex",
+      "displayName": "Elex",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-elex/package.json",
+      "upstreamKey": "elex",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-enderal",
+      "displayName": "Enderal",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-enderal/package.json",
+      "upstreamKey": "enderal",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-factorio",
+      "displayName": "Factorio",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-factorio/package.json",
+      "upstreamKey": "factorio",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-fallout3",
+      "displayName": "Fallout 3",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-fallout3/package.json",
+      "upstreamKey": "fallout3",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-fallout4",
+      "displayName": "Fallout 4",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-fallout4/package.json",
+      "upstreamKey": "fallout4",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-fallout4vr",
+      "displayName": "Fallout 4 VR",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-fallout4vr/package.json",
+      "upstreamKey": "fallout4vr",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-falloutnv",
+      "displayName": "Fallout: New Vegas",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-falloutnv/package.json",
+      "upstreamKey": "falloutnv",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-galciv3",
+      "displayName": "Galactic Civilizations III",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-galciv3/package.json",
+      "upstreamKey": "galciv3",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-gardenpaws",
+      "displayName": "Garden Paws",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-gardenpaws/package.json",
+      "upstreamKey": "gardenpaws",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-greedfall",
+      "displayName": "Greedfall",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-greedfall/package.json",
+      "upstreamKey": "greedfall",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-grimdawn",
+      "displayName": "Grim Dawn",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-grimdawn/package.json",
+      "upstreamKey": "grimdawn",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-masterchiefcollection",
+      "displayName": "Halo: The Master Chief Collection",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-masterchiefcollection/package.json",
+      "upstreamKey": "masterchiefcollection",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-kenshi",
+      "displayName": "Kenshi",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-kenshi/package.json",
+      "upstreamKey": "kenshi",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-kerbalspaceprogram",
+      "displayName": "Kerbal Space Program",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-kerbalspaceprogram/package.json",
+      "upstreamKey": "kerbalspaceprogram",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-kingdomcome-deliverance",
+      "displayName": "Kingdom Come: Deliverance",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-kingdomcome-deliverance/package.json",
+      "upstreamKey": "kingdomcome-deliverance",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-grimrock",
+      "displayName": "Legend of Grimrock",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-grimrock/package.json",
+      "upstreamKey": "grimrock",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-microsoftflightsimulator",
+      "displayName": "Microsoft Flight Simulator",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-microsoftflightsimulator/package.json",
+      "upstreamKey": "microsoftflightsimulator",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-monster-hunter-world",
+      "displayName": "Monster Hunter: World",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-monster-hunter-world/package.json",
+      "upstreamKey": "monster-hunter-world",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-morrowind",
+      "displayName": "Morrowind",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-morrowind/package.json",
+      "upstreamKey": "morrowind",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-mount-and-blade",
+      "displayName": "Mount and Blade",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-mount-and-blade/package.json",
+      "upstreamKey": "mount-and-blade",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-mount-and-blade2",
+      "displayName": "Mount and Blade II: Bannerlord",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-mount-and-blade2/package.json",
+      "upstreamKey": "mount-and-blade2",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-nehrim",
+      "displayName": "Nehrim: At Fate's Edge",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-nehrim/package.json",
+      "upstreamKey": "nehrim",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-neverwinter-nights",
+      "displayName": "Neverwinter Nights",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-neverwinter-nights/package.json",
+      "upstreamKey": "neverwinter-nights",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-neverwinter-nights2",
+      "displayName": "Neverwinter Nights 2",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-neverwinter-nights2/package.json",
+      "upstreamKey": "neverwinter-nights2",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-nomanssky",
+      "displayName": "No Man's Sky",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-nomanssky/package.json",
+      "upstreamKey": "nomanssky",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-oblivion",
+      "displayName": "Oblivion",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-oblivion/package.json",
+      "upstreamKey": "oblivion",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-oni",
+      "displayName": "Oxygen Not Included",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-oni/package.json",
+      "upstreamKey": "oni",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-palworld",
+      "displayName": "Palworld",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-palworld/package.json",
+      "upstreamKey": "palworld",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-pathfinderkingmaker",
+      "displayName": "Pathfinder: Kingmaker",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-pathfinderkingmaker/package.json",
+      "upstreamKey": "pathfinderkingmaker",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-pathfinderwrathoftherighteous",
+      "displayName": "Pathfinder: Wrath of the Righteous",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-pathfinderwrathoftherighteous/package.json",
+      "upstreamKey": "pathfinderwrathoftherighteous",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-pillarsofeternity2",
+      "displayName": "Pillars of Eternity 2: Deadfire",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-pillarsofeternity2/package.json",
+      "upstreamKey": "pillarsofeternity2",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-prisonarchitect",
+      "displayName": "Prison Architect",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-prisonarchitect/package.json",
+      "upstreamKey": "prisonarchitect",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-re2remake",
+      "displayName": "Resident Evil 2 (2019)",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-re2remake/package.json",
+      "upstreamKey": "re2remake",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-re3remake",
+      "displayName": "Resident Evil 3 (2020)",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-re3remake/package.json",
+      "upstreamKey": "re3remake",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-rimworld",
+      "displayName": "RimWorld",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-rimworld/package.json",
+      "upstreamKey": "rimworld",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-sekiro",
+      "displayName": "Sekiro",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-sekiro/package.json",
+      "upstreamKey": "sekiro",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-shadowrunreturns",
+      "displayName": "Shadowrun Returns",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-shadowrunreturns/package.json",
+      "upstreamKey": "shadowrunreturns",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-skyrim",
+      "displayName": "Skyrim",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-skyrim/package.json",
+      "upstreamKey": "skyrim",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-skyrimvr",
+      "displayName": "Skyrim VR",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-skyrimvr/package.json",
+      "upstreamKey": "skyrimvr",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-skyrimse",
+      "displayName": "Skyrim: Special Edition",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-skyrimse/package.json",
+      "upstreamKey": "skyrimse",
+      "gridCanonicalGameId": "game.skyrim-special-edition",
+      "status": "grid-native-override"
+    },
+    {
+      "sourcePackage": "game-spyroreignitedtrilogy",
+      "displayName": "Spyro Reignited Trilogy",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-spyroreignitedtrilogy/package.json",
+      "upstreamKey": "spyroreignitedtrilogy",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-sw-kotor",
+      "displayName": "Star Wars: Knights of the Old Republic II",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-sw-kotor/package.json",
+      "upstreamKey": "sw-kotor",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-starbound",
+      "displayName": "Starbound",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-starbound/package.json",
+      "upstreamKey": "starbound",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-stardewvalley",
+      "displayName": "Stardew Valley",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-stardewvalley/package.json",
+      "upstreamKey": "stardewvalley",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-starfield",
+      "displayName": "Starfield",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-starfield/package.json",
+      "upstreamKey": "starfield",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-stateofdecay",
+      "displayName": "State of Decay",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-stateofdecay/package.json",
+      "upstreamKey": "stateofdecay",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-subnautica",
+      "displayName": "Subnautica",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-subnautica/package.json",
+      "upstreamKey": "subnautica",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-subnauticabelowzero",
+      "displayName": "Subnautica: Below Zero",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-subnauticabelowzero/package.json",
+      "upstreamKey": "subnauticabelowzero",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-survivingmars",
+      "displayName": "Surviving Mars",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-survivingmars/package.json",
+      "upstreamKey": "survivingmars",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-teamfortress2",
+      "displayName": "Team Fortress 2",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-teamfortress2/package.json",
+      "upstreamKey": "teamfortress2",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-teso",
+      "displayName": "The Elder Scrolls Online",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-teso/package.json",
+      "upstreamKey": "teso",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-sims3",
+      "displayName": "The Sims 3",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-sims3/package.json",
+      "upstreamKey": "sims3",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-sims4",
+      "displayName": "The Sims 4",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-sims4/package.json",
+      "upstreamKey": "sims4",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-witcher",
+      "displayName": "The Witcher",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-witcher/package.json",
+      "upstreamKey": "witcher",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-witcher2",
+      "displayName": "The Witcher 2",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-witcher2/package.json",
+      "upstreamKey": "witcher2",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-witcher3",
+      "displayName": "The Witcher 3",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-witcher3/package.json",
+      "upstreamKey": "witcher3",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-torchlight2",
+      "displayName": "Torchlight II",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-torchlight2/package.json",
+      "upstreamKey": "torchlight2",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-totalwarthreekingdoms",
+      "displayName": "Total War: Three Kingdoms",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-totalwarthreekingdoms/package.json",
+      "upstreamKey": "totalwarthreekingdoms",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-untitledgoose",
+      "displayName": "Untitled Goose Game",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-untitledgoose/package.json",
+      "upstreamKey": "untitledgoose",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-vtmbloodlines",
+      "displayName": "Vampire: The Masquerade - Bloodlines",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-vtmbloodlines/package.json",
+      "upstreamKey": "vtmbloodlines",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-warthunder",
+      "displayName": "War Thunder",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-warthunder/package.json",
+      "upstreamKey": "warthunder",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-wolcen",
+      "displayName": "Wolcen: Lords of Mayhem",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-wolcen/package.json",
+      "upstreamKey": "wolcen",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-worldoftanks",
+      "displayName": "World of Tanks",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-worldoftanks/package.json",
+      "upstreamKey": "worldoftanks",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-xrebirth",
+      "displayName": "X Rebirth",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-xrebirth/package.json",
+      "upstreamKey": "xrebirth",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-x4foundations",
+      "displayName": "X4: Foundations",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-x4foundations/package.json",
+      "upstreamKey": "x4foundations",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    },
+    {
+      "sourcePackage": "game-xcom2",
+      "displayName": "XCOM 2",
+      "license": "GPL-3.0",
+      "sourcePath": "extensions/games/game-xcom2/package.json",
+      "upstreamKey": "xcom2",
+      "gridCanonicalGameId": null,
+      "status": "upstream-candidate"
+    }
+  ]
+}

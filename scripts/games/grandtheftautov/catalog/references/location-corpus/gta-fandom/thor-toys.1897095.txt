@@ -1,0 +1,54 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = toy
+|name          = Thor Toys
+|sign          = 
+|image         = ThorToys-Logo.png
+|caption       = 
+|games         = {{games|IV=y|EFLC=y|V=y|O=y}}
+|locations     = 
+*[[Alderney City]], [[State of Alderney|Alderney]]
+*[[Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations_2|See more]])
+|business_type = Toy retailer
+|taglines      = 
+*"''Future antiques''"
+*"''For grown men''"
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Thor Toys''' is a toy retailer appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'']]
+*The [[Alderney City]] location is a rendition of the storefront at {{URL|https://maps.app.goo.gl/q1JeySerdE2L5H6eA|17D Academy Street}} in {{WP|Newark, New Jersey}}.
+
+[[SECTION:4:''Grand Theft Auto V'' and ''Online'']]
+*The [[Hawick Avenue]] location is based on the former {{WP|Kidrobot}} outlet at {{URL|https://maps.app.goo.gl/eCwdRTp3LoaR3AXE8|7972 Melrose Avenue}} in the {{WP|Melrose Avenue|Melrose District}} of {{WP|Los Angeles}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" widths="270px" spacing="small">
+ThorToys-GTAIV-AlderneyStore.png|[[Alderney Building]], [[Jonestown Avenue]], [[Alderney City]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" widths="270px" spacing="small">
+ThorToys-GTAV-Burton.png|[[Hawick Avenue]], [[Burton]], [[Los Santos]].
+ThorToys-GTAV-LittleSeoul.png|[[Korean Plaza]], [[Calais Avenue]], [[Little Seoul]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Toy companies

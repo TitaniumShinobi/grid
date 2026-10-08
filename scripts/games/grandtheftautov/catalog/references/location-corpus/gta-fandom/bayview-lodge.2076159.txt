@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Bayview Lodge
+|image = BayviewLodge-GTAV.png
+|caption = Overview of the Bayview Lodge.
+|type = Lodge, general store, and restaurant
+|games = {{Games|V=y|O=y}}
+|locations = [[Procopio Promenade]], [[Paleto Forest]], [[Blaine County]]
+}}
+
+[[LEAD]]
+'''Bayview Lodge''' is an inaccessible lodge featured in {{V}} and {{O}}. 
+
+It is located on [[Procopio Promenade]] in [[Paleto Forest]], [[Blaine County]]. Aside from it being a lodge, it also has a diner and general store.
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[Los Santos Slasher]] – One of the clues are located in the back of the lodge.
+
+[[SECTION:4:The Chop Shop]]
+* [[Tow Truck Service]] – Served as one of the possible vehicle pickup locations.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Hotels

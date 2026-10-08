@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|safehouse      = 
+|type           = shoppingcenter
+|name           = Chamberlain Hills Shopping Plaza
+|sign           = 
+|image          = ChamberlainHillsPlaza-GTAVee.jpg
+|caption        = View of the plaza from [[Carson Avenue]].
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Carson Avenue]] & [[Innocence Boulevard]], [[Chamberlain Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|taglines       =
+|businesses     = 
+*[[Cart-L]]
+*[[Cluckin' Bell (HD Universe)|Cluckin' Bell]]
+*[[Happy Shark]]
+*[[Snapper's Delight]]
+*[[Wok It Off]]
+|map            =
+|map_caption    =
+|status         = active
+|accessible     = No
+|file_name      =
+}}
+
+[[LEAD]]
+'''Chamberlain Hills Shopping Plaza''' is a strip mall appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Cart-L]]
+*[[Cluckin' Bell (HD Universe)|Cluckin' Bell]]: The Coop
+*[[Happy Shark]]
+*[[Snapper's Delight]]
+*[[Wok It Off]]
+
+{{clr}}
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Shopping malls

@@ -359,21 +359,29 @@ internal static class CanonicalKnowledgeCatalogStoreChecks
                    restoredMultiRevision.Snapshot.FindKnowledgeRecord(second.Record.Id) is not null,
                 "A valid multi-revision snapshot reloads with all historical canonical lookups preserved.");
 
+            const long expectedDefaultMaximumStoreBytes = 1024L * 1024 * 1024;
+            var defaultMaximumField = typeof(JsonCanonicalKnowledgeCatalogStore).GetField(
+                "DefaultMaximumStoreBytes",
+                System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static);
+            Assert(defaultMaximumField?.IsLiteral == true &&
+                   defaultMaximumField.GetRawConstantValue() is long defaultMaximumConstant &&
+                   defaultMaximumConstant == expectedDefaultMaximumStoreBytes,
+                "The game-neutral catalog-store default read ceiling is exactly 1 GiB.");
             var maximumStoreBytesField = typeof(JsonCanonicalKnowledgeCatalogStore).GetField(
                 "MaximumStoreBytes",
                 System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static);
-            Assert(maximumStoreBytesField?.IsLiteral == true &&
-                   maximumStoreBytesField.GetRawConstantValue() is long maximumStoreBytes &&
-                   maximumStoreBytes == 512L * 1024 * 1024,
-                "The game-neutral catalog-store read ceiling is exactly 512 MiB.");
+            Assert(maximumStoreBytesField is not null &&
+                   maximumStoreBytesField.GetValue(null) is long maximumStoreBytes &&
+                   maximumStoreBytes == expectedDefaultMaximumStoreBytes,
+                "The active catalog-store ceiling matches the default when GRID_CANONICAL_STORE_MAX_BYTES is unset.");
             var oversizedStorePath = Path.Combine(fixtureRoot, "catalog", "oversized-canonical-knowledge.v5.json");
             await using (var oversized = new FileStream(
                              oversizedStorePath, FileMode.CreateNew, FileAccess.Write, FileShare.None))
-                oversized.SetLength(512L * 1024 * 1024 + 1);
+                oversized.SetLength(expectedDefaultMaximumStoreBytes + 1);
             var oversizedLoad = await new JsonCanonicalKnowledgeCatalogStore(oversizedStorePath).LoadAsync();
             Assert(!oversizedLoad.IsValid &&
                    oversizedLoad.Snapshot == CanonicalKnowledgeCatalogSnapshot.Empty,
-                "A store one byte above the 512-MiB ceiling still fails closed before JSON materialization.");
+                "A store one byte above the 1-GiB ceiling still fails closed before JSON materialization.");
 
             await File.WriteAllTextAsync(storePath, "{\"schemaVersion\":1,\"revision\":2}");
             var corruptLoad = await store.LoadAsync();

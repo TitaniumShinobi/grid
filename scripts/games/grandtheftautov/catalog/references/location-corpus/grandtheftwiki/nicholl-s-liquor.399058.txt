@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Nicholl'sLiquor-GTAV-CypressFlats-exterior.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Nicholl's Liquor
+|type = Liquor store
+|owner = 
+|location = [[Dry Dock St]] in [[Cypress Flats]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Nicholl's Liquor''' is a liquor store located on [[Dry Dock St]] in [[Cypress Flats]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+
+
+[[Type::Business| ]]
+[[Location::Dry Dock St| ]]
+[[Location::Cypress Flats| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

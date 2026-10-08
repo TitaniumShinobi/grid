@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = jewelshop
+|name           = Jilguero Jewelers
+|image          = JilgueroJewelers-GTAVee.png
+|games          = {{Games|V=y|O=y}}
+|location       = [[Atlee Street]], [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = No
+|status         = active
+|file_name      = <code>dt1_16_build005</code>
+}}
+
+[[LEAD]]
+'''Jilguero Jewelers''' is a jewelry store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Jewelry stores

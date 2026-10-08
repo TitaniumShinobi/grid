@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = DataCrack-GTAO-Logo2.png
+|name= Data Crack
+|taglines = ''"Selling your secrets since [[1996]]"''
+|type = Data cracker
+|games=''[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Data Crack''' is a spying software used for data cracking in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Features
+Features in GTA Online
+In-Game Products

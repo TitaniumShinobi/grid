@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleproducts
+|name          = Coverup
+|sign          = Coverup-Paint-GTAO-Logo.png
+|aka           = Coverup Paint Company
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Paint manufacturer
+|founded       = 
+|products      = 
+|taglines      = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Coverup''', also referred to as '''Coverup Paint Company''', is a paint manufacturing company that appears in {{VO}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle products manufacturers

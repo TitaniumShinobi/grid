@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox_business
+|image = MarlinsCafe-GTAV-Vespucci-Logo-Texture.png
+|type = Coffee Shop/Cafe
+|games = {{V}}<br>{{O}}
+|locations = [[Bay City Avenue]], [[Vespucci Canals]]
+}}
+
+[[LEAD]]
+'''Marlins Cafe''' is a coffee shop/cafe appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Cafés

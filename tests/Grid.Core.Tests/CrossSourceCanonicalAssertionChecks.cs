@@ -55,6 +55,38 @@ internal static class CrossSourceCanonicalAssertionChecks
                fixture.Term.SourceRevisionId == fixture.AssertingRevisionId,
             "Target origin and secondary assertion provenance remain separate.");
 
+        var direct = fixture.Package.Payload.EvidenceBindings.Single(value =>
+            value.KnowledgeRecordId == fixture.Item.Id && value.SourceRevisionId == fixture.AssertingRevisionId &&
+            value.ClaimKind == EvidenceClaimKind.Terminology && value.ClaimContentId == EvidenceClaimContentId.DeriveV1(fixture.Term));
+        var directReceipt = fixture.Package.Payload.FileEvidenceReceipts.Single(value => value.Id == direct.EvidenceReceiptId).Receipt;
+        var dependencyReceipt = new FileEvidenceReceipt(directReceipt.SourceRevisionId, directReceipt.SourceArtifactId,
+            directReceipt.ArtifactDigest, directReceipt.ParserId, directReceipt.ParserVersion,
+            directReceipt.NativeRecordLocator, "/explicit-locale-bridge", null, null, null,
+            directReceipt.ObservedAtUtc, directReceipt.NativeObjectIdentity);
+        var dependencyReceiptId = EvidenceReceiptId.DeriveV2(dependencyReceipt);
+        var dependency = new EvidenceBinding(EvidenceBindingId.DeriveV2(dependencyReceiptId, direct.ClaimKind,
+            direct.KnowledgeRecordId, direct.SourceRevisionId, dependencyReceipt.SourceFieldPath, direct.ClaimContentId),
+            dependencyReceiptId, direct.ClaimKind, direct.KnowledgeRecordId, direct.SourceRevisionId,
+            dependencyReceipt.SourceFieldPath, direct.ClaimContentId);
+        var dependencyEnvelope = RecreateEnvelope(fixture.TermEnvelope,
+            receipts: fixture.TermEnvelope.SupportingEvidenceReceiptIds.Add(dependencyReceiptId),
+            bindings: fixture.TermEnvelope.SupportingEvidenceBindingIds.Add(dependency.Id));
+        var dependencyPayload = CanonicalCatalogPackageImportChecks.CopyPayload(fixture.Package.Payload,
+            fileEvidenceReceipts: fixture.Package.Payload.FileEvidenceReceipts.Add(new(dependencyReceiptId, dependencyReceipt)),
+            evidenceBindings: fixture.Package.Payload.EvidenceBindings.Add(dependency),
+            crossSourceAssertions: fixture.Package.Payload.CrossSourceAssertions.Replace(fixture.TermEnvelope, dependencyEnvelope));
+        Assert(VerifyRebuilt(fixture.Package, dependencyPayload),
+            "A declared join dependency retains its own true source field alongside the claim's exact evidence anchor.");
+        Assert(!VerifyRebuilt(fixture.Package, CanonicalCatalogPackageImportChecks.CopyPayload(dependencyPayload,
+                crossSourceAssertions: fixture.Package.Payload.CrossSourceAssertions)),
+            "A binding outside the claim's explicit evidence envelope cannot borrow join dependency permission.");
+        var unanchoredEnvelope = RecreateEnvelope(dependencyEnvelope,
+            receipts: dependencyEnvelope.SupportingEvidenceReceiptIds.Remove(direct.EvidenceReceiptId),
+            bindings: dependencyEnvelope.SupportingEvidenceBindingIds.Remove(direct.Id));
+        Assert(!VerifyRebuilt(fixture.Package, CanonicalCatalogPackageImportChecks.CopyPayload(dependencyPayload,
+                crossSourceAssertions: dependencyPayload.CrossSourceAssertions.Replace(dependencyEnvelope, unanchoredEnvelope))),
+            "A dependency cannot replace the direct exact-claim evidence anchor.");
+
         var sameEnvelope = RecreateEnvelope(fixture.TermEnvelope);
         Assert(sameEnvelope.Id == fixture.TermEnvelope.Id,
             "Identical cross-source inputs reproduce the same envelope identity.");

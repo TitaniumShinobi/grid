@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = PacificBait-GTAV-Logo.png
+|caption = Pacific Bait logo
+|locations = [[Port of Los Santos]], [[Elysian Island]]
+|name = Pacific Bait
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|type = Fishing Bait Store
+}}
+
+[[LEAD]]
+'''Pacific Bait''' is a business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Warehouses

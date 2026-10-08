@@ -1,0 +1,129 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=HawickAvenue-GTAV.png
+|caption=Businesses on Hawick Avenue.
+|games={{Games|V=y|O=y}}
+|start=[[Boulevard Del Perro]] and [[Milton Road]], [[Burton]]
+|end=[[Elgin Avenue]], [[Alta]]
+|map=<gallery>
+HawickAvenue-GTAV-Map.png|Map
+HawickAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Hawick Avenue''' is a two-way [[Streets|street]] in {{V}} and {{O}}, that runs through [[Burton]], [[Hawick]] and [[Alta]], in [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+'''Alta'''
+*[[Mountebank Gallery]] <small>(corner of power Street)</small>
+*[[Oeuvre Gallery]] <small>(corner of Power Street)</small>
+*[[The Pink Cage Motel]] <small>(corner of Meteor Street)</small>
+
+'''Burton'''
+*[[Del Perro Boulevard Gallery]]
+*[[Eclipse Lodge]] Apartments <small>(corner of San Vitus Boulevard)</small>
+*[[Los Santos Corner]] <small>(corner of Las Lagunas Boulevard)</small>
+*[[Rockford Plaza]] <small>(corners of Las Lagunas Boulevard and San Vitus Boulevard)</small>
+*[[San Andreas Gallery of Modern Art]] <small>(corner of Eastbourne Way)</small>
+
+[[SECTION:2:Businesses]]
+'''Alta'''
+{{Columns
+|
+*[[24/7 (HD Universe)|24/7]] <small>(corner of Alta Street)</small>
+*[[Bite!]]
+*[[Crucial Fix]]
+*[[Dollar Pills]]
+*[[Filly]]
+*[[Fleeca|Fleeca Bank]] <small>(corner of Meteor Street)</small>
+*[[Harsh Souls]]
+*[[Hawaiian Snow]] <small>(corner of Power Street)</small>
+*[[Heat]] <small>(corner of Alta Place)</small>
+|
+*[[High Time]]
+*[[Hippy Feet]]
+*[[Inspector Knickers]]
+*[[Molar Flair Dentist]]
+*[[Rametin]]
+*[[Talon Scout Nails]]
+*[[Walk of Fame Shoe Repairs]]
+*[[White Widow]] <small>(corner of Power Street)</small>
+}}
+
+'''Burton'''
+{{Columns
+|
+*[[Airbrush Tanning]] <small>(at Los Santos Corner)</small>
+*[[Al Dente's]]
+*[[Bourgeois Bicycles]]
+*[[Caca]] <small>(corner of San Vitus Boulevard)</small>
+*[[Cash Advance Loans]]
+*[[Cell Phones Sales and Repair]]
+*[[Cockatoos]] <small>(corner of Eastbourne Way)</small>
+*[[Croq-A-Hoop]] <small>(corner of Las Lagunas Boulevard, Rockford Plaza)</small>
+*[[Curbcrawler Skateboards]]
+*[[Discount Kitchen Supplies]]
+*[[Double Denim]]
+*[[Fleeca|Fleeca Bank]] <small>(next to Rimmers)</small>
+*[[Floor Skin]]
+*[[Fruit Machine]]
+*[[Fruit of the Vine]]
+*[[J's Bonds]] <small>(8324 Hawick Avenue, corner of Milton Road)</small>
+|
+*[[Kushy Farmacy]] <small>(at Los Santos Corner)</small>
+*[[Les Bianco]] <small>(Rockford Plaza)</small>
+*[[Little Teapot]]
+*[[Periscope]]
+*[[Pikeys]]
+*[[Pirate Music]] <small>(corner of Eastbourne Way)</small>
+*[[Ranch (HD Universe)|Ranch]]
+*[[Rimmers]] <small>(opening soon)</small>
+*[[Serenity Wellness]]
+*[[Sneaky Footwear]]
+*[[Swallow]] <small>(corner of San Vitus Boulevard)</small>
+*[[Thor Toys]]
+*[[Universal Uniform]]
+*[[Vinewood Bar & Grill]] <small>(corner of San Vitus Boulevard, Rockford Plaza)</small>
+*[[Yeti]]
+}}
+
+'''Hawick'''
+{{Columns
+|
+*[[Acting Up]]
+*[[Alphabetz]]
+*[[Brah]]
+*[[Echo Rock]]
+*[[Epsilon Program (HD Universe)|Epsilon Society Vinewood]]
+*[[Flickers Comics]]
+*[[Fuds]] <small>(corner of Las Lagunas Boulevard)</small>
+*[[Hair on Hawick]] <small>(accessible interior)</small>
+*[[Ink Inc.]]
+*[[Know Wear]]
+*[[Lârss & Elbö]] <small>(corners of Alta Street and Alta Place)</small>
+*[[Lettuce Be]] <small>(corner of Laguna Place)</small>
+*Liquor <small>(corner of Las Lagunas Boulevard)</small>
+*[[Los Santos Jeans]]
+*[[Mattress of Fact]]
+|
+*[[Period Rags]] <small>(corner of Laguna Place)</small>
+*[[Pipe Dreams]] <small>(corner of Alta Street)</small>
+*[[Sub Urban (HD Universe)|SubUrban]] <small>(accessible interior)</small>
+*[[The Casting Couch]] <small>(corner of Las Lagunas Boulevard)</small>
+*[[The Directors Cut]]
+*[[The Fish Net]]
+*[[The Infamous Gear and Clothing]]
+*[[Trey Baker]]
+*[[Twinkle Toes]]
+*[[Vinewood Music]] <small>(corner of Alta Street)</small>
+*[[Vinewood Sports]]
+*[[Vinylism]] <small>(corner of Las Lagunas Boulevard)</small>
+*[[Xhoti]]
+}}
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

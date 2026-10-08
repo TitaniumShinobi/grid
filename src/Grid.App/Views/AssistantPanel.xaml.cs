@@ -1,4 +1,5 @@
 using Grid.App.Services;
+using Grid.App.Controls;
 using Grid.Core.Application;
 using Grid.Core.Models;
 using Microsoft.UI.Xaml;
@@ -19,14 +20,59 @@ public sealed partial class AssistantPanel : UserControl
     private IEvidenceFilePicker? evidenceFilePicker;
     private LocalSourceAcquisitionPreferencesStore? sourceAcquisitionPreferencesStore;
     private NexusRecoverySourceDownloader? nexusRecoverySourceDownloader;
+    private CanonicalCatalogRuntimeService? canonicalCatalogRuntimeService;
+    private CanonicalRuntimeMatch? canonicalRuntimeMatch;
     private readonly HashSet<string> automaticAcquisitionAttempts = new(StringComparer.Ordinal);
     private string? sourceAcquisitionStatusOverride;
     private bool sourceAcquisitionRunning;
     private Action? layoutChanged;
     private CancellationToken lifetimeToken;
     private bool rendering;
+    private ReferenceEditingContext? referenceEditingContext;
+    private readonly Dictionary<TicketReferenceContextKind, ReferenceEditingContext> pendingOtherContexts = [];
+    private sealed record ReferenceEditingContext(AssistantSessionState State, InvestigationId Investigation,
+        GameId? Game, InstallationId? Installation, ProfileId? Profile, CancellationToken Lifetime);
 
-    public AssistantPanel() => InitializeComponent();
+    private ReferenceEditingContext? CaptureReferenceEditingContext()
+    {
+        if (state is null) return null;
+        var draft = state.Snapshot().TicketDraft;
+        return new(state, draft.InvestigationId, draft.GameId, draft.InstallationId, draft.ProfileId, lifetimeToken);
+    }
+
+    private bool IsCurrentReferenceEditingContext(ReferenceEditingContext? context) =>
+        context is not null && !context.Lifetime.IsCancellationRequested &&
+        context == CaptureReferenceEditingContext();
+
+    public AssistantPanel()
+    {
+        InitializeComponent();
+        var selectorStyle = (Style)Resources["TicketSelectorButtonStyle"];
+        ToolsButton.Style = selectorStyle;
+        ModsButton.Style = selectorStyle;
+        foreach (var selector in new[] { LocationSelector, MissionSelector, ItemSelector, EntitySelector })
+            selector.ApplyClosedSelectorStyle(selectorStyle);
+        foreach (var selector in new[] { GameSelector, ProfileSelector, ClassSelector, ProblemSelector,
+            TimingSelector, GoalSelector, ToolsButton, ModsButton })
+            AttachContentSizedFlyout(selector);
+        Microsoft.UI.Xaml.Controls.Grid.SetColumn(ToolsButton, 0);
+        Microsoft.UI.Xaml.Controls.Grid.SetColumn(ModsButton, 1);
+        LocationSelector.CanonicalSelectionCommitted += OnCanonicalSelectionCommitted;
+        LocationSelector.ScaffoldSelectionCommitted += OnScaffoldSelectionCommitted;
+        MissionSelector.ScaffoldSelectionCommitted += OnScaffoldSelectionCommitted;
+        ItemSelector.ScaffoldSelectionCommitted += OnScaffoldSelectionCommitted;
+        EntitySelector.ScaffoldSelectionCommitted += OnScaffoldSelectionCommitted;
+        LocationSelector.OtherRequested += (_, _) => ShowOtherContext(TicketReferenceContextKind.Location);
+        MissionSelector.OtherRequested += (_, _) => ShowOtherContext(TicketReferenceContextKind.MissionOrQuest);
+        ItemSelector.OtherRequested += (_, _) => ShowOtherContext(TicketReferenceContextKind.Item);
+        EntitySelector.OtherRequested += (_, _) => ShowOtherContext(TicketReferenceContextKind.Entity);
+    }
+
+    private static void AttachContentSizedFlyout(Button selector)
+    {
+        if (selector.Flyout is not Flyout { Content: ScrollViewer viewport } flyout) return;
+        flyout.Opening += (_, _) => SelectorFlyoutSizing.Apply(selector, flyout, viewport, viewport);
+    }
 
     public void BindState(
         AssistantSessionState assistantState,
@@ -34,6 +80,7 @@ public sealed partial class AssistantPanel : UserControl
         Action onLayoutChanged,
         LocalSourceAcquisitionPreferencesStore? acquisitionPreferencesStore = null,
         NexusRecoverySourceDownloader? recoverySourceDownloader = null,
+        CanonicalCatalogRuntimeService? runtimeCatalogService = null,
         CancellationToken cancellationToken = default)
     {
         state = assistantState ?? throw new ArgumentNullException(nameof(assistantState));
@@ -41,6 +88,7 @@ public sealed partial class AssistantPanel : UserControl
         layoutChanged = onLayoutChanged ?? throw new ArgumentNullException(nameof(onLayoutChanged));
         sourceAcquisitionPreferencesStore = acquisitionPreferencesStore;
         nexusRecoverySourceDownloader = recoverySourceDownloader;
+        canonicalCatalogRuntimeService = runtimeCatalogService;
         lifetimeToken = cancellationToken;
         Refresh();
     }
@@ -53,7 +101,7 @@ public sealed partial class AssistantPanel : UserControl
         if (state is null) return;
         state.StartNewInvestigation();
         state.ToggleForm();
-        state.SetPlainText(text ?? string.Empty);
+        state.SetComposerText(text ?? string.Empty);
         Refresh();
         ComposerText.Focus(FocusState.Programmatic);
         ComposerText.Select(ComposerText.Text.Length, 0);
@@ -66,6 +114,12 @@ public sealed partial class AssistantPanel : UserControl
         try
         {
             var snapshot = state.Snapshot();
+            canonicalRuntimeMatch = snapshot.TicketDraft.GameId is GameId refreshGameId
+                ? canonicalCatalogRuntimeService?.Match(
+                    refreshGameId, snapshot.TicketDraft.InstallationId, snapshot.TicketDraft.ProfileId)
+                : null;
+            if (PruneInvalidCanonicalSelections(snapshot))
+                snapshot = state.Snapshot();
             TaskTitleText.Text = snapshot.Surface switch
             {
                 AssistantSurface.Home => "New Investigation",
@@ -79,60 +133,37 @@ public sealed partial class AssistantPanel : UserControl
             SuggestionsSurface.Visibility = snapshot.Surface == AssistantSurface.Home ? Visibility.Visible : Visibility.Collapsed;
             ComposerSurface.Visibility = snapshot.Surface == AssistantSurface.History ? Visibility.Collapsed : Visibility.Visible;
             IntakeForm.Visibility = snapshot.IsFormVisible && snapshot.Surface == AssistantSurface.Home ? Visibility.Visible : Visibility.Collapsed;
+            DifContentInset.Padding = IntakeForm.Visibility == Visibility.Visible
+                ? new Thickness(5) : new Thickness(16, 14, 16, 24);
             EmptyHome.Visibility = snapshot.IsFormVisible ? Visibility.Collapsed : Visibility.Visible;
             FormToggleButton.IsChecked = snapshot.IsFormVisible;
             FullScreenButton.IsChecked = snapshot.IsFullScreen;
 
-            GameScopeButton.IsChecked = snapshot.Draft.Scope == AssistantIntakeScope.Game;
-            GridScopeButton.IsChecked = snapshot.Draft.Scope == AssistantIntakeScope.Grid;
-            GameFields.Visibility = snapshot.Draft.Scope == AssistantIntakeScope.Game ? Visibility.Visible : Visibility.Collapsed;
-            GridFields.Visibility = snapshot.Draft.Scope == AssistantIntakeScope.Grid ? Visibility.Visible : Visibility.Collapsed;
-
-            GameSelector.ItemsSource = snapshot.Games;
-            GameSelector.SelectedItem = snapshot.Games.FirstOrDefault(game => game.Id == snapshot.Draft.GameId);
-            InstallationSelector.ItemsSource = snapshot.Installations;
-            InstallationSelector.SelectedItem = snapshot.Installations.FirstOrDefault(item => item.Id == snapshot.Draft.InstallationId);
-            ProfileSelector.ItemsSource = snapshot.Profiles;
-            ProfileSelector.SelectedItem = snapshot.Profiles.FirstOrDefault(item => item.Id == snapshot.Draft.ProfileId);
-            ClassSelector.ItemsSource = snapshot.Classes;
-            ClassSelector.SelectedItem = snapshot.Classes.FirstOrDefault(option => option.Id == snapshot.Draft.ClassId);
-            var selectedClass = snapshot.Classes.FirstOrDefault(option => option.Id == snapshot.Draft.ClassId);
-            var gameplayCapabilities = selectedClass?.GameplayCapabilities.IsDefault == false
-                ? selectedClass.GameplayCapabilities
-                : [];
-            CapabilitySelector.ItemsSource = gameplayCapabilities;
-            CapabilitySelector.SelectedItem = gameplayCapabilities.FirstOrDefault(option => option.Id == snapshot.Draft.CapabilityId);
-            CapabilitySelector.Visibility = gameplayCapabilities.IsEmpty ? Visibility.Collapsed : Visibility.Visible;
-            ComposerText.Text = snapshot.Surface == AssistantSurface.Task ? string.Empty : snapshot.Draft.PlainText;
+            ComposerText.Text = snapshot.Surface == AssistantSurface.Task ? string.Empty : snapshot.ComposerText;
             ComposerText.PlaceholderText = snapshot.Surface == AssistantSurface.Task ? "Start a new request…" : "Message Grid";
-            ProblemText.Text = snapshot.Draft.Problem;
-            ExpectedBehaviorText.Text = snapshot.Draft.ExpectedBehavior;
-            ReproductionLocationText.Text = snapshot.Draft.ReproductionOrLocation;
-            DesiredOutcomeText.Text = snapshot.Draft.DesiredOutcome;
-            AuthorizationScopeSelector.SelectedIndex = snapshot.Draft.AuthorizationScope == AssistantAuthorizationScope.SelectedInstallationAndProfileReadOnly ? 0 : -1;
-            DraftAuthorizationScopeText.Text = snapshot.Draft.AuthorizationScope switch
-            {
-                AssistantAuthorizationScope.SelectedInstallationAndProfileReadOnly =>
-                    "Read-only access to the selected installation and profile context, plus the files explicitly attached below. Exact paths are displayed before authorization.",
-                _ => "Unsupported authorization scope.",
-            };
-            RequestTitleText.Text = snapshot.Draft.DisplayTitle;
-            RequestPill.Visibility = snapshot.Surface == AssistantSurface.Home && !string.IsNullOrWhiteSpace(snapshot.Draft.ClassId)
+            var preview = snapshot.TicketPreview ?? new AssistantTicketPreview(
+                "New investigation", "grid.icon.unknown",
+                AssistantTicketNameProvenance.DeterministicStructuredSelections, []);
+            RequestTitleText.Text = preview.Name;
+            RequestPill.Visibility = snapshot.Surface == AssistantSurface.Home && snapshot.TicketDraft.Class is not null
                 ? Visibility.Visible
                 : Visibility.Collapsed;
-            ClassIcon.Glyph = ResolveClassGlyph(snapshot.Draft.ClassIconId);
-            var classBrush = ResolveClassBrush(snapshot.Draft.ClassIconId);
+            ClassIcon.Glyph = ResolveClassGlyph(preview.IconId);
+            var classBrush = ResolveClassBrush(preview.IconId);
             ClassIcon.Foreground = classBrush;
             RequestTitleText.Foreground = classBrush;
             ReadinessText.Text = snapshot.Surface == AssistantSurface.Task
                 ? "Work locally"
-                : FormatReadiness(snapshot.Draft.Readiness);
-            SendButton.IsEnabled = snapshot.Surface == AssistantSurface.Home && snapshot.Draft.CanSubmit;
+                : FormatReadiness(snapshot.TicketReadiness);
+            SendButton.IsEnabled = snapshot.Surface == AssistantSurface.Home && snapshot.TicketReadiness.CanSubmit && snapshot.Draft.CanSubmit;
             AutomationProperties.SetName(SendButton, SendButton.IsEnabled ? "Start Investigation" : "Start Investigation unavailable");
             LocationText.Text = FormatLocation(snapshot);
 
+            PopulateSingleSelectors(snapshot);
             PopulateMods(snapshot);
             PopulateTools(snapshot);
+            PopulateReferenceContexts(snapshot);
+            if (TicketSelectorRows.ActualWidth > 0) ApplyTicketSelectorLayout(TicketSelectorRows.ActualWidth);
             PopulateDraftAttachments(snapshot);
             PopulateHistory(snapshot);
             PopulateTask(snapshot);
@@ -174,9 +205,16 @@ public sealed partial class AssistantPanel : UserControl
             AuthorizationStatement.Text = authorization.Statement;
             foreach (var scope in authorization.ReadScopes)
             {
+                var paths = scope.ExactReadPaths.Length == 0
+                    ? "No filesystem paths requested"
+                    : string.Join("\n", scope.ExactReadPaths);
+                var resources = scope.ExactReadResources.IsDefaultOrEmpty
+                    ? string.Empty
+                    : "\n" + string.Join("\n", scope.ExactReadResources.Select(resource =>
+                        $"{resource.ResourceType}: {resource.ResourceId}{(resource.Constraints.IsDefaultOrEmpty ? string.Empty : $" ({string.Join("; ", resource.Constraints)})")}"));
                 AuthorizationScopes.Children.Add(new TextBlock
                 {
-                    Text = $"{scope.ProviderName} · {scope.Availability}\n{scope.ObservationMode ?? "No observation mode"}\n{(scope.ExactReadPaths.Length == 0 ? "No filesystem paths requested" : string.Join("\n", scope.ExactReadPaths))}",
+                    Text = $"{scope.ProviderName} - {scope.Availability}\n{scope.ObservationMode ?? "No observation mode"}\n{paths}{resources}",
                     FontSize = 11,
                     TextWrapping = TextWrapping.Wrap,
                 });
@@ -545,7 +583,7 @@ public sealed partial class AssistantPanel : UserControl
                 $"Coverage gaps\n{JoinOrNone(required.CoverageGaps)}\n\nMissing inputs\n{JoinOrNone(required.MissingInputs)}\n\nMissing capabilities\n{JoinOrNone(required.MissingCapabilityIds)}" +
                 (required.Resolutions.IsDefaultOrEmpty
                     ? string.Empty
-                    : $"\n\nAUTO routes\n{string.Join(Environment.NewLine, required.Resolutions.Select(route => $"â€¢ {route.RequiredCapabilityId}: {route.Status} — {route.NextAction}"))}");
+                    : $"\n\nAUTO routes\n{string.Join(Environment.NewLine, required.Resolutions.Select(route => $"• {route.RequiredCapabilityId}: {route.Status} — {route.NextAction}"))}");
         }
     }
 
@@ -617,6 +655,73 @@ public sealed partial class AssistantPanel : UserControl
         }
     }
 
+    private void PopulateSingleSelectors(AssistantSessionSnapshot snapshot)
+    {
+        GameOptions.Children.Clear();
+        var selectedGame = snapshot.Games.FirstOrDefault(option => option.Id == snapshot.TicketDraft.GameId);
+        foreach (var game in snapshot.Games)
+            GameOptions.Children.Add(CreateRadioOption(game.Name, game, game.Id == snapshot.TicketDraft.GameId, OnGameOptionChecked));
+        GameSelector.Content = SelectorValue("Game", selectedGame?.Name);
+        GameSelector.IsEnabled = snapshot.Games.Length > 0;
+
+        ProfileOptions.Children.Clear();
+        var selectedProfile = snapshot.Profiles.FirstOrDefault(option => option.Id == snapshot.TicketDraft.ProfileId);
+        foreach (var profile in snapshot.Profiles)
+            ProfileOptions.Children.Add(CreateRadioOption(profile.DisplayName, profile, profile.Id == snapshot.TicketDraft.ProfileId, OnProfileOptionChecked));
+        ProfileSelector.Content = SelectorValue("Profile", selectedProfile?.DisplayName);
+        ProfileSelector.IsEnabled = snapshot.TicketDraft.GameId is not null && snapshot.Profiles.Length > 0;
+
+        ClassOptions.Children.Clear();
+        var selectedClass = snapshot.Classes.FirstOrDefault(option => option.Id == snapshot.TicketDraft.Class?.Id.Value);
+        foreach (var option in snapshot.Classes)
+            ClassOptions.Children.Add(CreateRadioOption(option.DisplayName, option,
+                option.Id == snapshot.TicketDraft.Class?.Id.Value, OnClassOptionChecked));
+        ClassSelector.Content = SelectorValue("Class", selectedClass?.DisplayName);
+        ClassSelector.IsEnabled = snapshot.Classes.Length > 0;
+
+        ProblemOptions.Children.Clear();
+        foreach (var option in snapshot.Problems)
+            ProblemOptions.Children.Add(CreateRadioOption(option.DisplayName, option,
+                option.Id == snapshot.TicketDraft.Problem?.Id, OnProblemOptionChecked));
+        ProblemSelector.Content = SelectorValue("Problem", snapshot.TicketDraft.Problem?.DisplayName);
+        ProblemSelector.IsEnabled = snapshot.TicketDraft.Class is not null && snapshot.Problems.Length > 0;
+
+        TimingOptions.Children.Clear();
+        foreach (var option in snapshot.Timings)
+            TimingOptions.Children.Add(CreateRadioOption(option.DisplayName, option,
+                option.Id == snapshot.TicketDraft.Timing?.Id, OnTimingOptionChecked));
+        TimingSelector.Content = SelectorValue("Timing", snapshot.TicketDraft.Timing?.DisplayName);
+        TimingSelector.IsEnabled = snapshot.TicketDraft.Class is not null && snapshot.Timings.Length > 0;
+
+        GoalOptions.Children.Clear();
+        foreach (var option in snapshot.Goals)
+            GoalOptions.Children.Add(CreateRadioOption(option.DisplayName, option,
+                option.Id == snapshot.TicketDraft.Goal?.Id, OnGoalOptionChecked));
+        GoalSelector.Content = SelectorValue("Goal", snapshot.TicketDraft.Goal?.DisplayName);
+        GoalSelector.IsEnabled = snapshot.Goals.Length > 0;
+    }
+
+    private static string SelectorValue(string field, string? value) =>
+        string.IsNullOrWhiteSpace(value) ? field : value;
+
+    private RadioButton CreateRadioOption(
+        string displayName,
+        object tag,
+        bool selected,
+        RoutedEventHandler checkedHandler)
+    {
+        var option = new RadioButton
+        {
+            Content = displayName,
+            Tag = tag,
+            IsChecked = selected,
+            HorizontalAlignment = HorizontalAlignment.Stretch,
+            Style = (Style)Resources["TicketSelectorOptionStyle"],
+        };
+        option.Checked += checkedHandler;
+        return option;
+    }
+
     private void PopulateMods(AssistantSessionSnapshot snapshot)
     {
         ModsChecklist.Children.Clear();
@@ -632,13 +737,15 @@ public sealed partial class AssistantPanel : UserControl
             checkbox.Unchecked += OnModChecked;
             ModsChecklist.Children.Add(checkbox);
         }
-        ModsButton.Content = snapshot.Draft.ModIds.Length == 0 ? "Mods · None selected" : $"Mods · {snapshot.Draft.ModIds.Length} selected";
         ModsButton.IsEnabled = snapshot.Mods.Length > 0;
+        ModsButton.Content = SelectorValue("Mod", snapshot.TicketDraft.Mods.LastOrDefault()?.DisplayName);
     }
 
     private void PopulateTools(AssistantSessionSnapshot snapshot)
     {
         ToolsChecklist.Children.Clear();
+        if (snapshot.Tools.Length > 0)
+            ToolsChecklist.Children.Add(CreateFlyoutGroupHeading("GRID-integrated tools"));
         foreach (var tool in snapshot.Tools)
         {
             var checkbox = new CheckBox
@@ -646,19 +753,426 @@ public sealed partial class AssistantPanel : UserControl
                 Content = $"{tool.Name} · {tool.Availability}",
                 Tag = tool.Id,
                 IsChecked = snapshot.Draft.ToolIds.Contains(tool.Id),
+                IsEnabled = tool.Availability == AvailabilityState.Available,
             };
             checkbox.Checked += OnToolChecked;
             checkbox.Unchecked += OnToolChecked;
             ToolsChecklist.Children.Add(checkbox);
         }
-        ToolsButton.Content = snapshot.Draft.ToolIds.Length == 0 ? "Tools · None selected" : $"Tools · {snapshot.Draft.ToolIds.Length} selected";
-        ToolsButton.IsEnabled = snapshot.Tools.Length > 0;
+        if (snapshot.ConfiguredTools.Length > 0)
+        {
+            ToolsChecklist.Children.Add(CreateFlyoutGroupHeading("Configured context"));
+            foreach (var tool in snapshot.ConfiguredTools)
+            {
+                var checkbox = new CheckBox
+                {
+                    Content = $"{tool.DisplayName}\nConfigured · {(tool.IsRunnable ? "Runnable" : "Not runnable")} · Identity {tool.IdentityStatus} · GRID integration {tool.IntegrationStatus}",
+                    Tag = tool.Id,
+                    IsChecked = snapshot.TicketDraft.ConfiguredToolContext.Any(value => value.ConfigurationId == tool.Id),
+                    HorizontalAlignment = HorizontalAlignment.Stretch,
+                };
+                checkbox.Checked += OnConfiguredToolChecked;
+                checkbox.Unchecked += OnConfiguredToolChecked;
+                ToolsChecklist.Children.Add(checkbox);
+            }
+        }
+        var availableCount = snapshot.Tools.Length + snapshot.ConfiguredTools.Length;
+        ToolsButton.Content = SelectorValue("Tool", snapshot.TicketDraft.ConfiguredToolContext.LastOrDefault()?.DisplayName
+            ?? snapshot.TicketDraft.IntegratedTools.LastOrDefault()?.DisplayName);
+        ToolsButton.IsEnabled = availableCount > 0;
+    }
+
+    private static TextBlock CreateFlyoutGroupHeading(string text) => new()
+    {
+        Text = text,
+        Margin = new Thickness(0, 4, 0, 2),
+        FontSize = 10,
+        FontWeight = Microsoft.UI.Text.FontWeights.SemiBold,
+    };
+
+    private void PopulateReferenceContexts(AssistantSessionSnapshot snapshot)
+    {
+        var currentContext = CaptureReferenceEditingContext();
+        if (referenceEditingContext != currentContext)
+        {
+            foreach (var selector in new[] { LocationSelector, MissionSelector, ItemSelector, EntitySelector })
+                selector.ResetScaffoldPresentationContext();
+            foreach (var field in new[] { LocationOtherText, MissionOtherText, ItemOtherText, EntityOtherText })
+            {
+                field.Text = string.Empty;
+                field.Visibility = Visibility.Collapsed;
+            }
+            pendingOtherContexts.Clear();
+            referenceEditingContext = currentContext;
+        }
+        PopulateReferenceContext(snapshot, TicketReferenceContextKind.Location, KnowledgeKind.Location,
+            "Location", LocationSelector, LocationOtherText, LocationSelectionPreview);
+        PopulateReferenceContext(snapshot, TicketReferenceContextKind.MissionOrQuest, KnowledgeKind.MissionQuest,
+            "Mission", MissionSelector, MissionOtherText, MissionSelectionPreview);
+        PopulateReferenceContext(snapshot, TicketReferenceContextKind.Item, KnowledgeKind.Item,
+            "Item", ItemSelector, ItemOtherText, ItemSelectionPreview);
+        PopulateReferenceContext(snapshot, TicketReferenceContextKind.Entity, KnowledgeKind.Actor,
+            "Actor", EntitySelector, EntityOtherText, ActorSelectionPreview);
+    }
+
+    private void PopulateReferenceContext(AssistantSessionSnapshot snapshot,
+        TicketReferenceContextKind kind, KnowledgeKind knowledgeKind, string label,
+        CanonicalSelectorNavigationControl selector, TextBox otherText, StackPanel preview)
+    {
+        var profileReady = snapshot.TicketDraft.ProfileId is not null;
+        if (knowledgeKind == KnowledgeKind.Location && canonicalRuntimeMatch?.IsExact == true)
+        {
+            PopulateLocationSelectionPreview(snapshot);
+            var locationCount = snapshot.TicketDraft.CanonicalSelections.Count(value => value.KnowledgeKind == KnowledgeKind.Location) +
+                                snapshot.TicketDraft.UserContext.Count(value =>
+                                    value.Kind == TicketReferenceContextKind.Location &&
+                                    value.Resolution == TicketUserContextResolution.Unresolved);
+            var selected = snapshot.TicketDraft.CanonicalSelections.LastOrDefault(value => value.KnowledgeKind == KnowledgeKind.Location);
+            string? selectedDisplay = null;
+            if (selected?.SelectedPathId is CanonicalNavigationPathId selectedPath)
+                selectedDisplay = CanonicalSelectionLabel(knowledgeKind, selectedPath);
+            ConfigureCanonicalSelector(selector, label, knowledgeKind, selected, selectedDisplay);
+            selector.SetRuntimeStatus(FormatCanonicalRuntimeStatus(canonicalRuntimeMatch));
+            selector.SetInteractionEnabled(profileReady);
+            if (!profileReady)
+                selector.SetClosedCaption("Location · Select Profile");
+            else if (locationCount == 0)
+                selector.SetClosedCaption("Location · Optional");
+            else
+                selector.SetClosedCaption($"Location · {locationCount} selected");
+            otherText.Visibility = Visibility.Collapsed;
+            return;
+        }
+
+        var entries = snapshot.TicketDraft.UserContext.Where(value => value.Kind == kind &&
+            value.Resolution == TicketUserContextResolution.Unresolved).ToArray();
+        selector.ConfigureScaffold(knowledgeKind, entries.Where(value => value.ScaffoldPathId is not null)
+            .Select(value => value.ScaffoldPathId!).ToArray());
+        selector.SetInteractionEnabled(profileReady);
+        selector.SetScaffoldCaptionFallback(profileReady && entries.Length > 0 ? ReferenceContextLabel(entries[^1]) : null,
+            profileReady && entries.Length > 0 ? entries[^1].ScaffoldPathId ?? "other:" + entries[^1].Value : null);
+        PopulateReferenceSelectionPreview(preview, entries, kind, label, profileReady);
+        if (!profileReady) otherText.Visibility = Visibility.Collapsed;
+    }
+
+    private void PopulateLocationSelectionPreview(AssistantSessionSnapshot snapshot)
+    {
+        LocationSelectionPreview.Children.Clear();
+        if (snapshot.TicketDraft.ProfileId is null) return;
+        var entries = new List<(string Key, string Label, bool IsCanonical)>();
+        foreach (var selection in snapshot.TicketDraft.CanonicalSelections.Where(value => value.KnowledgeKind == KnowledgeKind.Location))
+        {
+            if (selection.KnowledgeRecordId is not { } recordId || selection.SelectedPathId is not { } pathId) continue;
+            var displayLabel = CanonicalSelectionLabel(KnowledgeKind.Location, pathId) ?? "Location pending validation";
+            entries.Add(($"{recordId.Value}:{pathId.Value}", displayLabel, true));
+        }
+        foreach (var context in snapshot.TicketDraft.UserContext.Where(value =>
+                     value.Kind == TicketReferenceContextKind.Location &&
+                     value.Resolution == TicketUserContextResolution.Unresolved))
+            entries.Add((context.Value, context.Value, false));
+
+        if (entries.Count == 0) return;
+        const int inlineLimit = 3;
+        var inline = entries.Take(inlineLimit).ToArray();
+        foreach (var entry in inline)
+            LocationSelectionPreview.Children.Add(CreateLocationPreviewRow(entry.Key, entry.Label, entry.IsCanonical));
+        if (entries.Count > inlineLimit)
+        {
+            var overflow = new TextBlock
+            {
+                Text = "...",
+                FontSize = 11,
+                Foreground = (Brush)Application.Current.Resources["MutedTextBrush"],
+            };
+            var fullList = string.Join('\n', entries.Select(value => value.Label));
+            ToolTipService.SetToolTip(overflow, new ToolTip { Content = fullList });
+            AutomationProperties.SetName(overflow, $"Location selection overflow ({entries.Count} total)");
+            AutomationProperties.SetHelpText(overflow, fullList);
+            LocationSelectionPreview.Children.Add(overflow);
+        }
+    }
+
+    private FrameworkElement CreateLocationPreviewRow(string key, string label, bool isCanonical)
+    {
+        var originatingContext = CaptureReferenceEditingContext();
+        var row = new Microsoft.UI.Xaml.Controls.Grid { ColumnSpacing = 4 };
+        row.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Auto });
+        row.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+        var remove = new Button
+        {
+            Content = "x",
+            Tag = (key, isCanonical),
+            Padding = new Thickness(4, 0, 4, 0),
+            Height = 20,
+            FontSize = 10,
+            CornerRadius = new CornerRadius(0),
+        };
+        AutomationProperties.SetName(remove, $"Remove location {label}");
+        remove.Click += (_, _) =>
+        {
+            if (rendering || state is null || !IsCurrentReferenceEditingContext(originatingContext)) return;
+            if (remove.Tag is not (string removeKey, bool canonical)) return;
+            if (canonical)
+            {
+                var separator = removeKey.IndexOf(':');
+                if (separator <= 0) return;
+                state.RemoveCanonicalLocationSelection(new KnowledgeRecordId(removeKey[..separator]),
+                    new CanonicalNavigationPathId(removeKey[(separator + 1)..]));
+            }
+            else
+                state.RemoveLocationOtherContext(removeKey);
+            NotifyChanged();
+        };
+        var text = new TextBlock
+        {
+            Text = label,
+            FontSize = 10,
+            TextTrimming = TextTrimming.CharacterEllipsis,
+            VerticalAlignment = VerticalAlignment.Center,
+        };
+        ToolTipService.SetToolTip(text, label);
+        Microsoft.UI.Xaml.Controls.Grid.SetColumn(text, 1);
+        row.Children.Add(remove);
+        row.Children.Add(text);
+        return row;
+    }
+
+    private static string ReferenceContextLabel(TicketUserContext context)
+    {
+        if (context.ScaffoldPathId is null) return context.Value;
+        var kind = context.Kind switch
+        {
+            TicketReferenceContextKind.Location => KnowledgeKind.Location,
+            TicketReferenceContextKind.MissionOrQuest => KnowledgeKind.MissionQuest,
+            TicketReferenceContextKind.Item => KnowledgeKind.Item,
+            TicketReferenceContextKind.Entity => KnowledgeKind.Actor,
+            _ => throw new ArgumentOutOfRangeException(nameof(context)),
+        };
+        return SelectorScaffoldContract.Resolve(kind, context.ScaffoldPathId)?.Label
+            ?? context.Value.Split(" → ", StringSplitOptions.None)[^1];
+    }
+
+    private void PopulateReferenceSelectionPreview(StackPanel preview, TicketUserContext[] entries,
+        TicketReferenceContextKind kind, string label, bool profileReady)
+    {
+        preview.Children.Clear();
+        AutomationProperties.SetAutomationId(preview, $"scaffold-preview:{kind}");
+        AutomationProperties.SetHelpText(preview, string.Join('\n', entries.Select(ReferenceContextLabel)));
+        if (!profileReady) return;
+        foreach (var entry in entries.Take(3))
+            preview.Children.Add(CreateReferencePreviewRow(entry, label));
+        if (entries.Length <= 3) return;
+        var overflow = new Button
+        {
+            Content = "...", FontSize = 11, Height = 20,
+            Padding = new Thickness(4, 0, 4, 0), CornerRadius = new CornerRadius(0),
+            HorizontalAlignment = HorizontalAlignment.Left,
+        };
+        var fullList = string.Join('\n', entries.Select(ReferenceContextLabel));
+        ToolTipService.SetToolTip(overflow, fullList);
+        AutomationProperties.SetName(overflow, $"{label} selection overflow ({entries.Length} total)");
+        AutomationProperties.SetAutomationId(overflow, $"scaffold-overflow:{kind}");
+        AutomationProperties.SetHelpText(overflow, fullList);
+        var allRows = new StackPanel { Spacing = 2 };
+        var popup = new Flyout
+        {
+            Content = new ScrollViewer { Content = allRows,
+                HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled },
+            FlyoutPresenterStyle = new Style(typeof(FlyoutPresenter))
+            {
+                Setters = { new Setter(Control.CornerRadiusProperty, new CornerRadius(0)) },
+            },
+        };
+        foreach (var entry in entries) allRows.Children.Add(CreateReferencePreviewRow(entry, label, popup.Hide));
+        overflow.Flyout = popup;
+        AttachContentSizedFlyout(overflow);
+        preview.Children.Add(overflow);
+    }
+
+    private FrameworkElement CreateReferencePreviewRow(TicketUserContext entry, string label, Action? afterRemove = null)
+    {
+        var originatingContext = CaptureReferenceEditingContext();
+        var row = new Microsoft.UI.Xaml.Controls.Grid { ColumnSpacing = 4 };
+        row.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Auto });
+        row.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+        var remove = new Button
+        {
+            Content = "x", Padding = new Thickness(4, 0, 4, 0), Height = 20,
+            FontSize = 10, CornerRadius = new CornerRadius(0),
+        };
+        AutomationProperties.SetName(remove, $"Remove {label} {ReferenceContextLabel(entry)}");
+        AutomationProperties.SetAutomationId(remove, $"scaffold-remove:{entry.Kind}:{entry.ScaffoldPathId ?? "other:" + entry.Value}");
+        remove.Click += (_, _) =>
+        {
+            if (rendering || state is null || !IsCurrentReferenceEditingContext(originatingContext)) return;
+            state.RemoveReferenceContext(entry.Kind, entry.Value, entry.ScaffoldPathId);
+            afterRemove?.Invoke();
+            NotifyChanged();
+        };
+        var text = new TextBlock
+        {
+            Text = ReferenceContextLabel(entry), FontSize = 10,
+            TextTrimming = TextTrimming.CharacterEllipsis, VerticalAlignment = VerticalAlignment.Center,
+        };
+        ToolTipService.SetToolTip(text, ReferenceContextLabel(entry));
+        Microsoft.UI.Xaml.Controls.Grid.SetColumn(text, 1);
+        row.Children.Add(remove);
+        row.Children.Add(text);
+        return row;
+    }
+
+    private void OnScaffoldSelectionCommitted(object? sender, SelectorScaffoldSelection selection)
+    {
+        if (rendering || state is null || state.Snapshot().TicketDraft.ProfileId is null) return;
+        if (selection.Kind == KnowledgeKind.Location && canonicalRuntimeMatch?.IsExact == true) return;
+        var node = SelectorScaffoldContract.Resolve(selection.Kind, selection.PathId);
+        if (node is null) return;
+        var kind = selection.Kind switch
+        {
+            KnowledgeKind.Location => TicketReferenceContextKind.Location,
+            KnowledgeKind.MissionQuest => TicketReferenceContextKind.MissionOrQuest,
+            KnowledgeKind.Item => TicketReferenceContextKind.Item,
+            KnowledgeKind.Actor => TicketReferenceContextKind.Entity,
+            _ => throw new ArgumentOutOfRangeException(nameof(selection)),
+        };
+        state.ToggleScaffoldContext(kind, selection.PathId,
+            SelectorScaffoldContract.DisplayPath(selection.Kind, selection.PathId));
+        NotifyChanged();
+    }
+
+    private static string FormatCanonicalRuntimeStatus(CanonicalRuntimeMatch? match) => match switch
+    {
+        null => "Canonical catalog not evaluated.",
+        { ValidationStatus: CatalogValidationStatus status } =>
+            $"{match.State} ({status}): {match.Detail}",
+        _ => $"{match.State}: {match.Detail}",
+    };
+
+    private bool PruneInvalidCanonicalSelections(AssistantSessionSnapshot snapshot)
+    {
+        if (state is null || snapshot.TicketDraft.CanonicalSelections.IsEmpty) return false;
+        if (canonicalCatalogRuntimeService is null || canonicalCatalogRuntimeService.IsReadinessUnresolved) return false;
+        var changed = false;
+        foreach (var selection in snapshot.TicketDraft.CanonicalSelections)
+        {
+            if (selection.KnowledgeKind == KnowledgeKind.Location) continue;
+            if (canonicalCatalogRuntimeService is not null && canonicalRuntimeMatch?.IsExact == true &&
+                canonicalCatalogRuntimeService.ValidateSelection(canonicalRuntimeMatch, selection))
+                continue;
+            state.ClearCanonicalSelectorSelection(selection.KnowledgeKind);
+            changed = true;
+        }
+        return changed;
+    }
+
+    private CanonicalSelectorResult? QueryCanonicalSelector(KnowledgeKind kind, CanonicalNavigationPathId? path) =>
+        canonicalCatalogRuntimeService is not null && canonicalRuntimeMatch?.IsExact == true
+            ? canonicalCatalogRuntimeService.Query(canonicalRuntimeMatch, kind, path)
+            : null;
+
+    private string? CanonicalSelectionLabel(KnowledgeKind kind, CanonicalNavigationPathId path) =>
+        canonicalCatalogRuntimeService is not null && canonicalRuntimeMatch?.IsExact == true
+            ? canonicalCatalogRuntimeService.GetSelectionLabel(canonicalRuntimeMatch, kind, path, state?.Snapshot().TicketDraft.ProfileId) : null;
+
+    private void ConfigureCanonicalSelector(CanonicalSelectorNavigationControl selector, string label,
+        KnowledgeKind kind, CanonicalSelectorSelection? selected, string? selectedDisplay)
+    {
+        if (canonicalCatalogRuntimeService?.UsesPreparedNavigation != true)
+        {
+            selector.Configure(label, kind, QueryCanonicalSelector, selected, selectedDisplay);
+            return;
+        }
+        var expectedRuntime = canonicalCatalogRuntimeService;
+        var expectedMatch = canonicalRuntimeMatch;
+        var expectedState = state;
+        selector.ConfigureAsync(label, kind, async (requestedKind, path, cursor, cancellationToken) =>
+        {
+            using var linked = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken, lifetimeToken);
+            if (expectedMatch?.IsExact != true || !ReferenceEquals(expectedMatch, canonicalRuntimeMatch) ||
+                !ReferenceEquals(expectedState, state)) return null;
+            var result = await expectedRuntime.QueryPageAsync(
+                expectedMatch, requestedKind, path, cursor, expectedState?.Snapshot().TicketDraft.ProfileId, linked.Token);
+            if (!ReferenceEquals(expectedMatch, canonicalRuntimeMatch) || !ReferenceEquals(expectedState, state))
+                throw new OperationCanceledException("Canonical context changed during navigation.");
+            var statistics = expectedRuntime.PreparedStatistics;
+            selector.SetRuntimeStatus($"{FormatCanonicalRuntimeStatus(expectedMatch)} Prepared local; " +
+                $"sourceCatalogLoads={expectedRuntime.RuntimeSourceCatalogLoads}; pageReads={statistics?.PageReads}; " +
+                $"cacheHits={statistics?.PageCacheHits}; rowsMaterialized={statistics?.RowsMaterialized}; " +
+                $"cacheBytes={statistics?.CachedBytes}.");
+            return result;
+        }, selected, selectedDisplay);
+    }
+
+    private void OnCanonicalSelectionCommitted(object? sender, CanonicalSelectorSelection selection)
+    {
+        if (rendering || state is null) return;
+        if (canonicalCatalogRuntimeService is null || canonicalRuntimeMatch?.IsExact != true ||
+            !canonicalCatalogRuntimeService.ValidateSelection(canonicalRuntimeMatch, selection, state.Snapshot().TicketDraft.ProfileId))
+            return; // A stale or invalid immutable generation cannot publish a selection.
+        if (selection.KnowledgeKind == KnowledgeKind.Location)
+            state.ToggleCanonicalLocationSelection(selection);
+        else
+            state.SetCanonicalSelectorSelection(selection);
+        NotifyChanged();
+    }
+
+    private void ShowOtherContext(TicketReferenceContextKind kind)
+    {
+        var editingContext = CaptureReferenceEditingContext();
+        if (rendering || state is null || editingContext?.Profile is null ||
+            !IsCurrentReferenceEditingContext(editingContext)) return;
+        pendingOtherContexts[kind] = editingContext;
+        state.ClearCanonicalSelectorSelection(kind switch
+        {
+            TicketReferenceContextKind.Location => KnowledgeKind.Location,
+            TicketReferenceContextKind.MissionOrQuest => KnowledgeKind.MissionQuest,
+            TicketReferenceContextKind.Item => KnowledgeKind.Item,
+            TicketReferenceContextKind.Entity => KnowledgeKind.Actor,
+            _ => throw new ArgumentOutOfRangeException(nameof(kind)),
+        });
+        var textBox = GetOtherContextTextBox(kind);
+        textBox.Visibility = Visibility.Visible;
+        textBox.Focus(FocusState.Programmatic);
+    }
+
+    private void OnTicketSelectorRowsSizeChanged(object sender, SizeChangedEventArgs e) =>
+        ApplyTicketSelectorLayout(e.NewSize.Width);
+
+    private void ApplyTicketSelectorLayout(double width)
+    {
+        ConfigureGrid(ClassificationRow, 3, 1);
+        Place(ClassSelector, 0, 0);
+        Place(ProblemSelector, 0, 1);
+        Place(TimingSelector, 0, 2);
+
+        ConfigureGrid(ReferenceContextRow, 4, 1);
+        Place(LocationSelectorContainer, 0, 0);
+        Place(MissionSelectorContainer, 0, 1);
+        Place(ItemSelectorContainer, 0, 2);
+        Place(EntitySelectorContainer, 0, 3);
+    }
+
+    private static void ConfigureGrid(Microsoft.UI.Xaml.Controls.Grid grid, int columns, int rows)
+    {
+        grid.ColumnDefinitions.Clear();
+        grid.RowDefinitions.Clear();
+        for (var index = 0; index < columns; index++)
+            grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+        for (var index = 0; index < rows; index++)
+            grid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
+    }
+
+    private static void Place(FrameworkElement element, int row, int column, int columnSpan = 1)
+    {
+        Microsoft.UI.Xaml.Controls.Grid.SetRow(element, row);
+        Microsoft.UI.Xaml.Controls.Grid.SetColumn(element, column);
+        Microsoft.UI.Xaml.Controls.Grid.SetColumnSpan(element, columnSpan);
     }
 
     private void PopulateDraftAttachments(AssistantSessionSnapshot snapshot)
     {
         DraftAttachmentList.Items.Clear();
-        foreach (var attachment in snapshot.Draft.Attachments)
+        foreach (var attachment in snapshot.TicketDraft.Attachments)
         {
             var row = new Microsoft.UI.Xaml.Controls.Grid { ColumnSpacing = 6 };
             row.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
@@ -672,7 +1186,7 @@ public sealed partial class AssistantPanel : UserControl
             });
             var remove = new Button
             {
-                Tag = attachment.Path,
+                Tag = attachment.ResourceReference,
                 Content = "Remove",
                 Padding = new Thickness(6, 2, 6, 2),
             };
@@ -694,8 +1208,6 @@ public sealed partial class AssistantPanel : UserControl
     private void OnNewChatClicked(object sender, RoutedEventArgs e) { state?.StartNewInvestigation(); NotifyChanged(); }
     private void OnFormClicked(object sender, RoutedEventArgs e) { state?.ToggleForm(); NotifyChanged(); }
     private void OnFullScreenClicked(object sender, RoutedEventArgs e) { state?.ToggleFullScreen(); NotifyChanged(); }
-    private void OnGameScopeClicked(object sender, RoutedEventArgs e) { state?.SelectIntakeScope(AssistantIntakeScope.Game); NotifyChanged(); }
-    private void OnGridScopeClicked(object sender, RoutedEventArgs e) { state?.SelectIntakeScope(AssistantIntakeScope.Grid); NotifyChanged(); }
 
     private void OnHistoryTaskClicked(object sender, RoutedEventArgs e)
     {
@@ -707,7 +1219,16 @@ public sealed partial class AssistantPanel : UserControl
     {
         if (state is null) return;
         SendButton.IsEnabled = false;
-        try { await state.PrepareSubmissionAsync(lifetimeToken); }
+        try
+        {
+            var snapshot = state.Snapshot();
+            canonicalRuntimeMatch = snapshot.TicketDraft.GameId is GameId gameId
+                ? canonicalCatalogRuntimeService?.Match(
+                    gameId, snapshot.TicketDraft.InstallationId, snapshot.TicketDraft.ProfileId)
+                : null;
+            if (PruneInvalidCanonicalSelections(snapshot)) return;
+            await state.PrepareSubmissionAsync(lifetimeToken);
+        }
         catch (OperationCanceledException) { }
         catch (Exception exception) when (exception is not OperationCanceledException) { }
         NotifyChanged();
@@ -716,7 +1237,16 @@ public sealed partial class AssistantPanel : UserControl
     private async void OnApproveAuthorizationClicked(object sender, RoutedEventArgs e)
     {
         if (state is null) return;
-        try { await state.ApproveSubmissionAsync(NotifyChanged, lifetimeToken); }
+        try
+        {
+            var snapshot = state.Snapshot();
+            canonicalRuntimeMatch = snapshot.TicketDraft.GameId is GameId gameId
+                ? canonicalCatalogRuntimeService?.Match(
+                    gameId, snapshot.TicketDraft.InstallationId, snapshot.TicketDraft.ProfileId)
+                : null;
+            if (PruneInvalidCanonicalSelections(snapshot)) return;
+            await state.ApproveSubmissionAsync(NotifyChanged, lifetimeToken);
+        }
         catch (OperationCanceledException) { }
         catch (Exception exception) when (exception is not OperationCanceledException) { }
         NotifyChanged();
@@ -743,38 +1273,51 @@ public sealed partial class AssistantPanel : UserControl
         NotifyChanged();
     }
 
-    private void OnGameSelectionChanged(object sender, SelectionChangedEventArgs e)
+    private void OnGameOptionChecked(object sender, RoutedEventArgs e)
     {
-        if (rendering || state is null) return;
-        state.SelectGame(GameSelector.SelectedItem is AssistantGameOption game ? game.Id : null);
+        if (rendering || state is null || sender is not RadioButton { Tag: AssistantGameOption option, IsChecked: true }) return;
+        GameSelector.Flyout?.Hide();
+        state.SelectGame(option.Id);
         NotifyChanged();
     }
 
-    private void OnInstallationSelectionChanged(object sender, SelectionChangedEventArgs e)
+    private void OnProfileOptionChecked(object sender, RoutedEventArgs e)
     {
-        if (rendering || state is null) return;
-        state.SelectInstallation((InstallationSelector.SelectedItem as AssistantInstallationOption)?.Id);
+        if (rendering || state is null || sender is not RadioButton { Tag: AssistantProfileOption option, IsChecked: true }) return;
+        ProfileSelector.Flyout?.Hide();
+        state.SelectProfile(option.Id);
         NotifyChanged();
     }
 
-    private void OnProfileSelectionChanged(object sender, SelectionChangedEventArgs e)
+    private void OnClassOptionChecked(object sender, RoutedEventArgs e)
     {
-        if (rendering || state is null) return;
-        state.SelectProfile((ProfileSelector.SelectedItem as AssistantProfileOption)?.Id);
+        if (rendering || state is null || sender is not RadioButton { Tag: AssistantClassOption option, IsChecked: true }) return;
+        ClassSelector.Flyout?.Hide();
+        state.SelectClass(option.Id);
         NotifyChanged();
     }
 
-    private void OnClassSelectionChanged(object sender, SelectionChangedEventArgs e)
+    private void OnProblemOptionChecked(object sender, RoutedEventArgs e)
     {
-        if (rendering || state is null) return;
-        state.SelectClass((ClassSelector.SelectedItem as AssistantClassOption)?.Id);
+        if (rendering || state is null || sender is not RadioButton { Tag: AssistantProblemOption option, IsChecked: true }) return;
+        ProblemSelector.Flyout?.Hide();
+        state.SelectProblem(new(option.Id, option.ClassId, option.DisplayName, TicketSelectionProvenance.ExplicitUserSelection));
         NotifyChanged();
     }
 
-    private void OnCapabilitySelectionChanged(object sender, SelectionChangedEventArgs e)
+    private void OnTimingOptionChecked(object sender, RoutedEventArgs e)
     {
-        if (rendering || state is null) return;
-        state.SelectCapability((CapabilitySelector.SelectedItem as AssistantGameplayCapabilityOption)?.Id);
+        if (rendering || state is null || sender is not RadioButton { Tag: AssistantTimingOption option, IsChecked: true }) return;
+        TimingSelector.Flyout?.Hide();
+        state.SelectTiming(new(option.Id, option.ClassId, option.DisplayName, TicketSelectionProvenance.ExplicitUserSelection));
+        NotifyChanged();
+    }
+
+    private void OnGoalOptionChecked(object sender, RoutedEventArgs e)
+    {
+        if (rendering || state is null || sender is not RadioButton { Tag: AssistantGoalOption option, IsChecked: true }) return;
+        GoalSelector.Flyout?.Hide();
+        state.SelectGoal(new(option.Id, option.DisplayName, TicketSelectionProvenance.ExplicitUserSelection));
         NotifyChanged();
     }
 
@@ -792,6 +1335,66 @@ public sealed partial class AssistantPanel : UserControl
         NotifyChanged();
     }
 
+    private void OnConfiguredToolChecked(object sender, RoutedEventArgs e)
+    {
+        if (rendering || state is null || sender is not CheckBox { Tag: UserToolConfigurationId id } checkbox) return;
+        state.SetConfiguredToolSelected(id, checkbox.IsChecked == true);
+        NotifyChanged();
+    }
+
+    private void OnReferenceContextChecked(object sender, RoutedEventArgs e)
+    {
+        if (rendering || state is null || sender is not CheckBox { Tag: TicketReferenceContext context } checkbox) return;
+        state.SetReferenceContextSelected(context, checkbox.IsChecked == true);
+        NotifyChanged();
+    }
+
+    private void OnOtherContextToggleChanged(object sender, RoutedEventArgs e)
+    {
+        if (rendering || state is null || sender is not CheckBox { Tag: TicketReferenceContextKind kind } checkbox) return;
+        var textBox = GetOtherContextTextBox(kind);
+        if (checkbox.IsChecked == true)
+        {
+            textBox.Visibility = Visibility.Visible;
+            textBox.Focus(FocusState.Programmatic);
+            return;
+        }
+        state.ReplaceOtherContext(kind, null);
+        NotifyChanged();
+    }
+
+    private void OnOtherContextLostFocus(object sender, RoutedEventArgs e) => CommitOtherContext(sender as TextBox);
+
+    private void OnOtherContextKeyDown(object sender, KeyRoutedEventArgs e)
+    {
+        if (e.Key != VirtualKey.Enter) return;
+        CommitOtherContext(sender as TextBox);
+        e.Handled = true;
+    }
+
+    private void CommitOtherContext(TextBox? textBox)
+    {
+        if (rendering || state is null || textBox?.Tag is not string kindText ||
+            !Enum.TryParse<TicketReferenceContextKind>(kindText, out var kind)) return;
+        if (!pendingOtherContexts.TryGetValue(kind, out var editingContext) ||
+            !IsCurrentReferenceEditingContext(editingContext)) return;
+        if (string.IsNullOrWhiteSpace(textBox.Text)) return;
+        state.AppendOtherContext(kind, textBox.Text);
+        textBox.Text = string.Empty;
+        textBox.Visibility = Visibility.Collapsed;
+        pendingOtherContexts.Remove(kind);
+        NotifyChanged();
+    }
+
+    private TextBox GetOtherContextTextBox(TicketReferenceContextKind kind) => kind switch
+    {
+        TicketReferenceContextKind.Location => LocationOtherText,
+        TicketReferenceContextKind.MissionOrQuest => MissionOtherText,
+        TicketReferenceContextKind.Item => ItemOtherText,
+        TicketReferenceContextKind.Entity => EntityOtherText,
+        _ => throw new ArgumentOutOfRangeException(nameof(kind)),
+    };
+
     private void OnComposerTextChanged(object sender, TextChangedEventArgs e)
     {
         if (rendering || state is null) return;
@@ -800,48 +1403,13 @@ public sealed partial class AssistantPanel : UserControl
             var text = ComposerText.Text;
             if (string.IsNullOrWhiteSpace(text)) return;
             state.StartNewInvestigation();
-            state.SetProblem(text);
+            state.SetComposerText(text);
             Refresh();
             ComposerText.Focus(FocusState.Programmatic);
             ComposerText.Select(ComposerText.Text.Length, 0);
             return;
         }
-        state.SetProblem(ComposerText.Text);
-        Refresh();
-    }
-
-    private void OnProblemTextChanged(object sender, TextChangedEventArgs e)
-    {
-        if (rendering || state is null) return;
-        state.SetProblem(ProblemText.Text);
-        Refresh();
-    }
-
-    private void OnExpectedBehaviorTextChanged(object sender, TextChangedEventArgs e)
-    {
-        if (rendering || state is null) return;
-        state.SetExpectedBehavior(ExpectedBehaviorText.Text);
-        Refresh();
-    }
-
-    private void OnReproductionLocationTextChanged(object sender, TextChangedEventArgs e)
-    {
-        if (rendering || state is null) return;
-        state.SetReproductionOrLocation(ReproductionLocationText.Text);
-        Refresh();
-    }
-
-    private void OnDesiredOutcomeTextChanged(object sender, TextChangedEventArgs e)
-    {
-        if (rendering || state is null) return;
-        state.SetDesiredOutcome(DesiredOutcomeText.Text);
-        Refresh();
-    }
-
-    private void OnAuthorizationScopeSelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-        if (rendering || state is null || AuthorizationScopeSelector.SelectedIndex != 0) return;
-        state.SetAuthorizationScope(AssistantAuthorizationScope.SelectedInstallationAndProfileReadOnly);
+        state.SetComposerText(ComposerText.Text);
         Refresh();
     }
 
@@ -918,14 +1486,14 @@ public sealed partial class AssistantPanel : UserControl
     {
         if (sourceAcquisitionRunning || nexusRecoverySourceDownloader is null) return;
         sourceAcquisitionRunning = true;
-        sourceAcquisitionStatusOverride = "Preparing exact Nexus source acquisitionâ€¦";
+        sourceAcquisitionStatusOverride = "Preparing exact Nexus source acquisition…";
         NotifyChanged();
         try
         {
             var progress = new Progress<NexusSourceAcquisitionProgress>(item =>
             {
                 sourceAcquisitionStatusOverride = $"Downloading source {Math.Min(item.Completed + 1, item.Total)} of {item.Total}: {item.CurrentArchiveLeaf}";
-                if (item.Completed >= item.Total) sourceAcquisitionStatusOverride = "Verifying completed source downloadsâ€¦";
+                if (item.Completed >= item.Total) sourceAcquisitionStatusOverride = "Verifying completed source downloads…";
                 NotifyChanged();
             });
             var result = await nexusRecoverySourceDownloader.AcquireAsync(repair, progress, lifetimeToken);
@@ -965,13 +1533,13 @@ public sealed partial class AssistantPanel : UserControl
         e.Handled = true;
     }
 
-    private static string FormatReadiness(AssistantDraftReadiness readiness) => readiness switch
+    private static string FormatReadiness(InvestigationTicketReadiness readiness) => readiness.Status switch
     {
-        AssistantDraftReadiness.Incomplete => "Draft incomplete",
-        AssistantDraftReadiness.ReadyForDeterministicCollection => "Ready for deterministic collection",
-        AssistantDraftReadiness.UnsupportedCoverage => "Unsupported coverage",
-        AssistantDraftReadiness.RuntimeUnavailable => "Runtime unavailable",
-        _ => readiness.ToString(),
+        InvestigationTicketReadinessStatus.Ready => "Ticket ready",
+        InvestigationTicketReadinessStatus.Invalid => "Ticket invalid",
+        _ when !readiness.MissingRequiredFields.IsDefaultOrEmpty =>
+            $"Required: {string.Join(", ", readiness.MissingRequiredFields)}",
+        _ => "Ticket incomplete",
     };
 
     private static string FormatTranscriptKind(AssistantTranscriptKind kind) => kind switch

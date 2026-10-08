@@ -32,6 +32,9 @@ internal static class AssistantClassCatalogLoader
         if (coverage is not ("Registered" or "Unsupported"))
             throw new InvalidDataException($"Class '{id}' has unsupported coverage '{coverage}'.");
         var selectionPolicy = root.GetProperty("selectionPolicy");
+        var supportedGameIds = root.GetProperty("supportedGames").EnumerateArray()
+            .Select(value => value.GetString() ?? throw new InvalidDataException($"Class '{id}' has a blank supported game identity."))
+            .ToImmutableArray();
         var mods = selectionPolicy.GetProperty("mods");
         var tools = selectionPolicy.GetProperty("tools");
         var allowedToolIds = tools.GetProperty("allowedToolIds").EnumerateArray()
@@ -45,7 +48,8 @@ internal static class AssistantClassCatalogLoader
                     .ToImmutableArray())).ToImmutableArray()
             : [];
         return new(id, displayName, iconId, coverage == "Registered", recipeVersion,
-            mods.GetProperty("minimum").GetInt32(), tools.GetProperty("minimum").GetInt32(), allowedToolIds, gameplayCapabilities);
+            mods.GetProperty("minimum").GetInt32(), tools.GetProperty("minimum").GetInt32(), allowedToolIds, gameplayCapabilities,
+            supportedGameIds);
     }
 
     private static string Required(JsonElement root, string property)

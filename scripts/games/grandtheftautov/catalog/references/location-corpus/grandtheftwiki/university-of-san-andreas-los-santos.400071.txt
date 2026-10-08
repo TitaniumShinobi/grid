@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox structure
+|name = University of San Andreas, Los Santos
+|image = 
+|caption = 
+|game_1 = TLAD
+|game_2 = TBoGT
+|game_3 = GTA V 
+|location = [[Richman in GTA V|Richman]], [[Los Santos in GTA V|Los Santos]], [[San Andreas in GTA V|San Andreas]]
+|established = 1919
+|use = University
+|height = 
+|designstyle = Unknown
+}}
+
+[[LEAD]]
+The '''University of San Andreas, Los Santos''' or '''ULSA''' is a university located in [[Richman in GTA V|Richman]], [[Los Santos in GTA V|Los Santos]], [[San Andreas in GTA V|Southern San Andreas]] that was established in [[1919]]. It is based on the real life [[wp:UCLA|University of California, Los Angeles]].
+
+[[CATEGORIES]]
+Education

@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = office
+|name           = Dorset Drive Office Building
+|sign           = 
+|image          = 
+<gallery>
+DorsetDriveOfficeBuilding-GTAOee.png|2025
+DorsetDriveOfficeBuilding-GTAVee.png|2013
+</gallery>
+|aka            = KnoWay Depot {{Small|(''GTA Online'')}}
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Dorset Drive]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|status         = active
+|use            = 
+|businesses     =
+*[[Pill-Pharm]]
+*[[KnoWay]] {{small|(''GTA Online'')}}
+|structure_type = [[:Category:Low-rise buildings|Low-rise building]]
+|architecture   = 
+|floors         = 5
+|accessible     = 
+*No {{small|(''GTA V'')}}
+*Yes {{small|(''GTA Online''; mission only)}}
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+The '''Dorset Drive Office Building''' is a five-story office building featured in {{VO}}, located in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:4:A Safehouse in the Hills]]
+*[[KnoWay Out]]
+**[[Negative Press]] – The player must break into the building and hack one of KnoWay's [[Vivanite (KnoWay)|Vivanites]] to cause mayhem around the city and damage KnoWay's reputation.
+
+{{clr}}
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Low-rise buildings

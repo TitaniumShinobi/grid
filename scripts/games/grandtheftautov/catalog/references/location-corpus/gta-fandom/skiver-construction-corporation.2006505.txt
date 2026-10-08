@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image     = Skiver-GTAV-Logo.png
+|name      = Skiver Construction Corporation
+|taglines  = 
+|type      = Construction company
+|games     = {{Games|V=y|O=y}}
+|locations = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Skiver Construction Corporation''' is a construction company operating in [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], and is featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Construction companies

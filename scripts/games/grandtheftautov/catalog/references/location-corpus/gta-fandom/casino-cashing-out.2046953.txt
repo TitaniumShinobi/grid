@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox mission
+|image        = CasinoCashingOut-GTAO-JobImage.png
+|game           = {{games|O=y}}
+|type           = DiamondCasino
+|for          = {{For|game=O|agatha}}
+|location     = 
+*[[The Diamond Casino & Resort]] <small>(start/end)</small>
+*[[La Fuente Blanca]]
+|tod          = 19:00
+|target       = [[Avery Duggan]] and his [[Duggan Crime Family|mercenaries]]
+|todo         = 
+*Go to the {{Color|v-hud-location|ranch.}}
+*Take out Avery's {{Color|v-hud-enemy|bodyguards.}}
+*Take out Avery's {{Color|v-hud-enemy|backup.}} <small>(if spotted by Avery's bodyguards or a camera detects a dead body or a player)</small>
+*Destroy Avery's {{Color|v-hud-enemy|evac helicopter.}}
+*Return to the {{Color|v-hud-location|Casino.}}
+|fail         = 
+*Out of lives.
+*Avery gets away.
+|reward       = 
+*JP +15
+*Cash, Chips and RP vary depending on difficulty and time spent.
+*[[Enus]] [[Paragon R (Armored)]] <small>(by completing all Casino Story Missions as Leader/Host, for the first time)</small>
+----
+<center>[[Awards]]</center>
+*"Cashing Out" award + $100,000 <small>(if completed for the first time)</small>
+*"Lucky Lucky" award + $50,000 <small>(by completing a single Casino Story Mission without dying)</small>
+*"Straight" award + $500,000 <small>(by completing all Casino Story Missions in order, for the first time)</small>
+*"Top Pair" award + $100,000 <small>(by completing all Casino Story Missions as Crew Member, for the first time)</small>
+*"Full House" award + $100,000 <small>(by completing all Casino Story Missions as Leader/Host, for the first time)</small>
+|unlockedby   = [[Casino - Bad Beat]]
+|protagonists = 1-4 [[GTA Online Protagonist|players]]
+}}
+
+[[LEAD]]
+'''Casino - Cashing Out''' is the [[Climax|final]] [[Casino Story Missions|Casino Story Mission]] featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update.
+
+[[CATEGORIES]]
+Casino mission strand
+Final missions
+Gameplay in GTA Online: The Diamond Casino & Resort
+Storyline missions

@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change   = 
+|type          = shop
+|name          = Aluminum & Vinyl Wholesales
+|image         = Aluminum&VinylWholesales-GTAVee.png
+|games         = {{Games|V=y|O=y}}
+|location      = [[Calais Avenue]], {{Location|v-littleseoul|2}}
+|opened        =
+|taglines      = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Aluminum & Vinyl Wholesales''' is a building materials supplier in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Construction companies

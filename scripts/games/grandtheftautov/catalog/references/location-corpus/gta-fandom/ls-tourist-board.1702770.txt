@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business
+|name      = LS Tourist Board
+|image     = LSTI_GTAVe_Logo.jpg
+|type      = Tourism Department
+|games     = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]
+|phone     = 328-555-0160
+|email     = info@LSTouristInfo.com
+}}
+
+[[LEAD]]
+The '''LS Tourist Board''', or '''LS Tourist Info''', is a tourism department in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Commercials
+Exclusive Enhanced Version Content in GTA V
+Exclusive Expanded & Enhanced Version Content in GTA V
+Public services

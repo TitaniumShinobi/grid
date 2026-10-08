@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = OccupationAvenue-GTAVee.jpg
+|caption = Occupation Avenue as seen from the east.
+|games = {{Games|V=y|O=y}}
+|start = [[Elgin Avenue]], [[Alta]]
+|end = [[Las Lagunas Boulevard]], [[Burton]]
+|map=
+<gallery>
+OccupationAvenue-GTAV-Map.png|Map
+OccupationAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Occupation Avenue''' is a two-way street in {{V}} and {{O}}, located in [[Alta]] and [[Burton]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+*[[Los Santos City Hall (HD Universe)|Los Santos City Hall]]
+*[[STD Contractors]] construction site <small>(corner of Alta Street)</small>
+
+[[SECTION:2:Businesses]]
+'''Alta'''
+*Motel <small>(corner of Alta Street)</small>
+*Shoe Repair
+
+'''Burton'''
+*Cash Advance Loans
+*[[Los Santos Office Supply Co.]]
+*[[Nail Bar & Spa]]
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

@@ -1,5 +1,6 @@
 using Grid.App.Composition;
 using Grid.App.Services;
+using Grid.Core.Startup;
 using Microsoft.UI.Xaml;
 
 namespace Grid.App;
@@ -18,7 +19,16 @@ public partial class App : Application
         var mode = GridLaunchOptions.Parse(args.Arguments, Environment.GetCommandLineArgs().Skip(1), isolatedTestMode);
         var root = mode == GridApplicationMode.Demo
             ? GridCompositionRoot.CreateDemo()
-            : GridCompositionRoot.CreateProduction();
+            : GridCompositionRoot.CreateProductionShell();
+        StartupInstrumentation.Begin(enabled: mode != GridApplicationMode.Demo, isDemoMode: mode == GridApplicationMode.Demo);
+        StartupInstrumentation.Current?.BeginStage(
+            StartupStageId.ShellMainWindow,
+            StartupWorkClassification.StartupRequired,
+            "Application launch and main window construction.");
+        StartupInstrumentation.Current?.BeginStage(
+            StartupStageId.ShellInitialization,
+            StartupWorkClassification.StartupRequired,
+            "Shell initialization envelope.");
         window = new MainWindow(root);
         window.Activate();
     }

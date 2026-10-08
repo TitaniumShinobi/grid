@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Cent Carpet
+|image = CentCarpet-GTAV-Rancho-exterior.png
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = Carpet retailer
+|owner = 
+|location = [[Carson Ave]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Cent Carpet''' is a carpet and flooring retailer located on [[Carson Ave]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company finances both commercial and residential customers and can be hired to fit or repair carpets and flooring.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

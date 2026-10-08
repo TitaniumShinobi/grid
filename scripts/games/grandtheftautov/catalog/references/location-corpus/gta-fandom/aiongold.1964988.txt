@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = jewelrystore
+|name          = Aiongold
+|sign          = 
+|image         = Aiongold-GTAIV-Logo.svg
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Heritage Way]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = 
+|taglines      = 
+|status        = 
+|phone         = 
+|website       = 
+|opentimes     = 
+|accessible    = No
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''Aiongold''' is a jewelry brand that appears in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Aiongold-GTAV-RockfordHills.png|[[Heritage Way]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[de:Aiongold]]
+[[es:Aiongold]]
+[[ru:Aiongold]]
+[[pl:Aiongold]]
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Jewelry store chains

@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|type      = restaurant
+|name      = Aguila Burrito
+|image     = AguilaBurrito-GTAV-Logo.png
+|caption   = '''Aguila Burrito''' logo.
+|games     = {{Games|V=y|O=y}}
+|location  = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Aguila Burrito''' is a [[Mexico|Mexican]]-style fast food joint in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Fast-food restaurants
+Mexican-themed restaurants

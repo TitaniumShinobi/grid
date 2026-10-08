@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Panache Laundering
+|image = PanacheLaundering-GTAV-Logo.png
+|caption =
+|taglines = 
+|type = laundromat
+|games = {{Games|V=y|O=y}}
+|locations = *[[Davis]], [[Los Santos County]]
+*[[Morningwood]], [[Los Santos (HD Universe)|Los Santos]]
+|status = active
+|accessible = No
+}}
+
+[[LEAD]]
+'''Panache Laundering''' is a chain of [[laundromats]] in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+*The [[Davis]] branch is based on {{URL|https://maps.app.goo.gl/f6iydRCb3A95hALr9|4299 Leimert Boulevard}} in {{WP|Leimert Park, Los Angeles}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+PanacheLaundering-GTAV.jpg|[[Capital Boulevard]] and [[Davis Avenue]], [[Davis]], [[Los Santos County]].
+PanacheLaundering-GTAVee-Morningwood.png|[[Boulevard Del Perro]] and [[North Rockford Drive]], [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+
+
+
+[[ru:Panache Laundering]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Laundromats

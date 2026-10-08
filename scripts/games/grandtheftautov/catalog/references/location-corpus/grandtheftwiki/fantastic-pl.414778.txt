@@ -1,0 +1,44 @@
+[[LEAD]]
+'''Fantastic St''' is a street in [[Mission Row]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to [[Adam's Apple Blvd]] and [[Vespucci Blvd]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Auto Repair]]
+| [[Mission Row]]
+| [[Adam's Apple Blvd]]
+| Auto parts
+|-
+| [[Electrical Supplies]]
+| [[Mission Row]]
+|
+| Electronics
+|-
+| [[Family Pharmacy]]
+| [[Mission Row]]
+| [[Vespucci Blvd]]
+| Pharmacy
+|-
+| [[Laundromat (GTA V)|Laundromat]]
+| [[Mission Row]]
+|
+| Laundromat
+|-
+| [[Los Santos Office Supply Co.]]
+| [[Mission Row]]
+|
+| Office supplies
+|-
+| [[Templar Hotel]]
+| [[Mission Row]]
+| [[Adam's Apple Blvd]]/[[Vespucci Blvd]]
+| Hotel
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

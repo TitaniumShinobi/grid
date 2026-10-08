@@ -1,0 +1,12 @@
+[[INFOBOX]]
+{{Infobox country
+|image_flag      = Flag of Cuba.svg
+|currency_ingame = *Cuban peso
+*Cuban convertible peso
+}}
+
+[[LEAD]]
+The '''Republic of Cuba''', simply known as '''Cuba''', is an island country in the [[Caribbean Sea]], situated south of [[State of Florida|Florida]], [[United States of America|USA]], east of [[Mexico]], north of [[Jamaica]] and west of [[Haiti]]. It is a single-party state governed by the Communist Party of Cuba (CPC).
+
+[[CATEGORIES]]
+North American countries

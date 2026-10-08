@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = giftshop
+|name           = Vinewood Mall
+|sign           = 
+|image          = VinewoodMall-GTAVee.png
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Power Street]] & [[Vinewood Boulevard]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|taglines       =
+|status         = active
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Vinewood Mall''' is a gift shop in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Gift stores

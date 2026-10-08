@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{infobox business|
+| image = LibertyTree-GTAIII-logo2.png
+| size = 350x350px
+| game_1 = GTA III
+| game_2 = GTA Advance
+| game_3 = GTA Liberty City Stories
+| game_4 = GTA IV
+| game_5 = TLAD
+| game_6 = TBOGT
+| game_7 = GTA Chinatown Wars
+| game_8 = GTA V
+| name = Liberty Tree
+| type = [[:Category:Newspapers|Newspaper]]
+| owner = [[Donald Love]]/[[Love Media]] (<small>[[3D Universe]]</small>)
+| location = [[Bedford Point]], [[Liberty City in GTA III Era|Liberty City]] (<small>[[3D Universe]]</small>)
+| affiliation = 
+| missions = [[L.C. Confidential]], [[The Passion of the Heist]], [[Karmageddon]] & [[False Idols]]
+| employee = '''[[3D Universe]]'''<br />[[Peter Armstrong]], [[Johnnie Blain]], [[Kristen Burns]], [[Chris Carruthers]], [[Howard Child]], [[Paul Civille]], [[Beverly Clamhopper]], [[Frenchie Cockmaven]], [[Julius Cohen]], [[E. Crume]], [[Kelly Sue DeConnick]], [[Ken Dellamonica]], [[Trudy Fink]], [[Anul Garbaskar]], [[Clint Glen]], [[Bob Jefferson]], [[Walt Jefferson]], [[Thomas Jones]], [[Walt Karl]], [[Irene Kelly]], [[Wayne Koff]], [[Jayne Kwiatowski]], [[Gregory Lau]], [[Bob Malkin]], [[Paul Marchiando]], [[William Mazyck]], [[Benjamin Mill]], [[Paul Mill]], [[Nicholas Morris]], [[Gaylord Morrisen]], [[Andre Perkins]], [[Frederic Pierce]], [[Mark Reed]], [[Brian Robinson]], [[Johnny Ryan]], [[Amy Salzburg]], [[Thomas Shaw]], [[Joel Stahlman]], [[Thomas Stewart]], [[Bill Tautz]], [[Adam Tedman]], [[Jeffrey Veselik]] & [[Stan Wayridge]]<br />'''[[HD Universe]]'''<br />[[Andrea Anderson]], [[TJ Barry]], [[Sean Brown]], [[Ian Garraway]], [[Tony Smith]], [[Michael Wayne]] & [[Mary Williamson]]
+}}
+
+[[LEAD]]
+The '''Liberty Tree''' is a fictional newspaper that serves [[Liberty City in GTA III Era|Liberty City]] in various [[Grand Theft Auto]] games. The Liberty Tree has been "Promoting Family values for over 50 years", and has existed for at least 50 years of service, with their slogan being "Yesterday's News Today". Each issue costs $1.00 in Liberty City, and can be read online as well. It is a play on [[:wp:The New York Times|The New York Times]].
+
+[[SECTION:3:GTA Liberty City Stories]]
+The map that accompanied the game had a map provided by the newspaper. Liberty Tree was featured prominently in [[Grand Theft Auto: Liberty City Stories]] through [[Ned Burner]], who pretends to be a preacher. He gives missions to [[protagonist]] [[Toni Cipriani]] from a confessional box in the cathedral in [[Bedford Point]], saying that they will help save him. The first [[L.C. Confidential|mission]] is to retrieve a briefcase from an FBI informant before he hands it to the [[Federal Bureau of Investigation|FBI]], and then delivering it to the Liberty Tree offices. Cipriani then [[The Passion of the Heist|steals another briefcase containing diamonds]], and then [[Karmageddon|creates chaos]] on [[Staunton Island]] whilst driving a [[Firetruck]]. The final [[False Idols|mission]] for Burner was killing three celebrities ([[Faith W.]], [[DB-P]] and [[Black Lightman]]) on their way to an interview with [[Liberty City Free Radio]]. Burner would report on each story: the first about an athlete on steroids, the stealing of diamonds, chaos on Staunton Island and the death of three celebrities. Burner would eventually be [[Stop the Press|killed]] by Cipriani on orders from [[Donald Love]] as Burner witnessed the [[Panlantic Land Grab|killing]] of [[Avery Carrington]].
+
+Unrelated to the plot, the User Guide for Liberty City Stories is in the form of a copy of the Liberty Tree.
+
+[[CATEGORIES]]
+Businesses in 3D Universe
+Businesses in GTA Advance
+Businesses in GTA Chinatown Wars
+Businesses in GTA III
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA V
+Businesses in HD Universe
+Businesses in Liberty City in 3D Universe
+Businesses in Liberty City in HD Universe
+Media
+Newspapers

@@ -1,0 +1,82 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = n
+|type          = realestate
+|name          = 
+|sign          = WolfsInternationalRealty-GTAV-Logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|VO=y}}
+|mentioned     = 
+|locations     =
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]] and [[Blaine County]], [[San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 555-0161
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Wolfs International Realty''' is a real estate company in {{HD}} of the {{S}}.
+
+[[SECTION:2:Properties]]
+{| class="article-table sortable" style="width:100%"
+|-
+!Property
+!City
+!Description
+|-
+|[[File:WolfsInternationalRealty-GTAV-Offices.png|thumb|250px|center]]
+|Los Santos
+|Office Premises for rent by '''Wolfs''' in [[Downtown Los Santos (HD Universe)|Downtown Los Santos]].
+|-
+|[[File:House-WolfsInternationalRealty-GTAV.png|thumb|250px|center]]
+|Los Santos
+|House for sale in [[Mirror Park]].
+|-
+|[[File:WolfsInternationalRealty-GTAIV-Houseforsale.png|thumb|250px|center]]{{Small|([[:File:WolfsInternationalRealty-GTAIV-HouseforsaleBuilding.png|building view]].)}}
+|Liberty City
+|Apartments for rent on [[Ersatz Row]], [[Suffolk]], [[Algonquin]]. The building is a duplicate of [[252 Seneca Avenue]] and [[552 Hickcock Street]].
+|-
+|}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Real estate companies

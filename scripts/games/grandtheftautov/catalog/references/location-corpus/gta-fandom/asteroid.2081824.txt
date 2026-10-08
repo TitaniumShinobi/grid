@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox location
+|image       = CayoPerico-GTAO-SunkenMeteorite.png
+|caption     = The Asteroid in {{O}}.
+|games       = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location    = [[Caribbean Sea]], [[Colombia]]
+}}
+
+[[LEAD]]
+The '''Asteroid''' is an underwater landmark appearing in {{O}} as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+Easter Eggs
+Locations in GTA Online in Cayo Perico
+Secrets

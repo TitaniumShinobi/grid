@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Bellend
+|image = 
+|type = electronics
+|games = {{games|IV=y|EFLC=y|V=y}}
+}}
+
+[[LEAD]]
+'''Bellend''' is an electronics company that appears in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA V
+Electronics companies

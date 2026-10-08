@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox organization
+|Name Change  = 
+|style        = 
+|type         = prisonauthority
+|name         = San Andreas State Prison Authority
+|logo         = SASPA GTA V.png
+|image        = 
+|caption      = 
+|aka          = SASPA
+|games        = {{games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Bolingbroke Penitentiary]]
+|org_type     = Prison authority
+|founded      = 
+|founder      = 
+|ceo          = 
+|employees    =
+|motto        = 
+|businesses   = 
+|affiliations = 
+|vehicles     = [[#Vehicles|Vehicles]]
+|weapons      = [[#Weapons|Weapons]]
+|status       = active
+}}
+
+[[LEAD]]
+The '''San Andreas State Prison Authority''' ('''SASPA''') is a prison authority that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Organizations in GTA Online
+Organizations in GTA V
+Prison authorities

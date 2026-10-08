@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=ZancudoBarranca-Street-GTAV.jpg
+|games={{Games|V=y|O=y}}
+|start=[[Tongva Drive]]
+|end=[[Mount Vinewood Drive]] and [[Zancudo Grande Valley]]
+|map=<gallery>
+ZancudoBarranca-GTAV-Map.png|Map
+ZancudoBarranca-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Zancudo Barranca''' is a two-way [[List of Street Names|road]] in [[Tongva Valley]], [[Los Santos County]] featured in {{V}} and {{O}}.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

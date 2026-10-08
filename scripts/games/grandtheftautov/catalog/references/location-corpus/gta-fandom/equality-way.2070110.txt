@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=EqualityWay-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Bay City Avenue]]
+|end=[[Del Perro Freeway]]
+|map=<gallery>
+EqualityWay-GTAV-Map.png|Map
+EqualityWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Equality Way''' is a [[Streets|street]] located in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}. From the south, it begins at [[Bay City Avenue]], passes under [[Red Desert Avenue]], heading northwest until it merges with the [[Del Perro Freeway]], next to the starting point of [[Magellan Avenue]]. It is basically an access street that connects the freeway to Del Perro.
+
+One of the 50 [[Stunt Jumps in GTA V|stunt jumps]] is performed on this road.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

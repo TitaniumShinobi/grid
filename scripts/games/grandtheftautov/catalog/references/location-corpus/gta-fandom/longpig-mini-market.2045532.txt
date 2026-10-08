@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = conveniencestore
+|name          = Longpig Mini Market
+|sign          = LongpigMinimarket-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 1-999-LONGPIG
+|lifeinvader   = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Longpig Mini Market''' is a convenience store chain appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|LongpigMinimarket-GTAVee-Strawberry.jpg|[[Alta Street]], [[Strawberry]].
+|LongpigMinimarket-GTAVee-Rancho.jpg|[[Jamestown Street]], [[Rancho]].
+}}
+
+[[ru:Longpig Mini Market]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Supermarket chains

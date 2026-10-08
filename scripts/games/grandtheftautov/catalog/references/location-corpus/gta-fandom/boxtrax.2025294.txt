@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = shipping
+|name          = Boxtrax
+|sign          = Boxtrax-GTAO-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpstunt}}|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Shipping company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = [[Freight Train]]
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Boxtrax''' is a shipping company that appears in {{O}} as part of the [[GTA Online: Cunning Stunts|Cunning Stunts]] update, and is due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Cunning Stunts
+Businesses in GTA VI
+Shipping companies

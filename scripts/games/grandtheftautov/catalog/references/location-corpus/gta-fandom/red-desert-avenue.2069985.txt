@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=RedDesertAve-GTAV-BacklotCityEntrance.jpg
+|caption=Red Desert Avenue heading to [[Backlot City]].
+|games={{Games|V=y|O=y}}
+|start=[[Del Perro Pier]]
+|end=[[North Rockford Drive]]
+|map=<gallery>
+RedDesertAvenue-GTAV-Map.png|Map
+RedDesertAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Red Desert Avenue''' is a two-way [[List of Street Names|street]] in [[Del Perro Beach]] and [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Backlot City]] <small>(west entrance, corner of North Rockford Drive)</small>
+*[[Del Perro City Hall]] <small>(corner of North Rockford Drive)</small>
+*[[Del Perro Police Station]] <small>(Del Perro Pier)</small>
+*[[Del Perro Plaza (restaurant)|Del Perro Plaza Restaurant]] <small>(corner of Bay City Avenue)</small>
+
+[[SECTION:2:Businesses]]
+'''Del Perro'''
+*[[Astro Theaters]] <small>(corner of Prosperity Street Promenade)</small>
+*[[Haute]] <small>(Del Perro Plaza, corner of Bay City Avenue)</small>
+*[[Les Bianco]] <small>(Del Perro Plaza)</small>
+*[[Pescado Rojo]] <small>(corner of Bay City Avenue)</small>
+*[[The Fish Net]] <small>(corner of Prosperity Street Promenade)</small>
+*[[The Grain of Truth]]
+*[[White Widow]] <small>(corner of Prosperity Street Promenade)</small>
+
+'''Del Perro Pier'''
+*[[Out of Towners]]
+*The Big Puffa Seafood
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

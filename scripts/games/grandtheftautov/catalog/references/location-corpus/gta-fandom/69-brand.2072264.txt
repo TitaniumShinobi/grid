@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = tobacco
+|name          = 69 Brand
+|image_label   = 
+|image         = 69Brand-GTA4-logo.png
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Broker]], [[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = 
+|taglines      = 
+|status        = active
+|accessible    = No
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''69 Brand''' is a tobacco company making cigarettes and [[Cuba]]n cigars appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+69Brand-GTAIV-BrokerStore.png|[[Hickcock Street]] and [[Saponi Avenue]], [[South Slopes]], [[Broker]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+69Brand_GTACW.png|[[Hickcock Street]] and [[Saponi Avenue]], [[South Slopes]], [[Broker]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Tobacco brands

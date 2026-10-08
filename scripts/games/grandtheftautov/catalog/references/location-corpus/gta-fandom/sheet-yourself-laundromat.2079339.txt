@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Sheet Yourself Laundromat
+|image     = SheetYourself-GTAV.jpg
+|caption   = '''Sheet Yourself Laundromat''' logo
+|taglines  = 
+|type      = Laundromat
+|games     = {{Games|V=y|O=y}}
+|locations = [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Sheet Yourself Laundromat''' is a [[Laundromats|laundromat]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Laundromats

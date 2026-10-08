@@ -1,0 +1,162 @@
+[[INFOBOX]]
+{{Infobox weapon
+|name         = Combat MG
+|image        = CombatMG-GTAVee.png
+|caption      = The '''Combat MG''' in {{VO}}.
+|aka          = 
+*M249 {{Small|(''GTA Vice City Stories'')}}
+*Advanced MG {{Small|(''TBoGT'')}}
+|slot         = 
+*[[Heavy Weapons|Heavy Weapon]] {{Small|(''GTA Vice City Stories'')}}
+*[[Assault Rifles|Assault Rifle]] {{Small|(''TBoGT'')}}
+*Machine Gun {{Small|(''GTA V'' and ''GTA Online'')}}
+|type         = 
+*[[Light Machine Guns|Light Machine Gun]] {{Small|(''GTA Vice City Stories'' & ''TBoGT'')}}
+*General-Purpose Machine Gun {{Small|(''GTA V'' & ''GTA Online'')}}
+|ammo         = 
+*100 rounds {{Small|(''GTA VCS'')}}
+*200 rounds {{Small|(''TBoGT'')}}
+*100 rounds {{Small|(''GTA V'' & ''GTA Online'')}} ''(200 w/ Extended Clip)''
+|games        = {{Games|VCS=y|TBOGT=y|V=y|O=y}}
+|manufacturer = 
+|sold in      = 
+*[[Armando Torres]] {{Small|(''TBoGT'')}}
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]] {{Small|(''GTA V'' & ''GTA Online'')}}
+*[[Agencies|Agency Armory]] {{Small|(''GTA Online'')}}
+*[[Gun Van]] {{Small|(''GTA Online'')}}
+|price        = [[Money|$]]7,550 {{Small|(''TBoGT'')}}<br>
+$3,700 {{Small|(''GTA V'')}}<br>
+*$3,330 {{Small|(Bronze medal discount)}}<br>
+*$3,145 {{Small|(Silver medal discount)}}<br>
+*$2,775 {{Small|(Gold medal discount)}}<br>
+$14,800 {{Small|(''GTA Online'')}}
+|unlock       = 
+*[[Going Deep]] {{Small|(''TBoGT'')}}
+*[[Blitz Play]] {{Small|(''GTA V'')}}
+*[[Rank]] 80 {{Small|(''GTA Online'')}}
+|related      = [[MG]]<br>[[M60]]
+|variants     = [[Combat MG Mk II]]
+|origin       = {{Flagicon|United States of America|Flag of the United States}} [[United States of America|U.S.A]] {{Small|(All games)}}
+|caliber      = 
+*5.56mm {{Small|(''TBoGT'')}}
+*7.62mm {{Small|(''GTA V'')}}
+|firemode     = Fully-Automatic
+|reticle      = 
+*Generic {{Small|(''GTA Vice City Stories'' & ''TBoGT'')}}
+*Rifle {{Small|(''GTA V'')}}
+|anim         = 
+*Gun Hip {{Small|(''TBoGT'', ''GTA V'', ''GTA Online''; Non-scoped)}}
+*Gun Large {{Small|(''GTA V'' & ''GTA Online''; Scoped)}}
+|flags        = 
+{{Expand|'''TBoGT'''|
+{{Flags|GUN}}<br>
+{{Flags|CAN_AIM}}<br>
+{{Flags|CAN_FREE_AIM}}<br>
+{{Flags|ANIM_RELOAD}}<br>
+{{Flags|ANIM_CROUCH_FIRE}}<br>
+{{Flags|2HANDED}}<br>
+}}
+----
+{{Expand|'''GTA V'''|
+{{Flags|CarriedInHand}}<br>
+{{Flags|Automatic}}<br>
+{{Flags|Gun}}<br>
+{{Flags|CanLockonOnFoot}}<br>
+{{Flags|CanLockonInVehicle}}<br>
+{{Flags|CanFreeAim}}<br>
+{{Flags|TwoHanded}}<br>
+{{Flags|AnimReload}}<br>
+{{Flags|AnimCrouchFire}}<br>
+{{Flags|UsableOnFoot}}<br>
+{{Flags|UsableInCover}}<br>
+{{Flags|AllowEarlyExitFromFireAnimAfterBulletFired}}<br>
+{{Flags|NoLeftHandIKWhenBlocked}}<br>
+{{Flags|AllowCloseQuarterKills}}<br>
+{{Flags|HasLowCoverReloads}}<br>
+{{Flags|HasLowCoverSwaps}}<br>
+{{Flags|LongWeapon}}<br>
+{{Flags|UseFPSAimIK}}<br>
+{{Flags|UseFPSSecondaryMotion}}<br>
+{{Flags|FPSOnlyExitFireAnimAfterRecoilEnds}}<br>
+}}
+|filename     = 
+*M249 AUTOMATIC WEAPON {{Small|(''TBoGT''; File note)}}
+*EPISODIC_14 {{Small|(''TBoGT''; File name)}}
+*COMBATMG {{Small|(''GTA V'')}}
+*CMBTMG {{Small|(''GTA V'', Stat name)}}
+|spawnmap     = 
+*No {{Small|(''TBoGT'')}}
+*Yes {{Small|(''GTA V'')}}
+|spawnped     = 
+<center>'''TBoGT'''</center>
+Law enforcement
+|spawnvehicle = 
+|firingfx     = 
+|reloadingfx  = 
+}}
+
+[[LEAD]]
+The '''Combat MG''', formerly known as the '''M249''' and '''Advanced MG''', is a [[Light Machine Gun|light machine gun]] featured in {{VCS}}, {{TBOGT}}, {{V}} and {{O}}.
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+In ''Grand Theft Auto: Vice City Stories'', the M249, as the name suggests, is based on the {{WP|M249 Squad Automatic Weapon|FN M249}}, specifically the model with an early flash hider and steel tubular stock. This rendition of the weapon is considered a Heavy Weapon.
+
+Unlike the [[M60]] from {{VC}} and {{LCS}}, the M249 has a unique firing and reloading animation, no longer copied from the assault rifle animation.
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+The weapon is a powerful, one shot kill gun that holds 100 rounds per magazine, and is capable of knocking down a person when hit (similar to the way shotguns do), but is slightly less effective than the [[Minigun]]. Victims shot with this weapon will release a higher amount of splattering blood than they do if shot by other machine guns. Since it is a heavy weapon, it can destroy unarmored vehicles quickly.
+
+[[SECTION:4:''GTA Vice City Stories'' Overview]]
+{{Weaponstats-3d
+|file_damage               = 
+|file_fire_rate            = 
+|file_range                = 
+|file_ammo                 = 100
+|file_reload_speed         = 
+|observed_damage           = 
+|observed_fire_rate        = 625 RPM
+|observed_ammo             = 100-round belt box
+|observed_reload_mechanism = Charging handle
+|observed_reload_speed     = 
+}}
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+*The M249 is a weapon of choice for several [[Rampages]] and is featured during the mission [[Farewell To Arms]].
+*At the [[InterGlobal Films]] studio in the first studio directly right of the entrance up the ramp on the catwalk.
+*Spawns at every safehouse after shooting all 99 [[Red Balloons|red balloons]].
+
+[[SECTION:3:''The Ballad of Gay Tony'']]
+*Given to the player in the mission [[Going Deep]] for [[Ray Bulgarin]].
+*Available from [[Armando Torres|Armado's]] [[Cavalcade|gun van]] after completing the aforementioned mission for [[Money|$]]7,550, plus $400 for each additional magazine.
+*Spawns in the player's safehouse after completing 20 [[Drug Wars]] and Going Deep.
+*Used by some of Ray Bulgarin's goons in the missions [[In the Crosshairs]] and [[Departure Time]].
+*The law enforcement use the Advanced MG to fire at the player from [[Police Maverick (HD Universe)|Police Mavericks]]/[[Annihilator]]s during [[Wanted Level in GTA IV|wanted levels]], instead of the [[Carbine Rifle]] as used in ''[[Grand Theft Auto IV]]'' and ''[[The Lost and Damned]]''. The player needs to disarm them to make them dropping the weapon. However, setting the helicopter's engines on fire will make the officers fall out unharmed, and they can be killed on foot from there.
+
+[[SECTION:3:''Grand Theft Auto V'']]
+*Available at [[Ammu-Nation (HD Universe)|Ammu-Nation]] for [[Money|$]]3,700 after completing [[Blitz Play]].
+*The Combat MG is equipped by the protagonists in the following [[heists]]:
+**[[Franklin Clinton]] in [[The Merryweather Heist]] with extended clip (offshore approach only) and [[The Big Score (GTA V)|The Big Score]] (obvious approach only).
+**[[Michael De Santa]] in [[Blitz Play]] along with both grip and scope attachments.
+**[[Trevor Philips]] in [[The Paleto Score]].
+**[[Michael De Santa]] in [[The Paleto Score]].
+**Additionally, [[Trevor Philips]] uses it in the ambush on the FIB and Merryweather during [[The Third Way]].
+*Can be found at the [[Wrecks|crash site]] of the [[Merryweather Security]] [[Cargo Plane]] after the mission [[Minor Turbulence]], in the [[Alamo Sea]].
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+*Available at Ammu-Nation after reaching [[Rank]] 80. The Combat MG has an initial price of $14,800. It can also be purchased at any rank if the player owns a Weapon Workshop or Agency Armory.
+*Can be found in [[Survival]] as early as Wave 4 and will be kept for the rest of the session.
+*Can be found in crates in [[Gang Attacks]].
+*Almost always found in the [[Mile High Club]] and [[Sandy Shores Airfield]] gang hideouts.
+
+[[CATEGORIES]]
+Automatic weapons
+DLC Weapons in GTA IV
+Light machine guns
+Machine guns class
+Weapons in GTA Online
+Weapons in GTA V
+Weapons in GTA Vice City Stories
+Weapons in TBOGT

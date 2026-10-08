@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+|Name = Crowex
+|image = Crowex-Logo.svg
+|caption = Crowex logo
+|bawsaq = 
+|type = Watch manufacturing
+|taglines = 
+*''"When you're too rich to care what time it is''"
+*''"Strap on time"''
+|games = {{Games|SA=y|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+}}
+
+[[LEAD]]
+'''Crowex''' is a luxury watch manufacturer featured in both the {{3D}} and {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA VI
+Companies

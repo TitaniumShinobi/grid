@@ -1,0 +1,61 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = The Lowdown 91.1
+|logo         = TheLowdown91.1-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Grapeseed]],  [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = ''The groove, the soul, the R&B. You dig?''
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:Soul radio stations|Soul]]
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = [[Caymen Kelly]] <small>(voice imaging)</small>
+|artwork      = 
+|cast         = 
+|frequency    = 91.1 FM
+|host         = [[Mama G|Pam Grier]]
+|product      = 
+|radio_tracks = 
+*12 <small>(original version)</small>
+*20 <small>([[Grand Theft Auto V: Enhanced Edition|enhanced version]])</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+'''The Lowdown 91.1''' is a [[Radio Stations in GTA V|radio station]] featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that plays classic soul, funk, jazz and disco.
+
+[[SECTION:3:Radio station]]
+*[[Michael's Mansion]]
+*[[Vinewood Casino]]
+*[[Premium Deluxe Motorsport]]
+*[[Del Perro Pier]]
+*[[Pot-Heads Seafood Restaurant]]
+*[[Herr Kutz Barber]]
+*[[Hair on Hawick]]
+*[[The Fish Net]] ([[Hawick]] branch)
+*[[La Vaca Loca]]
+*One of the trailers in [[Backlot City]]
+*[[Clappers]]
+
+[[CATEGORIES]]
+Dynamic mix radio stations
+Funk radio stations
+Jazz radio stations
+Media in GTA Online
+Media in GTA V
+Rhythm and blues radio stations
+Soul radio stations

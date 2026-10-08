@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = MC Club Business
+|name = {{HUDIcons|game=O|productionmeth}} Methamphetamine Lab
+|image = MethamphetamineLab-GTAOe-InProduction.png
+|type = Methamphetamine production
+|owner = {{GTAOP}} [[Motorcycle Clubs]] <small>(determinant)</small>
+|price = [[Money|$]]910,000 - $1,729,000<br/><small>(Plus optional upgrades)</small>
+|games = {{Games|O=y}}
+|condition = Active/Suspended<br/><small>(Player's choice)</small>
+|location = 
+*[[Grand Senora Desert]]
+*[[Paleto Bay]]
+*[[Terminal]]
+*[[El Burro Heights]]
+|accessible = Yes
+|employees = Multiple unnamed staff
+|products = [[Methamphetamine]]
+|related = [[Cocaine Lockup]]<br/>[[Counterfeit Cash Factory]]<br/>[[Document Forgery Office]]<br/>[[Weed Farm]]
+|map = MethamphetamineLab-GTAOe-InteriorMap.png
+|map_caption = Common interior layout
+|unlokced by [[The Open Road/Business Set Ups]]
+}}
+
+[[LEAD]]
+A '''Methamphetamine Lab''' is an ownable business in {{O}} introduced in the [[GTA Online: Bikers|Bikers]] update.
+
+[[SECTION:3:Locations]]
+{{Main|The Open Road}}
+{| class="wikitable"
+!Location
+!Price
+|-
+|[[File:MethLab-GTAO-Senora_910000_Map.png|thumb|175px|center|[[Grand Senora Desert]]]]
+|[[File:OpenRoad-GTAO-MethLab-GrandSenoraDesert.png|thumb|175px|center|$910,000]]
+|-
+|[[File:MethLab-GTAO-Paleto_1024800_Map.png|thumb|175px|center|[[Paleto Bay]]]]
+|[[File:OpenRoad-GTAO-MethLab-PaletoBay.png|thumb|175px|center|$1,024,800]]
+|-
+|[[File:MethLab-GTAO-Terminal_1365000_Map.png|thumb|175px|center|[[Terminal]]]]
+|[[File:OpenRoad-GTAO-MethLab-Terminal.png|thumb|175px|center|$1,365,000]]
+|-
+|[[File:MethLab-GTAO-ElBurro_1729000_Map.png|thumb|175px|center|[[El Burro Heights]]]]
+|[[File:OpenRoad-GTAO-MethLab-ElBurroHeights.png|thumb|175px|center|$1,729,000]]
+|}
+
+[[CATEGORIES]]
+Properties in GTA Online

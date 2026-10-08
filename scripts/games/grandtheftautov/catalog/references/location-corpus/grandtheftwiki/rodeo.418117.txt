@@ -1,0 +1,40 @@
+[[LEAD]]
+'''Rodeo''' is a district to the west of the city center of [[Los Santos in GTA III Era|Los Santos]], [[San Andreas in GTA III Era|San Andreas]], and is not controlled by any of the four gangs based in Los Santos. North of Rodeo are the districts of [[Vinewood in GTA III Era|Vinewood]] and [[Richman, Los Santos|Richman]], while to the south is [[Santa Maria Beach]]. West of Rodeo is [[Flint County]], while to the east are [[Marina, Los Santos|Marina]] and [[Verona Beach]]. It is based on the real-life Rodeo Drive in Beverly Hills. Rodeo is the most expensive shopping district in San Andreas.
+
+[[SECTION:2:Places/stores]]
+* [[1 Hour Photo|1 hour Photo]]
+* [[Alexanders' Toys]]
+* [[Credit and Commerce Bank of San Andreas]]
+* [[Brother Mings']]
+* [[Didier Sachs]]
+* [[Eris]]
+* FMA
+* [[Grotti]] dealership
+* [[Kevin Clone]]
+* L.S. Eyeworks
+* Liquor-Gifts
+* Mint
+* Optometrist
+* [[PayDay Loans]]
+* [[ProLaps]]
+* [[Ranch]]
+* [[Tableau]]
+* [[Victim]]
+* [[Vinyl Countdown]]
+* [[World of Coq]]
+
+[[SECTION:2:Neighbouring areas]]
+{{Location
+|Centre    = Rodeo
+|North     = [[Richman, Los Santos|Richman]]
+|Northeast = [[Vinewood in GTA III Era|Vinewood]]
+|East      = [[Market, Los Santos|Market]]
+|Southeast = [[Verona Beach]]
+|South     = [[Santa Maria Beach]]
+|Southwest = [[Los Santos Inlet]]
+|West      = [[Flint Intersection]]
+|Northwest = [[Beacon Hill]]
+}}
+
+[[CATEGORIES]]
+Areas in Los Santos

@@ -1,0 +1,56 @@
+[[INFOBOX]]
+{{Infobox business
+|style         = 
+|type          = cosmetics
+|name          = Max Renda
+|sign          = 
+|image_label   = 
+|image         = MaxRenda-GTAV-Logo.svg
+|caption       = The '''Max Renda''' logo in {{VO}}.
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+{{Small|(see [[#Locations|Locations]])}}
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = {{BAWSAQ/Slider}} '''MAX'''
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+|opentimes     = 
+|accessible    = Yes {{Small|(''GTA V'', [[#Prominent Appearances in Gameplay|mission only]])}}
+}}
+
+[[LEAD]]
+'''Max Renda''' is a cosmetics company appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+{{Gallery
+|MaxRenda-GTAIV-StarJunction.png|[[Manganese Street]], [[Star Junction]], [[Algonquin]].
+|MaxRendaBuilding-GTAIV.jpg|[[Mohanet Avenue]], [[BOABO]], [[Broker]].
+}}
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+{{Gallery
+|MaxRenda-GTAV-DaylightFront.png|[[Carcer Way]], [[Little Portola]] and [[Rockford Drive]], [[Rockford Hills]]. {{Small|([[:File:MaxRenda-GTAV-NightFront.png|night view]])}}
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Cosmetics companies

@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|type           = clinic
+|name           = Wenger Institute
+|sign           = Wenger_Institute_GTAV_Logo.png
+|image          = WengerInstitute-GTAVee-CarcerWayEntrance.png
+|caption        = The '''Wenger Institute''' as seen from the [[Carcer Way]] entrance. <small>([[:file:WengerInstitute-GTAVee-NightView.png|Night view]])</small>
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Carcer Way]], [[San Vitus Boulevard]] & [[Abe Milton Parkway]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|use            = 
+|status         = active
+|map            = Wenger_Institute_GTAV_Map.jpg.png
+|map_caption    = Location on the map (yellow).
+}}
+
+[[LEAD]]
+The '''Wenger Institute''' is a building located in [[Burton]], [[Los Santos (HD Universe)|Los Santos]] in {{VO}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mid-rise buildings

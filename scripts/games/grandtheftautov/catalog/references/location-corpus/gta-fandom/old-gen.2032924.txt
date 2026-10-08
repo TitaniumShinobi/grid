@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = Old Gen
+|sign          = OldGen-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = OG
+|games         = {{games|V=y|O=y|VI=y}}
+|mentioned     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Old Gen''', also known as '''OG''', is a fashion brand that appears in {{V}}, {{O}}, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Fashion brands

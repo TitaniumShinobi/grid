@@ -103,6 +103,7 @@ public sealed class GridApplicationSession : IDisposable
         SynchronizeAuditAndLaunchContexts();
         var context = Context.Synchronize();
         Assistant.SetContext(context);
+        Assistant.PrefillIntakeFromWorkspaceSelection(Shell.CurrentSelection);
         return context;
     }
 

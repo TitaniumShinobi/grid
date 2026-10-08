@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox business
+|image      = Vinewood Bar & Grill Logo.png
+|type       = restaurant 
+|games      = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations  = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*{{WP|Jakarta}}, {{WP|Indonesia}}
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Themed restaurant chain
+|status     = active
+|accessible = No
+}}
+
+[[LEAD]]
+'''Vinewood Bar & Grill''' is a [[Vinewood (HD Universe)|Vinewood]]-themed restaurant chain featured in the {{HD}} of the {{S}}.
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+In ''[[Grand Theft Auto IV]]'', there is an establishment on [[Columbus Avenue]] in [[The Triangle]] district of [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]]. Judging by its [[wp:Googie architecture|Googie-styled]] and space-like logo and mascot of the restaurant, its interior decoration may be entirely based on [[1950]]s/[[1960|60s]]-styled furniture. Given the subject matter of its theme, the restaurant is presumably a parody of [[wp:Planet Hollywood|Planet Hollywood]].
+
+In ''[[The Lost and Damned]]'', [[Johnny Klebitz]] can bring friends here, though they will usually complain. In ''[[The Ballad of Gay Tony]]'', [[Luis Fernando Lopez|Luis Lopez]] is able to take [[Armando Torres]] and [[Henrique Bardas]] to the restaurant as a friend activity.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+VinewoodBar&Grill-GTAIV-TheTriangle.png|[[Columbus Avenue]], between [[Iron Street|Iron]] and [[Hematite Street|Hematite]] streets, [[The Triangle]], [[Algonquin]].
+VinewoodBar&Grill-GTACW-exterior.png|Vinewood Bar & Grill in ''Chinatown Wars''.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small" widths="270px">
+VinewoodBarGrill-GTAV.png|[[Hawick Avenue]] and [[San Vitus Boulevard]], [[Burton]], [[Rockford Hills]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Casual restaurant chains
+Friend Activities in Episodes from Liberty City

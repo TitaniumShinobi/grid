@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = MARINA
+|name = Alamo Sea Marina
+|image  = Alamo_Sea_Marina_GTAV_Sign.jpg
+|caption = The Alamo Sea Marina sign.
+|games = {{Games|V=y|O=y}}
+|location = [[Alamo Sea]], [[Sandy Shores]], [[Blaine County]]
+}}
+
+[[LEAD]]
+The '''Alamo Sea Marina''' is a derelict facility in the [[Alamo Sea]], [[Sandy Shores]], [[Blaine County]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Marinas

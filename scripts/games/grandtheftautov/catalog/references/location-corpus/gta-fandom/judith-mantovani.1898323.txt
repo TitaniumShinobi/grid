@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|type = Fashion retailer
+|name = Judith Mantovani
+|altnames =
+|taglines = 
+|reference = 
+|location = [[Portola Drive]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|condition = Active 
+|products = 
+|bawsaq = 
+|image = [[File:JudithMantovani-GTAV-Logos-Texture.png|thumb]]
+|darklogo = y
+|caption = The logos
+|image_size = 300
+|games = {{Games|V=y|O=y}}
+|map = 
+}}
+
+[[LEAD]]
+'''Judith Mantovani''' is a fashion store in [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Location]]
+<gallery position="center" spacing="small" widths="270px">
+JudithMantovani-GTAV-DaylightFront.png|[[Portola Drive]], [[Rockford Hills]] ([[:File:JudithMantovani-GTAV-NightFront.png|night view]]).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

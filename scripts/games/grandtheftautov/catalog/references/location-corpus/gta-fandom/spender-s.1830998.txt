@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = departmentstore
+|name          = Spender's
+|sign          = Spenders-GTAIV-Logo.svg
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|O=y}}
+|mentioned     = 
+|locations     = [[The Triangle]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]]
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|taglines      = 
+*''Feeling flush?''
+*''Return to Spender's''
+*''For things you thought you didn't need''
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Spender's''' is a department store in ''[[Grand Theft Auto IV]]'', ''[[Grand Theft Auto: Chinatown Wars]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+It is located between [[Garnet Street]] and [[Hematite Street]], [[Burlesque]] and [[Denver-Exeter Avenue]], situated east of the [[Rotterdam Tower]], south of [[Triangle Tower]] and west of the [[Triangle Building]], located in [[The Triangle]].
+
+The store consists of two buildings; a larger ten story building, and a smaller eight story building, both conjoined to produce a large retail store, evidenced by signage in the windows. Large red signs appear on each corner of the building reading "Spenders". Awnings along [[Burlesque]] mark entrances to the building, although it is inaccessible.
+
+<gallery position="center" spacing="small" widths="270px">
+Spenders-GTAIV.png|'''Spender's''' store in [[The Triangle]], [[Algonquin]], in ''GTA IV''. (<small>[[:File:Spenders-GTAIV-Map.png|Map]]</small>)
+</gallery>
+
+[[CATEGORIES]]
+Buildings in GTA Chinatown Wars in Algonquin
+Buildings in GTA IV in Algonquin
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Mid-rise buildings
+Neoclassical buildings

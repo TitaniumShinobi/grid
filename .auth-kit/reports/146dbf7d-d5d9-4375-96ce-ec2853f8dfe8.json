@@ -1,0 +1,45 @@
+{
+  "verification": "FAIL",
+  "durability_verification": "FAIL",
+  "error": "AUTHORITY_EVIDENCE_TRUST_REQUIRED",
+  "capabilities": [],
+  "blockerHandoffs": [
+    {
+      "wizard": "AUTH",
+      "version": "1",
+      "catalogVersion": "1.5",
+      "target": {
+        "productId": null,
+        "repository": "C:\\Users\\woods\\Documents\\GitHub\\grid\\"
+      },
+      "requestedOutcome": "Establish the applicable AUTH capability and verify its required evidence.",
+      "capabilityId": null,
+      "verification_profile": "FULL_AUTHORITY_CONFORMANCE",
+      "profile_scope": "REQUIRED_CURRENT_PROFILE",
+      "mdboLineage": {
+        "status": "NOT_ESTABLISHED",
+        "reason": "This report does not establish MDBO evaluator lineage; no L1 is assigned."
+      },
+      "operator": "INDETERMINATE",
+      "applicability": "INDETERMINATE",
+      "implementation": "INDETERMINATE",
+      "verification": "INDETERMINATE",
+      "reasonCode": "AUTHORITY_EVIDENCE_TRUST_REQUIRED",
+      "observedEvidence": {
+        "references": [],
+        "checks": []
+      },
+      "expectedEvidence": [],
+      "capabilityGap": "AUTHORITY_EVIDENCE_TRUST_REQUIRED",
+      "actAvailability": "UNAVAILABLE",
+      "authorizationRequired": false,
+      "authorizationState": "NOT_ESTABLISHED",
+      "verificationRequired": true,
+      "nextOwner": "INDETERMINATE",
+      "reproductionCommand": null,
+      "verificationCommand": null,
+      "resumeCondition": "The declared blocker is resolved and a fresh report verifies the capability without regression.",
+      "instruction": "Resolve the blocker with the named owner; rerun verification before resuming."
+    }
+  ]
+}

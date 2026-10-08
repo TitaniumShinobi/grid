@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Vespucci Beach Skatepark
+|type           = park
+|image          = VespucciSkatepark-GTAOe.png
+|caption        = Overview of the park.
+|location       = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games          = {{Games|V=y|O=y}}
+|file_name      = <code>vb_34_skate</code>
+|coords         = -1374.072,-1396.384,3.80122
+|map            = VespucciSkatepark-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Vespucci Beach Skatepark''', also known as '''Graffiti Beach''',{{Ref|name = graffitibeach|type = socialclub|image = GraffitiBeach-GTAV-RGSCMapLegend.png|ref  = Named on the ''GTA V'' Progress Checklist on [[Rockstar Games Social Club]].}} is a recreational [[Skate Parks|skate park]] appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Skate parks
+Urban parks

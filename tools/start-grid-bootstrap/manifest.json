@@ -1,0 +1,52 @@
+{
+  "package": "start-grid-bootstrap",
+  "version": "1.0.0",
+  "status": "PORTABLE_INTEGRATION_SURFACE",
+  "authority": "START Contract 1A",
+  "runtime_dependency_on_start": false,
+  "daemon_or_service": false,
+  "contents": {
+    "contracts": [
+      "contracts/startup-event-v1.json",
+      "contracts/startup-receipt-v1.json",
+      "contracts/grid-startup-stages-v1.json"
+    ],
+    "schemas": [
+      "schemas/startup-event-v1.schema.json",
+      "schemas/startup-receipt-v1.schema.json"
+    ],
+    "runtime": [
+      "runtime/canonical-json.mjs",
+      "runtime/startup-events.mjs",
+      "runtime/startup-observer.mjs"
+    ],
+    "validation": [
+      "validation/validate-startup-receipt.mjs"
+    ],
+    "tests": [
+      "tests/package-surface.test.mjs"
+    ],
+    "integration": [
+      "integration/grid-startup-adapter.example.mjs"
+    ],
+    "documentation": [
+      "VERSION",
+      "README.md"
+    ]
+  },
+  "file_sha256": {
+    "README.md": "80fee50503852a343de27caaec51268d34de03474f5ff0f6c0c7f52ad78c0648",
+    "VERSION": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03",
+    "contracts/grid-startup-stages-v1.json": "ecc8213478fc64b71cbedd254f91491c8b5377ccc83514eaa21fc1ef5e1c2a34",
+    "contracts/startup-event-v1.json": "062c84a41980f16d743ad9c2d5404c23dc682a9038ad219a01fe095652e11b46",
+    "contracts/startup-receipt-v1.json": "04dc0077d06d6aee9089642835c3ec7669acacbcf7963c30f9c41af85e290265",
+    "integration/grid-startup-adapter.example.mjs": "45f71c0b87d927f1a4d01d4abe415f19bb3e7988f535714a9cdc30a326a624e6",
+    "runtime/canonical-json.mjs": "744190dfca0275ec5d0b21b1be831066836717ec7ba5e6e95b212f8b9d719b3d",
+    "runtime/startup-events.mjs": "13deb2dab4dde0a87a3fb6626b2e5ef3fe2f32429da1a602e0a8e8d609b7afcd",
+    "runtime/startup-observer.mjs": "f33c980e48b67fe94e1826b836ab9dd35c9b2828e5c678e7fde0cc959799c2d8",
+    "schemas/startup-event-v1.schema.json": "4ee1e9b22da57d3011c9145ddbe3177a1a26576936d851ab0409b3797ff80294",
+    "schemas/startup-receipt-v1.schema.json": "2bf7d6fb69b8f72e74d412ca01e820612e20aa61d417ae423e4955d475949468",
+    "tests/package-surface.test.mjs": "b8c5eba841f511355b289ebab536ecc1cab7000e4fe028dfc9780497bf1f8ec1",
+    "validation/validate-startup-receipt.mjs": "ac9461bf564ac0c4779b1257cf8d3a7d1390a9373f52306b933b084ff5da9643"
+  }
+}

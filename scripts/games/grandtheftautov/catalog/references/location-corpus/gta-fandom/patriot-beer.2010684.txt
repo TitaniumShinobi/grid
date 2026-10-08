@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = Patriot Beer
+|sign          = PatriotBeer-GTAIV-Logo.png
+|aka           = Patriot
+|games         = {{Games|VC={{DE}}|IV=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = {{WP|Beer}}
+|founded       = [[1776]]
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = 
+*''Since 1776''
+*''Never Refuse A Patriot''
+*''From The World's Greatest Country''
+*''Drink US''
+|status        = active
+|email         = 
+|website       = 
+}}
+
+[[LEAD]]
+'''Patriot Beer''', often shortened to '''Patriot''', is both a brand of beer and brewery in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI

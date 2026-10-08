@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Jackal Racing
+|image     = JackalRacing-GTAO-Logo.png
+|type      = Racing equipment company
+|games     = {{O}}
+|locations = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Jackal Racing''' is a racing equipment company featured in {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Clothing in GTA Online
+Fashion brands
+Sports equipment manufacturers

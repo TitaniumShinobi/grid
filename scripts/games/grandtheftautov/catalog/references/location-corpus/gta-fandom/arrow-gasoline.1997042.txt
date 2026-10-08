@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = gasoline
+|name          = Arrow Gasoline
+|sign          = Arrow-GTAO-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpsmuggler}}|VI=y}}
+|mentioned     = 
+|locations     = [[State of Leonida]]
+([[#Locations|See more]])
+|business_type = Gas station chain
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Arrow Gasoline''' is a gasoline company appearing in {{O}} as part of the [[GTA Online: Smuggler's Run|Smuggler's Run]] update, and due to appear in {{VI}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto VI'']]
+{{Gallery
+|ArrowGasoline-GTAVI-Trailer1.png|An '''Arrow''' gas station in [[Leonard County]], as seen in the [[Grand Theft Auto VI/Trailers#Trailer 1|first trailer]].
+|ArrowGasoline-GTAVI-Trailer2.png|An '''Arrow''' gas station sign in [[Port Gellhorn]], as seen in the [[Grand Theft Auto VI/Trailers#Trailer 2|second trailer]].
+|ArrowGasoline-GTAVI-OfficialScreenshot-BrianHeder04.png|An '''Arrow''' gas station sign in the [[Leonida Keys]], as seen in an [[Grand Theft Auto VI/Screenshots|official screenshot]] of [[Brian Heder]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online: Smuggler's Run
+Businesses in GTA VI
+Gas station chains
+Petroleum companies

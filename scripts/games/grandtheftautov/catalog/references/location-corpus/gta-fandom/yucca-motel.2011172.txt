@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = n
+|name = Yucca Motel
+|image = YuccaSign-GTAV.jpeg
+|caption = The lone sign
+|type = Motel
+|games = {{Games|V=y|O=y}}
+|location = [[Grand Senora Desert]], [[San Andreas]]
+|map = Yucca_Motel_GTAVe_Map_Location.jpg
+|map caption = Location.
+|condition = Defunct
+|accessible = No
+|hotel = y
+|defunctbiz = y
+}}
+
+[[LEAD]]
+The '''Yucca Motel''' is a defunct motel site in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Motels

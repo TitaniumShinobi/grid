@@ -1,0 +1,12 @@
+[[INFOBOX]]
+{{Infobox country
+|image_flag      = Flag of China.svg
+|common_name     = China
+|currency_ingame = Chinese yuan
+}}
+
+[[LEAD]]
+The '''People's Republic of China''' (Chinese: '''中华人民共和国'''), more commonly known simply as '''China''' (Traditional Chinese: '''中國''', Simplified Chinese: '''中国'''), is a country located in east Asia. It is the third-largest country in the world and the second most populous. It is bordered by [[Mongolia]] to the north, [[Russia]] and [[North Korea]] to the north-east, [[Vietnam]], Laos, Myanmar, [[India]], Bhutan and [[Nepal]] to the south, [[Pakistan]] to the south-west, and [[Afghanistan]], Tajikistan, Kyrgyzstan and [[Kazakhstan]] to the west.
+
+[[CATEGORIES]]
+Asian countries

@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Derriere
+|image = Derriere-Logo.png
+|type = Clothing Company
+|games = ''[[Grand Theft Auto IV]]<br>[[The Lost and Damned]]<br>[[The Ballad of Gay Tony]]<br>[[Grand Theft Auto: Chinatown Wars]]<br>[[Grand Theft Auto V]]<br> [[Grand Theft Auto Online]]''
+|locations = [[Liberty City (HD Universe)|Liberty City]]<br>[[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Derriere''' is a high fashion clothing company featured in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+Derriere-GTAIV-Schottler.jpg|[[Cassidy Street]], [[Schottler]], [[Broker]]
+Derriere-GTAIV-MiddleParkEast.jpg|[[Bismarck Avenue]], [[Middle Park East]], [[Algonquin]]
+Derriere-GTAIV-Lancaster.png|[[Bismarck Avenue]] and [[Topaz Street]], [[Lancaster]], [[Algonquin]]
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'']]
+<gallery position="center" spacing="small" widths="270px">
+Derriere-GTAVe-ProsperityStreetPromenade.png|[[Prosperity Street Promenade]], [[Del Perro]]. Based on the now-moved Victoria's Secret location on the Third Street Promenade in Santa Monica, California.
+Derriere-GTAV-Exterior.jpg|The Prosperity Street Promenade location in the original version of ''[[Grand Theft Auto V]]''.
+Derriere-korean-plaza-GTAV.jpg|[[Korean Plaza]], [[Calais Avenue]], [[Little Seoul]]
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

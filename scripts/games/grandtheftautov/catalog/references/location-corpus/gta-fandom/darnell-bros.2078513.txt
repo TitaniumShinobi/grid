@@ -1,0 +1,53 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|safehouse      = y
+|type           = factory
+|name           = Darnell Bros. Garment Factory
+|sign           = 
+|image          = <gallery>
+DarnellBrosGarmentFactory-GTAOe.png|2024
+Darnell Bros. GTAV.png|2013
+</gallery>
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Popular Street]], [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = Yes
+|opentimes      = 
+|owner          = 
+*[[Lester Crest]] <small>(formerly)</small>
+*{{GTAOP}}
+|price          = 
+*$2,350,000 <small>(''GTA Online'')</small>
+|occupants      = 
+*[[Paige Harris]] <small>(formerly)</small>
+*[[Jodi Marshall]]
+|businesses     = 
+|employees      = 
+*[[Guadaloupe Romero]]
+|file_name      = 
+|status         = 
+|unlockedby     = 
+}}
+
+[[LEAD]]
+'''Darnell Bros.''' is a garment factory owned by [[Lester Crest]], who uses the factory as a front for his various [[Heists|heist operations]] in {{V}} and {{O}}, that appears as a purchasable property in the [[GTA Online: Agents of Sabotage|Agents of Sabotage]] update.
+
+[[SECTION:3:Interior]]
+<gallery position="center" spacing="small" widths="250px">
+Darnell Bros. Staircase GTAV.png|A staircase runs up from the entrance to the shop floor.
+Darnell Bros. Lester's Office GTAV.png|Lester's office.
+Darnell Bros. Storage Room GTAV.png|Storage room.
+Darnell Bros. Shop Floor GTAV.png|Shop floor.
+Darnell Bros. Women at Work GTAV.png|Women at work on sewing machines.
+</gallery>
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Factory buildings
+Properties in GTA Online

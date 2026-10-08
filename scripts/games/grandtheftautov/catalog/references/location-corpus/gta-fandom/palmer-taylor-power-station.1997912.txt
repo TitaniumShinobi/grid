@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|type           = powerstation
+|name           = Palmer-Taylor Power Station
+|sign           = 
+|image          = PalmerTaylorPowerStation-GTAV.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = {{Location|v-sanchianski|3}}
+|status         = active
+|pscanner       = PoliceScanner-GTAV-Neighborhood-PalmerTaylorPowerStation.ogg
+|pscannernotes  = 
+|owner          = [[Los Santos Department of Green Power]]
+|structure_type = 
+|architecture   = 
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = 
+<gallery>
+PalmerTaylorPowerStation-IngameGPS-GTAV-Map.png|Palmer-Taylor Power Station
+PalmerTaylorPowerStation-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption    = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+The '''Palmer-Taylor Power Station''' is a power generation and transmission facility featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Power stations
+Structure zones
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

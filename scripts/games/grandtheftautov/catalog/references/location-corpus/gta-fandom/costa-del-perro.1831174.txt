@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Costa Del Perro
+|image = CostaDelPerro-GTAV.png
+|type = alcohol
+|games = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Costa Del Perro''' is a brand of wine featured in {{V}} and {{O}}. It is possible that the wine is based on a Californian brand, as the ''Del Perro'' part could be a reference to [[Del Perro|the area of Los Santos of the same name]].
+
+{{Clr}}
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Online
+Businesses in GTA V

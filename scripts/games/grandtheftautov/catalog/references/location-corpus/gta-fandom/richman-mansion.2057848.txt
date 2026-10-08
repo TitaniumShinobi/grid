@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|type           = mansion
+|name           = Richman Mansion
+|sign           = 
+|image          = RichmanMansion-GTAV.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[West Eclipse Boulevard]], [[Richman (HD Universe)|Richman]], [[Los Santos (HD Universe)|Los Santos]]
+|occupants      = [[Ben Brooks]] <small>(Formerly)</small> 
+|floors         = 2
+|rooms          = 
+|architecture   = {{WP|Tudor Revival architecture|Tudor Revival}}
+|garagecap      = 
+|accessible     = 
+|canplayerstore = 
+|unlockedby     = 
+}}
+
+[[LEAD]]
+The '''Richman Mansion''' is a large mansion in [[Richman (HD Universe)|Richman]], [[Los Santos (HD Universe)|Los Santos]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It was owned by crypto investor and billionaire [[Ben Brooks]] in [[2021]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Easter Eggs
+Mansions
+Tudor Revival buildings

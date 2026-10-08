@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox structure
+|image       =
+<gallery>
+EastMirrorDrive-GTAVee-North.jpg|North
+EastMirrorDrive-GTAVee-South.jpg|South
+</gallery>
+|caption     =
+|games       = {{Games|V=y|O=y}}
+|start       = [[Mirror Park Boulevard]]
+|end         = Mirror Park Boulevard
+|map         = <gallery>
+EastMirrorDrive-GTAV-Map.png|Map
+EastMirrorDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''East Mirror Drive''' is a street in [[Mirror Park]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Eclipse Pharmacy]] <small>(corner of Mirror Park Boulevard)</small>
+*[[Horny's Burgers]] <small>(corner of Mirror Park Boulevard)</small>
+*[[New Do Barber Shop]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

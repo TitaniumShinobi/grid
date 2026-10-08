@@ -1,0 +1,74 @@
+[[INFOBOX]]
+{{Infobox_location
+|name  = Hawick
+|image = Hawick-GTAV.png
+|caption = Overview of Hawick.
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|location = [[Vinewood (HD Universe)|Vinewood]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Hawick.ogg
+|map           = <gallery>
+Hawick-IngameGPS-GTAV-Map.png|Hawick
+Hawick-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Hawick''' is a neighborhood located in [[Vinewood (HD Universe)|Vinewood]], [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}. It is bordered by [[Rockford Plaza]], [[Burton]] and [[West Vinewood]] to the west, [[Alta]] to the south, [[East Vinewood]] to the east, and the rest of Vinewood to the north.
+
+[[SECTION:2:Roads and Streets]]
+*[[Alta Place]]
+*[[Bridge Street]]
+*[[Hawick Avenue]]
+*[[Laguna Place]]
+*[[Las Lagunas Boulevard]]
+*[[Meteor Street]]
+*[[Power Street]]
+*[[Spanish Avenue]]
+*[[Strawberry Avenue]]
+
+[[SECTION:2:Places of Interest]]
+*[[1162 Power Street]]
+*[[2143 Las Lagunas Boulevard]]
+*[[Badger Building]]
+*[[Callisto Apartments]]
+*[[Epsilon Program in HD Universe|Epsilon Center]]
+*[[Galileo House]]
+*[[The Pink Cage Motel]]
+*[[Vinewood Gardens Hotel]]
+
+[[SECTION:2:Businesses]]
+*[[Acting Up]] (Melrose Tattoo)
+*[[Auto Exotic]]
+*[[Alphabetz]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Crucial Fix]]
+*[[Epsilon Program (HD Universe)|Epsilon Society Vinewood]]
+*[[The Fish Net|The Fish Net Restaurant]] (The Foundry on Melrose)
+*[[Flickers Comics]] (Golden Apple Comics)
+*[[Gear Clothing]] (Yonada Inc.)
+*[[Hair on Hawick]]
+*[[Harsh Souls]]
+*[[Hawaiian Snow]] (Burton & Channel Islands Surfboards)
+*[[High Time]]
+*[[Ink Inc.]]
+*[[Lârss & Elbö]] ({{WP|Urban Outfitters}})
+*[[Los Santos Jeans]]
+*[[Lettuce Be]]
+*[[Mattress of Fact]] (Melrose Carpet)
+*[[Oeuvre Gallery]]
+*[[Period Rags]] (American Vintage)
+*[[Periscope]] (James Perse/The Cove)
+*[[Pop's Pills]]
+*[[Vinewood Music]]
+*[[Vinewood Plaza]] (Sunset Plaza)
+*[[Vinewood Sports LS]]
+*[[White Widow]]
+*[[Yeti]] (Loyal Army clothing)
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

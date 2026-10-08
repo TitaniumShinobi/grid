@@ -1,0 +1,259 @@
+[[LEAD]]
+'''San Andreas Ave''' is an avenue in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The avenue starts in [[Vespucci Canals]] before heading eastwards into [[Little Seoul]], [[Downtown Los Santos in GTA V|Downtown]], [[Pillbox Hill]], [[Textile City]] and [[La Mesa]] before ending in [[Murrieta Heights]]. The avenue has connections to [[Alta St]], [[Bay City Ave]], [[Calais Ave]], [[Decker St]], the [[Del Perro Freeway]], [[Elgin Ave]], [[El Rancho Blvd]], [[Ginger St]], [[Las Lagunas Blvd]], [[Low Power St]], [[Movie Star Way]], [[Palomino Ave]], [[Peaceful St]], [[Prosperity St]], [[Sinner St]], [[South Rockford Dr]], [[Strawberry Ave]] and [[Supply St]].
+
+[[SECTION:2:Businesses]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Arcadius Business Center]]
+| [[Pillbox Hill]]
+| [[Alta St]]/[[Las Lagunas Blvd]]
+| Business center
+|-
+| [[BAWSAQ]]
+| [[Little Seoul]]
+| [[Palomino Ave]]
+| Finance
+|-
+| [[Bean Machine]]
+| [[Little Seoul]]
+| [[Movie Star Way]]
+| Food and drink
+|-
+| data-sort-value="Betsy O'Neil Pavilion, The"| [[The Betsy O'Neil Pavilion]]
+| [[Little Seoul]]
+| [[Ginger St]]/[[Palomino Ave]]
+| Performing arts
+|-
+| [[Big Dan Vision Optometry]]
+| [[Little Seoul]]
+| [[Ginger St]]
+| Healthcare
+|-
+| [[Burger Shot]]
+| [[Vespucci Canals]]
+| [[Prosperity St]]
+| Food and drink
+|-
+| [[Celltowa]]
+| [[Vespucci Canals]]/[[Little Seoul]]
+| [[South Rockford Dr]]
+| Electronics
+|-
+| [[Cool Beans]]
+| [[Vespucci Canals]]/[[Del Perro]]
+| [[Bay City Ave]]
+| Food and drink
+|-
+| [[Crucial Fix Coffee House]]
+| [[Pillbox Hill]]
+| [[Strawberry Ave]]
+| Food and drink
+|-
+| [[Daily Globe]]
+| [[Pillbox Hill]] 
+| [[Las Lagunas Blvd]]
+| Newspaper
+|-
+| [[Digital Den]]
+| [[Textile City]]
+| [[Sinner St]]
+| Electronics
+|-
+| [[Family Pharmacy]]
+| [[Little Seoul]]
+|
+| Pharmacy
+|-
+| [[FIB Building]]
+| [[Pillbox Hill]]
+| [[Elgin Ave]]
+| National security
+|-
+| [[Fire Art School]] & [[Fine Art Store]]
+| [[Little Seoul]]
+|
+| School and store
+|-
+| [[Gem's Jewelry]]
+| [[Textile City]]
+|
+| Jewellers
+|-
+| [[Ground & Pound]]
+| [[Pillbox Hill]]
+| [[Power St]]
+| Food and drink
+|-
+| [[Hair and Make-up]]
+| [[Textile City]]
+|
+| Beauty salon
+|-
+| [[Hit 'n' Run]]
+| [[Little Seoul]]
+| [[Calais Ave]]
+| Food and drink
+|-
+| [[Hot Rocks]]
+| [[Textile City]]
+|
+| Jewellers
+|-
+| [[Kayton Towers]]
+| [[Little Seoul]]
+| [[Movie Star Way]]
+| Residential
+|-
+| [[Little Seoul Church]]
+| [[Little Seoul]]
+| [[Ginger St]]
+| Church
+|-
+| [[Little Seoul Station]]
+| [[Little Seoul]]
+|
+| Metro station
+|-
+| [[Lombank]]
+| [[Little Seoul]]
+| [[Ginger St]]
+| Bank
+|-
+| [[Los Santos Office Supply Co.]]
+| [[Textile City]]
+|
+| Office supplies
+|-
+| [[Los Santos Theatre]]
+| [[Textile City]]
+| [[Strawberry Ave]]
+| Theatre
+|-
+| [[L.S. Gentstyle]]
+| [[Textile City]]
+|
+| Clothing
+|-
+| [[Maison Ricard]]
+| [[Pillbox Hill]]
+| [[Elgin Ave]]
+| 
+|-
+| [[Maze Bank]]
+| [[Pillbox Hill]]
+| [[Power St]]
+| Bank
+|-
+| [[Medical Equipment]]
+| [[Textile City]]
+|
+| Medical equipment
+|-
+| [[Nutsaki Restaurant]]
+| [[Del Perro]]
+|
+| Food and drink
+|-
+| [[Paper Clips]]
+| [[Pillbox Hill]]
+|
+| Office supplies
+|-
+| [[Phones and Things]]
+| [[Textile City]]
+|
+| Phones sales
+|-
+| [[Ranch]] Jeans
+| [[Vespucci Canals]]
+|
+| Clothing
+|-
+| [[Robert Dazzler International Jewelry Exchange]]
+| [[Textile City]]
+| [[Strawberry Ave]]
+| Jewellers
+|-
+| [[Robs Liquor]]
+| [[Vespucci Canals]]
+|
+| Convenience store
+|-
+| [[Schlongberg Sachs]]
+| [[Pillbox Hill]]
+| [[Alta St]]/[[Peaceful St]]
+| Bank
+|-
+| [[S.Ho Korean Noodle House]]
+| [[Little Seoul]]
+| [[Movie Star Way]]
+| Food and drink
+|-
+| [[Slaughter, Slaughter & Slaughter LLP]]
+| [[Pillbox Hill]]
+| [[Peaceful St]] 
+| Bank
+|-
+| [[Snr. Buns]]
+| [[Little Seoul]]
+| [[Calais Ave]]
+| Food and drink
+|-
+| [[Sound Sanctuary, Ind.]]
+| [[Textile City]]
+|
+| Electricals
+|-
+| [[Swallow]]
+| [[Vespucci Canals]]
+|
+| Clothing
+|-
+| [[Taco Bomb]]
+| [[Little Seoul]]
+| [[Palomino Ave]]
+| Food and drink
+|-
+| [[Total Bankers]]
+| [[Little Seoul]]
+|
+| Bank
+|-
+| [[Union Depository]]
+| [[Pillbox Hill]]
+| [[Low Power St]]/[[Power St]]/[[Alta St]]
+| Bank
+|-
+| [[Universal Uniform]]
+| [[Vespucci Canals]]/[[Del Perro]]
+| 
+| Clothing
+|-
+| [[Valdez Theater]]
+| [[Little Seoul]]
+| [[Ginger St]]
+| Theatre
+|-
+| [[Vespucci Police Station]]
+| [[Vespucci Canals]]
+| [[South Rockford Dr]]
+| Law enforcement
+|-
+| [[Wholesale Mart]]
+| [[Textile City]]
+| [[Sinner St]]
+| Supermarket
+|-
+| [[Wiwang]]
+| [[Little Seoul]]
+| [[Decker St]]
+| Electronics
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox_location
+|type     = restaurant
+|image    = SumacRestauran-GTAV-Logo.jpg
+|caption  = The restaurant's logo.
+|games    = {{Games|V=y|O=y}}
+|location = [[Bay City Avenue]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Sumac Restaurant''' is a restaurant in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located next to [[Pescado Rojo]] and [[Perrera Beach Motel]] on [[Bay City Avenue]] in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]. 
+
+Based on Ivy at the Shore located on {{WP|Ocean Avenue (Santa Monica)|Ocean Avenue, Santa Monica}}, the restaurant is distinguishable by its blinds, staircase and veranda.
+
+{{clr}}
+
+[[CATEGORIES]]
+Bistros
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Casual restaurants

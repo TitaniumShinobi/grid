@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = FantasticPlace-GTAVee.jpg
+|caption = The street as seen from [[Adam's Apple Boulevard]].
+|games = {{Games|V=y|O=y}}
+|start = [[Vespucci Boulevard]]
+|end = [[Adam's Apple Boulevard]]
+|map = <gallery>
+FantasticPlace-GTAV-Map.png|Map
+FantasticPlace-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Fantastic Place''' is a short [[List of Street Names|street]] in [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Templar Hotel]] <small>(southern building)</small>
+
+[[SECTION:2:Businesses]]
+*Auto Repair <small>(corner of Adam's Apple Boulevard)</small>
+*Electrical Supplies
+*[[Family Pharmacy]]
+*Laundromat
+*[[Los Santos Office Supply Co.]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

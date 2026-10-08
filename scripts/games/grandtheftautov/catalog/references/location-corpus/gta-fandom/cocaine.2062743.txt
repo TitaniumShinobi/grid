@@ -1,0 +1,62 @@
+[[INFOBOX]]
+{{Infobox Product
+|type=Illicit Drug
+|name=Cocaine
+|altnames = Coke, crack, girl, lady, juju, charlie, caine, snow.
+|image = Cocaine-GTAOe-Cutting.png
+|caption = Cutting cocaine in ''Grand Theft Auto Online''
+|games = ''[[Grand Theft Auto: Vice City]]<br/>[[Grand Theft Auto: San Andreas]]<br/>[[Grand Theft Auto: Vice City Stories]]<br/>[[Grand Theft Auto IV]]<br/>[[Grand Theft Auto: Episodes from Liberty City]]<br/>[[Grand Theft Auto: Chinatown Wars]]<br/>[[Grand Theft Auto V]]<br/>[[Grand Theft Auto Online]]''
+|available =
+|price = Variable
+|consumable = No
+|benefit =
+|real =
+|logo =
+}}
+
+[[LEAD]]
+'''Cocaine''' (also known as '''coke''', '''crack''', '''girl''', '''lady''', '''charlie''', '''caine''', and''' snow''') is a [[Drugs|drug]] processed from the Erythroxylum coca plant featured in many ''GTA'' games.
+
+[[SECTION:2:''Grand Theft Auto: Vice City'']]
+In ''Grand Theft Auto: Vice City'', [[Tommy Vercetti]] is sent to [[Vice City (3D Universe)|Vice City]] on behalf of the [[Forelli Crime Family]] to oversee a [[In The Beginning...|large cocaine deal]] with the [[Vance Crime Family]], only to have the deal broken up by a [[Ricardo Diaz|third party]] resulting in the death of [[Victor Vance]]. After narrowly escaping the botched deal Tommy must enter the Vice City underworld to regain [[Sonny Forelli|Sonny]]'s money.
+
+Upon completion of [[Rub Out]], a broken [[Hidden Packages in GTA Vice City|Hidden Package]] will appear on the bar counter at the [[Ocean View Hotel (3D Universe)|Ocean View Hotel]] safehouse, revealing the package contains an unknown white powder (possibly cocaine).
+
+After the events of the game, Tommy has a large cocaine [[Vercetti Gang|empire]] that lasts at least six years.
+
+[[SECTION:3:Gallery]]
+<gallery position="center" spacing="small" widths="250px">
+Cocaine-GTAVC-MarcosBistro.png|Bags of cocaine seen inside [[Sonny Forelli]]'s office at [[Marco's Bistro]].
+OceanViewHotel-GTAVC-brokenhiddenpackage.jpg|A broken hidden package.
+</gallery>
+
+[[SECTION:2:''Grand Theft Auto: Vice City Stories'']]
+Cocaine use and distribution seems to be more obvious in ''GTA Vice City Stories'' than in ''GTA Vice City''. The [[Protagonist|protagonist]], [[Vic Vance]], can operate [[Drug Running]] and [[Smuggling]] [[Empire Building|Empires]]. In the mission [[Purple Haze]], Vic takes a [[Pony|van]] full of cocaine to a drug deal. While he waits, a [[Linerunner]] crashes into him and knocks him out cold while he lays in a pile of cocaine, resulting in him being coked-up for the remainder of the mission.
+
+[[Jerry Martinez]], [[Lance Vance]], [[Ricardo Diaz]], and others are seen snorting cocaine.
+
+[[SECTION:3:Gallery]]
+<gallery position="center" spacing="small" widths="250px">
+Cocaine-GTAVCS-DrugRunningInterior.png|Cocaine in the [[Drug Running]] business.
+Cocaine-GTAVCS-DrugRunningVan.png|Cocaine in the back of a van doing a [[Drug Running|Drug]] run.
+</gallery>
+
+[[SECTION:2:''Grand Theft Auto IV'' and ''Episodes From Liberty City'']]
+There are four batches of coke which feature significantly in ''Grand Theft Auto IV'' and [[Grand Theft Auto: Episodes from Liberty City|its episodes]].
+
+[[SECTION:3:Batch 1]]
+The first batch is introduced during the mission [[The Snow Storm]], in which protagonist [[Niko Bellic]] must retrieve it from some [[Spanish Lords|thieves]] who have stolen it from drug lord [[Elizabeta Torres]], whom had collaborated with fellow drug dealer [[Little Jacob]], also Niko's friend, to find a buyer for it. When Niko succeeds in recovering the lost coke, Little Jacob asks Niko to meet him at [[Chase Point]] in [[South Bohan]], as he suspects something strange is happening. When Niko arrives, he is shocked to discover that his girlfriend; [[Karen Daniels|Michelle]], is actually working for the [[United Liberty Paper]], a shady government agency and had been assigned to watch Niko all along. She tells both Niko and Jacob that her employers need Niko's help, and allows both of them to escape arrest, but tells them that Elizabeta will not be so fortunate.
+
+[[SECTION:3:Batch 2]]
+Elizabeta hires [[Lost MC]] member [[Johnny Klebitz]], along with the [[Uptown Riders]] members [[Malc]] and [[DeSean]], to [[Heavy Toll|steal a van full of coke from the Angels Of Death]]. Later, they try to sell this coke to a buyer. The [[Shifting Weight|buyer attempts to steal the coke]], causing both parties to draw their weapons. The cops show up, confirming Elizabeta's suspicion that she was under investigation, and Malc, Johnny and DeSean make a break for it. When they escape, Malc takes the coke and Elizabeta tells Johnny to stay away from her as the heat increases. Elizabeta is then subsequently arrested.
+
+[[SECTION:3:Batches 3 & 4]]
+There are two more batches of coke involved in ''GTA IV'', but they do not concern Elizabeta. This includes the coke seen in [[Catch the Wave]], batch 3, when Niko and [[Phil Bell]] steal it from some Russians, after it was imported on speedboats from [[Vice City (HD Universe)|Vice City]]. The fourth and final coke batch is seen in the mission [[Liquidize the Assets]], where [[Jon Gravelli]] asks Niko Bellic to destroy some vans containing the coke that the Russians had brought in.
+
+[[SECTION:3:Gallery]]
+<gallery position="center" spacing="small" widths="250px">
+Cigla_kokaina.jpg|A cocaine brick from "[[The Snow Storm]]" in ''GTA IV''.
+</gallery>
+
+[[CATEGORIES]]
+Substances

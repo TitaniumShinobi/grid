@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Diaphragm Clutch System
+|sign          = DiaphragmClutchSystem-GTAO-Logo.png
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpstunt}}}}
+|mentioned     = 
+|business_type = Clutch system manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|status        = 
+|phone         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Diaphragm Clutch System''' is a clutch system manufacturer appearing in {{O}} as part of the [[GTA Online: Cunning Stunts|Cunning Stunts]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Cunning Stunts
+Vehicle parts manufacturers

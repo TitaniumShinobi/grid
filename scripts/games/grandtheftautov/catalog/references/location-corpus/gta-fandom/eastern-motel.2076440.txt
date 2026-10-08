@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Eastern Motel
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[U.S. Route 68]], [[Harmony]], [[Blaine County]]
+|image = EasternMotelSign-GTAV.jpg
+|caption = Eastern Motel sign
+|type = Motel
+}}
+
+[[LEAD]]
+The '''Eastern Motel''' is a motel in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Motels

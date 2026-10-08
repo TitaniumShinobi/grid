@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = lake
+|name           = Mount Gordo Lake
+|image          = CorrieLake-GTAVe.png
+|caption        = Mount Gordo Lake in {{V}}.
+|aka            = Corrie Lake
+|games          = {{Games|V=y|O=y}}
+|location       = [[Mount Gordo]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map            = CorrieLake-GTAV-Map.png
+|map_caption    = Location on the map (red).
+|file_name      = 
+*<code>cs2_10_land11</code> <small>(area)</small>
+*<code>cs2_11_corrierock</code> <small>(lake rocks)</small>
+|coords         = 2542.827,6138.416,157.1804
+}}
+
+[[LEAD]]
+The '''Mount Gordo Lake''', also known by internal filenames as '''Corrie Lake''', is an unmarked lake that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Lakes
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

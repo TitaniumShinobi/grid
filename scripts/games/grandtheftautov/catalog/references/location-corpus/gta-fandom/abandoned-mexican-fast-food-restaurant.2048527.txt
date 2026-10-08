@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Abandoned Mexican Fast Food Restaurant
+|type           = restaurant
+|status         = defunct
+|image          = AbandonedMexicanFastFoodRestaurant-GTAVe-View1.png
+|caption        = Overview of the building.
+|games          = {{games|V=y|O=y}}
+|location       = [[Sandy Shores]], [[Blaine County]]
+|structure_type = Mexican fast-food restaurant
+|condition      = Abandoned
+|accessible     = No
+|file_name      = <code>cs4_03_fastfood.ydr</code>
+|map            = StreetDealer-GTAOe-Location26-AlamoSea-Map.png
+|map_caption    = Marked on the map by a Street Dealer icon in ''GTA Online''.
+}}
+
+[[LEAD]]
+An '''abandoned Mexican fast food restaurant''' is a building in {{VO}}, located in [[Sandy Shores]], [[Blaine County]].
+
+[[CATEGORIES]]
+Abandoned buildings
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Fast-food restaurants
+Mexican-themed restaurants

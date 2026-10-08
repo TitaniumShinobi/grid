@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Richards Majestic Productions
+|image = RichardsMajesticProductions-GTAV-Logo.png
+|lcn = {{BAWSAQ/Slider}} '''RIM'''
+|type = entertainment
+|ceo = 
+*[[Solomon Richards]]
+*[[David Richards]] (formerly) 
+|founded = [[1921]]{{Ref|name=established|ref=Legible on poster texture files: Est. 1921 e.g.[[File:NelsonInNaples-GTAV-PosterTextureFile.png|thumb|220px|left|See lower right corner]]}}
+|games = {{Games|V=y|O=y|VI=y}}
+|locations = [[Backlot City]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Richards Majestic Productions''' is a film production company in {{V}}, {{O}} and {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Cinemas
+Film production companies

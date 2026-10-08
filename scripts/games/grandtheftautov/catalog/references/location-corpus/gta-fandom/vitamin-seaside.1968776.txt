@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Vitamin Seaside
+|image = VitaminSeaside-GTAV-Logo.png
+|type = Juice Bar
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Vitamin Seaside''' is a juice bar in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

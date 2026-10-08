@@ -1,0 +1,102 @@
+[[LEAD]]
+'''El Rancho Blvd''' is a street in [[Los Santos in GTA V|Los Santos]] from [[Rancho]] to [[Murrieta Heights]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The boulevard also runs through [[Cypress Flats]] and [[El Burro Heights]]. The boulevard starts as a  continuation of [[Dutch London St]] connecting with [[Amarillo Vista]], [[Capital Blvd]], [[Carson Ave]], [[Elysian Fields Fwy]], [[Fudge Ln]], [[Innocence Blvd]], [[Labor Pl]], [[Orchardville Ave]], [[Popular St]], [[San Andreas Ave]], [[South Shambles St]], [[Sustancia Rd]] and [[Vespucci Blvd]] before continuing further north as [[Mirror Park Blvd]]. It is based on Los Feliz Boulevard in Los Angeles.
+
+[[SECTION:2:Businesses and places]]
+
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Covington Supplies]]
+| [[El Burro Heights]]
+|
+| Garage
+|-
+| [[El Burro Heights Fire Station]]
+| [[El Burro Heights]]
+| [[Capital Blvd]]
+| Fire station
+|-
+| [[Express While-U-Wait Laundromat]]
+| [[Murrieta Heights]]
+|
+| Laundromat
+|-
+| [[Grand Banks Steel Inc.]]
+| [[Cypress Flats]]
+| 
+| Steelworks
+|-
+| [[Hardwood & Lumber Supply]]
+| [[Murrieta Heights]]
+|
+| Lumber supply
+|-
+| [[Hearty Taco]]
+| [[Murrieta Heights]]
+| [[Vespucci Blvd]]
+| Food and drink
+|-
+| [[L.T. Weld Supply Co.]]
+| [[El Burro Heights]]/[[Murrieta Heights]]
+| [[Capital Blvd]]
+| Manufacturing
+|-
+| [[Los Santos Tattoos]]
+| [[El Burro Heights]]
+| [[Innocence Blvd]]
+| Tattoo parlor
+|-
+| [[Mom's Tacos]]
+| [[Murrieta Heights]]
+|
+| Food and drink
+|-
+| [[Murrieta Oil Field]]
+| [[Murrieta Heights]]
+|
+| Energy and fuel
+|-
+| [[Olson's Autos]]
+| [[Cypress Flats]]
+|
+| Garage
+|-
+| [[Pißwasser]]
+| [[Cypress Flats]]
+| [[Popular St]]
+| Food and drink
+|-
+| [[Raven Abattoir]]
+| [[Cypress Flats]]
+| [[Orchardville Ave]]
+| Abattoir
+|-
+| [[Robs Liquor]]
+| [[Murrieta Heights]]
+| 
+| Food and drink
+|-
+| [[RON]] filling station
+| [[Murrieta Heights]]
+| [[Capital Blvd]]
+| Energy and fuel
+|-
+| [[Thorns]]
+| [[Cypress Flats]]
+| [[Orchardville Ave]]
+| 
+|-
+| [[Vitreous]]
+| [[Cypress Flats]]
+| [[Orchardville Ave]]
+| Glassware
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

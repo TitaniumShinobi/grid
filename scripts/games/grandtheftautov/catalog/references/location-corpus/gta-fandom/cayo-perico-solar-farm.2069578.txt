@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = CayoPericoAirstrip-GTAO-SolarFarm.png
+|caption = The Solar Farm in Cayo Perico.
+|games = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location = [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|map = <gallery>
+CayoPericoSolarFarm-GTAO-Map.png|Solar Farm
+CayoPericoSolarFarm-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Cayo Perico Solar Farm''' is a photovoltaic power station in [[Cayo Perico]], [[Colombia]], that appears in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online in Cayo Perico

@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = fashion
+|name          = Yeti
+|sign          = 
+|image_label   = 
+|image         = Yeti-GTAV-Logo.png
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Yeti''', stylized as '''YETI''', is a fashion brand appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+FruitoftheVine-Yeti-GTAV.png|[[Hawick Avenue]], [[Burton]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Fashion brands

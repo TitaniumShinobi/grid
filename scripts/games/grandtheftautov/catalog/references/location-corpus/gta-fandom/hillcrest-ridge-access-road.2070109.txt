@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=HillcrestRidgeAccessRoad-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[North Sheldon Avenue]]
+|end=[[Picture Perfect Drive]]
+|map=<gallery>
+HillcrestRidgeAccessRoad-GTAV-Map.png|Map
+HillcrestRidgeAccessRoad-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Hillcrest Ridge Access Road''' is an unpaved [[List of Street Names|road]] in {{V}} and {{O}}, located in [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

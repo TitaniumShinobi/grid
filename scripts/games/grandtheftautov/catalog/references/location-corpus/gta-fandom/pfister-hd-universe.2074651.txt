@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox_business
+|Name Change   = 
+|name          = [[File:Pfister-GTAO-Logo2.png|center|260px]]
+|image         =  Pfister-GTAO-Logo.png
+|type          = vehicles
+|status        = active
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|business_type = Vehicle manufacturer
+|products      = [[#Vehicles|Vehicles]]
+}}
+
+[[LEAD]]
+'''Pfister''' is a [[Germany|German]] automotive manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Businesses with radio ads
+Vehicle manufacturers

@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = Hoplivion Double IPA
+|sign          = 
+|image         = HoplivionDoubleIPA-GTAO-LogoTexture.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpheist4}}}}
+|mentioned     = 
+|business_type = {{WP|India pale ale}}
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = [[The High Brewing Co]]
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+*"''Enjoy cold & in the safety of your bunker''"
+*"''Radiation proof''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Hoplivion Double IPA''' is a brand of {{WP|India pale ale}} appearing in {{O}} as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Online: The Cayo Perico Heist

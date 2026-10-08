@@ -1,0 +1,134 @@
+[[LEAD]]
+'''Davis Ave''' is a street in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]]. It runs from [[Los Santos International Airport in GTA V|Los Santos International Airport]], continuing from [[New Empire Way]], in the southwest to [[Rancho]] in the northeast running through [[La Puerta]], [[Maze Bank Arena]], [[Chamberlain Hills]], [[Strawberry]] and [[Davis]]. There are connections to [[Alta St]], [[Autopia Pkwy]], [[Capital Blvd]], [[Carson Ave]] [[Dutch London St]], [[Grove St]], [[Innocence Blvd]], [[Macdonald St]], [[New Empire Way]], and [[Strawberry Ave]].  The street is controlled by the [[Ballas]] in southern [[Davis]] and the [[Los Santos Vagos]] in the north eastern tip.
+
+[[SECTION:2:Businesses and locations]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Auto Fix Factory]]
+| [[Davis]]
+| [[Grove St]]
+| Garage
+|-
+| [[Bad Day Goods]]
+| [[Davis]]
+| [[Innocence Blvd]]
+| Discount store
+|-
+| data-sort-value="Beacon Theater, The"| [[The Beacon Theater]]
+| [[Rancho]]
+| 
+| Cinema
+|-
+| [[Bishop's Chicken]]
+| [[Davis]]
+| [[Macdonald St]]
+| Food and drink
+|-
+| [[Central Los Santos Medical Center]]
+| [[Davis]]/[[Rancho]]
+| [[Capital Blvd]]/[[Innocence Blvd]]
+| Healthcare
+|-
+| [[City of Davis Public Library]]
+| [[Davis]]
+| [[Macdonald St]]
+| Library
+|-
+| [[Click Lovers]]
+| [[Davis]]
+| [[Innocence Blvd]]
+| Electronics
+|-
+| [[Davis City Hall]]
+| [[Davis]]
+| [[Innocence Blvd]]
+| Government
+|-
+| [[Davis Mega Mall]]
+| [[Davis]]
+| [[Carson Ave]]
+| Mall
+|-
+| [[Discount Carpet Center]]
+| [[Rancho]]
+| [[Capital Blvd]]
+| Furniture
+|-
+| [[Fowl Mouthed]]
+| [[Davis]]
+| [[Innocence Blvd]]
+| Food and drink
+|-
+| [[Grociers]]
+| [[Davis]]/[[Strawberry]]
+| [[Carson Ave]]
+| Supermarket
+|-
+| [[Hearty Taco]]
+| [[Rancho]]
+| [[Capital Blvd]]
+| Food and drink
+|-
+| [[Liquor Deli]]
+| [[Davis]]
+|
+| Food and drink
+|-
+| [[LTD]] filling station
+| [[Davis]]
+| [[Grove St]]
+| Filling station
+|-
+| [[Maze Bank Arena]]
+| [[Maze Bank Arena]]
+|
+| Arena
+|-
+| [[Mom's Tacos]]
+| [[Davis]]
+| [[Innocence Blvd]]
+| Food and drink
+|-
+| [[Mosley Auto Service]]
+| [[Strawberry]]
+| [[Carson Ave]]/[[Strawberry Ave]]
+| Garage
+|-
+| [[Porn Crackers]]
+| [[Davis]]
+| [[Innocence Blvd]]
+| Adult
+|-
+| [[RON]] filling station
+| [[Davis]]
+| [[Macdonald St]]
+| Filling station
+|-
+| [[She Nails]]
+| [[Davis]]
+| [[Innocence Blvd]]
+| Beauty salon
+|-
+| [[Sheet Yourself Laundromat]]
+| [[Davis]]
+| [[Innocence Blvd]]
+| Laundromat
+|-
+| [[Strawberry Mortuary]]
+| [[Rancho]]
+| [[Innocence Blvd]]
+| Mortuary
+|-
+| [[Zany-Z's Hot Dealz]]
+| [[Davis]]
+| [[Innocence Blvd]]
+| Discount store
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

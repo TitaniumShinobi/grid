@@ -1,0 +1,87 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=PalominoAve-GTAV.jpg
+|caption=Palomino Avenue in [[La Puerta]], near the intersection with [[Goma Street]].
+|games={{Games|V=y|O=y}}
+|start=[[Dorset Drive]], [[Rockford Hills]]
+|end=[[Vespucci Beach Sidewalk]]
+|map=<gallery>
+PalominoAvenue-GTAV-Map.png|Map
+PalominoAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Palomino Avenue''' is a [[List of Street Names|street]] in [[Vespucci]], [[Little Seoul]], [[La Puerta]] and [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+'''La Puerta'''
+*[[Puerto Del Sol Yacht Club]]
+
+'''Little Seoul'''
+*[[Betsy O'Neil Pavilion]] <small>(corner of San Andreas Avenue)</small>
+*[[Korean Plaza]] <small>(corner of Lindsay Circus)</small>
+*[[Von Crastenburg Hotel]]
+*[[Weazel News Building]] <small>(corner of Lindsay Circus)</small>
+*[[Little Seoul Tower]] <small>(corner of San Andreas Avenue)</small>
+
+'''Vespucci Canals'''
+*[[The Viceroy Hotels & Resorts|The Viceroy]] <small>(corner of South Rockford Drive)</small>
+*[[Vespucci Mall]] <small>(corner of South Rockford Drive)</small>
+
+[[SECTION:2:Businesses]]
+'''La Puerta'''
+*[[White Widow]]
+
+'''Little Seoul'''
+{{Columns
+|
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]] <small>(accessible interior, corner of Lindsay Circus)</small>
+*Big Dan Vision Optometry
+*[[BSC Machine Maintenance]] <small>(corner of South Rockford Drive)</small>
+*Convenience Store
+*[[Digital Den]] <small>(corner of Vespucci Boulevard)</small>
+*Garden
+*[[Hwan Café]]
+|
+*[[Lombank]] <small>(corner of San Andreas Avenue)</small>
+*[[Lucky Plucker]] <small>(corner of Vespucci Boulevard)</small>
+*[[Park Jung Restaurant]]
+*[[Ranch (HD Universe)|Ranch]] <small>(at Korean Plaza)</small>
+*[[Taco Bomb]] <small>(corner of San Andreas Avenue)</small>
+*[[The Bean Machine]] <small>(corner of Vespucci Boulevard)</small>
+*[[TW@ (HD Universe)|Totally Wireless]]
+*Wook Noodle House
+*[[Yogarishima]] <small>(at Korean Plaza)</small>
+}}
+
+'''Rockford Hills'''
+*[[Leopolds]] <small>(corner of Dorset Drive)</small>
+*[[Rockford Dorset Hotel]] <small>(corner of Dorset Drive)</small>
+
+'''Vespucci'''
+*Steamboat Beers <small>(corner of Magellan Avenue)</small>
+
+'''Vespucci Beach'''
+*[[Sharkies Bites]] <small>(corner of Vespucci Beach Sidewalk)</small>
+
+'''Vespucci Canals'''
+{{Columns
+|
+*$1 Saver
+*[[Binco (HD Universe)|Binco]] <small>(corner of Bay City Avenue)</small>
+*[[Fleeca|Fleeca Bank]] <small>(at the Vespucci Mall)</small>
+*[[Heroin Chic]] <small>(corner of Bay City Avenue)</small>
+*[[Liquor Hole]]
+|
+*The Rockpool
+*[[Liquor Market|Vespucci Liquor Market]]
+*[[Vespucci Sports]] <small>(corner of Prosperity Street)</small>
+*[[Wigwam Burger]]
+}}
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

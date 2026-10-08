@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=BanhamCanyonDr-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[North Rockford Drive]]
+|end=[[Great Ocean Highway]]
+|map=<gallery>
+BanhamCanyonDrive-GTAV-Map.png|Map
+BanhamCanyonDrive-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Banham Canyon Drive''' is a two-way street in {{V}} and {{O}}, located in [[Banham Canyon]], [[Los Santos County]] that begins at [[North Rockford Drive]] and ends at the [[Great Ocean Highway]] ([[Route 1]]).
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

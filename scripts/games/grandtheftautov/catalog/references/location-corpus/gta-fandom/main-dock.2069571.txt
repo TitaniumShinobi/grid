@@ -1,0 +1,140 @@
+[[INFOBOX]]
+{{Infobox_location
+|mpheist4 inf escape = y
+|image = CayoPerico-GTAO-MainDock.png
+|caption = Overview of Main Dock.
+|games = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location = [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|map           = <gallery>
+MainDock-GTAO-Map.png|Main Dock
+MainDock-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption   = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Main Dock''' is a boatyard in [[Cayo Perico]], [[Colombia]], which appears as an [[:Category:Infiltration Points in The Cayo Perico Heist|infiltration]] and [[:Category:Escape Points in The Cayo Perico Heist|escape point]] for [[The Cayo Perico Heist]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Points of Interest]]
+{{Main|Heist Prep: Gather Intel#Points of Interest}}
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Bolt Cutters
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|On a shelf in a small building, between North Dock and the [[Crop Fields]].
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location9.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location9Map.png|center|thumb]]
+|-
+|2
+|Leaning against a rusty generator south of the Main Dock.
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location14.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location14Map.png|center|thumb]]
+|-
+|3
+|On a wooden crate alongside some tools.
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location15.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location15Map.png|center|thumb]]
+|-
+|4
+|On a dilapidated boat at the Main Dock.
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location16.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location16Map.png|center|thumb]]
+|}
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Grappling Equipment
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|On the base of a red crane.
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location10.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location10Map.png|center|thumb]]
+|-
+|2
+|On a water tower south of the Main Dock.
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location15.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location15Map.png|center|thumb]]
+|-
+|3
+|At the base of a red crane.
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location16.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location16Map.png|center|thumb]]
+|}
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Guard Clothing
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|Next to some boxes and barrels.
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location9.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location9Map.png|center|thumb]]
+|-
+|2
+|At a house south of the Main Dock.
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location13.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location13Map.png|center|thumb]]
+|-
+|3
+|At another building south of the Main Dock.
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location14.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location14Map.png|center|thumb]]
+|-
+|4
+|Beside two water canisters next to a house at the Main Dock.
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location15.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location15Map.png|center|thumb]]
+|-
+|5
+|Inside a green-red container at the Main Dock.
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location16.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location16Map.png|center|thumb]]
+|}
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Supply Truck
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|Next to some containers at the Main Dock.
+|[[File:TheCayoPericoHeist-GTAO-SupplyTruck-Location5.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-SupplyTruck-Location5Map.png|center|thumb]]
+|}
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Cutting Powder
+|-
+! scope="col" |Ref Number
+! scope="col" |Location
+! scope="col" |Image
+! scope="col" |Map
+|-
+|1
+|Inside a cocaine processing building in the east side, near the Crop Fields.
+|[[File:TheCayoPericoHeist-GTAO-CuttingPowder-Location2.png|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-CuttingPowder-Location2Map.png|thumb]]
+|-
+|2
+|Entrance of the building located south of the water tower.
+|[[File:TheCayoPericoHeist-GTAO-CuttingPowder-Location3.png|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-CuttingPowder-Location3Map.png|thumb]]
+|}
+
+[[CATEGORIES]]
+Escape Points in The Cayo Perico Heist
+Infiltration Points in The Cayo Perico Heist
+Locations in GTA Online in Cayo Perico
+Seaports

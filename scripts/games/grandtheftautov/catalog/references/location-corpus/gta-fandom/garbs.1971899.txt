@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change    = 
+|type           = clothingstore
+|name           = Garbs
+|sign           = 
+|image          = Garbs-GTAV-Logo.png
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|locations      = [[Textile City]], [[Los Santos (HD Universe)|Los Santos]]
+|established    =
+|taglines       =
+|status         = active
+|phone          =
+*626-555-0154
+*1-999-SAGARBS
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Garbs''' is a chain of clothing stores appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Garbs-GTAVee-SimmetAlley.png|[[Simmet Alley]], [[Textile City]], [[Los Santos (HD Universe)|Los Santos]].
+Garbs-GTAVee-SinnerStreet.png|[[Sinner Street]], Textile City, Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains

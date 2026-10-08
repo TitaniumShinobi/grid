@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = SqueezeOneOut-GTAV-MirrorPark-exterior.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Squeeze One Out
+|type = Smoothie and fruit juice store
+|owner = 
+|location = Corner of [[Mirror Park Blvd]] and [[Nikola Ave]] in [[Mirror Park]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Squeeze One Out''' is a smoothie and fruit juice store located on the corner of [[Mirror Park Blvd]] and [[Nikola Ave]] in [[Mirror Park]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company logo has two slices of orange in place of the letter 'O'.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

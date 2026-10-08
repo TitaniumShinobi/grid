@@ -1,0 +1,66 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = fashion
+|name          = Gutter & Blood
+|sign          = G&B-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = G&B
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Leftwood]], [[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type =  Clothing store chain
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Gutter & Blood''' (stylized as '''G&B''') is a fashion brand with several physical locations, featured in [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+G&B-GTAIV-Leftwood-DaylightFront.png|[[Bridger Street]], [[Leftwood]], [[State of Alderney|Alderney]].
+G&B-GTAIV-MiddleParkEast-DaylightFront.png|[[East Tower]], [[Nickel Street]], [[Middle Park East]], [[Algonquin]] ([[:File:G&B-GTAIV-MiddleParkEast-NightFront.png|night view]]).
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+<gallery position="center" spacing="small" widths="270px">
+G&B-GTAV-DaylightFront.png|[[Rockford Drive]], [[Rockford Hills]] ([[:File:G&B-GTAV-NightFront.png|night view]]).
+G&B-GTAV-Morningwood.jpg|[[Morningwood Boulevard]], [[Morningwood]].
+G&B-GTAV-TextileCity.jpg|[[Strawberry Avenue]], [[Textile City]].
+</gallery>
+
+[[SECTION:3:Location Influences]]
+
+
+[[SECTION:4:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+*The [[Rockford Drive]] location is based on the {{WP|Prada}} store at 343 North {{WP|Rodeo Drive}}.
+*The [[Strawberry Avenue]] location is located in a building based on the {{WP|Bradbury Building}} in Downtown {{WP|Los Angeles}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|type        = constructionsite
+|image       = RedwoodLightsTrack-GTAV-Overview.png
+|caption     = Overview of Redwood Lights Track
+|status      = construction
+|games       = {{Games|V=y|O=y}}
+|location    = [[Grand Senora Desert]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner    = PoliceScanner-GTAV-Neighborhood-RedwoodLightsTrack.ogg
+|map         = <gallery>
+RedwoodLightsTrack-IngameGPS-GTAV-Map.png|Redwood Lights Track
+RedwoodLightsTrack-IngameGPS-GTAV-BlaineCountyMap.png|Los Santos County
+</gallery>
+|map_caption = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+The '''Redwood Lights Track''' is a construction site and motocross track in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in the [[Grand Senora Desert]], [[Los Santos County]].
+
+[[CATEGORIES]]
+Construction sites
+Dirt tracks
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Neighborhoods
+Road courses
+Zones

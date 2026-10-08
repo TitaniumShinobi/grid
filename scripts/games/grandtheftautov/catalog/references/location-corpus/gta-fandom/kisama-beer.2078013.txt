@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = Kisama Beer
+|sign          = Kisama-Beer-GTAO-Worn-Logo.png
+|image         = KisamaBeer-GTAO-Logo.png
+|caption       = Logo in GTA Online.
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpchristmas2018}}}}
+|mentioned     = 
+|business_type = Beverage company
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Kisama Beer''' (Japanese: '''貴様ビール''', ''Kisama Bīru'', lit. "You Beer") is a brand of [[Japan]]ese beer in the [[HD Universe]] which appears in ''[[Grand Theft Auto Online]]'', [[GTA Online: Arena War|Arena War]].
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Online: Arena War

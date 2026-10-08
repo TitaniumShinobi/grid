@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{infobox location
+|type       = restaurant
+|name       = Poppy House Restaurant
+|image      = PoppyHouse-GTAV-Logo.png
+|games      = {{Games|V=y|O=y}}
+|location   = [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+The '''Poppy House''' is a restaurant in {{V}} and {{O}}, located on [[Exceptionalists Way]] in the [[Los Santos International Airport (HD Universe)|Los Santos International Airport]] district. It is adjacent to the [[Opium Nights]] hotel.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px" hideaddbutton="true">
+PoppyHouse-GTAVee.jpg|[[Exceptionalists Way]], [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+
+
+
+
+[[de:Poppy House]]
+[[es:Poppy House]]
+[[hu:Poppy House]]
+[[ru:Poppy House]]
+
+[[CATEGORIES]]
+Bistros
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Casual restaurants

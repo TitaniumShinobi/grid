@@ -1,0 +1,79 @@
+[[LEAD]]
+A '''spray shop''' is a business which its main job is to repair and spray a vehicle into a different color. In the ''[[Grand Theft Auto]]'' series, spray shops can be used to evade the [[Police (law enforcement)|police]], in addition to repairing and changing the vehicle's color and, in later ''GTA'' games, the license plate of the vehicle. There are several spray shops throughout the series but their main purpose remains the same.
+
+[[SECTION:2:Businesses]]
+{|class="zebratable"
+!Name
+!Game
+!Cost
+|-
+|[[Garages in GTA (1997 game)|Respray Shops / Al's Paint Shop]]
+|''[[Grand Theft Auto (1997 game)|GTA]]''
+|Depends on vehicle and/or damage
+|-
+|[[Garages in GTA London|Respray Garages]]
+|''[[Grand Theft Auto: London 1969|GTA London 1969]]<br/>[[Grand Theft Auto: London 1961|GTA London 1961]]''
+|Depends on vehicle and/or damage
+|-
+|[[Garages in GTA 2|Max Paynt]]
+|''[[Grand Theft Auto 2|GTA 2]]''
+|[[Money|$]]5,000
+|-
+|[[Michelle's Auto Repair]]
+|''[[Grand Theft Auto: San Andreas|GTA San Andreas]]''
+|Free
+|-
+|[[Loco Low Co.]] [[Mod Garages|Mod Garage]]
+|''[[Grand Theft Auto: San Andreas|GTA San Andreas]]''
+|$150
+|-
+|[[Pay 'n' Spray]]
+|''[[Grand Theft Auto III|GTA III]]''<br>''[[Grand Theft Auto: Vice City|GTA Vice City]]''<br>''[[Grand Theft Auto: San Andreas|GTA San Andreas]]''<br>''[[Grand Theft Auto Advance|GTA Advance]]''<br>''[[Grand Theft Auto: Liberty City Stories|GTA Liberty City Stories]]''<br>''[[Grand Theft Auto: Vice City Stories|GTA Vice City Stories]]''<br>''[[Grand Theft Auto IV|GTA IV]]''<br>''[[Grand Theft Auto: Episodes from Liberty City|GTA Episodes from Liberty City]]''<br>''[[Grand Theft Auto: Chinatown Wars|GTA Chinatown Wars]]''
+|From free to $100/$1,000; depends on game or mission
+|-
+|[[Spray'n'go]]
+|''[[Grand Theft Auto: Vice City|GTA Vice City]]''
+|$100
+|-
+|[[TransFender (3D Universe)|TransFender]] [[Mod Garages|Mod Garage]]
+|''[[Grand Theft Auto: San Andreas|GTA San Andreas]]''
+|$150
+|-
+|[[Wheel Arch Angels]] [[Mod Garages|Mod Garage]]
+|''[[Grand Theft Auto: San Andreas|GTA San Andreas]]''
+|$150
+|-
+|[[Los Santos Customs]] [[Mod Garages|Mod Garage]]
+|''[[Grand Theft Auto V|GTA V]]''<br>''[[Grand Theft Auto Online|GTA Online]]''
+|Depends on vehicle and/or damage
+|-
+|[[Beeker's Garage]] [[Mod Garages|Mod Garage]]
+|''[[Grand Theft Auto V|GTA V]]''<br>''[[Grand Theft Auto Online|GTA Online]]''
+|Depends on vehicle and/or damage
+|-
+|[[Benny's Original Motor Works]] [[Mod Garages|Mod Garage]]
+|''[[Grand Theft Auto Online|GTA Online]]''
+|Depends on vehicle and/or damage
+|-
+|[[Auto Shops|Player-owned Auto Shops]]
+|''[[Grand Theft Auto Online|GTA Online]]''
+|Depends on vehicle and/or damage
+|-
+|[[LS Car Meet]] [[Mod Garages|Mod Shop]] / [[Hao's Special Works]]
+|''[[Grand Theft Auto Online|GTA Online]]''
+|Depends on vehicle and/or damage
+|}
+
+[[CATEGORIES]]
+Gameplay in GTA
+Gameplay in GTA 2
+Gameplay in GTA Chinatown Wars
+Gameplay in GTA III
+Gameplay in GTA IV
+Gameplay in GTA Liberty City Stories
+Gameplay in GTA Online
+Gameplay in GTA San Andreas
+Gameplay in GTA V
+Gameplay in GTA Vice City
+Gameplay in GTA Vice City Stories
+Vehicle customization mechanics

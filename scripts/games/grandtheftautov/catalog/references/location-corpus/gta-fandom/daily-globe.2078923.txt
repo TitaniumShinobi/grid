@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Daily Globe
+|image = DailyGlobe-GTAIV-Logo.svg
+|bawsaq = {{BAWSAQ/Slider}} '''DGP'''
+|type = Newspaper
+|games = ''[[Grand Theft Auto IV]]<br>[[Grand Theft Auto: Chinatown Wars]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Liberty City (HD Universe)|Liberty City]]<br>[[Los Santos (HD Universe)|Los Santos]]
+|taglines = "''Spinning the latest news.''"
+|reference = {{WP|Metro International}}
+}}
+
+[[LEAD]]
+The '''Daily Globe''' is a newspaper in [[Liberty City (HD Universe)|Liberty City]] and [[State of San Andreas (HD Universe)|San Andreas]] in the [[HD Universe]]. The player can buy stocks from them at the [[Bawsaq.com]] website in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+News companies
+Newspaper publishers

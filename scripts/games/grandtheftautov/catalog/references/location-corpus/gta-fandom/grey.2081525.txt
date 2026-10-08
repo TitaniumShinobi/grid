@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = drink
+|name          = Grey
+|sign          = 
+|image         = Grey-GTAO-BottleLogo.png
+|caption       = Logo as it appears on the bottle.
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpheist4}}}}
+|mentioned     = 
+|business_type = {{WP|Bottled water}}
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = 
+|taglines      = 
+*"''??? Water From ???''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Grey''' is a brand of {{WP|bottled water}} appearing in {{O}} as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Cayo Perico Heist
+Water brands

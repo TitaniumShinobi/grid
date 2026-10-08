@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=MutinyRoad-GTAV.png
+|caption=Mutiny Road as seen from the east.
+|games={{Games|V=y|O=y}}
+|start=[[South Arsenal Street]]
+|end=South Arsenal Street
+|map=<gallery>
+MutinyRoad-GTAV-Map.png|Map
+MutinyRoad-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Mutiny Road''' is a two-way [[List of Street Names|street]] in {{V}} and {{O}}, located in [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]]. It begins and ends at [[South Arsenal Street]].
+
+[[SECTION:2:Businesses]]
+*[[Fridgit|Fridgit Ice &amp; Storage]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

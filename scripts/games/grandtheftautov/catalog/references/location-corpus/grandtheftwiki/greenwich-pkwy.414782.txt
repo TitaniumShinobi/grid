@@ -1,0 +1,49 @@
+[[LEAD]]
+'''Greenwich Pkwy''' is a street running from [[La Puerta]] to [[Los Santos International Airport in GTA V|Los Santos]] in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The parkway briefly enters [[Vespucci Beach]] and has connections to [[Autopia Pkwy]], [[Dutch London St]] and [[Exceptionalists Way]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Bilgeco]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+|
+| Shipping
+|-
+| [[Escalera Rent-A-Car]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+| 
+| Automobile rental
+|-
+| [[Los Santos Customs]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+| 
+| Garage
+|-
+| [[Opium Nights Hotel]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+| [[Exceptionalists Way]]
+| Hotel
+|-
+| [[Touchdown Car Rentals]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+| [[Exceptionalists Way]]
+| Automobile rental
+|-
+| [[Von Crastenburg Hotel]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+| [[Autopia Pkwy]]
+| Hotel
+|-
+| [[Xero|Xero Gas]]
+| [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+|
+| Energy and fuel
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

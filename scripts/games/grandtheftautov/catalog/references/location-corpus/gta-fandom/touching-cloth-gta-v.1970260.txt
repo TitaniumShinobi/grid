@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    =
+|type           = warehouse
+|name           = Touching Cloth 
+|sign           = 
+|image          = TouchingCloth-GTAVee.png
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Textile City]], [[Los Santos (HD Universe)|Los Santos]]
+|established    =
+|taglines       =
+|status         = active
+|phone          =
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Touching Cloth''' is a textile warehouse appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Stores
+Warehouses

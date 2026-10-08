@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|name = Avalon Laundry & Cleaners
+|type = Laundromat<br />Dry cleaners
+|owner = 
+|location = [[Dutch London St]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Avalon Laundry & Cleaners''' is a laundromat and dry cleaners located on [[Dutch London St]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

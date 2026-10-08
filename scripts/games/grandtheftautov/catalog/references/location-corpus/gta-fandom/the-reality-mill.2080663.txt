@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Media company
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations =[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|image = The Reality Mill Logo GTAV.png
+|taglines = ''"Everyone is a TV star"''
+}}
+
+[[LEAD]]
+'''The Reality Mill''' is a media company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Media

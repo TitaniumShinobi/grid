@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|miscplace = y
+|miscplacename = MOTEL
+|type = Motel
+|altnames = The Motor Hotel
+|location = [[U.S. Route 68]], [[Harmony]]
+|games = {{Games|V=y|O=y}}
+|accessible = No <small>(TV scenes only)</small>
+|image = MotorMotelSign-GTAV.jpg
+|caption = The Motor Motel sign.
+|map = TheMotorMotel-GTAV-MapLocation.png
+|map_caption = Location
+}}
+
+[[LEAD]]
+The '''Motor Motel''' (also known as the '''Motor Hotel''') is a motel located along [[Route 68]] in the [[Grand Senora Desert]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Motels

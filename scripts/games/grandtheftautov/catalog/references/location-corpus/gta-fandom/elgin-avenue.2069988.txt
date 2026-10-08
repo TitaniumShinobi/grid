@@ -1,0 +1,52 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = ElginAvenue-GTAV.png
+|caption = Elgin Avenue as seen from Vespucci Boulevard.
+|games = {{Games|V=y|O=y}}
+|start = [[Innocence Boulevard]], [[Strawberry]]
+|end = [[Vinewood Park Drive]], [[Vinewood Hills]]
+|map = <gallery>
+ElginAvenue-GTAV-Map.png|Map
+ElginAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Elgin Avenue''' is a two-way [[List of Street Names|street]] in [[Strawberry]], [[Downtown Los Santos (HD Universe)|Downtown]], [[Alta]], [[Hawick]], [[East Vinewood]], [[Downtown Vinewood]], and [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Badger Building]] <small>(corner of Spanish Avenue)</small>
+*[[Escapism Travel Building]] 
+*[[FIB Headquarters]] <small>(corner of San Andreas Avenue)</small>
+*[[Integrity Tower]]
+*[[Legion Square]]
+*[[Penris Building]] <small>(corner of Swiss Street)</small>
+*[[Pillbox Hill Medical Center]] <small>(western entrance)</small>
+*[[Vanilla Unicorn]] <small>(accessible interior)</small>
+*[[Vinewood Police Station]] <small>(corner of Vinewood Boulevard)</small>
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]] <small>(accessible interior, corner of Adam's Apple Boulevard)</small>
+*[[Auto Exotic]]
+*[[The Bean Machine]] <small>(corner of Vespucci Boulevard)</small>
+*[[The Brewer's Drop]]
+*[[Caesars Auto Parking]]
+*[[The Emissary]] <small>(corner of Vespucci Boulevard)</small>
+*[[Escapism Travel]]
+*[[Fallen Angels]]
+*Foreign & Domestic
+*[[Gav's Cash Exchange]]
+*[[Hotel Wisdahl]] <small>(corner of Vespucci Boulevard)</small>
+*[[Kronos (HD Universe)|Kronos]]
+*[[Los Santos Department of Water & Power]] <small>(corner of Clinton Avenue)</small>
+*[[Maison Ricard]] <small>(corner of San Andreas Avenue)</small>
+*[[Smokers Emporium]]
+*[[Vankhov]]
+*[[Wolfs International Realty]] <small>(corner of Adam's Apple Boulevard)</small>
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

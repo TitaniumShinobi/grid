@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|type = Fashion retailer
+|name = Guido Zenitalia
+|altnames =
+|taglines = 
+|reference = 
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|condition = Active 
+|products = 
+|bawsaq = 
+|image = GuidoZenitalia-GTAV-Logo.png
+|darklogo = y
+|caption = The logo
+|image_size = 300
+|games = {{Games|V=y|O=y}}
+|oldlogo = GuidoZenitalia-GTAV-GZLogo-Texture.png
+|oldcaption = Alternate logo.
+|map = 
+}}
+
+[[LEAD]]
+'''Guido Zenitalia''' is a modern [[Italy|Italian]] fashion house appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Location]]
+Its only store is located in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]. 
+
+<gallery position="center" spacing="small" widths="270px">
+GuidoZenitalia-GTAV-DaylightFront.png|[[Rockford Drive]] and [[Eastbourne Way]] ([[:File:GuidoZenitalia-GTAV-NightFront.png|night view]]).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

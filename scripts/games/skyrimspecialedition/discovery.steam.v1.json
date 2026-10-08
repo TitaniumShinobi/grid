@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "providerId": "steam",
+  "gameId": "skyrimspecialedition",
+  "displayName": "Skyrim Special Edition",
+  "applications": [
+    {
+      "appId": "489830",
+      "edition": "Special Edition",
+      "requiredFiles": [
+        "SkyrimSE.exe"
+      ],
+      "conflictingFiles": [],
+      "gameId": "skyrim-special-edition"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+[[LEAD]]
+'''Adams Apple Blvd''' is a street in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The boulevard runs from [[Little Seoul]] in the west to [[Mission Row]] in the east, running through [[Pillbox Hill]]. Adam's Apple Blvd has connections to [[Alta St]], [[Calais Ave]], [[Elgin Ave]], [[Fantastic Pl]], [[Innocence Blvd]], [[Little Bighorn Ave]], [[Power St]], [[Sinner St]] and [[Strawberry Ave]], and runs under the [[La Puerta Freeway]] at its western most point.
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Ammu-Nation]]
+| [[Pillbox Hill]]
+| [[Elgin Ave]]
+| Weapons
+|-
+| [[Auto Repair]]
+| [[Mission Row]]
+| [[Fantastic Pl]]
+| Auto parts
+|-
+| [[Banner Hotel & Spa]]
+| [[Pillbox Hill]]
+| [[Alta St]]
+| Hotel
+|-
+| [[Discount Kitchen Supplies]]
+| [[Mission Row]]
+|
+| Furniture
+|-
+|-
+| [[Get Aweigh]]
+| [[Mission Row]]/[[Strawberry]]
+| 
+| Sports
+|-
+| [[Mile High Club]] (<small>under construction</small>)
+| [[Pillbox Hill]]
+| [[Power St]]
+| Club
+|-
+| [[Pillbox Hill Garage]]
+| [[Strawberry]]
+| 
+| Private garage
+|-
+| [[Pillbox South Station]]
+| [[Pillbox Hill]]
+|
+| Metro station
+|-
+| [[Premium Deluxe Motorsport]]
+| [[Mission Row]]
+| [[Power St]]
+| Auto dealership
+|-
+| [[Sanders Motorcycles]]
+| [[Mission Row]]
+| 
+| Auto dealership
+|-
+| [[Schlongberg Sachs]]
+| [[Pillbox Hill]]
+| [[Strawberry Ave]]
+| Bank
+|-
+| [[Templar Hotel]]
+| [[Mission Row]]
+| [[Fantastic Pl]]
+| Hotel
+|-
+| [[Vapid]]
+| [[Strawberry]]
+|
+| Auto dealership
+|-
+| data-sort-value="Vault, The"| [[The Vault]]
+| [[Mission Row]]
+| [[Strawberry Ave]]
+| Nightclub
+|-
+| [[Wholesale Hosiery]]
+| [[Mission Row]]
+| [[Sinner St]]
+| Clothing
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

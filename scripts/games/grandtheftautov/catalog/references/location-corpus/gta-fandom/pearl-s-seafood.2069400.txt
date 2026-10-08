@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|image      = PearlsSeafood-GTAVe-Logo.png
+|name       = Pearl's Seafood Restaurant
+|taglines   = 
+|type       = restaurant
+|games      = {{Games|V=y|O=y}}
+|location   = [[Del Perro Pier]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+}}
+
+[[LEAD]]
+'''Pearl's Seafood Restaurant''' is a seafood restaurant in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Seafood restaurants

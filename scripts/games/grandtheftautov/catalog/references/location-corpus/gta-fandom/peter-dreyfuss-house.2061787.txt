@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox location
+|image    = PeterDreyfuss'House-GTAVee.jpg
+|games    = {{Games|V=y|O=y}}
+|location = {{H:title|Address seen in Dreyfuss' confession letter after collecting the final Letter Scrap|2107 [[Ace Jones Drive]]}}, [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|owner    = [[Peter Dreyfuss]] <small>(Formerly)</small> 
+}}
+
+[[LEAD]]
+'''Peter Dreyfuss' House''' is a mansion located on [[Ace Jones Drive]], [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Homes
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

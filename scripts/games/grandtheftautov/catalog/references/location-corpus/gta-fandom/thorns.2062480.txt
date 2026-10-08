@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox_business
+|name       = Thorns
+|sign       = Thorns-GTAV-Logo.png
+|image      =
+|caption    =
+|type       = 
+|games      = {{Games|V=y|O=y}}
+|locations  = {{location|v-els}}
+|status     = Active
+|accessible = No
+|map        =
+|map_caption=
+}}
+
+[[LEAD]]
+'''Thorns''' is a business appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|Thorns-GTAVee.png|[[El Rancho Boulevard]] and [[Orchardville Avenue]], [[Cypress Flats]].
+|Thorns-GTAVee-ElBurroHeights.jpg|[[Capital Boulevard]], [[El Burro Heights]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

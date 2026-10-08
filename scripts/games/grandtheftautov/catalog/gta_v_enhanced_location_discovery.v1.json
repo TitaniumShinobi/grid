@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "gameId": "game.grandtheftautov-enhanced",
+  "locale": "en-US",
+  "purpose": "Read-only reference acquisition configuration for Location registration. It names product scope and reference endpoints only; it carries no place names, trees or expected counts.",
+  "productScopeMarkers": ["GTA V", "GTA Online", "Grand Theft Auto V", "Grand Theft Auto Online"],
+  "productTitlePages": ["Grand Theft Auto V", "Grand Theft Auto Online"],
+  "nativeSeedTable": "references/cfx-zones-ad60ae80.md",
+  "userAgent": "GridLocationRegistrationAcquire/1.0 (read-only reference pinning)",
+  "requestDelaySeconds": 0.35,
+  "maxRequestsPerSource": 4000,
+  "sources": [
+    {
+      "id": "grandtheftwiki",
+      "api": "https://www.grandtheftwiki.com/api.php",
+      "index": "https://www.grandtheftwiki.com/index.php"
+    },
+    {
+      "id": "gta-fandom",
+      "api": "https://gta.fandom.com/api.php",
+      "index": "https://gta.fandom.com/index.php",
+      "productGameTemplateKeys": ["V", "O"]
+    }
+  ]
+}

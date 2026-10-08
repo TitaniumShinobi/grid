@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Tattoos Piercing<br />Vespucci Tattoos
+|type = [[:Category:Tattoo Parlors|Tattoo parlor]]
+|owner = 
+|location = [[Melanoma St]] in [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Tattoos Piercing''', also known as '''Vespucci Tattoos''', is a [[:Category:Tattoo Parlors|tattoo parlor]] and body piercing shop located on [[Melanoma St]] in [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The player can not use the tattoo parlor to acquire tattoos.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Tattoo Parlors

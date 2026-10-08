@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|name = Toke-a-mon Smokers Emporium
+|type = Smoking accessories retailer
+|owner = 
+|location = [[Jamestown St]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Toke-a-mon Smokers Emporium''' is a smoking accessories retailer located on [[Jamestown St]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The business may have gone out of business as when ringing the stores [[Phone Numbers|phone number]] ''555-0167'' the voice mail message is "This number is no longer in service",
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

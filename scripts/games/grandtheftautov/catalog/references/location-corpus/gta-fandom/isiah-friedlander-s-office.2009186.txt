@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{infobox location
+|office = y
+|name = Isiah Friedlander's Office
+|image = IsiahFriedlandersOffice-GTAVe-FrontView.png
+|caption = The house as seen from the highway.
+|games = {{Games|V=y|O=y}}
+|location = [[Route 1|Great Ocean Highway]], [[Pacific Bluffs]], [[Los Santos (HD Universe)|Los Santos]]
+|floors = 4
+}}
+
+[[LEAD]]
+'''Isiah Friedlander's Office''' is a beachfront property in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Pacific Bluffs]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

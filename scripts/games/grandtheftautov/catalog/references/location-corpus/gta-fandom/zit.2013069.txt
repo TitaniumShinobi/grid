@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|name = ZiT
+|Name Change = MUSIC SERVICE
+|image = ZiT-GTAIV-Logo.png
+|games = {{Games|IV=y|V=y|O=y}}
+|bawsaq = {{BAWSAQ/Slider}} '''ZIT'''
+|business_type =
+*Music identification service
+*Digital audio streaming service
+|taglines = "''We'll spot the song for you''"
+|phone = 948-555-0100 {{Small|(''GTA IV'')}}
+|status = active
+}}
+
+[[LEAD]]
+'''ZiT''' is a music identification and streaming service appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+*When the player downloads {{EFLC}}, the radio stations will be updated to include the music featured in both episodes. However, if the player calls ZiT to identify a track from either episode, it will not be able to identify the song. Despite this, it will still be able to identify a song from the original game if the player is playing one of the two episodes.
+**Similarly, in ''[[Grand Theft Auto IV: The Complete Edition]]'', if the player calls ZiT in ''GTA IV'' while an ''EFLC'' song is playing (e.g. [[Funkmaster Flex]] and [[Statik Selektah]]'s mixes on the ''EFLC'' version of [[The Beat 102.7]]), ZiT will not be able to correctly detect them.
+
+[[de:ZiT]]
+[[es:ZiT]]
+[[ru:ZiT]]
+[[sv:ZiT]]
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Commercials
+Music

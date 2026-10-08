@@ -111,7 +111,7 @@ try {
         }else{
             $parentEnvelope=Get-Content -LiteralPath (Join-Path ([string]$parentTask.caseDirectory) 'request\request-envelope.v1.json') -Raw|ConvertFrom-Json -ErrorAction Stop
             $parentIntakePath=Join-Path ([string]$parentTask.caseDirectory) 'request\investigation-intake.v1.json';$parentIntake=if(Test-Path -LiteralPath $parentIntakePath -PathType Leaf){Get-Content -LiteralPath $parentIntakePath -Raw|ConvertFrom-Json -ErrorAction Stop}else{$null}
-            $parentValues=[ordered]@{gameId=[string]$parentEnvelope.context.gameId;installationId=[string]$parentEnvelope.context.installationId;profileId=[string]$parentEnvelope.context.profileId;classId=[string]$parentEnvelope.class.classId;mods=@($parentEnvelope.selections.mods|ForEach-Object providerName);tools=@($parentEnvelope.selections.tools|ForEach-Object toolId);capabilityIds=@(if($parentEnvelope.selections.PSObject.Properties['capabilities']){$parentEnvelope.selections.capabilities|ForEach-Object capabilityId});request=[string]$parentEnvelope.claims.text;problem=[string]$parentEnvelope.claims.text;expectedBehavior=if($parentIntake){[string]$parentIntake.expectedBehavior}else{''};reproductionLocation=if($parentIntake){[string]$parentIntake.reproductionLocation}else{''};desiredOutcome=if($parentIntake){[string]$parentIntake.desiredOutcome}else{''};authorizationScope=if($parentIntake){[string]$parentIntake.authorizationScope}else{'SelectedContext'};parentTaskId=[string]$input.taskId}
+            $parentValues=[ordered]@{gameId=[string]$parentEnvelope.context.gameId;installationId=[string]$parentEnvelope.context.installationId;profileId=[string]$parentEnvelope.context.profileId;classId=[string]$parentEnvelope.class.classId;mods=@($parentEnvelope.selections.mods|ForEach-Object providerName);tools=@($parentEnvelope.selections.tools|ForEach-Object toolId);capabilityIds=@(if($parentEnvelope.selections.PSObject.Properties['capabilities']){$parentEnvelope.selections.capabilities|ForEach-Object capabilityId});request=[string]$parentEnvelope.claims.text;problem=[string]$parentEnvelope.claims.text;expectedBehavior=if($parentIntake){[string]$parentIntake.expectedBehavior}else{''};reproductionLocation=if($parentIntake){[string]$parentIntake.reproductionLocation}else{''};desiredOutcome=if($parentIntake){[string]$parentIntake.desiredOutcome}else{''};canonicalSelections=@(if($parentIntake -and $parentIntake.PSObject.Properties['canonicalSelections']){$parentIntake.canonicalSelections});unresolvedUserContext=@(if($parentIntake -and $parentIntake.PSObject.Properties['unresolvedUserContext']){$parentIntake.unresolvedUserContext});problemSelection=if($parentIntake -and $parentIntake.PSObject.Properties['problemSelection']){$parentIntake.problemSelection}else{$null};timingSelection=if($parentIntake -and $parentIntake.PSObject.Properties['timingSelection']){$parentIntake.timingSelection}else{$null};goalSelection=if($parentIntake -and $parentIntake.PSObject.Properties['goalSelection']){$parentIntake.goalSelection}else{$null};authorizationScope=if($parentIntake){[string]$parentIntake.authorizationScope}else{'SelectedContext'};parentTaskId=[string]$input.taskId}
         }
         foreach($key in @($parentValues.Keys)){$input|Add-Member -NotePropertyName $key -NotePropertyValue $parentValues[$key] -Force}
         $successorAuthorizationScope=if([string]$input.operation -eq 'AttachEvidence'){'SelectedContextAndAttachments'}else{'SelectedContext'}
@@ -146,8 +146,23 @@ try {
     if([string]$input.operation -eq 'AttachEvidence' -and $attachments.Count-eq 0){throw 'RequestSubmissionInvalid: AttachEvidence requires at least one attachment.'}
     if([string]$input.operation -eq 'CaptureState'){$captureCurrentState=$true}
     $parentTaskId=if($null-ne$input.PSObject.Properties['parentTaskId']){[string]$input.parentTaskId}else{$null}
-    $intake=New-GridInvestigationIntake -Problem $problem -ExpectedBehavior $expectedBehavior -ReproductionLocation $reproductionLocation -DesiredOutcome $desiredOutcome -AuthorizationScope $authorizationScope -CaptureCurrentState $captureCurrentState -Attachments $attachments -ParentTaskId $parentTaskId
-    $envelope=New-GridRequestEnvelope -GameId $canonicalGameId -InstallationId ([string]$input.installationId) -ProfileId ([string]$input.profileId) -ClassId ([string]$input.classId) -ClassRecipeVersion ([string]$recipes[0].recipeVersion) -ModNames $mods -ToolIds $tools -CapabilityIds $capabilityIds -PlainText $problem
+    $canonicalSelections=@(if($null-ne$input.PSObject.Properties['canonicalSelections']){@($input.canonicalSelections)})
+    $unresolvedUserContext=@(if($null-ne$input.PSObject.Properties['unresolvedUserContext']){@($input.unresolvedUserContext)})
+    $problemSelection=if($null-ne$input.PSObject.Properties['problemSelection']){$input.problemSelection}else{$null}
+    $timingSelection=if($null-ne$input.PSObject.Properties['timingSelection']){$input.timingSelection}else{$null}
+    $goalSelection=if($null-ne$input.PSObject.Properties['goalSelection']){$input.goalSelection}else{$null}
+    $intake=New-GridInvestigationIntake -Problem $problem -ExpectedBehavior $expectedBehavior -ReproductionLocation $reproductionLocation -DesiredOutcome $desiredOutcome -AuthorizationScope $authorizationScope -CaptureCurrentState $captureCurrentState -Attachments $attachments -CanonicalSelections $canonicalSelections -UnresolvedUserContext $unresolvedUserContext -ProblemSelection $problemSelection -TimingSelection $timingSelection -GoalSelection $goalSelection -ClassId $requestedClassId -ParentTaskId $parentTaskId
+    $selectionSource = {
+        param([string]$Name, [string]$Fallback)
+        $allowed = if ($Name -ceq 'installationSelectionSource') { @('UserSelected','ContextInherited','DerivedFromProfile') } else { @('UserSelected','ContextInherited') }
+        if ($null -ne $input.PSObject.Properties[$Name] -and [string]$input.$Name -in $allowed) { return [string]$input.$Name }
+        $Fallback
+    }
+    $envelope=New-GridRequestEnvelope -GameId $canonicalGameId -InstallationId ([string]$input.installationId) -ProfileId ([string]$input.profileId) -ClassId ([string]$input.classId) -ClassRecipeVersion ([string]$recipes[0].recipeVersion) -ModNames $mods -ToolIds $tools -CapabilityIds $capabilityIds -PlainText $problem `
+        -GameSelectionSource (&$selectionSource 'gameSelectionSource' 'UserSelected') `
+        -InstallationSelectionSource (&$selectionSource 'installationSelectionSource' 'UserSelected') `
+        -ProfileSelectionSource (&$selectionSource 'profileSelectionSource' 'UserSelected') `
+        -ClassSelectionSource (&$selectionSource 'classSelectionSource' 'UserSelected')
     $plan=Resolve-GridRequestPlan -Envelope $envelope -ScriptsRoot $scriptsRoot
     $toolInputs=@{}
     if($null-ne $input.PSObject.Properties['toolInputs'] -and $null-ne $input.toolInputs){foreach($p in @($input.toolInputs.PSObject.Properties)){$toolInputs[[string]$p.Name]=$p.Value}}
@@ -155,12 +170,37 @@ try {
         if($null-eq $input.PSObject.Properties['gridDataRoot'] -or [string]::IsNullOrWhiteSpace([string]$input.gridDataRoot)){throw 'InstallationContextUnresolved: gridDataRoot is required separately from caseStoreRoot.'}
         . (Join-Path $scriptsRoot 'games\skyrimspecialedition\health\collectors\Resolve-GridSkyrimRequestToolInputs.ps1')
         $resolveToolIds=@($tools);if($captureCurrentState -and 'grid.tool.mo2' -notin $resolveToolIds){$resolveToolIds+=@('grid.tool.mo2')}
-        $resolvedInputs=Resolve-GridSkyrimRequestToolInputs -GridDataRoot ([string]$input.gridDataRoot) -InstallationId ([string]$input.installationId) -ProfileId ([string]$input.profileId) -ToolIds $resolveToolIds
+        $resolvedInputs=Resolve-GridSkyrimRequestToolInputs -GridDataRoot ([string]$input.gridDataRoot) -InstallationId ([string]$input.installationId) -ProfileId ([string]$input.profileId) -ToolIds $resolveToolIds -PrepareAuthorizationScope
         foreach($key in @($resolvedInputs.Keys)){if(-not$toolInputs.ContainsKey([string]$key)){$toolInputs[[string]$key]=$resolvedInputs[$key]}}
         if($null-ne$input.PSObject.Properties['recoverySourceRefresh']){
             if(-not$toolInputs.ContainsKey('grid.tool.mo2')){throw 'RecoveryRefreshAuthorizationInvalid: the exact MO2 read scope is absent.'}
             $toolInputs['grid.tool.mo2']|Add-Member -NotePropertyName recoverySourceRefresh -NotePropertyValue $input.recoverySourceRefresh -Force
         }
+    }
+    if($canonicalGameId -in @('grandtheftautov-enhanced','grandtheftautov-legacy') -and $captureCurrentState){
+        if($null-eq $input.PSObject.Properties['gridDataRoot'] -or [string]::IsNullOrWhiteSpace([string]$input.gridDataRoot)){
+            throw 'InstallationContextUnresolved: gridDataRoot is required separately from caseStoreRoot.'
+        }
+        $catalogGameId=Resolve-GridRequestCatalogGameId -GameId $canonicalGameId
+        $connectedContext=Resolve-GridConnectedGameContext -GridDataRoot ([string]$input.gridDataRoot) -CatalogGameId $catalogGameId -InstallationId ([string]$input.installationId) -ProfileId ([string]$input.profileId) -PrepareAuthorizationScope
+        $gtaModulePath=Join-Path $scriptsRoot 'games\grandtheftautov\health\Grid.Health.GtaV.psm1'
+        $gtaModule=Import-Module -Name $gtaModulePath -Force -PassThru -DisableNameChecking
+        $gtaResolver=Get-Command -Name Resolve-GridGtaRequestContext -Module $gtaModule.Name -ErrorAction SilentlyContinue
+        if(-not$gtaResolver){throw 'InstallationContextUnresolved: the registered GTA request-context resolver is unavailable.'}
+        $knownFolders=@{
+            Documents=[Environment]::GetFolderPath([Environment+SpecialFolder]::MyDocuments)
+            LocalApplicationData=[Environment]::GetFolderPath([Environment+SpecialFolder]::LocalApplicationData)
+            ProgramData=[Environment]::GetFolderPath([Environment+SpecialFolder]::CommonApplicationData)
+        }
+        $gtaContext=&$gtaResolver -ConnectedRegistration $connectedContext -RequestedGameId $canonicalGameId -RequestedInstallationId ([string]$input.installationId) -RequestedProfileId ([string]$input.profileId) -GameRoot ([string]$connectedContext.installRoot) -KnownFolders $knownFolders
+        $allReadPaths=@(@($gtaContext.authorizedReadPaths)+@([string]$connectedContext.registrationStorePath)|Where-Object{-not[string]::IsNullOrWhiteSpace([string]$_)}|ForEach-Object{[IO.Path]::GetFullPath([string]$_)}|Sort-Object -Unique)
+        $gtaInput=[pscustomobject][ordered]@{
+            connectedRegistration=$connectedContext
+            resolvedContext=$gtaContext
+            authorizedReadPaths=$allReadPaths
+            exactReadResources=@($gtaContext.exactReadResources)
+        }
+        if(-not$toolInputs.ContainsKey('grid.intake.game-context')){$toolInputs['grid.intake.game-context']=$gtaInput}
     }
     $review=New-GridRequestAuthorizationReview -Envelope $envelope -RequestPlan $plan -ScriptsRoot $scriptsRoot -SubmissionId ([string]$input.submissionId) -ActorId ([string]$input.actorId) -SessionId ([string]$input.sessionId) -ToolInputs $toolInputs -InvestigationIntake $intake
     switch([string]$input.operation){
@@ -219,6 +259,13 @@ try {
                     }
                     if(-not[string]::IsNullOrWhiteSpace($baselinePredecessorCaseId)){$arguments.PredecessorCaseId=$baselinePredecessorCaseId}
                     & (Join-Path $PSScriptRoot 'Invoke-GridBaseline.ps1') @arguments
+                }.GetNewClosure()
+            }
+            elseif($captureCurrentState -and [string]$plan.status -eq 'ReadyToCollect' -and [string]$plan.dispatch.entryPoint -eq 'Invoke-GridGtaCrashInvestigation'){
+                $postReadCollector={param($boundReview,$requestCaseDirectory)
+                    $scopes=@($boundReview.scopes|Where-Object{[string]$_.toolId -ceq 'grid.intake.game-context'})
+                    if($scopes.Count-ne 1){throw 'GtaDiagnosticAuthorizationInvalid: the exact connected-game read scope is absent or ambiguous.'}
+                    Invoke-GridRequestEvidencePipeline -Envelope $envelope -RequestPlan $plan -AuthorizationScope $scopes[0] -ScriptsRoot $scriptsRoot -CaseId ([string]$boundReview.semanticBinding.workspaceId) -CaseDirectory $requestCaseDirectory
                 }.GetNewClosure()
             }
             $execution=Invoke-GridAuthorizedRequestExecution -Envelope $envelope -RequestPlan $plan -AuthorizationReview $review -AuthorizationGrantId ([string]$input.authorizationGrantId) -AuthorizationSecret ([string]$input.authorizationSecret) -ActorId ([string]$input.actorId) -SessionId ([string]$input.sessionId) -ScriptsRoot $scriptsRoot -CaseStoreRoot $root -SubmissionId ([string]$input.submissionId) -InvestigationIntake $intake -PostReadCollector $postReadCollector

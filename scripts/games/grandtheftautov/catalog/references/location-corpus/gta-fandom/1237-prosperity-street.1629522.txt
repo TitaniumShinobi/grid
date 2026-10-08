@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 1237 Prosperity Street
+|image = 1237_Prosperity_Street_1.jpg
+|caption = The exterior of the building during a sunset.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end apartment
+|garage = 2 vehicles <br /> 1 bike
+|price = $105,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5}}
+
+[[LEAD]]
+'''1237 Prosperity Street''' is a [[Safehouses in GTA Online|safehouse]] located on [[Prosperity Street]] in [[Del Perro]]/[[Morningwood]], [[Los Santos (HD Universe)|Los Santos]] featured in ''[[Grand Theft Auto Online]]''.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]105,000 and includes a 2-car garage.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online

@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Baytree Canyon
+|image = Arthur'sPassTrails-GTAV-BaytreeCanyonView.png
+|caption = Looking at Baytree Canyon from a unnamed trail
+|location      = [[Great Chaparral]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games         = {{Games|V=y|O=y}}
+|type          = canyon
+|pscanner      = PoliceScanner-GTAV-Neighborhood-BaytreeCanyon.ogg}}
+
+[[LEAD]]
+'''Baytree Canyon''' is a canyon located in the [[Great Chaparral]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Neighborhoods
+Zones

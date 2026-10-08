@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=SenoraWay-Street-GTAV.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Senora Freeway]]
+|end=Senora Freeway
+|map=<gallery>
+SenoraWay-GTAV-Map.png|Map
+SenoraWay-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Senora Way''' is a north–south road in the rural areas of east [[State of San Andreas (HD Universe)|San Andreas]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

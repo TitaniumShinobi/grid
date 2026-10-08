@@ -1,4 +1,5 @@
 using System.Collections.Immutable;
+using System.Collections.Frozen;
 using System.Text;
 using Grid.Core.Models;
 
@@ -28,7 +29,8 @@ public static class CanonicalSelectorProjectionEngine
                 $"Selector projection requires a valid shared-catalog snapshot: {string.Join("; ", catalog.Issues)}");
         var package = catalog.Snapshot.FindImportedPackage(catalogPackageId) ??
                       throw new InvalidDataException("The selected canonical package is not present in the shared catalog.");
-        return CreateVerifiedInput(package, catalogCompositionId, policy, applicability);
+        return CreateVerifiedInputCore(package, catalogCompositionId, policy, applicability,
+            catalog.HasValidatedPackage(package));
     }
 
     public static CanonicalSelectorProjectionInput CreateVerifiedInput(
@@ -36,12 +38,23 @@ public static class CanonicalSelectorProjectionEngine
         CatalogCompositionId catalogCompositionId,
         CanonicalSelectorProjectionPolicy policy,
         CanonicalApplicabilityProjection applicability)
+        => CreateVerifiedInputCore(package, catalogCompositionId, policy, applicability, false);
+
+    private static CanonicalSelectorProjectionInput CreateVerifiedInputCore(
+        CanonicalCatalogPackage package, CatalogCompositionId catalogCompositionId,
+        CanonicalSelectorProjectionPolicy policy, CanonicalApplicabilityProjection applicability,
+        bool packageAlreadyValidated)
     {
         ArgumentNullException.ThrowIfNull(package);
-        var verification = CanonicalCatalogPackageKernel.Verify(package);
-        if (!verification.IsStructurallyValid)
-            throw new InvalidDataException(
-                $"Selector projection requires a structurally verified catalog package: {string.Join("; ", verification.Issues)}");
+        if (!packageAlreadyValidated)
+        {
+            CatalogPackageVerificationResult verification;
+            using (CanonicalRuntimeDiagnostics.Measure("projection.create-verify"))
+                verification = CanonicalCatalogPackageKernel.Verify(package);
+            if (!verification.IsStructurallyValid)
+                throw new InvalidDataException(
+                    $"Selector projection requires a structurally verified catalog package: {string.Join("; ", verification.Issues)}");
+        }
         if (package.Manifest.PackageSchemaVersion is not (
                 CatalogPackageManifest.ProjectionContractSchemaVersion or
                 CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
@@ -49,7 +62,11 @@ public static class CanonicalSelectorProjectionEngine
             throw new InvalidDataException("Selector projection requires an evidence-closed semantic payload.");
         if (catalogCompositionId != applicability.CompositionId)
             throw new ArgumentException("Projection composition and applicability coordinates must match.", nameof(applicability));
-        return new CanonicalSelectorProjectionInput(package, catalogCompositionId, policy, applicability);
+        var input = new CanonicalSelectorProjectionInput(package, catalogCompositionId, policy, applicability);
+        using (CanonicalRuntimeDiagnostics.Measure("projection.validate-input"))
+            ValidateInput(input);
+        input.InitializeRuntimeState();
+        return input;
     }
 
     public static CanonicalSelectorResult Query(
@@ -66,30 +83,66 @@ public static class CanonicalSelectorProjectionEngine
             !string.Equals(query.ExactProjectionPolicyVersion, input.Policy.ExactVersion, StringComparison.Ordinal))
             throw new ArgumentException("Selector query coordinates do not match the frozen projection input.", nameof(query));
 
-        ValidateInput(input);
-        var graph = BuildGraph(
-            input, query.KnowledgeKind, query.IncludeIdentifierOnly, query.TerminologyLocale);
-        var current = query.CurrentPathId is null
-            ? graph.Root
-            : graph.ByPath.GetValueOrDefault(query.CurrentPathId.Value) ??
+        var graph = GetGraph(input, query.KnowledgeKind, query.IncludeIdentifierOnly,
+            query.TerminologyLocale, query.InspectionMode);
+        var current = graph.ByPath.GetValueOrDefault(query.CurrentPathId ?? graph.RootPath) ??
               throw new ArgumentException("The requested navigation path is not present in this projection.", nameof(query));
-        var children = Order(current.Children)
-            .Where(value => MatchesSearch(value, query.SearchText))
-            .Select(ToContract)
-            .ToImmutableArray();
+        var children = string.IsNullOrEmpty(query.SearchText) ? current.Children : current.Children
+            .Where(value => MatchesSearch(graph, value, query.SearchText)).ToImmutableArray();
         return new CanonicalSelectorResult(
             input.CatalogRevisionId,
             input.CatalogCompositionId,
             query.KnowledgeKind,
             input.Policy.Id,
             input.Policy.ExactVersion,
-            graph.Root.PathId,
-            current.PathId,
-            current.Parent?.PathId,
-            ToContract(current),
+            graph.RootPath,
+            current.Node.PathId,
+            current.Node.ParentPathId,
+            current.Node,
             children,
             input.CoverageState,
             query.TerminologyLocale);
+    }
+
+    private static CanonicalProjectionGraph GetGraph(CanonicalSelectorProjectionInput input, KnowledgeKind kind,
+        bool includeIdentifierOnly, CanonicalTerminologyLocalePreference locale, bool inspectionMode)
+    {
+        var state = input.RuntimeState ?? throw new InvalidDataException("Projection input was not validated.");
+        return state.GetGraph(CanonicalProjectionGraphKey.Create(kind, includeIdentifierOnly, inspectionMode, locale), () =>
+        {
+            CanonicalProjectionGraph graph;
+            using (CanonicalRuntimeDiagnostics.Measure("projection.graph-build"))
+            {
+                var built = BuildGraph(input, kind, includeIdentifierOnly, locale, inspectionMode);
+                var nodes = built.ByPath.ToDictionary(pair => pair.Key, pair => ToContract(pair.Value));
+                graph = new(built.Root.PathId, built.ByPath.ToFrozenDictionary(pair => pair.Key,
+                    pair => new CanonicalProjectionGraphNode(nodes[pair.Key],
+                        Order(pair.Value.Children).Select(child => nodes[child.PathId]).ToImmutableArray())));
+            }
+            CanonicalRuntimeDiagnostics.CaptureGraph(kind, includeIdentifierOnly, inspectionMode, locale, graph.Snapshot);
+            return graph;
+        });
+    }
+
+    public static bool ValidateSelection(CanonicalSelectorProjectionInput input, CanonicalSelectorSelection selection,
+        CanonicalTerminologyLocalePreference locale)
+    {
+        ArgumentNullException.ThrowIfNull(input);
+        ArgumentNullException.ThrowIfNull(selection);
+        ArgumentNullException.ThrowIfNull(locale);
+        if (selection.CatalogRevisionId != input.CatalogRevisionId ||
+            selection.CatalogCompositionId != input.CatalogCompositionId ||
+            selection.ProjectionPolicyId != input.Policy.Id ||
+            selection.ProjectionPolicyVersion != input.Policy.ExactVersion || !Enum.IsDefined(selection.KnowledgeKind))
+            return false;
+        if (selection.SelectionKind == CanonicalSelectorSelectionKind.OtherContext)
+            return !string.IsNullOrEmpty(selection.UnresolvedOtherContextId);
+        if (selection.SelectionKind != CanonicalSelectorSelectionKind.CanonicalRecord ||
+            selection.SelectedPathId is not { } path || selection.KnowledgeRecordId is not { } recordId)
+            return false;
+        var graph = GetGraph(input, selection.KnowledgeKind, true, locale, false);
+        return graph.ByPath.TryGetValue(path, out var value) && value.Node.IsSelectable &&
+            value.Node.KnowledgeRecordId == recordId;
     }
 
     public static CanonicalNavigationPathId? Back(CanonicalSelectorResult result) =>
@@ -117,7 +170,8 @@ public static class CanonicalSelectorProjectionEngine
         CanonicalSelectorProjectionInput input,
         KnowledgeKind kind,
         bool includeIdentifierOnly,
-        CanonicalTerminologyLocalePreference terminologyLocale)
+        CanonicalTerminologyLocalePreference terminologyLocale,
+        bool inspectionMode)
     {
         var rootSemantic = CanonicalProjectionSemantics.Root(kind);
         var rootOrganizationId = CanonicalOrganizationalNodeId.DeriveV1(
@@ -131,33 +185,38 @@ public static class CanonicalSelectorProjectionEngine
             CanonicalNavigationDisplayKind.PolicyLabel, [rootNodeId]);
         var graph = new ProjectionGraph(kind, root);
 
-        var records = input.KnowledgeRecords
-            .Where(value => value.Kind == kind && input.Applicability.IsApplicable(value.Id))
-            .Where(value => !IsEffectiveDuplicateOrDeleted(value.Id, input.ContributionAssertions))
-            .OrderBy(value => value.Id.Value, StringComparer.Ordinal)
-            .ToImmutableArray();
-        if (!includeIdentifierOnly)
-            records = records.Where(record => HasPrimaryTerminology(
-                record.Id, input.TerminologyAssertions, terminologyLocale)).ToImmutableArray();
-
-        switch (kind)
+        ImmutableArray<CanonicalKnowledgeRecord> records;
+        using (CanonicalRuntimeDiagnostics.Measure("projection.records-filter"))
         {
-            case KnowledgeKind.Location:
-                ProjectLocations(input, graph, records, terminologyLocale);
-                break;
-            case KnowledgeKind.MissionQuest:
-                ProjectMissionQuests(input, graph, records, terminologyLocale);
-                break;
-            case KnowledgeKind.Item:
-                ProjectItems(input, graph, records, terminologyLocale);
-                break;
-            case KnowledgeKind.Actor:
-                ProjectActors(input, graph, records, terminologyLocale);
-                break;
-            default:
-                throw new ArgumentOutOfRangeException(nameof(kind));
+            records = input.RuntimeState!.Records(kind);
+            if (!inspectionMode && input.Policy.UsesGtaEnhancedRecordAdmission)
+                records = records.Where(record =>
+                    !GtaSelectorDisplayRules.IsGtaGame(record.GameId) ||
+                    IsAdmitted(record, input, terminologyLocale)).ToImmutableArray();
         }
-        graph.Index();
+
+        using (CanonicalRuntimeDiagnostics.Measure("projection.kind-project"))
+        {
+            switch (kind)
+            {
+                case KnowledgeKind.Location:
+                    ProjectLocations(input, graph, records, terminologyLocale);
+                    break;
+                case KnowledgeKind.MissionQuest:
+                    ProjectMissionQuests(input, graph, records, terminologyLocale);
+                    break;
+                case KnowledgeKind.Item:
+                    ProjectItems(input, graph, records, terminologyLocale);
+                    break;
+                case KnowledgeKind.Actor:
+                    ProjectActors(input, graph, records, terminologyLocale);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(kind));
+            }
+        }
+        using (CanonicalRuntimeDiagnostics.Measure("projection.graph-index"))
+            graph.Index();
         return graph;
     }
 
@@ -168,9 +227,8 @@ public static class CanonicalSelectorProjectionEngine
         CanonicalTerminologyLocalePreference terminologyLocale)
     {
         var recordMap = records.ToDictionary(value => value.Id);
-        var strict = input.RelationshipAssertions.Where(value =>
-                recordMap.ContainsKey(value.SubjectKnowledgeRecordId) &&
-                LocationRelationshipSemantics.IsStrictHierarchy(value.SemanticId))
+        var strict = input.RuntimeState!.StrictLocationRelationships.Where(value =>
+                recordMap.ContainsKey(value.SubjectKnowledgeRecordId))
             .ToImmutableArray();
         var resolvedParents = strict
             .Where(value => value.ResolvedTargetKnowledgeRecordId is { } target && recordMap.ContainsKey(target))
@@ -220,7 +278,7 @@ public static class CanonicalSelectorProjectionEngine
     {
         foreach (var record in records)
         {
-            var roles = Roles(record.Id, input.SemanticClassifications);
+            var roles = input.RuntimeState!.Roles(record.Id);
             var placed = false;
             foreach (var role in roles)
             {
@@ -228,7 +286,7 @@ public static class CanonicalSelectorProjectionEngine
                 if (semantic is null) continue;
                 if (role == CanonicalProjectionSemantics.MissionMod)
                 {
-                    var introductions = input.ContributionAssertions.Where(value =>
+                    var introductions = input.RuntimeState!.Contributions(record.Id).Where(value =>
                             value.KnowledgeRecordId == record.Id &&
                             value.ContributionKind == CanonicalRecordContributionKind.Introduced &&
                             value.ExactModIdentity is not null && value.ExactModVersion is not null)
@@ -253,9 +311,10 @@ public static class CanonicalSelectorProjectionEngine
                             value.SemanticId == CanonicalProjectionSemantics.MissionActivityFamilyValueNode &&
                             value.ParentSemanticId == CanonicalProjectionSemantics.MissionOnlineNode))
                     {
-                        var activities = input.OrganizationalValueAssertions
+                        var activities = input.RuntimeState!.Organization(record.Id)
                             .Where(value => value.KnowledgeRecordId == record.Id &&
-                                            value.DimensionId == CanonicalProjectionSemantics.MissionActivityFamilyDimensionNode)
+                                            value.DimensionId == CanonicalProjectionSemantics.MissionActivityFamilyDimensionNode &&
+                                            OrganizationMatchesLocale(input, record, value, terminologyLocale))
                             .OrderBy(value => value.Id.Value, StringComparer.Ordinal)
                             .ToImmutableArray();
                         if (!activities.IsEmpty)
@@ -290,7 +349,7 @@ public static class CanonicalSelectorProjectionEngine
     {
         foreach (var record in records)
         {
-            var nodes = Roles(record.Id, input.SemanticClassifications)
+            var nodes = input.RuntimeState!.Roles(record.Id)
                 .Select(role => RoleNode(KnowledgeKind.Item, role))
                 .Where(value => value is not null)
                 .Select(value => value!.Value)
@@ -305,6 +364,18 @@ public static class CanonicalSelectorProjectionEngine
             foreach (var node in nodes)
             {
                 var familyNode = AddStaticOrganization(input, graph, graph.Root, node);
+                if (node == CanonicalProjectionSemantics.ItemVehiclesNode)
+                {
+                    foreach (var category in LocalizedOrganization(input, record,
+                                 CanonicalProjectionSemantics.ItemVehicleClassDimensionNode, terminologyLocale))
+                    {
+                        var categoryNode = AddDynamicOrganization(input, graph, familyNode,
+                            CanonicalProjectionSemantics.ItemVehicleClassValueNode,
+                            category.ExactValueIdentity, category.VerbatimDisplayValue!, true);
+                        AddRecord(input, graph, categoryNode, record, terminologyLocale);
+                    }
+                    continue;
+                }
                 if (node != CanonicalProjectionSemantics.ItemWeaponsNode ||
                     !input.Policy.OrganizationalDefinitions.Any(value =>
                         value.KnowledgeKind == KnowledgeKind.Item &&
@@ -315,10 +386,11 @@ public static class CanonicalSelectorProjectionEngine
                     continue;
                 }
 
-                var categories = input.OrganizationalValueAssertions
+                var categories = input.RuntimeState!.Organization(record.Id)
                     .Where(value =>
                         value.KnowledgeRecordId == record.Id &&
-                        value.DimensionId == CanonicalProjectionSemantics.ItemSourceCategoryDimensionNode)
+                        value.DimensionId == CanonicalProjectionSemantics.ItemSourceCategoryDimensionNode &&
+                        OrganizationMatchesLocale(input, record, value, terminologyLocale))
                     .OrderBy(value => value.Id.Value, StringComparer.Ordinal)
                     .ToImmutableArray();
                 if (categories.IsEmpty)
@@ -349,10 +421,10 @@ public static class CanonicalSelectorProjectionEngine
     {
         foreach (var record in records)
         {
-            var roles = Roles(record.Id, input.SemanticClassifications);
+            var roles = input.RuntimeState!.Roles(record.Id);
             var npc = roles.Contains(CanonicalProjectionSemantics.ActorNpc);
             var player = roles.Contains(CanonicalProjectionSemantics.ActorPlayerCharacter);
-            if (npc == player)
+            if (!npc && !player)
             {
                 AddRecord(input, graph, graph.Root, record, terminologyLocale);
                 continue;
@@ -365,30 +437,82 @@ public static class CanonicalSelectorProjectionEngine
                 continue;
             }
             var npcNode = AddStaticOrganization(input, graph, graph.Root, CanonicalProjectionSemantics.ActorNpcNode);
-            var values = input.OrganizationalValueAssertions
-                .Where(value => value.KnowledgeRecordId == record.Id &&
-                    (value.DimensionId == CanonicalProjectionSemantics.ActorDlcDimensionNode ||
-                     value.DimensionId == CanonicalProjectionSemantics.ActorFactionDimensionNode))
-                .OrderBy(value => value.Id.Value, StringComparer.Ordinal)
-                .ToImmutableArray();
-            if (values.IsEmpty)
+            var placedUnderNpcTaxonomy = false;
+            if (input.Policy.SupportsActorNamedGenericNpcOrganization &&
+                (roles.Contains(CanonicalProjectionSemantics.ActorNamedCharacter) ||
+                 roles.Contains(CanonicalProjectionSemantics.ActorGenericType)))
             {
+                placedUnderNpcTaxonomy = PlaceActorNamedGenericOrganization(
+                    input, graph, npcNode, record, roles, terminologyLocale);
+            }
+
+            placedUnderNpcTaxonomy |= PlaceActorDlcAndFactionOrganization(
+                input, graph, npcNode, record, terminologyLocale);
+            if (!placedUnderNpcTaxonomy)
                 AddRecord(input, graph, npcNode, record, terminologyLocale);
-                continue;
-            }
-            foreach (var value in values)
-            {
-                var dimension = AddStaticOrganization(input, graph, npcNode, value.DimensionId);
-                var valueSemantic = value.DimensionId == CanonicalProjectionSemantics.ActorDlcDimensionNode
-                    ? CanonicalProjectionSemantics.ActorDlcValueNode
-                    : CanonicalProjectionSemantics.ActorFactionValueNode;
-                var valueNode = AddDynamicOrganization(
-                    input, graph, dimension, valueSemantic, value.ExactValueIdentity,
-                    value.VerbatimDisplayValue ?? value.ExactValueIdentity.ExactRepresentation,
-                    value.VerbatimDisplayValue is not null);
-                AddRecord(input, graph, valueNode, record, terminologyLocale);
-            }
         }
+    }
+
+    private static bool PlaceActorNamedGenericOrganization(
+        CanonicalSelectorProjectionInput input,
+        ProjectionGraph graph,
+        BuilderNode npcNode,
+        CanonicalKnowledgeRecord record,
+        ImmutableHashSet<CanonicalSemanticRoleId> roles,
+        CanonicalTerminologyLocalePreference terminologyLocale)
+    {
+        var subtype = AddStaticOrganization(input, graph, npcNode,
+            roles.Contains(CanonicalProjectionSemantics.ActorNamedCharacter)
+                ? CanonicalProjectionSemantics.ActorNamedCharacterNode
+                : CanonicalProjectionSemantics.ActorGenericTypeNode);
+        var categories = LocalizedOrganization(input, record,
+            CanonicalProjectionSemantics.ActorSourceCategoryDimensionNode, terminologyLocale);
+        if (categories.IsEmpty)
+        {
+            AddRecord(input, graph, subtype, record, terminologyLocale);
+            return true;
+        }
+
+        foreach (var category in categories)
+        {
+            var categoryNode = AddDynamicOrganization(input, graph, subtype,
+                CanonicalProjectionSemantics.ActorSourceCategoryValueNode,
+                category.ExactValueIdentity, category.VerbatimDisplayValue!, true);
+            AddRecord(input, graph, categoryNode, record, terminologyLocale);
+        }
+
+        return true;
+    }
+
+    private static bool PlaceActorDlcAndFactionOrganization(
+        CanonicalSelectorProjectionInput input,
+        ProjectionGraph graph,
+        BuilderNode npcNode,
+        CanonicalKnowledgeRecord record,
+        CanonicalTerminologyLocalePreference terminologyLocale)
+    {
+        var values = input.RuntimeState!.Organization(record.Id)
+            .Where(value => value.KnowledgeRecordId == record.Id &&
+                (value.DimensionId == CanonicalProjectionSemantics.ActorDlcDimensionNode ||
+                 value.DimensionId == CanonicalProjectionSemantics.ActorFactionDimensionNode) &&
+                OrganizationMatchesLocale(input, record, value, terminologyLocale))
+            .OrderBy(value => value.Id.Value, StringComparer.Ordinal)
+            .ToImmutableArray();
+        if (values.IsEmpty) return false;
+        foreach (var value in values)
+        {
+            var dimension = AddStaticOrganization(input, graph, npcNode, value.DimensionId);
+            var valueSemantic = value.DimensionId == CanonicalProjectionSemantics.ActorDlcDimensionNode
+                ? CanonicalProjectionSemantics.ActorDlcValueNode
+                : CanonicalProjectionSemantics.ActorFactionValueNode;
+            var valueNode = AddDynamicOrganization(
+                input, graph, dimension, valueSemantic, value.ExactValueIdentity,
+                value.VerbatimDisplayValue ?? value.ExactValueIdentity.ExactRepresentation,
+                value.VerbatimDisplayValue is not null);
+            AddRecord(input, graph, valueNode, record, terminologyLocale);
+        }
+
+        return true;
     }
 
     private static BuilderNode AddStaticOrganization(
@@ -441,12 +565,7 @@ public static class CanonicalSelectorProjectionEngine
         var path = CanonicalNavigationPathId.DeriveV1(
             input.CatalogRevisionId, input.CatalogCompositionId, input.Policy.Id,
             input.Policy.ExactVersion, graph.Kind, segments);
-        var terms = input.TerminologyAssertions.Where(value => value.KnowledgeRecordId == record.Id)
-            .OrderBy(value => value.Role)
-            .ThenBy(value => value.VerbatimValue, StringComparer.Ordinal)
-            .ThenBy(value => value.SourceRevisionId.Value, StringComparer.Ordinal)
-            .ThenBy(value => EvidenceClaimContentId.DeriveV1(value).Value, StringComparer.Ordinal)
-            .ToImmutableArray();
+        var terms = input.RuntimeState!.Terminology(record.Id);
         var primary = SelectPreferredTerminology(
                 terms.Where(value => value.Role == TerminologyAssertionRole.PrimaryName),
                 terminologyLocale)
@@ -477,13 +596,13 @@ public static class CanonicalSelectorProjectionEngine
             StringComparer.Ordinal)
         .ThenBy(value => value.PathId.Value, StringComparer.Ordinal);
 
-    private static bool MatchesSearch(BuilderNode value, string? searchText)
+    private static bool MatchesSearch(CanonicalProjectionGraph graph, CanonicalNavigationNode value, string? searchText)
     {
         if (string.IsNullOrEmpty(searchText)) return true;
         if (value.DisplayAnchor.Contains(searchText, StringComparison.Ordinal)) return true;
-        if (value.Terminology.Any(assertion =>
+        if (value.ExactTerminologyAssertions.Any(assertion =>
                 assertion.VerbatimValue.Contains(searchText, StringComparison.Ordinal))) return true;
-        return value.Children.Any(child => MatchesSearch(child, searchText));
+        return graph.ByPath[value.PathId].Children.Any(child => MatchesSearch(graph, child, searchText));
     }
 
     private static CanonicalNavigationNode ToContract(BuilderNode value) => new(
@@ -512,6 +631,7 @@ public static class CanonicalSelectorProjectionEngine
         KnowledgeKind.Item when role == CanonicalProjectionSemantics.ItemMagic => CanonicalProjectionSemantics.ItemMagicNode,
         KnowledgeKind.Item when role == CanonicalProjectionSemantics.ItemNature => CanonicalProjectionSemantics.ItemNatureNode,
         KnowledgeKind.Item when role == CanonicalProjectionSemantics.ItemWeapons => CanonicalProjectionSemantics.ItemWeaponsNode,
+        KnowledgeKind.Item when role == CanonicalProjectionSemantics.ItemVehicles => CanonicalProjectionSemantics.ItemVehiclesNode,
         _ => null,
     };
 
@@ -521,6 +641,149 @@ public static class CanonicalSelectorProjectionEngine
         values.Any(value => value.KnowledgeRecordId == id &&
             (value.ContributionKind == CanonicalRecordContributionKind.Deleted ||
              value.ContributionKind == CanonicalRecordContributionKind.Modified));
+
+    private static bool IsAdmitted(CanonicalKnowledgeRecord record, CanonicalSelectorProjectionInput input,
+        CanonicalTerminologyLocalePreference locale)
+    {
+        var roles = input.RuntimeState!.Roles(record.Id);
+        // Existing source-classified geographic zones remain player-addressable. MLOs and
+        // rooms do not acquire presentation eligibility merely by having technical text.
+        var establishedZone = record.Kind == KnowledgeKind.Location &&
+            input.RuntimeState!.EstablishedZones.Contains(record.Id);
+        if ((!roles.Contains(CanonicalProjectionSemantics.SelectorPlayerAddressable) && !establishedZone) ||
+            roles.Contains(CanonicalProjectionSemantics.MissionPlaylist)) return false;
+        var terminology = input.RuntimeState!.Terminology(record.Id);
+        if (TryGetResolvedPrimaryDisplayForAdmission(record.Id, terminology, locale, input.Policy, out _))
+        {
+            return !roles.Contains(CanonicalProjectionSemantics.ItemVehicles) ||
+                LocalizedOrganization(input, record, CanonicalProjectionSemantics.ItemVehicleClassDimensionNode, locale).Length == 1;
+        }
+
+        var primaryAssertions = terminology.Where(value => value.Role == TerminologyAssertionRole.PrimaryName).ToImmutableArray();
+        if (record.Kind == KnowledgeKind.Location && input.Policy.RequiresNamedLocationPresentation)
+            return false;
+        var preferredPrimaryLabels = SelectPrimaryTerminologyForAdmission(primaryAssertions, locale, input.Policy)
+            .Select(value => value.VerbatimValue)
+            .Distinct(StringComparer.Ordinal)
+            .ToArray();
+        if (preferredPrimaryLabels.Length > 1)
+            return false;
+        if (primaryAssertions.Length > 0 && preferredPrimaryLabels.Length == 0)
+            return false;
+
+        return roles.Contains(CanonicalProjectionSemantics.SelectorPlayerAddressable) || establishedZone;
+    }
+
+    private static bool OrganizationMatchesLocale(CanonicalSelectorProjectionInput input,
+        CanonicalKnowledgeRecord record, CanonicalOrganizationalValueAssertion value,
+        CanonicalTerminologyLocalePreference locale)
+    {
+        if (!input.Policy.UsesGtaEnhancedRecordAdmission || !GtaSelectorDisplayRules.IsGtaGame(record.GameId))
+            return true;
+        if (value.VerbatimDisplayValue is null) return false;
+        var resolved = LocalizedOrganization(input, record, value.DimensionId, locale);
+        return resolved.Any(candidate =>
+            candidate.ExactValueIdentity == value.ExactValueIdentity &&
+            string.Equals(candidate.VerbatimDisplayValue, value.VerbatimDisplayValue, StringComparison.Ordinal));
+    }
+
+    private static ImmutableArray<CanonicalOrganizationalValueAssertion> LocalizedOrganization(
+        CanonicalSelectorProjectionInput input, CanonicalKnowledgeRecord record,
+        CanonicalOrganizationalSemanticId dimension, CanonicalTerminologyLocalePreference locale)
+    {
+        var candidates = input.RuntimeState!.Organization(record.Id).Where(value =>
+            value.KnowledgeRecordId == record.Id &&
+            value.DimensionId == dimension &&
+            value.VerbatimDisplayValue is not null).ToImmutableArray();
+        var resolved = ImmutableArray.CreateBuilder<CanonicalOrganizationalValueAssertion>();
+        foreach (var group in candidates.GroupBy(value => value.ExactValueIdentity))
+        {
+            var distinctLabels = group.Select(value => value.VerbatimDisplayValue!).Distinct(StringComparer.Ordinal).ToArray();
+            if (distinctLabels.Length != 1) continue;
+            var preferred = SelectPreferredOrganizationalValues(group, locale).ToImmutableArray();
+            if (preferred.IsEmpty) continue;
+            resolved.Add(preferred.OrderBy(value => value.Id.Value, StringComparer.Ordinal).First());
+        }
+
+        return resolved.ToImmutable().OrderBy(value => value.Id.Value, StringComparer.Ordinal).ToImmutableArray();
+    }
+
+    private static IEnumerable<CanonicalOrganizationalValueAssertion> SelectPreferredOrganizationalValues(
+        IEnumerable<CanonicalOrganizationalValueAssertion> values,
+        CanonicalTerminologyLocalePreference preference)
+    {
+        var assertions = values.ToImmutableArray();
+        var exact = assertions.Where(value =>
+            string.Equals(value.LanguageTag, preference.RequestedLanguageTag, StringComparison.Ordinal)).ToImmutableArray();
+        if (!exact.IsEmpty) return exact;
+        foreach (var fallback in preference.ApprovedLanguageFallbackTags)
+        {
+            var matching = assertions.Where(value =>
+                string.Equals(value.LanguageTag, fallback, StringComparison.Ordinal)).ToImmutableArray();
+            if (!matching.IsEmpty) return matching;
+        }
+
+        return assertions.Where(value => value.LanguageTag is null);
+    }
+
+    private static bool AdmissionUsesApprovedLanguageFallback(CanonicalSelectorProjectionPolicy policy) =>
+        string.Equals(policy.ExactVersion, "5", StringComparison.Ordinal) ||
+        string.Equals(policy.ExactVersion, "6", StringComparison.Ordinal);
+
+    private static IEnumerable<TerminologyAssertion> SelectPrimaryTerminologyForAdmission(
+        IEnumerable<TerminologyAssertion> primaryAssertions,
+        CanonicalTerminologyLocalePreference locale,
+        CanonicalSelectorProjectionPolicy policy) =>
+        AdmissionUsesApprovedLanguageFallback(policy)
+            ? SelectPreferredTerminology(primaryAssertions, locale)
+            : primaryAssertions.Where(value =>
+                string.Equals(value.LanguageTag, locale.RequestedLanguageTag, StringComparison.Ordinal));
+
+    private static bool TryGetResolvedPrimaryDisplayForAdmission(
+        KnowledgeRecordId id,
+        ImmutableArray<TerminologyAssertion> values,
+        CanonicalTerminologyLocalePreference locale,
+        CanonicalSelectorProjectionPolicy policy,
+        out string display)
+    {
+        var primary = values.Where(value => value.KnowledgeRecordId == id &&
+                                            value.Role == TerminologyAssertionRole.PrimaryName);
+        var names = SelectPrimaryTerminologyForAdmission(primary, locale, policy)
+            .Select(value => value.VerbatimValue)
+            .Distinct(StringComparer.Ordinal)
+            .ToArray();
+        if (names.Length == 1 && !string.IsNullOrWhiteSpace(names[0]))
+        {
+            display = names[0];
+            return true;
+        }
+
+        display = string.Empty;
+        return false;
+    }
+
+    private static bool TryGetResolvedPrimaryDisplay(
+        KnowledgeRecordId id,
+        ImmutableArray<TerminologyAssertion> values,
+        CanonicalTerminologyLocalePreference locale,
+        out string display)
+    {
+        var names = SelectPreferredTerminology(
+                values.Where(value => value.KnowledgeRecordId == id &&
+                                      value.Role == TerminologyAssertionRole.PrimaryName),
+                locale)
+            .Select(value => value.VerbatimValue)
+            .Distinct(StringComparer.Ordinal)
+            .ToArray();
+        if (names.Length == 1 && !string.IsNullOrWhiteSpace(names[0]))
+        {
+            display = names[0];
+            return true;
+        }
+
+        display = string.Empty;
+        return false;
+    }
 
     private static bool HasPrimaryTerminology(
         KnowledgeRecordId id,
@@ -564,9 +827,7 @@ public static class CanonicalSelectorProjectionEngine
 
     private static void ValidateInput(CanonicalSelectorProjectionInput input)
     {
-        var verification = CanonicalCatalogPackageKernel.Verify(input.VerifiedPackage);
-        if (!verification.IsStructurallyValid ||
-            input.VerifiedPackage.Manifest.PackageSchemaVersion is not (
+        if (input.VerifiedPackage.Manifest.PackageSchemaVersion is not (
                 CatalogPackageManifest.ProjectionContractSchemaVersion or
                 CatalogPackageManifest.CrossSourceAssertionSchemaVersion or
                 CatalogPackageManifest.AdapterProvenanceBoundarySchemaVersion))
@@ -575,7 +836,10 @@ public static class CanonicalSelectorProjectionEngine
             throw new InvalidDataException("Selector projection revision is not the verified package revision.");
         if (!PolicyEquivalent(input.Policy, CanonicalSelectorProjectionPolicy.V1) &&
             !PolicyEquivalent(input.Policy, CanonicalSelectorProjectionPolicy.V2) &&
-            !PolicyEquivalent(input.Policy, CanonicalSelectorProjectionPolicy.V3))
+            !PolicyEquivalent(input.Policy, CanonicalSelectorProjectionPolicy.V3) &&
+            !PolicyEquivalent(input.Policy, CanonicalSelectorProjectionPolicy.V4) &&
+            !PolicyEquivalent(input.Policy, CanonicalSelectorProjectionPolicy.GtaEnhanced) &&
+            !PolicyEquivalent(input.Policy, CanonicalSelectorProjectionPolicy.LocationPrepared))
             throw new InvalidDataException("The selector projection policy revision is unsupported or its immutable content changed.");
         if (input.KnowledgeRecords.IsDefault || input.TerminologyAssertions.IsDefault ||
             input.RelationshipAssertions.IsDefault || input.SourceRevisions.IsDefault ||

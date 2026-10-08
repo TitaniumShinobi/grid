@@ -1,0 +1,51 @@
+[[INFOBOX]]
+{{Infobox location
+|name  = Legion Square
+|image = LegionSquare-GTAV.png
+|caption = Overview of Legion Square.
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|location = [[Downtown Los Santos (HD Universe)|Downtown]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner    = 
+|map           = <gallery>
+LegionSquare-IngameGPS-GTAV-Map.png|Legion Square
+LegionSquare-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Legion Square''' is a public park and a block district in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Downtown Los Santos (HD Universe)|Downtown Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]. It is one of the few public parks in the [[Los Santos (HD Universe)|city]].
+
+[[SECTION:2:Places of Interest]]
+*[[The Vault]]
+
+[[SECTION:2:Businesses]]
+*[[The Bean Machine]]
+*[[Cool Beans]]
+*[[The Emissary]]
+*[[Escapism Travel]]
+*[[FLEECA|Fleeca Bank]]
+*[[Frenchie's Restaurant]]
+*[[Kronos (HD Universe)|Kronos]]
+*[[Limey's Juice and Smoothies|Limey's]]
+*[[Maison Ricard]]
+*[[Noodle Exchange]]
+*[[Robert Dazzler International Jewelry Exchange]]
+*[[Shenanigan's Bar]]
+*[[Spines Bookshop]]
+*[[Vankhov|Vankhov Jewelry]]
+*[[Zorse Leatherware]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Elgin Avenue]]
+*[[San Andreas Avenue]]
+*[[Strawberry Ave]]
+*[[Vespucci Boulevard]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Urban parks
+Zones

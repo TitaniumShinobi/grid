@@ -1,0 +1,54 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=AltaStreet-PillboxHill-GTAV.png
+|caption=Alta Street running through Pillbox Hill.
+|games={{Games|V=y|O=y}}
+|start=[[Davis Avenue]]
+|end=[[Power Street]] and [[Las Lagunas Boulevard]]
+|map=<gallery>
+AltaStreet-GTAV-Map.png|Map
+AltaStreet-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Alta Street''' is a north-south [[List of Street Names|street]] in [[Los Santos (HD Universe)|Los Santos]] featured in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[3 Alta Street]]
+*[[707 Vespucci]] <small>(corner of Vespucci Boulevard)</small>
+*[[Arcadius Business Center]] <small>(corner of San Andreas Avenue)</small>
+*[[Maze Bank Tower]] <small>(corner of Vespucci Boulevard and San Andreas Avenue)</small>
+*[[Mile High Club]] <small>(corner of Vespucci Boulevard)</small>
+*[[Pacific Standard Public Deposit Bank]] <small>(corner of Vinewood Boulevard, accessible interior)</small>
+*[[Pillbox South Station]]
+*[[Schlongberg Sachs Center]] <small>(corner of San Andreas Avenue)</small>
+*[[Tinkle Building]] <small>(corner of Integrity Way)</small>
+
+[[SECTION:2:Businesses]]
+*[[Banner Hotel & Spa]]
+*[[Bean Machine]]
+*[[Brawls]]
+*[[Designer Slave]] <small>(corner of Vinewood Boulevard)</small>
+*[[Didier Sachs (HD Universe)|Didier Sachs]]
+*[[Globe Oil]] <small>(corner of Innocence Boulevard)</small>
+*[[Gruppe Sechs (HD Universe)|Gruppe Sechs]]
+*Ice Planet Jewelry
+*Larry's Lean Pork
+*[[Lârss & Elbö]] <small>(corner of Hawick Avenue)</small>
+*[[Longpig Mini Market]]
+*[[Pitchers]] <small>(corner of Clinton Avenue)</small>
+*[[Pop's Pills]] <small>(corner of Spanish Avenue)</small>
+*[[Post OP]]
+*[[Singleton's]]
+*Southern Tiles
+*[[The Party Basket]]
+*[[Vinewood Fantasies]]
+*Vinewood Music <small>(corner of Hawick Avenue)</small>
+*[[Vinewood Self Storage]] <small>(beneath the Olympic Freeway)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

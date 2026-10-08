@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Smokers Emporium
+|image     = SmokersEmporium-GTAV-Logo.png
+|caption   = '''Smokers Emporium''' logo.
+|taglines  = 
+|type      = Smoking Accessories
+|games     = {{Games|V=y|O=y}}
+|locations = 
+*[[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Smokers Emporium''' is a business in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Toke-a-monSmokersEmporium-GTAV-Rancho.jpg|[[Rancho]], [[Los Santos (HD Universe)|Los Santos]].
+SmokersEmporium-GTAV.jpg|[[Strawberry]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

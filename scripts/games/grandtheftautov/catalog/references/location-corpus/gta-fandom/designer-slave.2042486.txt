@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox business
+|image       = DesignerSlave-GTAIV-Logo.png
+|Name Change = RESALE STORE
+|games       = {{Games|IV=y|EFLC=y|V=y|O=y}}
+|locations   = [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|products    = [[#Brands|Apparel]]
+|website     = [[#Website|designerslave.com]]
+|status      = active
+|accessible  = No
+}}
+
+[[LEAD]]
+'''Designer Slave''' is an online retailer and resale store featured in the {{HD}} of the {{S}}.
+
+[[SECTION:4:Street Slaves]]
+*[[Rear Wall]]
+*[[Crevis]]
+*[[16:20]]
+*[[Tree]]
+*[[Fruntalot]]
+*[[Miss T]]
+*[[Skeeza]]
+*[[Double-P]]
+*[[Hawaiian Snow]]
+*[[Dr. B]]
+*[[Ranch (HD Universe)|Ranch]]
+*[[White Widow]]
+*[[Hinterland]]
+*[[Gaunt]]
+*[[Cadet]]
+*[[Sub Urban (HD Universe)|Sub Urban]]
+*[[VC TM]]
+*[[Backside Skateboards]]
+*[[Curbcrawler Skateboards]]
+*[[TankTop]]
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores
+Media in GTA IV
+Websites

@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicles
+|name          = Speedophile
+|image_label   = 
+|image         = Name-V-Speedophile.png
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Personal watercraft manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|vehicles      = [[#Vehicles|Vehicles]]
+|taglines      = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Speedophile''' is a personal watercraft manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

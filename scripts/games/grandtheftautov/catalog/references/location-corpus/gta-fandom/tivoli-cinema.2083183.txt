@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y
+|type          = entertainment
+|name          = Tivoli Cinema
+|sign          = 
+|image         = TivoliCinema-GTAV.png
+|caption       = 
+|aka           = Tivoli Theater
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Morningwood Boulevard]] and [[Cougar Avenue]], [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = Yes
+|opentimes      = 10:00 AM - 10:00 PM
+|owner          = [[Michael De Santa]] <small>(optional)</small>
+|price          = 
+*$25 <small>(movie)</small>
+*FREE <small>(movie, exclusively for Michael after purchasing property)</small>
+*$30,000,000 <small>(property)</small>
+|income        = $142,300 per week
+|business_type = Movie Theater
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = Danny <small>(manager)</small>
+|products      = 
+|vehicles      = 
+|taglines      = 
+|status        = active
+|phone         = 555-0138
+|unlockedby    = [[Fame or Shame (mission)|Fame or Shame]] <small>(unlocked for purchase)</small>
+}}
+
+[[LEAD]]
+The '''Tivoli Cinema''' (also known as '''Tivoli Theater''') is a movie theater featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Cinemas
+Landmarks
+Properties
+Properties in GTA V
+Theatres

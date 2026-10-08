@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Frankie's Service Center<br>/Frankie's Quality Motor Oils
+|image       = 
+<gallery>
+Frankie's_Service_Center_GTAV_Building.pg.jpg|Building
+FrankiesServiceCenter-GTAV-Sign.png|Sign 1
+FrankiesQualityMotorOils-GTAV-LogoText.png|Sign 2
+</gallery>
+|type        = Service center
+|games       = {{Games|V=y|O=y}}
+|locations   = [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map         = Grapeseed_Land_Survey_GTAV_Map_Frankie's_Service_Center.jpg
+|map_caption = Frankie's Service Center on the map.
+}}
+
+[[LEAD]]
+'''Frankie's Service Center''' is a service center located in [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

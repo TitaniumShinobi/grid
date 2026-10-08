@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = GAY BAR
+|business = y
+|activebiz = y
+|name = Tool Shed
+|image = ToolShed-GTAV-LogoTextureFile.png
+|type = Gay Bar
+|games = {{Games|V=y|O=y}}
+|location = [[Clinton Avenue]], [[Downtown Vinewood]]
+}}
+
+[[LEAD]]
+'''Tool Shed''' is a gay bar in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = fastfood
+|name          = Hearty Taco
+|image_label   = 
+|image         = HeartyTaco-GTAV-Logo.png
+|caption       = The '''Hearty Taco''' logo and tagline in {{VO}}.
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+{{Small|(see [[#Locations|Locations]])}}
+|taglines      = "Eat Your Heart Out!"
+|accessible    = No
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Hearty Taco''' is a [[Mexico|Mexican]] and [[United States of America|American]]-style restaurant chain appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|HeartyTaco-GTAVee-MirrorPark.jpg|[[Bridge Street]] and [[West Mirror Drive]], [[Mirror Park]].
+|HeartyTaco-GTAVee-Rancho.jpg|[[Davis Avenue]], [[Rancho]].
+}}
+{{Gallery
+|header = Unbranded branch
+|MexicanAndAmerican-GTAVee-Rancho.jpg|[[Dutch London Street]] and [[Roy Lowenstein Boulevard]], Rancho.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurant chains
+Mexican-themed restaurant chains

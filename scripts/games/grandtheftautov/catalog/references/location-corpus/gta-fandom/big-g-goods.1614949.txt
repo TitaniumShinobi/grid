@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{infobox business
+|name = Big G Goods
+|image = BigGGoods-GTAV-Logo.png
+|games = ''[[Grand Theft Auto V]]''
+|locations = [[Popular Street]], [[East Los Santos (HD Universe)|East Los Santos]]
+|type = Store merchant
+}}
+
+[[LEAD]]
+'''Big G Goods''' is a store merchant featured in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Warehouses

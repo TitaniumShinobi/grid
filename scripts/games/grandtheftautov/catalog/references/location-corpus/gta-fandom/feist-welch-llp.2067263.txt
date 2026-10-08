@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Feist&WelchLLP-GTAO-Logo.png
+|name = Feist & Welch LLP
+|lcn = 
+|type = Law Firm
+|games = {{Games|V=y|O=y}}
+|locations = [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Feist & Welch LLP''' is a law firm in {{V}} and {{O}} with offices located in the [[Del Perro Heights]] building in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Law firms

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = KOIRetreatSpa-GTAV.png
+|caption = General view of the spa.
+|type = Destination spa
+|locations = [[Bay City Avenue]] and [[Tug Street]], [[Puerto Del Sol]], [[Los Santos (HD Universe)|Los Santos]]
+|games=''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+The '''KOI Retreat & Spa''' is a destination spa appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[Puerto Del Sol]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = EastJoshuaRoad-GTAV.jpg
+|caption = East Joshua Road with [[Marina Drive]] on the right.
+|games = {{Games|V=y|O=y}}
+|start = [[Panorama Drive]], [[Sandy Shores]]
+|end = [[Senora Freeway]], [[Grapeseed]]
+|map = <gallery>
+EastJoshuaRoad-GTAV-Map.png|Map
+EastJoshuaRoad-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''East Joshua Road''' is a two-way road located in [[Sandy Shores]] and [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Auto Repairs]]
+*[[Grape Smugglers Liquor]]
+*[[Liquor Market]]
+*[[Xero]]
+
+{{Clear}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

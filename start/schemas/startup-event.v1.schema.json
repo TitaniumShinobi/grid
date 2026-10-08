@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/startup-event.v1.schema.json",
+  "title": "GRID startup stage event v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "startupId", "stageId", "eventKind", "observedAtUtc"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "startupId": { "type": "string", "minLength": 1 },
+    "stageId": {
+      "type": "string",
+      "enum": [
+        "AUTH_SESSION_RESTORE",
+        "ACCOUNT_LOOKUP",
+        "GRID_ACCOUNT_STATE",
+        "LOCAL_DEVICE_STATE",
+        "REGISTERED_STATE_LOAD",
+        "STALE_STATE_ASSESSMENT",
+        "PREPARED_CANONICAL_STATE_LOAD",
+        "SHELL_INITIALIZATION",
+        "READY"
+      ]
+    },
+    "eventKind": { "enum": ["stage_started", "stage_completed", "stage_skipped", "stage_failed"] },
+    "observedAtUtc": { "type": "string", "format": "date-time" },
+    "durationMs": { "type": ["integer", "null"], "minimum": 0 },
+    "workClassification": {
+      "type": ["string", "null"],
+      "enum": [
+        null,
+        "REGISTRATION",
+        "STARTUP_REQUIRED",
+        "BACKGROUND_OPTIONAL",
+        "STALE_REFRESH",
+        "REBUILD"
+      ]
+    },
+    "detail": { "type": ["string", "null"] }
+  }
+}

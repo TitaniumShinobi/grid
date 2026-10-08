@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Homme Gina
+|type = clothingstore
+|caption = The logo
+|locations = 
+*[[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Morningwood]], Los Santos <small>(x2)</small> 
+|accessible = No
+|altnames = 
+|products = Shoes
+|bawsaq = 
+|image = HommeGina-GTAV-Logo.png
+|darklogo = y
+|image_size = 300
+|status = Active
+|taglines = 
+|games = {{Games|V=y|O=y}}
+|map = 
+}}
+
+[[LEAD]]
+'''Homme Gina''' is a luxury clothing brand featured in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+*The [[Portola Drive]] location is modeled after {{URL|https://maps.app.goo.gl/Ae4hWJXDFoH8v45M6|270 North Rodeo Drive}} in {{WP|Beverly Hills, California}}.
+*The [[Cougar Avenue]] location is modeled after {{URL|https://maps.app.goo.gl/VPRy38xsAv9R5CN97|1028 Westwood Boulevard}} in {{WP|Westwood, Los Angeles|Westwood Village, Los Angeles}}.
+*The [[Perth Street]] location is modeled after {{URL|https://maps.app.goo.gl/Mf8SsCWqm24FhyZS6|1000 Westwood Boulevard}} in Westwood Village, Los Angeles.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+HommeGina-GTAV-RockfordHills.jpg|[[Little Portola]]/[[Portola Drive]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]] ([[:File:HommeGina-GTAV-NightFront.png|At night]]).
+HommeGina-GTAV-CougarAve.jpg|[[Cougar Avenue]] and [[North Rockford Drive]], [[Morningwood]], Los Santos.
+HommeGina-GTAV-Morningwood.png|[[Perth Street]] and [[Morningwood Boulevard]], Morningwood, Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

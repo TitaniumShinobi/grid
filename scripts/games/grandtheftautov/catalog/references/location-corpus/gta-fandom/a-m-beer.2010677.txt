@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = alcohol
+|name          = A.M. Beer
+|sign          = AMBeer-GTAIV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = [[#Products|Products]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''A.M. Beer''' (Japanese: エー・エム・ビール) is a brand of [[Japan]]ese beer in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V

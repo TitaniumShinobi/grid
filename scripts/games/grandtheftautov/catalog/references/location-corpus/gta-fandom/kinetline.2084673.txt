@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Kinetline
+|sign          = 
+|image         = Kinetline-GTAO-LSTunersBanner.png
+|caption       = Garage banner of the logo.
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mptuner}}|VI=y}}
+|mentioned     = 
+|business_type = Motor oil and lubricants
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Kinetline''' is a motor oil and engine lubricant company appearing in ''[[Grand Theft Auto Online]]'' as part of the [[GTA Online: Los Santos Tuners|Los Santos Tuners]] content update, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Los Santos Tuners
+Businesses in GTA VI
+Vehicle products manufacturers

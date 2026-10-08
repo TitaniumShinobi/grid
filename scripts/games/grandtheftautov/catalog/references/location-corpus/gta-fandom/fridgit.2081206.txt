@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Fridgit-GTAV-Logo.png
+|type = Food processing
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Cypress Flats]]<br>[[La Puerta]]
+|taglines = ''"Stay frosty!"''
+}}
+
+[[LEAD]]
+'''Fridgit''' is a cold storage warehouse company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Companies
+Warehouses

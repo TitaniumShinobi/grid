@@ -1,0 +1,108 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = shoppingcenter
+|name           = Korean Plaza
+|sign           = 
+|image          = KoreanPlaza-GTAVee-NorthBldg.png
+|caption        = North building as seen from [[Calais Avenue]]. {{Small|([[:file:KoreanPlaza-GTAVee-NorthBldg-NightView.png|Night view]])}}
+|image2         = KoreanPlaza-GTAVee-SouthBldg.png
+|caption2       = South building as seen from Calais Avenue. {{Small|([[:file:KoreanPlaza-GTAVee-SouthBldg-NightView.png|Night view]])}}
+|aka            = 
+|games          = {{games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Calais Avenue]], [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+|status         = active
+|businesses     = [[#Businesses]]
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = KoreanPlaza-GTAV-SatelliteView.png
+|map_caption    = Map location.
+}}
+
+[[LEAD]]
+'''Korean Plaza''' (Korean: 쇼핑 플라자, lit. "Shopping Plaza") is a shopping plaza featured in {{VO}}, located in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Businesses]]
+
+
+[[SECTION:3:North Building]]
+{{Columns
+|
+*[[24/7 (HD Universe)|24/7 Supermarket]]
+*Bargain Cell Phones
+*싼 가 격 궐 련 (Cheap Cigarettes)
+*[[The Cherry Popper Ice Cream Company (HD Universe)|Cherry Popper Ice Cream]]
+*Convenience Store And Grocer
+*전 기 용 품 (Electrical Appliances)
+*패 션 의 류 (Fashion Clothing)
+*[[Fruit (HD Universe)|Fruit]] Computer Maintenance
+*[[The Grain of Truth]]
+*[[Kayton]]
+|
+*[[KO Casuals]]
+*안 경 점 (Optical Store)
+*[[Ranch (HD Universe)|Ranch]]
+*[[Save-A-Cent]]
+*Shoe Store
+*스 포 츠 의 류 (Sports Clothing)
+*[[Sub Urban (HD Universe)|Sub Urban]]
+*[[TW@ (HD Universe)|TW@ Internet Cafe]]
+*시 계 악 세 사 리 (Watch Accessories)
+*[[Yogarishima]]
+}}
+
+[[SECTION:3:South Building]]
+{{Columns
+|
+*[[Bean Machine]]
+*[[Betta Life Pharmacy]]
+*[[Digital Den]]
+*[[Greenback]]
+*[[Heat]]
+*[[K-Mall Coffee Shop & Juice Bar]]
+|
+*Leather Goods
+*애 견 샵 (Pet Shop)
+*[[Pirate Music]]
+*[[Sneaky Footwear]]
+*[[Thor Toys]]
+}}
+
+[[SECTION:3:North Building]]
+{{Gallery
+|game = VO
+|KoreanPlaza-GTAVee-NorthBldg-Rear.png|Rear of the north building facing [[Palomino Avenue]].
+|KoreanPlaza-GTAVee-NorthBldg-PalominoAveShops.png|Shops accessible from Palomino Avenue.
+|KoreanPlaza-GTAVee-NorthBldg-LoadingDock.png|Loading dock.
+|KoreanPlaza-GTAVee-NorthBldg-Signage.png|North building signage.
+|KoreanPlaza-GTAV-NorthView.png|North building in the original version of {{V}}.
+|KoreanPlaza-GTAV-PalominoAve.png|Shops facing Palomino Avenue in the original version of ''Grand Theft Auto V''.
+}}
+
+[[SECTION:3:South Building]]
+{{Gallery
+|game = VO
+|KoreanPlaza-GTAVee-SouthBldg-SouthSide.png|Southern face of the south building, with [[J's Bonds]] and [[Swallow]] billboards lining the alley next to the plaza.
+|KoreanPlaza-GTAVee-SouthBldg-LoadingDocks.png|Loading docks.
+|KoreanPlaza-GTAVee-SouthBldg-StoreSignage.png|South building signage.
+|KoreanPlaza-GTAVee-SouthBldg-StuntJump.png|[[Unique Stunt Jumps in GTA V|Unique Stunt Jump]] in the south building parking lot, leading down to Palomino Avenue.
+|KoreanPlaza-GTAV.png|Southern view in the original version of {{V}}.
+|KoreanPlazaStuntJump-GTAV.png|Stunt jump location in the original version of ''Grand Theft Auto V''.
+}}
+{{Gallery
+|game = O
+|KnoWayOut-GTAOee-NegativePress-Billboard4.jpg|[[KnoWay]] billboard added to the southern face of the south building during the [[Negative Press]] mission.
+}}
+
+[[de:Korean Plaza]]
+[[ru:Korean Plaza]]
+[[es:Korean Plaza]]
+[[pl:Korean Plaza]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Shopping malls

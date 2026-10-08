@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = BEACH
+|image = HeartAttacksBeach-GTAV.png
+|games = {{Games|V=y|O=y}}
+|location = [[Mount Gordo]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-HeartAttacksBeach.ogg
+|map           = <gallery>
+HeartAttacksBeach-IngameGPS-GTAV-Map.png|Heart Attacks Beach
+HeartAttacksBeach-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (missing boundary on the in-game GPS).
+}}
+
+[[LEAD]]
+'''Heart Attacks Beach''' is a beach in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Beaches in GTA Online
+Beaches in GTA V
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Zones

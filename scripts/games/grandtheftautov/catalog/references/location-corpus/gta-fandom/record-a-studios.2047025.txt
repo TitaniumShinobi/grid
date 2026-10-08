@@ -1,0 +1,62 @@
+[[INFOBOX]]
+{{infobox location
+|business = y
+|activebiz = y
+|name = Record A Studios
+|sign = RecordAStudios-GTAOe-LogoTexture.png
+|image = RecordAStudios-GTAOe-FrontDayView.png
+|caption = Front Entry by day <small>([[:File:RecordAStudios-GTAOe-FrontNightView.png|night view]])</small>
+|type = Recording Studio
+|owner = [[Dr. Dre]]
+|founded = c. 2021
+|motto = 
+|games = {{Games|O=y}}
+|location = [[Mad Wayne Thunder Drive]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|map = RecordAStudios-GTAOe-Map.png
+|map_caption = Location in the map (red).
+|map2 = RecordAStudios-GTAOe-InteriorMap.png
+|map_caption2 = Interior floor map
+}}
+
+[[LEAD]]
+'''Record A Studios''' is a recording studio featured in [[GTA Online: The Contract|The Contract]] update for ''[[Grand Theft Auto Online]]''. It is owned and operated by [[Dr. Dre]].
+
+[[SECTION:3:Studio Tour/Short Trips]]
+After the completion of [[The Contract: Dr. Dre|Dr. Dre's contract]], DJ Pooh invites the Protagonist and their associate for a tour of the studio, along with [[Franklin Clinton|Franklin]] and [[Lamar Davis|Lamar]]. During the tour, the group makes a visit to the smoking room, where the Protagonist and their associate smoke Lamar's [[LD Organics]] "Special Strain" and have an "out-of-body experience" whereby they lose consciousness and undertake the [[Short Trip - Seed Capital|first of three Short Trips]], seemingly becoming Franklin and Lamar.
+
+[[SECTION:3:Interior Photos]]
+<gallery position="center" spacing="small" widths="250px">
+RecordAStudios-GTAOe-Lobby.png|Front Desk, featuring [[DJ Pooh]].
+RecordAStudios-GTAOe-SecurityCameras.png|Security camera access.
+RecordAStudios-GTAOe-StudioStore.png|The Studio Store and [[QUB3D]] [[Arcade Games|arcade machine.]]
+RecordAStudios-GTAOe-MainHallway.png|Main corridor.
+RecordAStudios-GTAOe-MainRecordingBooth.png|Main recording Control Room, with [[Lola Romero]] editing audio in the background.
+RecordAStudios-GTAOe-MixingDesk.png|The mixing desk.
+RecordAStudios-GTAOe-BarSofa.png|The bar and sofa.
+RecordAStudios-GTAOe-DrumsRecordingBooth.png|A Music Booth for drums.
+RecordAStudios-GTAOe-DrumsRecordingBooth2.png|Another drums recording booth.
+RecordAStudios-GTAOe-PianoRecordingBooth.png|A large Tracking Room for various instruments, featuring a large grand piano in the center.
+RecordAStudios-GTAOe-VocalsRecordingBooth.png|A small vocals recording room.
+RecordAStudios-GTAOe-SmokingRoom.png|Smoking room.
+RecordAStudios-GTAOe-HiddenRoomInterior.png|The player in a "hidden" room at the end of the main corridor during [[Studio Time]].
+RecordAStudios-GTAOe-HiddenRoomInterior2.png|Another "hidden" room, behind a drums recording booth.
+</gallery>
+
+[[SECTION:4:Detail]]
+Records.
+<gallery  position="center" spacing="small" widths="250px">
+RecordAStudios-GTAOe-Records-LoveFist-DevilsOwnBand.png|[[Love Fist (HD Universe)|Love Fist]] {{nd}} Devil's Own Band.
+RecordAStudios-GTAOe-Records-LoveFist-DogsOnHeat.png|Love Fist - Dogs on Heat.
+RecordAStudios-GTAOe-Records-MaddDogg-FortyDogg.png|[[Madd Dogg (HD Universe)|Madd Dogg]] {{nd}} Forty Dogg.
+RecordAStudios-GTAOe-Records-MaddDogg-HustlinLikeGangstaz.png|Madd Dogg - Hustlin' Like Gangstaz.
+RecordAStudios-GTAOe-Records-MaddDogg-ThaMaddhouse.png|Madd Dogg - Tha Maddhouse.
+RecordAStudios-GTAOe-Records-OGLoc-Original.png|[[OG Loc (HD Universe)|OG Loc]] {{nd}} OriGinal.
+RecordAStudios-GTAOe-Records-OGLoc-str8fromthastreetz.png|OG Loc - str8 from tha streetz.
+RecordAStudios-GTAOe-Records-Rochell'le-Leg$.png|[[Rochell'le (HD Universe)|Rochell'le]] {{nd}} Leg$.
+RecordAStudios-GTAOe-Records-YungAncestor-1MillionSold.png|[[Yung Ancestor]] {{nd}} 1 million units sold (no record named).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Contract
+Record labels
+Studios

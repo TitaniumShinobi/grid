@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+| image = VespucciMoviemasks-Front-GTAV.png
+| name = Vespucci Movie Masks and Memorabilia
+| size = 270px
+| type = Clothing
+| games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach Sidewalk]] and [[Vitus Street]], [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Vespucci Movie Masks and Memorabilia''' is a [[Masks (clothing)|mask]] and clothing store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on [[Vitus Street]] in [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]], south of the pier on the [[Vespucci Beach Sidewalk]]. 
+
+The store sells novelty masks and graphic T-shirts. The store is unlocked after the [[Masks]] heist setup mission in ''GTA V'', but it is available from the start in ''GTA Online''.
+
+{{clr}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing
+Clothing in GTA Online
+Clothing in GTA V
+Clothing stores

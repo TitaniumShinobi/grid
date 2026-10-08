@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{infobox business|
+|image = VespucciMovieMasks-GTAV-VespucciBeach-exterior.jpg
+|size = 250×250px
+|game_1 = GTA V
+|name = Vespucci Movie Masks
+|type = [[:Category:Clothing Stores|Clothing]]
+|owner = 
+|location = [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]]<br />
+|affiliation = 
+|missions = [[Masks (mission)|Masks]]
+|employee = 
+}}
+
+[[LEAD]]
+'''Vespucci Movie Masks''' is a shop in [[Grand Theft Auto V|GTA V]] specialized in selling movie masks. It is located on the boardwalk of [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]].
+
+<gallery>
+File:GreenMonsterMask-GTAV.jpg|The "Green Monster Mask".
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Clothing Stores

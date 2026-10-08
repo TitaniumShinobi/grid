@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = cinema
+|name           = Doppler Cinema
+|sign           = 
+|image          = DopplerCinema-GTAV-Building.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = No
+|opentimes      = 
+|owner          = [[Michael De Santa]] <small>(optional)</small>
+|price          = $10,000,000 <small>(property)</small>
+|income         = $132,200 per week
+|occupants      = 
+|businesses     = 
+|employees      = [[Patrick (GTA V)|Patrick]] <small>(manager)</small>
+|status         = active
+|unlockedby     = [[Fame or Shame (mission)|Fame or Shame]] <small>(unlocked for purchase)</small>
+}}
+
+[[LEAD]]
+The '''Doppler Cinema''' is a movie theatre featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Cinemas
+Landmarks
+Properties
+Properties in GTA V
+Theatres

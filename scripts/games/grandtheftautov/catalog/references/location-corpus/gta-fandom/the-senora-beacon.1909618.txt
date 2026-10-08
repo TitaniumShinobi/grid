@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = TheSenoraBeacon-GTAV-NewsFeedLogo.png
+|caption = Logo of The Senora Beacon
+|type = Newspaper Company
+|taglines = "Proudly provincial since 1915"
+|founded = [[1915]]
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Grand Senora Desert]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''The Senora Beacon''' is the local newspaper of the [[Grand Senora Desert]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Newspaper publishers

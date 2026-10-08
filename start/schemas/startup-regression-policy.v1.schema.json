@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://grid.local/schemas/startup-regression-policy.v1.schema.json",
+  "title": "GRID startup regression policy v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "manifestId",
+    "contract",
+    "baselineReceiptFile",
+    "readyDuration",
+    "stageDuration",
+    "requiredBeforeReadyStageIds",
+    "forbiddenBeforeReadyWorkClassifications"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "manifestId": { "const": "grid.startup-regression-policy.v1" },
+    "contract": { "type": "string", "minLength": 1 },
+    "baselineSelectionManifest": { "type": "string" },
+    "baselineReceiptFile": { "type": "string", "minLength": 1 },
+    "readyDuration": {
+      "type": "object",
+      "required": ["relativeRatio", "absoluteMs"],
+      "properties": {
+        "relativeRatio": { "type": "number", "minimum": 0 },
+        "absoluteMs": { "type": "integer", "minimum": 0 },
+        "evidenceObservedMinMs": { "type": "integer", "minimum": 0 },
+        "evidenceObservedMaxMs": { "type": "integer", "minimum": 0 },
+        "evidenceSampleCount": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "stageDuration": {
+      "type": "object",
+      "required": ["relativeRatio", "absoluteMs", "monitoredStageIds"],
+      "properties": {
+        "relativeRatio": { "type": "number", "minimum": 0 },
+        "absoluteMs": { "type": "integer", "minimum": 0 },
+        "monitoredStageIds": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "requiredBeforeReadyStageIds": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "forbiddenBeforeReadyWorkClassifications": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "forbiddenBeforeReadyStageSignals": { "type": "object" },
+    "backgroundWork": { "type": "object" },
+    "shellUsability": { "type": "object" }
+  }
+}

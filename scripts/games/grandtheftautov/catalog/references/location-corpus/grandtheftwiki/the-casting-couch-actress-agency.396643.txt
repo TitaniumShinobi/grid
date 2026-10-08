@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = The Casting Couch Actress Agency
+|type = Acting agency
+|owner = 
+|location = [[Hawick Ave]]/[[Las Lagunas Blvd]] in [[Burton]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''The Casting Couch Actress Agency''' is an acting agency located on the corner of [[Hawick Ave]] and [[Las Lagunas Blvd]] in [[Burton]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

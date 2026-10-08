@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Atmosphere isolator manufacturer
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|image = Isomorph-Technologies-GTAV-Logo.png
+}}
+
+[[LEAD]]
+'''Isomorph Technologies''' is a company which manufactures atmosphere isolators in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics companies

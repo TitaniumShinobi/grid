@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox mission
+|Name Change  = SALVAGE YARD ROBBERY
+|name         = The Cargo Ship Robbery
+|image        = TheCargoShipRobbery-GTAOe-Finale-Infobox.png
+|location     = [[Salvage Yards]] <small>(Start/End)</small><br/>''[[La'oub Princess]]''
+|game           = {{games|O=y}}
+|type           = mp2023_02
+|fail         = *Target vehicle is destroyed.
+*[[Skylift]] is destroyed.
+|for          = {{For|game=O|salvageyardrobbery}}
+|unlockedby   = 
+*Purchasing an [[Salvage Yards|Salvage Yard]].
+*Completing all required [[The Cargo Ship Robbery|preparations]].
+|todo = *Go to {{Color|v-hud-location|Elysian Island.}}
+*Get on the {{Color|v-hud-friendly|[chosen transport].}}
+*Go out to {{Color|v-hud-location|sea.}}
+*Climb aboard the {{Color|v-hud-location|La'oub Princess.}}
+*Sneak to the {{Color|v-hud-location|bridge.}}
+*Enter the {{Color|v-hud-location|bridge.}}
+*Take out the {{Color|v-hud-enemy|captain.}}
+*Search the {{Color|v-hud-pickup|captain.}}
+*Access the bridge terminal.
+*Cut open the {{Color|v-hud-pickup|containers.}}
+*Attach a flare to the {{Color|v-hud-pickup|container.}}
+*Protect the {{Color|v-hud-friendly|Skylift.}}
+*Open the {{Color|v-hud-pickup|container.}}
+*Enter the {{Color|v-hud-friendly|[target vehicle].}}
+*Deliver the [target vehicle] to the {{Color|v-hud-location|Salvage Yard.}}
+|protagonists = *1 to 4 [[GTA Online Protagonist|players]]
+|reward = Vehicle-dependent
+The Coast Guard outfit
+|target = [[Salvage Yard Robberies#Target Vehicles|Target Vehicle]]
+|tod = 06:00
+}}
+
+[[LEAD]]
+'''The Cargo Ship Robbery''' is a [[Salvage Yard Robberies|Salvage Yard Robbery]] featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Chop Shop|The Chop Shop]] update.
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Chop Shop

@@ -1,0 +1,162 @@
+<Page
+    x:Class="Grid.App.Views.CatalogInspectionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Padding="32,24,32,32" RowDefinitions="Auto,Auto,*" RowSpacing="14">
+        <Grid ColumnDefinitions="*,420" ColumnSpacing="20">
+            <StackPanel Spacing="4">
+                <TextBlock Text="Catalog Review" FontSize="28" FontWeight="SemiBold" />
+                <TextBlock Text="Read-only inspection of deterministic preproduction catalog output"
+                           Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+            </StackPanel>
+            <ComboBox x:Name="PackageSelector" Grid.Column="1"
+                      AutomationProperties.Name="Select preproduction catalog package"
+                      DisplayMemberPath="Label" SelectionChanged="OnPackageSelectionChanged" />
+        </Grid>
+
+        <InfoBar x:Name="VerificationBanner" Grid.Row="1" IsOpen="True" IsClosable="False" />
+
+        <TabView Grid.Row="2" IsAddTabButtonVisible="False" CanDragTabs="False"
+                 AutomationProperties.Name="Canonical catalog inspection panels">
+            <TabViewItem Header="Summary" IsClosable="False">
+                <ScrollViewer><ItemsControl x:Name="SummaryItems"><ItemsControl.ItemTemplate><DataTemplate>
+                    <Grid Padding="8,5" ColumnDefinitions="230,*" ColumnSpacing="14">
+                        <TextBlock Text="{Binding Label}" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                        <TextBox Grid.Column="1" Text="{Binding Value}" IsReadOnly="True" BorderThickness="0"
+                                 Background="Transparent" TextWrapping="Wrap" FontFamily="Consolas" />
+                    </Grid>
+                </DataTemplate></ItemsControl.ItemTemplate></ItemsControl></ScrollViewer>
+            </TabViewItem>
+
+            <TabViewItem Header="Records" IsClosable="False">
+                <Grid RowDefinitions="Auto,*" RowSpacing="10">
+                    <Grid ColumnDefinitions="*,*,*,*,*" ColumnSpacing="8">
+                        <ComboBox x:Name="KindFilter" AutomationProperties.Name="Filter records by knowledge kind"
+                                  SelectionChanged="OnRecordFilterChanged" />
+                        <ComboBox x:Name="SourceFilter" Grid.Column="1" AutomationProperties.Name="Filter records by source"
+                                  SelectionChanged="OnRecordFilterChanged" />
+                        <ComboBox x:Name="ScopeFilter" Grid.Column="2" AutomationProperties.Name="Filter records by source scope"
+                                  SelectionChanged="OnRecordFilterChanged" />
+                        <ComboBox x:Name="ResolutionFilter" Grid.Column="3" AutomationProperties.Name="Filter records by resolution"
+                                  SelectionChanged="OnRecordFilterChanged" />
+                        <ComboBox x:Name="EvidenceFilter" Grid.Column="4" AutomationProperties.Name="Filter records by evidence class"
+                                  SelectionChanged="OnRecordFilterChanged" />
+                    </Grid>
+                    <Grid Grid.Row="1" ColumnDefinitions="360,*" ColumnSpacing="16">
+                        <ListView x:Name="RecordList" AutomationProperties.Name="Canonical knowledge records"
+                                  SelectionChanged="OnRecordSelectionChanged">
+                            <ListView.ItemTemplate><DataTemplate>
+                                <StackPanel Padding="8,6" Spacing="3">
+                                    <TextBlock Text="{Binding Kind}" FontWeight="SemiBold" />
+                                    <TextBlock Text="{Binding NativeIdentifier}" FontFamily="Consolas" TextWrapping="Wrap" />
+                                    <TextBlock Text="{Binding TerminologyState}" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                                </StackPanel>
+                            </DataTemplate></ListView.ItemTemplate>
+                        </ListView>
+                        <ScrollViewer Grid.Column="1">
+                            <StackPanel Spacing="12">
+                                <TextBlock Text="Exact canonical record" Style="{StaticResource EyebrowStyle}" />
+                                <TextBlock Text="KnowledgeRecordId" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                                <TextBox x:Name="RecordIdText" IsReadOnly="True" FontFamily="Consolas" TextWrapping="Wrap" />
+                                <TextBlock Text="Source-native identifier (not a display name)" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                                <TextBox x:Name="NativeIdentityText" IsReadOnly="True" FontFamily="Consolas" TextWrapping="Wrap" />
+                                <TextBlock Text="Source revision" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                                <TextBox x:Name="RecordRevisionText" IsReadOnly="True" FontFamily="Consolas" TextWrapping="Wrap" />
+                                <TextBlock Text="Verbatim terminology assertions" Style="{StaticResource EyebrowStyle}" />
+                                <ItemsControl x:Name="RecordTerminologyItems"><ItemsControl.ItemTemplate><DataTemplate>
+                                    <StackPanel Padding="8,4" Spacing="2">
+                                        <TextBlock Text="{Binding Coordinate}" FontFamily="Consolas" FontSize="11" />
+                                        <TextBox Text="{Binding VerbatimValue}" IsReadOnly="True" AcceptsReturn="True"
+                                                 TextWrapping="Wrap" FontFamily="Consolas" />
+                                    </StackPanel>
+                                </DataTemplate></ItemsControl.ItemTemplate></ItemsControl>
+                                <TextBlock Text="Relationships" Style="{StaticResource EyebrowStyle}" />
+                                <ItemsControl x:Name="RecordRelationshipItems" />
+                                <TextBlock Text="Evidence bindings and correlation references" Style="{StaticResource EyebrowStyle}" />
+                                <ItemsControl x:Name="RecordEvidenceItems" />
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </Grid>
+            </TabViewItem>
+
+            <TabViewItem Header="Relationships" IsClosable="False">
+                <ListView x:Name="RelationshipList" AutomationProperties.Name="Source-derived relationships">
+                    <ListView.ItemTemplate><DataTemplate><StackPanel Padding="8,6" Spacing="3">
+                        <TextBlock Text="{Binding Semantic}" FontWeight="SemiBold" />
+                        <TextBlock Text="{Binding Subject}" FontFamily="Consolas" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding Target}" FontFamily="Consolas" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding Evidence}" Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
+                    </StackPanel></DataTemplate></ListView.ItemTemplate>
+                </ListView>
+            </TabViewItem>
+
+            <TabViewItem Header="Evidence" IsClosable="False">
+                <Grid ColumnDefinitions="380,*" ColumnSpacing="16">
+                    <ListView x:Name="EvidenceList" AutomationProperties.Name="Claim-level evidence receipts"
+                              SelectionChanged="OnEvidenceSelectionChanged">
+                        <ListView.ItemTemplate><DataTemplate><StackPanel Padding="8,6" Spacing="3">
+                            <TextBlock Text="{Binding Verification}" FontWeight="SemiBold" />
+                            <TextBlock Text="{Binding Claim}" />
+                            <TextBlock Text="{Binding Locator}" FontFamily="Consolas" TextWrapping="Wrap" />
+                        </StackPanel></DataTemplate></ListView.ItemTemplate>
+                    </ListView>
+                    <ScrollViewer Grid.Column="1"><StackPanel Spacing="8">
+                        <TextBlock Text="Exact provenance trace" Style="{StaticResource EyebrowStyle}" />
+                        <TextBlock Text="record → assertion → binding → receipt → source revision → artifact → parser / adapter locator"
+                                   Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
+                        <TextBox x:Name="EvidenceDetailText" IsReadOnly="True" AcceptsReturn="True"
+                                 TextWrapping="Wrap" FontFamily="Consolas" MinHeight="280" />
+                    </StackPanel></ScrollViewer>
+                </Grid>
+            </TabViewItem>
+
+            <TabViewItem Header="Unresolved" IsClosable="False">
+                <ListView x:Name="UnresolvedList" AutomationProperties.Name="Canonical build unresolved assertions">
+                    <ListView.ItemTemplate><DataTemplate><StackPanel Padding="8,6" Spacing="3">
+                        <TextBlock Text="{Binding Kind}" FontWeight="SemiBold" />
+                        <TextBlock Text="{Binding Coordinate}" FontFamily="Consolas" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding ExactDetail}" FontFamily="Consolas" TextWrapping="Wrap" />
+                    </StackPanel></DataTemplate></ListView.ItemTemplate>
+                </ListView>
+            </TabViewItem>
+
+            <TabViewItem Header="Conflicts" IsClosable="False">
+                <ListView x:Name="ConflictList" AutomationProperties.Name="Unresolved source disagreements">
+                    <ListView.ItemTemplate><DataTemplate><StackPanel Padding="8,6" Spacing="3">
+                        <TextBlock Text="{Binding Kind}" FontWeight="SemiBold" />
+                        <TextBlock Text="{Binding Coordinate}" FontFamily="Consolas" TextWrapping="Wrap" />
+                        <TextBox Text="{Binding ExactAssertions}" IsReadOnly="True" AcceptsReturn="True"
+                                 TextWrapping="Wrap" FontFamily="Consolas" />
+                    </StackPanel></DataTemplate></ListView.ItemTemplate>
+                </ListView>
+            </TabViewItem>
+
+            <TabViewItem Header="Sources / Revisions" IsClosable="False">
+                <ListView x:Name="SourceList" AutomationProperties.Name="Canonical sources revisions and artifacts">
+                    <ListView.ItemTemplate><DataTemplate><StackPanel Padding="8,6" Spacing="3">
+                        <TextBlock Text="{Binding SourceKind}" FontWeight="SemiBold" />
+                        <TextBlock Text="{Binding NativeIdentity}" FontFamily="Consolas" TextWrapping="Wrap" />
+                        <TextBox Text="{Binding ExactCoordinates}" IsReadOnly="True" AcceptsReturn="True"
+                                 TextWrapping="Wrap" FontFamily="Consolas" />
+                    </StackPanel></DataTemplate></ListView.ItemTemplate>
+                </ListView>
+            </TabViewItem>
+
+            <TabViewItem Header="Package / Validation" IsClosable="False">
+                <ScrollViewer><StackPanel Spacing="12">
+                    <TextBlock Text="Structural verification" Style="{StaticResource EyebrowStyle}" />
+                    <TextBlock Text="Structural validity is not QCS approval and does not confer publication authority."
+                               Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
+                    <ItemsControl x:Name="PackageItems"><ItemsControl.ItemTemplate><DataTemplate>
+                        <Grid Padding="8,5" ColumnDefinitions="230,*" ColumnSpacing="14">
+                            <TextBlock Text="{Binding Label}" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <TextBox Grid.Column="1" Text="{Binding Value}" IsReadOnly="True" BorderThickness="0"
+                                     Background="Transparent" TextWrapping="Wrap" FontFamily="Consolas" />
+                        </Grid>
+                    </DataTemplate></ItemsControl.ItemTemplate></ItemsControl>
+                </StackPanel></ScrollViewer>
+            </TabViewItem>
+        </TabView>
+    </Grid>
+</Page>

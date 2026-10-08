@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Tsunami
+|image = Tsunami-GTAV-PowerStreet.png
+|type = Clothing store
+|caption = The clothing store during the day on Vinewood Boulevard.
+|games = {{V}}<br>{{O}}
+|locations = [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]],<br> [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Tsunami''' is a clothing store in {{V}} and {{O}}, located in [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Stores

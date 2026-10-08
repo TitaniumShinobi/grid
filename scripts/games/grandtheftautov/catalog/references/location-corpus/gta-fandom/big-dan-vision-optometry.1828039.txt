@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = BigDanVisionOptometry-Sign-GTAV.png
+|type = Optician
+|games = {{Games|V=y|O=y}}
+|locations = [[Little Seoul]]
+}}
+
+[[LEAD]]
+'''Big Dan Vision Optometry''' (큰달걀 안경, lit. "Large Egg Glasses") is an optician in {{V}}.
+
+[[SECTION:2:Locations]]
+*[[Ginger Street]] and [[San Andreas Avenue]] in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Lindsay Circus]] in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Palomino Avenue]] in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+
+[[CATEGORIES]]
+Businesses in GTA V

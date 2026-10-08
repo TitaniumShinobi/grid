@@ -1,0 +1,23 @@
+[[LEAD]]
+'''Trenton''' is a industrial district located in [[Portland]], [[Liberty City in GTA III Era|Liberty City]]. It borders [[Portland View]] to the north, [[Atlantic Quays]] to the south, [[Portland Harbor]] to the east and [[Chinatown, Portland|Chinatown]] to the west.
+
+[[SECTION:2:Places of interest]]
+The area is not controlled by any gang, although senior [[Leone Family]] gang member [[Joey Leone]] owns a [[Joey's Garage|garage]] in the district.
+
+Other notable businesses based in Trenton include [[AmCo]], [[Bitch'n' Dog Food]] (in [[2001]]), [[Don Kiddick's Sausage Factory]] (in [[1998]]), [[Liberty Pharmaceuticals]], [[Mean Street Taxis]], [[Liberty City Sawmills]], an unnamed bus depot (with spawning [[Coach]]es) and the [[Now and Zen Dojo]].
+
+{| align="center"
+|<gallery width="auto" perrow="4" style="font-size:95%; padding:0;" widths="180">
+File:Joey'sGarage-GTALCS-exterior.jpg|Joey's Garage in [[Grand Theft Auto: Liberty City Stories|GTA Liberty City Stories]].
+File:AmCo-GTAIII-Trentonbranch.jpg|AmCo branch.
+File:Bitch'n'DogFood-GTAIII-factory.jpg|Bitch'n'DogFood.
+File:LibertyPharmaceuticals-GTAIII-Trenton-exterior.jpg|Liberty Pharmaceuticals.
+File:LibertyCitySawmills-GTAIII-exterior.jpg|Liberty City Sawmills.
+File:MeanStreetTaxis-GTAIII-Trentondepot-exterior.jpg|Mean Street Taxis.
+</gallery>
+|}
+
+{{Gtaiii areas}}
+
+[[CATEGORIES]]
+Areas in Portland

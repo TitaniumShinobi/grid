@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|business = y
+|activebiz = y
+|name = Santo Capra
+|caption = The logo
+|location = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|altnames = Santo Capro
+|founded = {{H:title|On the logo|[[1898]]}}
+|products = 
+|bawsaq = 
+|image = SantoCapra-Logo-GTAV.png
+|darklogo = y
+|image_size = 300
+|condition = Active
+|taglines = 
+|games = {{Games|TBOGT=y|V=y|O=y}}
+|type = Fashion
+|map = 
+|reference = {{WP|Versace}}
+}}
+
+[[LEAD]]
+'''Santo Capra''' (also known as '''Santo Capro''' in ''[[The Ballad of Gay Tony]]'') is a high-end clothing company appearing in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[SECTION:2:Locations]]
+The single store in Rockford Hills has entry points from Little Portola and Rockford Drive with identical facades.
+
+<gallery position="center" spacing="small" widths="270px">
+SantoCapra-GTAV-DaylightFront.png|[[Little Portola]] entry ([[:File:SantoCapra-GTAV-NightFront.png|night view]])
+SantoCapra-GTAV-DaylightRear.png|[[Rockford Drive]] entry ([[:File:SantoCapra-GTAV-NightRear.png|night view]])
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in TBOGT
+Fashion brands

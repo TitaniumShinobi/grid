@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = modshop
+|name           = Helmut's European Autos
+|sign           = Helmuts-Logo-GTAO.png
+|image          = HelmutsEuropeanAutos-GTAVee-Building.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O={{Small|(Formerly)}}}}
+|mentioned      = 
+|location       = [[Paleto Boulevard]], [[Paleto Bay]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type  = 
+|taglines       = "''Import Specialists''"
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Helmut's European Autos''' is an auto repair shop in {{V}} and formerly {{O}}, located in [[Paleto Bay]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Former buildings
+Mod shops

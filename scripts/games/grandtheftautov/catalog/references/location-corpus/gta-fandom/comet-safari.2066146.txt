@@ -1,0 +1,106 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|Name Change     = 
+|style           = 
+|name            = 
+|front_image         = CometSafari-GTAOee-FrontQuarter.png
+|rear_image          = CometSafari-GTAOee-RearQuarter.png
+|caption             = A '''Comet Safari''' in ''[[Grand Theft Auto Online]]''.
+|class               = [[:Category:Sports class|Sports]] {{Small|(''GTA Online'')}}
+|body_style          = Off-road sports car
+|capacity            = 2 {{Small|(driver and passenger)}}
+|games               = {{Games|O={{EEEV}} {{DLC|mpchristmas2017}}}}
+|type            = sports
+|manufacturer        = [[Pfister (HD Universe)|Pfister]]
+|price               = [[Money|$]]710,000 {{Small|([[Legendary Motorsport]])}}
+|basevariant         = [[Comet Retro Custom]]
+|lineup          = 
+|variants            = 
+|dashtype            = Race {{Small|(needles)}}[[File:Race-Dials-GTAV.png|thumb|center|170px]]Race Generic {{Small|(dial texture)}}[[File:GenRaceDigital-GTAV-DialSet.png|thumb|center|170px]]
+|inttxd              = Race Generic
+|flags               = 
+{{Expand|'''Comet Safari'''|
+{{Flags|FLAG_BOOT_IN_FRONT}}<br>
+{{Flags|FLAG_SPORTS}}<br>
+{{Flags|FLAG_RECESSED_TAILLIGHT_CORONAS}}<br>
+{{Flags|FLAG_EXTRAS_STRONG}}<br>
+{{Flags|FLAG_PARKING_SENSORS}}<br>
+{{Flags|FLAG_RICH_CAR}}<br>
+{{Flags|FLAG_NO_BROKEN_DOWN_SCENARIO}}<br>
+{{Flags|FLAG_CAN_HAVE_NEONS}}<br>
+{{Flags|FLAG_CARGOBOB_HOOK_UP_CHASSIS}}<br>
+{{Flags|FLAG_USE_AIRCRAFT_STYLE_WEAPON_TARGETING}}<br>
+}}
+{{Expand|'''MG'''|
+{{Flags|Gun}}<br>
+{{Flags|UsableOnFoot}}<br>
+{{Flags|Vehicle}}<br>
+{{Flags|ForceEjectShellAfterFiring}}<br>
+{{Flags|ApplyVehicleDamageToEngine}}<br>
+{{Flags|UseVehicleWeaponBoneForward}}<br>
+}}
+|modelname           = comet4
+|handlingname        = COMET4
+|textlabelname       = COMET4
+|roadspawn           = No
+|roadspawnmaxcol     = 
+|roadspawnfreq       = 
+|roadspawntrailer    = 
+|roadspawnidendis    = 
+|roadspawndrivers    = 
+|roadspawngroups     = 
+|roadspawnlicense    = 
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The [[Pfister (HD Universe)|Pfister]] '''Comet Safari''' is a custom off-road vehicle featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Doomsday Heist|The Doomsday Heist]] update.
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Comet Safari
+|manufacturer  = Pfister
+|class         = Sports 
+|image         = CometSafari-GTAO-RGSC-MainNew.jpg
+|caption       = Main image (after 2019).
+|image2        = CometSafari-GTAO-RGSC-Action.jpg
+|caption2      = "Action" image.
+|image3        = CometSafari-GTAO-RGSC-Main.jpg
+|caption3      = Main image (prior to 2019).
+|speed         = 81.555809
+|accel         = 73.125
+|braking       = 26.666668
+|traction      = 63.636364
+|seats         = 2
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = lms
+|schematic     = GenericComet4
+}}
+
+[[SECTION:2:Locations]]
+*Can be purchased on [[Legendary Motorsport]], for [[Money|$]]710,000.
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Comet Safari}}
+{{Defaultradio|game=O|defaultgroup=rock}}
+
+[[CATEGORIES]]
+Armed vehicles
+Off-roading vehicles
+Rally vehicles
+Sports cars
+Sports class
+Vehicles in GTA Online: The Doomsday Heist
+Vehicles manufactured by Pfister
+Vehicles purchasable from Legendary Motorsport
+Vehicles purchasable from Luxury Autos
+Vehicles purchasable from Premium Deluxe Motorsport
+Weaponized Vehicles in GTA Online

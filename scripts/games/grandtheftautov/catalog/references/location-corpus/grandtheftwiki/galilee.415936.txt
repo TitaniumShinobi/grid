@@ -1,0 +1,24 @@
+[[LEAD]]
+'''Galilee''' is a small unincorporated settlement located in northern [[Blaine County]], [[San Andreas in GTA V|San Andreas]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The settlement is located between [[Mount Chiliad in GTA V|Mount Chiliad]] to the north and the [[Alamo Sea]] to the south, with the town of [[Grapeseed]] located a short distance away to the west.
+
+[[SECTION:2:Businesses]]
+* Methamphetamine laboratory (<small>founded by [[The Lost Brotherhood]], now run by [[Trevor Philips Industries (gang)|Trevor Philips Industries]]</small>)
+* [[Millars Boat Shop]]
+* [[Millar's Fishery Co.]]
+
+[[SECTION:2:Neighbouring areas]]
+{{Location
+|Centre    = Galilee
+|North     = [[Mount Chiliad in GTA V|Mount Chiliad]]
+|Northeast = [[Mount Chiliad in GTA V|Mount Chiliad]]
+|East      = [[Mount Chiliad in GTA V|Mount Chiliad]]
+|Southeast = [[Alamo Sea]]
+|South     = [[Alamo Sea]]
+|Southwest = [[Alamo Sea]]
+|West      = [[Mount Chiliad in GTA V|Mount Chiliad]]
+|Northwest = [[Mount Chiliad in GTA V|Mount Chiliad]]
+}}
+
+[[CATEGORIES]]
+Blaine County
+Locations in GTA V

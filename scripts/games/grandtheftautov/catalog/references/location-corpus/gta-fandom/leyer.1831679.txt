@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|purchasable   = 
+|type          = cosmetics
+|name          = Léyer
+|sign          = Leyer-GTAV-Logo.png
+|image         =
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Beauty product supplier
+|founded       = 
+|founder       = 
+|ceo           = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Léyer''' is a cosmetics brand appearing in {{VO}}.
+
+[[SECTION:2:Location]]
+<gallery position="center" spacing="small" widths="270px">
+Leyer-GTAV-Building.png|[[Vespucci Boulevard]], [[La Mesa]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Cosmetics companies

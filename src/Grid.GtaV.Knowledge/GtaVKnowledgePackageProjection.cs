@@ -26,8 +26,8 @@ public static class GtaVKnowledgePackageProjection
             DistinctBy(origin.AdapterDescriptors.Add(secondary.AdapterDescriptor), value => value.RevisionId.Value),
             DistinctBy(origin.Sources.Concat(secondary.AdditionalSources), value => value.Id.Value),
             artifacts,
-            DistinctBy(origin.SourceRevisions.Add(secondary.SourceRevision), value => value.Revision.Id.Value),
-            origin.KnowledgeRecords,
+            DistinctBy(origin.SourceRevisions.Add(secondary.SourceRevision).AddRange(secondary.AdditionalSourceRevisions), value => value.Revision.Id.Value),
+            DistinctBy(origin.KnowledgeRecords.Concat(secondary.AdditionalKnowledgeRecords), value => value.Id.Value),
             DistinctBy(origin.TerminologyAssertions.Concat(secondary.TerminologyAssertions),
                 value => EvidenceClaimContentId.DeriveV1(value).Value),
             origin.RelationshipAssertions,
@@ -43,7 +43,9 @@ public static class GtaVKnowledgePackageProjection
             LocationSemanticClassificationAssertions = origin.LocationSemanticClassificationAssertions,
             RecordLifecycleAssertions = origin.RecordLifecycleAssertions,
             CorrelatedRelationshipEnvelopes = origin.CorrelatedRelationshipEnvelopes,
-            LocationCoverageReports = origin.LocationCoverageReports,
+            LocationCoverageReports = DistinctBy(
+                origin.LocationCoverageReports.Concat(secondary.AdditionalLocationCoverageReports),
+                value => value.Id.Value),
             SemanticClassificationAssertions = DistinctBy(
                 origin.SemanticClassificationAssertions.Concat(secondary.SemanticClassifications),
                 value => value.Id.Value),
@@ -235,7 +237,11 @@ public static class GtaVKnowledgePackageProjection
             var id = identity(value);
             if (seen.TryGetValue(id, out var existing))
             {
-                if (!EqualityComparer<T>.Default.Equals(existing, value))
+                // Record equality compares ImmutableArray members by reference, so a persisted value and its
+                // rebuilt twin differ there; only differing serialized content is a real conflict.
+                if (!EqualityComparer<T>.Default.Equals(existing, value) &&
+                    !System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(existing).AsSpan()
+                        .SequenceEqual(System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(value)))
                     throw new InvalidDataException($"Conflicting payload values share identity '{id}'.");
                 continue;
             }

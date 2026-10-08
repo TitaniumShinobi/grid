@@ -2,7 +2,11 @@
 
 ## Startup
 
-- GRID starts on Home.
+- The signed-out shell composes no account-owned product persistence.
+- After authentication, a new account on this Windows device starts in the existing Welcome flow; an account whose setup marker is complete starts on Home.
+- `Skip for now` opens Home for the current session without completing setup, so Welcome returns on the next launch.
+- Account-owned setup, connections, workspace, history, alerts, discovery results, and request context resolve beneath `%LOCALAPPDATA%\Grid\accounts\v1\<sha256-stable-account-id>\` (or the corresponding `GRID_DATA_ROOT` test root). Raw account identifiers never appear in the path, and blank identities fail closed.
+- Legacy machine-global setup and connection records remain untouched and unowned. Supported catalog entries and local discovery candidates are not connected installations; a user must complete the existing explicit connection workflow before they appear on Home.
 - On a clean/default shell, left panel, Chat, and Console are closed.
 - The G routes to Home.
 - Persisted user panel preferences are a later shell-state persistence pass; this v1 establishes the clean default only.

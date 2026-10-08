@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = High Rollin'
+|image        = HighRollin'-GTAO-Thumbnail.png
+|location     = [[State of San Andreas (HD Universe)|San Andreas]]
+|game           = {{games|O=y}}
+|type           = CasinoWork
+|fail         = 
+|for          = [[Agatha Baker]]
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] <small>(organization)</small>
+*1 to 8 players <small>(motorcycle club)</small>
+|todo         = 
+*Enter the <span class="v-hud-friendly">limousine</span>.
+*Go to <span class="v-hud-location">[Location]</span>.
+*Collect the <span class="v-hud-friendly">high roller</span>.
+*Signal the <span class="v-hud-friendly">high roller</span>.
+*Wait for the <span class="v-hud-friendly">high roller</span> to enter the limousine.
+*Take the high roller to the <span class="v-hud-location">Casino</span>.
+|reward = 
+*[[Money|Cash]], [[Chips]], and [[Reputation|RP]].
+|target = High Roller
+}}
+
+[[LEAD]]
+'''High Rollin'''' is a [[Casino Work]] mission featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update. It is a freeroam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[SECTION:3:Possible High Roller Locations]]
+<gallery position="center" hideaddbutton="true" spacing="small">
+HighRollin'-GTAO-LSIA.png|[[Los Santos International Airport (HD Universe)|Los Santos International Airport]].
+HighRollin'-GTAO-ParsonsRehabilitationCenter.png|[[Parsons Rehabilitation Center]].
+HighRollin'-GTAO-PuertoDelSolMarina.png|[[Puerto Del Sol Marina]].
+HighRollin'-GTAO-SandyShoresAirfield.png|[[Sandy Shores Airfield]].
+</gallery>
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

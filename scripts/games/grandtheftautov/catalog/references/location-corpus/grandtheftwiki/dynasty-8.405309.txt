@@ -1,0 +1,102 @@
+[[LEAD]]
+'''Dynasty 8''' is a real estate company in the [[HD Universe]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. It is interactive, as players can go to sale sites to purchase properties that are located throughout Southern [[San Andreas in GTA V|San Andreas]]. The company also runs the website [[dynasty8realestate.com|www.dynasty8realestate.com]]. The site is interactive on GTA Online, with the player being able to purchase properties either in person or via the in-game website.
+
+[[SECTION:2:Apartments For Sale]]
+{| class="wikitable"
+|-
+! Street # !! Street/Complex Name !! Apartments Available
+|-
+|0069
+|[[Cougar Ave]]nue
+|19
+|-
+|0112
+|[[South Rockford Dr]]ive
+|13
+|-
+|0115
+|[[Bay City Ave]]nue
+|45
+|-
+|0184
+|[[Milton Rd|Milton Road]]
+|13
+|-
+|0325
+|[[South Rockford Dr]]ive
+|
+|-
+|0504
+|[[South Mo Milton Dr]]ive
+|
+|-
+|0604
+|[[Las Lagunas Blvd|Las Lagunas Boulevard]]
+|4
+|-
+|0605
+|[[Spanish Ave]]nue
+|1
+|-
+|1115
+|[[Boulevard Del Perro]]
+|18
+|-
+|1162
+|[[Power St]]reet
+|3
+|-
+|1237
+|[[Prosperity St]]reet
+|21
+|-
+|1561
+|[[San Vitas St]]reet
+|2
+|-
+|2057
+|[[Vespucci Blvd|Vespucci Boulevard]]
+|1
+|-
+|2143 
+|Las Lagunas Boulevard
+|9
+|-
+|3
+|[[3 Alta Street Tower|Alta Street]]
+|10, 57
+|-
+|4
+|[[Tinkle Building|Integrity Way]]
+|28, 30, 35
+|-
+|
+|[[Del Perro Heights]]
+|4, 7, 20
+|-
+|
+|[[Dream Tower]]
+|15
+|-
+|
+|[[Eclipse Towers]]
+|3, 5, 9, 31, 40
+|-
+|
+|[[Richards Majestic]]
+|2, 4, 51
+|-
+|
+|[[The Royale]]
+|19
+|-
+|
+|[[Tinsel Towers]]
+|29, 42, 45
+|-
+|
+|[[Weazel Plaza]]
+|26, 101, 170
+|}
+
+[[CATEGORIES]]

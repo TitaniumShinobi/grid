@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{infobox business
+|name      = Pawn & Jewelry
+|image     = Pawn&Jewelry-GTAV-Logo.jpg
+|caption   =
+|taglines  = 
+|type      =
+|ceo       = 
+|games     = {{Games|V=y|O=y}}
+|locations = [[Del Perro]]<br>[[Strawberry]]
+}}
+
+[[LEAD]]
+'''Pawn & Jewelry''' is a pawn store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that also gives out loans.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Jewelry store chains

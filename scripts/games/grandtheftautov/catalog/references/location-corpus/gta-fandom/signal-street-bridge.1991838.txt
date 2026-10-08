@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = SignalStreetBridge-GTAV.png
+|caption = Overview of the bridge.
+|games = {{Games|V=y|O=y}}
+|bridge = y
+|location = [[Elysian Island]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''Signal Street Bridge''' is a road bridge in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that crosses an unnamed water channel and connects [[Banning]] to [[Elysian Island]].
+
+[[CATEGORIES]]
+Road bridges
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Truss bridges
+Vertical-lift bridges

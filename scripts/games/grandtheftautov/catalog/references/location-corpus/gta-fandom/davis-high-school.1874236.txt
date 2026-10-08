@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{infobox location
+|Name Change  = SCHOOL
+|name         = Davis High School
+|location     = [[Davis]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games={{Games|V=(mentioned only)|O=(mentioned only)}} 
+|type=High School
+|accessible=No}}
+
+[[LEAD]]
+'''Davis High School''' is an unseen high school that is located in the city of [[Davis]], [[Los Santos County]], mentioned in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Buildings in GTA V in Los Santos County
+Schools
+Unseen locations

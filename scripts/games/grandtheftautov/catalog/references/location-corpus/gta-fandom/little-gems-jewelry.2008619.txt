@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Jewel store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Atlee Street]], [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]]
+|name = Little Gems Jewelry
+|sign = Little_Gems_Jewelry_GTAV_Logo_Sign.png
+|image = Little-Gems-Jewelry-GTAV-Atlee-St-Store.png
+|taglines = Wholesale & Retail
+|bawsaq = 
+}}
+
+[[LEAD]]
+'''Little Gems Jewelry''' is a business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Jewelry stores
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Stores

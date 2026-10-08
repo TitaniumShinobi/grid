@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Lettuce Be
+|type = [[:Category:Restaurants|Restaurant]]
+|owner = 
+|location = [[Hawick Ave]]/[[Laguna Pl]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Lettuce Be''' is a [[:Category:Restaurants|vegetarian restaurant]] located on the corner of [[Hawick Ave]] and [[Laguna Pl]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Restaurants

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Scarper
+|image = Scarper-GTAVe-Logo.png
+|type = Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Prosperity Street Promenade]], [[Del Perro]]
+|reference = {{WP|Skechers}}
+}}
+
+[[LEAD]]
+'''Scarper''' is a store in [[Los Santos (HD Universe)|Los Santos]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

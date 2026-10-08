@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{infobox location
+|house = y
+|name           = Bertolt Beach House
+|image          = BertoltBeachHouse-GTAV-Beach.png
+|caption        = The house as seen from the beach.
+|games          = {{games|V=y|O=y}}
+|location       = 1373 [[Route 1|Great Ocean Highway]], [[Pacific Bluffs]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|floors         = 2
+}}
+
+[[LEAD]]
+The '''Bertolt Beach House''' is a beach front house in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Pacific Bluffs]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Contemporary buildings
+Low-rise buildings

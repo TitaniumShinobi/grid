@@ -1,0 +1,100 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|type          = bank
+|name          = Lombank
+|sign          = 
+|image_label   = 
+|image         = Lombank-GTAIV-Logo.svg
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Alderney City]], [[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[Vice City (HD Universe)|Vice City]], [[State of Leonida|Leonida]]
+([[#Locations 2|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|divisions     = [[#Grand Theft Auto VI|LomBike]]
+|employees     = 
+|taglines      = 
+*"''Our time is your money''"
+*"''Interested in your interest''"
+*"''We're the American bank that truly, more or less, cares''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = [[File:Bleeter GTAVpc Lombank.png|40px|right]] @Lombank
+|lifeinvader   = 
+|snapmatic     = 
+|opentimes     = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Lombank''' is a banking company appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+<div class="mw-collapsible-content">
+{{H4|''Grand Theft Auto IV'' and ''Grand Theft Auto: Chinatown Wars''}}
+*The [[City Hall (GTA IV)|City Hall]] branch is based on the {{WP|Citibank}} outlet located at {{URL|https://maps.app.goo.gl/qsea12bbdS4HwT59A|250 Broadway}} in the {{WP|Civic Center, Manhattan|Civic Center}} neighborhood of Manhattan, {{WP|New York City}}.
+*The [[North Holland]] branch appears to be based on the {{URL|https://www.301cathedral.com/|Towers on the Park}} condominium located at {{URL|https://maps.app.goo.gl/1CMrsrVvgWutqHU2A|301 West 110th Street}} in the {{WP|Harlem}} neighborhood of Manhattan, New York City.
+*The [[Hove Beach]] branch is based on a {{WP|Chase Bank}} branch located at {{URL|https://maps.app.goo.gl/hdN5XQfoT8TCNTw87|1002 Brighton Beach Avenue}} in the {{WP|Brighton Beach}} neighborhood of {{WP|Brooklyn}}, New York City.
+{{H4|''Grand Theft Auto V'' and ''Online''}}
+*The branch office in [[Little Seoul]] is based on a Chase Bank branch located at {{URL|https://goo.gl/maps/CMiYW8mJkymafxaV7|3720 Wilshire Boulevard}} in the {{WP|Koreatown, Los Angeles|Koreatown}} neighborhood of {{WP|Los Angeles}}, {{WP|California}}.
+*The bank branch in [[Rockford Hills]] is a rendition of a former {{WP|OneWest Bank}} branch located at {{URL|https://maps.app.goo.gl/GuuAdyfnVqtWbJKHA|9550 S Santa Monica Boulevard}} in {{WP|Beverly Hills, California|Beverly Hills}}, California.
+</div>
+</div>
+
+[[SECTION:2:Locations]]
+{{Split|section=y||Separate page for the [[Little Seoul]] branch.}}
+{{Gallery
+|game = IV
+|LombankBuilding-GTAIV-Overview.png|[[Lombank Building (GTA IV)|Lombank Building]], [[Alderney City]], [[State of Alderney|Alderney]].
+|Lombank-GTAIV-CityHall.png|[[Liberty Lane Building]], [[Liberty Lane]], [[City Hall (GTA IV)|City Hall]], [[Algonquin]].
+|Lombank-GTAIV-Chinatown.png|[[Albany Avenue]] within B.A.H. Finance, [[Chinatown (GTA IV)|Chinatown]], Algonquin.
+|Lombank_GTAIV_North_Holland_Front.png|[[Frankfort Avenue]] and [[Topaz Street]], [[North Holland]], Algonquin.
+|Lombank_GTAIV_The_Exchange_Front.png|[[Columbus Avenue]], [[The Exchange (GTA IV)|The Exchange]], Algonquin. {{Small|([[:File:Lombank-GTAIV-TheExchangeBuilding.png|building view]])}}
+|Lombank_GTAIV_Hove_Beach_Front.png|[[Crockett Avenue]], [[Hove Beach]], [[Broker]].
+}}
+{{Gallery
+|game = CW
+|Lombank-GTACW-LibertyLaneBuilding.png|Liberty Lane Building, Liberty Lane, City Hall, Algonquin. {{Small|(illegible)}}
+|BAHFinance-GTACW.png|Albany Avenue within B.A.H. Finance, Chinatown, Algonquin. {{Small|(illegible)}}
+|Lombank-GTACW-NorthHolland.png|Frankfort Avenue and Topaz Street, North Holland, Algonquin.
+|Lombank-GTACW-44AmethystStreet.png|[[Goldberg, Ligner & Shyster Building|44 Amethyst Street]], The Exchange, Algonquin.
+|Lombank-GTACW-HoveBeach.png|Crockett Avenue, Hove Beach, Broker.
+}}
+{{Gallery
+|game = VO
+|LombankWest-GTAV.png|[[Lombank West]], [[Boulevard Del Perro]] and [[Bay City Avenue]], [[Del Perro]].
+|LombankTower-GTAV.png|[[Lombank Building (GTA V)|Lombank Building]], [[Power Street]] and [[Vespucci Boulevard]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]].
+|Lombank-GTAV-LittleSeoul.jpg|[[San Andreas Avenue]], [[Ginger Street]] and [[Palomino Avenue]], [[Little Seoul]].
+|Lombank-GTAV-RockfordHills.png|[[South Boulevard Del Perro]] and [[Mad Wayne Thunder Drive]], [[Rockford Hills]].
+|Lombank-GTAV-VespucciCanals.jpg|[[Aguja Street]], [[Vespucci Canals]].
+}}
+{{Gallery
+|game = VI
+|LombankBuilding-GTAVI-Trailer2.png|[[Lombank Building (GTA VI)|Lombank Building]], [[Tequesta]].
+}}
+
+[[CATEGORIES]]
+Banking companies
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI

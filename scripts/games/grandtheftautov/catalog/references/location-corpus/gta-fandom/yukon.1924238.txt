@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = tobacco
+|name          = Yukon Tobacco Chew
+|sign          = Yukon-Tobacco-Chew-Logo-Text-GTAO.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|O={{DLC|mpchristmas2018}}{{EEEV}}|VI=y}}
+|mentioned     = 
+|locations     = 
+|taglines      = "''Tastes like America''"
+|status        = active
+}}
+
+[[LEAD]]
+'''Yukon''' is a tobacco chew brand appearing in {{O}} as part of the [[GTA Online: Arena War|Arena War]] update and is due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Arena War
+Businesses in GTA VI
+Tobacco brands

@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Classique
+|sign          = Classique-GTAO-TextLogo.svg
+|image         = Classique-GTAO-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|O={{EEEV}} {{DLC|mpchristmas3}}|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Automotive manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+}}
+
+[[LEAD]]
+'''Classique''' is an [[United States of America|American]] automotive manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online: Enhanced Edition
+Businesses in GTA V: Enhanced Edition
+Businesses in GTA VI
+Vehicle manufacturers

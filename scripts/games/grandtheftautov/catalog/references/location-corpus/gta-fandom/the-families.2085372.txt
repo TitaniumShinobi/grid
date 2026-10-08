@@ -1,0 +1,107 @@
+[[INFOBOX]]
+{{Infobox organization
+|name         = The Families
+|image        = Families-Logo-GTAV.png
+|caption      = The Families use the same logo as [[Feud Baseball Team]].
+|games        = {{Games|V=y|O=y}}
+|locations    =
+*[[Strawberry]]
+*[[Chamberlain Hills]]
+*[[Forum Drive]]
+*[[Carson Avenue]]
+*[[Davis]] {{Small|(Partially)}}
+*[[Grove Street (HD Universe)|Grove Street]] {{Small|(formerly)}}
+|leader       = [[The Boss (Families)|"The Boss"]] {{Small|(Carson Avenue Families)}}
+|type         = gang
+|gang_type    = African-American street gang
+|enemies      =
+*[[Ballas (HD Universe)|Ballas]] {{Small|(formerly)}}
+*[[Los Santos Vagos (HD Universe)|Los Santos Vagos]]
+*[[Varrios Los Aztecas (HD Universe)|Varrios Los Aztecas]]
+*[[The Lost MC]] {{Small|(''GTA Online'')}}
+*[[The Professionals]]
+|affiliations =
+*{{GTAOP}}
+*[[Franklin Clinton]]
+*[[Trevor Philips]]
+*[[Michael De Santa]]
+*[[Kkangpae]]
+*[[Trevor Philips Enterprises]]
+*[[Ballas (HD Universe)|Ballas]] {{Small|(c. [[2021]])}}
+|colors       = Green
+|vehicles     =
+*[[Emperor (HD Universe)|Emperor]]
+*[[Manana]]
+*[[Tornado]]
+*[[Bucanneer]]
+*[[Peyote]]
+*[[Cavalcade]]
+*[[Baller]] ([[Baller LE|LE]])
+*[[BMX (HD Universe)|BMX]]
+*[[Nemesis]]
+*[[Manana Custom]]
+*[[Voodoo Custom]]
+*[[Primo Custom]]
+*[[Coquette]] <small>(''GTA Online'') ([[Chasers]] only)</small>
+|weapons      =
+*[[Knife]]
+*[[Pistol (HD Universe)|Pistol]]
+*[[Micro SMG (HD Universe)|Micro SMG]]
+*[[SMG (HD Universe)|SMG]]
+*[[Machine Gun]]
+*[[Pump Shotgun]]
+*[[Assault Rifle]]
+*[[Minigun]]
+*[[Sniper Rifle]]
+|businesses   =
+*Drug trafficking
+*Weapon trafficking
+*Vehicle trafficking
+|fronts       =
+*[[Crystal Heights]]
+*[[All Swell]]
+*[[Leroy's Electricals]]
+*[[Forum Drive]]
+*[[Vanilla Unicorn]]
+*[[BJ Smith Recreational Center]]
+|members      =
+*[[Franklin Clinton]]
+*[[Lamar Davis]]
+*[[Stretch (character)|Stretch]] {{Small|(formerly)}} 
+*[[Gerald (GTA Online)|Gerald]]
+*[[Vernon]]
+*[[Tavell Clinton]] {{Small|(formerly)}}
+*[[Demarcus Bradley]] 
+*[[Stanley (character)|Stanley]] 
+*[[Leroy]]
+*[[The Boss (Families)|The Boss]]
+*[[Slim Skills]] 
+*[[Tone Sampson]]
+*[[Benton Cox]]
+*[[Andre Barnes]]
+*[[Darryl Knox]]
+*[[Jamal Reynolds]]
+*Lil Rhino 
+|status        = active
+}}
+
+[[LEAD]]
+'''The Families''' are a large African American street gang in {{V}} and {{O}}. They are based around the areas of [[South Los Santos]].
+
+[[SECTION:3:Forum Drive Families (FDF)]]
+The '''[[Forum Drive Families]]''', more commonly referred to as the "''Forum Gangsters''", are a splinter group of the Chamberlain Gangster Families and the set of [[Lamar Davis|Lamar]] and [[Franklin Clinton|Franklin]]. It was founded at some point before the beginning of the events of ''[[Grand Theft Auto Online]]''. Lamar and Franklin proceed with growing their set who are also known as the "88 Set".
+
+[[SECTION:3:Carson Avenue Families (CAF)]]
+The '''[[Carson Avenue Families]]''' are hostile to the Chamberlain Gangsters and presumably other sets, and are led by someone known only as [[The Boss (Families)|"The Boss"]]. Their territory consists of the [[Strawberry]] section of [[Carson Avenue]] though they sometimes appear in [[Chamberlain Hills]]. Members of this set often sport varsity jacket attire with the letter "C" for Chamberlain, which also stands for "Corkers", the baseball team supported by the gang. Other members wear green, black or white shirts with either the Feud or Corkers logo. Possibly based on Eight Tray Gangster Crips, As they are hostile to CGF, who is based on Rollin 60s Neighborhood Crips.
+
+[[SECTION:3:Davis Neighborhood Families (DNF)]]
+The '''[[Davis Neighborhood Families]]''' territory consists of the northwest part of [[Davis]]. They currently are at war with the east side [[Ballas (HD Universe)|Ballas]], due to proximity of the territories. [[Vernon]] is the only known members of this set. They are known as "Dirty Davis Devils" or "Davis Devils". They can often be seen around Chamberlain Set territories (mainly [[Forum Drive]]) and sometimes on south and northwest of Davis. Members can be identified by their white, grey, and black hockey jerseys, many with the word "Davis" on the back. The fronts will have one of three or four [[Los Santos Dust Devils]] designs. Some members have a dust tornado in the front of their shirt which is one of the logos for the team. Others wear the normal Families outfits of green plaid shirts, beanie hats and green or black Feud caps. Sometimes, when starting a fight with someone from the set, they can be heard screaming: "Davis Gang, bitch!" or "DNFG". Davis Neighborhood Families could be based on the NeighborHood Crip Card, as the Families are based on the Crips and Davis is based on The Neighborhood Card.
+
+[[SECTION:3:Grove Street Families (GSF) {{Small|(formerly)}}]]
+The '''[[Grove Street Families (The Families set)|Grove Street Families]]''' was the most famous set of The Families in the 1990s. They operated out of [[Grove Street (HD Universe)|Grove Street]] with a presence in the greater Davis area, mainly in the south and west part. The gang disbanded after the 1990s, and their current whereabouts are unknown. It is suggested that many of them became wealthy and legitimate. The Grove Street set seems to be the most famous set of all, with [[Jimmy De Santa]] asking Franklin if he is from the Grove Street Families set or whether it is a myth during a friendship activity. Franklin explains that it is not a myth and that the set was active in the early nineties. Their territory is currently operated by the Original Covenant set of the Ballas.
+
+[[CATEGORIES]]
+Afro-descendant organizations
+Gangs
+Organizations in GTA Online
+Organizations in GTA V

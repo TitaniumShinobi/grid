@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Whirligig Theater
+|image = WhirligigTheater-GTAV.png
+|type = Theater
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Downtown Vinewood]]
+|reference = {{WP|El Capitan Theatre}}
+}}
+
+[[LEAD]]
+The '''Whirligig Theater''' is a theater in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Theatres

@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|business = y
+|activebiz = y
+|name = Pfister Design
+|caption = The logo
+|location = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|altnames = 
+|founded = 
+|products = 
+|bawsaq = 
+|image = PfisterDesign-GTAV-Logo.png
+|darklogo = y
+|image_size = 300
+|condition = Active
+|taglines = 
+|games = {{Games|V=y|O=y}}
+|type = Fashion
+|map = 
+|reference = Porsche Design
+|oldlogo =PfisterDesign-GTAV-NameLogo-Texture.png
+|oldlogo1 = PfisterDesign-GTAV-FullLogoLight-Texture.png
+|oldlogo2 = PfisterDesign-GTAV-FullLogo-Texture.png
+}}
+
+[[LEAD]]
+'''Pfister Design''' is a high-end fashion company appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Location]]
+The single store in Rockford Hills has entry points from Little Portola and two from Rockford Drive. 
+
+<gallery position="center" spacing="small" widths="270px">
+PfisterDesign-GTAV-DaylightFront.png|[[Little Portola]] entry ([[:File:PfisterDesign-GTAV-NightFront.png|night view]])
+PfisterDesign-GTAV-DaylightRear.png|[[Rockford Drive]] entry ([[:File:PfisterDesign-GTAV-NightRear.png|night view]])
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

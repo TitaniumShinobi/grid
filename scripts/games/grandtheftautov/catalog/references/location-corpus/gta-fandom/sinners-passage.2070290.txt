@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox structure
+|name    = Sinners Passage
+|image   = SinnersPassage-GTAVee.jpg
+|caption =
+|games   = {{Games|V=y|O=y}}
+|start   = [[Sinner Street]], [[Mission Row]]
+|end     = [[Little Bighorn Avenue]], Mission Row
+|map     = 
+<gallery>
+SinnersPassage-GTAV-Map.png|Map
+SinnersPassage-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+}}
+
+[[LEAD]]
+'''Sinners Passage''' is a short street located in [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Simmet Alley]] {{Small|(southern entrance)}}
+
+[[SECTION:2:Businesses]]
+*[[Binco (HD Universe)|Binco]] {{Small|(accessible interior, corner of [[Sinner Street]])}}
+*[[Simmet Alley Traders Co-op]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

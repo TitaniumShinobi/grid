@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=WestGalileoAvenue-GTAV.png
+|caption=
+|games=''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|start=[[Mount Vinewood Drive]]
+|end=[[East Galileo Avenue]]
+|map=<gallery>
+WestGalileoAvenue-GTAV-Map.png|Map
+WestGalileoAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''West Galileo Avenue''' is a [[List of Street Names|road]] in [[Galileo Park]] and [[Vinewood Hills]], [[Los Santos County]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County
+Thoroughfares

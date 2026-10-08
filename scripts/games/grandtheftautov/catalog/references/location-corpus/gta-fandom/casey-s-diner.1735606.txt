@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Restaurant
+|image = CaseysDiner-GTAV-Logo.png
+|games = ''[[Grand Theft Auto V]]''
+|locations = [[Popular Street]], [[La Mesa]]
+}}
+
+[[LEAD]]
+'''Casey's Diner''' is a restaurant and diner that appears in ''[[Grand Theft Auto V]].''
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Casual restaurants
+Diners

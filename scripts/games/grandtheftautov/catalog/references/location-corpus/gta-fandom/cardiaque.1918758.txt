@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Cardiaque
+|image = Cardiaque-GTAIV-Logo.png
+|type = Tobacco & Alcohol Company
+|founded = [[1734]]
+|founder = Maurice Cardiaque
+|games = {{Games|IV=y|EFLC=y|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Cardiaque''' is a tobacco and alcohol brand in the {{HD}}.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Tobacco brands

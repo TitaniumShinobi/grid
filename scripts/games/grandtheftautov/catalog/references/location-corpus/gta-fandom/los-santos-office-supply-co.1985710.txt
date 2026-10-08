@@ -1,0 +1,52 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = OFFICE SUPPLY COMPANY
+|style         = 
+|type          = 
+|name          = Los Santos Office Supply Co.
+|sign          = LosSantosOfficeSupply-GTAV-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|opentimes     = 
+|accessible    = No
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Los Santos Office Supply Co.''' is an office supplies company that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" bordercolor="#009045" widths="250px">
+LosSantosOfficeSupply-GTAV-Alta.png|[[Occupation Avenue]], [[Alta]].
+LosSantosOfficeSupply-GTAV-MissionRow.jpg|[[Fantastic Place]], [[Mission Row]].
+LSOfficeSupplyCo-GTAV.jpg|[[Boulevard Del Perro]] and [[Morningwood Boulevard]], [[Morningwood]].
+LosSantosOfficeSupply-GTAV-Strawberry.png|[[Innocence Boulevard]], [[Strawberry]].
+LosSantosOfficeSupply-GTAV-TextileCity.png|[[San Andreas Avenue]], [[Textile City]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Supply store chains

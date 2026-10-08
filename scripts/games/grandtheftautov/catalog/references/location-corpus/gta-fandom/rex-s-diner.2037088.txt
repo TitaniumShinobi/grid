@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|type        = Restaurant
+|sign        = Rex'sDiner-GTAV-Logo.png
+|image       = Rex'sDiner-GTAV.png
+|caption     = Overview of the building.
+|games       = {{Games|V=y|O=y}}
+|locations   = [[Senora Way]], [[Blaine County]]
+|map         = Rex'sDiner-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Rex's Diner''' is a diner in {{V}} and {{O}} located just across the [[Senora Way|road]] from [[Davis Quartz]] in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Casual restaurants
+Diners
+Landmarks

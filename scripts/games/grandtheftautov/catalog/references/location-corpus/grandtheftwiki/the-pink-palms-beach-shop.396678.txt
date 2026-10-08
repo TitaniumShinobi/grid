@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = The Pink Palms Beach Shop
+|type = Beach/Souvenir shop
+|owner = 
+|location = Beach boardwalk/[[Melanoma St]] in [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''The Pink Palms Beach Shop''' is a beach and souvenir shop located on the [[Vespucci Beach]] boardwalk and on to [[Melanoma St]] in Vespucci Beach, [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+
+
+[[Type::Business| ]]
+[[Location::Melanoma St| ]]
+[[Location::Vespucci Beach| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

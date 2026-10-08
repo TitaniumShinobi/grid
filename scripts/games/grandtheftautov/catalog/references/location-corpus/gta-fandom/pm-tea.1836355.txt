@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = tea
+|name          = PM Tea
+|sign          = 
+|image         = PMtea-GTAV-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|business_type = Tea brand
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = ''"The afternoon brew"''
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''PM Tea''' is a brand of tea that appears in {{V}}.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Food
+In-Game Products

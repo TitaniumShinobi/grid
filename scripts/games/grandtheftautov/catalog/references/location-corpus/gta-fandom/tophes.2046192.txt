@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = beauty
+|name           = Tophes
+|sign           = Tophes-GTAV-Logo.png
+|image          = Tophes-GTAVee.jpg
+|caption        = '''Tophes''' in {{VO}}.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Rockford Plaza]], [[Las Lagunas Boulevard]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|products       = 
+|taglines       = 
+|architecture   = 
+|floors         = 
+|accessible     = No
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Tophes''' is a high end cosmetics and beauty store appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Beauty stores
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos

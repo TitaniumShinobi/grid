@@ -1,0 +1,82 @@
+[[INFOBOX]]
+{{Infobox structure
+|image      = SanAndreasAvenue-GTAV.PNG
+|caption    = A view of '''San Andreas Avenue''' leading into [[Pillbox Hill]], seen from the [[San Andreas Avenue Bridge]].
+|games={{Games|V=y|O=y}}
+|start      = [[El Rancho Boulevard]], [[Mirror Park]]
+|end        = [[Bay City Avenue]], [[Del Perro]]
+|map=<gallery>
+SanAndreasAvenue-GTAV-Map.png|Map
+SanAndreasAvenue-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''San Andreas Avenue''' is a major east-west avenue located in [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[7302 San Andreas Avenue]]
+*[[Arcadius Business Center]] <small>(corner of Las Lagunas Boulevard)</small>
+*[[Betsy O'Neil Pavilion]] <small>(corner of Palomino Avenue)</small>
+*[[Celltowa Building]] <small>(corner of South Rockford Drive)</small>
+*[[Clock Tower Building]]
+*[[Decker Park]] <small>(corner of Decker Street)</small>
+*[[FIB Headquarters]] <small>(corner of Elgin Avenue)</small>
+*[[Kayton Towers]] <small>(corner of Movie Star Way)</small>
+*[[Little Seoul Church]] <small>(corner of Ginger Street)</small>
+*[[Little Seoul Station]]
+*[[Little Seoul Tower]] <small>(corners of Palomino Avenue and Calais Avenue)</small>
+*[[Maze Bank Tower]] <small>(corner of Alta Street)</small>
+*[[Schlongberg Sachs Center]] <small>(corners of Alta Street and Peaceful Street)</small>
+*[[Union Depository]] <small>(corner of Power Street)</small>
+*[[Vespucci Police Station]] <small>(corner of South Rockford Drive)</small>
+*[[Wiwang Tower]] <small>(corner of Decker Street)</small>
+
+[[SECTION:2:Businesses]]
+{{Columns
+|
+*[[BAWSAQ]]
+*[[The Bean Machine]] <small>(corner of Movie Star Way)</small>
+*[[Big Dan Vision Optometry]]
+*[[Bob Mulét]]
+*[[Burger Shot (HD Universe)|Burger Shot]] <small>(corner of Prosperity Street)</small>
+*[[The Celtica Hotel]] <small>(corner of Strawberry Avenue)</small>
+*[[Cool Beans]] <small>(corner of Bay City Avenue)</small>
+*[[Crucial Fix]] <small>(corner of Strawberry Avenue)</small>
+*[[Daily Globe]] <small>(corner of Las Lagunas Boulevard)</small>
+*[[Didier Sachs (HD Universe)|Didier Sachs]]
+*[[Digital Den]] <small>(corner of Sinner Street)</small>
+*[[Gem's Jewelry]]
+*[[Ground & Pound Café]] <small>(corner of Low Power Street)</small>
+*[[Hit 'n' Run Coffee]] <small>(corner of Calais Avenue)</small>
+*[[International Online Unlimited]]
+*L.S. Gentstyle
+*Lady 'n' Boy Hair Salon
+*[[Lombank]] <small>(corner of Ginger Street)</small>
+*[[Los Santos Office Supply Co.]]
+*[[Los Santos Theatre]]
+|
+*[[Maison Ricard]] <small>(corner of Elgin Avenue)</small>
+*[[Nutsaki]]
+*[[Paper Clips]]
+*[[Ranch (HD Universe)|Ranch]]
+*[[Rob's Liquor]] <small>(accessible interior)</small>
+*[[Robert Dazzler International Jewelry Exchange]] <small>(corner of Strawberry Avenue)</small>
+*[[S. Ho Korean Noodle House]]
+*[[Slaughter, Slaughter & Slaughter]] <small>(corner of Peaceful Street)</small>
+*[[Snr. Buns]] <small>(corner of Calais Avenue)</small>
+*Sound Sanctuary Ind.
+*[[Swallow]]
+*[[Taco Bomb]] <small>(corner of Palomino Avenue)</small>
+*[[Total Bankers]]
+*[[Universal Uniform]] <small>(corner of Prosperity Street)</small>
+*[[Valdez Theater]] <small>(corner of Ginger Street)</small>
+*[[TW@ (HD Universe)|Wan Ka Internet Cafe]]
+*Wholesale Mart <small>(corner of Sinner Street)</small>
+}}
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

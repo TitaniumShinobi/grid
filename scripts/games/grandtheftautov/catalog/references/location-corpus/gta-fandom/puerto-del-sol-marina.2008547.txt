@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = MARINA
+|name = Puerto Del Sol Marina
+|image  = Puerto del sol marina.jpg
+|caption = Overview of the marina.
+|games = {{Games|V=y|O=y}}
+|owner = [[Michael De Santa]] <small>(Optional)</small><br>
+[[Franklin Clinton]] <small>(Optional)</small><br>
+[[Trevor Philips]] <small>(Optional)</small>
+|price = $75,000
+|marinacap = 1 Boat
+|location = [[Puerto Del Sol]], [[Los Santos (HD Universe)|Los Santos]]}}
+
+[[LEAD]]
+'''Puerto Del Sol Marina''' is a marina located in [[Puerto Del Sol]], [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Marinas
+Properties
+Properties in GTA V

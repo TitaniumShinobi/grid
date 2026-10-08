@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox location
+|image         = RichmanGlen-GTAV.png
+|games         = {{Games|V=y|O=y}}
+|location      = [[Vinewood Hills]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|type          = neighborhood
+|pscanner      = PoliceScanner-GTAV-Neighborhood-RichmanGlen.ogg
+|map           = <gallery>
+RichmanGlen-IngameGPS-GTAV-Map.png|Richman Glen
+RichmanGlen-IngameGPS-GTAV-LosSantosCountyMap.jpg|Los Santos County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Richman Glen''' is a semi-rural area in [[Vinewood Hills]], in the northwestern part of [[Los Santos County]], [[San Andreas]], featured in {{V}} and {{O}}. It is located between the two hill ranges of [[Vinewood Hills]] and [[Pacific Bluffs]].
+
+[[SECTION:2:Places of Interest]]
+*[[Parsons Rehabilitation Center]]
+
+[[SECTION:2:Businesses]]
+*[[LTD Gasoline|Limited Service]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Banham Canyon Drive]]
+*[[Marlowe Drive]]
+*[[North Rockford Drive]]
+*[[Tongva Drive]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Neighborhoods
+Zones

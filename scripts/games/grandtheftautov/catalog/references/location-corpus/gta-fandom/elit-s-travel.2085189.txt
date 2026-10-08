@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = vehiclewebsite
+|name          = Elitás Travel
+|sign          = Elitás Travel-GTAV.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Online Aircraft Retailer
+|founded       = [[1998]]
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = [[Elitás_Travel#Vehicles|Vehicles]]
+|weapons       = 
+|taglines      = 
+*''There's first class and then there's Elitas.''
+*''The aircraft of your dreams is just a click away!''
+|status        = Active
+}}
+
+[[LEAD]]
+'''Elitás Travel''' is an online aircraft retailer in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. Players can make purchases through their website, '''elitastravel.com'''
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses with websites
+Vehicle dealerships

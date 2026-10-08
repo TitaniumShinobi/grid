@@ -1,0 +1,53 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = iFruit Radio
+|logo         = iFruitRadio-GTAO-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{Games|V={{EEEV}} {{DLC|mpheist3}}|O={{EEEV}} {{DLC|mpheist3}}}}
+|mentioned    = 
+|locations    = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[London#HD Universe|London]], [[United Kingdom|England]]
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+|owner        = [[Fruit (HD Universe)|Fruit]]
+|taglines     = 
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:Hip hop radio stations|Hip hop]]
+|established  = 12 December [[2019]]
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+*[[Mia Bankston]] {{Small|(voice imaging)}}
+*[[Melissa Thom]] {{Small|(voice imaging)}}
+|artwork      = 
+|cast         = 
+|frequency    = 
+|host         =
+*[[Danny Brown]]
+*[[Skepta]] {{Small|(guest)}}
+|product      = 
+|radio_tracks = 28
+*15 {{Small|(Danny Brown playlist)}}
+*13 {{Small|(Skepta takeover playlist)}}
+|radio_length = 
+}}
+
+[[LEAD]]
+'''iFruit Radio''' is a [[Radio Stations in GTA Online|radio station]] featured in {{V}} and {{O}}, added as part of [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update{{Ref|name=newstation1|type=rockstarweb|url=https://www.rockstargames.com/newswire/article/61267/Introducing-iFruit-Radio}}{{Ref|name=newstation2|type=rockstarweb|ref={{Quote|The hottest new music from around the world comes to Los Santos this week with the launch of iFruit Radio. Cherry-picked by Danny Brown and special guests including UK rapper Skepta, iFruit Radio features 27 tracks from artists including DaBaby, Megan Thee Stallion, Denzel Curry & YBN Cordae, City Girls, Pop Smoke, Skepta & AJ Tracey, Freddie Gibbs & Madlib and many more including exclusive tracks and debuts from Baauer x Channel Tres ft Danny Brown and slowthai.|'''Introducing iFruit Radio''' - All-New Station Hosted by Danny Brown and Featuring Skepta - Rockstar Newswire}}}}{{Ref|name=newstation3|type=rockstarweb|ref={{Quote|iFruit Radio will be available on the radio dial in both GTA Online and Grand Theft Auto V Story Mode for PS4, Xbox One and PC on December 12 as part of The Diamond Casino Heist update.|'''Introducing iFruit Radio''' - All-New Station Hosted by Danny Brown and Featuring Skepta - Rockstar Newswire}}}} that plays modern {{WP|hip-hop}}, {{WP|UK rap}} and {{WP|afro fusion}}.
+
+[[CATEGORIES]]
+Dynamic mix radio stations
+Hip hop radio stations
+Media in GTA Online: The Diamond Casino Heist
+Media in GTA V: The Diamond Casino Heist

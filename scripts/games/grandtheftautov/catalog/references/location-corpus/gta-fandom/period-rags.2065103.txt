@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox_business
+|name       = Period Rags
+|image      = PeriodRags-GTAV-Logo.png
+|type       = clothingstore
+|games      = {{Games|V=y|O=y}}
+|locations  = 
+*[[Hawick]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Vespucci Canals]], Los Santos
+|accessible = No
+}}
+
+[[LEAD]]
+'''Period Rags''' is a clothing store chain appearing in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+The [[Hawick]] outlet is a rendition of the American Vintage clothing store, located at {{URL|https://maps.app.goo.gl/izUsrkiF4vRGpdwA7|7575 Melrose Avenue}} in the {{WP|Melrose Avenue#Melrose District|Melrose District}} of {{WP|Los Angeles}}, {{WP|California}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|PeriodRags-GTAVee-Hawick.jpg|[[Hawick Avenue]] and [[Laguna Place]], [[Hawick]].
+|PeriodRags-GTAV-VespucciCanals.png|[[Bay City Avenue]], [[Vespucci Canals]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains

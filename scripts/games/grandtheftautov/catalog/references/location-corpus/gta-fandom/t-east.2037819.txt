@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = vehicleparts
+|name          = T-East
+|image         = TEast-GTAO-Logo.png
+|games         = {{games|O={{EEEV}} {{DLC|mp2024_01}}|VI=y}} 
+|status        = active
+}}
+
+[[LEAD]]
+'''T-East''' is a vehicle performance and parts company appearing in {{O}} as part of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Bottom Dollar Bounties
+Businesses in GTA VI
+Vehicle parts manufacturers

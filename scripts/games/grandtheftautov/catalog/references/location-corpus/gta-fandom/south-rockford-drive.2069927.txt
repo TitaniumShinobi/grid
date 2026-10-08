@@ -1,0 +1,52 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=SouthRockfordDrive-GTAV-SouthView.png
+|caption=South view.
+|games={{Games|V=y|O=y}}
+|start=[[San Andreas Avenue]]
+|end=[[Dutch London Street]]
+|map=<gallery>
+SouthRockfordDrive-GTAV-Map.png|Map
+SouthRockfordDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''South Rockford Drive''' is a long [[List of Street Names|avenue]] in [[Little Seoul]], [[Vespucci Canals]] and [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+'''La Puerta'''
+*Puerto Del Sol gateway <small>(Tackle Street)</small>
+
+'''Vespucci Canals'''
+*[[0112 South Rockford Drive]]
+*[[Celltowa Building]] <small>(corner of San Andreas Avenue)</small>
+*[[Korean Pavilion]] <small>(corners of Vespucci Boulevard and Decker Street)</small>
+*[[Vespucci Mall]] <small>(corner of Palomino Avenue)</small>
+*[[Vespucci Police Station]] <small>(corners of San Andreas Avenue and Vespucci Boulevard)</small>
+
+[[SECTION:2:Businesses]]
+'''La Puerta'''
+*[[Liquor Market]]
+*Paper Supplies
+*[[S. Ho Korean Noodle House]] <small>(corner of Calais Avenue)</small>
+*San Andreas Sports
+*[[The Happy Teeth Dentistry]]
+
+'''Little Seoul'''
+*[[BSC Machine Maintenance]] <small>(corner of Palomino Avenue)</small>
+*[[The Viceroy Hotels & Resorts|The Viceroy]] <small>(corner of Palomino Avenue)</small>
+
+'''Vespucci Mall, Vespucci Canals'''
+*[[Binco (HD Universe)|Binco]]
+*[[Fleeca|Fleeca Bank]]
+*Italic Nails
+*[[Paper Clips]]
+*Shorefeet Shoe Repairs
+*Vespucci Blooms
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

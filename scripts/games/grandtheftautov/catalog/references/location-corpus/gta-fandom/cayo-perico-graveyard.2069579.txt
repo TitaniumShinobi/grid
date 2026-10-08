@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = CayoPerico-GTAO-Cemetary.png
+|caption = The Graveyard in Cayo Perico.
+|games = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location = [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|map = <gallery>
+Graveyard-GTAO-Map.png|Graveyard
+Graveyard-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Cayo Perico Graveyard''' is a point of interest in [[Cayo Perico]], [[Colombia]], that appears in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Cemeteries
+Locations in GTA Online in Cayo Perico
+Points of Interest in The Cayo Perico Heist

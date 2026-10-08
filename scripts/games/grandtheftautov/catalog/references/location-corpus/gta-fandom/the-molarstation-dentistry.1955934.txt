@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = The Molarstation Dentistry
+|sign           = TheMolarstationDentistry-Logo-GTAV.png
+|image          = TheMolarstationDentistry-GTAV.jpg
+|caption        = Exterior of the dentist in {{V}}.
+|games          = {{Games|V=y|O=y}}
+|location       = [[Carson Avenue]], [[Davis]]
+}}
+
+[[LEAD]]
+'''The Molarstation Dentistry''' is a dentist that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Dental practices

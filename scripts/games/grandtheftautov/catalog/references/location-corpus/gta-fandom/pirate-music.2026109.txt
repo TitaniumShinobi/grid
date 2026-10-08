@@ -1,0 +1,57 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = music
+|name          = Pirate Music
+|sign          = PirateMusic-GTAV-Logo.png
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|taglines      = 
+*"''We invite you to hear the future of music.''"
+*"''Blow Me Down''"
+*"''Treasure Chest''"
+*"''Must Have Booty''"
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|opentimes     = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Pirate Music''' is a media entertainment store chain that appears in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" widths="270px" spacing="small" bordercolor="#00D5FF">
+PirateMusicStore-GTAIV-StarJunction.png|[[Lorimar Street Building]], [[Star Junction]], [[Algonquin]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" widths="270px" spacing="small" bordercolor="#00D5FF">
+PirateMusic-GTAV-LittleSeoul.png|[[Korean Plaza]], [[Calais Avenue]], [[Little Seoul]].
+PirateMusic-GTAV-Burton.png|[[Hawick Avenue]] and [[Eastbourne Way]], [[Burton]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Music store chains

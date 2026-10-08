@@ -1,0 +1,51 @@
+[[INFOBOX]]
+{{Infobox location
+|name         = Pacific Bluffs
+|image        = PacificBluffs-GTAVee-Montage.jpg
+|caption      = Clockwise from top: [[Pacific Bluffs Country Club]], [[The Jetty]], [[Hill Valley Church]] on [[West Eclipse Boulevard]], view of the [[Great Ocean Highway]] looking south east, beach houses looking out onto the [[Del Perro Beach]].
+|games        = {{Games|V=y|O=y}}
+|type         = neighborhood
+|location     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner     = PoliceScanner-GTAV-Neighborhood-PacificBluffs.ogg
+|map          = 
+<gallery>
+PacificBluffs-IngameGPS-GTAV-Map.png|Pacific Bluffs
+PacificBluffs-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption  = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Pacific Bluffs''' is a suburban neighborhood in [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Roads and Streets]]
+*[[Bay City Avenue]]
+*[[Bay City Incline]]
+*[[Del Perro Freeway]]
+*[[Route 1|Great Ocean Highway]]
+*[[Kortz Drive]]
+*[[North Rockford Drive]]
+*[[Playa Vista]]
+*[[West Eclipse Boulevard]]
+
+[[SECTION:2:Places of Interest]]
+*Bay City Apartments
+*[[Bertolt Beach House]]
+*[[Isiah Friedlander's Office]]
+*[[Hill Valley Church]] ''(Piru United Methodist Church)''
+*[[The Jetty]] ''(101 Ocean Avenue)''
+*[[Kortz Center]] ''({{WP|Getty Center}})''
+*[[Pacific Bluffs Country Club]] ''(Bel Air Bay Club)''
+
+[[SECTION:2:Businesses]]
+*Beach Hotel
+*[[Pipeline Inn]] ''(Chart House)''
+*[[Von Crastenburg Hotel]] ''(Ocean Towers)''
+*[[Xero]]
+*[[The Jetty]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

@@ -1,0 +1,95 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = clothingstore
+|name          = Didier Sachs
+|sign          = DidierSachs-Logo.svg
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Didier Sachs''' is a clothing store chain appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Location Influences]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'']]
+*The [[Star Junction]] location is based on {{URL|https://maps.app.goo.gl/d3dLWM5THjRgmgWf8|174 Broadway}} in New York.
+*The [[Suffolk]] branch building on [[Feldspar Street]] appears to be based on the Bendheim Building at {{URL|https://maps.app.goo.gl/hvoQYqUVPERcyhPz5|122 Hudson Street}} in {{WP|SoHo, Manhattan}}.
+*The Suffolk branch building on [[Ersatz Row]] appears to be based on {{URL|https://maps.app.goo.gl/p8T18zMK79F9TQg3A|465 Broome Street}} in {{WP|SoHo, Manhattan}}.
+*The [[Big Willis Mall]] location is based on {{URL|https://maps.app.goo.gl/JF1BhVrVq9fmxPLTA|1-58 Archer Avenue}} in {{WP|Jamaica, Queens}}.
+
+[[SECTION:4:''Grand Theft Auto V'' and ''Online'']]
+*The [[South Boulevard Del Perro]] location is based on the {{WP|Van Cleef & Arpels}} store at {{URL|https://maps.app.goo.gl/RmTPfoAp6XUnqgKq5|300 N Rodeo Drive}} in {{WP|Beverly Hills, California}}.
+*The [[Prosperity Street Promenade]] location is based on the now-closed {{WP|Armani}} Exchange location on the {{WP|Third Street Promenade}} in {{WP|Santa Monica}}, {{WP|California}}{{Ref|name=armani|type=website|url=https://foursquare.com/v/armani-exchange/44df6360f964a520f0361fe3?openPhotoId{{=}}50dcbee6e4b01d38931257f8|ref=Armani Exchange}}.
+*The [[Alta Street]] location is based on the {{URL|https://cornerbakerycafe.com/|Corner Bakery Cafe}} location at the {{URL|https://maps.app.goo.gl/6FcoxJFmWorJxi7Y6|801 Tower}} in Los Angeles.
+*The [[Heritage Way]] location is based on the former Francis-Orr store at {{URL|https://maps.app.goo.gl/SSh5YgVFzosACUs57|320 N Camden Drive}} in Beverly Hills.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|DidierSachs-GTAIV-HattonGardens.png|'''Didier Sachs''' on [[Bismarck Avenue]], [[Hatton Gardens]] ([[:File:DidierSachs-GTAIV-HattonGardensBuilding.png|building view]].)
+|DidierSachs-GTAIV-Algonquin.png|'''Didier Sachs''' on [[Columbus Avenue]] and [[Kunzite Street]], [[Star Junction]] ([[:File:DidierSachs-GTAIV-StarJunctionBuilding.png|building view]].)
+|DidierSachs-GTAIV-DenverAvenueFeldsparStreet.png|'''Didier Sachs''' at [[47-49 Denver Avenue]], [[Suffolk]].
+|DidierSachs-GTAIV-Suffolk.png|'''Didier Sachs''' on [[Back Passage]], Suffolk.
+|DidierSachs-GTAIV-ErsatzRowGround.png|'''Didier Sachs''' on [[Ersatz Row]] and [[Garnet Street]], Suffolk ([[:File:DidierSachs-GTAIV-ErsatzRow.png|building view]].)
+|DidierSachs-GTAIV-FeldsparStreet.png|'''Didier Sachs''' on [[Frankfort Avenue]] and [[Feldspar Street]], Suffolk ([[:File:DidierSachs-GTAIV-FeldsparStreetBuilding.png|building view]].)
+|DidierSachs-GTAIV-WillisStoreFront.png|'''Didier Sachs''' at the [[Big Willis Mall]] on [[Saratoga Avenue]], [[Willis]], [[Dukes]].
+}}
+{{Gallery
+|game = VO
+|DidierSachs-GTAVe-ProsperityStreetPromenade.png|'''Didier Sachs''' on [[Prosperity Street Promenade]], [[Del Perro]].
+|DSinpillboxhill.jpg|'''Didier Sachs''' at [[3 Alta Street]], [[Alta Street]], [[Pillbox Hill]].
+|DidierSachs-GTAV-HeritageWay.jpg|'''Didier Sachs''' at the [[International Online Unlimited|IOU Building]], [[Heritage Way]], [[Rockford Hills]].
+|DidierSachs-GTAV-RockfordHills.png|'''Didier Sachs''' on [[South Boulevard Del Perro]] and [[Mad Wayne Thunder Drive]], Rockford Hills.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains

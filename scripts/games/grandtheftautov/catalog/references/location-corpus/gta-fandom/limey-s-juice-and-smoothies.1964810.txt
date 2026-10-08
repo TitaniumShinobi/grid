@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Limey's Juice and Smoothies
+|image = Limey's-GTAV-Logo.png
+|type = Juice Bar
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]}}
+
+[[LEAD]]
+'''Limey's Juice and Smoothies''' is a juice bar in [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. As evident by its name, the business sells juice and smoothies, and it is in the process of hiring staff.
+
+{{clr}}
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="250px">
+Limey's-GTAV-DelPerroPlaza.jpg|[[Del Perro Plaza]], Boulevard Del Perro, [[Del Perro]].
+Limey'sJuiceAndSmoothies-GTAVe-ProsperityStreetPromenade.png|[[Prosperity Street Promenade]], Del Perro.
+Bite!-Limey's-GTAV.png|[[Boulevard Del Perro]], [[Rockford Hills]].
+LimeysJuice&Smoothies-GTAV-MissionRow.jpg|[[Strawberry Avenue]] and [[Vespucci Boulevard]], [[Mission Row]].
+LimeysJuiceBar-GTAV-VespucciCanals.jpg|[[Bay City Avenue]], [[Vespucci Canals]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Café chains

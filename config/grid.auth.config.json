@@ -1,0 +1,28 @@
+﻿{
+    "baseUrl":  "https://grid.thewreck.org",
+    "clientId":  "grid-windows",
+    "loopbackHost":  "127.0.0.1",
+    "loopbackPort":  51706,
+    "loopbackPath":  "/grid-natives-callback",
+    "scope":  [
+                  "openid",
+                  "profile",
+                  "email"
+              ],
+    "sessionCookieName":  "auth_sid",
+    "refreshCookieName":  "auth_rid",
+    "presentationFallback":  [
+                                 {
+                                     "provider":  "microsoft",
+                                     "label":  "Continue with Microsoft"
+                                 },
+                                 {
+                                     "provider":  "github",
+                                     "label":  "Continue with GitHub"
+                                 },
+                                 {
+                                     "provider":  "google",
+                                     "label":  "Continue with Google"
+                                 }
+                             ]
+}

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|type      = liquorstore
+|name      = South LS Liquor
+|image     = SouthLSLiquor-GTAV.jpg
+|caption   = '''South LS Liquor''' 
+|games     = {{Games|V=y|O=y}}
+|locations = [[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''South LS Liquor''' is a liquor store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Liquor stores

@@ -1,0 +1,60 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Radio Mirror Park
+|logo         = RadioMirrorPark-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{Games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Mirror Park]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = ''Indie modern rock from the underground.''
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:Indie radio stations|Indie]]
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = [[Jeff Berlin]] <small>(voice imaging)</small>
+|artwork      = 
+|cast         = 
+|frequency    = 88.9 FM
+|host         = [[Twin Shadow|George Lewis Jr.]]
+|product      = 
+|radio_tracks = 
+*22 <small>(original version)</small>
+*40 <small>([[Grand Theft Auto V: Enhanced Edition|enhanced version]])</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+'''Radio Mirror Park''' is a [[Radio Stations in GTA V|radio station]] featured in {{V}} and {{O}} that plays indie music.
+
+[[SECTION:3:Radio station]]
+*Radio Mirror Park plays during all [[Sea Races]] (story mode)
+*Plays inside [[Sub Urban (HD Universe)|Sub Urban]] and [[Binco (HD Universe)|Binco]] stores.
+*Plays inside [[Vespucci Movie Masks]].
+*Plays in [[Lifeinvader Office]]'s demo room.
+*Plays inside [[Muscle Peach]].
+*Plays inside [[Spitroasters Meathouse]].
+*Plays inside [[Slice 'N' Dice Pizzeria]].
+*Plays inside [[Del Perro Gifts]].
+*Plays inside [[Shore Feet Shoes]].
+*Plays inside [[Sine Waves]].
+*Plays inside [[Icemaiden]].
+
+[[CATEGORIES]]
+Dynamic mix radio stations
+Electronic radio stations
+Indie radio stations
+Media in GTA Online
+Media in GTA V
+Pop radio stations

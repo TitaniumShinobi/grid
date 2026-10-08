@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=ConvenantAve-GTAV-SouthSide.jpg
+|caption=Covenant Avenue as seen from [[Roy Lowenstein Boulevard]].
+|games={{Games|V=y|O=y}}
+|start=[[Brouge Avenue]]
+|end=[[Roy Lowenstein Boulevard]]
+|map=<gallery>
+CovenantAvenue-GTAV-Map.png|Map
+CovenantAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Covenant Avenue''' is a [[List of Street Names|street]] in [[Davis]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

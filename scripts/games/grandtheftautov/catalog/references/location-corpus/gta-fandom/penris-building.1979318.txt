@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = PenrisBuilding-GTAV.png
+|caption        = The building, as seen from Alta.
+|games          = {{games|V=y|O=y}}
+|height         = 
+|location       = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|architecture   = [[:Category:Postmodern buildings|Postmodern]]
+|use            = Penris offices
+|floors         = 16
+|file_name      = <code>dt1_04_build</code>
+}}
+
+[[LEAD]]
+The '''Penris Building''' is a high-rise office building in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mid-rise buildings
+Postmodern buildings

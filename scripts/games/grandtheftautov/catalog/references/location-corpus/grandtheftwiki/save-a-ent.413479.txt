@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Save-a-¢ent
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA IV
+|game_2 = The Lost and Damned
+|game_3 = The Ballad of Gay Tony
+|game_4 = GTA V
+|game_5 = GTA Online
+|type = Discount store
+|owner = 
+|location = '''[[Liberty City in GTA IV Era|Liberty City]]'''<br />[[Albany Ave]]/[[Feldspar St]] in [[Fishmarket North]]<br />[[Galveston Ave]]/[[Jade St]] in [[Westminster]]<br />'''[[Los Santos in GTA V|Los Santos]]'''<br />[[Brouge Ave]]/[[Carson Ave]] in [[Davis]]<br />[[Vespucci Blvd]] in [[Little Seoul]]<br />[[Korean Plaza]] on [[Calais Ave]], Little Seoul<br />[[North Rockford Dr]]/[[Boulevard Del Perro]] in [[Morningwood]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Save-a-¢ent''' is a discount chain store appearing in [[Grand Theft Auto IV]], [[The Lost and Damned]], [[The Ballad of Gay Tony]], [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. There are two stores in [[Liberty City in GTA IV Era|Liberty City]], one at the corner of [[Albany Ave]] and [[Feldspar St]] in [[Fishmarket North]] and another at the corner of [[Galveston Ave]] and [[Jade St]] in [[Westminster]]. There are four stores in [[Los Santos in GTA V|Los Santos]]: at the corner of [[Brouge Ave]] and [[Carson Ave]] in [[Davis]], on [[Vespucci Blvd]] in [[Little Seoul]] at the [[Korean Plaza]] on [[Calais Ave]] in Little Seoul, and at the corner of [[North Rockford Dr]] and [[Boulevard Del Perro]] in [[Morningwood]].
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA V
+Businesses in Liberty City in GTA IV Era
+Businesses in Los Santos in GTA V

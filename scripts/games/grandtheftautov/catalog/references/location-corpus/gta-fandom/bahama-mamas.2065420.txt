@@ -1,0 +1,73 @@
+[[INFOBOX]]
+{{Infobox business
+|taglines    = 
+*''"Get Lost in the Bush!"''
+*''"Get Primal"''
+|image       = BahamaMamas-GTA4-logo.png
+|caption     = Logo of the [[Liberty City (HD Universe)|Liberty City]] branch.
+|image2      = BahamaMamasWest-GTAV-Logo.png
+|caption2    = Logo of [[#Bahama Mamas West|Bahama Mamas West]].
+|type        = club
+|accessible  = 
+*Yes {{Small|(Liberty City: ''TBOGT'' only, only during [[Boulevard Baby]])}}
+*No {{Small|(Los Santos)}}
+|owner       = 
+*[[Vic Manzano]] {{Small|(Liberty City: Formerly)}} 
+*Unknown {{Small|(Los Santos)}}
+|games       = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations   = 
+[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map = BahamaMamas-GTAIV-LocationOfficialMap.png
+|map_caption = Liberty City
+|map2 = Drinking GTAVpc BahamaMammas Map.png
+|map_caption2 = Los Santos
+}}
+
+[[LEAD]]
+'''Bahama Mamas''' is a [[nightclub]] franchise featured in the {{HD}} of the {{S}}.
+
+[[SECTION:5:Interior]]
+<gallery position="center" spacing="small" widths="250px">
+BahamaMamas-TBoGT-Interior-Admission.png|Admission.
+BahamaMamas-TBoGT-Interior-Stairs-Top.png|Stairs leading down to the party.
+BahamaMamas-TBoGT-Interior-Stairs-Bottom.png|Stairs on the bottom.
+BahamaMamas-TBoGT-Interior-HangoutArea.png|Hangout area.
+BahamaMamas-TBoGT-Interior-DanceFloor.png|Dance floor.
+BahamaMamas-TBoGT-Interior-DJBooth.png|View from the [[Paul Martin|DJ]]'s booth.
+BahamaMamas-TBoGT-Interior-VIPArea.png|VIP area.
+BahamaMamas-TBoGT-Interior-Bar.png|Bar.
+BahamaMamas-TBoGT-Interior-OfficeWaiting.png|Office waiting room.
+BahamaMamas-TBoGT-Interior-Office1.png|Office.
+BahamaMamas-TBoGT-Interior-Office2.png|Office.
+</gallery>
+
+[[SECTION:5:Interior]]
+<gallery position="center" spacing="small" widths="270px">
+BahamaMamasWest-GTAVee-Interior6.jpg|Entrance.
+BahamaMamasWest-GTAVee-Interior5.jpg|Entrance with a [[Automated Teller Machine|ATM]].
+BahamaMamasWest-GTAVee-Interior1.jpg|Left side view of the bar.
+BahamaMamasWest-GTAVee-Interior2.jpg|Front view of the bar.
+BahamaMamasWest-GTAVee-Interior3.jpg|Right side view of the bar.
+BahamaMamasWest-GTAVee-Interior7.jpg|Sitting area with a women's toilet in the back.
+BahamaMamasWest-GTAVee-Interior8.jpg|Sitting area with a men's toilet in the back.
+BahamaMamasWest-GTAVee-Interior4.jpg|The dace floor.
+BahamaMamasWest-GTAVee-Interior9.jpg|The DJ booth.
+BahamaMamasWest-GTAVee-Interior10.jpg|Sitting area at the dance floor.
+BahamaMamasWest-GTAVee-Interior11.jpg|Another sitting area.
+BahamaMamasWest-GTAVee-Interior12.jpg|Dance floor bar.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+*Before the mission [[Boulevard Baby]], when the player stands in front of Bahama Mamas, there will be music coming from inside the club, but the door won't open.
+*In the downloadable version of {{TLAD}}, as well as its version that comes with {{EFLC}}, the club retains its {{IV}} appearance, still being inaccessible. However, [[The Beat 102.7]] can be heard playing from inside.
+**On the other hand, in ''[[Grand Theft Auto IV: The Complete Edition|The Complete Edition]]'', the club exterior will exist as in {{TBOGT}}. It is still inaccessible, but now [[The Vibe 98.8]] can be heard playing from inside.
+*Albums by [[OG Loc (HD Universe)|OG Loc]] can be found at the [[Paul Martin|DJ]]'s booth.
+*There is a [[:File:Secret Bahama Mamas Map.png|map on a desk in the office]] room where [[Vic Manzano]] is killed. It is a copy of a real {{URL|https://www.oceangrafix.com/chart/zoom?chart{{=}}13276|shipping navigation chart for Salem, Marblehead and Beverly Harbors}}. The same chart was originally used in ''Grand Theft Auto IV'' on the bridge of the ''[[Platypus]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Nightclubs

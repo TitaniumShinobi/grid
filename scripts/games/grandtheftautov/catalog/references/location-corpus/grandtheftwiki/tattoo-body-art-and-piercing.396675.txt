@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Tattoo Body Art and Piercing
+|type = [[:Category:Tattoo Parlors|Tattoo parlor]]/Body piercing shop
+|owner = 
+|location = [[Melanoma St]] in [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Tattoo Body Art and Piercing''' is a [[:Category:Tattoo Parlors|tattoo parlor]] and body piercing shop located on [[Melanoma St]] in [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The shops shutters are down permanently suggesting the business may have closed.
+
+
+
+
+[[Type::Business| ]]
+[[Location::Melanoma St| ]]
+[[Location::Vespucci Beach| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Tattoo Parlors

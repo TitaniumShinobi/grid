@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|caption = 
+|image = Donkey_Punch_Farm_GTAVe_Sign.jpg
+|name = Donkey Punch Family Farm
+|games = {{Games|V=y|O=y}}
+|locations = [[Route 1]], [[Paleto Bay]]
+}}
+
+[[LEAD]]
+'''Donkey Punch Family Farm''', also known as the '''Zancudo Farm''', is located at the north end of [[Paleto Bay]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Farms
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = skyscraper
+|image          = WiwangTower-GTAVee.png
+|caption        = The building as seen from the west.
+|games          = {{games|V=y|O=y}}
+|location       = [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+|use            = [[Wiwang]] headquarters
+|architecture   = [[:Category:Modernist buildings|Modernist]]
+|floors         = 46
+}}
+
+[[LEAD]]
+The '''Wiwang Tower''' is a skyscraper appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Modernist buildings
+Skyscrapers
+Unnamed buildings

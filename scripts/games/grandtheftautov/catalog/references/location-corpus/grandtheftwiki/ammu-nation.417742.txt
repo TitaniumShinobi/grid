@@ -1,0 +1,297 @@
+[[INFOBOX]]
+{{infobox business|
+| image = Ammu-Nation-GTAIII-logo.gif
+| size = 350x350px
+| game_1 = GTA III
+| game_2 = GTA Vice City
+| game_3 = GTA San Andreas
+| game_4 = GTA Advance
+| game_5 = GTA Liberty City Stories
+| game_6 = GTA Vice City Stories
+| game_7 = GTA Chinatown Wars
+| game_8 = GTA V
+| game_9 = GTA Online
+| name = Ammu-Nation
+| type = [[:Category:Weapon Dealers|Weapons dealer]]
+| owner = 
+| location = '''[[3D Universe]]'''<br />[[Bedford Point]], [[Liberty City in GTA III Era|Liberty City]]<br />[[Harwood]], [[Liberty City in GTA III Era|Liberty City]]<br />[[Newport]], [[Liberty City in GTA III Era|Liberty City]]<br />[[Pike Creek]], [[Liberty City in GTA III Era|Liberty City]]<br />[[Saint Mark's]], [[Liberty City in GTA III Era|Liberty City]]<br />[[Downtown Vice City|Downtown]], [[Vice City in GTA III Era|Vice City]]<br />[[Ocean Beach]], [[Vice City in GTA III Era|Vice City]]<br />[[Vice Point]], [[Vice City in GTA III Era|Vice City]]<br />[[Downtown Los Santos in GTA III Era|Downtown]], [[Los Santos in GTA III Era|Los Santos]]<br />[[Willowfield]], [[Los Santos in GTA III Era|Los Santos]]<br />[[Queens]], [[San Fierro]]<br />[[Come-A-Lot]], [[Las Venturas]]<br />[[Old Venturas Strip]], [[Las Venturas]]<br />[[Palomino Creek]], [[Red County]]<br />[[Blueberry]], [[Red County]]<br />[[Angel Pine]], [[Whetstone]]<br />[[El Quebrados]], [[Tierra Robada]]<br />[[Fort Carson]], [[Bone County]]<br />[[Bone County]]<br />'''[[HD Universe]]'''<br />[[Cypress Flats]], [[Los Santos in GTA V|Los Santos]]<br />[[Hawick]], [[Los Santos in GTA V|Los Santos]]<br />[[Little Seoul]], [[Los Santos in GTA V|Los Santos]]<br />[[Mission Row]], [[Los Santos in GTA V|Los Santos]]<br />[[Morningwood]], [[Los Santos in GTA V|Los Santos]]<br />[[Pillbox Hill]], [[Los Santos in GTA V|Los Santos]]<br />[[Chumash]], [[Los Santos County]]<br />[[Tataviam Mountains]], [[Los Santos County]]<br />[[Paleto Bay]], [[Blaine County]]<br />[[Sandy Shores]], [[Blaine County]]
+| affiliation = 
+| missions = 
+| employee = [[Melvin]] (<small>GTA V</small>)
+| ticker symbol = AMU ([[BAWSAQ]])
+}}
+
+[[LEAD]]
+'''Ammu-Nation''' is a major chain of gun shops featured between [[GTA III Era|Grand Theft Auto III and Grand Theft Auto: Vice City Stories]], [[Grand Theft Auto: Chinatown Wars]], and [[Grand Theft Auto V]]. The chain primarily specialized in offering the player an assortment of [[weapons|firearms]] from [[pistol]]s to [[grenade]]s, as well as [[Body Armor|armor]], in exchange for [[money]]. In the beginning of the game, Ammu-Nation stores tend to have only weak weapons in stock; more powerful weapons are unlocked as the player progresses through the storyline.
+
+The name ''Ammu-Nation'' is a portmanteau of ''ammunition'' and ''nation'', which implies the store is patriotic. The store opened in 1962.
+
+The chain is absent in [[Grand Theft Auto IV]], explained to have been shut down as a result of strict gun control laws passed by then mayor [[Julio Ochoa]]. As alternatives, players may either purchase weapon from [[Illegal Gun Shop|illegally operating gun shops]] or [[Gun Car|out of the back of mobile gun cars]]. In [[Grand Theft Auto: Chinatown Wars]], Ammu-Nation resurfaces but has shifted its operations online. The chain returns in [[Grand Theft Auto V]].
+
+[[SECTION:3:GTA Vice City]]
+Weapons are bought by standing in the pink marker inside Ammu-Nation stores. Each clerk at each store carries a different weapon which include the [[MAC-10|Mac]] ([[Ocean Beach]]), [[Micro SMG|Uz-I]] ([[North Point Mall]]) and [[Python|.357]] ([[Downtown Vice City|Downtown]]).
+
+Ammu-Nation seems to have connections with [[Mr. Black]] and his contract killing company, since during [[Check Out At The Check In|a mission]] in GTA Vice City, protagonist [[Tommy Vercetti]] is hired to kill a business man, steal a briefcase he is carrying and deliver it to the owner of an Ammu-Nation local in [[Downtown Vice City|Downtown]].
+
+<gallery width="auto" perrow="4" style="font-size:95%; padding:0; text-align:left;" widths="160">
+Ammu-Nation-GTAVC-OceanBeach-exterior.jpg|[[Ocean Beach]] outlet.
+Ammu-Nation-GTAVC-VicePoint-exterior.jpg|[[Vice Point]] ([[North Point Mall]]) outlet.
+Ammu-Nation-GTAVC-Downtown-exterior.jpg|[[Downtown Vice City|Downtown]] outlet.
+Ammu-Nation-GTAVC-shopping.jpg|Browsing weapons and equipment at an Ammu-Nation.
+</gallery>
+
+<center>
+{|style="width:50%" class="wikitable"
+! Item 
+! Cost 
+! Availability
+|-
+!align="center" colspan="3"|[[Ocean Beach]]
+|-
+| Pistol
+| $100
+|
+|-
+| [[MAC-10|Mac]]
+| $300
+|
+|-
+| [[Pump Action Shotgun|Chrome Shotgun]]
+| $500
+| [[Mall Shootout]]
+|-
+| [[Ruger|Kruger]]
+| $1000
+| [[Guardian Angels]]
+|-
+| Body Armor
+| $200
+| [[Jury Fury]]
+|-
+!align="center" colspan="3"|[[North Point Mall]]
+|-
+| Pistol
+| $100
+| 
+|-
+| Grenades
+| $300
+|
+|-
+| [[Micro SMG|Uz-I]]
+| $400
+|
+|-
+| [[Stubby Shotgun]]
+| $600
+| [[The Chase]]
+|-
+| [[Sniper Rifle]]
+| $1,500
+| [[Phnom Penh '86]]
+|-
+| Body Armor
+| $200
+| Jury Fury
+|-
+!align="center" colspan="3"|[[Downtown Vice City|Downtown]]
+|-
+| [[Python|.357]]
+| $2,000
+| [[Rub Out]]
+|-
+| [[MP5|MP]]
+| $3,000
+| Rub Out
+|-
+| [[SPAS 12|S.P.A.S. 12]]
+| $4,000
+| [[Bar Brawl]]
+|-
+| [[M16|M4]]
+| $5,000
+| Rub Out
+|-
+| [[PSG-1|.308 Sniper]]
+| $6,000
+| [[Shakedown (GTA VC)|Shakedown]]
+|-
+| Body Armor
+| $200
+| Jury Fury
+|}
+</center>
+
+[[SECTION:3:GTA Liberty City Stories]]
+Ammu-Nation stores in GTA Liberty City Stories distinctively combines design traits from both GTA III's and GTA Vice City's Ammu-Nation. Just like in GTA III, the same fixed camera view returns which makes the players unable to use first person view weapons like [[Sniper Rifle]] or [[Rocket Launcher]]; however, the game requires the player stand on the yellow marker in front of the counter to purchase weapons, and utilizes GTA Vice City's weapon selection system. Clerks carry [[shotgun]]s and will attack the player if aimed at or the player fires a weapon inside the store.
+
+Ammu-Nation is featured in GTA Liberty City Stories's official website in an e-mail under the name "Y2K is Coming!" 
+
+<gallery width="auto" perrow="2" style="font-size:95%; padding:0; text-align:left;" widths="160">
+Ammu-Nation-GTALCS-Portland-exterior.jpg|[[Saint Mark's]], [[Portland]] outlet.
+Ammu-Nation-GTALCS-Staunton-exterior.jpg|[[Newport]], [[Staunton Island|Staunton]] outlet.
+</gallery>
+
+<center>
+{|style="width:50%" class="wikitable"
+! Item 
+! Cost 
+! Availability
+|-
+! align="center" colspan="3"|Red Light District/Saint Mark's
+|-
+| Pistol
+| $240
+| [[Snuff]]
+|-
+| [[Micro SMG]]
+| $600
+| [[Don in 60 Seconds]]
+|-
+! align="center" colspan="3"|Newport
+|-
+| Grenades
+| $360
+| [[Driving Mr. Leone]]
+|-
+| Micro SMG
+| $600
+| Driving Mr. Leone
+|-
+| AK-47
+| $4,200
+| Driving Mr. Leone
+|-
+| Sniper Rifle
+| $6,000
+| Driving Mr. Leone
+|-
+| Body Armor
+| $240
+| Driving Mr. Leone
+|}
+</center>
+
+[[SECTION:3:GTA Vice City Stories]]
+The Ammu-Nation stores in GTA Vice City Stories functions exactly the same as in GTA Vice City. But all clerks inside the stores carry Shotguns similar to GTA III and Liberty City Stories. The cost inside the parenthesis is the discounted price of the weapons after completing [[Phil's Shooting Range]].
+
+<gallery width="auto" perrow="3" style="font-size:95%; padding:0; text-align:left;" widths="160">
+Ammu-Nation-GTAVCS-OceanBeach-exterior.jpg|[[Ocean Beach]] outlet.
+Ammu-Nation-GTAVCS-VicePoint-exterior.jpg|[[Vice Point]] ([[North Point Mall|Vice Point Mall]]) outlet.
+Ammu-Nation-GTAVCS-Downtown-exterior.jpg|[[Downtown Vice City|Downtown]] outlet.
+</gallery>
+
+<center>
+{|style="width:50%" class="wikitable"
+! Item 
+! Cost 
+! Availability
+|-
+!align="center" colspan="3"|Downtown
+|-
+| Pistol
+| $240 ($180)
+| [[Soldier]]
+|-
+| [[Scorpion]]
+| $360 ($270)
+| Soldier
+|-
+| Grenades
+| $360 ($270)
+| Soldier
+|-
+| Micro SMG
+| $600 ($450)
+| Soldier
+|-
+| Shotgun
+| $1,000 ($750)
+| Soldier
+|-
+| [[Body Armor]]
+| $240 ($180)
+| Soldier
+|-
+! align="center" colspan="3"|Ocean Beach
+|-
+| [[SMG]]
+| $2,500 ($1,875)
+| [[From Zero to Hero]]
+|-
+| AK
+| $4,200 ($3,150)
+| From Zero to Hero
+|-
+| [[Spaz-12]]
+| $4,000 ($3,000)
+| From Zero to Hero
+|-
+| [[Sniper Rifle]]
+| $6,000 ($4,500)
+| From Zero to Hero
+|-
+| [[Rocket Launcher]]
+| $9,000 ($6,750)
+| [[Turn On, Tune In, Bug Out]]
+|-
+| Body Armor
+| $240 ($180)
+| From Zero to Hero
+|-
+! align="center" colspan="3"|[[Vice Point Mall]] (North Point Mall)
+|-
+| Grenades
+| $360 ($270)
+| From Zero to Hero
+|-
+| [[Python|Equalizer]]
+| $2,000 ($1,500)
+| From Zero to Hero
+|-
+| [[M16|Assault Rifle]]
+| $5,400 ($4,050)
+| From Zero to Hero
+|-
+| [[Dragunov|Laser Sniper]]
+| $8,000 ($6,000)
+| From Zero to Hero
+|-
+| [[Minigun]]
+| $15,000 ($11,250)
+| [[Farewell to Arms]]
+|-
+| Body Armor
+| $240 ($180)
+| From Zero to Hero
+|}
+</center>
+
+[[CATEGORIES]]
+Businesses in 3D Universe
+Businesses in Blaine County in HD Universe
+Businesses in Bone County
+Businesses in GTA Chinatown Wars
+Businesses in GTA III
+Businesses in GTA Liberty City Stories
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA Vice City
+Businesses in GTA Vice City Stories
+Businesses in HD Universe
+Businesses in Las Venturas in 3D Universe
+Businesses in Liberty City in 3D Universe
+Businesses in Los Santos County
+Businesses in Los Santos in 3D Universe
+Businesses in Los Santos in HD Universe
+Businesses in Red County
+Businesses in San Fierro in 3D Universe
+Businesses in Vice City in 3D Universe
+Businesses in Whetstone
+Businesses listed on the BAWSAQ in GTA V
+Features in GTA III
+Features in GTA Liberty City Stories
+Features in GTA San Andreas
+Features in GTA Vice City
+Features in GTA Vice City Stories
+Weapon Dealers

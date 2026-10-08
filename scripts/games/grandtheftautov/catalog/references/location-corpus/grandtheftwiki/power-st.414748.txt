@@ -1,0 +1,209 @@
+[[LEAD]]
+'''Power St''' is a north-south street in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street runs from [[Strawberry]] in the south to [[Downtown Vinewood]] in the north and travels through [[Pillbox Hill]], [[Alta]], and [[Hawick]]. There are connections to [[Adam's Apple Blvd]], [[Alta St]], [[Baytree Canyon Ave]], [[Clinton Ave]], [[Hawick Ave]], [[Innocence Blvd]], [[Integrity Way]], [[Low Power St]], [[Occupation Ave]], [[San Andreas Ave]], [[Spanish Ave]], [[Vespucci Blvd]] and [[Vinewood Blvd]]. The street goes over the [[Del Perro Freeway]] and is controlled by [[The Families]] in Strawberry, with gangsters occasionally appearing in southern [[Pillbox Hill]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[1162 Power St]]
+| [[Hawick]]
+|
+| Residential
+|-
+| [[Callisto Apartments]]
+| [[Downtown Vinewood]]
+|
+| Residential
+|-
+| [[Chihuahua Hotdogs]] (<small>closed</small>)
+| [[Pillbox Hill]]
+|
+| Food and drink
+|-
+| [[Clappers]]
+| [[Downtown Vinewood]]
+| [[Vinewood Blvd]]
+| Food and drink
+|-
+| [[Digital Den]]
+| [[Pillbox Hill]]
+|
+| Electronics
+|-
+| [[Downtown Liquor Deli]]
+| [[Pillbox Hill]]
+|
+| Food and drink
+|-
+| [[F.T. Pawn]]
+| [[Downtown Vinewood]]
+| [[Clinton Ave]]
+| Pawn shop
+|-
+| [[FIB Building]]
+| [[Pillbox Hill]]
+|
+| Law enforcement
+|-
+| [[Flint Autos]]
+| [[Strawberry]]
+| [[Innocence Blvd]]
+| Garage
+|-
+| [[Fred's Pictures|Fred's Store]]
+| [[Downtown Vinewood]]
+| [[Vinewood Blvd]]
+| Souvenirs
+|-
+| [[Gift Souvenir]]
+| [[Downtown Vinewood]]
+| [[Vinewood Blvd]]
+| Souvenir
+|-
+| [[Happy Shark Bail Bonds]]
+| [[Pillbox Hill]]
+|
+| Bail bonds
+|-
+| [[Hawaiian Snow]]
+| [[Alta]]/[[Hawick]]
+| [[Hawick Ave]]
+| Clothing
+|-
+| [[Hookah Palace]]
+| [[Pillbox Hill]]
+| [[Vespucci Blvd]]
+| Hotel
+|-
+| [[IAA Building]]
+| [[Pillbox Hill]]
+| [[Swiss St]]
+| Law enforcement
+|-
+| [[Lombank]]
+| [[Pillbox Hill]]
+| [[Low Power St]]
+| Bank
+|-
+| [[Los Santos City Hall (GTA V)|Los Santos City Hall]]
+| [[Alta]]
+| [[Occupation Ave]]
+| Government
+|-
+| [[Los Santos Meteor]]
+| [[Strawberry]]
+|
+| Newspaper
+|-
+| [[Los Santos Water and Power]]
+| [[Downtown Vinewood]]
+|
+| Energy
+|-
+| [[Marrakesh Salon]]
+| [[Pillbox Hill]]
+| 
+| Beauty salon
+|-
+| [[Maze Bank]]
+| [[Pillbox Hill]]
+| [[Low Power St]]/[[Vespucci Blvd]]
+| Bank
+|-
+| [[Mile High Club]]<br />(<small>under construction</small>)
+| [[Pillbox Hill]]
+| [[Adam's Apple Blvd]]/[[Vespucci Blvd]]
+| Club
+|-
+| [[Mountebank Gallery]]
+| [[Alta]]
+| [[Hawick Ave]]
+| Gallery
+|-
+| [[Oeuvre Gallery]]
+| [[Hawick]]
+| [[Hawick Ave]]
+| Gallery
+|-
+| [[Penris]]
+| [[Pillbox Hill]]
+| [[Integrity Way]]
+| Healthcare
+|-
+| [[Porn Crackers]]
+| [[Downtown Vinewood]]
+|
+| Adult
+|-
+| [[Premium Deluxe Motorsport]]
+| [[Pillbox Hill]]
+| [[Adam's Apple Blvd]]
+| Auto dealership
+|-
+| [[Rimm Paint]]
+| [[Strawberry]]
+|
+| Paint supplies
+|-
+| [[Tire Hutz]]
+| [[Strawberry]]
+| [[Innocence Blvd]]
+| Garage
+|-
+| [[Tsunami]]
+| [[Downtown Vinewood]]
+| [[Vinewood Blvd]]
+| Clothing
+|-
+| [[Union Depository]]
+| [[Pillbox Hill]]
+| [[San Andreas Ave]]
+| Bank
+|-
+| Unnamed audio store
+| [[Strawberry]]
+| 
+| Electronics
+|-
+| [[Vapid]]
+| [[Pillbox Hill]]
+| [[Adam's Apple Ave]]
+| Auto dealership
+|-
+| data-sort-value="Vinewood Garden Hotel, The"| [[The Vinewood Garden Hotel]]
+| [[Hawick]]
+| [[Spanish Ave]]
+| Hotel
+|-
+| [[Vinewood Mall]]
+| [[Downtown Vinewood]]
+| [[Vinewood Blvd]]
+| Mall
+|-
+| [[Vinewood Plaza]]
+| [[Hawick]]
+| [[Spanish Ave]]
+| Media
+|-
+| [[Vinewood Self Storage]]
+| [[Strawberry]]
+| 
+| Storage
+|-
+| [[Von Crastenburg Hotel]]
+| [[Downtown Vinewood]]
+| [[Vinewood Blvd]]
+| Hotel
+|-
+| [[White Widow]]
+| [[Alta]]
+| [[Hawick Ave]]
+| Clothing
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

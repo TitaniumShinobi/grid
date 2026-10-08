@@ -1,0 +1,54 @@
+[[INFOBOX]]
+{{Infobox_location
+|name  = Alta
+|image = Alta-GTAV.png
+|caption = Overview of Alta.
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|location = [[Vinewood (HD Universe)|Vinewood]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Alta.ogg
+|map           = <gallery>
+Alta-IngameGPS-GTAV-Map.png|Alta
+Alta-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+|map2           = Alta-GTAV-SatelliteMap.png
+|map_caption2   = Satellite view of Alta.
+}}
+
+[[LEAD]]
+'''Alta''' is a six-block neighborhood in [[Vinewood (HD Universe)|Vinewood]], [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Roads and Streets]]
+*[[Alta Street]]
+*[[Elgin Avenue]]
+*[[Hawick Avenue]]
+*[[Meteor Street]]
+*[[Occupation Avenue]]
+*[[Power Street]]
+
+[[SECTION:2:Places of Interest]]
+*[[Los Santos City Hall (HD Universe)|Los Santos City Hall]]
+
+[[SECTION:2:Businesses]]
+*[[El Café Rojo de Madera]]
+*Echo Rock Insurance
+*Financial Services
+*[[Fleeca|Fleeca Bank]]
+*[[Hawaiian Snow]]
+*[[Heat]]
+*[[High Time]]
+*[[Hippy Feet]]
+*[[Inspector Knickers]]
+*[[Lârss & Elbö]]
+*[[La Linterna]]
+*[[The Pink Cage Motel]]
+*[[Sub Urban (HD Universe)|Sub Urban]]
+*[[Talon Scout Nails]]
+*[[Xhoti]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

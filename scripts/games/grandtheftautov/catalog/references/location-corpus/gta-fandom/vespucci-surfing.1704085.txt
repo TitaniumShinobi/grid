@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = VespucciSurfing-GTAV-Logo.png
+|caption = 
+|name = Vespucci Surfing
+|type = Clothing Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Vespucci Surfing''' is a swimsuit and surfboard store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

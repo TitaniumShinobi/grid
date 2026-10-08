@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = snack
+|name          = Phat Chips
+|sign          = 
+|image         = PhatChips-GTAV-Logo.png
+|caption       = 
+|games         = {{Games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|business_type = Potato chips
+|founded       = 
+|products      = [[#Flavors|Various flavors]]
+|taglines      = 
+*"''The nation loves getting phat''"
+*"''Get crunching! Stop crunches!''"
+*"''We've made healthy snacking cool!''"
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Phat Chips''' is a brand of potato chips featured in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Food
+Snack brands

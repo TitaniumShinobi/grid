@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = apartment
+|name           = 924 Las Lagunas Boulevard
+|sign           = 
+|image          = HarveyMolinasApartment-GTAVe-BuildingExterior.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Las Lagunas Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|occupants      = 
+*[[Harvey Molina]] <small>({{H:title|Formerly as of 2024|Formerly}})</small>
+*[[Unnamed FIB hacker]]
+}}
+
+[[LEAD]]
+'''924 Las Lagunas Boulevard''' is an apartment building in {{V}} and {{O}}. Located in [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]], it contains an apartment formerly occupied by [[Harvey Molina]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Homes

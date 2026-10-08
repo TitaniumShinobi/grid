@@ -1,0 +1,288 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|image = Nightclubs-GTAO-HeaderOverview.png
+|caption = A nightclub dancefloor.
+|style = {{HUDIcons|game=O|batclubproperty|animated=y}} Underground nightclub
+|occupants = 
+*{{GTAOP}}
+*[[Motorcycle Clubs]] <small>(determinant)</small>
+*[[Organizations]] <small>(determinant)</small>
+*[[Tony Prince]]
+*[[Lazlow Jones (HD Universe)|Lazlow Jones]]
+*[[Connie]] <small>(Head Bartender)</small>
+*[[Marcel]] <small>(Head Bouncer)</small>
+*[[Yohan Blair]] <small>(Warehouse Technician)</small>
+*[[Nightclubs/Resident DJ|Resident DJ]] <small>(determinate)</small>
+|price = 
+|game = O}}
+
+[[LEAD]]
+'''Nightclubs''' are a business venture introduced to {{O}} in the [[GTA Online: After Hours|After Hours]] update.
+
+[[SECTION:2:Locations]]
+[[File:MBF-GTAO-Nightclubs-Map.png|thumb|350px|center|Map of all locations]]
+
+{| class="wikitable"
+! colspan="5" align="center" width="100%" | Nightclubs
+|-
+! width="15%" |Location
+! width="24%" |Image
+! width="44%" |In-game description
+! width="8%" |Base Price
+|-
+|[[Del Perro]]
+|[[File:Nightclubs-GTAO-Del Perro.png|150px|center]]
+|''This charming 20's-style building in Del Perro has just enough residual class to offer a post-ironic thrill when you turn it into a throbbing techno dungeon.''
+|$1,645,000
+|-
+|[[Vespucci Canals]]
+|[[File:Nightclubs-GTAO-Vespucci Canals.png|150px|center]]
+|''There's only one thing needed to push the Vespucci Canals into being more European than Europe, and that's a wildly pretentious and brutally overpriced nightclub set amid the ruins of once-profitable commerce and industry.''
+|$1,320,000
+|-
+|[[Strawberry]]
+|[[File:Nightclubs-GTAO-Strawberry.png|150px|center]]
+|''One of the little-known perks of setting up a night club in a disused paint factory is the presence of high residual levels of industrial solvent. Good atmosphere, happy patrons, all night. guaranteed.''
+|$1,525,000
+|-
+|[[Los Santos International Airport (HD Universe)|LSIA]]
+|[[File:Nightclubs-GTAO-LSIA.png|150px|center]]
+|''Imagine you're an international businessperson looking for a world-class night out, but you'd rather not stray too far from your private jet just in case the FIB hears you're on American soil. There's only one way to cater to that vital demographic, and this location is it.''
+|$1,135,000
+|-
+|[[Mission Row]]
+|[[File:Nightclubs-GTAO-Mission Row.png|150px|center]]
+|''A wise man once said that wealth is relative. And nothing will accentuate the astonishing wealth of your clientelle like stepping out for a cigarette and gazing at the highest concentration of vagrancy in the state.''
+|$1,440,000
+|-
+|[[La Mesa]]
+|[[File:Nightclubs-GTAO-La Mesa.png|150px|center]]
+|
+As well as being walking distance for the young professionals in Mirror Park, this is also the only location in town where the roar of the interstate doubles as the world's biggest sub-woofer.
+|$1,500,000
+|-
+|[[Cypress Flats]]
+|[[File:Nightclubs-GTAO-Cypress Flats.png|150px|center]]
+|''Cypress Flats is currently in that perfect sweet spot for a new club: it has barrels overflowing with post-industrial cool but very little housing, so there's nowhere for the hipsters to roost. This place is staying on the edge for years to come.''
+|$1,370,000
+|-
+|[[West Vinewood]]
+|[[File:Nightclubs-GTAO-West Vinewood.png|150px|center]]
+|''It's hard to find a suitably scuzzy location in West Vinewood. This place was actually in pristine condition until we paid some drifters to live in it for a couple months: now it has all the character it needs, and then some.''
+|$1,700,000
+|-
+|[[Downtown Vinewood]]
+|[[File:Nightclubs-GTAO-Downtown Vinewood.png|150px|center]]
+|''Downtown Vinewood is the entertainment capital of Los Santos: Oriental Theater, Whirligig Theater, Doppler Cinema — and right in the heart of it. basking in all its abandoned commercial chic, there's a nightclub location with your name on it.''
+|$1,670,000
+|-
+|[[Elysian Island]]
+|[[File:Nightclubs-GTAO-Elysian_Island.png|150px|center]]
+|''Forget homely blue-collar neighborhoods and picturesque abandoned factories. If you want a real challenge, try gentrifying a dockside slum that's knee-deep in industrial discharge and dead fish. If you can bring the A-listers here, you can bring them anywhere.''
+|$1,080,000
+|}
+
+[[SECTION:3:Main Club Floor]]
+
+
+[[SECTION:4:Bar]]
+The main bar is straight ahead and is staffed by an unnamed female bartender. Drinks are free for the owner of the club, visitors pay. If the staff upgrade option is purchased, a second female bartender will be behind the bar.
+{| class="article-table"
+!Beverage
+!Price (visitor)
+!Price (owner)
+|-
+|[[Pißwasser|Pisswasser]]
+|$5
+|FREE
+|-
+|[[Nogo Vodka|Vodka]] Shot
+|$10
+|FREE
+|-
+|[[The Mount Distilling Co.|The Mount Whiskey]] Shot
+|$55
+|FREE
+|-
+|[[Richard's Whiskey]] Shot
+|$190
+|FREE
+|-
+|[[Macbeth]] Whisky Shot
+|$350
+|FREE
+|}
+
+[[SECTION:4:Dance floor]]
+The main dance floor space with two circular slightly elevated platforms for the paid dancers (if hired). A stairway on the left leads up to the VIP area. The DJ stage and sound system is directly ahead. If the staff upgrade option is purchased, a bouncer will be standing at the back of the dance floor.
+
+[[SECTION:4:DJ Stage]]
+An elevated stage area with sound and light equipment where the resident DJs perform. Access to the stage from the dance floor is on its left side and a further stairway leads up from the booth to the second level VIP area. To the right of the DJ stage a doorway leads to the restrooms.
+
+If the player is not a member of the groups that have been allowed access, a bouncer will stop the player from accessing either stairway to the booth.
+
+[[SECTION:4:Restrooms]]
+Unisex restrooms with 4 cubicles, 6 wall mounted urinals opposite, or two large troughs depending on the style. A large mirror over the sinks.
+
+A restroom attendant, who is an [[Epsilon Program (HD Universe)|Epsilonist]], is stationed next to the condom vending machine and can be tipped $1 at a time. When tipped 577 times in a single session, the Epsilon Robes will be unlocked.
+
+A doorway to the right is guarded by a bouncer and leads to the elevator and rear garage entry. There is a service elevator in this corridor which can be used to access the basement levels. It does not go up to the office level.
+
+[[SECTION:4:Award]]
+{| class="article-table"
+! rowspan="2" |Image
+! rowspan="2" |Name
+! colspan="4" style="text-align:center;" |Levels
+! rowspan="2" |Unlocked by
+! rowspan="2" |Also Unlocks
+|-
+!Bronze
+!Silver
+!Gold
+!Platinum
+|-
+|[[File:Awards-GTAO-HotSpot.png|center|100px]]
+|Hot Spot
+|—
+|—
+|—
+|100
+|Have 100 unique player characters{{Ref|name=description|ref=Although the Hot Spot award's description says "unique players", in reality unique characters count, even of the same player.}} visit your nightclub over time
+|
+|}
+
+[[SECTION:3:Garage Entry]]
+
+
+[[SECTION:4:Exterior]]
+A corona at the garage door will allow access by vehicle directly to the service entrance parking spot. If additional garage space is purchased, a menu will allow selection of the desired garage level.
+
+When entering through the garage on foot, options to enter the nightclub (the default parking space area) or access any of the garage or warehouse levels are provided.
+
+[[SECTION:4:Nightclub Service Entrance]]
+A smaller garage area capable of storing one personal vehicle. If the player has completed [[Nightclub Management: Recover supplies]] for the first time, the [[Mule]] delivered in the mission will be parked in here but will become a static prop.
+
+A short wide stairway on the left leads directly up to the office space and this provides the quickest access to the office without needing to walk through multiple levels of nightclub floor.
+
+The passage to the right leads to the service elevator providing access to the basement levels in into the club via the restrooms.
+
+If the player is not a member of the groups that have been allowed access, the bouncer will stop the player from accessing this area from the foyer outside the restrooms.
+
+[[SECTION:3:VIP Area]]
+The stairway from the main dance floor leads up to the VIP area of the club.
+
+[[SECTION:4:Bar]]
+The VIP bar staffed by head bartender, Connie. Expensive champagne can be purchased from this bar, as well as the cheaper fare offered in the downstairs bar. Even the owner must pay for the expensive bottles here. If the staff upgrade option is purchased, a second female bartender will be behind the bar.
+{| class="article-table"
+!Beverage
+!Price (visitor)
+!Price (owner)
+|-
+|[[Pißwasser|Pisswasser]]
+|$5
+|FREE
+|-
+|[[Nogo Vodka|Vodka]] Shot
+|$10
+|FREE
+|-
+|[[The Mount Distilling Co.|The Mount Whiskey]] Shot
+|$55
+|FREE
+|-
+|[[Richard's Whiskey]] Shot
+|$190
+|FREE
+|-
+|[[Macbeth]] Whisky Shot
+|$350
+|FREE
+|-
+|[[Blêuter'd]] Champagne Silver
+|$30,000
+|$30,000
+|-
+|Blêuter'd Champagne Gold
+|$50,000
+|$50,000
+|-
+|Blêuter'd Champagne Diamond
+|$150,000
+|$150,000
+|}
+The player can also enter the bar service area and serve free drinks to other players currently visiting their club themselves. The player will not serve drinks to NPCs though.
+
+[[SECTION:4:VIP Lounge]]
+A VIP lounge area is located to the left side and a balcony overlooks the main dance floor. The player can sit on the couch. Tony Prince can often be found in this area when he is not in the office space. Celebrities delivered to the club will be found here, dancing or drinking. There is a bottle of vodka or rum that can be consumed and there are [[Drugs|joints]] or [[Smoking|cigarettes]] (depending on the active Resident DJ) on two of the tables that can be smoked.
+
+If the player is not a member of the groups that have been allowed access, they will be unable to cross the threshold into the lounge area from the upper floor, but can still access the VIP bar. If the staff upgrade is purchased, a bouncer will be stationed here to stop unauthorised access.
+
+[[SECTION:3:Office]]
+Another bouncer will be monitoring the door to the office space at the far end of the VIP lounge area. If the player is not a member of the groups that have been allowed access, he will stop the player from accessing either the office or the stairway down to the DJ booth.
+
+A small lobby leads to a circular room with two executive style desks in the center. One of these desks belongs to Tony, the other to the player. Tony's desk includes a small framed photograph of [[Luis Fernando Lopez]].
+
+The player's desk includes a management computer and trophies awarded as part of the nightclub will appear on this desk as they are earned. If the security upgrade is purchased, security camera monitors will be accessible from this desk.
+
+[[SECTION:4:Elevator]]
+The main elevator is accessible from this circular office space to lead down into the basement warehouse and garage levels. This elevator does not stop at the main club floor.
+
+[[SECTION:4:Safe]]
+Earnings from the club operations are added to a hidden safe in the wall opposite the player's desk. The player needs to open and collect from this safe weekly.
+
+[[SECTION:4:Gun Locker]]
+A hidden gun locker will appear opposite Tony's desk, but only if the optional security upgrade is installed.
+
+[[SECTION:4:Bar]]
+A self-service bar is located behind a privacy glass wall overlooking the top of the DJ Stage and dance floor.
+
+Controls on the wall in the office allow the player to dim the lights of the private bar and activate the privacy glass between the bar and the dance floor.
+
+[[SECTION:4:Bed]]
+A small sofa serves as a bed where the player can sleep. A [[Heavy Revolver]] can be found on the opposite side if the security upgrade is installed.
+
+[[SECTION:4:Wardrobe]]
+There is a fully-functional wardrobe next to the sofa in the corridor leading to the rear garage entrance.
+
+[[SECTION:4:Delivery Garage Level B1]]
+A garage for the three nightclub delivery vehicles including a [[Weaponized Vehicle Workshop]]. Personal vehicles cannot access this level or be stored here.
+
+A free [[Speedo Custom]] is automatically provided. The [[Mule Custom]] and [[Pounder Custom]] will be stored here if purchased.
+
+[[SECTION:4:Default Warehouse Level B1]]
+The warehouse is on a shared level with the delivery vehicle garage. Yohan is based here and will usually be sitting at one of three computer terminals in one of the connected circular rooms. An [[Assault SMG]] will also spawn here if the security upgrade is purchased. The central circular room has a management computer for the player. Warehouse goods will be stored in the adjoining circular rooms as they are produced.
+
+[[SECTION:4:Optional Terrorbyte Garage and Basement Level B5]]
+The fourth additional warehouse level if purchased. Storage space for nightclub goods. Contains a third management computer. if the security upgrade is purchased, one SecuroServ guard will be stationed on this level, and a [[Grenade Launcher]] will spawn on the computer room desk.
+
+If the [[Terrorbyte]] is purchased, it will be exclusively stored in another fully equipped garage area on this level, and can be upgraded/customized on-site. Some business resupply missions, such as special cargo, can be launched from the garage, but most features, such as the drone and client jobs, require the Terrorbyte to exit the garage first.
+
+[[SECTION:3:Warehouse Management]]
+{{Main|Nightclubs/Warehouse Management}}
+An application used for assigning the warehouse technician (and hiring more techs) to goods production which allows passive accrual of goods for additional profit. Up to five technicians can be hired and assigned to goods accumulation. The seven goods types are classified by the type of business and are only available if the player already owns the corresponding business.
+*Cargo and Shipments (CEO Office Special Cargo Warehouse or Smuggler's Hangar)
+*Sporting Goods (Gunrunning Bunker)
+*South American Imports (M/C Cocaine Lockup)
+*Pharmaceutical Research (M/C Methamphetamine Lab)
+*Organic Produce (M/C Weed Farm)
+*Printing & Copying (M/C Document Forgery Office)
+*Cash Creation (M/C Counterfeit Cash Factory)
+
+[[SECTION:4:Trophies]]
+*Selling Goods (Player's safe)
+**'''Jewerly Box:''' Sell a full inventory of Cargo and Shipments
+**'''Ammunations:''' Sell a full inventory of Sporting Goods
+**'''Impotent Rage statue:''' Sell a full inventory of South American Imports
+**'''Bag of meth:''' Sell a full inventory of Pharmaceutical Research
+**'''Brick of weed:''' Sell a full inventory of Organic Products
+**'''Passports:''' Sell a full inventory of Printing and Copying
+**'''Counterfeit money:''' Sell a full inventory of Cash Creation
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Features
+Features in GTA Online
+Locations in GTA Online in Los Santos
+Nightclubs
+Properties
+Properties in GTA Online

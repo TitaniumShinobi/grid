@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = jewelrystore
+|name          = Crafted Jewelery
+|sign          = CraftedJewelery-GTAV-Logo.png
+|image         = CraftedJewelery-GTAVee.jpg
+|caption       = View of one of the Vespucci Beach Sidewalk Market branches.
+|games         = {{games|V=y|O=y}}
+|locations     = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = 
+|accessible    = 
+}}
+
+[[LEAD]]
+'''Crafted Jewelery''' is a chain of two jewelry stores in {{VO}}, located in [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+ImageNeeded.png|Second [[Vespucci Beach Sidewalk]] branch.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Jewelry store chains

@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = hangar
+|status         = active
+|sign           = 
+|image          = DevinWestonJetCharter-GTAVe-LSIAHangar.png
+|games          = {{Games|V=y|O=y}}
+|location       = [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|owner          = [[Devin Weston Jet Charter]]
+|hangarcap      = 
+|runways        = 
+|price          = 
+|unlockedafter  = 
+|structure_type = Aircraft hangar
+}}
+
+[[LEAD]]
+The '''Devin Weston Jet Charter Hangar''' is an aircraft hangar featured in {{VO}}, located in [[Los Santos International Airport (HD Universe)|Los Santos International Airport]] and owned and operated by [[Devin Weston Jet Charter]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hangars

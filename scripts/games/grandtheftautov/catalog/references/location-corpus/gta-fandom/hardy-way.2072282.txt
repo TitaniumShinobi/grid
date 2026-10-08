@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|name        = Hardy Way
+|image       = HardyWay-GTAVee.jpg
+|caption     = The street as seen from the south.
+|games       = {{Games|V=y|O=y}}
+|start       = [[Picture Perfect Drive]]
+|end         = [[West Eclipse Boulevard]]
+|map         =
+<gallery>
+HardyWay-GTAV-Map.png|Map
+HardyWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Hardy Way''' is a short street in [[Richman (HD Universe)|Richman]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[The Richman Hotel|Richman Hotel]]
+*[[Richman Mansion]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

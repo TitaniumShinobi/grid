@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|name = Jonny Tung
+|caption = The logo
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|altnames = 
+|products = Shoes
+|bawsaq = 
+|image = Jonny_Tung_GTAV_Logo.png
+|darklogo = y
+|image_size = 300
+|condition = Active
+|taglines = 
+|reference = Jimmy Choo
+|games = {{Games|V=y|O=y}}
+|type = Fashion (shoes) retailer
+|map = Jonny_Tung_GTAV_Map.png
+|map_caption = Both old and new store locations
+|oldlogo = 
+|oldcaption =
+}}
+
+[[LEAD]]
+'''Jonny Tung''' is a shoe store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Jonny_Tung_GTAV_Portola_Store.jpg|Current store on [[Portola Drive]]/[[Little Portola]].
+Jonny_Tung_GTAV_Billboards.jpg|The old store at [[South Boulevard Del Perro]] and [[Dorset Drive]].
+</gallery>
+
+The old store occupied the ground floor of a 10 story building on the corner of [[South Boulevard Del Perro]] and [[Dorset Drive]] in [[Rockford Hills]]. A billboard stretches the top 8 floors. There is a "For Lease" sign on the window and the interior (visible at night) would indicate the shoe retail business no longer operates from the premises.
+
+The new store is located on the corner of [[Carcer Way]], [[Portola Drive]] and [[Little Portola]] in Rockford Hills in a building co-occupied by [[Café Redemption]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=TongvaDrive-Street-GTAV.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Richman Street]]
+|end=[[Zancudo Road]]
+|map=<gallery>
+TongvaDrive-GTAV-Map.png|Map
+TongvaDrive-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Tongva Drive''' is a road in the undeveloped part of [[Tongva Valley]] and [[Banham Canyon]], [[Los Santos County]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[White Water Activity Center]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

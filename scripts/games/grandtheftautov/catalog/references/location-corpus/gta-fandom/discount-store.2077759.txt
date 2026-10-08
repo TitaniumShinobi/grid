@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name = Discount Store
+|image = Discount_Store-GTAV-Logo.png
+|taglines =
+*Yes! We sell hats.
+*A fresh fashion look every day.
+|type = Clothing
+|games = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Discount Store''' is a low-priced clothing store in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto V'']]
+<gallery position="center" spacing="small" widths="250px">
+Discount_Store-GTAV-Chamberlain_Mall.png|[[Chamberlain Mall]], [[Strawberry]], Los Santos.
+Discount_Store-GTAV-Route_68.png|[[Route 68]], [[Zancudo River]], [[Great Chaparral]].
+Discount_Store-GTAV-Harmony.png|Route 68, East [[Harmony]].
+Discount_Store-GTAV-Grapeseed.png|[[Grapeseed Avenue]], [[Grapeseed]].
+Discount_Store-GTAV-Paleto_Bay.png|[[Paleto Boulevard]], [[Paleto Bay]].
+</gallery>
+[[Grand Senora Desert]], Blaine County.{{fact}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains

@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 169logo
+|type          = vehicles
+|name          = Vapid Motor Company
+|sign          = Vapid-GTAO-Logo.png
+|image_label   = 
+|image         = VapidMotorCompany-GTAO-Logo.png
+|caption       = '''Vapid Motor Company''' text logo in {{O}}.
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = [[Vapid of Los Santos]], [[Adam's Apple Boulevard]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Vehicle manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|divisions     = 
+*Vapid Racing
+*Vapid Motorsports
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = {{BAWSAQ/Slider}} '''VAP'''
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Vapid Motor Company''', commonly referred to as simply '''Vapid''', is an [[United States of America|American]] automotive manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+{{Main|Vapid of Los Santos}}
+There is a [[Vapid of Los Santos]] dealership in [[Downtown Los Santos (HD Universe)|Downtown]] [[Los Santos (HD Universe)|Los Santos]]. A [[Pillbox Hill Garage|garage]] is located in the building and can be bought by [[Trevor Philips]]. [[Mors Mutual Insurance]] use the dealership as a depot in {{O}}. Vapid also operated an aircraft division, and formerly owned an [[McKenzie Field Hangar|aircraft hangar]] in [[Grapeseed]], which can also be bought by Trevor Philips.
+
+[[CATEGORIES]]
+Agricultural Companies
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

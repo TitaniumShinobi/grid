@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox country
+|native_name            = ''République française  <sup>(French)</sup>''
+|conventional_long_name = French Republic
+|common_name            = France
+|image_flag             = Flag of France.svg
+|official_languages     = {{WP|French language|French}}
+|capital                = {{WP|Paris}}
+|established            = 5th century AD as an independent country/4 October 1958 <small>(as the Fifth Republic of France)</small> 
+|currency               = {{WP|Euro}} (€) (EUR)
+|image_map              = Carte_france.png
+|leader_name1           = {{WP|Emmanuel Macron}}
+|leader_name2           = {{WP|Élisabeth Borne}}
+|leader_title1          = President
+|leader_title2          = Prime Minister
+|accessionEUdate        = 1 January 1958
+|population_estimate    = 64,938,716 <small>(as of 2017)</small>
+|national_anthem        = {{WP|La Marseillaise}}
+|national_motto         = Liberté, Égalité, Fraternité (Liberty, Equality, Fraternity)
+|government_type=Unitary semi-presidential republic|largest_city=Paris|demonym=French|capital_ingame={{WP|Paris|Paris}}}}
+
+[[LEAD]]
+The '''French Republic''', (French: ''République française'') simply known as '''France''', is a country in {{WP|Western Europe}}, with several overseas territories and islands located on other continents and in the Indian, [[Pacific Ocean|Pacific]], and Atlantic oceans. The capital and largest city is {{WP|Paris}}. It is among the six founding members of the {{WP|European Union}}. It is bordered by [[Spain]] and {{WP|Andorra}} to the southwest, [[Italy]] and [[Monaco]] to the southeast, [[Switzerland]] and [[Germany]] to the east, and [[Belgium]] and [[Luxembourg]] to the northeast.
+
+There are a few but subtle references to France in the ''[[Grand Theft Auto]]'' series.
+
+[[SECTION:4:''Grand Theft Auto: Vice City'']]
+*[[Pierre La Ponce]] is from France.
+*In the mission [[Mall Shootout]], [[Colonel Juan Garcia Cortez]] sends [[Tommy Vercetti]] to retrieve some guidance chips used in French missile technology. The deal goes awry and is ambushed by French law enforcement.
+*The [[GIGN]] ({{WP|Groupe d'Intervention de la Gendarmerie Nationale}}) and DGSE ({{WP|Direction Generale de la Securite Exterieure}}) make two appearances, once in the mission Mall Shootout when intercepting the deal between Tommy Vercetti and Pierre La Ponce, and a second time in the mission [[All Hands On Deck!]] when they attempt to capture/kill Colonel Juan Garcia Cortez.
+*There's a store in [[Little Haiti]] called [[Belle Maitresse Beauty Salon]], "Belle Maitresse" means "Beautiful Mistress" (or alternatively "Beautiful Teacher").
+*There's a church in Little Haiti called "[[Église Baptiste De La Régénération]]" (or "Baptist Church of Regeneration" in English).
+*There's a travel agent named [[Avec Moi Holidays]]. Avec Moi is French for "with me".
+*The French {{WP|FAMAS}} appears on the [[Ammu-Nation (3D Universe)|Ammu-Nation]] wall.
+
+[[SECTION:4:''Grand Theft Auto: Liberty City Stories'']]
+*On the [[LCFR]] radio station, there's a radio cooking show named ''Coq-o-Vin'' (which translates into English as: "chicken in wine"), hosted by [[Richard Goblin]].
+
+[[SECTION:4:Grand Theft Auto: ''Vice City Stories'']]
+*[[Le Singe d'Arbre]] is a French-named café in [[Little Haiti]]. However, it is written in incorrect French. The name should translate as ''The Monkey of the Tree'' ("Le Singe de l'Arbre"), but instead translates as ''The Tree's Monkey''.
+*[[Les Beans Café]] is a French café.
+*[[Camus]] is a French denim brand advertised around Vice City and mentioned by some shoppers as being sold in Paris. In addition, the brand is named after French philosopher {{WP|Albert Camus}}.
+*When engaging in combat, a shopping woman will exclaim, "I fight for equality, like the French".
+*"Boxing the One-Eyed Clown", an episode of [[The Time Ranger]], takes place briefly in France during the revolutionary period. In addition, [[Jonathan Freeloader]] claims at the end of the show that people with talent were storming Normandy.
+
+[[CATEGORIES]]
+European countries

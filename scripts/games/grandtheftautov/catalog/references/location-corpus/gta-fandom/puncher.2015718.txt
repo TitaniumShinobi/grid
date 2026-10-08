@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name     = Puncher
+|type     = Audio Electronics Company
+|taglines = 
+|games    = ''[[Grand Theft Auto Online]]''
+|image    = Puncher-GTAO-LogoPlaque.png
+|bawsaq   = 
+}}
+
+[[LEAD]]
+'''Puncher''' is an electronics company that manufactures speakers that appears in ''[[Grand Theft Auto Online]]'', added as part of the [[Lowriders: Custom Classics]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Electronics companies

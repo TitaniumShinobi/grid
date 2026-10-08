@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Los Santos City Hall
+|image          = LosSantosCityHall1-GTAV.jpg
+|caption        = The City Hall as seen from Occupation Avenue.
+|use            = City Hall
+|games          = {{games|V=y|O=y}}
+|location       = [[Occupation Avenue]], [[Alta]]}}
+
+[[LEAD]]
+The '''Los Santos City Hall''' is the center of the government of [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Art Deco buildings
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Civic buildings

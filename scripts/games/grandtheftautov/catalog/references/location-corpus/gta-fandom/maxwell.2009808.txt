@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Maxwell Motors
+|sign          = Maxwell-GTAO-BadgeLogo.png
+|image         = Maxwell-GTAO-BadgeName.png
+|caption       = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpheist3}}}}
+|mentioned     = 
+|locations     = 
+|business_type = Vehicle manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Maxwell''' is a [[United Kingdom|British]] automobile manufacturer featured in {{O}} as part of [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Diamond Casino Heist
+Vehicle manufacturers

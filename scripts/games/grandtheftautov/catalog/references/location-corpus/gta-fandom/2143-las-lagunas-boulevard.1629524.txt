@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 2143 Las Lagunas Boulevard
+|image = 2143LasLagunasBoulevard-GTAO.jpg
+|caption = The exterior of the building during the sunset.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Medium-end apartment
+|garage = 2 vehicles <br /> 1 bike
+|price = $115,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5}}
+
+[[LEAD]]
+'''2143 Las Lagunas Boulevard''' is a [[Safehouses in GTA Online|safehouse]] located on [[Las Lagunas Boulevard]] in [[Hawick]], [[Los Santos (HD Universe)|Los Santos]] featured in ''[[Grand Theft Auto Online]]''.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]115,000 and includes a 2-car garage.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Safehouses in GTA Online

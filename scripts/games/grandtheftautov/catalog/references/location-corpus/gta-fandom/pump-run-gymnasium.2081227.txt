@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Pump & Run Gymnasium
+|type = Gymnasium
+|image = Pump&RunGymnasium-GTAV-Logo.png
+|taglines = ''"Get ripped!"''
+|bawsaq = {{BAWSAQ/Slider}} '''PMP'''
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]}}
+
+[[LEAD]]
+'''Pump & Run Gymnasium''' is a gym featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. In ''GTA V'', the player can buy stocks from them at the [[Bawsaq.com]] website.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Gyms
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

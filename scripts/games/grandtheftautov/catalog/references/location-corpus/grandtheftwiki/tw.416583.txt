@@ -1,0 +1,58 @@
+[[INFOBOX]]
+{{infobox business|
+| name = TW@ Internet Café
+| image = TW@-GTAIV-Broker-interior.jpg
+| size = 300x300px
+| caption = The interior of TW@'s [[Broker]] branch in GTA IV. All three TW@ branches in the game use the same interior.
+| game_1 = GTA III
+| game_2 = GTA Liberty City Stories
+| game_3 = GTA IV
+| game_4 = TLAD
+| game_5 = TBOGT
+| game_6 = GTA Chinatown Wars
+| game_7 = GTA V
+| game_8 = GTA Online
+| type = Internet café
+| owner = 
+| location = '''[[3D Universe]]''':<br />[[Torrington]], [[Liberty City in GTA III Era|Liberty City]]<br />'''[[HD Universe]]''':<br />[[Vitullo Ave]] in [[Berchem]]<br />[[North Holland]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Outlook]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Little Seoul]], [[Los Santos in GTA V|Los Santos]] (<small>two, one location for rent</small>)
+| affiliation = 
+| missions = [[Logging On]]
+| employee = [[Alejandra]] (<small>HD Universe</small>)
+}}
+
+[[LEAD]]
+'''TW@''' (pronounced ''[[wp:Twat|twat]]'') is an [[Internet in GTA IV|internet]] café that appears in [[Grand Theft Auto III]], [[Grand Theft Auto: Liberty City Stories]] and [[Grand Theft Auto: Chinatown Wars]], and is interactive in [[Grand Theft Auto IV]] and its [[GTA IV Episodes|episodes]]. The "TW", in "TW@", stands for "Totally Wireless", as can be seen outside some TW@ Internet Cafés. This phrase is a take on "Totally where it's at."
+
+''"TW@" ''is a reference to ''twat'', which is a British slang term meaning "idiot". It is also a slang term for "vagina".
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:3D Universe]]
+<gallery width="auto" perrow="3" style="font-size:95%; padding:0; text-align:left" widths="180">
+TW@-GTAIII-StauntonIsland-exterior.jpg|TW@ at the border between [[Belleville Park]] and [[Bedford Point]], [[Staunton Island]], [[Liberty City in GTA III Era|Liberty City]] in [[Grand Theft Auto III]].
+TW@-GTALCS.jpg|The same outlet in [[Grand Theft Auto: Liberty City Stories]], circa 1998, under contruction.
+</gallery>
+
+[[SECTION:3:HD Universe]]
+<gallery width="auto" perrow="3" style="font-size:95%; padding:0; text-align:left" widths="180">
+TW@-GTAIV-Broker-exterior.jpg|The Onieda Ave, [[Outlook]], [[Broker]], [[Liberty City in GTA IV|Liberty City]] TW@ in [[Grand Theft Auto IV]].
+TW@-GTAIV-Algonquin-exterior.jpg|The [[Frankfort Ave]], [[North Holland]], [[Algonquin]], Liberty City TW@ in Grand Theft Auto IV.
+TW@-GTAIV-Alderney-exterior.jpg|The Vitullo Ave, [[Berchem]], [[Alderney]] in Grand Theft Auto IV.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in 3D Universe
+Businesses in Alderney
+Businesses in GTA Chinatown Wars
+Businesses in GTA III
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA V
+Businesses in HD Universe
+Businesses in Liberty City in 3D Universe
+Businesses in Liberty City in HD Universe
+Businesses in Los Santos in HD Universe
+Businesses in The Ballad of Gay Tony
+Businesses in The Lost and Damned
+Media

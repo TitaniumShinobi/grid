@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = L'Odorat
+|type = cosmetics
+|image = L'Odorat-GTAVee-3671WhispymoundDrive.png
+|caption = "Case de l'Odorat" seen at 3671 Whispymound Drive.
+|games = {{V}}
+}}
+
+[[LEAD]]
+'''L'Odorat''' is a perfume brand appearing in {{V}}.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Cosmetics companies

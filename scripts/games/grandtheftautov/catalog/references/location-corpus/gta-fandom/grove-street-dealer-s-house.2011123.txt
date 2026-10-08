@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|image      = GroveStreetDealersHouse-GTAVe.png
+|house      = y
+|games      = {{games|V=y|O=y}}
+|location   = [[Grove Street (HD Universe)|Grove Street]], [[Davis]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|owner      = [[Grove Street Dealer]]
+|floors     = 1
+}}
+
+[[LEAD]]
+The '''Grove Street Dealer's House''' is a property owned by an unnamed [[Ballas (HD Universe)|Ballas]] [[Grove Street Dealer|drug dealer]] that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Homes
+Single-family homes

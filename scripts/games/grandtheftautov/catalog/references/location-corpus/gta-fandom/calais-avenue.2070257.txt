@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox structure
+|name        = Calais Avenue
+|image       = CalaisAvenue-GTAVee.jpg
+|caption     = Calais Avenue in [[Little Seoul]].
+|games       = {{Games|V=y|O=y}}
+|start       = [[Dutch London Street]]
+|end         = [[San Andreas Avenue]]
+|map         =
+<gallery>
+CalaisAvenue-GTAV-Map.png|Map
+CalaisAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Calais Avenue''' is an avenue in {{V}} and {{O}}, running through [[Little Seoul]] and [[La Puerta]] in [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+*[[Korean Plaza]]
+*[[La Puerta Apartments]] {{Small|(corner of [[Vespucci Boulevard]])}}
+*[[Puerto Del Sol Station]] {{Small|(western access)}}
+*[[Weazel News Building]] {{Small|(corner of [[Lindsay Circus]])}}
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*[[The Bean Machine]]
+*[[Caesars Auto Parking]] {{Small|(corner of Vespucci Boulevard)}}
+*[[The Cherry Popper Ice Cream Company (HD Universe)|Cherry Popper]]
+*[[Digital Den]]
+*[[The Grain of Truth]]
+*[[Heat]]
+*[[Hit 'n' Run Coffee]] {{Small|(corner of [[San Andreas Avenue]])}}
+*KO Casuals
+*Leather Goods
+*[[Pirate Music]]
+*[[Save-A-Cent]]
+*[[Sneaky Footwear]]
+*[[Snr. Buns]] {{Small|(corner of San Andreas Avenue)}}
+*[[Thor Toys]]
+*[[TW@ (HD Universe)|Tw@]]
+*[[Xero]] [[Filling Station|filling station]]
+*[[Yogarishima]] {{Small|(corner of Vespucci Boulevard)}}
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = Hijak
+|lcn           = {{BAWSAQ/Slider}} '''HJK'''
+|image         = Hijak-GTAV-AutoCompanyName.png
+|type          = vehicles
+|business_type = Vehicle manufacturer
+|status        = active
+|products      = [[#Vehicles|Vehicles]]
+|games         = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Hijak''' is an [[United States of America|American]] automotive manufacturer appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle manufacturers

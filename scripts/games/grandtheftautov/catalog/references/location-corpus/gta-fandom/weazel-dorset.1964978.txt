@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = cinema
+|name           = Weazel Dorset
+|sign           = 
+|image          = WeazelDorset-GTAVee-GeneralView.png
+|caption        =
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Dorset Drive]], [[Rockford Hills]], [[Los Santos County]]
+|accessible     = No
+|opentimes      =
+|owner          = [[Weazel]]
+|price          = 
+|occupants      = 
+|businesses     = 
+|architecture   = [[:Category:Art Deco buildings|Art Deco]]
+|employees      = 
+|floors         = 7
+|file_name      = <code>bt1_05_theatr_01</code>
+|status         = active
+}}
+
+[[LEAD]]
+The '''Weazel Dorset''' is a theater in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located on [[Dorset Drive]] in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Art Deco buildings
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Cinemas
+Theatres

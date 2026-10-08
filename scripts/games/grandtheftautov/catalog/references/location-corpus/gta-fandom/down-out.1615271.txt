@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|image= Down&Out-GTAV-PosterLogo.png
+|caption=Poster with Down & Out logo
+|name=Down & Out
+|taglines=''"Backup and Erase software"''
+|type=File storage software
+|games=''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Down & Out''' is a software used for file backup and erasing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Features
+Features in GTA Online
+Features in GTA V
+In-Game Products

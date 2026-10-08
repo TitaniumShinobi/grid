@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox_location
+|name     = Old Mexican Plaza
+|image    = MexicanMarket-GTAVee.jpg
+|games    = {{Games|V=y|O=y}}
+|location = [[Alta]], [[Los Santos (HD Universe)|Los Santos]]
+|caption  = 
+|aka      = Mexican Market
+|map = OldMexicanPlaza-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Old Mexican Plaza''', sometimes known as the '''Mexican Market''', is a location featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Places of Interest]]
+*[[Old Plaza Church]]
+
+[[SECTION:2:Businesses]]
+*[[El Café Rojo de Madera]]
+*[[La Linterna]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Plazas

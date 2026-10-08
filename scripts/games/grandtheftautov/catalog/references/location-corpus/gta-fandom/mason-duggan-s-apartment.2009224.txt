@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|type = apartment
+|accessible = No
+|image = ULPIntelligence-GTAOe-MasonDugganApartment-Entrance.png
+|caption = Entrance to the apartment building.
+|games = {{Games|O=y}}
+|location = [[Clock Tower Building]], [[San Andreas Avenue]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|owner = [[Mason Duggan]]
+}}
+
+[[LEAD]]
+'''Mason Duggan's Apartment''' is a location in ''[[Grand Theft Auto Online]]'', located in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Homes
+Locations in GTA Online in Los Santos

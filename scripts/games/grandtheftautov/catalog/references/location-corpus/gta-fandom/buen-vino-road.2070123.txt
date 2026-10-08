@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image      = BuenVinoRoad-GTAV-BanhamCanyon.PNG
+|games={{Games|V=y|O=y}}
+|start      = [[Banham Canyon Drive]]
+|end        = [[Route 68]]
+|map=<gallery>
+BuenVinoRoad-GTAV-Map.png|Map
+BuenVinoRoad-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Buen Vino Road''' is a [[List of Street Names|road]] in [[Banham Canyon]] and [[Tongva Hills]], [[Los Santos County]] that appears in {{V}} and {{O}}. It runs from [[Banham Canyon Drive]] in the southwest to [[Route 68]] in the northeast.
+
+[[SECTION:2:Places of Interest]]
+*[[The Tongva Estate]] {{Small|(formerly [[Buen Vino Road Mansion]])}}
+*[[Marlowe Vineyards]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

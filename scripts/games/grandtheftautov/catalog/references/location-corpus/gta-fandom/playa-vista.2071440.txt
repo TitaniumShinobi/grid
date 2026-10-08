@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|name       = Playa Vista
+|image      = PlayaVista-GTAVee.jpg
+|caption    = The street as seen from the west.
+|games      = {{Games|V=y|O=y}}
+|start      = [[West Eclipse Boulevard]], [[Pacific Bluffs]]
+|end        = [[Bay City Avenue]], [[Del Perro]]
+|map        =
+<gallery>
+PlayaVista-GTAV-Map.png|Map
+PlayaVista-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Playa Vista''' is a street in northwest [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[The Jetty]]
+*[[Von Crastenburg Hotel]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

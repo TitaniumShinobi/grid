@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleproducts
+|name          = Bufties Car Wax
+|sign          = Bufties-GTAV-Logo.png
+|caption       = Worn '''Bufties Car Wax''' logo and tagline.
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|business_type = Automotive wax
+|founded       = 
+|taglines      = "''The 'Mighty Fine' Shine''"<br>"''Rub It On Your Hot Rod''"<br>"''Buff Up Your Banger''"
+|status        = 
+|website       = 
+}}
+
+[[LEAD]]
+'''Bufties Car Wax''' is a brand of car wax that appears in {{VO}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle products manufacturers

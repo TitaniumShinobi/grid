@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = ZancudoRiver-GTAO.png
+|caption = Part of the Zancudo River.
+|games = {{Games|V=y|O=y}}
+|river = y
+|pscanner       = PoliceScanner-GTAV-Neighborhood-ZancudoRiver.ogg
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = <gallery>
+ZancudoRiver-GTAV-IngameGPS-Map.png|Zancudo River
+ZancudoRiver-GTAV-IngameGPS-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+The '''Zancudo River''' is a river located in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Places of Interest]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Discount Store]]
+*[[Fort Zancudo]]
+*[[Zancudo Bridge]]
+
+[[CATEGORIES]]
+Neighborhoods
+Waterways
+Zones

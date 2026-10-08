@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox_location
+|mpheist4 infiltration = y
+|image = CayoPerico-GTAO-SouthDropZone.png
+|caption = Overview of South Drop Zone.
+|games = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location = [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|map           = <gallery>
+SouthDropZone-GTAO-Map.png|South Drop Zone
+SouthDropZone-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption   = Location on the map (red).
+}}
+
+[[LEAD]]
+'''South Drop Zone''' is an area in [[Cayo Perico]], [[Colombia]], which appears as an [[:Category:Infiltration Points in The Cayo Perico Heist|infiltration point]] for [[The Cayo Perico Heist]] in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Infiltration Points in The Cayo Perico Heist
+Locations in GTA Online in Cayo Perico

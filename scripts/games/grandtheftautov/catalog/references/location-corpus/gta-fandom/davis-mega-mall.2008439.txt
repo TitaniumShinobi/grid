@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|image = DavisMegaMall-GTAV.png
+|type = shoppingcenter
+|games = {{games|V=y|O=y}}
+|location = [[Davis]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+The '''Davis Mega Mall''' is a shopping mall in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Shopping malls

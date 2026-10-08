@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "grid.startup-baseline-selection.v1",
+  "contract": "1D",
+  "selectedAtUtc": "2026-10-02T16:30:00Z",
+  "selectedStartupId": "b871dad7-c842-445a-9c87-f4db93d0fa8f",
+  "selectedReceiptFile": "grid-startup-receipt-1c-baseline.json",
+  "selectedReceiptDigest": "sha256:03f25bec0adf97941bae6caf3a3a7322f2b8ed9629144f054b1a47d4d97b69f4",
+  "priorBaselineReference": {
+    "contract": "1B",
+    "startupId": "2d5f67ec-23aa-471f-ade8-97fef5256b1c",
+    "artifactPath": "artifacts/startup-receipts/20261002T142243Z_2d5f67ec-23aa-471f-ade8-97fef5256b1c.json",
+    "readyDurationMs": 4409,
+    "note": "Pre-1C optimization; retained for historical comparison only."
+  },
+  "candidatesConsidered": [
+    {
+      "startupId": "2690681c-6872-4a2f-aae4-b4fa3e7a0bb1",
+      "artifactPath": "artifacts/startup-receipts/20261002T160031Z_2690681c-6872-4a2f-aae4-b4fa3e7a0bb1.json",
+      "durationMs": 1113,
+      "readyDurationMs": 1105,
+      "reasonNotSelected": "Fastest 1C sample; baseline uses median representative receipt for stage timings."
+    },
+    {
+      "startupId": "b871dad7-c842-445a-9c87-f4db93d0fa8f",
+      "artifactPath": "artifacts/startup-receipts/20261002T160033Z_b871dad7-c842-445a-9c87-f4db93d0fa8f.json",
+      "durationMs": 1133,
+      "readyDurationMs": 1126,
+      "reasonSelected": "Representative Contract 1C warm startup with full shell substages; digest-stable receipt."
+    },
+    {
+      "startupId": "ec058bd1-17ed-4876-b054-627b6cb4175a",
+      "artifactPath": "artifacts/startup-receipts/20261002T160028Z_ec058bd1-17ed-4876-b054-627b6cb4175a.json",
+      "durationMs": 1326,
+      "readyDurationMs": 1319,
+      "reasonNotSelected": "Upper bound of observed 1C variance; informs policy ceiling, not baseline anchor."
+    }
+  ],
+  "observed1cReadyDurationMs": {
+    "min": 1105,
+    "max": 1319,
+    "sampleCount": 3,
+    "varianceNote": "Warm 1C launches clustered ~1113–1326 ms total receipt time; ready-to-READY span ~15% across samples."
+  },
+  "postBaselineObservations": [
+    {
+      "startupId": "23415cc1-b211-4ae9-afa9-e5d9e2d3e777",
+      "artifactPath": "artifacts/startup-receipts/20261002T163432Z_23415cc1-b211-4ae9-afa9-e5d9e2d3e777.json",
+      "authSessionRestoreMs": 725,
+      "note": "Informed AUTH_SESSION_RESTORE ceiling update to 834ms (725 * 1.15) without changing baseline receipt digest."
+    }
+  ]
+}

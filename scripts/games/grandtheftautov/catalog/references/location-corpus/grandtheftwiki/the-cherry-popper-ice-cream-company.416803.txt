@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{infobox business|
+| image = CherryPopperIceCreamCompany-GTAVC-logo.jpg
+| size = 300x300px
+| caption = 
+| name = Cherry Popper Ice Cream Company
+| game_1 = GTA Vice City
+| game_2 = GTA Vice City Stories
+| game_3 = GTA San Andreas
+| game_4 = GTA IV
+| game_5 = GTA V
+| type = Food manufacturing
+| owner = '''[[3D Universe]]'''<br />[[Maude Hanson]] (<small>until [[1986]]</small>)<br />[[Tommy Vercetti]] (<small>from 1986</small>)
+| location = '''[[3D Universe]]'''<br />[[Little Havana]], [[Vice City in GTA III Era|Vice City]]
+| affiliation = '''[[3D Universe]]'''<br />[[Vercetti Gang]]
+| missions = [[Distribution]]
+| employee = 
+}}
+
+[[LEAD]]
+The '''Cherry Popper Ice Cream Company''', or simply '''Cherry Poppers''', is an ice cream company in the [[3D Universe]] and [[HD Universe]] that was first featured as a front for drugs distribution in [[Grand Theft Auto: Vice City]]. The company's name has since resurfaced many times in subsequent games.
+
+[[SECTION:3:GTA Vice City and GTA Vice City Stories]]
+Cherry Popper is first featured in GTA Vice City based at the [[Cherry Popper Ice Cream Factory]] located in [[Little Havana]], [[Vice City in GTA III Era|Vice City]], and owned by [[Maude Hanson]]. After "[[Shakedown (GTA VC)|Shakedown]]", the factory is purchased by [[Tommy Vercetti]] for use as an asset and save-point, but is also revealed during the purchase cutscene that the factory is merely a front for more illicit activities, mainly drug dealing. Thus the factory is central to the "[[Distribution]]" side-mission, which involves selling drugs out of the Cherry Popper factory's [[Mr Whoopee|Mr. Whoopee]] ice cream trucks.
+
+The building in which the Cherry Popper factory is based in GTA Vice City is retained in the GTA Vice City Stories rendition of Vice City, but lacks any decorations or signage indicating it is based at that time.
+
+[[CATEGORIES]]
+Businesses in 3D Universe
+Businesses in GTA IV
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA Vice City
+Businesses in HD Universe
+Businesses in Vice City in 3D Universe
+Criminal Businesses
+Factories
+Food

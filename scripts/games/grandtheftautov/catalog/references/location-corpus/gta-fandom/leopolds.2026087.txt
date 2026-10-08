@@ -1,0 +1,64 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = departmentstore
+|name          = Leopolds
+|sign          = Leopolds-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Leopolds Department Store''' is a luxury department store chain in the [[HD Universe]], first appearing in {{IV}}.
+
+[[SECTION:3:Location Influences]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'', ''Episodes'', and ''Chinatown Wars'']]
+*The [[Easton]] location is based on {{WP|770 Broadway}}, which was originally {{WP|Wanamaker's}} department store.
+
+[[SECTION:4:''Grand Theft Auto V'' and ''Online'']]
+*The [[Rockford Hills]] location is based on the former Saks Fifth Avenue location at {{WP|9600 Wilshire Boulevard}} in Beverly Hills.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+Leopolds-GTAIV.png|[[Columbus Avenue]] & [[Garnet Street]], [[Easton]], [[Algonquin]].
+</gallery>
+
+[[SECTION:4:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+Leopolds-GTACW.jpg|[[Columbus Avenue]] & [[Garnet Street]], [[Easton]], [[Algonquin]].
+</gallery>
+
+[[SECTION:4:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+<gallery position="center" spacing="small" widths="270px">
+Leopolds-GTAV-RockfordHills.png|[[Dorset Drive]] and [[Palomino Avenue]], [[Rockford Hills]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Shopping malls

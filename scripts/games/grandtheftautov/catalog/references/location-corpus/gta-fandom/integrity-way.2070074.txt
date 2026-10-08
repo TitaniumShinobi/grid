@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=IntegrityWayTunnel-GTAV.png
+|caption=Integrity Way tunnel entrance in Textile City.
+|games={{Games|V=y|O=y}}
+|start=[[Little Bighorn Avenue]], [[Textile City]]
+|end=[[Alta Street]], [[Pillbox Hill]]
+|map=IntegrityWay-MapLocation-GTAV.png
+|mapcaption=Map location.
+}}
+
+[[LEAD]]
+'''Integrity Way''' is a two-way [[List of Street Names|street]] in [[Textile City]] and [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Dashound Bus Center]]
+*[[Integrity Tower]] <small>(above the tunnel)</small>
+*[[Mirror Park Rail Yard]] <small>(corner of Little Bighorn Avenue)</small>
+*[[Simmet Alley]] <small>(northern entrance)</small>
+*[[Ten Cent Theater]]
+*[[Tinkle Building]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA V in Los Santos

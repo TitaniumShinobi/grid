@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|purchasable   = 
+|type          = fashion
+|name          = Val-de-Grâce
+|sign          = Val-de-Grâce-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = [[Portola Drive]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = High-end clothing and accessories
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|accessible    = 
+}}
+
+[[LEAD]]
+'''Val-de-Grâce''' is a [[France|French]] high-class clothing brand featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:3:Locations]]
+*The building on Portola Drive is based on {{URL|https://maps.app.goo.gl/n3EgKyyzxKB7nSp2A|401 North Rodeo Drive}} in Beverly Hills, California. The store closely resembles how it looked when occupied by a {{WP|De Beers}} store before 2014.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+ValDeGrace-GTAV-DaylightFront.png|[[Portola Drive]]/[[Eastbourne Way]], [[Rockford Hills]]. ([[:File:ValDeGrace-GTAV-NightFront.png|Night view]])
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Fashion brands

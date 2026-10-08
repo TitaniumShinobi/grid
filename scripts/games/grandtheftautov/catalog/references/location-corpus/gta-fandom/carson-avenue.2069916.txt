@@ -1,0 +1,57 @@
+[[INFOBOX]]
+{{Infobox structure
+|image       = CarsonAvenue-Street-GTAV.jpg
+|caption     = Carson Avenue in Strawberry.
+|games       = {{Games|V=y|O=y}}
+|start       = [[Innocence Boulevard]], [[Strawberry]]
+|end         = [[Dutch London Street]] and [[El Rancho Boulevard]], [[Rancho]]
+|map         = 
+<gallery>
+CarsonAvenue-GTAV-Map.png|Map
+CarsonAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Carson Avenue''' is a street in [[South Los Santos]] featured in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[BJ Smith Recreational Center]]
+*[[Casa Cristina]]
+*[[Chamberlain Hills Shopping Plaza]]
+*[[Davis Station]]
+*[[The Tahitian]]
+
+[[SECTION:2:Businesses]]
+*[[Carson's Salon Supplies]]
+*[[Cart-L]]
+*[[Chantelle's Beauty Salon]]
+*[[Chringo's Carpets]]
+*[[Cluckin' Bell (HD Universe)|Cluckin' Bell]] "The Coop"
+*[[Cosas Baratas]]
+*[[Davis Electricals]]
+*[[Davis Mega Mall]]
+*[[Dollar Pills]]
+*[[Family Pharmacy]]
+*[[Happy Shark]]
+*[[Hayes Auto Body Shop]]
+*[[Herr Kutz Barber]]
+*[[Licensed Sex Shop]]
+*[[Locksmith (GTA V)|Locksmith]]
+*[[Mom's Famous Tacos]]
+*[[Mosley Auto Service]]
+*[[Nails (GTA V)|Nails]]
+*[[Ronnie's Luxury Car Wash]]
+*[[Ruedas De Fuego]]
+*[[Snapper's Delight]]
+*[[South LS Liquor]]
+*[[The Molarstation Dentistry]]
+*[[The Taco Farmer]]
+*[[Wok It Off]]
+*[[Yum Fish]]
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

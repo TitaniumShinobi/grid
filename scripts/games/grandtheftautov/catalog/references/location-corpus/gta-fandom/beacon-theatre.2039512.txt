@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|safehouse      = 
+|type           = cinema
+|name           = Beacon Theatre
+|sign           = 
+|image          =
+<gallery>
+BeaconTheatre-GTAVee.jpg|Entrance
+BeaconTheatre-GTAVee-GeneralView.jpg|General view
+</gallery>
+|caption        = View of the building.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Davis Avenue]], [[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = No
+}}
+
+[[LEAD]]
+The '''Beacon Theatre''' is a movie theater in {{V}} and {{O}}, located in [[Rancho]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Theatres

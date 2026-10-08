@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox_location
+|Name Change = INLET
+|image       = CassidySound-GTAVe.png
+|games       = {{Games|V=y|O=y}}
+|location    = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Cassidy Sound''' is an inlet located in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]], appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Inlets
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 300x300px
+|caption = 
+|game_1 = GTA V
+|name = GO and WASH
+|type = Laundromat
+|owner = 
+|location = [[Macdonald St]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''GO and WASH''' is a Laundromat located off [[Macdonald St]] in [[Davis]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

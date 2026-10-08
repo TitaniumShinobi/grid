@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = BUSINESS COOPERATIVE
+|type           = 
+|name           = Simmet Alley Traders Co-op 
+|sign           = 
+|image          = SimmetAlleyTradersCoop-GTAVee.png
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Sinners Passage]], {{Location|v-textilecity|3}}
+|established    =
+|taglines       =
+|status         = active
+|phone          =
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Simmet Alley Traders Co-op''' is a business cooperative in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos

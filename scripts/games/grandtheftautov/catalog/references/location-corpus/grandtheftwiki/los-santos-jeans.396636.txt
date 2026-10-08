@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Los Santos Jeans
+|type = [[:Category:Clothing Stores|Clothing store]]
+|owner = 
+|location = [[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Los Santos Jeans''' is, or was, a [[:Category:Clothing Stores|clothing store]] located on [[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The store has its shutters down and part of the sign, featuring the [[Untied States of America|American]] flag with the company name, has partially fallen down and not been replaced.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Clothing Stores

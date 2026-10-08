@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fastfood
+|name          = Bolt Burger
+|image         = BoltBurger-GTAOe-Logo.png 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpchristmas2018}}}}
+|mentioned     = 
+|locations     = 
+|business_type = Fast food burger restaurant
+|founded       = 
+|founder       = 
+|taglines      = ''I'm On A Hunger Strike!''
+|status        = 
+|accessible    = 
+}}
+
+[[LEAD]]
+'''Bolt Burger''' is a fast food restaurant chain specializing in burgers in the {{HD}} of the {{S}}, first appearing in the [[GTA Online: Arena War|Arena War]] update for {{O}}.
+
+[[CATEGORIES]]
+Burger restaurants
+Businesses in GTA Online: Arena War
+Fast-food restaurant chains

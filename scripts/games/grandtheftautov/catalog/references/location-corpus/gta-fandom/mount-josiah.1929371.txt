@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = MOUNTAIN
+|name = Mount Josiah
+|image = MountJosiah-GTAV.png
+|caption = Mount Josiah as seen from [[Tongva Hills]].
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games = {{Games|V=y|O=y}}
+|map           = <gallery>
+MountJosiah-IngameGPS-GTAV-Map.png|Mount Josiah
+MountJosiah-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+|pscanner       = PoliceScanner-GTAV-Neighborhood-MountJosiah.ogg
+}}
+
+[[LEAD]]
+'''Mount Josiah''' is one of three mountains in [[State of San Andreas (HD Universe)|San Andreas]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', the others being [[Mount Chiliad (HD Universe)|Mount Chiliad]] and [[Mount Gordo]]. It is located on the west side of San Andreas, just north of [[Fort Zancudo]] and west of the [[Alamo Sea]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Mountains
+Neighborhoods
+Zones

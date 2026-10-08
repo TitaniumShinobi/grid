@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox location
+|image = BanhamCanyon-GTAV.png
+|caption = 
+|location      = [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games         = {{Games|V=y|O=y}}
+|type          = Canyon
+|pscanner    = 
+|map           = <gallery>
+BanhamCanyon-IngameGPS-GTAV-Map.png|Banham Canyon
+BanhamCanyon-IngameGPS-GTAV-LosSantosCountyMap.png|Los Santos County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Banham Canyon''' is a steep-sided canyon located in [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Road and Streets]]
+*[[Banham Canyon Drive]]
+*[[Great Ocean Highway]]
+*[[Ineseno Road]]
+*[[Tongva Drive]]
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*[[Fleeca|Fleeca Bank]]
+*[[Limited LTD Service]]
+*[[Rob's Liquor]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Neighborhoods
+Zones

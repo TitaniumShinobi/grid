@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|name      = The Hen House
+|type      = nightclub
+|games     = {{Games|V=y|O=y}}
+|image     =
+<gallery>
+TheHenHouse-GTAVee.jpg|Building
+TheHenHouse-GTAV-Logo.png|Logo
+</gallery>
+|price      = [[Money|$]]80,000
+|income     = $920
+|owner      = 
+*[[Michael De Santa]] {{Small|(optional)}}
+*[[Franklin Clinton]] {{Small|(optional)}}
+*[[Trevor Philips]] {{Small|(optional)}}
+|employees  = Logan {{Small|(manager)}}
+|location   = [[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]]
+|accessible = No
+}}
+
+[[LEAD]]
+'''The Hen House''' is a [[Nightclub|nightclub]] featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Nightclubs
+Properties
+Properties in GTA V

@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Brute
+|sign          = Brute-GTAIV-LogoBadge.png
+|image         = Brute-GTAIV-Logo.png
+|caption       = '''Brute''' text logo in {{IV}}.
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+*Vehicle manufacturer
+*Heavy equipment manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = {{BAWSAQ/Slider}} '''BRU'''
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Brute''' is an [[United States of America|American]] vehicle and heavy equipment manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Heavy equipment manufacturers
+Vehicle manufacturers

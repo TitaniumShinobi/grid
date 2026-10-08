@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|nightclub = n
+|bar = y
+|business = y
+|activebiz = y
+|name = The Bay Bar
+|type = Bar
+|games = {{Games|V=y|O=y}}
+|image = TheBayBar-GTAV.jpg
+|price = 
+|owner = 
+|employees = 
+|location = [[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''The Bay Bar''' is a bar in [[Paleto Bay]] appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Bars
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County

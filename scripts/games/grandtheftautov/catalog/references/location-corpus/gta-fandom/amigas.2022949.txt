@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|image = AmiGas-GTAV-Logo.png
+|type = gasoline
+|business_type = Natural gas company
+|status = active
+|games = {{Games|V=y|O=y}}
+|locations = 
+*[[State of San Andreas (HD Universe)|San Andreas]]
+*[[Cayo Perico]]
+}}
+
+[[LEAD]]
+'''Amigas''' is a natural gas company in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Petroleum companies

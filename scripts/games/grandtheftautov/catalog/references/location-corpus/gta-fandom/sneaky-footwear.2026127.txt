@@ -1,0 +1,89 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = fashion
+|name          = Sneaky Footwear
+|sign          = SneakyFootwear-Logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|image_label3  = 
+|image3        = 
+|caption3      = 
+|image_label4  = 
+|image4        = 
+|caption4      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = "''Killer Kicks''"
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 555-9004
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|opentimes     = 
+|accessible    = 
+
+|unlockedby    = 
+|unlockedafter = 
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+|map3          = 
+|map_caption3  = 
+}}
+
+[[LEAD]]
+'''Sneaky Footwear''' is a footwear retailer that appears in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Chinatown Wars'']]
+{{images|an image of the store in ''GTA Chinatown Wars''}}
+<gallery position="center" spacing="small" widths="270px">
+Sneaky-GTAIV-Broker.png|[[Munsee Avenue]], [[Dillon Street Building (Downtown)|Dillon Street Building]], [[Downtown (GTA IV)|Downtown]], [[Broker]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small" widths="270px">
+SneakyFootwear-GTAV-Burton.png|[[Hawick Avenue]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]].
+SneakyFootwear-GTAV-KoreanPlaza.png|[[Korean Plaza]], [[Calais Avenue]], [[Little Seoul]], Los Santos.
+SneakyFootwear-GTAV-MissionRow.jpg|[[Atlee Street]], [[Mission Row]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains

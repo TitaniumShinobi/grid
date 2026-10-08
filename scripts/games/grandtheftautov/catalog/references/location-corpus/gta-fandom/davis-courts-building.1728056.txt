@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = DavisCourtsBuilding-GTAV.png
+|games          = {{games|V=y|O=y}}
+|height         = Unknown
+|location       = [[Davis]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|use            = Municipal building
+}}
+
+[[LEAD]]
+The '''Davis Courts Building''' is a courthouse in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located on [[Macdonald Street]] in [[Davis]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Art Deco buildings
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Civic buildings
+Landmarks

@@ -1,0 +1,53 @@
+[[INFOBOX]]
+{{infobox business|
+| image = Ranch-GTAIV-logo.png
+| size = 300x300px
+| caption = The Ranch logo circa [[2008]], GTA IV.
+| name = Ranch
+| game_1 = GTA San Andreas
+| game_2 = GTA Liberty City Stories
+| game_3 = GTA Vice City Stories
+| game_4 = GTA IV
+| game_5 = GTA V
+| type = [[:Category:Clothing Stores|Clothing store]]
+| owner = 
+| location = '''[[3D Universe]]'''<br />[[Rodeo]], [[Los Santos in GTA III Era|Los Santos]]<br />[[Downtown Vice City|Downtown]], [[Vice City in GTA III Era|Vice City]]<br />'''[[HD Universe]]'''<br />[[City Hall, Algonquin|City Hall]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Leftwood]], Liberty City<br />[[Little Italy]], Liberty City<br />[[Middle Park East]], Liberty City<br />[[North Holland]], Liberty City<br />[[Suffolk]], Liberty City<br />[[Willis]], Liberty City
+| affiliation = 
+| missions = 
+| employee = 
+}}
+
+[[LEAD]]
+'''Ranch''' is a street fashion clothing store that appears in [[Grand Theft Auto: San Andreas]], [[Grand Theft Auto: Liberty City Stories]], [[Grand Theft Auto: Vice City Stories]], [[Grand Theft Auto IV]] and [[Grand Theft Auto V]]. It appears that the Ranch store chain supplies western clothing such as blue jeans, cowboy hats, chaps, flannel shirts, and so on.
+
+[[SECTION:2:Locations]]
+; GTA San Andreas
+* [[Rodeo]], [[Los Santos in GTA III Era|Los Santos]]
+
+; GTA Vice City Stories
+* [[Downtown Vice City|Downtown]], [[Vice City in GTA III Era|Vice City]]
+
+; GTA IV
+* [[Bridger St]]reet, [[Leftwood]]
+* [[Frankfort Avenue]], [[Suffolk]], [[Liberty City in GTA IV Era|Liberty City]]
+* Feldspar Street, [[Little Italy]], Liberty City
+* [[Columbus Avenue]], [[Middle Park East]], Liberty City
+* [[Liberty Lane]] and Diamond Street, [[City Hall, Algonquin|City Hall]], Liberty City
+* Saratoga Avenue, [[Willis]], Liberty City
+
+;GTA Chinatown Wars
+* [[North Holland]]
+
+[[CATEGORIES]]
+Businesses in 3D Universe
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA Vice City Stories
+Businesses in HD Universe
+Businesses in Liberty City in HD Universe
+Businesses in Los Santos in 3D Universe
+Businesses in Vice City in 3D Universe
+Clothing Stores

@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = airline
+|name          = Air Emu
+|sign          = 
+|image         = AirEmu-GTAV-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Commercial airliner
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+<center>'''[[:Category:Airplanes|Aircraft]]'''</center>
+*[[Shamal]]
+*[[Tula]] (Livery)
+|weapons       = 
+|taglines      = ''Take our birds anywhere you like''
+|bawsaq        = 
+|lcn           = {{BAWSAQ/Slider}} '''EMU'''
+|status        = active
+}}
+
+[[LEAD]]
+'''Air Emu''' is an Australian airline corporation featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The player can buy stocks of Air Emu from the [[Lcn-exchange.com]] website.
+
+[[CATEGORIES]]
+Airlines
+Businesses in GTA Online
+Businesses in GTA V

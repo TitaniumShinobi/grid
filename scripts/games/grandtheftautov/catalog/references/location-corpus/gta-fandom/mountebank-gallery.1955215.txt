@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = museum
+|name           = Mountebank Gallery
+|sign           = MountebankGallery-GTAVe-Logo.png
+|image          = MountebankGallery-GTAVe-DayView.png
+|caption        = Day view of the gallery. <small>([[:File:MountebankGallery-GTAVe-NightView.png|Night view]])</small>
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Hawick Avenue]] & [[Power Street]], [[Alta]], [[Los Santos (HD Universe)|Los Santos]]
+|status         = active
+|structure_type = Art gallery
+|owner          = 
+|operator       = 
+|occupants      = 
+|employees      = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+The '''Mountebank Gallery''' is an art gallery in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' .
+
+[[CATEGORIES]]
+Art galleries
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos

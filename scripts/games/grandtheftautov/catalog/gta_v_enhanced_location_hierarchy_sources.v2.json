@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "gameId": "game.grandtheftautov-enhanced",
+  "build": "25261616",
+  "locale": "en-US",
+  "scope": "reference-verified Vinewood, Los Santos district, Grand Senora Desert, and geography join-index containment for East Los Santos, Blaine County, Los Santos County, and San Andreas (reference geography with optional native zone codes); Vinewood, Downtown and East Los Santos within Los Santos and Grand Senora Desert within Blaine County from their pinned lead sentences; Vespucci within Los Santos from its pinned neighborhood lead sentence",
+  "expectedRelationshipCount": 36,
+  "nativeTable": {
+    "coordinate": "https://raw.githubusercontent.com/citizenfx/fivem-docs/ad60ae80aea6376686bf2e069036476f687ead24/content/docs/game-references/zones.md",
+    "revision": "ad60ae80aea6376686bf2e069036476f687ead24",
+    "path": "references/cfx-zones-ad60ae80.md",
+    "sha256": "bd305c3daef7b5d7d20278d61ec2a2dd6a4be590ebb8845dd5e6ae8744e69cb1"
+  },
+  "joinIndex": {
+    "path": "references/geography-containment.v1.normalized.txt",
+    "sha256": "6940671f603436f9d9ad957050d241fe363e0be6111efce55f7d749b0f7734ff",
+    "role": "grid-local join index; not a relationship evidence source"
+  },
+  "sources": [
+    {
+      "kind": "wikienumeration",
+      "coordinate": "https://www.grandtheftwiki.com/index.php?title=Vinewood_in_GTA_V&oldid=411759",
+      "revision": "411759",
+      "path": "references/vinewood-411759.normalized.txt",
+      "sha256": "d2fc80f7ef152a0f5bb5351c0c073c84639796bba7b47cc661b5d01bcce299fa",
+      "relationshipType": "reference.neighbourhood-of-district",
+      "fieldPrefix": "neighbourhood-enumeration"
+    },
+    {
+      "kind": "wikicontainment",
+      "coordinate": "https://www.grandtheftwiki.com/index.php?title=Los_Santos_in_GTA_V&oldid=419777",
+      "revision": "419777",
+      "path": "references/los-santos-419777.normalized.txt",
+      "sha256": "5d84bda98a1a2fdd07693470550fb788533c9379e1fcb9573ecdc29e3029e90f",
+      "relationshipTypes": {
+        "contains-smaller-neighbourhood": "reference.district-smaller-neighbourhood",
+        "divided-neighbourhoods": "reference.district-neighbourhood-division",
+        "split-neighbourhoods": "reference.district-neighbourhood-split"
+      }
+    },
+    {
+      "kind": "wikicontainment",
+      "coordinate": "https://www.grandtheftwiki.com/index.php?title=Grand_Senora_Desert&oldid=395939",
+      "revision": "395939",
+      "path": "references/grand-senora-desert-395939.normalized.txt",
+      "sha256": "6e1f02d40c1074ff866093eb2a8d0e9de7615f2c2d760c218add19d06b761008",
+      "relationshipTypes": {
+        "town-located-inside-desert": "reference.town-inside-desert"
+      }
+    },
+    {
+      "kind": "wikicontainment",
+      "coordinate": "https://www.grandtheftwiki.com/index.php?title=East_Los_Santos_in_GTA_V&oldid=409804",
+      "revision": "409804",
+      "path": "references/east-los-santos-409804.normalized.txt",
+      "sha256": "868e9dfae283dbcfdc0b069455aec14b13cf85cc44347c7aac1bb3e061f48934",
+      "role": "join-indexed page-section-member-list; reference geography with native mapping UNRESOLVED for East Los Santos and Murrieta Oil Field"
+    },
+    {
+      "kind": "wikicontainment",
+      "coordinate": "https://www.grandtheftwiki.com/index.php?title=Blaine_County&oldid=406414",
+      "revision": "406414",
+      "path": "references/blaine-county-406414.normalized.txt",
+      "sha256": "8b0e2c16efdd1a1ea37105a78e2b6f7b357453fb3869f859c65e2dbec63cdf11",
+      "role": "join-indexed page-section-member-list; reference geography with native mapping UNRESOLVED for Blaine County and Cape Catfish"
+    },
+    {
+      "kind": "wikicontainment",
+      "coordinate": "https://www.grandtheftwiki.com/index.php?title=San_Andreas_in_GTA_V&oldid=416219",
+      "revision": "416219",
+      "path": "references/san-andreas-416219.normalized.txt",
+      "sha256": "06ecd996cf58966c1261aa55bc0f86fb33fa15fb26c8f4b96ac68af34f87f587",
+      "role": "join-indexed county-section-member-list; reference geography with Davis native bridge via City of Davis alias; UNRESOLVED native mapping for Los Santos County and Los Santos city"
+    },
+    {
+      "kind": "wikicontainment",
+      "coordinate": "https://www.grandtheftwiki.com/index.php?title=Vespucci&oldid=396784",
+      "revision": "396784",
+      "path": "references/vespucci-396784.normalized.txt",
+      "sha256": "1e14a44a25ddb1ca30c74a3637b30a9be78f52ed6fe04352e3365bb2c03c5bbf",
+      "relationshipTypes": {
+        "neighborhood-in-city": "reference.neighborhood-in-city"
+      }
+    }
+  ],
+  "join": "unique exact English reference name to unique native zone label when proven; otherwise reference-geography Location identity without NativeZoneCode; case-insensitive native code only",
+  "provenance": "REFERENCE_VERIFIED relationships; original FILE_VERIFIED identity and terminology preserved",
+  "failure": "missing, conflicting or ambiguous endpoints yield UNRESOLVED relationship rulings without aborting candidate refresh"
+}

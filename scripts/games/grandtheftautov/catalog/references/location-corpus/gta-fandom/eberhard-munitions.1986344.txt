@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = weapons
+|name          = Eberhard Munitions
+|sign          = 
+|image         = Eberhard-GTAO-Mascot.png
+|caption       = Eberhard Munitions' mascot.
+|games         = {{games|O={{EEEV}} {{DLC|mp2024_02}}}}
+|mentioned     = 
+|locations     = [[Eberhard Munitions Airstrip]], [[Tongva Hills]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Munitions manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = [[Eberhard]]
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = "''Go HARD!''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Eberhard Munitions''' is the armaments subsidiary of [[Eberhard]] appearing in {{O}} as part of the [[GTA Online: Agents of Sabotage|Agents of Sabotage]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Agents of Sabotage
+Subsidiary companies
+Weapon manufacturers

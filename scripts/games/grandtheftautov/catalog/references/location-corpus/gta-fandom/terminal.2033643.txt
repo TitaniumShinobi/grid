@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox location
+|name         = Terminal
+|image        = Terminal-GTAV.png
+|caption      = Overview of Terminal.
+|games        = {{Games|V=y|O=y}}
+|type         = neighborhood
+|location     = [[Port of Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map          = <gallery>
+Terminal-IngameGPS-GTAV-Map.png|Terminal
+Terminal-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+|map2         = Terminal-GTAV-Satellite.png
+|map_caption2 = Satellite view of '''Terminal'''.
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Terminal.ogg
+}}
+
+[[LEAD]]
+'''Terminal''', also referred to as '''Jetsam Terminal''', is a [[:Category:Neighborhoods|neighborhood]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in the [[Port of Los Santos]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Businesses]]
+*[[Alpha Mail]]
+*[[Jetsam]]
+*[[Post OP]]
+*[[United States Post]]
+*[[Bobcat Security]]
+
+[[SECTION:2:Places of interest]]
+*[[Jetsam Terminal Headquarters]]
+*[[Ocean Motion]] <small>(boat)</small>
+*[[Simeon's Delivery Garage]] 
+*[[The Vinewood Club|Vinewood Car Club]] 
+*[[Los Santos Bobcat Security Depot]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Abattoir Avenue]]
+*[[Buccaneer Way]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

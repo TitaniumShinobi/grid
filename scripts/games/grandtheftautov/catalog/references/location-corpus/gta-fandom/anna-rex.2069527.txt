@@ -1,0 +1,88 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = fashion
+|name          = Anna Rex
+|sign          = AnnaRex-GTAV-Logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[London]], [[United Kingdom]]
+*[[France|Paris, France]]
+([[#Locations|See more]])
+|business_type = Fashion retail chain
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = "''Be Nothing.''"
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Anna Rex''' is a fashion brand featured in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+*The [[State of Alderney|Alderney]] location is based on {{URL|https://maps.app.goo.gl/Z5rMgmM8g7sWCNse7|90 West Palisade Avenue}} in {{WP|Englewood, New Jersey|Englewood}}, {{WP|New Jersey}}.
+*The [[Little Portola]] location in [[Los Santos (HD Universe)|Los Santos]] is based on the {{WP|Breguet (brand)|Brequet}} store on {{URL|https://maps.app.goo.gl/42sggo9rfTMtkY5QA|280 North Rodeo Drive}} in {{WP|Beverly Hills, California|Beverly Hills}}, {{WP|California}}.
+
+{{Clear}}
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|AnnaRex-GTAIV-Alderney.png|[[Bridger Street]], [[Leftwood]], [[State of Alderney|Alderney]] (opening soon).
+|AnnaRex-GTAIV-Location.png|[[Big Willis Mall]], [[Saratoga Avenue]], [[Willis]], [[Dukes]].
+}}
+{{Gallery
+|game = CW
+|AnnaRex_GTACW.png|Big Willis Mall, Saratoga Avenue, Willis, Dukes.
+}}
+{{Gallery
+|game = VO
+|AnnaRex-GTAV-GeneralView.jpg|[[Little Portola]]/[[Eastbourne Way]]/[[Rockford Drive]], [[Rockford Hills]] {{Small|([[:File:AnnaRex-GTAV-BackView.jpg|view from Rockford Drive]])}}
+|AnnaRex-GTAVee-Morningwood.png|[[West Eclipse Boulevard]], [[Morningwood]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing in GTA Online
+Clothing in GTA V
+Clothing store chains
+Fashion brands

@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox structure
+|name        = Hanger Way
+|image       = HangerWay-GTAV-2.png
+|caption     = Hanger Way from the east end of the street.
+|games       = {{Games|V=y|O=y}}
+|start       = [[Popular Street]] and [[Buccaneer Way]]
+|end         = [[South Shambles Street]]
+|map         =
+<gallery>
+HangerWay-GTAV-Map.png|Map
+HangerWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Hanger Way''' is a two-way street in [[Cypress Flats]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Cypress Warehouses]]
+*[[Zalinsky Supply & MFR Corp.]] {{Small|(corner of Orchardville Avenue)}}
+
+{{Clear}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

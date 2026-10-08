@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = dealership
+|name          = DockTease
+|sign          = DockTease-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Online Watercraft Retailer
+|founded       = 
+|founder       = 
+|ceo           = Lou Macchione
+|employees     = 
+|products      = 
+|vehicles      = [[DockTease#Vehicles|Vehicles]]
+|weapons       = 
+|taglines      = 
+*''We deliver to YOU!''
+*''Give the global recession the finger!''
+|status        = Active
+}}
+
+[[LEAD]]
+'''DockTease''' is a watercraft retailer featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The player can make purchases via their website '''Docktease.com'''
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses with websites
+Vehicle dealerships

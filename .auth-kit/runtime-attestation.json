@@ -1,0 +1,58 @@
+{
+
+  "schemaVersion": 1,
+
+  "kind": "REVIEWED",
+
+  "productId": "grid",
+
+  "commit": "ee8d80714d37bbc1be9b6b39bd75fc63c4436289",
+
+  "revision": "378ec93fab7d4427c16b54f1dc77662576bfe7404245bf5a3ac224ca6778a912",
+
+  "artifactDigest": "158718912f4bed116631dfb94a34e649cd33301745adb1251ef539cb81a64692",
+
+  "configurationDigest": "bb2980c5b91e702073417976fa122b7f3bd933dafea4f9033705aec838dc7e5e",
+
+  "artifactPath": "src/Grid.App/bin/x64/Debug/net9.0-windows10.0.19041.0/win-x64/Grid.dll",
+
+  "configurationPath": "config/grid.auth.config.json",
+
+  "reviewedAt": "2026-10-08T14:52:00.000Z",
+
+  "reviewer": "agent",
+
+  "readyForImmediateReissue": false,
+
+  "wizardStopped": true,
+
+  "authOrchestrationRequests": 0,
+
+  "runtimePassed": true,
+
+  "pendingOperator": null,
+
+  "pendingSteps": [
+
+    "Recompute GRID_AUTH_RUNTIME_ATTESTATION_SHA256 from this file bytes and rerun node .auth-kit/verify.mjs verify with GRID_AUTH_RUNTIME_ATTESTATION set."
+
+  ],
+
+  "evidence": [
+
+    "binding-stable revision=29856f855e4cc066aeebb43e899c56dfa3f2ec4114e644e66c52339f82d5d4aa commit=ee8d80714d37bbc1be9b6b39bd75fc63c4436289 measured twice via .auth-kit/compute-current-binding.mjs without product edits",
+
+    "artifact-present path=src/Grid.App/bin/x64/Debug/net9.0-windows10.0.19041.0/win-x64/Grid.dll and Grid.exe; no rebuild performed during attestation",
+
+    "operator-attestation 2026-10-08: authenticated product UI available; persisted session restored automatically; no AUTH wizard/pilot; no manual GitHub OAuth during launch (operator Devon)",
+
+    "process-scan 2026-10-08: Grid.exe running ExecutablePath=C:\\Users\\woods\\AppData\\Local\\Programs\\Grid\\Grid.exe; no ProcessName matching auth-wizard; no Win32_CommandLine matching auth-wizard pilot.mjs or .auth-kit/verify during scan",
+
+    "localappdata-session: %LOCALAPPDATA%\\Grid\\accounts\\v1 present with account workspace LastWriteTime=2026-10-08T10:51:51-04:00 and requests LastWriteTime=2026-10-08T10:46:29-04:00; no token cookie or DPAPI values read",
+
+    "orchestration-idle authOrchestrationRequests=0 node processes observed were IDE/MCP/tooling only"
+
+  ]
+
+}
+

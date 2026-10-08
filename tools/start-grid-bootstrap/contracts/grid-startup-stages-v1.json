@@ -1,0 +1,19 @@
+{
+  "contract": "life-startup-stage-vocabulary/v1",
+  "version": "1.0.0",
+  "authority": "start",
+  "product_id": "grid",
+  "status": "VOCABULARY_ONLY",
+  "runtime_emission_claim": false,
+  "stage_ids": [
+    "AUTH_SESSION_RESTORE",
+    "ACCOUNT_LOOKUP",
+    "GRID_ACCOUNT_STATE",
+    "LOCAL_DEVICE_STATE",
+    "REGISTERED_STATE_LOAD",
+    "STALE_STATE_ASSESSMENT",
+    "PREPARED_CANONICAL_STATE_LOAD",
+    "SHELL_INITIALIZATION",
+    "READY"
+  ]
+}

@@ -1,0 +1,56 @@
+[[INFOBOX]]
+{{infobox business|
+| image = Sprunk-GTAIV-logo.png
+| size = 300x300px
+| caption = The Sprunk logo circa [[2008]], GTA IV.
+| name = Sprunk
+| game_1 = GTA Vice City
+| game_2 = GTA San Andreas
+| game_3 = GTA Liberty City Stories
+| game_4 = GTA Vice City Stories
+| game_5 = GTA IV
+| game_6 = GTA Chinatown Wars
+| game_7 = GTA V
+| type = Drinks company
+| owner = 
+| location = '''[[3D Universe]]'''<br />[[East Beach]], [[Los Santos in GTA III Era|Los Santos]]<br />[[Montgomery]]<br />'''[[HD Universe]]'''<br />[[Tudor]] (<small>former</small>)
+| affiliation = 
+| missions = 
+| employee = 
+}}
+
+[[LEAD]]
+'''Sprunk''' is an explosive re-energizing soft drink in the [[Grand Theft Auto World]].
+
+[[SECTION:3:GTA Vice City]]
+{| align="center"
+|<gallery width="auto" perrow="6" style="font-size:95%; padding:0;" widths="120">
+Sprunk-GTAVC-logo.png|The Sprunk logo as of 1986, GTA Vice City.
+Vendingmachine-GTAVC-Sprunk.jpg|A Sprunk [[Vending Machines|vending machine]] at the [[Kaufman Cabs]] depot, GTA Vice City.
+SprunkBooth-GTAVC.jpg|A Sprunk booth at the [[North Point Mall]], GTA Vice City.
+</gallery>
+|}
+
+[[SECTION:3:GTA Liberty City Stories & GTA Vice City Stories]]
+{| align="center"
+|<gallery width="auto" perrow="6" style="font-size:95%; padding:0;" widths="120">
+Mule-GTALCS-front.jpg|A [[Mule]] sporting the Sprunk logo, GTA Liberty City Stories.
+Sprunk-GTAVCS-advert.jpg|A billboard in Little Haiti, GTA Vice City Stories.
+Sprunk-GTAVCS-cans.jpg|Sprunk cans, GTA Vice City Stories.
+</gallery>
+|}
+
+[[CATEGORIES]]
+Businesses in 3D Universe
+Businesses in Alderney
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA Vice City
+Businesses in GTA Vice City Stories
+Businesses in HD Universe
+Businesses in Los Santos in GTA III Era
+Businesses in Red County
+Food
+In-Game Products

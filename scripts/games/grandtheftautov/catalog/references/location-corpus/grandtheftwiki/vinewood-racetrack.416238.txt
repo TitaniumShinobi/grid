@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{infobox business|
+|image = VinewoodRacetrack-GTAV.jpg
+|size = 350x350px
+|game_1 = GTA V
+|name = Vinewood Racetrack
+|type =
+|location = [[East Vinewood]], [[Los Santos in GTA V|Los Santos]]<br />
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+The Vinewood Racetrack is a horse racing track in [[Grand Theft Auto V]]. It is located in [[East Vinewood]], on the northeast side of [[Los Santos in GTA V|Los Santos]]. It is based on the now-demolished [[wp:Hollywood_Park_Racetrack|Hollywood Park Racetrack]] in Inglewood, California. The [[Vinewood Casino]] is adjacent to the racetrack.
+
+[[CATEGORIES]]
+Los Santos in GTA V
+Sports
+Stadiums

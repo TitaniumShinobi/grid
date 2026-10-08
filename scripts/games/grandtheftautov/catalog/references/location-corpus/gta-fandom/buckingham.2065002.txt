@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Buckingham
+|sign          = Buckingham-GTAO-TextLogo.png
+|image         = Buckingham-GTAO-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+*Aerospace manufacturer
+*Shipbuilder
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Buckingham''' is an [[United States of America|American]]-[[Canada|Canadian]] vehicle manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

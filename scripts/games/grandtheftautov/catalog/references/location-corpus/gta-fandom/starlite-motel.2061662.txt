@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Starlite Motel
+|image = StarliteMotel-GTAVe.png
+|caption = Overview of the motel.
+|map = StarliteMotel-GTAV-Map.png
+|map_caption = Location on the map (red).
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|location = [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|type = Motel
+|condition = Abandoned
+}}
+
+[[LEAD]]
+The '''Starlite Motel''' is an abandoned motel appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Abandoned buildings
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Motels

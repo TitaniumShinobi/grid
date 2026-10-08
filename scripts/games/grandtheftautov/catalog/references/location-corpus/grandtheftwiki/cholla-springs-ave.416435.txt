@@ -1,0 +1,19 @@
+[[LEAD]]
+'''Cholla Springs Ave''' is a street running southwest to northeast in [[Sandy Shores]], [[Blaine County]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to [[Armadillo Ave]], [[Mountain View Dr]], [[Niland Ave]] and [[Panorama Dr]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Merle Abrahams' House]]
+| [[Sandy Shores]]
+| [[Armadillo Ave]]
+| Residence
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Blaine County

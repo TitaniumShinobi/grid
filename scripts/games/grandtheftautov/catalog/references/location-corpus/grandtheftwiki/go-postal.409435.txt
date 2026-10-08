@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Boxville-GTAV-firsttrailer.jpg
+|size = 350x350px
+|game_1 = GTA V
+|name = Go Postal
+|type = Delivery
+|owner = 
+|location = [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Go Postal''' is a package delivery company operating in [[Los Santos in GTA V|Los Santos]] in [[Grand Theft Auto V]]. The company is the sister company of the rail operator [[Go Loco]]. The company's name and slogan ("''We aim not to lose it''") are a reference to the term ''[[:wp:going postal|going postal]]'', and their [[Boxville|vans]] share a colour scheme with the [[:wp:USPS|United States Postal Service]] and [[:wp:Fedex|Fedex]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = POSTAL SERVICE
+|name        = GoPostal
+|image       = GoPostal-GTAV-Logo.png
+|caption     = The company logo.
+|lcn         = {{BAWSAQ/Slider}} GOP
+|taglines    = 
+*"''We aim not to lose it''"
+*"''Collect Yourself''"
+|games       = {{Games|V=y|O=y|VI=y}}
+|locations   = 
+*[[Alta Street]], [[Downtown Vinewood]]
+*[[Pillbox Hill]]
+*[[Los Santos International Airport (HD Universe)|Los Santos International Airport]]
+*[[Chumash Plaza]], [[Chumash]]
+}}
+
+[[LEAD]]
+'''GoPostal''' is the official postal courier delivery service in {{V}}, {{O}} and {{VI}}. The player can buy stocks from the company on the [[Liberty City National Exchange|LCN Exchange]] website.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|GOPostal-GTAV-Vinewood.png|[[GoPostal Building]], [[Alta Street]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+|ChumashPlaza-GTAV-GoPostal.png|Store in [[Chumash Plaza]], [[Chumash]].
+|Go Postal-GTAV-Pillbox Hill.jpg|[[707 Vespucci]] office, corner of [[Vespucci Boulevard]]/[[Peaceful Street]], [[Pillbox Hill]].
+|GoPostalLSX-GTAV.png|Depot at [[Los Santos International Airport (HD Universe)|LSIA]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Delivery companies

@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Timmy'sFlowers-GTAV-exterior.jpg
+|size = 300x300px
+|game_1 = GTA V
+|name = Timmy's Flowers
+|type = Florist
+|owner = [[Timmy (GTA V)|Timmy]]
+|location = [[Macdonald St]]/[[Strawberry Ave]] in [[Davis]] and [[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Timmy's Flowers''' is a florist located at the corner of [[Macdonald St]] and [[Strawberry Ave]] in [[Davis]] and [[Strawberry]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company is located at the border of the Davis and Strawberry neighbourhoods of Los Santos and has a 'Red Rose Special' for [[Money|$]]11.99.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

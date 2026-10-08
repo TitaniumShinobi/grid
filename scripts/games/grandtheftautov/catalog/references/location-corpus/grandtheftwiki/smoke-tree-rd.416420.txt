@@ -1,0 +1,20 @@
+[[LEAD]]
+'''Smoke Tree Rd''' is a road in the [[Grand Senora Desert]] in [[Blaine County]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. There are connections to [[Cat-Claw Ave]], [[Cholla Rd]], [[Nowhere Rd]] and [[Panorama Dr]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Senora National Park]]
+| [[Grand Senora Desert]]
+| [[Cat-Claw Ave]]/[[Panorama Dr]]
+| National park
+|-
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Blaine County

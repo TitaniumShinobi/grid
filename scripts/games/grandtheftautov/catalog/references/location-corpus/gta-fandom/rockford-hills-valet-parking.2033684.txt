@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|name = Rockford Hills Valet Parking
+|caption = The logo
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|altnames = Valet Parking
+|products = Parking service: $2.00
+|bawsaq = 
+|image = ValetParking-GTAV-Logo-Texture.png
+|oldlogo = ValetParking-GTAV-VLogo-Texture.png
+|oldlogo1 = ValetParking-GTAV-WordLogo-Texture.png
+|darklogo = y
+|image_size = 300
+|condition = Active
+|taglines = 
+|games = {{Games|V=y|O=y}}
+|type = Valet
+|map = 
+|reference = 
+}}
+
+[[LEAD]]
+Rockford Hills '''Valet Parking''' is a service company appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+ValetParking-GTAV-ParkingBuilding.png|[[Mad Wayne Thunder Drive]] and [[Eastbourne Way]]<small>([[:File:RockfordHillsValetParking-GTAVe-MadWayneThunderDrive-EntranceNight.png|Night view]])</small>
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

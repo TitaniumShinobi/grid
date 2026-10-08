@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = San An Taqueria
+|type           = diner
+|status         = active
+|image          = SanAnTaqueria-GTAVe-View1.png
+|caption        =
+|games          = {{games|V=y|O=y}}
+|location       = [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]]
+|phone          = 1-999-SANTACO
+|accessible     = No
+|file_name      = <code>id2_03_diner</code>
+}}
+
+[[LEAD]]
+'''San An Taqueria''' is a Mexican-style diner appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Diners
+Fast casual restaurants
+Mexican-themed restaurants

@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 1623 South Shambles Street
+|image = Dynasty8-GTAV-HighEnd-Image-1623SouthShamblesSt.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = High-end garage
+|garage = 10 vehicles <br> 3 bikes
+|price = [[Money|$]]105,000
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''1623 South Shambles Street''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located on [[South Shambles Street]], near the corner where South Shambles St becomes [[Hanger Way]].
+
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]105,000 and can store 10 [[Personal Vehicles]] and three [[Pedal and Metal Cycles|Bicycles]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

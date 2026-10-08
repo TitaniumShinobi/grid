@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = When the Chips are Down
+|image        = WhentheChipsareDown-GTAO-Thumbnail.png
+|location     = [[State of San Andreas (HD Universe)|San Andreas]]
+|game           = {{games|O=y}}
+|type           = CasinoWork
+|fail         = 
+|for          = [[Agatha Baker]]
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] <small>(organization)</small>
+*1 to 8 players <small>(motorcycle club)</small>
+|todo         = 
+*Go to <span class="v-hud-location">[Location]</span>.
+*Eliminate the <span class="v-hud-enemy">[Enemy]</span>.
+*Destroy the <span class="v-hud-enemy">counterfeit operation</span>.
+*Leave the area.
+|reward = 
+*[[Money|Cash]], [[Chips]], and [[Reputation|RP]].
+|target = Counterfeit chip factory
+}}
+
+[[LEAD]]
+'''When the Chips are Down''' is a [[Casino Work]] mission featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update. It is a freeroam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

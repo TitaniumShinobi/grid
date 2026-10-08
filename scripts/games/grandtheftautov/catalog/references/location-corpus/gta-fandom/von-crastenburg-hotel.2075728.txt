@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business
+|name = Von Crastenburg Hotel
+|image = VonCrastenburgHotel-GTAV-Logo.png
+|caption =
+|type = Hotel chain
+|ceo = [[Von Crastenburg Family]]
+|games = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|oldlogo1 = 
+|oldcaption1 = 
+}}
+
+[[LEAD]]
+'''Von Crastenburg Hotel '''(also known as '''Crastenburg Hotels & Resorts''') is a luxury hotel chain in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Hotels

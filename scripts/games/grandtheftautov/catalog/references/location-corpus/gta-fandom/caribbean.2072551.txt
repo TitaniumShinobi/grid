@@ -1,0 +1,79 @@
+[[LEAD]]
+The '''{{WP|Caribbean}}''' is a region of the Americas that comprises the Caribbean Sea, its surrounding coasts, and its islands (some of which lie within the [[Caribbean Sea]] and some of which lie on the edge of the Caribbean Sea where it borders the North Atlantic Ocean). The region lies southeast of the {{WP|Gulf of Mexico}} and the North American mainland, east of {{WP|Central America}}, and north of {{WP|South America}}.
+
+In the ''[[Grand Theft Auto]]'' series, the Caribbean is often referenced. The Caribbean region of [[Colombia]] makes an appearance in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[SECTION:2:Locations in the ''Grand Theft Auto'' Series]]
+
+
+[[SECTION:3:2D Universe]]
+{|class="wikitable"
+!Name
+!Country or territory
+!Type
+!Game
+|-
+|[[Jamaica]]
+|{{Country|text=n|JM}} Independent
+|Island nation
+|''[[Grand Theft Auto (1997 game)|Grand Theft Auto]]'' <small>(Mentioned)</small>
+|}
+
+[[SECTION:3:3D Universe]]
+{|class="wikitable"
+!Name
+!Country or territory
+!Type
+!Game
+|-
+|Aruba
+|{{Country|NL}}
+|Island/Country
+|''[[Grand Theft Auto III]]'' <small>([https://www.youtube.com/watch?v=KFoGUE3AHos Mentioned])</small><br>''[[Grand Theft Auto: Liberty City Stories]]'' <small>([[Cash in Kazuki's Chips|Mentioned]])</small>
+|-
+|Cayman Islands
+|{{Country|GB}}
+|Chain of islands
+|''[[Grand Theft Auto III]]'' <small>([[Grandtheftauto3.com|Mentioned]])</small><br>''[[Grand Theft Auto: San Andreas]]'' <small>([[Epsilonprogram.com (real life website)|Mentioned]])</small>
+|-
+|Caracas
+|{{Country|VE}}
+|Coastal city/Capital
+|''[[Grand Theft Auto: Vice City]]'' <small>([[The Fastest Boat|Mentioned]])</small>
+|-
+|[[Costa Rica]]
+|{{Country|text=n|CR}} Independent
+|Country
+|''[[Grand Theft Auto: Vice City]]'' <small>([[The Fastest Boat|Mentioned]])</small><br>''[[Grand Theft Auto: Liberty City Stories]]'' <small>([[Cash in Kazuki's Chips|Mentioned]])</small>
+|}
+
+[[SECTION:3:HD Universe]]
+{|class="wikitable"
+!Name
+!Country or territory
+!Type
+!Game
+|-
+|[[Cayo Perico]]
+|{{Country|CO}}
+|Island
+|''[[Grand Theft Auto Online]]''
+|-
+|Cayman Islands
+|{{Country|GB}}
+|Chain of islands
+|''[[Grand Theft Auto V]]'' <small>([[Epsilonprogram.com (real life website)|Mentioned]])</small>
+|-
+|[[Jamaica]]
+|{{Country|text=n|JM}} Independent
+|Island nation
+|''[[Grand Theft Auto IV]]'' <small>(Mentioned)</small><br>''[[Grand Theft Auto V]]'' <small>(Mentioned)</small>
+|-
+|Tulum
+|{{Country|MX}}
+|Coastal town
+|''[[Grand Theft Auto Online]]'' <small>([[The Cayo Perico Heist|Mentioned]])</small>
+|}
+
+[[CATEGORIES]]
+North American countries

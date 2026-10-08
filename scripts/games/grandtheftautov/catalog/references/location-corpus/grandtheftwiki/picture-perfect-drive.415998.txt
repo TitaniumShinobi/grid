@@ -1,0 +1,39 @@
+[[LEAD]]
+'''Picture Perfect Drive''' is a road in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The road starts at [[Milton Dr]] in [[Vinewood Hills]] before going through [[Rockford Hills]] and [[GWC and Golfing Society]] before ending at [[North Rockford Dr]] in [[Richman in GTA V|Richman]]. There are also connections to [[Americano Way]], [[Cockingend Dr]], [[Dunstable Dr]], [[Greenwich Pl]], [[Handy Way]], [[Hillcrest Ridge Access Rd]], [[Mad Wayne Thunder Dr]], [[Richman St]] and [[South Mo Milton Dr]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Epsilon Program House]]
+| [[Vinewood Hills]]
+| [[Hillcrest Ridge Access Rd]]
+| Residential
+|-
+| [[Mark Fostenburg's House]]
+| [[Vinewood Hills]]
+| 
+| Residential
+|-
+| data-sort-value="Richman Hotel, The"| [[The Richman Hotel]]
+| [[Richman in GTA V|Richman]]
+| [[Handy Way]]<br />[[Greenwich Pl]]
+| Hotel
+|-
+| [[Tyler Dixon's House]]
+| [[Rockford Hills]]
+| [[Mad Wayne Thunder Dr]]<br />[[Dunstable Dr]]
+| Residential
+|-
+| [[University of San Andreas, Los Santos]]
+| [[Richman in GTA V|Richman]]
+| [[Richman St]]<br />[[North Rockford Dr]]
+| Education
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

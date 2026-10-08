@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Vespucci Fashion
+|image       = VespucciFashion-GTAV-VespucciMarket.jpg
+|type        = Clothing Store
+|games       = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|lcn         = 
+|locations   = [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Vespucci Fashion''' is a clothing store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores
+Stores

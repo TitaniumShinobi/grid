@@ -1,0 +1,59 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = restaurant
+|name          = Rusty Brown's Ring Donuts
+|sign          = RustyBrownsRingDonuts-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Donut & coffee shop
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|taglines      = ''Pick your ring''
+|bawsaq        = 
+|lcn           = 
+|bleeter       = [[File:Bleeter GTAVpc RustyBrownsDonuts.png|40px|right]] @RustyBrownsDonuts
+|lifeinvader   = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Rusty Brown's Ring Donuts''' is a donut and coffee shop appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+<gallery position="center" spacing="small" widths="270px">
+RustyBrown'sRingDonuts-GTA4-exterior.jpg|[[Lower Easton]], [[Algonquin]], which promotes a "Special Police Menu" as it is located next to the [[Lower Easton]] [[Liberty City Police Department (HD Universe)#List of Police Stations|LCPD station]].
+TriangleBuilding-GTAIV-RustyBrown'sRingDonuts.jpg|[[Frankfort Ave]] and [[Iron Street]], [[Triangle Building]], [[The Triangle]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+RustyBrowns-GTACW.png|[[Lower Easton]], [[Algonquin]], which promotes a "Special Police Menu" as it is located next to the [[Lower Easton]] [[Liberty City Police Department (HD Universe)#List of Police Stations|LCPD station]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small" widths="270px">
+Rusty Brown GTAV Storefront.jpg|[[Vespucci Boulevard]], [[Mission Row]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses with websites
+Café chains

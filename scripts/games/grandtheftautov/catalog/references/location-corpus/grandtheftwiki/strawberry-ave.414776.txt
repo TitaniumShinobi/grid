@@ -1,0 +1,309 @@
+[[LEAD]]
+'''Strawberry Ave''' is a street in [[Los Santos in GTA V|Los Santos]], which runs from [[Chamberlain Hills]] in the south west to [[Textile City]] in the north east where it eventually becomes the [[Los Santos Freeway]] going into [[Blaine County]]. The street runs through the [[Strawberry]], [[Davis]], [[Legion Square]], [[Mission Row]] and [[Pillbox Hill]] neighbourhoods. There are connections to [[Adam's Apple Blvd]], [[Atlee St]], [[Capital Blvd]], [[Carson Ave]], [[Davis Ave]], [[Forum Dr]], [[Innocence Blvd]], [[Integrity Way]], [[San Andreas Ave]] and [[Vespucci Blvd]], while travelling underneath the [[Olympic Freeway]]. Access to the [[Strawberry Station]] of the [[Los Santos Transit]] metro system, going to [[Puerto Del Sol]] and north [[Pillbox Hill]], can be accessed from the street. The avenue is controlled by [[The Families]] in a Davis and Strawberry.
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| data-sort-value="Ace Hole, The"| [[The Ace Hole]]
+| [[Textile City]]
+|
+|
+|-
+| [[Aguila Burrito]]
+| [[Strawberry]]
+| [[Innocence Blvd]]
+| Food and drink
+|-
+| [[Alesandro Hotel]]
+| [[Textile City]]
+|
+| Hotel
+|-
+| [[Alfonzo's Appliances]]
+| [[Strawberry]]
+|
+| Furniture
+|-
+| [[Car Tune Network]]
+| [[Strawberry]]
+|
+| Garage
+|-
+| [[Celtica Hotel]]
+| [[Pillbox Hill]]
+|
+| Hotel
+|-
+| [[Checkout!]]
+| [[Strawberry]]
+| [[Innocence Blvd]]
+| Supermarket
+|-
+| [[Children of the Mountain]] Fellowship
+| [[Strawberry]]
+| [[Forum Dr]]
+| Cult
+|-
+| [[Cool Beans]]
+| [[Mission Row]]
+|
+| Food and drink
+|-
+| [[Crazee Fashion]]
+| [[Strawberry]]
+|
+| Clothing
+|-
+| [[Crucial Fix Coffee House]]
+| [[Pillbox Hill]]
+| [[San Andreas Ave]]
+| Food and drink
+|-
+| [[Discount Store]]
+| [[Strawberry]]
+| [[Innocence Blvd]]
+| Clothing
+|-
+| [[Dollar Pills]]
+| [[Strawberry]]
+|
+| Pharmacy
+|-
+| [[DVD Peliculas Mexicanas]]
+| [[Textile City]]
+|
+| Entertainment
+|-
+| [[Edzell Foundation Youth Center]]
+| [[Strawberry]]
+|
+| Youth center
+|-
+| [[Elkridge Hotel]]
+| [[Mission Row]]
+| [[Atlee St]]
+| Hotel
+|-
+| [[Family Dental]]
+| [[Strawberry]]
+| [[Innocence Blvd]]
+| Healthcare
+|-
+| [[Finger Rings]]
+| [[Textile City]]
+|
+| Jewellers
+|-
+| [[Foxy Phones]]
+| [[Textile City]]
+|
+| Phones sales
+|-
+| [[Foxy's]]
+| [[Textile City]]
+|
+| Theatre
+|-
+| [[G&B]]
+| [[Textile City]]
+|
+| Clothing
+|-
+| [[Gabriela's Market]]
+| [[Strawberry]]
+| [[Forum Dr]]
+| Supermarket
+|-
+| [[Gloria's Fashion Boutique]]
+| [[Strawberry]]
+|
+| Clothing
+|-
+| [[Hair and Make-up]]
+| [[Textile City]]
+| 
+| Beauty salon
+|-
+| [[Hair and Nail Studio]]
+| [[Strawberry]]
+|
+| Beauty salon
+|-
+| [[Instant Shoe Repair]]
+| [[Pillbox Hill]]
+| [[Vespucci Blvd]]
+| Clothing
+|-
+| [[J's Bonds]]
+| [[Textile City]]
+|
+| Bail bonds
+|-
+| [[Krapea]]
+| [[Textile City]]
+|
+| Furniture
+|-
+| [[Leroy's Electricals]]
+| [[Strawberry]]
+|
+| Electricals
+|-
+| [[Limey's]]
+| [[Mission Row]]
+| [[Vespucci Blvd]]
+| Food and drink
+|-
+| [[Liquor Beer & Wine]]
+| [[Strawberry]]
+|
+| Food and drink
+|-
+| [[Los Santos Theatre]]
+| [[Mission Row]]
+|
+| Theatre
+|-
+| [[Lucky Plucker]]
+| [[Davis]]
+|
+| Food and drink
+|-
+| [[Mattress, Sofas, Furniture]]
+| [[Strawberry]]
+|
+| Furniture
+|-
+| [[Medical Equipment]]
+| [[Textile City]]
+|
+| Healthcare
+|-
+| [[Mosley Auto Service]]
+| [[Strawberry]]
+| [[Davis Ave]]/[[Carson Ave]]
+| Garage
+|-
+| [[Nail Bar & Spa]]
+| [[Textile City]]
+| 
+| Beauty salon
+|-
+| [[New Do Barber Shop]]
+| [[Strawberry]]
+|
+| Barbers
+|-
+| [[Noodle Exchange]]
+| [[Mission Row]]
+| [[Atlee St]]
+| Food and drink
+|-
+| [[Pawn & Jewelry]]
+| [[Strawberry]]
+|
+| Pawn shop
+|-
+| [[Pescado Azul]]
+| [[Textile City]]/[[Pillbox Hill]]
+|
+| Food and drink
+|-
+| [[Pharmacy]]
+| [[Textile City]]
+|
+| Pharmacy
+|-
+| [[Phones and Things]]
+| [[Textile City]]
+|
+| Phones sales
+|-
+| [[Pillbox Medical Center]]
+| [[Textile City]]
+| [[Integrity Way]]
+| Healthcare
+|-
+| [[Ring of Fire Chili House]]
+| [[Davis]]
+| [[Innocence Blvd]]
+| Food and drink
+|-
+| [[Robert Dazzler International Jewelry Exchange]]
+| [[Mission Row]]/[[Textile City]]
+| [[San Andreas Ave]]
+| Jewellers
+|-
+| [[Schlongberg Sachs]]
+| [[Pillbox Hill]]
+| [[Adam's Apple Blvd]]
+| Bank
+|-
+| [[Shenanigan's Bar]]
+| [[Mission Row]]
+| 
+| Food and drink
+|-
+| [[Strawberry Station]]
+| [[Strawberry]]
+| Under the [[Olympic Fwy]]
+| Metro station
+|-
+| [[Suds Cleaners]]
+| [[Strawberry]]
+| [[Innocence Blvd]]
+| Cleaners
+|-
+| [[Suds Law Laundromat]]
+| [[Strawberry]]
+|
+| Laundromat
+|-
+| data-sort-value="Taco Farmer, The"| [[The Taco Farmer]]
+| [[Strawberry]]
+| [[Carson Ave]]
+| Food and drink
+|-
+| data-sort-value="Tahitian, The"| [[The Tahitian]]
+| [[Strawberry]]
+| [[Carson Ave]]
+| Residential
+|-
+| [[Timmy's Flowers]]
+| [[Davis]]
+| [[Macdonald St]]
+| Florist
+|-
+| [[Totally Rental]]
+| [[Strawberry]]
+| 
+| Entertainment
+|-
+| data-sort-value="Vault, The"| [[The Vault]]
+| [[Mission Row]]
+| [[Adam's Apple Blvd]]/[[Vespucci Blvd]]
+| Nightclub
+|-
+| [[Vinewood Records]]
+| [[Textile City]]
+| [[Integrity Way]]
+| Music
+|-
+| [[Wigs]]
+| [[Strawberry]]
+|
+| Hair
+|-
+| [[Xero]] filling station
+| [[Strawberry]]
+| [[Capital Blvd]]
+| Filling station
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

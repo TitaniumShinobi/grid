@@ -1,0 +1,89 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = gasoline
+|name          = Xero Gas
+|sign          = Xero-Gas-Logo.png
+|image         = 
+|caption       = 
+|aka           = Xero
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[Vice City (HD Universe)|Vice City]], [[State of Leonida|Leonida]]
+*[[Ambrosia County]], Leonida
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = ''"Give your car a boost"''<br>''"We have... Xero"''<br>''"We are investing in the Earth<br>Let's make our future"'' {{Ref|name=tags|ref=[[LS Tags]].}}
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Xero Gas''' is a petroleum company in the {{S}}, featured in the {{HD}} titles.
+
+[[SECTION:3:Location Influences]]
+
+
+[[SECTION:4:''Grand Theft Auto VI'']]
+*The [[Ambrosia]] location shown in official screenshots fort {{VI}} is based on a former Chevron filling station at {{URL|https://maps.app.goo.gl/LsGuadCrhyP25LdE6|517 E Sugarland Hwy}} in {{WP|Clewiston, Florida}}, now occupied by Gator Tires Center.
+*The [[Rockridge]] location seen in the [[Grand Theft Auto VI/Leaks#September_2022|September 2022 leaks]] appears to be based on the Valero gas station located at {{URL|https://maps.app.goo.gl/NATzcjYbjurMeacR8|1705 NW 7th Street}} in {{WP|Miami}}, Florida.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+Xero Gas do not have any filling stations in {{IV}}; however, there is a Xero Gas refinery within the [[Acter Industrial Park]] in [[State of Alderney|Alderney State]], and an abandoned Xero Gas warehouse turned gang hideout in [[Bohan]], [[Liberty City (HD Universe)|Liberty City]].
+
+<gallery bordercolor="#00AAC9" position="center" spacing="small" widths="270px">
+XeroGasWarehouse-GTAIV-Overview.png|An abandoned [[Xero Gas Warehouse]] in [[Bohan]], [[Liberty City (HD Universe)|Liberty City]] ([[The Wages of Hsin|destroyed]] in [[2009]]).
+Xero-GTA4-refinery-exterior.jpg|The Xero Gas [[Acter Industrial Park]] refinery in [[State of Alderney|Alderney State]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+Xero Gas have 5 filling stations across [[State of San Andreas (HD Universe)|San Andreas]]:
+
+<gallery bordercolor="#00AAC9" position="center" spacing="small" caption="Filling stations" widths="250px">
+XeroGasStation-GTAV-Strawberry.jpg|[[Strawberry Avenue]] and [[Capital Boulevard]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]].
+Xero-LaPuerta-GTAV.png|[[Calais Avenue]] and [[Innocence Boulevard]], [[La Puerta]], Los Santos.
+Xero-GTAV-PacificBluffs.png|[[West Eclipse Boulevard]] and [[Del Perro Freeway]], [[Pacific Bluffs]], Los Santos.
+XeroPaletoBay-GTAV.jpg|[[Paleto Boulevard]] and [[Cascabel Avenue]], [[Paleto Bay]] (Destroyed during [[The Paleto Score]]).
+Xero-GTAV-Route68.png|[[Route 68]], [[Harmony]].
+</gallery>
+
+Xero Gas also have a warehouse within the [[Los Santos International Airport (HD Universe)|Los Santos International Airport]] grounds.
+
+<gallery bordercolor="#00AAC9" position="center" spacing="small" widths="270px">
+XeroLSIA-GTAV.png|Industrial building in the [[Los Santos International Airport (HD Universe)|LSIA]] district, Los Santos.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto VI'']]
+{{Upcoming|game=VI|leaked=y}}
+So far, Xero Gas is shown to have two filling stations in the state of [[State of Leonida|Leonida]] in {{VI}}. One appears in an official screenshot on the [[GTA VI Website]], located in [[Ambrosia]], and the other only appears in the [[Grand Theft Auto VI/Leaks#September_2022|September 2022 leaks]], located across the street from [[Fleeca Field]] in the [[Rockridge]] neighborhood.{{Ref|name = xero-gas-vi|type = timestamp|date = 07/24/2024|ref  = '''00:00:20''': <code>Americas_1 2022-09-13 16-24-02.mp4</code>}}
+
+<gallery bordercolor="#00AAC9" position="center" spacing="small" caption="Filling stations" widths="250px">
+XeroGas-GTAVI-OfficialScreenshot-Ambrosia01.jpg|Unnamed highway, [[Ambrosia]], [[Ambrosia County]]
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Gas station chains
+Petroleum companies

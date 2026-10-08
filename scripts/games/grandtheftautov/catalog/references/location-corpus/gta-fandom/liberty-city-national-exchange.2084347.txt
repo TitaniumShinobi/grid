@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = STOCK EXCHANGE
+|name = Liberty City National Exchange
+|image = LCN-StockMarket-GTAV.png
+|type = Stock Exchange
+|games = {{Games|V=y}}
+|mentioned = {{Games|O=y}}
+|locations = [[Liberty City (HD Universe)|Liberty City]]
+|website = [[Liberty City National Exchange/Website|lcn-exchange.com]]
+}}
+
+[[LEAD]]
+The '''Liberty City National Exchange''' ('''LCN''') is a stock market index appearing in {{V}} and mentioned in {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Finance
+Media in GTA V
+Websites

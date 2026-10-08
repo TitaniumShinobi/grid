@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = R&R Freight
+|image = R&R-GTAV.png
+|caption = R&R Freight's logo.
+|locations = [[Los Santos (HD Universe)|Los Santos]]
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|type = Freight company
+|founded = [[1940]]
+}}
+
+[[LEAD]]
+'''R&R Freight''' is a freight company featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. Founded in [[1940]], they operate in [[Los Santos (HD Universe)|Los Santos]]. Their logo can be seen on containers hauled by [[Freight Train|trains]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

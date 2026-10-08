@@ -1,0 +1,34 @@
+[[LEAD]]
+'''Supply St''' is a street in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street begins and ends with connections to [[Popular St]] in [[La Mesa]], and briefly runs through [[Mirror Park]] and [[Murrieta Heights]]. There are connections to [[San Andreas Ave]] and [[Vespucci Blvd]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Auto Repairs]]
+| [[La Mesa]]
+|
+| Garage
+|-
+| [[Casey's Diner]]
+| [[La Mesa]]
+| [[Popular St]]
+| Food and drink
+|-
+| [[Liquor Market]]
+| [[La Mesa]]
+| [[Popular St]]
+| Food and drink
+|-
+| [[Maibatsu|Maibatsu Motors Inc.]]
+| [[Murrieta Heights]]
+| [[San Andreas Ave]]/[[Vespucci Blvd]]
+| Automobile manufacturer
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

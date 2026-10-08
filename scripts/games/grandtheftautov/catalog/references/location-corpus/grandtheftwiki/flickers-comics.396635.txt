@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Flickers Comics
+|type = Comic book store
+|owner = 
+|location = [[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Flickers Comics''' is a comic book store located on [[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The store sells comics for [[The Brown Streak]], [[Republican Space Rangers]] and [[Princess Robot Bubblegum]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

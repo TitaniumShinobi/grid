@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|name      = Zany-Z's
+|sign      = Zany-Zs-GTAV-Logo.png
+|image     = Zany-Zs-GTAV.jpg
+|caption   = '''Zany-Z's''' in {{VO}}.
+|taglines  = 
+|type      = dollarstore
+|games     = {{Games|V=y|O=y}}
+|location  = [[Davis Plaza]], [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+}}
+
+[[LEAD]]
+'''Zany-Z's''' is a discount store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Variety stores

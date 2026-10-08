@@ -1,0 +1,64 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|purchasable   = 
+|type          = fashion
+|name          = Perseus
+|sign          = Perseus-logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = High-end clothing and accessories
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = [[Marcus]] <small>(''GTA IV'')</small>
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|accessible    = 
+*Yes (''GTA IV'')
+*No (''EFLC'', ''GTA Chinatown Wars'', ''GTA V'', ''GTA Online'')
+}}
+
+[[LEAD]]
+'''Perseus''' is a high-end fashion brand and clothing store chain appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+Perseus-GTA4-MiddleParkEastexterior.jpg|[[Pyrite Street]] and [[Bismarck Avenue]], [[Middle Park East]].
+Perseus-GTA4-Exchangeexterior.jpg|[[Amethyst Street]] and Bismarck Avenue, [[The Exchange (GTA IV)|The Exchange]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+ImageNeeded.png|Pyrite Street and Bismarck Avenue, Middle Park East.
+Perseus-GTACW-TheExchange.png|Amethyst Street and Bismarck Avenue, The Exchange.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+<gallery position="center" spacing="small" widths="270px">
+Perseus-GTAV-DaylightFront.png|[[Portola Drive]] and [[Dorset Drive]], [[Rockford Hills]]. ([[:File:Perseus-GTAV-PortolaDrive.jpg|Viewed from Portola Drive]] and as [[:File:Perseus-GTAV-NightFront.png|seen at night]]).
+</gallery>
+
+[[SECTION:3:Locations]]
+*The brand's [[Portola Drive]] location is based on {{URL|https://maps.app.goo.gl/bXh7rKAZNERRWVRG7|201 North Rodeo Drive}} in Beverly Hills, California. The store closely resembles how it looked when occupied by a {{WP|Bulgari}} store before 2014.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Clothing store chains
+Fashion brands

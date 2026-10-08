@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|type           = office
+|name           = Los Santos Meteor Building
+|sign           = 
+|image          = LosSantosMeteor-GTAV-Building.png
+|caption        = View of the building from [[Power Street]].
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Power Street]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|use            = 
+|owner          = 
+|operator       = 
+|occupants      = [[Los Santos Meteor]]
+|businesses     = 
+|employees      = 
+|structure_type = [[:Category:Low-rise buildings|Low-rise building]]
+|architecture   = 
+|length         = 
+|height         = 
+|floors         = 
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+The '''Los Santos Meteor Building''' is a low-rise office building featured in {{VO}}, serving as the headquarters for the [[Los Santos Meteor]] newspaper.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Low-rise buildings

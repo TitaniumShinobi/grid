@@ -1,0 +1,55 @@
+[[INFOBOX]]
+{{Infobox location
+|image   = ProsperityStProm-GTAV-Views3.png
+|caption = Several views of Prosperity Street Promenade.
+|games   = {{Games|V=y|O=y}}
+|location = [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|map=<gallery>
+ProsperityStreetPromenade-GTAV-Map.png|Map
+ProsperityStreetPromenade-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Prosperity Street Promenade''', also known as the '''Del Perro Shopping Promenade''', is an upscale outdoor mall in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+{{Columns
+|
+*[[Al Dente's]]
+*[[Alphabetz]] <small>(opening soon)</small>
+*[[Astro Theaters]] <small>(corner of Red Desert Avenue)</small>
+*[[Bahama Mamas|Bahama Mamas West]]
+*[[Bean Machine]]
+*[[Derriere]]
+*[[Didier Sachs (HD Universe)|Didier Sachs]]
+*[[Dionysia Theatre]]
+*[[Double Denim]]
+*[[Heat]]
+*[[Heroin Chic]]
+*[[Lârss & Elbö]]
+*[[Lettuce Be]]
+*[[Lézard]]
+*[[Limey's Juice and Smoothies]]
+|
+*[[Miss T]] <small>(corner of Marathon Avenue)</small>
+*[[Nutsaki]] <small>(corner of San Andreas Avenue)</small>
+*[[Peckerwood]]
+*[[Pharaoh Cosmetics]]
+*[[Ranch (HD Universe)|Ranch]]
+*[[Scarper]]
+*[[Spines Bookshop]]
+*[[Sub Urban (HD Universe)|Sub Urban]] <small>(enterable)</small>
+*[[Taco Bomb]]
+*[[The Fish Net]] <small>(corner of Red Desert Avenue)</small>
+*[[Universal Uniform]] <small>(corner of San Andreas Avenue)</small>
+*[[Viendemorte]]
+*[[White Widow]] <small>(corner of Red Desert Avenue)</small>
+*[[ZIP (HD Universe)|ZIP]]
+}}
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Shopping malls

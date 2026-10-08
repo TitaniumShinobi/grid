@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Amnesiac
+|image       = Amnesiac-GTAV.jpg
+|type        = Pipe & Smoke Shop
+|games       = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|lcn         = 
+|locations   = [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Amnesiac''' is a pipe & smoke shop in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Tobacco stores

@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{infobox business|
+| image = Weazel-GTAIV-logo.jpg
+| size = 300x300px
+| caption = The Weazel logo in GTA IV.
+| name = Weazel / Weasel
+| game_1 = GTA Vice City
+| game_2 = GTA San Andreas
+| game_3 = GTA Liberty City Stories
+| game_4 = GTA IV
+| game_5 = GTA V
+| type = Television network
+| owner = 
+| location = '''[[HD Universe]]'''<br />[[La Puerta]], [[Los Santos in GTA V|Los Santos]]
+| affiliation = 
+| missions = 
+| employee = 
+}}
+
+[[LEAD]]
+'''Weazel''', also spelled as '''Weasel''', is a fictional television network in [[Grand Theft Auto: Vice City]], [[Grand Theft Auto: San Andreas]], [[Grand Theft Auto: Liberty City Stories]], [[Grand Theft Auto IV]], and [[Grand Theft Auto V]].
+
+[[SECTION:3:GTA Vice City — GTA Liberty City Stories]]
+{{Col-begin}}
+{{Col-2}}
+* [[Just the Five of Us]] (GTA Vice City; broadcasted Friday nights)
+* [[My Five Uncles]] (GTA San Andreas)
+* [[Law]] (GTA San Andreas; broadcasted Thursdays)
+{{Col-2}}
+* [[Intergalactic Wrestling Title]] (GTA San Andreas; broadcasted weekends)
+* [[Swapmeet]] (GTA Liberty City Stories; broadcasted Thursday evenings)
+* [[Bad T and Theo]] (GTA Liberty City Stories; replaced by Swapmeet due to poor ratings)
+{{Col-end}}
+
+[[CATEGORIES]]
+Businesses in 3D Universe
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA Vice City
+Businesses in GTA Vice City Stories
+Businesses in HD Universe
+Businesses in Los Santos in GTA V
+Media

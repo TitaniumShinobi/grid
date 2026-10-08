@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Grapeseed Cow Farm
+|image = GrapeseedCowFarm-GTAV.jpg
+|caption = 
+|games = {{Games|V=y|O=y}}
+|location = [[Grapeseed Avenue]], [[O'Neil Way]], [[Seaview Road]] and [[Joad Lane]], [[Grapeseed]]
+|map = Grapeseed_Land_Survey_GTAV_Map_Grapeseed_Cow_Farm.jpg
+|map_caption = Satellite view.
+}}
+
+[[LEAD]]
+The '''Grapeseed Cow Farm''' is located in the agricultural community of [[Grapeseed]] in {{V}} and {{O}}. The area has no actual name in-game.
+
+[[CATEGORIES]]
+Farms
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

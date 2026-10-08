@@ -1,0 +1,65 @@
+[[INFOBOX]]
+{{infobox business
+|image     = 
+|caption   = 
+|name      = Arena War
+|taglines  = "''Those who are about to drive salute you.''"
+|type      = Vehicle sales
+|founded   = 
+|founder   = 
+|ceo       = 
+|games     = ''[[Grand Theft Auto Online]]''
+|locations = [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Arena War''' is a business featured in ''[[Grand Theft Auto Online]]'' as part of the [[GTA Online: Arena War|Arena War]] update, which allows the player to buy an [[Arena Workshop]], as well as upgradeable and battle-ready vehicles from their website '''arenawar.tv'''.
+
+[[SECTION:3:Arena-ready]]
+There are a total of 15 vehicles already modified for use in the arena, categorized into the same three types as those available from the upgradeable vehicles.
+
+{| class="wikitable sortable" style="text-align: center;" width="100%"
+! width="40px" |Name
+! width="60px" |[[Money|Price]]
+! width="20px" |Image
+|-
+|[[Apocalypse Cerberus]]<br />[[Future Shock Cerberus]]<br />[[Nightmare Cerberus]]
+|$3,870,300<br />$2,910,000 <small>(trade price)</small>
+|
+[[File:ApocalypseCerberus-GTAO-front.png|200px|center]]
+[[File:FutureShockCerberus-GTAO-front.png|200px|center]]
+[[File:NightmareCerberus-GTAO-front.png|200px|center]]
+|-
+|[[Apocalypse Brutus]]<br />[[Future Shock Brutus]]<br />[[Nightmare Brutus]]
+|$2,666,650<br />$2,005,000 <small>(trade price)</small>
+|
+[[File:ApocalypseBrutus-GTAO-front.png|200px|center]]
+[[File:FutureShockBrutus-GTAO-front.png|200px|center]]
+[[File:NightmareBrutus-GTAO-front.png|200px|center]]
+|-
+|[[Apocalypse Scarab]]<br />[[Future Shock Scarab]]<br />[[Nightmare Scarab]]
+|$3,076,290<br />$2,313,000 <small>(trade price)</small>
+|
+[[File:ApocalypseScarab-GTAO-front.png|200px|center]]
+[[File:FutureShockScarab-GTAO-front.png|200px|center]]
+[[File:NightmareScarab-GTAO-front.png|200px|center]]
+|-
+|[[Apocalypse Imperator]]<br />[[Future Shock Imperator]]<br />[[Nightmare Imperator]]
+|$2,284,940<br />$1,718,000 <small>(trade price)</small>
+|
+[[File:ApocalypseImperator-GTAO-front.png|200px|center]]
+[[File:FutureShockImperator-GTAO-front.png|200px|center]]
+[[File:NightmareImperator-GTAO-front.png|200px|center]]
+|-
+|[[Apocalypse ZR380]]<br />[[Future Shock ZR380]]<br />[[Nightmare ZR380]]
+|$2,138,640<br />$1,608,000 <small>(trade price)</small>
+|
+[[File:ApocalypseZR380-GTAO-front.png|200px|center]]
+[[File:FutureShockZR380-GTAO-front.png|200px|center]]
+[[File:NightmareZR380-GTAO-front.png|200px|center]]
+|}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Media in GTA Online
+Websites

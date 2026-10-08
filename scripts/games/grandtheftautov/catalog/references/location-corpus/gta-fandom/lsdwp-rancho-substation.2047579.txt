@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox location
+|type        = substation
+|name        = LSDWP Rancho Substation
+|sign        = 
+|image       = LosSantosDepartmentOfWater&Power-GTAV-Rancho.png
+|caption     = Front of the substation building at street level.
+|aka         = 
+|games       = {{Games|V=y|O=y}}
+|mentioned   = 
+|location    = [[Little Bighorn Avenue]] and [[Jamestown Street]], [[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+|use         = Electrical substation
+|owner       = [[Los Santos Department of Water & Power]]
+|accessible  = No
+|map         = 
+|map_caption = 
+}}
+
+[[LEAD]]
+The '''LSDWP Rancho Substation''' is an electrical substation operated by the [[Los Santos Department of Water & Power]] located in [[Rancho]], [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Power stations

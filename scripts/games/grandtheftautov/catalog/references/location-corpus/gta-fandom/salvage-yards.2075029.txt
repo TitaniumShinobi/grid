@@ -1,0 +1,59 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|image = SalvageYards-GTAO.gif
+|sign = SalvageYard-GTAO-Logo.png
+|style = [[File:Blips-GTAO-SalvageYard.png|25px]] Salvage Yard
+|occupants = 
+[[Jamal Amir]]<br>{{GTAOP}}<br>[[Salvage Yard Staff]]<br>[[Motorcycle Clubs]] <small>(determinant)</small><br>[[Organizations]] <small>(determinant)</small>
+|price = [[Money|$]]1,620,000 - $2,690,000
+|game = O
+}}
+
+[[LEAD]]
+'''Salvage Yards''' are purchasable properties in ''[[Grand Theft Auto Online]]'' added in [[GTA Online: The Chop Shop|The Chop Shop]] update.
+
+[[SECTION:3:Salvage Yard Robberies]]
+{{Main|Salvage Yard Robberies}}
+Salvage Yard Robberies are a series of illegal jobs consisting of two preparations and the main job, which are executed in a similar manner to [[Heists in GTA Online|heists]]. These jobs consist of freemode preparations and the finale. Each robbery targets a specific car. The target vehicle and the type of the robbery changes every [[Events|event]] week.
+
+After the completion of a robbery, the player decides whether they ship the car to Yusuf via the [[Terminal]], salvage the car parts, or keep the vehicle for themselves. The last option is only available if a specific vehicle is designated for this option during the event week.
+
+[[SECTION:3:Locations]]
+{| class="wikitable"
+! width="100%" align="center" colspan="5" | Salvage Yards
+|-
+! width="15%" |Salvage Yard Location
+! width="30%" |Image
+! width="45%" |In-game description
+! width="10%" |Price
+|-
+|[[Paleto Bay]]
+|[[File:SalvageYard-GTAO-PaletoBay.png|220px|center]]
+|''A delightful community, superb surroundings, and one of the slowest police response times in the country. These are the ingredients that small businesses are made of.''
+|$1,620,000
+|-
+|[[Sandy Shores]]
+|[[File:SalvageYard-GTAO-SandyShores.png|220px|center]]
+|''This former holiday resort boasts one of the lowest rates of disposable income in the developed world. So you're guaranteed almost no customers. On the plus side, you're guaranteed almost no customers...''
+|$2,030,000
+|-
+|[[Murrieta Heights]]
+|[[File:SalvageYard-GTAO-MurrietaHeights.png|220px|center]]
+|''Boasting a lively neighborhood and the Tataviam Mountains within fleeing distance, this popular property has seen a high turnaround of owners over recent years. But with care and a high-quality legal team this could be your business's forever home.''
+|$2,420,000
+|-
+|[[Strawberry]]
+|[[File:SalvageYard-GTAO-Strawberry.png|220px|center]]
+|''Very few entrepreneurs are brave enough to set up shop in Strawberry. But before you turn away from this wonderful property, let us assure you, the deafening sound of machinery drowns out the constant gunfire almost entirely.''
+|$2,570,000
+|-
+|[[La Puerta]]
+|[[File:SalvageYard-GTAO-LaPuerta.png|220px|center]]
+|''Looking for a property with unique character and charm? Then you'll be thrilled to know the last owner of this outlet was crushed to death by the car lift. The standard charges for "interesting history" have been waived.''
+|$2,690,000
+|}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Properties in GTA Online
+Scrap yards

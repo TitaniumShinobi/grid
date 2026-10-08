@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|name = Squeeze One Out
+|image = SqueezeOneOut-GTAV-MirrorPark-Logo-Texture-Transparent.png
+|games = {{Games|V=y|O=y}}
+|location = [[Mirror Park Boulevard]], [[Mirror Park]]
+|accessible = No
+|type = Juice Bar
+}}
+
+[[LEAD]]
+'''[[Squeeze One Out]]''' is a smoothie and fruit juice bar chain that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Bar chains
+Businesses in GTA Online
+Businesses in GTA V

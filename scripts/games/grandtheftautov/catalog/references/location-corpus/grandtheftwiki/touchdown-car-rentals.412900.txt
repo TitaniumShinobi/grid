@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Touchdown Car Rentals
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = Car rental
+|owner = 
+|location = [[Greenwich Pkwy]]/[[Exceptionalists Way]] in [[Los Santos International Airport in GTA V|Los Santos International Airport]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Touchdown Car Rentals''' is a car rental company located at the corner of [[Exceptionalists Way]] and [[Greenwich Pkwy]] in [[Los Santos International Airport in GTA V|Los Santos International Airport]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

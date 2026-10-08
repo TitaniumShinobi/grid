@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox structure
+|image       = SignalStreet-GTAVee.jpg
+|caption     = The street looking up north.
+|games       = {{Games|V=y|O=y}}
+|start       = [[Dutch London Street]]
+|end         = [[Voodoo Place]]
+|map         = 
+<gallery>
+SignalStreet-GTAV-Map.png|Map
+SignalStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Signal Street''' is a street in [[Banning]] and [[Elysian Island]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Bristols]]
+*[[Bugstars Warehouse]]
+*[[The Los Santos State Gas Company|Los Santos State Gas Company]]
+*[[Walker Logistics]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

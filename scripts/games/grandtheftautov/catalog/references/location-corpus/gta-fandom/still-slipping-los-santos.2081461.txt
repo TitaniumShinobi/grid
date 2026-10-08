@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Still Slipping Los Santos
+|logo         = StillSlippingLS-GTAO-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{games|O={{EEEV}} {{DLC|mpheist4}}}}
+|mentioned    = 
+|locations    = [[Mirror Park Tavern]], [[Mirror Park]], [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = 
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Continuous mix radio stations|Continuous mix radio station]]
+|genre        = [[:Category:Electronic radio stations|Electronic]]
+|established  = 15 December [[2020]]
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 103.7 FM
+|host         = [[Joy Orbison]]
+|product      = 
+|radio_tracks = 32
+|radio_length = 
+}}
+
+[[LEAD]]
+'''Still Slipping Los Santos''' is a pirate [[Radio Stations in GTA Online|radio station]] in ''[[Grand Theft Auto Online]]'' added in [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update on December 15, [[2020]], that plays experimental electronic music.
+
+[[CATEGORIES]]
+Dynamic mix radio stations
+Electronic radio stations
+Hip hop radio stations
+Media in GTA Online

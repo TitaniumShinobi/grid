@@ -1,0 +1,59 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|type          = fashion
+|name          = Hawaiian Snow
+|image_label   = V
+|image         = HawaiianSnow-GTAV-Logo.png
+|caption       = Logo in {{VO}}.
+|image_label2  = IV
+|image2        = Hawaiian Snow GTAIV Logo.png
+|caption2      = Logo in {{IV}} and {{CW}}.
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Sports apparel
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = [[#Merchandise|Merchandise]]
+|taglines      = "''Powder Specialists''"
+|phone         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|accessible    = No
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Hawaiian Snow''' is a snowboard apparel brand that appears in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+{{Gallery
+|HawaiianSnow-GTAIV-TheTriangle.png|[[Iron Street]], [[The Triangle]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]].
+}}
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+{{Gallery
+|HawaiianSnow-GTAVee-Alta.jpg|[[Hawick Avenue]] and [[Power Street]], [[Alta]], [[Los Santos (HD Universe)|Los Santos]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Fashion brands
+Sports equipment manufacturers

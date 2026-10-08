@@ -1,0 +1,51 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=SanVitusBlvd-GTAV.jpg
+|caption=San Vitus Boulevard intersecting [[Abe Milton Parkway]], and [[Rockford Plaza]] on the right.
+|games={{Games|V=y|O=y}}
+|start=[[Dorset Drive]], [[Rockford Hills]]
+|end=[[Eclipse Boulevard]], [[West Vinewood]]
+|map=<gallery>
+SanVitusBoulevard-GTAV-Map.png|Map
+SanVitusBoulevard-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''San Vitus Boulevard '''is a [[List of Street Names|street]] located in [[Rockford Hills]], [[Burton]] and [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+'''Burton'''
+*[[Burton Station]] <small>(at the Rockford Plaza)</small>
+*[[Rockford Plaza]]
+
+'''West Vinewood'''
+*[[1561 San Vitas Street]]
+*[[The Royale]] <small>(1051 San Vitus Boulevard, corner of Spanish Avenue)</small>
+*[[The Tahitian]] <small>(1053 San Vitus Boulevard)</small>
+*Eclipse Lodge Apartments
+
+[[SECTION:2:Businesses]]
+'''Burton'''
+*[[Bite!]] <small>(Rockford Plaza)</small>
+*Boutique Call
+*[[Caca]] <small>(corner of Hawick Avenue)</small>
+*Chair Apparent Furniture Store
+*[[Vinewood Bar & Grill]] <small>(Rockford Plaza, corner of Hawick Avenue)</small>
+*[[Wenger Institute]] <small>(corners of Carcer Way and Abe Milton Parkway)</small>
+*[[White Widow]] <small>(Rockford Plaza)</small>
+
+'''Rockford Hills'''
+*[[Viendemorte]] <small>(Rockford Plaza, corner of Dorset Drive)</small>
+
+'''West Vinewood'''
+*[[Bullhead]] <small>(corner of Spanish Avenue)</small>
+*Ellen's Liquor <small>(corner of Eclipse Boulevard)</small>
+*[[T&X Accountancy]]
+*[[The Dungeon Crawler]] <small>(back entrance)</small>
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

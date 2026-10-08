@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = shipping
+|name          = Lando-Corp
+|sign          = Lando-Corp-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Port of Los Santos]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+*[[PortViceCity]], [[Vice City (HD Universe)|Vice City]], [[Vice-Dale County]], [[State of Leonida|Leonida]]
+|business_type = Shipping company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Lando-Corp''' is a shipping company in appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', and due to appear in ''[[Grand Theft Auto VI]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Shipping companies

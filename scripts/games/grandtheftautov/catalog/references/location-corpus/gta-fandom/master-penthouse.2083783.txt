@@ -1,0 +1,93 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|image = MasterPenthouse-GTAO.jpg
+|style = 
+|occupants = 
+[[GTA Online Protagonist|''GTA Online'' Protagonist]]<br>
+[[Motorcycle Clubs]] <small>(determinant)</small><br>
+[[Organizations]] <small>(determinant)</small>
+|price     = 
+*Design Your Own - from [[Money|$]]1,500,000 to $6,533,500
+*Crash Pad - [[Money|$]]1,500,000
+*Party Penthouse - [[Money|$]]3,776,500
+*High Roller - [[Money|$]]6,500,000
+|game = O
+}}
+
+[[LEAD]]
+The '''Master Penthouse''' is a purchasable property featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update. It can be purchased on the website for [[The Diamond Casino & Resort|Diamond Casino &amp; Resort]].
+
+[[SECTION:3:'''Rooms''']]
+The Master Penthouse is divided into many rooms, some of which are only accessible if they were included in the purchased package or if they were selected individually when designing the penthouse. The base penthouse includes the entrance hall, a bedroom with a bathroom, a living room, a wardrobe, a door leading to the roof terrace, and an elevator with access to other areas, such as the casino and penthouse garage. Alongside the base rooms, a total of eight additional areas can be purchased. These are:
+
+;Extra Bedroom
+
+{{Quote|We all have that one friend. And with this expansion, they'll have somewhere to crash that isn't your bidet, and with access to their personal wardrobe they won't have to keep borrowing your clothes.}}
+For $200,000, an additional bedroom can be purchased. It is located next to the living area, and includes two beds, a wardrobe, and a bathroom. It allows other players to change their clothes.
+
+;Garage
+
+{{Quote|Home just doesn't seem like home unless you have ten hypercars in a well-guarded basement.}}
+For $900,000, a 10-car garage can be purchased. It can be accessed via the elevators in the penthouse and casino, as well as through the garage door located on the south side of the building, next to the car park.
+
+;Lounge Area
+
+{{Quote|The bespoke additions to the penthouse of your hot, wet dreams begin here. Your Lounge Area features a bar and dining facilities as standard, and enables you to add five other expansions to your suite.}}
+For $400,000, a large lounge area can be added to the penthouse. Other than the main lounge with sofas and drinks, it also includes a small dining room, as well as access to other purchasable rooms. '''The Lounge Area must be purchased if the player wants to include any of the following five rooms.'''
+
+;Office
+
+{{Quote|Sometimes you need to take care of business, but there's no reason you should have to leave the lap of luxury to do it. All of our Offices come with a gun locker and a hidden safe as standard.}}
+For $200,000, an office can be added to the penthouse. It includes a computer, which only gives the player access to the internet, as well as a gun locker and money safe, similarly to the [[Offices|Executive Offices]].
+
+;Media Room
+
+{{Quote|Never again will you have to suppress your gag reflex as you rub shoulders with the general public in the cinema. In addition, you'll be free to enjoy Don't Cross the Line on the big screen with friends.}}
+For $500,000, a media room can be made accessible. Shows and films can be watched, and players can even play [[Don't Cross the Line]].
+
+;Spa
+
+{{Quote|Your private Spa comes with a round-the-clock personal stylist and a hot tub infused with extract of jojoba and a dissociative anesthetic.}}
+For $600,000, the player can purchase a spa, which includes a personal stylist and a hot tub. At this stylist, all options are free; however, contact lenses, face paint, and update-added hairstyles must still be purchased at barber shops.
+
+;Private Dealer
+
+{{Quote|A private table for blackjack and Three Card Poker with the best view and the most deferential croupier in town.}}
+For $1,065,000, the player can opt to include a Private Dealer, where they can play [[Gambling|blackjack and Three Card Poker]]. Collecting all the [[Playing Cards]] in the game will unlock a unique set of playing cards for this table. Different cloth tops for the table can be purchased with Chips in the Casino Store.
+
+This room is not available for players from countries in which gambling is prohibited by law.
+
+;Bar and Party Hub
+
+{{Quote|Why go to a night club, when a night club can come to you? The most exclusive venue in town is the one where you're in charge of the guest list. Two exclusive arcade games come as standard, with a choice of two styles.}}
+For $700,000, players can add a large room to the penthouse, located at the southernmost part. It includes a bar with the same options of drinks as other bars, such as the one inside the casino and the ones inside [[Nightclubs]]. There are two arcade games available, [[Invade and Persuade II]] and [[Street Crimes: Gang Wars Edition]]. There are two different arcade cabinet styles to choose from, with the only difference being aesthetics; the Retro Arcade Cabinet and Ultramodern Arcade Cabinet. They each have their own description when purchasing the penthouse:
+
+{{Quote|The only sin is understatement. if you need a winning formula, or just a winning hairdo, the 80's have got you covered. This is one for the purists.|Retro Arcade Cabinet}}
+{{Quote|You arrived in your driverless car, you're wearing next year's line from Didier Sachs, but the only thing on your mind is beating your high score.|Ultramodern Arcade Cabinet}}
+
+[[SECTION:3:Rooms/Areas]]
+<gallery position="center" hideaddbutton="true" spacing="small">
+MasterPenthouse-GTAO-Bedroom.png|Bedroom.
+MasterPenthouse-GTAO-LivingRoom.png|Living room.
+MasterPenthouse-GTAO-Wardrobe.png|Wardrobe.
+MasterPenthouse-GTAO-EntranceHall.png|Entrance hall.
+MasterPenthouse-GTAO-RoofTerraceAccess.png|Roof terrace access from the entrance hall.
+MasterPenthouse-GTAO-TelephoneRoom.png|The telephone which can be used to phone Tom Connors.
+TheDiamondCasino&Resort-GTAO-RoofTerrace.png|Roof terrace.
+MasterPenthouse-GTAO-ExtraBedroom.png|Extra bedroom.
+MasterPenthouse-GTAO-ExtraBedroomWardrobe.png|The wardrobe inside the extra bedroom.
+MasterPenthouse-GTAO-LoungeArea.png|Lounge area.
+MasterPenthouse-GTAO-DiningRoom.png|Dining room.
+MasterPenthouse-GTAO-Office.png|Office.
+MasterPenthouse-GTAO-MediaRoom.png|Media room.
+MasterPenthouse-GTAO-PrivateDealer.png|Private dealer.
+MasterPenthouse-GTAO-Spa.png|Spa.
+MasterPenthouse-GTAO-HubandPartyArea.png|Hub and party area.
+MasterPenthouse-GTAO-Garage.png|Penthouse Garage.
+</gallery>
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online
+Safehouses
+Safehouses in GTA Online

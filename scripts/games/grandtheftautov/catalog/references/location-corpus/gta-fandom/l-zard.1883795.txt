@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = Lézard
+|image         = Lézard-GTAV-Logo.png
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = [[#Merchandise|Merchandise]]
+|taglines      = 
+|status        = active
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|opentimes     = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Lézard''' is a [[France|French]] fashion label that appears in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+*The [[Del Perro]] store in [[Los Santos (HD Universe)|Los Santos]] is a rendition of a former {{URL|https://www.hardtailforever.com/|Hard Tail}} outlet located at 1322 {{WP|Third Street Promenade}} in {{WP|Santa Monica, California}}.{{Ref|name = delperrolocation|type = googlemaps|url  = https://maps.app.goo.gl/amAgLJbKCDmYqsLD9|ref  = 1322 3rd Street Promenade, May 2008}}
+
+{{clr}}
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" bordercolor="#166f13" widths="270px">
+Lezard-GTAVe-ProsperityStreetPromenade.png|[[Prosperity Street Promenade]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores
+Fashion brands

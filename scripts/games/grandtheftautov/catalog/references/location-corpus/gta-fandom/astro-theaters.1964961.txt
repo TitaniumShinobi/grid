@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = theater
+|name          = Astro Theaters
+|sign          = 
+|image         = AstroTheaters-GTAVe-DayView.png
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations = [[Prosperity Street Promenade]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Astro Theaters''' is a multiplex movie theater chain introduced in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. Its only known location is at the intersection of the [[Prosperity Street Promenade]] and [[Red Desert Avenue]] in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Cinemas
+Theatres

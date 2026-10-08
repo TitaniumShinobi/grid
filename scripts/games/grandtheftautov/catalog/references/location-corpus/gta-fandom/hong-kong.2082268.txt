@@ -1,0 +1,13 @@
+[[INFOBOX]]
+{{Infobox country
+|Name Change              = SPECIAL ADMINISTRATIVE REGION
+|image_flag               = Flag of Hong Kong.svg
+}}
+
+[[LEAD]]
+'''Hong Kong''' (Chinese: '''香港''') is an autonomous territory south of mainland [[China]] in East Asia. Hong Kong was a [[United Kingdom|British]] colony between 1841 and 1997, when sovereignty was transferred back to China, though the region retains autonomy from the Chinese government under the one country, two systems principle.
+
+There are a few reference to Hong Kong in {{S}}.
+
+[[CATEGORIES]]
+Asian countries

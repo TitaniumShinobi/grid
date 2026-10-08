@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = firestation
+|image          = SandyShoresFireStation-GTAV.png
+|caption        = The fire station as seen from Alhambra Drive.
+|structure_type = Fire Station
+|games          = {{games|V=y|O=y}}
+|location       = [[Alhambra Drive]], [[Sandy Shores]]
+}}
+
+[[LEAD]]
+The '''Sandy Shores Fire Station''' is a fire station operated by the [[Los Santos Fire Department|Los Santos County Fire Department]] located in the small desert town of [[Sandy Shores]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Fire stations

@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = ProLaps
+|image_label   = V
+|image         = ProLaps-GTAO-Logo.png
+|caption       = '''ProLaps''' logo in {{VO}}.
+|image_label2  = IV
+|image2        = ProLaps-GTAIV-Logo.png
+|caption2      = '''ProLaps''' logo in {{IV}}.
+|type          = clothingstore
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations     = [[The Triangle]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]]
+|taglines      = "Train Hard"
+|status        = active
+|lcn           = {{BAWSAQ/Slider}} '''PRO'''
+|lifeinvader   = [[Lifeinvader/ProLaps|ProLaps]][[File:Lifeinvader-GTAV-ProLaps.png|40px|right|link=Lifeinvader/ProLaps]]
+}}
+
+[[LEAD]]
+'''ProLaps''' is a sportswear and sport equipment manufacturer appearing in {{IV}}, {{EFLC}}, {{CW}}, {{V}} and {{O}}.
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+ProLaps merchandise is first mentioned in ''Grand Theft Auto IV'' via advertisements. In ''[[The Ballad of Gay Tony]]'', ProLaps is shown with an expanded product line, including fighting gloves (as seen in "[[Momma's Boy]]"), [[Parachute|parachutes]], [[Golf Club|golf clubs]] and [[Caddy|golf carts]]. [[Luis Fernando Lopez|Luis]]' [[L.C. Cage Fighters|fight club]] tee is also implied to be produced by ProLaps.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+<gallery position="center" spacing="small" widths="270px">
+ProLaps-GTAIV-TheTriangleOutlet.png|A '''ProLaps''' outlet (among other advertising) in [[The Triangle]], [[Algonquin]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+ProLaps-GTACW-TheTriangle.png|A '''ProLaps''' outlet (among other advertising) in The Triangle, Algonquin.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+<gallery position="center" spacing="small">
+ProLaps-GTAIV-Logo.png|'''ProLaps''' logo.
+Caddy-TBOGT-front.jpg|'''ProLaps''' Caddy in ''The Ballad of Gay Tony''. 
+ParachutePickup-TBoGT.png|'''ProLaps''' Parachute in ''The Ballad of Gay Tony''.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains

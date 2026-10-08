@@ -5,6 +5,8 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Grid.Core\Grid.Core.csproj" />
+    <ProjectReference Include="..\..\src\Grid.GtaV.Knowledge\Grid.GtaV.Knowledge.csproj" />
+    <ProjectReference Include="..\..\src\Grid.GtaV.Enrichment.Knowledge\Grid.GtaV.Enrichment.Knowledge.csproj" />
+    <Compile Include="..\..\src\Grid.App\Controls\SelectorScaffoldContract.cs" Link="IndependentOracle\SelectorScaffoldContract.cs" />
   </ItemGroup>
 </Project>
-

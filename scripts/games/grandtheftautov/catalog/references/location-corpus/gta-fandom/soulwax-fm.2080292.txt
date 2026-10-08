@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Soulwax FM
+|logo         = SoulwaxFM-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{Games|V=y|O=y}}
+|mentioned    = 
+|locations    = 
+|taglines     = ''A continuous mix of dance and electronica.''
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Continuous mix radio stations|Continuous mix radio station]]
+|genre        = [[:Category:House radio stations|House]]
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 
+|host         = [[Soulwax]]
+|product      = 
+|radio_tracks = 18
+|radio_length = 
+}}
+
+[[LEAD]]
+'''Soulwax FM''' is a [[Radio Stations in GTA V|radio station]] featured in {{V}} and {{O}} that plays {{WP|techno}} and {{WP|house music}}.
+
+[[CATEGORIES]]
+Continuous mix radio stations
+Dance radio stations
+Electronic radio stations
+House radio stations
+Media in GTA Online
+Media in GTA V

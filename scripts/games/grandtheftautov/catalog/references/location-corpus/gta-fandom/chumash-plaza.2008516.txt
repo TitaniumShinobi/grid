@@ -1,0 +1,56 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = shoppingcenter
+|name           = Chumash Plaza
+|sign           = ChumashPlaza-GTAV-Logo.png
+|image          = ChumashPlaza-GTAV.png
+|caption        = Overview of the plaza.
+|image2         = 
+|caption2       = 
+|aka            = 
+|games          = {{games|V=y|O=y}}
+|location       = [[U.S. Route 1|Great Ocean Highway]], [[Chumash]], [[Los Santos County]]
+|opened         = 
+|condition      = 
+|taglines       = 
+|status         = active
+|use            = 
+|owner          = 
+|operator       = 
+|occupants      = 
+|businesses     = [[#Businesses|Businesses]]
+|employees      = 
+|structure_type = 
+|architecture   = [[:Category:Spanish Revival buildings|Spanish Revival]]
+|length         = 
+|height         = 
+|area           = 
+|size           = 
+|floors         = 
+|accessible     = Yes <small>([[Ammu-Nation (HD Universe)|Ammu-Nation]] and [[Sub Urban (HD Universe)|Suburban]] only}</small>
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Chumash Plaza''' is a shopping plaza in {{V}} and {{O}}, located along [[Route 1]] in [[Chumash]], [[Los Santos County]].
+
+[[SECTION:2:Businesses]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Blaine County Savings Bank]]
+*[[Davis Hardware]]
+*[[GoPostal]]
+*[[Ink Inc.]]
+*[[O'Deas Pharmacy]]
+*[[Nelsons General Store]]
+*[[Sub Urban (HD Universe)|Suburban]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Shopping malls
+Spanish Revival buildings

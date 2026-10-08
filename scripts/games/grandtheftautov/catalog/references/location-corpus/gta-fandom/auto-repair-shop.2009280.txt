@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Unnamed Auto Repair Shop
+|image = UnnamedAutoRepairShop-GTAVe-View1.png
+|caption = 
+|games = {{Games|V=y|O=y}}
+|location = [[Sandy Shores]], [[Blaine County]]
+|type  = garage
+|status = active
+|condition = Disrepair
+|occupants = 
+|floors = 1
+|opentimes =
+|accessible = No
+|map = BusinessBattles-GTAOe-NoNightclubDropOff-SandyShoresMap.png
+|map_caption = 
+}}
+
+[[LEAD]]
+The '''Unnamed Auto Repair Shop''' is a building in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

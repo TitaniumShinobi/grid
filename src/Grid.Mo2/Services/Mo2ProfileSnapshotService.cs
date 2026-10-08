@@ -23,6 +23,8 @@ public sealed class Mo2ProfileSnapshotService : IMo2ProfileSnapshotService
     ];
     private static readonly SourceSpec InstanceConfiguration =
         new("ModOrganizer.ini", true, Mo2TextDecodingPolicy.IniBomUtf8SystemFallback);
+    private static readonly SourceSpec CreationPluginManifest =
+        new("Skyrim.ccc", false, Mo2TextDecodingPolicy.StrictUtf8);
 
     private readonly IMo2ReadOnlyFileSystem fileSystem;
     private readonly IMo2TextDecoder decoder;
@@ -135,6 +137,29 @@ public sealed class Mo2ProfileSnapshotService : IMo2ProfileSnapshotService
             observedAt,
             budget,
             cancellationToken).ConfigureAwait(false);
+        Mo2ProfileSourceSnapshot? creationManifestSource = null;
+        IReadOnlySet<string>? implicitlyActivePlugins = null;
+        if (!string.IsNullOrWhiteSpace(validation.GameDirectory))
+        {
+            creationManifestSource = await ReadSourceAsync(
+                validation.GameDirectory,
+                CreationPluginManifest,
+                observedAt,
+                budget,
+                cancellationToken).ConfigureAwait(false);
+            if (creationManifestSource.RawDocument is not null)
+            {
+                var manifest = Mo2ProfileParsers.ParseLoadOrder(creationManifestSource.RawDocument);
+                creationManifestSource = creationManifestSource with
+                {
+                    ParseStatus = PreserveReadFailure(creationManifestSource, manifest.Status),
+                    Warnings = creationManifestSource.Warnings.AddRange(manifest.Warnings),
+                };
+                implicitlyActivePlugins = manifest.Entries
+                    .Select(entry => entry.Name)
+                    .ToHashSet(StringComparer.OrdinalIgnoreCase);
+            }
+        }
         if (instanceSource.RawDocument is not null &&
             instanceSource.ParseStatus == ProfileSourceParseStatus.NotParsed)
         {
@@ -181,7 +206,14 @@ public sealed class Mo2ProfileSnapshotService : IMo2ProfileSnapshotService
             await readGate.WaitAsync(cancellationToken).ConfigureAwait(false);
             try
             {
-                return await ObserveProfileAsync(reference, directory, observedAt, budget, cancellationToken)
+                return await ObserveProfileAsync(
+                    reference,
+                    directory,
+                    observedAt,
+                    budget,
+                    creationManifestSource,
+                    implicitlyActivePlugins,
+                    cancellationToken)
                     .ConfigureAwait(false);
             }
             finally
@@ -265,6 +297,8 @@ public sealed class Mo2ProfileSnapshotService : IMo2ProfileSnapshotService
         string profileDirectory,
         DateTimeOffset observedAt,
         RefreshBudget budget,
+        Mo2ProfileSourceSnapshot? creationManifestSource,
+        IReadOnlySet<string>? implicitlyActivePlugins,
         CancellationToken cancellationToken)
     {
         var name = Path.GetFileName(Path.TrimEndingDirectorySeparator(profileDirectory));
@@ -276,6 +310,11 @@ public sealed class Mo2ProfileSnapshotService : IMo2ProfileSnapshotService
         }
 
         var sourceArray = sources.ToImmutable();
+        if (creationManifestSource is not null &&
+            creationManifestSource.Availability != ProfileSourceAvailability.OptionalAbsent)
+        {
+            sourceArray = sourceArray.Add(creationManifestSource);
+        }
         var modSource = sourceArray.Single(source => source.Name == "modlist.txt");
         var pluginSource = sourceArray.Single(source => source.Name == "plugins.txt");
         var loadOrderSource = sourceArray.Single(source => source.Name == "loadorder.txt");
@@ -305,7 +344,11 @@ public sealed class Mo2ProfileSnapshotService : IMo2ProfileSnapshotService
         }).ToImmutableArray();
 
         var mods = Mo2ProfileParsers.ProjectMods(profileId, modParse);
-        var (plugins, joinWarnings) = Mo2ProfileParsers.ProjectPlugins(profileId, pluginParse, loadOrderParse);
+        var (plugins, joinWarnings) = Mo2ProfileParsers.ProjectPlugins(
+            profileId,
+            pluginParse,
+            loadOrderParse,
+            implicitlyActivePlugins);
         if (!joinWarnings.IsEmpty)
         {
             var index = sourceArray

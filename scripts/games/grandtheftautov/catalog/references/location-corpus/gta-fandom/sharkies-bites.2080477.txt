@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Sharkies Bites
+|image     = SharkiesBites-GTAV-Logo.png
+|type      = Fast-food restaurant chain
+|games     = {{Games|V=y|O=y}}
+|locations = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Restaurant
+|taglines =
+*''It bites back...''
+*''You're gonna need a bigger bite!''
+}}
+
+[[LEAD]]
+'''Sharkies Bites''' is a restaurant that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurant chains

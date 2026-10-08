@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox location
+|image = ElysianIsland-GTAV.png
+|caption = Overview of Elysian Island.
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|location = [[Port of Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = <gallery>
+ElysianIsland-IngameGPS-GTAV-Map.png|Elysian Island
+ElysianIsland-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+|pscanner       = PoliceScanner-GTAV-Neighborhood-ElysianIsland.ogg
+}}
+
+[[LEAD]]
+'''Elysian Island''' is a [[:Category:Neighborhoods|neighborhood]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in the [[Port of Los Santos]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+*[[Bugstars Warehouse]]
+*[[Los Santos Marine]]
+*[[Los Santos Naval Port]]
+*[[Pacific Allied Shipyard]]
+*[[Pier 400]]
+*[[Los Santos Port Authority Building]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Abattoir Avenue]]
+*[[Chum Street]]
+*[[Chupacabra St]]reet
+*[[Plaice Place]]
+*[[Signal Street]]
+*[[Voodoo Place]]
+
+[[SECTION:2:Businesses]]
+*[[Bristols]]
+*[[Bugstars]]
+*[[D-Rail]]
+*[[Jetsam]]
+*[[Post OP]]
+*[[Walker]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Seaports
+Zones

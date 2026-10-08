@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = fashion
+|name          = 
+|sign          = 
+|image         = Shodi-GTA4-logo.png
+|caption       = Logo in {{IV}}.
+|aka           = 
+|games         = {{Games|SA=y|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Leftwood]], [[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]] {{UN|unseen}}
+([[#Locations|See more]])
+|business_type = 
+|taglines      = 
+|status        = active
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Shodi''' is a clothing brand that appears in {{SA}} and the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" bordercolor="#b94c52" widths="270px">
+Shodi-GTAIV-Algonquin.jpg|[[Quartz Street]], [[Lancaster]], [[Algonquin]]. <small>([https://gta.fandom.com/wiki/File:ShodiStore-GTAIV-Algonquin.jpg Close-up view])</small>
+Shodi-GTAIV-Alderney.jpg|[[Manzano Road]] and [[Franklin Street (Alderney)|Franklin Street]], [[Leftwood]], [[State of Alderney|Alderney]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" bordercolor="#b94c52" widths="270px">
+Shodi-GTACW-Algonquin.png|[[Quartz Street]], [[Lancaster]], [[Algonquin]].
+Shodi-GTACW-EastHolland.png|[[Denver Avenue]], [[East Holland]], Algonquin.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Fashion brands

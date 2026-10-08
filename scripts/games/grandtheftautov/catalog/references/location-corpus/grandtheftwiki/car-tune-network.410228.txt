@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Car Tune Network
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = Auto repair shop
+|owner = 
+|location = [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Car Tune Network''' is a auto repair shop located on [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company [[Phone Numbers|phone number]] is ''1-999-CARTUNE'', which is answered by a man asking for people to stop prank calling him.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Garages

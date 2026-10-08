@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = farm
+|name           = Ludendorff Ranch
+|image          = LudendorffRanch-GTAOe.png
+|caption        = View of the exterior.
+|games          = {{Games|V=y|O={{EEEV}}{{DLC|mp2024_01}}}}
+|location       = [[Ludendorff]], [[State of North Yankton|North Yankton]]
+|accessible     = No
+|map            = LudendorffRanch-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Ludendorff Ranch''' is an unnamed ranch that appears in {{V}} and {{O}}, located in [[Ludendorff]], [[State of North Yankton|North Yankton]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Ludendorff
+Buildings in GTA V in Ludendorff
+Farms

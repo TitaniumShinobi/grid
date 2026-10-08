@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = militarybase
+|name           = Area 69
+|games          = 
+|use            = United States Air Force installation
+|mentioned      = {{Games|O=y}}
+|location       = [[Bone County (HD Universe)|Bone County]], [[United States of America|Western U.S.]]
+}}
+
+[[LEAD]]
+'''Area 69''' is an unseen highly classified United States Air Force installation within [[Bone County (HD Universe)|Bone County]], mentioned in the [[GTA Online: Agents of Sabotage|Agents of Sabotage]] update for ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online: Agents of Sabotage
+Military airbases
+Unseen locations

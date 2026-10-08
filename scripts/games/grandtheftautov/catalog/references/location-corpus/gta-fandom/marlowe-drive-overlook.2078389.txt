@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|type           = overlook
+|name           = Marlowe Drive Overlook
+|sign           = 
+|image          = MarloweDriveOverlook-GTAVee-CliffView.png
+|caption        = Aerial view of the overlook in {{V}}.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Marlowe Drive]], [[Vinewood Hills]], [[Los Santos County]]
+|condition      = Replaced by [[The Vinewood Residence]] {{Small|(''GTA Online'')}}
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+The '''Marlowe Drive Overlook''' was a scenic overlook located in [[Vinewood Hills]], [[Los Santos County]], appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Former locations in GTA Online
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Scenic overlooks

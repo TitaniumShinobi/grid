@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = policestation
+|image          =[[Image:MissionRowPoliceStation-GTAV.png|thumb|300px]]
+|caption        =View of the exterior.
+|name           = Mission Row Police Station
+|use            =Police station
+|location       =[[Mission Row]], [[Los Santos (HD Universe)|Los Santos]]
+|games          ={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''Mission Row Police Station''' is a branch of the [[Los Santos Police Department (HD Universe)|Los Santos Police Department]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:3:As a restricted building]]
+Along with attacking an officer, inside or outside the station, going behind the desk in the main lobby or climbing the stairs in the back will instantly grant the player a [[Wanted Level in GTA V|3 star wanted level]]. If any NPCs are attacked in the lobby, a 2 star wanted level will be attained.
+
+Flying over the station in Story Mode will have the player receive a warning that they are flying over a restricted airspace and will be shot down. Although nothing is used to shoot down the player if they linger, a 2-star wanted level will be attained after the warning is given, but will escalate to 3 if the player ignores the warning and either lingers around the station's airspace and/or lands on the roof.
+
+[[SECTION:4:The Chop Shop]]
+*[[The Gangbanger Robbery]]
+**[[Scope Out: Mission Row Police Station]]
+**[[Task: Weapon Stash]]
+**[[The Gangbanger Robbery/Finale|The Gangbanger Robbery]]
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Police stations
+Restricted buildings

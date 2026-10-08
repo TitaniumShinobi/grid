@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Gloria's Fashion Boutique
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = Clothing store
+|owner = [[Gloria]]
+|location = [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Gloria's Fashion Boutique''' is a clothing store located on [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company [[Phone Numbers|phone number]] is ''555-0117'', which results in a recorded message playing asking the caller to call again later.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Clothing Stores

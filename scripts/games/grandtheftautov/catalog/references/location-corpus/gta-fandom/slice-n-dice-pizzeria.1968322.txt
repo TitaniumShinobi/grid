@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Slice 'N' Dice Pizzeria
+|image = Slice'n'DicePizzeria-GTAV.jpg
+|games = ''[[Grand Theft Auto V]]<br/>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Slice 'N' Dice Pizzeria''' is a pizzeria located on the [[Vespucci Beach Sidewalk]] in [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Fast-food restaurants
+Pizzerias

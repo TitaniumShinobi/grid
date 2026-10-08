@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Cheval
+|sign          = Cheval-Logo-Badge-GTAO.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Vehicle manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''[[Cheval]]''' is an [[United States of America|American]] automotive manufacturer that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle manufacturers

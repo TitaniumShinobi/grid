@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=NorthArcherAvenue-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Spanish Avenue]]
+|end=[[Eclipse Boulevard]]
+|map=<gallery>
+NorthArcherAvenue-GTAV-Map.png|Map
+NorthArcherAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+}}
+
+[[LEAD]]
+'''North Archer Avenue''' is a [[List of Street Names|street]] in [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Elgin House]]
+
+[[SECTION:2:Business]]
+*[[Eclipse Lounge]] <small>(corner of Eclipse Boulevard)</small>
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

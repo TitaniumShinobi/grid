@@ -1,0 +1,107 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=StrawberryAvenue-GTAV-Downtown.png
+|caption=Strawberry Avenue running through [[Downtown Los Santos (HD Universe)|Downtown Los Santos]].
+|games={{Games|V=y|O=y}}
+|start=[[Davis Avenue]] and [[Grove Street (HD Universe)|Grove Street]], [[Chamberlain Hills]]
+|end=[[Los Santos Freeway (HD Universe)|Los Santos Freeway]], [[Textile City]]
+|map=StrawberryAvenue-GTA5-Map.png
+|mapcaption=Map location.
+}}
+
+[[LEAD]]
+'''Strawberry Avenue''' is a [[List of Street Names|street]] in [[South Los Santos]] and [[Downtown Los Santos (HD Universe)|Downtown Los Santos]] that appears in ''[[Grand Theft Auto V]]''.
+
+[[SECTION:2:Places of Interest]]
+'''Mission Row'''
+*[[Los Santos Theatre]] <small>(back entrance)</small>
+*[[The Vault]] <small>(corners of Adam's Apple Boulevard and Vespucci Boulevard)</small>
+
+'''Pillbox Hill'''
+*[[The Celtica Hotel]] <small>(corner of San Andreas Avenue)</small>
+*[[Integrity Tower]] <small>(above Integrity Way tunnel)</small>
+*[[Legion Square]] <small>(corners of Vespucci Boulevard and San Andreas Avenue)</small>
+*[[Pillbox Hill Medical Center]]
+
+'''Textile City'''
+*[[Alesandro Hotel]]
+*[[Dashound Bus Center]] <small>(corner of Integrity Way)</small>
+
+'''Strawberry'''
+*[[Chamberlain Mall]] <small>(corner of Innocence Boulevard)</small>
+*[[Children of the Mountain Fellowship]] <small>(corner of Forum Drive)</small>
+*[[Los Santos County Coroner Office]] <small>(corners of Innocence Boulevard and Capital Boulevard)</small>
+*[[Strawberry Plaza]] <small>(corner of Macdonald Street)</small>
+*[[Strawberry Station]] <small>(under [[Olympic Freeway]])</small>
+*[[The Tahitian]] <small>(corner of Carson Avenue)</small>
+
+[[SECTION:2:Businesses]]
+'''Davis'''
+*[[Lucky Plucker]]
+*[[Ring of Fire Chili House|Ring of Fire]] <small>(corner of Innocence Boulevard)</small>
+
+'''Mission Row'''
+*[[Cool Beans]]
+*[[Elkridge Hotel]] <small>(corner of Atlee Street)</small>
+*[[Limey's Juice and Smoothies]] <small>(corner of Vespucci Boulevard)</small>
+*[[Noodle Exchange]] <small>(corner of Atlee Street)</small>
+*[[Robert Dazzler International Jewelry Exchange]] <small>(corner of San Andreas Avenue)</small>
+
+'''Pillbox Hill'''
+*[[Crucial Fix]] <small>(at The Celtica Hotel)</small>
+*Instant Shoe Repair <small>(corner of Vespucci Boulevard)</small>
+*Pescado Azul
+*[[Schlongberg Sachs]] Building <small>(corner of Adam's Apple Boulevard)</small>
+*[[Shenanigan's Bar]]
+
+'''Strawberry'''
+{{Columns
+|
+*[[Aguila Burrito]] <small>(at Chamberlain Mall)</small>
+*Alfonzo's Appliances
+*[[Car Tune Network]]
+*[[Crazee Fashion]]
+*[[Dollar Pills]] <small>(at Strawberry Plaza)</small>
+*[[Edzell Foundation Youth Center]] <small>(at Strawberry Plaza)</small>
+*[[Family Dental]]
+*[[Gabriela's Market]] <small>(corner of Forum Drive)</small>
+*[[Gloria's Fashion Boutique]]
+*[[Hair and Nail Studio]]
+*[[Leroy's Electricals]]
+*Liquor Beer & Wine
+*Mattress Sofas & Furniture
+|
+*[[Mosley Auto Service]] <small>(corners of Carson Avenue and Davis Avenue)</small>
+*[[New Do Barber Shop]]
+*[[Pawn & Jewelry]]
+*Suds Cleaners <small>(corner of Innocence Boulevard)</small>
+*[[Suds Law Laundromat]] <small>(at Strawberry Plaza)</small>
+*[[The Taco Farmer]] <small>(corner of Carson Avenue)</small>
+*[[Timmy's Flowers]] <small>(corner of Macdonald Street)</small>
+*[[Totally Rental]] <small>(at Strawberry Plaza)</small>
+*Wigs
+*[[Xero]] [[Gas Station]] <small>(corner of Capital Boulevard)</small>
+}}
+
+'''Textile City'''
+{{Columns
+|
+*Finger Rings Jewelers
+*Foxy Phones
+*[[Foxy's Theater]]
+*[[G&B]]
+*Hair & Make-up <small>(corner of San Andreas Avenue)</small>
+*[[J's Bonds]]
+*[[Krapea]]
+|
+*Medical Equipment
+*Nail Bar & Spa <small>(at Alesandro Hotel)</small>
+*Pharmacy <small>(at Alesandro Hotel)</small>
+*Phones and Things
+*The Ace Hole
+*Vinewood Records <small>(corner of Integrity Way)</small>
+}}
+
+[[CATEGORIES]]
+Structures in GTA V in Los Santos
+Thoroughfares

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox country
+|name            = Colombia
+|image_flag      = Flag of Colombia.svg
+|currency_ingame = Colombian peso
+}}
+
+[[LEAD]]
+The '''Republic of Colombia''', simply known as '''Colombia''', is a country located in South America. It is bordered by [[Panama]] to the northwest, [[Venezuela]] and [[Brazil]] to the east, and [[Ecuador]] and [[Peru]] to the south. Its capital and largest city is Bogotá.
+
+Colombia has no official ratings system, so all ''[[Grand Theft Auto]]'' games released in the country are unedited and have no age ratings.
+
+The country is occasionally mentioned in the series. The [[Caribbean]] coast of Colombia makes an appearance in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+South American countries

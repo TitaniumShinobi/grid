@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox_location
+|name  = Puerto Del Sol
+|image = PuertoDelSol-GTAV.png
+|caption = 
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|location = [[Vespucci]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-PuertoDelSol.ogg
+|map           = <gallery>
+PuertoDelSol-GTAV-Map.png|Puerto Del Sol
+PuertoDelSol-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (red). The neighborhood has no in-game GPS boundaries and its name is not displayed on the HUD.
+}}
+
+[[LEAD]]
+'''Puerto Del Sol''' is an affluent oceanside neighborhood appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Businesses]]
+*[[Higgins Helitours]]
+*[[KOI Retreat & Spa]]
+*[[Puerto Del Sol Yacht Club]]
+*[[Vista Del Mar Apartments]]
+
+[[SECTION:2:Places of Interest]]
+*[[0115 Bay City Avenue]]
+*[[Puerto Del Sol Station]]
+*[[Puerto Del Sol Marina]]
+*[[Vespucci Helipad]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Shank Street]]
+*[[Tackle Street]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Seaports
+Zones

@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y/n
+|safehouse      = y/n
+|type           = 
+|name           = BJ's Market
+|sign           = BJsMarket-GTAV-Sign.png
+|image          = BJsMarket-GTAVee.jpg
+|caption        = '''BJ's Market''' in {{VO}}.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = {{Location|v-eastvinewood|3}}
+|accessible     = No
+|file_name      = <code>hw1_12_build01</code>
+|interior       = 
+|coords         = 890.805,-155.5878,80.64851
+|map            = BJsMarket-GTAV-Map.png
+|map_caption    = Location on the map (red) in {{VO}}.
+}}
+
+[[LEAD]]
+'''BJ's Market''' is a grocery store in {{VO}}, located in {{Location|v-eastvinewood}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Grocery stores

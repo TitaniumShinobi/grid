@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox organization
+|Name Change  = 
+|style        = 
+|type         = baseball
+|name         = Boars Baseball Club
+|logo         = BoarsBaseballClub-GTAV-Logo.png
+|image        = 
+|caption      = 
+|aka          = Los Santos Boars
+|games        = {{Games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|founded      = [[1952]]
+|motto        = 
+|teamtype     = Professional
+|league       = [[Western States Baseball League]]
+|stadium      = 
+|teammembers  = 
+*[[Pollock]] {{nd}} #?
+|supporters   = [[Ballas (HD Universe)|Ballas]]
+|rivals       = [[Feud Baseball Team]]
+|teamcolors   = Purple & yellow
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+The '''Boars Baseball Club''' is a baseball club supported by the [[Ballas (HD Universe)|Ballas]] in [[Los Santos (HD Universe)|Los Santos]], featured in {{V}}.
+
+[[CATEGORIES]]
+Baseball teams
+Organizations in GTA Online
+Organizations in GTA V

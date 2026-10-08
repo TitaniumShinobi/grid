@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = MANUFACTURER
+|name        = JoBuilt
+|image       = JoBuilt-GTAO-Logo.png
+|type        = Automotive
+|games       = ''[[Grand Theft Auto IV]]<br>[[The Lost and Damned]]<br>[[The Ballad of Gay Tony]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]<br>[[Grand Theft Auto VI]]''
+|reference   = {{WP|Peterbilt}}
+}}
+
+[[LEAD]]
+'''JoBuilt''' (formerly stylized as '''Jobuilt''') is an [[United States of America|American]] heavy-duty truck and airplane manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

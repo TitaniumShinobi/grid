@@ -1,6 +1,8 @@
 using System.Collections.Immutable;
+using Grid.App.Services;
 using Grid.Core.Application;
 using Grid.Core.Models;
+using Grid.Core.Services;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
@@ -9,227 +11,268 @@ namespace Grid.App.Views;
 public sealed partial class ToolConfigurationDialog : ContentDialog
 {
     private const double StackThreshold = 720;
-    private readonly Action _catalogChanged;
-    private readonly LaunchTargetSelectionState _state;
-    private ResolvedLaunchTarget? _selectedTarget;
-    private bool _suppressSelection;
+    private readonly UserToolManagerState state;
+    private readonly UserToolScope currentContext;
+    private readonly IExecutableFilePicker picker;
+    private readonly IInstalledToolIdentityService identityService;
+    private readonly Action configurationsChanged;
+    private readonly List<ToolDraft> drafts = [];
+    private readonly Dictionary<InstalledToolKnowledgeId, InstalledToolKnowledge> pendingKnowledge = [];
+    private readonly HashSet<UserToolConfigurationId> managedConfigurationIds = [];
+    private ToolDraft? selected;
+    private bool binding;
 
-    public ToolConfigurationDialog(LaunchTargetSelectionState state, Action catalogChanged)
+    public ToolConfigurationDialog(UserToolManagerState state, UserToolScope currentContext, IExecutableFilePicker picker, IInstalledToolIdentityService identityService, Action configurationsChanged)
     {
-        _state = state ?? throw new ArgumentNullException(nameof(state));
-        _catalogChanged = catalogChanged ?? throw new ArgumentNullException(nameof(catalogChanged));
+        this.state = state ?? throw new ArgumentNullException(nameof(state));
+        this.currentContext = currentContext ?? throw new ArgumentNullException(nameof(currentContext));
+        this.picker = picker ?? throw new ArgumentNullException(nameof(picker));
+        this.identityService = identityService ?? throw new ArgumentNullException(nameof(identityService));
+        this.configurationsChanged = configurationsChanged ?? throw new ArgumentNullException(nameof(configurationsChanged));
         InitializeComponent();
-
-        ExecutableAnchorSelector.ItemsSource = Enum.GetValues<ConfiguredPathAnchor>();
-        WorkingAnchorSelector.ItemsSource = Enum.GetValues<ConfiguredPathAnchor>();
-        EnvironmentPolicySelector.ItemsSource = Enum.GetValues<EnvironmentPolicy>();
-        RefreshTargets(_state.SelectedTargetId);
+        ScopeSelector.Items.Add("This game installation");
+        if (currentContext.ProfileId is not null) ScopeSelector.Items.Add("Current profile");
+        ScopeText.Text = $"Exact installation: {currentContext.GameId.Value} · {currentContext.InstallationId.Value}. New tools default to this installation and remain visible when its active profile changes.";
+        ResetFromState();
     }
 
-    private void RefreshTargets(LaunchTargetId? selectedTargetId)
+    private void ResetFromState(UserToolConfigurationId? preferred = null)
     {
-        var targets = _state.GetTargets();
-        _suppressSelection = true;
-        try
-        {
-            TargetList.ItemsSource = targets;
-            TargetList.SelectedItem = selectedTargetId is LaunchTargetId targetId
-                ? targets.FirstOrDefault(target => target.Definition.Id == targetId)
-                : targets.FirstOrDefault();
-        }
-        finally
-        {
-            _suppressSelection = false;
-        }
-
-        BindTarget(TargetList.SelectedItem as ResolvedLaunchTarget);
+        drafts.Clear();
+        managedConfigurationIds.Clear();
+        var visible = state.ForContext(currentContext, includeDisabled: true);
+        drafts.AddRange(visible.Select(value => new ToolDraft(value, state.FindKnowledge(value.KnowledgeId))));
+        foreach (var configuration in visible) managedConfigurationIds.Add(configuration.Id);
+        ToolList.ItemsSource = null;
+        ToolList.ItemsSource = drafts;
+        ToolList.SelectedItem = preferred is UserToolConfigurationId id ? drafts.FirstOrDefault(value => value.Id == id) : drafts.FirstOrDefault();
+        Bind(ToolList.SelectedItem as ToolDraft);
     }
 
-    private void OnTargetSelectionChanged(object sender, SelectionChangedEventArgs e)
+    private void OnToolSelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        if (_suppressSelection)
-        {
-            return;
-        }
-
-        BindTarget(TargetList.SelectedItem as ResolvedLaunchTarget);
-    }
-
-    private void BindTarget(ResolvedLaunchTarget? target)
-    {
-        _selectedTarget = target;
-        OperationStatus.IsOpen = false;
-        if (target is null)
-        {
-            TargetNameText.Text = "No represented targets";
-            TargetMetadataText.Text = "The selected game exposes no adapter-declared tool catalog.";
-            SetEditorEnabled(false);
-            ApplyButton.IsEnabled = false;
-            return;
-        }
-
-        TargetNameText.Text = target.Definition.Name;
-        TargetMetadataText.Text = target.Tool is null
-            ? $"{target.CategoryLabel} · adapters: {FormatAdapters(target.Definition.AdapterIds)}"
-            : $"{target.CategoryLabel} · {target.Tool.Description} · adapters: {FormatAdapters(target.Definition.AdapterIds)}";
-        AvailabilityInfo.IsOpen = target.Availability == AvailabilityState.Unavailable;
-        AvailabilityInfo.Title = target.Availability == AvailabilityState.Unavailable
-            ? "Target unavailable"
-            : "Target available for preview only";
-        AvailabilityInfo.Message = target.UnavailableReason ??
-            "Configuration is represented only; no executable or directory has been probed.";
-
-        var command = target.Command;
-        var externalCommand = target.Definition.Kind != LaunchTargetKind.GridInternal && command is not null;
-        SetEditorEnabled(externalCommand);
-        if (externalCommand)
-        {
-            ExecutableAnchorSelector.SelectedItem = command!.Executable?.Anchor;
-            ExecutablePathBox.Text = command.Executable?.RelativePath ?? string.Empty;
-            WorkingAnchorSelector.SelectedItem = command.WorkingDirectory?.Anchor;
-            WorkingDirectoryBox.Text = command.WorkingDirectory?.RelativePath ?? string.Empty;
-            EnvironmentPolicySelector.SelectedItem = command.EnvironmentPolicy;
-            ArgumentsBox.Text = string.Join(Environment.NewLine, command.Arguments.Select(argument => argument.Value));
-        }
-        else
-        {
-            ExecutableAnchorSelector.SelectedIndex = -1;
-            ExecutablePathBox.Text = target.Definition.Kind == LaunchTargetKind.GridInternal
-                ? "Not applicable · Grid internal route"
-                : string.Empty;
-            WorkingAnchorSelector.SelectedIndex = -1;
-            WorkingDirectoryBox.Text = string.Empty;
-            EnvironmentPolicySelector.SelectedItem = target.Definition.Kind == LaunchTargetKind.GridInternal
-                ? EnvironmentPolicy.GridInternal
-                : null;
-            ArgumentsBox.Text = string.Empty;
-        }
-
-        var currentDefault = FindCurrentProfile()?.DefaultLaunchTargetId;
-        DefaultTargetCheckBox.IsChecked = currentDefault == target.Definition.Id;
-        DefaultTargetCheckBox.IsEnabled = FindCurrentProfile() is not null && target.CanPreview;
-        ApplyButton.IsEnabled = externalCommand || DefaultTargetCheckBox.IsEnabled;
-    }
-
-    private void SetEditorEnabled(bool isEnabled)
-    {
-        ExecutableAnchorSelector.IsEnabled = isEnabled;
-        ExecutablePathBox.IsEnabled = isEnabled;
-        WorkingAnchorSelector.IsEnabled = isEnabled;
-        WorkingDirectoryBox.IsEnabled = isEnabled;
-        EnvironmentPolicySelector.IsEnabled = isEnabled;
-        ArgumentsBox.IsEnabled = isEnabled;
+        if (binding) return;
+        CaptureEditor();
+        Bind(ToolList.SelectedItem as ToolDraft);
     }
 
     private void OnDialogContentSizeChanged(object sender, SizeChangedEventArgs e)
     {
         var stacked = e.NewSize.Width > 0 && e.NewSize.Width < StackThreshold;
-        EditorLayout.ColumnDefinitions[0].Width = new GridLength(stacked ? 1 : 310, stacked ? GridUnitType.Star : GridUnitType.Pixel);
+        EditorLayout.ColumnDefinitions[0].Width = new GridLength(stacked ? 1 : 300, stacked ? GridUnitType.Star : GridUnitType.Pixel);
         EditorLayout.ColumnDefinitions[1].Width = new GridLength(stacked ? 0 : 1, stacked ? GridUnitType.Pixel : GridUnitType.Star);
-        EditorLayout.RowDefinitions[0].Height = new GridLength(stacked ? 220 : 1, stacked ? GridUnitType.Pixel : GridUnitType.Star);
+        EditorLayout.RowDefinitions[0].Height = new GridLength(stacked ? 210 : 1, stacked ? GridUnitType.Pixel : GridUnitType.Star);
         EditorLayout.RowDefinitions[1].Height = new GridLength(stacked ? 1 : 0, stacked ? GridUnitType.Star : GridUnitType.Pixel);
-        Microsoft.UI.Xaml.Controls.Grid.SetColumn(TargetEditorScroller, stacked ? 0 : 1);
-        Microsoft.UI.Xaml.Controls.Grid.SetRow(TargetEditorScroller, stacked ? 1 : 0);
+        Microsoft.UI.Xaml.Controls.Grid.SetColumn(ToolEditorScroller, stacked ? 0 : 1);
+        Microsoft.UI.Xaml.Controls.Grid.SetRow(ToolEditorScroller, stacked ? 1 : 0);
     }
 
-    private void OnApplyClicked(object sender, RoutedEventArgs e)
+    private void Bind(ToolDraft? draft)
     {
-        if (_selectedTarget is null)
+        selected = draft;
+        binding = true;
+        try
         {
-            return;
+            var enabled = draft is not null;
+            EditorHeading.Text = draft?.Title ?? "Select or add a tool";
+            TitleBox.Text = draft?.Title ?? string.Empty;
+            BinaryBox.Text = draft?.BinaryPath ?? string.Empty;
+            StartInBox.Text = draft?.StartInPath ?? string.Empty;
+            ArgumentsBox.Text = draft is null ? string.Empty : string.Join(Environment.NewLine, draft.Arguments);
+            EnabledCheckBox.IsChecked = draft?.Enabled ?? false;
+            ScopeSelector.SelectedIndex = draft is null ? -1 : draft.Scope.IsInstallationScoped ? 0 : 1;
+            TitleBox.IsEnabled = BinaryBox.IsEnabled = StartInBox.IsEnabled = ArgumentsBox.IsEnabled = EnabledCheckBox.IsEnabled = RemoveButton.IsEnabled = ScopeSelector.IsEnabled = enabled;
+            IdentityText.Text = FormatKnowledge(draft?.Knowledge);
+        }
+        finally { binding = false; }
+    }
+
+    private void CaptureEditor()
+    {
+        if (binding || selected is null) return;
+        selected.Title = TitleBox.Text.Trim();
+        selected.BinaryPath = NullIfWhiteSpace(BinaryBox.Text);
+        selected.StartInPath = NullIfWhiteSpace(StartInBox.Text);
+        selected.Arguments = ArgumentsBox.Text.Split(['\r', '\n'], StringSplitOptions.RemoveEmptyEntries).Select(value => value.Trim()).Where(value => value.Length > 0).ToImmutableArray();
+        selected.Enabled = EnabledCheckBox.IsChecked == true;
+        selected.RefreshStatus();
+        EditorHeading.Text = string.IsNullOrWhiteSpace(selected.Title) ? "Untitled tool" : selected.Title;
+    }
+
+    private async void OnAddFromFileClicked(object sender, RoutedEventArgs e) => await AddFromFileAsync();
+    private async void OnBrowseBinaryClicked(object sender, RoutedEventArgs e) => await AddFromFileAsync(true);
+
+    private async Task AddFromFileAsync(bool replaceSelected = false)
+    {
+        var path = await picker.PickAsync();
+        if (path is null) return;
+        InstalledToolKnowledge? knowledge = null;
+        try
+        {
+            knowledge = await identityService.ResolveAsync(path);
+            pendingKnowledge[knowledge.Id] = knowledge;
+        }
+        catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or InvalidOperationException or System.Text.Json.JsonException)
+        {
+            ShowStatus("Identity evidence unavailable", $"The launch configuration can still be saved. Exact-file observation failed ({exception.GetType().Name}).", InfoBarSeverity.Warning);
         }
 
-        var targetId = _selectedTarget.Definition.Id;
-        if (_selectedTarget.Definition.Kind != LaunchTargetKind.GridInternal)
+        var title = knowledge?.ProductName;
+        if (string.IsNullOrWhiteSpace(title)) title = Path.GetFileNameWithoutExtension(path);
+        var draft = replaceSelected && selected is not null ? selected : ToolDraft.Create(currentContext);
+        draft.Title = replaceSelected && !string.IsNullOrWhiteSpace(draft.Title) ? draft.Title : title!;
+        draft.BinaryPath = Path.GetFullPath(path);
+        draft.StartInPath = Path.GetDirectoryName(draft.BinaryPath);
+        draft.Knowledge = knowledge;
+        draft.KnowledgeId = knowledge?.Id;
+        draft.RefreshStatus();
+        if (!drafts.Contains(draft))
         {
-            var arguments = ArgumentsBox.Text
-                .Split(['\r', '\n'], StringSplitOptions.RemoveEmptyEntries)
-                .Select(value => value.Trim())
-                .Where(value => value.Length > 0)
-                .Select(value => new CommandArgument(value))
-                .ToImmutableArray();
-            if (ExecutableAnchorSelector.SelectedItem is not ConfiguredPathAnchor executableAnchor ||
-                WorkingAnchorSelector.SelectedItem is not ConfiguredPathAnchor workingAnchor ||
-                EnvironmentPolicySelector.SelectedItem is not EnvironmentPolicy environmentPolicy)
-            {
-                ShowResult(LaunchConfigurationResult.Rejected(LaunchConfigurationFailure.InvalidExecutablePath));
-                return;
-            }
-
-            var result = _state.SaveConfiguration(
-                targetId,
-                new LaunchConfigurationDraft(
-                    executableAnchor,
-                    ExecutablePathBox.Text,
-                    workingAnchor,
-                    WorkingDirectoryBox.Text,
-                    environmentPolicy,
-                    arguments));
-            if (!result.Succeeded)
-            {
-                ShowResult(result);
-                return;
-            }
+            drafts.Add(draft);
+            managedConfigurationIds.Add(draft.Id);
         }
+        RefreshList(draft);
+    }
 
-        if (DefaultTargetCheckBox.IsChecked == true)
+    private void OnAddEmptyClicked(object sender, RoutedEventArgs e)
+    {
+        CaptureEditor();
+        var draft = ToolDraft.Create(currentContext);
+        drafts.Add(draft);
+        managedConfigurationIds.Add(draft.Id);
+        RefreshList(draft);
+    }
+
+    private void OnRemoveClicked(object sender, RoutedEventArgs e)
+    {
+        if (selected is null) return;
+        var index = drafts.IndexOf(selected);
+        drafts.Remove(selected);
+        RefreshList(drafts.Count == 0 ? null : drafts[Math.Clamp(index, 0, drafts.Count - 1)]);
+    }
+
+    private async void OnApplyClicked(object sender, RoutedEventArgs e) => await CommitAsync(false);
+    private async void OnOkClicked(object sender, RoutedEventArgs e) => await CommitAsync(true);
+    private void OnCancelClicked(object sender, RoutedEventArgs e) => Hide();
+
+    private async Task CommitAsync(bool close)
+    {
+        CaptureEditor();
+        var validation = ValidateDrafts();
+        if (validation is not null) { ShowStatus("Tools not saved", validation, InfoBarSeverity.Warning); return; }
+
+        var now = DateTimeOffset.UtcNow;
+        var scoped = drafts.Select(value => value.ToConfiguration(now)).ToImmutableArray();
+        var all = state.Configurations.Configurations.Where(value => !managedConfigurationIds.Contains(value.Id)).Concat(scoped).ToImmutableArray();
+        var result = await state.ReplaceConfigurationsAsync(all);
+        if (!result.Succeeded) { ShowStatus("Tools not saved", result.Detail, InfoBarSeverity.Error); return; }
+
+        string? knowledgeWarning = null;
+        if (pendingKnowledge.Count > 0)
         {
-            var defaultResult = _state.SetProfileDefault(targetId);
-            if (!defaultResult.Succeeded)
-            {
-                ShowResult(defaultResult);
-                return;
-            }
+            var evidenceResult = await state.MergeKnowledgeAsync(pendingKnowledge.Values);
+            if (!evidenceResult.Succeeded) knowledgeWarning = evidenceResult.Detail;
+            else pendingKnowledge.Clear();
         }
+        configurationsChanged();
+        if (close) { Hide(); return; }
+        ResetFromState(selected?.Id);
+        ShowStatus("Tools saved", knowledgeWarning is null ? "GRID saved the launch configurations for this exact workspace." : $"Launch configurations were saved. Identity evidence was not persisted: {knowledgeWarning}", knowledgeWarning is null ? InfoBarSeverity.Success : InfoBarSeverity.Warning);
+    }
 
-        OperationStatus.Title = "Mock configuration applied";
-        OperationStatus.Message = "Only the in-memory catalog changed. No path was probed and no external state changed.";
-        OperationStatus.Severity = InfoBarSeverity.Success;
+    private string? ValidateDrafts()
+    {
+        if (drafts.Select(value => value.Id).Distinct().Count() != drafts.Count) return "Tool identities must be unique.";
+        foreach (var draft in drafts)
+        {
+            if (string.IsNullOrWhiteSpace(draft.Title)) return "Every tool needs a title.";
+            if (draft.Title.Length > 160) return "Tool titles cannot exceed 160 characters.";
+            if (draft.BinaryPath is not null && (!Path.IsPathFullyQualified(draft.BinaryPath) || !string.Equals(Path.GetExtension(draft.BinaryPath), ".exe", StringComparison.OrdinalIgnoreCase))) return $"{draft.Title}: Binary must be an absolute .exe path.";
+            if (draft.StartInPath is not null && !Path.IsPathFullyQualified(draft.StartInPath)) return $"{draft.Title}: Start in must be an absolute directory path.";
+            if (draft.Arguments.Length > 128 || draft.Arguments.Any(value => value.Length > 4096 || value.Any(char.IsControl))) return $"{draft.Title}: Arguments exceed GRID's bounded literal-argument contract.";
+        }
+        return null;
+    }
+
+    private void RefreshList(ToolDraft? selection)
+    {
+        binding = true;
+        ToolList.ItemsSource = null;
+        ToolList.ItemsSource = drafts;
+        ToolList.SelectedItem = selection;
+        binding = false;
+        Bind(selection);
+    }
+
+    private void OnEditorTextChanged(object sender, TextChangedEventArgs e) { if (!binding) CaptureEditor(); }
+    private void OnEditorToggleChanged(object sender, RoutedEventArgs e) { if (!binding) CaptureEditor(); }
+    private void OnScopeSelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (binding || selected is null || ScopeSelector.SelectedIndex < 0) return;
+        selected.Scope = ScopeSelector.SelectedIndex == 0
+            ? new(currentContext.GameId, currentContext.InstallationId, null)
+            : new(currentContext.GameId, currentContext.InstallationId, currentContext.ProfileId);
+        selected.RefreshStatus();
+    }
+    private void OnBinaryTextChanged(object sender, TextChangedEventArgs e)
+    {
+        if (binding || selected is null) return;
+        var newPath = NullIfWhiteSpace(BinaryBox.Text);
+        if (!StringComparer.OrdinalIgnoreCase.Equals(newPath, selected.BinaryPath))
+        {
+            selected.Knowledge = null;
+            selected.KnowledgeId = null;
+            IdentityText.Text = FormatKnowledge(null);
+        }
+        CaptureEditor();
+    }
+
+    private void ShowStatus(string title, string message, InfoBarSeverity severity)
+    {
+        OperationStatus.Title = title;
+        OperationStatus.Message = message;
+        OperationStatus.Severity = severity;
         OperationStatus.IsOpen = true;
-        _catalogChanged();
-        RefreshTargets(targetId);
     }
 
-    private void ShowResult(LaunchConfigurationResult result)
+    private static string FormatKnowledge(InstalledToolKnowledge? knowledge)
     {
-        OperationStatus.Title = "Mock configuration not applied";
-        OperationStatus.Message = result.Failure switch
+        if (knowledge is null) return "Unresolved. This does not prevent manual launching. Compatibility and diagnostic integration remain unavailable until provenance is sufficient.";
+        var identity = knowledge.CanonicalToolId is ToolId id ? id.Value : "Canonical ToolID unresolved";
+        var version = knowledge.ProductVersion ?? knowledge.FileVersion ?? "version unresolved";
+        return $"{knowledge.ProductName ?? Path.GetFileName(knowledge.BinaryPath)} · {version}\n{identity} · {knowledge.SignatureStatus}\nCompatibility: unresolved (no GameID claim inferred from installation or filename).";
+    }
+
+    private static string? NullIfWhiteSpace(string? value) => string.IsNullOrWhiteSpace(value) ? null : value.Trim();
+
+    public sealed class ToolDraft
+    {
+        public ToolDraft(UserToolLaunchConfiguration configuration, InstalledToolKnowledge? knowledge)
         {
-            LaunchConfigurationFailure.ContextUnavailable => "An available mock installation/profile context is required.",
-            LaunchConfigurationFailure.TargetNotFound => "The target no longer exists in the current adapter catalog.",
-            LaunchConfigurationFailure.TargetUnavailable => "Unavailable targets cannot be configured or made default by a mock path edit.",
-            LaunchConfigurationFailure.NotConfigurable => "Grid-internal routes have no external executable configuration.",
-            LaunchConfigurationFailure.InvalidExecutablePath => "Enter a safe relative executable path without a root, control character, or traversal segment.",
-            LaunchConfigurationFailure.InvalidWorkingDirectory => "Enter a safe relative working directory without a root, control character, or traversal segment.",
-            LaunchConfigurationFailure.InvalidEnvironmentPolicy => "Select a recognized typed environment policy.",
-            LaunchConfigurationFailure.TooManyArguments => $"Targets support at most {LaunchTargetSelectionState.MaximumArgumentCount} literal arguments.",
-            LaunchConfigurationFailure.InvalidArgument => $"Each argument must be non-empty, contain no control characters, and be at most {LaunchTargetSelectionState.MaximumArgumentLength} characters.",
-            _ => "The mock update was rejected without changing state.",
-        };
-        OperationStatus.Severity = InfoBarSeverity.Warning;
-        OperationStatus.IsOpen = true;
-    }
+            Id = configuration.Id; Title = configuration.Title; BinaryPath = configuration.BinaryPath; StartInPath = configuration.StartInPath;
+            Arguments = configuration.Arguments; Enabled = configuration.Enabled; Scope = configuration.Scope; CreatedAtUtc = configuration.CreatedAtUtc;
+            SourceRevision = configuration.Revision; KnowledgeId = configuration.KnowledgeId; Knowledge = knowledge; RefreshStatus();
+        }
 
-    private Profile? FindCurrentProfile()
-    {
-        var selection = _state.Shell.CurrentSelection;
-        var installation = selection.GameId is GameId gameId &&
-            selection.InstallationId is InstallationId installationId
-                ? _state.Catalog.Games
-                    .FirstOrDefault(game => game.Id == gameId)?
-                    .Installations.FirstOrDefault(candidate => candidate.Id == installationId)
-                : null;
-        return installation is not null && selection.ProfileId is ProfileId profileId
-            ? installation.Profiles.FirstOrDefault(profile => profile.Id == profileId)
-            : null;
-    }
+        public string Title { get; set; }
+        public string Status { get; private set; } = string.Empty;
+        public UserToolConfigurationId Id { get; }
+        public string? BinaryPath { get; set; }
+        public string? StartInPath { get; set; }
+        public ImmutableArray<string> Arguments { get; set; }
+        public bool Enabled { get; set; }
+        public UserToolScope Scope { get; set; }
+        public DateTimeOffset CreatedAtUtc { get; }
+        public int SourceRevision { get; }
+        public InstalledToolKnowledgeId? KnowledgeId { get; set; }
+        public InstalledToolKnowledge? Knowledge { get; set; }
 
-    private string FormatAdapters(ImmutableArray<GameAdapterId> adapterIds)
-    {
-        var game = _state.Shell.CurrentSelection.GameId is GameId gameId
-            ? _state.Catalog.Games.FirstOrDefault(candidate => candidate.Id == gameId)
-            : null;
-        return string.Join(", ", adapterIds.Select(adapterId =>
-            game?.Adapters.FirstOrDefault(adapter => adapter.Id == adapterId)?.Name ?? adapterId.Value));
+        public static ToolDraft Create(UserToolScope currentContext) => new(new(UserToolLaunchConfiguration.CurrentSchemaVersion, new($"user-tool.{Guid.NewGuid():N}"), "New Executable", null, null, [], true, new(currentContext.GameId, currentContext.InstallationId, null), DateTimeOffset.UtcNow, DateTimeOffset.UtcNow, 0), null);
+        public void RefreshStatus()
+        {
+            var availability = !Enabled ? "Hidden" : string.IsNullOrWhiteSpace(BinaryPath) ? "Configured · binary required" : "Runnable";
+            Status = $"{availability} · {(Scope.IsInstallationScoped ? "This installation" : "Current profile")}";
+        }
+        public UserToolLaunchConfiguration ToConfiguration(DateTimeOffset now) => new(UserToolLaunchConfiguration.CurrentSchemaVersion, Id, Title.Trim(), BinaryPath is null ? null : Path.GetFullPath(BinaryPath), StartInPath is null ? null : Path.GetFullPath(StartInPath), Arguments, Enabled, Scope, CreatedAtUtc, now, Math.Max(1, SourceRevision + 1), KnowledgeId);
     }
 }

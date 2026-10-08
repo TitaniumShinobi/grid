@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=NewEmpireWay-Street-GTAV.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Interstate 5|La Puerta Freeway]]<br>[[Davis Avenue]]
+|end=[[Exceptionalists Way]]
+|map=<gallery>
+NewEmpireWay-GTAV-Map.png|Map
+NewEmpireWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''New Empire Way''' is a street in the [[Los Santos International Airport (HD Universe)|LSIA]] district, [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Alpha Mail]] warehouse
+*[[LSIA Terminal 4 Station]]
+*[[National Office of Security Enforcement|NOOSE]] Headquarters branch
+
+[[SECTION:2:Businesses]]
+*[[Sightings Bar & Restaurant]] <small>(at the center)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

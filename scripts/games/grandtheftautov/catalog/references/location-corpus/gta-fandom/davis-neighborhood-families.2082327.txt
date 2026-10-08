@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox organization
+|image = DavisNeighborhoodFamilies-GTAOe.png
+|caption = Davis Neighborhood Families in {{O}}.
+|games = {{Games|V=y|O=y}}
+|locations = [[Davis]], [[Los Santos County]]
+|leader = Unknown
+|aka = 
+*Dirty Davis Devils
+*Davis Devils
+*{{H:title|Director Mode|Davis Families}}
+*DNF
+*DNFG
+|type = gang
+|gang_type = Set of [[The Families]]
+|enemies = 
+*[[Ballas (HD Universe)|Ballas]] <small>([[South Central Leak/Finale|Formerly]])</small>
+*[[Los Santos Vagos (HD Universe)|Los Santos Vagos]]
+|affiliations = {{GTAOP}}
+|colors = Green
+|vehicles = 
+|weapons = 
+|members = 
+*[[Vernon]]
+*Jamal
+*Crystal
+*Raw Diggy
+*T.C. 
+*Tavan
+*Cici 
+*G Dog 
+|Name Change = GANG SET OF [[The Families|THE FAMILIES]]
+|status = active
+}}
+
+[[LEAD]]
+The '''Davis Neighborhood Families (DNF)''' are a street gang in {{V}} and {{O}}, originally formed in the incorporated city of [[Davis]] from [[The Families]] gang.
+
+[[CATEGORIES]]
+Afro-descendant organizations
+Gangs
+Organizations in GTA Online
+Organizations in GTA V

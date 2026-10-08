@@ -1,0 +1,138 @@
+[[INFOBOX]]
+{{Infobox organization
+|Name Change  = 
+|style        = 
+|type         = mc
+|name         = The Lost Motorcycle Club
+|logo         = 
+|image        = LostMC-GTAIV-Patch.png
+|caption      = '''The Lost MC''' patch in {{V}}.
+|aka          = 
+*The Lost MC
+*The Lost
+*Lost MC
+*{{H:title|LCPD Database records|The Lost Outlaw Motorcycle Gang}}
+*{{H:title|Used in GTA Chinatown Wars, GTA V and GTA Online|The Lost biker gang}}
+|games        = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned    = 
+|locations    = 
+*[[State of Alderney]]
+**[[Acter]]
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+**Unknown neighborhoods in [[Broker]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+**[[The Lost MC Clubhouse (East Vinewood)|The Lost MC Clubhouse]], [[East Vinewood]]
+*[[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+**[[Stab City]]
+**[[Grand Senora Desert]]
+**[[North Chumash]]
+**[[Grapeseed]]
+**[[Sandy Shores Airfield]] {{Small|([[Nervous Ron|formerly]])}}
+|org_type     = 
+|founded      = 
+|founder      = 
+|ceo          = 
+|employees    = 
+|businesses   = 
+*[[Pretty Boy]] Chop Shop
+*[[Honkers]]
+*[[Hookies]]
+*[[R L Hunter & Sons]]
+*[[The Motor Motel]]
+*[[Dream View Motel]]
+|affiliations = [[#Affiliations|Affiliations]]
+|vehicles     = [[#Vehicles|Vehicles]]
+|weapons      = [[#Weapons|Weapons]]
+|status       = active
+|gang_type    = Motorcycle club
+|nationality  = {{Country|US|adj=y}}
+|leader       = 
+*[[Billy Grey]] {{Small|(?-[[2008]])}} 
+*[[Johnny Klebitz]] {{Small|(2008-[[2013]])}} 
+|members      = [[#Members|Members]]
+|fronts       = 
+*[[The Lost MC Clubhouse]], [[Acter]]
+*[[Underground Gun Shops]]
+*[[The Range]], [[Stab City]]
+*[[The Lost MC Clubhouse (East Vinewood)|The Lost MC Clubhouse]], [[East Vinewood]]
+*[[Braddock Farm]] {{Small|(''GTA Online'')}}
+*[[Buen Vino Road Mansion]] {{Small|([[New Listings - Due Diligence|formerly]])}}
+|enemies      = [[#Enemies|Enemies]]
+|colors       = Black
+}}
+
+[[LEAD]]
+'''The Lost Motorcycle Club''' is an outlaw motorcycle club in the {{HD}} of the {{S}} operating primarily out of [[Acter]], [[State of Alderney|Alderney State]] in [[2008]], but later nationally (including [[Los Santos (HD Universe)|Los Santos]] and [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]) in [[2013]] and onward. As of 2013, they are active on both the east and west coasts, as well as the Midwest.
+
+The vice president (later president) of the Alderney chapter, [[Johnny Klebitz]], is the [[protagonist]] in {{TLAD}}, a supporting character in {{IV}} and {{TBOGT}}, and a minor character in {{V}}.
+
+[[SECTION:3:Los Santos/Blaine County chapter]]
+By [[2013]], some members of the Liberty chapter moved west towards the rural lands of [[Blaine County]]; these members included Johnny, Clay, Terry, and Ashley. They create a new chapter and manage to establish a club hideout in [[Stab City]], known as [[The Range]], and acquire a [[R L Hunter & Sons|safehouse/front]] in [[Grapeseed]], along with an [[Sandy Shores Airfield|airstrip]] that they use to smuggle drugs and weapons throughout the state.
+
+Another chapter happens to be active in the city of Los Santos as well, mostly seen around the [[East Vinewood]] area, where they patrol in their [[Gang Burrito]]s and operate a [[The Lost MC Clubhouse (East Vinewood)|clubhouse]]. Some members can be seen further south in the city, all the way down to [[East Los Santos (HD Universe)|East Los Santos]], as indicated by a random event. Some [[Gang Attacks]] also show that The Lost are in other parts of the city, as well. It is possible that the Los Santos chapter may have been formed in [[2004]] when Johnny and several key members visited the city. This is supported by the [[The Lost Girl|kidnapped girl]] in the [[Random Events in GTA V#Snatched|Random Event - Snatched]], who states that she has been with the chapter for nearly ten years.
+
+The Lost's presence grew throughout Blaine County with Johnny as president; however, drug use became an issue within the club. Johnny became addicted to methamphetamine and Ashley, Johnny's girlfriend, also continued her addiction, supplementing payment to her dealers, such as [[Trevor Philips]], with sex, much to Johnny's grievance. Because of Johnny's addiction and depression over Ashley, his popularity in the club began to falter as he weakened as a leader; to the point where Billy Grey was becoming a martyr to several members of the club.
+
+The Lost's primary businesses in Blaine County became the illegal distribution of firearms and drugs, causing tension between them and Trevor's business, [[Trevor Philips Enterprises]]. Trevor and his associate, [[Ron Jakowski]], later instruct the {{GTAOP}} to steal drugs from the Lost. Additionally, the Lost make enemies with the [[Madrazo Cartel]] and [[The Families]], who also hire the Online Protagonist to disrupt their business.
+
+Eventually, after [[Mr. Philips|having sex with Ashley again]], Trevor is confronted by Johnny. Trevor pretends to "console" him, but then kills him in a fit of rage and drives to Stab City, killing the Lost members there, including Terry and Clay, as Trevor decides to finally become the sole firearm and drug distributor in the region. Trevor has the option to kill Ashley after he kills Johnny, but even if he does, the radio will later say that she died during a [[heroin]] orgy in a [[South Seas Apartments|condo]].
+
+To enact revenge, the surviving members of The Lost ransack [[Trevor's Trailer]]. Trevor's response is to kill all the Lost members at the Sandy Shores Airfield and [[Nervous Ron|take it for himself]]. Later on, a new chapter moves into Stab City, promising to find the one who killed all their old members. Before they have the chance to, however, [[Friends Reunited|Trevor sneaks into their hideout]] and blows up many of their trailers, before killing the new members there. Some time later, Trevor wakes up drunk on an island off the coast of the [[Palomino Highlands]], surrounded by dead Lost MC members, whom he presumably killed.
+
+Despite all these incidents, The Lost still maintain a presence throughout Los Santos and Blaine County, though they are significantly weakened. If they run into Trevor, they will attack him on sight. After completion of the main storyline, The Lost MC's Los Santos chapter can still be encountered in ''GTA V'' at:
+*Their East Vinewood clubhouse
+*[[Hookies]] in [[North Chumash]]
+*R L Hunter & Sons in [[Grapeseed]]
+*[[Stab City]]
+*A bridge over the [[Los Santos River (HD Universe)|Los Santos River]] in one of Trevor's [[Switch Scenes]], where he will throw a member off of it.
+*A dock in [[Paleto Bay]] in one of Trevor's switch scenes, in which he will be aiming a gun at a member, telling him to jump off.
+*Several locations, where groups of 2 to 3 are riding [[Hexer]], [[Daemon]] and [[Sovereign]] bikes.
+**The Intersection of [[Joshua Road]] and [[Calafia Road]] on the bridge over the [[Zancudo River]]
+**[[Route 1]] heading north in [[Paleto Bay]]
+**Route 1 heading north through [[Braddock Pass]]
+**[[Senora Way]] riding north past the [[Palmer-Taylor Power Station]]
+
+By [[2019]], the Lost established a clubhouse in Paleto Bay. While buying meth in Sandy Shores, [[Tao Cheng]] is kidnapped by the Lost and held at the [[Derelict Motel]] for three days. The ''GTA Online'' Protagonist is hired by [[Tao Cheng's Translator|Tao's translator]] and his associate, [[Agatha Baker]], to rescue him. The protagonist kills the Lost at the motel and [[Casino - Loose Cheng|rescues]] Tao, who is high on drugs and happy to see the player. Later on, to acquire weapons for a [[Casino Heist|heist]] at [[The Diamond Casino & Resort]], the ''GTA Online'' Protagonist can attack the Paleto Bay clubhouse and [[Heist Prep: Unmarked Weapons (The Diamond Casino Heist)#Gang cache|steal two cases of unmarked weapons]].
+
+In [[2021]], at the request of Trevor's former associate [[Chef]], several meth labs owned by the Lost [[The Lost Contract|are destroyed]] by the ''GTA Online'' Protagonist, who also steals a [[Trailer (tanker)|fuel tanker]] from Stab City. Later that year, members of the Lost feature as enemies in a number of [[Security Contracts]] for [[F. Clinton and Partner]].
+
+By December [[2022]], the [[Fooliganz]] are at war with the Lost because they have stolen their bikes and meth. As a result, the Lost [[First Dose 1 - Welcome to the Troupe|launch an attack]] on the Fooliganz in an attempt to wipe them out, only to be defeated. Later, while [[First Dose 2 - Designated Driver|gathering some party supplies]], the Lost MC attack the ''GTA Online'' Protagonist, one of the people who fought against the Lost when they tried to kill the Fooliganz, and cause the party supplies to explode. The protagonist escapes death and goes to their East Vinewood Clubhouse to steal some weed and gather intel that will help them rob the gang in the future. The protagonist later [[First Dose 3 - Fatal Incursion|steals a shipment of meth]] from the Lost that [[Labrat]], a fellow Fooligan, is planning on using to create something better.
+
+In early [[2023]], when Labrat is kidnapped by [[Isiah Friedlander's Goons]], the Fooliganz [[Last Dose 2 - Unusual Suspects|suspect several gangs]] for allegedly kidnapping him, including the Lost.
+
+In the summer of [[2024]], three members of the Lost — [[Angel Kenney]], [[Serenity Pierce]] and [[Rylee Rose]] — serve as [[Bounties (Bail Office)|bounty targets]] that can be tracked down and either captured or killed by the player.
+
+In late [[2025]], the ''GTA Online'' Protagonist [[New Listings - Due Diligence|forcefully evicts]] several Lost members who have been squatting in the [[Buen Vino Road Mansion]] ever since its previous owner, [[Devin Weston]], was [[The Third Way|killed]] in 2013. The protagonist is given the choice to remove the bikers either lethally or non-lethally, which in turn allows the property to be renovated and put up for sale by [[Prix Luxury]].
+
+[[SECTION:4:Beach Bum Update]]
+*[[Del Perro Pier Survival]]
+
+[[SECTION:4:The Diamond Casino & Resort]]
+*[[Casino Story Missions|Casino Story]]
+**[[Casino - Loose Cheng]]
+*Two [[Casino Work]] missions
+**[[Lost in Transit]] {{Small|(possible enemies)}}
+**[[Safe Bet]]
+*[[Stab City Survival]]
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[Gerald's Last Play]]
+**[[Last Play - Fast Peddling]]
+
+[[SECTION:4:Locations]]
+<gallery position="center" spacing="small" widths="250px">
+TheRange-GTAV-LostHideout.png|'''The Lost''' hideout called [[The Range]] at [[Stab City]].
+LostMC-GTAV-EastVinewoodHideout2.jpg|'''The Lost MC''' East Vinewood hideout.
+LostMC-GTAV-EastVinewoodHideout.jpg|'''The Lost MC''' East Vinewood hideout.
+SomeLostMembers-NorthChumash-GTAV.jpg|'''The Lost MC''' members at [[Hookies]] in [[North Chumash]].
+R L Hunter & Sons GTAVe Lost Flag.jpg|[[R L Hunter & Sons]] in [[Grapeseed]].
+</gallery>
+
+[[CATEGORIES]]
+Gangs in GTA Chinatown Wars
+Gangs in GTA IV
+Gangs in GTA Online
+Gangs in GTA V
+Motorcycle clubs
+Organizations in TBOGT
+Organizations in TLAD

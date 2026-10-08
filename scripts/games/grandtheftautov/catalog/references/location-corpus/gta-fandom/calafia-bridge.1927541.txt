@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = CalafiaBridge-GTAV.png
+|caption = 
+|games = {{Games|V=y|O=y}}
+|bridge = y
+|location = [[Raton Canyon]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = <gallery>
+CalafiaBridge-GTAV-IngameGPS-Map.png|Calafia Bridge
+CalafiaBridge-GTAV-IngameGPS-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+|pscanner       = PoliceScanner-GTAV-CalafiaBridge.ogg
+}}
+
+[[LEAD]]
+The '''Calafia Bridge''' is a road bridge appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located at the mouth of the [[Cassidy Creek]] river in [[Raton Canyon]], [[Blaine County]].
+
+[[CATEGORIES]]
+Road bridges
+Structure zones
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County
+Truss bridges

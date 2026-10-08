@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox location
+|name       = Del Perro Plaza
+|image      = DelPerroPlaza-GTAV.png
+|caption    = The mall, as seen from Boulevard Del Perro.
+|type       = shoppingcenter
+|status     = active
+|location   = [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = Yes
+|games      = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''Del Perro Plaza''' is a shopping plaza in {{V}} and {{O}} located on [[Boulevard Del Perro]] and [[Prosperity Street]] in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]. None of the shops are accessible, but there are usable [[Sprunk (HD Universe)|Sprunk]] and [[eCola (HD Universe)|eCola]] [[Vending Machines|vending machines]] inside the mall. 
+
+One of the [[deathmatch]]es in ''GTA Online'' takes place here.
+
+[[SECTION:2:Businesses]]
+*[[Bean Machine]]
+*[[Bite!]]
+*[[Chihuahua Hotdogs]]
+*[[Digital Den]]
+*[[Limey's Juice and Smoothies]]
+*[[Taco Bomb]]
+*[[Up-n-Atom Burger]]
+*[[Wigwam Burger]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Shopping malls

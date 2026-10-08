@@ -1,0 +1,63 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=SpanishAvenue-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Mad Wayne Thunder Drive]], [[Rockford Hills]]
+|end=[[Elgin Avenue]], [[Hawick]]
+|map=<gallery>
+SpanishAvenue-GTAV-Map.png|Map
+SpanishAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Spanish Avenue''' is a [[List of Street Names|street]] in [[Hawick]], [[West Vinewood]], [[Downtown Vinewood]] and [[Rockford Hills]] that stretches along all northern [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+'''Downtown Vinewood'''
+*[[0605 Spanish Avenue]]
+
+'''Hawick'''
+*[[Badger Building]] <small>(corner of Elgin Avenue)</small>
+*[[Galileo House]] <small>(corner of Meteor Street)</small>
+*[[Vinewood Gardens Hotel]] <small>(corner of Power Street)</small>
+*Vinewood Institute
+*[[Vinewood Plaza]] <small>(corner of Power Street)</small>
+
+'''Rockford Hills'''
+*[[Epsilon Building]] <small>(corners of Rockford Drive and Strangeways Drive)</small>
+
+'''West Vinewood'''
+*[[The Royale]] <small>(corner of San Vitus Boulevard)</small>
+*[[Vinewood Garage]] <small>(corner of Las Lagunas Boulevard)</small>
+
+[[SECTION:2:Businesses]]
+'''Downtown Vinewood'''
+*[[Caesars Auto Parking]]
+*Discount Drugs
+*[[Pop's Pills]]
+*Vitamins Pharmacy <small>(corner of Alta Street)</small>
+
+'''Vinewood Plaza, Hawick'''
+*[[24/7 (HD Universe)|24/7]]
+*24 Hr Photo
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Bite!]]
+*Coin-Op Laundry
+*Dollar Crusher
+*Hair & Nails
+*Los Santos Harmony Wellness Center
+*Pharmacy
+*[[Pizza This]]
+
+'''West Vinewood'''
+*[[Los Santos Low Cost Auto Insurance]]
+*[[Bullhead]] <small>(corner of San Vitus Boulevard)</small>
+*Cell Phone Cards & Phone Accessories
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

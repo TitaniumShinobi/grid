@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{infobox business|
+|image = WhiteWidow-GTAIV-logo.png
+|size = 200x200px
+|game_1 = GTA IV
+|game_2 = GTA V
+|game_3 = GTA Online
+|name = White Widow
+|type = [[:Category:Clothing Stores|Clothing store]]
+|owner = [[Sub Urban|Sub Urban Clothing]]
+|location = [[Hawick Ave]]/[[Power St]] in [[Alta]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''White Widow''' is a clothing company in [[Grand Theft Auto IV]] and [[Grand Theft Auto V]]. It is featured on [[Peepthatshit.com]] in the "Street Fashion" section, and is described on [[Designerslave.com]] as being owned by [[Sub Urban|Sub Urban Clothing]] and being popular with "''aging hipsters''". The brand's name comes from [[wp:White widow (cannabis)|a strain of cannabis]]. A store can be found at the corner of [[Hawick Ave]] and [[Power St]] in [[Alta]], [[Los Santos in GTA V|Los Santos]] in [[Grand Theft Auto V]].
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Clothing Stores

@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Mr. Spoke Bike Rental
+|type = Vehicle rental
+|owner = 
+|location = Boardwalk of [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = [[Daddy's Little Girl]]
+|employee = 
+}}
+
+[[LEAD]]
+'''Mr. Spoke Bike Rental''' is a vehicle rental stand located on the boardwalk of [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The stand rents out bicycles, quad bikes and surf boards at an hourly or daily rate. [[Michael De Santa|Michael]] and [[Jimmy De Santa]] both rent bicycles from the stand during the mission [[Daddy's Little Girl]] before riding them to the end of [[Pleasure Pier]].
+
+
+
+[[Type::Business| ]]
+[[Location::Vespucci Beach| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

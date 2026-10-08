@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=LaborPlace-GTAV.png
+|caption=Labor Place, as seen from [[Tower Way]].
+|games={{Games|V=y|O=y}}
+|start=[[Orchardville Avenue]], [[Cypress Flats]]
+|end=[[El Rancho Boulevard]], [[El Burro Heights]]
+|map=<gallery>
+LaborPlace-GTAV-Map.png|Map
+LaborPlace-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Labor Place''' is a [[List of Street Names|street]] in [[East Los Santos (HD Universe)|East Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Grand Banks Steel Foundry]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

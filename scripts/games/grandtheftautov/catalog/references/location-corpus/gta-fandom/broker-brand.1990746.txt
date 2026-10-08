@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{infobox business
+|name = Broker
+|image = Broker-GTAV-Logo.PNG
+|type = Clothing
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]]<br>[[Textile City]], [[Los Santos (HD Universe)|Los Santos]]
+|reference=Brooklyn Industries}}
+
+[[LEAD]]
+'''Broker''' is a clothing brand featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Broker-GTAV-Morningwood.png|Morningwood Boulevard, Morningwood.
+Broker-GTAV-Warehouse.png|Integrity Way and Sinner Street, Textile City.
+</gallery>
+
+[[de:Broker (Bekleidungshersteller)]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing in GTA Online
+Clothing store chains
+Fashion brands

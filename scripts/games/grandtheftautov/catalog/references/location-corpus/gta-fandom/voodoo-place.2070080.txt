@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox structure
+|image= 
+<gallery>
+VoodooPlace-GTAVee-East.jpg|East
+VoodooPlace-GTAVee-South.jpg|South
+</gallery>
+|games={{Games|V=y|O=y}}
+|start=[[Signal Street]]
+|map=<gallery>
+VoodooPlace-GTAV-Map.png|Map
+VoodooPlace-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Voodoo Place''' is a street in {{V}} and {{O}} located in [[Elysian Island]], [[Los Santos (HD Universe)|Los Santos]].  The street has a connection to [[Signal Street]] in the north.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

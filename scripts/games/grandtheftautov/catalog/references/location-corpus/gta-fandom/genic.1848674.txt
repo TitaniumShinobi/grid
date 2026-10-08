@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Genic Digital
+|type        = electronics
+|image       = Genic-Logo.png
+|games       = {{games|IV=y|EFLC=y|V=y|O=y}}
+|taglines    = "''Sometimes their 'good side' is on the inside''"<br>"''We can't all be photo Genic''"
+}}
+
+[[LEAD]]
+'''Genic''', also known as '''Genic Digital''', is an electronics company featured in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Electronics companies

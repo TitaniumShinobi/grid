@@ -1,10 +1,15 @@
 using System.Collections.ObjectModel;
+using Grid.Auth;
+using Grid.Auth.Features;
 using Grid.App.Composition;
+using Grid.App.Controls;
 using Grid.App.Services;
 using Grid.App.Views;
 using Grid.Core.Application;
 using Grid.Core.Models;
 using Grid.Core.Services;
+using Grid.Core.Startup;
+using Grid.DocumentViewer;
 using Grid.Mo2.Models;
 using Grid.Mo2.Services;
 using Microsoft.UI;
@@ -24,15 +29,21 @@ public sealed partial class MainWindow : Window
 {
     private const double ShellPanelContentInset = 5;
     private static readonly GameAdapterId ConnectedMo2AdapterId = new("adapter.mod-organizer-2");
-    private readonly GridCompositionRoot composition;
-    private readonly IGridCatalogService catalogService;
+    private GridCompositionRoot composition;
+    private GridAuthService? authService;
+    private ShellAuthController? authController;
+    private bool productUnlocked;
+    private IGridCatalogService catalogService;
     private readonly IInstallationPathPicker pathPicker;
     private readonly Dictionary<GameId, Button> gameItems = [];
     private readonly List<Button> dynamicGameItems = [];
     private readonly List<ShellLocation> navigationHistory = [];
     private readonly List<EditorTabRecord> editorTabs = [];
+    private readonly Dictionary<string, DocumentTabRecord> documentTabs =
+        new(StringComparer.Ordinal);
     private readonly ObservableCollection<GridNotification> notifications = [];
     private ToolTargetPresentation[] launchTargetItems = [];
+    private UserToolConfigurationId? selectedUserToolId;
     private readonly string[] searchCatalog =
     [
         "Mod Sites · Nexus", "Mod Sites · LoversLab", "Mod Sites · Reddit", "Mod Sites · Add site…",
@@ -50,6 +61,10 @@ public sealed partial class MainWindow : Window
     private bool taskboardExpanded;
     private GridTaskboardPhase taskboardFocus = GridTaskboardPhase.Ledger;
     private bool firstRunCompleted = true;
+    private bool gameCatalogAutoDiscoverPending;
+    private bool addProfileTaskActive;
+    private string? activeStableAccountId;
+    private long productTransitionVersion;
     private bool leftPanelRequested;
     private UIElement? activeSidePanel;
     private GameId? activeGameSidePanelId;
@@ -73,10 +88,10 @@ public sealed partial class MainWindow : Window
         this.composition = composition ?? throw new ArgumentNullException(nameof(composition));
         catalogService = composition.CatalogService;
         InitializeComponent();
+        BindStartupProgress(StartupInstrumentation.Current);
         NotificationList.ItemsSource = notifications;
         pathPicker = new WindowsInstallationPathPicker(this);
-        GameSortSelector.ItemsSource = new[] { "Last updated", "Alphabetical", "Creation time / day" };
-        GameSortSelector.SelectedIndex = 0;
+
         GlobalSearchBox.PlaceholderText = "Home";
         TerminalOutputText.Text = "Grid local terminal · deterministic commands only\nType 'help' to list available commands.\n";
         OutputText.Text = "Grid output\nNo operation is running. External tool output appears only after an authorized route records it.";
@@ -91,7 +106,68 @@ public sealed partial class MainWindow : Window
     private async void OnLoaded(object sender, RoutedEventArgs e)
     {
         ShellContentGrid.Loaded -= OnLoaded;
-        await LoadCatalogAsync();
+
+        ShowAuthResolvingShell();
+        var startup = StartupInstrumentation.Current;
+        startup?.CompleteStage(
+            StartupStageId.ShellMainWindow,
+            StartupStageOutcome.Completed,
+            StartupWorkClassification.StartupRequired,
+            "Main window loaded; auth gate active.");
+
+        var configPath = Path.Combine(
+            AppContext.BaseDirectory,
+            "config",
+            "grid.auth.config.json");
+
+        if (!File.Exists(configPath))
+        {
+            startup?.CompleteStage(
+                StartupStageId.ShellInitialization,
+                StartupStageOutcome.Failed,
+                detail: "Auth config missing before shell auth gate.");
+            startup?.MarkAuthRequired("Grid authentication is not configured.");
+            ShowSignedOutShell();
+            AuthStatusText.Text = "Grid authentication is not configured.";
+            return;
+        }
+
+        try
+        {
+            startup?.BeginStage(
+                StartupStageId.AuthSessionRestore,
+                StartupWorkClassification.StartupRequired,
+                "Provider discovery and persisted session restoration.");
+            var options = GridAuthHost.LoadOptions(configPath);
+            authService = GridAuthHost.Compose(options);
+            authService.ActivateExistingAsync = () =>
+            {
+                var completion = new System.Threading.Tasks.TaskCompletionSource<bool>(System.Threading.Tasks.TaskCreationOptions.RunContinuationsAsynchronously);
+                if (!DispatcherQueue.TryEnqueue(() =>
+                {
+                    try { Activate(); completion.TrySetResult(Life.Auth.Desktop.WindowsDesktopActivation.TryActivate(WinRT.Interop.WindowNative.GetWindowHandle(this))); }
+                    catch { completion.TrySetResult(false); }
+                })) completion.TrySetResult(false);
+                return completion.Task;
+            };
+            authController = new ShellAuthController(authService, RenderAuthState);
+            await authController.InitializeAsync();
+            startup?.CompleteStage(
+                StartupStageId.AuthSessionRestore,
+                StartupStageOutcome.Completed,
+                detail: authService.Current.IsSignedIn ? "Session restored." : "No persisted session.");
+        }
+        catch (Exception exception)
+        {
+            StartupInstrumentation.Current?.CompleteStage(
+                StartupStageId.AuthSessionRestore,
+                StartupStageOutcome.Failed,
+                detail: exception.GetType().Name);
+            StartupInstrumentation.Current?.MarkBlocked(exception.GetType().Name);
+            ShowSignedOutShell();
+            AuthStatusText.Text =
+                $"Grid authentication is unavailable ({exception.GetType().Name}).";
+        }
     }
 
     private void OnClosed(object sender, WindowEventArgs args)
@@ -100,46 +176,791 @@ public sealed partial class MainWindow : Window
         vortexCatalogTimer.Stop();
         lifetime?.Dispose();
         session?.Dispose();
+        authController?.Dispose();
+        authController = null;
+        authService = null;
+        StartupInstrumentation.Current?.FinalizeReceipt();
     }
 
-    private async Task LoadCatalogAsync()
+    private async void RenderAuthState(
+        AuthSnapshot snapshot,
+        Microsoft.UI.Xaml.Media.ImageSource? avatar)
+    {
+        if (snapshot.Phase == AuthPhase.SessionRestore)
+        {
+            ShowAuthResolvingShell();
+            return;
+        }
+
+        if (!snapshot.IsSignedIn)
+        {
+            ShowSignedOutShell();
+            ApplyAuthProviderPresentation(snapshot.Providers);
+            if (snapshot.Phase == AuthPhase.ConsentRequired)
+            {
+                StartupInstrumentation.Current?.MarkAuthRequired("Consent required before product unlock.");
+                SignInPanel.Visibility = Visibility.Collapsed;
+                SignUpPanel.Visibility = Visibility.Visible;
+                SignUpStatusText.Text = snapshot.ErrorMessage ?? "Complete GRID signup to continue.";
+                UpdateSignUpConsentState();
+                SignUpEmailBox.Focus(FocusState.Programmatic);
+                return;
+            }
+            if (snapshot.Phase != AuthPhase.SessionRestore)
+            {
+                StartupInstrumentation.Current?.MarkAuthRequired(
+                    snapshot.ErrorCode ?? "Interactive sign-in required.");
+            }
+            AuthStatusText.Text = snapshot.ErrorMessage ??
+                (string.Equals(snapshot.ErrorCode, "DISCOVERY_FAILED", StringComparison.Ordinal)
+                    ? "Could not reach GRID sign-in. Check your connection and try again."
+                    : snapshot.ErrorCode is null ? string.Empty : snapshot.ErrorCode);
+            return;
+        }
+
+        if (authService?.Current is not { IsSignedIn: true } currentSnapshot ||
+            !StringComparer.Ordinal.Equals(
+                currentSnapshot.User?.StableAccountId,
+                snapshot.User?.StableAccountId))
+        {
+            return;
+        }
+
+        BindAuthenticatedUser(snapshot.User!, avatar);
+
+        if (!composition.IsDemo)
+        {
+            var stableAccountId = snapshot.User?.StableAccountId;
+            if (string.IsNullOrWhiteSpace(stableAccountId))
+            {
+                ShowSignedOutShell();
+                AuthStatusText.Text = "GRID could not establish an account-local product state.";
+                return;
+            }
+
+            if (!StringComparer.Ordinal.Equals(activeStableAccountId, stableAccountId))
+            {
+                if (productUnlocked)
+                    ShowSignedOutShell();
+
+                var startup = StartupInstrumentation.Current;
+                startup?.BeginStage(
+                    StartupStageId.AccountLookup,
+                    StartupWorkClassification.StartupRequired,
+                    detail: "Resolve StableAccountId from authenticated session.");
+                startup?.CompleteStage(
+                    StartupStageId.AccountLookup,
+                    StartupStageOutcome.Completed,
+                    detail: stableAccountId);
+                startup?.BeginStage(
+                    StartupStageId.GridAccountState,
+                    StartupWorkClassification.StartupRequired,
+                    detail: "Compose account-local production services.");
+                try
+                {
+                    composition = GridCompositionRoot.CreateProduction(stableAccountId);
+                    catalogService = composition.CatalogService;
+                    activeStableAccountId = stableAccountId;
+                    startup?.CompleteStage(
+                        StartupStageId.GridAccountState,
+                        StartupStageOutcome.Completed,
+                        detail: GridAccountDataScope.Resolve(
+                            GridAccountDataScope.ResolveBaseDataRoot(),
+                            stableAccountId));
+                }
+                catch
+                {
+                    startup?.CompleteStage(
+                        StartupStageId.GridAccountState,
+                        StartupStageOutcome.Failed,
+                        detail: "CreateProduction failed.");
+                    StartupInstrumentation.Current?.MarkBlocked("Account-local product state unavailable.");
+                    ShowSignedOutShell();
+                    AuthStatusText.Text = "GRID could not establish an account-local product state.";
+                    return;
+                }
+            }
+        }
+
+        if (productUnlocked)
+            return;
+
+        var transitionVersion = ++productTransitionVersion;
+        StartupInstrumentation.Current?.BeginStage(
+            StartupStageId.ShellProductState,
+            StartupWorkClassification.StartupRequired,
+            "Load persisted product state for signed-in account.");
+        await LoadCatalogAsync(transitionVersion, activeStableAccountId);
+    }
+
+    private void EnsureHomeTab()
+    {
+        const string key = "home";
+
+        var existing = EditorTabView.TabItems
+            .OfType<TabViewItem>()
+            .FirstOrDefault(item =>
+                item.Tag is EditorTabRecord record &&
+                record.Key.Equals(key, StringComparison.Ordinal));
+
+        if (existing is not null)
+        {
+            existing.IsClosable = false;
+
+            if (EditorTabView.TabItems.IndexOf(existing) != 0)
+            {
+                EditorTabView.TabItems.Remove(existing);
+                EditorTabView.TabItems.Insert(0, existing);
+            }
+
+            return;
+        }
+
+        var tab = new EditorTabRecord(
+            key,
+            EditorTabKind.Surface,
+            ShellSurface.Home,
+            "Home",
+            WorkspaceSelection.Empty);
+
+        editorTabs.RemoveAll(candidate =>
+            candidate.Key.Equals(key, StringComparison.Ordinal));
+
+        editorTabs.Insert(0, tab);
+
+        var item = new TabViewItem
+        {
+            Header = "Home",
+            Tag = tab,
+            IsClosable = false,
+            Style = (Style)Application.Current.Resources["ShellTabViewItemStyle"],
+        };
+
+        AutomationProperties.SetName(item, "Home tab");
+        EditorTabView.TabItems.Insert(0, item);
+    }
+
+    private void SelectHomeTab()
+    {
+        EnsureHomeTab();
+
+        var home = EditorTabView.TabItems
+            .OfType<TabViewItem>()
+            .First(item =>
+                item.Tag is EditorTabRecord record &&
+                record.Key.Equals("home", StringComparison.Ordinal));
+
+        suppressEditorTabSelection = true;
+        try
+        {
+            EditorTabView.SelectedItem = home;
+        }
+        finally
+        {
+            suppressEditorTabSelection = false;
+        }
+
+        if (!productUnlocked)
+        {
+            ContentFrame.Visibility = Visibility.Visible;
+            AuthGatePanel.Visibility = Visibility.Visible;
+        }
+    }
+    private void ShowAuthResolvingShell()
+    {
+        ShowLockedShell();
+        AuthResolvingPanel.Visibility = Visibility.Visible;
+        SignInPanel.Visibility = Visibility.Collapsed;
+        SignUpPanel.Visibility = Visibility.Collapsed;
+        AuthStatusText.Text = string.Empty;
+        SignUpStatusText.Text = string.Empty;
+    }
+
+    private void ShowSignedOutShell()
+    {
+        ShowLockedShell();
+        AuthResolvingPanel.Visibility = Visibility.Collapsed;
+        SignUpPanel.Visibility = Visibility.Collapsed;
+        SignInPanel.Visibility = Visibility.Visible;
+    }
+
+    private void ShowLockedShell()
+    {
+        var hadProductState = productUnlocked || activeStableAccountId is not null || session is not null;
+        productTransitionVersion++;
+        productUnlocked = false;
+
+        vortexCatalogTimer.Stop();
+
+        lifetime?.Cancel();
+        session?.Dispose();
+        session = null;
+
+        if (!composition.IsDemo)
+        {
+            composition = GridCompositionRoot.CreateProductionShell();
+            catalogService = composition.CatalogService;
+            activeStableAccountId = null;
+        }
+
+        if (hadProductState)
+        {
+            editorTabs.Clear();
+            EditorTabView.TabItems.Clear();
+            documentTabs.Clear();
+            navigationHistory.Clear();
+            navigationIndex = -1;
+            notifications.Clear();
+            unreadNotificationCount = 0;
+        }
+
+        leftPanelRequested = false;
+        bottomPanelRequested = false;
+
+        LeftSidebar.Visibility = Visibility.Collapsed;
+        LeftPanelColumn.Width = new GridLength(0);
+        LeftSplitterColumn.Width = new GridLength(0);
+
+        AssistantPanelColumn.Width = new GridLength(0);
+        AssistantSplitterColumn.Width = new GridLength(0);
+
+        BottomPanelRow.Height = new GridLength(0);
+        BottomSplitterRow.Height = new GridLength(0);
+        BottomPanelFullView.Visibility = Visibility.Collapsed;
+
+        LoadingState.Visibility = Visibility.Collapsed;
+        ErrorState.Visibility = Visibility.Collapsed;
+
+        // Authentication owns Home's content, but not the main tab strip.
+        ContextBar.Visibility = Visibility.Collapsed;
+        ContentFrame.Visibility = Visibility.Visible;
+        AuthGatePanel.Visibility = Visibility.Visible;
+        MainContentPanelOutline.Visibility = Visibility.Collapsed;
+
+        // Persisted registrations stay on disk, but no game projection is
+        // exposed without an authenticated product session.
+        foreach (var button in dynamicGameItems)
+            GameRailItems.Children.Remove(button);
+
+        dynamicGameItems.Clear();
+        gameItems.Clear();
+
+        SetProductShellEnabled(false);
+        ClearAuthenticatedUser();
+        EnsureHomeTab();
+        SelectHomeTab();
+    }
+
+    private void BindAuthenticatedUser(
+        SessionUser user,
+        Microsoft.UI.Xaml.Media.ImageSource? avatar)
+    {
+        AccountAvatar.ProfilePicture = avatar;
+        AccountAvatar.DisplayName = string.Empty;
+        AccountAvatar.Initials = string.Empty;
+        AccountArea.Visibility = Visibility.Visible;
+        AutomationProperties.SetHelpText(
+            AccountArea,
+            avatar is null
+                ? "Neutral authenticated account avatar"
+                : "Profile image from the authenticated identity");
+    }
+
+    private void ClearAuthenticatedUser()
+    {
+        AccountArea.Visibility = Visibility.Collapsed;
+        AccountAvatar.ProfilePicture = null;
+        AccountAvatar.DisplayName = string.Empty;
+        AccountAvatar.Initials = string.Empty;
+        AutomationProperties.SetHelpText(AccountArea, string.Empty);
+    }
+
+    private void SetProductShellEnabled(bool enabled)
+    {
+        MainMenuBar.IsEnabled = enabled;
+        CompactMenuButton.IsEnabled = enabled;
+        GlobalSearchBox.IsEnabled = enabled;
+        OpenInButton.IsEnabled = enabled;
+        BackButton.IsEnabled = enabled;
+        ForwardButton.IsEnabled = enabled;
+
+        LeftPanelToggleButton.IsEnabled = enabled;
+        BottomPanelToggleButton.IsEnabled = enabled;
+        AssistantToggleButton.IsEnabled = enabled;
+
+        GameRailItems.IsHitTestVisible = enabled;
+        GameRailItems.Opacity = enabled ? 1 : 0.35;
+
+        // Home + packaged legal documents remain available before sign-in.
+        EditorTabView.IsEnabled = true;
+
+        // Product actions remain unavailable until authentication succeeds.
+        EditorMoreActionsButton.IsEnabled = enabled;
+    }
+
+    private void OnShowSignUpClicked(object sender, RoutedEventArgs e)
+    {
+        AuthStatusText.Text = string.Empty;
+        SignInPanel.Visibility = Visibility.Collapsed;
+        SignUpPanel.Visibility = Visibility.Visible;
+        SignUpStatusText.Text = string.Empty;
+        UpdateSignUpConsentState();
+        SignUpEmailBox.Focus(FocusState.Programmatic);
+    }
+
+    private void OnShowSignInClicked(object sender, RoutedEventArgs e)
+    {
+        SignUpStatusText.Text = string.Empty;
+        SignUpPanel.Visibility = Visibility.Collapsed;
+        SignInPanel.Visibility = Visibility.Visible;
+        AuthStatusText.Text = string.Empty;
+        MagicEmailBox.Focus(FocusState.Programmatic);
+    }
+    private void OnSignUpConsentChanged(object sender, RoutedEventArgs e)
+    {
+        UpdateSignUpConsentState();
+    }
+
+    private void UpdateSignUpConsentState()
+    {
+        var accepted = SignUpConsentCheckBox.IsChecked == true;
+
+        SignUpMicrosoftButton.IsEnabled = accepted && IsAuthProviderAvailable("microsoft");
+        SignUpGitHubButton.IsEnabled = accepted && IsAuthProviderAvailable("github");
+        SignUpGoogleButton.IsEnabled = accepted && IsAuthProviderAvailable("google");
+        CreateAccountButton.IsEnabled = accepted;
+
+        var opacity = accepted ? 1.0 : 0.45;
+
+        SignUpMicrosoftButton.Opacity = opacity;
+        SignUpGitHubButton.Opacity = opacity;
+        SignUpGoogleButton.Opacity = opacity;
+        CreateAccountButton.Opacity = opacity;
+    }
+
+    private IReadOnlyList<OAuthProviderOption>? lastAuthProviderPresentation;
+
+    private void ApplyAuthProviderPresentation(IReadOnlyList<OAuthProviderOption>? providers)
+    {
+        lastAuthProviderPresentation = providers;
+        ApplyAuthProviderButton(MicrosoftSignInButton, "microsoft", providers);
+        ApplyAuthProviderButton(GitHubSignInButton, "github", providers);
+        ApplyAuthProviderButton(GoogleSignInButton, "google", providers);
+        UpdateSignUpConsentState();
+    }
+
+    private void ApplyAuthProviderButton(
+        Button signInButton,
+        string providerId,
+        IReadOnlyList<OAuthProviderOption>? providers)
+    {
+        var option = providers?.FirstOrDefault(candidate =>
+            string.Equals(candidate.Provider, providerId, StringComparison.OrdinalIgnoreCase));
+        if (option is null)
+        {
+            signInButton.IsEnabled = true;
+            signInButton.Opacity = 1;
+            ToolTipService.SetToolTip(signInButton, null);
+            return;
+        }
+
+        var available = option.Enabled && option.Available;
+        signInButton.IsEnabled = available;
+        signInButton.Opacity = available ? 1 : 0.45;
+        ToolTipService.SetToolTip(
+            signInButton,
+            available ? null : option.Reason ?? "This sign-in option is unavailable.");
+    }
+
+    private bool IsAuthProviderAvailable(string providerId)
+    {
+        var option = lastAuthProviderPresentation?.FirstOrDefault(candidate =>
+            string.Equals(candidate.Provider, providerId, StringComparison.OrdinalIgnoreCase));
+        return option is null || (option.Enabled && option.Available);
+    }
+
+    private bool TryBeginProviderSignIn(string provider)
+    {
+        if (authController is null)
+        {
+            AuthStatusText.Text = "Grid authentication is not configured.";
+            return false;
+        }
+
+        var option = authService?.Current.Providers?.FirstOrDefault(candidate =>
+            string.Equals(candidate.Provider, provider, StringComparison.OrdinalIgnoreCase));
+        if (option is not null && !(option.Enabled && option.Available))
+        {
+            AuthStatusText.Text = option.Reason ?? "This sign-in option is unavailable.";
+            return false;
+        }
+
+        return true;
+    }
+
+    private bool RequireSignUpConsent()
+    {
+        if (SignUpConsentCheckBox.IsChecked == true)
+            return true;
+
+        SignUpStatusText.Text =
+            "Review and accept the GRID agreements to continue.";
+
+        UpdateSignUpConsentState();
+        return false;
+    }
+
+    private void OnSignUpMicrosoftClicked(object sender, RoutedEventArgs e)
+    {
+        if (!RequireSignUpConsent())
+            return;
+        if (!TryBeginProviderSignIn("microsoft"))
+        {
+            SignUpStatusText.Text = AuthStatusText.Text;
+            return;
+        }
+
+        SignUpStatusText.Text = string.Empty;
+        authController!.SignInWith("microsoft", acceptRequiredConsent: true);
+    }
+
+    private void OnSignUpGitHubClicked(object sender, RoutedEventArgs e)
+    {
+        if (!RequireSignUpConsent())
+            return;
+        if (!TryBeginProviderSignIn("github"))
+        {
+            SignUpStatusText.Text = AuthStatusText.Text;
+            return;
+        }
+
+        SignUpStatusText.Text = string.Empty;
+        authController!.SignInWith("github", acceptRequiredConsent: true);
+    }
+
+    private void OnSignUpGoogleClicked(object sender, RoutedEventArgs e)
+    {
+        if (!RequireSignUpConsent())
+            return;
+        if (!TryBeginProviderSignIn("google"))
+        {
+            SignUpStatusText.Text = AuthStatusText.Text;
+            return;
+        }
+
+        SignUpStatusText.Text = string.Empty;
+        authController!.SignInWith("google", acceptRequiredConsent: true);
+    }
+    private void OnMicrosoftSignInClicked(object sender, RoutedEventArgs e)
+    {
+        if (!TryBeginProviderSignIn("microsoft"))
+            return;
+        authController!.SignInWith("microsoft");
+    }
+
+    private void OnGitHubSignInClicked(object sender, RoutedEventArgs e)
+    {
+        if (!TryBeginProviderSignIn("github"))
+            return;
+        authController!.SignInWith("github");
+    }
+
+    private void OnGoogleSignInClicked(object sender, RoutedEventArgs e)
+    {
+        if (!TryBeginProviderSignIn("google"))
+            return;
+        authController!.SignInWith("google");
+    }
+
+    private async void OnMagicEmailClicked(object sender, RoutedEventArgs e)
+    {
+        var email = MagicEmailBox.Text.Trim();
+
+        if (string.IsNullOrWhiteSpace(email))
+        {
+            AuthStatusText.Text = "Enter your email address.";
+            return;
+        }
+
+        if (authController is null)
+        {
+            AuthStatusText.Text = "Grid authentication is not configured.";
+            return;
+        }
+
+        try
+        {
+            await authController.RequestMagicAsync(email, "login");
+            AuthStatusText.Text = "Check your email to continue signing in.";
+        }
+        catch (Exception exception)
+        {
+            AuthStatusText.Text =
+                $"Sign in is unavailable ({exception.GetType().Name}).";
+        }
+    }
+
+    private async void OnCreateAccountClicked(object sender, RoutedEventArgs e)
+    {
+        var email = SignUpEmailBox.Text.Trim();
+
+        if (string.IsNullOrWhiteSpace(email))
+        {
+            SignUpStatusText.Text = "Enter your email address.";
+            return;
+        }
+
+        if (SignUpConsentCheckBox.IsChecked != true)
+        {
+            SignUpStatusText.Text =
+                "Review and accept the Grid agreements to continue.";
+            return;
+        }
+
+        if (authController is null)
+        {
+            SignUpStatusText.Text = "Grid authentication is not configured.";
+            return;
+        }
+
+        try
+        {
+            await authController.RequestMagicAsync(email, "signup");
+            SignUpStatusText.Text =
+                "Check your email to continue creating your Grid account.";
+        }
+        catch (Exception exception)
+        {
+            SignUpStatusText.Text =
+                $"Signup is unavailable ({exception.GetType().Name}).";
+        }
+    }
+
+    private async void OnGridTermsClicked(
+        Microsoft.UI.Xaml.Documents.Hyperlink sender,
+        Microsoft.UI.Xaml.Documents.HyperlinkClickEventArgs args) =>
+        await OpenPackagedLegalDocumentAsync(
+            "GRID_TERMS_OF_SERVICE.md",
+            "GRID Terms of Service");
+
+    private async void OnGridPrivacyClicked(
+        Microsoft.UI.Xaml.Documents.Hyperlink sender,
+        Microsoft.UI.Xaml.Documents.HyperlinkClickEventArgs args) =>
+        await OpenPackagedLegalDocumentAsync(
+            "GRID_PRIVACY_NOTICE.md",
+            "GRID Privacy Notice");
+
+    private async void OnGridEeccdClicked(
+        Microsoft.UI.Xaml.Documents.Hyperlink sender,
+        Microsoft.UI.Xaml.Documents.HyperlinkClickEventArgs args) =>
+        await OpenPackagedLegalDocumentAsync(
+            "GRID_EUROPEAN_ELECTRONIC_COMMUNICATIONS_CODE_DISCLOSURE.md",
+            "GRID EECCD");
+
+    private async Task OpenPackagedLegalDocumentAsync(
+        string fileName,
+        string title)
+    {
+        // This is deliberately a narrow pre-auth authority:
+        // only the three packaged GRID legal artifacts are accepted.
+        var allowed = new HashSet<string>(StringComparer.Ordinal)
+        {
+            "GRID_TERMS_OF_SERVICE.md",
+            "GRID_PRIVACY_NOTICE.md",
+            "GRID_EUROPEAN_ELECTRONIC_COMMUNICATIONS_CODE_DISCLOSURE.md",
+        };
+
+        if (!allowed.Contains(fileName))
+            throw new InvalidOperationException(
+                "Document is not authorized for pre-auth viewing.");
+
+        var path = Path.Combine(
+            AppContext.BaseDirectory,
+            "Legal",
+            fileName);
+
+        if (!File.Exists(path))
+        {
+            SignUpStatusText.Text =
+                "This GRID legal document is unavailable.";
+            return;
+        }
+
+        var content = await File.ReadAllTextAsync(path);
+        OpenOrFocusDocumentTab(
+            $"legal:{fileName}",
+            title,
+            content);
+    }
+
+    private void OpenOrFocusDocumentTab(
+        string documentId,
+        string title,
+        string content)
+    {
+        EnsureHomeTab();
+
+        var key = $"document:{documentId}";
+
+        var existing = EditorTabView.TabItems
+            .OfType<TabViewItem>()
+            .FirstOrDefault(item =>
+                item.Tag is EditorTabRecord record &&
+                record.Key.Equals(key, StringComparison.Ordinal));
+
+        if (existing is null)
+        {
+            documentTabs[documentId] =
+                new DocumentTabRecord(documentId, title, content);
+
+            var tab = new EditorTabRecord(
+                key,
+                EditorTabKind.Document,
+                ShellSurface.Home,
+                title,
+                WorkspaceSelection.Empty,
+                documentId);
+
+            editorTabs.Add(tab);
+
+            existing = new TabViewItem
+            {
+                Header = title,
+                Tag = tab,
+                IsClosable = true,
+                Style = (Style)Application.Current.Resources["ShellTabViewItemStyle"],
+            };
+
+            AutomationProperties.SetName(existing, $"{title} tab");
+            EditorTabView.TabItems.Add(existing);
+        }
+
+        EditorTabView.SelectedItem = existing;
+    }
+
+    private void RenderDocumentTab(EditorTabRecord tab)
+    {
+        if (tab.DocumentId is null ||
+            !documentTabs.TryGetValue(tab.DocumentId, out var document))
+        {
+            return;
+        }
+
+        // Legal documents are main-panel content, not an escape from the
+        // signed-out shell boundary.
+        ContextBar.Visibility = Visibility.Collapsed;
+        AuthGatePanel.Visibility = Visibility.Collapsed;
+        ContentFrame.Visibility = Visibility.Visible;
+
+        ContentFrame.Navigate(typeof(DocumentViewerPage));
+
+        if (ContentFrame.Content is DocumentViewerPage viewer)
+            viewer.BindMarkdown(document.Content);
+    }
+    private bool IsCurrentProductTransition(
+        long transitionVersion,
+        string? expectedStableAccountId,
+        CancellationTokenSource transitionLifetime)
+    {
+        if (transitionVersion != productTransitionVersion ||
+            transitionLifetime.IsCancellationRequested ||
+            !ReferenceEquals(lifetime, transitionLifetime) ||
+            authService?.Current is not { IsSignedIn: true } current)
+        {
+            return false;
+        }
+
+        return composition.IsDemo ||
+            (StringComparer.Ordinal.Equals(activeStableAccountId, expectedStableAccountId) &&
+             StringComparer.Ordinal.Equals(current.User?.StableAccountId, expectedStableAccountId));
+    }
+
+    private async Task LoadCatalogAsync(long transitionVersion, string? expectedStableAccountId)
     {
         lifetime?.Cancel();
         lifetime?.Dispose();
-        lifetime = new CancellationTokenSource();
+        var transitionLifetime = new CancellationTokenSource();
+        lifetime = transitionLifetime;
+        var productComposition = composition;
+        var productCatalogService = catalogService;
+        GridApplicationSession? pendingSession = null;
         ShowLoading();
         try
         {
             string? taskHistoryIssue = null;
-            var catalog = await catalogService.GetCatalogAsync(lifetime.Token);
-            var restoredSelection = composition.WorkspaceSelectionStore?.Load();
-            firstRunCompleted = composition.IsDemo || composition.FirstRunStateStore?.IsComplete() == true;
-            session?.Dispose();
-            session = new GridApplicationSession(
+            var startup = StartupInstrumentation.Current;
+            startup?.BeginStage(
+                StartupStageId.LocalDeviceState,
+                StartupWorkClassification.StartupRequired,
+                "Restore workspace selection and first-run device markers.");
+            var restoredSelection = productComposition.WorkspaceSelectionStore?.Load();
+            var completed = productComposition.IsDemo || productComposition.FirstRunStateStore?.IsComplete() == true;
+            startup?.CompleteStage(
+                StartupStageId.LocalDeviceState,
+                StartupStageOutcome.Completed,
+                detail: restoredSelection is null ? "No saved workspace selection." : "Workspace selection restored.");
+            startup?.SkipStage(
+                StartupStageId.StaleStateAssessment,
+                "No distinct stale-state assessment boundary in startup v1.");
+            startup?.BeginStage(
+                StartupStageId.RegisteredStateLoad,
+                StartupWorkClassification.StartupRequired,
+                "Load persisted game registrations into catalog.");
+            var catalog = await productCatalogService.GetCatalogAsync(transitionLifetime.Token);
+            startup?.CompleteStage(
+                StartupStageId.RegisteredStateLoad,
+                StartupStageOutcome.Completed,
+                detail: $"{catalog.Games.Length} registered game projection(s).");
+            Task? canonicalLoadTask = null;
+            if (productComposition.CanonicalCatalogRuntimeService is not null)
+            {
+                startup?.BeginStage(
+                    StartupStageId.PreparedCanonicalStateLoad,
+                    StartupWorkClassification.BackgroundOptional,
+                    "Open authenticated prepared navigation metadata; no source catalog load.");
+                canonicalLoadTask = productComposition.CanonicalCatalogRuntimeService.LoadAsync(catalog, transitionLifetime.Token);
+            }
+            else
+            {
+                startup?.SkipStage(
+                    StartupStageId.PreparedCanonicalStateLoad,
+                    "Canonical runtime service not composed for this mode.");
+            }
+            if (!IsCurrentProductTransition(transitionVersion, expectedStableAccountId, transitionLifetime)) return;
+            pendingSession = new GridApplicationSession(
                 catalog,
-                composition.HistoryStore,
-                composition.Mo2ToolOutputQueryService,
-                composition.Mo2ResolvedStateService,
-                composition.FidelityAuditService,
-                composition.WorkspaceLaunchService,
+                productComposition.HistoryStore,
+                productComposition.Mo2ToolOutputQueryService,
+                productComposition.Mo2ResolvedStateService,
+                productComposition.FidelityAuditService,
+                productComposition.WorkspaceLaunchService,
                 assistantClasses: AssistantClassCatalogLoader.Load(),
                 assistantTools: AssistantToolCatalogLoader.Load(),
-                assistantExecutionService: composition.AssistantRequestExecutionService,
+                assistantExecutionService: productComposition.AssistantRequestExecutionService,
                 initialSelection: restoredSelection,
-                offlineAlertIndexStore: composition.OfflineAlertIndexStore);
-            await session.History.LoadAsync(lifetime.Token);
-            try
-            {
-                await session.Assistant.LoadPersistedTasksAsync(lifetime.Token);
-            }
-            catch (OperationCanceledException)
-            {
-                throw;
-            }
-            catch
-            {
-                taskHistoryIssue = "Saved investigation tasks could not be restored. Connected games remain available and no external changes were made.";
-            }
+                offlineAlertIndexStore: productComposition.OfflineAlertIndexStore,
+                userToolConfigurationStore: productComposition.UserToolConfigurationStore,
+                installedToolKnowledgeStore: productComposition.InstalledToolKnowledgeStore,
+                userToolLaunchService: productComposition.UserToolLaunchService,
+                assistantTicketTaxonomy: AssistantTicketTaxonomyLoader.Load());
+            if (!IsCurrentProductTransition(transitionVersion, expectedStableAccountId, transitionLifetime))
+                return;
+            startup?.CompleteStage(
+                StartupStageId.ShellProductState,
+                StartupStageOutcome.Completed,
+                detail: "Catalog and session assembly complete.");
+            startup?.BeginStage(
+                StartupStageId.ShellUiActivation,
+                StartupWorkClassification.StartupRequired,
+                "Bind shell UI and first navigation.");
+            session?.Dispose();
+            session = pendingSession;
+            pendingSession = null;
+            firstRunCompleted = completed;
+            productUnlocked = true;
+            AuthGatePanel.Visibility = Visibility.Collapsed;
+            MainContentPanelOutline.Visibility = Visibility.Visible;
+            SetProductShellEnabled(true);
             editorTabs.Clear();
             EditorTabView.TabItems.Clear();
             navigationHistory.Clear();
@@ -148,10 +969,6 @@ public sealed partial class MainWindow : Window
             PopulateGameItems(catalog);
             BindAssistant();
             ShowShell();
-            if (taskHistoryIssue is not null)
-            {
-                RaiseNotification("Investigation history unavailable", taskHistoryIssue, InfoBarSeverity.Warning);
-            }
             SelectBottomSurface(BottomSurface.Terminal);
             leftPanelRequested = false;
             bottomPanelRequested = false;
@@ -161,7 +978,7 @@ public sealed partial class MainWindow : Window
                 UsesAssistantDockBudget,
                 session.Assistant.RequestedPanelWidth).Band);
             UpdateAssistantLayout();
-            if (!composition.IsDemo && !firstRunCompleted)
+            if (!productComposition.IsDemo && !firstRunCompleted)
             {
                 NavigateSurface(ShellSurface.Welcome, record: false);
             }
@@ -170,20 +987,70 @@ public sealed partial class MainWindow : Window
                 NavigateSurface(ShellSurface.Home, record: false);
             }
             if (navigationHistory.Count == 0) RecordNavigation(CreateLocation(activeSurface));
-            if (composition.VortexConnectionStore is not null) vortexCatalogTimer.Start();
+            if (productComposition.VortexConnectionStore is not null) vortexCatalogTimer.Start();
+            startup?.CompleteStage(
+                StartupStageId.ShellUiActivation,
+                StartupStageOutcome.Completed,
+                detail: "Product shell bound and first navigation recorded.");
+            startup?.CompleteStage(
+                StartupStageId.ShellInitialization,
+                StartupStageOutcome.Completed,
+                detail: "Shell initialization substages complete.");
+            startup?.MarkReady("Shell usable; required startup work complete.");
+            if (canonicalLoadTask is not null) _ = FinishCanonicalReadinessAsync(canonicalLoadTask);
+
+            async Task FinishCanonicalReadinessAsync(Task loadTask)
+            {
+                try
+                {
+                    await loadTask;
+                    if (!IsCurrentProductTransition(transitionVersion, expectedStableAccountId, transitionLifetime)) return;
+                    var runtime = productComposition.CanonicalCatalogRuntimeService!;
+                    startup?.CompleteStage(StartupStageId.PreparedCanonicalStateLoad, StartupStageOutcome.Completed,
+                        detail: $"{runtime.PreparedRoot}; sourceCatalogLoads={runtime.RuntimeSourceCatalogLoads}");
+                    AssistantPanelView.RefreshContext();
+                }
+                catch (OperationCanceledException) when (transitionLifetime.IsCancellationRequested) { }
+                catch (Exception exception)
+                {
+                    if (!IsCurrentProductTransition(transitionVersion, expectedStableAccountId, transitionLifetime)) return;
+                    startup?.CompleteStage(StartupStageId.PreparedCanonicalStateLoad, StartupStageOutcome.Failed,
+                        detail: $"Prepared navigation unavailable ({exception.GetType().Name}).");
+                    AssistantPanelView.RefreshContext();
+                }
+            }
+            var hydrateTask = HydrateOptionalSessionStateAsync(
+                session,
+                productComposition,
+                transitionLifetime.Token,
+                taskHistoryIssue);
+            if (StartupInstrumentation.AutomationCloseRequested)
+            {
+                await hydrateTask;
+                Close();
+            }
         }
-        catch (OperationCanceledException) when (lifetime.IsCancellationRequested)
+        catch (OperationCanceledException) when (transitionLifetime.IsCancellationRequested)
         {
         }
         catch
         {
-            ShowError("Connected games could not be loaded. Grid made no external changes.");
+            StartupInstrumentation.Current?.CompleteStage(
+                StartupStageId.ShellInitialization,
+                StartupStageOutcome.Failed,
+                detail: "Catalog/session load failed.");
+            StartupInstrumentation.Current?.MarkBlocked("Connected games could not be loaded.");
+            if (IsCurrentProductTransition(transitionVersion, expectedStableAccountId, transitionLifetime))
+                ShowError("Connected games could not be loaded. Grid made no external changes.");
+        }
+        finally
+        {
+            pendingSession?.Dispose();
         }
     }
 
     private void PopulateGameItems(GridCatalogSnapshot catalog)
     {
-        GamesList.Children.Clear();
         GameRailItems.Children.Clear();
         dynamicGameItems.Clear();
         gameItems.Clear();
@@ -221,19 +1088,10 @@ public sealed partial class MainWindow : Window
             dynamicGameItems.Add(item);
             gameItems.Add(game.Id, item);
         }
-        EmptyGamesButton.Visibility = dynamicGameItems.Count == 0 ? Visibility.Visible : Visibility.Collapsed;
     }
 
-    private IEnumerable<ManagedGame> SortGames(IEnumerable<ManagedGame> games)
-    {
-        var values = games.ToArray();
-        return GameSortSelector.SelectedIndex switch
-        {
-            1 => values.OrderBy(value => value.Name, StringComparer.CurrentCultureIgnoreCase),
-            2 => values.Reverse(),
-            _ => values,
-        };
-    }
+    private static IEnumerable<ManagedGame> SortGames(IEnumerable<ManagedGame> games) =>
+        games.OrderBy(value => value.Name, StringComparer.CurrentCultureIgnoreCase);
 
     private void OnGameItemClicked(object sender, RoutedEventArgs e)
     {
@@ -246,7 +1104,16 @@ public sealed partial class MainWindow : Window
             return;
         }
 
-        OpenGame(id);
+        OpenGameSnapshot(id);
+        item.Focus(FocusState.Programmatic);
+    }
+
+    private void OnOpenSnapshotWorkspaceClicked(object sender, RoutedEventArgs e)
+    {
+        if (activeGameSidePanelId is GameId gameId)
+        {
+            OpenGameWorkspace(gameId);
+        }
     }
 
     private void OnGameSortChanged(object sender, SelectionChangedEventArgs e)
@@ -265,6 +1132,7 @@ public sealed partial class MainWindow : Window
                 break;
             case ShellSurface.Home:
             case ShellSurface.Games:
+            case ShellSurface.CatalogReview:
                 activeSurface = surface;
                 session.Shell.NavigateHome();
                 break;
@@ -338,8 +1206,6 @@ public sealed partial class MainWindow : Window
     private void OnForwardClicked(object sender, RoutedEventArgs e) => NavigateHistoryOffset(1);
     private void OnHomeBrandClicked(object sender, RoutedEventArgs e)
     {
-        ShowLeftPanel();
-        ShowSidePanel(HomeSidePanel, "HOME");
         NavigateSurface(ShellSurface.Home);
     }
 
@@ -503,7 +1369,8 @@ public sealed partial class MainWindow : Window
     }
     private void OnSettingsClicked(object sender, RoutedEventArgs e) => NavigateSurface(ShellSurface.Settings);
     private void OnWelcomeClicked(object sender, RoutedEventArgs e) => NavigateSurface(ShellSurface.Welcome);
-    private void OnAddGameClicked(object sender, RoutedEventArgs e) => _ = BeginAddGameAsync();
+    private void OnCatalogReviewClicked(object sender, RoutedEventArgs e) => NavigateSurface(ShellSurface.CatalogReview);
+    private void OnAddGameClicked(object sender, RoutedEventArgs e) => OpenGameCatalog();
 
     private void OnLibraryActivityClicked(object sender, RoutedEventArgs e)
     {
@@ -724,7 +1591,7 @@ public sealed partial class MainWindow : Window
         activeSidePanel = panel;
         activeGameSidePanelId = ReferenceEquals(panel, GameSnapshotPanel) ? gameId : null;
         SidePanelTitle.Text = title;
-        foreach (var candidate in new UIElement[] { HomeSidePanel, GameSnapshotPanel, LibraryPanel, SearchPanel, ActivityPanel })
+        foreach (var candidate in new UIElement[] { GameSnapshotPanel, LibraryPanel, SearchPanel, ActivityPanel })
             candidate.Visibility = ReferenceEquals(candidate, panel) ? Visibility.Visible : Visibility.Collapsed;
     }
 
@@ -770,7 +1637,7 @@ public sealed partial class MainWindow : Window
             query.Contains(value.Name, StringComparison.CurrentCultureIgnoreCase));
         if (game is not null && !game.Installations.IsEmpty)
         {
-            OpenGame(game.Id);
+            OpenGameWorkspace(game.Id);
             return;
         }
         if (query.StartsWith("Managers", StringComparison.OrdinalIgnoreCase))
@@ -1007,6 +1874,9 @@ public sealed partial class MainWindow : Window
             session?.Assistant.RequestedPanelWidth ?? AssistantSessionState.DefaultPanelWidth).Band);
     }
 
+    private void OnEditorTabViewLoaded(object sender, RoutedEventArgs e) =>
+        ShellTabGeometry.ApplyInteriorHeader(EditorTabView, "Main panel tab strip");
+
     private void OnTerminalTabClicked(object sender, RoutedEventArgs e) => SelectBottomSurface(BottomSurface.Terminal);
     private void OnOutputTabClicked(object sender, RoutedEventArgs e) => SelectBottomSurface(BottomSurface.Output);
     private void OnProblemsTabClicked(object sender, RoutedEventArgs e) => SelectBottomSurface(BottomSurface.Problems);
@@ -1202,14 +2072,64 @@ public sealed partial class MainWindow : Window
 
         if (activeSurface == ShellSurface.Welcome)
         {
+            ApplyWorkstationFramePlacement(false);
             ContextBar.Visibility = Visibility.Collapsed;
             NavigateFrame(typeof(WelcomePage));
             if (ContentFrame.Content is WelcomePage welcome)
             {
-                welcome.BindContext(session.Catalog, () => _ = BeginAddGameAsync(), OpenSetupFromWelcome,
-                    CompleteFirstRunSetup, SkipFirstRunSetup);
+                welcome.BindContext(
+                    () => _ = EnterProductFromWelcomeAsync(autoDiscover: false),
+                    () => _ = EnterProductFromWelcomeAsync(autoDiscover: true),
+                    CompleteFirstRunSetup);
             }
             RefreshAssistantContext();
+            UpdateShellPresentation();
+            return;
+        }
+
+        if (activeSurface == ShellSurface.Games)
+        {
+            ApplyWorkstationFramePlacement(false);
+            ContextBar.Visibility = Visibility.Collapsed;
+            if (addProfileTaskActive)
+            {
+                NavigateFrame(typeof(AddProfilePage));
+                if (ContentFrame.Content is AddProfilePage addProfilePage)
+                {
+                    addProfilePage.BindContext(
+                        BrowseAndResolveProfileAsync,
+                        ConnectResolvedProfileAsync,
+                        ReturnToGameCatalog);
+                }
+            }
+            else
+            {
+                NavigateFrame(typeof(GameCatalogPage));
+                if (ContentFrame.Content is GameCatalogPage gameCatalogPage)
+                {
+                    var autoDiscover = gameCatalogAutoDiscoverPending;
+                    gameCatalogAutoDiscoverPending = false;
+                    gameCatalogPage.BindContext(
+                        session.Catalog,
+                        gameId => _ = BeginAddGameAsync(gameId),
+                        ShowAddProfileTask,
+                        DiscoverCatalogGamesAsync,
+                        autoDiscover);
+                }
+            }
+            RefreshAssistantContext();
+            RefreshActivitySurface();
+            UpdateShellPresentation();
+            return;
+        }
+
+        if (activeSurface == ShellSurface.CatalogReview)
+        {
+            ApplyWorkstationFramePlacement(false);
+            ContextBar.Visibility = Visibility.Collapsed;
+            NavigateFrame(typeof(CatalogInspectionPage));
+            RefreshAssistantContext();
+            RefreshActivitySurface();
             UpdateShellPresentation();
             return;
         }
@@ -1223,11 +2143,11 @@ public sealed partial class MainWindow : Window
         }
 
         ContextBar.Visibility = Visibility.Collapsed;
+        ApplyWorkstationFramePlacement(false);
         activeSurface = session.Shell.CurrentRoute switch
         {
             ShellRoute.History => ShellSurface.Activities,
             ShellRoute.Settings => ShellSurface.Settings,
-            _ when activeSurface == ShellSurface.Games => ShellSurface.Games,
             _ => ShellSurface.Home,
         };
         var destination = session.Shell.CurrentRoute switch
@@ -1239,7 +2159,7 @@ public sealed partial class MainWindow : Window
         NavigateFrame(destination);
         if (ContentFrame.Content is HomePage home)
         {
-            home.BindContext(session.Catalog, composition.IsDemo, OpenGame, () => _ = BeginAddGameAsync());
+            home.BindContext(session.Catalog, composition.IsDemo, OpenGameWorkspace, () => OpenGameCatalog());
         }
         else if (ContentFrame.Content is HistoryPage history)
         {
@@ -1266,7 +2186,8 @@ public sealed partial class MainWindow : Window
         {
             ShellSurface.Welcome => "Welcome",
             ShellSurface.Home => "Home",
-            ShellSurface.Games => "Games",
+            ShellSurface.Games => addProfileTaskActive ? "Add Profile" : "Game Catalog",
+            ShellSurface.CatalogReview => "Catalog Review",
             ShellSurface.Workstation => selectedGame?.Name ?? "Workstation",
             ShellSurface.Activities => "Activities",
             ShellSurface.Settings => "Settings",
@@ -1351,7 +2272,7 @@ public sealed partial class MainWindow : Window
         }
     }
 
-    private void OpenGame(GameId id)
+    private void OpenGameWorkspace(GameId id)
     {
         if (session is null)
         {
@@ -1363,9 +2284,52 @@ public sealed partial class MainWindow : Window
         OpenOrFocusEditorTab(ShellSurface.Workstation);
         RecordNavigation(CreateLocation(ShellSurface.Workstation));
         RenderCurrentRoute();
-        ShowLeftPanel();
-        ShowSidePanel(GameSnapshotPanel, "GAME SNAPSHOT", id);
         if (gameItems.TryGetValue(id, out var item)) item.Focus(FocusState.Programmatic);
+    }
+
+    private void OpenGameSnapshot(GameId id)
+    {
+        if (session is null)
+        {
+            return;
+        }
+
+        var game = session.Catalog.Games.FirstOrDefault(value => value.Id == id);
+        if (game is null)
+        {
+            return;
+        }
+
+        var currentSelection = session.Shell.CurrentSelection;
+        var installation = currentSelection.GameId == id && currentSelection.InstallationId is InstallationId currentInstallationId
+            ? game.Installations.FirstOrDefault(value => value.Id == currentInstallationId)
+            : null;
+        installation ??= game.Installations.FirstOrDefault(value => value.Metadata.Availability == InstallationAvailability.Available)
+            ?? game.Installations.FirstOrDefault();
+
+        var profile = installation is not null && currentSelection.GameId == id &&
+                      currentSelection.ProfileId is ProfileId currentProfileId
+            ? installation.Profiles.FirstOrDefault(value => value.Id == currentProfileId)
+            : null;
+        profile ??= installation?.Profiles.FirstOrDefault(value =>
+            value.Lifecycle == ProfileLifecycleState.Available &&
+            value.Observation?.ManagerState == ManagerProfileState.Active);
+        profile ??= installation?.Profiles.FirstOrDefault(value => value.Lifecycle == ProfileLifecycleState.Available);
+
+        BindGameSnapshot(game, installation, profile);
+        ShowSidePanel(GameSnapshotPanel, "GAME SNAPSHOT", id);
+        ShowLeftPanel();
+    }
+
+    private void BindGameSnapshot(ManagedGame game, ManagedInstallation? installation, Profile? profile)
+    {
+        SnapshotGameName.Text = game.Name;
+        SnapshotInstanceText.Text = installation is null
+            ? "No instance selected"
+            : $"{installation.Name} · {installation.Metadata.Availability}";
+        SnapshotProfileText.Text = profile?.Name ?? "No profile selected";
+        SnapshotOpenWorkspaceButton.Content = $"Open {game.Name} workstation";
+        AutomationProperties.SetName(SnapshotOpenWorkspaceButton, $"Open {game.Name} workstation");
     }
 
     private void RenderGameWorkspace()
@@ -1388,14 +2352,11 @@ public sealed partial class MainWindow : Window
             ? game.Installations.FirstOrDefault(value => value.Id == installationId) : null;
         var profile = installation is not null && selection.ProfileId is ProfileId profileId
             ? installation.Profiles.FirstOrDefault(value => value.Id == profileId) : null;
-        SnapshotGameName.Text = game.Name;
-        SnapshotInstanceText.Text = installation is null
-            ? "No instance selected"
-            : $"{installation.Name} · {installation.Metadata.Availability}";
-        SnapshotProfileText.Text = profile?.Name ?? "No profile selected";
         session.SynchronizeContext();
         BindContextBar(game, installation, profile);
+        ApplyWorkstationFramePlacement(true);
         NavigateFrame(typeof(GameWorkspacePage));
+        ApplyWorkstationFramePlacement(true);
         if (ContentFrame.Content is GameWorkspacePage workspace)
         {
             workspace.BindContext(
@@ -1453,20 +2414,22 @@ public sealed partial class MainWindow : Window
         {
             return;
         }
-        if (installation?.Metadata.Provenance == InstallationProvenanceKind.ConnectedReference)
+        if (!composition.IsDemo && installation is not null && session.UserTools is not null && TryGetCurrentToolContext() is UserToolScope context)
         {
             var items = new[] { ToolTargetPresentation.ForManagement() }
-                .Concat((session.ToolOutputs?.Snapshot?.Executables ?? [])
-                    .Select(ToolTargetPresentation.ForObserved)).ToArray();
+                .Concat(session.UserTools.ForContext(context).Select(ToolTargetPresentation.ForUserConfiguration)).ToArray();
             launchTargetItems = items;
             LaunchTargetSelector.ItemsSource = items;
-            LaunchTargetSelector.SelectedItem = session.ToolOutputs?.SelectedExecutableId is ObservedExecutableId id
-                ? items.FirstOrDefault(value => value.Executable?.Id == id) : null;
+            LaunchTargetSelector.SelectedItem = selectedUserToolId is UserToolConfigurationId id
+                ? items.FirstOrDefault(value => value.Configuration?.Id == id) : null;
             LaunchTargetSelector.IsEnabled = true;
             LaunchTargetSelector.PlaceholderText = items.Length == 1 ? "Manage or select a tool" : "Select tool";
             UpdateLaunchTargetButtonPresentation();
-            RunButton.IsEnabled = false;
-            AutomationProperties.SetHelpText(RunButton, "Launching is not implemented in this shell stage.");
+            var selectedConfiguration = (LaunchTargetSelector.SelectedItem as ToolTargetPresentation)?.Configuration;
+            RunButton.IsEnabled = selectedConfiguration?.IsRunnable == true;
+            AutomationProperties.SetHelpText(RunButton, RunButton.IsEnabled
+                ? "Launches the exact saved executable configuration for this workspace."
+                : "Select a runnable saved tool configuration.");
             return;
         }
         var targets = new[] { ToolTargetPresentation.ForManagement() }
@@ -1515,7 +2478,46 @@ public sealed partial class MainWindow : Window
         RefreshEnvironmentButton.IsEnabled = false;
         try
         {
+            if (session?.Shell.CurrentSelection is
+                { GameId: GameId gameId, InstallationId: InstallationId installationId, ProfileId: ProfileId profileId } &&
+                composition.CanonicalRegistrationRefreshService is { } registrationRefresh)
+            {
+                var installation = session.Catalog.Games
+                    .FirstOrDefault(game => game.Id == gameId)?.Installations
+                    .FirstOrDefault(value => value.Id == installationId);
+                var profile = installation?.Profiles.FirstOrDefault(value => value.Id == profileId);
+                var fingerprint = profile?.Observation?.Inventory?.Fingerprint;
+                var registrationResult = await registrationRefresh.RefreshAsync(
+                    gameId,
+                    installationId,
+                    profileId,
+                    fingerprint,
+                    progress: null,
+                    cancellationToken: lifetime?.Token ?? default);
+                if (composition.CanonicalCatalogRuntimeService is not null)
+                {
+                    await composition.CanonicalCatalogRuntimeService.SynchronizePublishedBindingAsync(
+                        session.Catalog,
+                        lifetime?.Token ?? default);
+                }
+
+                session.SynchronizeContext();
+                var registrationSeverity = registrationResult.Status switch
+                {
+                    RegistrationRefreshStatus.Completed => InfoBarSeverity.Success,
+                    RegistrationRefreshStatus.Skipped => InfoBarSeverity.Informational,
+                    RegistrationRefreshStatus.Partial => InfoBarSeverity.Warning,
+                    _ => InfoBarSeverity.Error,
+                };
+                RaiseNotification(
+                    $"Registration refresh · {registrationResult.Mode} · {registrationResult.Status}",
+                    registrationResult.Detail,
+                    registrationSeverity);
+            }
+
             await workspace.RefreshEnvironmentAsync();
+            await RefreshConnectedWorkspaceCatalogAsync();
+            RefreshAssistantContext();
         }
         finally
         {
@@ -1562,12 +2564,46 @@ public sealed partial class MainWindow : Window
             LaunchTargetSelector.SelectedItem = null;
             suppressSelectors = false;
             UpdateLaunchTargetButtonPresentation();
-            await ShowManageGameAsync();
+            await ShowToolManagerAsync();
             return;
         }
-        if (item?.Executable is { } executable) session.ToolOutputs?.SelectExecutable(executable.Id);
+        if (item?.Configuration is { } configuration)
+        {
+            selectedUserToolId = configuration.Id;
+            RunButton.IsEnabled = configuration.IsRunnable;
+        }
+        else if (item?.Executable is { } executable) session.ToolOutputs?.SelectExecutable(executable.Id);
         else session.LaunchTargets.SelectTarget(item?.LaunchTarget?.Definition.Id);
         RefreshAssistantContext();
+    }
+
+    private async Task ShowToolManagerAsync()
+    {
+        if (session?.UserTools is null || composition.InstalledToolIdentityService is null || TryGetCurrentToolContext() is not UserToolScope context)
+        {
+            await ShowMessageAsync("Tools unavailable", "Open a connected game workspace before managing its launch configurations.");
+            return;
+        }
+
+        var dialog = new ToolConfigurationDialog(
+            session.UserTools,
+            context,
+            new WindowsExecutableFilePicker(this),
+            composition.InstalledToolIdentityService,
+            () =>
+            {
+                selectedUserToolId = null;
+                BindTools(InstallationSelector.SelectedItem as ManagedInstallation);
+            })
+        { XamlRoot = Content.XamlRoot };
+        await dialog.ShowAsync();
+    }
+
+    private UserToolScope? TryGetCurrentToolContext()
+    {
+        if (session?.Shell.CurrentSelection is not { GameId: GameId gameId, InstallationId: InstallationId installationId } selection)
+            return null;
+        return new(gameId, installationId, selection.ProfileId);
     }
 
     private async void OnManageGameClicked(object sender, RoutedEventArgs e)
@@ -1653,7 +2689,7 @@ public sealed partial class MainWindow : Window
         var selection = surface == ShellSurface.Workstation ? session.Shell.CurrentSelection : WorkspaceSelection.Empty;
         var key = CreateTabKey(surface, selection);
         var existing = editorTabs.FirstOrDefault(tab => tab.Key.Equals(key, StringComparison.Ordinal));
-        var tab = existing ?? new EditorTabRecord(key, surface, CreateTabTitle(surface, selection), selection);
+        var tab = existing ?? new EditorTabRecord(key, EditorTabKind.Surface, surface, CreateTabTitle(surface, selection), selection);
         if (existing is null)
         {
             editorTabs.Add(tab);
@@ -1680,7 +2716,9 @@ public sealed partial class MainWindow : Window
     private string CreateTabKey(ShellSurface surface, WorkspaceSelection selection) => surface switch
     {
         ShellSurface.Welcome => "welcome",
-        ShellSurface.Home or ShellSurface.Games => "home",
+        ShellSurface.Home => "home",
+        ShellSurface.Games => "game-catalog",
+        ShellSurface.CatalogReview => "catalog-review",
         ShellSurface.Activities => "activities",
         ShellSurface.Settings => "settings",
         ShellSurface.Workstation => $"workstation:{selection.GameId?.Value ?? "none"}:{selection.InstallationId?.Value ?? "none"}:{selection.ProfileId?.Value ?? "none"}",
@@ -1691,7 +2729,9 @@ public sealed partial class MainWindow : Window
     {
         if (session is null) return surface.ToString();
         if (surface == ShellSurface.Welcome) return "Welcome";
-        if (surface is ShellSurface.Home or ShellSurface.Games) return "Home";
+        if (surface == ShellSurface.Home) return "Home";
+        if (surface == ShellSurface.Games) return "Game Catalog";
+        if (surface == ShellSurface.CatalogReview) return "Catalog Review";
         if (surface == ShellSurface.Activities) return "Activities";
         if (surface == ShellSurface.Settings) return "Settings";
         if (surface != ShellSurface.Workstation) return surface.ToString();
@@ -1710,25 +2750,66 @@ public sealed partial class MainWindow : Window
 
     private void OnEditorTabSelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        if (suppressEditorTabSelection || session is null || EditorTabView.SelectedItem is not TabViewItem { Tag: EditorTabRecord tab })
+        if (suppressEditorTabSelection ||
+            EditorTabView.SelectedItem is not TabViewItem
+            {
+                Tag: EditorTabRecord tab
+            })
         {
             return;
         }
 
-        RestoreLocation(new ShellLocation(tab.Surface, tab.Selection, tab.Key));
-        NavigateSurface(tab.Surface, tab.Selection.GameId, record: false, synchronizeTab: false);
+        if (tab.Kind == EditorTabKind.Document)
+        {
+            RenderDocumentTab(tab);
+            return;
+        }
+
+        if (!productUnlocked || session is null)
+        {
+            if (tab.Key.Equals("home", StringComparison.Ordinal))
+            {
+                ContextBar.Visibility = Visibility.Collapsed;
+                ContentFrame.Visibility = Visibility.Visible;
+                AuthGatePanel.Visibility = Visibility.Visible;
+            }
+
+            return;
+        }
+
+        RestoreLocation(
+            new ShellLocation(tab.Surface, tab.Selection, tab.Key));
+
+        NavigateSurface(
+            tab.Surface,
+            tab.Selection.GameId,
+            record: false,
+            synchronizeTab: false);
+
         RecordNavigation(CreateLocation(tab.Surface));
     }
 
     private void OnEditorTabCloseRequested(TabView sender, TabViewTabCloseRequestedEventArgs args)
     {
-        if (args.Tab.Tag is not EditorTabRecord tab) return;
-        editorTabs.RemoveAll(candidate => candidate.Key.Equals(tab.Key, StringComparison.Ordinal));
-        sender.TabItems.Remove(args.Tab);
-        if (editorTabs.Count == 0)
+        if (args.Tab.Tag is not EditorTabRecord tab)
+            return;
+
+        if (tab.Key.Equals("home", StringComparison.Ordinal))
+            return;
+
+        if (tab.Kind == EditorTabKind.Document &&
+            tab.DocumentId is not null)
         {
-            NavigateSurface(ShellSurface.Home);
+            documentTabs.Remove(tab.DocumentId);
         }
+
+        editorTabs.RemoveAll(candidate =>
+            candidate.Key.Equals(tab.Key, StringComparison.Ordinal));
+
+        sender.TabItems.Remove(args.Tab);
+
+        if (sender.SelectedItem is null)
+            SelectHomeTab();
     }
 
     private void OpenSetupFromWelcome(GameId gameId, InstallationId installationId, ProfileId? profileId)
@@ -1745,25 +2826,52 @@ public sealed partial class MainWindow : Window
         OpenOrFocusEditorTab(ShellSurface.Workstation);
         RecordNavigation(CreateLocation(ShellSurface.Workstation));
         RenderCurrentRoute();
-        ShowLeftPanel();
-        ShowSidePanel(GameSnapshotPanel, "GAME SNAPSHOT", gameId);
     }
 
     private void CompleteFirstRunSetup()
     {
+        if (TryCompleteFirstRunSetup()) NavigateSurface(ShellSurface.Home);
+    }
+
+    private bool TryCompleteFirstRunSetup()
+    {
         if (composition.FirstRunStateStore is null || !composition.FirstRunStateStore.MarkComplete())
         {
             _ = ShowMessageAsync("Setup could not be saved", "GRID could not persist first-run completion. No external game or manager state was changed.");
-            return;
+            return false;
         }
-
         firstRunCompleted = true;
-        NavigateSurface(ShellSurface.Home);
+        return true;
     }
 
-    private void SkipFirstRunSetup() => NavigateSurface(ShellSurface.Home);
+    private async Task EnterProductFromWelcomeAsync(bool autoDiscover)
+    {
+        if (!TryCompleteFirstRunSetup()) return;
+        OpenGameCatalog(autoDiscover);
+        await Task.CompletedTask;
+    }
 
-    private void OnRunClicked(object sender, RoutedEventArgs e) { }
+    private async void OnRunClicked(object sender, RoutedEventArgs e)
+    {
+        if (session?.UserToolLaunch is null || TryGetCurrentToolContext() is not UserToolScope context ||
+            LaunchTargetSelector.SelectedItem is not ToolTargetPresentation { Configuration: { } configuration })
+            return;
+
+        RunButton.IsEnabled = false;
+        try
+        {
+            var result = await session.UserToolLaunch.LaunchAsync(configuration, context, lifetime?.Token ?? default);
+            if (result.Succeeded)
+                RaiseNotification("Tool started", result.Detail, InfoBarSeverity.Success);
+            else
+                await ShowMessageAsync("Tool could not be started", result.Detail);
+        }
+        catch (OperationCanceledException) { }
+        finally
+        {
+            RunButton.IsEnabled = (LaunchTargetSelector.SelectedItem as ToolTargetPresentation)?.Configuration?.IsRunnable == true;
+        }
+    }
 
     private async Task BeginAddGameAsync(GameId? requestedGame = null)
     {
@@ -1771,70 +2879,147 @@ public sealed partial class MainWindow : Window
         {
             return;
         }
-        if ((requestedGame is null || requestedGame == ProductionGridCatalogService.GrandTheftAutoVId) &&
-            composition.ProviderDiscoveryService is not null && composition.GameRegistrationStore is not null)
+        var game = requestedGame is GameId gameId
+            ? session.Catalog.Games.FirstOrDefault(candidate => candidate.Id == gameId)
+            : null;
+        if (game is null)
+        {
+            await ShowMessageAsync("Choose a game", "Select a supported game from Game Catalog before connecting an installation.");
+            return;
+        }
+        if (composition.ProviderDiscoveryService is not null &&
+            composition.ExistingProfileDiscoveryService is not null &&
+            composition.GameRegistrationStore is not null)
         {
             var registrationDialog = new GameRegistrationDialog(
-                composition.ProviderDiscoveryService, composition.GameRegistrationStore, pathPicker, composition.VortexConnectionStore)
+                game,
+                session.Catalog,
+                composition.ProviderDiscoveryService,
+                composition.ExistingProfileDiscoveryService,
+                pathPicker)
             { XamlRoot = Content.XamlRoot };
+            registrationDialog.AutoDiscoverOnOpen = true;
             await registrationDialog.ShowAsync();
-            if (registrationDialog.Registered.Count > 0)
+            try
             {
-                var catalog = await catalogService.GetCatalogAsync(lifetime?.Token ?? default);
-                session.Shell.ReplaceCatalog(catalog);
-                PopulateGameItems(catalog);
-                var registered = registrationDialog.Registered[0];
-                session.Shell.NavigateGame(registered.GameId);
-                session.Shell.SelectInstallation(registered.InstallationId);
-                session.SynchronizeContext();
-                PersistWorkspaceSelection();
-                await RecordHistoryAsync(HistoryEventKind.InstallationConnected, HistoryEventStatus.Succeeded,
-                    "Game installation registered", $"Grid registered {registrationDialog.Registered.Count} reviewed installation(s).",
-                    registered.GameId, registered.InstallationId);
-                activeSurface = ShellSurface.Workstation;
-                OpenOrFocusEditorTab(ShellSurface.Workstation);
-                RenderCurrentRoute();
-                ShowLeftPanel();
-                ShowSidePanel(GameSnapshotPanel, "GAME SNAPSHOT", registered.GameId);
+                if (registrationDialog.Decision is UseExistingGameProfileDecision useExisting)
+                {
+                    await ConnectResolvedProfileAsync(useExisting.Profile, lifetime?.Token ?? default);
+                    return;
+                }
+                if (registrationDialog.Decision is CreateNewGameProfileDecision createNew)
+                {
+                    var candidate = createNew.Candidate;
+                    var registered = await composition.GameRegistrationStore.RegisterAsync(
+                        game.Id,
+                        ProductionGridCatalogService.ProviderDiscoveryAdapterId,
+                        game.Name,
+                        candidate.Edition,
+                        candidate.ProviderId,
+                        candidate.InstallRoot,
+                        candidate.ExecutablePath,
+                        createNew.ManagerProviderIds,
+                        lifetime?.Token ?? default);
+                    var catalog = await catalogService.GetCatalogAsync(lifetime?.Token ?? default);
+                    await ReplaceObservedCatalogAsync(session, catalog,
+                        composition.CanonicalCatalogRuntimeService, lifetime?.Token ?? default);
+                    PopulateGameItems(catalog);
+                    session.Shell.NavigateGame(registered.GameId);
+                    session.Shell.SelectInstallation(registered.InstallationId);
+                    session.SynchronizeContext();
+                    PersistWorkspaceSelection();
+                    await RecordHistoryAsync(HistoryEventKind.InstallationConnected, HistoryEventStatus.Succeeded,
+                        "Game installation registered", "Grid registered one reviewed installation and created a new profile named after the game.",
+                        registered.GameId, registered.InstallationId);
+                    activeSurface = ShellSurface.Workstation;
+                    OpenOrFocusEditorTab(ShellSurface.Workstation);
+                    RenderCurrentRoute();
+                }
+            }
+            catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or InvalidDataException or ArgumentException or InvalidOperationException)
+            {
+                await ShowMessageAsync("Game connection failed", exception.Message);
             }
             return;
         }
-        var gameId = requestedGame ?? session.Catalog.Games.FirstOrDefault(game => CanAddMo2(game.Id))?.Id;
-        if (gameId is not GameId id || composition.Mo2Validator is null || composition.Mo2OnboardingCoordinator is null ||
-            composition.Mo2DiscoveryOptions is null)
-        {
-            await ShowMessageAsync("No supported adapter", "No installation adapter is currently available.");
-            return;
-        }
-        var dialog = new ExistingMo2ConnectionDialog(
-            composition.Mo2Validator, composition.Mo2OnboardingCoordinator, pathPicker,
-            composition.Mo2DiscoveryOptions with { ExpectedGameId = id }, ConnectedMo2AdapterId)
-        { XamlRoot = Content.XamlRoot };
-        try
-        {
-            await dialog.ShowAsync();
-            if (dialog.ConnectedReference is { } reference)
-            {
-                await ReloadAfterConnectionAsync(reference);
-            }
-        }
-        finally
-        {
-            RenderCurrentRoute();
-        }
+        await ShowMessageAsync("Game Catalog unavailable", "GRID's game catalog connection service is unavailable.");
+    }
+
+    private void OpenGameCatalog(bool autoDiscover = false)
+    {
+        addProfileTaskActive = false;
+        gameCatalogAutoDiscoverPending |= autoDiscover;
+        NavigateSurface(ShellSurface.Games);
+    }
+
+    private void ShowAddProfileTask()
+    {
+        addProfileTaskActive = true;
+        NavigateSurface(ShellSurface.Games);
+    }
+
+    private void ReturnToGameCatalog()
+    {
+        addProfileTaskActive = false;
+        RenderCurrentRoute();
+    }
+
+    private async Task<IReadOnlyList<GameId>> DiscoverCatalogGamesAsync(CancellationToken cancellationToken)
+    {
+        if (session is null || composition.ProviderDiscoveryService is null)
+            throw new InvalidOperationException("GRID's local game discovery service is unavailable.");
+        var snapshot = await composition.ProviderDiscoveryService.DiscoverAsync(cancellationToken);
+        var supported = session.Catalog.Games.Select(game => game.Id).ToHashSet();
+        return snapshot.Games
+            .Select(candidate => new GameId(GridProviderDiscoveryService.NormalizeCatalogGameId(candidate.GameId)))
+            .Where(supported.Contains)
+            .Distinct()
+            .OrderBy(id => id.Value, StringComparer.Ordinal)
+            .ToArray();
+    }
+
+    private async Task<ResolvedProfileEnvironmentResolution?> BrowseAndResolveProfileAsync(CancellationToken cancellationToken)
+    {
+        if (session is null || composition.ProfileEnvironmentResolver is null)
+            throw new InvalidOperationException("GRID's profile environment adapters are unavailable.");
+        var selected = await pathPicker.PickDirectoryAsync(cancellationToken);
+        if (string.IsNullOrWhiteSpace(selected)) return null;
+        return await composition.ProfileEnvironmentResolver.ResolveAsync(selected, session.Catalog, cancellationToken);
+    }
+
+    private async Task ConnectResolvedProfileAsync(ResolvedProfileEnvironment resolved, CancellationToken cancellationToken)
+    {
+        if (composition.Mo2OnboardingCoordinator is null)
+            throw new InvalidOperationException("GRID's profile connection adapter is unavailable.");
+        var state = await composition.Mo2OnboardingCoordinator.ConnectAsync(
+            new Mo2ConnectionRequest(resolved.ValidationRequest, resolved.AdapterId, resolved.ProfileName),
+            cancellationToken);
+        if (state.Reference is null || !state.ConnectionPersisted)
+            throw new InvalidDataException(state.Detail);
+        addProfileTaskActive = false;
+        await ReloadAfterConnectionAsync(state.Reference, resolved.ProfileName);
     }
 
     private bool CanAddMo2(GameId id) => !composition.IsDemo && session?.Catalog.Games
         .FirstOrDefault(game => game.Id == id)?.Adapters.Any(adapter => adapter.Id == ConnectedMo2AdapterId) == true;
 
-    private async Task ReloadAfterConnectionAsync(Mo2InstallationReference reference)
+    private async Task ReloadAfterConnectionAsync(Mo2InstallationReference reference, string? preferredProfileName = null)
     {
         if (session is null) return;
         var catalog = await catalogService.GetCatalogAsync(lifetime?.Token ?? default);
-        session.Shell.ReplaceCatalog(catalog);
+        await ReplaceObservedCatalogAsync(session, catalog,
+            composition.CanonicalCatalogRuntimeService, lifetime?.Token ?? default);
         PopulateGameItems(catalog);
         session.Shell.NavigateGame(reference.GameId);
         session.Shell.SelectInstallation(reference.InstallationId);
+        if (!string.IsNullOrWhiteSpace(preferredProfileName))
+        {
+            var preferredProfile = session.Catalog.Games
+                .FirstOrDefault(game => game.Id == reference.GameId)?.Installations
+                .FirstOrDefault(installation => installation.Id == reference.InstallationId)?.Profiles
+                .FirstOrDefault(profile => profile.Name.Equals(preferredProfileName, StringComparison.OrdinalIgnoreCase));
+            if (preferredProfile is not null) session.Shell.SelectProfile(preferredProfile.Id);
+        }
         session.SynchronizeContext();
         PersistWorkspaceSelection();
         await RecordHistoryAsync(HistoryEventKind.InstallationConnected, HistoryEventStatus.Succeeded,
@@ -1842,15 +3027,13 @@ public sealed partial class MainWindow : Window
         await ResumeSessionAuthorizationAsync(reference);
 
 
-        // Connection success is an intentional one-time transition: reveal the game snapshot
-        // and the newly connected profile workstation, while Chat and Console stay closed.
+        // Connection success opens only the newly connected profile workstation. The game
+        // snapshot remains an independent, explicit activity-rail action.
         activeSurface = ShellSurface.Workstation;
         OpenOrFocusEditorTab(ShellSurface.Workstation);
         bottomPanelRequested = false;
         session.Assistant.Collapse();
         RenderCurrentRoute();
-        ShowLeftPanel();
-        ShowSidePanel(GameSnapshotPanel, "GAME SNAPSHOT", reference.GameId);
         ApplyBottomPanelVisibility();
         UpdateAssistantLayout();
     }
@@ -1907,7 +3090,8 @@ public sealed partial class MainWindow : Window
     {
         if (session is null) return;
         var catalog = await catalogService.GetCatalogAsync(lifetime?.Token ?? default);
-        session.Shell.ReplaceCatalog(catalog);
+        await ReplaceObservedCatalogAsync(session, catalog,
+            composition.CanonicalCatalogRuntimeService, lifetime?.Token ?? default);
         PopulateGameItems(catalog);
         session.SynchronizeContext();
         PersistWorkspaceSelection();
@@ -1946,7 +3130,8 @@ public sealed partial class MainWindow : Window
         }
         var gameId = session!.Shell.CurrentSelection.GameId;
         var catalog = await catalogService.GetCatalogAsync(lifetime?.Token ?? default);
-        session.Shell.ReplaceCatalog(catalog);
+        await ReplaceObservedCatalogAsync(session, catalog,
+            composition.CanonicalCatalogRuntimeService, lifetime?.Token ?? default);
         PopulateGameItems(catalog);
         session.Shell.NavigateHome();
         session.SynchronizeContext();
@@ -2138,13 +3323,24 @@ public sealed partial class MainWindow : Window
     private async void OnVortexCatalogTimerTick(object? sender, object e)
     {
         if (vortexCatalogRefreshRunning || session is null || lifetime?.IsCancellationRequested != false) return;
+        var refreshSession = session;
+        var refreshLifetime = lifetime;
+        var refreshCatalogService = catalogService;
+        var refreshCanonicalCatalogRuntimeService = composition.CanonicalCatalogRuntimeService;
+        var transitionVersion = productTransitionVersion;
+        var expectedStableAccountId = activeStableAccountId;
         vortexCatalogRefreshRunning = true;
         try
         {
-            var catalog = await catalogService.GetCatalogAsync(lifetime.Token);
-            if (catalog.Revision == session.Catalog.Revision) return;
-            session.Shell.ReplaceCatalog(catalog);
-            session.SynchronizeContext();
+            var catalog = await refreshCatalogService.GetCatalogAsync(refreshLifetime.Token);
+            if (!ReferenceEquals(session, refreshSession) ||
+                !IsCurrentProductTransition(transitionVersion, expectedStableAccountId, refreshLifetime)) return;
+            if (catalog.Revision == refreshSession.Catalog.Revision) return;
+            await ReplaceObservedCatalogAsync(refreshSession, catalog,
+                refreshCanonicalCatalogRuntimeService, refreshLifetime.Token);
+            if (!ReferenceEquals(session, refreshSession) ||
+                !IsCurrentProductTransition(transitionVersion, expectedStableAccountId, refreshLifetime)) return;
+            refreshSession.SynchronizeContext();
             PopulateGameItems(catalog);
             PersistWorkspaceSelection();
             RenderCurrentRoute();
@@ -2156,10 +3352,21 @@ public sealed partial class MainWindow : Window
 
     private async Task RefreshConnectedWorkspaceCatalogAsync()
     {
-        if (session is null) return;
-        var catalog = await catalogService.GetCatalogAsync(lifetime?.Token ?? default);
-        session.Shell.ReplaceCatalog(catalog);
-        session.SynchronizeContext();
+        if (session is null || lifetime?.IsCancellationRequested != false) return;
+        var refreshSession = session;
+        var refreshLifetime = lifetime;
+        var refreshCatalogService = catalogService;
+        var refreshCanonicalCatalogRuntimeService = composition.CanonicalCatalogRuntimeService;
+        var transitionVersion = productTransitionVersion;
+        var expectedStableAccountId = activeStableAccountId;
+        var catalog = await refreshCatalogService.GetCatalogAsync(refreshLifetime.Token);
+        if (!ReferenceEquals(session, refreshSession) ||
+            !IsCurrentProductTransition(transitionVersion, expectedStableAccountId, refreshLifetime)) return;
+        await ReplaceObservedCatalogAsync(refreshSession, catalog,
+            refreshCanonicalCatalogRuntimeService, refreshLifetime.Token);
+        if (!ReferenceEquals(session, refreshSession) ||
+            !IsCurrentProductTransition(transitionVersion, expectedStableAccountId, refreshLifetime)) return;
+        refreshSession.SynchronizeContext();
         PopulateGameItems(catalog);
         PersistWorkspaceSelection();
         RenderCurrentRoute();
@@ -2169,8 +3376,21 @@ public sealed partial class MainWindow : Window
     {
         if (session is null) return;
         session.Assistant.Expand();
-        AssistantPanelView.BindState(session.Assistant, new WindowsEvidenceFilePicker(this), OnAssistantStateChanged, composition.SourceAcquisitionPreferencesStore, composition.NexusRecoverySourceDownloader, lifetime?.Token ?? default);
+        AssistantPanelView.BindState(session.Assistant, new WindowsEvidenceFilePicker(this), OnAssistantStateChanged,
+            composition.SourceAcquisitionPreferencesStore, composition.NexusRecoverySourceDownloader,
+            composition.CanonicalCatalogRuntimeService, lifetime?.Token ?? default);
         UpdateEditHistoryCommands();
+    }
+
+    private static async Task ReplaceObservedCatalogAsync(
+        GridApplicationSession targetSession,
+        GridCatalogSnapshot catalog,
+        CanonicalCatalogRuntimeService? canonicalCatalogRuntimeService,
+        CancellationToken cancellationToken)
+    {
+        if (canonicalCatalogRuntimeService is not null)
+            await canonicalCatalogRuntimeService.SynchronizePublishedBindingAsync(catalog, cancellationToken);
+        targetSession.Shell.ReplaceCatalog(catalog);
     }
 
     private void OnAssistantStateChanged()
@@ -2327,6 +3547,10 @@ public sealed partial class MainWindow : Window
                 UsesAssistantDockBudget,
                 session?.Assistant.RequestedPanelWidth ?? AssistantSessionState.DefaultPanelWidth).Band);
         }
+
+        ApplyWorkstationFramePlacement(
+            activeSurface == ShellSurface.Workstation &&
+            session?.Shell.CurrentRoute == ShellRoute.GameWorkspace);
     }
 
     private void OnShellKeyDown(object sender, KeyRoutedEventArgs e)
@@ -2411,15 +3635,104 @@ public sealed partial class MainWindow : Window
         }
     }
 
+    private void ApplyWorkstationFramePlacement(bool workstationRequested)
+    {
+        var elevated = workstationRequested &&
+            GameWorkspacePage.SupportsElevatedTopBaseline(MainWorkspacePanel.ActualWidth);
+        Microsoft.UI.Xaml.Controls.Grid.SetRow(ContentFrame, elevated ? 1 : 2);
+        Microsoft.UI.Xaml.Controls.Grid.SetRowSpan(ContentFrame, elevated ? 2 : 1);
+        if (ContentFrame.Content is GameWorkspacePage workspace)
+        {
+            workspace.SetElevatedTopBaseline(elevated);
+        }
+    }
+
     private void NavigateFrame(Type destination)
     {
         if (ContentFrame.CurrentSourcePageType != destination) ContentFrame.Navigate(destination);
     }
 
+    private void BindStartupProgress(GridStartupSession? startupSession)
+    {
+        if (startupSession is null)
+            return;
+
+        startupSession.ProgressChanged += OnStartupProgressChanged;
+        OnStartupProgressChanged(startupSession.ProgressSnapshot);
+    }
+
+    private void OnStartupProgressChanged(StartupProgressSnapshot snapshot)
+    {
+        StartupLoadingBarControl.ProgressSnapshot = snapshot;
+        if (!string.IsNullOrWhiteSpace(snapshot.Detail))
+            StartupLoadingDetailText.Text = snapshot.Detail;
+    }
+
+    private async Task HydrateOptionalSessionStateAsync(
+        GridApplicationSession? activeSession,
+        GridCompositionRoot productComposition,
+        CancellationToken token,
+        string? taskHistoryIssue)
+    {
+        if (activeSession is null)
+            return;
+
+        var startup = StartupInstrumentation.Current;
+        startup?.BeginStage(
+            StartupStageId.ShellBackgroundHydrate,
+            StartupWorkClassification.BackgroundOptional,
+            "Restore optional session indexes after READY.");
+        try
+        {
+            await activeSession.History.LoadAsync(token);
+            if (activeSession.UserTools is not null)
+                await activeSession.UserTools.LoadAsync(token);
+            try
+            {
+                await activeSession.Assistant.LoadPersistedTasksAsync(token);
+            }
+            catch (OperationCanceledException)
+            {
+                throw;
+            }
+            catch
+            {
+                taskHistoryIssue ??=
+                    "Saved investigation tasks could not be restored. Connected games remain available and no external changes were made.";
+            }
+
+            if (taskHistoryIssue is not null)
+                RaiseNotification("Investigation history unavailable", taskHistoryIssue, InfoBarSeverity.Warning);
+
+            startup?.CompleteStage(
+                StartupStageId.ShellBackgroundHydrate,
+                StartupStageOutcome.Completed,
+                detail: "Optional session indexes hydrated.");
+        }
+        catch (OperationCanceledException) when (token.IsCancellationRequested)
+        {
+            startup?.CompleteStage(
+                StartupStageId.ShellBackgroundHydrate,
+                StartupStageOutcome.Indeterminate,
+                detail: "Optional session hydration canceled.");
+        }
+        catch
+        {
+            startup?.CompleteStage(
+                StartupStageId.ShellBackgroundHydrate,
+                StartupStageOutcome.Failed,
+                detail: "Optional session hydration failed.");
+        }
+    }
+
     private void ShowLoading() { LoadingState.Visibility = Visibility.Visible; ErrorState.Visibility = Visibility.Collapsed; }
     private void ShowShell() { LoadingState.Visibility = Visibility.Collapsed; ErrorState.Visibility = Visibility.Collapsed; }
     private void ShowError(string message) { LoadingState.Visibility = Visibility.Collapsed; ErrorState.Visibility = Visibility.Visible; ErrorMessage.Text = message; }
-    private async void OnRetryClicked(object sender, RoutedEventArgs e) => await LoadCatalogAsync();
+    private async void OnRetryClicked(object sender, RoutedEventArgs e)
+    {
+        if (authService?.Current is not { IsSignedIn: true }) return;
+        await LoadCatalogAsync(++productTransitionVersion, activeStableAccountId);
+    }
 
     private void ConfigureWindow()
     {
@@ -2436,7 +3749,7 @@ public sealed partial class MainWindow : Window
         appWindow.TitleBar.ButtonHoverBackgroundColor = Windows.UI.Color.FromArgb(255, 45, 45, 45);
     }
 
-    private enum ShellSurface { Welcome, Home, Games, Workstation, Activities, Settings }
+    private enum ShellSurface { Welcome, Home, Games, CatalogReview, Workstation, Activities, Settings }
     private sealed record GridNotification(string Title, string Message, string Timestamp, string Glyph);
     private sealed record FileSystemExplorerItem(string Path, string Name, bool IsDirectory, string? Detail = null)
     {
@@ -2445,13 +3758,28 @@ public sealed partial class MainWindow : Window
 
     private enum BottomSurface { Terminal, Output, Problems }
     private readonly record struct ShellLocation(ShellSurface Surface, WorkspaceSelection Selection, string TabKey);
-    private sealed record EditorTabRecord(string Key, ShellSurface Surface, string Title, WorkspaceSelection Selection);
+    private enum EditorTabKind { Surface, Document }
 
-    private sealed record ToolTargetPresentation(string Name, string PresentationStatus, ResolvedLaunchTarget? LaunchTarget, ObservedExecutableSummary? Executable, bool IsManagementAction = false)
+    private sealed record EditorTabRecord(
+        string Key,
+        EditorTabKind Kind,
+        ShellSurface Surface,
+        string Title,
+        WorkspaceSelection Selection,
+        string? DocumentId = null);
+
+    private sealed record DocumentTabRecord(
+        string Id,
+        string Title,
+        string Content);
+
+    private sealed record ToolTargetPresentation(string Name, string PresentationStatus, ResolvedLaunchTarget? LaunchTarget, ObservedExecutableSummary? Executable, UserToolLaunchConfiguration? Configuration, bool IsManagementAction = false)
     {
-        public static ToolTargetPresentation ForManagement() => new("Manage…", "Manager connection and installations", null, null, true);
-        public static ToolTargetPresentation ForDemo(ResolvedLaunchTarget target) => new(target.Definition.Name, "Development fixture", target, null);
+        public static ToolTargetPresentation ForManagement() => new("Manage tools…", "Add or edit launch configurations for this workspace", null, null, null, true);
+        public static ToolTargetPresentation ForDemo(ResolvedLaunchTarget target) => new(target.Definition.Name, "Development fixture", target, null, null);
         public static ToolTargetPresentation ForObserved(ObservedExecutableSummary executable) =>
-            new(executable.Title, $"Read-only MO2 configuration · {executable.Availability}", null, executable);
+            new(executable.Title, $"Read-only MO2 configuration · {executable.Availability}", null, executable, null);
+        public static ToolTargetPresentation ForUserConfiguration(UserToolLaunchConfiguration configuration) =>
+            new(configuration.Title, configuration.IsRunnable ? "Saved launch configuration" : "Binary required", null, null, configuration);
     }
 }

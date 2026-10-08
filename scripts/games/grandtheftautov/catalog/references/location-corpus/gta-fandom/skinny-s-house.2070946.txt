@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = house
+|name           = Skinny's House
+|image          = SkinnysHouse-GTAVee.jpeg
+|caption        = The house in ''Grand Theft Auto V''.
+|games          = {{Games|V=y|O=y}}
+|location       = [[Fudge Lane]], [[El Burro Heights]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|architecture   = [[:Category:Ranch-style buildings|Ranch-style]]
+|floors         = 1
+|structure_type = Bungalow
+|accessible     = Yes {{small|(mission only)}}
+|owner          = [[Skinny]]
+|file_name      = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Skinny's House''' is the residence of [[Skinny]] in {{V}} and {{O}} located on [[Fudge Lane]] in [[El Burro Heights]], [[East Los Santos (HD Universe)|East Los Santos]].
+
+[[SECTION:3:Interior]]
+The house's interior can only be accessed during the mission [[Compound Interest]], with a layout largely based on that of [[Apartments|medium-end apartments]] in ''Grand Theft Auto Online'', although it features props from various other homes. The living room is spacious, with a flatscreen TV and a bong on the table. It features an open kitchen and a small bathroom with a shower, and a circular wooden dining room table topped with empty bottles, blueprints and an opened pizza box.
+
+Skinny's bedroom similarly reuses the medium-end interior, although the walls are decorated with posters of [[Motorcycles|motorcycles]]. The bed itself is unmade and littered with trash, and shares its model with the one found in [[Trevor's Trailer|Trevor's trailer]].
+
+[[CATEGORIES]]
+Homes
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Ranch-style buildings
+Single-family homes

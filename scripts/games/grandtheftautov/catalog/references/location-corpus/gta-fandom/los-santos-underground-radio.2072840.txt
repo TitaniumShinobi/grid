@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Los Santos Underground Radio
+|logo         = LSUR-GTAO-Logo.svg
+|image        = 
+|caption      = 
+|aka          = LS-UR
+|games        = {{games|V={{EEEV}} {{DLC|mpchristmas2018}}|O={{EEEV}} {{DLC|mpbattle}}}}
+|mentioned    = 
+|locations    = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = 
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Continuous mix radio stations|Continuous mix radio station]]
+|genre        = [[:Category:House radio stations|House]]
+|established  = 31 July [[2018]]
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 
+|host         = [[Donna Frank]]
+|product      = 
+|radio_tracks = 65
+*18 <small>([[Solomun]] playlist)</small>
+*18 <small>([[Tale of Us]] playlist)</small>
+*15 <small>([[Dixon]] playlist)</small>
+*14 <small>([[The Blessed Madonna]] playlist)</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+'''Los Santos Underground Radio''' (LS-UR) is a [[Radio Stations in GTA Online|radio station]] in {{O}} added in the [[GTA Online: After Hours|After Hours]] update on 31 July 2018, and later anachronistically [[Radio Stations in GTA V|introduced]] to {{V}} as of the [[GTA Online: Arena War|Arena War]] update. It plays {{WP|House music|house}} and {{WP|techno}} music.
+
+[[CATEGORIES]]
+Continuous mix radio stations
+Dance radio stations
+Electronic radio stations
+House radio stations
+Media in GTA Online: After Hours
+Media in GTA V: Arena War

@@ -1,0 +1,29 @@
+[[LEAD]]
+'''Conquistador St''' is a street running from the northeast in [[Vespucci Canals]] to the southwest in [[Vespucci Beach]], briefly entering [[Vespucci]], in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to [[Bay City Ave]] and [[Magellan Ave]].
+
+[[SECTION:2:Businesses and locations]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Oldie But Goodie]]
+| [[Vespucci]]
+| [[Magellan Ave]]
+| Antiques store
+|-
+| [[Surfries Diner]]
+| [[Vespucci Canals]]
+| [[Bay City Ave]]
+| Food and drink
+|-
+| data-sort-value="Venetian, The"| [[The Venetian]]
+| [[Vespucci Canals]]<br />[[Vespucci]]<br />[[Vespucci Beach]]
+| [[Bay City Ave]]<br />[[Magellan Ave]]<br />Vespucci Beach boardwalk
+| Hotel
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

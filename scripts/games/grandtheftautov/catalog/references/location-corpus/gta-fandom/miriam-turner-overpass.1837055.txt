@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox_location
+|type           = bridge
+|image          = MiriamTurnerOverpass-GTAVee.jpg
+|caption        = View of the '''Miriam Turner Overpass''' in ''[[Grand Theft Auto V]]''.
+|games          = {{Games|V=y|O=y}}
+|location       = [[Los Santos International Airport (HD Universe)|LSIA]] and [[Port of Los Santos]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|structure_type = Single span suspension bridge
+|length         = 885m <small>(anchor to anchor)</small>
+|height         = 
+|map            = MiriamTurnerOverpass-GTAV-Map.png
+|map_caption    = '''Miriam Turner Overpass''' (red) on the map.
+}}
+
+[[LEAD]]
+The '''Miriam Turner Overpass''' is a major suspension bridge in {{V}} and {{O}}, connecting [[Los Santos International Airport (HD Universe)|LSIA]] to the [[Port of Los Santos]].
+
+[[CATEGORIES]]
+Road bridges
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Suspension bridges

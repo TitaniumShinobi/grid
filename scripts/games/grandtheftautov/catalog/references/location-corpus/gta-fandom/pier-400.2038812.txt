@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Pier 400
+|location = [[Elysian Island]], [[Los Santos (HD Universe)|Los Santos]]
+|image = Pier400-GTAV-Entrance.png
+|caption = The gated entrance to Pier 400.
+|games = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Pier 400''' is a large freighter yard featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Elysian Island]] in the [[Port of Los Santos]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Seaports

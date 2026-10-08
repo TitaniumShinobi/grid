@@ -2,33 +2,17 @@
     x:Class="Grid.App.Views.ToolConfigurationDialog"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    CloseButtonText="Close"
-    DefaultButton="Close"
-    Title="Launch targets · Mock configuration">
+    Title="Manage tools">
 
-    <Grid
-        x:Name="DialogLayout"
-        MaxWidth="940"
-        MaxHeight="680"
-        HorizontalAlignment="Stretch"
-        RowSpacing="12"
-        SizeChanged="OnDialogContentSizeChanged">
+    <Grid x:Name="DialogLayout" MaxWidth="940" MaxHeight="680" HorizontalAlignment="Stretch" RowSpacing="12" SizeChanged="OnDialogContentSizeChanged">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <InfoBar
-            AutomationProperties.Name="Mock launch configuration disclosure"
-            IsClosable="False"
-            IsOpen="True"
-            Message="Edits replace only the in-memory mock catalog and reset when Grid restarts. No executable or directory is probed."
-            Severity="Informational"
-            Title="MOCK SESSION · NO PATHS PROBED · EXTERNAL STATE UNCHANGED" />
-
-        <Grid x:Name="EditorLayout" Grid.Row="1" ColumnSpacing="16" RowSpacing="12">
+        <Grid x:Name="EditorLayout" ColumnSpacing="16" RowSpacing="12">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="310" />
+                <ColumnDefinition Width="300" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
@@ -36,128 +20,79 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Border x:Name="TargetListPanel" Padding="10" Style="{StaticResource CardStyle}">
+            <Border Padding="10" Style="{StaticResource CardStyle}">
                 <Grid RowSpacing="8">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
-                    <TextBlock FontSize="16" FontWeight="SemiBold" Text="Adapter-declared targets" />
-                    <ListView
-                        x:Name="TargetList"
-                        Grid.Row="1"
-                        AutomationProperties.Name="Configured launch targets"
-                        SelectionChanged="OnTargetSelectionChanged"
-                        SelectionMode="Single">
+                    <TextBlock FontSize="16" FontWeight="SemiBold" Text="Tools in this workspace" />
+                    <ListView x:Name="ToolList" Grid.Row="1" AutomationProperties.Name="Configured tools" SelectionChanged="OnToolSelectionChanged" SelectionMode="Single">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Padding="4" Spacing="3">
-                                    <TextBlock FontWeight="SemiBold" Text="{Binding Definition.Name}" TextWrapping="Wrap" />
-                                    <TextBlock
-                                        FontSize="11"
-                                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
-                                        Text="{Binding PresentationStatus}"
-                                        TextWrapping="Wrap" />
+                                    <TextBlock FontWeight="SemiBold" Text="{Binding Title}" TextWrapping="Wrap" />
+                                    <TextBlock FontSize="11" Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="{Binding Status}" TextWrapping="Wrap" />
                                 </StackPanel>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="6">
+                        <Button AutomationProperties.Name="Add tool from executable" Click="OnAddFromFileClicked" Content="Add from file" />
+                        <Button AutomationProperties.Name="Add empty tool" Click="OnAddEmptyClicked" Content="Add empty" />
+                    </StackPanel>
                 </Grid>
             </Border>
 
-            <ScrollViewer x:Name="TargetEditorScroller" Grid.Column="1" VerticalScrollBarVisibility="Auto">
+            <ScrollViewer x:Name="ToolEditorScroller" Grid.Column="1" VerticalScrollBarVisibility="Auto">
                 <StackPanel Spacing="10">
-                    <TextBlock x:Name="TargetNameText" FontSize="20" FontWeight="SemiBold" Text="Select a target" />
-                    <TextBlock x:Name="TargetMetadataText" Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
-                    <InfoBar
-                        x:Name="AvailabilityInfo"
-                        AutomationProperties.Name="Target availability"
-                        IsClosable="False"
-                        IsOpen="False"
-                        Severity="Warning" />
-
-                    <Grid ColumnSpacing="10">
-                        <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <StackPanel Spacing="4">
-                            <TextBlock Style="{StaticResource ShellLabelStyle}" Text="EXECUTABLE BASE" />
-                            <ComboBox
-                                x:Name="ExecutableAnchorSelector"
-                                AutomationProperties.Name="Executable path base"
-                                HorizontalAlignment="Stretch" />
-                        </StackPanel>
-                        <StackPanel Grid.Column="1" Spacing="4">
-                            <TextBlock Style="{StaticResource ShellLabelStyle}" Text="EXECUTABLE RELATIVE PATH" />
-                            <TextBox
-                                x:Name="ExecutablePathBox"
-                                AutomationProperties.HelpText="A represented relative path. Rooted paths and traversal segments are rejected."
-                                AutomationProperties.Name="Executable relative path" />
-                        </StackPanel>
-                    </Grid>
-
-                    <Grid ColumnSpacing="10">
-                        <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="Auto" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <StackPanel Spacing="4">
-                            <TextBlock Style="{StaticResource ShellLabelStyle}" Text="WORKING DIRECTORY BASE" />
-                            <ComboBox
-                                x:Name="WorkingAnchorSelector"
-                                AutomationProperties.Name="Working directory base"
-                                HorizontalAlignment="Stretch" />
-                        </StackPanel>
-                        <StackPanel Grid.Column="1" Spacing="4">
-                            <TextBlock Style="{StaticResource ShellLabelStyle}" Text="WORKING DIRECTORY RELATIVE PATH" />
-                            <TextBox
-                                x:Name="WorkingDirectoryBox"
-                                AutomationProperties.Name="Working directory relative path" />
-                        </StackPanel>
-                    </Grid>
-
+                    <TextBlock x:Name="EditorHeading" FontSize="20" FontWeight="SemiBold" Text="Select or add a tool" />
+                    <TextBlock x:Name="ScopeText" Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
                     <StackPanel Spacing="4">
-                        <TextBlock Style="{StaticResource ShellLabelStyle}" Text="ENVIRONMENT POLICY" />
-                        <ComboBox
-                            x:Name="EnvironmentPolicySelector"
-                            AutomationProperties.HelpText="Selects typed policy metadata. Arbitrary environment variables are not accepted."
-                            AutomationProperties.Name="Environment policy"
-                            HorizontalAlignment="Stretch" />
+                        <TextBlock Style="{StaticResource ShellLabelStyle}" Text="DISPLAY SCOPE" />
+                        <ComboBox x:Name="ScopeSelector" AutomationProperties.Name="Tool display scope" HorizontalAlignment="Stretch" SelectionChanged="OnScopeSelectionChanged" />
                     </StackPanel>
-
                     <StackPanel Spacing="4">
-                        <TextBlock Style="{StaticResource ShellLabelStyle}" Text="TARGET ARGUMENTS · ONE LITERAL ARGUMENT PER LINE" />
-                        <TextBox
-                            x:Name="ArgumentsBox"
-                            MinHeight="104"
-                            AcceptsReturn="True"
-                            AutomationProperties.HelpText="Each nonblank trimmed line remains one literal argument. Grid does not parse quotes or shell syntax."
-                            AutomationProperties.Name="Structured target arguments"
-                            TextWrapping="NoWrap" />
+                        <TextBlock Style="{StaticResource ShellLabelStyle}" Text="TITLE" />
+                        <TextBox x:Name="TitleBox" AutomationProperties.Name="Tool title" TextChanged="OnEditorTextChanged" />
                     </StackPanel>
-
-                    <CheckBox
-                        x:Name="DefaultTargetCheckBox"
-                        AutomationProperties.Name="Use as this profile's default launch target"
-                        Content="Use as this profile's default target" />
-
-                    <InfoBar
-                        x:Name="OperationStatus"
-                        AutomationProperties.LiveSetting="Assertive"
-                        AutomationProperties.Name="Mock launch configuration status"
-                        IsClosable="True"
-                        IsOpen="False" />
-
-                    <Button
-                        x:Name="ApplyButton"
-                        HorizontalAlignment="Left"
-                        AutomationProperties.Name="Apply mock launch configuration"
-                        Click="OnApplyClicked"
-                        Content="Apply · Mock session"
-                        Style="{StaticResource AccentButtonStyle}" />
+                    <StackPanel Spacing="4">
+                        <TextBlock Style="{StaticResource ShellLabelStyle}" Text="BINARY" />
+                        <Grid ColumnSpacing="6">
+                            <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+                            <TextBox x:Name="BinaryBox" AutomationProperties.Name="Tool binary" TextChanged="OnBinaryTextChanged" />
+                            <Button Grid.Column="1" AutomationProperties.Name="Browse for tool binary" Click="OnBrowseBinaryClicked" Content="Browse" />
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel Spacing="4">
+                        <TextBlock Style="{StaticResource ShellLabelStyle}" Text="START IN" />
+                        <TextBox x:Name="StartInBox" AutomationProperties.Name="Tool working directory" TextChanged="OnEditorTextChanged" />
+                    </StackPanel>
+                    <StackPanel Spacing="4">
+                        <TextBlock Style="{StaticResource ShellLabelStyle}" Text="ARGUMENTS · ONE LITERAL ARGUMENT PER LINE" />
+                        <TextBox x:Name="ArgumentsBox" MinHeight="92" AcceptsReturn="True" AutomationProperties.HelpText="Each nonblank line is passed as one literal argument. GRID does not invoke a command shell." AutomationProperties.Name="Tool arguments" TextChanged="OnEditorTextChanged" TextWrapping="NoWrap" />
+                    </StackPanel>
+                    <CheckBox x:Name="EnabledCheckBox" AutomationProperties.Name="Show tool in this workspace" Checked="OnEditorToggleChanged" Content="Show in this workspace" Unchecked="OnEditorToggleChanged" />
+                    <Border Padding="10" Style="{StaticResource CardStyle}">
+                        <StackPanel Spacing="5">
+                            <TextBlock FontWeight="SemiBold" Text="Identity and compatibility evidence" />
+                            <TextBlock x:Name="IdentityText" Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
+                        </StackPanel>
+                    </Border>
+                    <Button x:Name="RemoveButton" HorizontalAlignment="Left" AutomationProperties.Name="Remove tool configuration" Click="OnRemoveClicked" Content="Remove from GRID" />
                 </StackPanel>
             </ScrollViewer>
+        </Grid>
+
+        <Grid Grid.Row="1" ColumnSpacing="8">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+            <InfoBar x:Name="OperationStatus" AutomationProperties.LiveSetting="Assertive" AutomationProperties.Name="Tool configuration status" IsClosable="True" IsOpen="False" />
+            <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" VerticalAlignment="Bottom">
+                <Button Click="OnApplyClicked" Content="Apply" />
+                <Button Click="OnOkClicked" Content="OK" Style="{StaticResource AccentButtonStyle}" />
+                <Button Click="OnCancelClicked" Content="Cancel" />
+            </StackPanel>
         </Grid>
     </Grid>
 </ContentDialog>

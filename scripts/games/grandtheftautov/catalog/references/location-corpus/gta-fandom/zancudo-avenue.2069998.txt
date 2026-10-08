@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = ZancudoAve-GTAV-TrevorsHouse.jpg
+|caption = Street view from Marina Drive. Note Trevor's trailer on the right.
+|games={{Games|V=y|O=y}}
+|start = [[Sandy Shores]]
+|end = [[Panorama Drive]]
+|map=<gallery>
+ZancudoAvenue-GTAV-Map.png|Map
+ZancudoAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Zancudo Avenue''' is a two-way secondary street in {{V}} and {{O}}, located in [[Sandy Shores]], [[Blaine County]]
+
+[[SECTION:2:Places of Interest]]
+*[[Trevor's trailer|Philips Residence]]
+*[[Ron Jakowski's Trailer|Jakowski Residence]]
+*[[140 Zancudo Avenue]]
+*[[Sandy Shores Medical Center|Sandy Shores Medical Center Emergency Room]]
+
+[[SECTION:2:Businesses]]
+*[[Sandy's Gas Station]]
+*24-Hour Chinese Restaurant
+*[[Alamo Tattoo Studio]]
+*Seaton Sands' Automobile Services (abandoned)
+
+[[CATEGORIES]]
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County
+Thoroughfares

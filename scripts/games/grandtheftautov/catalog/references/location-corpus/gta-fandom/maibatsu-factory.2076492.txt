@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = factory
+|name           = Maibatsu Factory
+|image          = MaibatsuMotors-GTAV.png
+|caption        = The Maibatsu Factory in ''[[Grand Theft Auto V]]''.
+|structure_type = Factory
+|accessible     = No
+|owner          = [[Maibatsu Corporation (HD Universe)|Maibatsu Corporation]]
+|games          = {{games|V=y|O=y}}
+|location       = [[Murrieta Heights]], [[East Los Santos (HD Universe)|East Los Santos]]
+|map            = MaibatsuFactory-GTAV-LocationMap.png
+|map_caption    = Location in the map.
+}}
+
+[[LEAD]]
+The '''Maibatsu Factory''' is a factory operated by the [[Maibatsu Corporation (HD Universe)|Maibatsu Corporation]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Factory buildings

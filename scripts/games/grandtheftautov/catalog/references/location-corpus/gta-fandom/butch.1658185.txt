@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Butch
+|image = Butch-GTAV.jpg
+|type = Male Fitness & Beauty
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Downtown Vinewood]]
+}}
+
+[[LEAD]]
+'''Butch''' is a male fitness & beauty clinic in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

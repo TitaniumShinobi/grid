@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|image = VespucciBeachRC-Logo-GTAV.png
+|name = Vespucci Beach Recreation Center
+|taglines = 
+|type = Recreation Center
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]]}}
+
+[[LEAD]]
+'''Vespucci Beach Recreation Center''' is a recreation center in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

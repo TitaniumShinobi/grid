@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox structure
+|image      = MeteorStreet-GTAV.png
+|caption    = Meteor Street as seen from [[Hawick Avenue]].
+|games      = {{Games|V=y|O=y}}
+|start      = [[Clinton Avenue]] and [[Fenwell Place]], [[Downtown Vinewood]]
+|end        = [[Elgin Avenue]], [[Alta]]
+|map        = 
+<gallery>
+MeteorStreet-GTAV-Map.png|Map
+MeteorStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Meteor Street''' is a [[List of Street Names|street]] in [[Downtown Vinewood]], [[Hawick]] and [[Alta]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Badger Building]] {{Small|(corner of Spanish Avenue)}}
+*[[Callisto Apartments]]
+*[[Galileo House]] {{Small|(corner of Spanish Avenue)}}
+*[[Vinewood Plaza Hotel]]
+
+[[SECTION:2:Businesses]]
+'''Downtown Vinewood'''
+*[[Daily Globe]] {{Small|(corner of Vinewood Boulevard)}}
+*Jazz Desserts {{Small|(corner of Vinewood Boulevard)}}
+*[[Pizza This...]] {{Small|(corner of Vinewood Boulevard)}}
+
+'''Alta'''
+*El Café Rojo de Madera
+*La Linterna
+
+'''Hawick'''
+*[[Fleeca]] {{Small|(corner of Hawick Avenue)}}
+*[[The Pink Cage Motel]] {{Small|(corner of Hawick Avenue)}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

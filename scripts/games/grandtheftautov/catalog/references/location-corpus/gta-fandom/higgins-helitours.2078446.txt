@@ -1,0 +1,81 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = Higgins Helitours
+|Name Change   = HELITOUR COMPANY
+|image_label   = O
+|image         = MoneyFronts-GTAOe-HigginsHelitoursLogo.png
+|caption       = 
+|image_label2  = V
+|image2        = HigginsHelitours-GTAV-Logo.png
+|caption2      = 
+|taglines      = 
+*"''We'll never go down on you''"
+*''"We're Worth The Risk!"''
+*''"Fun Safe Adventures in the Sky"''
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations     = 
+*[[Castle Gardens]] and [[Fishmarket South]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]]
+*[[Vespucci Helipad]], [[Shank Street]], [[Puerto Del Sol]]
+|price         = [[Money|$]]150 per ride <small>(''GTA IV'' & ''EFLC'')</small>
+|status        = active
+|divisions     = [[Higgins Helitours Los Santos]]
+|employees     = 
+*[[Rob (GTA IV)|Rob]]
+*[[Jase]]
+*[[Vicki]]
+}}
+
+[[LEAD]]
+'''Higgins Helitours''' is a helitour company appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:The Major Bridges]]
+{| class="article-table"
+!Image
+!Name
+!Commentary
+|-
+|[[File:BrokerBridge-GTA4.jpg|200px]]
+|[[Broker Bridge]]
+|''"Used in many movies and TV shows. It was recently targeted by terrorists in Weazel's 72."''
+|-
+|[[File:ChargeIsland-GTAIV-southwestwards.jpg|200px]]
+|[[Charge Island]] Lighthouse
+|''"Just a little reminder that we all need a guide through the rocky waters, don't we folks?"''
+|-
+|[[File:EastBoroughBridge-GTA4-panorama.jpg|200px]]
+|[[East Borough Bridge]]
+|''"Really shows how Liberty City brings people together, and then the LCPD has to keep them apart."''
+|-
+|[[File:EastHolland-GTA4-northeastwards.jpg|200px]]
+|[[East Holland]] Projects
+|''"Ah, the housing projects of the world's finest city. I've seen war zones folks, and I can tell you, you're looking at one."''
+|-
+|[[File:MiddlePark-GTAIV.png|200px]]
+|[[Middle Park]]
+|''"A peaceful haven for so many LC residents, and only eighty-six murders last year, that's a record!"'' '''''*few seconds pause*''''' ''"See the lake? Few people know this, but a third of the park's budget goes toward cleaning this fountain of pigeon shit."''
+|-
+|[[File:MajesticHotel-GTA4-exterior.jpg|100px]]
+|[[Majestic Hotel]]
+|''"Found in story and in song. If those sheets could tell stories, right folks?"''
+|-
+|[[File:ColumbusChurch-GTA4-exterior.jpg|200px]]
+|[[Columbus Cathedral]]
+|''"Nice, huh? Of course, once you've seen war, God is a joke, but would you look at that architecture?"''
+|-
+|[[File:Leaper's Bridge.jpg|200px]]
+|[[Leaper's Bridge]]
+|''"Still the record-holder for suicides. Well, if you're going to do it, do it right, huh?"''
+|-
+|[[File:UnionDriveEast-GTAIV.gif|200px]]
+|[[Union Drive East|Union]] [[Union Drive West|Drive]]
+|''"Built during an unprecedented reign of organized crime, they say it has fifteen bodies within it's cement."''
+|}
+
+Flying all tours at least once will earn the player the '''Sightseer''' [[Achievements and Trophies in GTA IV|achievement/trophy]]. The different tours are obtainable by boarding each of the helicopters in turn. Not all helicopters will be there at the same time; usually two or three at a time are available.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Tourism companies

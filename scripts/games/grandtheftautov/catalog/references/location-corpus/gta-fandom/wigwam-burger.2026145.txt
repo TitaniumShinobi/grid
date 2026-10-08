@@ -1,0 +1,69 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = fastfood
+|name          = Wigwam Burger
+|sign          = WigwamBurger-GTAIV-Logo.PNG
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Berchem]], [[State of Alderney|Alderney]]
+*[[Carcer City (HD Universe)|Carcer City]]{{Ref|name=darksoullock2|type=screenshot|image=Blogsnobs-GTAIV-Darksoulock-2.png|imagesize=100px|ref=[[darksoullock.blogsnobs.org]] in {{IV}}.}}
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Fast-food burger restaurant
+|founded       = 
+|founder       = 
+|ceo           = 
+|taglines      = ''No need for reservations''
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Wigwam Burger''' is a fast food restaurant chain appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Location Influences]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'']]
+*[[The Triangle]] branch of Wigwam Burger is located in a replica of the {{WP|Candler Building (New York, New York)|Candler Building}}, which once housed a large McDonald's restaurant.
+*The [[Berchem]] branch is a rendition of the structure that once housed a {{WP|Sprint Corporation|Sprint}} branch on the ground floor at 114 Washington Street in {{WP|Hoboken, New Jersey}}. Whereas the real-life counterpart is a two-bay-wide attached building, the Wigwam Burger building forms a block corner and features four bays, including a corner polygonal bay.
+
+[[SECTION:4:''Grand Theft Auto V'']]
+In ''Grand Theft Auto V'', the [[Del Perro]] branch is a replica of a {{WP|The Coffee Bean & Tea Leaf|Coffee Bean Tea Leaf}} store, that used to be located on {{WP|Santa Monica Boulevard|11049 Santa Monica Boulevard, Los Angeles}}.
+
+{{Clear}}
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|WigwamBurger-GTAIV-Alderney.png|[[Drebbel]] & [[Vitullo Avenue]], [[Berchem]], [[State of Alderney|Alderney]].
+|WigwamBurger-GTAIV-Algonquin.jpg|[[Iron Street]], [[The Triangle]], [[Algonquin]] ([[:File:WigwamBurger-GTAIV-TheTriangle.png|building view]].)
+}}
+{{Gallery
+|game = CW
+|WigwamBurger-GTACW.png|Iron Street, The Triangle, Algonquin.
+}}
+{{Gallery
+|game = VO
+|WigwamBurger-Vespucci-GTAV.png|[[Palomino Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]].
+|WigwamBurger-DelPerro-GTAV.png|[[Boulevard Del Perro]], [[Del Perro]], Los Santos.
+}}
+
+[[CATEGORIES]]
+Burger restaurants
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurant chains

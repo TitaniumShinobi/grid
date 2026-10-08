@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=GloryWay-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Popular Street]]
+|end=[[Mirror Park Boulevard]]
+|map=<gallery>
+GloryWay-GTAV-Map.png|Map
+GloryWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Glory Way''' is a [[List of Street Names|street]] in [[East Vinewood]] and [[Mirror Park]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Broker Park]]
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

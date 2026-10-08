@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = railway
+|name          = San Trak
+|sign          = 
+|image         = Beta-SanTrak-GTAV-LogoClean.png
+|caption       = Unused full '''San Trak''' logo, found on lead graphic designer [[Steven Walsh]]'s {{URL|https://archive.fo/Hw6py|portfolio website}}.
+|aka           = 
+|games         = {{Games|V={{UN|cutcontent}}|O={{EEEV}} {{DLC|mpchristmas2018}}}}
+|mentioned     = 
+|locations     = [[State of San Andreas (HD Universe)|State of San Andreas]]
+|business_type = Railway company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''San Trak''' was a rail transportation company cut during {{V}}{{'}}s development, making its official appearance in ''[[Grand Theft Auto Online]]'' as part of the [[GTA Online: Arena War|Arena War]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Railroad companies

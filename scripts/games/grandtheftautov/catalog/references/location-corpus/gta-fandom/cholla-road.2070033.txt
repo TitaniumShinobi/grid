@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=ChollaRoad-Street-GTAV.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Panorama Drive]]
+|end=[[Smoke Tree Road]]
+|map=<gallery>
+ChollaRoad-GTAV-Map.png|Map
+ChollaRoad-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Cholla Road''' is a two way road in {{V}} and {{O}}, located in [[Sandy Shores]] that begins at [[Panorama Drive]] and ends at [[Smoke Tree Road]].
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

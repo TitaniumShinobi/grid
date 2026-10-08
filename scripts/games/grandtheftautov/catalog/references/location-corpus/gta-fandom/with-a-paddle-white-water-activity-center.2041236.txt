@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|image = TongvaValley-GTAV.jpg|
+|caption = An advertisement.
+|business = y
+|activebiz = y
+|miscplace = y
+|miscplacename = Adventure Activities
+|games = {{Games|V=y|O=y}}
+|location = [[Tongva Drive]], [[Tongva Valley]], [[Los Santos County]]
+|map = With_a_Paddle-GTAV-Map_Location.png
+|map caption = Location on the map.
+}}
+
+[[LEAD]]
+The '''With a Paddle White Water Activity Center''' is an outdoor activity center in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that offers river adventures and various other activities.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County

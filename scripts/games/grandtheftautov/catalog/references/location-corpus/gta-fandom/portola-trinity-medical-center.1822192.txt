@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = hospital
+|name           = Portola Trinity Medical Center
+|image          = PortolaTrinityMedicalCenter-GTAV.png
+|caption        = Front view of the medical center.
+|city = [[Los Santos (HD Universe)|Los Santos]]
+|games          = {{Games|V=y|O=y}}
+|size = Medical Clinic
+}}
+
+[[LEAD]]
+The '''Portola Trinity Medical Center ''' is a medical facility in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hospitals
+Locations in GTA V in Los Santos

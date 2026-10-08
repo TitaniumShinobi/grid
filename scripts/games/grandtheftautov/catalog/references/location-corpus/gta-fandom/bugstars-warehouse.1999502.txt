@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = warehouse
+|name           = Bugstars Warehouse
+|sign           = 
+|image          = 
+<gallery>
+BugstarsWarehouse-GTAV.png|Exterior
+BugstarsWarehouse-GTAV-Interior.png|Interior
+</gallery>
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Signal Street]], [[Elysian Island]], [[Port of Los Santos]]
+|use            = 
+|occupants      = [[Bugstars]]
+|structure_type = 
+|architecture   = 
+|accessible     = Yes
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+The '''Bugstars Warehouse''' is a warehouse occupied by [[Bugstars]] appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Warehouses

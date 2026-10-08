@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{infobox business
+|name = Nowinski Construction Corporation
+|image = NowinskiConstruction-GTAV-Logo.png
+|type = Construction
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Nowinski Construction Corporation''' is a construction company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Construction companies

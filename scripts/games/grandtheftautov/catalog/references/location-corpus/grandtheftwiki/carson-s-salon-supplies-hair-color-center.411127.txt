@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Carson's Salon Supplies & Hair Color Center
+|image = Carson'sSalonSupplies&HairColorCenter-GTAV-Davis-exterior.png
+|size = 350px
+|caption = Exterior of Carson's Salon Supplies & Hair Color Center in [[Davis]].
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = Beauty salon<br />Hairdressers
+|owner = 
+|location = [[Carson Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Carson's Salon Supplies & Hair Color Center''' is a beauty salon and hairdressers located on [[Carson Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The business has a billboard for [[Jock Cranley]]'s election campaign on the side of the building.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

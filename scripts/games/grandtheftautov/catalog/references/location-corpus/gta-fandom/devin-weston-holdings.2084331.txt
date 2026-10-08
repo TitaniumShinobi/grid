@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         =
+|type          = conglomerate
+|name          = Devin Weston Holdings
+|sign          = 
+|image         = DevinWestonHoldings-GTAV-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|V=y}}
+|mentioned     = 
+|locations     =
+|founded       = 
+|founder       = 
+|ceo           = [[Devin Weston]]
+|employees     = [[Molly Schultz]]<br>[[Ray Navarro]]<br>[[George Rucker]]
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Devin Weston Holdings''' is a holding company featured in {{V}}, owned by billionaire [[Devin Weston]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Companies
+Conglomerates

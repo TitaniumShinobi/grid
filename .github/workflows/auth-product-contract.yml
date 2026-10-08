@@ -1,0 +1,20 @@
+name: AUTH product contract
+on: [pull_request, push, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  auth-product-contract:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0.x
+      - run: dotnet run --project tests/Grid.Auth.Tests
+        shell: pwsh
+      - run: dotnet build src/Grid.App/Grid.App.csproj -c Debug -p:Platform=x64
+        shell: pwsh
+      - run: node .auth-kit/ci.mjs verify

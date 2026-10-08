@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox location
+|miscplace = y
+|miscplacename = CLUB
+|status         = active
+|image          = Vault_GTAVpc_LogoSign.png
+|name           = The Vault
+|structure_type = Nightclub
+|games          = {{games|V=y|O=y}}
+|location       = [[Strawberry Avenue]], [[Legion Square]], [[Los Santos (HD Universe)|Los Santos]].
+}}
+
+[[LEAD]]
+'''The Vault''' is a [[nightclub]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Businesses in GTA Online
+Businesses in GTA V
+Low-rise buildings
+Neoclassical buildings
+Nightclubs

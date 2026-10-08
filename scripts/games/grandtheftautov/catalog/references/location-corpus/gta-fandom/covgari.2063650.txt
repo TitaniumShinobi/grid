@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = Cougari
+|image         = Cougari-GTAV-Logo.png
+|caption       = The '''Cougari''' logo in {{VO}}.
+|aka           = Covgari {{Small|(stylization)}}
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|divisions     = 
+|employees     = 
+|products      = [[#Merchandise|Merchandise]]
+|taglines      = 
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+|opentimes     = 
+|accessible    = No
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''Cougari''' (stylized as '''Covgari''') is a luxury fashion brand appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|Cougari-GTAVee-RockfordHills.jpg|[[Mad Wayne Thunder Drive]], [[Eastbourne Way]] and [[Dorset Drive]], [[Rockford Hills]] {{Small|([[:File:Cougari-GTAV-NightFront.png|night view]])}}.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fashion brands

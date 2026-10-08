@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Vitreous-GTAV-Logo.png
+|name = Vitreous
+|type = Glass manufacturing
+|taglines = ''"Real glass men with union pride"''
+|games = {{Games|V=y|O=y}}
+|locations = [[Cypress Flats]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Vitreous''', also known as '''Vitreous Glass Masters''', is a company featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tool manufacturers

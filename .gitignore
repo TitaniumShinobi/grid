@@ -11,6 +11,12 @@ artifacts/
 /Grid.exe
 /debug.log
 /tmp/
+/.tmp/
+
+# Local lab / enrollment scratch (not product source)
+/.auth-grid-native-enrollment-return/
+/grid-vortex-catalog-evidence.zip
+/erswoodsDocumentsGitHubgrid
 
 # Local diagnostic/test-lab evidence
 /test-lab/

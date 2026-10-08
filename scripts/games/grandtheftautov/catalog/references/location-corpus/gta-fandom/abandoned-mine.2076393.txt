@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|mine = y
+|mineshaft = y
+|image          = Abandoned-Mine-Outside-GTAV.png
+|games          = {{games|V=y|O=y}}<br><small>(Enterable in enhanced version)</small>
+|occupants      = [[Isaac (GTA V)|Isaac]] (corpse) <small>(GTA V)</small>
+|location       = [[Great Chaparral]], [[Los Santos County]]}}
+
+[[LEAD]]
+The '''Mine Shaft''' is an abandoned mine featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It can be accessed in the [[Grand Theft Auto V: Enhanced Edition|enhanced version]].
+
+[[CATEGORIES]]
+Abandoned buildings
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Exclusive Enhanced Version Content in GTA V
+Exclusive Expanded & Enhanced Version Content in GTA V

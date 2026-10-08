@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|image = HappyShark-GTAV-Logo.png
+|games = {{Games|V=y|O=y}}
+|locations = 
+*[[Downtown Vinewood]]
+*[[Mission Row]]
+*[[Pillbox Hill]]
+*[[Strawberry]]
+|type = Payday loans<br>Bail bonds
+}}
+
+[[LEAD]]
+'''Happy Shark''' is a company that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="250px">
+HappyShark-GTAV-Vinewood.png|[[Clinton Avenue]], [[Downtown Vinewood]].
+HappyShark-GTAV-MissionRow.png|[[Atlee Street]], [[Mission Row]].
+HappyShark-GTAV-PillboxHill.png|[[Power Street]], [[Pillbox Hill]].
+HappyShark-GTAV-Strawberry.jpg|[[Innocence Boulevard]], [[Strawberry]].
+</gallery>
+
+[[de:Happy Shark]]
+[[ru:Happy Shark]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

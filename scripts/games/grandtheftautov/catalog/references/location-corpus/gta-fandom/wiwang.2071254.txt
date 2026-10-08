@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = electronics
+|name          = Wiwang
+|image_label   = 
+|image         = Wiwang-GTAV-Logo.png
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Wiwang Tower]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|products      = 
+|taglines      = "''Think small, think hard''"
+|bawsaq        = {{BAWSAQ/Slider}} '''WIW'''
+|lcn           = 
+|status        = active
+|phone         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Wiwang''' (Korean: '''위왕''', lit. "stomach king") ([[BAWSAQ]]: WIW) is a [[South Korea]]n electronics company that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+WiwangTower-GTAVee.png|[[Wiwang Tower]], [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics companies

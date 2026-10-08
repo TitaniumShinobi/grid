@@ -4,6 +4,29 @@ using Grid.GtaV.Knowledge;
 
 internal static class RegistrationReferenceSourceIndexReport
 {
+    public static object WithPresentation(object? cloudReport, GtaVPresentationCorpusIndex index)
+    {
+        var body = new
+        {
+            schemaVersion = 2,
+            cloud = cloudReport,
+            pinnedPresentationReferences = index.Artifacts.Values
+                .Where(value => value.DeclaredFormat.FormatId == GtaVPresentationCorpusIndex.ReferenceFormatId)
+                .OrderBy(value => value.SourceCoordinate.ExactRepresentation, StringComparer.Ordinal)
+                .Select(value => new
+                {
+                    sourceCoordinate = value.SourceCoordinate.ExactRepresentation,
+                    contentSha256 = value.Digest.HexValue,
+                    artifactId = value.Id.Value,
+                    provenance = "REFERENCE_VERIFIED",
+                    observedAtUtc = value.ObservedAtUtc,
+                }).ToArray(),
+        };
+        var report = JsonSerializer.SerializeToNode(body, CompactJson)!.AsObject();
+        report["contentSha256"] = Convert.ToHexStringLower(SHA256.HashData(JsonSerializer.SerializeToUtf8Bytes(body, CompactJson)));
+        return report;
+    }
+
     private static readonly JsonSerializerOptions CompactJson = new(JsonSerializerDefaults.Web);
 
     public static object Create(

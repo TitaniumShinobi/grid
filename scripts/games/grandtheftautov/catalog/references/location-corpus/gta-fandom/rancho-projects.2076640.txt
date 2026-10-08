@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|image       = RanchoProjects-GTAVee-South.jpg
+|caption     = The housing project as seen from the south.
+|games       = {{Games|V=y|O=y}}
+|location    = [[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+|map         = RanchoProjects-GTAV-Map.png
+|map_caption = Location on the map (red).
+|type        = housingproject
+}}
+
+[[LEAD]]
+The '''Rancho Projects''' is a large housing project in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Housing Projects
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

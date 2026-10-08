@@ -15,6 +15,10 @@ using Grid.GtaV.Knowledge;
 try
 {
     var arguments = ParseArguments(args);
+    var developmentMode = OptionalArgument(arguments, "development-materialization");
+    Require(developmentMode is null or "frozen-plan2",
+        "The only development materialization mode is frozen-plan2.");
+    var developmentMaterialization = developmentMode is not null;
     var gameRoot = Path.GetFullPath(RequireArgument(arguments, "game-root"));
     var acquisitionReceiptPath = Path.GetFullPath(RequireArgument(arguments, "acquisition-receipt"));
     var fiveFuryWheel = Path.GetFullPath(RequireArgument(arguments, "fivefury-wheel"));
@@ -25,24 +29,44 @@ try
     var actorCorpusIndexPath = Path.GetFullPath(RequireArgument(arguments, "actor-corpus-index"));
     var spatialAcquisitionReceiptPath = Path.GetFullPath(RequireArgument(arguments, "spatial-acquisition-receipt"));
     var spatialCorpusIndexPath = Path.GetFullPath(RequireArgument(arguments, "spatial-corpus-index"));
+    var plan2Names = new[] { "route-acquisition-receipt", "route-corpus-index", "item-acquisition-receipt", "item-corpus-index", "presentation-acquisition-receipt" };
+    var plan2Enabled = plan2Names.Any(arguments.ContainsKey);
+    Require(!plan2Enabled || plan2Names.All(arguments.ContainsKey),
+        "Plan 2 registration requires the complete route, Item, and presentation receipt set.");
     var cloudSnapshotBundlePath = OptionalArgument(arguments, "rockstar-cloud-snapshot-bundle");
     if (cloudSnapshotBundlePath is not null) cloudSnapshotBundlePath = Path.GetFullPath(cloudSnapshotBundlePath);
+    Require(!developmentMaterialization || (plan2Enabled && cloudSnapshotBundlePath is null),
+        "Frozen development materialization requires all Plan 2 inputs and does not accept cloud sources.");
     var allowedArguments = new HashSet<string>(StringComparer.Ordinal)
     {
         "game-root", "acquisition-receipt", "fivefury-wheel", "uv-executable",
-        "historical-library", "output", "rockstar-cloud-snapshot-bundle",
+        "historical-library", "output", "rockstar-cloud-snapshot-bundle", "development-materialization",
         "actor-acquisition-receipt", "actor-corpus-index",
         "spatial-acquisition-receipt", "spatial-corpus-index",
+        "route-acquisition-receipt", "route-corpus-index", "item-acquisition-receipt", "item-corpus-index", "presentation-acquisition-receipt",
     };
     Require(arguments.Keys.All(allowedArguments.Contains), "The canary received an unsupported command-line option.");
 
     var repositoryRoot = GitBuildProvenanceResolver.FindRepositoryRoot();
+    if (developmentMaterialization)
+    {
+        var scratchRoot = Path.GetFullPath(Path.Combine(repositoryRoot, ".tmp")) + Path.DirectorySeparatorChar;
+        Require(outputDirectory.StartsWith(scratchRoot, StringComparison.OrdinalIgnoreCase),
+            "Development materialization may write only to a new repository .tmp directory.");
+        Require(!Directory.Exists(outputDirectory) || !Directory.EnumerateFileSystemEntries(outputDirectory).Any(),
+            "Development materialization output must be absent or empty.");
+        foreach (var name in new[] { "acquisition-receipt", "historical-library", "actor-acquisition-receipt",
+                     "actor-corpus-index", "spatial-acquisition-receipt", "spatial-corpus-index" }.Concat(plan2Names))
+            Require(File.Exists(RequireArgument(arguments, name)), $"Frozen development input is missing: {name}");
+        Console.WriteLine("MaterializationMode=DevelopmentFrozenPlan2");
+        Console.WriteLine("RegistrationStage=ValidateFrozenInputs");
+    }
     var sourceFamilyManifestPath = Path.Combine(
         repositoryRoot,
         "scripts", "games", "grandtheftautov", "catalog", "gta_v_enhanced_source_families.v2.json");
     var registrationSourceRegistryPath = Path.Combine(
         repositoryRoot,
-        "scripts", "games", "grandtheftautov", "catalog", "gta_v_enhanced_registration_sources.v5.json");
+        "scripts", "games", "grandtheftautov", "catalog", plan2Enabled ? "gta_v_enhanced_registration_sources.v6.json" : "gta_v_enhanced_registration_sources.v5.json");
     var actorSourceFamilyManifestPath = Path.Combine(
         repositoryRoot,
         "scripts", "games", "grandtheftautov", "catalog", "gta_v_enhanced_actor_source_families.v1.json");
@@ -54,24 +78,27 @@ try
         sourceFamilyManifestPath,
         actorSourceFamilyManifestPath,
         spatialSourceFamilyManifestPath);
-    await VerifyAcquisitionAsync(
-        uvExecutable,
-        fiveFuryWheel,
-        gameRoot,
-        acquisitionReceiptPath,
-        repositoryRoot).ConfigureAwait(false);
-    await VerifyActorAcquisitionAsync(
-        uvExecutable,
-        fiveFuryWheel,
-        gameRoot,
-        actorAcquisitionReceiptPath,
-        repositoryRoot).ConfigureAwait(false);
-    await VerifySpatialAcquisitionAsync(
-        uvExecutable,
-        fiveFuryWheel,
-        gameRoot,
-        spatialAcquisitionReceiptPath,
-        repositoryRoot).ConfigureAwait(false);
+    if (!developmentMaterialization)
+    {
+        await VerifyAcquisitionAsync(
+            uvExecutable,
+            fiveFuryWheel,
+            gameRoot,
+            acquisitionReceiptPath,
+            repositoryRoot).ConfigureAwait(false);
+        await VerifyActorAcquisitionAsync(
+            uvExecutable,
+            fiveFuryWheel,
+            gameRoot,
+            actorAcquisitionReceiptPath,
+            repositoryRoot).ConfigureAwait(false);
+        await VerifySpatialAcquisitionAsync(
+            uvExecutable,
+            fiveFuryWheel,
+            gameRoot,
+            spatialAcquisitionReceiptPath,
+            repositoryRoot).ConfigureAwait(false);
+    }
     var acquisition = await GtaAcquisitionReceiptLoader.LoadAsync(
         acquisitionReceiptPath,
         gameRoot).ConfigureAwait(false);
@@ -96,6 +123,19 @@ try
         spatialAcquisition.CorpusIndexBytes.AsSpan(),
         spatialAcquisition.SemanticArtifacts,
         spatialAcquisition.CorpusIndexReceiptBinding);
+    var catalogScripts = Path.Combine(repositoryRoot, "scripts", "games", "grandtheftautov", "catalog");
+    var routeAcquisition = plan2Enabled ? await GtaRouteAcquisitionReceiptLoader.LoadAsync(
+        RequireArgument(arguments, "route-acquisition-receipt"), RequireArgument(arguments, "route-corpus-index"),
+        Path.Combine(catalogScripts, "gta_v_enhanced_route_source_families.v1.json")) : null;
+    var itemAcquisition = plan2Enabled ? await GtaItemAcquisitionReceiptLoader.LoadAsync(
+        RequireArgument(arguments, "item-acquisition-receipt"), RequireArgument(arguments, "item-corpus-index"),
+        Path.Combine(catalogScripts, "gta_v_enhanced_item_source_families.v1.json")) : null;
+    var presentationAcquisition = plan2Enabled ? await GtaPresentationAcquisitionReceiptLoader.LoadAsync(
+        RequireArgument(arguments, "presentation-acquisition-receipt"),
+        Path.Combine(catalogScripts, "gta_v_enhanced_presentation_source_families.v1.json")) : null;
+    Require(!plan2Enabled || (routeAcquisition!.GameVersion == acquisition.GameVersion &&
+        itemAcquisition!.GameVersion == acquisition.GameVersion && presentationAcquisition!.GameVersion == acquisition.GameVersion),
+        "Every Plan 2 source bundle must bind the registered exact build.");
 
     var adapterAssemblyBytes = await File.ReadAllBytesAsync(
         typeof(GtaVWeaponsMetaKnowledgeAdapter).Assembly.Location).ConfigureAwait(false);
@@ -301,6 +341,41 @@ try
         .AddRange(spatialSemanticAcquisition.Bindings)
         .OrderBy(value => value.ArtifactId.Value, StringComparer.Ordinal)
         .ToImmutableArray();
+    if (plan2Enabled)
+    {
+        allAcquisitionReceipts = allAcquisitionReceipts.AddRange(routeAcquisition!.Receipts)
+            .AddRange(itemAcquisition!.Receipts).AddRange(presentationAcquisition!.Receipts)
+            .DistinctBy(value => value.Id).OrderBy(value => value.Id.Value, StringComparer.Ordinal).ToImmutableArray();
+        allAcquisitionBindings = allAcquisitionBindings.AddRange(routeAcquisition.Bindings)
+            .AddRange(itemAcquisition.Bindings).AddRange(presentationAcquisition.Bindings)
+            .DistinctBy(value => value.ArtifactId).OrderBy(value => value.ArtifactId.Value, StringComparer.Ordinal).ToImmutableArray();
+    }
+    var historicalPrimaryPayload = GtaVKnowledgePackageProjection.CreatePayload(extractions, allAcquisitionReceipts, allAcquisitionBindings);
+    GtaVItemCorpusIndex? itemIndex = null;
+    GtaVPresentationCorpusIndex? presentationIndex = null;
+    GtaVRouteMetrics? routeMetrics = null;
+    if (plan2Enabled)
+    {
+        var routeIndex = GtaVRouteCorpusIndex.Load(routeAcquisition!.CorpusIndexBytes.AsSpan(),
+            routeAcquisition.SemanticArtifacts, routeAcquisition.CorpusIndexReceiptBinding);
+        var routes = new GtaVRouteKnowledgeAdapter(adapterDigest, routeIndex);
+        extractions = extractions.Add(await DiscoverAndExtractAsync(routes, routeAcquisition.SemanticArtifacts, acquisition.GameVersion));
+        routeMetrics = routes.LastMetrics;
+        itemIndex = new GtaVItemCorpusIndex(itemAcquisition!.CorpusIndexBytes.AsSpan(), itemAcquisition.CorpusArtifacts);
+        var mountedItems = new GtaVMountedItemKnowledgeAdapter[]
+        {
+            new GtaVMountedVehicleKnowledgeAdapter(adapterDigest, itemIndex, historicalPrimaryPayload),
+            new GtaVApparelKnowledgeAdapter(adapterDigest, itemIndex, historicalPrimaryPayload),
+            new("weapons", adapterDigest, itemIndex, historicalPrimaryPayload),
+            new("components", adapterDigest, itemIndex, historicalPrimaryPayload),
+            new("pickups", adapterDigest, itemIndex, historicalPrimaryPayload),
+        };
+        foreach (var adapter in mountedItems)
+            if (!adapter.PrimaryArtifacts.IsEmpty)
+                extractions = extractions.Add(await DiscoverAndExtractAsync(adapter, adapter.PrimaryArtifacts, acquisition.GameVersion));
+        presentationIndex = new GtaVPresentationCorpusIndex(presentationAcquisition!.Artifacts
+            .Concat(onlineActivityArtifacts).DistinctBy(value => value.SourceCoordinate).ToImmutableArray());
+    }
     var primaryArtifactIds = extractions
         .SelectMany(value => value.CanonicalRegistrations)
         .SelectMany(value => value.Registration.Artifacts)
@@ -376,13 +451,14 @@ try
         sourceScope,
         actorArtifact,
         ambientPedArtifact);
-    var localPayloadBeforeMountedActorAssertions = GtaVEnrichmentCoverageProjection.ApplyConsolidatedLocationCoverage(
-        GtaVKnowledgePackageProjection.AddSecondaryAssertions(
+    var ambientEnrichedPayload = GtaVKnowledgePackageProjection.AddSecondaryAssertions(
             populationEnrichedPayload,
             ambientActorRoles,
             allAcquisitionReceipts,
-            allAcquisitionBindings),
-        sourceScope);
+            allAcquisitionBindings);
+    var localPayloadBeforeMountedActorAssertions = plan2Enabled
+        ? GtaAcquisitionSemanticProjection.ApplyPlan2LocationCoverage(ambientEnrichedPayload, sourceScope)
+        : GtaVEnrichmentCoverageProjection.ApplyConsolidatedLocationCoverage(ambientEnrichedPayload, sourceScope);
     Console.WriteLine("RegistrationStage=AmbientActorRoles");
     var mountedActorAdapter = new GtaVMountedActorSecondaryAssertionAdapter(adapterDigest, actorCorpusIndex);
     var mountedActorResult = mountedActorAdapter.Extract(
@@ -396,6 +472,20 @@ try
         (current, batch) => GtaVKnowledgePackageProjection.AddSecondaryAssertions(
             current, batch, allAcquisitionReceipts, allAcquisitionBindings));
     Console.WriteLine("RegistrationStage=MountedActorAssertions");
+    if (plan2Enabled)
+    {
+        var batches = new GtaVMountedItemSecondaryAssertionAdapter(adapterDigest, itemIndex!, presentationIndex!)
+            .Extract(localPayload, sourceScope);
+        foreach (var batch in batches)
+            localPayload = batch.ApplyTo(localPayload, allAcquisitionReceipts, allAcquisitionBindings);
+        localPayload = new GtaVActorPresentationSecondaryAssertionAdapter(adapterDigest, presentationIndex!)
+            .Extract(localPayload, sourceScope).ApplyTo(localPayload, allAcquisitionReceipts, allAcquisitionBindings);
+        localPayload = new GtaVOnlineActivityOrganizationSecondaryAssertionAdapter(adapterDigest, presentationIndex!)
+            .Extract(localPayload, sourceScope).ApplyTo(localPayload, allAcquisitionReceipts, allAcquisitionBindings);
+        Require(historicalPrimaryPayload.KnowledgeRecords.All(record => localPayload.KnowledgeRecords.Contains(record)),
+            "Plan 2 must retain every established primary record unchanged.");
+        Console.WriteLine("RegistrationStage=Plan2Knowledge");
+    }
     GtaVRockstarCloudSnapshotBundle? cloudSnapshot = null;
     GtaVCloudJobHeaderSecondaryAssertionResult? cloudResult = null;
     RegistrationCloudMissionCoverage? cloudCoverage = null;
@@ -432,10 +522,12 @@ try
     }
     Require(payload.KnowledgeRecords.SequenceEqual(originPayload.KnowledgeRecords),
         "Secondary enrichment must not regenerate or reorder any established canonical record identity.");
-    ValidateExpectedCanary(
-        payload, adapterDigest, enrichmentAdapterDigest, mountedActorResult,
-        mountedSpatialMetrics, cloudResult);
+    if (!plan2Enabled)
+        ValidateExpectedCanary(payload, adapterDigest, enrichmentAdapterDigest, mountedActorResult,
+            mountedSpatialMetrics, cloudResult);
     var git = GitBuildProvenanceResolver.ResolveCandidate();
+    Require(!developmentMaterialization || git.Provenance.IsDevelopment,
+        "Development materialization requires truthful development-build provenance.");
 
     var validation = new CatalogValidationSummary(
         CatalogValidationStatus.Candidate,
@@ -461,6 +553,13 @@ try
     Require(verification.IsStructurallyValid,
         "The four-kind canary package failed structural verification: " + string.Join("; ", verification.Issues));
 
+    if (developmentMaterialization)
+    {
+        await MaterializeDevelopmentAsync(package, historicalLibraryPath, outputDirectory, arguments)
+            .ConfigureAwait(false);
+        return 0;
+    }
+
     var options = new JsonSerializerOptions(JsonSerializerDefaults.Web) { WriteIndented = true };
     var packageJson = JsonSerializer.Serialize(package, options);
     var reloaded = JsonSerializer.Deserialize<CanonicalCatalogPackage>(packageJson, options) ??
@@ -480,7 +579,15 @@ try
         coverageReport = RegistrationCloudMissionCoverageProjection.Apply(
             coverageReport, registrationSourceRegistry, cloudCoverage);
     }
-    var sourceIndexReport = RegistrationSourceIndexReport.Create(acquisition, sourceFamilyManifestPath);
+    if (plan2Enabled)
+        coverageReport = RegistrationCoverageReport.WithPlan2(coverageReport, routeMetrics!, itemIndex!, presentationIndex!);
+    object sourceIndexReport = RegistrationSourceIndexReport.Create(acquisition, sourceFamilyManifestPath);
+    if (plan2Enabled)
+    {
+        sourceIndexReport = RegistrationSourceIndexReport.WithPlan2(sourceIndexReport,
+            routeAcquisition!.SemanticArtifacts.Concat(itemAcquisition!.CorpusArtifacts).Concat(presentationAcquisition!.Artifacts));
+        referenceSourceIndexReport = RegistrationReferenceSourceIndexReport.WithPresentation(referenceSourceIndexReport, presentationIndex!);
+    }
 
     var historicalStore = new JsonCanonicalKnowledgeCatalogStore(historicalLibraryPath);
     var historicalLibrary = await historicalStore.LoadAsync().ConfigureAwait(false);
@@ -1378,6 +1485,78 @@ static async Task WriteNewAsync(string path, string content)
     await using var stream = new FileStream(path, FileMode.CreateNew, FileAccess.Write, FileShare.None);
     await using var writer = new StreamWriter(stream, new UTF8Encoding(false, true));
     await writer.WriteAsync(content).ConfigureAwait(false);
+}
+
+static async Task MaterializeDevelopmentAsync(
+    CanonicalCatalogPackage package,
+    string historicalLibraryPath,
+    string outputDirectory,
+    IReadOnlyDictionary<string, string> arguments)
+{
+    // This is a development artifact, not a registration replay, release receipt, or QCS verdict.
+    // Retain the normal receipt loaders, package verifier, and atomic store import validation.
+    const long maximumStoreBytes = 512L * 1024 * 1024;
+    var options = new JsonSerializerOptions(JsonSerializerDefaults.Web) { WriteIndented = true };
+    var packageJson = JsonSerializer.Serialize(package, options);
+    var packageBytes = Encoding.UTF8.GetByteCount(packageJson);
+    var historicalBytes = new FileInfo(historicalLibraryPath).Length;
+    // Import retains both all prior history and the new complete package. This lower bound
+    // can reject an impossible import before loading or copying the historical store.
+    Require(historicalBytes + packageBytes <= maximumStoreBytes,
+        $"Development catalog cannot fit the existing 512 MiB store limit: historical bytes {historicalBytes}, " +
+        $"new package bytes {packageBytes}, before additional merged assertion indexes. No store was imported.");
+    Console.WriteLine("RegistrationStage=LoadDevelopmentHistory");
+    var historical = await new JsonCanonicalKnowledgeCatalogStore(historicalLibraryPath).LoadAsync().ConfigureAwait(false);
+    Require(historical.IsValid, "Frozen historical development catalog is invalid: " + string.Join("; ", historical.Issues));
+    EnsureOutputDirectory(outputDirectory);
+    await WriteNewAsync(Path.Combine(outputDirectory, "development-package.v7.json"), packageJson).ConfigureAwait(false);
+    var storePath = Path.Combine(outputDirectory, "shared-canonical-library.v5.json");
+    File.Copy(historicalLibraryPath, storePath, overwrite: false);
+    Console.WriteLine("RegistrationStage=ImportDevelopmentPackage");
+    var imported = await new JsonCanonicalKnowledgeCatalogStore(storePath)
+        .ImportPackageAsync(historical.Snapshot.Revision, package).ConfigureAwait(false);
+    Require(imported.Status == CanonicalCatalogImportStatus.Imported,
+        $"Development package import failed ({imported.Status}: {imported.Detail}).");
+    var storeBytes = new FileInfo(storePath).Length;
+    Require(storeBytes <= maximumStoreBytes,
+        $"Scratch development catalog is {storeBytes} bytes and exceeds the existing 512 MiB limit. " +
+        "Do not bind or install it; no store limit was changed.");
+    static async Task<string> FileDigestAsync(string path)
+    {
+        await using var stream = File.OpenRead(path);
+        return Convert.ToHexString(await SHA256.HashDataAsync(stream).ConfigureAwait(false)).ToLowerInvariant();
+    }
+    var inputs = new List<object>();
+    foreach (var name in new[] { "acquisition-receipt", "actor-acquisition-receipt", "actor-corpus-index",
+                 "spatial-acquisition-receipt", "spatial-corpus-index", "route-acquisition-receipt", "route-corpus-index",
+                 "item-acquisition-receipt", "item-corpus-index", "presentation-acquisition-receipt", "historical-library" })
+    {
+        var path = Path.GetFullPath(RequireArgument(arguments, name));
+        inputs.Add(new { name, path, sha256 = await FileDigestAsync(path).ConfigureAwait(false) });
+    }
+    var digest = await FileDigestAsync(storePath).ConfigureAwait(false);
+    var receipt = new
+    {
+        schemaVersion = 1, status = "DevelopmentMaterialized", releaseCertified = false, qcsEvaluated = false,
+        packageId = package.Id.Value, catalogRevisionId = package.Manifest.CatalogRevisionId.Value,
+        payloadDigest = package.Manifest.PayloadDigest.Value, validationStatus = package.Manifest.ValidationStatus.ToString(),
+        developmentBuild = package.Manifest.BuildProvenance.IsDevelopment,
+        historicalLibraryRevision = historical.Snapshot.Revision, sharedLibraryRevision = imported.Revision,
+        catalogStorePath = storePath, catalogStoreSha256 = digest, catalogStoreBytes = storeBytes,
+        counters = new { acquisitionProcesses = 0, materializationPasses = 1, explicitPackageVerifications = 1,
+            importCalls = 1, idempotenceRetries = 0, serializedPackageReloads = 0, certificationPasses = 0 },
+        storeValidation = "Unmodified ImportPackageAsync performs its required package, existing snapshot, and merged snapshot validation.",
+        counts = package.Payload.KnowledgeRecords.GroupBy(record => record.Kind)
+            .Select(group => new { kind = group.Key.ToString(), records = group.Count() }).ToArray(),
+        frozenInputs = inputs,
+    };
+    await WriteNewAsync(Path.Combine(outputDirectory, "development-materialization-receipt.v1.json"),
+        JsonSerializer.Serialize(receipt, options)).ConfigureAwait(false);
+    Console.WriteLine($"PackageId={package.Id.Value}");
+    Console.WriteLine($"CatalogRevisionId={package.Manifest.CatalogRevisionId.Value}");
+    Console.WriteLine($"SharedLibraryRevision={imported.Revision}");
+    Console.WriteLine($"CatalogStoreSha256={digest}");
+    Console.WriteLine("MaterializationStatus=DevelopmentMaterialized");
 }
 
 internal sealed record EvidenceChainReport(

@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = Cerveza Barracho
+|sign          = 
+|image_label   = 
+|image         = CervezaBarracho-GTAV-Logo.png
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|products      = 
+|taglines      = "''¡Es Playtime!''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Cerveza Barracho''' is a [[Mexico|Mexican]] beer brand appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:''Episodes from Liberty City'']]
+Cerveza Barracho is a primary sponsor for the #34 [[Bati Custom]].
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI

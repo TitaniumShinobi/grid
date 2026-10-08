@@ -1,0 +1,2981 @@
+{
+  "sequence": 1,
+  "previousContractDigest": "84b0e2010831f0df307e16058f8eddd56b70690dbfc8e37d1661e0b9813da0c2",
+  "previous": null,
+  "previousBaselineDigest": null,
+  "baselineDigest": "12621c6a1ce301a9af382eb2baddd531768c03d4e5d9150a1c6a8363ec5ae286",
+  "productId": "grid",
+  "revision": "fa989b5e9a44b74f2bd017fd62c5922574df1eb3e1795c0ecb8bfedf5536b526",
+  "catalogVersion": "1.5",
+  "catalog": [
+    {
+      "id": "assertion.resource_grant",
+      "family": "resource_authorization",
+      "checks": [
+        "registered_client_session_bound",
+        "narrow_capabilities_enforced",
+        "admission_separate_from_owner",
+        "artifact_expiry_bounded",
+        "durable_grant_revocation"
+      ]
+    },
+    {
+      "id": "assertion.resource_status",
+      "family": "resource_authorization",
+      "checks": [
+        "authenticated_workload_required",
+        "online_status_per_request",
+        "status_failure_fails_closed",
+        "current_owner_policy_enforced",
+        "read_replay_policy_explicit"
+      ]
+    },
+    {
+      "id": "assertion.integration",
+      "family": "assertion",
+      "checks": [
+        "authority_boundary_declared",
+        "replay_policy_declared",
+        "canonical_identity_bound",
+        "assertion_requested_for_current_session",
+        "assertion_forwarded_only_to_trusted_target",
+        "requested_scope_preserved",
+        "success_explicit",
+        "failure_code_preserved",
+        "recovery_explicit",
+        "tokens_not_exposed"
+      ]
+    },
+    {
+      "id": "assertion.issuance",
+      "family": "assertion",
+      "checks": [
+        "authenticated_session_required",
+        "subject_owner_binding_authorized",
+        "relying_party_scope_authorized"
+      ]
+    },
+    {
+      "id": "assertion.validation",
+      "family": "assertion",
+      "checks": [
+        "signature_issuer_audience_verified",
+        "signed_subject_owner_binding_verified",
+        "relying_party_scope_verified",
+        "expiry_verified",
+        "replay_policy_enforced",
+        "wrong_owner_rejected",
+        "wrong_relying_party_rejected",
+        "excess_scope_rejected",
+        "invalid_assertion_fails_closed"
+      ]
+    },
+    {
+      "id": "signin",
+      "family": "signin",
+      "checks": [
+        "explicit_entry",
+        "existing_identity_authenticated",
+        "invalid_credentials_rejected"
+      ]
+    },
+    {
+      "id": "signin.returning",
+      "family": "signin",
+      "checks": [
+        "returning_identity_reused",
+        "enrollment_status_respected",
+        "unknown_signin_requires_enrollment",
+        "current_admission_requirements_enforced"
+      ]
+    },
+    {
+      "id": "signup",
+      "family": "signup",
+      "checks": [
+        "explicit_entry",
+        "new_identity_enrolled",
+        "existing_identity_not_duplicated"
+      ]
+    },
+    {
+      "id": "signup.admission",
+      "family": "signup",
+      "checks": [
+        "required_admission_enforced",
+        "failed_admission_no_identity_created"
+      ]
+    },
+    {
+      "id": "providers.password",
+      "family": "providers",
+      "checks": [
+        "supported",
+        "password_hash_verified",
+        "plaintext_fallback_absent"
+      ]
+    },
+    {
+      "id": "providers.magic_email",
+      "family": "providers",
+      "checks": [
+        "supported",
+        "single_use_expiring_challenge",
+        "login_signup_intent_preserved",
+        "verified_identity_resolved"
+      ]
+    },
+    {
+      "id": "providers.google",
+      "family": "providers",
+      "checks": [
+        "supported",
+        "state_verified",
+        "provider_identity_verified",
+        "completion_defined"
+      ]
+    },
+    {
+      "id": "providers.github",
+      "family": "providers",
+      "checks": [
+        "supported",
+        "state_verified",
+        "provider_identity_verified",
+        "completion_defined"
+      ]
+    },
+    {
+      "id": "providers.additional",
+      "family": "providers",
+      "checks": [
+        "extension_contract_defined",
+        "identity_verification_required",
+        "completion_defined"
+      ]
+    },
+    {
+      "id": "providers.callback",
+      "family": "providers",
+      "checks": [
+        "provider_callback_contract_preserved",
+        "provider_error_visible",
+        "provider_cancellation_handled"
+      ]
+    },
+    {
+      "id": "magic.request",
+      "family": "providers",
+      "checks": [
+        "request_contract_defined",
+        "request_intent_preserved",
+        "request_does_not_authenticate"
+      ]
+    },
+    {
+      "id": "magic.expiry",
+      "family": "providers",
+      "checks": [
+        "challenge_expiry_enforced",
+        "expired_link_has_explicit_outcome"
+      ]
+    },
+    {
+      "id": "magic.replay",
+      "family": "providers",
+      "checks": [
+        "challenge_consumed_atomically",
+        "replayed_link_rejected"
+      ]
+    },
+    {
+      "id": "magic.delivery",
+      "family": "providers",
+      "checks": [
+        "delivery_adapter_invoked",
+        "delivery_failure_explicit",
+        "undelivered_challenge_revoked"
+      ]
+    },
+    {
+      "id": "email.verification",
+      "family": "email_identity",
+      "checks": [
+        "ownership_verified",
+        "verified_state_persisted",
+        "resend_supported",
+        "expired_proof_rejected",
+        "replayed_proof_rejected"
+      ]
+    },
+    {
+      "id": "email.change",
+      "family": "email_identity",
+      "checks": [
+        "existing_account_control_proven",
+        "new_email_verified",
+        "collision_handled"
+      ]
+    },
+    {
+      "id": "email.new_returning",
+      "family": "email_identity",
+      "checks": [
+        "new_identity_distinguished",
+        "returning_identity_reused",
+        "email_collision_handled"
+      ]
+    },
+    {
+      "id": "enrollment.product",
+      "family": "enrollment",
+      "checks": [
+        "authentication_separate_from_enrollment",
+        "required_optional_distinguished",
+        "required_enrollment_enforced",
+        "optional_enrollment_declinable",
+        "profile_details_collected",
+        "existing_enrollment_reused",
+        "owner_binding_not_admission",
+        "authenticated_handoff_bound",
+        "authority_completion_verified",
+        "admission_context_bound",
+        "completion_replay_rejected"
+      ]
+    },
+    {
+      "id": "enrollment.continuation",
+      "family": "enrollment",
+      "checks": [
+        "pending_state_explicit",
+        "resume_supported",
+        "completion_verified",
+        "resume_has_no_gate_mutations",
+        "completion_expiry_enforced"
+      ]
+    },
+    {
+      "id": "welcome.confirmation",
+      "family": "enrollment",
+      "checks": [
+        "signup_enrollment_success_confirmed",
+        "in_product_confirmation_visible"
+      ]
+    },
+    {
+      "id": "welcome.email",
+      "family": "enrollment",
+      "checks": [
+        "trigger_after_success",
+        "template_exists",
+        "delivery_result",
+        "idempotency_policy_defined"
+      ]
+    },
+    {
+      "id": "linking.existing_account",
+      "family": "linking",
+      "checks": [
+        "existing_account_control_proven",
+        "new_identity_control_proven",
+        "duplicate_identity_prevented",
+        "explicit_link_intent"
+      ]
+    },
+    {
+      "id": "linking.conflict",
+      "family": "linking",
+      "checks": [
+        "identity_bound_elsewhere_rejected",
+        "existing_identity_preserved"
+      ]
+    },
+    {
+      "id": "linking.unlink",
+      "family": "linking",
+      "checks": [
+        "account_control_proven",
+        "final_usable_method_preserved"
+      ]
+    },
+    {
+      "id": "cross_product.offer",
+      "family": "cross_product",
+      "checks": [
+        "declared_directions_supported",
+        "optional_offer_explicit",
+        "target_product_identified"
+      ]
+    },
+    {
+      "id": "cross_product.decline",
+      "family": "cross_product",
+      "checks": [
+        "decline_allowed",
+        "decline_preserves_primary_access"
+      ]
+    },
+    {
+      "id": "cross_product.accept",
+      "family": "cross_product",
+      "checks": [
+        "explicit_acceptance_required",
+        "existing_target_account_linked",
+        "duplicate_identity_prevented"
+      ]
+    },
+    {
+      "id": "session.establishment",
+      "family": "session",
+      "checks": [
+        "verified_identity_required",
+        "session_bound_to_identity",
+        "session_expiry_enforced"
+      ]
+    },
+    {
+      "id": "session.persistence",
+      "family": "session",
+      "checks": [
+        "session_persisted",
+        "session_bound_to_canonical_identity"
+      ]
+    },
+    {
+      "id": "session.restart",
+      "family": "session",
+      "checks": [
+        "valid_session_restored_after_restart",
+        "revocation_preserved_after_restart"
+      ]
+    },
+    {
+      "id": "session.expiry",
+      "family": "session",
+      "checks": [
+        "expiry_enforced",
+        "expired_session_has_explicit_outcome"
+      ]
+    },
+    {
+      "id": "session.validation",
+      "family": "session",
+      "checks": [
+        "invalid_session_rejected",
+        "expired_session_rejected",
+        "revoked_session_rejected"
+      ]
+    },
+    {
+      "id": "session.refresh",
+      "family": "session",
+      "checks": [
+        "refresh_proof_verified",
+        "token_rotated",
+        "replay_rejected"
+      ]
+    },
+    {
+      "id": "session.logout",
+      "family": "session",
+      "checks": [
+        "server_session_invalidated",
+        "client_credentials_cleared",
+        "completion_defined"
+      ]
+    },
+    {
+      "id": "session.revocation",
+      "family": "session",
+      "checks": [
+        "revocation_persisted",
+        "revoked_access_rejected",
+        "revoked_refresh_rejected"
+      ]
+    },
+    {
+      "id": "relying_party.client_operations",
+      "family": "relying_party",
+      "checks": [
+        "authorization_launched",
+        "userinfo_identity_validated",
+        "refresh_response_handled",
+        "revoke_request_sent"
+      ]
+    },
+    {
+      "id": "relying_party.authorization",
+      "family": "relying_party",
+      "checks": [
+        "client_validated",
+        "redirect_validated",
+        "subject_assertion_verified",
+        "replay_rejected"
+      ]
+    },
+    {
+      "id": "relying_party.authority",
+      "family": "relying_party",
+      "checks": [
+        "identity_authority_boundary_declared",
+        "consumer_does_not_reissue_unverified_identity",
+        "assertion_issuer_and_audience_validated"
+      ]
+    },
+    {
+      "id": "relying_party.pkce",
+      "family": "relying_party",
+      "checks": [
+        "applicability_declared",
+        "s256_challenge_required_when_applicable",
+        "verifier_checked_when_applicable"
+      ]
+    },
+    {
+      "id": "relying_party.callback",
+      "family": "relying_party",
+      "checks": [
+        "state_bound_to_request",
+        "redirect_allowlisted",
+        "successful_completion_explicit",
+        "failure_completion_explicit"
+      ]
+    },
+    {
+      "id": "device.enrollment",
+      "family": "device_trust",
+      "checks": [
+        "device_binding_verified",
+        "required_device_enrollment_enforced"
+      ]
+    },
+    {
+      "id": "device.trust",
+      "family": "device_trust",
+      "checks": [
+        "trust_granted_only_by_authorized_action",
+        "untrusted_device_gated",
+        "revoked_device_rejected"
+      ]
+    },
+    {
+      "id": "device.reauthentication",
+      "family": "device_trust",
+      "checks": [
+        "sensitive_action_requires_fresh_proof",
+        "expired_reauthentication_rejected"
+      ]
+    },
+    {
+      "id": "recovery.password",
+      "family": "recovery",
+      "checks": [
+        "recovery_proof_verified",
+        "single_use_expiring_challenge",
+        "new_password_stored_as_hash"
+      ]
+    },
+    {
+      "id": "recovery.account",
+      "family": "recovery",
+      "checks": [
+        "account_control_proven",
+        "recovery_does_not_duplicate_identity",
+        "security_gates_preserved"
+      ]
+    },
+    {
+      "id": "recovery.codes",
+      "family": "recovery",
+      "checks": [
+        "codes_protected_at_rest",
+        "single_use_enforced",
+        "invalid_codes_rejected"
+      ]
+    },
+    {
+      "id": "consent.policy",
+      "family": "consent",
+      "checks": [
+        "terms_version_tracked",
+        "privacy_version_tracked",
+        "acceptance_persisted"
+      ]
+    },
+    {
+      "id": "consent.reverification",
+      "family": "consent",
+      "checks": [
+        "changed_required_documents_reverified",
+        "unaccepted_required_policy_gated"
+      ]
+    },
+    {
+      "id": "ux.entry",
+      "family": "ux",
+      "checks": [
+        "signin_signup_distinct",
+        "available_methods_visible",
+        "new_returning_state_explicit",
+        "recovery_entry_visible",
+        "logout_entry_visible",
+        "link_entry_visible"
+      ]
+    },
+    {
+      "id": "ux.terminal",
+      "family": "ux",
+      "checks": [
+        "all_routes_have_explicit_outcome",
+        "recoverable_errors_visible",
+        "configuration_errors_visible",
+        "blank_terminal_absent"
+      ]
+    },
+    {
+      "id": "ux.continuation",
+      "family": "ux",
+      "checks": [
+        "pending_action_explained",
+        "retry_available_when_recoverable",
+        "cancel_or_decline_outcome_defined"
+      ]
+    },
+    {
+      "id": "auth_email.contract",
+      "family": "auth_email",
+      "checks": [
+        "security_email_kinds_declared",
+        "trigger_defined_per_kind",
+        "recipient_resolved_per_kind",
+        "adapter_defined_per_kind",
+        "template_defined_per_kind",
+        "delivery_outcome_defined_per_kind",
+        "duplicate_suppression_defined",
+        "sensitive_content_protected",
+        "expiry_defined_where_applicable",
+        "marketing_email_excluded"
+      ]
+    },
+    {
+      "id": "auth_email.delivery",
+      "family": "auth_email",
+      "checks": [
+        "delivery_configuration_validated",
+        "delivery_failure_visible",
+        "undelivered_challenge_revoked"
+      ]
+    },
+    {
+      "id": "auth_email.links",
+      "family": "auth_email",
+      "checks": [
+        "link_destination_validated",
+        "bearer_token_not_logged",
+        "purpose_bound_to_challenge",
+        "intent_preserved"
+      ]
+    },
+    {
+      "id": "auth_email.enumeration",
+      "family": "auth_email",
+      "checks": [
+        "account_existence_not_disclosed",
+        "request_rate_limited"
+      ]
+    },
+    {
+      "id": "security.failure",
+      "family": "security",
+      "checks": [
+        "dependency_failure_fails_closed",
+        "no_silent_destructive_repair",
+        "sensitive_data_not_exposed"
+      ]
+    },
+    {
+      "id": "security.identity",
+      "family": "security",
+      "checks": [
+        "canonical_identity_source_used",
+        "unverified_identity_not_authenticated",
+        "duplicate_creation_prevented"
+      ]
+    },
+    {
+      "id": "security.rate_limits",
+      "family": "security",
+      "checks": [
+        "authentication_attempts_rate_limited",
+        "challenge_requests_rate_limited",
+        "limit_exceeded_outcome_explicit"
+      ]
+    },
+    {
+      "id": "security.crypto",
+      "family": "security",
+      "checks": [
+        "tokens_cryptographically_random",
+        "sensitive_tokens_protected_at_rest",
+        "secrets_not_logged",
+        "tokens_not_logged"
+      ]
+    },
+    {
+      "id": "security.protocol",
+      "family": "security",
+      "checks": [
+        "csrf_or_request_binding_enforced",
+        "replay_protection_enforced",
+        "redirect_validation_enforced",
+        "nonce_verified_when_required"
+      ]
+    }
+  ],
+  "policy": {
+    "contract": "life.auth.product-contract/1",
+    "productId": "grid",
+    "profile": "RELYING_PARTY_CLIENT",
+    "inputs": {
+      "artifact": [
+        "src/Grid.App/bin/x64/Debug/net9.0-windows10.0.19041.0/win-x64/Grid.dll"
+      ],
+      "configuration": [
+        "config/grid.auth.config.json"
+      ]
+    },
+    "provenanceDigest": "41d50dab4ea5236af80b0deb28d65c7efa8e711cf3d0fffe9c18a997853ac2e2"
+  },
+  "observerDigest": "69863bbe29a1c363625ace466375bb74c8b11e420f635375b048a34bdb2846d4",
+  "operation": "establish",
+  "retired": [],
+  "obligations": [
+    {
+      "capabilityId": "magic.request",
+      "checkId": "request_contract_defined"
+    },
+    {
+      "capabilityId": "magic.request",
+      "checkId": "request_intent_preserved"
+    },
+    {
+      "capabilityId": "providers.callback",
+      "checkId": "provider_callback_contract_preserved"
+    },
+    {
+      "capabilityId": "providers.callback",
+      "checkId": "provider_cancellation_handled"
+    },
+    {
+      "capabilityId": "providers.callback",
+      "checkId": "provider_error_visible"
+    },
+    {
+      "capabilityId": "relying_party.authority",
+      "checkId": "assertion_issuer_and_audience_validated"
+    },
+    {
+      "capabilityId": "relying_party.authority",
+      "checkId": "consumer_does_not_reissue_unverified_identity"
+    },
+    {
+      "capabilityId": "relying_party.authority",
+      "checkId": "identity_authority_boundary_declared"
+    },
+    {
+      "capabilityId": "relying_party.authorization",
+      "checkId": "client_validated"
+    },
+    {
+      "capabilityId": "relying_party.authorization",
+      "checkId": "redirect_validated"
+    },
+    {
+      "capabilityId": "relying_party.authorization",
+      "checkId": "replay_rejected"
+    },
+    {
+      "capabilityId": "relying_party.callback",
+      "checkId": "failure_completion_explicit"
+    },
+    {
+      "capabilityId": "relying_party.callback",
+      "checkId": "redirect_allowlisted"
+    },
+    {
+      "capabilityId": "relying_party.callback",
+      "checkId": "state_bound_to_request"
+    },
+    {
+      "capabilityId": "relying_party.callback",
+      "checkId": "successful_completion_explicit"
+    },
+    {
+      "capabilityId": "relying_party.client_operations",
+      "checkId": "authorization_launched"
+    },
+    {
+      "capabilityId": "relying_party.client_operations",
+      "checkId": "refresh_response_handled"
+    },
+    {
+      "capabilityId": "relying_party.client_operations",
+      "checkId": "revoke_request_sent"
+    },
+    {
+      "capabilityId": "relying_party.client_operations",
+      "checkId": "userinfo_identity_validated"
+    },
+    {
+      "capabilityId": "relying_party.pkce",
+      "checkId": "applicability_declared"
+    },
+    {
+      "capabilityId": "relying_party.pkce",
+      "checkId": "s256_challenge_required_when_applicable"
+    },
+    {
+      "capabilityId": "relying_party.pkce",
+      "checkId": "verifier_checked_when_applicable"
+    },
+    {
+      "capabilityId": "security.failure",
+      "checkId": "dependency_failure_fails_closed"
+    },
+    {
+      "capabilityId": "security.failure",
+      "checkId": "no_silent_destructive_repair"
+    },
+    {
+      "capabilityId": "security.failure",
+      "checkId": "sensitive_data_not_exposed"
+    },
+    {
+      "capabilityId": "security.identity",
+      "checkId": "canonical_identity_source_used"
+    },
+    {
+      "capabilityId": "security.protocol",
+      "checkId": "csrf_or_request_binding_enforced"
+    },
+    {
+      "capabilityId": "session.establishment",
+      "checkId": "session_bound_to_identity"
+    },
+    {
+      "capabilityId": "session.expiry",
+      "checkId": "expired_session_has_explicit_outcome"
+    },
+    {
+      "capabilityId": "session.logout",
+      "checkId": "client_credentials_cleared"
+    },
+    {
+      "capabilityId": "session.logout",
+      "checkId": "completion_defined"
+    },
+    {
+      "capabilityId": "session.persistence",
+      "checkId": "session_bound_to_canonical_identity"
+    },
+    {
+      "capabilityId": "session.persistence",
+      "checkId": "session_persisted"
+    },
+    {
+      "capabilityId": "session.refresh",
+      "checkId": "refresh_proof_verified"
+    },
+    {
+      "capabilityId": "session.refresh",
+      "checkId": "replay_rejected"
+    },
+    {
+      "capabilityId": "session.refresh",
+      "checkId": "token_rotated"
+    },
+    {
+      "capabilityId": "session.restart",
+      "checkId": "valid_session_restored_after_restart"
+    },
+    {
+      "capabilityId": "session.validation",
+      "checkId": "expired_session_rejected"
+    },
+    {
+      "capabilityId": "session.validation",
+      "checkId": "invalid_session_rejected"
+    },
+    {
+      "capabilityId": "session.validation",
+      "checkId": "revoked_session_rejected"
+    },
+    {
+      "capabilityId": "signin",
+      "checkId": "existing_identity_authenticated"
+    },
+    {
+      "capabilityId": "signin",
+      "checkId": "explicit_entry"
+    },
+    {
+      "capabilityId": "signin",
+      "checkId": "invalid_credentials_rejected"
+    },
+    {
+      "capabilityId": "ux.continuation",
+      "checkId": "cancel_or_decline_outcome_defined"
+    },
+    {
+      "capabilityId": "ux.continuation",
+      "checkId": "pending_action_explained"
+    },
+    {
+      "capabilityId": "ux.continuation",
+      "checkId": "retry_available_when_recoverable"
+    },
+    {
+      "capabilityId": "ux.terminal",
+      "checkId": "all_routes_have_explicit_outcome"
+    },
+    {
+      "capabilityId": "ux.terminal",
+      "checkId": "blank_terminal_absent"
+    },
+    {
+      "capabilityId": "ux.terminal",
+      "checkId": "configuration_errors_visible"
+    },
+    {
+      "capabilityId": "ux.terminal",
+      "checkId": "recoverable_errors_visible"
+    }
+  ],
+  "changedChecks": [
+    {
+      "key": "assertion.integration/assertion_forwarded_only_to_trusted_target",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.integration/assertion_requested_for_current_session",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.integration/authority_boundary_declared",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.integration/canonical_identity_bound",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.integration/failure_code_preserved",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.integration/recovery_explicit",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.integration/replay_policy_declared",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.integration/requested_scope_preserved",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.integration/success_explicit",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.integration/tokens_not_exposed",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.issuance/authenticated_session_required",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.issuance/relying_party_scope_authorized",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.issuance/subject_owner_binding_authorized",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.resource_grant/admission_separate_from_owner",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.resource_grant/artifact_expiry_bounded",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.resource_grant/durable_grant_revocation",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.resource_grant/narrow_capabilities_enforced",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.resource_grant/registered_client_session_bound",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.resource_status/authenticated_workload_required",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.resource_status/current_owner_policy_enforced",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.resource_status/online_status_per_request",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.resource_status/read_replay_policy_explicit",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.resource_status/status_failure_fails_closed",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.validation/excess_scope_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.validation/expiry_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.validation/invalid_assertion_fails_closed",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.validation/relying_party_scope_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.validation/replay_policy_enforced",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.validation/signature_issuer_audience_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.validation/signed_subject_owner_binding_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.validation/wrong_owner_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "assertion.validation/wrong_relying_party_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.contract/adapter_defined_per_kind",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.contract/delivery_outcome_defined_per_kind",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.contract/duplicate_suppression_defined",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.contract/expiry_defined_where_applicable",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.contract/marketing_email_excluded",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.contract/recipient_resolved_per_kind",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.contract/security_email_kinds_declared",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.contract/sensitive_content_protected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.contract/template_defined_per_kind",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.contract/trigger_defined_per_kind",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.delivery/delivery_configuration_validated",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.delivery/delivery_failure_visible",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.delivery/undelivered_challenge_revoked",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.enumeration/account_existence_not_disclosed",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.enumeration/request_rate_limited",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.links/bearer_token_not_logged",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.links/intent_preserved",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.links/link_destination_validated",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "auth_email.links/purpose_bound_to_challenge",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "consent.policy/acceptance_persisted",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "consent.policy/privacy_version_tracked",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "consent.policy/terms_version_tracked",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "consent.reverification/changed_required_documents_reverified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "consent.reverification/unaccepted_required_policy_gated",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "cross_product.accept/duplicate_identity_prevented",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "cross_product.accept/existing_target_account_linked",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "cross_product.accept/explicit_acceptance_required",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "cross_product.decline/decline_allowed",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "cross_product.decline/decline_preserves_primary_access",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "cross_product.offer/declared_directions_supported",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "cross_product.offer/optional_offer_explicit",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "cross_product.offer/target_product_identified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "device.enrollment/device_binding_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "device.enrollment/required_device_enrollment_enforced",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "device.reauthentication/expired_reauthentication_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "device.reauthentication/sensitive_action_requires_fresh_proof",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "device.trust/revoked_device_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "device.trust/trust_granted_only_by_authorized_action",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "device.trust/untrusted_device_gated",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "email.change/collision_handled",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "email.change/existing_account_control_proven",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "email.change/new_email_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "email.new_returning/email_collision_handled",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "email.new_returning/new_identity_distinguished",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "email.new_returning/returning_identity_reused",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "email.verification/expired_proof_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "email.verification/ownership_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "email.verification/replayed_proof_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "email.verification/resend_supported",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "email.verification/verified_state_persisted",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.continuation/completion_expiry_enforced",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.continuation/completion_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.continuation/pending_state_explicit",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.continuation/resume_has_no_gate_mutations",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.continuation/resume_supported",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.product/admission_context_bound",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.product/authenticated_handoff_bound",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.product/authentication_separate_from_enrollment",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.product/authority_completion_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.product/completion_replay_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.product/existing_enrollment_reused",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.product/optional_enrollment_declinable",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.product/owner_binding_not_admission",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.product/profile_details_collected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.product/required_enrollment_enforced",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "enrollment.product/required_optional_distinguished",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "linking.conflict/existing_identity_preserved",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "linking.conflict/identity_bound_elsewhere_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "linking.existing_account/duplicate_identity_prevented",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "linking.existing_account/existing_account_control_proven",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "linking.existing_account/explicit_link_intent",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "linking.existing_account/new_identity_control_proven",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "linking.unlink/account_control_proven",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "linking.unlink/final_usable_method_preserved",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "magic.delivery/delivery_adapter_invoked",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "magic.delivery/delivery_failure_explicit",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "magic.delivery/undelivered_challenge_revoked",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "magic.expiry/challenge_expiry_enforced",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "magic.expiry/expired_link_has_explicit_outcome",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "magic.replay/challenge_consumed_atomically",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "magic.replay/replayed_link_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "magic.request/request_contract_defined",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "magic.request/request_does_not_authenticate",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "magic.request/request_intent_preserved",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "providers.additional/completion_defined",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.additional/extension_contract_defined",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.additional/identity_verification_required",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.callback/provider_callback_contract_preserved",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "providers.callback/provider_cancellation_handled",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "providers.callback/provider_error_visible",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "providers.github/completion_defined",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.github/provider_identity_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.github/state_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.github/supported",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.google/completion_defined",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.google/provider_identity_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.google/state_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.google/supported",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.magic_email/login_signup_intent_preserved",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.magic_email/single_use_expiring_challenge",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.magic_email/supported",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.magic_email/verified_identity_resolved",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.password/password_hash_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.password/plaintext_fallback_absent",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "providers.password/supported",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "recovery.account/account_control_proven",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "recovery.account/recovery_does_not_duplicate_identity",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "recovery.account/security_gates_preserved",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "recovery.codes/codes_protected_at_rest",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "recovery.codes/invalid_codes_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "recovery.codes/single_use_enforced",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "recovery.password/new_password_stored_as_hash",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "recovery.password/recovery_proof_verified",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "recovery.password/single_use_expiring_challenge",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "relying_party.authority/assertion_issuer_and_audience_validated",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.authority/consumer_does_not_reissue_unverified_identity",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.authority/identity_authority_boundary_declared",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.authorization/client_validated",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.authorization/redirect_validated",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.authorization/replay_rejected",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.authorization/subject_assertion_verified",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "relying_party.callback/failure_completion_explicit",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.callback/redirect_allowlisted",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.callback/state_bound_to_request",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.callback/successful_completion_explicit",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.client_operations/authorization_launched",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.client_operations/refresh_response_handled",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.client_operations/revoke_request_sent",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.client_operations/userinfo_identity_validated",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.pkce/applicability_declared",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.pkce/s256_challenge_required_when_applicable",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "relying_party.pkce/verifier_checked_when_applicable",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "security.crypto/secrets_not_logged",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "security.crypto/sensitive_tokens_protected_at_rest",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "security.crypto/tokens_cryptographically_random",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "security.crypto/tokens_not_logged",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "security.failure/dependency_failure_fails_closed",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "security.failure/no_silent_destructive_repair",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "security.failure/sensitive_data_not_exposed",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "security.identity/canonical_identity_source_used",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "security.identity/duplicate_creation_prevented",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "security.identity/unverified_identity_not_authenticated",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "security.protocol/csrf_or_request_binding_enforced",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "security.protocol/nonce_verified_when_required",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "security.protocol/redirect_validation_enforced",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "security.protocol/replay_protection_enforced",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "security.rate_limits/authentication_attempts_rate_limited",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "security.rate_limits/challenge_requests_rate_limited",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "security.rate_limits/limit_exceeded_outcome_explicit",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "session.establishment/session_bound_to_identity",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "session.establishment/session_expiry_enforced",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "session.establishment/verified_identity_required",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "session.expiry/expired_session_has_explicit_outcome",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "session.expiry/expiry_enforced",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "session.logout/client_credentials_cleared",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "session.logout/completion_defined",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "session.logout/server_session_invalidated",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "session.persistence/session_bound_to_canonical_identity",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "session.persistence/session_persisted",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "session.refresh/refresh_proof_verified",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "session.refresh/replay_rejected",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "session.refresh/token_rotated",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "session.restart/revocation_preserved_after_restart",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "session.restart/valid_session_restored_after_restart",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "session.revocation/revocation_persisted",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "session.revocation/revoked_access_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "session.revocation/revoked_refresh_rejected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "session.validation/expired_session_rejected",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "session.validation/invalid_session_rejected",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "session.validation/revoked_session_rejected",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "signin.returning/current_admission_requirements_enforced",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "signin.returning/enrollment_status_respected",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "signin.returning/returning_identity_reused",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "signin.returning/unknown_signin_requires_enrollment",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "signin/existing_identity_authenticated",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "signin/explicit_entry",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "signin/invalid_credentials_rejected",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "signup.admission/failed_admission_no_identity_created",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "signup.admission/required_admission_enforced",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "signup/existing_identity_not_duplicated",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "signup/explicit_entry",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "signup/new_identity_enrolled",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "ux.continuation/cancel_or_decline_outcome_defined",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "ux.continuation/pending_action_explained",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "ux.continuation/retry_available_when_recoverable",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "ux.entry/available_methods_visible",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "ux.entry/link_entry_visible",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "ux.entry/logout_entry_visible",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "ux.entry/new_returning_state_explicit",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "ux.entry/recovery_entry_visible",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "ux.entry/signin_signup_distinct",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "ux.terminal/all_routes_have_explicit_outcome",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "ux.terminal/blank_terminal_absent",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "ux.terminal/configuration_errors_visible",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "ux.terminal/recoverable_errors_visible",
+      "before": null,
+      "after": {
+        "applicability": "TRUE",
+        "implementation": "ESTABLISHED",
+        "result": "PASS"
+      }
+    },
+    {
+      "key": "welcome.confirmation/in_product_confirmation_visible",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "welcome.confirmation/signup_enrollment_success_confirmed",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "welcome.email/delivery_result",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "welcome.email/idempotency_policy_defined",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "welcome.email/template_exists",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    },
+    {
+      "key": "welcome.email/trigger_after_success",
+      "before": null,
+      "after": {
+        "applicability": "INDETERMINATE",
+        "implementation": "INDETERMINATE",
+        "result": "INDETERMINATE"
+      }
+    }
+  ],
+  "authorization": {
+    "authorized": true,
+    "operation": "establish",
+    "productId": "grid",
+    "revision": "fa989b5e9a44b74f2bd017fd62c5922574df1eb3e1795c0ecb8bfedf5536b526",
+    "expectedHead": null,
+    "expectedContractDigest": "84b0e2010831f0df307e16058f8eddd56b70690dbfc8e37d1661e0b9813da0c2",
+    "observerDigest": "69863bbe29a1c363625ace466375bb74c8b11e420f635375b048a34bdb2846d4",
+    "artifactDigest": "158718912f4bed116631dfb94a34e649cd33301745adb1251ef539cb81a64692",
+    "configurationDigest": "bb2980c5b91e702073417976fa122b7f3bd933dafea4f9033705aec838dc7e5e",
+    "runId": "18dfe5a5-d6be-4738-a842-47dddb30074a",
+    "operator": "Devon (human reviewer)",
+    "reason": "Explicit operator approval on 2026-10-08 to establish GRID AUTH at revision fa989b5e9a44b74f2bd017fd62c5922574df1eb3e1795c0ecb8bfedf5536b526 following pre-establish verify report 7cf7aa3e-3fcc-4692-a771-71bb1f6771ad (profile_verification=PASS).",
+    "retireChecks": [],
+    "verifyReport": ".auth-kit/reports/7cf7aa3e-3fcc-4692-a771-71bb1f6771ad.json"
+  },
+  "timestamp": "2026-10-08T16:21:55.452Z",
+  "runId": "4b098d52-311d-4d66-93e1-b10c26d0b078",
+  "provenance": {
+    "productId": "grid",
+    "revision": "fa989b5e9a44b74f2bd017fd62c5922574df1eb3e1795c0ecb8bfedf5536b526",
+    "commit": "ee8d80714d37bbc1be9b6b39bd75fc63c4436289",
+    "artifactDigest": "158718912f4bed116631dfb94a34e649cd33301745adb1251ef539cb81a64692",
+    "configurationDigest": "bb2980c5b91e702073417976fa122b7f3bd933dafea4f9033705aec838dc7e5e",
+    "observedAt": "2026-10-08T16:21:50.405Z",
+    "runId": "4b098d52-311d-4d66-93e1-b10c26d0b078"
+  },
+  "digest": "d9d3382f6839d320010183dd0522360adb16df643b8121e85abdd5038a8bfd7c"
+}

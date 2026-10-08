@@ -276,13 +276,14 @@ internal static class AssistantCanonicalDraftStateChecks
         Assert(state.Snapshot().TicketDraft.UserContext.Single(value => value.Kind == TicketReferenceContextKind.Entity).Value ==
                "  exact Other punctuation?!  ",
             "Other remains exact unresolved ticket context and is not trimmed or normalized.");
+        var skyrimProjectionPolicy = CanonicalSelectorProjectionPolicyResolver.ResolveForGame(game.Id);
         var actorSelection = new CanonicalSelectorSelection(
             CanonicalSelectorSelectionKind.CanonicalRecord,
             KnowledgeKind.Actor,
             new CatalogRevisionId("grid.catalog-revision.v5.sha256." + new string('5', 64)),
             new CatalogCompositionId("composition.assistant.fixture"),
-            CanonicalSelectorProjectionPolicy.V1.Id,
-            CanonicalSelectorProjectionPolicy.V1.ExactVersion,
+            skyrimProjectionPolicy.Id,
+            skyrimProjectionPolicy.ExactVersion,
             new CanonicalNavigationPathId("grid.canonical-navigation-path.v1.sha256." + new string('6', 64)),
             new KnowledgeRecordId("grid.knowledge-record.v1.sha256." + new string('7', 64)),
             null);
@@ -290,6 +291,41 @@ internal static class AssistantCanonicalDraftStateChecks
         Assert(state.Snapshot().TicketDraft.CanonicalSelections.Single() == actorSelection &&
                state.Snapshot().TicketDraft.UserContext.All(value => value.Kind != TicketReferenceContextKind.Entity),
             "Selecting a canonical record clears unresolved Other for the same selector kind.");
+
+        var locationA = new CanonicalSelectorSelection(
+            CanonicalSelectorSelectionKind.CanonicalRecord,
+            KnowledgeKind.Location,
+            actorSelection.CatalogRevisionId,
+            actorSelection.CatalogCompositionId,
+            actorSelection.ProjectionPolicyId,
+            actorSelection.ProjectionPolicyVersion,
+            new CanonicalNavigationPathId("grid.canonical-navigation-path.v1.sha256." + new string('b', 64)),
+            new KnowledgeRecordId("grid.knowledge-record.v1.sha256." + new string('a', 64)),
+            null);
+        var locationB = new CanonicalSelectorSelection(
+            CanonicalSelectorSelectionKind.CanonicalRecord,
+            KnowledgeKind.Location,
+            actorSelection.CatalogRevisionId,
+            actorSelection.CatalogCompositionId,
+            actorSelection.ProjectionPolicyId,
+            actorSelection.ProjectionPolicyVersion,
+            new CanonicalNavigationPathId("grid.canonical-navigation-path.v1.sha256." + new string('d', 64)),
+            new KnowledgeRecordId("grid.knowledge-record.v1.sha256." + new string('c', 64)),
+            null);
+        state.ToggleCanonicalLocationSelection(locationA);
+        state.ToggleCanonicalLocationSelection(locationB);
+        Assert(state.Snapshot().TicketDraft.CanonicalSelections.Count(value => value.KnowledgeKind == KnowledgeKind.Location) == 2,
+            "Location supports multiple canonical selections in selection order.");
+        state.ToggleCanonicalLocationSelection(locationA);
+        Assert(state.Snapshot().TicketDraft.CanonicalSelections.Single(value => value.KnowledgeKind == KnowledgeKind.Location) == locationB,
+            "Location selections toggle off without disturbing other Location selections.");
+        state.AppendLocationOtherContext("Strawberry");
+        state.AppendLocationOtherContext("Davis");
+        Assert(state.Snapshot().TicketDraft.UserContext.Count(value =>
+                   value.Kind == TicketReferenceContextKind.Location &&
+                   value.Resolution == TicketUserContextResolution.Unresolved) == 2 &&
+               state.Snapshot().TicketDraft.CanonicalSelections.All(value => value.KnowledgeKind != KnowledgeKind.Location),
+            "Location Other entries append to preview context and clear canonical Location selections.");
         AssertThrows<ArgumentException>(
             () => state.SetUserContextSelected(new(
                 TicketReferenceContextKind.Entity,

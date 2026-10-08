@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|image    = McGillOlsenConstruction-GTAV-Logo.PNG
+|name     = McGill-Olsen Construction
+|type     = Construction company
+|taglines = ''The Original Cowboy Builder''
+|games    = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''McGill-Olsen Construction''' is a construction company operating in [[State of San Andreas (HD Universe)|San Andreas]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Construction companies

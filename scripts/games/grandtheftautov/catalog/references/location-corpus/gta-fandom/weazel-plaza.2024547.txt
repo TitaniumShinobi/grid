@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = Weazel Plaza
+|image = WeazelPlaza-GTA5.png
+|caption = The building during daytime.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|style = High-end apartments
+|garage = 10 vehicles
+|price = $304,000 <small>(apartment 26)</small><br>$319,000 <small>(apartment 70)</small><br>$335,000 <small>(apartment 101)</small>
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5
+}}
+
+[[LEAD]]
+'''Weazel Plaza''' is a skyscraper featured in ''[[Grand Theft Auto V]]'' and a safehouse in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Properties in GTA Online
+Skyscrapers

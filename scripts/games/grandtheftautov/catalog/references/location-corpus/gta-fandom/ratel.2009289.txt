@@ -1,0 +1,61 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name                = Ratel
+|front_image         = Ratel-GTAOe-front.png
+|rear_image          = Ratel-GTAOe-rear.png
+|caption             = A '''Ratel''' in ''[[Grand Theft Auto Online]]''.
+|class               = [[:Category:Off-Road class|Off-Road]] {{Small|(''GTA Online'')}}
+|type                = buggy
+|body_style          = 2-door Baja buggy  
+|capacity            = 2 {{Small|(driver and passenger)}}
+|manufacturer        = [[Vapid]]
+|price               = [[Money|$]]1,873,000 {{Small|([[Southern San Andreas Super Autos]])}}
+|trade_price         = $1,404,750 {{Small|(Southern San Andreas Super Autos)}}
+|games               = {{Games|O={{EEEV}} {{DLC|mp2023_01}}}}
+|wheeltype           = Off-Road
+}}
+
+[[LEAD]]
+The [[Vapid]] '''Ratel''' is a Baja off-road racing vehicle featured in ''[[Grand Theft Auto Online]]'' as part of the [[GTA Online: San Andreas Mercenaries|San Andreas Mercenaries]] update.
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Ratel
+|manufacturer  = Vapid
+|class         = Off-Road 
+|image         = Ratel-GTAOe-RGSC-MainNew.jpg
+|caption       = Main image.
+|image2        = Ratel-GTAOe-RGSC-Action.jpg
+|caption2      = "Action" image for ''GTA Online''.
+|speed         = 76.726845
+|accel         = 85.5
+|braking       = 10.666666
+|traction      = 66.42424
+|seats         = 2
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = sssa
+|schematic     = GenericOutlaw
+}}
+
+[[SECTION:2:Locations]]
+*Available for purchase from [[Southern San Andreas Super Autos]] for [[Money|$]]1,873,000.
+**Added on March 4, 2025: Available for a trade price of $1,404,750 after delivering weapons in a Ratel for [[Oscar Guzman]] as part of [[Arms Trafficking]].
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Ratel}}
+{{Defaultradio|game=O|defaultgroup=punk}}
+
+[[CATEGORIES]]
+Buggies
+Off-Road class
+Off-roading vehicles
+Rally vehicles
+Vehicles in GTA Online: San Andreas Mercenaries
+Vehicles manufactured by Vapid
+Vehicles purchasable from Premium Deluxe Motorsport
+Vehicles purchasable from Southern San Andreas Super Autos

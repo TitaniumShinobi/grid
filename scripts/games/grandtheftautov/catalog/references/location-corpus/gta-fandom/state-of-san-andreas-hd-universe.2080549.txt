@@ -1,0 +1,127 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = state
+|name           = State of San Andreas
+|sign           = 
+|image          = SanAndreas-GTAVee-Montage.jpg
+|caption        = Clockwise from top: [[Mount Chiliad]], [[Clucking Bell Farms]] at [[Paleto Bay]], the [[Vinewood Sign (HD Universe)|Vinewood Sign]] in [[Vinewood Hills]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]], [[Raton Canyon]] in [[Blaine County]], [[Pacific Bluffs Country Club]], "Welcome to [[Sandy Shores]]" sign.
+|seal           = 
+|seal2          = 
+|flag           = [[File:SanAndreasRepublic-Flag.png|center|thumb|200px|<center>[[San Andreas Republic Flag]]</center>]]
+|aka            = 
+*San Andreas
+*San Andreas Republic
+*SA
+|games          = {{games|V=y|O=y}}
+|location       = 
+|mayor          = 
+|president      = 
+|established    = 
+|country        = [[United States of America]]
+|state          = 
+|county         = 
+|capital        = 
+|pop            = 
+|motto          = ''"The State You're In"''{{Ref|name=republic|type=screenshot|image=StateOfSanAndreas-GTAV-SanAndreasRepublic.png|imagesize=200px}}<br>''"The Golden State"''{{Ref|name=golden|type=rockstarweb|url=https://store.rockstargames.com/en/merchandise/buy-san-andreas-republic-tee|ref=San Andreas Republic Tee on Rockstar Warehouse.}}
+|taglines       = 
+|pscanner       = 
+|map            = SouthernSanAndreas-GTAV-Map.jpg
+|map_caption    =  Map of southern '''San Andreas''' in ''Grand Theft Auto V''.
+|map2           = SouthernSanAndreas-GTAOe-Map.jpg
+|map_caption2   =  Map of southern '''San Andreas''' in ''Grand Theft Auto Online''.
+}}
+
+[[LEAD]]
+The '''State of San Andreas''', also known as the '''San Andreas Republic''', is a state located in the southwestern [[United States of America]]; the southern half of the state is featured in {{V}} and {{O}}. San Andreas is closely based on real-life {{WP|California}}. When compared to its 3D Universe [[State of San Andreas (3D Universe)|predecessor]], ''San Andreas'' is much more accurate in terms of geography and size.
+
+[[SECTION:2:Geography]]
+The entire state, like its real-life counterpart, is geographically diverse, with nearly every biome. The metropolis of [[Los Santos (HD Universe)|Los Santos]] is located at the very south of the state, separated from the [[Grand Senora Desert]] by the [[Vinewood Hills]], where the famous [[Vinewood Sign (HD Universe)|Vinewood Sign]] is located. The [[Alamo Sea]], a salty lake based on real-life Salton Sea, along with the aforementioned desert and the towns of [[Sandy Shores]] and [[Grapeseed]] is in a wide basin surrounded by the massive [[Mount Chiliad (HD Universe)|Mount Chiliad]], the highest point of the state, in the north, [[Mount Josiah]] to the west, the [[San Chianski Mountain Range]] and [[Mount Gordo]] to the east, and the Vinewood Hills to the south. Across Mount Chiliad, the town of [[Paleto Bay]] and its surrounding forest is connected to the rest of the state by the [[Great Ocean Highway]], Mount Chiliad Tunnel and [[Braddock Pass]] between Mount Chiliad and Mount Gordo. The [[Fort Zancudo]] U.S. Army Base is located at the foot of Mount Josiah, beside the [[Zancudo River]], one of two natural outlets of the Alamo Sea, the other being [[Cassidy Creek]], which cuts through [[Raton Canyon]]. Natural beaches border the west of the island, stretching from the Los Santos district of [[Vespucci]] to Paleto Bay, while the east coast has high cliffs and mountains.
+
+The aviation infrastructure of Southern San Andreas includes [[Los Santos International Airport (HD Universe)|Los Santos International Airport]] (LSIA), [[Fort Zancudo]] (for military use), the [[Sandy Shores Airfield]] (owned by one of the protagonists Trevor Philips), and [[McKenzie Field]] in Grapeseed (used for air trafficking operations). The [[Port of Los Santos]] is a major seaport where cargo ships can be found.
+
+As depicted in ''Grand Theft Auto Online'', every year around the {{WP|Christmas and holiday season|holiday season}}, Southern San Andreas gets covered in snow for a week or two – a phenomenon that is rare for its real-life counterpart.
+
+[[SECTION:2:Counties]]
+San Andreas has four known counties: Los Santos County, Blaine County, Red County and Flint County. However, the latter two do not appear in the game.
+
+[[SECTION:3:Los Santos County]]
+{{Main|Los Santos County}}
+'''Los Santos County''' is the southernmost county in the state, and also the most developed in the south state. It consists of the cities of [[Los Santos (HD universe)|Los Santos]], [[Del Perro]], [[Rockford Hills]] and [[Davis]], along with a large variety of highlands, beaches, and interconnected [[Numbered Highway in San Andreas|highways]]. The town of [[Chumash]] is located in the western side of the county along with a large beach. It is bordered by Blaine County to the north by [[Route 68]]. Los Santos County is the urban area of Southern San Andreas.
+
+[[SECTION:3:Blaine County]]
+{{Main|Blaine County}}
+'''Blaine County''' is the second-southernmost county in the state, and also the northernmost in the south state. Blaine County is mostly known for its wildlife, including a large desert, highlands, a sea, and forests. There are three towns in the county: [[Sandy Shores]], [[Grapeseed]], and [[Paleto Bay]]. One of the most visited landmarks in the county is [[Mount Chiliad (HD Universe)|Mount Chiliad]]. Blaine County is the rural area of Southern San Andreas.
+
+[[SECTION:3:Other Mentioned Counties]]
+Throughout the series, some names of counties are mentioned and referenced, but other than that, they have yet to physically appear in the [[HD Universe]] of the series.
+
+[[SECTION:4:Red County]]
+{{Main|Red County (HD Universe)}}
+'''Red County''' is mentioned in ''Grand Theft Auto IV''.
+
+[[SECTION:4:Flint County]]
+{{Main|Flint County (HD Universe)}}
+'''Flint County''' is mentioned on homecremation.com in ''Grand Theft Auto IV'', and during the mission [[Short Trip - Fire It Up]] in ''Grand Theft Auto Online''.
+
+[[SECTION:4:Bone County]]
+{{Main|Bone County (HD Universe)}}
+Located in either San Andreas or [[Unnamed Western U.S. State|a Nevada-inspired state]], '''Bone County''' is mentioned in [[The Brute Force File]] mission strand in ''Grand Theft Auto Online''.
+
+[[SECTION:2:Major Cities]]
+
+
+[[SECTION:3:Los Santos]]
+[[File:StateOfSanAndreas-GTAV-SanAndreasRepublic.png|thumb|200px|Welcome to Los Santos]]
+
+{{Main|Los Santos (HD Universe)}}
+The city of '''Los Santos''' is based on {{WP|Los Angeles}}, {{WP|California}}. The city is the main setting of the events of ''Grand Theft Auto V'' and initial home of two of the protagonists.
+
+[[SECTION:3:Other Mentioned Cities]]
+
+
+[[SECTION:4:San Fierro]]
+{{Main|San Fierro (HD Universe)}}
+The city of '''San Fierro''' is based on {{WP|San Francisco}}, {{WP|California}}. The city was mentioned by Lester Crest during [[The Doomsday Heist]] and [[Zachary]] on [[Kult FM]].
+
+[[SECTION:2:Towns]]
+The state features four known towns:
+
+[[SECTION:3:Sandy Shores]]
+[[File:Ajmsandyshoresmainave.jpg|thumb|200px|Sandy Shores.]]
+{{Main|Sandy Shores}}
+
+'''Sandy Shores''' is the most notable due to this being the home of one of the protagonists, [[Trevor Philips]]. The town is located in the center of the [[Grand Senora Desert]], bordering the [[Alamo Sea]] to the north.
+
+[[SECTION:3:Chumash]]
+[[File:Pacific_Bluffs.jpg|thumb|200px|Chumash.]]
+{{Main|Chumash}}
+
+'''Chumash''' is a town mostly based on {{WP|Malibu, California}}. It is supposedly populated by hipsters, as stated by [[Dave Norton]]. There are many beachfront homes and some docks. It is bordered by the [[Great Ocean Highway]].
+
+[[SECTION:3:Paleto Bay]]
+[[File:PaletoBay-GTAV-Aerial.jpg|thumb|200px|Paleto Bay.]]
+{{Main|Paleto Bay}}
+
+'''Paleto Bay''' is the northernmost town in southern San Andreas. Paleto Bay is known for being a visited landmark for people who like BASE jumping from [[Mount Chiliad (HD Universe)|Mount Chiliad]]. Paleto Bay is a good rest stop for truckers on the [[Great Ocean Highway]] due to it holding various services such as a bank and a [[Filling Station|gas station]].
+
+[[SECTION:3:Grapeseed]]
+[[File:Grapeseed-GTAV-LookingEast.jpg|thumb|200px|Grapeseed.]]
+{{Main|Grapeseed}}
+
+'''Grapeseed''' is a town located at the northeast end of the [[Alamo Sea]]. The town is primarily an agricultural one and contains several farms. It is the second smallest town in the state, just ahead of Sandy Shores.
+
+[[SECTION:2:Highway System]]
+{{Main|Numbered Highways in GTA V}}
+[[File:Route_68.jpg|thumb|The famous Route 68.]]
+San Andreas has a complex highway system that contains many elaborate routes, interstates, and freeways. The system reaches all throughout the state and is the most developed highway system in the ''[[Grand Theft Auto]]'' series to date. [[San Andreas Highway Patrol]] officers can be found on the highways north of [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:4:''Episodes from Liberty City'']]
+*At the end of the mission [[Shifting Weight]], [[Malc]] jokes that he and [[Johnny Klebitz|Johnny]] should get a room at the [[Jefferson Motel (HD Universe)|Jefferson Motel]], a motel in Los Santos.
+*During gang wars against the Angels of Death, Johnny will sometimes yell, "Go back to San Fierro!"
+
+[[CATEGORIES]]
+Locations in GTA Online
+Locations in GTA V
+States
+Zones

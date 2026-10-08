@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = vehicleparts
+|name          = After Shaft
+|image         = AfterShaft-GTAO-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mptuner}}|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = ECU manufacturer
+|income        =
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''After Shaft''' is a manufacturer of ECUs appearing in {{O}} and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA VI
+Vehicle parts manufacturers

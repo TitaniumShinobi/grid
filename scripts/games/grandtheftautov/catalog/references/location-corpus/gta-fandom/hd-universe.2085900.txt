@@ -1,0 +1,98 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = [[File:RockstarNorthandDMADesign.png|left|30px|link=Rockstar North]] ROCKSTAR NORTH [[Universes|STANDALONE UNIVERSE]]
+|image       = HDUniverse-Montage.jpg
+|caption     = Clockwise from top: [[Liberty City (HD Universe)|Liberty City]], [[Cayo Perico]], [[Vice City (HD Universe)|Vice City]], the [[Grassrivers]] region of [[State of Leonida|Leonida]], the [[Statue of Happiness]] in Liberty City, a scratch card mentioning [[Las Venturas (HD Universe)|Las Venturas]], [[Ludendorff]]'s "[[The Ludendorff Beaver|Midwest's Biggest Beaver]]", [[Grand Senora Desert]] in [[Blaine County]], the [[State of Alderney]] seen from the [[West River]], wildlife of [[Mount Kalaga National Park]], [[Port Gellhorn]] at night, the [[Leonida Keys]], [[Los Santos (HD Universe)|Los Santos]] skyline seen from [[The Diamond Casino & Resort]], [[Dragon Heart Plaza]] in [[Chinatown (GTA IV)|Liberty City's Chinatown]].
+|games       = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+}}
+
+[[LEAD]]
+The '''HD [[Universes|Universe]]''' is the official name given by [[Rockstar North]] via the [[Rockstar Games]] {{URL|https://www.rockstargames.com/newswire|Newswire}}{{Ref|name=Newswire|ref={{Quote|...the "universes" are the worlds interpreted at different definitions, 2d, 3d and high definition, so we felt brands and radio / back ground characters would exist in both, but 3 dimensional characters would not. This is the logic (as far as it could be considered logical) behind it – so no, we don't believe any GTA3 characters could exist in the GTA4 universe.|{{URL|https://www.rockstargames.com/newswire/article/19861/grand-theft-auto-iii-your-questions-answered-part-one-claude-dar.html|''"Grand Theft Auto III: Your Questions Answered – Part One (Claude, Darkel & Other Characters)"'' - Rockstar Newswire, December 15th 2011}}}}}}{{Ref|name=timeline|ref={{Quote|The Grand Theft Auto III timeline is not necessarily over - but it is a different world to Grand Theft Auto IV - only the branding and certain radio personalities exist across both worlds. The reason for this was that we felt Grand Theft Auto IV was a high-definition experience and required different kinds of characters. That - and the fact that most people from the previous world are dead.|{{URL|https://www.rockstargames.com/newswire/article/89k8a554388283/updated-asked-answered-re-vice-city-red-dead-redemption-and-chin.html|Rockstar Newswire - Asked & Answered, September 18, 2009}}}}}}{{Ref|name=impact|ref={{URL|https://www.digitaltrends.com/gaming/exploring-grand-theft-auto-vice-citys-lasting-impact-on-gamer-culture-with-rockstars-leslie-benzies/|''"Exploring Grand Theft Auto: Vice City's lasting impact on society with Rockstar's Leslie Benzies"'' - Adam Rosenberg, Digital Trends (December 13, 2012)}}}} to the third and current [[canon]]ical universe of {{S}}, after the {{2D}} and the {{3D}}. It is named for the high-definition 3D graphics introduced in it. The generation comprising the games set in HD Universe is the '''HD era''', previously known as '''''GTA IV'' era'''.
+
+To date, the HD Universe consists of a canonical universe shared between six game titles, including a two-part standalone episodic game pack, a handheld-exclusive title and the series' long-running dedicated multiplayer title.
+
+In [[2026]], {{VI}} is expected to follow and expand the HD Universe's continuity.
+
+[[SECTION:3:''Grand Theft Auto: Episodes from Liberty City'']]
+
+
+[[SECTION:4:''Grand Theft Auto: The Lost and Damned'']]
+''The Lost and Damned'' (released in 2009) is the first of the two episodes for ''GTA IV''. The DLC version of ''TLAD'' requires the original ''GTA IV'' to play and is also available on Xbox 360, PlayStation 3 and PC. It is included in ''Grand Theft Auto: Episodes from Liberty City'', which does not require ''GTA IV''. TLAD's storyline runs alongside the main ''GTA IV'' storyline and ties in with the main story on a number of occasions. The protagonist is [[Johnny Klebitz]], the 34-year-old Vice President of the Alderney Chapter of [[The Lost MC|The Lost Motorcycle Club]].
+
+[[SECTION:4:''Grand Theft Auto: The Ballad of Gay Tony'']]
+''The Ballad of Gay Tony'' (released in 2009) is the second episode released for ''GTA IV''. Like ''TLAD'', the DLC version requires the original ''GTA IV'' to play, but it is also included in the standalone ''Episodes From Liberty City''. ''TBoGT''{{'}}s storyline also ties in with both the main ''GTA IV'' storyline and ''TLaD''{{'}}s storyline. The protagonist is [[Luis Fernando Lopez]], the 25-year-old personal bodyguard of nightclub impresario [[Tony Prince]].
+
+This is the final game of the ''GTA IV'' trilogy.
+
+[[SECTION:2:Locations in the HD Universe]]
+{{Columns
+|
+
+[[SECTION:3:State of Liberty]]
+*[[Liberty City (HD Universe)|Liberty City]]
+*[[The Caraways]] {{Small|(Mentioned)}}
+*[[Upstate Liberty (HD Universe)|Upstate Liberty]] {{Small|(Mentioned)}}
+
+[[SECTION:3:State of Alderney]]
+*[[Alderney City]]
+*[[Westdyke]]
+*[[Leftwood]]
+*[[Berchem]]
+*[[Acter]]
+*[[Normandy]]
+*[[Tudor]]
+*[[Port Tudor]]
+*[[Acter Industrial Park]]
+
+[[SECTION:3:State of Gloriana]]
+*No known locations
+
+[[SECTION:3:State of San Andreas]]
+*[[Los Santos County]]
+**[[Los Santos (HD Universe)|Los Santos]]
+**[[Chumash]]
+*[[Blaine County]]
+**[[Paleto Bay]]
+**[[Grapeseed]]
+**[[Sandy Shores]]
+**[[Harmony]]
+*[[Red County (HD Universe)|Red County]] {{Small|(Mentioned)}}
+*[[Flint County (HD Universe)|Flint County]] {{Small|(Mentioned)}}
+*[[San Fierro (HD Universe)|San Fierro]] {{Small|(Mentioned)}}
+|
+
+[[SECTION:3:State of Leonida]]
+*[[Vice-Dale County]]
+**[[Vice City (HD Universe)|Vice City]]
+**[[Vice Beach (HD Universe)|Vice Beach]]
+**[[Hamlet]]
+*[[Kelly County]]
+**[[Port Gellhorn]]
+*[[Leonard County]]
+**[[Waning Sands]]
+*[[Ambrosia County]]
+**[[Ambrosia]]
+*[[Mariana County]]
+
+[[SECTION:3:Colombia]]
+*[[Cayo Perico]]
+
+[[SECTION:3:State of North Yankton]]
+*[[Ludendorff]]
+
+[[SECTION:3:Unidentified States]]
+
+
+[[SECTION:4:Rust Belt Region]]
+*[[Carcer City (HD Universe)|Carcer City]]{{Ref|name=Carcer|ref=Mentioned in all HD Universe titles, except for ''Grand Theft Auto: Chinatown Wars''}}
+
+[[SECTION:4:Unnamed Western U.S. State]]
+*[[Las Venturas (HD Universe)|Las Venturas]] {{Small|(Mentioned)}}
+*[[Fort Carson (HD Universe)|Fort Carson]] {{Small|(Mentioned)}}
+
+[[SECTION:3:Unspecified Western U.S. State]]
+*[[Bone County (HD Universe)|Bone County]] {{Small|(Mentioned)}}
+}}
+
+[[CATEGORIES]]
+HD Universe

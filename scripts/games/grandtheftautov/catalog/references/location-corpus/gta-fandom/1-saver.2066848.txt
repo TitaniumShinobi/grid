@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|type     = dollarstore
+|name     = $1 Saver
+|image    = OneDollarSaver-GTAV.jpg
+|games    = {{Games|V=y|O=y}}
+|location = [[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''$1 Saver''' is a dollar store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+The store is not enterable and plays no role in the storyline.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Variety stores

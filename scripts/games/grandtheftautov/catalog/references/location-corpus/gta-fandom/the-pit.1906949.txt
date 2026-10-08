@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|name = The Pit
+|image = ThePit-GTAV-Logo.png
+|type = tattooparlor
+|games = {{Games|V=y|O=y}}
+|location = [[Aguja Street]], [[Vespucci Canals]]
+|accessible = Yes
+}}
+
+[[LEAD]]
+'''The Pit''' is one of the accessible [[Tattoo Parlors|tattoo parlors]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Tattoo parlors

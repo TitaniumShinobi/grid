@@ -1,0 +1,75 @@
+[[INFOBOX]]
+{{Infobox_location
+|name = Vespucci Beach
+|image = VespucciBeach-GTAV.png
+|caption = 
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|location = [[Vespucci]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-VespucciBeach.ogg
+|map           = <gallery>
+VespucciBeach-IngameGPS-GTAV-Map.png|Vespucci Beach
+VespucciBeach-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS). The <font color=blue>small unnamed area</font><sup>{{H:title|Simply referred to as Vespucci in the in-game GPS|(?)}}</sup> is part of Vespucci Beach.
+}}
+
+[[LEAD]]
+'''Vespucci Beach''' is a beach located in [[Vespucci]], [[Los Santos (HD Universe)|Los Santos]], and its surrounding area in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[Last Play - Bad Companies]] {{nd}} One of the henchmen the player needs to kill is located here.
+
+[[SECTION:2:Roads and Streets]]
+*[[Bay City Avenue]]
+*[[Conquistador Street]]
+*[[Magellan Avenue]]
+*[[Marathon Avenue]]
+*[[Melanoma Street]]
+*[[Vitus Street]]
+
+[[SECTION:2:Places of Interest]]
+*[[Floyd's Apartment]]
+*[[Venetian|The Venetian]]
+*[[Vespucci Beach Hotel]]
+*[[Vespucci Beach Lifeguard Station]]
+*[[Vespucci Beach Police Station]]
+*[[Vespucci Beach Sidewalk Market]]
+*[[Vespucci Beach Skatepark]]
+
+[[SECTION:2:Businesses]]
+*[[Al Dente's]]
+*[[Beachwalk Bistro]]
+*[[Bikini Universe]]
+*Canal Treats
+*Coast Cutters
+*[[Coconut Cafe]]
+*[[Coral Reefers Smokeshop]]
+*[[Dunebug Sounds]]
+*[[FlyLo FM]]
+*[[Gyro Day Hot Food]]
+*J's T-Shirts
+*[[Kult FM 99.1]] <small>(As of [[2020]])</small> 
+*[[Mr. Spoke Bike Rental]]
+*Muscle Peach Juice Bar and Restaurant
+*[[Muscle Sands Gym]]
+*[[Papa Surf]]
+*[[Pebble Dash Pizza]]
+*[[The Pizza Coven]]
+*[[Sharkies Bites]]
+*[[Slice 'N' Dice Pizzeria]]
+*[[Smoke on the Water]]
+*[[The Sundae Post]]
+*Tattoo Body Art and Piercing
+*[[Vespucci Beach Recreation Center]]
+*[[Vespucci Movie Masks]]
+*[[Vespucci Surfing]]
+*[[Vespucci Tattoo]]
+*Vespucci Video
+
+[[CATEGORIES]]
+Beaches
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

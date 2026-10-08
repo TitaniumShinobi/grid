@@ -1,0 +1,17 @@
+{
+  "contract": "life.auth.product-contract/1",
+  "productId": "grid",
+  "state": "ESTABLISHED",
+  "profile": "RELYING_PARTY_CLIENT",
+  "inputs": {
+    "artifact": [
+      "src/Grid.App/bin/x64/Debug/net9.0-windows10.0.19041.0/win-x64/Grid.dll"
+    ],
+    "configuration": [
+      "config/grid.auth.config.json"
+    ]
+  },
+  "provenanceDigest": "41d50dab4ea5236af80b0deb28d65c7efa8e711cf3d0fffe9c18a997853ac2e2",
+  "head": "d9d3382f6839d320010183dd0522360adb16df643b8121e85abdd5038a8bfd7c",
+  "sequence": 1
+}

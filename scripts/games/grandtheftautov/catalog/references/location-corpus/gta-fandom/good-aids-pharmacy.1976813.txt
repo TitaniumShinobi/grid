@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = pharmacy
+|name          = Good Aids Pharmacy
+|sign          = GoodAidsPharmacy-GTAV-MuleLogo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         =
+|divisions     = 
+|employees     = 
+|products      = [[Chesty]]
+|vehicles      = [[Mule]]
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|opentimes     = 
+|accessible    = 
+}}
+
+[[LEAD]]
+'''Good Aids Pharmacy''' is a pharmacy featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pharmacy chains

@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Richard's Whiskey
+|image = RichardsWhiskey-GTAO-logo.webp
+|caption = Richard's Kentucky Bourbon Whiskey logo
+|type = Whiskey Company
+|games = {{Games|V=y|O=y}}}}
+
+[[LEAD]]
+'''Richard's Whiskey''' is a whiskey company in the {{HD}} of the ''[[Grand Theft Auto]]'' series.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Online
+Businesses in GTA V

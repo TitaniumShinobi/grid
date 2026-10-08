@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Clinton Residence
+|image          = ClintonResidence-GTAVe.png
+|caption        = Clinton Residence as it appears in ''Grand Theft Auto V''.
+|aka            = Forum Drive safehouse
+|style          = V
+|type           = safehouse
+|structure_type = Bungalow
+|garagecap      = Two vehicles
+|canplayerstore = Yes
+|occupants      = 
+*[[Denise Clinton]]
+*[[Franklin Clinton]] {{Small|(formerly)}}
+*[[Chop]] {{Small|(formerly)}}
+|unlockedby    = [[Franklin and Lamar]]
+|location      = [[Forum Drive]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|games         = {{Games|V=y|O=y}}
+|accessible    = Yes {{Small|(until [[The Hotel Assassination]] is passed)}}
+|architecture   = [[:Category:Ranch-style buildings|Ranch-style]]
+}}
+
+[[LEAD]]
+The '''Clinton Residence''' (also known as the '''Forum Drive safehouse''') is the first [[Safehouses in GTA V|safehouse]] used by [[protagonist]] [[Franklin Clinton]] in {{V}}, and also appears in {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Ranch-style buildings
+Safehouses in GTA V
+Single-family homes

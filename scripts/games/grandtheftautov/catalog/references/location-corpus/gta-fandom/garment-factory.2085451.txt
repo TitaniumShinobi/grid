@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = O
+|landmark       = 
+|type           = safehouse
+|name           = [[File:Blips-GTAO-GarmentFactory.png|25px]] Garment Factory
+|sign           = 
+|image          = GarmentFactory-GTAOee-Header.jpg
+|caption        = 
+|aka            = 
+|games          = {{Games|O={{EEEV}} {{DLC|mp2024_02}}}}
+|location       = [[Popular Street]], [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]]
+|occupants      = 
+*{{GTAOP}}
+*[[Jodi Marshall]]
+*[[Guadaloupe Romero]]
+*[[Motorcycle Clubs]] <small>(determinant)</small>
+*[[Organizations]] <small>(determinant)</small>
+|price = [[Money|$]]2,350,000
+|floors         = 2
+|architecture   = 
+|garagecap      = 10 vehicles
+|accessible     = Yes
+|canplayerstore = Yes
+|unlockedby     = Purchase from [[Maze Bank Foreclosures]]
+}}
+
+[[LEAD]]
+The '''Garment Factory''' is a purchasable property in {{O}} added in the [[GTA Online: Agents of Sabotage|Agents of Sabotage]] update.
+
+[[SECTION:3:Basement Garage]]
+The Basement Garage holds ten vehicle storage slots, split in groups of five by a large brick wall. On one side of the garage is an elevator allowing access back to the operations room, while the other side of the garage contains a Fast Travel access door. The Fast Travel door depicts a map of [[Los Santos Transit]]'s "The Arrow" subway system. Also found in the Basement Garage is a green plastic bin with a fire-damaged photo of the factory, pairs of [[Bugstars]] coveralls, and gas masks, as well as a [[M16|Carbine Rifle]] leaning against it, which can be picked up by the player. These are intended to be leftover equipment from the "Smart" approach for [[The Jewel Store Job]] in {{V}}, which was planned within the garment factory. The photo of the factory in the bin can also be found on the wall in the heist planning room in ''GTA V'', its fire damage coming from when the factory was lit on fire during the opening cutscene of [[The Bureau Raid]].
+
+[[SECTION:3:Basement Garage]]
+{{Gallery
+|GarmentFactory-GTAOe-BasementGarage-ElevatorSide.png|Basement Garage, elevator side.
+|GarmentFactory-GTAOe-BasementGarage-FastTravelDoorSide.png|Basement garage, Fast Travel door side.
+|GarmentFactory-GTAOe-BasementGarage-FastTravelDoor.png|Fast Travel door.
+|GarmentFactory-GTAOe-BugstarsEquipment.png|Bin full of [[The Jewel Store Job|Jewel Store Job]] equipment.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Properties in GTA Online

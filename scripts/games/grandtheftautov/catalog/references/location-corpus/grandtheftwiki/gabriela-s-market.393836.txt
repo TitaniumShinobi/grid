@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Gabriela'sMarket-GTAV-Strawberry-exterior.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Gabriela's Market
+|type = [[:Category:Supermarkets|Convenience store]]
+|owner = 
+|location = [[Mirror Park]], [[Los Santos in GTA V|Los Santos]]<br />[[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Gabriella's Market''' is a [[:Category:Supermarkets|convenience store]] with stores in [[Mirror Park]] and [[Strawberry]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+<gallery width="auto" perrow="5" style="font-size:95%; padding:0; text-align:left;" widths="160">
+File:Gabriela'sMarket-GTAV-MirrorPark-exterior.jpg|[[Mirror Park]] outlet.
+File:Gabriela'sMarket-GTAV-Strawberry-exterior.jpg|[[Strawberry]] outlet.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Supermarkets

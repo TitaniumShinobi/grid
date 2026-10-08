@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|name       = Discount Kitchen Supplies
+|image      = DiscountKitchenSupplies-GTAV-Logo.png
+|type       =
+|games      = {{Games|V=y|O=y}}
+|locations  = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[Ludendorff]], [[State of North Yankton|North Yankton]]
+([[#Locations|See more]])
+|accessible = No
+|founded    = [[1981]]
+}}
+
+[[LEAD]]
+'''Discount Kitchen Supplies''' is a chain of kitchenware stores appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:San Andreas]]
+{{Gallery
+|DiscountKitchenSupplies-GTAV-Burton.png|[[Hawick Avenue]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]].
+|DiscountKitchenSupplies-GTAVee-MissionRow.jpg|[[Adam's Apple Boulevard]], [[Mission Row]], Los Santos.
+}}
+
+[[SECTION:3:North Yankton]]
+{{Gallery
+|DiscountKitchenSupplies-GTAV-Ludendorff.png|[[Cavalry Boulevard]], [[Ludendorff]]. 
+}}
+
+[[ru:Discount Kitchen Supplies]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Variety store chains

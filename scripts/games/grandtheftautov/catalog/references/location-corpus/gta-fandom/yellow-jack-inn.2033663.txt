@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Yellow Jack Inn
+|image     = YellowJackInn-GTAV-Logo.png
+|type      = Bar
+|games     = {{Games|V=y|O=y}}
+|locations = [[Panorama Drive]] and [[Route 68]], [[Grand Senora Desert]]
+}}
+
+[[LEAD]]
+The '''Yellow Jack Inn''', also known as the '''Yellow Jack Bar''', is a bar in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Bars
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County

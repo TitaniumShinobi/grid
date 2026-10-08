@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = shipping
+|name          = Lando
+|sign          = Lando-GTAV-Logo.svg
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Port of Los Santos]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Shipping company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Lando''' is a shipping company that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. Not much is known about the company, other than that they have operations in the [[Port of Los Santos]]. Lando is likely based on {{WP|American President Lines|APL}}, since both Lando and APL use birds in their logos.
+
+[[ru:Lando]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Shipping companies

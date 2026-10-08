@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = IsiahFriedlander'soffice-GTAV-interior.jpg
+|size = 500x500px
+|caption = Dr. [[Isiah Friedlander]] talking to [[Michael De Santa]] in his office during the mission [[Franklin and Lamar]].
+|game_1 = GTA V
+|name = Isiah Friedlander's office
+|type = Counselling office
+|owner = [[Isiah Friedlander]]
+|location = [[Del Perro Beach]] in [[Del Perro]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = [[Michael De Santa]] (<small>patient</small>)
+|missions = [[Franklin and Lamar]]<br />[[Reuniting the Family]]
+|employee = 
+}}
+
+[[LEAD]]
+'''Isiah Friedlander's Office''' is an office used by Dr. [[Isiah Friedlander]] to talk to his patients. The office is located in the [[Bertolt Beach House]] on the [[Del Perro Beach|beach front]] in [[Del Perro]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]]. Michael visits the office during the mission [[Franklin and Lamar]], talking about his past as a bank robber and continuing anger issues. The player can choose to return to the office on a number of occasions throughout the [[Grand Theft Auto V]] storyline. Michael also takes his wife [[Amanda De Santa|Amanda]], daughter [[Tracey De Santa|Tracey]] and son [[Jimmy De Santa|Jimmy]] to the office for a family session during [[Reuniting the Family]] in an attempt to get them to return home. Towards the end of GTA V's storyline, Michael can visit the office for the final time and is given the option to kill Dr. Friedlander.
+
+[[CATEGORIES]]
+Businesses in GTA V

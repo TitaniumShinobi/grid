@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = dealership
+|name           = Benefactor-Gallivanter Dealership
+|sign           = 
+|image          = BenefactorGallivanterDealership-GTAVe-SpanishAve-Day.png
+|caption        = The building as viewed from [[Spanish Avenue]]. ([[:File:BenefactorGallivanterDealership-GTAVe-SpanishAve-Night.png|night view]])
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Las Lagunas Boulevard]] and [[Spanish Avenue]], [[West Vinewood]]
+|occupants      = [[Michael De Santa]] <small>(optional)</small>
+|status         = active
+|map            = BenefactorGallivanterDealership-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Benefactor-Gallivanter Dealership''' is an auto dealership appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle dealerships

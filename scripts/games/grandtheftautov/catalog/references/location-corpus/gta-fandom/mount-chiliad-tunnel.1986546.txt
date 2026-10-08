@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Mount Chiliad Tunnel
+|type           = tunnel
+|image          = 
+<gallery>
+MountChiliadTunnel-GTAVe.png|Northern end
+MountChiliadTunnel-GTAVe-South.png|Southern end
+</gallery>
+|games          = {{Games|V=y|O=y}}
+|use            = Road tunnel
+|location       = [[Mount Chiliad (HD Universe)|Mount Chiliad]]/[[Chiliad Mountain State Wilderness]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|architecture   = {{WP|Romanesque architecture}}
+|length         = 370m (0.23mi){{Ref|name=tunnellength|type=screenshot|image=MountChiliadTunnel-GTAVe-TunnelLengthRef.png|imagesize=200px|caption=The length of the tunnel as indicated by the in-game [[GPS]].}}
+|accessible     = Yes
+|file_name      = *<code>cs1_12_tunnel01stuff_int</code> <small>(northern end)</small>
+*<code>cs1_12_tunnel02stuff_int</code> <small>(middle)</small>
+*<code>cs1_12_tunnel03stuff_int</code> <small>(southern end)</small>
+|coords         = -278.5022,4750.936,141.0094
+|map            =
+<gallery>
+MountChiliadTunnel-GTAV-Map.png|Map
+MountChiliadTunnel-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Mount Chiliad Tunnel''' is an unnamed road tunnel appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County
+Tunnels

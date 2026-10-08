@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = jewelrystore
+|name          = Vangelico
+|sign          = 
+|image_label   = 
+|image         = Vangelico GTA V.png
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Little Portola]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|founded       = [[1852]]
+|founder       = 
+|owner         = 
+|employees     = [[Jewelry Store Clerk]]
+|products      = 
+|taglines      = "''Replacing charm since 1852''"
+|bawsaq        = 
+|lcn           = {{BAWSAQ/Slider}} '''VAG'''
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+|opentimes     = 
+|accessible    = Yes {{Small|([[#Prominent Appearances in Gameplay|mission only]])|}}
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''Vangelico''' is a jewelry retailer appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|Vangelico-GTAV-StoreOpenPriorToHeist.png|47o [[Portola Drive]] entrance when the store is open, prior to the heist. {{Small|([[:File:Vangelico-GTAV-Open-Nightview.png|open night view]])}}
+|VangelicoClosed-GTAV.png|Vangelico entrance closed after being robbed. {{Small|([[:File:Vangelico-GTAV-NightFront.png|closed night view]])}}
+|Vangelico-GTAV-Building-LittlePortolaSide.png|Overview of the front of the building from Little Portola {{Small|([[:File:Vangelico-GTAV-RockfordDriveSide.png|the other side of the building]] on [[Rockford Drive]] showing the diamond graphics at night)}}.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Jewelry store chains

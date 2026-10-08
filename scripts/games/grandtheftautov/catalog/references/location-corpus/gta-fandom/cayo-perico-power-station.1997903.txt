@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|type           = powerstation
+|name           = 
+|sign           = 
+|image          = CayoPericoAirstrip-GTAO-PowerStation.png
+|caption        = The Power Station in Cayo Perico.
+|aka            = 
+|games          = {{Games|O={{EEEV}} {{DLC|mpheist4}}}}
+|mentioned      = 
+|location       = [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|map            = 
+<gallery>
+CayoPericoPowerStation-GTAO-Map.png|Power Station
+CayoPericoPowerStation-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Cayo Perico Power Station''' is a power station in [[Cayo Perico]], [[Colombia]], that appears in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Points of Interest in The Cayo Perico Heist
+Power stations
+Structures in GTA Online in Cayo Perico

@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|image = SpecsPest-GTAV-LogoTexture.png
+|type = Optician
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Specs Pest''' is an optician in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located next to the [[Hardcore Comic Store]] on [[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+The store is not enterable and plays no role in the storyline. The name is a play on the phrase 'sex pest'.
+
+{{clr}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Stores

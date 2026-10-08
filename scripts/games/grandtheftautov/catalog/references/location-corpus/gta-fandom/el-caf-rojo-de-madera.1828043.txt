@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = El Café Rojo de Madera
+|image = ElCafeRojoDeMadera-GTAVee-Logo.png
+|type = Mexican Café
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Old Mexican Plaza]], [[Alta]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''El Café Rojo de Madera''' (English: '''The Red Wood Café''') is a [[Mexico|Mexican]] café appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Cafés
+Spanish Revival buildings

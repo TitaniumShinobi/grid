@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "installed-tool-observation.v1.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "executablePath", "sha256", "signatureStatus", "observedAtUtc", "evidence"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "executablePath": { "type": "string", "minLength": 1 },
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "productName": { "type": ["string", "null"] },
+    "companyName": { "type": ["string", "null"] },
+    "fileVersion": { "type": ["string", "null"] },
+    "productVersion": { "type": ["string", "null"] },
+    "signatureStatus": { "type": "string" },
+    "signatureSubject": { "type": ["string", "null"] },
+    "signatureThumbprint": { "type": ["string", "null"] },
+    "observedAtUtc": { "type": "string", "format": "date-time" },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind", "sourceIdentifier", "claim", "value"],
+        "properties": {
+          "kind": { "type": "string" },
+          "sourceIdentifier": { "type": "string" },
+          "claim": { "type": "string" },
+          "value": { "type": "string" }
+        }
+      }
+    }
+  }
+}

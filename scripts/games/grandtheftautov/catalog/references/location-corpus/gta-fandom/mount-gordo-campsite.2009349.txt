@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = MountGordoCampsite-GTAVe.png
+|caption = Overview of the Mount Gordo Campsite.
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]'' <small>(Formerly)</small>
+|location = [[El Gordo Drive]], [[Mount Gordo]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|type = Haunted campsite
+}}
+
+[[LEAD]]
+The '''Mount Gordo Campsite''' is a haunted campsite that appears in ''[[Grand Theft Auto V]]'' and formerly in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Former locations in GTA Online
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Recreational areas

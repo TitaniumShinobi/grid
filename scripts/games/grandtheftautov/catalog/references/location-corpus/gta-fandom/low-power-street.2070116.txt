@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=LowPowerStreet-GTAV.png
+|caption=Low Power Street in the center with the outside lanes continuing as Power Street above.
+|games={{Games|V=y|O=y}}
+|start=[[Vespucci Boulevard]]
+|end=[[Integrity Way]]
+|map=<gallery>
+LowerPowerStreet-GTAV-Map.png|Map
+LowerPowerStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Low Power Street''' is a two-way [[List of Street Names|street]] in [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*The construction site hole for access to [[Pillbox North Station]] is located in the car park where the [[Cutter]] is [[Driller|parked]] for the obvious approach to [[The Big Score (GTA V)|The Big Score]]).
+
+[[SECTION:2:Businesses]]
+*[[Ground & Pound Café]] <small>(corner of San Andreas Avenue)</small>
+*Lower levels of the [[Union Depository]], notably where [[Franklin Clinton]] and [[Lamar Davis]] drive through to end their impromptu race in [[Franklin and Lamar]].
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

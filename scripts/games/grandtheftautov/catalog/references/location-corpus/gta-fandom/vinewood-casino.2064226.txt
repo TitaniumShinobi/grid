@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = casino
+|image          = VinewoodCasino-GTAV.png
+|caption        = The casino, as seen from [[Vinewood Park Drive]].
+|altnames       = Be Lucky: Los Santos
+|games          = {{Games|V=y|O=<small>(Formerly)</small>}}
+|landmark       = y
+|location       = [[Vinewood Park Drive]], [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|status         = defunct
+|pscanner       = 
+|pscanner2      = 
+|map            = VinewoodCasino-GTAVe-Map.png 
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Vinewood Casino''', also known as '''Be Lucky: Los Santos''', is a casino appearing in {{V}} and formerly in {{O}}, located on [[Vinewood Park Drive]] in [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]], overlooking the [[Vinewood Racetrack]].
+
+On July 23, [[2019]], it was replaced by [[The Diamond Casino & Resort]], as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino & Resort]] update for ''Grand Theft Auto Online''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Casinos
+Former buildings

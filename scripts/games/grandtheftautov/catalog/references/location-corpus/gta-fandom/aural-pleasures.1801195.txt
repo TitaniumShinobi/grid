@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = 
+|name          = 
+|sign          = 
+|image         = AuralPleasures-GTAVe-Rancho.jpg
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Rancho]], [[Los Santos (HD Universe)|Los Santos]]<br/>[[Davis]]<br/>[[Banham Canyon]], [[Los Santos County]]
+|business_type = Car stereo specialist
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+|phone         = 555-0124
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Aural Pleasures''' is a car stereo technician business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle parts manufacturers

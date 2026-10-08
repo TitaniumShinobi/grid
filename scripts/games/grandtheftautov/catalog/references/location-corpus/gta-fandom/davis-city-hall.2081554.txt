@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Davis City Hall
+|image          = Davis_City_Hall_GTAVe_Overview.jpg
+|caption        = General view of the Davis City Hall.
+|use            = City Hall
+|games          = {{games|V=y|O=y}}
+|location       = [[Davis Avenue]] and [[Innocence Boulevard]], [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Davis City Hall''' is a municipal building in [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Civic buildings
+Modernist buildings

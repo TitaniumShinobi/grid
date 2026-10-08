@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|park = y
+|name = Vinewood Hills Dog Exercise Park
+|image = Vinewood_Hills_Dog_Exercise_Park_GTAV_overview.jpg
+|caption = 
+|image_size = 300
+|location = [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|games = {{Games|V=y|O=y}}
+|map = Vinewood_Hills_Dog_Exercise_Park_GTAV_Map_Location.jpg
+}}
+
+[[LEAD]]
+'''Vinewood Hills Dog Exercise Park''' is a small park located on [[North Sheldon Avenue]] in [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. There is no signage designating a specific name for the park.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Playgrounds
+Urban parks

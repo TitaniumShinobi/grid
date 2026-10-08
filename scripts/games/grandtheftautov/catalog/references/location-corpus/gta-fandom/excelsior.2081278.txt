@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|name     = Excelsior
+|type     = Razor company
+|taglines = ''"It's what a man needs"''
+|games    = ''[[Grand Theft Auto IV]]<br>[[Grand Theft Auto: Chinatown Wars]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|image    = Excelsior-GTAO-Logo.png
+|bawsaq   = 
+}}
+
+[[LEAD]]
+'''Excelsior''' is a company making razors in the [[HD Universe]].
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Commercials
+In-Game Products
+Personal care brands

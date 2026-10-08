@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Nails
+|image     = Nails-Logo-GTAV.jpg
+|type      = Nail Salon
+|games     = {{Games|V=y|O=y}}
+|locations = [[Carson Avenue]], [[Davis]]
+}}
+
+[[LEAD]]
+'''Nails''' is a nail salon featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Salons

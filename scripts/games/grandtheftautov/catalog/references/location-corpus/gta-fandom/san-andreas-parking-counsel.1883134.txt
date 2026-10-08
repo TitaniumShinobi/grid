@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|name = San Andreas Parking Counsel
+|image = SAPCounsel-GTAV-Logo.png
+|games = {{Games|V=y|O=y}}
+|type = Parking Company
+|locations = [[State of San Andreas (HD Universe)|State of San Andreas]]
+}}
+
+[[LEAD]]
+The '''San Andreas Parking Counsel''' (stylized as '''SAP Counsel''') is a parking company in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" widths="270px" spacing="small">
+SAPCounsel-GTAV-PillboxHill.png|[[Peaceful Street]] and [[Vespucci Boulevard]], [[Pillbox Hill]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Security companies

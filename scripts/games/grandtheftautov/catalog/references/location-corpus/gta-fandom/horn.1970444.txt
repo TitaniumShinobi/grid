@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = personalcare
+|name          = Horn
+|sign          = Horn-GTAIV-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = {{H:title|Radio commercials in GTA IV|The Horn}}
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|business_type = Deodorant spray
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|products      = 
+|taglines      = 
+*"''Bring out the beast''"
+*"''Wear The Horn''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Horn''' is a deodorant spray brand appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Personal care brands

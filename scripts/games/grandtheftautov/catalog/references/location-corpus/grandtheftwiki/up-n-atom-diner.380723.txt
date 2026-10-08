@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Up-n-AtomDiner-GTAV-Trevortrailer.png
+|size = 350x350px
+|game_1 = GTA V
+|name = Up-n-Atom Diner
+|type = [[:Category:Restaurants|Restaurant]]
+|owner = 
+|location = [[Blaine County]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+The '''Up-n-Atom Diner''' is a resturant in [[Blaine County]] in [[Grand Theft Auto V]].
+
+[[CATEGORIES]]
+Businesses in Blaine County
+Businesses in GTA V
+Food
+Restaurants

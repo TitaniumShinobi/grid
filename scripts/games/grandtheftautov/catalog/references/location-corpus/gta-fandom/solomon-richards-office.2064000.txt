@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|office = y
+|image = SolomonRichardsOffice-GTAV-WideAngle.png
+|image_size = 300px
+|caption = 
+|games = {{Games|V=y|O=y}}
+|location = [[Sam Austin Memorial Building]], [[Backlot City]]
+|map = solomonoffice.png
+|map_caption  = Interior map.
+}}
+
+[[LEAD]]
+'''Solomon Richards' office''' is an interior location in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:3:Office]]
+{{Gallery
+|SolomonRichardsOffice-GTAV-Eastwall.png|East view
+|SolomonRichardsOffice-GTAV-Northwall.png|North view.
+|SolomonRichardsOffice-GTAV-Westwall.png|West view.
+|SolomonRichardsOffice-GTAV-Southwall.png|South view.
+|SolomonRichardsOffice-GTAV-AccessCorona-MurderMystery.png|Yellow access [[corona]] visible to Michael (during the Murder Mystery).
+|SolomonRichardsOffice-GTAO-CrimeScene.png|Solomon's office during the events of the "Los Santos Summer Special" update.
+}}
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

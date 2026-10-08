@@ -221,9 +221,24 @@ public readonly record struct CanonicalOrganizationalValueAssertionId
 
     [JsonConstructor]
     public CanonicalOrganizationalValueAssertionId(string value) =>
-        Value = CanonicalIdentityV1.Validate(value, Domain, CurrentAlgorithmVersion);
+        Value = CanonicalIdentityV1.Validate(value, Domain, value?.StartsWith($"grid.{Domain}.v2.sha256.", StringComparison.Ordinal) == true ? 2 : 1);
 
     public string Value { get; }
+
+    public static CanonicalOrganizationalValueAssertionId DeriveV2(
+        KnowledgeRecordId recordId, CatalogSourceRevisionId sourceRevisionId,
+        CanonicalOrganizationalSemanticId dimensionId, SourceNativeIdentifier exactValueIdentity,
+        string? verbatimDisplayValue, string methodId, string methodVersion, string sourceFieldPath,
+        string languageTag)
+    {
+        var locale = new CanonicalTerminologyLocalePreference(languageTag, []).RequestedLanguageTag;
+        var legacy = DeriveV1(recordId, sourceRevisionId, dimensionId, exactValueIdentity,
+            verbatimDisplayValue, methodId, methodVersion, sourceFieldPath);
+        var writer = new CanonicalIdentityWriter(Domain, 2);
+        writer.AddString("unqualified-claim", legacy.Value);
+        writer.AddString("language-tag", locale);
+        return new(writer.Derive());
+    }
 
     public static CanonicalOrganizationalValueAssertionId DeriveV1(
         KnowledgeRecordId recordId,

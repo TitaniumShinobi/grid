@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change   = 
+|type          = apartment
+|name          = Dragon Apartments
+|sign          =
+|image         = DragonApts-GTAVee.png
+|games         = {{Games|V=y|O=y}}
+|location      = [[Capital Boulevard]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|opened        =
+|taglines      = 
+|accessible    = No
+|status        = active
+|floors        = 3
+|file_name     = <code>sc1_05_build_1.ydr</code>
+}}
+
+[[LEAD]]
+'''Dragon Apartments''' is an apartment building in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Housing Projects

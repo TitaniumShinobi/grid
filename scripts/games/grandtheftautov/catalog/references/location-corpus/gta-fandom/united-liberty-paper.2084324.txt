@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = GOVERNMENT AGENCY FRONT
+|image = UnitedLibertyPaper-GTAOee-Logo.png
+|caption = Logo of the United Liberty Paper in {{O}}. 
+|name = United Liberty Paper Merchants
+|aka = 
+*United Liberty Paper
+*U.L. Paper
+*U.L.P.
+*ULP
+|employees = [[United Liberty Paper contact]]
+|type  = Front company for the [[IAA]]
+|games = {{Games|IV=y|O=y}}
+}}
+
+[[LEAD]]
+'''United Liberty Paper Merchants''', or '''U.L. Paper''' or simply '''U.L.P.''', is a front company for the [[International Affairs Agency]] in {{IV}} and mentioned in {{O}}. [[Niko Bellic]] works with them through an [[United Liberty Paper contact|anonymous representative]].
+
+[[CATEGORIES]]
+Government

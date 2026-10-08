@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = nightclub
+|name           = Tequi-la-la
+|sign           = Tequilala-GTAV-Logo.png
+|image          = Tequi-la-la-GTAV.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Eclipse Boulevard]] and [[Milton Road]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|price          = $2,000,000
+|income         = $16,500
+|owner          = 
+*[[Michael De Santa]] <small>(optional)</small>
+*[[Franklin Clinton]] <small>(optional)</small>
+*[[Trevor Philips]] <small>(optional)</small>
+|employees      = [[Cody]] <small>(manager)</small>
+|founded        = [[1983]]
+|status         = Active
+}}
+
+[[LEAD]]
+'''Tequi-la-la''' is a nightclub in {{V}} and {{O}}. It is located at the intersection of [[Eclipse Boulevard]] and [[Milton Road]] in [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Landmarks
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Nightclubs
+Properties in GTA V

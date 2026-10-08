@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Hookah Palace
+|image = HookahPalace-GTAV-Logo.png
+|type = Hotel
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Power Street]]/[[Vespucci Boulevard]], [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Hookah Palace''' is a hotel appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Hotels
+Hotels in GTA Online

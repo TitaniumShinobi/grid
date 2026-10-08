@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox location
+|church=y
+|image=RockfordHillsChurch-GTAV.png
+|location=[[Boulevard Del Perro]], [[Rockford Drive]], [[Portola Drive]] and [[Caesars Place]], [[Rockford Hills]]
+|accessible=No
+|games={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Rockford Hills Church''' is a {{WP|Catholic Church|Catholic church}} featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Churches
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

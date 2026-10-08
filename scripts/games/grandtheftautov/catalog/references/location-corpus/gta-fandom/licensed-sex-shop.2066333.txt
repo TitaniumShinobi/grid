@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Licensed Sex Shop
+|image     = LicensedSexShop-GTAV.jpg
+|caption   = '''Licensed Sex Shop'''
+|taglines  = 
+|type      = Adult Store
+|games     = {{Games|V=y|O=y}}
+|locations = [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Licensed Sex Shop''' is an adult store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Adult stores
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos

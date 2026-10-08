@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|safehouse      = 
+|type           = dentist
+|name           = 
+|sign           = MolarFlairDentist-GTAV-Logo.png
+|image          = MolarFlairDentist-GTAV.jpg
+|caption        = '''Molar Flair Dentist''' in {{V}}.
+|aka            = 
+|games          = {{games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Echo Rock Shopping Plaza]], [[Hawick Avenue]], [[Hawick]]
+|use            = Dental clinic
+|owner          = 
+|operator       = 
+|occupants      = 
+|businesses     = 
+|employees      = 
+|structure_type = Strip mall store
+|architecture   = 
+|length         = 
+|height         = 
+|area           = 
+|size           = 
+|floors         = 
+|levels         = 
+|rooms          = 
+|accessible     = No
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Molar Flair Dentist''' is a dental practice in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Dental practices

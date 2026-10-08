@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Space 103.2
+|logo         = Space103.2-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{games|V=y|O=y}}
+|mentioned    = 
+|locations    = 
+|taglines     = ''Bringing the Funk to your Assdroid.''
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:Funk radio stations|Funk]]
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 103.2 FM
+|host         = [[Bootsy Collins]]
+|product      = 
+|radio_tracks = 
+*13 <small>(original version)</small>
+*22 <small>([[Grand Theft Auto V: Enhanced Edition|enhanced version]])</small>
+*21 <small>([[Grand Theft Auto V: Enhanced Edition|enhanced version]]; after [[GTA Online: Los Santos Tuners]])</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+'''Space 103.2''' is a [[Radio Stations in GTA V|radio station]] featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that plays funk, post-disco and soul.
+
+[[CATEGORIES]]
+Dance radio stations
+Dynamic mix radio stations
+Funk radio stations
+Media in GTA Online
+Media in GTA V
+Soul radio stations

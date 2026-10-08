@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|name  = Principe
+|image = Principe-GTAO-Logo.png
+|type  = vehicles
+|games = {{Games|V=y|O=y|VI=y}}
+}}
+
+[[LEAD]]
+'''Principe''' is an [[Italy|Italian]] auto manufacturer in the {{HD}} of the {{S}}.
+
+It is based on the manufacturers {{WP|Ducati}} and {{WP|Piaggio}} (which includes the brands {{WP|Vespa}}, {{WP|Moto Guzzi}} and {{WP|Aprilia}}).
+
+{{Clear}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Motorcycle Brands
+Vehicle manufacturers

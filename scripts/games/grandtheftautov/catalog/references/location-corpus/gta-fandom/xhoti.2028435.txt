@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|name         = Xhoti
+|aka          = Xhoti Fashions {{Small|([[#Beta Content|beta]])}}
+|image        = Xhoti-GTAVee.png
+|caption      = '''Xhoti''' in {{VO}}.
+|type         = clothesshop
+|games        = {{Games|V=y|O=y}}
+|location     = [[Hawick Avenue]], [[Alta]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible   = No
+}}
+
+[[LEAD]]
+'''Xhoti''' is a clothing store appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Clothing stores

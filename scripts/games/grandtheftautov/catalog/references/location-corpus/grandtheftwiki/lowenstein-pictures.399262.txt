@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|name = Lowenstein Pictures
+|type = Film production company
+|owner = [[Roy Lowenstein]]
+|location = 
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Lowenstein Pictures''' is a film production company mentioned in [[Grand Theft Auto V]]. The company was established in the 1920s by [[Roy Lowenstein]] and made a number of family-friendly films despite Lowenstein's vicious mistreatment of his wives and children. The company went out of business in [[2013]] after the events of [[Franklin and Lamar]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Film Production Companies

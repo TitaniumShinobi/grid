@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox_location
+|miscplace = y
+|miscplacename = CANYON
+|image = RatonCanyon-GTAV.png
+|caption = 
+|games = {{Games|V=y|O=y}}
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|type = National Park
+|neighborhood = 
+|pscanner       = PoliceScanner-GTAV-Neighborhood-RatonCanyon.ogg
+|map           = <gallery>
+RatonCanyon-GTAV-IngameGPS-Map.png|Raton Canyon
+RatonCanyon-GTAV-IngameGPS-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS). <font color="blue">Cassidy Creek</font> and <font color="green">Calafia Bridge</font> are located in the canyon.
+}}
+
+[[LEAD]]
+'''Raton Canyon''' is a canyon and national park featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Places of Interest]]
+*[[Raton Canyon Bridge]]
+*[[Cassidy Creek Bridge]]
+*[[Raton Canyon Ranger Office]]
+*Raton Canyon Trails
+
+[[SECTION:2:Roads and Streets]]
+*[[Cassidy Trail]]
+*[[Great Ocean Highway]]
+*[[North Calafia Way]]
+*[[Raton Pass]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+National parks
+Neighborhoods
+Zones

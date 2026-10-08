@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Opium Nights Hotel
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = [[:Category:Hotels|Hotel]]
+|owner = 
+|location = [[Greenwich Pkwy]] and [[Exceptionalists Way]] in [[Los Santos International Airport in GTA V|Los Santos International Airport]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+The '''Opium Nights Hotel''' is an airport hotel with entrances located on [[Exceptionalists Way]] and [[Greenwich Pkwy]] in [[Los Santos International Airport in GTA V|Los Santos International Airport]] in [[Los Santos in GTA V|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Hotels

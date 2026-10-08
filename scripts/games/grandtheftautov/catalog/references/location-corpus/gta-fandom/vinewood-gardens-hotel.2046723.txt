@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = hotel
+|name           = Vinewood Gardens Hotel	
+|sign           = VinewoodGardensHotel-GTAV-Logo.png
+|image          = VinewoodGardensHotel-GTAV.png
+|caption        = The hotel as seen from the southwest.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Spanish Avenue]] and [[Power Street]], [[Hawick]], [[Los Santos (HD Universe)|Los Santos]]
+|floors         = 14
+|accessible     = No
+}}
+
+[[LEAD]]
+The '''Vinewood Gardens Hotel''' is a hotel in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hotels

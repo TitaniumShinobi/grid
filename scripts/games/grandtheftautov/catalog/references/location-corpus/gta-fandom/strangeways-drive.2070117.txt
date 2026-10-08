@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=StrangewaysDrive-GTAV.png
+|caption=Strangeways Drive as seen from the north.
+|games={{Games|V=y|O=y}}
+|start=[[West Eclipse Boulevard]] and [[South Mo Milton Drive]]
+|end=[[Boulevard Del Perro]]
+|map=<gallery>
+StrangewaysDrive-GTAV-Map.png|Map
+StrangewaysDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Strangeways Drive''' is a [[List of Street Names|street]] in [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Epsilon Building]] <small>(corner of Spanish Avenue)</small>
+*[[Tinsel Towers]] <small>(corner of Boulevard Del Perro)</small>
+
+[[SECTION:2:Businesses]]
+*[[The Bean Machine|Bean Machine]] <small>(corner of Eclipse Boulevard)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

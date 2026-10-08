@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = gasoline
+|name          = The Los Santos State Gas Company
+|sign          = LosSantosStateGasCompany-GTAVee.jpg
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Banning]], [[Port of Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Gas company
+|founded       = 
+|founder       = 
+|ceo           = 
+*[[Avery Duggan]] 
+*[[Mason Duggan]] 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = ''"Let's get fracking!"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''The Los Santos State Gas Company''', also known as the '''Los Santos Gas Company'''{{Ref|name=LosSantosGas|ref=[[Casino - Play to Win]]}}, is the organization in charge of supplying gas to [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], and its surrounding areas in {{V}} and {{O}}. It owns large storage tanks and silos in [[Cypress Flats]], [[Banning]] and [[Elysian Island]] in the [[Port of Los Santos]].
+
+The gas company is owned by the [[Duggan Crime Family]], with [[Avery Duggan]] serving as its CEO until his death in [[2019]], upon which his nephew [[Mason Duggan]] succeeded him.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Public services

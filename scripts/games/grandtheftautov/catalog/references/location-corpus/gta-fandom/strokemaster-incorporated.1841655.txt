@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Strokemaster Incorporated
+|sign          = Strokemaster-Incorporated-GTAV-Logo.png
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Automotive battery manufacturer
+|founded       = 
+|products      = 
+|taglines      = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Strokemaster Incorporated''' is an automotive battery manufacturer that appears in {{VO}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle parts manufacturers

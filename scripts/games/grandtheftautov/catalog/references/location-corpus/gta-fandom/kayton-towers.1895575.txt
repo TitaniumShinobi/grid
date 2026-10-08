@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = KaytonTowers-GTAV.png
+|caption        = The towers as seen from San Andreas Avenue.
+|games          = {{games|V=y|O=y}}
+|height         = Unknown
+|location       = [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|use            = Residential building}}
+
+[[LEAD]]
+The '''Kayton Towers''' are a group of three towers in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on [[San Andreas Avenue]] and [[Movie Star Way]] in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Businesses]]
+*[[The Bean Machine]]
+*[[Big Dan Vision Optometry]]
+*[[Eugenics Incorporated]]
+*[[Lady n' Boy Hair Salon]]
+*[[S. Ho Korean Noodle House]]
+*[[TW@ (HD Universe)|Wan Ka Internet Cafe]]
+
+
+
+
+
+[[de:Kayton Towers]]
+[[ru:Kayton Towers]]
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mid-rise buildings
+Unnamed buildings

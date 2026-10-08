@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = Bargaining Chips
+|image        = BargainingChips-GTAO-Thumbnail.png
+|game           = {{games|O=y}}
+|type           = CasinoWork
+|location     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|for          = [[Agatha Baker]]
+|target       = Thieves
+|todo         = 
+*Go to a {{Color|v-hud-location|search area.}}
+*Search the area for the vehicle. <small>(if there is one)</small>
+*Search the area for the thief.
+*Recover the chips from the {{Color|v-hud-enemy|thief.}}
+|fail         = Out of time.
+|reward       = 
+*[[Money|Cash]], [[Chips]], and [[Reputation|RP]].
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] <small>(organization)</small>
+*1 to 8 players <small>(motorcycle club)</small>
+}}
+
+[[LEAD]]
+'''Bargaining Chips''' is a [[Casino Work]] mission featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update. It is a freeroam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[SECTION:3:Possible Thief Locations]]
+<gallery position="center" hideaddbutton="true" spacing="small">
+BargainingChips-GTAO-BrokerPark.png|[[Broker Park]].
+BargainingChips-GTAO-FountainPlaza.png|Fountain Plaza next to the [[International Affairs Agency|IAA]] and [[Federal Investigation Bureau|FIB]] headquarters.
+BargainingChips-GTAO-DelPerro.png|[[Del Perro]].
+BargainingChips-GTAO-PacificBluffsCountryClub.png|[[Pacific Bluffs Country Club]].
+BargainingChips-GTAO-UniversityofSanAndreas.png|[[University of San Andreas, Los Santos]].
+BargainingChips-GTAO-MirrorPark.png|[[Mirror Park]].
+</gallery>
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

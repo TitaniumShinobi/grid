@@ -1,0 +1,99 @@
+[[LEAD]]
+'''Little Bighorn Ave''' is a street in [[Los Santos in GTA V|Los Santos]], which runs from [[Rancho]] in the south to [[Textile City]] in the north and runs through [[La Mesa]], [[Mission Row]] and [[Strawberry]]. The road has connections to [[Adam's Apple Blvd]], [[Atlee St]], [[Capital Blvd]], [[Carson Ave]], [[Crusade Rd]], [[Integrity Way]], [[Jamestown St]], [[Macdonald St]], [[Roy Lowenstein Blvd]] and [[Sinners Passage]]. The southern end of Little Bighorn Ave is controlled by the [[Los Santos Vagos]] gang. A small homeless community can be found along Little Bighorn Ave in Mission Row and the player can also pick up a [[Prostitutes|prostitute]] in the same area.
+
+[[SECTION:2:Business and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[12 Little Bighorn Ave]]
+| [[Rancho]]
+| 
+| Garage
+|-
+| [[AGL Refrigerated Storage]]
+| [[La Mesa]]
+| [[Capital Blvd]]
+| Storage
+|-
+| [[Arts]]
+| [[Mission Row]]
+|
+|
+|-
+| [[Atomic]]
+| [[Rancho]]
+| [[Macdonald St]]
+| Garage
+|-
+| [[Auto Repairs]]
+| [[Strawberry]]
+| [[Crusade Rd]]
+| Garage
+|-
+| [[Discount Fabrics Wholesale]]
+| [[Textile City]]
+| [[Sinners Passage]]
+| Fabric
+|-
+| [[Hayes Autos]]
+| [[Strawberry]]
+|
+| Garage
+|-
+| [[Long Pig Mini Market]]
+| [[Rancho]]
+| [[Jamestown St]]
+| Convenience store
+|-
+|data-sort-value="Look Depository, The"| [[The Look Depository]]
+| [[Mission Row]]
+| [[Atlee St]]
+| Clothing
+|-
+| [[Los Santos Department of Water and Power]]
+| [[Rancho]]
+| [[Jamestown St]]
+| State department
+|-
+| [[Material Wealth Fabric Storage]]
+| [[Textile City]]
+| 
+| Storage
+|-
+| [[Mirror Park Rail Yard]]
+| [[Textile City]]/[[La Mesa]]/[[Mirror Park]]
+| [[Integrity Way]]
+| Rail yard
+|-
+| [[Mission Row Police Station]]
+| [[Mission Row]]
+| [[Atlee St]]
+| Law enforcement
+|-
+| [[Mom's Tacos]]
+| [[Rancho]]
+| [[Carson Ave]]
+| Food and drink
+|-
+| [[Panache Laundering]]
+| [[La Mesa]]/[[Rancho]]
+| [[Capital Blvd]]
+| [[Laundromat]]
+|-
+| [[Santos Imports Inc.]]
+| [[Textile City]]
+|
+| Imports
+|-
+| [[TGSA Textile Gallery]]
+| [[Textile City]]/[[Mission Row]]
+|
+| Fabric
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

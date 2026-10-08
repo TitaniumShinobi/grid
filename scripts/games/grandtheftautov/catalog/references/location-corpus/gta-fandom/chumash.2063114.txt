@@ -1,0 +1,72 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = town
+|name           = Chumash
+|sign           = 
+|image          = Chumash-GTAO-Montage.png
+|caption        = Clockwise from top: overview of Chumash, [[Chumash Historic Family Pier]], [[Chumash Plaza]], beach area, Chumash sign.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|seal           = 
+|flag           = 
+|mayor          = 
+|established    = 
+|country        = [[United States of America]]
+|state          = [[State of San Andreas (HD Universe)|San Andreas]]
+|county         = [[Los Santos County]]
+|city           = 
+|borough        = 
+|capital        = 
+|pop            = 
+|motto          = "''Where the surf sounds loudly''"
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Chumash.ogg
+|map            = 
+<gallery>
+Chumash-IngameGPS-GTAV-Map.png|Chumash
+Chumash-IngameGPS-GTAV-LosSantosCountyMap.png|Los Santos County
+</gallery>
+|map_caption   = Location on the map (in-game GPS). The <font color=green>green area</font> is referred as [[Banham Canyon Drive]] in the "area" field of the HUD instead of the "road" field. The <font color=blue>tiny blue area</font> is unnamed and is simply referred as "San Andreas" in the HUD.
+}}
+
+[[LEAD]]
+'''Chumash''' is a coastal town featured in {{V}} and {{O}}, located in [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[SECTION:2:Places of Interest]]
+*[[Chumash Plaza]] 
+*[[Chumash Historic Family Pier]] 
+*Viewing Area
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*The Barracuda Cafe 
+*[[Belinda Mays Beauty Salon]]
+*[[Blaine County Savings Bank]]
+*[[Bunkers|Chumash Bunker]] 
+*Chumash Pier Cafe 
+*Chumash Pier Store 
+*[[Davis Hardware]]
+*[[Fleeca]] 
+*[[GoPostal]] 
+*[[Hang Ten (business)|Hang Ten]] Surf Shop & Board Rental 
+*[[Ink Inc.]]
+*[[Mom's Pie Diner]]
+*[[Nelsons General Store]]
+*No Mark Cleaners
+*[[O'Deas Pharmacy]]
+*[[Rob's Liquor]]
+*[[Sub Urban (HD Universe)|Sub Urban]]
+
+[[SECTION:2:Road and Streets]]
+*[[Barbareno Road]]
+*[[Great Ocean Highway]]
+*[[Ineseno Road]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Neighborhoods
+Towns
+Zones

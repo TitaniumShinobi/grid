@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = hospital
+|name           = Central Los Santos Medical Center
+|image          = 
+<gallery>
+CentralLosSantosMedicalCenter-GTAV.png|Building
+CentralLSMedicalCenter-Logo-GTAV.png|Logo
+</gallery>
+|caption        =
+|city = [[Los Santos (HD Universe)|Los Santos]]
+|games          = {{Games|V=y|O=y}}
+|size = General Hospital
+|IRL = LAC+USC Medical Center
+|map = CentralLosSantosMedicalCenter-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Central Los Santos Medical Center''' is a general [[Hospitals|hospital]] featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:4:The Chop Shop]]
+*[[Planning Work: Police Maverick]] <small>(Possible location)</small>
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hospitals

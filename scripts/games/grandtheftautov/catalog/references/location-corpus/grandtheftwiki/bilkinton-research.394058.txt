@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 
+|game_1 = GTA V
+|name = Bilkinton Research
+|type = Pharmaceutical research
+|owner = 
+|location = 
+|affiliation = 
+|missions = 
+|employee = [[Bret Lowrey]]
+}}
+
+[[LEAD]]
+'''Bilkinton Research''' is a pharmaceutical research company in [[Grand Theft Auto V]] and is run by [[Bret Lowrey]], the CEO, with stock being available to purchase on [[Lcn-exchange.com]]. In [[2013]] the company had manufactured a drug called [[Priapol]] to combat erectile dysfunction and to combat [[Betta Pharmaceuticals]]' [[Mollis]]. The reported side effects of Priapol, including urethra splitting and heart failure, had gained negative publicity while the drug had also not received approval from regulators. Lowrey, however, was in the process of buying the approval for Priapol and commented that the side effects had been 'grossly exaggerated' according to a [[Anna Foster#Are men going soft on Mollis?|report]] by [[Anna Foster]]. Lowrey's plans are discovered by [[Lester Crest]] who hires [[Franklin Clinton]] to [[Hotel Assassination|kill Lowrey]] when leaving the [[Von Crastenburg Hotel]] in [[Rockford Hills]]. Franklin successfully kills Lowrey resulting in the stock for Bilkinton falling significantly.
+
+[[CATEGORIES]]
+Businesses in GTA V

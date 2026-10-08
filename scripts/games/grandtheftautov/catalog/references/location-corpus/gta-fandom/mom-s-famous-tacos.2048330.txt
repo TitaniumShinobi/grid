@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|name       = Mom's Famous Tacos
+|image      = MomsFamousTacos-GTAV-Logo.png
+|caption    = '''Mom's Famous Tacos''' logo.
+|taglines   = 
+|type       = fastfood
+|games      = {{Games|V=y|O=y}}
+|locations  = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+{{Small|(see [[#Locations|Locations]])}}
+|accessible = No
+}}
+
+[[LEAD]]
+'''Mom's Famous Tacos''' is a chain of fast food vendors in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|MomsFamousTacos-GTAV-Davis.jpg|[[Davis Avenue]] and [[Innocence Boulevard]], [[Davis]]. 
+|MomsFamousTacos-GTAV.jpg|[[Jamestown Street]] and [[Carson Avenue]], [[Rancho]].
+|MomsFamousTacos-GTAVee-MurrietaHeights.jpg|[[El Rancho Boulevard]] and [[Vespucci Boulevard]], [[Murrieta Heights]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurant chains

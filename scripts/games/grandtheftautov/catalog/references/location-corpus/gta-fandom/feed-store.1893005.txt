@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|image = FeedStore-Logo-GTAV.png
+|caption = 
+|name = Feed Store
+|taglines = 
+|type = Feed store
+|games = {{Games|V=y|O=y}}
+|locations = [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|reference =
+}}
+
+[[LEAD]]
+The '''Feed Store''' is a feed store located in [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]], that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Stores

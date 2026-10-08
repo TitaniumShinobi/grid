@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=MeringueLn-GTAV-MountainView.jpg
+|caption=Street view from Algonquin Boulevard, with [[Mount Chiliad (HD Universe)|Mount Chiliad]] in the background.
+|games={{Games|V=y|O=y}}
+|start=[[Marina Drive]]
+|end=[[Algonquin Boulevard]]
+|map=<gallery>
+MeringueLane-GTAV-Map.png|Map
+MeringueLane-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Meringue Lane''' is a two-way street in {{V}} and {{O}}, located in [[Sandy Shores]], [[Blaine County]], that begins at [[Marina Drive]] and ends at [[Algonquin Boulevard]], running parallel to [[Lesbos Lane]].
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

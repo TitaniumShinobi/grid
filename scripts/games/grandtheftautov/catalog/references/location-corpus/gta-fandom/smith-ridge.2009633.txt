@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|landmark       = y
+|type           = mountain
+|name           = Smith Ridge
+|image          = SmithRidge-GTAVe.png
+|caption        = Smith Ridge in {{V}}.
+|games          = {{Games|V=y|O=y}}
+|location       = [[Vinewood Hills]] and [[Great Chaparral]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map            = SmithRidge-GTAV-Map.png
+|map_caption    = Location on the map (red).
+|height         = 373.9 m (1,227 ft){{Ref|name=smithridgeheight|type=image|image=SmithRidge-GTAVe-Signage.png|caption=Height and name indicated on signage posted at the entrance of [[Arthur's Pass Trails]].}}
+|file_name      = <code>ch2_02</code> <small>(area)</small>
+|coords         = -476,1531,391
+}}
+
+[[LEAD]]
+'''Smith Ridge'''{{Ref|name=smithridgeheight}} is an unmarked mountain ridge appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Big O Fruit Juice]]
+
+{{Clear}}
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Mountains

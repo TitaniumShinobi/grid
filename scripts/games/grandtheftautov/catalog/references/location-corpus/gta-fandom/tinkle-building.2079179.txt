@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = skyscraper
+|name           = Tinkle Building
+|aka            = 4 Integrity Way
+|image          = TinkleBuilding-GTAV.jpg
+|caption        = The building as seen from [[Alta Street]].
+|games          = {{games|V=y|O=y}}
+*Office building
+*Apartment complex
+|location       = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]]
+|map            = TinkleBuilding-GTAV-Map.png
+|map_caption    = Location on the map (red)
+}}
+
+[[LEAD]]
+The '''Tinkle Building''', also known as '''4 Integrity Way''', is an office and apartment building in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Pillbox Hill]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mid-rise buildings
+Properties
+Safehouses

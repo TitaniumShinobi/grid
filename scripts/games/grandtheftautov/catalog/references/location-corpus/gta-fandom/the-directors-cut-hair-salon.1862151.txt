@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox business
+|sign = TheDirector'sCut-GTAV-Sign.png
+|image = TheDirector'sCut-GTAV-Logo.png
+|type = salon
+|games = {{Games|V=y|O=y}}
+|locations = 
+*[[Hawick]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Vespucci Canals]], Los Santos
+|status = active
+|accessible = No
+}}
+
+[[LEAD]]
+'''The Directors Cut Hair Salon''' is a chain of hair salons featured in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+TheDirector'sCut-GTAV-Hawick.png|[[Hawick Avenue]], [[Hawick]], [[Los Santos (HD Universe)|Los Santos]].
+TheDirector'sCut-GTAV-VespucciCanals.png|[[Bay City Avenue]], [[Vespucci Canals]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Salon chains

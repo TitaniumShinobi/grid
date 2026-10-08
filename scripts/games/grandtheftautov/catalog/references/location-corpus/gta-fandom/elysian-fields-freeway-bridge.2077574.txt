@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox_location
+|bridge         = y
+|image          = ElysianFreewayBridge-GTAVee.jpg
+|caption        = View of the '''Elysian Fields Freeway Bridge''' in ''[[Grand Theft Auto V]]''.
+|games          = {{games|V=y|O=y}}
+|location       = [[East Los Santos (HD Universe)|East Los Santos]] and [[Port of Los Santos]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|structure_type = Through-arch bridge
+|length         = 756m
+|height         = 
+|map            = ElysianFieldsFreewayBridge-GTAV-Map.png
+|map_caption    = '''Elysian Fields Freeway''' (red) on the map.
+}}
+
+[[LEAD]]
+The '''Elysian Fields Freeway Bridge''' is an unnamed through arch bridge in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', connecting [[Elysian Island]] to [[East Los Santos (HD Universe)|East Los Santos]].
+
+[[CATEGORIES]]
+Arch bridges
+Road bridges
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Truss bridges

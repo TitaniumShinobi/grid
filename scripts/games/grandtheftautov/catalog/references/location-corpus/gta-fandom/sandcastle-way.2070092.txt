@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=SandcastleWay-GTAV.png
+|caption=Sandcastle Way as seen from [[Bay City Avenue]].
+|games={{Games|V=y|O=y}}
+|start=[[Bay City Avenue]]
+|end=[[Vespucci Beach Sidewalk]]
+|map=<gallery>
+SandcastleWay-GTAV-Map.png|Map
+SandcastleWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Sandcastle Way''' is a [[List of Street Names|street]] in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Al Dente's]] <small>(corner of Magellan Avenue)</small>
+*Giovanni's Italian Restaurant <small>(corner of Bay City Avenue)</small>
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

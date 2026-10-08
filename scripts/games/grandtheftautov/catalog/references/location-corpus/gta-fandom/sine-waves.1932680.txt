@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Sine Waves
+|sign = SineWaves-GTAV-Logo.png
+|image = SineWaves-GTAVee.jpg
+|type = music
+|games = {{Games|V=y|O=y}}
+|location = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Sine Waves''' is a music store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Music stores

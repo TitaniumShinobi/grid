@@ -1,0 +1,65 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|Name Change     = 
+|style           = 
+|name            = Streiter
+|front_image         = Streiter-GTAOee-FrontQuarter.png
+|rear_image          = Streiter-GTAOee-RearQuarter.png
+|caption             = A '''Streiter''' in {{O}}.
+|class               = [[:Category:Sports class|Sports]]
+|body_style          = [[:Category:Station wagons|4-door station wagon]]
+|capacity            = 4 {{Small|(driver and 3 passengers)}}
+|manufacturer        = [[Benefactor]]
+|price               = [[Money|$]]500,000 {{Small|([[Southern San Andreas Super Autos]]; [[#Locations|no longer available]])}}
+|games               = {{Games|O={{EEEV}} {{DLC|mpchristmas2017}}}}
+|type                = fullsize
+|variants            = 
+}}
+
+[[LEAD]]
+The [[Benefactor]] '''Streiter''' is an all terrain station wagon featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Doomsday Heist|The Doomsday Heist]] update, released on December 23rd, 2017, during the [[Festive Surprise 2017]] event.
+
+[[SECTION:2:Locations]]
+*Available for purchase from [[Southern San Andreas Super Autos]] for [[Money|$]]500,000.
+**No longer available; [[:Category:Vehicles removed for purchase in GTA Online: San Andreas Mercenaries|removed]] from the website as part of the [[GTA Online: San Andreas Mercenaries|San Andreas Mercenaries]] update.
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Streiter
+|manufacturer  = Benefactor
+|vehicle_class = Sports
+|image         = Streiter-GTAO-RGSC-MainNew.jpg
+|caption       = Main image (after 2019).
+|image2        = Streiter-GTAO-RGSC-Action.jpg
+|caption2      = "Action" image.
+|image3        = Streiter-GTAO-RGSC-Main.jpg
+|caption3      = Main image (prior to 2019).
+|speed         = 75.11718
+|accel         = 53.125
+|braking       = 26.666668
+|traction      = 63.030304
+|seats         = 4
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = sssa
+}}
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Streiter}}
+{{Defaultradio|game=O|defaultgroup=right-talk}}
+
+[[CATEGORIES]]
+Full-size cars
+Off-roading vehicles
+Sports class
+Station wagons
+Vehicles in GTA Online: The Doomsday Heist
+Vehicles manufactured by Benefactor
+Vehicles purchasable from Premium Deluxe Motorsport
+Vehicles purchasable from Southern San Andreas Super Autos
+Vehicles removed for purchase in GTA Online: San Andreas Mercenaries
+Vehicles with Schafter interior

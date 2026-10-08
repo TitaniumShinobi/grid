@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = clothesshop
+|name           = Know Wear
+|sign           = KnowWear-GTAV-Logo.png 
+|image          = KnowWear-GTAVe-Exterior.png
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Hawick Avenue]], [[Hawick]], [[Los Santos (HD Universe)|Los Santos]]
+|taglines       = ''"Fashion Fallout"''
+|status         = active
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Know Wear''' is a clothing store appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Clothing stores

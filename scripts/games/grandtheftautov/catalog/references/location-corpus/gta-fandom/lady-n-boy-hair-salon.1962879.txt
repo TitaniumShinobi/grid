@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|image     = LadyNBoyHairSalon-GTAV-GingerStreet.png
+|type      = Hair salon
+|games     = {{Games|V=y|O=y}}
+|locations = [[Kayton Towers]], [[Ginger Street]], [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Lady n' Boy Hair Salon''' (Korean: 숙녀와소년 헤어 살롱) is a hair salon in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Barber shops
+Businesses in GTA Online
+Businesses in GTA V
+Salons

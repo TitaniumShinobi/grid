@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = HIGHWAY
+|name              = State Route 22
+|number            = 22
+|caption2          = State Route 22 shield
+|image             = 
+|caption           = 
+|games             = {{Games|V=y|O=y}}
+|highway_eastend  = {{rmark|SA|18}} and {{rmark|US|20}} in [[East Los Santos (GTA V)|East Los Santos]]
+|highway_westend  = {{rmark|SA|14}} in [[Little Seoul]]
+|highway_junctions = {{rmark|SA|19}} in [[La Puerta]]<br />
+{{rmark|SA|17}} in [[East Los Santos (GTA V)|East Los Santos]]
+|pscanner    = 
+|map         = 
+|mapcaption  = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''San Andreas State Route 22''' is one of the [[Numbered Highways in GTA V|numbered highways]] in [[State of San Andreas (HD Universe)|San Andreas]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Freeways
+Highways
+Structures in GTA V in Los Santos

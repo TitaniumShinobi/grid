@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = vehicleproducts
+|name          = Rimm Paint
+|sign          = RimmPaint-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = [[Rimm Paint Factory]] {{Small|(Formerly)}}{{Ref|name = rimm-factory-disused|type = quote|date = 11/20/2024|ref  = {{Quote|One of the little-known perks of setting up a night club in a disused paint factory is the presence of high residual levels of industrial solvent. Good atmosphere, happy patrons, all night. guaranteed.|Nightclubs, [[Maze Bank Foreclosures]]}}}}
+|business_type = Paint manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = 
+*''for the best finish, make it a RIMM job''
+*''Don't dip your brush in anything else''
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Rimm Paint''' is a paint manufacturing company in {{V}}, {{O}}, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle products manufacturers

@@ -2,6 +2,7 @@ using System.Collections.Immutable;
 using System.Text.Json;
 using Grid.Core.Application;
 using Grid.Core.Models;
+using Grid.Core.Services;
 
 internal static class InvestigationTicketDraftChecks
 {
@@ -79,7 +80,7 @@ internal static class InvestigationTicketDraftChecks
                 $"CanSubmit follows only the Class/Problem/Goal contract for presence mask {mask}.");
         }
 
-        var gameId = new GameId("game.grand-theft-auto-v.enhanced");
+        var gameId = ProductionGridCatalogService.GrandTheftAutoVEnhancedId;
         var installationId = new InstallationId("installation.gta-enhanced.fixture");
         var profileId = new ProfileId("profile.gta-enhanced.fixture");
         var configuredId = new UserToolConfigurationId("tool-config.cherax.fixture");
@@ -261,18 +262,59 @@ internal static class InvestigationTicketDraftChecks
                restored.UserContext.Single().Resolution == TicketUserContextResolution.Unresolved,
             "Reference knowledge and unresolved user context remain distinct after serialization.");
 
+        var gtaProjectionPolicy = CanonicalSelectorProjectionPolicyResolver.ResolveForGame(gameId);
         var canonicalSelection = new CanonicalSelectorSelection(
             CanonicalSelectorSelectionKind.CanonicalRecord,
             KnowledgeKind.Location,
             new CatalogRevisionId("grid.catalog-revision.v5.sha256." + new string('5', 64)),
             new CatalogCompositionId("composition.ticket.fixture"),
-            CanonicalSelectorProjectionPolicy.V1.Id,
-            CanonicalSelectorProjectionPolicy.V1.ExactVersion,
+            gtaProjectionPolicy.Id,
+            gtaProjectionPolicy.ExactVersion,
             new CanonicalNavigationPathId("grid.canonical-navigation-path.v1.sha256." + new string('6', 64)),
             new KnowledgeRecordId("grid.knowledge-record.v1.sha256." + new string('7', 64)),
             null);
         var canonicalDraft = fullDraft with { CanonicalSelections = [canonicalSelection] };
         InvestigationTicketDraftPolicy.Validate(canonicalDraft);
+        AssertThrows<ArgumentException>(() => InvestigationTicketDraftPolicy.Validate(CreateDraft() with
+        {
+            CanonicalSelections = [canonicalSelection],
+        }), "Canonical selector selections without a canonical Game fail closed.");
+        Assert(InvestigationTicketDraftPolicy.Evaluate(CreateDraft()).CanSubmit,
+            "Tickets without canonical selections remain valid without a Game.");
+        var staleGtaSelection = new CanonicalSelectorSelection(
+            CanonicalSelectorSelectionKind.CanonicalRecord,
+            KnowledgeKind.Location,
+            canonicalSelection.CatalogRevisionId,
+            canonicalSelection.CatalogCompositionId,
+            CanonicalSelectorProjectionPolicy.V4.Id,
+            CanonicalSelectorProjectionPolicy.V4.ExactVersion,
+            canonicalSelection.SelectedPathId,
+            canonicalSelection.KnowledgeRecordId,
+            null);
+        AssertThrows<ArgumentException>(() => InvestigationTicketDraftPolicy.Validate(canonicalDraft with
+        {
+            CanonicalSelections = [staleGtaSelection],
+        }), "GTA ticket drafts reject stale cross-game projection coordinates.");
+        var skyrimGameId = new GameId("game.skyrim");
+        var skyrimPolicy = CanonicalSelectorProjectionPolicyResolver.ResolveForGame(skyrimGameId);
+        var gtaOnlySelection = new CanonicalSelectorSelection(
+            CanonicalSelectorSelectionKind.CanonicalRecord,
+            KnowledgeKind.Location,
+            canonicalSelection.CatalogRevisionId,
+            canonicalSelection.CatalogCompositionId,
+            gtaProjectionPolicy.Id,
+            gtaProjectionPolicy.ExactVersion,
+            canonicalSelection.SelectedPathId,
+            canonicalSelection.KnowledgeRecordId,
+            null);
+        AssertThrows<ArgumentException>(() => InvestigationTicketDraftPolicy.Validate(fullDraft with
+        {
+            GameId = skyrimGameId,
+            CanonicalSelections = [gtaOnlySelection],
+        }), "Non-GTA ticket drafts reject GTA-only projection coordinates.");
+        Assert(CanonicalSelectorProjectionPolicyResolver.MatchesGamePolicy(
+                   skyrimGameId, skyrimPolicy.Id, skyrimPolicy.ExactVersion),
+            "Skyrim resolves to cross-game v4 projection policy.");
         var canonicalJson = JsonSerializer.Serialize(canonicalDraft, options);
         var canonicalRestored = JsonSerializer.Deserialize<InvestigationTicketDraft>(canonicalJson, options);
         Assert(canonicalRestored?.CanonicalSelections.Single() == canonicalSelection,

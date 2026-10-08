@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "grid.startup-receipt.v1",
+  "startupId": "b871dad7-c842-445a-9c87-f4db93d0fa8f",
+  "startedAtUtc": "2026-10-02T16:00:33.0903659+00:00",
+  "finishedAtUtc": "2026-10-02T16:00:34.2233543+00:00",
+  "durationMs": 1133,
+  "readiness": "READY",
+  "executableIdentity": {
+    "assemblyVersion": "1.0.0.0",
+    "processPath": "C:\\Users\\woods\\Documents\\GitHub\\grid\\src\\Grid.App\\bin\\Debug\\net9.0-windows10.0.19041.0\\win-x64\\Grid.exe"
+  },
+  "stages": [
+    {
+      "stageId": "SHELL_INITIALIZATION.MAIN_WINDOW",
+      "outcome": "completed",
+      "startedAtUtc": "2026-10-02T16:00:33.09074+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:33.4252982+00:00",
+      "durationMs": 334,
+      "workClassification": "STARTUP_REQUIRED",
+      "detail": "Main window loaded; auth gate active."
+    },
+    {
+      "stageId": "AUTH_SESSION_RESTORE",
+      "outcome": "completed",
+      "startedAtUtc": "2026-10-02T16:00:33.427487+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:33.8555968+00:00",
+      "durationMs": 428,
+      "workClassification": "STARTUP_REQUIRED",
+      "detail": "Session restored."
+    },
+    {
+      "stageId": "ACCOUNT_LOOKUP",
+      "outcome": "completed",
+      "startedAtUtc": "2026-10-02T16:00:33.9701393+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:33.9711773+00:00",
+      "durationMs": 1,
+      "workClassification": "STARTUP_REQUIRED",
+      "detail": "devon_woodson_1778753278298"
+    },
+    {
+      "stageId": "GRID_ACCOUNT_STATE",
+      "outcome": "completed",
+      "startedAtUtc": "2026-10-02T16:00:33.9733603+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:34.013954+00:00",
+      "durationMs": 40,
+      "workClassification": "STARTUP_REQUIRED",
+      "detail": "C:\\Users\\woods\\AppData\\Local\\Grid\\accounts\\v1\\82658f8e9bc5a6d036c6e3ea2b09505d38f46173faacfb224eb9111503f4827f"
+    },
+    {
+      "stageId": "LOCAL_DEVICE_STATE",
+      "outcome": "completed",
+      "startedAtUtc": "2026-10-02T16:00:34.0176681+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:34.0228873+00:00",
+      "durationMs": 5,
+      "workClassification": "STARTUP_REQUIRED",
+      "detail": "Workspace selection restored."
+    },
+    {
+      "stageId": "STALE_STATE_ASSESSMENT",
+      "outcome": "skipped",
+      "startedAtUtc": "2026-10-02T16:00:34.0243647+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:34.0243647+00:00",
+      "durationMs": 0,
+      "detail": "No distinct stale-state assessment boundary in startup v1."
+    },
+    {
+      "stageId": "REGISTERED_STATE_LOAD",
+      "outcome": "completed",
+      "startedAtUtc": "2026-10-02T16:00:34.0243656+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:34.0803551+00:00",
+      "durationMs": 55,
+      "workClassification": "STARTUP_REQUIRED",
+      "detail": "88 registered game projection(s)."
+    },
+    {
+      "stageId": "PREPARED_CANONICAL_STATE_LOAD",
+      "outcome": "completed",
+      "startedAtUtc": "2026-10-02T16:00:34.0823384+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:34.0855975+00:00",
+      "durationMs": 3,
+      "workClassification": "STARTUP_REQUIRED",
+      "detail": "C:\\Users\\woods\\AppData\\Local\\Grid\\accounts\\v1\\82658f8e9bc5a6d036c6e3ea2b09505d38f46173faacfb224eb9111503f4827f\\catalogs\\shared-canonical-library.v5.json"
+    },
+    {
+      "stageId": "SHELL_INITIALIZATION.PRODUCT_STATE",
+      "outcome": "completed",
+      "startedAtUtc": "2026-10-02T16:00:34.0155735+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:34.1314211+00:00",
+      "durationMs": 115,
+      "workClassification": "STARTUP_REQUIRED",
+      "detail": "Catalog and session assembly complete."
+    },
+    {
+      "stageId": "SHELL_INITIALIZATION.UI_ACTIVATION",
+      "outcome": "completed",
+      "startedAtUtc": "2026-10-02T16:00:34.1330103+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:34.2059709+00:00",
+      "durationMs": 72,
+      "workClassification": "STARTUP_REQUIRED",
+      "detail": "Product shell bound and first navigation recorded."
+    },
+    {
+      "stageId": "SHELL_INITIALIZATION",
+      "outcome": "completed",
+      "startedAtUtc": "2026-10-02T16:00:33.1203926+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:34.2159526+00:00",
+      "durationMs": 1095,
+      "workClassification": "STARTUP_REQUIRED",
+      "detail": "Shell initialization substages complete."
+    },
+    {
+      "stageId": "READY",
+      "outcome": "completed",
+      "startedAtUtc": "2026-10-02T16:00:34.2163562+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:34.2169924+00:00",
+      "durationMs": 0,
+      "workClassification": "STARTUP_REQUIRED",
+      "detail": "Shell usable; required startup work complete."
+    },
+    {
+      "stageId": "SHELL_INITIALIZATION.BACKGROUND_HYDRATE",
+      "outcome": "indeterminate",
+      "startedAtUtc": "2026-10-02T16:00:34.2187895+00:00",
+      "finishedAtUtc": "2026-10-02T16:00:34.2230779+00:00",
+      "durationMs": 4,
+      "workClassification": "BACKGROUND_OPTIONAL",
+      "detail": "startup finalized while stage was still open"
+    }
+  ],
+  "digest": "sha256:03f25bec0adf97941bae6caf3a3a7322f2b8ed9629144f054b1a47d4d97b69f4"
+}

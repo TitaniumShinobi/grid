@@ -1,0 +1,58 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Media Player
+|logo         = MediaPlayer-GTAO-HUDIcon.png
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{Games|O={{EEEV}} {{DLC|mptuner}}}}
+|mentioned    = 
+|locations    = 
+|taglines     = 
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = Various
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 
+|host         = 
+|product      = 
+|radio_tracks = 94
+*5 <small>(Blue EP playlist)</small>
+*5 <small>(Green EP playlist)</small>
+*5 <small>(Violet EP playlist)</small>
+*5 <small>(Black EP playlist)</small>
+*16 <small>([[Seth Troxler]]'s CLR Launch Party playlist)</small>
+*35 <small>([[Moodymann|Kenny]]'s Backyard Boogie playlist)</small>
+*6 <small>([[GTA Online: The Contract]]; [[Dr. Dre]] playlist)</small>
+*2 <small>([[GTA Online: The Contract]]; singles)</small>
+*15 <small>([[GTA Online: The Chop Shop]]; [[DâM-FunK]]'s [[Dâm-Funk Presents The Music of Grand Theft Auto Online Original Score|Even the Score]] playlist)</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+The '''Media Player''' is a customizable radio station featured in {{O}} as part of the [[GTA Online: Los Santos Tuners|Los Santos Tuners]] update on July 20, 2021. The player can be unlock and populate the station with predefined music by finding [[Media Sticks]] around Los Santos, which comprise of genres such as pop, rock, R&B, disco, funk, house, and techno.
+
+[[SECTION:3:Radio Station]]
+*[[LS Car Meet]]
+
+[[CATEGORIES]]
+Dynamic mix radio stations
+Electronic radio stations
+Funk radio stations
+House radio stations
+Media in GTA Online: Los Santos Tuners
+Pop radio stations
+Rhythm and blues radio stations

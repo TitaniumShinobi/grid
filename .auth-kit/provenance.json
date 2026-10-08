@@ -1,0 +1,20 @@
+{
+  "contract": "life.auth.product-contract/1",
+  "productId": "grid",
+  "catalogVersion": "1.5",
+  "files": {
+    ".auth-kit/ci.mjs": "6f6656f04d4c98c5475f15bb2d4aee34bff5c9bd12602c7bd67e25847b20390a",
+    ".auth-kit/runtime/auth-blocker-handoff.mjs": "a1f52a391bfe5f15006e67c3e1761579fa94af1369d5772342e2b389598c716f",
+    ".auth-kit/runtime/auth-capability-catalog.mjs": "a3a120567739d379c00994049959b435b613b874e983bce3b6e57a0ef85eda2d",
+    ".auth-kit/runtime/auth-conformance-binding.mjs": "261d44c48364f2e34a8d55cebaf6da48b7df1a22708886cd6ec0f910dcf73c80",
+    ".auth-kit/runtime/auth-evidence-ownership.mjs": "e78d25044c75630611708683152ec4608d1989adf24149b15c931be4ca755898",
+    ".auth-kit/runtime/auth-git.mjs": "a5c5a52b5579ef4e9baf2464fba2d9a8b820d721fb8586f18f38f55f5b6b9d59",
+    ".auth-kit/runtime/auth-lifecycle.mjs": "db000fd153e042e3971c0cc69fdf81d237c587511fe1960a075c12e749324785",
+    ".auth-kit/runtime/auth-product-contract.mjs": "33ede0bb4d9a5339323c7f3d4dbf2e8ce2a5e8477b6d36e707f5234ab44b833d",
+    ".auth-kit/runtime/auth-product-inventory.mjs": "4892e35d178fb152784ea641d87d70916225ecc2b65e7dd447c3e9519be030f5",
+    ".auth-kit/runtime/auth-verification-profiles.mjs": "f399ec036b110e049517e5b53e7c9d1d1e374699fb40b898a1c1f89e14c35918",
+    ".auth-kit/runtime/auth-wizard.mjs": "501a1abbc6ab8eeffd0c853cb7667a4ece4e39f399e02f8de043e70aaa4d903e",
+    ".auth-kit/verify.mjs": "58e4e431b2ad6bd509cb69e470a408df78e5072b451a23b31f6cdfa9ef4e3893",
+    ".github/workflows/auth-product-contract.yml": "ce5c4aac3e5c979c4c91a76fa539c888730d5e83c609f74d410d24d00aba2084"
+  }
+}

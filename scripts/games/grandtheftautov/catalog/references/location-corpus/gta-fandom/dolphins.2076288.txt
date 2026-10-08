@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox animal
+|name = Dolphins
+|scientific name = ''Tursiops truncatus''
+|games = {{Games|VC=y|SA=y|V={{EEEV}} {{Peyote}}|O={{EEEV}} {{Peyote}}|VI=y}}
+|type        = sea
+|species = Bottlenose Dolphin
+|locations = Warm ocean
+|size = Medium/Large
+|interactive = 
+*Killable <small>(''GTA Vice City'' & ''GTA V'')</small>
+*Playable <small>(''GTA V'' & ''GTA Online'', [[Enhanced Version|Enhanced version]] only)</small>
+|image = Dolphin-GTAV.jpg
+|imagesize = 250
+|caption =A Dolphin in ''Grand Theft Auto V''.
+}}
+
+[[LEAD]]
+'''Dolphins''' are an [[Animals|animal]] species featured in {{VC}}, {{SA}}, {{V}}, {{O}} and {{VI}}. In all of their appearances, the species of dolphin that is featured seems to be the {{WP|Common bottlenose dolphin|common bottlenose dolphin}}, scientifically known as ''Tursiops truncatus''.
+
+[[CATEGORIES]]
+Animals in GTA Online: The Diamond Casino & Resort
+Animals in GTA San Andreas
+Animals in GTA V: Enhanced Edition
+Animals in GTA VI
+Animals in GTA Vice City
+Aquatic animals
+Exclusive Expanded & Enhanced Version Content in GTA V

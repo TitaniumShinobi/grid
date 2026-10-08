@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=ProcopioDrive-GTAV.png
+|caption=Eastern and western views of Procopio Drive.
+|games={{Games|V=y|O=y}}
+|start=[[Paleto Boulevard]]
+|end=[[Great Ocean Highway]]
+|map=<gallery>
+ProcopioDrive-GTAV-Map.png|Map
+ProcopioDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Procopio Drive''' is a street located in [[Paleto Bay]], [[Blaine County]], in {{V}} and {{O}}. It is situated south of the [[Procopio Promenade]] and [[Procopio Beach]].
+
+[[SECTION:2:Places of Interest]]
+*[[4401 Procopio Drive]]
+*[[4584 Procopio Drive]]
+
+[[SECTION:2:Businesses]]
+*[[Beeker's Garage]]
+*[[RON]] [[Filling Stations|gas station]]
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

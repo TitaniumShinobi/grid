@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox location
+|status         = active
+|structure_type = Warehouse
+|image          = Walker&Son(s)Warehousing-GTAV-BanningWarehouseSignageDetail.png
+|location       = [[Banning]], [[Los Santos (HD Universe)|Los Santos]]
+|name           = Walker & Son(s) Warehousing
+|taglines       = The best in south Los Santos
+|games          = {{Games|V=y|O=y}}
+|map            = Walker&Son(s)Warehousing-GTAV-LocationMap.png
+|map2           = Walker&SonsWarehouse-GTAV-InteriorMap.png
+|map_caption    = Location
+|map_caption2   = Interior
+|accessible     = Yes <small>(''GTA V'': Mission only)</small>
+}}
+
+[[LEAD]]
+'''Walker & Sons Warehousing''', also called '''Walker & Son Warehousing''', is a business in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Businesses in GTA Online
+Businesses in GTA V
+Warehouses

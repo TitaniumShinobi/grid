@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = 
+<gallery>
+LandActReservoir-GTAV-North.png|North
+LandActReservoir-GTAV-South.png|South
+</gallery>
+|location      = [[Tataviam Mountains]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games         = {{Games|V=y|O=y}}
+|type          = reservoir
+}}
+
+[[LEAD]]
+The '''Land Act Reservoir''' is a water reservoir featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Points of Interest]]
+*[[Land Act Dam]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos
+Reservoirs

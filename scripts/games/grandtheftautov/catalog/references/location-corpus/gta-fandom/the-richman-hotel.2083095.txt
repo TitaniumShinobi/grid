@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|image = The_Richman_Hotel.png
+|name = The Richman Hotel
+|type = Hotel
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Richman (HD Universe)|Richman]], [[Los Santos (HD Universe)|Los Santos]]
+|reference = {{WP|Beverly Hills Hotel}}
+}}
+
+[[LEAD]]
+'''The Richman Hotel''' is a luxury hotel featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hotels
+Landmarks
+Spanish Revival buildings

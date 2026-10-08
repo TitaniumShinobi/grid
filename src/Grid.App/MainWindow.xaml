@@ -1,10 +1,11 @@
-<Window
+﻿<Window
     x:Class="Grid.App.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:views="using:Grid.App.Views"
+    xmlns:controls="using:Grid.App.Controls"
     Title="Grid"
     mc:Ignorable="d">
 
@@ -57,6 +58,7 @@
                     </MenuBarItem>
                     <MenuBarItem Title="View">
                         <MenuFlyoutItem Text="Welcome / Setup" Click="OnWelcomeClicked" />
+                        <MenuFlyoutItem Text="Catalog Review" Click="OnCatalogReviewClicked" />
                         <MenuFlyoutItem Text="Activities" Click="OnActivitiesClicked" />
                         <MenuFlyoutItem Text="Settings" Click="OnSettingsClicked" />
                     </MenuBarItem>
@@ -92,6 +94,7 @@
                             </MenuFlyoutSubItem>
                             <MenuFlyoutSubItem Text="View">
                                 <MenuFlyoutItem Text="Welcome / Setup" Click="OnWelcomeClicked" />
+                                <MenuFlyoutItem Text="Catalog Review" Click="OnCatalogReviewClicked" />
                                 <MenuFlyoutItem Text="Activities" Click="OnActivitiesClicked" />
                                 <MenuFlyoutItem Text="Settings" Click="OnSettingsClicked" />
                             </MenuFlyoutSubItem>
@@ -234,6 +237,19 @@
                                 Click="OnActivitiesClicked" ToolTipService.ToolTip="Activities">
                             <FontIcon FontFamily="Segoe Fluent Icons" FontSize="20" Glyph="&#xE81C;" />
                         </Button>
+                        <Grid x:Name="AccountArea"
+                              Width="46"
+                              Height="46"
+                              Visibility="Collapsed"
+                              AutomationProperties.Name="Authenticated account"
+                              ToolTipService.ToolTip="Account">
+                            <PersonPicture x:Name="AccountAvatar"
+                                           Width="28"
+                                           Height="28"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"
+                                           AutomationProperties.Name="Authenticated account avatar" />
+                        </Grid>
                         <Button Style="{StaticResource ActivityRailButtonStyle}" AutomationProperties.Name="Settings"
                                 Click="OnSettingsClicked" ToolTipService.ToolTip="Settings">
                             <FontIcon FontFamily="Segoe Fluent Icons" FontSize="20" Glyph="&#xE713;" />
@@ -259,18 +275,6 @@
                         </Button>
                     </Grid>
                     <Grid Grid.Row="1">
-                        <ScrollViewer x:Name="HomeSidePanel" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
-                            <StackPanel Padding="12,4,12,12" Spacing="8">
-                                <TextBlock FontSize="13" FontWeight="SemiBold" Text="Registered games" />
-                                <TextBlock Foreground="{StaticResource MutedTextBrush}" FontSize="11" Text="Choose a circular game thumbnail to open its workspace." TextWrapping="Wrap" />
-                                <Button x:Name="EmptyGamesButton" HorizontalAlignment="Stretch" MinHeight="36"
-                                        AutomationProperties.Name="Add game" Click="OnAddGameClicked" Content="Add game…"
-                                        Style="{StaticResource ShellChromeButtonStyle}" />
-                                <ComboBox x:Name="GameSortSelector" Visibility="Collapsed" SelectionChanged="OnGameSortChanged" />
-                                <StackPanel x:Name="GamesList" Visibility="Collapsed" />
-                            </StackPanel>
-                        </ScrollViewer>
-
                         <ScrollViewer x:Name="GameSnapshotPanel" Visibility="Collapsed" AutomationProperties.Name="Game snapshot" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
                             <StackPanel Padding="12,4,12,12" Spacing="10">
                                 <Border Height="104" CornerRadius="6" Background="{StaticResource CardHoverBrush}">
@@ -278,6 +282,15 @@
                                 </Border>
                                 <TextBlock x:Name="SnapshotGameName" FontSize="18" FontWeight="SemiBold" TextWrapping="Wrap" />
                                 <TextBlock x:Name="SnapshotInstanceText" Foreground="{StaticResource MutedTextBrush}" FontSize="11" TextWrapping="Wrap" />
+                                <Button x:Name="SnapshotOpenWorkspaceButton"
+                                        HorizontalAlignment="Left"
+                                        Padding="0"
+                                        Background="Transparent"
+                                        BorderThickness="0"
+                                        Foreground="{ThemeResource AccentTextFillColorPrimaryBrush}"
+                                        AutomationProperties.Name="Open game workstation"
+                                        Click="OnOpenSnapshotWorkspaceClicked"
+                                        Content="Open workstation" />
                                 <TextBlock Style="{StaticResource ShellSectionHeaderStyle}" Text="PROFILE" />
                                 <TextBlock x:Name="SnapshotProfileText" FontSize="12" TextWrapping="Wrap" />
                                 <TextBlock Style="{StaticResource ShellSectionHeaderStyle}" Text="RECENT ACTIVITY" />
@@ -412,13 +425,14 @@
                             CornerRadius="4" />
 
                     <Grid Grid.Row="0">
-                        <TabView x:Name="EditorTabView" Height="30" Margin="-4,0,33,0" IsAddTabButtonVisible="False"
-                                 CanDragTabs="True" CanReorderTabs="True" TabWidthMode="SizeToContent"
-                                 AutomationProperties.Name="Open tabs"
-                                 SelectionChanged="OnEditorTabSelectionChanged"
-                                 TabCloseRequested="OnEditorTabCloseRequested" />
-                        <Button x:Name="EditorMoreActionsButton" Width="30" Height="24" Margin="0,3,3,3"
-                                HorizontalAlignment="Right" Style="{StaticResource ShellChromeButtonStyle}"
+                        <TabView x:Name="EditorTabView" Height="30" Margin="0,0,34,0" IsAddTabButtonVisible="False"
+                                  CanDragTabs="True" CanReorderTabs="True" TabWidthMode="SizeToContent"
+                                  AutomationProperties.Name="Open tabs"
+                                  Loaded="OnEditorTabViewLoaded"
+                                  SelectionChanged="OnEditorTabSelectionChanged"
+                                  TabCloseRequested="OnEditorTabCloseRequested" />
+                        <Button x:Name="EditorMoreActionsButton" Width="30" Height="24" Margin="0,4,4,2"
+                                 HorizontalAlignment="Right" Style="{StaticResource ShellChromeButtonStyle}"
                                 AutomationProperties.Name="Main panel more actions" ToolTipService.ToolTip="More actions">
                             <Button.Flyout>
                                 <MenuFlyout>
@@ -432,9 +446,9 @@
                         </Button>
                     </Grid>
 
-                    <Border x:Name="ContextBar" Grid.Row="1" Padding="{StaticResource ShellPanelContentInset}" HorizontalAlignment="Stretch"
+                    <Border x:Name="ContextBar" Grid.Row="1" Padding="{StaticResource ShellPanelContentInset}" HorizontalAlignment="Right"
                             Background="{ThemeResource ShellWorkbenchBrush}"
-                            BorderThickness="0" Visibility="Collapsed">
+                            BorderThickness="0" Visibility="Collapsed" Canvas.ZIndex="10">
                         <Grid x:Name="ContextLayout" HorizontalAlignment="Right" ColumnSpacing="8">
                             <Grid.RowDefinitions><RowDefinition Height="Auto" /></Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
@@ -501,8 +515,303 @@
                     </Border>
 
                     <Frame x:Name="ContentFrame" Grid.Row="2" Background="{ThemeResource ShellWorkbenchBrush}" IsNavigationStackEnabled="False" />
+                    <Grid x:Name="AuthGatePanel"
+                          Grid.Row="2"
+                          Canvas.ZIndex="30"
+                          Background="{ThemeResource ShellWorkbenchBrush}"
+                          Visibility="Visible">
 
-                    <!-- Keep the canonical workbench outline above TabView's native header surface. -->
+                        <Grid.Resources>
+                            <Style x:Key="AuthProviderButtonStyle" TargetType="Button">
+                                <Setter Property="Height" Value="42" />
+                                <Setter Property="HorizontalAlignment" Value="Stretch" />
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                <Setter Property="BorderThickness" Value="0" />
+                                <Setter Property="CornerRadius" Value="4" />
+                                <Setter Property="Padding" Value="14,0" />
+                                <Setter Property="Foreground" Value="White" />
+                                <Setter Property="FontSize" Value="14" />
+                            </Style>
+                        </Grid.Resources>
+
+                        <Grid>
+
+                            <!-- AUTH RESOLVING -->
+                            <StackPanel x:Name="AuthResolvingPanel"
+                                        Width="320"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Spacing="12"
+                                        AutomationProperties.Name="Resolving GRID authentication">
+                                <ProgressRing Width="24"
+                                              Height="24"
+                                              HorizontalAlignment="Center"
+                                              IsActive="True" />
+                                <TextBlock Text="GRID"
+                                           FontSize="24"
+                                           FontWeight="SemiBold"
+                                           HorizontalAlignment="Center" />
+                                <TextBlock Text="Restoring your session…"
+                                           FontSize="13"
+                                           Foreground="{StaticResource MutedTextBrush}"
+                                           HorizontalAlignment="Center" />
+                            </StackPanel>
+
+                            <!-- SIGN IN -->
+                            <StackPanel x:Name="SignInPanel"
+                                        Width="360"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center"
+                                        Visibility="Collapsed"
+                                        Spacing="10">
+
+                                <TextBlock Text="Sign in to use GRID"
+                                           FontSize="24"
+                                           FontWeight="SemiBold"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,0,0,14" />
+
+                                <Button x:Name="MicrosoftSignInButton"
+                                        Style="{StaticResource AuthProviderButtonStyle}"
+                                        Background="#1F83D3"
+                                        Click="OnMicrosoftSignInClicked">
+                                    <Grid ColumnDefinitions="24,*">
+                                        <Image Width="18" Height="18"
+                                               HorizontalAlignment="Left"
+                                               Source="ms-appx:///Assets/Auth/microsoft.svg" />
+                                        <TextBlock Grid.Column="1"
+                                                   Text="Continue with Microsoft"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center" />
+                                    </Grid>
+                                </Button>
+
+                                <Button x:Name="GitHubSignInButton"
+                                        Style="{StaticResource AuthProviderButtonStyle}"
+                                        Background="#252A31"
+                                        Click="OnGitHubSignInClicked">
+                                    <Grid ColumnDefinitions="24,*">
+                                        <Image Width="19" Height="19"
+                                               HorizontalAlignment="Left"
+                                               Source="ms-appx:///Assets/Auth/github.svg" />
+                                        <TextBlock Grid.Column="1"
+                                                   Text="Continue with GitHub"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center" />
+                                    </Grid>
+                                </Button>
+
+                                <Button x:Name="GoogleSignInButton"
+                                        Style="{StaticResource AuthProviderButtonStyle}"
+                                        Background="#000000"
+                                        Click="OnGoogleSignInClicked">
+                                    <Grid ColumnDefinitions="24,*">
+                                        <Image Width="19" Height="19"
+                                               HorizontalAlignment="Left"
+                                               Source="ms-appx:///Assets/Auth/google.svg" />
+                                        <TextBlock Grid.Column="1"
+                                                   Text="Continue with Google"
+                                                   HorizontalAlignment="Center"
+                                                   VerticalAlignment="Center" />
+                                    </Grid>
+                                </Button>
+
+                                <Grid Margin="0,7" ColumnDefinitions="*,Auto,*">
+                                    <Border Height="1"
+                                            VerticalAlignment="Center"
+                                            Background="{ThemeResource ShellDividerBrush}" />
+                                    <TextBlock Grid.Column="1"
+                                               Margin="10,0"
+                                               Text="or"
+                                               FontSize="12"
+                                               Foreground="{StaticResource MutedTextBrush}" />
+                                    <Border Grid.Column="2"
+                                            Height="1"
+                                            VerticalAlignment="Center"
+                                            Background="{ThemeResource ShellDividerBrush}" />
+                                </Grid>
+
+                                <TextBox x:Name="MagicEmailBox"
+                                         Height="36"
+                                         PlaceholderText="Email"
+                                         AutomationProperties.Name="Email address" />
+
+                                <Button x:Name="MagicEmailButton"
+                                        Height="40"
+                                        HorizontalAlignment="Stretch"
+                                        Content="Continue with email"
+                                        Click="OnMagicEmailClicked" />
+
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Center"
+                                            Margin="0,3,0,0"
+                                            Spacing="4">
+                                    <TextBlock Text="New here?"
+                                               FontSize="14"
+                                               VerticalAlignment="Center" />
+                                    <HyperlinkButton Content="Sign up"
+                                                     FontSize="14"
+                                                     Padding="0"
+                                                     Click="OnShowSignUpClicked" />
+                                </StackPanel>
+
+                                <TextBlock x:Name="AuthStatusText"
+                                           Margin="0,6,0,0"
+                                           TextAlignment="Center"
+                                           Foreground="{StaticResource MutedTextBrush}"
+                                           TextWrapping="Wrap" />
+                            </StackPanel>
+
+
+                            <!-- SIGN UP -->
+                            <ScrollViewer x:Name="SignUpPanel"
+                                          Visibility="Collapsed"
+                                          VerticalScrollBarVisibility="Auto"
+                                          HorizontalScrollBarVisibility="Disabled">
+                                <StackPanel Width="420"
+                                            Margin="0,40"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Spacing="10">
+
+                                    <TextBlock Text="Sign up for GRID"
+                                               FontSize="24"
+                                               FontWeight="SemiBold"
+                                               HorizontalAlignment="Center"
+                                               Margin="0,0,0,14" />
+
+                                    <Button x:Name="SignUpMicrosoftButton"
+                                            Style="{StaticResource AuthProviderButtonStyle}"
+                                            Background="#1F83D3"
+                                            IsEnabled="False"
+                                            Opacity="0.45"
+                                            Click="OnSignUpMicrosoftClicked">
+                                        <Grid ColumnDefinitions="24,*">
+                                            <Image Width="18" Height="18"
+                                                   HorizontalAlignment="Left"
+                                                   Source="ms-appx:///Assets/Auth/microsoft.svg" />
+                                            <TextBlock Grid.Column="1"
+                                                       Text="Continue with Microsoft"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center" />
+                                        </Grid>
+                                    </Button>
+
+                                    <Button x:Name="SignUpGitHubButton"
+                                            Style="{StaticResource AuthProviderButtonStyle}"
+                                            Background="#252A31"
+                                            IsEnabled="False"
+                                            Opacity="0.45"
+                                            Click="OnSignUpGitHubClicked">
+                                        <Grid ColumnDefinitions="24,*">
+                                            <Image Width="19" Height="19"
+                                                   HorizontalAlignment="Left"
+                                                   Source="ms-appx:///Assets/Auth/github.svg" />
+                                            <TextBlock Grid.Column="1"
+                                                       Text="Continue with GitHub"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center" />
+                                        </Grid>
+                                    </Button>
+
+                                    <Button x:Name="SignUpGoogleButton"
+                                            Style="{StaticResource AuthProviderButtonStyle}"
+                                            Background="#000000"
+                                            IsEnabled="False"
+                                            Opacity="0.45"
+                                            Click="OnSignUpGoogleClicked">
+                                        <Grid ColumnDefinitions="24,*">
+                                            <Image Width="19" Height="19"
+                                                   HorizontalAlignment="Left"
+                                                   Source="ms-appx:///Assets/Auth/google.svg" />
+                                            <TextBlock Grid.Column="1"
+                                                       Text="Continue with Google"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center" />
+                                        </Grid>
+                                    </Button>
+
+                                    <Grid Margin="0,7" ColumnDefinitions="*,Auto,*">
+                                        <Border Height="1"
+                                                VerticalAlignment="Center"
+                                                Background="{ThemeResource ShellDividerBrush}" />
+                                        <TextBlock Grid.Column="1"
+                                                   Margin="10,0"
+                                                   Text="or"
+                                                   FontSize="12"
+                                                   Foreground="{StaticResource MutedTextBrush}" />
+                                        <Border Grid.Column="2"
+                                                Height="1"
+                                                VerticalAlignment="Center"
+                                                Background="{ThemeResource ShellDividerBrush}" />
+                                    </Grid>
+
+                                    <TextBlock Text="Email"
+                                               FontSize="12"
+                                               Foreground="{StaticResource MutedTextBrush}" />
+
+                                    <TextBox x:Name="SignUpEmailBox"
+                                             Height="36"
+                                             PlaceholderText="you@example.com"
+                                             AutomationProperties.Name="Signup email address" />
+
+                                    <CheckBox x:Name="SignUpConsentCheckBox"
+                                              HorizontalAlignment="Stretch"
+                                              VerticalContentAlignment="Top"
+                                              Checked="OnSignUpConsentChanged"
+                                              Unchecked="OnSignUpConsentChanged">
+                                        <TextBlock MaxWidth="380"
+                                                   FontSize="12"
+                                                   TextWrapping="Wrap">
+                                            <Run Text="By continuing, I confirm I understand and agree to the " />
+                                            <Hyperlink Click="OnGridTermsClicked">
+                                                <Run Text="GRID Terms of Service" />
+                                            </Hyperlink>
+                                            <Run Text=" and the " />
+                                            <Hyperlink Click="OnGridPrivacyClicked">
+                                                <Run Text="GRID Privacy Notice" />
+                                            </Hyperlink>
+                                            <Run Text=". If I am in the EEA or UK, I have read and agree to the " />
+                                            <Hyperlink Click="OnGridEeccdClicked">
+                                                <Run Text="European Electronic Communications Code Disclosure" />
+                                            </Hyperlink>
+                                            <Run Text="." />
+                                        </TextBlock>
+                                    </CheckBox>
+
+                                    <Button x:Name="CreateAccountButton"
+                                            Height="40"
+                                            HorizontalAlignment="Stretch"
+                                            Content="Create account"
+                                            IsEnabled="False"
+                                            Opacity="0.45"
+                                            Click="OnCreateAccountClicked" />
+
+                                    <StackPanel Orientation="Horizontal"
+                                                HorizontalAlignment="Center"
+                                                Margin="0,3,0,0"
+                                                Spacing="4">
+                                        <TextBlock Text="Already have an account?"
+                                                   FontSize="14"
+                                                   VerticalAlignment="Center" />
+                                        <HyperlinkButton Content="Sign in"
+                                                         FontSize="14"
+                                                         Padding="0"
+                                                         Click="OnShowSignInClicked" />
+                                    </StackPanel>
+
+                                    <TextBlock x:Name="SignUpStatusText"
+                                               Margin="0,6,0,0"
+                                               TextAlignment="Center"
+                                               Foreground="{StaticResource MutedTextBrush}"
+                                               TextWrapping="Wrap" />
+                                </StackPanel>
+                            </ScrollViewer>
+
+                        </Grid>
+                    </Grid>
+
+<!-- Keep the canonical workbench outline above TabView's native header surface. -->
                     <Border x:Name="MainContentPanelOutline" Grid.Row="0" Grid.RowSpan="3"
                             Background="Transparent" BorderBrush="{ThemeResource ShellDividerBrush}"
                             BorderThickness="1" CornerRadius="4" IsHitTestVisible="False" Canvas.ZIndex="20" />
@@ -515,8 +824,11 @@
                             Background="{ThemeResource ShellWorkbenchBrush}" BorderBrush="{ThemeResource ShellDividerBrush}"
                             BorderThickness="1" CornerRadius="4">
                         <Grid>
-                            <Grid.RowDefinitions><RowDefinition Height="30" /><RowDefinition Height="*" /></Grid.RowDefinitions>
-                            <Grid Grid.Row="0" ColumnDefinitions="Auto,Auto,Auto,*,Auto,Auto,Auto" BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="0,0,0,1">
+                            <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+                            <Border Grid.Row="0" BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="0,0,0,1">
+                            <Grid x:Name="ConsolePanelHeaderRow" Height="30" Margin="{StaticResource ShellInteriorHeaderInset}"
+                                  AutomationProperties.Name="Console panel header row"
+                                  ColumnDefinitions="Auto,Auto,Auto,*,Auto,Auto,Auto">
                                 <ToggleButton x:Name="TerminalTabButton" IsChecked="True" Width="86" Click="OnTerminalTabClicked" Content="Terminal" Style="{StaticResource ShellTabToggleStyle}" />
                                 <ToggleButton x:Name="OutputTabButton" Grid.Column="1" Width="76" Click="OnOutputTabClicked" Content="Output" Style="{StaticResource ShellTabToggleStyle}" />
                                 <ToggleButton x:Name="ProblemsTabButton" Grid.Column="2" Width="90" Click="OnProblemsTabClicked" Content="Problems" Style="{StaticResource ShellTabToggleStyle}" />
@@ -527,11 +839,12 @@
                                               Click="OnBottomPanelMaximizeClicked" ToolTipService.ToolTip="Maximize panel">
                                     <FontIcon FontFamily="Segoe Fluent Icons" FontSize="13" Glyph="&#xE740;" />
                                 </ToggleButton>
-                                <Button Grid.Column="6" Width="34" Height="30" Style="{StaticResource ShellChromeButtonStyle}"
+                                <Button x:Name="ClearTerminalButton" Grid.Column="6" Width="34" Height="30" Style="{StaticResource ShellChromeButtonStyle}"
                                         AutomationProperties.Name="Clear terminal" Click="OnClearTerminalClicked" ToolTipService.ToolTip="Clear terminal">
                                     <FontIcon FontFamily="Segoe Fluent Icons" FontSize="13" Glyph="&#xE74D;" />
                                 </Button>
                             </Grid>
+                            </Border>
                             <Grid Grid.Row="1">
                                 <Grid x:Name="TerminalSurface">
                                     <Grid.RowDefinitions><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
@@ -571,9 +884,11 @@
                     AutomationProperties.Name="Maximized bottom tool panel"
                     Background="{ThemeResource ShellWorkbenchBrush}" BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="1" CornerRadius="4" Visibility="Collapsed" Canvas.ZIndex="25">
                 <Grid>
-                    <Grid.RowDefinitions><RowDefinition Height="30" /><RowDefinition Height="*" /></Grid.RowDefinitions>
-                    <Grid Grid.Row="0" ColumnDefinitions="Auto,Auto,Auto,*,Auto,Auto,Auto"
-                          BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="0,0,0,1">
+                    <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+                    <Border Grid.Row="0" BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="0,0,0,1">
+                    <Grid x:Name="FullConsolePanelHeaderRow" Height="30" Margin="{StaticResource ShellInteriorHeaderInset}"
+                          AutomationProperties.Name="Maximized Console panel header row"
+                          ColumnDefinitions="Auto,Auto,Auto,*,Auto,Auto,Auto">
                         <ToggleButton x:Name="FullTerminalTabButton" IsChecked="True" Width="86"
                                       Click="OnFullTerminalTabClicked" Content="Terminal" Style="{StaticResource ShellTabToggleStyle}" />
                         <ToggleButton x:Name="FullOutputTabButton" Grid.Column="1" Width="76"
@@ -587,12 +902,13 @@
                                 ToolTipService.ToolTip="Restore panel">
                             <FontIcon FontFamily="Segoe Fluent Icons" FontSize="13" Glyph="&#xE73F;" />
                         </Button>
-                        <Button Grid.Column="6" Width="34" Height="30" Style="{StaticResource ShellChromeButtonStyle}"
+                        <Button x:Name="FullClearTerminalButton" Grid.Column="6" Width="34" Height="30" Style="{StaticResource ShellChromeButtonStyle}"
                                 AutomationProperties.Name="Clear maximized terminal" Click="OnClearTerminalClicked"
                                 ToolTipService.ToolTip="Clear terminal">
                             <FontIcon FontFamily="Segoe Fluent Icons" FontSize="13" Glyph="&#xE74D;" />
                         </Button>
                     </Grid>
+                    </Border>
                     <Grid Grid.Row="1">
                         <Grid x:Name="FullTerminalSurface">
                             <Grid.RowDefinitions><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
@@ -712,8 +1028,14 @@
         </Border>
 
         <Grid x:Name="LoadingState" Grid.Row="1" Canvas.ZIndex="40" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="12"><ProgressRing IsActive="True" />
-                <TextBlock Text="Loading connected games" AutomationProperties.LiveSetting="Polite" /></StackPanel>
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Center" Spacing="10">
+                <controls:StartupLoadingBar x:Name="StartupLoadingBarControl" HorizontalAlignment="Stretch" />
+                <TextBlock x:Name="StartupLoadingDetailText"
+                           HorizontalAlignment="Center"
+                           Opacity="0.72"
+                           Text="Starting Grid"
+                           AutomationProperties.LiveSetting="Polite" />
+            </StackPanel>
         </Grid>
         <Grid x:Name="ErrorState" Grid.Row="1" Canvas.ZIndex="41" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Visibility="Collapsed">
             <StackPanel MaxWidth="420" Margin="24" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="12">

@@ -1,0 +1,95 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = restaurant
+|name          = Al Dente's
+|sign          = AlDente's-GTAV-Logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = "''All the mamma mia you can eat''"
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 669-555-0117
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Al Dente's''' is an [[Italy|Italian]] restaurant chain featured in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'']]
+*The branch at the corner of [[Columbus Avenue]] and [[Amethyst Street]] is based on {{URL|https://maps.app.goo.gl/4XqBoQfkoZtpSmW59|21 West Street}} in New York.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game   = IV
+|header =
+|AlDente's-GTAIV-TheExchangeAlbanyAve.png|[[Albany Avenue]] and [[Calcium Street]], [[The Exchange (GTA IV)|The Exchange]], [[Algonquin]].
+|AlDente's-GTAIV-TheExchangeColumbusAve.png|[[Columbus Avenue]] and [[Amethyst Street]], The Exchange, Algonquin.
+|AlDente's-GTAIV-TheTriangleFrankfortAve.png|[[15 Frankfort Avenue]], [[The Triangle]], Algonquin.
+|TriangleBuilding-GTAIV-AlDente's.jpg|[[Triangle Building]], The Triangle, Algonquin.
+|AlDente-GTAIV-Willis.png|[[Big Willis Mall]], [[Willis]], [[Dukes]].
+}}
+{{Gallery
+|game   = CW
+|header =
+|AlDente's-GTACW-Willis.png|Big Willis Mall, Tudor Street and Saratoga Avenue, Willis, Dukes.
+|AlDente's-GTACW-TheTriangleFrankfortAve.png|[[Frankfort Avenue]] and [[Iron Street]], [[The Triangle]], [[Algonquin]].
+|AlDente's-GTACW-FishmarketSouth.png|[[Borlock Road]] and [[Calcium Street]], [[Fishmarket South]], Algonquin.
+|AlDente's-GTACW-TheTriangleColumbusAve.png|[[Triangle Building]], [[Columbus Avenue]] and [[Garnet Street]], [[The Triangle]], Algonquin.
+}}
+{{Gallery
+|game   = VO
+|header =
+|AlDente's-GTAV-VespucciCanals.png|[[Aguja Street]] and [[Magellan Avenue]], [[Vespucci Canals]].
+|AlDente's-GTAV-VespucciBeach.png|[[Magellan Avenue]] and [[Sandcastle Way]], [[Vespucci Beach]].
+|AlDente's-GTAV-Burton.png|[[Hawick Avenue]], [[Burton]].
+|AlDente's-GTAV-DelPerro.png|[[Prosperity Street Promenade]], [[Del Perro]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses with radio ads
+Fast casual restaurant chains

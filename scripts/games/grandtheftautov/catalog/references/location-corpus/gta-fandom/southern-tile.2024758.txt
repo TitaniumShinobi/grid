@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = hwstore
+|name           = Southern Tile
+|sign           =
+|image          = SouthernTile-GTAVee.png
+|caption        =
+|aka            = 
+|games          = {{games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Alta Street]], {{Location|v-strawberry|3}}
+|status         = defunct
+|accessible     = No
+|file_name      = <code>sc1_02_storge.ydr</code>
+|interior       = 
+|coords         =
+|map            =
+|map_caption    =
+}}
+
+[[LEAD]]
+'''Southern Tile''' is a tile store appearing in {{V}} and formerly in {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA V in Los Santos
+Former locations in GTA Online
+Hardware stores

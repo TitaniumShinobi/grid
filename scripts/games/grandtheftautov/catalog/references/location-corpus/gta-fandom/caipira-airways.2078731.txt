@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = airline
+|name          = Caipira Airways
+|sign          = 
+|image         = CaipiraAirways-GTAV-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Commercial airliner
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+<center>'''[[:Category:Airplanes|Aircraft]]'''</center>
+*[[Jet]]
+*[[Static Planes|Numerous static aircraft]]
+|weapons       = 
+|taglines      =
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Caipira Airways''' is a [[Brazil]]ian airline in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Airlines
+Businesses in GTA Online
+Businesses in GTA V

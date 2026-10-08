@@ -1,0 +1,58 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = One Armed Bandits
+|image        = OneArmedBandits-GTAO-Thumbnail.png
+|location     = Terminal
+|game           = {{games|O=y}}
+|type           = CasinoWork
+|fail         = Skylift is destroyed
+|for          = [[Agatha Baker]]
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] <small>(organization)</small>
+*1 to 8 players <small>(motorcycle club)</small>
+|todo         = 
+*Go to <span class="v-hud-location">Terminal</span>.
+*Locate the container.
+*Take a photo of the code on the <span class="v-hud-pickup">container</span>.
+*Send the photo to Ms. Baker.
+*Wait for Ms. Baker to respond.
+*Steal the <span class="v-hud-friendly">Skylift</span>.
+*Collect the <span class="v-hud-pickup">container</span>.
+*Deliver the container to the <span class="v-hud-location">Casino</span>.
+|reward = 
+*[[Money|Cash]], [[Chips]], and [[Reputation|RP]].
+|target = Container
+}}
+
+[[LEAD]]
+'''One Armed Bandits''' is a [[Casino Work]] mission featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update. It is a freeroam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[SECTION:3:Possible Container Locations]]
+<gallery position="center" hideaddbutton="true" spacing="small">
+OneArmedBandits-GTAO-Terminal-Container1.png
+OneArmedBandits-GTAO-Terminal-Container2.png
+OneArmedBandits-GTAO-Terminal-Container3.png
+OneArmedBandits-GTAO-Terminal-Container4.png
+OneArmedBandits-GTAO-Terminal-Container5.png
+OneArmedBandits-GTAO-Terminal-Container6.png
+OneArmedBandits-GTAO-Terminal-Container7.png
+OneArmedBandits-GTAO-Terminal-Container8.png
+OneArmedBandits-GTAO-Terminal-Container9.png
+OneArmedBandits-GTAO-Terminal-Container10.png
+OneArmedBandits-GTAO-Terminal-Container11.png
+OneArmedBandits-GTAO-Terminal-Container12.png
+OneArmedBandits-GTAO-Terminal-Container13.png
+OneArmedBandits-GTAO-Terminal-Container14.png
+OneArmedBandits-GTAO-Terminal-Container15.png
+OneArmedBandits-GTAO-Terminal-Container16.png
+OneArmedBandits-GTAO-Terminal-Container17.png
+OneArmedBandits-GTAO-Terminal-Container18.png
+OneArmedBandits-GTAO-Terminal-Container19.png
+OneArmedBandits-GTAO-Terminal-Container20.png
+</gallery>
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

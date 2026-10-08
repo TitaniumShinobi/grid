@@ -1,0 +1,72 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Sprunk
+|bawsaq      = {{BAWSAQ/Slider}} '''SPU'''
+|image       = Sprunk-HDUniverse-Logo.png
+|taglines    = 
+*"''The Essence of Life''"
+*"''Slurp Sprunk Mmm! Delicious''"
+*"''Put some sprunk in yer trunk''"
+*"''Overclock your life''" <small>(Sprunk Fuel)</small>
+|games       = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|type        = drink
+|locations   = 
+*[[Tudor]], [[State of Alderney|Alderney]]
+([[#Locations|See more]])
+|products    = [[#Products|Beverages]]
+|status      = active
+|lifeinvader = [[Lifeinvader/Sprunk|Sprunk]] [[File:LifeInvader_GTAV_Sprunk_Profile_large.png|40px|right|link=Lifeinvader/Sprunk]]
+|bleeter     = [[File:Bleeter GTAVpc Sprunk.png|40px|right]] @Sprunk
+}}
+
+[[LEAD]]
+'''Sprunk''' ([[BAWSAQ]]: '''SPU''') is a brand of {{WP|lemon-lime}} soft drink featured in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+Sprunk have a large factory in [[State of Alderney|Alderney]].
+
+<gallery position="center" widths="270px" bordercolor="#8BF00A">
+Sprunk-GTAIV-AlderneyFactory.png|The [[Sprunk Factory]] in [[State of Alderney|Alderney]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+<gallery position="center" spacing="small" caption="Products" bordercolor="#8BF00A" widths="250px">
+Sprunk-GTAIV-VendingMachine.jpg|'''Sprunk''' [[Vending Machines|vending machine]] in {{IV}}.
+SprunkBottle-GTAIV.png|'''Sprunk''' bottle in ''GTA IV''.
+SprunkBottleLight-GTAIV.png|'''Sprunk Light''' bottle in ''GTA IV''.
+Sprunk-GTAIV-MiniCan.jpg|'''Sprunk''' can in ''GTA IV''.
+SprunkTheme-GTAIV.gif|'''Sprunk''' theme for [[Niko Bellic|Niko's]] [[Mobile Phone|cell phone]] in ''GTA IV''.
+NikoDrinkingSprunkBottle-GTAIV.png|Niko Bellic drinking a bottle of '''Sprunk'''.
+Sprunk-GTAIV-CardboardBox.png|'''Sprunk''' box.
+Sprunk-GTAIV-VendingMachineModel.png|A '''Sprunk''' vending machine model.
+</gallery>
+
+<gallery position="center" spacing="small" caption="Advertising" bordercolor="#8BF00A" widths="250px">
+Sprunk-GTAIV-BillboardCervezaHeights.png|Vintage '''Sprunk''' [[:File:Sprunk-GTAIV-Billboard-Vintage-5CentsaBottle.png|billboard]] in [[Cerveza Heights]], [[Dukes]].
+Sprunk-GTAIV-BillboardTheExchange.png|'''Sprunk''' billboard in [[The Exchange (GTA IV)|The Exchange]], [[Algonquin]].
+Sprunk-GTAIV-BillboardAd.png|'''Sprunk''' advertisement in ''GTA IV''.
+Sprunk-GTAIV-Wallpaper.jpg|'''Sprunk''' logo in ''GTA IV''.
+SprunkSign-GTAIV-Dukes.png|'''Sprunk''' sign in [[Dukes]] in ''GTA IV''.
+Sprunk-Extreme.PNG|'''Sprunk Extreme''' logo used in the [[Z Games]] trailer in {{TBOGT}}.
+</gallery>
+
+<gallery position="center" spacing="small" caption="Vehicle sponsors" bordercolor="#8BF00A" widths="270px">
+BatiCustom-TLAD-front.jpg|A '''Sprunk''' [[Bati Custom]] in {{TLAD}}.
+</gallery>
+
+<gallery position="center" spacing="small" caption="Vehicles" bordercolor="#8BF00A" widths="270px">
+SprunkYankee-GTAIV-front.png|A '''Sprunk''' [[Yankee]] in ''GTA IV''. (<small>[[:File:SprunkYankee-GTAIV-rear.png|Rear quarter view]]</small>)
+SprunkBenson-GTAIV-front.png|A '''Sprunk''' [[Benson (HD Universe)|Benson]] in ''GTA IV''. (<small>[[:File:SprunkBenson-GTAIV-rear.png|Rear quarter view]]</small>)
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Energy drinks
+Food
+Soda brands

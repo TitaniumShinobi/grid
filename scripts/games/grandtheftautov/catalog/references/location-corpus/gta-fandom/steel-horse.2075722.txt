@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = MANUFACTURER
+|name        = Steel Horse
+|image       = SteelHorse-GTAO-Logo.png
+|type        = Automotive
+|games       = ''[[Grand Theft Auto IV]]<br>[[The Lost and Damned]]<br>[[The Ballad of Gay Tony]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|oldlogo1    = 
+|oldcaption1 =
+}}
+
+[[LEAD]]
+'''Steel Horse''' is a motorcycle manufacturer in the [[HD Universe]].
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Motorcycle Brands
+Vehicle manufacturers

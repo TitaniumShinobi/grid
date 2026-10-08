@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|type = shoppingcenter
+|image = VinewoodPlaza-GTAV.png
+|location = [[Power Street]] and [[Spanish Avenue]], [[Hawick]],  [[Los Santos (HD Universe)|Los Santos]]
+|games = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''Vinewood Plaza''' is a shopping plaza in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*24 Hr Photo
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]] <small>(accessible)</small>
+*[[Bite!]]
+*Coin-Op Laundry
+*Dollar & Crusher
+*Hair & Nails
+*LS Harmony Wellness Center
+*Pharmacy
+*[[Pizza This...]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Shopping malls

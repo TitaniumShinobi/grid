@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = Eugenics Incorporated
+|image         = EugenicsInc-GTAIV-logo.png
+|type          = medicine
+|business_type = Bioengineering company
+|founder       = [[Dr. Steven Von Singer]]
+|taglines      = "''Morality is none of our business!''"
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Eugenics Incorporated''' is a bioengineering company in the {{S}} founded by [[Dr. Steven Von Singer]] that appears in the {{HD}} games.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Chinatown Wars'']]
+*Eugenics Inc. also owns a cold storage facility in [[Industrial (GTA IV)|Industrial]]. This is where [[Wade Heston]]'s missions in [[Bohan]] takes place.
+
+<gallery position="center" spacing="small" widths="270px">
+EugenicsInc-GTAIV-Bohan.jpg|[[Jackhamer Street]], [[Industrial (GTA IV)|Industrial]], [[Bohan]].
+EugenicsIncorporated-GTAIV-WarehouseCopy.png|A copy of the facility on [[Odhner Avenue]], [[Acter]], [[State of Alderney|Alderney]].
+WadeHestonWarehouse_GTACW.png|The east side of the Jackhamer Street warehouse, used by [[Wade Heston]] in {{CW}}.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+<gallery position="center" spacing="small" widths="270px">
+EugenicsIncorporated-GTAV.png|[[Marathon Avenue]], [[Rockford Hills]].
+EugenicsInc-GTAV-LittleSeoul.jpg|[[Ginger Street]], [[Little Seoul]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Commercials

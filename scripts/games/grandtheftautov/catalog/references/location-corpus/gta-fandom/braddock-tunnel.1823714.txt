@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|name     = Braddock Tunnel
+|type     = tunnel
+|image    = 
+<gallery>
+BraddockTunnel-GTAV-SouthEnd.png|South End
+BraddockTunnel-GTAV-NorthEnd.png|North End
+</gallery>
+|games    = {{games|V=y|O=y}}
+|use      = Road Tunnel
+|location = [[Braddock Pass]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner = PoliceScanner-GTAV-Neighborhood-BraddockTunnel.ogg
+}}
+
+[[LEAD]]
+The '''Braddock Tunnel''' is a tunnel in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that runs through the eastern edge of [[Mount Chiliad (HD Universe)|Mount Chiliad]], and is located in [[Braddock Pass]], [[Blaine County]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Tunnels

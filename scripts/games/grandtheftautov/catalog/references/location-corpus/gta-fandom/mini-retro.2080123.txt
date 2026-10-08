@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|accessible = No
+|name = Mini Retro
+|sign = MiniRetro-GTAV-Sign.png
+|image = MiniRetro-GTAV-MirrorPark.png
+|type = clothesshop
+|games = {{games|V=y|O=y}}
+|status = active
+|phone = 1-999-MPRETRO
+|location = [[Mirror Park Boulevard]], [[Mirror Park]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Mini Retro''' is a clothing store that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

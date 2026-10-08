@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Fukaru
+|image         = Fukaru-GTAO-Logo.png
+|games         = {{games|O={{EEEV}} {{DLC|mplowrider}}}}
+|business_type = Tires and automotive parts company
+|founded       = 
+|products      = 
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Fukaru''' (Japanese: '''フカル''') is a [[Japan]]ese vehicle performance and parts company that appears in {{O}} as part of the [[GTA Online: Lowriders|Lowriders]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Lowriders
+Vehicle parts manufacturers

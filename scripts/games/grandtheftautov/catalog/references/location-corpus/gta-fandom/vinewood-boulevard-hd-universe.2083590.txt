@@ -1,0 +1,59 @@
+[[INFOBOX]]
+{{Infobox structure
+|name = Vinewood Boulevard
+|image = Vinewood_Blvd_-_GTA_V.jpg
+|caption = Tourists being entertained by performers near the [[Oriental Theater]] on the [[Vinewood Walk of Fame]].
+|games ={{Games|V=y|O=y}}
+|start = [[Las Lagunas Boulevard]]
+|end = [[Vinewood Park Drive]]
+|map = <gallery>
+VinewoodBoulevard-GTAV-Map.png|Map
+VinewoodBoulevard-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Vinewood Boulevard''' is an iconic east-west avenue featured in {{V}} and {{O}}. It runs through [[Downtown Vinewood]] in the city of [[Los Santos (HD Universe)|Los Santos]]. It is a part of [[Route 18]].
+
+[[SECTION:2:Places of Interest]]
+*[[Pacific Standard Public Deposit Bank]] <small>(accessible interior, corner of Alta Street)</small>
+*[[Vinewood Police Station]] <small>(corner of Elgin Avenue)</small>
+*[[Vinewood Star Tours]] headquarters
+*[[Vinewood Walk of Fame]]
+*[[Vinewood Wax Haven]]
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*[[Beefy Bill's Burger Bar]] <small>(stand)</small>
+*[[Bishop's WTF?!]] <small>(corner of Las Lagunas Boulevard)</small>
+*[[Blarneys World of Awesome]]
+*[[Blazing Tattoo]] <small>(accessible interior)</small>
+*[[The C Bomb]]
+*[[Chihuahua Hotdogs]] <small>(stand)</small>
+*[[Clappers]] <small>(corner of Power Street)</small>
+*[[Daily Globe]] <small>(corner of Meteor Street)</small>
+*[[Designer Slave]] <small>(corner of Alta Street)</small>
+*[[Fashion Vinewood]] <small>(corner of Alta Street)</small>
+*[[Fred's Store]] <small>(corner of Power Street)</small>
+*[[Jazz Desserts]] <small>(corner of Meteor Street)</small>
+*[[Guido's Take Out]]
+*[[Miss T]] <small>(corner of Alta Street)</small>
+*[[Mr. Gibson's Wandlust]]
+*[[Pizza This...]] <small>(corner of Meteor Street)</small>
+*[[Stargaze]]
+*[[The Pink Sandwich]]
+*[[T-Shirts XXS-XXXL]]
+*[[Tsunami]] <small>(corner of Power Street)</small>
+*[[Up-n-Atom Burger]] <small>(corner of Las Lagunas Boulevard)</small>
+*[[Vinewood Fannypackers Hostel & Motel]]
+*[[Vinewood India Building]]
+*[[Vinewood Liquor]]
+*Vinewood Mall <small>(corner of Power Street)</small>
+*[[Vinewood Video]]
+*[[Von Crastenburg Hotel]] <small>(corner of Power Street)</small>
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

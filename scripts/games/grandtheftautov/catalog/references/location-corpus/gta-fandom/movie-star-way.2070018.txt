@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=MovieStarWay-GTAV.jpg
+|caption=The street, as seen from Lifeinvader Headquarters.
+|games={{Games|V=y|O=y}}
+|start=[[South Boulevard Del Perro]], [[Rockford Hills]]
+|end=[[San Andreas Avenue]], [[Little Seoul]]
+|map=<gallery>
+MovieStarWay-GTAV-Map.png|Map
+MovieStarWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Movie Star Way''' is a north-south [[List of Street Names|street]] running through [[Rockford Hills]] and [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Backlot City]] <small>(southeast entrance)</small>
+*[[Kayton Towers]]
+*[[Richards Majestic|Richards Majestic Tower]]
+*[[Weazel Plaza]]
+
+[[SECTION:2:Businesses]]
+*[[BAWSAQ]] (Rockford Hills)
+*[[Bean Machine]] (Little Seoul)
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

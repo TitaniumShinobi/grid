@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = CoastCutters-GTAVe-Logo.png
+|name = Coast Cutters
+|taglines = 
+|type = Souvenir Shop
+|games = ''[[Grand Theft Auto V]]''<br />''[[Grand Theft Auto Online]]''
+|locations = [[Del Perro Pier]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Coast Cutters''' is a souvenir shop in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

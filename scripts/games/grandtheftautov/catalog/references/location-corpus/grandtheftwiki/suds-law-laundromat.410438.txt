@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 300x300px
+|caption = 
+|game_1 = GTA V
+|name = Suds Law Laundromat
+|type = Laundromat
+|owner = 
+|location = [[Macdonald St]]/[[Strawberry Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Suds Law Laundromat''' is a coin-operated Laundromat located at the corner of [[Macdonald St]] and [[Strawberry Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company may be related to [[Suds]], a Laundromat located further north on Strawberry Ave. The company [[Phone Numbers|phone number]] is ''555-0142'', which results in the caller being asked to check the company website for hours and availability.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|miscplace = y
+|miscplacename = PHARMACEUTICAL CORPORATION
+|business = y
+|activebiz = y
+|name = FriedMind Pharmaceutical Corporation
+|image = FriedMindTherapeutics-GTAOe-Logo-Black.png
+|caption = 
+|games = ''[[Grand Theft Auto Online]]''
+|locations = [[Eclipse Medical Tower]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|type = Pharmaceutical Corporation
+|founder = [[Isiah Friedlander]]
+|founded = c. [[2023]]
+}}
+
+[[LEAD]]
+'''FriedMind Pharmaceutical Corporation''' is a pharmaceutical corporation appearing in {{O}} as part of the [[GTA Online: Los Santos Drug Wars|Los Santos Drug Wars]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Los Santos Drug Wars
+Pharmaceutical companies

@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox structure
+|name              = Palomino Freeway
+|type              = freeway
+|number            = 
+|caption2          = 
+|image             = PalominoFreeway-GTAV.png
+|caption           = Overview of northeast Palomino Freeway immediately after [[Interstate 4]] ends.
+|games             = {{Games|V=y|O=y}}
+|highway_northend  = [[Senora Freeway]]
+|highway_southend  = [[Interstate 4|Olympic Freeway]]
+|highway_junctions = 
+|pscanner    = 
+|map         = 
+|mapcaption  = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+|altnames    = 
+}}
+
+[[LEAD]]
+The '''Palomino Freeway''' ('''[[Route 15]]''') is a freeway located in [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]] in {{V}} and {{O}}.
+
+[[SECTION:3:Exit 1 / [[Sustancia Road]]]]
+Exit 1 takes you through the middle of the Palomino Highlands past the [[NOOSE Headquarters|S.A. State Office]] and into the [[East Los Santos (HD Universe)|East Los Santos.]] The first signs for Exit 1 can be seen 300 Meters before the exiting then a final sign 100m before the exiting. Exit 1 has a Ramp Speed of 55mp/h (88&nbsp;km/h)
+
+[[SECTION:3:Exit 2 / [[Senora Way]] ([[Interstate 1]] North)]]
+Exit 2 takes you down Senora way past the [[Palmer-Taylor Power Station]], [[RON Alternates Wind Farm]] and [[Davis Quartz|Davis Quartz Quarry]] into Sandy Shores. Strangely there are no signs for Senora Way on the Palomino Freeway heading North. Exit 2 has a Ramp Speed of 55mp/h (88&nbsp;km/h)
+
+[[CATEGORIES]]
+Freeways
+Structures in GTA Online in San Andreas
+Structures in GTA V in San Andreas

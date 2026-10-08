@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = electronics
+|name          = Schmidt & Priss
+|image         = Schmidt-&-Priss-Logo.png
+|taglines      = ''"Crystal clear plasma technology"''
+|business_type = Eletronic Manufacturer
+|games         = {{Games|IV=y|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Schmidt & Priss''' is a electronics company in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Schmidt&Priss-GTAIV-CityHall.png|[[Calcium Street]], [[City Hall (GTA IV)|City Hall]], [[Liberty City (HD Universe)|Liberty City]]
+Schmidt&Priss-GTAIV-MiddleParkEast.jpg|[[Bismarck Avenue]], [[Middle Park East]]
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Electronics companies

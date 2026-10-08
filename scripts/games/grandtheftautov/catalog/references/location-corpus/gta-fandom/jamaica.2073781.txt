@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox country
+|image_flag      = Flag of Jamaica.svg
+|currency_ingame = Jamaican dollar
+}}
+
+[[LEAD]]
+'''Jamaica''' is an island nation located in the [[Caribbean Sea]]. It lies to the south of [[Cuba]] and west of Hispaniola.
+
+[[SECTION:4:''Grand Theft Auto III'', ''Advance'' and'' Liberty City Stories'']]
+*The [[Uptown Yardies]], led by [[King Courtney]], are a Jamaican gang.
+*[[K-JAH]], a radio station in ''[[Grand Theft Auto III]]'' and ''[[Grand Theft Auto: Liberty City Stories]]'', plays reggae music, which originated in Jamaica.
+
+[[SECTION:4:''Grand Theft Auto: Vice City'']]
+*[[Jeremy Robard]] says he has an office in Jamaica.
+
+[[CATEGORIES]]
+North American countries

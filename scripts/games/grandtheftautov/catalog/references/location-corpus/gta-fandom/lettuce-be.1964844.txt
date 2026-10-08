@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox_business
+|image = LettuceBe-GTAV-Logo.png
+|type = Vegetarian Cuisine Restaurant
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Del Perro]]<br>[[Hawick]]<br>[[Vespucci Canals]]
+}}
+
+[[LEAD]]
+'''Lettuce Be''' is a vegetarian restaurant chain featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small">
+LettuceBe-GTAV-VespucciCanals.png|[[Bay City Avenue]], [[Vespucci Canals]].
+LettuceBe-GTAV-DelPerro.png|[[Prosperity Street Promenade]], [[Del Perro]].
+LettuceBe-GTAV-Hawick.png|[[Hawick Avenue]] and [[Laguna Place]], [[Hawick]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Casual restaurant chains

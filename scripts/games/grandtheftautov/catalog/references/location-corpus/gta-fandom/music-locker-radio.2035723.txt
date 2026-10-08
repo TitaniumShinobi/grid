@@ -1,0 +1,56 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Music Locker Radio
+|logo         = MusicLockerRadio-GTAO-Logo.png
+|image        = 
+|caption      = 
+|aka          = 
+*The Music Locker
+*MLR
+|games        = {{games|O={{EEEV}} {{DLC|mpheist4}}}}
+|mentioned    = 
+|locations    = 
+*[[The Music Locker]], [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], [[United States of America|USA]] <small>(hosted)</small>
+*[[West Beach]], [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]] <small>(broadcasted; Keinemusik Beach Set only)</small>
+|taglines     = 
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:House radio stations|House]]
+|established  = 22 December [[2020]]
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 
+|host         = Unnamed Female Continuity Announcer
+|product      = 
+|radio_tracks = 109
+*39 <small>([[Moodymann]]'s playlist)</small>
+*23 <small>([[Palms Trax]]'s playlist)</small>
+*23 <small>([[Keinemusik]]'s Club Set playlist)</small>
+*24 <small>([[Keinemusik]]'s Beach Set playlist)</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+'''Music Locker Radio''' (also simply referred to as '''The Music Locker''' and '''MLR''') is a [[Radio Stations in GTA Online|radio station]] in ''[[Grand Theft Auto Online]]'' added just after [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update, on December 22, [[2020]]. It plays House, disco and techno music.
+
+[[SECTION:3:Radio Station]]
+*[[The Music Locker]] (All sets, except Keinemusik Beach Set; songs played in a different order)
+*[[Cayo Perico Beach Party]] (Keinemusik Beach Set)
+
+[[CATEGORIES]]
+Dance radio stations
+Dynamic mix radio stations
+Electronic radio stations
+House radio stations
+Media in GTA Online: The Cayo Perico Heist

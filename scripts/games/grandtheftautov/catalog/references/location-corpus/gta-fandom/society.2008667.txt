@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|restaurant= n
+|nightclub = y
+|bar = n
+|type = Nightclub
+|business=y
+|activebiz=y
+|image=Society_nightclub_GTAV_Logo.png
+|caption=
+|location=[[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible=No
+|games={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Society''' is a [[Nightclub|nightclub]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Nightclubs

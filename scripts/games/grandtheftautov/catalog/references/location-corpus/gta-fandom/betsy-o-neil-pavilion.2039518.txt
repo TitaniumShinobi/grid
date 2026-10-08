@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = performingarts
+|style          = 
+|landmark       = y
+|name           = Betsy O'Neil Pavilion
+|sign           = BetsyONeilPavilion-GTAVe-Logo.png
+|image          = BetsyONeilPavilion-GTAVee.jpg
+|caption        = 
+|aka            = Betsy O'Neil Playhouse
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|architecture   = Modernist
+}}
+
+[[LEAD]]
+The '''Betsy O'Neil Pavilion''', also known as the '''Betsy O'Neil Playhouse''', is a large performing arts center in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Modernist buildings
+Performing arts centers

@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|image = DonsCountryStore-GTAV-BuildingFront.jpg
+|sign = DonsCountryStore-GTAV-Sign.png
+|caption = 
+|name = Don's Country Store
+|taglines = 
+|type = Country Store
+|games = {{Games|V=y|O=y}}
+|locations = [[Paleto Bay Rest Stop]], [[Paleto Bay]]
+|reference =
+}}
+
+[[LEAD]]
+'''Don's Country Store''' is a country store in {{V}} and {{O}}. The store is located at the [[Paleto Bay Rest Stop]] in [[Paleto Bay]], [[Blaine County]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Stores

@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = restaurant
+|name          = La Vaca Loca
+|sign          = 
+|image_label   = O
+|image         = LaVacaLoca-GTAOe-2018Logo.png
+|caption       = '''La Vaca Loca''' logo introduced in {{O}}.
+|image_label2  = V
+|image2        = LaVacaLoca-GTAVe-Logo.png
+|caption2      = '''La Vaca Loca''' logo used in {{V}}.
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations_2|See more]])
+|business_type = Fast casual Mexican restaurant
+|founded       = 
+|founder       = 
+|ceo           = 
+|taglines      = "''Crazy Food @ Crazy Prices''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''La Vaca Loca''' is a fast casual [[Mexico|Mexican]] restaurant chain appearing in {{VO}}.
+
+[[SECTION:3:Locations]]
+*The Davis branch is a rendition of the former Chris Burgers restaurant, located at {{URL|https://maps.app.goo.gl/n5tdHTM3tE6fYpsd8|4444 Crenshaw Boulevard}} in the {{WP|Hyde Park, Los Angeles|Hyde Park}} neighborhood of {{WP|Los Angeles}}, {{WP|California}}, which has since been demolished.
+
+{{Clear}}
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game=VO
+|LaVacaLoca-GTAVee.jpg|[[Macdonald Street]], [[Davis]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast casual restaurant chains
+Mexican-themed restaurant chains

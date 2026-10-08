@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Jane's Unique Boutique
+|image       = JanesUniqueBoutique-GTAV.jpg
+|type        = Clothing Store
+|games       = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations   = [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Jane's Unique Boutique''' is a fashionable clothing store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores
+Stores

@@ -1,0 +1,67 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = technology
+|name          = Fruit
+|sign          = 
+|image         = Fruit-GTAV-Logo.png
+|caption       = '''Fruit''' logo in {{V}}.
+|aka           = Fruit Computers
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = [[1975]]
+|founder       = 
+|ceo           = [[Doug Hatchet]]
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+*''THINK.''
+*''THINK Simple.''
+*''THINK Minimalism.''
+*''THINK Overpriced.''
+*''THINK Fruit. THINK.''
+|bawsaq        = {{BAWSAQ/Slider}} '''FRT'''
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = [[Fruitcomputers.com]]
+|bleeter       = [[File:Bleeter GTAVpc FRUIT.png|40px]] @FRUIT
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Fruit''', also known as '''Fruit Computers''', is a technology corporation appearing in {{IV}}, {{EFLC}}, {{CW}}, {{V}}, {{O}}, and due to appear in {{VI}}.
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+While Fruit does not have a strong physical presence in {{IV}}, they make up for it in physical and Internet advertising. Advertisements for the [[IFruit|iFruit 3G]], as well as the uHelmet in {{TBOGT}}, can be seen in [[Star Junction]], and Fruit serve as sponsors for the [[WTF]] musical and ''[[A History of Liberty City]]'' documentary on [[CNT]]. Players can also visit Fruit's website, [[Fruitcomputers.com]], and explore details about the iFruit 3G. A Fruit computer with a synthesized female voice serves as the host of [[The Journey]] radio station, further implying the technological capabilities of Fruit. 
+
+As mentioned on the [[Outsourceforamerica.com|Outsource For America]] website, Fruit's CEO, Doug Hatchet, has outsourced all of Fruit's employees overseas, except himself. Doug now is the sole occupant of the Fruit Headquarters. All the company has left in it is a broken copier and an empty stapler.
+
+There is also a seemingly abandoned Fruit warehouse in [[Port Tudor]], [[State of Alderney|Alderney]], implied to be a former distribution warehouse.
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+{{Gallery
+|Fruit-GTAIV-SocialClubAvatar.png|'''Fruit''' logo avatar on [[Rockstar Games Social Club]].
+|IFruit3G-GTAIV.png|The first generation '''iFruit 3G''' in ''GTA IV''.
+|IFruit3G-GTAIV-Sponsor.png|iFruit 3G advert sponsoring a part of ''[[A History of Liberty City]]'' in ''GTA IV''.
+|IFruit-TLAD-IFruit3GAd.png|An '''iFruit''' 3G advert on [[banditmagazine.net]] in {{TLAD}}.
+|Fruit-GTAIV-Warehouse.png|'''Fruit''' warehouse in [[Port Tudor]], [[State of Alderney|Alderney.]]
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Electronics companies
+Operating Systems

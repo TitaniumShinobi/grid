@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = West Coast Classics
+|logo         = WestCoastClassics-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = WCC
+|games        = {{Games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Davis]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = ''Coming at you from the city of Davis - music from the days of the pager.''
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:Hip hop radio stations|Hip hop]]
+|established  = [[2013]]{{Ref|name=damfunk|ref=It celebrated its 10th anniversary in [[2023]], prior to the events of [[GTA Online: The Chop Shop|The Chop Shop]]. A pre-recorded mixtape of the nightclub party event was made available as part of DJ Pooh's December 2023 promotion.}}
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = [[Laura Stylez]] {{Small|(voice imaging)}}
+|artwork      = 
+|cast         = 
+|frequency    = 95.6 FM
+|host         = [[DJ Pooh]]
+|product      = 
+|radio_tracks = 
+*17 {{Small|(''GTA V'' and ''GTA Online''; original version)}}
+*29 {{Small|(''GTA V''; [[Grand Theft Auto V: Enhanced Edition|enhanced version]])}}
+*46 {{Small|(''GTA Online''; enhanced version)}}
+|radio_length = 
+}}
+
+[[LEAD]]
+'''West Coast Classics''' '''(WCC)''' is a [[Radio Stations in GTA V|radio station]] featured in {{V}} and {{O}} that plays classic {{WP|West Coast hip-hop}}.
+
+[[CATEGORIES]]
+Dynamic mix radio stations
+Hip hop radio stations
+Media in GTA Online
+Media in GTA V

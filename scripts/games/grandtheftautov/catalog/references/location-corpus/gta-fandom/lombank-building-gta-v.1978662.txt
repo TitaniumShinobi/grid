@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = office
+|name           = Lombank Building
+|sign           = 
+|image          = LombankTower-GTAV.png
+|caption        = The Lombank Building as seen from the southwest.
+|aka            = 
+|games          = {{games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Power Street]] & [[Vespucci Boulevard]], [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]]
+|use            = Office
+|owner          = 
+|operator       = 
+|occupants      = [[Lombank]]
+|businesses     = 
+|employees      = 
+|structure_type = [[:Category:High-rise buildings|High-rise building]]
+|architecture   = 
+|floors         = 
+|opentimes      = 
+|capacity       = 
+|garagecap      = 
+|parkingcap     = 
+|accessible     = 
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+The '''Lombank Building '''is an office building in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+High-rise buildings

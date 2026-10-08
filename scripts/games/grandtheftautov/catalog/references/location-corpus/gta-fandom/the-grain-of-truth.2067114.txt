@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = grocerystore
+|name          = The Grain of Truth
+|sign          = TheGrainOfTruth-GTAV-Logo.png
+|image         = GrainOfTruthBawsaq-GTAV.png
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     =
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Organic grocery chain
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|taglines      = 
+|bawsaq        = {{BAWSAQ/Slider}} '''GOT'''
+|lcn           = 
+|status        = active
+|lifeinvader   = [[Lifeinvader/Grain of Truth|Grain of Truth]][[File:Lifeinvader-GTAV-GrainofTruth.png|40px|right|link=Lifeinvader/Grain of Truth]]
+|website       = '''grainoftruth.net'''
+}}
+
+[[LEAD]]
+'''The Grain of Truth''' ([[BAWSAQ]]: GOT) is a chain of organic food grocery stores in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|GrainOfTruth-GTAVee-Morningwood1.jpg|[[West Eclipse Boulevard]] and [[Morningwood Boulevard]], [[Morningwood]].
+|GrainOfTruth-GTAVee-Morningwood2.jpg|[[Perth Street]] and [[North Rockford Drive]], Morningwood.
+|GrainOfTruth-GTAVee-DelPerro.jpg|[[Red Desert Avenue]], [[Del Perro]].
+|GrainOfTruth-GTAVee-KoreanPlazaNorthBldg.png|[[Korean Plaza]], [[Calais Avenue]], [[Little Seoul]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses with radio ads
+Businesses with websites
+Grocery store chains

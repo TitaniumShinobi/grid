@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = carwash
+|name           = Hands On Car Wash
+|sign           = HandOnCarWash-GTAV-Logo.png
+|image          = HandOnCarWash-GTAV.jpg
+|caption        = View of the car wash. {{Small|([[:File:HandsOnCarWash-GTAVee-NightView.png|Night view]])}}
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Innocence Boulevard]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|taglines       = 
+|status         = active
+|use            = 
+|structure_type = 
+|architecture   = [[:Category:Googie buildings|Googie]]
+|phone          = 555-0169
+|accessible     = Yes
+|file_name      = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Hands On Car Wash''' is a [[Car Washes|car wash]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Car washes
+Googie buildings

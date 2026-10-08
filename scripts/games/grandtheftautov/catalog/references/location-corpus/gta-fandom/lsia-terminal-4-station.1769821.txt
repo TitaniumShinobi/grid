@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = gtavsubway
+|type           = subwaystation
+|name           = LSIA Terminal 4 Station
+|sign           = 
+|image          = <gallery>
+LSIATerminal4-GTAV.png|Entrance
+LSIATerminal4Station-GTAV-Platform.png|Platform
+</gallery>
+|caption        = '''LSIA Terminal 4 Station''' in ''[[Grand Theft Auto V]]''.
+|aka            = LSIA Terminal 4
+|games          = {{games|V=y|O=y}}
+|location       = [[New Empire Way]], [[Los Santos International Airport (HD Universe)|LSIA]], [[Los Santos (HD Universe)|Los Santos]]
+|status         = active
+|pscanner       = 
+|use            = 
+|owner          = 
+|operator       = [[Los Santos Transit]]
+|occupants      = 
+|businesses     = 
+|employees      = 
+|station_type   = Subway station
+|platforms      = 1
+|tracks         = 2
+|lines          = 
+|transfer       = 
+|clockwise      = 
+|anticlockwise  = [[LSIA Parking Station]]
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = <gallery>
+LSIATerminal4Station-GTAV-Map.png|LSIA Terminal 4 Station
+LSIATerminal4Station-GTAV-LSTMap.png|LST Map
+</gallery>
+|map_caption    = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''LSIA Terminal 4 Station''' is an underground [[Los Santos Transit]] station in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located at Terminal 4 of the [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Subway stations

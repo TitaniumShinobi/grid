@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace       =y
+|miscplacename   =ABANDONED METH LAB
+|image           =TPI_Meth_Lab-GTAV-Front_View.png
+|caption         =Overview from the air
+|location        =[[Great Chaparral]], [[Los Santos County]].
+|accessible      =No
+|products        =[[Methamphetamine]] <small>(Formerly)</small>
+|related         =[[Liquor Ace]]
+|owner           =[[Trevor Philips Enterprises]] <small>(Formerly)</small><br>[[IAA]]
+|games           ={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Trevor Philips Industries Meth Lab''' is an isolated drug manufacturing facility located on an un-named dirt road in [[Great Chaparral]], appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County

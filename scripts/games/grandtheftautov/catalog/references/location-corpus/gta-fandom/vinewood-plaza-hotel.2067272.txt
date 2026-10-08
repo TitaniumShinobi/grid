@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = midrise
+|name           = Vinewood Plaza
+|image          =
+<gallery>
+VinewoodPlazaBuilding-GTAVee-Front.png|Front
+VinewoodPlazaBuilding-GTAVee-Rear.png|Rear
+</gallery>
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Meteor Street]], [[Downtown Vinewood]]
+|architecture   = [[:Category:Neoclassical buildings|Neoclassical]]
+|floors         = 14
+|accessible     = No
+|file_name      =
+|map            =
+|map_caption    =
+}}
+
+[[LEAD]]
+The '''Vinewood Plaza''' is a mid-rise building appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hotels

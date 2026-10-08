@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|image = 
+<gallery>
+Walker-GTAV-Logo.png|Walker
+WalkerLogistics-GTAV-Logo.png|Walker Logistics
+</gallery>
+|caption = 
+|locations = [[Signal Street]], [[Elysian Island]], [[Los Santos (HD Universe)|Los Santos]]
+|name = WALKER
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|type = 
+}}
+
+[[LEAD]]
+'''Walker''' is a business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:3:Walker - Port of Los Santos]]
+The business' ocean storage warehouse is located on [[Plaice Place]] in the [[Port of Los Santos]]. It is a large green building with "NO PARKING ON THIS SIDE" written on its left wall, and "OCEAN STORE" written on its roof.
+
+Two small sailboats are located in the rear dry-dock, as well as an unusable [[Tug (boat)|Tug]].
+
+[[SECTION:3:Walker - Port of LS]]
+<gallery position="center" spacing="small" widths="270px" hideaddbutton="true">
+WalkerLogistics-GTAV-PortLSWarehouse.jpg|The Walker building in the [[Port of Los Santos]].
+WalkerLogistics-GTAV-NoParkingSide.jpg|The "no parking" side of the building.
+WalkerLogistics-GTAV-PortLSRear.jpg|The left-rear side.
+WalkerLogistics-GTAV-PortLSRear2.jpg|The right-rear side.
+
+</gallery>
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Businesses in GTA Online
+Businesses in GTA V
+Warehouses

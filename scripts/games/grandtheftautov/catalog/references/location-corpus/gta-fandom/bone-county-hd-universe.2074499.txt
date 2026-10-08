@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = county
+|name           = Bone County
+|sign           = 
+|image          = 
+|aka            = 
+|games          = 
+|mentioned      = {{Games|IV=y|O=y}}
+|location       = 
+|seal           = 
+|seal2          = 
+|flag           = 
+|mayor          = 
+|president      = 
+|established    = 
+|country        = [[United States of America]]
+|state          = Unknown {{Small|(either [[State of San Andreas (HD Universe)|San Andreas]] or the [[Unnamed Western U.S. State]])}}
+|county         = 
+|capital        = 
+|pop            = 
+|motto          = 
+|pscanner       = 
+|unlockedby     = 
+|unlockedafter  = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Bone County''' is a county located in the western [[United States of America]], mentioned in {{IV}} and the [[GTA Online: Agents of Sabotage|Agents of Sabotage]] update for {{O}}.
+
+[[SECTION:2:Known Locations]]
+*[[Fort Carson (HD Universe)|Fort Carson]]
+*[[Area 69 (HD Universe)|Area 69]]
+
+[[CATEGORIES]]
+Counties
+Unseen locations

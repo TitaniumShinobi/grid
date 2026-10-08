@@ -1,0 +1,148 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = county
+|name           = Blaine County
+|sign           = 
+|image          = BlaineCounty-GTAV-Montage.png
+|caption        = Left to right from top: [[Sandy Shores]] with a [[Mount Josiah]] sunset in the background, [[Paleto Forest]], the [[El Gordo Lighthouse]], [[Paleto Bay]], [[Pala Springs Aerial Tramway]] station atop [[Mount Chiliad (HD Universe)|Mount Chiliad]], [[Senora National Park]] and [[Beam Me Up]] in the [[Grand Senora Desert]]
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|location       = 
+|seal           = [[File:Blaine County-Seal-GTAV.png|center|thumb|100px|Blaine County's official seal.]]
+|seal2          = 
+|flag           = 
+|mayor          = 
+|president      = 
+|established    = [[1823]]
+|country        = [[United States of America]]
+|state          = [[State of San Andreas (HD Universe)|San Andreas]]
+|county         = 
+|capital        = 
+|pop            = 
+|motto          = ''The Morning Glory County''
+|pscanner       = 
+|unlockedby     = 
+|unlockedafter  = 
+|map            = 
+<gallery>
+BlaineCounty-GTAV-Map.jpg|Map
+BlaineCounty-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption    = Map of Blaine County.
+}}
+
+[[LEAD]]
+'''Blaine County''' is a county featured in {{V}} and {{O}}, located in southern [[State of San Andreas (HD Universe)|San Andreas]]. It is bordered by [[Los Santos County]] to the south.
+
+[[SECTION:2:Inhabited Communities in Blaine County]]
+
+
+[[SECTION:3:Towns]]
+*[[Grapeseed]] ({{WP|Bakersfield, California|Bakersfield}}/{{WP|Lamont, California|Lamont}}/{{WP|Grapevine, California|Grapevine}})
+*[[Sandy Shores]] ({{WP|Desert Shores, California|Desert Shores}}/{{WP|Bombay Beach, California|Bombay Beach}})
+*[[Paleto Bay]] ({{WP|Morro Bay, California|Morro Bay}}/{{WP|Cambria, California|Cambria}})
+*[[Harmony]] ({{WP|Oasis, Riverside County, California|Oasis}})
+
+[[SECTION:3:Villages and Unincorporated Communities/Settlements]]
+*[[North Chumash]] ([https://en.wikipedia.org/wiki/Point_Mugu Point Mugu])
+*[[Stab City]] ({{WP|Slab City, California|Slab City}})
+*[[Galilee]] ({{WP|Mecca, California|Mecca}}/{{WP|Niland, California|Niland}})
+*[[Dignity Village]]
+*[[Cape Catfish]] ({{WP|Pigeon Point Lighthouse|Pigeon Point}}/{{WP|Pescadero, California|Pescadero}})
+
+[[SECTION:3:Mountains, Ranges, & Valleys]]
+*[[Chiliad Mountain State Wilderness]] ({{WP|San Gorgonio Wilderness}})
+*[[Raton Canyon]] ({{WP|Bixby Creek (California)|Bixby Creek}})
+*[[Mount Chiliad (HD Universe)|Mount Chiliad]] ({{WP|San Gorgonio Mountain Mount|San Gorgonio}}/{{WP|Bear Mountain (ski area)|Big Bear Mountain}})
+*[[Braddock Pass]] ({{WP|Gaviota Tunnel, California|Gaviota Pass}})
+*[[Mount Gordo]] ({{WP|San Jacinto Peak|Mount San Jacinto}})
+*[[San Chianski Mountain Range]] ({{WP|San Jacinto Mountains}})
+*[[Mount Josiah]] ({{WP|Mt. Baldy}})
+
+[[SECTION:3:Places of Interest]]
+*[[140 Zancudo Avenue]]
+*[[0232 Paleto Boulevard]]
+*[[1893 Grapeseed Avenue]]
+*[[4401 Procopio Drive]]
+*[[4584 Procopio Drive]]
+*[[Alamo Sea]] ({{WP|Salton Sea}})
+*[[Beam Me Up]] ({{WP|Salvation Mountain}})
+*[[El Gordo Lighthouse]] ({{WP|Pigeon Point Lighthouse|Pigeon Point}})
+*[[Fort Zancudo]] ({{WP|Naval Base Ventura County}}/{{WP|Vandenberg Space Force Base|Vandenberg Air Force Base}})
+*[[Grand Senora Desert]] ({{WP|Sonoran Desert}}/{{WP|Mojave Desert}})
+*[[Heart Attack Beach]] ({{WP|San Gregorio State Beach|San Gregorio State Beach}})
+*[[Lago Zancudo]] ({{WP|Mugu Lagoon|Mugu Lagoon}})
+*[[Paleto Forest]] ({{WP|San Bernardino National Forest|San Bernardino National Forest}})
+*[[Trevor's Trailer]]
+
+[[SECTION:3:Notable Roads & Streets]]
+*[[Great Ocean Highway]]
+*[[Interstate 1]]
+*[[Senora Freeway]]
+*[[U.S. Route 68]]
+
+[[SECTION:3:Airfields]]
+*[[Sandy Shores Airfield]] ({{WP|Apple Valley Airport (California)|Apple Valley Airport}})
+*[[McKenzie Field]] ({{WP|Bakersfield Municipal Airport|Bakersfield Municipal Airport}})
+
+[[SECTION:2:Businesses]]
+{{Columns
+|
+*[[24-Hour Chinese Restaurant]]
+*[[24/7 (HD Universe)|24/7]]
+*[[Alamo Tattoo Studio]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Animal Ark]]
+*[[Auto Repairs]]
+*[[Beeker's Garage]]
+*[[Blaine County Board of Tourism]]
+*[[Blaine County Savings Bank]]
+*Buddy's Trucking
+*[[Checkout!]]
+*[[Clucking Bell Farms]]
+*[[Derelict Motel]]
+*[[Discount Store]]
+*[[Don's Country Store]]
+*[[Fleeca]]
+*[[Globe Oil]]
+*[[Grapeseed Supermarket]]
+*[[Helmut's European Autos]]
+*[[Herr Kutz Barber]]
+*[[Hookies]]
+*[[Larry's RV Sales]]
+|
+*[[Liquor Ace]]
+*[[Liquor Market]]
+*[[Los Santos Customs]]
+*[[LTD Gasoline]]
+*[[O'Neil Ranch]] {{Small|(formerly/destroyed)}}
+*[[O'Sheas Barbers Shop]]
+*[[Paleto Tattoo]]
+*[[Pop's Pills]]
+*[[Rex's Diner]]
+*[[RON]]
+*[[Sandy's Gas Station]]
+*[[Sonar Collections Dock]]
+*[[Suburban]]
+*[[Taco Bomb]]
+*[[The Hen House]]
+*[[The Paint Shop]]
+*[[Trevor Philips Enterprises]]
+*[[Up-n-Atom Burger]]
+*[[Willie's Supermarket]]
+*[[Xero]]
+*[[Yellow Jack Inn]]
+*[[You Tool]]
+}}
+
+[[SECTION:2:Radio Stations]]
+*[[Blaine County Radio]]
+*[[Rebel Radio]]
+
+[[CATEGORIES]]
+Counties
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Zones

@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|image = RehabsOfAmerica-GTAV-Logo.png
+|taglines = "''Warning - Extremely Addictive!''"
+|type = rehabilitation company
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''ReHabs of America''' is a rehabilitation company which operates the [[Parsons Rehabilitation Center]] in the [[HD Universe]] of ''Grand Theft Auto''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

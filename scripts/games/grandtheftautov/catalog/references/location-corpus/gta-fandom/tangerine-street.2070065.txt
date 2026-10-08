@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=TangerineStreet-GTAVee.jpg
+|caption=The street, as seen from [[Mirror Park Boulevard]].
+|games={{Games|V=y|O=y}}
+|start=[[Mirror Park Boulevard]]
+|end=[[Bridge Street]]
+|map=<gallery>
+TangerineStreet-GTAV-Map.png|Map
+TangerineStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Tangerine Street''' is a short street in {{V}} and {{O}}, located in [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+*[[Downtown Cab Co.]]
+
+[[SECTION:2:Businesses]]
+*[[Starlite Motel]] <small>(corner of Mirror Park Boulevard)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicles
+|name          = Nagasaki
+|sign          = 
+|image_label   = 
+|image         = Nagasaki-GTAO-Logo.svg
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|V=y|O=y|VI=y}}
+|locations     = 
+|business_type = 
+*Vehicle manufacturer
+*Aerospace manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|divisions     = Nagasaki Racing Team
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Nagasaki ''' (Japanese: '''ナガサキ''') is a [[Japan]]ese vehicle and aerospace manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Motorcycle Brands
+Vehicle manufacturers

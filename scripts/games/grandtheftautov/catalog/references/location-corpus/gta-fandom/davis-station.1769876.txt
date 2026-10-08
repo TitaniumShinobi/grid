@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = gtavsubway
+|type           = subwaystation
+|name           = Davis Station
+|sign           = 
+|image          = DavisStation-GTAV.png
+|caption        = '''Davis Station''' in ''[[Grand Theft Auto V]]''.
+|aka            = Davis
+|games          = {{games|V=y|O=y}}
+|location       = [[Carson Avenue]], [[Davis]], [[South Los Santos]], [[Los Santos (HD Universe)|Los Santos]]
+|status         = active
+|pscanner       = 
+|use            = 
+|owner          = 
+|operator       = [[Los Santos Transit]]
+|occupants      = 
+|businesses     = 
+|employees      = 
+|station_type   = Subway station
+|platforms      = 
+|tracks         = 2
+|lines          = 
+|transfer       = 
+|clockwise      = [[Pillbox South Station]]
+|anticlockwise  = 
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = <gallery>
+DavisStation-GTAV-Map.png|Davis Station
+DavisStation-GTAV-LSTMap.png|LST Map
+</gallery>
+|map_caption    = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''Davis Station''' is a [[Los Santos Transit]] station in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Davis]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Subway stations

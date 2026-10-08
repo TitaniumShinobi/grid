@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = 
+|type = Grain manufacturing company
+|taglines =
+|image = UnionGrainSupply-GTAV-Logo.png
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Union Grain Supply Inc.''' is a grain manufacturing company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Companies

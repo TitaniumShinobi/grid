@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = drink
+|name          = Flow Water
+|sign          = FlowWater-Logo-GTAV.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y|VI=y}}
+|business_type = {{WP|Enhanced water}}
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = [[#Flavors|Flavors]]
+|taglines      = 
+*"''Hydrogen & Oxygen Infusion''"
+*"''Vitamin Rich & Alkaline Free''"
+*"''It's time to make hydration Flow''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Flow Water''' is a brand of flavored bottled water appearing in {{V}} and {{O}}, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Businesses with radio ads
+Water brands

@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Coffee house<br>Restaurant
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Mission Row]]<br>[[Morningwood]]<br>[[Pillbox Hill]]
+|name = Ground & Pound Café
+|image = Ground&Pound-GTAV-Logo.png
+}}
+
+[[LEAD]]
+'''Ground & Pound Café''' is a coffee house and restaurant chain that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+There are four stores in [[Los Santos (HD Universe)|Los Santos]]:
+<gallery position="center" spacing="small" widths="250px">
+Ground&Pound-GTAV-PillboxHill.png|[[San Andreas Avenue]] and [[Low Power Street]], [[Pillbox Hill]].
+Ground&Pound-GTAV-IAAPlaza.png|[[International Affairs Agency|IAA]] plaza, [[Pillbox Hill]].
+Ground&Pound-GTAV-MissionRow.png|[[Vespucci Boulevard]], [[Mission Row]].
+Ground&Pound-GTAV-Morningwood.png|[[Morningwood Boulevard]], [[Morningwood]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Café chains

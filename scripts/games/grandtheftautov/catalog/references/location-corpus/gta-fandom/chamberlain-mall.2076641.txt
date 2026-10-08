@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox location
+|name        = Chamberlain Mall
+|type        = shoppingcenter
+|status      = active
+|accessible  = Yes <small>([[Discount Store]] only)</small>
+|image       = ChamberlainMall-GTAVee.jpg
+|caption     = General view of Chamberlain Mall.
+|businesses     = 
+*[[Aguila Burrito]]
+*[[Checkout!]]
+*[[Discount Store]]
+*[[Family Dental]]
+|location    = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|map         = Chamberlain_Plaza_GTAV_Map_Location.jpg
+|map_caption = Map location.
+|games       = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Chamberlain Mall''' is a small strip-style mall in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Aguila Burrito]]
+*[[Checkout!]]
+*[[Discount Store]] <small>(Accessible)</small>
+*[[Family Dental]]
+
+{{Clear}}
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Shopping malls

@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox location
+|image          =
+<gallery>
+CelltowaBuilding-GTAVee-West.png|West side
+CelltowaBuilding-GTAVee-South.png|South side
+</gallery>
+|games          = {{Games|V=y|O=y}}
+|location       = [[Little Seoul]] and [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+|architecture   = [[:Category:Modernist buildings|Modernist]]
+|use            = [[Celltowa]] headquarters
+|floors         = 20
+|map            = CelltowaBuilding-GTAV-Map.png
+|map_caption    = Location on the map (red).
+|accessible     = No
+}}
+
+[[LEAD]]
+The '''Celltowa Building''' is an office building appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mid-rise buildings
+Modernist buildings

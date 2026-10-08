@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicleparts
+|name          = Chepalle
+|sign          = 
+|image_label   = 
+|image         = Chepalle-GTAO-Logo.png
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mplowrider}}|VI=y}}
+|business_type = Tire manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Chepalle''' (pronounced ''keh-PAH-leh'') is an [[Italy|Italian]] rubber and urethane company appearing in {{O}} as part of the [[GTA Online: Lowriders|Lowriders]] update, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Lowriders
+Businesses in GTA VI
+Vehicle parts manufacturers

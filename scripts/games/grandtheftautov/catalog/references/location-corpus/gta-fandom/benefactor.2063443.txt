@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Benefactor
+|sign          = Benefactor-GTAO-TextLogo.png
+|image         = Benefactor-GTAO-Logo.png
+|caption       = The '''Benefactor''' logo in {{O}}.
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = [[Benefactor-Gallivanter Dealership]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Automotive manufacturer
+|founded       = {{WP|Lenningen}}, [[Germany]]
+|founder       = 
+|ceo           = 
+|divisions     = Benefactor Racing Division
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Benefactor''' is a [[Germany|German]] luxury automotive manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+{{Gallery
+|BenefactorGallivanterDealership-GTAVe-SpanishAve-Day.png|[[Benefactor-Gallivanter Dealership]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

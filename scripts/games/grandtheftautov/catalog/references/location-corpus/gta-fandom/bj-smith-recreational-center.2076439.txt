@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = park
+|name           = B.J. Smith Recreation Center and Park
+|sign           = BJSmithRecreationalCenter-GTAVe-Logo.png
+|image          = BJSmithRecreationalCenter-GTAVe-Infobox.png
+|caption        = 
+|aka            = BJ Smith Recreational Center
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Carson Avenue]], [[Chamberlain Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|status         = active
+|structure_type = Recreational center & park
+|owner          = 
+|operator       = 
+|occupants      = 
+|employees      = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+The '''B.J. Smith Recreation Center and Park''' is a recreational center in {{V}} and {{O}}, located on [[Carson Avenue]] in [[Chamberlain Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Recreational areas
+Urban parks

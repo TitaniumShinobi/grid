@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = alcohol
+|name          = 
+|image         = Jakey'sLager-GTAIV-BetaLogo.png
+|oldlogo1      = 
+|oldlogo2      = 
+|taglines      = "''The Benchmark for all Lager since 1933''"<br>''"Drink Outdoors With Jakey's"''
+|founded       = [[1933]]
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations     = [[BOABO]], [[Broker]]
+}}
+
+[[LEAD]]
+'''Jakey's Lager''' is a brand of lager in the [[HD Universe]] of the {{S}}.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V

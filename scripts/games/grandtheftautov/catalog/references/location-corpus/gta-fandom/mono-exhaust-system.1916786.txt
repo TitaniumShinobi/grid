@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = autoparts
+|name          = Mono Exhaust System
+|sign          = 
+|image         = MonoExhaustSystem-GTO-Logo.png
+|games         = {{games|IV=y|EFLC=y|O=y}}
+|business_type = Exhaust system manufacturer
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Mono Exhaust System (MES)''' is an exhaust system manufacturer that appears in {{IV}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Vehicle parts manufacturers

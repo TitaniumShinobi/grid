@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|cinema = y
+|business = y
+|activebiz = y
+|name = Weazel Morningwood
+|altnames = Weazel Theater 
+|image = WeazelMorningwood-GTAV-LogoInGame.png
+|caption = Weazel Morningwood
+|type = Cinema
+|founded = [[1930]]
+|games = {{Games|V=y|O=y}}
+|location = [[Morningwood Boulevard]] and [[Cougar Avenue]], [[Morningwood]]
+|map = WeazelMorningwood-GTAV-Map.png
+}}
+
+[[LEAD]]
+The '''Weazel Morningwood''', also known simply as '''Weazel Theater''', is a movie theater appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Cinemas
+Theatres

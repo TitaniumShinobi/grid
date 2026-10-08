@@ -1,0 +1,160 @@
+[[INFOBOX]]
+{{Infobox_location
+|image         = RockfordHills-GTAV-Montage.png
+|caption       = Clockwise from top: [[Rockford Hills City Hall]], residential area, [[Boulevard Del Perro]], [[Portola Drive]], [[Burton]].
+|games         = {{Games|V=y|O=y}}
+|location      = [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner      = PoliceScanner-GTAV-Neighborhood-RockfordHills.ogg
+|type          = city
+|map           = 
+<gallery>
+RockfordHills-IngameGPS-GTAV-Map.png|Rockford Hills
+RockfordHills-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS). The neighborhood of <font color=060cf8>Burton</font> is also part of <font color=red>Rockford Hills</font>.
+|map2          = RockfordHills_GTAV_Official_Map_Boundary.png
+|map_caption2  = Satellite view of '''Rockford Hills''' (official manual).
+|district=y}}
+
+[[LEAD]]
+'''Rockford Hills''' is an incorporated affluent city in [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]], in {{V}} and {{O}}. The area also contains the smaller neighbourhood of [[Burton]].
+
+[[SECTION:2:Places of Interest]]
+*[[The Archipelago]]
+*[[City of Los Santos Public Library]]
+*[[Cottage Park]] 
+*[[Epsilon Building]]
+*[[Mount Zonah Medical Center]] 
+**Harper Unit for Clinical Psychology ({{WP|Cedars-Sinai Medical Center|Cedars-Sinai}} annex building)
+*[[Portola Trinity Medical Center]] 
+*[[Richards Majestic]] 
+*Rockford Gardens Park ({{URL|https://maps.app.goo.gl/N4BVq3iPqyyTFpJ39|Beverly Gardens Park}})
+*[[Rockford Hills Church]] 
+*[[Rockford Hills City Hall]] 
+*[[Rockford Hills Fire Station]]
+*[[Rockford Hills Police Station]]
+*[[Rockford Hills Sign]] 
+*[[Rockford Plaza]] 
+*[[Weazel Dorset]] 
+*[[Weazel Plaza]] 
+*[[Wenger Institute]]
+
+[[SECTION:2:Businesses]]
+Rockford Hills is home to higher-end businesses, in particular fashion as well as food.
+{{Columns
+|
+*[[Aiongold]]
+*[[AKAN Records]] 
+*[[Anna Rex]] 
+*[[Augury Insurance]] 
+*[[Barbone]] 
+*[[BAWSAQ]] 
+*[[Betta Pharmaceuticals]]
+*[[Bite!]] 
+*[[Bob Mulét]] 
+*[[Brawls]] 
+*[[Café Redemption]] 
+*[[Chaps]]
+*[[Chébs Eaterie]] 
+*[[Cluckin' Bell (HD Universe)|Cluckin' Bell]] (in Rockford Plaza)
+*[[Caca]] 
+*[[Cockatoos]] 
+*[[Cougari]] 
+*[[Couture Criminalli]] 
+*[[Croq-A-Hoop]] 
+*[[Dalique]] 
+*[[Didier Sachs (HD Universe)|Didier Sachs]] 
+*[[Enema]] 
+*[[Eugenics Incorporated]]
+*[[Facepalm Cosmetics]] 
+*[[Fleeca]] 
+*[[Fruit of the Vine]]
+*[[Fuque]] 
+*[[G&B]]
+*[[Guido Zenitalia]] 
+*[[Gussét]] 
+*[[Helga Kreppsohle]] 
+*[[Homme Gina]] 
+*[[Île de Stylo]] 
+*[[International Online Unlimited]] 
+*[[Java Update Coffeeshop]]
+*[[Jonny Tung]] 
+*[[Judith Mantovani]] 
+*[[KnoWay]] {{Small|(''GTA Online'')}} 
+|
+*[[Leopolds]] 
+*[[Les Bianco]] (in Rockford Plaza)
+*[[Lifeinvader Office]] 
+*[[Limey's Juice and Smoothies]]
+*[[Little Teapot]] 
+*[[Luxury Autos]] 
+*[[Maracas]] 
+*[[Max Renda]] 
+*[[Mors Mutual Insurance]] 
+*[[MyMy]] 
+*[[Noodle Exchange]] 
+*[[Pegasus Concierge]]
+*[[Pendulus]] 
+*[[Penris]] 
+*[[Percii]] 
+*[[Perseus]] 
+*[[Pfister Design]] 
+*[[Pill-Pharm]] 
+*[[Ponsonbys]] 
+*[[Pump & Run Gymnasium]] 
+*[[Quincy Biro]] 
+*[[Rockford Dorset Hotel]] 
+*[[Santo Capra]] 
+*[[Sebastian Dix]] 
+*[[Sessanta Nove]] 
+*[[Swallow]] 
+*[[Tatas on Portola]] 
+*[[Tim Vapid (business)|Tim Vapid]] 
+*[[TSLC]] 
+*[[Ushero Bros]] 
+*[[Val-de-Grâce]] 
+*[[Rockford Hills Valet Parking|Valet Parking]] 
+*[[Vangelico]] 
+*[[Vinewood Bar & Grill]]
+*[[Von Crastenburg Hotel]] 
+*[[Wags to Riches]] 
+*[[Winfrey Castiglione]] 
+*[[Wup et Dux]] 
+}}
+
+[[SECTION:2:Roads and Streets]]
+{{Columns
+|
+*[[Abe Milton Parkway]]
+*[[Boulevard Del Perro]]
+*[[Carcer Way]]
+*[[Caesar Place]]
+*[[Dorset Drive]]
+*[[Dorset Place]]
+*[[Dunstable Drive]]
+*[[Dunstable Lane]]
+*[[Eastbourne Way]]
+*[[Edwood Way]]
+*[[Greenwich Way]]
+*[[Heritage Way]]
+|
+*[[Mad Wayne Thunder Drive]]
+*[[Marathon Avenue]]
+*[[Movie Star Way]]
+*[[Portola Drive]]
+*[[Rockford Drive]]
+*[[San Vitus Boulevard]]
+*[[South Boulevard Del Perro]]
+*[[South Mo Milton Drive]]
+*[[South Rockford Drive]]
+*[[Spanish Avenue]]
+*[[Steele Way]]
+*[[West Eclipse Boulevard]]
+}}
+
+[[CATEGORIES]]
+Cities
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = AKEDO
+|image       = Akedo-GTAO-Logo.png
+|type        = videogame
+|games       = {{games|O={{EEEV}} {{DLC|mpheist3}}}}
+}}
+
+[[LEAD]]
+'''AKEDO''' (Japanese: アーケード, ''Ākēdo,'' lit. "Arcade") is a [[Japan]]ese video game developer featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Diamond Casino Heist
+Video game developers

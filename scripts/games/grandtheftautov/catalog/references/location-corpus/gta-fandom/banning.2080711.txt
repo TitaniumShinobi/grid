@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|image = Banning-GTAV.png
+|caption = Overview of Banning.
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|location = [[Port of Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = <gallery>
+Banning-IngameGPS-GTAV-Map.png|Banning
+Banning-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Banning.ogg
+}}
+
+[[LEAD]]
+'''Banning''' is a small industrial area in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in the [[Port of Los Santos]], south of [[Davis]], [[Rancho]], and [[La Puerta]], and east of [[Los Santos International Airport (HD Universe)|Los Santos International Airport]].
+
+[[SECTION:2:Roads and Streets]]
+*[[Autopia Parkway]]
+*[[Dutch London Street]]
+*[[Signal Street]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

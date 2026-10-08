@@ -512,9 +512,9 @@ public sealed record CanonicalCatalogPayload
     public ImmutableArray<CatalogSourceRecord> Sources { get; }
     public ImmutableArray<SourceArtifactRecord> Artifacts { get; }
     public ImmutableArray<AdapterBoundCatalogSourceRevisionRecord> SourceRevisions { get; }
-    public ImmutableArray<CanonicalKnowledgeRecord> KnowledgeRecords { get; }
+    public ImmutableArray<CanonicalKnowledgeRecord> KnowledgeRecords { get; init; }
     public ImmutableArray<TerminologyAssertion> TerminologyAssertions { get; }
-    public ImmutableArray<RelationshipAssertion> RelationshipAssertions { get; }
+    public ImmutableArray<RelationshipAssertion> RelationshipAssertions { get; init; }
     public ImmutableArray<CatalogFileEvidenceReceipt> FileEvidenceReceipts { get; }
     public ImmutableArray<CatalogReferenceEvidenceReceipt> ReferenceEvidenceReceipts { get; }
     public ImmutableArray<EvidenceBinding> EvidenceBindings { get; }

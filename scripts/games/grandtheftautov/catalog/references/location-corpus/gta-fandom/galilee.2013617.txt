@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = TOWN
+|name = Galilee
+|image = Galilee-GTAV-AerialView.jpg
+|caption = Aerial view of Galilee.
+|games = {{Games|V=y|O=y}}
+|location = [[Mount Chiliad (HD Universe)|Mount Chiliad]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Galilee.ogg
+|map           = 
+<gallery>
+Galilee-GTAV-Map.png|Galilee
+Galilee-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Galilee''' is a small unincorporated community located at the foot of [[Mount Chiliad (HD Universe)|Mount Chiliad]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] and west of [[Grapeseed]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is situated west of [[Grapeseed]] on the northern shores of the [[Alamo Sea]]. The community appears to have some buildings running off the grid while others use generators for power.
+
+[[SECTION:2:Businesses]]
+*[[Millars Boat Shop]]
+*[[Millar's Fishery Co]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Towns
+Zones

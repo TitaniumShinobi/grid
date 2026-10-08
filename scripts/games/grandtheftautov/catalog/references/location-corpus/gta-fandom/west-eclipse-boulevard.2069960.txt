@@ -1,0 +1,53 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=WestEclipseBoulevard-GTAV.jpg
+|caption=West Eclipse Boulevard in [[Richman (HD Universe)|Richman]].
+|games={{Games|V=y|O=y}}
+|start=[[Route 1|Great Ocean Highway]]
+|end=[[South Mo Milton Drive]] and [[Strangeways Drive]]
+|map=<gallery>
+WestEclipseBoulevard-GTAV-Map.png|Map
+WestEclipseBoulevard-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''West Eclipse Boulevard''' is a major avenue located in northern [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+'''Pacific Bluffs'''
+*[[Hill Valley Church]] <small>(corner of [[North Rockford Drive]])</small>
+
+'''Richman'''
+*[[Los Santos Golf Club]] <small>(corner of [[Mad Wayne Thunder Drive]] and [[Dorset Drive]])</small>
+*[[Richman Mansion]] <small>(corner of [[Americano Way]] and [[Hardy Way]])</small>
+*[[The Richman Hotel]] <small>(corner of [[Hardy Way]] and [[Greenwich Place]])</small>
+
+'''Rockford Hills'''
+*[[Cottage Park]] <small>(corner of [[Greenwich Place]] and [[Dunstable Drive]])</small>
+*[[Michael's Mansion]] <small>(corner of [[Portola Drive]] and [[Rockford Drive]])</small>
+*[[Josh Bernstein's House]] <small>(corner of [[Mad Wayne Thunder Drive]])</small>
+
+[[SECTION:2:Businesses]]
+'''Morningwood'''
+*[[Café Redemption]] <small>(corner of Morningwood Boulevard)</small>
+*[[Enoteca Kerplonk]] <small>(106 West Eclipse Boulevard)</small>
+*[[Oldie But Goodie Antiquities]] <small>(corner of [[North Rockford Drive]])</small>
+*[[The Mighty Bush]] <small>(Morningwood)</small>
+
+'''Pacific Bluffs'''
+*[[Xero]] [[Gas Stations|gas station]] <small>(corner of [[Interstate 2|Del Perro Freeway]])</small>
+
+'''Rockford Hills'''
+*[[Muscle Gymnasium]]
+
+'''West Vinewood'''
+*[[Les Bianco]]
+*[[Society]]
+*[[Total Bankers]] <small>(corner of [[South Mo Milton Drive]])</small>
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

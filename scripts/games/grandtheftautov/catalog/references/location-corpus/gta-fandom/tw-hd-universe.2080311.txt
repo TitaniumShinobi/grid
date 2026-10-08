@@ -1,0 +1,59 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Totally Wireless Internet Cafe
+|image = Tw@_Internet_Cafe_(2008).png
+|caption = TW@ logo in ''Grand Theft Auto IV''.
+|taglines = "''nu-media caffeine solutions provider''"
+|type = internetcafe
+|games = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations = 
+*[[Liberty City (HD Universe)|Liberty City]]
+*[[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Totally Wireless Internet Cafe''' ('''TW@'''; pronounced ''{{WP|twat}}'') is an [[Internet in GTA IV|internet]] café appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+In {{IV}}, the player can access TW@ cafés at all times and use computers to browse in-game [[Websites in GTA IV|websites]] for $1. The player can also rob between $9 and $199 from the [[Cash Register|cash register]], which will result in a one-star [[Wanted Level in GTA IV|wanted level]]. In the introductory cutscene to the [[Logging On]] mission, Roman actually says the name of the establishment, confirming that it is indeed pronounced "twat".
+
+In {{TBOGT}}, as well as {{TLAD}} in the standalone {{EFLC}} version, the computers have a new wallpaper: a dark background with a silhouette of the Liberty City skyline and the phrase "I ♥ LC". This may be a reference to the "{{WP|I Love New York}}" logo, which the name of the mission "[[I Luv LC]]" also references.
+
+[[SECTION:3:Locations]]
+In {{IV}}, the [[State of Alderney|Alderney]] branch is a rendition of {{URL|https://maps.app.goo.gl/gCRvhY7QpdFJCXPU7|415 Washington Street}} in Hoboken, New Jersey. Interestingly, 415 Washington Street appears to be an amalgam of the TW@ building and the neighboring tenement to the left with the green cladding.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+There is an internet café on each of the three main islands. There are none in [[Bohan]].
+
+<gallery position="center" spacing="small" widths="270px">
+TW@-GTAIV-Outlook.jpg|[[Outlook]], [[Broker]].
+TW@-GTAIV-NorthHolland.png|[[North Holland]], [[Algonquin]].
+TW@-GTAIV-Alderney.png|[[Berchem]], [[State of Alderney|Alderney]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+TW@-GTACW-Outlook.png|Outlook, Broker.
+TW@-GTACW-NorthHolland.PNG|North Holland, Algonquin.
+Tw@-GTACW-LowerEaston.png|[[Lower Easton]], Algonquin
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small" widths="250px">
+Tw@-GTAV-LittleSeoul.png|[[Vespucci Boulevard]], [[Little Seoul]], opposite Arirang Plaza.
+TW@-GTAV-LittleSeoul2.png|Vespucci Boulevard, Little Seoul, opposite Arirang Plaza.
+TW@_GTAV_Little_Seoul_Palomino_Ave.png|[[Palomino Avenue]], Little Seoul.
+Tw@-GTAV-GingerStreet.png|[[Ginger Street]], Little Seoul, opposite [[Lombank]].
+Tw@-GTAV-KoreanPlaza.png|[[Korean Plaza]], [[Calais Avenue]], Little Seoul.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Internet café chains

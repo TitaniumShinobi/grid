@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Paleto Bay Financial Services Inc.
+|image = PaletoBayFinancialServicesInc-GTAV.jpg
+|type = Financial Services
+|games = {{Games|V=y|O=y}}
+|locations = [[Paleto Bay]], [[Blaine County]]
+}}
+
+[[LEAD]]
+'''Paleto Bay Financial Services Inc.''' is a business in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

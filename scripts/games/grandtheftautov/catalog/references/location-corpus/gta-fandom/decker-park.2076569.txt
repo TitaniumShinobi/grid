@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|type        = park
+|name        = Decker Park
+|image       = DeckerPark-GTAVe.png
+|caption     = Overview of the park.
+|location    = [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+|games       = {{Games|V=y|O=y}}
+|map         = DeckerPark-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Decker Park''' is a recreational park in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+Whilst the park does not have any official name signage in game, it is marked on the official game map as Decker Park.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Skate parks
+Urban parks

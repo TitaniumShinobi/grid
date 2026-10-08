@@ -1,0 +1,52 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = coffee
+|name          = Cheap Shot Coffee
+|sign          = 
+|image         = CheapShotCoffee-GTAVe-FullLogo.png
+|caption       = 
+|image2        = CheapShotCoffee-GTAVe-TextLogo.png
+|caption2      = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[IAA Headquarters]], [[Pillbox Hill]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]]
+*[[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]] <small>(Formerly)</small>
+*[[Cavalry Boulevard]], [[Ludendorff]], [[State of North Yankton|North Yankton]]
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = Active
+}}
+
+[[LEAD]]
+'''Cheap Shot Coffee''' is a coffeehouse chain corporation featured in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:Los Santos]]
+<gallery position="center" spacing="small" widths="300px">
+CheapShotCoffee-GTAVe-FIBIAAPlaza.png|[[IAA Headquarters|IAA]]/[[FIB Headquarters]] Plaza, [[Pillbox Hill]]
+CheapShotCoffee-GTAVe-EclipseBoulevard.png|[[Eclipse Boulevard]], [[West Vinewood]] (formerly)
+</gallery>
+
+[[SECTION:3:Ludendorff]]
+<gallery position="center" spacing="small" widths="300px">
+CheapShotCoffee-GTAV-Ludendorff.png|[[Cavalry Boulevard]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Café chains

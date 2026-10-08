@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Sweatbox
+|image = Sweatbox Logo GTAV.png
+|type = Clothing Comapny
+|games = [[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]}}
+
+[[LEAD]]
+'''Sweatbox''' is a clothing brand in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fashion brands

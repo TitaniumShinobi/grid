@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|purchasable   = 
+|type          = fashion
+|name          = Farshtunken International
+|sign          = FarshtunkenInternational-GTAV-Logo-Texture.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 310 [[Portola Drive]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = High-end jewelry and accessories
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Farshtunken International''' is a high-end jewelry and accessories business appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', and due to appear in {{VI}}.
+
+[[SECTION:3:Locations]]
+The store on Portola Drive in {{V}} is a replica of a {{WP|Harry Winston, Inc.}} store located at 310 North {{WP|Rodeo Drive}} that was demolished and replaced in 2017. The distinctive cylindrical structure on the roof of the rear of the building is based on the rear of the {{WP|Lladró}} building which used to be located at 408 N. Rodeo Drive. The building is currently occupied by a {{WP|Chanel}} branch, and the back structure no longer exists.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+FarshtunkenInternational-GTAV-DaylightFront.png|Front view of 310 [[Portola Drive]] (night [[:File:FarshtunkenInternational-GTAV-NightFront.png|view]]).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Fashion brands
+Jewelry store chains

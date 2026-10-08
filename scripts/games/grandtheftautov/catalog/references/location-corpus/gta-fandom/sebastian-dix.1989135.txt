@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|name = Sebastian Dix
+|caption = The logo
+|location = [[Eastbourne Way]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|altnames = 
+|products = 
+|bawsaq = 
+|image = SebastianDix-GTAV-Logo.png
+|darklogo = y
+|image_size = 300
+|condition = Active
+|taglines = 
+|reference =Christian Dior 
+|games = {{Games|V=y|O=y}}
+|type = Eyewear and Clothing Company
+|map = 
+}}
+
+[[LEAD]]
+'''Sebastian Dix''' is a luxury brand featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Location]]
+A single dedicated boutique is found in Rockford Hills.
+
+<gallery position="center" spacing="small" widths="270px">
+SebastianDix-GTAV-DaylightFront.png|[[Dorset Drive]] ([[:File:SebastianDix-GTAV-NightFront.png|night view]]).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

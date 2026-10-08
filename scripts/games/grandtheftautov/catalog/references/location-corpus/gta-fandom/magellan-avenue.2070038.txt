@@ -1,0 +1,56 @@
+[[INFOBOX]]
+{{Infobox structure
+|image      = MagellanAvenue-GTAV.png
+|caption    = Magellan Avenue in Vespucci.
+|games      = {{Games|V=y|O=y}}
+|start      = [[Bay City Avenue]]
+|end        = [[Del Perro Freeway]]
+|map        = 
+<gallery>
+MagellanAvenue-GTAV-Map.png|Map
+MagellanAvenue-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Magellan Avenue''' is a long street located in [[Del Perro]], [[Del Perro Beach]], [[Vespucci]], [[Vespucci Canals]] and [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Del Perro Pier Beach Maintenance Department]]
+*[[Floyd's Apartment]]
+*[[Vespucci Suites]] {{Small|(La Puerta, under construction)}}
+
+[[SECTION:2:Businesses]]
+
+
+[[SECTION:3:Del Perro]]
+*[[Al Dente's]] {{Small|(corner of Aguja Street)}}
+*Al Dente's {{Small|(corner of Sandcastle Way)}}
+*[[Seagrass Herbals]]
+
+[[SECTION:3:Vespucci]]
+*[[A&R Market]] {{Small|(corner of Vespucci Boulevard)}}
+*[[Beach Buddie]] 
+*[[Beach Combover Barber]]
+*[[Beachwalk & Talk]]
+*[[The Bean Machine|Bean Machine]]
+*[[Nut Buster]] {{Small|(corner of Cortes Street)}}
+*[[Oldie But Goodie Antiquities]] {{Small|(corner of Conquistador Street)}}
+*[[Steamboat Beers]]  {{Small|(corner of Palomino Avenue)}}
+*[[Venetian|Venetian Hotel & Restaurant]] {{Small|(corner of Conquistador Street)}}
+*[[VesPooches]]
+*[[Vespucchill]]
+
+[[SECTION:3:Vespucci Canals]]
+*[[Al Dente's]] {{Small|(corner of Aguja Street)}}
+*[[Alphabetz]]
+*[[Ice Maiden]] {{Small|(corner of Aguja Street)}}
+*[[Fat Losers Liposuction]]
+*[[Fruit of the Vine]] {{Small|(corner of Cortes Street)}}
+*[[The Germinator Plants & Gardens]]
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

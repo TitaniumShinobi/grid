@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|accessible = No
+|name = Belly-Up Fish & Seafood Processing Plant
+|image = Belly-UpFish&SeafoodProcessingPlant-GTA3-logo.png
+|type = Fish & Seafood Processing Plant.
+|games = {{Games|III=y|A=y|LCS=y|IV=y|EFLC=y|V=y|O=y}}
+|location = 
+'''3D Universe:'''
+*[[Liberty City (3D Universe)|Liberty City]]
+'''HD Universe:'''
+*Unknown
+}}
+
+[[LEAD]]
+'''Belly-Up Fish & Seafood Processing Plant''' is a seafood processing plant appearing in {{III}}, {{A}}, {{LCS}}, {{IV}}, {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Advance
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA Online
+Businesses in GTA V
+Food and drink companies

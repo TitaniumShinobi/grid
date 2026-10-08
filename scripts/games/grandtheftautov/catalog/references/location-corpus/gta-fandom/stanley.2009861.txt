@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = MANUFACTURER
+|name = Stanley
+|image = File:Logo-stanley.png
+|type = Automotive
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|reference = {{WP|Fordson}}<br>{{WP|John Deere}}
+}}
+
+[[LEAD]]
+'''Stanley''' is a tractor manufacturer in the [[HD Universe]], featured in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Agricultural Companies
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle manufacturers

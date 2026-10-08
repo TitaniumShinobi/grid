@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = CamelTowing-GTAV-Sign.png
+|founded = 
+|taglines =
+|type = Towing Company
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Camel Towing''' is a towing company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Companies

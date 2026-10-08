@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|name       = Gussét
+|image      = Gussét-GTAV-Logo.png 
+|caption    =
+|locations  = 
+*[[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Morningwood]], Los Santos
+|accessible = No
+|bawsaq     = 
+|darklogo   = y
+|taglines   = "Under Couture"
+|games      = {{Games|V=y|O=y}}
+|type       = clothingstore
+|map        = 
+}}
+
+[[LEAD]]
+'''Gussét''' is a high-end underwear brand in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|Gussét-GTAVee-RockfordHills.jpg|[[Portola Drive]] and [[Eastbourne Way]], [[Rockford Hills]] (night [[:File:Gusset-GTAV-NightFront.png|view]]).
+|Gussét-GTAVee-Morningwood.jpg|[[Morningwood Boulevard]], [[Morningwood]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

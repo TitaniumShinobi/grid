@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox business|
+|name = The Gentry Manor Hotel
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = [[:Category:Hotels|Hotel]]
+|owner = 
+|location = Corners of [[Didion Dr]], [[Eclipse Blvd]], [[Gentry Ln]] and [[Las Lagunas Blvd]] in [[West Vinewood]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = [[Gentry Does It]]<br />[[Paparazzo - The Sex Tape]]
+|employee = [[Maria (GTA V)|Maria]] (<small>housekeeper</small>)<br />[[Andrea]]
+}}
+
+[[LEAD]]
+'''The Gentry Manor Hotel''' is a hotel located between the corners of [[Didion Dr]], [[Eclipse Blvd]], [[Gentry Ln]], and [[Las Lagunas Blvd]] in [[West Vinewood]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Hotels

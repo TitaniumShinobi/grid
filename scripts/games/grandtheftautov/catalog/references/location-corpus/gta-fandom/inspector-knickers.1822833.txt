@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|shop=y
+|business=y
+|activebiz=y
+|name = Inspector Knickers
+|image = Inspector_Knickers_GTAV_Logo.jpg|thumb
+|caption=Logo
+|type = Lingerie Store
+|games = {{Games|V=y|O=y}}
+|location = [[Hawick Avenue]], [[Alta]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible=No
+}}
+
+[[LEAD]]
+'''Inspector Knickers''' is a lingerie retail store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Location(s)]]
+The store can be found on [[Hawick Avenue]], [[Alta]]. [[Trevor Philips]] will occasionally be found leaving the store dressed in women's lingerie when the player [[Switch Scenes|switches]] to him. The store is otherwise inaccessible to the player.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Clothing stores

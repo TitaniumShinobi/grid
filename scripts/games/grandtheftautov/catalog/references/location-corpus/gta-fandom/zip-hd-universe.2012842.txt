@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|name = ZIP
+|image = ZIP-GTAV-Logo.png
+|caption = ZIP logo in {{V}}.
+|type = clothingstore
+|games = {{Games|V=y|O=y}}
+|locations = [[Del Perro]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''ZIP''' is a mid-range clothing store chain appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="250px">
+ZIP-GTAVe-ProsperityStreetPromenade.png|[[Prosperity Street Promenade]], [[Del Perro]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

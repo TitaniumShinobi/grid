@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 0115 Bay City Avenue
+|image = 0115BayCityAvenue-GTAO.jpg
+|caption = The exterior of the building.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Medium-end apartments
+|garage = 6 vehicles <br /> 2 bikes
+|price = $150,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5|location=[[Tug Street]], [[La Puerta]]}}
+
+[[LEAD]]
+'''0115 Bay City Avenue''' is a [[Safehouses in GTA Online|safehouse]] located on [[Tug Street]] in [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]] featured in ''[[Grand Theft Auto Online]]''.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]150,000 and includes a 6-car garage.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Properties in GTA Online
+Safehouses in GTA Online

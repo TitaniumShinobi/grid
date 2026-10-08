@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=GangAttack GTAO Wiki ref 56.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Panorama Drive]]
+|end=-
+|map=<gallery>
+SmokeTreeRoad-GTAV-Map.png|Map
+SmokeTreeRoad-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Smoke Tree Road''' is a two-way road in {{V}} and {{O}}, located in [[Sandy Shores]], that begins at [[Panorama Drive]] and dead-ends in the [[Senora National Park]].
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

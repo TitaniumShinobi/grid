@@ -107,9 +107,11 @@ internal static class CanonicalSelectorAndInstructionChecks
         AssertThrows<ArgumentException>(() => CanonicalSelectorProjectionEngine.Select(locationRoot, unresolvedNode.PathId),
             "Organizational nodes cannot be committed as canonical records.");
         var namedOnly = Query(fixture, KnowledgeKind.Location, null, includeIdentifierOnly: false);
-        Assert(namedOnly.ImmediateChildren.Any(value => value.KnowledgeRecordId == fixture.LocationParent.Id) &&
-               namedOnly.ImmediateChildren.All(value => value.KnowledgeRecordId != fixture.LocationChild.Id),
-            "Identifier-only records can be hidden without renaming or deleting canonical records.");
+        var namedOnlyParent = namedOnly.ImmediateChildren.Single(value => value.KnowledgeRecordId == fixture.LocationParent.Id);
+        var namedChildLevel = Query(fixture, KnowledgeKind.Location, namedOnlyParent.PathId, includeIdentifierOnly: false);
+        Assert(namedChildLevel.ImmediateChildren.Single(value => value.KnowledgeRecordId == fixture.LocationChild.Id)
+                   .DisplayKind == CanonicalNavigationDisplayKind.NativeIdentifier,
+            "Identifier-only records remain in projection with honest native identifiers.");
         var exactSearch = Query(fixture, KnowledgeKind.Location, null, true, "  Zône—Exact  ");
         var foldedSearch = Query(fixture, KnowledgeKind.Location, null, true, "zône—exact");
         Assert(exactSearch.ImmediateChildren.Any(value => value.KnowledgeRecordId == fixture.LocationParent.Id) &&
@@ -145,6 +147,27 @@ internal static class CanonicalSelectorAndInstructionChecks
             sourceCategoryId, fixture.Item.Id, fixture.SourceRevisionId,
             CanonicalProjectionSemantics.ItemSourceCategoryDimensionNode,
             sourceCategoryIdentity, null, "grid.test.source-category", "1", "/item/source-category");
+        CanonicalOrganizationalValueAssertion LocalizedCategory(string locale) => new(
+            CanonicalOrganizationalValueAssertionId.DeriveV2(fixture.Item.Id, fixture.SourceRevisionId,
+                CanonicalProjectionSemantics.ItemSourceCategoryDimensionNode, sourceCategoryIdentity,
+                "Exact category", "grid.test.source-category", "1", "/item/source-category", locale),
+            fixture.Item.Id, fixture.SourceRevisionId, CanonicalProjectionSemantics.ItemSourceCategoryDimensionNode,
+            sourceCategoryIdentity, "Exact category", "grid.test.source-category", "1", "/item/source-category", locale);
+        var englishCategory = LocalizedCategory("en-US");
+        var frenchCategory = LocalizedCategory("fr-FR");
+        Assert(englishCategory.Id != frenchCategory.Id &&
+               EvidenceClaimContentId.DeriveV1(englishCategory) != EvidenceClaimContentId.DeriveV1(frenchCategory),
+            "Organization locale is bound into both the versioned assertion and its evidence claim.");
+        Assert(sourceCategoryAssertion.LanguageTag is null &&
+               CanonicalOrganizationalValueAssertionId.DeriveV1(fixture.Item.Id, fixture.SourceRevisionId,
+                   CanonicalProjectionSemantics.ItemSourceCategoryDimensionNode, sourceCategoryIdentity, null,
+                   "grid.test.source-category", "1", "/item/source-category") == sourceCategoryAssertion.Id,
+            "Historical organization claims retain their V1 identities and unspecified locale.");
+        AssertThrows<ArgumentException>(() => _ = LocalizedCategory("und"),
+            "Unknown locale cannot become localized organization terminology.");
+        var localizedFixture = (fixture with { OrganizationalValues = fixture.OrganizationalValues.Add(englishCategory) }).Repackage();
+        Assert(CanonicalCatalogPackageKernel.Verify(localizedFixture.Package).IsStructurallyValid,
+            "Locale-qualified organization assertions remain structurally evidence-bound.");
         var categoryFixture = (fixture with
         {
             OrganizationalValues = fixture.OrganizationalValues.Add(sourceCategoryAssertion),
@@ -396,6 +419,38 @@ internal static class CanonicalSelectorAndInstructionChecks
                englishProjection.ExactTerminologyAssertions.Contains(undeterminedName) &&
                !englishProjection.HasTerminologyConflict,
             "Projection selects exact requested locale, then approved fallback, then source default while preserving multilingual assertions and excluding undetermined language.");
+        var englishFallbackName = new TerminologyAssertion(
+            fixture.UnclassifiedItem.Id, fixture.SourceRevisionId, TerminologyAssertionRole.PrimaryName,
+            "English fallback", "/item/multilingual/en", "en");
+        var fallbackOnly = (multilingual with
+        {
+            Terms = multilingual.Terms.Remove(englishName).Add(englishFallbackName),
+        }).Repackage();
+        var fallbackProjection = Query(
+                fallbackOnly, KnowledgeKind.Item, null, true, locale:
+                new CanonicalTerminologyLocalePreference("en-US", ["en"]))
+            .ImmediateChildren.Single(value => value.KnowledgeRecordId == fixture.UnclassifiedItem.Id);
+        Assert(fallbackProjection.DisplayAnchor == "English fallback",
+            "An explicitly approved language fallback wins over source-default and unrelated or undetermined terminology.");
+        originalCulture = System.Globalization.CultureInfo.CurrentCulture;
+        try
+        {
+            System.Globalization.CultureInfo.CurrentCulture = new System.Globalization.CultureInfo("tr-TR");
+            var permutedFallback = (fallbackOnly with
+            {
+                Terms = fallbackOnly.Terms.Reverse().ToImmutableArray(),
+            }).Repackage();
+            var permutedFallbackProjection = Query(
+                    permutedFallback, KnowledgeKind.Item, null, true, locale:
+                    new CanonicalTerminologyLocalePreference("en-US", ["en"]))
+                .ImmediateChildren.Single(value => value.KnowledgeRecordId == fixture.UnclassifiedItem.Id);
+            Assert(permutedFallbackProjection.DisplayAnchor == fallbackProjection.DisplayAnchor,
+                "Approved fallback selection is independent of culture and assertion enumeration order.");
+        }
+        finally
+        {
+            System.Globalization.CultureInfo.CurrentCulture = originalCulture;
+        }
         var noDefault = (multilingual with
         {
             Terms = multilingual.Terms.Remove(sourceDefaultName).Remove(englishName),
@@ -467,6 +522,7 @@ internal static class CanonicalSelectorAndInstructionChecks
 
         RunInstructionChecks(fixture, Assert, AssertThrows<ArgumentException>);
         RunResolverChecks(fixture, Assert, AssertThrows<ArgumentException>);
+        checks += Plan2ProjectionChecks();
         Console.WriteLine($"PASS  Canonical selector, instruction, and resolver contracts ({checks} checks).");
         return checks;
     }
@@ -814,6 +870,134 @@ internal static class CanonicalSelectorAndInstructionChecks
         ((int)value.DisplayKind).ToString(System.Globalization.CultureInfo.InvariantCulture),
         value.KnowledgeRecordId?.Value ?? string.Empty);
 
+    private static bool ContainsKnowledgeRecordInSelector(
+        Fixture fixture,
+        KnowledgeKind kind,
+        KnowledgeRecordId recordId,
+        CanonicalSelectorProjectionPolicy policy,
+        bool inspectionMode = false)
+    {
+        CanonicalSelectorResult Query(CanonicalNavigationPathId? path) =>
+            CanonicalSelectorProjectionEngine.Query(
+                fixture.ToInput(policy),
+                new(
+                    fixture.CatalogRevisionId,
+                    fixture.CompositionId,
+                    kind,
+                    policy.Id,
+                    policy.ExactVersion,
+                    path,
+                    null,
+                    true,
+                    inspectionMode,
+                    new("en-US", [])));
+
+        bool Walk(CanonicalNavigationPathId? path)
+        {
+            foreach (var child in Query(path).ImmediateChildren)
+            {
+                if (child.KnowledgeRecordId == recordId)
+                    return true;
+
+                if (Walk(child.PathId))
+                    return true;
+            }
+
+            return false;
+        }
+
+        return Walk(null);
+    }
+
+    private static int Plan2ProjectionChecks()
+    {
+        var checks = 0;
+        void Assert(bool condition, string message)
+        { if (!condition) throw new InvalidOperationException(message); checks++; }
+        var seed = Fixture.Create(enhanced: true);
+        CanonicalOrganizationalValueAssertion Organization(CanonicalKnowledgeRecord record,
+            CanonicalOrganizationalSemanticId dimension, string key, string text, string locale = "en-US")
+        {
+            var native = SourceNativeIdentifier.FromExactUtf8("grid.test.organization", "Value", key);
+            var id = CanonicalOrganizationalValueAssertionId.DeriveV2(record.Id, seed.SourceRevisionId,
+                dimension, native, text, "grid.test.organization", "1", "/organization", locale);
+            return new(id, record.Id, seed.SourceRevisionId, dimension, native, text,
+                "grid.test.organization", "1", "/organization", locale);
+        }
+        var fixture = (seed with
+        {
+            Terms = seed.Terms.AddRange(new TerminologyAssertion[] {
+                new(seed.Item.Id, seed.SourceRevisionId, TerminologyAssertionRole.PrimaryName, "Exact Vehicle", "/vehicle/name", "en-US"),
+                new(seed.Actor.Id, seed.SourceRevisionId, TerminologyAssertionRole.PrimaryName, "Exact Actor Type", "/actor/name", "en-US"),
+            }),
+            Classifications = seed.Classifications.Where(value => value.KnowledgeRecordId != seed.Item.Id)
+                .Concat(new[] {
+                    Classification(seed.Item, seed.SourceRevisionId, CanonicalProjectionSemantics.ItemVehicles),
+                    Classification(seed.Item, seed.SourceRevisionId, CanonicalProjectionSemantics.SelectorPlayerAddressable),
+                    Classification(seed.Actor, seed.SourceRevisionId, CanonicalProjectionSemantics.ActorGenericType),
+                    Classification(seed.Actor, seed.SourceRevisionId, CanonicalProjectionSemantics.SelectorPlayerAddressable),
+                }).ToImmutableArray(),
+            OrganizationalValues = seed.OrganizationalValues.AddRange(new[] {
+                Organization(seed.Item, CanonicalProjectionSemantics.ItemVehicleClassDimensionNode, "CLASS_1", "Exact Class"),
+                Organization(seed.Actor, CanonicalProjectionSemantics.ActorSourceCategoryDimensionNode, "CATEGORY_1", "Exact Category"),
+            }),
+        }).Repackage();
+        var gtaPolicy = CanonicalSelectorProjectionPolicyResolver.ResolveForGame(seed.GameId);
+        CanonicalSelectorResult QueryGta(Fixture value, KnowledgeKind kind, CanonicalNavigationPathId? path = null, bool inspection = false) =>
+            CanonicalSelectorProjectionEngine.Query(value.ToInput(gtaPolicy),
+                new(value.CatalogRevisionId, value.CompositionId, kind, gtaPolicy.Id, gtaPolicy.ExactVersion,
+                    path, null, true, inspection, new("en-US", [])));
+        var vehicles = QueryGta(fixture, KnowledgeKind.Item).ImmediateChildren.Single();
+        Assert(vehicles.OrganizationalSemanticId == CanonicalProjectionSemantics.ItemVehiclesNode && !vehicles.IsSelectable,
+            "Vehicles is an organizational node; technical Items remain absent from normal Enhanced presentation.");
+        var vehicleClass = QueryGta(fixture, KnowledgeKind.Item, vehicles.PathId).ImmediateChildren.Single();
+        var vehicle = QueryGta(fixture, KnowledgeKind.Item, vehicleClass.PathId).ImmediateChildren.Single();
+        Assert(vehicleClass.DisplayAnchor == "Exact Class" && vehicle.DisplayAnchor == "Exact Vehicle" && vehicle.KnowledgeRecordId == fixture.Item.Id,
+            "Vehicles use exact localized source class and title without changing canonical identity.");
+        var npc = QueryGta(fixture, KnowledgeKind.Actor).ImmediateChildren.Single();
+        var generic = QueryGta(fixture, KnowledgeKind.Actor, npc.PathId).ImmediateChildren.Single(value =>
+            value.OrganizationalSemanticId == CanonicalProjectionSemantics.ActorGenericTypeNode);
+        var category = QueryGta(fixture, KnowledgeKind.Actor, generic.PathId).ImmediateChildren.Single();
+        Assert(generic.OrganizationalSemanticId == CanonicalProjectionSemantics.ActorGenericTypeNode && category.DisplayAnchor == "Exact Category" &&
+               QueryGta(fixture, KnowledgeKind.Actor, category.PathId).ImmediateChildren.Single().DisplayAnchor == "Exact Actor Type",
+            "Generic NPC types retain the frozen NPC/type/source-category path.");
+        var conflicting = (fixture with { Terms = fixture.Terms.Add(new(fixture.Item.Id, fixture.SourceRevisionId,
+            TerminologyAssertionRole.PrimaryName, "Conflicting Vehicle", "/vehicle/other-name", "en-US")) }).Repackage();
+        Assert(!ContainsKnowledgeRecordInSelector(conflicting, KnowledgeKind.Item, fixture.Item.Id, gtaPolicy),
+            "Conflicting exact-locale primary names do not become normal selectable options.");
+        var untranslated = (fixture with { Terms = fixture.Terms.Where(value => value.LanguageTag != "en-US").ToImmutableArray() }).Repackage();
+        Assert(QueryGta(untranslated, KnowledgeKind.Item).ImmediateChildren.IsEmpty,
+            "Enhanced presentation does not silently fall back to unapproved source languages.");
+        var unknownClass = (fixture with { OrganizationalValues = fixture.OrganizationalValues
+            .Where(value => value.DimensionId != CanonicalProjectionSemantics.ItemVehicleClassDimensionNode).ToImmutableArray() }).Repackage();
+        Assert(QueryGta(unknownClass, KnowledgeKind.Item).ImmediateChildren.IsEmpty,
+            "A vehicle without a resolved localized source class does not receive invented navigation.");
+        var conflictingClass = (fixture with { OrganizationalValues = fixture.OrganizationalValues.Add(
+            Organization(fixture.Item, CanonicalProjectionSemantics.ItemVehicleClassDimensionNode, "CLASS_1", "Conflicting Class")) }).Repackage();
+        Assert(QueryGta(conflictingClass, KnowledgeKind.Item).ImmediateChildren.IsEmpty,
+            "Conflicting class terminology cannot be silently selected for presentation.");
+        var sameName = (fixture with
+        {
+            Terms = fixture.Terms.Add(new(fixture.UnclassifiedItem.Id, fixture.SourceRevisionId,
+                TerminologyAssertionRole.PrimaryName, "Exact Vehicle", "/vehicle/name", "en-US")),
+            Classifications = fixture.Classifications.AddRange(new[] {
+                Classification(fixture.UnclassifiedItem, fixture.SourceRevisionId, CanonicalProjectionSemantics.ItemVehicles),
+                Classification(fixture.UnclassifiedItem, fixture.SourceRevisionId, CanonicalProjectionSemantics.SelectorPlayerAddressable),
+            }),
+            OrganizationalValues = fixture.OrganizationalValues.Add(Organization(fixture.UnclassifiedItem,
+                CanonicalProjectionSemantics.ItemVehicleClassDimensionNode, "CLASS_1", "Exact Class")),
+        }).Repackage();
+        var sameNameRoot = QueryGta(sameName, KnowledgeKind.Item).ImmediateChildren.Single();
+        var sameNameClass = QueryGta(sameName, KnowledgeKind.Item, sameNameRoot.PathId).ImmediateChildren.Single();
+        var sameNameLeaves = QueryGta(sameName, KnowledgeKind.Item, sameNameClass.PathId).ImmediateChildren;
+        Assert(sameNameLeaves.Length == 2 && sameNameLeaves.Select(value => value.KnowledgeRecordId).Distinct().Count() == 2 &&
+               sameNameLeaves.All(value => value.DisplayAnchor == "Exact Vehicle"),
+            "Equal vehicle display names retain distinct selectable model identities.");
+        Assert(QueryGta(fixture, KnowledgeKind.Item, inspection: true).ImmediateChildren.Any(value => value.KnowledgeRecordId == fixture.UnclassifiedItem.Id),
+            "Identifier-only inspection remains available independently from normal eligibility.");
+        return checks;
+    }
+
     private static CanonicalSemanticClassificationAssertion Classification(
         CanonicalKnowledgeRecord record,
         CatalogSourceRevisionId revisionId,
@@ -871,7 +1055,7 @@ internal static class CanonicalSelectorAndInstructionChecks
             [packageId]);
     }
 
-    private sealed record Fixture(
+    internal sealed record Fixture(
         GameId GameId,
         SourceNativeVersion GameVersion,
         CatalogRevisionId CatalogRevisionId,
@@ -926,9 +1110,9 @@ internal static class CanonicalSelectorAndInstructionChecks
             false,
             EnglishLocale);
 
-        public static Fixture Create()
+        public static Fixture Create(bool enhanced = false)
         {
-            var gameId = new GameId("game.selector-fixture");
+            var gameId = enhanced ? ProductionGridCatalogService.GrandTheftAutoVEnhancedId : new GameId("game.selector-fixture");
             var gameVersion = SourceNativeVersion.FromExactUtf8("grid.test.game", "build-1");
             var artifactDigest = ContentDigest.ComputeSha256("selector-fixture"u8);
             var artifactId = SourceArtifactId.DeriveV1(artifactDigest);
@@ -1186,7 +1370,12 @@ internal static class CanonicalSelectorAndInstructionChecks
                 locationManifest,
                 [familyCoverage],
                 [new LocationSemanticCategoryCoverage(null, null, locationIds, locationIds.Length)],
-                new LocationTerminologyCoverage(locationIds.Length, 1, 0, locationIds.Length - 1, 0),
+                new LocationTerminologyCoverage(locationIds.Length,
+                    locationIds.Count(id => fixture.Terms.Any(value => value.KnowledgeRecordId == id && value.Role == TerminologyAssertionRole.PrimaryName)),
+                    fixture.Terms.Count(value => locationIds.Contains(value.KnowledgeRecordId) && value.Role == TerminologyAssertionRole.Alias),
+                    locationIds.Count(id => !fixture.Terms.Any(value => value.KnowledgeRecordId == id && value.Role == TerminologyAssertionRole.PrimaryName)),
+                    locationIds.Count(id => fixture.Terms.Where(value => value.KnowledgeRecordId == id && value.Role == TerminologyAssertionRole.PrimaryName)
+                        .Select(value => value.VerbatimValue).Distinct(StringComparer.Ordinal).Skip(1).Any())),
                 new LocationHierarchyCoverage(2, 1, 1, 0, false),
                 [new LocationRelationshipCoverage(
                     LocationRelationshipSemantics.ContainedBy, 2, 1, 1, 2, 0, 0)],

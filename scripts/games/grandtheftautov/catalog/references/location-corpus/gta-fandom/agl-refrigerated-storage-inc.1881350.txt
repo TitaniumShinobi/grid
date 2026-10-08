@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|image = AGLRefrigeratedStorageInc-GTAV.png
+|name = AGL Regrigerated Storage Inc.
+|type = Storage company
+|games = {{Games|V=y|O=y}}
+|map = AGLRefrigeratedStorageInc-GTAV-Map.png
+|locations = [[South Los Santos]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''AGL Regrigerated Storage Inc.''' is a refrigeration unit appearing in {{V}} and {{O}}, located on [[Little Bighorn Avenue]] in [[South Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Businesses in GTA Online
+Businesses in GTA V
+Storage companies
+Warehouses

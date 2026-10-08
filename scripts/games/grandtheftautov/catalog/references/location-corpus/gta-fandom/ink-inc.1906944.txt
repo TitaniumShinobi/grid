@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = tattoo
+|name          = Ink Inc. Tattoos
+|sign          = InkInc-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations_2|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = [[Spider (GTA V)|Spider]]
+|taglines      = 
+|bawsaq        = 
+|status        = active
+|accessible    = Yes <small>([[Chumash]] branch only)</small>
+}}
+
+[[LEAD]]
+'''Ink Inc.''' is a chain of [[Tattoo Parlors|tattoo parlors]] featured in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+*The [[Hawick]] location is a rendition of the former Perri Ink. Cartel tattoo parlor at {{URL|https://maps.app.goo.gl/2BcwWc6gU4VFWW93A|7303 Melrose Avenue}} in the {{WP|Melrose Avenue|Melrose District}} of {{WP|Los Angeles}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" bordercolor="#eea002" widths="270px">
+TattooParlors-GTAVee-InkInc-Chumash.jpg|[[Chumash Plaza]], [[U.S. Route 1|Great Ocean Highway]], [[Chumash]].
+TattooParlors-GTAVee-InkInc-Hawick.jpg|[[Hawick Avenue]], [[Hawick]]. (inaccessible)
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tattoo parlor chains

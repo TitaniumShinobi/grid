@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{infobox business
+|name     = Brawls
+|aka      = 
+*Brawls Liberty City
+*Brawls Los Santos
+|image    =
+<gallery>
+Brawls-GTAIV-Logo.png|Liberty City
+Brawls-GTAV-Logo.png|Los Santos
+</gallery>
+|caption  = 
+|taglines = 
+|type     = departmentstore
+|founded  = 
+|founder  = 
+|ceo = 
+|games = {{games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+}}
+
+[[LEAD]]
+'''Brawls''' is a chain of department stores featured in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|Brawls-GTAIV-Overview.png|'''Brawls''' in [[Liberty City (HD Universe)|Liberty City]] ([[:File:Brawls-GTAIV-LibertyCityBuilding.png|building view]].)
+}}
+{{Gallery
+|game = VO
+|Brawls-GTAV-Exterior.jpg|'''Brawls''' in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+|Brawlsinpillboxhill.jpg|'''Brawls''' in [[Pillbox Hill]], Los Santos.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

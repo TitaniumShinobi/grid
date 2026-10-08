@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = Nature Foods
+|image         = NatureFoods-GTAVee-Cans.png
+|type          = food
+|caption       = '''Nature Foods''' cans for sale in a [[Limited Service]] gas station.
+|business_type = Canned food
+|taglines      = 
+|games         = {{Games|V=y|O=y}}
+|status        = active
+}}
+
+[[LEAD]]
+'''Nature Foods''' is a food production company in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Food and drink companies

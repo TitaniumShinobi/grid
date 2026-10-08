@@ -1,0 +1,130 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|Name Change = OFFICES
+|name = Office
+|image = Dynasty8Executive-GTAO-MazeBankTower.png
+|caption = The [[Maze Bank Tower]], one of four offices available for sale.
+|style = {{HUDIcons|game=O|office|animated=y}} Office
+|occupants = [[Organizations]]<br>{{GTAOP}}<br>[[Assistant]]
+|price = [[Money|$]]1,000,000 - $4,000,000
+|game = gtaofreemode
+}}
+
+[[LEAD]]
+'''Executive Offices''' (or simply '''Offices''') are purchasable properties in {{O}} added as part of the [[GTA Online: Further Adventures in Finance and Felony|Further Adventures in Finance and Felony]] update and updated in the [[GTA Online: Import/Export]] update.
+
+[[SECTION:2:Offices]]
+
+
+[[SECTION:3:Map]]
+<gallery position="center" widths="270px">
+Dynasty8Executive-GTAO-AllProperties.png|All Offices on [[Dynasty 8 Executive]].
+</gallery>
+
+[[SECTION:3:Locations]]
+{| class="wikitable"
+!Office
+!Image
+!Location
+!Price
+!In-game Description
+|-
+|[[Maze Bank West]]
+|[[File:Dynasty8Executive-GTAO-MazeBankWest.png|center|200px]]
+|[[Del Perro]]
+|$1,000,000<br>FREE <small>(with [[Criminal Enterprise Starter Pack]])</small>
+|"''Maze has been the target for more boycotts, demonstrations and civil rights lawsuits than any other bank in America. Access to that wealth of experience doesn't come cheap, but a good education is an investment worth any price.''"
+|-
+|[[Arcadius Business Center]]
+|[[File:Dynasty8Executive-GTAO-ArcadiusBusinessCenter.png|center|200px]]
+|[[Pillbox Hill]]
+|$2,250,000
+|"''The City within the City, the Arcadius Business Center boasts more AAA hedge funds, smoothie bars, and executive suicides per square foot of office space than any other building in the business district. Welcome to Cutting edge.''"
+|-
+|[[Lombank West]]
+|[[File:Dynasty8Executive-GTAO-LombankWest.png|center|200px]]
+|[[Del Perro]]
+|$3,100,000
+|"''In a radical new step towards diversification of the banking sector. Industry giant Lombank is selling office space to results-driven, high-liquidity kill squads and drug cartels. Be part of the change our financial industry needs.''"
+|-
+|[[Maze Bank Tower]]
+|[[File:Dynasty8Executive-GTAO-MazeBankTower.png|center|200px]]
+|[[Pillbox Hill]]
+|$4,000,000
+|"''The building that defined the LS Skyline for a generation. Taller, Classier, more opulent, more shamelessly phallic, less structurally sound - you name it, the Maze Bank Tower is best in class.''"
+|}
+
+[[SECTION:3:Interiors]]
+{| class="wikitable"
+!Interior
+!Image
+!Price
+!Description
+|-
+|Executive Rich
+|[[File:Office-Decor-GTAO-Executive_Rich.png|thumb|center|250px]]
+|FREE
+|Default interior
+|-
+|Executive Cool
+|[[File:Office-Decor-GTAO-Executive_Cool.png|thumb|center|250px]]
+|$415,000
+|
+|-
+|Executive Contrast
+|[[File:Office-Decor-GTAO-Executive_Contrast.png|thumb|center|250px]]
+|$500,000
+|
+|-
+|Old Spice Classical
+|[[File:Office-Decor-GTAO-Old_Spice_Classical.png|thumb|center|250px]]
+|$685,000
+|
+|-
+|Old Spice Vintage
+|[[File:Office-Decor-GTAO-Old_Spice_Vintage.png|thumb|center|250px]]
+|$760,000
+|
+|-
+|Old Spice Warms
+|[[File:Office-Decor-GTAO-Old_Spice_Warm.png|thumb|center|250px]]
+|$950,000
+|
+|-
+|Power Broker Conservative
+|[[File:Office-Decor-GTAO-Power_Broker_Conservative.png|thumb|center|250px]]
+|$835,000
+|
+|-
+|Power Broker Polished
+|[[File:Office-Decor-GTAO-Power_Broker_Polished.png|thumb|center|250px]]
+|$910,000
+|
+|-
+|Power Broker Ice
+|[[File:Office-Decor-GTAO-Power_Broker_Ice.png|thumb|center|250px]]
+|$1,000,000
+|
+|}
+
+[[SECTION:2:Office Garages and Custom Auto Shop]]
+{{Main|Office Garages}}
+With the addition of the Import/Export update, players can now buy 1 to 3 garage expansions within the same building that they can customize and provide space to store up to 60 vehicles.
+
+Once a garage is added, the player can also add a custom auto shop with a dedicated [[Office Mechanic]] within the building which operates as a combined [[Los Santos Customs]] and [[Benny's Original Motor Works]] facility allowing full customization of the players vehicles.
+
+[[SECTION:3:Interior]]
+<gallery position="center" spacing="small" widths="250px">
+Floorplan-GTAO-Executive-Office.png
+OfficeInterior1-GTAO-SS1.png
+OfficeInterior1-GTAO-SS2.png
+OfficeInterior1-GTAO-SS3.png
+OfficeInterior1-GTAO-SS4.png
+OfficeInterior1-GTAO-SS5.png
+OfficeInterior1-GTAO-SS6.png
+OfficeInterior1-GTAO-SS7.png
+</gallery>
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

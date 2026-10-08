@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox structure
+|image      = MelanomaSt-GTAV-StreetView.jpg
+|caption    = East and west ends of Melanoma Street, respectively.
+|games      = {{Games|V=y|O=y}}
+|start      = [[Bay City Avenue]]
+|end        = [[Vespucci Beach Sidewalk]]
+|map        = 
+<gallery>
+MelanomaStreet-GTAV-Map.png|Map
+MelanomaStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Melanoma Street''' is a [[Streets|street]] in {{V}} and {{O}}, located in [[La Puerta]] and [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Businesses]]
+*[[Gyro Day Hot Food]]
+*Tattoo Piercing
+*[[The Pink Palms Beach Shop]]
+*Vespucci Tattoo
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

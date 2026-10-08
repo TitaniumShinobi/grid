@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = realestate
+|name          = Minotaur Investment and Finance
+|sign          = MinotaurFinance-GTAVe-LogoText.png
+|image         = MinotaurFinance-GTAVe-Logo.png
+|caption       = 
+|aka           = 
+|games         = 
+|mentioned     = {{games|V=y|O=y}}
+|business_type = Financial services & real estate management
+|founded       = 
+|founder       = 
+|ceo           = Unknown <small>(''Nicknamed "Minotaur man"'')</small>
+|owner         = [[Maze Bank]]
+|employees     = 
+|products      = 
+|locations     =
+|vehicles      = 
+|taglines      = ''"Navigating the maze that is property ownership."''
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Minotaur Investment and Finance''' is a company that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses with websites
+Financial services companies
+Real estate companies

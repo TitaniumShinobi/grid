@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = AlesandroHotel-GTAV.png
+|name = Alesandro Hotel
+|type = Hotel
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Strawberry Avenue]], [[Textile City]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]]
+}}
+
+[[LEAD]]
+The '''Alesandro Hotel''' is a hotel in [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is located on [[Strawberry Avenue]] in [[Textile City]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]]. There is a Pharmacy and a Nail Bar & Spa incorporated to the hotel. It cannot be entered and plays no role in the storyline whatsoever.
+
+[[CATEGORIES]]
+Beaux-Arts buildings
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Businesses in GTA V
+Hotels

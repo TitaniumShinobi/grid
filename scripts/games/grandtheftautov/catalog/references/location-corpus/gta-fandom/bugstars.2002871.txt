@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = pestcontrol
+|name          = Bugstars Pest Control
+|sign          = Bugstars-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+*Bugstars
+*Bugstar{{Ref|name = bugstars-downtownlsoffice-gtav}}{{Ref|name = bugstar-aka-gtav|type = dialogue|date = |url  = |ref  = {{Quote|This a Bugstar vehicle? It don't look like a Bugstar vehicle.|A Bugstars exterminator to [[Michael De Santa|Michael]] during [[Bugstars Equipment]] in {{V}}.}}}}{{Ref|name = bugstar-aka-gtao|type = dialogue|date = |url  = |ref  = {{Quote|So, um, Bugstar have some guys out on a job, sent you their location.|[[Lester Crest]] to the {{GTAOP}} during [[Heist Prep: Bugstar Gear Part 1]] in {{O}}.}}}}
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Bugstars Warehouse]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = 
+|vehicles      = [[Bugstars Burrito]]
+|taglines      = 
+*"It's a Bug's Death"
+*"Putting the FU in fumigate"
+*"BUG-'R"-US"
+|status        = active
+|phone         = 1-999-BUGSTAR
+|accessible    = Yes {{Small|([[Bugstars Warehouse]])}}
+}}
+
+[[LEAD]]
+'''Bugstars Pest Control''' is a pest control company based in [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game=VO
+|BugstarsWarehouse-GTAV-FrontEntrance.jpg|[[Bugstars Warehouse]], [[Signal Street]], [[Elysian Island]], [[Port of Los Santos]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pest control companies

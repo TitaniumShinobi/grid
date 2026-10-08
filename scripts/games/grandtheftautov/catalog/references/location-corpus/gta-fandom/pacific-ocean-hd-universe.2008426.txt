@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|name          = Pacific Ocean
+|image         = PacificOcean-GTAVpc.png
+|caption       = Pacific Ocean in Grand Theft Auto V.
+|games         = {{Games|V=y|O=y}}
+|pscanner      = PoliceScanner-GTAV-Neighborhood-TheOcean.ogg
+|type          = ocean
+}}
+
+[[LEAD]]
+The '''{{WP|Pacific Ocean}}''' is a large ocean encircling the area of southern [[State of San Andreas (HD Universe)|San Andreas]] depicted in {{V}} and {{O}}. It is located on the western coast of the [[United States of America]].
+
+[[SECTION:2:Places of Interest]]
+*[[Wrecks#Grand Theft Auto V|Wrecked sea, air and land vehicles]]
+*[[The Hatch]]
+
+[[CATEGORIES]]
+Locations in GTA Online
+Locations in GTA V
+Seas

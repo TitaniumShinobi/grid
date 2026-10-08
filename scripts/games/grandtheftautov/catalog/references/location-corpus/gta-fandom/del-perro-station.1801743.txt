@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = gtavsubway
+|type           = subwaystation
+|name           = Del Perro Station
+|sign           = 
+|image          = <gallery>
+DelPerroStation-GTAV-Entrance.png|Entrance
+DelPerroStation-GTAV-Platform.png|Platform
+</gallery>
+|caption        = '''Del Perro Station''' in ''[[Grand Theft Auto V]]''.
+|aka            = Del Perro
+|games          = {{games|V=y|O=y}}
+|location       = [[Marathon Avenue]] and [[Prosperity Street]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|status         = active
+|pscanner       = 
+|use            = 
+|owner          = 
+|operator       = [[Los Santos Transit]]
+|occupants      = 
+|businesses     = 
+|employees      = 
+|station_type   = Subway station
+|platforms      = 1
+|tracks         = 2
+|lines          = 
+|transfer       = 
+|clockwise      = [[Portola Drive Station]]
+|anticlockwise  = [[Little Seoul Station]]
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = <gallery>
+DelPerroStation-GTAV-Map.png|Del Perro Station
+DelPerroStation-GTAV-LSTMap.png|LST Map
+</gallery>
+|map_caption    = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''Del Perro Station''' is an underground [[Los Santos Transit]] station in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Subway stations

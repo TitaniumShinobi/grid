@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox vehicle
+| name = Police Cruiser
+| front_image = PoliceCruiser-GTAIV-front.jpg
+| image_size = 300
+| caption = An LCPD Police Cruiser in GTA IV
+| rear_image = PoliceCruiser-GTAIV-rear.jpg
+| manufacturer = [[Vapid]] 
+| vehicle_type = [[:Category:Law Enforcement Vehicles|Law enforcement car]]
+| body_style = [[:Category:4-Door Sedans and Coupes|4-door sedan]]
+| capacity = 4 (driver and 3 passengers)
+| game_1 = GTA IV
+| game_2 = TLAD
+| game_3 = TBOGT
+| game_4 = GTA V
+}}
+
+[[LEAD]]
+The [[Vapid]] '''Police Cruiser''' is one of the two main [[Police Car|police cars]] used by the [[LCPD in GTA IV Era|Liberty City Police Department]] in [[Grand Theft Auto IV]], the other being the [[Police Patrol]]. The Police Cruiser also refers to a [[Buffalo]]-based LCPD police car featured in [[The Ballad of Gay Tony]] (see [[#The Ballad of Gay Tony]]). The Police Cruiser reappears in [[Grand Theft Auto V]].
+
+[[CATEGORIES]]
+4-Door Sedans and Coupes
+LCPD
+Law Enforcement Vehicles
+Police
+Vehicles
+Vehicles in GTA IV
+Vehicles in GTA V
+Vehicles in The Ballad of Gay Tony
+Vehicles in The Lost and Damned

@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|safehouse      = 
+|type           = hotel
+|name           = The Archipelago
+|sign           = TheArchipelago-GTAVe-Logo.png
+|image          = TheArchipelago-GTAVe-FrontView.png
+|caption        = Overview of the front of the hotel.
+|aka            = The Archipelago Rockford Hills
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[South Boulevard Del Perro]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|floors         = 5
+|status         = Active
+}}
+
+[[LEAD]]
+'''The Archipelago''', or known by its full title of '''The Archipelago Rockford Hills''', is a large luxury hotel in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hotels

@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{infobox business
+|Name Change = INVESTMENT COMPANY
+|ceo = [[Yusuf Amir]]
+|mentioned = {{games|O={{EEEV}} {{DLC|mpexecutive}}}}
+|locations = [[United States of America]]
+|founder=[[Yusuf Amir]]|owner=[[Yusuf Amir]]}}
+
+[[LEAD]]
+'''Amir Group Investments''' is an investment company mentioned in {{O}} as part of the [[GTA Online: Further Adventures in Finance and Felony|Further Adventures in Finance and Felony]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Further Adventures in Finance and Felony
+Finance

@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 3655 Wild Oats Drive
+|image = 3655WildOatsDrive-AerialView-GTAO.png
+|caption = Aerial view of the stilt house.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = High-end apartment
+|garage = * 10 vehicles<br>* 3 bicycles
+|price = $800,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|stilthouse = y
+|location = [[Wild Oats Drive]], [[Vinewood Hills]]
+}}
+
+[[LEAD]]
+'''3655 Wild Oats Drive''' is a stilt house [[Safehouses in GTA Online|safehouse]] located on [[Wild Oats Drive]] in [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], featured in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online
+Stilt houses

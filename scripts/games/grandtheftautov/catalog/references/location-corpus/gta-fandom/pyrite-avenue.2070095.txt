@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=PyriteAvenue-GTAV.png
+|caption=Pyrite Avenue.
+|games={{Games|V=y|O=y}}
+|start=[[Paleto Boulevard]]
+|end=[[Great Ocean Highway]]
+|map=<gallery>
+PyriteAvenue-GTAV-Map.png|Map
+PyriteAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Pyrite Avenue''' is a two-way street in [[Paleto Bay]], [[Blaine County]], that appears in {{V}} and {{O}}. The street runs from [[Paleto Boulevard]] in the north to the [[Route 1|Great Ocean Highway]] in the south.
+
+[[SECTION:2:Businesses]]
+*[[Clucking Bell Farms]] office <small>(corner of [[Route 1|Great Ocean Highway]])</small>
+*[[Del Vecchio Liquor]]
+*[[Dream View Motel]] <small>(corner of Great Ocean Highway)</small>
+*[[Mojito Inn]] <small>(corner of [[Paleto Boulevard]])</small>
+
+[[CATEGORIES]]
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County
+Thoroughfares

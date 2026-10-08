@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Dewbauchee
+|sign          = Dewbauchee-GTAO-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Vehicle manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|divisions     = Dewbauchee Motorsport
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Dewbauchee''' is a [[United Kingdom|British]] luxury vehicle manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle manufacturers

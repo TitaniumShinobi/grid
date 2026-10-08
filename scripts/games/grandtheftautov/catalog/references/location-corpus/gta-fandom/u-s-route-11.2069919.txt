@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = HIGHWAY
+|name              = Route 11
+|number            = 11
+|caption2          = Route 11 shield
+|image             = 
+|caption           = 
+|games             = {{Games|V=y|O=y}}
+|highway_northend  = {{rmark|US|68}} in [[Lago Zancudo]]
+|highway_southend  = {{rmark|SA|14}} in [[Richman Glen]]
+|highway_junctions = 
+|pscanner    = 
+|map         = 
+|mapcaption  = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''U.S. Route 11''' is one of the [[Numbered Highways in GTA V|highways]] located in [[State of San Andreas (HD Universe)|San Andreas]], featured in {{V}}. It passes through the [[Tongva Valley]]. It begins at [[North Rockford Drive]] and [[Route 14]], goes through [[Tongva Drive]] and [[Zancudo Road]], and ends at [[Route 68]].
+
+[[SECTION:2:Route description]]
+Route 11 begins as the continuation of [[Route 14]] as Tongva Drive through the affluent neighborhood of [[Richman]]. As Tongva Drive continues north away from Richman it intersects with [[Banham Canyon Drive]] at the [[LTD Gasoline]] station. After this intersection the highway intersects with the western terminus of [[Marlowe Drive]] and this intersection marks the start of the rural part of the route. Route 11 runs parallel with a stream whose source begins a little north of Banham Canyon Drive. This stream has numerous sources which diverge into it through small waterfalls. Route 11 offers beautiful scenery as it passes through a canyon along with a rest area for travelers and a boat house for jet skiers. Route 11 crosses over the stream at a spot where it transitions to [[Zancudo Road]] at the intersection with [[Zancudo Barranca]]. It snakes around the [[Marlowe Vineyards]] before the highway ends at its northern terminus with [[Route 68]].
+
+[[CATEGORIES]]
+Freeways
+Highways
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

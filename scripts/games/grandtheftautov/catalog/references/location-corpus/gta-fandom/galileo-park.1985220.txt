@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|image = GalileoPark-GTAV.png
+|caption = Galileo Park, near the [[Galileo Observatory Tunnel|tunnel]].
+|location = [[Vinewood Hills]] [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games = {{Games|V=y|O=y}}
+|type = park
+|pscanner       = PoliceScanner-GTAV-Neighborhood-GalileoPark.ogg
+}}
+
+[[LEAD]]
+'''Galileo Park''' is a municipal park in [[Vinewood Hills]], [[Los Santos County]], that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Places of Interest]]
+*The park's focal point is the [[Galileo Observatory]].
+*The park also contains the [[Arthur's Pass Trails]], a hiking trail to the north of the Observatory.
+*The iconic [[Vinewood Sign (HD Universe)|Vinewood Sign]] is located in its eastern side.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+National parks
+Neighborhoods
+Zones

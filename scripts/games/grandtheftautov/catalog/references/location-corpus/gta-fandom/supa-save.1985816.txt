@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Supermarket chain
+|image = SupaSave!-GTAIII-Logo.svg
+|games = ''[[Grand Theft Auto III]]''<br>''[[Grand Theft Auto: San Andreas]]''
+|locations = '''3D Universe:'''<br>[[Liberty City (3D Universe)|Liberty City]]<br>[[San Fierro (3D Universe)|San Fierro]]<br>'''HD Universe:'''<br>Unknown
+}}
+
+[[LEAD]]
+'''Supa Save!''' is a supermarket chain in ''[[Grand Theft Auto III]]'', ''[[Grand Theft Auto: San Andreas]]'' and briefly mentioned in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto III'']]
+<gallery position="center" spacing="small" widths="270px">
+SupaSave!-GTA3-exterior.jpg|[[Portland View]], [[Liberty City (3D Universe)|Liberty City]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: San Andreas'']]
+<gallery position="center" spacing="small" widths="270px">
+SupaSave!-GTASA-exterior.jpg|[[Juniper Hill]], [[San Fierro (3D Universe)|San Fierro]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA III
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Supermarket chains

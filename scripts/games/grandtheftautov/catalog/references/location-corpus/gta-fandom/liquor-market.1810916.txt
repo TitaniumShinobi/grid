@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|image = LiquorMarket-Logo-GTAV.png
+|caption =
+|name = Liquor Market
+|taglines = 
+|type = Liquor Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]], [[Blaine County]]
+|reference =
+}}
+
+[[LEAD]]
+'''Liquor Market''' is a chain of liquor stores in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+LiquorMarket2-GTAV-LaMesa.jpg|[[Supply Street]] and [[Popular Street]], [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]].
+VespucciLiquorMarket-GTAV.jpg|[[Palomino Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]].
+LIquorMarket-GTAV-LaPuerta.png|[[South Rockford Drive]], [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]].
+LiquorMarket-GTAV-Harmony.jpg|[[East Joshua Road]], [[Grapeseed]], [[Blaine County]].
+LiquorMarket-GTAV-SandyShores.jpg|[[Marina Drive]], [[Sandy Shores]], [[Blaine County]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Liquor stores
+Stores

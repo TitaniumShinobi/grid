@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox mission
+|image        = CasinoLooseCheng-GTAO-JobImage.png
+|game           = {{games|O=y}}
+|type           = DiamondCasino
+|for          = {{For|game=O|agatha}}
+|location     = 
+*[[The Diamond Casino & Resort]] <small>(Start; End)</small>
+*[[Derelict Motel]]
+|tod          = 05:48
+|target       = Rescue [[Tao Cheng]] from [[The Lost MC]]
+|todo         = 
+*Go to the {{Color|v-hud-location|abandoned motel.}}
+*Search the {{Color|v-hud-location|abandoned motel}} for Tao Cheng.
+*Escort {{Color|v-hud-friendly|Tao Cheng}} to the {{Color|v-hud-location|Casino.}}
+*Help escort {{Color|v-hud-friendly|Tao Cheng}} to the {{Color|v-hud-location|Casino.}}
+|fail         = 
+*Out of lives.
+*Tao Cheng dies.
+|reward       = 
+*JP +15
+*Cash, Chips and RP vary depending on difficulty and time spent.
+----
+<center>[[Awards]]</center>
+*"Loose Cheng" award + $50,000 <small>(if completed for the first time)</small>
+*"Lucky Lucky" award + $50,000 <small>(by completing a single Casino Story Mission without dying)</small>
+|unlockedby   = Owning a [[Master Penthouse]].
+|unlocks      = [[Casino - House Keeping]]
+|protagonists = 1-4 [[GTA Online Protagonist|players]]
+}}
+
+[[LEAD]]
+'''Casino - Loose Cheng''' is a [[Casino Story Missions|Casino Story Mission]] featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update.
+
+[[CATEGORIES]]
+Casino mission strand
+Gameplay in GTA Online: The Diamond Casino & Resort
+Storyline missions

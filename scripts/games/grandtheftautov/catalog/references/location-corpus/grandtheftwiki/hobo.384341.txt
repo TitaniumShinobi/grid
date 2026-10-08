@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{infobox business|
+|image = HOBO-GTAV-logo.png
+|size = 200x200px
+|game_1 = GTA V
+|name = HOBO
+|type = Waste Management
+|owner = 
+|location = [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''HOBO''' is a waste management businesses in the [[HD Universe]] appearing in [[Grand Theft Auto V]].
+
+
+
+[[Type::Business| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

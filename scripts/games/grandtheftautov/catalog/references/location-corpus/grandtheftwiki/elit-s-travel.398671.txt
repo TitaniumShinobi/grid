@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = ElitásTravel-GTAV-logo.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2= GTA Online
+|name = Elitás Travel
+|type = Aircraft dealership
+|owner = 
+|location = 
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Elitás Travel''' are an online aircraft dealership in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Auto Dealerships
+Businesses in GTA V

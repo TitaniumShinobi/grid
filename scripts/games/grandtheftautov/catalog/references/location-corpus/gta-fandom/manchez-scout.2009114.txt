@@ -1,0 +1,89 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name                = Manchez Scout
+|front_image         = ManchezScout-GTAO-front.png
+|rear_image          = ManchezScout-GTAO-rear.png
+|caption             = A '''Manchez Scout''' in ''[[Grand Theft Auto Online]]''.
+|class               = [[:Category:Motorcycles class|Motorcycles]] {{Small|(''GTA Online'')}}
+|body_style          = Military off-road motorcycle
+|capacity            = 1 {{Small|(rider)}}
+|manufacturer        = [[Maibatsu Corporation (HD Universe)|Maibatsu]]
+|price               = [[Money|$]]225,000 {{Small|([[Warstock Cache & Carry]])}}
+|trade_price         = [[Money|$]]168,750 {{Small|(Warstock Cache & Carry)}}
+|games               = {{Games|O={{EEEV}} {{DLC|mpheist4}}}}
+|type            = dirtbike
+|basevariant         = [[Manchez]]
+|lineup          = 
+|variants            = [[Manchez Scout C]]
+|swankness           = 2/5
+|dashtype            = Sport Bike {{Small|(needle)}}<br>[[File:Motorbike-Dials-GTAV.png|thumb|center|170px]]<br>Sports Bike {{Small|(dial texture)}}<br>[[File:SportsBike-GTAV-DialSet.png|thumb|center|170px]]
+|inttxd              = Biker
+|wheeltype           = Bike
+|flags               = 
+{{Flags|FLAG_NO_BOOT}}<br>
+{{Flags|FLAG_IGNORE_ON_SIDE_CHECK}}<br>
+{{Flags|FLAG_AVERAGE_CAR}}<br>
+{{Flags|FLAG_HEADLIGHTS_USE_ACTUAL_BONE_POS}}<br>
+|modelsets           = 
+|modelname           = manchez2
+|handlingname        = MANCHEZ2
+|textlabelname       = MANCHEZ2
+|roadspawnmaxcol     = 10
+|roadspawnfreq       = 30
+|roadspawntrailer    = 
+|roadspawnidendis    = 80
+|roadspawn           = No
+|roadspawndrivers    = 
+|roadspawngroups     = 
+|roadspawnlicense    = Standard White - 100%
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The [[Maibatsu Corporation (HD Universe)|Maibatsu]] '''Manchez Scout''' is a military off-road motorcycle featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[SECTION:2:Locations]]
+*Can be found on [[Cayo Perico]], commonly parked at North Dock.
+*Available for purchase from [[Warstock Cache & Carry]] for [[Money|$]]225,000.
+**A trade price of $168,750 was added as part of the [[GTA Online: San Andreas Mercenaries|San Andreas Mercenaries]] update during [[Assault on Cayo Perico Week]], received as a reward after completing a bonus objective in the [[Assault on Cayo Perico]] [[Adversary Modes|Adversary Mode]].
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Manchez Scout
+|manufacturer  = Maibatsu
+|class         = Motorcycles 
+|image         = ManchezScout-GTAO-RGSC-MainNew.jpg
+|caption       = Main image.
+|image2        = ManchezScout-GTAO-RGSC-Action.jpg
+|caption2      = "Action" image.
+|speed         = 69.751678
+|accel         = 66.25
+|braking       = 26.666668
+|traction      = 64.242424
+|seats         = 1
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = ws
+|schematic     = BikeGenericEnduro
+}}
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Manchez Scout}}
+{{Defaultradio|game=O|defaultgroup=rock}}
+
+[[CATEGORIES]]
+Dirt bikes
+Military vehicles
+Motorcycles class
+Off-roading vehicles
+Vehicles in GTA Online: The Cayo Perico Heist
+Vehicles manufactured by Maibatsu
+Vehicles purchasable from Premium Deluxe Motorsport
+Vehicles purchasable from Warstock Cache & Carry

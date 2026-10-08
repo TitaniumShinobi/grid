@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Up-n-Atom Burger
+|image_label   = Modern
+|image         = UpNAtom-GTAV-Logo.png
+|caption       = 
+|image_label2  = Old
+|image2        = Up-n-AtomBurger-GTAO-FormerLogo.png
+|caption2      = 
+|taglines = 
+*"''Once It Pings, Eat Like Kings''"
+*"''Food from when we were morally superior''"
+|type = fastfood
+|lcn = {{BAWSAQ/Slider}} '''UPA'''
+|founded = [[1947]]
+|games = {{games|V=y|O=y}}
+|locations = 
+[[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|status = active
+}}
+
+[[LEAD]]
+'''Up-n-Atom Burger''' is a fast-food restaurant chain featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The player can buy shares of the company in the [[Lcn-exchange.com]] website.
+
+[[SECTION:2:Locations]]
+<gallery position="center" widths="270px" spacing="small">
+UpnAtom-GTAV-ProcopioBeach.png|[[Procopio Truck Stop]], [[Great Ocean Highway]], [[Procopio Beach]], [[Blaine County]].
+UpnAtom-GTAV-Vinewood.png|[[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Las Lagunas Boulevard]] and [[Clinton Avenue]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+UpnAtom-GTAV-DelPerro.png|[[Boulevard Del Perro]], [[Del Perro Plaza]], [[Del Perro]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Burger restaurants
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurant chains

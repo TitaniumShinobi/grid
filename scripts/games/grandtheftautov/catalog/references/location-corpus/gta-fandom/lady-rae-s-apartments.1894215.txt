@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change   = 
+|type          = apartment
+|name          = Lady Rae's Apartments
+|sign          =
+|image         = LadyRaesApts-GTAVee.png
+|games         = {{Games|V=y|O=y}}
+|location      = [[Bridge Street]], [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|opened        =
+|taglines      = 
+|accessible    = No
+|status        = active
+}}
+
+[[LEAD]]
+'''Lady Rae's Apartments''' is an apartment building in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Housing Projects

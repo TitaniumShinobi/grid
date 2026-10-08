@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|type = Fashion retailer
+|name = Fuque
+|altnames =
+|taglines = 
+|reference = 
+|location = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|condition = Active 
+|products = 
+|bawsaq = 
+|image = Fuque-GTAV-logo.png
+|darklogo = y
+|caption = 
+|image_size = 300
+|oldlogo = Fuque-GTAV-Logo.png
+|oldcaption = Store sign
+|games = {{Games|V=y|O=y}}
+|map = 
+}}
+
+[[LEAD]]
+'''Fuque''' is a high-end fashion store appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Fuque-GTAV-Morningwood.png|[[Morningwood Boulevard]], [[Morningwood]].
+Fuque-GTAV-DaylightFront.png|[[Rockford Drive]], [[Rockford Hills]] ([[:File:Fuque-GTAV-NightFront.png|night view]]).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing in GTA Online
+Clothing in GTA V
+Clothing store chains
+Fashion brands

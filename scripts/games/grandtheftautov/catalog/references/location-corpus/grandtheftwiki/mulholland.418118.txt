@@ -1,0 +1,27 @@
+[[LEAD]]
+'''Mulholland''' is a rich neighbourhood in [[Los Santos in GTA III Era|Los Santos]], [[San Andreas in GTA III Era|San Andreas]], named after Steven Mulholland, a Los Santos artist for the game. Mulholland is located in the northwestern area of the city. [[Richman, Los Santos|Richman]] is located west of the district, [[Mulholland Intersection]] and part of [[Red County]] from the east, Red County and [[Dillimore]] from the north and [[Vinewood in GTA III Era|Vinewood]] from the south. The district is situated high on the hills, most roads are uphills, downhills and hairpins, large villas and mansions are present in the district. However, it is unknown whether the residents are wealthy and rich or not since the cars moving in the district are poor cars.
+
+Richman is actually considered more up-scale than Mulholland. This is evident by the types of houses that contrast with eachother: Richman having more traditional mansions, and Mulholland having more stilt houses that aren't very appealing. Also, the roads in Mulholland are more narrow and ridden with cracks, in contrast to Richman's more refined, wider roads.
+
+[[SECTION:2:Homes]]
+*[[Mulholland Safehouse]]
+*[[Madd Dogg's Crib]]
+
+[[SECTION:2:Places]]
+*[[Roboi's Food Mart]]
+
+[[SECTION:2:Neighbouring Areas]]
+{{Location
+|Centre    = Mulholland
+|North     = [[Hilltop Farm]]
+|Northeast = [[Fisher's Lagoon]]
+|East      = [[Mulholland Intersection]]
+|Southeast = [[Downtown Los Santos in GTA III Era|Downtown Los Santos]]
+|South     = [[Temple]]
+|Southwest = [[Richman, Los Santos|Richman]]
+|West      = Richman
+|Northwest = [[Dillimore]]
+}}
+
+[[CATEGORIES]]
+Areas in Los Santos

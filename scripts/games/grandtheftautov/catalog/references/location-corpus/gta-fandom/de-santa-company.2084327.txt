@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|type           = entertainment
+|name           = De Santa
+|image          = DeSanta-GTAOe-Logo.png
+|ceo            = [[Michael De Santa]]
+|business_type  = Film production company
+|games          = {{Games|O={{EEEV}} {{DLC|mp2025_02}}}}
+|status = active 
+|locations      = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''De Santa''' is a film production company appearing in {{O}} as part of the [[GTA Online: A Safehouse in the Hills|A Safehouse in the Hills]] update. It is owned by and named after [[Vinewood (HD Universe)|Vinewood]] film producer [[Michael De Santa]].
+
+[[CATEGORIES]]
+Businesses in GTA Online: A Safehouse in the Hills
+Companies
+Entertainment companies
+Film production companies

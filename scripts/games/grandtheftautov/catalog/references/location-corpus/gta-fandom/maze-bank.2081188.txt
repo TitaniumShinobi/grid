@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox business
+|image = MazeBank-GTAV-InternetLogo.png
+|name = Maze Bank
+|lcn = {{BAWSAQ/Slider}} '''MAZ'''
+|type = Bank
+|taglines = "''Invest in the red, it's in your interest''"
+|games = {{Games|V=y|O=y}}
+|locations = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+The '''Maze Bank''' is a chain of banks in the {{HD}} located in [[Los Santos (HD Universe)|Los Santos]]. In {{V}}, the player can buy stocks from the company in the [[Lcn-exchange.com]] website.
+
+In {{O}}, it also runs [[Maze Bank Foreclosures]] (foreclosures.maze-bank.com), a website introduced in the [[GTA Online: Bikers|Bikers]] update.
+
+[[CATEGORIES]]
+Banking companies
+Businesses in GTA Online
+Businesses in GTA V
+Media in GTA Online
+Media in GTA V
+Websites

@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|type           = pier
+|name           = Chumash Historic Family Pier
+|sign           = 
+|image          = ChumashHistoricFamilyPier-GTAV-Daytime.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Chumash]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|status         = active
+|structure_type = 
+|architecture   = 
+|length         = 
+|height         = 
+|area           = 
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+The '''Chumash Historic Family Pier''' is a pier appearing in {{VO}}.
+
+[[SECTION:2:Businesses]]
+*[[The Barracuda Cafe]]
+
+[[CATEGORIES]]
+Piers
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

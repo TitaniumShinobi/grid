@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = PostOPDepository-GTAV.png
+|caption        = Overview of the depository.
+|location       = [[Plaice Place]], [[Elysian Island]], [[Port of Los Santos]]
+|games          = {{games|V=y|O=y}}
+|structure_type = Storage facility
+|map            = PostOPDepository-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Post OP Depository''' is a large storage facility in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located at Berth 153 on [[Elysian Island]], [[Port of Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Warehouses

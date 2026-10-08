@@ -7,6 +7,8 @@
     CapabilityManifest = '..\capabilities.v1.json'
     InvocationCapabilityId = 'grid.game.grandtheftautov.investigation.collect'
     BaselineCapabilityId = 'grid.game.grandtheftautov.baseline.collect'
+    CrashInvestigationCapabilityId = 'grid.game.grandtheftautov.crash-investigation.collect'
+    RequestContextCapabilityId = 'grid.game.grandtheftautov.request-context.resolve'
     ConnectedContextCapabilityId = 'grid.game.grandtheftautov.context.probe'
     DefaultPipelineCapabilityIds = @('grid.game.grandtheftautov.investigation.collect')
     PromptMatchers = @('gta v', 'grand theft auto v', 'openiv', 'menyoo', 'scripthookv', 'forever together')

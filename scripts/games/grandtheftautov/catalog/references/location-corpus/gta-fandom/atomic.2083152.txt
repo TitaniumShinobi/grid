@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Atomic
+|image         = Atomic-Logo.png
+|games         = {{Games|SA=y|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|business_type = Tires and automotive parts company
+|products      = 
+|taglines      = "Life. Run over it."
+|status        = active
+}}
+
+[[LEAD]]
+'''Atomic''' is a tire and automotive parts company featured in both the {{3D}} and {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle parts manufacturers

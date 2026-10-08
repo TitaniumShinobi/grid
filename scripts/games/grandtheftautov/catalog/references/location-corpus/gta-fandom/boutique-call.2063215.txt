@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = clothesshop
+|name           = Boutique Call
+|sign           = BoutiqueCall-GTAV-Logo.png
+|image          = BoutiqueCall-GTAVe-Store.png
+|games          = {{Games|V=y|O=y}}
+|location       = [[San Vitus Boulevard]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = No
+|products       = Clothing
+|status         = active
+}}
+
+[[LEAD]]
+'''Boutique Call''' is a boutique that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Clothing stores

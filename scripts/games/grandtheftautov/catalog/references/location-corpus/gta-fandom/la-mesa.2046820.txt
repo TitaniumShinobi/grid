@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox location
+|image        = LaMesa-GTAV.png
+|caption      = Overview of La Mesa.
+|games        = {{Games|V=y|O=y}}
+|type         = neighborhood
+|location     = [[East Los Santos (HD Universe)|East Los Santos]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map          = <gallery>
+LaMesa-IngameGPS-GTAV-Map.png|La Mesa
+LaMesa-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption  = Location on the map (in-game GPS).
+The <font color=blue>small area in the south</font> is {{H:title|Referred simply as San Andreas in the radar|unnamed}} in GTA V. This was later fixed in GTA Online, now being part of <font color=red>La Mesa</font>.
+|pscanner     = PoliceScanner-GTAV-Neighborhood-LaMesa.ogg
+}}
+
+[[LEAD]]
+'''La Mesa''' is an industrial neighborhood in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[East Los Santos (HD Universe)|East Los Santos]].
+
+[[SECTION:2:Roads and Streets]]
+*[[Capital Boulevard]]
+*[[Popular Street]]
+*[[San Andreas Avenue]]
+*[[Supply Street]]
+*[[Vespucci Boulevard]]
+
+[[SECTION:2:Places of Interest]]
+*[[Darnell Bros.]]
+*[[La Mesa Police Station]]
+*[[Los Santos Storm Drain (HD Universe)|Los Santos Storm Drain]]
+
+[[SECTION:2:Businesses]]
+*[[The 1966 Digestive Co.]]
+*[[Casey's Diner]]
+*[[Davis Electricals]]
+*[[Del Vecchio Liquor]]
+*[[Go Loco Railroad]]
+*[[Los Santos Bag Co.]]
+*[[Los Santos Customs]]
+*[[Liquor Market]]
+*[[National Transfer and Storage Co.]]
+*[[Otto's Auto Parts]]
+*[[Soyler Textile]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Augury Insurance
+|image     = AuguryInsurance-GTAV-Logo.png
+|lcn       = {{BAWSAQ/Slider}} '''AUG'''
+|type      = insurance
+|games     =  {{Games|V=y|O=y}}
+|locations = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+}}
+
+[[LEAD]]
+'''Augury Insurance''' is an insurance company in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Insurance companies

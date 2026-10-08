@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = policestation
+|image    = NOOSE-GTAV-LSIA.png
+|caption  = Overview of the building.
+|name     = Los Santos International Airport NOOSE Station
+|location       = [[New Empire Way]], [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games    = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''Los Santos International Airport NOOSE Station''' is a [[National Office of Security Enforcement]] branch appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Government Buildings
+Government Buildings in GTA Online
+Government Buildings in GTA V
+Police stations

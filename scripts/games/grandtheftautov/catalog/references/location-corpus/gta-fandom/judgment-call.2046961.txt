@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = Judgment Call
+|image        = JudgmentCall-GTAO-Thumbnail.png
+|location     = 
+|game           = {{games|O=y}}
+|type           = CasinoWork
+|fail         = 
+|for          = [[Agatha Baker]]
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] <small>(organization)</small>
+*1 to 8 players <small>(motorcycle club)</small>
+|todo         = 
+*Go to <span class="v-hud-location">[Location]</span>.
+*Quietly take out the <span class="v-hud-enemy">guards</span>.
+*Intimidate the <span class="v-hud-enemy">corrupt judge</span>.
+*Leave the area.
+|reward = 
+*[[Money|Cash]], [[Chips]], and [[Reputation|RP]].
+|target = [[Corrupt Judge|Judge]]
+}}
+
+[[LEAD]]
+'''Judgment Call''' is a [[Casino Work]] mission featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update. It is a freeroam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[SECTION:3:Possible Locations]]
+{{Gallery
+|JudgmentCall-GTAO-SteeleWay.png|Mansion on [[Steele Way]].
+|JoshMansion-GTAV.png|[[Josh Bernstein's House|Mansion]] on [[West Eclipse Boulevard]].
+}}
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

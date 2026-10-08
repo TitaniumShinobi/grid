@@ -1,0 +1,129 @@
+[[LEAD]]
+'''Popular St''' is a street running north (in [[East Vinewood]]) to south (in [[Cypress Flats]]) in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto Online]] and [[Grand Theft Auto Online]]. The street also runs through [[La Mesa]], is a continuation of [[Hawick Ave]] and continues as [[Buccaneer Way]] when approaching [[Terminal]]. There are connections to [[Capital Blvd]], [[Chum St]], [[Dry Dock St]], [[El Rancho Blvd]], [[Elgin Ave]], [[Glory Way]], [[Innocence Blvd]], the [[Los Santos Freeway]], the [[Olympic Freeway]], [[Supply St]] and [[Vespucci Blvd]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Ammu-Nation]]
+| [[Cypress Flats]]
+|
+| Weapons
+|-
+| [[Auto Glass Body Shop]]
+| [[La Mesa]]
+|
+| Garage
+|-
+| [[Big Goods]]
+| [[La Mesa]]
+|
+| Supplier
+|-
+| [[Casey's Diner]]
+| [[La Mesa]]
+| [[Supply St]]
+| Food and drink
+|-
+| [[Central Milling Company]]
+| [[Cypress Flats]]
+| [[Dry Dock St]]/[[Hanger Way]]
+| Factory
+|-
+| [[Darnell Bros.]]
+| [[La Mesa]]
+| [[Vespucci Blvd]]
+| Factory
+|-
+| [[Fridgit]]
+| [[La Mesa]]
+| [[Innocence Blvd]]
+| Storage
+|-
+| [[La Mesa Police Station]]
+| [[La Mesa]]
+| [[Olympic Fwy]]
+| Law enforcement
+|-
+| [[Liquor Market]]
+| [[La Mesa]]
+| [[Supply St]]
+| Food and drink
+|-
+| [[Los Santos Bag Co.]]
+| [[La Mesa]]
+| [[Capital Blvd]]
+| Clothing
+|-
+| [[Los Santos Customs]]
+| [[La Mesa]]
+|
+| Garage
+|-
+| [[Los Santos Department of Water and Power]]
+| [[Cypress Flats]]
+| [[Capital Blvd]]/[[Chum St]]
+| Energy and fuel
+|-
+| [[McGrory Furniture]]
+| [[La Mesa]]
+|
+| Factory
+|-
+| [[Meltz's Pharmacy]]
+| [[La Mesa]]
+|
+| Pharmacy
+|-
+| [[National Transfer & Storage Co.]]
+| [[La Mesa]]
+| [[Vespucci Blvd]]
+| Storage
+|-
+| [[Otto's Auto Parts]]
+| [[La Mesa]]
+|
+| Garage
+|-
+| [[Pißwasser]]
+| [[Cypress Flats]]/[[La Mesa]]
+| [[Innocence Blvd]]/[[El Rancho Blvd]]
+| Food and drink
+|-
+| [[Redcar City Paints]]
+| [[La Mesa]]
+|
+| Re-spray shop
+|-
+| [[RON]] filling station
+| [[La Mesa]]
+| [[Vespucci Blvd]]
+| Energy and fuel
+|-
+| data-sort-value="Secure Unit, The"| [[The Secure Unit]]
+| [[La Mesa]]
+| [[Olympic Fwy]]
+| Storage
+|-
+| [[Soyler Textile]]
+| [[La Mesa]]
+| [[Olympic Fwy]]
+| Factory
+|-
+| [[Tractor Parts]]
+| [[La Mesa]]
+|
+| Auto parts
+|-
+| [[Zalinsky Supply & MFR Corp]]
+| [[La Mesa]]
+|
+| Manufacturing supplies
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

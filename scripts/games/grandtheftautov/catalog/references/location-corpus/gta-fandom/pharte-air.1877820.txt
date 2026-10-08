@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = tools
+|name          = Pharte Air
+|sign          = PharteAir-GTAV-LogoSign.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Air compressor manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = [[Pharte Gas]]
+|products      = Pharte Air Pro
+|vehicles      = 
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Pharte Air''' is a air compressor manufacturer appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tool manufacturers

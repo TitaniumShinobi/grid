@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name        = Tinsel Towers
+|image       = TinselTowers-GTAV.png
+|caption     = Tinsel Towers during daytime.
+|game        = O
+|appearances = {{Games|V=y|O=y}}
+|style       = High-end apartments
+|garage      = 
+*10 vehicles
+*3 bikes
+|price       = 
+*$286,000 <small>(apartment 29)</small>
+*$492,000 <small>(apartment 42)</small>
+*$270,000 <small>(apartment 45)</small>
+|occupants   = {{GTAOP}} <small>(determinant)</small>
+|unlocked    = Rank 5
+}}
+
+[[LEAD]]
+'''Tinsel Towers''' is a 12-story residential building that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mid-rise buildings
+Properties
+Safehouses

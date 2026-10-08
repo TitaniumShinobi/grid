@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = FINANCIAL SERVICES COMPANY
+|style          = 
+|landmark       = 
+|safehouse      = 
+|type           = 
+|name           = Echo Rock Insurance & Financial Services
+|sign           = 
+|image          = EchoRockInsurance&FinancialServices-GTAVee.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Echo Rock Shopping Plaza]], [[Hawick Avenue]], [[Alta]], [[Los Santos (HD Universe)|Los Santos]]
+|map            =
+|map_caption    =
+|status         = active
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Echo Rock Insurance & Financial Services''' is an insurance and finance firm appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Financial services companies
+Insurance companies

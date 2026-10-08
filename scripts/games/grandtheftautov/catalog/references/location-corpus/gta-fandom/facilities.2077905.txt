@@ -1,0 +1,106 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|image = 
+|style = {{HUDIcons|game=O|base|animated=y}} Underground bunker
+|occupants = 
+[[GTA Online Protagonist|''GTA Online'' Protagonist]]<br>
+[[Motorcycle Clubs]] <small>(determinant)</small><br>
+[[Organizations]] <small>(determinant)</small>
+|price = [[Money|$]]1,250,000-2,950,000 base price to $5,767,500
+|game = O
+}}
+
+[[LEAD]]
+'''Facilities''' are underground bases introduced to ''[[Grand Theft Auto Online]]'' in [[GTA Online: The Doomsday Heist|The Doomsday Heist]] update.
+
+[[SECTION:3:Garage]]
+Once underground, players appear in a large oval room containing the garage storage areas. The  level (designated -3) contains storage for large weaponized vehicles including the [[Avenger]]. The [[Weaponized Vehicle Workshop]] with the [[Weapon Mechanic]] is found at one end. If you destroy you facility exclusive vehicles at least three to five times, pieces of those vehicles will appear in the weaponized vehicle workshop. A small keypad terminal with a yellow corona is used to return to the surface on foot. Ramps and stairs lead up to the mezzanine level that runs around the outside edge of the oval room. A blue corona in the workshop provides the vehicle management menu to rearrange the stored vehicles. A walkway is visible on a third level but it is inaccessible.
+
+The oval room serves as storage for seven smaller personal vehicles and five large weaponized vehicles; the southern area stores the Avenger on the lower area close to the main elevator, while the southern side of the mezzanine level stores the [[Chernobog]] and the [[RCV]] on the right and left side of the Avenger, respectively, together with three personal vehicles. The northern side of the mezzanine level stores four more personal vehicles and the [[TM-02 Khanjali]] at the center of said area. The circular platform accessed by the double set of stairs stores the [[Thruster]].
+
+From level -3, a walkway at the opposite end to the workshop is manned by an armed guard and leads to the security area.
+
+[[SECTION:3:War Room]]
+The War Room is a circular room containing eight ceiling mounted curved displays surrounding a central circular control for the [[Orbital Cannon]].
+
+[[SECTION:3:Office]]
+Downstairs from the lobby and gantry, there is a large office space with 8 desks with triple monitor computer displays. Breakout space is directly beneath the lounge with operational [[Vending Machines]] and tables and seats which is then followed by a second office space with a further 4 desks. IAA agents both male and female can only spawn when there isn't an active heist, with the exception of two periodically spawn near the vending machine.
+
+[[SECTION:4:Open Server Area]]
+At the far end of the office space on two levels are computer server towers which are attended by multiple NPCs in white lab coats, all wearing generic doctor ID badges from St. Rytkonen University Medical Center claiming to be "James Smith" Attending Physician.
+
+If the Orbital Cannon is purchased, the server towers are visually updated to be twice as tall with a much cleaner design.
+
+[[SECTION:3:Heist Planning Room]]
+Back upstairs, the final accessible room in the facility is the Heist Planning Room where [[Lester Crest]] introduces the player to [[Avon Hertz]] and [[Cliffford|Clifford]] to set in motion the events of [[The Doomsday Heist]] itself. Players can access this room to play through the heists and return to replay any of them later.
+
+[[SECTION:3:Locations]]
+{| class="wikitable"
+! colspan="5" align="center" width="100%" | Facilities
+|-
+! width="9%" |Facility
+! width="30%" |Image
+! width="44%" |In-game description
+! width="8%" |Price
+|-
+|[[Paleto Bay]]
+|[[File:Facilities-GTAO-PaletoBay.png|thumb|150px|center]]
+|''If you're the kind of mastermind who likes the calming sound of the ocean to be audible beneath the maniacal laughter echoing through the cavernous halls of your secret lair, then this is the beauty spot for you.''
+|$1,250,000
+|-
+|[[Mount Gordo]]
+|[[File:Facilities-GTAO-MountGordo.png|thumb|150px|center]]
+|''Forget the scare stories; there are no ghosts, and no one does yoga here. The foothills of Mount Gordo are the perfect backwater spot for an off-the-books, nuke-proof hideaway.''
+|$1,465,000
+|-
+|[[Sandy Shores]]
+|[[File:Facilities-GTAO-SandyShores.png|thumb|150px|center]]
+|''These days, Sandy Shores is an up and coming second home hotspot for the criminally deranged, and here's your chance to jump the waiting list. Act now: in this neighborhood an abandoned military installation won't be on the market for long.''
+|$2,740,000
+|-
+|[[Zancudo River]]
+|[[File:Facilities-GTAO-ZancudoRiver.png|thumb|150px|center]]
+|''This charming riverside spot is cold in the winter, baking hot in the summer, and has swarms of malarial mosquitoes all year round. You wanted secluded, well here it is.''
+|$2,100,000
+|-
+|[[Grand Senora Desert]]
+|[[File:Facilities-GTAO-GrandSenoraDesert.png|thumb|150px|center]]
+|''A really fascinating site with lots of history and character. No need to worry about the small print, just tell your lawyer to sign. We are legally required to give notice of documents suggesting this site was recently a nuclear testing facility. No steps have been taken to ensure its safety.''
+|$2,525,000
+|-
+|[[Lago Zancudo]]
+|[[File:Facilities-GTAO-LagoZancudo.png|thumb|150px|center]]
+|''It might not occur to you to excavate a subterranean facility in marshland overlooked by the largest military base in the state. But now the idea's in your head, how can you resist?''
+|$1,670,000
+|-
+|[[Route 68]]
+|[[File:Facilities-GTAO-Route68.png|thumb|150px|center]]
+|''When you're thinking of investing in a labyrinthine military-grade vault hundreds of feet below ground, the address is everything. Just off the iconic Route 68, surrounded by mountain peaks, this little number is just the country retreat you've been looking for.''
+|$2,312,500
+|-
+|[[RON Alternates Wind Farm]]
+|[[File:Facilities-GTAO-RONWindfarm.png|thumb|150px|center]]
+|''You've always suspected the eco movement in San Andreas was a front for something, and now you know. The power from this wind farm has been redirected into your hot tub, and the turbines make an excellent deterrent to inquisitive police helicopters.''
+|$1,855,000
+|-
+|[[Land Act Reservoir]]
+|[[File:Facilities-GTAO-LandActReservoir.png|thumb|150px|center]]
+|''The only thing edgier than owning a sprawling underground facility is owning one that could fill with water at any second. Just avoid target practice near the east wall, and you'll probably be fine.''
+|$2,950,000
+|}
+
+[[SECTION:3:The 10th Facility]]
+A non-purchasable IAA Facility is located under the [[Radio Telescope Array]] & appears in [[The Doomsday Heist]] Act I Finale, [[The Data Breaches]], and revisited in [[LSA Operation - Whistleblower]]. In this version, the garage area is not present, being replaced by the entrance elevator, directly beside the security scanner. There is another elevator inside this facility which presumably is normally used to access the lower levels.
+
+At the opposite end of this Facility, the Heist Planning Room is replaced with a hallway that leads the players further inside the premises. This section is not accessible in any player-owned Facility. Along the hallway, there are several rooms & internal stairwells leading down through level -2. A Server Room is located on the floor below (level -3) and is only accessible via an internal stairwell at the end of level -2. A larger War Room in this version is located on level -2 & has four terminals which are used to remote-control exterior defence turrets. The turrets themselves have a dual set of a machine gun (similar to most remote guns) and an autocannon (similar to the [[Avenger]]'s cannons).
+
+[[SECTION:3:The 11th Facility]]
+Another non-purchasable IAA facility is located under their [[IAA Headquarters|headquarters]], which appears in [[The Agency Deal]] [[The Agency Deal/Finale|finale]]. This one is mostly identical to the previous one and shares the same interior, but the access point is from an alternative entrance located near the construction site of the [[Pillbox North Station]]. This entrance leads the player to the Server Room on Level -3, and they must reach the interrogation room on Level -2, where the [[Crystal Vape Dealer|dealer]] is held. The War Room and Level -1 are inaccessible in this mission, although the stairs leading to Level -1 are still accessible.
+
+[[CATEGORIES]]
+Features
+Features in GTA Online
+Locations in GTA Online in Blaine County
+Locations in GTA Online in Los Santos County
+Properties
+Properties in GTA Online

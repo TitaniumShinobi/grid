@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = The Lab
+|logo         = TheLab-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{Games|V={{DLC|mpluxe2}}|O={{DLC|mpluxe2}}}}
+|mentioned    = 
+|locations    = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = ''Dropping science with Dr. No and the Chemical Bro.''
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Continuous mix radio stations|Continuous mix radio station]]
+|genre        = [[:Category:Hip hop radio stations|Hip hop]]
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 94.5 FM
+|host         = 
+*[[Oh No]]
+*[[The Alchemist]]
+|product      = 
+|radio_tracks = 13
+|radio_length = 
+}}
+
+[[LEAD]]
+'''The Lab''' is a [[Radio Stations in GTA V|radio station]] featured in {{V}} and {{O}} that plays {{WP|Hip-hop|hip hop}}. The station was initially released with the [[Personal Computer|PC]] version of ''GTA V'', but was later added to other versions as part of the [[Ill-Gotten Gains Part 2]] update.
+
+[[CATEGORIES]]
+Continuous mix radio stations
+Hip hop radio stations
+Media in GTA Online: Ill-Gotten Gains Part 2
+Media in GTA V: Ill-Gotten Gains Part 2

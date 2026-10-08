@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = vehicleparts
+|name          = Imani Tech
+|sign          = TheContract-GTAOe-ReleaseNewswire-ImaniTechLogo-InfoboxImage.png
+|image_label   = 
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpsecurity}}}}
+|mentioned     = 
+|locations     = [[Agencies]]
+|business_type = Vehicle parts manufacturer
+|founded       = [[2021]]
+|founder       = [[Imani]]
+|ceo           = 
+|owner         = [[Imani]]
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+*[[#Remote Control Unit|Remote Control Unit]]
+*[[#Missile Lock-On Jammer|Missile Lock-On Jammer]]
+*[[#Armor Plating|Armor Plating]]
+*[[#Primary Weapons|Primary Weapons]]
+*[[#Slick Proximity Mine|Slick Proximity Mine]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|unlockedby    = 
+|unlockedafter = 
+}}
+
+[[LEAD]]
+'''Imani Tech''' is a vehicle parts manufacturer featured in {{O}} as part of [[GTA Online: The Contract|The Contract]] update. Players can apply special Imani Tech customization options to select vehicles in their [[Agency]]'s [[Vehicle Workshop]].
+
+[[SECTION:3:Slick Proximity Mine]]
+Slick Proximity Mines can be outfitted to the underside of vehicles. In a similar fashion to [[Vehicle Mines]], these can be dropped{{vague|how often?}}, causing any vehicle driving over them to temporarily lose control of their steering wheel and brakes.
+
+Slick Proximity Mines are available on select vehicles for a fixed price of $135,000.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Contract
+Vehicle parts manufacturers

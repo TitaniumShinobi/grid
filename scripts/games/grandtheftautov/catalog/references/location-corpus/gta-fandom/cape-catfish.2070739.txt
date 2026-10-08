@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = TOWN
+|name = Cape Catfish
+|image = CapeCatfish-GTAV.png
+|caption = A view of Cape Catfish from the [[Pacific Ocean]].
+|games = {{Games|V=y|O=y}}
+|pscanner       = PoliceScanner-GTAVe-Neighborhood-CapeCatfish.ogg
+|country = [[United States of America]]
+|state = [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Cape Catfish''' is a small unincorporated community located in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is situated north of the [[Humane Labs and Research]] chemical research facility, southeast of [[El Gordo Lighthouse]] and [[Catfish View]], east of [[Grapeseed]] on the shores of the [[Pacific Ocean]]. A dirt road leads into the settlement, which is mainly a fishing dock with a small business with homes scattered around.
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Towns
+Zones

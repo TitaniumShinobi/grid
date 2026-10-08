@@ -1,0 +1,104 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = clothingstore
+|name          = Ranch
+|image         = Ranch-GTASA-Logo.svg
+|caption       = 
+|aka           = Ranch Jeans {{Small|(''GTA V'' & ''GTA Online'')}}
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty|Liberty]]
+*[[State of Alderney]]
+*[[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations_2|See more]])
+|founded       = [[1888]]
+|founder       = 
+|ceo           = 
+|owner         = 
+|divisions     = 
+|employees     = 
+|products      = 
+|vehicles      = [[Burrito (HD Universe)|Burrito]]
+|taglines      = "Rodeo style since 1888"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+|opentimes     = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Ranch''' is a clothing store chain and fashion brand that appears in {{IV}}, {{EFLC}}, {{CW}}, {{V}}, and {{O}}.
+
+A [[Ranch (3D Universe)|rendition]] of the chain is also featured in the {{3D}}.
+
+[[SECTION:3:Locations]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'']]
+*The branch in [[Leftwood]], [[State of Alderney|Alderney]] is based on {{URL|https://maps.app.goo.gl/w3LKv8LGewgd4s277|4 Washington Street}} in {{WP|Tenafly, New Jersey}}.
+*The branches in [[The Exchange (GTA IV)|The Exchange]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]] are based on {{URL|https://maps.app.goo.gl/d3dLWM5THjRgmgWf8|174 Broadway}} in the {{WP|Financial District, Manhattan|Financial District}} of {{WP|Manhattan}}, New York.
+
+[[SECTION:4:''Grand Theft Auto V'' and ''Online'']]
+*The branch in [[Del Perro]], [[Los Santos County]] is a rendition of the {{WP|Superdry}} outlet, which has since closed, at {{URL|https://maps.app.goo.gl/K5gR2PJUEhpfthCK8|1334 Third Street Promenade}} in {{WP|Santa Monica, California}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+{{Gallery
+|header = Liberty City
+|Ranch-GTAIV-CityHall.png|[[Liberty Lane]] and [[Diamond Street]], [[City Hall (GTA IV)|City Hall]], [[Algonquin]].
+|Ranch-GTAIV-TheExchange-CalciumSt.png|[[Calcium Street]] and [[Amsterdam Lane]], [[The Exchange (GTA IV)|The Exchange]], Algonquin. {{Small|([[:File:Ranch-GTAIV-TheExchangeBuilding.png|building view]])}}
+|Ranch-GTAIV-TheExchange-BariumSt.png|[[Barium Street]] and [[Borlock Road]], The Exchange, Algonquin. {{Small|([[:File:Ranch-GTAIV-TheExchangeBuilding2.png|building view]])}}
+|Ranch-GTAIV-NorthHolland.png|[[Uranium Street]] and [[Denver Avenue]], [[North Holland]], Algonquin.
+|Ranch-GTAIV-MiddlePark.png|[[East Tower]], [[Columbus Avenue]], [[Middle Park East]], Algonquin.
+|Ranch-GTAIV-Columbus&FeldsparSuffolk.png|Columbus Avenue and [[Feldspar Street]], [[Suffolk]], Algonquin.
+|Ranch-GTAIV-Suffolk.png|[[Frankfort Avenue]], Suffolk, Algonquin. 
+|Ranch-GTAIV-Bohan.png|[[Folsom Way]], [[Fortside]], [[Bohan]].
+|Ranch-GTAIV-Willis.png|[[Big Willis Mall]], [[Saratoga Avenue]], [[Willis]], [[Dukes]].
+}}
+{{Gallery
+|header = Alderney
+|Ranch-GTAIV-AlderneyCity-LockowskiAve.png|[[Lockowski Avenue]], [[Alderney City]].
+|Ranch-GTAIV-AlderneyCity-Myung.png|[[Myung Building]], [[Myung]], Alderney City.
+|Ranch-GTAIV-Leftwood.png|[[Bridger Street]] and [[Flathead Road]], [[Leftwood]].
+}}
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+{{Gallery
+|Ranch-GTACW-CityHall.png|Liberty Lane and Diamond Street, City Hall, Algonquin.
+|Ranch-GTACW-TheExchange-CalciumSt.png|Calcium Street and Amsterdam Lane, The Exchange, Algonquin.
+|Ranch-GTACW-NorthHolland.jpg|Uranium Street and Denver Avenue, North Holland, Algonquin.
+|Ranch-GTACW-MiddlePark.png|East Tower, Columbus Avenue, Middle Park East, Algonquin.
+|Ranch-GTACW-Suffolk.png|Columbus Avenue and Feldspar Street, Suffolk, Algonquin.
+|Ranch-GTACW-Fortside.png|Folsom Way, Fortside, Bohan.
+|Ranch-GTACW-Willis.png|Big Willis Mall, Saratoga Avenue, Willis, Dukes.
+}}
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+{{Gallery
+|Ranch-GTAV-DelPerro.png|[[Liberty Street]] and [[Boulevard Del Perro]], [[Del Perro]].
+|Ranch-GTAVe-ProsperityStreetPromenade.png|[[Prosperity Street Promenade]], Del Perro.
+|Ranch-GTAV-TextileCity.png|[[San Andreas Avenue]] and [[Sinner Street]], [[Textile City]], [[Los Santos (HD Universe)|Los Santos]].
+|Ranch-GTAVee-MissionRow.png|[[Sinner Street]], [[Mission Row]], Los Santos.
+|Ranch-GTAV-HawickAve.png|[[Hawick Avenue]], [[Burton]], Los Santos.
+|Ranch-GTAV-VespucciCanals.jpg|[[San Andreas Avenue]], [[Vespucci Canals]], Los Santos.
+|Ranch-GTAVee-KoreanPlazaNorthBldg.png|[[Korean Plaza]], [[Palomino Avenue]], [[Little Seoul]], Los Santos.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

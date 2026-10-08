@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|image     = 
+|type      = Railroad company
+|games     = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''White Bolt Railroad Company''' is a railroad company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that operates in [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Railroad companies

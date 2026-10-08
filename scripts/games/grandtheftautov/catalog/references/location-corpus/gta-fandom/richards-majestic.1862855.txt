@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = Richards Majestic
+|image = RichardsMajestic-GTAV.png
+|caption = The building during daytime.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = High-end apartments
+|garage = 10 vehicles <br /> 3 bikes
+|price = $484,000 <small>(apartment 2)</small><br>$241,000 <small>(apartment 4)</small><br>$253,000 <small>(apartment 51)</small>
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5}}
+
+[[LEAD]]
+The '''Richards Majestic''' is a skyscraper featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Properties in GTA Online
+Safehouses
+Skyscrapers

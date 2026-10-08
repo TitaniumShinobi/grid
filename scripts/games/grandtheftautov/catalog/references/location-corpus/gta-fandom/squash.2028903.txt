@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = Squash
+|sign          = Squash-GTAO-Logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpimportexport}}}}
+|mentioned     = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|products      = [[#Merchandise|Merchandise]]
+|taglines      = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Squash''' is a streetwear clothing brand appearing in {{O}} as part of the [[GTA Online: Import/Export|Import/Export]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Import/Export
+Fashion brands

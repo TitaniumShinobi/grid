@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|name = 7953 Algonquin Boulevard
+|image = 7953AlgonquinBlvd-GTAVe-Front.png
+|caption = 
+|games = {{Games|V=y|O=y}}
+|location = [[Algonquin Boulevard]], [[Sandy Shores]], [[Blaine County]]
+|altnames  = The Windmill House
+|type  = house
+|floors = 2
+|map = 7953AlgonquinBlvd-GTAVe-Map.png
+|map_caption =
+}}
+
+[[LEAD]]
+'''7953 Algonquin Boulevard''' is a numbered home in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

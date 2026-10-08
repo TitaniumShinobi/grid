@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = RECREATIONAL AREA
+|image = NorthPoint-GTAV.png
+|aka = Paleto Point
+|map = North Point GTAV Map Location.jpg
+|caption = Overview of North Point.
+|games = {{Games|V=y|O=y}}
+|location = [[Paleto Bay]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''North Point''', also known as '''Paleto Point''', is a recreational area located at the northwestern corner of [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[North Point Trim Track]]
+*[[Paleto Bay Training Grounds]]
+
+[[CATEGORIES]]
+Beaches
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Zones

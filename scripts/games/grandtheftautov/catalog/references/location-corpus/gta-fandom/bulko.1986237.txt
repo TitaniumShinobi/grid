@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|type          = 
+|name          = Bulko
+|sign          = 
+|image         = Bulko-GTAO-Logo.png
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mptuner}}}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Bulko''' is an unspecified company that appears in {{O}} as part of the [[GTA Online: Los Santos Tuners|Los Santos Tuners]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Los Santos Tuners

@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = BSC Machine Maintenance
+|image       = BSCMachineMaintenance-GTAVpc.png
+|type        = Maintenance
+|games       = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations   = [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+|founded     = 
+|phone       = 555-0182
+}}
+
+[[LEAD]]
+'''BSC Machine Maintenance '''is a machine maintenance store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hardware stores

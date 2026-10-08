@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = Eclipse Towers
+|image = EclipseTowers-GTAV.png
+|caption = The Eclipse Towers during daytime.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|style = High-end apartments
+|garage = 10 vehicles <br /> 3 bikes
+|price = $1,100,000 <small>(Penthouse Suite 3)</small><br>$985,000 <small>(Penthouse Suite 1)</small><br>$905,000 <small>(Penthouse Suite 2)</small><br>$500,000 <small>(Apartment 3)</small><br>$382,000 <small>(Apartment 5)</small><br>$373,000 <small>(Apartment 9)</small><br>$400,000 <small>(Apartment 31)</small><br>$391,000 <small>(Apartment 40)</small>
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5}}
+
+[[LEAD]]
+'''Eclipse Towers''' is a residential skyscraper in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is located on [[South Mo Milton Drive]] in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Apartments in GTA Online
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Properties in GTA Online
+Safehouses in GTA Online
+Skyscrapers

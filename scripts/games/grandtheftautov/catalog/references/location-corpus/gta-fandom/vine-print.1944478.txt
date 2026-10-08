@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|type      = printshop
+|name      = Vine Print
+|image     = VinePrint-GTAV-Logo.png
+|caption   = '''Vine Print'''
+|taglines  =
+|games     = {{Games|V=y|O=y}}
+|location  = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Vine Print''' is a print shop in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Print shops

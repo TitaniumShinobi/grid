@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = SHOPPING CENTER
+|name           = Arirang Plaza
+|image          = ArirangPlaza-GTAV.png
+|caption        = '''Arirang Plaza''' as viewed from the south.
+|location       = [[Vespucci Boulevard]], [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+|games          = {{games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Arirang Plaza''' (Korean:아리랑 플라자) is a shopping center featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Shopping malls

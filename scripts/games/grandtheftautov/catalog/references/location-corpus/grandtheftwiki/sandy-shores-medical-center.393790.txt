@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox Structures|
+|image=[[File:SandyShoresMedicalCenter-GTAV-exterior.jpg|300px]]
+|caption= Sandy Shores Medical Center, on the [[Alhambra Dr]] side, in [[Grand Theft Auto V|GTA V]].
+|game_1 = GTA V
+|game_2 = GTA Online
+|location = [[Alhambra Dr]] and [[Mountain View Dr]] in [[Sandy Shores]], [[Blaine County]]
+|use = Hospital
+|height =  
+}}
+
+[[LEAD]]
+The '''Sandy Shores Medical Center''' is a [[Hospitals|hospital]] with entrances on both [[Alhambra Dr]] and [[Mountain View Dr]] in [[Sandy Shores]], [[Blaine County]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Hospitals in GTA V

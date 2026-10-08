@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "grid.startup-regression-policy.v1",
+  "contract": "1D",
+  "baselineSelectionManifest": "contract-1c-baseline-selection.v1.json",
+  "baselineReceiptFile": "grid-startup-receipt-1c-baseline.json",
+  "readyDuration": {
+    "relativeRatio": 0.15,
+    "absoluteMs": 50,
+    "evidenceObservedMinMs": 1105,
+    "evidenceObservedMaxMs": 1319,
+    "evidenceSampleCount": 3,
+    "readyDurationMaxMs": 1524
+  },
+  "stageDuration": {
+    "relativeRatio": 0.15,
+    "absoluteMs": 25,
+    "monitoredStageIds": [
+      "SHELL_INITIALIZATION.MAIN_WINDOW",
+      "AUTH_SESSION_RESTORE",
+      "SHELL_INITIALIZATION.PRODUCT_STATE",
+      "SHELL_INITIALIZATION.UI_ACTIVATION",
+      "SHELL_INITIALIZATION",
+      "REGISTERED_STATE_LOAD",
+      "PREPARED_CANONICAL_STATE_LOAD"
+    ],
+    "stageDurationCeilingMs": {
+      "SHELL_INITIALIZATION.MAIN_WINDOW": 406,
+      "AUTH_SESSION_RESTORE": 834,
+      "SHELL_INITIALIZATION.PRODUCT_STATE": 136,
+      "SHELL_INITIALIZATION.UI_ACTIVATION": 86,
+      "SHELL_INITIALIZATION": 1481,
+      "REGISTERED_STATE_LOAD": 66,
+      "PREPARED_CANONICAL_STATE_LOAD": 4
+    }
+  },
+  "requiredBeforeReadyStageIds": [
+    "AUTH_SESSION_RESTORE",
+    "ACCOUNT_LOOKUP",
+    "GRID_ACCOUNT_STATE",
+    "LOCAL_DEVICE_STATE",
+    "REGISTERED_STATE_LOAD",
+    "PREPARED_CANONICAL_STATE_LOAD",
+    "SHELL_INITIALIZATION.MAIN_WINDOW",
+    "SHELL_INITIALIZATION.PRODUCT_STATE",
+    "SHELL_INITIALIZATION.UI_ACTIVATION",
+    "SHELL_INITIALIZATION",
+    "READY"
+  ],
+  "forbiddenBeforeReadyWorkClassifications": [
+    "REGISTRATION",
+    "REBUILD"
+  ],
+  "forbiddenBeforeReadyStageSignals": {
+    "staleRefreshMustBeSkippedOrAbsent": true,
+    "rebuildMustBeAbsent": true,
+    "registrationMustBeAbsent": true
+  },
+  "backgroundWork": {
+    "backgroundStageId": "SHELL_INITIALIZATION.BACKGROUND_HYDRATE",
+    "mustNotCompleteBeforeReady": true,
+    "mustBeBackgroundOptionalClassification": true
+  },
+  "shellUsability": {
+    "readyStageId": "READY",
+    "requiredReadiness": "READY",
+    "requiredReadyDetailContains": "Shell usable"
+  }
+}

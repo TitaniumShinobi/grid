@@ -1,0 +1,52 @@
+[[INFOBOX]]
+{{Infobox structure
+|image= PaletoBoulevard-GTAV.jpg
+|caption=Paleto Boulevard.
+|games={{Games|V=y|O=y}}
+|start=[[Great Ocean Highway]]
+|end=[[Procopio Drive]]
+|map=<gallery>
+PaletoBoulevard-GTAV-Map.png|Map
+PaletoBoulevard-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Paleto Boulevard''' is a four lane throughfare in {{V}} and {{O}}, that passes through the town of [[Paleto Bay]]. The street starts at  [[Great Ocean Highway]]. The street spans across Paleto Bay and ends at [[Procopio Drive]].
+
+[[SECTION:2:Businesses]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[The Bay Bar (Paleto Bay)|The Bay Bar]]
+*[[Bay Hardware]]
+*[[Bay Side Drugs]]
+*[[Belinda Mays Beauty Salon]]
+*[[Checkout!]]
+*[[Golden Buns Bakery]]
+*[[Helmut's European Autos]]
+*[[The Hen House]]
+*[[Herr Kutz Barber]]
+*[[J's Bonds]]
+*[[Mojito Inn]] <small>(At the corner of [[Pyrite Avenue]])</small>
+*[[Morris & Sons Feed and Supplies]]
+*[[No Marks Cleaners]]
+*[[Paleto Pets]]
+*[[Peckerwood]]
+*[[Post OP]]
+*[[Ray's Electronics]]
+*[[Sally's Surf Shop]]
+*[[Willie's Supermarket]]
+*[[Xero|Xero Gas]]
+
+[[SECTION:2:Places of Interest]]
+*[[0232 Paleto Boulevard]]
+*[[The Bay Care Center]]
+*[[Paleto Bay Fire Station]]
+*[[Paleto Bay Sheriff's Office]]
+*[[Red's Machine Supplies]]
+*[[St. Brigid Baptist Church]]
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Chemical tank manufacturer
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|image = Thermoskite-GTAV-Logo.png
+}}
+
+[[LEAD]]
+'''Thermoskite''' is a manufacturer of chemical storage and mixing tanks in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics companies

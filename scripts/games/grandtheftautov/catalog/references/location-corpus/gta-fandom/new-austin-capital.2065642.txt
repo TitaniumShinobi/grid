@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{infobox business
+|name = 
+|ceo = Unknown
+|type = 
+|games = {{Games|O={{EEEV}} {{DLC|mpexecutive}}}}
+|locations = Unknown
+}}
+
+[[LEAD]]
+'''New Austin Capital''' is a company mentioned in {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Companies

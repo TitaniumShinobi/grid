@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = restaurant
+|name           = Frenchie's Restaurant
+|sign           = Frenchie'sRestaurant-GTAV-Logo.png
+|image          =
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]]
+|established    = [[1967]]
+|taglines       =
+|status         = active
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Frenchie's Restaurant''' is a fine dining restaurant in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Fine dining restaurants
+French-themed restaurants

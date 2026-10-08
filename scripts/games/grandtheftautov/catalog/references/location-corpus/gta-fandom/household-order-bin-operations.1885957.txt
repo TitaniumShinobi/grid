@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = sanitation
+|name          = Household Order Bin Operations Inc.
+|sign          = HOBO-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = HOBO
+|games         = {{games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[State of San Andreas (HD Universe)|San Andreas]]
+*[[State of Leonida|Leonida]]
+|business_type = Waste collections and disposal
+|founded       = [[1979]]
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+*[[Biff]]
+|weapons       = 
+|taglines      = ''Dumping in your street since 1979''
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Household Order Bin Operations Inc.''', more commonly known as '''HOBO''', is a garbage and waste management company featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Sanitation companies

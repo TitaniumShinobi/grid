@@ -1,0 +1,65 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|type           = pier
+|name           = Del Perro Pier
+|sign           = 
+|image          = DelPerroPier-GTAVee.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|status         = active
+|structure_type = 
+|architecture   = 
+|length         = 
+|height         = 
+|area           = 
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = 
+<gallery>
+DelPerroPier-GTAV-SatelliteView.jpg|Satellite View
+</gallery>
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Del Perro Pier''' is a recreational pier featured in {{VO}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Del Perro Police Station]]
+*[[Pleasure Pier]]
+**[[Ferris Whale]]
+**[[Leviathan (roller coaster)|Leviathan]]
+
+[[SECTION:2:Businesses]]
+*[[Bean Machine]]
+*[[Beefy Bill's Burger Bar]]
+*[[Burger Shot (HD Universe)|Burger Shot]]
+*[[The Cherry Popper Ice Cream Company (HD Universe)|The Cherry Popper Ice Cream Company]]
+*[[Chihuahua Hotdogs]]
+*[[Cluckin' Bell (HD Universe)|Cluckin' Bell]]
+*[[Coast Cutters]]
+*[[Cream Pie]]
+*[[Crusty Seaman Fishing Tackle]]
+*[[Gifts At The Pier]]
+*[[Hung Drawn & Quarters]]
+*[[Lagoon's Diner]]
+*[[Mug Shots]]
+*[[Out of Towners]]
+*[[Pearl's Seafood]]
+*[[Sharkies Bites]]
+*[[Soak N Spoke]]
+*[[The Big Puffa Seafood]]
+*[[The Sea Word Souvenirs]]
+
+[[CATEGORIES]]
+Landmarks
+Piers
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

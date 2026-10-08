@@ -1,0 +1,67 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = 
+<gallery>
+InnocenceBoulevard-GTAV-WesAansig.png|Looking west
+InnocenceBoulevard-GTAV-OosAansig.png|Looking east
+</gallery>
+|caption = 
+|games = {{Games|V=y|O=y}}
+|start = [[Calais Avenue]] and [[Adam's Apple Boulevard]], [[Little Seoul]]
+|end = [[Sustancia Road]], [[East Los Santos (HD Universe)|East Los Santos]]
+|map = 
+<gallery>
+InnocenceBoulevard-GTAV-Map.png|Map
+InnocenceBoulevard-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Innocence Boulevard''' is a street located in [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}.
+
+[[SECTION:2:Properties]]
+*[[LSPD Auto Impound]] <small>([[Franklin Clinton|Franklin]] only)</small>
+
+[[SECTION:2:Places of Interest]]
+*[[Bilingsgate Motel]]
+*[[Central Los Santos Medical Center]]
+*[[Chamberlain Hills Shopping Plaza]]
+*[[Davis City Hall]]
+*[[Davis Sheriff's Station]]
+*[[Los Santos County Coroner Office]]
+*[[Pißwasser Factory]]
+*[[Puerto Del Sol Station]]
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]] <small>(accessible interior)</small>
+*[[Bad Day Goods]]
+*[[Cart-L|Cart-L Farmacia]] <small>(corner of Carson Avenue)</small>
+*[[Cent Carpet]] <small>(corner of Roy Lowenstein Boulevard)</small>
+*[[Checkout!|Checkout! Discount Store]] <small>(accessible interior)</small>
+*[[City Paints Inc.]]
+*[[Cluckin' Bell (HD Universe)|Cluckin' Bell]]
+*[[Fern's Foreign & Domestic]] <small>(corner of Elgin Avenue)</small>
+*[[Flints Autos]] <small>(corner of Power Street)</small>
+*[[Fridgit]]
+*[[Glass Heroes Auto Repairs]] <small>(corner of Alta Street)</small>
+*[[Globe Oil]] gas station <small>(corner of Alta Street)</small>
+*[[Go Loco Railroad]]
+*[[Hands On Car Wash]]
+*[[Happy Shark]]
+*[[Los Santos Office Supply Co.]]
+*[[Los Santos Tattoos]] <small>(corner of El Rancho Boulevard)</small>
+*[[LS Paper Co]]
+*[[Mom's Famous Tacos]] <small>(corner of Davis Avenue)</small>
+*[[Ring of Fire Chili House]] <small>(corner of Strawberry Avenue)</small>
+*[[Snapper's Delight]]
+*Sud's Quality Cleaners <small>(corner of Strawberry Avenue)</small>
+*[[Tire Nutz]] <small>(corner of Power Street)</small>
+*[[Vine Print]]
+*[[Wok It Off]]
+*[[Zany-Z's]]
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

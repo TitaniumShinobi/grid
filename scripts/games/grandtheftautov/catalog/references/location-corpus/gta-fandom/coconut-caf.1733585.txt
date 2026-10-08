@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Coconut Café
+|image = CoconutCafé-GTAV.png
+|caption = The café, seen from Bay City Avenue.
+|type = Restaurant
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Goma Street]], [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]]
+|founded = [[1967]]
+}}
+
+[[LEAD]]
+The '''Coconut Café''' is a small restaurant and café in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on [[Bay City Avenue]] and [[Goma Street]], [[La Puerta]] in [[Los Santos (HD Universe)|Los Santos]]. The business sells sandwiches, bagels, coffee, milkshakes, and seafood. According to the logo, it was established in [[1967]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Cafés

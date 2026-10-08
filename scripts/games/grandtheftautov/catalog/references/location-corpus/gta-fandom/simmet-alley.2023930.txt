@@ -1,0 +1,56 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|type           = shoppingcenter
+|name           = Simmet Alley
+|sign           = 
+|image          = 
+<gallery>
+SimmetAlley-GTAV-South.png|South entrance
+SimmetAlley-GTAV-North.png|North entrance
+</gallery>
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Textile City]], [[Los Santos (HD Universe)|Los Santos]]
+|businesses     = [[#Businesses]]
+|map            = SimmetAlley-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Simmet Alley''' is a back alley shopping path in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[Textile City]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Businesses]]
+{{Columns
+|
+*[[Bag Ladies]]
+*[[The Bean Machine|Bean Machine]]
+*[[Cap It All City]]
+*[[Dandies]]
+*[[Discount Fabrics Wholesale]]
+*[[Fabric, Lace, Cloth]]
+*[[Garbs]]
+*[[Gyro Day Hot Food]]
+*[[Lace In The Sun]]
+*[[Lace of Diamonds]]
+|
+*[[Shoe Da Man!]]
+*[[The Silk Sheikh]]
+*[[Simmet Ally's Upholstery & Drapery Fabrics]]
+*[[Simmet Fabrics]]
+*[[SND. Textiles]]
+*[[Total Pants]]
+*[[Total Stitch Up]]
+*[[Touching Cloth (GTA V)|Touching Cloth]]
+*[[Wall Fabric Fashion]]
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

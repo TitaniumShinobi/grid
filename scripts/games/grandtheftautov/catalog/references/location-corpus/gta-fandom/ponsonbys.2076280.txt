@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = clothingstore
+|name          = Ponsonbys
+|sign          = Ponsonbys-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Clothing retailer & fashion brand
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|taglines      = "Effeminate Luxury"
+|bawsaq        = {{BAWSAQ/Slider}} '''PON'''
+|status        = active
+|accessible    = Yes
+}}
+
+[[LEAD]]
+'''Ponsonbys''' is a high-class clothing brand and retailer featured in {{V}} and {{O}}. The player can buy shares of the company on the [[BAWSAQ]] exchange index in ''GTA V''.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|PonsonbysPortolaDrive-GTAV-DaylightFront.png|[[Portola Drive]], [[Rockford Hills]]. (Night [[:File:PonsonbysPortolaDrive-GTAV-NightFront.png|view]]).
+|Ponsonbys-GTAVee-Burton.jpg|[[Rockford Plaza]], [[Las Lagunas Boulevard]], [[Burton]].
+|Ponsonbys-GTAVee-Morningwood.jpg|[[Cougar Avenue]], [[Morningwood]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing in GTA Online
+Clothing in GTA V
+Clothing store chains

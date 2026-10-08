@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Crazee Fashion
+|image     = CrazeeFashion-GTAV-Logo.png
+|caption   = '''Crazee Fashion''' logo.
+|taglines  = 
+|type      = Clothing Store
+|games     = {{Games|V=y|O=y}}
+|locations = [[Strawberry Avenue]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Crazee Fashion''' is a clothes store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

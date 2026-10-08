@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change = STREET
+|name        = Grove Street
+|image       = GroveStreetNorthwestView-GTAV.jpg
+|games       = {{Games|V=y|O=y}}
+|start       = [[Davis Avenue]]
+|end         = Grove Street ''<small>(cul-de-sac)</small>''
+|length      = 274 meters
+|map=<gallery>
+GroveStreet-GTAV-Map.png|Map
+GroveStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Grove Street''' is a [[List of Street Names|street]] in {{V}} and {{O}}, located in [[Davis]], [[South Los Santos]].
+
+[[SECTION:2:Businesses]]
+*[[LTD Gasoline]] <small>(accessible interior, corner of Davis Avenue)</small>
+*[[Grove Street Garage]] aka Auto Fix Factory.
+*An un-named closed down business at the corner of the unnamed street.
+**This location has reopened as one of the [[Arcades|Arcade]] locations added to ''Grand Theft Auto Online'' as part of [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update.
+
+[[CATEGORIES]]
+Cul-de-sacs
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

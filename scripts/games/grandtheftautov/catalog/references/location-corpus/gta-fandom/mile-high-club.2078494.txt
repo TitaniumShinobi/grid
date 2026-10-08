@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox location
+|landmark       = y
+|type           = skyscraper
+|name           = Mile High Club
+|image          = MileHighClub-GTAV.png
+|caption        = Overview of the building.
+|games          = {{games|V=y|O=y}}
+|location       = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|status         = construction
+|structure_type = Skyscraper
+|architecture   = Post-modern
+|floors         = 48 <small>(main tower - upper)</small><br>17 <small>(main tower - lower)</small>
+|file_name      = 
+*<code>dt1_21_build1</code> <small>(main tower - lower)</small>
+*<code>dt1_21_build1z</code> <small>(main tower - upper)</small>
+*<code>dt1_21_build09</code> <small>(south complex)</small>
+*<code>dt1_21_ground1</code> <small>(main tower - foundations)</small>
+*<code>dt1_21_ground2</code> <small>(south complex - foundations)</small>
+|coords         = -125.3016,-981.8962,26.30278
+|map            = MileHighClub-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Mile High Club''' is a skyscraper complex under construction featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Buildings under construction
+Skyscrapers

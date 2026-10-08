@@ -1,0 +1,57 @@
+[[LEAD]]
+'''Elysian Island''' is an industrial neighbourhood, comprising part of the [[Port of Los Santos]], in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. Elysian Island is bordered by [[Banning]] to the north, [[Cypress Flats]] to the northeast, [[Terminal]] to the east and southeast, [[Los Santos International Airport in GTA V|Los Santos International Airport]] to the west and the [[Maze Bank Arena]] to the northwest. The southern border is to the [[Pacific Ocean]]. The island consists mainly of shipyards, warehouses and businesses with no residential area. The [[Octopus]], [[Olifantus]] and [[The Sea Urchin]] ships are docked around the island.
+
+[[SECTION:2:Gang control and restricted areas]]
+Elysian Island is controlled by private mercenary and security group [[Merryweather Security Consulting]] who control the [[Los Santos Naval Port]] and provide security for [[Pier 400]] despite not gaining the relevant permission to do so until sometime between the missions [[Nervous Ron]] and [[The Merryweather Heist]] in [[Grand Theft Auto V|GTA V]]. There are also two Merryweather buildings, close to Pier 400. Merryweather's control over the Los Santos Naval Port, however, is far greater and entering the port will attract the attention of the mercenaries as well earning the player a [[Wanted Level in GTA V|four star wanted level]] in GTA V (although in GTA Online the player is free to explore the building).
+
+[[SECTION:2:Businesses]]
+*[[Bristols Coke Storage]]
+*[[Bugstars]]
+*[[D-Rail]]
+*[[Jetsam]]
+*[[The Los Santos State Gas Company]]
+*[[Merryweather Security Consulting]]
+*[[Pacific Bait]]
+*[[Post Op]]
+*[[Premium Deluxe Motorsport]] (<small>unmarked garage/lock up</small>)
+*[[RON]] (<small>fuel storage only</small>)
+*[[Walker Logistics]]
+
+[[SECTION:2:Places of Interest]]
+*[[Los Santos Marine]]
+*[[Los Santos Naval Port]]
+*[[Pacific Allied Shipyard]]
+*[[Pier 400]]
+
+[[SECTION:2:Roads]]
+*[[Abattoir Ave]]
+*[[Chum St]]
+*[[Chupacabra St]]
+*[[Elysian Fields Fwy]]
+*[[La Puerta Fwy]]
+*[[Plaice Pl]]
+*[[Signal St]]
+*[[Voodoo Pl]]
+
+[[SECTION:2:Neighbouring areas]]
+{{Location
+|Centre    = Elysian Island
+|North     = [[Banning]]
+|Northeast = [[Cypress Flats]]
+|East      = [[Terminal]]
+|Southeast = [[Terminal]]
+|South     = [[Pacific Ocean]]
+|Southwest = [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+|West      = [[Los Santos International Airport in GTA V|Los Santos International Airport]]
+|Northwest = [[Maze Bank Arena]]
+}}
+
+{{Navboxes
+|title= Navigation
+|list1=
+{{Los Santos in GTA V|state=collapsed}}
+}}
+
+[[CATEGORIES]]
+Areas in Los Santos in GTA V
+Seaports

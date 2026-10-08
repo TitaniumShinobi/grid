@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Coral Reefers Smokeshop
+|image = CoralReefers-GTAV-Logo.png
+|type = Smokeshop
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Coral Reefers Smokeshop''' is a business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tobacco brands

@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Discount Carpet Center
+|image = DiscountCarpetCenter-GTAV-Logo.png
+|caption = '''Discount Carpet Center''' logo.
+|taglines = 
+|type = Carpet Store
+|games = {{Games|V=y|O=y}}
+|locations = [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Discount Carpet Center''' is a carpet store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Carpet stores

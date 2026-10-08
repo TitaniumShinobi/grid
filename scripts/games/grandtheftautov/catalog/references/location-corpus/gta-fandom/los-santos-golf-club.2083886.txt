@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Los Santos Golf Club
+|Name Change = GOLF CLUB 
+|image       = LosSantosGolfClub-GTAO-Logo.png
+|caption     =
+|price       = 
+*[[Money|$]]100 <small>(for playing [[golf]])</small>
+**Free <small>(if the property is owned)</small>
+*$150,000,000 <small>(for the property)</small>
+|income      = $264,500 per week
+|opentimes   = 6:00 - 18:00 
+|employees   = [[Raymond (GTA V)|Raymond]] <small>(manager)</small>
+|founded     = [[1992]]
+|owner       = 
+*[[Michael De Santa]] <small>(optional)</small> 
+*[[Franklin Clinton]] <small>(optional)</small> 
+*[[Trevor Philips]] <small>(optional)</small>
+|games       = {{Games|V=y|O=y}}
+|location    = [[GWC and Golfing Society]], [[Richman (HD Universe)|Richman]], [[Los Santos (HD Universe)|Los Santos]]
+|lifeinvader = [[Lifeinvader/Los Santos Golf Club|Los Santos Golf Club]]
+}}
+
+[[LEAD]]
+The '''Los Santos Golf Club''', also known as the '''Los Santos Country Club''', is a golf club featured in {{V}} and {{O}}.
+
+[[SECTION:2:Golf Minigame]]
+{{Main|Golf}}
+To play a round of [[golf]], the player needs to walk to the front door of the clubhouse between 6:00 and 18:00. The entrance fee is $100, or free of charge if the player owns the club. 
+
+If the player walks alone to the front door, [[Pedestrians|NPC]] members will be available for a game:
+*[[Todd Rosenweig]] <small>(Easy)</small>
+*[[Aaron Ingram]] <small>(Normal)</small>
+*[[Jeff Miller]] <small>(Normal)</small>
+*[[Glenn Mather]] <small>(Hard)</small>
+*[[Castro Lagano]] <small>(Hard)</small> - The player must complete his random event before Castro becomes available for golfing.
+
+These characters can often be seen waiting outside the entrance or on the practice greens in front of the clubhouse.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Golf clubs
+Properties
+Properties in GTA V
+Recreation
+Restricted locations
+Unlockable locations

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox Structures|
+|name= Sandy Shores County Sheriff station
+|image=[[File:CountySheriffstation-GTAV-SandyShores-exterior.jpg|350x350px]]
+|caption= The County Sheriff station in [[Sandy Shores]] in [[Grand Theft Auto V|GTA V]].
+|game_1 = GTA V
+|game_2 = GTA Online
+|location = [[Alhambra Dr]] in [[Sandy Shores]], [[Blaine County]]
+|use = Police office
+|height =  
+}}
+
+[[LEAD]]
+The '''County Sheriff station''' is a police station in [[Sandy Shores]], [[Blaine County]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Police Stations in GTA V

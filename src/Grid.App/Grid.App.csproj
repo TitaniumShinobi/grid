@@ -23,8 +23,21 @@
     <PublishTrimmed>false</PublishTrimmed>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\core\features\document_viewer\*.cs"
+             Link="Hive\core\features\document_viewer\%(Filename)%(Extension)" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\core\api\Auth\**\*.cs"
+             Link="Hive\core\api\Auth\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\..\core\app\**\*.cs"
+             Link="Hive\core\app\%(RecursiveDir)%(Filename)%(Extension)" />
+    <Compile Include="..\..\core\features\users\auth\**\*.cs"
+             Link="Hive\core\features\users\auth\%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260710003" />
     <ProjectReference Include="..\Grid.Core\Grid.Core.csproj" />
+    <ProjectReference Include="..\Grid.GtaV.Knowledge\Grid.GtaV.Knowledge.csproj" />
     <ProjectReference Include="..\Grid.Mo2\Grid.Mo2.csproj" />
     <ProjectReference Include="..\Grid.Diagnostics\Grid.Diagnostics.csproj" ReferenceOutputAssembly="false" />
   </ItemGroup>
@@ -34,8 +47,69 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="..\..\scripts\**\*">
+    <Content Include="..\..\scripts\**\*"
+             Exclude="..\..\scripts\**\catalog\**;..\..\scripts\**\tests\**;..\..\scripts\**\__pycache__\**;..\..\scripts\**\*.pyc">
       <Link>RequestEngine\scripts\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\games\grandtheftautov\catalog\references\vinewood-411759.normalized.txt">
+      <Link>RegistrationReferences\gta-v\location-hierarchy\vinewood-411759.normalized.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\games\grandtheftautov\catalog\references\cfx-zones-ad60ae80.md">
+      <Link>RegistrationReferences\gta-v\location-hierarchy\cfx-zones-ad60ae80.md</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\games\grandtheftautov\catalog\references\geography-containment.v1.normalized.txt">
+      <Link>RegistrationReferences\gta-v\location-hierarchy\geography-containment.v1.normalized.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\games\grandtheftautov\catalog\references\los-santos-419777.normalized.txt">
+      <Link>RegistrationReferences\gta-v\location-hierarchy\los-santos-419777.normalized.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\games\grandtheftautov\catalog\references\grand-senora-desert-395939.normalized.txt">
+      <Link>RegistrationReferences\gta-v\location-hierarchy\grand-senora-desert-395939.normalized.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\games\grandtheftautov\catalog\references\east-los-santos-409804.normalized.txt">
+      <Link>RegistrationReferences\gta-v\location-hierarchy\east-los-santos-409804.normalized.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\games\grandtheftautov\catalog\references\blaine-county-406414.normalized.txt">
+      <Link>RegistrationReferences\gta-v\location-hierarchy\blaine-county-406414.normalized.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\games\grandtheftautov\catalog\references\san-andreas-416219.normalized.txt">
+      <Link>RegistrationReferences\gta-v\location-hierarchy\san-andreas-416219.normalized.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\games\grandtheftautov\catalog\references\vespucci-396784.normalized.txt">
+      <Link>RegistrationReferences\gta-v\location-hierarchy\vespucci-396784.normalized.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\games\grandtheftautov\catalog\gta_v_enhanced_location_hierarchy_sources.v3.json" Condition="Exists('..\..\scripts\games\grandtheftautov\catalog\gta_v_enhanced_location_hierarchy_sources.v3.json')">
+      <Link>RegistrationReferences\gta-v\location-hierarchy\gta_v_enhanced_location_hierarchy_sources.v3.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\games\grandtheftautov\catalog\references\location-corpus\**\*.txt;..\..\scripts\games\grandtheftautov\catalog\references\location-corpus\discovery-ledger.v1.json">
+      <Link>RegistrationReferences\gta-v\location-hierarchy\location-corpus\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\scripts\games\grandtheftautov\catalog\gta_v_enhanced_location_hierarchy_sources.v2.json">
+      <Link>RegistrationReferences\gta-v\location-hierarchy\gta_v_enhanced_location_hierarchy_sources.v2.json</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
@@ -80,4 +154,23 @@
     </ItemGroup>
     <Copy SourceFiles="@(_GridDiagnosticsPublishRuntime)" DestinationFolder="$(PublishDir)RequestEngine\bin" SkipUnchangedFiles="true" />
   </Target>
+  <ItemGroup>
+    <Content Include="..\..\config\grid.auth.config.json">
+      <Link>config\grid.auth.config.json</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\core\assets\auth\*.svg">
+      <Link>Assets\Auth\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\docs\legal\*.md">
+      <Link>Legal\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
 </Project>

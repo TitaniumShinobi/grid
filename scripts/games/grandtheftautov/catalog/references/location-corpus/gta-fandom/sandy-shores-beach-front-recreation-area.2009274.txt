@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|name        = Sandy Shores Beach Front Recreation Area
+|image       = SandyShores-GTAVe-BeachfrontRecreationArea-Sign.png
+|caption     = The sign
+|games       = {{Games|V=y|O=y}}
+|location    = [[Sandy Shores]], [[Blaine County]]
+|type        = park
+|status      = defunct
+|map         = SandyShores-GTAVe-BeachfrontRecreationArea-Map.png
+|map_caption =
+}}
+
+[[LEAD]]
+The '''Sandy Shores Beach Front Recreation Area''' is a park in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Abandoned locations
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Recreational areas

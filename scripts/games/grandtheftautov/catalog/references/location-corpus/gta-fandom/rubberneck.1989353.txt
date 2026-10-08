@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = electronics
+|name          = RubberNeck
+|image         = RubberNeck-GTAO-Logo.png
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpchristmas3}}}}
+|mentioned     = 
+|business_type = Signal box manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''RubberNeck''' is an electronics company that manufactures signal boxes in ''[[Grand Theft Auto Online]]'' as part of the [[GTA Online: Los Santos Drug Wars|Los Santos Drug Wars]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Los Santos Drug Wars
+Electronics companies

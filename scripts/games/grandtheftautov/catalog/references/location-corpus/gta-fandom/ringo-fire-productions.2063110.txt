@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = entertainment
+|name          = Ringo Fire Productions
+|image_label   = 
+|image         = RingoFireProductions-GTAV-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y}}
+|mentioned     = 
+|business_type = Adult film production company
+|founded       = 
+|owner         = 
+|products      = [[#Films|Films]]
+|taglines      = 
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Ringo Fire Productions''' is an adult film production company appearing in {{V}}.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Film production companies

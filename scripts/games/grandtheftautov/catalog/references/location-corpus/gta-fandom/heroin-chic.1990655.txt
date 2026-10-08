@@ -1,0 +1,63 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = clothingstore
+|name          = Heroin Chic
+|image_label   = V
+|image         = HeroinChic-GTAV-Logo.png
+|caption       = Logo in {{VO}}.
+|image_label2  = IV
+|image2        = Heroin-Chick-Logo.png
+|caption2      = Logo in {{IV}}.
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations_2|See more]])
+|business_type = 
+|founded       = [[2002]]
+|products      = 
+|taglines      = 
+|status        = 
+|phone         = 
+|website       = 
+|accessible    = No
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+|map3          = 
+|map_caption3  = 
+}}
+
+[[LEAD]]
+'''Heroin Chic''' is a clothing retailer that appears in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+*The [[Vespucci Canals]] location in {{V}} is based on the former Planet Blue store at {{URL|https://maps.app.goo.gl/TChduxKiD2onikXt7|2940 Main Street}} in Santa Monica, California.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:{{VO|l=n}}]]
+<gallery position="center" spacing="small" widths="270px">
+HeroinChic-GTAVe-ProsperityStreetPromenade.png|[[Prosperity Street Promenade]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]. 
+HeroinChic-GTAV-VespucciCanals.jpg|[[Palomino Avenue]] and [[Bay City Avenue]], [[Vespucci Canals]], Los Santos.
+</gallery>
+
+
+
+
+
+
+[[de:Heroin Chic]]
+[[es:Heroin Chic]]
+[[ru:Heroin Chic]]
+[[pl:Heroin Chic]]
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

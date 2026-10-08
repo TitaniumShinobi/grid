@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=CaesarPlace-GTAV.png
+|caption=Caesars Place as seen from the west.
+|games={{Games|V=y|O=y}}
+|start=[[Spanish Avenue]]
+|end=Spanish Avenue
+|map=<gallery>
+CaesarsPlace-GTAV-Map.png|Map
+CaesarsPlace-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Caesars Place''' is a [[List of Street Names|street]] in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Rockford Hills Church]]
+
+{{Clear}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

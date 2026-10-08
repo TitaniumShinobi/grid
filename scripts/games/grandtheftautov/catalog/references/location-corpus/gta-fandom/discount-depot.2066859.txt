@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Discount Depot
+|image     = DiscountDepot-GTAV-Logo.png
+|caption   = '''Discount Depot''' logo.
+|taglines  = 
+|type      = Discount Store
+|games     = {{Games|V=y|O=y}}
+|locations = [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Discount Depot''' is a discount store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Variety stores

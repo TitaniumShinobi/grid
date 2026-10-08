@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox_location
+|miscplace = y
+|miscplacename = STATE PARK
+|image = ChiliadMountainStateWilderness-GTAV.png
+|caption = Overview of Chiliad Mountain State Wilderness.
+|games = {{Games|V=y|O=y}}
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|neighborhood = 
+|pscanner       = PoliceScanner-GTAV-Neighborhood-ChiliadMountainStateWilderness.ogg
+|map           = <gallery>
+ChiliadMountainStateWilderness-GTAV-IngameGPS-Map.png|Chiliad Mountain State Wilderness
+ChiliadMountainStateWilderness-GTAV-IngameGPS-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Chiliad Mountain State Wilderness''' is a state park in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Highlands
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+National parks
+Neighborhoods
+Zones

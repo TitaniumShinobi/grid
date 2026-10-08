@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|name       = Ruedas De Fuego
+|sign       = RuedesDeFuego-GTAV.png
+|image      = RuedesDeFuego-GTAV-Store.jpg
+|caption    = 
+|taglines   = 
+|type       = modshop
+|games      = {{Games|V=y|O=y}}
+|location   = [[Carson Avenue]], [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+|status     = active
+|accessible = No
+}}
+
+[[LEAD]]
+'''Ruedas De Fuego''' is an auto services business in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Mod shops

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Sports Gear
+|image = SportsGear-GTAV-Logo.png
+|type = Sportswear Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Sports Gear''' is a sportswear store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

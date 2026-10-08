@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|name     = Lucky Jim's Ranch
+|image    = Lucky_Jim's_Seed_Farm_GTAV_Barn.jpg
+|caption = 
+|games    = {{Games|V=y|O=y}}
+|location = [[Union Road]], [[Joad Lane]], and [[O'Neil Way]], [[Grapeseed]]
+|owner    = 
+|operator = 
+|map = Grapeseed_Land_Survey_GTAV_Map_Lucky_Jim's_Ranch.jpg
+|map_caption = Satellite view.
+}}
+
+[[LEAD]]
+'''Lucky Jim's Ranch''' is a foreclosed ranch located in the agricultural community of [[Grapeseed]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Farms
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

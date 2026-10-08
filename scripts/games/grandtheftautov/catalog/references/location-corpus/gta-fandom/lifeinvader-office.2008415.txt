@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Lifeinvader Office
+|image = LifeinvaderOffice-GTAV.png
+|use = [[Lifeinvader]] Headquarters
+|games = {{Games|V=y|O=y}}
+|location = [[Boulevard Del Perro]], [[Dorset Drive]] and [[South Boulevard Del Perro]], [[Rockford Hills]]
+}}
+
+[[LEAD]]
+The '''Lifeinvader Office''' houses the headquarters for the online social networking service and company [[Lifeinvader]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Interior]]
+Just inside the entrance to the building is a white locker, plant and the company's logo. Two signs to left warn visitors and personel that they are subject to search and forbidden to smoke. In the hallway there are six doors; four of them marked as Invader Zone, Yoga Zone, Tech Stop and Sweat Lounge.
+
+On the second floor are [[QUB3D]] machines, a leather couch, bean bags and various posters, including "We want your data", "Time to dock around" and "Keep calm and carry on sharing". In the hallway are three doors marked as Invader Cafe, Imagineering Room and Free Thinking Tank.
+
+The radio station playing inside the demo room is [[Radio Mirror Park]].
+
+After [[Jay Norris]]'s death in [[2013]], security in the office was increased with a few [[Gruppe Sechs (HD Universe)|Gruppe Sechs]] [[Security Guards]] and two surveillance cameras. This continued to be part of their operating procedure in [[2018]] and [[2024]].
+
+[[SECTION:3:Interior]]
+{{Gallery
+|header = Ground floor
+|LifeinvaderOffice-GTAV-Reception.png|Reception area.
+|LifeinvaderOffice-GTAV-Kitchen.png|The kitchen.
+|LifeinvaderOffice-GTAV-Hallway.png|The hallway.
+|LifeinvaderOffice-GTAV-StorageRoom.png|Storage room.
+}}
+{{Gallery
+|header = Upper level
+|LifeinvaderOffice-GTAV-Offices.png|Main offices.
+|LifeinvaderOffice-GTAV-ConferenceRoom.png|Conference room.
+|LifeinvaderOffice-GTAV-ImagineeringRoom.png|"Imagineering" room.
+|LifeinvaderOffice-GTAV-DemoRoom.png|Demo room.
+|LifeinvaderOffice-GTAV-RecreationalArea.png|Recreational area.
+}}
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

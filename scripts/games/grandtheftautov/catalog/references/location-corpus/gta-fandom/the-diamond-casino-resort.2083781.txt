@@ -1,0 +1,177 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = casino
+|name           = The Diamond Casino & Resort
+|sign           = TheDiamondCasino&Resort-GTAO-Logo.png
+|image          = 
+<gallery>
+TheDiamondCasino&Resort-GTAO-DayView.png|Day
+TheDiamondCasino&Resort-GTAO-NightView.png|Night
+</gallery>
+|aka            = 
+|games          = {{Games|O={{EEEV}}{{DLC|mpvinewood}}}}
+|mentioned      = 
+|location       = [[Vinewood Park Drive]], [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = [[2019|July 23rd, 2019]]
+|owner          = [[Thornton Duggan]]<br>[[Tao Cheng]] <small>(formerly)</small>
+|employees      = 
+*[[Agatha Baker]] <small>(General Manager)</small>
+*[[Tom Connors]] <small>(Executive Director of Guest Services)</small>
+*[[Vincent Effenburger]] <small>(Former Head of Security)</small>
+*[[Josephine]] <small>(Head Bartender)</small>
+*[[Debbie]] <small>(Assistant)</small>
+*[[Felipe (GTA Online)|Felipe]] <small>(Valet)</small>
+*[[George]] <small>(Security)</small>{{Ref|name=George1|ref=Mentioned in the cutscene of [[Casino - House Keeping]].}}
+*[[Brucie Kibbutz]] <small>(Mindfulness and Exercise Director)</small>{{Ref|name=Brucie1|ref=Applied for the position in the end cutscene of Casino - House Keeping.}}
+*Several unnamed employees <small>(Cashier, Casino Shop assistant, Waitresses, Croupiers, Security)</small>
+|taglines    = ''"Play Around"''
+|map            = TheDiamondCasinoandResort-GTAOe-Map.png
+|map_caption    = Location on the map (red).
+|map2           = TheDiamondCasino&Resort-GTAO-Blueprint.png
+|map_caption2   = Interior blueprints.
+}}
+
+[[LEAD]]
+'''The Diamond Casino & Resort''' is a casino business and luxury resort that was introduced in {{O}} as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino & Resort]] update.
+
+[[SECTION:2:Interior]]
+The interior of the casino includes the main lobby, the [[Inside Track]] betting area, two small VIP-only lounge areas, a gambling area, two bathrooms, and Agatha's office. The main lobby is located at the entrance of the casino and includes the reception area, vehicle podium, the [[Lucky Wheel]], cashier booth, bar, the [[Casino Store]], and many slot machines. Visitors with a standard membership can play roulette, blackjack, and Three Card Poker in the [[Gambling|gambling]] area at the back of the casino.
+
+[[SECTION:3:Main Lobby]]
+{{Quote|Hello, welcome to The Diamond Casino and Resort.|Tom greeting player}}
+{{Quote|Hello, welcome to The Diamond Casino and Resort.<br>Please, have a look around and enjoy yourself... and, of course, good luck.|Tom greeting player}}
+{{Quote|Hello, [sir/ma'am]. Welcome back. As an existing member, can I interest you in our VIP upgrade?|Additional alt greeting for standard members}}
+{{Quote|Hello, [sir/ma'am]. Welcome back. As an existing member, can I interest you in our VIP upgrade?<br>All you need to do is purchase one of our penthouse condominiums.<br>Information can be found on our website, access it on one of the computers there.|Additional alt greeting for standard members}}
+{{Quote|Welcome back to The Diamond Casino and Resort.<br>As one of our VIP members, we truly hope you'll have an excellent stay.|Additional alt greeting for VIP members}}
+{{Quote|Welcome back to The Diamond Casino and Resort.<br>As one of our VIP members, we truly hope you'll have an excellent stay.<br>Please remember to call me if you need anything... champagne perhaps? I'm available twenty-four seven.|Additional alt greeting for VIP members}}
+{{Quote|Good to see you, [sir/ma'am]. How can I be of help?/Hello, [sir/ma'am]. Let me help you today.|Access Guest Services menu}}
+{{Quote|Alright, you know where we are if you need something./Okay, if you need something, we'll be here./Well, please come right on back if you need anything.|Exiting Guest Services menu}}
+The reception is a small area to the left of the entrance. Here, [[Tom Connors]] can offer various services to the player. A standard membership can be purchased for [[Money|$]]500, which will allow the player to use slot machines, spin the Lucky Wheel, play table games, and bet on horses at the Inside Track betting area, as well as give access to valet services. If the player owns the Master Penthouse, they are upgraded to VIP membership and get access to three more options: Cleaning Service (sends a maid to clean the penthouse after a party), [[Casino Limousine Service|Limousine Services]] (basically a fast travel taxi), and Aircraft Concierge (the player can request a helicopter). An elevator is also located here, which can take players to their penthouse, the penthouse garage, parking garage, roof terrace, rooftop, or The Music Locker.
+
+The Lucky Wheel is positioned near the center of the main lobby; the player can spin it once per 24 real-life hours to have a chance at winning various amounts of money, [[Reputation|RP]], or [[Chips]]; any clothing item from the Casino Store, a 10% vehicle discount from a random vehicle website, the current podium vehicle, or a mystery prize. The prize vehicle is showcased on a slowly rotating platform to the left of the wheel, sometimes already having a livery applied.
+
+On the right side of the lobby, there are the cashier booth, bar, and Casino Store. The player can trade money for chips and vice versa – up to a maximum of $50,000 for VIP members - each in-game day. Every 24 real-life hours, members can also claim a visitor bonus of 1,000 chips. At the bar, named The Solitaire, players can order drinks; the same selection is available as in the Master Penthouse and [[Nightclubs]]. Also similarly to nightclubs, penthouse owners can order the first five drink types for free. In the Casino Store, players can browse through and purchase a large selection of clothing items; penthouse owners also have the option of purchasing [[Master Penthouse/Decorations|Penthouse Decorations]]. Some items are only available during select weeks, as they rotate after every [[Events|event week]], requiring four weeks to rotate through the entire selection.
+
+At the back of the main lobby, near the hallways to the other areas, are many slot machines of different themes. The type of machine dictates the possible betting amount and the payout for different matching items; the available machine themes are: ''[[Fame or Shame]]'', ''[[Evacuator (HD Universe)|Evacuator]]'', ''Diamond Miner'', ''[[Twilight Knife]]'', ''Deity of the Sun'', ''[[Republican Space Rangers]]'', ''[[Angel and the Knight (HD Universe)|Angel and the Knight]]'', and ''[[Impotent Rage]]''. The ''Fame or Shame'' and ''Evacuator'' slot machines have the lowest betting amount and payouts, while the ''Deity of the Sun'' and ''Diamond Miner'' slot machines have the highest.
+
+When entering the casino floor for the first time in a new week, there will be a PA reminder that there is a new podium vehicle prize.
+
+If a player wins a significant prize from the Lucky Wheel, such as the podium vehicle, gets a slot machine jackpot, or wins with a straight flush at Three Card Poker, congratulations are announced over the casino floor's PA system. An announcement will also be made when a player purchases a bottle of [[Blêuter'd]] Champagne Diamond at The Solitaire.
+
+[[SECTION:4:Casino Limousine Service]]
+[[File:TheDiamondCasino&Resort-GTAO-LimousineService-Map.png|thumb|Locations of all Limousine Service transfers.]]
+
+With the acquisition of the Casino Penthouse comes access to the [[Casino Limousine Service|Casino Limousine Service.]] The casino owns two [[Albany]] [[Stretch]] limos, the white "DIAMOND1" and the black "DIAMOND2". This free service takes you to multiple locations on a map similar to a taxi, but with the added benefit of fast travel. Speak to [[Tom Connors]] in the lobby to choose a teleport location from the menu.
+
+Teleport locations are LSIA, Terminal, Legion Square, Chumash, Paleto Bay, Grapeseed, Sandy Shores, Del Perro Pier, Tongva Hills, and Observatory.
+
+[[SECTION:4:Inside Track Betting]]
+{{Main|Inside Track}}
+Down the left hallway leading from the main lobby, there is the Inside Track betting area, which includes a large LCD screen displaying the horse races. Numerous IBT machines can be seen, enough for at least 16 participants (though NPCs may be seen participating in the game).
+
+Players can choose to participate in either the single event, where the player can bet on their own, and the races last for around 30 seconds; or the main event, where the player can bet against other players, and the races last longer, for a minute. This type of race is triggered automatically every five minutes. In both event types, the player can bet on any of six horses, each with a different winning probability, with a minimum of $100 and a maximum of $10,000.
+
+[[SECTION:4:Table Games]]
+{{Main|Gambling}}
+Many roulette, blackjack, and Three Card Poker tables can be found here, as well as two separate "high limit" areas available only to penthouse owners, where they can bet up to $50,000.
+
+[[SECTION:4:VIP Lounge]]
+There are two circular VIP-only lounge areas located towards the back of the casino. Here, players can sit and smoke cigarettes, and drink either vodka or beer. Players with no membership or only the standard one cannot enter this area and will be turned around if they try doing so.
+
+[[SECTION:4:Agatha's Office]]
+At the back, to the left of the Table Games area, is the "management" area; only penthouse owners can pass through the door. There are stairs leading up to a waiting room where [[Debbie]], Agatha's assistant, works and if the player continues, they can visit Agatha in the General Manager's office. In this room, drinks can also be drunk and there are large sound-proof windows behind Agatha's desk, through which the player can see a large portion of the main lobby. These windows can be spotted from the lobby floor. To the right of the windows, there is a private elevator that is known to at least reach the Basement (B1).
+
+[[SECTION:3:Roof Terrace]]
+Also called the 'Roof Deck', this area is where guests can sit and socialize, overlooking the front of the casino. On the east end is a closed bar, public washrooms, and a private stairwell for penthouse owners. There are three square, usable hot tubs running down the length of the terrace, and a usable mid-sized infinity pool makes up the west end. Some lounges along the length are available for sunbathing, but they cannot be used by players. There are stairs going down to a lower patio area with seating for larger groups, and a raised firepit. To the west is a small pathway and garden area below the infinity pool, the overflow acting as a small 'waterfall'. Behind the bar is an employee pathway to a guarded door back into the casino, on the same lower level, but there is also room to go around to the utility area around the back for the building's air conditioning units and the like. On the east side of this area is a ladder going directly to the helicopter pad on the roof.
+
+Taking the elevator to the terrace for the first time will always trigger the optional cutscene that is meant to introduce [[Yung Ancestor]] during [[Setup: Casino Scoping]] (along with the subsequent call from [[Lester Crest]]), even if the player has not purchased the Master Penthouse.
+
+In daytime during pleasant weather, NPCs can be seen lounging around the area, including sitting in one or more of the hot tubs and on the edge of the infinity pool; at night the pools tend to be empty.
+
+[[SECTION:3:Master Penthouse]]
+{{Main|Master Penthouse}}
+The Diamond offers [[GTA Online Protagonist|the player]] a purchasable penthouse condominium that comes in several different packages, with each consecutive one granting additional rooms within the penthouse. The player may also choose to "build their own" penthouse, where they pay a base price of $1,500,000 and can then add rooms for an additional fee.
+
+A selection of decorations for the penthouse can be purchased with Chips in the Casino Store. The available items rotate each week, needing four weeks to rotate through the entire selection. Once in their penthouse, the player can use the "Place Decorations" option in the "Penthouse Management" section of the [[Interaction Menu]] to place them. In this menu, players can also purchase them if they haven't done so in the store.
+
+There are at least four known penthouse owners: the Online Protagonist, Yung Ancestor, [[Juan Strickler|Juan "El Rubio" Strickler]]{{Ref|name=Rubio|ref=[[Heist Prep: Safe Code]]}}, and a recipient of a copy of [[Dr. Dre]]'s phone.
+
+[[SECTION:3:Parking Garage]]
+The Diamond offers a valet service which allows players to store their cars in the casino's parking garage. The garage is not a permanent car housing akin to the paid garages that the player may obtain. Upon retrieving a different vehicle, the previous vehicle stored inside of the garage will return to its previous permanent storage location. Similar to the purchasable yacht being placeable in 32 different locations around the map, this garage offers 32 parking spaces; one parking space for every player in a completely filled lobby, although some spots will be taken by NPC vehicles (see [[#Guests|below]]). Only personal vehicles can be entered and the valet will place the vehicle in the public garage even if the penthouse garage is owned.
+
+This space may be used to safely hold vehicles whilst players visit the casino without worrying about them being damaged, and may also be used as a place to hold car meets. However, the parking garage does not allow any weaponized vehicles to be stored inside, even if said weapons are an added purchase that has not been applied to the vehicle.
+
+Players can also enter the garage directly from the south vehicular entry and they can enter the casino and return via the elevators once in the garage. The valet can be requested to retrieve the vehicle, or the player can enter the garage themselves to get it.
+
+[[SECTION:3:Mission-Only Areas]]
+In [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update, it is revealed that the Casino features additional areas, which are only accessed during the [[The Diamond Casino Heist|Casino Heist]].
+
+There are two known entrance points: the staff lobby at the rear of the building and the "high limit" gambling area inside of it.
+
+[[SECTION:4:Main Floor (G)]]
+From the staff door, there is a surveillance room right in front of it, guarded by metal detectors and security cameras. Inside of it, there is a switch that a player can press and hold to open a door that contains a small amount of money that has not yet been taken to the vault downstairs.
+
+A locker room can be seen on this level, which the crew can use to switch clothes in "[[Casino Heist - The Big Con|The Big Con]]" approach if undetected.
+
+[[SECTION:4:Loading Bay (LL)]]
+Accessed in "The Big Con" approach through the "Gruppe Sechs" method, the garage door seen in the [[Vinewood Racetrack]] serves as the entrance to a loading bay, where vehicles go through a security tunnel leading to a large area with six doors and the access points to the upper floors. A security checkpoint is seen on the left side of the tunnel, enclosed in a small room protected by sliding doors. This area is where the casino normally receives its deliveries of cash, chips, and supplies like alcohol.{{Ref|name=loading|ref=[[Lost in Transit]], [[Safe Bet]], [[Damage Control]]}} The Protagonist is once requested to deliver champagne to the underground garage, but this was likely due to the urgency with which the stock was needed.{{Ref|name=delivery|ref=[[DJ Requests#Recover the delivery truck]]}}
+
+[[SECTION:4:Basement (B1)]]
+The Basement is a large area comprised of a storage area with various numbered metallic doors. Past the double doors, there is the security checkpoint where the guards are situated at the center of the room. There are two extra rooms on either side, where the left one can be used as a direct entrance in the "[[Casino Heist - Aggressive|Aggressive]]" approach through the sewer tunnel (if the [[Heist Prep: Tunnel Boring Machine|Tunnel Boring Machine]] prep mission is completed).
+
+From there, there is a mantrap accessed with two keycards that have to be used at the same time. This mantrap curves to the right and leads to a vault security checkpoint, where a manager takes control of the vault door with a panel on it. Said manager only appears on "The Big Con" approach if undetected.
+
+The Vault is a circular room containing the loot required to steal. There are seven sections guarded by steel grating doors accessed with keycards (that must be hacked) and accessed through three entry points. Several safety deposit boxes can be seen there, where a player can optionally drill their locks to steal a small amount of cash. If the crew remains in the vault after the time limit is up, a nerve agent is released, emitting a green toxic cloud that will suffocate anyone if they stay for too long.
+
+[[SECTION:4:Offices (1)]]
+Past the set of doors near the elevator in the main room, there is a set of stairs going to the offices, consisting of various sectioned areas with glass panes around. The brown door on the left side near the end of the room leads to the waiting room, where Debbie is normally seen. This section can be only used in "The Big Con" approach (choosing either the "Bugstars" option or the "Yung Ancestor" option).
+
+[[SECTION:4:Hotel Floors (2, 3, and 4)]]
+Regular room floors, with entrances to service rooms for staff, particularly housekeeping. In the stairwell between the offices and floor 2, and between floors 3 and 4, a fire hose rack is available for emergencies. {{WP|Standpipe (firefighting)|Standpipes}} for firefighter hoses can also be seen. There is a room 237{{Ref|name=mission|ref=[[Undisclosed Cargo]]}}, so there are likely to be at least 37 rooms on these three floors.
+
+[[SECTION:4:Penthouse/Hotel Floor (5)]]
+The penthouse/hotel floor is accessible through the stairs or the doors on the roof terrace (if the Roof Terrace option in the [[Casino Heist - Silent & Sneaky|Silent & Sneaky]] approach is chosen). This area consists of hallways with blue flooring and various neon-like lighting on the walls. There are numerous doors leading to different penthouses, which are distributed into five sections using the four poker symbols (heart, diamond, club, and spade), plus a fifth section with a money symbol ($). A waiting area with pink double-side sofas can be seen at the entrance from the elevators.
+
+A service room is also located between the hallways, which consists of a large storage room with piles of white clean sheets around the area, as well as a smaller section with blue boxes and used sheets and pillows, presumably sent through laundry chutes (long tubes running down through the hotel floors with hatches at each room floor to feed used sheets into) down to the laundry room.
+
+The same penthouse floor can be accessed during the "[[Heist Prep: Safe Code|Safe Code]]" prep for [[The Cayo Perico Heist]], though other doors are locked during the mission (except for the service room).
+
+[[SECTION:4:Hotel Floors (6 and 7) and Service/generator room (5-8)]]
+A restricted service/generator area is accessed from the "EXIT" door on the penthouse floor and has a set of stairs going towards the upper floors.
+
+Floors 6 and 7 are more regular room floors, though are likely nicer/bigger than the rooms on Floors 2, 3, and 4. They most likely have staff service rooms as well, but these are not located in this restricted stairwell.
+
+On the sixth floor, there is an open door leading to a small room with various electrical boxes around (though it is not clear why it's open only on this floor) while the eighth floor leads to the generators and the elevator motors, accessed through two doors (either taking a right turn or a U-turn from the stairs). The crew can choose to rappel down through elevator shaft 1 during the Silent & Sneaky approach (only if the [[Heist Prep: Infiltration Suits|Infiltration Suits]] prep mission is completed).
+
+The helipad access door can be found here as well, which can be used as an entrance in the Silent & Sneaky approach (choosing the Helipad option), or as an exit point after robbing the vault.
+
+[[SECTION:3:Interior]]
+<gallery position="center" spacing="small" widths="250px">
+TheDiamondCasino&Resort-GTAO-Reception.png|The reception area.
+TheDiamondCasino&Resort-GTAO-MainLobbyOverview.png|The main lobby.
+TheDiamondCasino&Resort-GTAO-SlotMachines.png|Various slot machines in the main lobby.
+TheDiamondCasino&Resort-GTAO-PodiumVehicle.png|The podium, where a different vehicle is on display every [[Events|event week]]. Shown here is the [[Flash GT]].
+TheDiamondCasino&Resort-GTAO-Cashier.png|The cashier booth.
+TheDiamondCasino&Resort-GTAO-Bar.png|The bar, where drinks can be purchased.
+TheDiamondCasino&Resort-GTAO-CasinoStore.png|The [[Casino Store]], where [[Master Penthouse/Decorations|penthouse decorations]] and [[GTA Online: The Diamond Casino & Resort/Character Customization|clothing items]] can be purchased.
+TheDiamondCasino&Resort-GTAO-VIPLounge.png|One of the two VIP lounges, which can only be accessed by penthouse owners.
+TheDiamondCasino&Resort-GTAO-GamblingArea.png|The regular gambling area.
+TheDiamondCasino&Resort-GTAO-HighLimitGamblingArea.png|The high limit gambling area.
+TheDiamondCasino&Resort-GTAO-Restrooms.png|Restrooms.
+TheDiamondCasino&Resort-GTAO-ManagementDoor.png|The door leading to the management area.
+TheDiamondCasino&Resort-GTAO-AssistantOffice.png|[[Debbie]]'s office.
+TheDiamondCasino&Resort-GTAO-AgathaOffice.png|[[Agatha Baker]]'s office.
+TheDiamondCasino&Resort-GTAO-ViewofMainLobby.png|The view of the main lobby from Agatha's office through the one-way windows.
+TheDiamondCasino&Resort-GTAO-ParkingGarage.png|The public parking garage.
+MasterPenthouse-GTAO-Garage.png|The penthouse garage.
+</gallery>
+
+[[CATEGORIES]]
+Buildings in GTA Online: The Diamond Casino & Resort
+Casinos
+Converted buildings
+Landmarks

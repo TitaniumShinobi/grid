@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Lake Vinewood Estates
+|image = LakeVinewoodEstates-GTAV.png
+|caption = 
+|altnames = {{H:title|Street name (HUD)|Lake Vinewood Estate}}
+|location = [[Vinewood Hills]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|pscanner = 
+|map = 
+<gallery>
+LakeVinewoodEstate-GTAV-Map.png|Map
+LakeVinewoodEstate-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red)
+}}
+
+[[LEAD]]
+'''Lake Vinewood Estates''' is a small, high-standing residential neighborhood in {{VO}} within the [[Lake Vinewood]] area in [[Vinewood Hills]], [[Los Santos County]].
+
+[[CATEGORIES]]
+Cul-de-sacs
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Streets

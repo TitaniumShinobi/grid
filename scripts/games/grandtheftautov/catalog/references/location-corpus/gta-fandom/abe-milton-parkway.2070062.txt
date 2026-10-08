@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=AbeMiltonParkway-GTAVee.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Milton Road]] and [[South Boulevard Del Perro]]
+|end=[[Las Lagunas Boulevard]]
+|map=<gallery>
+AbeMiltonParkway-GTAV-Map.png|Map
+AbeMiltonParkway-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Abe Milton Parkway''' is a [[List of Street Names|street]] in [[Burton]] and [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[City of Los Santos Public Library]]
+*[[Mount Zonah Medical Center]] <small>(corners of Carcer Way and Dorset Place)</small>
+*[[Rockford Hills Police Station]] <small>(corner of Eastbourne Way)</small>
+
+[[SECTION:2:Businesses]]
+'''Burton'''
+*[[Chaps]] <small>(corner of Eastbourne Way)</small>
+*[[Oldie But Goodie Antiquities]] <small>(corner of Milton Road)</small>
+*Penal Colony
+*[[The Mighty Bush]]
+*[[Wenger Institute]] <small>(corner of San Vitus Boulevard)</small>
+
+'''Rockford Hills'''
+*[[Viendemorte]] <small>(corners of Dorset Drive and San Vitus Boulevard)</small>
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

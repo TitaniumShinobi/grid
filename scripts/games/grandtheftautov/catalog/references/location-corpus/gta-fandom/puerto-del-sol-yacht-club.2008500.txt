@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox location
+|image = PuertoDelSolYachtClub-GTAV.png
+|caption = The Yacht Club as seen from the southeast.
+|games = {{Games|V=y|O=y}}
+|location = [[Palomino Avenue]], [[Puerto Del Sol]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|use = Condominium complex
+}}
+
+[[LEAD]]
+'''Puerto Del Sol Yacht Club''' is a condominium complex and resort in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

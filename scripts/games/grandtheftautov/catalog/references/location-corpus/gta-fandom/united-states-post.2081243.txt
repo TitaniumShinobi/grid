@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+| image = UnitedStatesPost-Logo-GTAV.png
+| name = United States Post
+| type = Postal Service
+| founded = 
+| ceo = 
+| games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+| locations = [[Terminal]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''United States Post''' is a courier delivery services company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Delivery companies

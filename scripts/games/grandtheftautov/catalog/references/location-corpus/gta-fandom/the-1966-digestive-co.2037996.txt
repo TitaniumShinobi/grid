@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y/n
+|safehouse      = y/n
+|type           = factory
+|name           = The 1966 Digestive Co.
+|sign           = The1966DigestiveCo-GTAV-Sign.png
+|image          = The1966DigestiveCo-GTAVee.png
+|caption        = '''The 1966 Digestive Co.''' factory in {{VO}}.
+|aka            = 
+|games          = {{games|V=y|O=y}}
+|mentioned      = 
+|location       = {{Location|v-lamesa|3}}
+|file_name      = <code>id2_18_roofover002</code>
+|interior       = 
+|coords         = 693.77075,-807.8482,36.026447
+|map            = The1966DigestiveCo-GTAV-Map.png
+|map_caption    = Location on the map (red) in {{VO}}.
+}}
+
+[[LEAD]]
+'''The 1966 Digestive Co.''' is a factory in {{V}} and {{O}}, located in {{Location|v-lamesa|3}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Factory buildings

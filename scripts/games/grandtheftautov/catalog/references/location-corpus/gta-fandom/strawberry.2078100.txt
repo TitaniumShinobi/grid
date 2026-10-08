@@ -1,0 +1,115 @@
+[[INFOBOX]]
+{{Infobox_location
+|name        = Strawberry
+|image       = Strawberry-GTAV.png
+|caption     = Overview of Strawberry.
+|games       = {{Games|V=y|O=y}}
+|type        = neighborhood
+|pscanner    = PoliceScanner-GTAV-Neighborhood-Strawberry.ogg
+|location    = [[South Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map         = 
+<gallery>
+Strawberry-IngameGPS-GTAV-Map.png|Strawberry
+Strawberry-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Strawberry''' is a mixed commercial and residential neighborhood in [[South Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], in {{V}} and {{O}}.
+
+[[SECTION:2:Roads and Streets]]
+*[[Adam's Apple Boulevard]]
+*[[Alta Street]]
+*[[Capital Boulevard]]
+*[[Carson Avenue]]
+*[[Crusade Road]]
+*[[Elgin Avenue]]
+*[[Forum Drive]]
+*[[Innocence Boulevard]]
+*[[Little Bighorn Avenue]]
+*[[Power Street]]
+*[[Strawberry Avenue]]
+
+[[SECTION:2:Places of Interest]]
+*[[Benny's Original Motor Works]]
+*[[Casa Cristina]]
+*[[Central Los Santos Hospital]]
+*[[Children of the Mountain Fellowship]]
+*[[Gerald's Apartment]]
+*[[Los Santos County Coroner Office]]
+*[[Los Santos Meteor Building]]
+*[[Rimm Paint Factory]]
+*[[Strawberry Mortuary]]
+*[[The Tahitian]]
+*[[Vinewood Self Storage]]
+
+[[SECTION:2:Businesses]]
+{{Columns
+|
+*[[24/7 (HD Universe)|24/7]]
+*[[AGL Refrigerated Storage Inc.]]
+*[[Aguila Burrito]]
+*[[Attack-a-Taco]]
+*[[Auto Re-Perez]]
+*Beer & Wine
+*[[Benny's Original Motor Works]]
+*[[Bert's Tool Supply Co.]]
+*[[The Brewer's Drop]]
+*[[Car Tune Network]]
+*[[Cart-L]]
+*[[Gav's Cash Exchange]]
+*[[Checkout!]]
+*[[City Paints Inc.]]
+*[[Cluckin' Bell (HD Universe)|Cluckin' Bell]] "The Coop"
+*Collision Repair
+*[[Crazee Fashion]]
+*[[Discount Store]]
+*[[Fallen Angels]]
+*[[Family Dental]]
+*[[Fern's Foreign & Domestic]]
+*[[Flints Autos]]
+*[[Forum Drive Liquor Store]]
+*[[Gabriela's Market]]
+*[[Glass Heroes Auto Repairs]]
+*[[Gloria's Fashion Boutique]]
+*[[Hair and Nail Studio]]
+*[[Happy Shark]]
+*[[Hands On Car Wash]]
+|
+*[[JJ's Forklift Repair]]
+*Larry's Lean Pork
+*[[Leroy's Electricals]]
+*[[Los Santos Meteor]]
+*[[Los Santos Office Supply Co.]]
+*[[LS Paper Co]]
+*Mattress Sofas Furniture
+*[[New Do Barber Shop]]
+*[[On the Bone]]
+*[[Pawn & Jewelry]]
+*Pharmacy
+*Quality Cleaner
+*[[Ring of Fire Chili House]]
+*[[Smokers Emporium]]
+*[[Snapper's Delight]]
+*[[Southern Tile]]
+*[[Stacey's Flower Emporium]]
+*[[Strawberry Plaza]]
+*[[The Taco Farmer]]
+*[[The Tahitian]]
+*[[Timmy's Flowers]]
+*[[Tire Nutz]]
+*[[Tits N Bobs]]
+*[[Trevor Philips Enterprises]]
+*[[Vanilla Unicorn]]
+*[[Vine Print]]
+*[[Vinewood Self Storage]]
+*[[Wok It Off]]
+*[[Xero|Xero Gas Station]]
+}}
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

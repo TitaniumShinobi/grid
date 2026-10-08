@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=ElRanchoBoulevard-GTAV.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Dutch London Street]] and [[Carson Avenue]], Rancho
+|end=[[Mirror Park Boulevard]], [[Murrieta Heights]]
+|map=<gallery>
+ElRanchoBoulevard-GTAV-Map.png|Map
+ElRanchoBoulevard-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''El Rancho Boulevard''' is a street in [[Murrieta Heights]], [[Rancho]], [[El Burro Heights]] and [[Cypress Flats]], [[Los Santos (HD Universe)|Los Santos]] and [[Palomino Highlands]] in {{V}} and {{O}}.
+
+It begins at the intersection of [[Dutch London Street]] and [[Carson Avenue]] and ends at [[Vespucci Boulevard]].
+
+[[SECTION:2:Places of Interest]]
+*[[Car Scrapyard]]
+*[[Grand Banks Steel Foundry]]
+*[[Murrieta Oil Field]]
+*[[Pißwasser Factory]]
+
+[[SECTION:2:Businesses]]
+*[[Hardwood & Lumber Supply]]
+*[[Los Santos Tattoos]]
+*[[Rob's Liquor]]
+*[[RON|RON gas station]]
+*[[Vitreous]]
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

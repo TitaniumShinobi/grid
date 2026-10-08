@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox country
+|common_name = Austria
+|image_flag = Flag of Austria.svg
+|official_languages = {{WP|Austrian German|German}}
+|capital_ingame = {{WP|Vienna|Wien (Vienna)}}
+|image_map = Map of Austria.png
+|largest_city=Vienna
+|demonym=Austrian
+}}
+
+[[LEAD]]
+The '''Republic of Austria''', (German: ''Republik Österreich'') simply known as '''Austria''', is a country in {{WP|Central Europe}}. The country is landlocked and bordered by [[Italy]] and [[Slovenia]] to the south, the [[Czech Republic]] and [[Germany]] to the north, [[Hungary]] and [[Slovakia]] to the east, and [[Switzerland]] and [[Liechtenstein]] to the west.
+
+[[CATEGORIES]]
+European countries

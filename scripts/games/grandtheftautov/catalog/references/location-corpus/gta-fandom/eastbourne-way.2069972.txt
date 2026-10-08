@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=EastbourneWay-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Mad Wayne Thunder Drive]], [[Rockford Hills]]
+|end=[[Spanish Avenue]], [[West Vinewood]]
+|map=<gallery>
+EastbourneWay-GTAV-Map.png|Map
+EastbourneWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Eastbourne Way''' is a two-way [[List of Street Names|street]] in {{V}} and {{O}}. located in [[Rockford Hills]] and [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+*[[City of Los Santos Public Library]]
+*[[Rockford Hills Police Station]]
+*[[San Andreas Gallery of Modern Art]] <small>(corner of Hawick Avenue)</small>
+
+[[SECTION:2:Businesses]]
+*[[Anna Rex]] <small>(corner of Portola Drive)</small>
+*[[Chaps]] <small>(corner of Abe Milton Parkway)</small>
+*[[Cockatoos]] <small>(corner of Hawick Avenue)</small>
+*[[Couture Criminalli]]
+*[[Guido Zenitalia]] <small>(corner of Rockford Drive)</small>
+*[[Val-de-Grâce]] <small>(corner of Portola Drive)</small>
+*[[Wags to Riches]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

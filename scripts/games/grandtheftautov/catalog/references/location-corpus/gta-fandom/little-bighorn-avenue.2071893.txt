@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox structure
+|name       = Little Bighorn Avenue
+|image      =
+<gallery>
+LittleBighornAvenue-GTAVee-North.jpg|North
+LittleBighornAvenue-GTAVee-South.jpg|South
+</gallery>
+|caption    =
+|games      = {{Games|V=y|O=y}}
+|start      = [[Carson Avenue]], [[Rancho]]
+|end        = [[Integrity Way]], [[Textile City]]
+|map        =
+<gallery>
+LittleBighornAvenue-GTAV-Map.png|Map
+LittleBighornAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Little Bighorn Avenue''' is a street in {{V}} and {{O}}, located in [[South Los Santos]] and [[Downtown Los Santos (HD Universe)|Downtown Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+*[[12 Little Bighorn Avenue]]
+*[[Hayes Autos]]
+*[[Mirror Park Rail Yard]] {{Small|(corner of [[Integrity Way]])}}
+*[[Mission Row Police Station]] {{Small|(corner of [[Atlee Street]])}}
+
+[[SECTION:2:Businesses]]
+*[[AGL Refrigerated Storage Inc.]] {{Small|(corner of [[Capital Boulevard]])}}
+*Arts
+*Auto Repairs
+*[[Auto Re-Perez]] {{Small|(corner of [[Crusade Road]])}}
+*[[Discount Fabrics Wholesale]] {{Small|(corner of [[Sinners Passage]])}}
+*[[The Look Depository]] {{Small|(corner of Atlee Street)}}
+*[[Los Santos Department of Water & Power]] {{Small|(corner of [[Jamestown Street]])}}
+*Material Wealth Fabric Storage
+*[[Panache Laundering]] {{Small|(corner of Capital Boulevard)}}
+*[[Rancho Tires]]
+*Santos Imports Inc.
+*TGSA
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

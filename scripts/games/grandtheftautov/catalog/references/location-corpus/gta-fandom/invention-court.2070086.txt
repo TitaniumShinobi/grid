@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=InventionCourt-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Bay City Avenue]]
+|end=[[South Rockford Drive]]
+|map=<gallery>
+InventionCourt-GTAV-Map.png|Map
+InventionCourt-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Invention Court''' is a residential [[List of Street Names|street]] located just north of [[Palomino Avenue]] in [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*Pipe Dreams <small>(corner of Bay City Avenue)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

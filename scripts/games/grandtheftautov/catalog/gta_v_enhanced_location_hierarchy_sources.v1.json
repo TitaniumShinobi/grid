@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "gameId": "game.grandtheftautov-enhanced",
+  "build": "25261616",
+  "locale": "en-US",
+  "scope": "four existing Vinewood containment edges only",
+  "sources": [
+    {
+      "coordinate": "https://www.grandtheftwiki.com/index.php?title=Vinewood_in_GTA_V&oldid=411759",
+      "revision": "411759",
+      "path": "references/vinewood-411759.normalized.txt",
+      "sha256": "d2fc80f7ef152a0f5bb5351c0c073c84639796bba7b47cc661b5d01bcce299fa",
+      "normalization": "web reader text: strip line prefixes; retain link text and LF; exact digest required",
+      "schema": "single enumerative neighbourhood clause; navigation footer excluded"
+    },
+    {
+      "coordinate": "https://raw.githubusercontent.com/citizenfx/fivem-docs/ad60ae80aea6376686bf2e069036476f687ead24/content/docs/game-references/zones.md",
+      "revision": "ad60ae80aea6376686bf2e069036476f687ead24",
+      "path": "references/cfx-zones-ad60ae80.md",
+      "sha256": "bd305c3daef7b5d7d20278d61ec2a2dd6a4be590ebb8845dd5e6ae8744e69cb1",
+      "schema": "Zones markdown ID / Zone Name ID / Zone Name / Zone Description table"
+    }
+  ],
+  "join": "unique exact English reference name to unique native zone label to one existing local en-US PrimaryName record; case-insensitive native code only",
+  "provenance": "REFERENCE_VERIFIED relationships; original FILE_VERIFIED identity and terminology preserved",
+  "failure": "missing, conflicting or ambiguous endpoints abort preparation; no partial relationships or invented names"
+}

@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{infobox business|
+| image = BankofLiberty-GTAIII-logo.png
+| size = 150x200px
+| game_1 = GTA III
+| game_2 = GTA Liberty City Stories
+| game_3 = GTA IV
+| game_4 = GTA Chinatown Wars
+| game_5 = GTA V
+| name = Bank of Liberty
+| type = [[:Category:Banks|Bank]]
+| owner = 
+| location = '''[[3D Universe]]'''<br />[[Chinatown, Portland|Chinatown]], [[Liberty City in GTA III Era|Liberty City]]<br />'''[[HD Universe]]'''<br />[[Chinatown, Algonquin|Chinatown]], [[Liberty City in GTA IV Era|Liberty City]]
+| affiliation = 
+| missions = '''[[3D Universe]]'''<br />[[The Getaway]]<br />'''[[HD Universe]]'''<br />[[Three Leaf Clover]]<br />[[Dragon Haul Z]]
+| employee = 
+}}
+
+[[LEAD]]
+The '''Bank of Liberty''' is a chain of banks in both the [[3D Universe]] and the [[HD Universe]]. The bank appears in [[Grand Theft Auto III]], [[Grand Theft Auto: Liberty City Stories]] and [[Grand Theft Auto IV]] and [[Grand Theft Auto V]]. It is a parody of [[wp:Bank of America|Bank of America]] as it has the same colors and also a parody of [[wp:Sovereign Bank|Sovereign Bank]] as the text is the same and also a logo to the left of the title. 
+
+In GTA IV, there are three branches in [[Algonquin]] and several more throughout the rest of the [[Liberty City in GTA IV Era|Liberty City]]. Its main branch is located on [[Columbus Ave]] and Calcium Street in [[The Exchange]]/[[Chinatown, Algonquin|Chinatown]] neighborhood of the borough of Algonquin. Presumably, [[Gay Tony]]'s personal and business accounts are held at the Bank of Liberty as Luis was in the bank when the [[Irish]] [[I Luv LC|robbed it]].
+
+In GTA V, [[Trevor Philips]]' bank account is held at the Bank of Liberty.
+
+<gallery widths="150">
+BankofLiberty-GTAIII-logo.png|Bank of Liberty logo, 3D Universe.
+BankofLiberty-GTAIV-logo.png|Bank of liberty logo, HD Unvierse.
+BankofLiberty-GTAIV-logo2.jpg|Bell logo.
+BankofLiberty-GTAIII-exterior.jpg|Bank of Liberty in [[Chinatown, Portland]] in GTA III.
+BankofLiberty-GTAIV-Chinatown-exterior.jpg|The main Bank of Liberty chain in [[The Exchange]], [[Algonquin]] in GTA IV.
+</gallery>
+
+[[CATEGORIES]]
+Banks
+Businesses in 3D Universe
+Businesses in GTA Chinatown Wars
+Businesses in GTA III
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA V
+Businesses in HD Universe
+Businesses in Liberty City in 3D Universe
+Businesses in Liberty City in HD Universe
+Businesses in Los Santos in HD Universe

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Seagrass Herbals
+|image     = SeagrassHerbals-GTAV-Logo.png
+|type      = Convenience Store
+|games     = {{V}}<br>{{O}}
+|locations = [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|founded   = [[2002]]
+}}
+
+[[LEAD]]
+'''Seagrass Herbals''' is a marijuana business in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pharmacies

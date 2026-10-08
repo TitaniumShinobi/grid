@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleproducts
+|name          = Motion Lotion Industries
+|image         = MotionLotion-Logo-GTAV.png
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|business_type = 
+|income        =
+|products      = [[#Products|Car care products]]
+|taglines      = 
+|status        = active
+|website       = 
+}}
+
+[[LEAD]]
+'''Motion Lotion''' is a car care products company that appears in {{VO}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tool manufacturers
+Vehicle products manufacturers

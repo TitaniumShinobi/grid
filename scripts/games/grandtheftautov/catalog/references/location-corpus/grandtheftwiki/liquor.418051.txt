@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Liquor-GTALCS-exterior.jpg
+|size = 350x350px
+|caption = The Saint Mark's ''Liquor'' branch in [[Grand Theft Auto: Liberty City Stories|GTA Liberty City Stories]].
+|game_1 = GTA San Andreas
+|game_2 = GTA Liberty City Stories
+|game_3 = GTA V
+|name = Liquor
+|type = Beer and wine store
+|owner = 
+|location = '''[[3D Universe]]'''<br />[[Saint Mark's]], [[Liberty City in GTA III Era|Liberty City]]<br />[[Willowfield]], [[Los Santos in GTA III Era|Los Santos]]<br />'''[[HD Universe]]'''<br />[[Mirror Park]], [[Los Santos in GTA V|Los Santos]]<br />[[Strawberry]], [[Los Santos in GTA V|Los Santos]]<br />[[Burton]]/[[Hawick]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Liquor''' is a beer and wine shop in [[Grand Theft Auto: San Andreas]], [[Grand Theft Auto: Liberty City Stories]] and [[Grand Theft Auto V]].
+
+[[SECTION:2:Locations]]
+;GTA San Andreas
+*[[Willowfield]]
+
+;GTA Liberty City Stories
+*[[Saint Mark's]]
+
+;GTA V
+*[[Hawick Ave]]/[[Las Lagunas Blvd]], [[Burton]]/[[Hawick]]
+*Mirror Park Blvd, [[Mirror Park]]
+*[[Forum Dr]], [[Strawberry]]
+
+[[CATEGORIES]]
+Bars
+Businesses in GTA Liberty City Stories
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in Liberty City in GTA III Era
+Businesses in Los Santos in GTA III Era
+Businesses in Los Santos in GTA V

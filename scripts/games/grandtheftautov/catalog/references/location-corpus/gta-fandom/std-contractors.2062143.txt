@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = construction
+|name          = STD Contractors
+|sign          = STDContractors-GTAV-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|vehicles      = 
+|taglines      = "''Reliable erections for all Los Santos''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+|map3          = 
+|map_caption3  = 
+}}
+
+[[LEAD]]
+'''STD Contractors''' is a construction company appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|header = Construction Sites
+|MileHighClub-GTAV.png|[[Mile High Club]], [[Pillbox Hill]].
+|GangAttack GTAO Wiki ref 28.jpg|[[La Puerta Apartments]], [[Little Seoul]].
+|STDContractors-GTAV-Alta.png|[[Alta Construction Site]], [[Alta]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Construction companies

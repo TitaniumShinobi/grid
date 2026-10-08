@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox mission
+|image        = CasinoStrongArmTactics-GTAO-JobImage.png
+|game         = {{Games|O=y}}
+|type         = DiamondCasino
+|for          = {{For|game=O|agatha}}
+|location     = 
+*[[The Diamond Casino & Resort]] {{Small|(start)}}
+*[[Marlowe Vineyards]]
+*[[Pacific Bluffs Country Club]] {{Small|(end)}}
+|tod          = 12:00
+|target       = [[Duggan Crime Family|Duggan's mercenaries]]
+|todo         = 
+*Take the {{Color|v-hud-bluedark|Cognoscenti}} to the {{Color|v-hud-location|meeting.}}
+*Protect {{Color|v-hud-friendly|Tao Cheng.}}
+*Take out the rest of {{Color|v-hud-enemy|Avery's guards.}}
+*Get into the {{Color|v-hud-bluedark|Cognoscenti.}}
+*Wait for {{Color|v-hud-friendly|Tao}} and {{Color|v-hud-friendly|the Translator.}}
+*Go to the {{Color|v-hud-location|country club.}}
+|fail         = 
+*Out of lives.
+*Tao Cheng dies.
+*Tao Cheng's translator dies.
+*Agatha Baker dies.
+*Interfering with the meeting.
+|reward       = 
+*[[Job Points|JP]] +15
+*[[Money|Cash]], [[Chips]] and [[Reputation|RP]] vary depending on difficulty and time spent.
+----
+<center>[[Awards]]</center>
+*"Strong Arm Tactics" award + $50,000 {{Small|(if completed for the first time)}}
+*"Lucky Lucky" award + $50,000 {{Small|(by completing a single Casino Story Mission without dying)}}
+|unlockedby   = [[Casino - House Keeping]]
+|unlocks      = [[Casino - Play to Win]]
+|protagonists = 1-4 [[GTA Online Protagonist|players]]
+}}
+
+[[LEAD]]
+'''Casino - Strong Arm Tactics''' is a [[Casino Story Missions|Casino Story Mission]] featured in {{O}} as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update.
+
+[[CATEGORIES]]
+Casino mission strand
+Gameplay in GTA Online: The Diamond Casino & Resort
+Storyline missions

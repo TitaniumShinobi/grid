@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Alpha Mail
+|image = AlphaMail-GTAIV-logo.png
+|size = 300px
+|caption = 
+|game_1 = GTA IV
+|game_2 = TLAD
+|game_3 = TBOGT
+|game_4 = GTA Chinatown Wars
+|game_5 = GTA V
+|game_6 = GTA Online
+|type = Courier company
+|owner = 
+|location = [[Port Tudor]], [[Alderney]]<br />[[Jackhammer St]] in [[Industrial, Bohan|Industrial]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Exceptionalists Way]] in [[Los Santos International Airport in GTA V|Los Santos International Airport]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Alpha Mail''' is a courier company featured in [[Grand Theft Auto IV]], [[The Lost and Damned]], [[The Ballad of Gay Tony]], [[Grand Theft Auto: Chinatown Wars]], [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company has three known depots: [[Port Tudor]] in [[Alderney]], either side of [[Jackhammer St]] in [[Industrial, Bohan|Industrial]] in [[Liberty City in GTA IV Era|Liberty City]] and [[Exceptionalists Way]] in [[Los Santos International Airport in GTA V|Los Santos International Airport]]. The Alpha Mail logo appears on some [[Mule]] trucks in GTA IV, and in GTA Chinatown Wars, [[Alphamail|Alphamail delivery vans]] are found bearing Alpha Mail's livery. Alpha Mail is also listed on [[BAWSAQ]].
+
+[[CATEGORIES]]
+Businesses in Alderney
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA V
+Businesses in Liberty City in GTA IV Era
+Businesses in Los Santos in GTA V
+Corporations

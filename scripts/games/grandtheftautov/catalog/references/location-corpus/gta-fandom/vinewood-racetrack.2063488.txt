@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox location
+|name         = Vinewood Racetrack
+|image        = 
+<gallery>
+VinewoodRacetrack-GTAO.png|2019
+VinewoodRacetrack-GTAV.png|2013
+VinewoodRacetrack-GTAVee-Stadium.jpg|Stadium
+</gallery>
+|use          = Horse racing track
+|status       = defunct
+|games        = {{Games|V=y|O=y}}
+|type         = 
+|location     = [[Vinewood Park Drive]] in [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|map          = <gallery>
+VinewoodRaceTrack-IngameGPS-GTAV-Map.png|Vinewood Racetrack
+VinewoodRaceTrack-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption  = Location on the map (in-game GPS).
+|map2         = VinewoodRacetrack-GTAV-SatelliteView.jpg
+|map_caption2 = Satellite view of Vinewood Racetrack.
+}}
+
+[[LEAD]]
+The '''Vinewood Racetrack''' is a [[Horse (animal)|horse]] racing track in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Road courses
+Zones

@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|image = NoMarksCleaners-GTAV-Sign.png
+|caption = 
+|name = No Marks Cleaners
+|taglines = 
+|type = Laundromat
+|games = {{Games|V=y|O=y}}
+|locations =
+*[[Paleto Bay]], [[Blaine County]]
+*[[Banham Canyon]], [[Los Santos County]]
+|reference =
+}}
+
+[[LEAD]]
+'''No Marks Cleaners''' is a chain of [[laundromats]] in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto V and Online'']]
+No Marks Cleaners operates two outlets in [[State of San Andreas (HD Universe)|San Andreas]], none of which are accessible to the player.
+<gallery position="center" spacing="small" widths="270px">
+NoMarksCleaners-GTAV-BuildingFront.jpg|[[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]]. 
+NoMarksCleaners-GTAVe-BanhamCanyon.png|[[Ineseno Road]], [[Banham Canyon]], [[Los Santos County]].
+</gallery>
+
+[[es:No Marks Cleaners]]
+[[ru:No Marks Cleaners]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Laundromats

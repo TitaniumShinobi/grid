@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = drink
+|name          = Coco Motion
+|sign          = 
+|image         = CocoMotion-GTAO-BottleLogo.png 
+|caption       = Logo and mascot as it appears on the carton.
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpheist4}}}}
+|mentioned     = 
+|business_type = {{WP|Coconut water}}
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = 
+|taglines      = 
+*"''Get Yourself Moving!''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Coco Motion''' is a brand of {{WP|Coconut water|coconut water}} appearing in {{O}} as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Cayo Perico Heist
+Water brands

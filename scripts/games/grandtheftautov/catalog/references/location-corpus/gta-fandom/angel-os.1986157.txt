@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = food
+|name          = Angel-Os
+|image         = Angel-Os-GTAO-Logo.png
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpchristmas2018}}}}
+|mentioned     = 
+|locations     = 
+|business_type = Breakfast cereal
+|founded       = 
+|taglines      = 
+|status        = 
+|accessible    = 
+}}
+
+[[LEAD]]
+'''Angel-Os''' is a breakfast cereal brand featured in {{O}} as part of the [[GTA Online: Arena War|Arena War]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Arena War
+Cereal brands

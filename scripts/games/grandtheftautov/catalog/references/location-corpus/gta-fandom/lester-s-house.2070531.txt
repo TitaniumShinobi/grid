@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|name       = Lester's House
+|type       = house
+|lightlogo  = y
+|image      = LestersHouse-GTAV.png
+|games      = {{Games|V=y|O=y}}
+|location   = [[Amarillo Vista]], [[El Burro Heights]], [[East Los Santos (HD Universe)|East Los Santos]]
+|accessible = Yes {{Small|(mission only)}}
+|caption    =
+|owner      = [[Lester Crest]]
+|floors     = 1
+}}
+
+[[LEAD]]
+'''Lester's House''' is a property owned by [[Lester Crest]] in {{V}} and {{O}} located on [[Amarillo Vista]] in [[El Burro Heights]], [[East Los Santos (HD Universe)|East Los Santos]].
+
+[[SECTION:3:Interior]]
+The interior is inaccessible outside of missions:
+*In ''Grand Theft Auto V'', [[Michael De Santa]] accesses the property when [[Friend Request|reuniting]] with Lester to come out of retirement and later [[Franklin Clinton]] is allowed inside when consulting Lester to decide the [[The Third Way|climax]] of the story. The player is able to use Michael to explore the interior, although Lester will get agitated at him not leaving.
+*In ''Grand Theft Auto Online'', the player can get inside when they meet Lester for the first time upon reaching [[Rank]] 10, however, only the entryway is explorable as the [[Cutscenes|cutscene]] takes over control of the character upon entering the main living space.
+
+The interior is full of file boxes, computers, and surveillance equipment. Inaccessible doors are located to the left and right of the main entrance. All the doorways are wider than usual to accommodate Lester's wheelchair. From the entrance hallway, the main living space is to the northwest. On the right, there is a bed with a large screen TV at its foot and a red easy chair. All windows and other sources of natural light are covered with either blankets, wooden boards or newspaper clippings taped together. The rest of the accessible space is dominated by desks and shelving containing the computers and surveillance equipment. A small green sofa is located in the far corner.
+
+[[CATEGORIES]]
+Homes
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

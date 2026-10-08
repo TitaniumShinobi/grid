@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Los Santos River
+|image = <gallery>
+LosSantosRiver-GTAVe-LookingSouth.png|Looking south
+LosSantosRiver-GTAVe-LookingNorth.png|Looking north
+</gallery>
+|river = y
+|games = {{Games|V=y|O=y}}
+|location = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map = <gallery>
+LosSantosRiver-GTAV-Map.png|Map
+LosSantosRiver-GTAV-SateliteView.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+|pscanner = PoliceScanner-GTAV-LosSantosRiver.ogg
+}}
+
+[[LEAD]]
+The '''Los Santos River''', also known as the '''LS Storm Drain''', the '''LS Flood Control''', or the '''LS Canal''', is a river that runs through the city of [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:3:Main River​]]
+Like the {{WP|Los Angeles River}} upon which it is based, the LS River starts off as a natural water feature from its origins in the [[Tatavian Mountains]] to the north of the [[Land Act Reservoir]]. The river is dammed at the [[Land Act Dam]] to form the reservoir and then flows down the mountain to the source of the canal structure in [[East Vinewood]]. From there on, it is contained entirely within concrete canals.
+
+The LS River is very large in comparison to its [[Los Santos Storm Drain (3D Universe)|predecessor]]. The canal features more access tunnels and is much longer and more detailed. It flows north-south through [[East Vinewood]], past [[Downtown Los Santos (GTA V)|Downtown Los Santos]] by [[Textile City]], forms the border between [[South Los Santos]] and [[East Los Santos]] where it merges at [[La Mesa]] with a second unnamed river that has its own source to the east and from there it flows into the [[Pacific Ocean]] at the [[Port of Los Santos]] between [[Cypress Flats]] and [[Elysian Island]]. The water begins to go deeper at the elevation near [[Cypress Flats]] but up to that point most vehicles can still comfortably drive in the water without failing.
+
+[[SECTION:3:Main River]]
+<gallery position="center" spacing="small" widths="250px">
+Los_Santos_Storm_Drain_GTAV_Northern_Source_Origin.jpg|Origin north of the Reservoir.
+Los_Santos_Storm_Drain_GTAV_Northern_Source.jpg|Northern end of natural flow.
+EastVinewoodSource-GTAV.jpg|Entrance at the East Vinewood drain structure.
+Thrusting Motion GTAO.jpg|View of Los Santos Storm Drain confluence.
+Los_Santos_Storm_Drain_GTAV_Drain_Source_Outlet.jpg|Storm drain outlet into the river
+LSDrainDownhill-GTAV.jpg|The river eventually drops in elevation near [[Cypress Flats]].
+LSDrainSlopes-GTAV.jpg|The drain has many steep slopes that make it unique.
+Los_Santos_Storm_Drain_GTAV_Street_Racers_Start.jpg|[[Marabunta Grande]] at the "street" race start.
+Los_Santos_Storm_Drain_GTAV_Street_Racers.jpg|Street racers at the top end.
+</gallery>
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Waterways

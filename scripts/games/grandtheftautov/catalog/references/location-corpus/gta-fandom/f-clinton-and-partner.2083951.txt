@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = F. Clinton and Partner
+|status    = active
+|sign      = 
+<gallery>
+F.Clinton&Partner-GTAOe-LargeLogoTexture.png|Large
+F.Clinton&Partner-GTAOe-MediumLogoTexture.png|Medium
+</gallery>
+|ceo       = 
+*[[Franklin Clinton]]
+*{{GTAOP}}
+|games     = {{Games|O=y}}
+|founded   = [[2021]]
+|locations = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|motto     = 
+|Name Change=|title=F. Clinton and Partner}}
+
+[[LEAD]]
+'''F. Clinton and Partner''' is an [[Agencies|Agency]] featured in {{O}} as part of [[GTA Online: The Contract|The Contract]] update, co-owned by [[Franklin Clinton]] and the {{GTAOP}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Companies
+Locations in GTA Online in Los Santos

@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=GreenwichPlace-GTAV.png
+|caption=Greenwich Place as seen from the north.
+|games={{Games|V=y|O=y}}
+|start=[[Picture Perfect Drive]]
+|end=[[West Eclipse Boulevard]]
+|map=<gallery>
+GreenwichPlace-GTAV-Map.png|Map
+GreenwichPlace-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Greenwich Place''' is a residential [[List of Street Names|street]] in [[Richman (HD Universe)|Richman]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[The Richman Hotel]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

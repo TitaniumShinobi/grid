@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Auto Re-Perez
+|image = AutoRe-Perez-GTAV-exterior.jpg
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = Auto Repair shop
+|owner = 
+|location = [[Crusade Rd]]/[[Little Bighorn Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Auto Re-Perez''' is an auto repair shop located at the corner of [[Crusade Rd]] and [[Little Bighorn Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]. The company [[Phone Numbers|phone number]] is ''284-555-0139'', which will result in music being played as if on hold. The player cannot repair or modify their vehicles at the garage.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Garages

@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = TEXTILE STORE
+|type           = 
+|name           = Discount Fabrics Wholesale 
+|sign           = 
+|image          = DiscountFabricsWholesale-GTAVee.png
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Textile City]], [[Los Santos (HD Universe)|Los Santos]]
+|established    =
+|taglines       =
+|status         = active
+|architecture   = {{WP|Industrial architecture|Industrial}}
+|floors         = 3
+|phone          = 555-0174
+|accessible     = No
+|file_name      = <code>dt1_15_b2_b</code>
+}}
+
+[[LEAD]]
+'''Discount Fabrics Wholesale''' is a textile store appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Low-rise buildings
+Stores

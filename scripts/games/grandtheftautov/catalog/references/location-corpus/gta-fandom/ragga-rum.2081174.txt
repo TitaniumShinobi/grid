@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = Ragga Rum
+|sign          = RaggaRum-GTAV-Logo.png
+|aka           = 
+|games         = {{games|VC={{DE}}|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|business_type = {{WP|Rum}}
+|founded       = 
+|founder       = 
+|products      = 
+|taglines      = 
+*"''Fa Di Dreaded Bredren''"<small>(shared with [[Pride Brew]])</small>
+*"''Swallow My Pride''"
+*"''Born in Babylon''"
+*"''Be Irie''"
+*"''You'd Be Batty Not To''"
+|status        = active
+|phone         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Ragga Rum''' is a brand of [[Jamaica]]n rum appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Exclusive Definitive Edition Content in GTA Vice City

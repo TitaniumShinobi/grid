@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Vespucci Skateboarding Stuff
+|image = VespucciSkateboarding-GTAV-Logo.png
+|type = Skateboarding Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Vespucci Skateboarding Stuff''' is a skateboarding store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA V

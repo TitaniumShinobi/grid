@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = SanAndreasAvenueBridge-GTAV.PNG
+|caption = Overview of the bridge.
+|games = {{Games|V=y|O=y}}
+|bridge = y
+|location = [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = <gallery>
+SanAndreasAvenueBridge-GTAV-Map.png
+</gallery>
+|map_caption   = Location on the map (yellow).
+}}
+
+[[LEAD]]
+'''San Andreas Avenue Bridge''' is a road bridge in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[La Mesa]]. The bridge crosses the [[Los Santos River]] and connects [[Textile City]] to La Mesa.
+
+[[CATEGORIES]]
+Arch bridges
+Road bridges
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

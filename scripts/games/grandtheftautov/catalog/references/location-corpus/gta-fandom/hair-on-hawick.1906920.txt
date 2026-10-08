@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|image = HairOnHawickLogo.png
+|caption = 
+|name = Hair on Hawick
+|taglines = 
+|type = Hair & Beauty Salon
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Hawick Avenue]], [[Hawick]], [[Los Santos (HD Universe)|Los Santos]]
+|reference =
+|size = 
+}}
+
+[[LEAD]]
+'''Hair on Hawick''' is a barber shop in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on [[Hawick Avenue]] in [[Hawick]], [[Los Santos (HD Universe)|Los Santos]] in [[State of San Andreas (HD Universe)|San Andreas]]. The shops' hair style program is known as traditional. The shop share the same interior and haircut options as the [[Herr Kutz Barber]], [[O'Sheas Barbers Shop]] and [[Beach Combover Barber]] shop.
+
+[[CATEGORIES]]
+Barber shops
+Businesses in GTA Online
+Businesses in GTA V
+Salons

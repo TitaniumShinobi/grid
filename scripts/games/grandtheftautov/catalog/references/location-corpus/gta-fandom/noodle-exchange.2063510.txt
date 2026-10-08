@@ -1,0 +1,90 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = restaurant
+|name          = Noodle Exchange
+|sign          = NoodleExchange-GTAV-Sign.png
+|image_label   = HD
+|image         = NoodleExchange-GTAV-Logo.png
+|caption       = Logo in the {{HD}}.
+|image_label2  = 3D
+|image2        = NoodleExchange-Logo-1992.png
+|caption2      = Logo in the {{3D}}.
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y}}
+|mentioned     = 
+|locations     =
+'''3D Universe'''
+*[[State of San Andreas (3D Universe)|San Andreas]]
+'''HD Universe'''
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = ''"Use your noodle, eat our noodles"'' {{Small|(HD Universe)}}
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Noodle Exchange''' is a noodle restaurant appearing in {{SA}} and the {{HD}} of the {{S}}.
+
+[[SECTION:4:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+The Noodle Exchange has a branch on [[Columbus Avenue]] in [[The Exchange (GTA IV)|The Exchange]], [[Liberty City (HD Universe)|Liberty City]]. The company also appears on a "Noodle Exchange" {{WP|cup noodle}} advertisement on a billboard in [[Star Junction]], with the slogan "''Use Your Noodle''".
+
+[[SECTION:3:Locations]]
+*The Noodle Exchange branch in [[The Exchange (GTA IV)|The Exchange]], [[Liberty City (HD Universe)|Liberty City]] is based on One Battery Park Plaza located at {{URL|https://maps.app.goo.gl/PUBsfJLqRVzeJYkV6|1 Battery Plaza}} in Manhattan, New York.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = SA
+|NoodleExchangeVendors-GTASA-FosterValley.png|On the premises of [[Corvin Stadium]] in [[Foster Valley]], [[San Fierro (3D Universe)|San Fierro]], just west of the entrance to the [[Blood Ring (GTA San Andreas)|Blood Ring]].
+|NoodleExchangeVendors-GTASA-Chinatown.png|5 stands can be found in an alleyway in [[Chinatown (GTA San Andreas)|Chinatown]].
+|NoodleExchangeVendors-GTASA-Hashbury.png|In [[Hashbury]], in front of [[Sub Urban (3D Universe)|Sub Urban]] and [[Hemlock Tattoo]].
+|NoodleExchangeVendors-GTASA-RocaEscalante.png|East part of [[Roca Escalante]], [[Las Venturas (3D Universe)|Las Venturas]].
+}}
+{{Gallery
+|game = IV
+|NoodleExchange-GTAIV-Ground.png|'''Noodle Exchange''' in [[The Exchange (GTA IV)|The Exchange]], [[Liberty City (HD Universe)|Liberty City]].
+}}
+{{Gallery
+|game = VO
+|Noodle Exchange.jpg|[[Strawberry Avenue]] and [[Atlee Street]], [[Mission Row]].
+|NoodleExchange-GTAVee-RockfordHills.jpg|[[Boulevard Del Perro]], [[Rockford Hills]].
+|NoodleExchange-GTAV-VespucciCanals.jpg|[[Bay City Avenue]], [[Vespucci Canals]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Fast-food restaurant chains

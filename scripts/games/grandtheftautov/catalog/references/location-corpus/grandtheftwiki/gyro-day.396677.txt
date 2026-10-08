@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Gyro Day
+|type = Food store
+|owner = 
+|location = [[Melanoma St]] in [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Gyro Day''' is a food store located on [[Melanoma St]] in [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The store sells ice cream, milk shakes and [[Raine]] water as well as [[eCola]], [[Sprunk]] and [[Junk]] sodas. The player can not purchase food from the store.
+
+
+
+[[Type::Business| ]]
+[[Location::Melanoma St| ]]
+[[Location::Vespucci Beach| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

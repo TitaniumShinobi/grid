@@ -1,0 +1,51 @@
+[[INFOBOX]]
+{{infobox business|
+| image = FruitComputers-GTAIV-logo.png
+| size = 300x300px
+| caption = The Fruit Computers logo circa 2008, GTA IV.
+| name = Fruit Computers
+| game_1 = GTA Liberty City Stories
+| game_2 = GTA Vice City Stories
+| game_3 = GTA IV
+| game_4 = GTA Chinatown Wars
+| game_5 = GTA V
+| type = Computer, phone & software manufacturing
+| owner = 
+| location = '''[[HD Universe]]'''<br >[[Port Tudor]]
+| affiliation = 
+| missions = 
+| employee = 
+}}
+
+[[LEAD]]
+'''Fruit Computers''', also known simply as '''Fruit''', is a computer, phone and software manufacturing company in [[Grand Theft Auto: Liberty City Stories]], [[Grand Theft Auto: Vice City Stories]], [[Grand Theft Auto IV]], [[Grand Theft Auto: Chinatown Wars]] and [[Grand Theft Auto V]]. Fruit Computers is mentioned in GTA IV to be established in 1975, one year before its parody, [[wp:Apple Inc.|Apple]], actually became an independent company. Their logo bears a resemblance to male genitals, and the logo's color scheme also parodies the [[:wp:Microsoft|Microsoft]] [[:wp:Microsoft Windows|Windows]] logo color scheme (with the exception of red being changed to orange).
+
+[[SECTION:4:GTA Liberty City Stories]]
+The use of "Fruit" to represent Apple is first heard in [[Grand Theft Auto: Liberty City Stories|GTA Liberty City Stories]]  during [[Liberty City Free Radio|LCFR]] show [[Liberty City Free Radio#Electron Zone Radio|The Electron Radio]], where a '''FruitOS''' user group called "Fruits" (slang for homosexuals) is mentioned to be involved a bitter rivalry with the [[Technical Operating System|TOS]] user group called "Tossers" (slang for someone who masturbates excessively).
+
+The FruitOS/TOS rivalry is a reference to the real-life [[:wp:Microsoft Windows|Windows]]/[[:wp:Mac OSX|OSX]] user rivalry, although in reality it was least apparent circa 1998, when Apple had only begun emerging from a decade-long slump and was not a significant competitor to Microsoft at the time (having just released the [[:wp:iMac G3|iMac G3]] in 1998).
+
+[[SECTION:4:GTA Vice City Stories]]
+In [[Grand Theft Auto: Vice City Stories|GTA Vice City Stories]], a '''Fruit LC''' computer is advertised on both the radio as well as billboards in [[Vice City in GTA III Era|Vice City]] and the game's manuals. The casette-loading, [[wp:Bulletin board system|BBS]]-equipped computer is mentioned, among others, to feature an excessively small 8-inch two-tone display and "near infinite" 18k of memory, and cost an exorbitant $5,000.
+
+Although the Fruit LC is clearly a parody of the [[:wp:Macintosh|Macintosh]], specifically the [[:wp:Macintosh 128K|Macintosh 128K]], the name is also similar to that of the [[wp:Macintosh LC|Macintosh LC]], "LC" being "low cost" in short. Its radio commercial also parodies Apple's famous "[[:wp:1984 (advertisement)|1984]]" commercial for the Macintosh, while the "BYE" displayed on the Fruit LC's screen on billboard advertising is a stab at Apple Macintosh's famous "hello" image on advertisements. The Fruit LC's $5,000 price tag is double that of the Macintosh 128K's original selling price of $2,495.
+
+According to in-game dialog on [[Wave 103]], [[Adam First]] mentions he has finally managed to program a flying triangle that explodes into pixels on the screen; the Fruit LC is mentioned to operate with [[:wp:BASIC|BASIC]] programming.
+
+<gallery width="auto" perrow="2" style="font-size:95%; padding:0; text-align:left;" widths="180">
+FruitComputers-GTAVCS-logo.png|Fruit Computers logo in GTA Vice City Stories, circa 1984.
+FruitComputers-GTAVCS-advert.png|Fruit LC advertisement from the GTA Vice City Stories manual.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in 3D Universe
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA V
+Businesses in GTA Vice City Stories
+Businesses in HD Universe
+Businesses in Port Tudor
+Communications
+Corporations
+Operating Systems

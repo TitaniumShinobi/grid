@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = HIGHWAY
+|name              = Route 13
+|number            = 13
+|caption2          = Route 13 shield
+|image             = 
+|caption           = 
+|games             = {{Games|V=y|O=y}}
+|highway_northend  = {{rmark|US|1}} near [[Braddock Pass]]
+|highway_southend  = {{rmark|I|1}} and {{rmark|SA|18}} near [[Vinewood Hills]]
+|highway_junctions = {{rmark|US|15}} in [[Grand Senora Desert]]<br />
+{{rmark|US|68}} and {{rmark|I|1}} in north [[Grand Senora Desert]]
+|pscanner    = 
+|map         = 
+|mapcaption  = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''U.S. Route 13''' (or the [[Senora Freeway]]) is one of the [[Numbered Highways in GTA V]]. It begins in [[Grapeseed]], at the northern end of [[Route 1]] and ends at an intersection with [[Route 18]].
+
+[[CATEGORIES]]
+Freeways
+Highways
+Structures in GTA Online in San Andreas
+Structures in GTA V in San Andreas

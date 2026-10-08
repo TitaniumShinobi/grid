@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|safehouse      = 
+|type           = nightclub
+|name           = Strawberry Nightclub
+|sign           = 
+|image          = Nightclubs-GTAO-Strawberry.png
+|occupants      = [[Organizations]]<br>[[Motorcycle Clubs]]
+|price          = [[Money|$]]1,525,000
+|caption        = 
+|aka            = 
+|games          = {{Games|O=y}}
+|mentioned      = 
+|location       = [[Power Street]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = [[2018]]
+|condition      = 
+|status         = active
+|use            = 
+*Paint factory <small>(Formerly)</small>{{Ref|name = rimm-factory-disused|type = quote|date = 11/20/2024|ref  = {{Quote|One of the little-known perks of setting up a night club in a disused paint factory is the presence of high residual levels of industrial solvent. Good atmosphere, happy patrons, all night. guaranteed.|Nightclubs, [[Maze Bank Foreclosures]]}}}}
+*[[Nightclubs|Nightclub]]
+|owner          = 
+*[[Rimm Paint]] <small>(Formerly)</small>
+*{{GTAOP}} <small>(Optional)</small>
+|map         = RimmPaint-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Strawberry Nightclub''' is a nightclub, converted from a [[Rimm Paint Factory|paint factory]].
+
+[[CATEGORIES]]
+Buildings in GTA Online: After Hours
+Converted buildings
+Fronts
+Nightclubs

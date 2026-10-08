@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = bank
+|name          = Penris
+|image         = Penris-GTAV-Logo2.png
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|products      = 
+|taglines      = 
+|status        = active
+|phone         = 
+|website       = 
+}}
+
+[[LEAD]]
+'''Penris''' is a banking company featured in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|PenrisBuilding-GTAV.png|[[Penris Building]], [[Swiss Street]], [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]].
+|SchlongbergSachs GTAV RockfordHills Building.png|[[Marathon Avenue]], [[Rockford Hills]], Los Santos {{Small|(now occupied by [[Lombank]])}}  {{Small|([[:File:Penris-GTAVee-RockfordHills.jpg|entrance]])}}.
+}}
+
+[[CATEGORIES]]
+Banking companies
+Businesses in GTA Online
+Businesses in GTA V

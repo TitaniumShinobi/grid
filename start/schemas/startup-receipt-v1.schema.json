@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://life.technology/start/schemas/startup-receipt-v1.schema.json",
+  "title": "LIFE Startup Receipt v1",
+  "type": "object",
+  "required": ["contract", "version", "startup_id", "product_id", "started_at", "ready_at", "duration_ms", "stages", "dependencies", "state", "readiness", "verification", "findings", "baseline_comparison", "receipt_digest"],
+  "properties": {
+    "contract": { "const": "life-startup-receipt/v1" },
+    "version": { "const": "1.0.0" },
+    "startup_id": { "type": "string", "minLength": 1 },
+    "product_id": { "type": "string", "minLength": 1 },
+    "started_at": { "type": "string", "format": "date-time" },
+    "ready_at": { "type": ["string", "null"], "format": "date-time" },
+    "duration_ms": { "type": ["integer", "null"], "minimum": 0 },
+    "stages": { "type": "array", "items": { "type": "object" } },
+    "dependencies": { "type": "array", "items": { "type": "object" } },
+    "state": { "type": "object" },
+    "readiness": { "type": "object" },
+    "verification": { "type": "object" },
+    "findings": { "type": "array", "items": { "type": "object" } },
+    "baseline_comparison": { "type": "object" },
+    "receipt_digest": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+  },
+  "additionalProperties": false
+}

@@ -1,76 +1,50 @@
 <Page
     x:Class="Grid.App.Views.WelcomePage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    SizeChanged="OnPageSizeChanged">
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ScrollViewer AutomationProperties.Name="GRID Welcome" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
-        <Grid MaxWidth="1120" Padding="48,38,48,64" HorizontalAlignment="Center">
-            <Grid ColumnDefinitions="260,*" ColumnSpacing="38">
-                <StackPanel x:Name="StepRail" Spacing="8">
-                    <TextBlock Text="GET STARTED" Style="{StaticResource EyebrowStyle}" Margin="0,0,0,8" />
-                    <Border x:Name="DiscoverStep" Padding="12" CornerRadius="6" Background="{ThemeResource ShellPanelBrush}">
-                        <StackPanel Orientation="Horizontal" Spacing="10"><TextBlock Text="1" FontWeight="SemiBold" /><TextBlock Text="Find your setups" /></StackPanel>
-                    </Border>
-                    <Border Padding="12" CornerRadius="6">
-                        <StackPanel Orientation="Horizontal" Spacing="10"><TextBlock Text="2" FontWeight="SemiBold" /><TextBlock Text="Choose profiles" /></StackPanel>
-                    </Border>
-                    <Border Padding="12" CornerRadius="6">
-                        <StackPanel Orientation="Horizontal" Spacing="10"><TextBlock Text="3" FontWeight="SemiBold" /><TextBlock Text="Review environment" /></StackPanel>
-                    </Border>
-                    <Border Padding="12" CornerRadius="6">
-                        <StackPanel Orientation="Horizontal" Spacing="10"><TextBlock Text="4" FontWeight="SemiBold" /><TextBlock Text="Establish baseline" /></StackPanel>
-                    </Border>
-                    <Border Padding="12" CornerRadius="6">
-                        <StackPanel Orientation="Horizontal" Spacing="10"><TextBlock Text="5" FontWeight="SemiBold" /><TextBlock Text="Ready" /></StackPanel>
-                    </Border>
+        <Grid MaxWidth="900" Padding="48,44,48,64" HorizontalAlignment="Center">
+            <StackPanel Spacing="24">
+                <StackPanel Spacing="8">
+                    <TextBlock Text="Welcome to GRID" FontSize="34" FontWeight="SemiBold" />
+                    <TextBlock
+                        Text="Start with the game you want GRID to manage, or connect an existing profile environment. Discovery is available when it helps, but it is never required."
+                        FontSize="15"
+                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                        TextWrapping="Wrap" />
                 </StackPanel>
 
-                <StackPanel x:Name="MainContent" Grid.Column="1" Spacing="24">
-                    <StackPanel Spacing="8">
-                        <TextBlock Text="Welcome to GRID" FontSize="34" FontWeight="SemiBold" />
-                        <TextBlock Text="Connect the setups you already play. GRID discovers the game, manager, instance, and profile underneath each setup without copying or changing it." FontSize="15" Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
-                    </StackPanel>
-
-                    <Border Padding="20" Style="{StaticResource CardStyle}">
-                        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="18">
-                            <StackPanel Spacing="5">
-                                <TextBlock Text="Find existing setups" FontSize="19" FontWeight="SemiBold" />
-                                <TextBlock Text="Detect supported local manager instances or browse to one you trust. Existing MO2 profiles stay canonical and remain in place." Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
-                            </StackPanel>
-                            <Button Grid.Column="1" VerticalAlignment="Center" Content="Find setups" AutomationProperties.Name="Find setups" Click="OnFindSetupsClicked" Style="{StaticResource AccentButtonStyle}" />
-                        </Grid>
-                    </Border>
-
-                    <StackPanel Spacing="10">
-                        <Grid ColumnDefinitions="*,Auto">
-                            <TextBlock Text="Detected setups" Style="{StaticResource SectionTitleStyle}" />
-                            <TextBlock x:Name="SetupCountText" Grid.Column="1" VerticalAlignment="Center" Style="{StaticResource EyebrowStyle}" />
-                        </Grid>
-                        <StackPanel x:Name="SetupList" Spacing="10" />
-                        <Border x:Name="NoSetupsState" Padding="20" Style="{StaticResource CardStyle}">
-                            <StackPanel Spacing="6">
-                                <TextBlock Text="No profile-backed setups are ready yet" FontSize="17" FontWeight="SemiBold" />
-                                <TextBlock Text="Use Find setups to connect an existing supported manager instance. GRID will validate it before storing a reconnectable reference." Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
-                            </StackPanel>
-                        </Border>
-                    </StackPanel>
-
-                    <Border Padding="20" Style="{StaticResource CardStyle}">
-                        <StackPanel Spacing="10">
-                            <TextBlock Text="What GRID will do" FontSize="17" FontWeight="SemiBold" />
-                            <TextBlock Text="✓ Keep your manager and profile canonical" />
-                            <TextBlock Text="✓ Observe current mods, plugins, configuration, and tools" />
-                            <TextBlock Text="✓ Bind GRID history and evidence to the exact backing setup" />
-                            <TextBlock Text="✕ Move, clone, enable, disable, or launch anything during onboarding" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                <Border Padding="22" Style="{StaticResource CardStyle}">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="18">
+                        <StackPanel Spacing="5">
+                            <TextBlock Text="Browse Game Catalog" FontSize="20" FontWeight="SemiBold" />
+                            <TextBlock
+                                Text="Choose a supported game, then use a detected installation or browse to its local game directory."
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                TextWrapping="Wrap" />
                         </StackPanel>
-                    </Border>
+                        <Button Grid.Column="1" VerticalAlignment="Center" Content="Browse Game Catalog" AutomationProperties.Name="Browse Game Catalog" Click="OnBrowseCatalogClicked" Style="{StaticResource AccentButtonStyle}" />
+                    </Grid>
+                </Border>
 
-                    <StackPanel Orientation="Horizontal" Spacing="10">
-                        <Button x:Name="FinishSetupButton" Content="Finish setup" AutomationProperties.Name="Finish setup" Click="OnFinishSetupClicked" Style="{StaticResource AccentButtonStyle}" IsEnabled="False" />
-                        <Button Content="Skip for now" AutomationProperties.Name="Skip setup for now" Click="OnSkipClicked" />
-                    </StackPanel>
+                <Border Padding="22" Style="{StaticResource CardStyle}">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="18">
+                        <StackPanel Spacing="5">
+                            <TextBlock Text="Find my games" FontSize="18" FontWeight="SemiBold" />
+                            <TextBlock
+                                Text="Optionally scan bounded local provider evidence, then review any matching installations in the Game Catalog."
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                TextWrapping="Wrap" />
+                        </StackPanel>
+                        <Button Grid.Column="1" VerticalAlignment="Center" Content="Find my games" AutomationProperties.Name="Find my games" Click="OnFindGamesClicked" />
+                    </Grid>
+                </Border>
+
+                <StackPanel Spacing="8">
+                    <TextBlock Text="You can also add an existing profile from the Game Catalog. GRID's adapters identify its manager, game, installation, mods, plugins, and configuration before a connection is saved." TextWrapping="Wrap" />
+                    <Button HorizontalAlignment="Left" Content="Continue to Home" AutomationProperties.Name="Continue to Home" Click="OnContinueHomeClicked" />
                 </StackPanel>
-            </Grid>
+            </StackPanel>
         </Grid>
     </ScrollViewer>
 </Page>

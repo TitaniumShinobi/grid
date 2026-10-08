@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox mission
+|image        = CasinoHouseKeeping-GTAO-JobImage.png
+|game           = {{games|O=y}}
+|type           = DiamondCasino
+|for          = {{For|game=O|agatha}}
+|location     = 
+*[[The Diamond Casino & Resort]] <small>(start/end)</small>
+*[[Los Santos (HD Universe)|Los Santos]]
+|tod          = 
+|target       = 
+*Duggan's troublemakers
+*[[Thrax]]
+|todo         = 
+*Follow {{Color|v-hud-friendly|Vincent.}}
+*Knock out the {{Color|v-hud-enemy|hillbillies.}}
+*Recover the {{Color|v-hud-bluedark|Thrax.}}
+*Repair the {{Color|v-hud-bluedark|Thrax}} at {{Color|v-hud-location|LS Customs.}} <small>(if the Thrax is damaged)</small>
+*Deliver the {{Color|v-hud-bluedark|Thrax}} to the {{Color|v-hud-location|Casino.}}
+|fail         = 
+*Out of lives.
+*The [[Thrax]] is destroyed.
+|reward       = 
+*JP +15
+*Cash, Chips and RP vary depending on difficulty and time spent.
+----
+<center>[[Awards]]</center>
+*"House Keeping" award + $50,000 <small>(if completed for the first time)</small>
+*"Lucky Lucky" award + $50,000 <small>(by completing a single Casino Story Mission without dying)</small>
+|unlockedby   = [[Casino - Loose Cheng]]
+|unlocks      = [[Casino - Strong Arm Tactics]]
+|protagonists = 1-4 [[GTA Online Protagonist|players]]
+}}
+
+[[LEAD]]
+'''Casino - House Keeping''' is a [[Casino Story Missions|Casino Story Mission]] featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update.
+
+[[CATEGORIES]]
+Casino mission strand
+Gameplay in GTA Online: The Diamond Casino & Resort
+Storyline missions

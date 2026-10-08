@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehiclecustoms
+|name          = Scooter Brothers
+|sign          = ScooterBrothers-GTAO-Logo.png
+|caption       = 
+|games         = {{games|V=y|O=y}}
+|business_type = Automotive industry
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+}}
+
+[[LEAD]]
+'''Scooter Brothers''' is an automotive business appearing in {{VO}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Mod shop brands

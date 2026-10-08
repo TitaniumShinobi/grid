@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox animal
+|name = Stingrays
+|image = Stingray-GTAV.png
+|caption = A Stingray in ''Grand Theft Auto V''.
+|scientific name = ''Dasyatis pastinaca''
+|games = ''[[Grand Theft Auto V]]'' {{EEEV}} {{Peyote}}<br>''[[Grand Theft Auto Online]]'' {{EEEV}} {{Peyote}}
+|type        = sea
+|species = Fish
+|locations = The ocean
+|size = Small
+|interactive = [[Peyote Plants in GTA V|Controllable]]}}
+
+[[LEAD]]
+'''Stingrays''' are an underwater species featured in the next-gen version of ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Animals in GTA Online: The Diamond Casino & Resort
+Animals in GTA V: Enhanced Edition
+Aquatic animals
+Exclusive Expanded & Enhanced Version Content in GTA V

@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = music
+|name          = Vinewood Records
+|sign          = 
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+<center>'''[[Los Santos (HD Universe)|Los Santos]]'''</center>
+*[[Eclipse Boulevard]], [[West Vinewood]]
+*[[Sinner Street]] and [[Strawberry Avenue]], [[Textile City]]
+|business_type = Record Store
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|phone         = 555 - 0169
+|status        = defunct
+}}
+
+[[LEAD]]
+'''Vinewood Records''' is a record store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|VinewoodRecords-GTAV.jpg|[[Eclipse Boulevard]], [[West Vinewood]].
+|VinewoodRecords-GTAVe-TextileCity-SinnerStEntrance.png|[[Sinner Street]] and [[Strawberry Avenue]], [[Textile City]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Former locations in GTA Online
+Music store chains

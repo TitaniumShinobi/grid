@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = clothingstore
+|name          = Alphabetz
+|sign          = Alphabeatz-Logo-GTAIV.png
+|image         = 
+|caption       = 
+|aka           = AlphabetzLS <small>(in [[Los Santos (HD Universe)|Los Santos]])</small>
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|status = active
+|taglines = "''The Shoe Store''"<br>"''Getting U from A to Z''"
+}}
+
+[[LEAD]]
+'''Alphabetz''' is a footwear retailer featured in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+AlphabetzKunziteSt_GTAIV.jpg|[[Kunzite Street]], [[Star Junction]], [[Algonquin]].
+AlphabetzNickelSt_GTAIV.jpg|[[East Tower]], [[Nickel Street]], [[Middle Park East]], Algonquin.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+Alphabetz_GTACW.png|Nickel Street, Middle Park East, Algonquin.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+<gallery position="center" spacing="small" widths="270px">
+Alphabetz-GTAV-Vespucci.png|[[Magellan Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]].
+Alphabetz-GTAV-Hawick.png|[[Hawick Avenue]], [[Hawick]], Los Santos.
+Alphabetz-GTAV-DelPerro.png|[[Prosperity Street Promenade]], [[Del Perro]], Los Santos <small>(opening soon).</small>
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains

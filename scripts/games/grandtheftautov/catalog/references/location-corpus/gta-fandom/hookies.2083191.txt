@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox location
+|type        = restaurant
+|landmark    = y
+|status      = active
+|name        = Hookies
+|sign        =
+|image       =
+<gallery>
+Hookies-GTAVee.jpg|Building
+Hookies-GTAV-Logo.png|Logo
+</gallery>
+|caption    = 
+|games      = {{Games|V=y|O=y}}
+|location   = [[Great Ocean Highway]], [[North Chumash]], [[Blaine County]]
+|price      = [[Money|$]]600,000
+|income     = $4,700
+|owner      = 
+*[[Michael De Santa]] {{Small|(optional)}}
+*[[Franklin Clinton]] {{Small|(optional)}}
+|employees = Franny {{Small|(manager)}}
+}}
+
+[[LEAD]]
+'''Hookies''' is a family seafood restaurant, local landmark and a front for the distribution of [[methamphetamine]]{{Ref
+|name = dirtroadmission
+|type = quote
+|url  = {{Quote|Do you want ice in that? Hookies Diner in North Chumash...family restaurant, local landmark, meth distribution hub. A crew of Sandy Shores dealers have been running drugs up and down Raton Canyon from Hookies for the Lost Biker gang. Chase down the couriers and deliver the product to the drop-off for payment.|[[Dirt Road]] description.}}
+}} featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Fast casual restaurants
+Fronts
+Properties
+Properties in GTA V
+Seafood restaurants

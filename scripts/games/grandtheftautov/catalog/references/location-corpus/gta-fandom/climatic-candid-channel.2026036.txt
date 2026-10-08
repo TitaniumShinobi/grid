@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = ClimaticCandidChannel-GTAO-Logo.png
+|name = Climatic Candid Channel
+|business_type = Television network
+|games = {{Games|IV=y|EFLC=y|V=y|O=y}}
+|locations = [[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]<br>[[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Climatic Candid Channel''' ('''CCC''') is a television network in {{IV}}, {{V}}, and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+TV broadcasting companies

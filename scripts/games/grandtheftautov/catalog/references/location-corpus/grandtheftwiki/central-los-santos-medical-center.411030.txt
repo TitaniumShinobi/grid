@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox Structures|
+|image=[[File:CentralLosSantosMedicalCenter-GTAV-exterior.jpg|305px|]]
+|caption= Central Los Santos Medical Center in [[Grand Theft Auto V|GTA V]].
+|game_1 = GTA V
+|game_2 = GTA Online
+|location = [[Davis]]/[[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|use = Hospital
+|height =  
+}}
+
+[[LEAD]]
+The '''Central Los Santos Medical Center''' is a hospital located between the corners of [[Capital Blvd]], [[Crusade Rd]], [[Davis Ave]] and [[Innocence Blvd]] in both [[Strawberry]] and [[Davis]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The hospital serves the areas of [[South Los Santos|southern Los Santos]] and will see the player (as [[Franklin Clinton]], [[Michael De Santa]], [[Trevor Philips]] or the [[Protagonist (GTA Online)|Online player]]) return to the hospital if they [[Wasted|die]] nearby.
+
+The hospital is in direct competition with the [[Mount Zonah Medical Center]], which heavily criticises the hospital in its [[TV Shows in GTA V|television]] advert for its incompetent doctors and healthcare. This, however, may be due to the hospital serving the areas of Los Santos controlled by [[The Families]], the [[Ballas]], [[Los Santos Vagos]] and [[Los Varrios Aztecas]], which is likely to result in a lot of patients being to injured to be saved.
+
+The hospital has departments of urology, radiology, ultrasound, endoscopy and medical physics as well an emergency room and a chapel. The hospital has two helipads and a multi-storey parking lot located on Crusade Rd. Three [[Ambulance]]s and two [[Air Ambulance]]s can frequently be found at the hospital, which gives players easy access to a helicopter early in the games. A [[Spaceship Parts|Spaceship part]] is also located at the hospital.
+
+[[CATEGORIES]]
+Hospitals in GTA V

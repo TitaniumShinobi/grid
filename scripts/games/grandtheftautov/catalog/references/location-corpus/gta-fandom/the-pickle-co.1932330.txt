@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = The Pickle Co
+|image         = ThePickleCo-GTAVee-Jars.png
+|type          = food
+|caption       = '''The Pickle Co''' jars for sale in a [[24/7 (HD Universe)|24/7]] store.
+|business_type = Pickled foods
+|taglines      = 
+|games         = {{Games|V=y|O=y}}
+|status        = active
+}}
+
+[[LEAD]]
+'''The Pickle Co''' is a food brand in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Food and drink companies

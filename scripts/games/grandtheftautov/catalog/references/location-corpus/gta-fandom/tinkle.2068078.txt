@@ -1,0 +1,63 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = phone
+|name          = Tinkle Mobile Technology
+|image_label   = V
+|image         = Tinkle-Logo-GTAV.png
+|caption       = The '''Tinkle''' logo in {{VO}}.
+|image_label2  = IV
+|image2        = Tinkle-GTAIV-Logo.png
+|caption2      = The '''Tinkle''' logo in {{IV}}.
+|aka           = Tinkle Telecom Corp.
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Alderney City]], [[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+*[[Tinkle Cellphone]] <small>(in partnership with [[Panoramic]])</small>
+*Tinkle Watersport Phone
+|taglines      = 
+*"Tinkle everywhere"
+*"Tinkle in your ear"
+*"Tinkle underwater" <small>(Tinkle Watersport)</small>
+|bawsaq        = {{BAWSAQ/Slider}} '''TNK'''
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Tinkle Mobile Technology''' ([[BAWSAQ]]: '''TNK'''), commonly shortened to '''Tinkle''', is a telecommunications company in the [[HD Universe]], much like [[Badger]] and [[Whiz]]. The player can buy stocks from them at the [[Bawsaq.com]] website in ''GTA V''.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:Stores]]
+<gallery position="center" spacing="small" widths="270px">
+Tinkle-GTAIV-Bohan.png|'''Tinkle''' store in [[Northern Gardens]], [[Bohan]].
+Tinkle-GTAIV-Algonquin.png|'''Tinkle''' store in [[North Holland]], [[Algonquin]].
+</gallery>
+
+[[SECTION:3:Offices]]
+<gallery position="center" spacing="small" widths="270px">
+TinkleBuilding-GTAIV-Overview.png|'''[[Tinkle Building (GTA IV)|Tinkle Building]]''' in [[Alderney City]], [[State of Alderney|Alderney]].
+Buildingoftinkle.gtaV.jpg|'''[[Tinkle Building]]''' in [[Pillbox Hill]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Communications
+Phone companies

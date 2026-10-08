@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox location
+|name      = Grove Street Garage
+|image     = GroveStreetGarage-GTAV.jpg
+|aka       = Auto Fix Factory
+|price     = 
+*$30,000 {{Small|(''GTA V'')}}
+*$2,495,000 {{Small| (''Vehicle Warehouse'') (''GTA Online'')}}
+*$2,135,000 {{Small| (''Arcade'') (''GTA Online'')}}
+|owner     = 
+*[[Franklin Clinton]] {{Small|(optional)}}
+*{{GTAOP}} {{Small|(optional)}}
+|type      = garage
+|garagecap = 
+*4 (''GTA V'') 
+*40 (''GTA Online''; Warehouse)
+*10 (''GTA Online''; Arcade)
+|games     = {{Games|V=y|O={{Small|(Formerly)}}}}
+|location  = [[Grove Street (HD Universe)|Grove Street]], [[Davis]]
+}}
+
+[[LEAD]]
+The '''Grove Street Garage''', also known as '''Auto Fix Factory''', is a [[Garages|vehicle garage]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Former locations in GTA Online
+Garages
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Properties
+Properties in GTA V

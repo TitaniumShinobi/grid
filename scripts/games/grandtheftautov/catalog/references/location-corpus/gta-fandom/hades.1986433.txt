@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = 
+|name          = Hades
+|sign          = 
+|image         = Hades-GTAO-Logo.png
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpheist4}}}}
+|mentioned     = 
+|locations     = 
+|business_type = Unknown
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Hades''' is an unspecified company that appears in {{O}} as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Cayo Perico Heist

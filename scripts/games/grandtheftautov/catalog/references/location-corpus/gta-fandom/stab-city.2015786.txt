@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = TOWN
+|name = Stab City
+|image = StabCity-GTAV.png
+|games = {{Games|V=y|O=y}}
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAVe-Neighborhood-StabCity.ogg
+|map           = <gallery>
+StabCity-IngameGPS-GTAV-Map.png|Stab City
+StabCity-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Stab City''' (formerly known as '''Sunset Shores''') is an unincorporated community located on the outskirts of the [[Grand Senora Desert]] in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Places of Interest]]
+*[[The Range]]
+
+[[SECTION:2:Businesses]]
+*The Range Motel
+*Unnamed auto repair garage
+*Vanessa's Trailer Park
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Towns
+Trailer parks
+Zones

@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Paleto Forest Sawmill
+|type           = sawmill
+|image          = PaletoForestSawmill-GTAVe.png
+|caption        = Overview of the sawmill.
+|games          = {{Games|V=y|O=y}}
+|location       = [[Paleto Forest]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|use            = 
+*[[Weed]] distribution plant
+*Sawmill facility
+|occupants      = 
+*[[Ballas (HD Universe)|The Ballas]] {{Small|(formerly)}} {{UN|missiononly}}
+*[[O'Neil Brothers]] {{Small|(formerly)}} {{UN|missiononly}}
+|accessible     = Yes {{Small|(partially)}}
+|file_name      = 
+*<code>cs1_15b_sawmain_01</code> {{Small|(main building)}}
+*<code>cs1_15b_sawmain_02</code>
+*<code>cs1_15b_sawmain_03</code>
+*<code>cs1_15b_sawmain_04</code>
+*<code>cs1_15b_barn</code> {{Small|(shed)}}
+|coords         = -557, 5315, 74
+|map            = PaletoForestSawmill-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Paleto Forest Sawmill''' is a sawmill appearing in {{V}} and {{O}}.
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[The Diamond Casino Heist]] {{nd}} One of the possible drop-off locations for stolen loot (high level buyer).
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Fronts
+Sawmills

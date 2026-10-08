@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = construction
+|name          = Hugo Scaffolds
+|sign          = 
+|image         = HugoScaffolds-GTAO-Logo.png
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpchristmas2018}}}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Hugo Scaffolds''' is a scaffolding company that appears in {{O}}, first mentioned in the [[GTA Online: Arena War|Arena War]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Arena War
+Construction companies

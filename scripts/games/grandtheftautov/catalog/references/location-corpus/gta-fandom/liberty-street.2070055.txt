@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=LibertyStreet-GTAV.png
+|caption=Liberty Street, as seen from Boulevard Del Perro.
+|games={{Games|V=y|O=y}}
+|start=[[Boulevard Del Perro]]
+|end=[[Cougar Avenue]]
+|map=<gallery>
+LibertyStreet-GTAV-Map.png|Map
+LibertyStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Liberty Street''' is a short [[List of Street Names|street]] in {{V}} and {{O}}, located in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Businesses]]
+*[[Banner Hotel & Spa]] <small>(corner of Boulevard Del Perro)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

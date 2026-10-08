@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = theater
+|name           = Sisyphus Theater
+|sign           = SisyphusTheater-GTAV-Logo.png
+|image          = SisyphusTheater-GTAV-Thumbnail.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Baytree Canyon Road]], [[Vinewood Hills]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|use            = Open-air amphitheater
+}}
+
+[[LEAD]]
+The '''Sisyphus Theater''' is a 120-seat amphitheater in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Building zones
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Theatres

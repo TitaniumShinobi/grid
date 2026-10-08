@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = construction
+|name          = Schlott Construction
+|sign          = SchlottConstruction-GTAO-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpimportexport}}|VI=y}}
+|mentioned     = 
+|locations     = [[Port Gellhorn]], [[State of Leonida|Leonida]]
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = [[Unnamed GTA VI Bravado pickup truck|Unnamed ''GTA VI'' Bravado pickup truck]]
+|taglines      = 
+|status        = active
+|phone         = 
+|accessible    = 
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''Schlott Construction''' is a construction company that appears in {{O}} as part of the [[GTA Online: Import/Export|Import/Export]] update, and is due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Import/Export
+Businesses in GTA VI
+Construction companies

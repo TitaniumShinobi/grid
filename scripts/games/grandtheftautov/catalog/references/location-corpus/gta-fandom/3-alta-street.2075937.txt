@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|type        = skyscraper
+|name        = 3 Alta Street
+|image       = 3AltaStreet-GTAV.png
+|caption     = Overview of the building.
+|games       = {{games|V=y|O=y}}
+|location    = [[Alta Street]], [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible  = Yes <small>(only in ''GTA Online'')</small>
+|aka         = 3 Alta Street Tower
+*Post-modern skyscraper
+*Art-deco skyscraper
+|floors      = 24
+|occupants   = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|map         = 3AltaStreet-GTAV-Map.jpg
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''3 Alta Street''' is a 24-story skyscraper that appears in {{V}} and {{O}}, located on [[Alta Street]] in [[Pillbox Hill]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Landmarks
+Postmodern buildings
+Skyscrapers

@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox animal
+|name = 
+|image = TheCayoPericoHeist-GTAO-LochNessMonster.png
+|imagesize = 300px
+|games = ''[[Grand Theft Auto Online]]''
+|type        = sea
+|species = {{WP|Plesiosaurus}}
+|scientific name = ''Nessiteras rhombopteryx''
+|locations = 
+*[[Scotland]], [[United Kingdom]]
+*[[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|size = Giant
+|interactive = None
+}}
+
+[[LEAD]]
+The '''Loch Santos Monster''' is a creature resembling the {{WP|Loch Ness Monster}} from [[Scotland|Scottish]] folklore, and appears as an [[Secrets and Easter Eggs in GTA Online|easter egg]] in ''[[Grand Theft Auto Online]]'', as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+Animals in GTA Online: The Cayo Perico Heist
+Aquatic animals
+Easter Eggs
+Mythical Creatures
+Red Dead

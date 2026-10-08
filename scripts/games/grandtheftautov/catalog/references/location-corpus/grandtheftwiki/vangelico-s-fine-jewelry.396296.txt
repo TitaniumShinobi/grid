@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = GTAV-Vangelicos.jpeg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Vangelico's Fine Jewelry
+|type = [[:Category:Jewelry Stores|Jewelry Store]]
+|owner = 
+|location = [[Rockford Hills]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Vangelico's Fine Jewelry''' is a jewelry store in [[Grand Theft Auto V]] located on [[Dorset Dr]]ive, [[Rockford Hills]], [[Los Santos]]. It is robbed as the first heist in Grand Theft Auto V, by [[Michael De Santa]] and [[Franklin Clinton]] during [[The Jewel Store Job]]. After the mission, the place becomes completely inaccessible, blocked with a panel reading that the store is under renovations.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Jewelry Stores

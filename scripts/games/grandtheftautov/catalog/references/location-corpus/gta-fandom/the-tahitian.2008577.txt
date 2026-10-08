@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|name = The Tahitian
+|image = TheTahitian-GTAV-Logo.png
+|type = Apartment block
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]}}
+
+[[LEAD]]
+'''The Tahitian''' is an apartment complex that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. There are two apartment buildings in [[Los Santos (HD Universe)|Los Santos]], located in [[Strawberry]] and [[West Vinewood]].
+
+[[SECTION:2:Locations]]
+{{Gallery
+|The_Tahitian_GTAV_from_southeast.jpg|[[Carson Avenue]] and [[Strawberry Avenue]], [[Strawberry]].
+|TheTahitian-WestVinewood-GTAV.png|[[San Vitus Boulevard|1053 San Vitus Boulevard]], [[West Vinewood]].
+}}
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

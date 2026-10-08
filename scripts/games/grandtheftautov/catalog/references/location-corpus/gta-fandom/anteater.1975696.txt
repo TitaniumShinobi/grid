@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|image=AntEater-GTAV.png
+|caption=Logo of AntEater
+|name=AntEater
+|taglines=XXXtreme Bugmunching
+|type=Antivirus software
+|games=''[[Grand Theft Auto V]]''
+}}
+
+[[LEAD]]
+'''AntEater Antivrus''' is an antivirus software found in ''[[Grand Theft Auto V]]'', developed by Viraware. It is installed on [[Fruit (HD Universe)|Fruit]] laptops in the [[Lifeinvader Office]]. It is also installed on some computers in the air traffic control tower in [[Fort Zancudo]] and also installed in the computer at [[Vanilla Unicorn]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+In-Game Products

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Paleto Tattoo
+|image = TattooParlors-GTAVee-PaletoTattoo-Logo.jpg
+|type = Tattoo parlor
+|games = {{Games|V=y|O=y}}
+|locations = [[Paleto Bay]], [[Blaine County]]
+}}
+
+[[LEAD]]
+'''Paleto Tattoo''' is a [[Tattoo Parlors|tattoo parlor]] featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tattoo parlors

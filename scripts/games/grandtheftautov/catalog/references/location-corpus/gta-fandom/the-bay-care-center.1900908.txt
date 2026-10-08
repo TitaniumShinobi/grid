@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = hospital
+|name           = The Bay Care Center
+|image          = 
+<gallery>
+TheBayCareCenter-GTAV.png|Building
+TheBayCareCenter-GTAV-Logo.svg|Logo
+</gallery>
+|city = [[Paleto Bay]]
+|games          = {{Games|V=y|O=y}}
+|size           = Medical clinic
+}}
+
+[[LEAD]]
+'''The Bay Care Center''' is the main medical center in [[Paleto Bay]], [[Blaine County]], in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Hospitals

@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{infobox business
+|name      = Les Bianco
+|image     = LesBianco-GTAV-Logo.png
+|taglines  = 
+|type      = Seafood restaurant
+|games     = {{Games|V=y|O=y}}
+|locations = [[West Vinewood]]<br>[[Del Perro]]<br>[[Burton]]
+}}
+
+[[LEAD]]
+'''Les Bianco''' is a chain of seafood restaurants that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" hideaddbutton="true" spacing="small" widths="270px">
+LesBianco-GTAV-WestVinewood.jpg|[[West Eclipse Boulevard]], [[West Vinewood]].
+LesBianco-GTAV-DelPerro.png|[[Del Perro Plaza (restaurant)|Del Perro Plaza]], [[Red Desert Avenue]], [[Del Perro]].
+LesBianco-GTAV-Rockford.jpg|[[Rockford Plaza]], [[Hawick Avenue]], [[Burton]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fine dining restaurant chains

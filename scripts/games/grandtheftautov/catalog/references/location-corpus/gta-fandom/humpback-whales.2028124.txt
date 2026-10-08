@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox animal
+|name = Humpback Whales
+|image = Humpback whale-GTAV.png
+|imagesize = 300px
+|caption = A Humpback whale in ''Grand Theft Auto V''.
+|scientific name = ''Megaptera novaeangliae''
+|games = ''[[Grand Theft Auto V]]'' {{EEEV}}<br>''[[Grand Theft Auto Online]]'' <small>(beached)</small> {{EEEV}}
+|type        = sea
+|species = Marine mammal
+|locations = [[Paleto Bay]]<br>[[Mount Gordo]]<br>[[Del Perro Pier]]<br>[[San Chianski Mountain Range]]<br>[[Cayo Perico]] <small>(beached)</small>
+|size = Giant
+|interactive = Killable <small>(GTA V)</small>
+}}
+
+[[LEAD]]
+'''Humpback Whales''' are an [[Animals|animal]] species that appear in the enhanced version of ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Animals in GTA Online: The Diamond Casino & Resort
+Animals in GTA V: Enhanced Edition
+Aquatic animals
+Exclusive Expanded & Enhanced Version Content in GTA V

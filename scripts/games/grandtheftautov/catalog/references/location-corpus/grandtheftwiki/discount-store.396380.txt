@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = DiscountStore-GTAV-Strawberry-exterior.jpg
+|size = 300x300px
+|game_1 = GTA V
+|name = Discount Store
+|type = [[:Category:Clothing Stores|Clothing store]]
+|owner = 
+|location = [[Innocence Blvd]]/[[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA III Era|Los Santos]]<br />[[Grapeseed]], [[Blaine County]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Discount Store''' is a clothing store on the corner of [[Innocence Blvd]] and [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]] and in [[Grapeseed]], [[Blaine County]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in Blaine County
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Clothing Stores

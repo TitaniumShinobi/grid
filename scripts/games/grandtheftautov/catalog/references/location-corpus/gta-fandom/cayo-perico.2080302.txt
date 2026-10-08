@@ -1,0 +1,185 @@
+[[INFOBOX]]
+{{Infobox location
+|type          = island
+|image         = CayoPerico-GTAO-Montage.jpg
+|caption       = From top to bottom, left to right: aerial view of Cayo Perico, the welcome sign at the [[Cayo Perico Airstrip|Airstrip]], [[Cayo Perico Beach Party|Keinemusik Beach Party]] on the [[West Beach]], the [[Crop Fields]] seen from the [[Communications Tower]] hill, [[Juan Strickler]]'s [[El Rubio's Compound|fortified compound]], [[North Dock]] and [[Main Dock]].
+|games         = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location      = [[Caribbean Sea]], [[Colombia]]{{Ref|name=location|ref={{Quote|Strickler's got this private island off the Caribbean coast of Colombia. Grows a bunch of coke and weed down there... has got himself some big compound. Lots of guards, hi-tech security, the whole works.|[[Miguel Madrazo]] during [[The Music Locker]] Intro.}}}}
+|coatofarms    = [[File:CayoPerico-GTAO-CoatofArms.png|thumb|130px|center|Coat of Arms of Cayo Perico.]]
+|motto         = ''"Mit Offenen Armen"''{{Ref|name=motto|ref=Cayo Perico Coat of Arms at [[El Rubio's Compound]] and [[Perico Pistol]] engravements.}}{{Ref|name=area|type=modeldata|ref=<code>\update\x64\dlcpacks\mpheist4\dlc1.rpf\x64\levels\gta5\interiors\dlc_int_04_h4.rpf\h4_int_04_coat_of_arms.ydr</code>}}{{Small|<br>From German: ''"With Open Arms"''}}
+|owner         = [[Juan Strickler]]
+|map           = 
+<gallery>
+CayoPerico-GTAO-SnapmaticAtlasMap.png|Map
+CayoPerico-GTAO-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption   = Map of Cayo Perico.
+|unlockedafter = [[Heist Prep: Gather Intel]]<br>{{Small|(Ability to revisit the island for scoping/Access to [[Cayo Perico Beach Party|Keinemusik Beach Party]] via [[Los Santos International Airport (HD Universe)|LSIA]])}}
+}}
+
+[[LEAD]]
+'''Cayo Perico''' (commonly referred to as just ''The Island'' or ''Paradise'') is a private island in the [[Caribbean]], off the coast of [[Colombia]],{{Ref|name=location}} that appears in {{O}} as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[SECTION:2:Geography]]
+Although the name of the island is "Cayo Perico"—which translates to "Cocaine Cay" in Spanish (or lit. "Parakeet Cay")—Cayo Perico is not a {{WP|Cay#Examples|cay}} in the topographic sense, and is actually a {{WP|high island}} telling by its rocky topography and elevation. With the exception of a few beaches, Cayo Perico contains little sand, with most beaches on the island being covered by small rocks.
+
+Cayo Perico's weather is always set to clear during heist intel or regular visits, therefore having no chance of rain or snow, although there is a very small chance that the weather can be set to a thunderstorm during the Cayo Perico Heist finale.
+
+[[SECTION:2:Points of Interest]]
+The island is littered with many historical artifacts and interesting objects, some of which are relevant to the heist and will be able to be sent to [[Pavel]] during [[Heist Prep: Gather Intel|intel gathering]] for [[The Cayo Perico Heist]]. Others are just noteworthy for existing.
+
+The surrounding waters are home to many [[Wrecks]] as well as a large meteorite in the far northwest.
+
+[[SECTION:3:Skeletons and corpses]]
+There are many [[skeletons]] and corpses, some in plain view, some hidden.
+{| class=article-table width=100%
+!Name
+!Description<br>including Pavel's commentary.
+!Location
+!Image
+!Map
+|-
+|Smuggler.
+|A skeleton holding [[Cocaine]] with more bricks scattered around. 
+|Small western beach (between [[West Beach]] and the [[Fishing Jetty]]).
+|[[File:CayoPerico-GTAO-Skeletons-CokeBricksNorthWestBeach.png|thumb|250px|center]]
+|[[File:CayoPerico-GTAO-Skeletons-Smuggler-Map.png|thumb|150px|center]]
+|-
+|Party goer.
+|{{Quote|Well, well. A guest at the last party, perhaps. Just think, if we do not pull this off perfectly, we too will be found like this...|Pavel}}Pavel suggests this was a previous beach party guest who didn't follow the rules. This is confirmed in overheard guard dialogue during the heist itself.{{Ref|name=party|ref={{Dialogue
+|p1 = Guard 1
+|d1 = I swear, man, it crashed right over there.
+|p2 = Guard 2
+|d2 = So what, he like, took the controls?
+|p3 = Guard 1
+|d3 = Yeah, man. Out of his fucking mind.
+|p4 = Guard 2
+|d4 = The American?
+|p5 = Guard 1
+|d5 = They're all American. The party guy, you know?
+|p6 = Guard 2
+|d6 = Oh yeah, that asshole.
+|p7 = Guard 2
+|d7 = So what did you do?
+|p8 = Guard 1
+|d8 = Me? Nothing. Camilo took him behind a rock.
+|p9 = Guard 2
+|d9 = What... at the party?
+|p10 = Guard 1
+|d10 = Yeah.
+|p11 = Guard 2
+|d11 = Shit...
+|quotedetail = Two guards overheard during the heist finale.
+}}}}
+|Rock promontory just north of [[West Beach]], only visible from clifftop above.
+|[[File:CayoPerico-GTAO-Skeletons-PartyGoer.png|thumb|250px|center]]
+|[[File:CayoPerico-GTAO-Skeletons-PartyGuest-Map.png|thumb|150px|center]]
+|-
+|Conquistadors
+|A selection of artifacts including Conquistador skeletons in armour. 
+|On a small island off the west coast.
+|[[File:CayoPerico-GTAO-Conquistadors.png|thumb|250px|center|([[:File:CayoPerico-GTAO-ConquistadorRobbers.png|Almost invisible with grass on ultra]]).]]
+|[[File:CayoPerico-GTAO-Skeletons-Conquistodors-Map.png|thumb|150px|center]]
+|-
+|Smuggler
+|A smuggler with [[Cocaine]] brick in a sunken [[Narcosub]].
+|Underwater off the southwest edge of the larger of the two islands west of Cayo Perico.
+|[[File:CayoPerico-GTAO-Skeletons-NarcosubSmuggler.png|thumb|250px|center]]
+|[[File:Wrecks-GTAO-CayoPerico-Narcosub-Map.png|thumb|150px|center]]
+|-
+|Robber
+|Remains of an intruder killed while trying to breach the compound fence.
+|Western end of the compound perimeter wall/fence.
+|[[File:CayoPerico-GTAO-Skeletons-FenceCutter.png|thumb|250px|center]]
+|[[File:CayoPerico-GTAO-Skeletons-FenceCutter-Map.png|thumb|150px|center]]
+|-
+|Whale
+|A whale skeleton
+|In the sea, off the southeastern coast.
+|[[File:CayoPerico-GTAO-Skeletons-SoutheasterWhale.png|thumb|250px|center|[[:File:CayoPerico-GTAO-Skeletons-WhaleSkull.png|Skull close-up]].]]
+|[[File:CayoPerico-GTAO-Skeletons-Whale-Map.png|thumb|150px|center]]
+|-
+|-
+|Whale with alien egg.
+|A whale skeleton with an [[Aliens|alien egg]].
+|In the sea, off the northeastern coast.
+|[[File:CayoPerico-GTAOee-Skeletons-NortheasternWhaleAndEgg.jpg|thumb|250px|center|[[:File:CayoPerico-GTAO-Skeletons-NortheasternAlienEgg.png|Close-up of the egg]].]]
+|[[File:CayoPerico-GTAO-Skeletons-WhaleAndEgg-Map.png|thumb|150px|center]]
+|-
+|rowspan="4"|8{{Ref|name=props|ref=Game files: Prop positions<code>
+<archetypeName>Prop_water_corpse_02</archetypeName>	<position x="5076.25200000" y="-5804.79800000" z="-10.37372000"/>
+<archetypeName>Prop_water_corpse_01</archetypeName>	<position x="5068.41600000" y="-5792.25300000" z="-6.57220500"/>
+<archetypeName>Prop_water_corpse_02</archetypeName>	<position x="5066.49200000" y="-5795.96100000" z="-7.35724800"/>
+<archetypeName>Prop_water_corpse_01</archetypeName>	<position x="4825.38000000" y="-6044.04600000" z="-5.20295800"/>
+<archetypeName>Prop_water_corpse_01</archetypeName>	<position x="5048.69700000" y="-5830.24300000" z="-15.32573000"/>
+<archetypeName>Prop_water_corpse_01</archetypeName>	<position x="4824.34000000" y="-6045.57500000" z="-5.36462900"/>
+<archetypeName>Prop_water_corpse_01</archetypeName>	<position x="5044.38700000" y="-5827.08900000" z="-15.33052000"/>
+<archetypeName>Prop_water_corpse_01</archetypeName>	<position x="5052.92900000" y="-5826.10400000" z="-15.02450000"/></code>}} [[Merle Abrahams#Bodies|wrapped corpses]].
+|Two female bodies wrapped up.
+|Off the southwest point close to the shore.
+|[[File:CayoPerico-GTAO-Corpses-SouthwestDuo.png|thumb|250px|center]]
+|[[File:CayoPerico-GTAO-Corpses-SouthwestPoint-Map.png|thumb|150px|center]]
+|-
+|A [[Wrecks|wrecked]] [[Blista Compact (HD Universe)|Blista Compact]] with three more female corpses
+|Near the drainage tunnel entry to [[El Rubio's Compound]].
+|[[File:CayoPerico-GTAO-DrainageTunnelEntry-WreckandDrownedCorpses.png|thumb|250px|center|[[:File:CayoPerico-GTAO-DrainageTunnelEntry-DrownedCorpse.png|Close-up of one of the wrapped corpses]].]]
+|[[File:CayoPerico-GTAO-Corpses-DrainageTunnel-Map.png|thumb|150px|center]]
+|-
+|Two more female corpses
+|Near the drainage tunnel entry to [[El Rubio's Compound]], just east of the three above.
+|[[File:CayoPerico-GTAO-Corpses-SoutheastDuo.png|thumb|250px|center]]
+|
+|-
+|One wrapped corpse
+|Just southeast of the above two corpses.
+|[[File:CayoPerico-GTAO-Corpses-SoutheastSingle.png|thumb|250px|center]]
+|
+|-
+|[[Humpback Whales|Whale]]
+|{{Quote|Well, well. You do not see this too often on dry land. It must have become beached|Pavel}}A beached whale corpse.
+|Next to the fishing jetty on the western part of the island.
+|[[File:CayoPerico-GTAO-Whale.png|thumb|250px|center]]
+|[[File:CayoPerico-GTAO-BeachedWhale-Map.png|thumb|150px|center]]
+|-
+|[[Sharks (animal)|Shark]]
+|The mauled corpse of a shark.
+|Eastern shoreline
+|[[File:CayoPerico-GTAO-Corpses-Shark.png|thumb|250px|center]]
+|[[File:CayoPerico-GTAO-Corpses-Shark-Map.png|thumb|150px|center]]
+|-
+|}
+
+[[SECTION:3:Locations and Landmarks]]
+*[[West Beach]]
+**[[Cayo Perico Beach Party]]
+*[[Cayo Perico Airstrip]]
+*[[Cayo Perico Power Station]]
+*[[Cayo Perico Lighthouse]]
+*[[Cayo Perico Solar Farm]]
+*[[El Rubio's Compound]]
+**[[Primitive Shelter]]
+**[[Ritual Hut]]
+*[[North Dock]]
+*[[Main Dock]]
+*[[Communications Tower]]
+*[[Crop Fields]]
+*[[Campsite]]
+*[[Fishing Jetty]]
+
+<gallery position="center" spacing="small" widths="250px">
+CayoPerico-GTAO-CartelCage.png|A cartel torture cage. ([[:File:CayoPerico-GTAO-CartelTortureCage-Map.png|Map]]).
+CayoPerico-GTAO-Cemetary.png|A cemetery. ([[:File:CayoPerico-GTAO-Cemetery-Location.png|Map]]).
+CayoPerico-GTAO-CreepyGraveyard.png|A creepy graveyard on one of the smaller islands ([[:File:CayoPerico-GTAO-GraveyardAerialView.png|aerial view]])([[:File:CayoPerico-GTAO-CreepyGraveyard-Map.png|Map]]).
+CayoPerico-GTAO-Obelisk-EasternIsland.png|Collapsed obelisk. ([[:File:CayoPerico-GTAO-Obelisk-EasternIsland-Map.png|Map]]).
+CayoPerico-GTAO-SunkenMeteorite.png|Sunken meteorite. ([[:File:CayoPerico-GTAO-Meteorite-Map.png|Map]]).
+CayoPerico-GTAO-RitualHut.png|A ritual hut within El Rubio's grounds, near his compound.
+CayoPerico-GTAO-PrimativeShelter.png|A primitive shelter.
+CayoPerico-GTAO-Campsite.png|A campsite.
+</gallery>
+
+[[CATEGORIES]]
+Islands
+Locations in GTA Online
+Neighborhoods
+Unlockable locations
+Zones

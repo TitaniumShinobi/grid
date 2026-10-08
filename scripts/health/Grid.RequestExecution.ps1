@@ -16,6 +16,31 @@ function Resolve-GridRequestGameId {
     switch -CaseSensitive ($GameId) {
         'game.skyrim-special-edition' { 'skyrimspecialedition' }
         'skyrimspecialedition' { 'skyrimspecialedition' }
+        'game.grandtheftautov-enhanced' { 'grandtheftautov-enhanced' }
+        'game.grandtheftautov-legacy' { 'grandtheftautov-legacy' }
+        'grandtheftautov-enhanced' { 'grandtheftautov-enhanced' }
+        'grandtheftautov-legacy' { 'grandtheftautov-legacy' }
+        default { $GameId }
+    }
+}
+
+function Resolve-GridRequestAdapterGameId {
+    [CmdletBinding()]
+    param([Parameter(Mandatory)][string]$GameId)
+    switch -CaseSensitive (Resolve-GridRequestGameId -GameId $GameId) {
+        'grandtheftautov-enhanced' { 'grandtheftautov' }
+        'grandtheftautov-legacy' { 'grandtheftautov' }
+        default { Resolve-GridRequestGameId -GameId $GameId }
+    }
+}
+
+function Resolve-GridRequestCatalogGameId {
+    [CmdletBinding()]
+    param([Parameter(Mandatory)][string]$GameId)
+    switch -CaseSensitive (Resolve-GridRequestGameId -GameId $GameId) {
+        'skyrimspecialedition' { 'game.skyrim-special-edition' }
+        'grandtheftautov-enhanced' { 'game.grandtheftautov-enhanced' }
+        'grandtheftautov-legacy' { 'game.grandtheftautov-legacy' }
         default { $GameId }
     }
 }
@@ -31,6 +56,49 @@ function ConvertTo-GridRequestInputObject {
     $Value
 }
 
+function Get-GridRegisteredTicketTaxonomy {
+    [CmdletBinding()]
+    param()
+    $path = Join-Path $PSScriptRoot 'ticket-taxonomy.v1.json'
+    if (-not (Test-Path -LiteralPath $path -PathType Leaf)) {
+        throw 'InvestigationIntakeInvalid: the registered GRID ticket taxonomy is unavailable.'
+    }
+    $item = Get-Item -LiteralPath $path -ErrorAction Stop
+    if ([long]$item.Length -gt 1MB) { throw 'InvestigationIntakeInvalid: the registered GRID ticket taxonomy exceeds its bounded size.' }
+    $document = Get-Content -LiteralPath $item.FullName -Raw | ConvertFrom-Json -ErrorAction Stop
+    if ([int]$document.schemaVersion -ne 1 -or
+        [string]::IsNullOrWhiteSpace([string]$document.taxonomyId) -or
+        [string]::IsNullOrWhiteSpace([string]$document.taxonomyVersion)) {
+        throw 'InvestigationIntakeInvalid: the registered GRID ticket taxonomy identity is invalid.'
+    }
+    foreach ($name in @('problems','timings','goals')) {
+        if ($null -eq $document.PSObject.Properties[$name]) {
+            throw "InvestigationIntakeInvalid: the registered GRID ticket taxonomy is missing '$name'."
+        }
+    }
+    foreach ($definition in @(
+        [pscustomobject]@{ collection='problems'; id='problemId'; requiresClass=$true },
+        [pscustomobject]@{ collection='timings'; id='timingId'; requiresClass=$true },
+        [pscustomobject]@{ collection='goals'; id='goalId'; requiresClass=$false }
+    )) {
+        $seen = @{}
+        foreach ($entry in @($document.($definition.collection))) {
+            foreach ($field in @($definition.id, 'displayName') + @(if ($definition.requiresClass) { 'classId' })) {
+                if ($null -eq $entry -or $null -eq $entry.PSObject.Properties[$field] -or
+                    [string]::IsNullOrWhiteSpace([string]$entry.$field)) {
+                    throw "InvestigationIntakeInvalid: the registered GRID taxonomy has an invalid '$($definition.collection)' entry."
+                }
+            }
+            $identity = [string]$entry.($definition.id)
+            if ($identity -notmatch '^[A-Za-z0-9][A-Za-z0-9._-]{0,511}$' -or $seen.ContainsKey($identity)) {
+                throw "InvestigationIntakeInvalid: the registered GRID taxonomy has a malformed or duplicate '$($definition.collection)' identity."
+            }
+            $seen[$identity] = $true
+        }
+    }
+    $document
+}
+
 function New-GridInvestigationIntake {
     [CmdletBinding()]
     param(
@@ -41,6 +109,12 @@ function New-GridInvestigationIntake {
         [ValidateSet('SelectedContext','SelectedContextAndAttachments')][string]$AuthorizationScope = 'SelectedContext',
         [bool]$CaptureCurrentState = $true,
         [object[]]$Attachments = @(),
+        [object[]]$CanonicalSelections = @(),
+        [object[]]$UnresolvedUserContext = @(),
+        $ProblemSelection,
+        $TimingSelection,
+        $GoalSelection,
+        [string]$ClassId,
         [string]$ParentTaskId
     )
     foreach ($field in @($Problem,$ExpectedBehavior,$ReproductionLocation,$DesiredOutcome)) {
@@ -62,11 +136,164 @@ function New-GridInvestigationIntake {
         $normalized.Add([pscustomobject][ordered]@{ path=$path; mediaType=$mediaType; claimedCapturedAt=$captured; assertions=@($assertions) })
     }
     if ($normalized.Count -gt 0 -and $AuthorizationScope -ne 'SelectedContextAndAttachments') { throw 'InvestigationIntakeInvalid: attachment reads require SelectedContextAndAttachments authorization scope.' }
-    $unsigned = [pscustomobject][ordered]@{
-        schemaVersion=1; problem=[string]$Problem; expectedBehavior=[string]$ExpectedBehavior
-        reproductionLocation=[string]$ReproductionLocation; desiredOutcome=[string]$DesiredOutcome
-        authorizationScope=$AuthorizationScope; captureCurrentState=[bool]$CaptureCurrentState
-        attachments=@($normalized.ToArray() | Sort-Object path);parentTaskId=if([string]::IsNullOrWhiteSpace($ParentTaskId)){$null}else{$ParentTaskId}
+    if (@($CanonicalSelections).Count -gt 4) { throw 'InvestigationIntakeInvalid: no more than four canonical selector selections are allowed.' }
+    $canonical = New-Object Collections.Generic.List[object]
+    $canonicalKinds = @{}
+    foreach ($selection in @($CanonicalSelections)) {
+        foreach ($name in @('selectionKind','knowledgeKind','catalogRevisionId','catalogCompositionId','projectionPolicyId','projectionPolicyVersion','selectedPathId','knowledgeRecordId')) {
+            if ($null -eq $selection -or $null -eq $selection.PSObject.Properties[$name] -or [string]::IsNullOrWhiteSpace([string]$selection.$name)) {
+                throw "InvestigationIntakeInvalid: canonical selection requires '$name'."
+            }
+        }
+        if ([string]$selection.selectionKind -cne 'CanonicalRecord') { throw 'InvestigationIntakeInvalid: Other context is not canonical selector data.' }
+        $kind = [string]$selection.knowledgeKind
+        if ($kind -cnotin @('Location','MissionQuest','Item','Actor') -or $canonicalKinds.ContainsKey($kind)) {
+            throw "InvestigationIntakeInvalid: canonical selection kind '$kind' is invalid or duplicated."
+        }
+        $canonicalKinds[$kind] = $true
+        foreach ($name in @('catalogRevisionId','catalogCompositionId','projectionPolicyId','selectedPathId','knowledgeRecordId')) {
+            $identity = [string]$selection.$name
+            if ($identity.Length -gt 512 -or $identity -notmatch '^[A-Za-z0-9][A-Za-z0-9._-]+$') {
+                throw "InvestigationIntakeInvalid: canonical selection identity '$name' is malformed."
+            }
+        }
+        if ([string]$selection.catalogRevisionId -notmatch '^grid\.catalog-revision\.v[1-9][0-9]*\.sha256\.[a-f0-9]{64}$' -or
+            [string]$selection.catalogCompositionId -notmatch '^grid\.runtime-catalog-composition\.v1\.sha256\.[a-f0-9]{64}$' -or
+            [string]$selection.projectionPolicyId -cne 'grid.canonical-selector-projection' -or
+            [string]$selection.projectionPolicyVersion -cne '1' -or
+            [string]$selection.selectedPathId -notmatch '^grid\.canonical-navigation-path\.v1\.sha256\.[a-f0-9]{64}$' -or
+            [string]$selection.knowledgeRecordId -notmatch '^grid\.knowledge-record\.v1\.sha256\.[a-f0-9]{64}$') {
+            throw 'InvestigationIntakeInvalid: canonical selection coordinates are not supported canonical identities.'
+        }
+        $canonical.Add([pscustomobject][ordered]@{
+            selectionKind='CanonicalRecord'; knowledgeKind=$kind
+            catalogRevisionId=[string]$selection.catalogRevisionId; catalogCompositionId=[string]$selection.catalogCompositionId
+            projectionPolicyId=[string]$selection.projectionPolicyId; projectionPolicyVersion=[string]$selection.projectionPolicyVersion
+            selectedPathId=[string]$selection.selectedPathId; knowledgeRecordId=[string]$selection.knowledgeRecordId
+            unresolvedOtherContextId=$null
+        })
+    }
+    if (@($UnresolvedUserContext).Count -gt 4) { throw 'InvestigationIntakeInvalid: no more than four unresolved selector contexts are allowed.' }
+    $unresolved = New-Object Collections.Generic.List[object]
+    $unresolvedKinds = @{}
+    foreach ($context in @($UnresolvedUserContext)) {
+        foreach ($name in @('kind','value','resolution','provenance')) {
+            if ($null -eq $context -or $null -eq $context.PSObject.Properties[$name]) { throw "InvestigationIntakeInvalid: unresolved context requires '$name'." }
+        }
+        $kind = [string]$context.kind
+        if ($kind -cnotin @('Location','MissionOrQuest','Item','Entity') -or $unresolvedKinds.ContainsKey($kind)) {
+            throw "InvestigationIntakeInvalid: unresolved context kind '$kind' is invalid or duplicated."
+        }
+        if ([string]$context.resolution -cne 'Unresolved') { throw 'InvestigationIntakeInvalid: ticket Other context must remain unresolved.' }
+        if ([string]$context.provenance -cnotin @('ExplicitUserSelection','LegacyImported')) { throw 'InvestigationIntakeInvalid: ticket Other context has invalid provenance.' }
+        $value = [string]$context.value
+        if ([string]::IsNullOrWhiteSpace($value) -or $value.Length -gt 4096) { throw 'InvestigationIntakeInvalid: unresolved context value must contain at most 4096 exact characters.' }
+        $unresolvedKinds[$kind] = $true
+        $unresolved.Add([pscustomobject][ordered]@{
+            kind=$kind; value=$value; resolution='Unresolved'; provenance=[string]$context.provenance; matchedReferenceId=$null
+        })
+    }
+    foreach ($pair in @(
+        @('Location','Location'),
+        @('MissionQuest','MissionOrQuest'),
+        @('Item','Item'),
+        @('Actor','Entity')
+    )) {
+        if ($canonicalKinds.ContainsKey([string]$pair[0]) -and $unresolvedKinds.ContainsKey([string]$pair[1])) {
+            throw "InvestigationIntakeInvalid: canonical selection and unresolved Other context cannot coexist for semantic kind '$([string]$pair[0])'."
+        }
+    }
+    $hasStructuredTaxonomy = $null -ne $ProblemSelection -or $null -ne $TimingSelection -or $null -ne $GoalSelection
+    $problemSelectionValue = $null
+    $timingSelectionValue = $null
+    $goalSelectionValue = $null
+    if ($hasStructuredTaxonomy) {
+        if ($null -eq $ProblemSelection -or $null -eq $GoalSelection) {
+            throw 'InvestigationIntakeInvalid: structured taxonomy requires exact Problem and Goal selections.'
+        }
+        foreach ($entry in @($ProblemSelection, $GoalSelection) + @(if ($null -ne $TimingSelection) { $TimingSelection })) {
+            foreach ($name in @('id','displayName','provenance')) {
+                if ($null -eq $entry.PSObject.Properties[$name] -or [string]::IsNullOrWhiteSpace([string]$entry.$name)) {
+                    throw "InvestigationIntakeInvalid: a structured taxonomy selection requires '$name'."
+                }
+            }
+            if ([string]$entry.id -notmatch '^[A-Za-z0-9][A-Za-z0-9._-]{0,511}$' -or ([string]$entry.displayName).Length -gt 512) {
+                throw 'InvestigationIntakeInvalid: a structured taxonomy identity or display value is malformed.'
+            }
+            if ([string]$entry.provenance -cne 'ExplicitUserSelection') {
+                throw 'InvestigationIntakeInvalid: new structured taxonomy selections require ExplicitUserSelection provenance.'
+            }
+        }
+        foreach ($entry in @($ProblemSelection) + @(if ($null -ne $TimingSelection) { $TimingSelection })) {
+            if ($null -eq $entry.PSObject.Properties['classId'] -or [string]::IsNullOrWhiteSpace([string]$entry.classId)) {
+                throw 'InvestigationIntakeInvalid: structured Problem and Timing selections require classId.'
+            }
+            if (-not [string]::IsNullOrWhiteSpace($ClassId) -and [string]$entry.classId -cne $ClassId) {
+                throw 'InvestigationIntakeInvalid: structured Problem and Timing selections must belong to the selected Class.'
+            }
+        }
+        if ($null -ne $TimingSelection -and [string]$TimingSelection.classId -cne [string]$ProblemSelection.classId) {
+            throw 'InvestigationIntakeInvalid: structured Problem and Timing selections must belong to the same Class.'
+        }
+        $registeredTaxonomy = Get-GridRegisteredTicketTaxonomy
+        $registeredProblems = @($registeredTaxonomy.problems | Where-Object {
+            [string]$_.problemId -ceq [string]$ProblemSelection.id -and
+            [string]$_.classId -ceq [string]$ProblemSelection.classId -and
+            [string]$_.displayName -ceq [string]$ProblemSelection.displayName
+        })
+        $registeredGoals = @($registeredTaxonomy.goals | Where-Object {
+            [string]$_.goalId -ceq [string]$GoalSelection.id -and
+            [string]$_.displayName -ceq [string]$GoalSelection.displayName
+        })
+        $registeredTimings = @(if ($null -ne $TimingSelection) {
+            @($registeredTaxonomy.timings | Where-Object {
+                [string]$_.timingId -ceq [string]$TimingSelection.id -and
+                [string]$_.classId -ceq [string]$TimingSelection.classId -and
+                [string]$_.displayName -ceq [string]$TimingSelection.displayName
+            })
+        })
+        if ($registeredProblems.Count -ne 1 -or $registeredGoals.Count -ne 1 -or
+            ($null -ne $TimingSelection -and $registeredTimings.Count -ne 1)) {
+            throw 'InvestigationIntakeInvalid: structured taxonomy selections must exactly match the registered GRID taxonomy.'
+        }
+        $problemSelectionValue = [pscustomobject][ordered]@{
+            id=[string]$ProblemSelection.id; classId=[string]$ProblemSelection.classId
+            displayName=[string]$ProblemSelection.displayName; provenance='ExplicitUserSelection'
+        }
+        if ($null -ne $TimingSelection) {
+            $timingSelectionValue = [pscustomobject][ordered]@{
+                id=[string]$TimingSelection.id; classId=[string]$TimingSelection.classId
+                displayName=[string]$TimingSelection.displayName; provenance='ExplicitUserSelection'
+            }
+        }
+        $goalSelectionValue = [pscustomobject][ordered]@{
+            id=[string]$GoalSelection.id; displayName=[string]$GoalSelection.displayName; provenance='ExplicitUserSelection'
+        }
+    }
+    if ($hasStructuredTaxonomy) {
+        $unsigned = [pscustomobject][ordered]@{
+            schemaVersion=3; problem=[string]$Problem; expectedBehavior=[string]$ExpectedBehavior
+            reproductionLocation=[string]$ReproductionLocation; desiredOutcome=[string]$DesiredOutcome
+            authorizationScope=$AuthorizationScope; captureCurrentState=[bool]$CaptureCurrentState
+            attachments=@($normalized.ToArray() | Sort-Object path)
+            canonicalSelections=@($canonical.ToArray() | Sort-Object knowledgeKind)
+            unresolvedUserContext=@($unresolved.ToArray() | Sort-Object kind)
+            taxonomyId=[string]$registeredTaxonomy.taxonomyId; taxonomyVersion=[string]$registeredTaxonomy.taxonomyVersion
+            problemSelection=$problemSelectionValue; timingSelection=$timingSelectionValue; goalSelection=$goalSelectionValue
+            parentTaskId=if([string]::IsNullOrWhiteSpace($ParentTaskId)){$null}else{$ParentTaskId}
+        }
+    } else {
+        # Preserve the exact v2 field set so historical/no-taxonomy callers are
+        # not silently reinterpreted as the structured taxonomy contract.
+        $unsigned = [pscustomobject][ordered]@{
+            schemaVersion=2; problem=[string]$Problem; expectedBehavior=[string]$ExpectedBehavior
+            reproductionLocation=[string]$ReproductionLocation; desiredOutcome=[string]$DesiredOutcome
+            authorizationScope=$AuthorizationScope; captureCurrentState=[bool]$CaptureCurrentState
+            attachments=@($normalized.ToArray() | Sort-Object path)
+            canonicalSelections=@($canonical.ToArray() | Sort-Object knowledgeKind)
+            unresolvedUserContext=@($unresolved.ToArray() | Sort-Object kind)
+            parentTaskId=if([string]::IsNullOrWhiteSpace($ParentTaskId)){$null}else{$ParentTaskId}
+        }
     }
     $unsigned | Add-Member -NotePropertyName intakeSha256 -NotePropertyValue (Get-GridCanonicalJsonSha256 -InputObject $unsigned)
     $unsigned
@@ -122,7 +349,7 @@ function New-GridRequestAuthorizationReview {
                 $capabilityBindings.Add([pscustomobject][ordered]@{ capabilityId=[string]$capabilityId; capabilityVersion=[string]$match[0].capabilityVersion; adapterId=[string]$item.definition.adapter; adapterVersion=[string]$item.definition.schemaVersion })
             }
         }
-        $scopes.Add([pscustomobject][ordered]@{ toolId=[string]$item.toolId; adapter=if($item.definition){[string]$item.definition.adapter}else{$null}; observationMode=if($item.definition){[string]$item.definition.observationMode}else{$null}; availability=[string]$item.availability; exactReadPaths=@($paths); inputs=$input })
+        $scopes.Add([pscustomobject][ordered]@{ toolId=[string]$item.toolId; adapter=if($item.definition){[string]$item.definition.adapter}else{$null}; observationMode=if($item.definition){[string]$item.definition.observationMode}else{$null}; availability=[string]$item.availability; exactReadPaths=@($paths); exactReadResources=@(); inputs=$input })
     }
     if ($null -ne $InvestigationIntake -and [bool]$InvestigationIntake.captureCurrentState -and [string]$Envelope.context.gameId -ceq 'skyrimspecialedition') {
         $contextInput = if ($ToolInputs.ContainsKey('grid.tool.mo2')) { ConvertTo-GridRequestInputObject $ToolInputs['grid.tool.mo2'] } else { [pscustomobject]@{} }
@@ -132,7 +359,49 @@ function New-GridRequestAuthorizationReview {
         if ($contextContract.Count -ne 1) { throw 'AuthorizationCapabilityMissing: grid.game.skyrimspecialedition.mo2-context.collect.' }
         $capabilityBindings.Add([pscustomobject][ordered]@{ capabilityId='grid.game.skyrimspecialedition.mo2-context.collect'; capabilityVersion=[string]$contextContract[0].capabilityVersion; adapterId='MO2Context'; adapterVersion='1' })
         $normalizedInputs['grid.intake.mo2-context'] = $contextInput
-        $scopes.Add([pscustomobject][ordered]@{ toolId='grid.intake.mo2-context'; adapter='MO2Context'; observationMode='InProcessRead'; availability=if($paths.Count -gt 0){'Available'}else{'Unavailable'}; exactReadPaths=@($paths); inputs=$contextInput })
+        $scopes.Add([pscustomobject][ordered]@{ toolId='grid.intake.mo2-context'; adapter='MO2Context'; observationMode='InProcessRead'; availability=if($paths.Count -gt 0){'Available'}else{'Unavailable'}; exactReadPaths=@($paths); exactReadResources=@(); inputs=$contextInput })
+    }
+    if ($null -ne $InvestigationIntake -and [bool]$InvestigationIntake.captureCurrentState -and
+        [string]$Envelope.context.gameId -in @('grandtheftautov-enhanced','grandtheftautov-legacy')) {
+        if (-not $ToolInputs.ContainsKey('grid.intake.game-context')) {
+            throw 'InstallationContextUnresolved: the exact account-owned GTA context was not supplied.'
+        }
+        $contextInput = ConvertTo-GridRequestInputObject $ToolInputs['grid.intake.game-context']
+        $paths = @(if ($null -ne $contextInput.PSObject.Properties['authorizedReadPaths']) {
+            $contextInput.authorizedReadPaths | ForEach-Object { [IO.Path]::GetFullPath([string]$_) } | Sort-Object -Unique
+        })
+        foreach ($path in $paths) { $targets.Add($path) }
+        $resources = New-Object Collections.Generic.List[object]
+        foreach ($resource in @(if ($null -ne $contextInput.PSObject.Properties['exactReadResources']) { $contextInput.exactReadResources } else { @() })) {
+            $resourceType = [string]$resource.resourceType
+            $resourceId = [string]$resource.resourceId
+            $constraints = @($resource.constraints | ForEach-Object { [string]$_ } | Where-Object { -not [string]::IsNullOrWhiteSpace($_) } | Sort-Object -Unique)
+            if ($resourceType -notmatch '^[A-Za-z][A-Za-z0-9.-]{0,63}$' -or [string]::IsNullOrWhiteSpace($resourceId) -or $resourceId.Length -gt 512) {
+                throw 'AuthorizationResourceInvalid: GTA diagnostic resources require a bounded type and identity.'
+            }
+            if ($constraints.Count -gt 32 -or @($constraints | Where-Object { $_.Length -gt 512 }).Count -gt 0) {
+                throw 'AuthorizationResourceInvalid: GTA diagnostic resource constraints exceed the bounded review contract.'
+            }
+            $resources.Add([pscustomobject][ordered]@{ resourceType=$resourceType; resourceId=$resourceId; constraints=$constraints })
+        }
+        $contextContract = @($capabilityRegistry | Where-Object {
+            [string]$_.capabilityId -ceq 'grid.game.grandtheftautov.crash-investigation.collect'
+        })
+        if ($contextContract.Count -ne 1) {
+            throw 'AuthorizationCapabilityMissing: grid.game.grandtheftautov.crash-investigation.collect.'
+        }
+        $capabilityBindings.Add([pscustomobject][ordered]@{
+            capabilityId='grid.game.grandtheftautov.crash-investigation.collect'
+            capabilityVersion=[string]$contextContract[0].capabilityVersion
+            adapterId='GrandTheftAutoV'
+            adapterVersion='1'
+        })
+        $normalizedInputs['grid.intake.game-context'] = $contextInput
+        $scopes.Add([pscustomobject][ordered]@{
+            toolId='grid.intake.game-context'; adapter='GrandTheftAutoV'
+            observationMode='InProcessRead+WindowsEventLogRead'; availability=if($paths.Count -gt 0){'Available'}else{'Unavailable'}
+            exactReadPaths=@($paths); exactReadResources=@($resources.ToArray()); inputs=$contextInput
+        })
     }
     $attachmentPaths = @(Get-GridInvestigationAttachmentPaths -InvestigationIntake $InvestigationIntake)
     if ($attachmentPaths.Count -gt 0) {
@@ -147,7 +416,7 @@ function New-GridRequestAuthorizationReview {
             $capabilityBindings.Add([pscustomobject][ordered]@{capabilityId='grid.game.skyrimspecialedition.papyrus-state.inspect';capabilityVersion=[string]$papyrusContract[0].capabilityVersion;adapterId='CaseAttachment';adapterVersion='1'})
         }
         $normalizedInputs['grid.intake.attachments'] = [pscustomobject][ordered]@{ paths=@($attachmentPaths) }
-        $scopes.Add([pscustomobject][ordered]@{ toolId='grid.intake.attachments'; adapter='CaseAttachment'; observationMode=if($papyrusPaths.Count -gt 0){'InProcessRead+BundledPapyrusInspection'}else{'InProcessRead'}; availability='Available'; exactReadPaths=@($attachmentPaths); inputs=[pscustomobject][ordered]@{ paths=@($attachmentPaths) } })
+        $scopes.Add([pscustomobject][ordered]@{ toolId='grid.intake.attachments'; adapter='CaseAttachment'; observationMode=if($papyrusPaths.Count -gt 0){'InProcessRead+BundledPapyrusInspection'}else{'InProcessRead'}; availability='Available'; exactReadPaths=@($attachmentPaths); exactReadResources=@(); inputs=[pscustomobject][ordered]@{ paths=@($attachmentPaths) } })
     }
     foreach ($binding in @($RequestPlan.capabilityBindings)) {
         $capabilityId = [string]$binding.capabilityId
@@ -191,6 +460,66 @@ function Grant-GridRequestAuthorization {
     New-GridAuthorizationGrant -StoreRoot $StoreRoot -ReviewId ([string]$AuthorizationReview.reviewId) -AuthorityClass Read -SemanticBinding $AuthorizationReview.semanticBinding -LifetimeMinutes $LifetimeMinutes
 }
 
+function Test-GridRequestPathWithinApprovedRoot {
+    param(
+        [Parameter(Mandatory)][string]$Path,
+        [Parameter(Mandatory)][string[]]$ApprovedRoots
+    )
+    $candidate = [IO.Path]::GetFullPath($Path).TrimEnd('\')
+    foreach ($rootValue in @($ApprovedRoots)) {
+        if ([string]::IsNullOrWhiteSpace($rootValue)) { continue }
+        $root = [IO.Path]::GetFullPath($rootValue).TrimEnd('\')
+        if ($candidate.Equals($root, [StringComparison]::OrdinalIgnoreCase) -or
+            $candidate.StartsWith($root + '\', [StringComparison]::OrdinalIgnoreCase)) {
+            return $true
+        }
+    }
+    $false
+}
+
+function Resolve-GridDeferredSkyrimAuthorizationScope {
+    param(
+        [Parameter(Mandatory)]$Definition,
+        [Parameter(Mandatory)]$AuthorizationScope,
+        [Parameter(Mandatory)][string]$ScriptsRoot
+    )
+    $input = $AuthorizationScope.inputs
+    if ($null -eq $input.PSObject.Properties['deferredResolution'] -or -not [bool]$input.deferredResolution) {
+        return $AuthorizationScope
+    }
+    foreach ($required in @('gridDataRoot','installationId','requestedProfileId')) {
+        if ($null -eq $input.PSObject.Properties[$required] -or [string]::IsNullOrWhiteSpace([string]$input.$required)) {
+            throw "AuthorizationScopeMismatch: deferred manager resolution is missing '$required'."
+        }
+    }
+    $resolverPath = Join-Path $ScriptsRoot 'games\skyrimspecialedition\health\collectors\Resolve-GridSkyrimRequestToolInputs.ps1'
+    . $resolverPath
+    $resolved = Resolve-GridSkyrimRequestToolInputs `
+        -GridDataRoot ([string]$input.gridDataRoot) `
+        -InstallationId ([string]$input.installationId) `
+        -ProfileId ([string]$input.requestedProfileId) `
+        -ToolIds @([string]$Definition.toolId)
+    if (-not $resolved.ContainsKey([string]$Definition.toolId)) {
+        throw "AuthorizationScopeMismatch: deferred input for '$([string]$Definition.toolId)' was not resolved."
+    }
+    $resolvedInput = $resolved[[string]$Definition.toolId]
+    $approvedRoots = @($AuthorizationScope.exactReadPaths | ForEach-Object { [IO.Path]::GetFullPath([string]$_) })
+    foreach ($resolvedPath in @($resolvedInput.authorizedReadPaths)) {
+        if (-not (Test-GridRequestPathWithinApprovedRoot -Path ([string]$resolvedPath) -ApprovedRoots $approvedRoots)) {
+            throw "AuthorizationScopeMismatch: manager configuration resolved '$resolvedPath' outside the reviewed read roots."
+        }
+    }
+    [pscustomobject][ordered]@{
+        toolId = [string]$AuthorizationScope.toolId
+        adapter = [string]$AuthorizationScope.adapter
+        observationMode = [string]$AuthorizationScope.observationMode
+        availability = [string]$AuthorizationScope.availability
+        exactReadPaths = @($AuthorizationScope.exactReadPaths)
+        exactReadResources = @($AuthorizationScope.exactReadResources)
+        inputs = $resolvedInput
+    }
+}
+
 function Invoke-GridRegisteredToolAdapter {
     [CmdletBinding()]
     param(
@@ -200,6 +529,7 @@ function Invoke-GridRegisteredToolAdapter {
         [Parameter(Mandatory)][string]$ScriptsRoot,
         [Parameter(Mandatory)][string]$CaseDirectory
     )
+    $AuthorizationScope = Resolve-GridDeferredSkyrimAuthorizationScope -Definition $Definition -AuthorizationScope $AuthorizationScope -ScriptsRoot $ScriptsRoot
     switch ([string]$Definition.adapter) {
         'MO2Context' {
             if ($null -eq $AuthorizationScope.inputs.PSObject.Properties['mo2Root'] -or [string]::IsNullOrWhiteSpace([string]$AuthorizationScope.inputs.mo2Root)) {
@@ -213,7 +543,9 @@ function Invoke-GridRegisteredToolAdapter {
                 Where-Object { -not [string]::IsNullOrWhiteSpace([string]$_) } | ForEach-Object { [IO.Path]::GetFullPath([string]$_) })
             $approvedRoots = @($AuthorizationScope.exactReadPaths | ForEach-Object { [IO.Path]::GetFullPath([string]$_) })
             foreach ($observedRoot in $observedRoots) {
-                if ($observedRoot -notin $approvedRoots) { throw "AuthorizationScopeMismatch: derived MO2 root '$observedRoot' was not explicitly approved." }
+                if (-not (Test-GridRequestPathWithinApprovedRoot -Path $observedRoot -ApprovedRoots $approvedRoots)) {
+                    throw "AuthorizationScopeMismatch: derived MO2 root '$observedRoot' is outside the reviewed read roots."
+                }
             }
             return [pscustomobject]@{ status = 'Collected'; evidence = @($observed); stdout = ''; stderr = ''; exitCode = 0; reason = $null }
         }
@@ -222,7 +554,7 @@ function Invoke-GridRegisteredToolAdapter {
             . $collector
             $paths = if ($null -eq $AuthorizationScope.inputs.PSObject.Properties['candidatePaths']) { @() } else { @($AuthorizationScope.inputs.candidatePaths) }
             $approvedPaths=@($AuthorizationScope.exactReadPaths|ForEach-Object{[IO.Path]::GetFullPath([string]$_)})
-            foreach($path in $paths){if([IO.Path]::GetFullPath([string]$path) -notin $approvedPaths){throw "AuthorizationScopeMismatch: LOOT report '$path' was not approved for this read."}}
+            foreach($path in $paths){if(-not(Test-GridRequestPathWithinApprovedRoot -Path ([string]$path) -ApprovedRoots $approvedPaths)){throw "AuthorizationScopeMismatch: LOOT report '$path' is outside the reviewed read roots."}}
             if($paths.Count -eq 0){return [pscustomobject]@{status='Unavailable';evidence=@();stdout='';stderr='';exitCode=$null;reason='No exact LOOT report path was supplied.'}}
             $contextFingerprint=if($AuthorizationScope.inputs.PSObject.Properties['contextFingerprint']){[string]$AuthorizationScope.inputs.contextFingerprint}else{$null}
             $observed = Get-GridLootExistingOutput -CandidatePaths $paths -MaximumOutputBytes ([long]$Definition.limits.maximumOutputBytes) -ContextFingerprint $contextFingerprint
@@ -233,7 +565,7 @@ function Invoke-GridRegisteredToolAdapter {
             . $collector
             $paths = if ($null -eq $AuthorizationScope.inputs.PSObject.Properties['candidatePaths']) { @() } else { @($AuthorizationScope.inputs.candidatePaths) }
             $approvedPaths=@($AuthorizationScope.exactReadPaths|ForEach-Object{[IO.Path]::GetFullPath([string]$_)})
-            foreach($path in $paths){if([IO.Path]::GetFullPath([string]$path) -notin $approvedPaths){throw "AuthorizationScopeMismatch: tool report '$path' was not approved for this read."}}
+            foreach($path in $paths){if(-not(Test-GridRequestPathWithinApprovedRoot -Path ([string]$path) -ApprovedRoots $approvedPaths)){throw "AuthorizationScopeMismatch: tool report '$path' is outside the reviewed read roots."}}
             if($paths.Count -eq 0){return [pscustomobject]@{status='Unavailable';evidence=@();stdout='';stderr='';exitCode=$null;reason='No exact tool report path was supplied.'}}
             $contextFingerprint=if($AuthorizationScope.inputs.PSObject.Properties['contextFingerprint']){[string]$AuthorizationScope.inputs.contextFingerprint}else{$null}
             $observed = Get-GridSkyrimExistingToolReport -ToolId ([string]$Definition.toolId) -CandidatePaths $paths -MaximumOutputBytes ([long]$Definition.limits.maximumOutputBytes) -ContextFingerprint $contextFingerprint
@@ -528,8 +860,13 @@ function ConvertFrom-GridDiagnosticResultForRequest {
     $roles=if([string]$DiagnosticResult.result.modRoles.status -eq 'Resolved'){@($DiagnosticResult.result.modRoles.items|ForEach-Object{$subject=[string]$_.subjectId;foreach($role in @($_.roles)){[pscustomobject][ordered]@{mod=$subject;role=[string]$role}}})}else{@()}
     $evidence=@($DiagnosticResult.result.affectedMods.evidenceIds)+@($DiagnosticResult.result.modRoles.evidenceIds)+@($DiagnosticResult.result.finding.evidenceIds)+@($DiagnosticResult.result.solution.evidenceIds)
     $proposalId=if($DiagnosticResult.result.solution.PSObject.Properties['proposalId']){[string]$DiagnosticResult.result.solution.proposalId}else{$null}
+    $terminalState=switch([string]$DiagnosticResult.state){
+        'Diagnosed' {'Diagnosed'}
+        'Failed' {'EvidenceFailed'}
+        default {'EvidencePartial'}
+    }
     [pscustomobject][ordered]@{
-        schemaVersion=1;requestId=[string]$Envelope.requestId;terminalState='Diagnosed';resultKind='Diagnostic';affectedMods=@($affected);modRoles=@($roles)
+        schemaVersion=1;requestId=[string]$Envelope.requestId;terminalState=$terminalState;resultKind='Diagnostic';affectedMods=@($affected);modRoles=@($roles)
         finding=if([string]$DiagnosticResult.result.finding.status -eq 'Resolved'){[string]$DiagnosticResult.result.finding.text}else{'UNRESOLVED'}
         solution=[string]$DiagnosticResult.result.solution.text;evidenceToolIds=@();evidenceIds=@($evidence|Sort-Object -Unique)
         confidence=[pscustomobject][ordered]@{status='NotEvaluated';rating=$null;evidenceIds=@()};capabilityRequired=$null
@@ -980,8 +1317,10 @@ function Invoke-GridAuthorizedRequestExecution {
             $toolRun.runSha256=Get-GridCanonicalJsonSha256 -InputObject $toolRunForHash
         }
         if($PostReadCollector){
+            $postReadStarted=[DateTimeOffset]::UtcNow
             $postReadResult=&$PostReadCollector $expected $transaction.CaseDirectory
             if($null-eq$postReadResult){throw 'PostReadCollectorFailed: the authorized post-read collector returned no result.'}
+            $postReadCompleted=[DateTimeOffset]::UtcNow
             $postReadStatus=[string]$postReadResult.Status
             $postReadCaseId=if($postReadResult.PSObject.Properties['CaseId']){[string]$postReadResult.CaseId}else{$null}
             $postReadFailure=if($postReadResult.PSObject.Properties['PrimaryFailure']){$postReadResult.PrimaryFailure}else{$null}
@@ -993,12 +1332,48 @@ function Invoke-GridAuthorizedRequestExecution {
                 caseId=$postReadCaseId;failureCode=$postReadCode;detail=$postReadDetail
                 manifestSha256=if($postReadResult.PSObject.Properties['Manifest'] -and $postReadResult.Manifest){[string]$postReadResult.Manifest.manifestSha256}else{$null}
             })|Out-Null
+            $postReadEvidence=@(if($postReadResult.PSObject.Properties['Evidence']){@($postReadResult.Evidence)})
+            if($postReadEvidence.Count -gt 0){
+                Write-GridCaseStoreArtifact -Transaction $transaction -RelativePath 'evidence\post-read-evidence.v1.json' -Value ([pscustomobject][ordered]@{
+                    schemaVersion=1;authorizationBindingSha256=[string]$expected.semanticBindingSha256
+                    contextFingerprint=if($postReadResult.PSObject.Properties['ContextFingerprint']){[string]$postReadResult.ContextFingerprint}else{[string]$Envelope.envelopeSha256}
+                    evidence=$postReadEvidence
+                })|Out-Null
+            }
+            if($postReadResult.PSObject.Properties['Assessment'] -and $postReadResult.Assessment){
+                Write-GridCaseStoreArtifact -Transaction $transaction -RelativePath 'evidence\diagnostic-assessment.v1.json' -Value $postReadResult.Assessment|Out-Null
+            }
+            $postReadScope=@($expected.scopes|Where-Object{[string]$_.toolId -ceq 'grid.intake.game-context'})
+            if($postReadScope.Count -eq 1){
+                $capabilityBinding=@($RequestPlan.capabilityBindings|Where-Object{[string]$_.capabilityId -ceq 'grid.game.grandtheftautov.crash-investigation.collect'})
+                if($capabilityBinding.Count -ne 1){throw 'PostReadCollectorBindingInvalid: the GTA collector capability binding is absent or ambiguous.'}
+                $postReadOutput=[pscustomobject][ordered]@{status=$postReadStatus;terminalState=[string]$postReadResult.TerminalState;detail=$postReadDetail}
+                $postReadReceipt=[pscustomobject][ordered]@{
+                    schemaVersion=2;toolId='grid.intake.game-context';availability='Available';status=if($postReadStatus -eq 'Completed'){'Collected'}else{'Failed'}
+                    workspaceId=$caseId;requestId=[string]$Envelope.requestId;submissionId=$SubmissionId
+                    envelopeSha256=[string]$Envelope.envelopeSha256;planSha256=[string]$expected.semanticBinding.planSha256
+                    authorizationGrantId=$AuthorizationGrantId;authorizationBindingSha256=[string]$expected.semanticBindingSha256
+                    capabilityId=[string]$capabilityBinding[0].capabilityId;capabilityVersion=[string]$capabilityBinding[0].capabilityVersion
+                    adapterId='GrandTheftAutoV';adapterVersion='1'
+                    normalizedInputSha256=Get-GridCanonicalJsonSha256 -InputObject $postReadScope[0].inputs
+                    outputSha256=Get-GridCanonicalJsonSha256 -InputObject $postReadOutput
+                    evidenceSha256=Get-GridToolEvidenceSha256 -Evidence $postReadEvidence
+                    startedAt=$postReadStarted.ToString('o');completedAt=$postReadCompleted.ToString('o')
+                    durationMilliseconds=[long]($postReadCompleted-$postReadStarted).TotalMilliseconds
+                    exitCode=if($postReadStatus -eq 'Completed'){0}else{$null};reason=$postReadDetail;stdout='';stderr=if($postReadStatus -eq 'Completed'){''}else{$postReadDetail}
+                    evidence=$postReadEvidence;receiptSha256=''
+                }
+                $postReadReceipt.receiptSha256=Get-GridCanonicalJsonSha256 -InputObject ($postReadReceipt|Select-Object * -ExcludeProperty receiptSha256)
+                $toolRun.toolReceipts=@($toolRun.toolReceipts)+@($postReadReceipt)
+                $postReadRunUnsigned=[pscustomobject][ordered]@{schemaVersion=[int]$toolRun.schemaVersion;workspaceId=[string]$toolRun.workspaceId;requestId=[string]$toolRun.requestId;submissionId=[string]$toolRun.submissionId;envelopeSha256=[string]$toolRun.envelopeSha256;planSha256=[string]$toolRun.planSha256;authorizationGrantId=[string]$toolRun.authorizationGrantId;authorizationBindingSha256=[string]$toolRun.authorizationBindingSha256;terminalState=[string]$toolRun.terminalState;mutationAuthorized=$false;receiptSha256s=@($toolRun.toolReceipts|ForEach-Object receiptSha256)}
+                $toolRun.runSha256=Get-GridCanonicalJsonSha256 -InputObject $postReadRunUnsigned
+            }
         }
         $capabilityAssessment=$null
         $result=$null
         if($postReadResult){
             if([string]$postReadResult.Status -eq 'Completed' -and $postReadResult.PSObject.Properties['DiagnosticResult'] -and $postReadResult.DiagnosticResult){
-                $postReadEvidence=if($postReadResult.PSObject.Properties['Evidence']){@($postReadResult.Evidence)}else{@()}
+                $postReadEvidence=@(if($postReadResult.PSObject.Properties['Evidence']){@($postReadResult.Evidence)})
                 $postReadValidation=Test-GridDiagnosticResult -DiagnosticResult $postReadResult.DiagnosticResult -Evidence $postReadEvidence
                 if(-not$postReadValidation.IsValid){throw ('PostReadCollectorDiagnosticInvalid: '+($postReadValidation.Errors -join ' '))}
                 $recoveryBaseline=$null

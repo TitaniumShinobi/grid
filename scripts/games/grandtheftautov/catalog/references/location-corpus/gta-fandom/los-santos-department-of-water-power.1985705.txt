@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = utility
+|name          = Los Santos Department of Water & Power
+|sign          = LosSantosDepartmentofWater&Power-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = San Andreas Department of Water & Power
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Electricity & water utilities
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|vehicles      = 
+*[[Boxville (utility)|Boxville]]
+*[[Burrito (HD Universe)|Burrito]]
+|taglines      = 
+*''Lighting Up A Better Tomorrow''
+|bawsaq        = {{BAWSAQ/Slider}} '''WAP'''
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+The '''Los Santos Department of Water & Power''' ('''LSDWP'''), alternately called the '''San Andreas Department of Water & Power''' ('''SADWP''') is a public utility company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Utility companies

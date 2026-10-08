@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = Sticazzi
+|image         = Sticazzi-GTAO-LSTunersBanner.png
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mptuner}}}}
+|mentioned     = 
+|locations     = 
+|business_type = {{WP|Vermouth}} {{WP|Apéritif|aperitivo}}
+|founded       = [[1773]]
+{{WP|Turin}}, [[Italy]]
+|founder       = Cesare Marino
+|ceo           = 
+|employees     = 
+|taglines      = 
+|status        = active
+|email         = 
+|website       = 
+}}
+
+[[LEAD]]
+'''Sticazzi''' is an [[Italy|Italian]] brand of {{WP|Vermouth}} appearing in {{O}} as part of the [[GTA Online: Los Santos Tuners|Los Santos Tuners]] update.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Online: Los Santos Tuners

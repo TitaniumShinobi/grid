@@ -1,0 +1,116 @@
+[[INFOBOX]]
+{{Infobox_location
+|mpheist4 inf escape = y
+|image = CayoPerico-GTAO-Airstrip.png
+|caption = Overview of the Cayo Perico Airstrip.
+|games = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location = [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|map           = <gallery>
+CayoPericoAirstrip-GTAO-Map.png|Airstrip
+CayoPericoAirstrip-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption   = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Cayo Perico Airstrip''', simply referred to as the '''Airstrip''' in-game, is an airfield in [[Cayo Perico]], [[Colombia]], which appears as an [[:Category:Infiltration Points in The Cayo Perico Heist|infiltration]] and [[:Category:Escape Points in The Cayo Perico Heist|escape point]] for [[The Cayo Perico Heist]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Control Tower]]
+{{Quote|Aha, yes, yes, yes. This tower provides main coordinates of air defenses. You disable this when you are here for main operation, and we have some... interesting options. Maybe we can bring in reinforcements. I have some contacts who would be interested, I think!|[[Pavel]] to the [[GTA Online Protagonist|''GTA Online'' Protagonist]]}}
+The Control Tower of the airstrip plays a role in [[The Cayo Perico Heist/Finale|The Cayo Perico Heist finale]] {{nd}} it can be used to disable the island's air defenses via [[VOLTlab]] [[Hacking|hacking]], allowing players to call in any hired support crew members or use the airstrip to escape during the heist. It is marked down for all subsequent heists after completing the first playthrough. The player must have [[Heist Prep: Gather Intel#Points of Interest|bolt cutters]] or a [[Heist Prep: Cutting Torch|cutting torch]] to open the gate to get access to the tower's signal box.
+
+Five of the [[Heist Crew Members in GTA Online#The Cayo Perico Heist|support crew members]] require the player to disable the island's air defenses during the heist for them to be available for use via the Interaction Menu.
+
+[[SECTION:2:Points of Interest]]
+{{Main|Heist Prep: Gather Intel#Points of Interest}}
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Bolt Cutters
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|Right next to the Cayo Perico Airstrip.
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location1.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location1Map.png|center|thumb]]
+|-
+|2
+|On a toolbox in front of a house at the airstrip.
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location2.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location2Map.png|center|thumb]]
+|-
+|3
+|On a workbench at the side of a building.
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location3.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location3Map.png|center|thumb]]
+|-
+|4
+|On the ground next to the [[Cayo Perico Solar Farm|small photovoltaic power station]].
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location4.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-BoltCutters-Location4Map.png|center|thumb]]
+|}
+
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Grappling Equipment
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|On a sandblock next to a red container at the end of the runway.
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location1.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location1Map.png|center|thumb]]
+|-
+|2
+|Next to some tools south of the power station.
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location2.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location2Map.png|center|thumb]]
+|-
+|3
+|Between a wooden crate and a cliff, east of the previous location.
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location3.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GrapplingEquipment-Location3Map.png|center|thumb]]
+|}
+
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Guard Clothing
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|At the runway.
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location1.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location1Map.png|center|thumb]]
+|-
+|2
+|On a long balcony of a building at the airfield.
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location2.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-GuardClothing-Location2Map.png|center|thumb]]
+|}
+
+{| class="article-table article-table-selected" border="1" cellpadding="1" cellspacing="1" style="margin: 0px auto"
+|+Supply Truck
+|-
+! scope="col"|Ref Number
+! scope="col"|Location Description
+! scope="col"|Image
+! scope="col"|Map
+|-
+|1
+|Parked next to the buildings at the runway.
+|[[File:TheCayoPericoHeist-GTAO-SupplyTruck-Location1.png|center|thumb]]
+|[[File:TheCayoPericoHeist-GTAO-SupplyTruck-Location1Map.png|center|thumb]]
+|}
+
+[[CATEGORIES]]
+Airports
+Escape Points in The Cayo Perico Heist
+Infiltration Points in The Cayo Perico Heist
+Locations in GTA Online in Cayo Perico

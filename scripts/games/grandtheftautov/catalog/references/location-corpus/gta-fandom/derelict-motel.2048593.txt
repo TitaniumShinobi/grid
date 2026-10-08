@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Derelict Motel
+|image          = DerelictMotel-GTAV-Northeast.png
+|caption        = Overview of the motel.
+|games          = {{games|V=y|O=y}}
+|location       = [[Algonquin Boulevard]] and [[Panorama Drive]], [[Sandy Shores]], [[Blaine County]]
+}}
+
+[[LEAD]]
+The '''Derelict Motel''' (sometimes referred to as '''Abandoned Motel''' or '''Office Motel''') is a non-operational motel in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that is located on [[Algonquin Boulevard]] and [[Panorama Drive]] in [[Sandy Shores]], [[Blaine County]].
+
+[[SECTION:4:The Diamond Casino & Resort]]
+*[[Casino - Loose Cheng]]
+
+[[CATEGORIES]]
+Abandoned buildings
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Businesses in GTA Online
+Businesses in GTA V
+Destroyed buildings
+Motels

@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = clothesshop
+|name           = Chaps
+|sign           = 
+|image          = Chaps-GTAV-Exterior.jpg
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Eastbourne Way]] & [[Abe Milton Parkway]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|use            = Clothing store
+|taglines       = 
+|status         = active
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Chaps''' is a clothing store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Clothing stores

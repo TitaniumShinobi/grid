@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=LindsayCircus-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Calais Avenue]]
+|end=[[Ginger Street]]
+|map=<gallery>
+LindsayCircus-GTAV-Map.png|Map
+LindsayCircus-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Lindsay Circus''' is a two-way [[List of Street Names|street]] in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Ginger Street]] Mall
+*[[Weazel News Building]] <small>(corner of Palomino Avenue)</small>
+
+[[SECTION:2:Businesses]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]] <small>(accessible interior)</small>
+*[[Big Dan Vision Optometry]]
+*[[Car Washes|Car Wash]] <small>(at LTD Gasoline)</small>
+*K.O. Casuals
+*[[LTD Gasoline]] <small>(accessible interior)</small>
+*Wook Noodle House
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

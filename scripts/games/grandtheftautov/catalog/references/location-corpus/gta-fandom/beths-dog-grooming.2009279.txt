@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Beths Dog Grooming
+|image = BethsDogGrooming-GTAVe-Sign.png
+|caption = 
+|games = {{Games|V=y|O=y}}
+|location = [[Sandy Shores]], [[Blaine County]]
+|type  = Dog Grooming
+|status = active
+|floors = 1
+|map = BethsDogGrooming-GTAVe-Map.png
+|map_caption =
+}}
+
+[[LEAD]]
+'''Beths Dog Grooming''' is a business in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

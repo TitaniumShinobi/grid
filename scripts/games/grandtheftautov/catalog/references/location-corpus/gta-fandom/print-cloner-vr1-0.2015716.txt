@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name= Print Cloner VR1.0
+|image = PrintClonerVR1-GTAO-Logo.png
+|type = Fingerprint clone matching software.
+|games=''[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Print Cloner VR1.0''' is a fingerprint clone matching software featured in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Features
+Features in GTA Online
+In-Game Products

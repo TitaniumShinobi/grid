@@ -1,0 +1,77 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = CONFECTIONARY BRAND
+|style         = 
+|purchasable   = y/n
+|type          = 
+|name          = Candybox
+|sign          = Candybox-GTA4-logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{III}} {{DE}}<br>{{VC}} {{DE}}<br>{{SA}} {{DE}}<br>{{VCS}}<br>{{IV}}<br>{{CW}}<br>{{V}}<br>{{O}}
+|mentioned     = 
+|locations     = [[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = [[1927]]
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = "''Tantalising American tongues since 1927''"
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Candybox''' is a confectionary brand in {{VCS}}, {{IV}}, {{CW}}, {{V}}, and {{O}}. The brand also makes a non-canon, but lore friendly appearance in ''[[Grand Theft Auto: The Trilogy - The Definitive Edition]]''.
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+Candybox products can be seen in any supermarket in {{VCS|l=n}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game   = IV
+|header =
+|Candybox-GTAIV-StarJunction.png|The [[Candybox Store]] in [[Star Junction]], [[Liberty City (HD Universe)|Liberty City]].
+}}
+{{Gallery
+|game   = CW
+|header =
+|Candybox-GTACW-StarJunction.png|Overview of the Candybox Store.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA Vice City Stories
+Businesses in TBOGT
+Businesses in TLAD
+Confectionery brands

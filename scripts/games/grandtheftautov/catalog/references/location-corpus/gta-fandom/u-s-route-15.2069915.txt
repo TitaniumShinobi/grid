@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = HIGHWAY
+|name              = Route 15
+|number            = 1
+|caption2          = Route 15 shield
+|image             = 
+|caption           = 
+|games             = {{Games|V=y|O=y}}
+|highway_northend  = {{rmark|US|13}} in [[Grand Senora Desert]]
+|highway_southend  = {{rmark|US|20}} {{rmark|I|2}} and 
+{{rmark|I|4}} - [[Murrieta Heights]]
+|highway_junctions = {{rmark|I|1}} in [[Tataviam Mountains]]
+|pscanner          = 
+|map               = 
+|mapcaption        = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+|altnames          = Palomino Freeway
+}}
+
+[[LEAD]]
+'''U.S. Route 15''' (or the [[Palomino Freeway]]) is one of the [[Numbered Highways in GTA V]]. The route passes by the [[Palomino Highlands]] east of [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Route description]]
+Route 15 Begins at the Four Level Interchange based intersection in Murrieta Heights where it is cosigned with [[Interstate 4]] as the Olympic Freeway transitions to the [[Palomino Freeway]]. Route 15 heads in a northeastern direction and the freeway narrows to a four lane divided freeway flanked on opposite sides by the [[Tataviam Mountains]] to the north and the [[Palomino Highlands]] to the south. Its first intersection is a T-shaped cloverleaf with [[Sustancia Road]]. Immediately after this junction, Interstate 4 losses its concurrency with Route 15. The median widens as well to accommodate a large rest area which houses an [[Ammu-Nation (HD Universe)|Ammu-Nation]] and a [[RON]] gas station with a [[24/7 (HD Universe)|24/7]] and [[Bishop's Chicken]]. The highway curves along the eastern footing of the Tataviam Mountains for most of its routing. Route 15's second and final intersection is another T-shaped cloverleaf with [[Senora Way]]. The route continues in a northwest direction as it and Interstate 4 merge end and merge into North [[Interstate 1 ]]and [[Route 13]], forming the [[Senora Freeway]]. The intersection with the two other routes mark the end of Interstate 4/Route 15 and the Palomino Freeway.
+
+[[CATEGORIES]]
+Freeways
+Highways
+Structures in GTA Online in San Andreas
+Structures in GTA V in San Andreas

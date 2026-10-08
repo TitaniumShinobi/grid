@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=DidionDr-GTAV.jpg
+|caption=
+|start=[[Las Lagunas Boulevard]]
+|end=[[Milton Road]] <small>(northwest)</small><br>[[Cox Way]] <small>(southwest)</small>
+|games={{Games|V=y|O=y}}
+|map=<gallery>
+DidionDrive-GTAV-Map.png|Map
+DidionDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+}}
+
+[[LEAD]]
+'''Didion Drive''' is a residential [[List of Street Names|street]] in [[Vinewood Hills]], [[West Vinewood]] and [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Gentry Manor Hotel]] <small>(corner of Gentry Lane)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = security
+|name          = McGlashan
+|image         = McGlashan-GTAO-BookLogo.png
+|caption       = The '''McGlashan''' logo as it appears on the Emergency Protocol Handbook.
+|aka           = The McGlashan Security Institute
+|games         = {{Games|O={{EEEV}} {{DLC|mp2025_02}}}} 
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Security systems
+|founded       = 
+|founder       = 
+|ceo           = 
+|divisions     = 
+|employees     = E.J. Bazler Jr.
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+}}
+
+[[LEAD]]
+'''The McGlashan Security Institute''', simply known as '''McGlashan''', is a security company appearing in {{O}} as part of the [[GTA Online: A Safehouse in the Hills|A Safehouse in the Hills]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: A Safehouse in the Hills
+Security companies

@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Grid.Auth.Tests</RootNamespace>
+    <AssemblyName>Grid.Auth.Tests</AssemblyName>
+    <!-- Zero NuGet packages: this project compiles the payload's runtime
+         sources directly (core/**) plus its own console test runner. -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Runtime feature sources (ui/ is WinUI-only and deliberately excluded —
+         this project must compile everywhere, including CI without WinUI). -->
+    <Compile Include="../../core/features/users/auth/*.cs"
+             Link="Core/Auth/%(Filename)%(Extension)" />
+    <Compile Include="../../core/api/Auth/*.cs"
+             Link="Core/Api/%(Filename)%(Extension)" />
+    <Compile Include="../../core/app/GridAuthHost.cs"
+             Link="Core/GridAuthHost.cs" />
+  </ItemGroup>
+
+</Project>

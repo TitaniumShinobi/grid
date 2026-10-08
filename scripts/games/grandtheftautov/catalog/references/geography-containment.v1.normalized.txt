@@ -1,0 +1,26 @@
+CONTAINMENT|Rockford Hills|Burton|contains-smaller-neighbourhood|Rockford Hills
+
+CONTAINMENT|Downtown|Pillbox Hill,Mission Row,Textile City,Legion Square|divided-neighbourhoods|Downtown Los Santos
+
+CONTAINMENT|Vespucci|Vespucci Beach,Vespucci Canals|split-neighbourhoods|Vespucci
+
+CONTAINMENT|Grand Senora Desert|Sandy Shores|town-located-inside-desert|Grand Senora Desert|grand-senora
+
+CONTAINMENT|Los Santos|Davis|city-located-within-municipality|Los Santos|los-santos
+
+CONTAINMENT|East Los Santos|Cypress Flats,East Vinewood,El Burro Heights,La Mesa,Mirror Park,Murrieta Heights,Murrieta Oil Field|page-section-member-list|Neighbourhoods|east-los-santos
+
+CONTAINMENT|Blaine County|Cape Catfish,Galilee,Grapeseed,Harmony,North Chumash,Paleto Bay,Sandy Shores,Stab City|page-section-member-list|Settlements|blaine-county
+
+CONTAINMENT|Los Santos County|Los Santos,City of Davis,Chumash|county-section-member-list|Southern San Andreas / Los Santos County|san-andreas
+
+CONTAINMENT|Los Santos|Vinewood|district-in-city|Vinewood in GTA V|vinewood
+
+CONTAINMENT|Los Santos|Downtown|financial-center-of-city|Downtown Los Santos|los-santos
+
+CONTAINMENT|Los Santos|East Los Santos|sector-located-in-city|East Los Santos|east-los-santos
+
+CONTAINMENT|Blaine County|Grand Senora Desert|desert-located-in-county|Grand Senora Desert|grand-senora
+
+CONTAINMENT|Los Santos|Vespucci|neighborhood-in-city|Vespucci|vespucci
+

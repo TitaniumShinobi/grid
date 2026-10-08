@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|landmark       = y
+|type           = restaurant
+|name           = Sightings Bar & Restaurant
+|image          = Sightings-GTAV.png
+|games          = {{games|V=y|O=y}}
+|location       = [[Exceptionalists Way]], [[Los Santos International Airport (HD Universe)|LSIA]]
+|use            = Bar & restaurant
+|architecture   = [[:Category:Googie buildings|Googie]]
+|acccessible    = No
+}}
+
+[[LEAD]]
+'''Sightings Bar & Restaurant''' is an iconic landmark structure in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is located on [[Exceptionalists Way]] at the [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], within the city of [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Contemporary casual restaurants
+Googie buildings
+Landmarks

@@ -1,0 +1,63 @@
+[[INFOBOX]]
+{{Infobox organization
+|Name Change  = 
+|style        = 
+|type         = police
+|name         = Los Santos County Sheriff's Department
+|logo         = LSSD-GTAV-Logo.png
+|image        = 
+|caption      = 
+|aka          = 
+*LSSD
+*Los Santos County Sheriff
+*Los Santos Sheriff Department
+|games        = {{Games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[#Stations|Stations]]
+|org_type     = Police force
+|founded      = 
+|founder      = 
+|ceo          = 
+|employees    = 
+|businesses   = 
+|affiliations = 
+|vehicles     = [[#Vehicles|Vehicles]]
+|weapons      = [[#Weapons|Weapons]]
+|status       = active
+}}
+
+[[LEAD]]
+The '''Los Santos County Sheriff's Department''' ('''LSSD''') is a county law enforcement agency in {{V}} and {{O}} that operates in [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]], as well as [[Blaine County]], despite the latter being an entirely different county.
+
+[[SECTION:2:Structure]]
+The LSSD seemingly follow a rank and structure system similar to the Los Angeles County Sheriff's Department. Like the LASD, the majority of uniformed patrol officers in the LSSD are deputies.
+
+[[SECTION:3:Ranks]]
+*Deputy Sheriff
+**Deputy Lewis
+**[[Officer Jernigan|Deputy Jernigan]]
+**[[Deputy Grimes]]
+** [[Deputy Kirkman]] 
+*Spokesperson
+**Elmore Thickett
+
+[[SECTION:2:Stations]]
+:''Main Article: [[Police Stations]]''
+
+The Los Santos County Sheriff Department is large and organized, possessing three major stations throughout [[Los Santos County]] and [[Blaine County]].
+
+*[[Sandy Shores Sheriff's Station]] {{nd}} [[Alhambra Drive]] & [[Mountain View Drive]].
+*[[Paleto Bay Sheriff's Office]] {{nd}} [[Paleto Boulevard]] & [[Great Ocean Highway]].
+*[[Davis Sheriff/Police Station]] {{nd}} [[Innocence Boulevard]] & [[Roy Lowenstein Boulevard]] (strangely, no LSSD deputies or vehicles spawn here as [[Los Santos Police Department (HD Universe)|LSPD]] officers and vehicles appear at the station instead.)
+
+[[SECTION:3:Gallery]]
+<gallery position="center" spacing="small" widths="270px">
+DavisSheriffs Station-GTAVee-Exterior.jpg|[[Davis Sheriff's Station]] {{nd}} <small><br>[[Innocence Boulevard]] & [[Roy Lowenstein Boulevard]] including Online [[Impound Garage|impound lot]] ([[:File:DavisSheriff'sStation-GTAV-Location.png|Map]]).</small>
+SandyShoresSheriff'sStation-GTAV.png|[[Sandy Shores Sheriff's Station]] {{nd}} <small><br>[[Alhambra Drive]] & [[Mountain View Drive]] ([[:File:SandyShoresSheriff'sStation-GTAV-Map.png|Map]]).</small>
+PaletoBaySheriff'sOffice-GTAV.png|[[Paleto Bay Sheriff's Office]] {{nd}} <small><br>[[Paleto Boulevard]] & [[Great Ocean Highway]] ([[:File:PaletoBaySheriff'sOffice-GTAV-Map.png|Map]])</small>
+</gallery>
+
+[[CATEGORIES]]
+Organizations in GTA Online
+Organizations in GTA V
+Police departments

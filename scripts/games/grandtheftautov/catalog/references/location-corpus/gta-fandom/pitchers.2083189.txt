@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = Gay Bar
+|business = y
+|activebiz = y
+|price = $750,000
+|income = $7,100
+|owner = [[Michael De Santa]] <small>(optional)</small><br>[[Franklin Clinton]] <small>(optional)</small><br> [[Trevor Philips]] <small>(optional)</small>
+|employees = Luke <small>(manager)</small>
+|name = Pitchers
+|image = Pitchers-GTAV.png
+|type = Gay Bar
+|games = {{Games|V=y|O=y}}
+|locations = [[Clinton Avenue]] and [[Alta Street]], [[Downtown Vinewood]]}}
+
+[[LEAD]]
+'''Pitchers on Vinewood''' is a gay bar featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Bars
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Properties
+Properties in GTA V

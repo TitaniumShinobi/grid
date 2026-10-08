@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Hedera Hotel
+|image = HederaHotel-GTAVe.png
+|caption = Overview of the hotel.
+|type = Hotel
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Bay City Avenue]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+The '''Hedera Hotel''' is a hotel that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Art Deco buildings
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hotels

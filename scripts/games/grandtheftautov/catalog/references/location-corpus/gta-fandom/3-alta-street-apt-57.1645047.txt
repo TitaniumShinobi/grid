@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 3 Alta Street, Apt 57
+|image = Dynasty8-GTAV-HighEnd-Image-3AltaStreet.png
+|caption = The overview of the building as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = {{O}}
+|style = High-end apartment
+|garage = 10 vehicles <br /> 3 bikes
+|price = [[Money|$]]223,000
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5
+}}
+
+[[LEAD]]
+'''3 Alta Street, Apt 57''' is a purchasable [[Apartments|high-end apartment]] that appears in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Apartments in GTA Online
+High-end Apartments

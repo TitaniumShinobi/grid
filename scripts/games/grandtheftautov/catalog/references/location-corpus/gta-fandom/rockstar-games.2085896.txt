@@ -1,0 +1,85 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = videogame
+|name          = Rockstar Games
+|sign          = Rockstar Games.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = 
+|mentioned     = 
+|locations     = {{WP|New York City}}
+|business_type = Video game publisher
+|founded       = 1998
+|founder       = [[Sam Houser]], [[Terry Donovan]], [[Dan Houser]], [[Jamie King]] and [[Gary J. Foreman|Gary Foreman]]
+|ceo           = 
+|employees     = 
+|products      = 
+*''[[Grand Theft Auto]]'' series
+*''[[Red Dead]]'' series
+*''[[Manhunt]]'' series
+*''{{WP|Midnight Club}}'' series
+*''[[Bully]]''
+*''{{WP|L.A. Noire}}''
+|status        = Active
+}}
+
+[[LEAD]]
+'''Rockstar Games, Inc.''' is an American {{WP|video game publisher}} based in {{WP|New York City}}, established in December 1998 as a subsidiary of [[Take-Two Interactive]]. It is comprised of studios that have been acquired and renamed as well as others that have been created internally, including the ''[[Grand Theft Auto]]'' series' developer DMA Design (rebranded as [[Rockstar North]]). While many of the studios that Take-Two has acquired have been merged into the Rockstar brand, several other recent ones have retained their previous identities and have become part of the company's 2K Games division.
+
+The Rockstar Games label was founded in 1998 by [[Sam Houser]], [[Terry Donovan]], [[Dan Houser]], [[Jamie King]] and Gary Foreman. Donovan, King, Foreman, and Dan Houser have since left the company, leaving Sam Houser as the sole remaining co-founder in a leadership role.
+
+The company is most known for publishing Rockstar North's ''Grand Theft Auto'' and ''[[Manhunt]]'' series. Other popular franchises from different studios and published by Rockstar Games include ''[[Red Dead]]'', ''{{WP|Midnight Club}}'', ''{{WP|L.A. Noire}}'' and ''[[Max Payne]]''.
+
+[[SECTION:3:Rockstar Studios]]
+{{Disambiglink|"Rockstar Studios" redirects here. For a list of development studios owned by Rockstar Games, see [[:Category:Rockstar Games studios]].}}
+[[File:RockstarStudios-Logo.png|thumb|right|270px]]
+While most games published by Rockstar Games are the result of collaboration between multiple development studios, some titles are credited to a single studio as the main developer. More recent titles have listed development as "'''Rockstar Studios'''" or simply "'''Rockstar Games'''".
+
+Rockstar Studios is a collaborative effort between all major game development studios owned by the American publishing company [[Rockstar Games]], consisting of [[Rockstar North]], [[Rockstar San Diego]], [[Rockstar Leeds]], [[Rockstar London]], [[Rockstar New England]], [[Rockstar India]], [[Rockstar Toronto]], and the now defunct [[Rockstar Vancouver]]. The latest acquired [[Rockstar Dundee]] and [[Rockstar Australia]] studios are yet to be credited in one of their collaborations.
+
+The name "Rockstar Studios" was first used in the reveal trailer for ''{{WC|maxpayne|Max Payne 3}}'', collectively credited as the game's developer.{{Ref|name = maxpayne3-trailer|type=youtube|url = {{YT|4Uc_dbG7MR8|Max Payne 3 - Official Launch Trailer}}|ref = Max Payne 3 - Official Launch Trailer}} In later collaborations, they are simply credited as "Rockstar Games".{{Ref|name = rdr2-trailer2|type=youtube|url = {{YT|https://youtu.be/gmA6MrX81z4|Red Dead Redemption 2 Trailer}}|ref = Red Dead Redemption 2 Trailer}}{{Ref|name = gta6-trailer|type = youtube|url = {{YT|QdBZY2fkU-0|Grand Theft Auto VI Trailer 1}}|ref  = Grand Theft Auto VI Trailer 1}}
+
+[[SECTION:4:Prior to ''Max Payne 3'']]
+The first major collaboration occurred during the development of ''{{Manhunt|Manhunt 2}}'' between 2003 and 2007, after the project was handled over to [[Rockstar Vienna]] and was being conceived under the supervision of Rockstar North, as the latter was focusing their efforts in the development of {{SA}}. The Rockstar Vienna studio closed in mid-development, and the project was subsequently concluded by Rockstar London, Rockstar Leeds and Rockstar North; however, each studio is individually credited rather than being credited as "Rockstar Studios".
+
+In 2011, development assistance was provided to Australian game developer {{WP|Team Bondi}} by Rockstar's North, Leeds, San Diego, and New England studios during the late development of ''[[L.A. Noire]]''.
+
+[[SECTION:4:Subsequent to ''Grand Theft Auto IV'']]
+Following the release of {{IV}} by Rockstar North, all subsequent games published by Rockstar Games were developed by multiple Rockstar studios at once, while being conceived under the supervision of each franchise's main developer. Rockstar North's {{V}} received development assistance of multiple Rockstar studios, although only the original developer is credited as the producers during the game's marketing.
+
+[[SECTION:4:''Max Payne 3'']]
+{{Quote|We've been blessed with being able to actually see the game and give some feedback. We've been meeting with Rockstar and looking at Max [Payne] 3 – it looks absolutely phenomenal – the nice thing is we've been giving our feeling on the game but at the end of the day we don't have to do any of the heavy lifting, which is nice. Rockstar don't make bad games, so you already know it's going to be good. Just like we hope the Remedy brand is a seal of quality, you know that Rockstar's brand is a seal of quality. It's been nice to be part of the process, but we don't want to take any of the limelight. From what we've seen it's going to be absolutely fantastic.|Oskari Häkkinen, {{WP|Remedy Entertainment}} franchise development head.{{Ref|name = vg247-hakkinen|type = website|date = 03/27/2025|url  = https://www.vg247.com/quick-quotes-remedys-hakkinen-on-phenomenal-max-payne-3|ref  = "Quick quotes: Remedy's Hakkinen on "phenomenal" Max Payne 3" - Johnny Cullen, VG247, 9 January 2012}}}}
+
+[[SECTION:4:''Red Dead Redemption 2'']]
+{{Quote|As the work on the game accelerated, the company began to realize that the process of working as a group of distinct studios wasn’t the best approach on so complex a game. So they began to become a single, massive entity essentially. As "Red Dead Redemption 2" wrapped up, it did so with a singular group not distinguished as Rockstar North or Rockstar Lincoln, but simply as Rockstar Games.|[https://variety.com/2018/gaming/features/red-dead-redemption-2-narrative-interview-1202992401/ Interview with Rockstar North Head of Development Rob Nelson on Variety].}}
+
+[[SECTION:3:''[[Grand Theft Auto: Vice City]]'']]
+[[Image:RockstarPool-GTAVC-easteregg.jpg|thumb|225px|A Rockstar-shaped pool]]
+*The door of [[Rockster Video Games]] bears the logo. The name "Rockster Video Games" is also a clear reference to the company.
+*The logo appears as a constellation in the sky, with an especially bright star at the tip to represent the white star of the logo.
+*A swimming pool on [[Starfish Island]] is shaped like the logo.
+*The [[Sam Houser|clerk]] of the [[Ammu-Nation (3D Universe)|Ammu-Nation]] stores wears a jacket with the Rockstar logo on the front and the words "ROCK STAR" on the back.
+*[[File:RockstarConstellation-GTAVC.jpg|thumb|The Constellation in Vice City]]The logo is on a heart-shaped tombstone and on a shirt of a person in a picture frame in [[Funeraria Romero]].
+*On the parked [[Air Rockstar]] jumbo jets in [[Escobar International Airport]], the name appears on the front of the jet and the logo appears on its tail.
+*The logo is on billboards across the street from [[Café Robina]] and across the street from [[Screw This]].
+*On one of the variant of the [[Hotring Racer]].
+*On one of the variant of the [[Bloodring Banger]].
+*Some towels on the [[Vice City Beach|beach]] bear the logo.
+*The Rockstar logo is tagged multiple times near the large outdoor sewers in Little Haiti.
+
+[[SECTION:3:''[[Grand Theft Auto: Liberty City Stories]]'']]
+[[Image:Graffiti-GTALCS-RockstarGamesLogo.png|thumb|200px|A Graffiti resembling the Rockstar logo|alt=]]
+*Graffiti resembling the logo can be seen throughout the city.
+*A pedestrian has the logo emblazoned on his hat.
+
+[[SECTION:3:Studios]]
+The only studio with a separate webpage is [[Rockstar North]], Rockstar's primary development studio. All other previous studio websites redirect to Rockstar Games' Careers page.
+*{{URL|http://www.rockstarnorth.com/|Rockstar North}}
+
+[[CATEGORIES]]
+Real-world companies
+Rockstar Games

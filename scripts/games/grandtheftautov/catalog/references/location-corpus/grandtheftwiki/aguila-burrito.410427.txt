@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = AguilaBurrito-GTAV-Strawberry-exterior.jpg
+|size = 300x300px
+|game_1 = GTA V
+|name = Aguila Burrito
+|type = [[:Category:Restaurants|Restaurant]]
+|owner = 
+|location = [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Aguila Burrito''' is a [[Mexico|Mexican]] food restaurant on [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The [[Phone Numbers|phone number]] for the store is 555-0199, which results in the caller being asked to call again later.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Restaurants

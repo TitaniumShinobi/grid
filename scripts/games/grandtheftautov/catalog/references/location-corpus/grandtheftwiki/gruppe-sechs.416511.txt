@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{infobox business|
+| image = GruppeSechs-GTAIII-logo.png
+| size = 350x350px
+| game_1 = GTA III
+| game_2 = GTA Vice City
+| game_3 = GTA Liberty City Stories
+| game_4 = GTA Vice City Stories
+| game_5 = GTA IV
+| game_6 = GTA V
+| name = Gruppe Sechs
+| type = Security
+| owner = 
+| location = '''[[HD Universe]]'''<br />[[Leftwood]], [[Alderney]]
+| affiliation = 
+| missions = 
+| employee = 
+}}
+
+[[LEAD]]
+'''Gruppe Sechs''' (or '''Gruppe 6''') is a security company featured in [[Grand Theft Auto III]],[[Grand Theft Auto: Vice City]], [[Grand Theft Auto: Liberty City Stories]], [[Grand Theft Auto: Vice City Stories]], [[Grand Theft Auto IV]] and [[Grand Theft Auto V]]. The company uses the [[Securicar]] vans to transport goods or money. This company does not appear in [[Grand Theft Auto: San Andreas]] but companies called [[Chuff Security Co.]] and [[Lock and Load Security]] appear on the Securicar instead.
+
+The "Gruppe Sechs" name (German term for "Group Six") is a German language pun on both the infamous European security company [[wp:G4S|Group 4]], and the phrase "''group sex''". In GTA IV, the name is changed to "Gruppe 6" but the vehicle still features "Gruppe Sechs" in much smaller print on various surfaces. The name of the van, Securicar, seems to also serve as parody to Group 4 since they were formally known as Group 4 Securicor. Despite those references, the company can be seen as the equivalent to American security companies such as [[wp:Brinks|Brinks]] based on their very similar vans in GTA IV.
+
+As indicated by markings on the GTA IV rendition of the Securicar, Gruppe Sechs is claimed to have partnered with the [[Bank of Liberty]], and is "licensed and authorized" by the [[LCPD in GTA IV Era|Liberty City Police Department]] to use deadly force.
+
+The [[Gruppe Sechs Headquarters|Gruppe 6 headquarters]] are located in [[Leftwood]], [[Alderney]] on [[Long John Ave]], directly opposite to the [[Westdyke Memorial Hospital]]. However, no Securicars can be found there on any of the various parking lots.
+
+<gallery>
+GruppeSechs-GTAIII-logo.png|The company logo in [[Grand Theft Auto III|GTA III]].
+Gruppe6-GTAIV-logo.png|The company logo in [[Grand Theft Auto IV|GTA IV]].
+Gruppe6-GTAIV-Leftwood-exterior.jpg|The company headquarters in [[Leftwood]], [[Alderney]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in 3D Universe
+Businesses in Alderney
+Businesses in GTA III
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA V
+Businesses in GTA Vice City
+Businesses in GTA Vice City Stories
+Businesses in HD Universe
+Corporations

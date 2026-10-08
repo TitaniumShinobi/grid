@@ -1,0 +1,44 @@
+[[LEAD]]
+'''Brouge Ave''' is a street in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The avenue runs from [[Davis]] in the southwest to [[Rancho]] in the northeast. The [[Ballas]] control the avenue, which has connections to [[Carson Ave]], [[Covenant Ave]], [[Grove St]] and [[Macdonald St]].
+
+[[SECTION:2:Businesses]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Brouge Iron Works]]
+| [[Davis]]
+| 
+| Iron works
+|-
+| [[Carson Self Storage]]
+| [[Davis]]
+| 
+| Storage
+|-
+| [[Liquors]]
+| [[Davis]]
+|
+| Food and drink
+|-
+| [[Locksmith]]
+| [[Davis]]
+| [[Carson Ave]]
+| Locksmith
+|-
+| [[Ronnie's Luxury Car Wash]]
+| [[Davis]]
+| [[Carson Ave]]
+| Car wash
+|-
+| [[Save-a-¢ent]]
+| [[Davis]]
+| [[Carson Ave]]
+| Discount store
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

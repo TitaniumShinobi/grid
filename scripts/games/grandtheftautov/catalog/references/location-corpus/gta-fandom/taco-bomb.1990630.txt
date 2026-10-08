@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = fastfood
+|name          = Taco Bomb
+|sign          = TacoBomb-GTAV-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Fast-food Mexican restaurant
+|founded       = [[1970]]
+|founder       = 
+|ceo           = 
+|taglines      = ''The taste explosion''
+|bawsaq        = 
+|lcn           = {{BAWSAQ/Slider}} '''TBO'''
+|status        = active
+}}
+
+[[LEAD]]
+'''Taco Bomb''' is a fast food chain that appears in [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The player can buy stocks of the company in the [[Lcn-exchange.com]] website in ''Grand Theft Auto V''.
+
+[[SECTION:3:Location Influences]]
+*The [[Prosperity Street Promenade]] location is based on the now-closed Gaucho Grill at {{URL|https://maps.app.goo.gl/vX79o5jXoTjHi85M6|1251 Third Street Promenade}} in Santa Monica, California{{Ref|name = gaucho-grill-closed|type = website|date = 11/20/2024|url = https://la.eater.com/2010/12/16/6705757/loteria-grill-coming-to-3rd-street-promenade|ref = ''Loteria Grill Coming to 3rd Street Promenade'' - Eater Los Angeles, December 16, 2010}}.
+*The [[Little Seoul]] location is based on the {{WP|Denny's}} location at {{URL|https://goo.gl/maps/FLxZ48wAJ76MGRPE7|3741 Wilshire Blvd}} in Los Angeles, California.
+
+[[SECTION:2:Locations]]
+In ''GTA V'' and ''Online'', there are three locations that can be seen around [[Los Santos (HD Universe)|Los Santos]], though none are accessible by the player. There is also an unseen location inside Terminal one at [[Los Santos International Airport (HD Universe)|Los Santos International Airport]].
+<gallery position="center" spacing="small">
+TacoBomb-GTAV-DelPerroPlaza.jpg|[[Del Perro Plaza]], [[Boulevard Del Perro]], [[Del Perro]].
+TacoBomb-GTAVe-ProsperityStreetPromenade.png|[[Prosperity Street Promenade]], [[Del Perro]].
+TacoBomb-GTAV-LittleSeoul.jpg|[[San Andreas Avenue]] and [[Palomino Avenue]], [[Little Seoul]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses with websites
+Fast-food restaurant chains
+Mexican-themed restaurant chains

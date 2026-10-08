@@ -1,0 +1,60 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = Eclipse Boulevard Garage
+|image = Dynasty8-GTAO-HighEnd-Image-EclipseBlvdGarage.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = High-end garage
+|garage = 50 vehicles
+|price = [[Money|$]]2,740,000
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''Eclipse Boulevard Garage''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]'', added as part of the continuation of the [[GTA Online: Los Santos Drug Wars|Los Santos Drug Wars]] update.
+
+[[SECTION:2:Property Information]]
+The garage is located on [[Eclipse Boulevard]], next to [[Spitroasters Meathouse]]. Unlike other high-end Garage properties, the Eclipse Blvd Garage features customizable interiors similar to [[Office Garages]], access to a roof patio with places for the player to sit, and a kitchenette area on each floor that offers snacks and other amenities, including security cameras. Unique to this property, it may be entered on foot via any visible door on either the ground or roof, though vehicles can only enter via the garage door, which – again unique to this property – does not display an entrance corona.
+
+This property is also a spawn location, located amongst the business properties in the [[Interaction Menu]] (between the [[Agencies|Agency]] and [[The Freakshop]]). The player will always spawn in front of the elevator on Basement Level 1.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]2,740,000 and can store 50 [[Personal Vehicles]], and features no [[Pedal and Metal Cycles|Bicycle]] slots. Unlike other purchasable Garage and Apartment properties, the player cannot purchase the property via the [[Dynasty 8]] "For Sale" sign out front. If the player approaches the sign, the game will instruct the player to purchase the property on dynasty8realestate.com. Additionally, this property does not count towards the total number of apartments and garages the player is allowed to have.
+{{Help Text|Purchase the Eclipse Blvd Garage from dynasty8realestate.com}}
+
+[[SECTION:3:Interiors]]
+{| class="wikitable"
+!Customization
+!Images
+!Price
+!Description
+|-
+|Immaculate
+|[[File:EclipseBlvdGarage-GTAOe-Interior-Immaculate.png|thumb|center|250px]]
+|$137,000
+|{{Quote|Sleek, elegant, and clean cut, this garage gives pride of place to the most important thing in life: the car. Nothing but car. Car here. Car there. Car forever.|}}
+|-
+|Industrial
+|[[File:EclipseBlvdGarage-GTAOe-Interior-Industrial.png|thumb|center|250px]]
+|$180,000
+|{{Quote|Are you a gritty urbanite whose only loves are big bucks and big wheels? Then pared back grayscale is for you. Plus, it hides skid marks, so you never have to worry about the aftermaths of an emergency brake or a tense business deal again.|}}
+|-
+|Indulgent
+|[[File:EclipseBlvdGarage-GTAOe-Interior-Indulgent.png|thumb|center|250px]]
+|$265,000
+|{{Quote|Looking for luxury? Then you need Italian marble flooring so perfectly polished that, when you're not looking at your beautiful cars, you're flirting with your beautiful reflection. Narcissism istn't a disorder. It's a personality.|}}
+|-
+|}
+
+[[SECTION:4:Interior]]
+<gallery position="center" spacing="small" widths="250px">
+EclipseBlvdGarage-GTAOe-Interior-VehicleManagementCorona.png|Vehicle Management corona.
+EclipseBlvdGarage-GTAOe-Interior-Limey'sJuice.png|[[Limey's Juice and Smoothies]].
+EclipseBlvdGarage-GTAOe-Interior-Snacks.png|Snacks.
+EclipseBlvdGarage-GTAOe-Interior-SecurityCameraLaptop.png|Laptop to access Security Cameras.
+EclipseBlvdGarage-GTAOe-InteractionMenu-Customize.png|Interaction Menu customization option.
+</gallery>
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

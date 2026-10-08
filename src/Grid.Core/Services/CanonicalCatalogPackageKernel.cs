@@ -662,14 +662,7 @@ public static class CanonicalCatalogPackageKernel
                 record.GameId != boundRevision.SourceScope.GameId ||
                 record.GameVersion != boundRevision.SourceScope.ExactGameVersion ||
                 record.ModVersion != boundRevision.SourceScope.ExactModVersion ||
-                NativeRecordIdentityId.DeriveV1(record.GameId, record.NativeIdentity) != record.NativeRecordIdentityId ||
-                KnowledgeRecordId.DeriveV1(
-                    record.GameId,
-                    record.GameVersion,
-                    record.ModVersion,
-                    record.SourceRevisionId,
-                    record.Kind,
-                    record.NativeRecordIdentityId) != record.Id)
+                !KnowledgeRecordId.MatchesPackageIdentity(record))
                 issues.Add("A canonical knowledge record is invalid for the package scope.");
         }
 
@@ -1395,7 +1388,7 @@ public static class CanonicalCatalogPackageKernel
                     CrossSourceCanonicalAssertionKind.OrganizationalValue,
                     EvidenceClaimContentId.DeriveV1(assertion)) ||
                 !KnownOrganizationalDimensionMatchesKind(assertion.DimensionId, record.Kind) ||
-                CanonicalOrganizationalValueAssertionId.DeriveV1(
+                (assertion.LanguageTag is null ? CanonicalOrganizationalValueAssertionId.DeriveV1(
                     assertion.KnowledgeRecordId,
                     assertion.SourceRevisionId,
                     assertion.DimensionId,
@@ -1403,7 +1396,10 @@ public static class CanonicalCatalogPackageKernel
                     assertion.VerbatimDisplayValue,
                     assertion.MethodId,
                     assertion.MethodVersion,
-                    assertion.SourceFieldPath) != assertion.Id ||
+                    assertion.SourceFieldPath) : CanonicalOrganizationalValueAssertionId.DeriveV2(
+                    assertion.KnowledgeRecordId, assertion.SourceRevisionId, assertion.DimensionId,
+                    assertion.ExactValueIdentity, assertion.VerbatimDisplayValue, assertion.MethodId,
+                    assertion.MethodVersion, assertion.SourceFieldPath, assertion.LanguageTag)) != assertion.Id ||
                 !payload.EvidenceBindings.Any(binding => Targets(binding, assertion)))
                 issues.Add("An organizational value assertion is invalid or lacks exact claim evidence.");
         }
@@ -2063,19 +2059,23 @@ public static class CanonicalCatalogPackageKernel
 
     private static bool KnownProjectionRoleMatchesKind(CanonicalSemanticRoleId roleId, KnowledgeKind kind)
     {
-        if (roleId == CanonicalProjectionSemantics.MissionDlc ||
+        if (roleId == CanonicalProjectionSemantics.MissionPlaylist ||
+            roleId == CanonicalProjectionSemantics.MissionDlc ||
             roleId == CanonicalProjectionSemantics.MissionMod ||
             roleId == CanonicalProjectionSemantics.MissionOnline ||
             roleId == CanonicalProjectionSemantics.MissionStoryMode)
             return kind == KnowledgeKind.MissionQuest;
-        if (roleId == CanonicalProjectionSemantics.ItemArmor ||
+        if (roleId == CanonicalProjectionSemantics.ItemVehicles ||
+            roleId == CanonicalProjectionSemantics.ItemArmor ||
             roleId == CanonicalProjectionSemantics.ItemClothing ||
             roleId == CanonicalProjectionSemantics.ItemClutterProps ||
             roleId == CanonicalProjectionSemantics.ItemMagic ||
             roleId == CanonicalProjectionSemantics.ItemNature ||
             roleId == CanonicalProjectionSemantics.ItemWeapons)
             return kind == KnowledgeKind.Item;
-        if (roleId == CanonicalProjectionSemantics.ActorNpc ||
+        if (roleId == CanonicalProjectionSemantics.ActorNamedCharacter ||
+            roleId == CanonicalProjectionSemantics.ActorGenericType ||
+            roleId == CanonicalProjectionSemantics.ActorNpc ||
             roleId == CanonicalProjectionSemantics.ActorPlayerCharacter)
             return kind == KnowledgeKind.Actor;
         return true;
@@ -2084,15 +2084,36 @@ public static class CanonicalCatalogPackageKernel
     private static bool KnownOrganizationalDimensionMatchesKind(
         CanonicalOrganizationalSemanticId dimensionId,
         KnowledgeKind kind) =>
-        dimensionId == CanonicalProjectionSemantics.ItemSourceCategoryDimensionNode
+        dimensionId == CanonicalProjectionSemantics.ItemSourceCategoryDimensionNode ||
+        dimensionId == CanonicalProjectionSemantics.ItemVehicleClassDimensionNode
             ? kind == KnowledgeKind.Item
             : dimensionId == CanonicalProjectionSemantics.MissionActivityFamilyDimensionNode
                 ? kind == KnowledgeKind.MissionQuest
-            : dimensionId != CanonicalProjectionSemantics.ActorDlcDimensionNode &&
+            : dimensionId != CanonicalProjectionSemantics.ActorSourceCategoryDimensionNode &&
+              dimensionId != CanonicalProjectionSemantics.ActorDlcDimensionNode &&
               dimensionId != CanonicalProjectionSemantics.ActorFactionDimensionNode ||
               kind == KnowledgeKind.Actor;
 
     private static bool TargetsExactClaim(EvidenceBinding binding, CanonicalCatalogPayload payload) =>
+        DirectlyTargetsExactClaim(binding, payload) ||
+        // A composed claim can depend on a file title plus a reference locale/type
+        // bridge. Each dependency keeps its real source field; it cannot replace
+        // the claim's own exact evidence anchor or escape its declared envelope.
+        binding.ClaimKind is EvidenceClaimKind.Terminology or EvidenceClaimKind.SemanticClassification or
+            EvidenceClaimKind.OrganizationalValue or EvidenceClaimKind.Relationship &&
+        payload.CrossSourceAssertions.Any(envelope =>
+            envelope.TargetKnowledgeRecordId == binding.KnowledgeRecordId &&
+            envelope.AssertingSourceRevisionId == binding.SourceRevisionId &&
+            envelope.ClaimKind == binding.ClaimKind &&
+            envelope.UnderlyingClaimContentId == binding.ClaimContentId &&
+            envelope.SupportingEvidenceBindingIds.Contains(binding.Id) &&
+            payload.EvidenceBindings.Any(anchor =>
+                anchor.KnowledgeRecordId == binding.KnowledgeRecordId &&
+                anchor.SourceRevisionId == binding.SourceRevisionId &&
+                anchor.ClaimKind == binding.ClaimKind && anchor.ClaimContentId == binding.ClaimContentId &&
+                envelope.SupportingEvidenceBindingIds.Contains(anchor.Id) && DirectlyTargetsExactClaim(anchor, payload)));
+
+    private static bool DirectlyTargetsExactClaim(EvidenceBinding binding, CanonicalCatalogPayload payload) =>
         binding.ClaimKind switch
         {
             EvidenceClaimKind.KnowledgeIdentity => binding.ClaimContentId is null,

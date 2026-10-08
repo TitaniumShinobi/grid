@@ -1,0 +1,297 @@
+[[INFOBOX]]
+{{Infobox country
+|name             = United States of America
+|image_flag       = Flag of the United States.svg
+|image_map_ingame = FortZancudoUSAMap-GTAV.png
+|capital_ingame   = Washington, D.C.{{Ref|name=radio|ref=Washington, D.C. is mentioned by [[Daddy Yankee]] on [[San Juan Sounds]].}}{{Ref|name=history|ref=Washington, D.C. receives a mention in the TV documentary [[A History of Liberty City]].}}{{Ref|name=weazel|ref=Weazel News reports that Washington, D.C. politicians celebrate as the recession has "officially ended." [[File:WeazelNews-TBOGT-Radio6.ogg]]}}
+|currency_ingame  = [[Money|GTA dollar]] {{Small|($)}}
+}}
+
+[[LEAD]]
+The '''{{WP|United States|United States of America}}''' ('''USA'''), more commonly known as the '''United States '''('''U.S.''') or '''America''', is a federal presidential constitutional republic situated mostly in central North America. Its 48 contiguous states and {{WP|Washington, D.C.}}, the capital district, rests between the [[Pacific Ocean|Pacific]] and [[Atlantic (disambiguation)|Atlantic Oceans]], bordered by [[Canada]] to the north and [[Mexico]] to the south. The state of {{WP|Alaska}} is in the northwest of the continent, with Canada to the east and [[Russia]] to the west across the {{WP|Bering Strait}}. The state of {{WP|Hawaii}} is an archipelago in the mid-Pacific. The country also possesses several territories in the Pacific and [[Caribbean]] such as [[Puerto Rico]].
+
+[[SECTION:2:The United States in ''Grand Theft Auto'']]
+[[File:USFlag-GTAV-PaletoBay.png|thumb|right|250px|A flag of the United States in [[Paleto Bay]], {{V}}.]]
+
+[[SECTION:3:Main]]
+In the three [[universes]] of the {{S}}, the vast majority of the locations in the games are based on cities and states found in the real-life USA, with the country logically serving as the franchise's main setting.
+
+*[[Liberty City]] is mainly inspired by {{WP|New York City}} and has three universe depictions to date:
+**In the 2D Universe, [[Liberty City (2D Universe)|Liberty City]] is one of the three main settings of {{1}}.
+**In the 3D Universe, [[Liberty City (3D Universe)|Liberty City]] is the main setting of {{III}}, {{A}} and {{LCS}}. The city also briefly appears in {{VC}} and {{SA}}.
+**In the HD Universe, [[Liberty City (HD Universe)|Liberty City]], located in the [[State of Liberty (HD Universe)|State of Liberty]], along with its neighboring state [[State of Alderney|Alderney]], is the main setting of {{IV}}, {{EFLC}} and {{CW}} (however, Alderney is not included in ''Chinatown Wars).''
+*[[Vice City]] is mainly inspired by {{WP|Miami}} and has three universe depictions to date:
+**In the 2D Universe, [[Vice City (2D Universe)|Vice City]] is one of the three main settings of {{1}}.
+**In the 3D Universe, [[Vice City (3D Universe)|Vice City]], located in [[State of Florida|Florida]], is the main setting of {{VC}} and {{VCS}}.
+**In the HD Universe, [[Vice City (HD Universe)|Vice City]], located in [[State of Leonida|Leonida]], is one of the main settings of {{VI}}.
+
+*[[San Andreas]] takes different inspirations depending on the universe:
+**In the 2D Universe, the '''city''' of [[San Andreas (2D Universe)|San Andreas]] (inspired by {{WP|San Francisco|San Francisco, California}}) is one of the three main settings of {{1}}.
+**In the 3D Universe, the '''state''' of [[State of San Andreas (3D Universe)|San Andreas]] (a hybrid of both {{WP|California}} and {{WP|Nevada}}), is the main setting of {{SA}}.
+***The state is comprised of cities taking inspiration from cities in those states, these are: [[Los Santos (3D Universe)|Los Santos]] (Los Angeles), [[San Fierro (3D Universe)|San Fierro]] (San Francisco) and [[Las Venturas (3D Universe)|Las Venturas]] (Las Vegas).
+***Aside from the cities, the state features small towns, deserts and mountains in the rural regions of [[Red County (3D Universe)|Red County]], [[Flint County (3D Universe)|Flint County]], [[Whetstone]], [[Tierra Robada]] and [[Bone County (3D Universe)|Bone County]].
+**In the HD Universe, the '''state''' of [[State of San Andreas (HD Universe)|San Andreas]] (inspired by California), is the main setting of {{V}} and {{O}}.
+***The state is comprised of cities taking inspiration from cities in those states, these are: [[Los Santos (HD Universe)|Los Santos]] (Los Angeles) and the as-of-yet unseen city of [[San Fierro (HD Universe)|San Fierro]] (San Francisco).
+***The state features small towns, deserts and mountains in [[Blaine County]], the most rural region in the southern half of the state. Other unseen areas mentioned to exist within San Andreas throughout the HD Universe include [[Red County (HD Universe)|Red County]] and [[Flint County (HD Universe)|Flint County]].
+
+*The [[State of New Guernsey]] is based on the state of {{WP|New Jersey}} in the 2D Universe and is located to the west of [[Liberty City (2D Universe)|Liberty City]]. Although the two states are completely independent from one another, [[Guernsey City]] is known by many as being part of Liberty City's metropolitan area. It is part of the first two chapters of the very first ''Grand Theft Auto''.
+*The [[State of Alderney]] is based on the state of New Jersey in the HD Universe and is located to the west of [[Liberty City (HD Universe)|Liberty City]] and presumably to the south of [[Upstate Liberty (HD Universe)|Upstate Liberty]]. Although the two states are completely independent from one another, because of their very close proximity to each other, Alderney is officially considered to be a part of the Liberty City metropolitan area (much like its real life counterpart) and is even home to the headquarters of the [[Liberty City Port Authority]], located in [[Port Tudor]]. Along with Liberty City, it is part of the main setting of ''Grand Theft Auto IV''.
+*The [[State of North Yankton]] is based on {{WP|North Dakota}} and appears as a minor yet pivotal location in ''Grand Theft Auto V'' (in both the [[Prologue]] and in the mission [[Bury the Hatchet]]) and a Halloween themed [[Survival]]-exclusive setting in ''Grand Theft Auto Online''. The only settlement that is currently confirmed to be located within the state is the town of [[Ludendorff]], which appears to be based on the North Dakotan cities of {{WP|Fargo, North Dakota|Fargo}} and {{WP|Bismarck, North Dakota|Bismarck}}.
+
+[[SECTION:4:Locations]]
+The 3D Universe's rendition of the [[State of San Andreas (3D Universe)|State of San Andreas]], which contains the cities of [[Los Santos (3D Universe)|Los Santos]], [[San Fierro (3D Universe)|San Fierro]], and [[Las Venturas (3D Universe)|Las Venturas]], as well as rural areas with small towns scattered in between, is located in the Southwestern United States. The HD Universe's rendition of the [[State of San Andreas (HD Universe)|State of San Andreas]], based on the state of California, which contains the cities of [[Los Santos (HD Universe)|Los Santos]] and [[San Fierro (HD Universe)|San Fierro]], along with rural areas and small towns, is likewise located on the {{WP|West Coast of the United States|West Coast}}. The 3D Universe's rendition of [[Liberty City (3D Universe)|Liberty City]], located in an unnamed state (commonly referred to as [[State of Liberty (3D Universe)|Liberty City State]]), is situated somewhere in the Northeastern United States, as it snowed in the mission [[Saint Mark's Bistro]] in {{SA}} and the player must fly eastwards to get there; snow can also rarely be seen falling in {{LCS}} during the final level of a side mission. The HD Universe's rendition of [[Liberty City (HD Universe)|Liberty City]] is located in the [[State of Liberty (HD Universe)|State of Liberty]], based on the {{WP|New York (state)|State of New York}}; much like the 3D Universe's rendition, it, along with its neighboring state [[State of Alderney|Alderney]], based on the {{WP|New Jersey|State of New Jersey}}, is also located in the Northeast region of the {{WP|East Coast of the United States|East Coast}}.
+
+[[Vice City]] is located in the Southeastern United States. Unlike the other cities featured in-game, [[Vice City (3D Universe)|Vice City]] is the only known fictional city to be located in a real-life state, as various characters and in-game internet articles refer to the city as being located in Florida. However, following the release of the first {{VI}} trailer, the state in which [[Vice City (HD Universe)|Vice City]] is located in the HD Universe has been retconned to [[State of Leonida|Leonida]] instead.
+
+In all of the games (excluding the 2D Universe games and ''GTA V''), the cities are always located on several islands connected by bridges. They appear to be isolated islands in the middle of the sea, but this is due to game limitations. Rockstar Games have stated that they avoid placing unreachable pieces of land within the games to keep the complete feel of the game. There are multiple islands, and every game except for {{EFLC}}, {{CW}}, and {{VO}} starts with certain bridges blocked, restricting the player from exploring the entire city/state at the start of the game. There is always a story about why the bridges are shut, sometimes relative to the location of the game; for example, the bridges in Vice City are shut due to hurricane warnings, while in HD-era Liberty City, they are blocked due to terrorist threats, and bridges in San Andreas are blocked because of a major earthquake and Frank Tenpenny warning Carl that he couldn't leave the town. These restrictions are lifted as the story progresses, with the earlier reason for them being closed having passed, unlocking new parts of the city/state for the player to explore. In the case of ''GTA V'', the entirety of San Andreas is available to explore from the beginning of the game, though some activities outside the area the player is meant to be in for the storyline generally remain inaccessible until introduced through missions.
+
+[[SECTION:3:Secondary]]
+Other cities are mentioned as well, two of which are from [[Rockstar North]]'s ''[[Manhunt]]'' franchise, sharing continuity with the 3D Universe titles: 
+
+*[[Carcer City (3D Universe)|Carcer City]] is an industrial {{Manhunt|Carcer City|city}} located in the {{WP|Rust Belt}} area of the United States, and is where the game ''Manhunt'' takes place in the 3D Universe. There are references to ''Manhunt'' in ''GTA III'' during a news segment on the radio saying that Carcer City is not too far from Liberty City.
+**An [[Carcer City (HD Universe)|alternative version of Carcer City]] also exists in the HD Universe, as [[Michael De Santa]] mentions in [[The Paleto Score]] that the first bank heist he committed took place in [[1988]] on the outskirts of the city.
+*[[Cottonmouth]] is a coastal city located in the Southern United States, appearing as the setting of ''Manhunt 2''. It is only referenced, albeit not by name, through promotional websites in ''Grand Theft Auto: Liberty City Stories''.
+
+[[SECTION:2:Known Locations]]
+
+
+[[SECTION:3:2D Universe]]
+*'''[[Liberty City (2D Universe)|Liberty City]]'''
+**[[Liberty Island]]
+**Eastern Landmass
+***[[Brocklyn]]
+***[[Kings]]
+**Minor Islands
+***[[Law Island]]
+***[[Nixon Island]]
+**North Eastern Island
+***[[Brix|The Brix]]
+
+*'''[[State of New Guernsey]]'''
+**[[New Guernsey]]
+**[[Guernsey City]]
+**[[Eaglewood]]
+**[[Hackenslash]]
+**[[Fort Law]]
+**[[Schlechberg]]
+
+*'''[[San Andreas in 2D Universe|San Andreas]]''' 
+**Northern Landmass
+**South Eastern Landmass 
+
+*'''[[Vice City (2D Universe)|Vice City]]'''
+**Western Landmass
+**North Eastern Island
+**[[Vice City Military Base]]
+
+*'''[[Anywhere City]]'''
+
+[[SECTION:3:3D Universe]]
+
+
+[[SECTION:4:[[Florida|State of Florida]]]]
+*'''[[Vice City (3D Universe)|Vice City]]'''
+*[[Everglades]]
+*{{WP|Tampa, Florida|Tampa}}
+*[[Miami]]
+*{{WP|Reddick, Florida|Reddick}}
+
+[[SECTION:3:[[State of Liberty (3D Universe)|Liberty City State]]]]
+*'''[[Liberty City (3D Universe)|Liberty City]]'''  
+**[[Portland]]
+**[[Staunton Island]]
+**[[Shoreside Vale]]
+*[[Upstate Liberty (3D Universe)|Upstate]]
+
+[[SECTION:4:[[State of San Andreas (3D Universe)|State of San Andreas]]]]
+*'''[[Bone County (3D Universe)|Bone County]]''' 
+**[[Area 69 (3D Universe)|Area 69]]
+**[[East Bone County Town]]
+**[[Fort Carson (3D Universe)|Fort Carson]]
+**[[Las Brujas]]
+**[[Las Payasadas]]
+*'''[[Flint County (3D Universe)|Flint County]]'''
+**[[Easter Bay Trailer Park]]
+**[[Fallen Tree]]
+**[[Flint Intersection Trailer Park]]
+**[[Flint Range]]
+**[[Leafy Hollow]]
+*'''[[Las Venturas (3D Universe)|Las Venturas]]'''
+*'''[[Los Santos (3D Universe)|Los Santos]]'''
+*'''[[Red County (3D Universe)|Red County]]'''  
+**[[Blueberry]]
+**[[Dillimore]]
+**[[Fern Ridge]]
+**[[Hampton Barns]]
+**[[Montgomery (3D Universe)|Montgomery]]
+**[[Palomino Creek]]
+*'''[[San Fierro (3D Universe)|San Fierro]]'''
+*'''[[Tierra Robada]]'''
+**[[Aldea Malvada]]
+**[[Bayside]]
+**[[El Quebrados]]
+**[[Las Barrancas]]
+*'''[[Whetstone]]'''
+**[[Angel Pine]]
+
+[[SECTION:4:Unknown State(s)]]
+
+
+[[SECTION:5:Rust Belt Region]]
+*'''[[Carcer City (3D Universe)|Carcer City]]'''
+
+[[SECTION:5:Dixieland Region]]
+*'''[[Cottonmouth]]'''
+
+[[SECTION:4:Mentioned Locations]]
+*States 
+**{{WP|Alaska}} (mentioned in the talk show ''[[Pressing Issues]]'' on [[VCPR]])
+**{{WP|Idaho}} (mentioned by [[Toni]] on [[Flash FM (3D Universe)|Flash FM]] in ''GTA Vice City'')
+**{{WP|Indiana}} (mentioned by Toni on Flash FM in ''GTA Vice City'')
+**{{WP|Kansas}} (mentioned by pedestrians in ''GTA Vice City'', and on the talk show ''Pressing Issues'' on VCPR)
+**{{WP|Nebraska}} (mentioned by Toni on Flash FM in ''GTA Vice City'')
+**{{WP|Alabama}} (mentioned by [[Pastor Richards]] as his place of birth in a fictional town named Mars)
+**{{WP|Ohio}} (mentioned by [[Mike Toreno]] in [[Highjack]] in ''GTA San Andreas'')
+**{{WP|Texas}} (mentioned in the [[Liberty Tree Editorial/Have You Seen This Woman?|Have You Seen This Woman?]] newspaper article by the ''Liberty Tree'')
+**{{WP|Nevada}} (mentioned in the talk show ''Pressing Issues'' on VCPR)
+**{{WP|New Mexico}} (mentioned in a ''Liberty Tree'' article covering [[Catalina]]'s string of bank robberies in the southwest)
+**{{WP|North Dakota}} (mentioned in a radio ad for a movie called ''[[Exploder: Evacuator Part II (3D Universe)|Exploder: Evacuator Part II]]'' in ''GTA Vice City'')
+
+*Cities    
+**Cleveland, Ohio (mentioned by [[Jezz Torrent]] on [[K-Chat]] in ''GTA Vice City'')
+**Columbia, Missouri (mentioned by Mary-Beth Maybell on K-Rose in ''GTA San Andreas'')
+**Green Bay, Wisconsin (mentioned by [[BJ Smith (3D Universe)|BJ Smith]] on K-Chat in ''GTA Vice City'')
+**[[Miami]] (mentioned in ''GTA III'' and ''GTA Vice City'')
+**Nashville, Tennessee (mentioned by Mary-Beth Maybell on K-Rose in ''GTA San Andreas'')
+**Pittsburgh, Pennsylvania (mentioned in "[[Liberty Tree Editorial/Strange Tramps Seen All Over Liberty City|Strange Tramps Seen All Over Liberty City]]" and on K-Chat in ''GTA Vice City'')
+**Philadelphia, Pennsylvania (mentioned in the talk show ''Pressing Issues'' on VCPR)
+**Tampa, Florida (mentioned by BJ Smith on K-Chat in ''GTA Vice City'')
+
+*Territories  
+**[[Puerto Rico]] (referenced in ''GTA Vice City'')
+
+[[SECTION:3:HD Universe]]
+
+
+[[SECTION:4:[[State of Alderney]]]]
+*'''[[Alderney City]]'''
+*'''[[Acter]]'''
+*'''[[Acter Industrial Park]]'''
+*'''[[Alderney State Correctional Facility]]'''
+*'''[[Berchem]]'''
+*'''[[Leftwood]]'''
+*'''[[Normandy]]'''
+*'''[[Port Tudor]]'''
+*'''[[Tudor]]'''
+*'''[[Westdyke]]'''
+
+[[SECTION:4:[[State of Leonida]]]]
+*'''[[Vice-Dale County]]''' 
+**[[Vice City (HD Universe)|Vice City]]
+**[[Vice Beach (HD Universe)|Vice Beach]]
+**[[Hamlet]]
+*'''[[Kelly County]]'''
+*[[Mariana County|'''Mariana County''']]
+*[[Ambrosia County|'''Ambrosia County''']]
+**[[Ambrosia]]
+*'''[[Leonard County]]''' 
+**[[Waning Sands]]
+*[[Port Gellhorn]]
+*[[Watson Bay]]
+*[[Key Lento]]
+
+[[SECTION:4:[[State of Liberty (HD Universe)|State of Liberty]]]]
+*'''[[Liberty City (HD Universe)|Liberty City]]''' 
+**[[Algonquin]]
+**[[Bohan]]
+**[[Broker]]
+**[[Dukes]]
+*'''[[The Carraways]]'''
+*'''[[Upstate Liberty (HD Universe)|Upstate Liberty]]'''
+
+[[SECTION:4:[[State of North Yankton]]]]
+*'''[[Ludendorff]]'''
+
+[[SECTION:4:[[State of San Andreas (HD Universe)|State of San Andreas]]]]
+*'''[[Blaine County]]'''
+**[[Fort Zancudo]]
+**[[Grapeseed]]
+**[[Harmony]]
+**[[Paleto Bay]]
+**[[Sandy Shores]]
+**[[Galilee]]
+**[[Cape Catfish]]
+**[[Stab City]]
+**[[Dignity Village]]
+**[[Humane Labs and Research]]
+*'''[[Los Santos County]]''' 
+**[[Los Santos (HD Universe)|Los Santos]]
+**[[Del Perro]]
+**[[Rockford Hills]]
+**[[Davis]]
+**[[Chumash]]
+**[[Bolingbroke Penitentiary]]
+*'''[[Red County (HD Universe)|Red County]]'''
+**[[Montgomery (HD Universe)|Montgomery]]
+
+[[SECTION:4:Mentioned Locations]]
+*States 
+**{{WP|Alabama}} (mentioned in ''GTA IV'')
+**{{WP|Arizona}} (mentioned by [[Thomas Stubbs]] in ''The Lost and Damned'', and is also the birthplace of ''The Ballad of Gay Tony'' character [[Evan Moss]]
+**{{WP|Georgia (U.S. state)|Georgia}} (referenced in an episode of [[Moorehead Rides Again!]] - Igor Pablovich, a soviet spy - "claims" to be from Georgia to fool Moorehead into thinking he is American).
+**{{WP|Iowa}} (mentioned in ''GTA IV'')
+**{{WP|Kentucky}} (Mentioned on a bottle of "Richard's Kentucky Bourbon Whiskey" in ''GTA V'')
+**{{WP|Michigan}} (mentioned on [[Leftover-vacations.com]])
+**{{WP|Ohio}} (mentioned in ''The Ballad of Gay Tony'', by [[Selma]] in ''GTA Chinatown Wars'' and a decoration license plate in ''GTA V''{{Ref|name=Ohio|ref=The 1965 plate is more than likely from {{URL|http://assets.suredone.com/1868/media-photos/sd2848-vintage-1965-license-plate-ohio-hot-rod-muscle-car-historical-vehicle-garage-65.jpeg|Ohio}} or based on the Ohio plates from that time.}})
+**{{WP|South Carolina}} (mentioned on the radio talk show ''[[Just or Unjust]]'' on [[WKTT Radio]])
+**{{WP|South Dakota}} (mentioned on the goldforlife.biz website in ''The Ballad of Gay Tony'')
+**{{WP|Tennessee}} (mentioned in ''GTA VI'' as the [[John Samuels]] whisky brand origin)
+**{{WP|Texas}} (mentioned in ''GTA IV'' as [[Wade Johnson]]'s birthplace, in ''GTA V'' on [[Vinewood Logline Generator]], and in ''GTA Online'' as home state of the [[Duggan Crime Family]])
+**[[Unnamed Western U.S. State]] (shown on [[Venturas Poker Challenge]] in ''GTA IV'' and likely based on {{WP|Nevada}})
+**{{WP|Utah}} (mentioned in ''The Ballad of Gay Tony'')
+**{{WP|Virginia}} (mentioned in ''GTA IV'')
+
+*Cities  
+**{{WP|Atlanta}} (referenced by a pedestrian in ''GTA IV'')
+**{{WP|Washington, D.C.}} (mentioned in ''GTA IV'' on [[San Juan Sounds]], [[Weazel News]], and [[A History of Liberty City]])
+**[[Carcer City (HD Universe)|Carcer City]] (located 100 miles away from Liberty City) (mentioned in [[The Paleto Score]] and ''GTA V'')
+**{{WP|Chicago}}
+**{{WP|Cleveland}} (mentioned by ''[[The Men's Room]]'' and [[tramps]] in ''GTA IV'')
+**{{WP|Detroit}} (mentioned by [[leftover-vacations.com]] in ''GTA IV'' and [[Sessanta]] during [[The Superdollar Deal/Finale|The Superdollar Deal]] in ''GTA Online'')
+**{{WP|Fairbanks}} (mentioned in a ''[[The Science of Crime]]'' radio ad in ''GTA IV'')
+**{{WP|Jamestown, Virginia|Jamestown}} (mentioned in  ''[[A History of Liberty City]]'' in ''GTA IV'')
+**{{WP|Minneapolis}} (mentioned in the radio advertisement for [[WTF]])
+**{{WP|New Orleans}} (mentioned on [[Liesdamnlies.net]], a user called Phil from [[London]] posts about a holiday he took to New Orleans)
+**[[San Fierro (HD Universe)|San Fierro]] (mentioned in ''GTA IV'' and also mentioned on [[Fabien LaRouche]]'s website in ''GTA V'')
+**[[Las Venturas (HD Universe)|Las Venturas]] (appears on Venturas Poker Challenge in ''GTA IV'' and mentioned on the CB radio of certain cars in ''GTA V'', the former depicting the city to be located in the unnamed western state)
+**The Capital (mentioned in ''GTA IV'''s 'Miles Travelled' [[Statistics in GTA IV|statistic]])
+**[[The Carraways]] and specifically, East Carraway, mentioned multiple times in ''GTA IV'' and ''GTA V''.
+**{{WP|Tuskegee, Alabama|Tuskegee}} (mentioned in a ''The Science of Crime'' radio ad in ''GTA IV'')
+**{{WP|Sacramento, California}} (referenced by the name of [[Sacramento Avenue]] in ''GTA IV'')
+**{{WP|Salem, Massachusetts|Salem}} (seen on a map in the backroom of the club [[Bahama Mamas]] in ''TBoGT'')
+**{{WP|San Juan}} (referenced in ''GTA IV'')
+
+*Counties 
+**[[Flint County (HD Universe)|Flint County]] (mentioned in ''GTA IV'' and in ''GTA Online'')
+**[[Red County (HD Universe)|Red County]] (mentioned in ''GTA IV'')
+**[[Bone County (HD Universe)|Bone County]] (mentioned in ''GTA Online'')
+
+*Regions  
+**{{WP|New England}} (mentioned on the website [[Yourdeadfamily.com]] in ''GTA V'')
+**{{WP|Silicon Valley}} (mentioned in website ads in ''The Lost and Damned'' and during [[The Bogdan Problem]] in ''GTA Online'')
+
+*Territories
+**[[Puerto Rico]] (mentioned in ''GTA IV'' and ''GTA Online'')
+
+[[SECTION:5:Retconned Locations]]
+[[File:StateofFlorida-GTAIV-PreRetconMention.png|thumb|250px|"Vice City, Florida" travel advertisement in ''Grand Theft Auto IV'', prior to being retconned as "Vice City, Leonida" in this specific universe.]]
+After transitioning the series from one universe to another, Rockstar North preserved the names of cities and states to be reused for their newly rebooted counterparts. However, two particular setting names have been completely retconned.
+
+[[SECTION:6:3D Universe]]
+*City of San Andreas – San Francisco-inspired city mentioned on [[K-Chat]] in ''Grand Theft Auto: Vice City'', originally reusing its [[San Andreas (2D Universe)|2D Universe counterpart]] name. Rebranded as the city of [[San Fierro (3D Universe)|San Fierro]] with the reveal of ''Grand Theft Auto: San Andreas''.
+
+[[SECTION:6:HD Universe]]
+*State of Florida – The state in which [[Vice City (HD Universe)|Vice City]] is located, originally reusing its 3D Universe counterpart name. Rebranded as the [[State of Leonida]] with the reveal of ''Grand Theft Auto VI'' as the state in which Vice City is located.
+
+[[CATEGORIES]]
+North American countries

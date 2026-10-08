@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=ConquistadorStreet-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Bay City Avenue]]
+|end=[[Vespucci Beach Sidewalk]]
+|map=<gallery>
+ConquistadorStreet-GTAV-Map.png|Map
+ConquistadorStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Conquistador Street''' is a [[List of Street Names|street]] located just south of [[Vespucci Boulevard]] in [[Vespucci Beach]] and [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*Oldie But Goodie <small>(corner of Magellan Avenue)</small>
+*Surfries Diner <small>(corner of Bay City Avenue)</small>
+*[[Venetian|The Venetian]] <small>(corners of Vespucci Beach Sidewalk, Magellan Avenue and Bay City Avenue)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

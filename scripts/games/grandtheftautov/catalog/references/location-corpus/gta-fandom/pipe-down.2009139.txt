@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox business
+|image = PipeDown-GTAV-Logo.jpg
+|type = Tobacconist
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Eclipse Boulevard]] and [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Pipe Down''' is a chain of tobacconist's stores in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Store Locations]]
+{{Gallery
+|PipeDown-GTAV-EclipseBoulevard.jpg|[[Eclipse Boulevard]]
+|PipeDown-GTAV-MissionRow.png|[[Mission Row]]
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Stores

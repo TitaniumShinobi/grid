@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox structure
+|image       = PopularStreet-GTAV.png
+|caption     = Popular Street running through [[La Mesa]].
+|games       = {{Games|V=y|O=y}}
+|start       = [[Hawick Avenue]], [[Hawick]]
+|end         = [[Buccaneer Way]], [[Terminal]]
+|map         =
+<gallery>
+PopularStreet-GTAV-Map.png|Map
+PopularStreet-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Popular Street''' is a major north-south street in {{V}} and {{O}}, located in [[East Los Santos (HD Universe)|East Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+*[[Popular Street, Unit 124]]
+*[[Darnell Bros.]] {{Small|(corner of Vespucci Boulevard)}}
+*[[La Mesa Police Station]]
+*[[Pißwasser Factory]]
+
+[[SECTION:2:Businesses]]
+*[[The 1966 Digestive Co.]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]] {{Small|(accessible interior)}}
+*[[Big G Goods]]
+*[[Casey's Diner]]
+*[[CMC]]
+*[[Fridgit]]
+*[[Liquor Market]] {{Small|(corner of Supply Street)}}
+*[[Los Santos Bag Co.]]
+*[[Los Santos Customs]]
+*[[LS Car Meet]]
+*Meltz's Pharmacy
+*[[National Transfer and Storage Co.]] {{Small|(corner of Vespucci Boulevard)}}
+*[[RON]] [[Gas Stations|gas station]] {{Small|(corner of Vespucci Boulevard)}}
+*[[Soyler Textile]]
+*[[Videogeddon|Videogeddon Arcade]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

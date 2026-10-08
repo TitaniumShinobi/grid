@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|image = The_Boat_House_GTAV_Front.jpg
+|caption = Front of the building.
+|name = The Boat House
+|type = Restaurant
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Marina Drive]], [[Sandy Shores]], [[Blaine County]]
+}}
+
+[[LEAD]]
+'''The Boat House''' is an abandoned restaurant in [[Sandy Shores]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Abandoned buildings
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Businesses in GTA Online
+Businesses in GTA V

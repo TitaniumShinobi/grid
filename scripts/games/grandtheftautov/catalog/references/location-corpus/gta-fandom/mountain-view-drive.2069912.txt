@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=MountainViewDr-GTAV.jpg
+|caption=Street view of Mountain View Drive from [[Alhambra Drive]], with [[Mount Chiliad (HD Universe)|Mount Chiliad]] in the background.
+|games={{Games|V=y|O=y}}
+|start=-
+|end=[[Alhambra Drive]]
+|map=<gallery>
+MountainViewDrive-GTAV-Map.png|Map
+MountainViewDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Mountain View Drive''' is a street in [[Sandy Shores]] in {{V}} and {{O}}. It passes through the northern part of [[Marina Drive]] and ends at [[Alhambra Drive]], crossing [[Algonquin Boulevard]] and [[Zancudo Avenue]]. It serves as a spawning point for a [[Utility Van]].
+
+[[SECTION:2:Businesses]]
+*[[Aunt Tammy's]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

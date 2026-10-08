@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name=
+|image=BeefyBillsBurgerBar-GTAV-Logo.png
+|type=Fast food
+|games=''[[Grand Theft Auto V]]''
+|locations=[[Del Perro Pier]]<br>[[Terminal]]
+}}
+
+[[LEAD]]
+'''Beefy Bill's Burger Bar''' is a burger street [[Vendors|vending]] cart company in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurant chains

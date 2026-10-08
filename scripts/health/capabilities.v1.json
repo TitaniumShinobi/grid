@@ -16,12 +16,19 @@
     "scripts/health/Grid.ToolEvidence.ps1",
     "scripts/health/Grid.FullHouseEvidenceCoverage.ps1",
     "scripts/health/Grid.RequestExecution.ps1",
+    "scripts/health/Grid.ConnectedGameContext.ps1",
+    "scripts/health/Invoke-GridRequestEvidencePipeline.ps1",
     "scripts/health/Grid.RequestMutation.ps1",
     "scripts/health/Grid.ProblemLedger.ps1",
     "scripts/health/Grid.CapabilityGap.ps1",
     "scripts/health/Grid.ProviderDiscovery.ps1",
     "scripts/health/Invoke-GridProviderDiscovery.ps1",
-    "scripts/health/README.md"
+    "scripts/health/Get-GridInstalledToolIdentity.ps1",
+    "scripts/health/schemas/installed-tool-observation.v1.schema.json",
+    "scripts/health/README.md",
+    "scripts/health/Grid.MdboCapabilities.ps1",
+    "scripts/health/mdbo-capabilities.v1.json",
+    "scripts/health/schemas/mdbo-capability-manifest.v1.schema.json"
   ],
   "capabilities": [
     {
@@ -926,7 +933,7 @@
     },
     {
       "capabilityId": "grid.health.tool-registry.resolve",
-      "capabilityVersion": "1.0.0",
+      "capabilityVersion": "2.0.0",
       "ownerScope": {
         "kind": "SharedHealth"
       },
@@ -945,7 +952,7 @@
       "outputSchema": {
         "type": "array",
         "items": {
-          "$ref": "./schemas/tool-definition.v1.schema.json"
+          "$ref": "./schemas/tool-registry.v2.schema.json#/$defs/toolDefinition"
         }
       },
       "preconditions": [
@@ -1187,6 +1194,271 @@
         "NeedsStructuredInput",
         "RuntimeCaseData",
         "Rejected"
+      ]
+    },
+    {
+      "capabilityId": "grid.health.windows-application-failure.collect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.WindowsEvidence.ps1",
+          "scripts/health/collectors/Get-GridWindowsApplicationFailureEvidence.ps1"
+        ],
+        "entryPoint": "Get-GridWindowsApplicationFailureEvidence"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["contextFingerprint", "sinceUtc"],
+        "properties": {
+          "executablePath": { "type": ["string", "null"] },
+          "executableName": { "type": ["string", "null"] },
+          "contextFingerprint": { "type": "string" },
+          "sinceUtc": { "type": "string", "format": "date-time" },
+          "untilUtc": { "type": "string", "format": "date-time" },
+          "maxEvents": { "type": "integer", "minimum": 1, "maximum": 4096 }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["schemaVersion", "collectionId", "collector", "status", "scope", "evidence", "warnings", "startedAt", "completedAt"]
+      },
+      "preconditions": [
+        "One exact executable name or canonical executable path is supplied from authorized structured context.",
+        "The Application event query range and item count are bounded."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads only the authorized bounded Application Error and Application Hang event query for the exact executable identity."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Windows Event Log collection is read-only and unavailable access is returned as evidence."
+      },
+      "terminalStates": ["Complete", "Partial", "Unavailable"]
+    },
+    {
+      "capabilityId": "grid.health.windows-error-reporting.collect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.WindowsEvidence.ps1",
+          "scripts/health/collectors/Get-GridWindowsErrorReportingEvidence.ps1"
+        ],
+        "entryPoint": "Get-GridWindowsErrorReportingEvidence"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["contextFingerprint", "sinceUtc"],
+        "properties": {
+          "executablePath": { "type": ["string", "null"] },
+          "executableName": { "type": ["string", "null"] },
+          "contextFingerprint": { "type": "string" },
+          "sinceUtc": { "type": "string", "format": "date-time" },
+          "untilUtc": { "type": "string", "format": "date-time" },
+          "archiveRoot": { "type": "array", "items": { "type": "string" } },
+          "maxEvents": { "type": "integer", "minimum": 1, "maximum": 4096 },
+          "maxReports": { "type": "integer", "minimum": 1, "maximum": 4096 }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["schemaVersion", "collectionId", "collector", "status", "scope", "evidence", "warnings", "startedAt", "completedAt"]
+      },
+      "preconditions": [
+        "One exact executable name or canonical executable path is supplied from authorized structured context.",
+        "The WER event query and archive roots are explicit, read-only, and bounded."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Reads only the authorized bounded WER event query and retained Report.wer metadata; dump payloads are never opened."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "WER observation is read-only; inaccessible, missing, or changing reports remain explicit evidence states."
+      },
+      "terminalStates": ["Complete", "Partial", "Unavailable"]
+    },
+    {
+      "capabilityId": "grid.health.windows-process-modules.collect",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.WindowsEvidence.ps1",
+          "scripts/health/collectors/Get-GridWindowsProcessModuleEvidence.ps1"
+        ],
+        "entryPoint": "Get-GridWindowsProcessModuleEvidence"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["executablePath", "contextFingerprint"],
+        "properties": {
+          "executablePath": { "type": "string" },
+          "executableName": { "type": ["string", "null"] },
+          "contextFingerprint": { "type": "string" },
+          "maxModules": { "type": "integer", "minimum": 1, "maximum": 4096 }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": ["schemaVersion", "collectionId", "collector", "status", "scope", "evidence", "warnings", "startedAt", "completedAt"]
+      },
+      "preconditions": [
+        "The canonical executable path is supplied from authorized structured context.",
+        "Only an already-running process with an exact path match may be observed."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record",
+        "grid.health.process.observe"
+      ],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "Observes modules from an already-running exact-path process and never starts, stops, suspends, or debugs it."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Process-module observation is read-only and process absence or instability is recorded explicitly."
+      },
+      "terminalStates": ["Complete", "Partial", "Unavailable"]
+    },
+    {
+      "capabilityId": "grid.health.diagnostic-assessment.materialize",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.DiagnosticAssessment.ps1"
+        ],
+        "entryPoint": "New-GridDiagnosticAssessment"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["caseId", "contextFingerprint", "evidence", "assertions", "registeredRules", "nextEvidenceDecision", "assessorName", "assessorVersion"]
+      },
+      "outputSchema": {
+        "$ref": "./schemas/diagnostic-assessment.v1.schema.json"
+      },
+      "preconditions": [
+        "Every non-observational assertion is produced by an explicit registered deterministic rule.",
+        "Model reasoning is never accepted as evidence or diagnostic authority.",
+        "A proven cause satisfies every registered causal proof obligation and retains no contradictory evidence."
+      ],
+      "dependencies": [
+        "grid.health.evidence.record"
+      ],
+      "sideEffectClassification": "None",
+      "requiredAuthority": {
+        "kind": "None",
+        "description": "Materializes an in-memory assessment from supplied current evidence and registered deterministic rules."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Assessment materialization is pure and performs no external or case-state mutation."
+      },
+      "terminalStates": ["EvidenceAssessed", "InsufficientEvidence", "CauseProven", "Rejected"]
+    },
+    {
+      "capabilityId": "grid.health.installed-tool.observe",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Get-GridInstalledToolIdentity.ps1"
+        ],
+        "entryPoint": "Get-GridInstalledToolIdentity.ps1"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": ["executablePath"],
+        "properties": {
+          "executablePath": { "type": "string", "minLength": 1 }
+        }
+      },
+      "outputSchema": {
+        "$ref": "./schemas/installed-tool-observation.v1.schema.json"
+      },
+      "preconditions": [
+        "The user explicitly selected one exact executable file.",
+        "Observation is bounded to that file and does not scan adjacent directories or processes."
+      ],
+      "dependencies": [],
+      "sideEffectClassification": "ExternalRead",
+      "requiredAuthority": {
+        "kind": "AuthorizedExternalRead",
+        "description": "The file picker authorizes read-only metadata, hash, version-resource, and Authenticode observation of the exact selected executable only."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "Exact-file observation is read-only."
+      },
+      "terminalStates": ["Observed", "Unavailable", "Failed"]
+    },
+    {
+      "capabilityId": "grid.health.mdobo.registry.resolve",
+      "capabilityVersion": "1.0.0",
+      "ownerScope": {
+        "kind": "SharedHealth"
+      },
+      "implementation": {
+        "files": [
+          "scripts/health/Grid.MdboCapabilities.ps1"
+        ],
+        "entryPoint": "Resolve-GridMdboRegistrationPlan"
+      },
+      "inputSchema": {
+        "type": "object",
+        "required": [
+          "scriptsRoot",
+          "goalCapabilityIds"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "required": [
+          "executionOrder",
+          "capabilityCount"
+        ]
+      },
+      "preconditions": [
+        "scripts/health/mdbo-capabilities.v1.json is readable and schema version 1."
+      ],
+      "dependencies": [
+        "grid.health.capability.resolve"
+      ],
+      "sideEffectClassification": "RepositoryRead",
+      "requiredAuthority": {
+        "kind": "RepositoryRead",
+        "description": "Reads only the health MDBO capability registry and dependency graph."
+      },
+      "rollback": {
+        "mode": "NotRequired",
+        "description": "MDBO registry resolution is read-only."
+      },
+      "terminalStates": [
+        "Resolved",
+        "Invalid",
+        "DuplicateCapabilityId"
       ]
     },
     {

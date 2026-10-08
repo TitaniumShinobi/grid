@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = county
+|name           = Flint County
+|sign           = 
+|image          = 
+|aka            = 
+|games          = 
+|mentioned      = {{Games|IV=y|O=y}}
+|location       = 
+|seal           = 
+|seal2          = 
+|flag           = 
+|mayor          = 
+|president      = 
+|established    = 
+|country        = [[United States of America]]
+|state          = [[State of San Andreas (HD Universe)|San Andreas]]
+|county         = 
+|capital        = 
+|pop            = 
+|motto          = 
+|pscanner       = 
+|unlockedby     = 
+|unlockedafter  = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Flint County''' is a county located in the [[State of San Andreas (HD Universe)|State of San Andreas]], mentioned in ''[[Grand Theft Auto IV]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Counties
+Unseen locations

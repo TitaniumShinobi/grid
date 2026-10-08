@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Shitzu
+|sign          = Name-IV-Shitzu.png
+|image_label   = 
+|image         = Logo-IV-Shitzu.png
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+*Automotive manufacturer
+*Electronics company
+|founded       = 
+|founder       = 
+|ceo           = 
+|divisions     = Shitzu Racing
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Shitzu''' (Japanese: '''シッツ''', Hepburn: '''''Shittsu''''') is a [[Japan]]ese vehicle and electronics manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Electronics companies
+Motorcycle Brands
+Vehicle manufacturers

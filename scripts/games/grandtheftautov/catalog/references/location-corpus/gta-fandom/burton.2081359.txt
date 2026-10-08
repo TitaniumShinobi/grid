@@ -1,0 +1,79 @@
+[[INFOBOX]]
+{{Infobox location
+|image = Burton-GTAV.png
+|caption = Overview of Burton.
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|location = [[Rockford Hills]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|neighborhood = y
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Burton.ogg
+|map           = <gallery>
+Burton-IngameGPS-GTAV-Map.png|Burton
+Burton-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Burton''' is a small affluent shopping district in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in southeastern [[Rockford Hills]], [[Los Santos County]].
+
+[[SECTION:2:Roads and Streets]]
+*[[Abe Milton Parkway]]
+*[[Alta Street]]
+*[[Boulevard Del Perro]]
+*[[Carcer Way]]
+*[[Dorset Drive]]
+*[[Dorset Place]]
+*[[Hawick Avenue]]
+*[[Las Lagunas Boulevard]]
+*[[San Vitus Boulevard]]
+*[[South Boulevard Del Perro]]
+
+[[SECTION:2:Places of Interest]]
+*[[All Swell]]
+*[[Los Santos Customs]]
+*[[Rockford Plaza]]
+*[[San Andreas Gallery of Modern Art]]
+
+[[SECTION:2:Businesses]]
+{{Columns
+|
+*[[Al Dente's]]
+*[[Bite!]]
+*Boutique Call
+*[[Caca]]
+*Café Austère
+*[[Cluckin' Bell (HD Universe)|Cluckin' Bell]]
+*[[Cockatoos]]
+*[[Croq-A-Hoop]]
+*[[Didier Sachs (HD Universe)|Didier Sachs]]
+*[[Discount Kitchen Supplies]]
+*[[Double Denim]]
+*[[Fruit of the Vine]]
+*[[Fleeca|Fleeca Bank]]
+*[[Le Chien]]
+*[[The Mighty Bush]]
+*Pikeys Los Santos
+|
+*[[Pirate Music]]
+*[[Ponsonbys]]
+*[[Ranch (HD Universe)|Ranch]]
+*[[Rimmers]] <small>(opening soon)</small>
+*[[Sneaky Footwear]]
+*[[Swallow]]
+*[[Thor Toys]]
+*[[Tophes]]
+*[[Universal Uniform]]
+*[[Viendemerte|Viendemorte]]
+*[[Vinewood Bar & Grill]]
+*[[Wags to Riches]]
+*[[Wenger Institute]]
+*[[White Widow]]
+*[[Yeti]]
+}}
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

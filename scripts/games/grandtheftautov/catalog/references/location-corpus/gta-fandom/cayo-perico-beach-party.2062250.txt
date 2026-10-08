@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|image = CayoPericoBeachParty-GTAO-LookingWest.png
+|caption = Overview of the beach party.
+|games = {{Games|O=y}}
+|location = [[West Beach]], [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|accessible = Yes <small>(During The Cayo Perico Heist)</small>
+|owner = [[Juan Strickler]]
+|floors = 
+|map           = <gallery>
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+The '''Cayo Perico Beach Party''', also referred to as the '''Keinemusik Beach Party''' is a party area and event located in [[Cayo Perico]], [[Colombia]]. It was introduced in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+Locations in GTA Online in Cayo Perico
+Recreational areas

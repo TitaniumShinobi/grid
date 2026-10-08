@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|safehouse      = 
+|type           = shoppingcenter
+|name           = Vespucci Mall
+|sign           = 
+|image          = VespucciMall-GTAVe-DayView.png
+|caption        = View of Vespucci Mall from [[Palomino Avenue]].
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Palomino Avenue]] & [[South Rockford Drive]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+|businesses     = 
+*[[Binco (HD Universe)|Binco]] 
+*[[Fleeca|Fleeca Bank]]
+*Italia Nails
+*[[Paper Clips]]
+*Shorefeet
+*Vespucci Blooms
+|map            = VespucciMall-GTAV-SatelliteLocation.png
+|map_caption    = Location on the map (Satellite view).
+|status         = active
+|accessible     = Yes <small>([[Binco (HD Universe)|Binco]] only)</small>
+}}
+
+[[LEAD]]
+'''Vespucci Mall''' is a shopping plaza in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Binco (HD Universe)|Binco]]
+*[[Fleeca|Fleeca Bank]]
+*Italia Nails
+*[[Paper Clips]]
+*Shorefeet
+*Vespucci Blooms
+
+[[CATEGORIES]]
+Buildings in GTA V in Los Santos
+Sensitive leaked upcoming content
+Shopping malls

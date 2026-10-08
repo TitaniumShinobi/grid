@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|name     = Redwood Cigarettes
+|image    = RedwoodCigarettes-GTAIV-Logo.png
+|type     = tobacco
+|lcn      = {{BAWSAQ/Slider}} '''RWC'''
+|ceo      = '''3D Universe'''<br>Ken Silverman {{Small|(1984)}}<br>'''HD Universe'''<br>Unknown
+|taglines = 
+*"''Be a real man. Smoke Redwood''"
+*"''When stress is about to get you, Get a Redwood''"
+*"''Vaping is for Losers.''"
+|games    = {{Games|SA=y|LCS=y|VCS=y|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+}}
+
+[[LEAD]]
+'''Redwood Cigarettes''' are a tobacco company featured in the {{3D}} and the {{HD}}. The player can buy stocks from them on the [[Lcn-exchange.com]] [[Websites in GTA V|website]] in {{V}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA VI
+Businesses in GTA Vice City Stories
+Businesses with radio ads
+Businesses with websites
+Tobacco brands

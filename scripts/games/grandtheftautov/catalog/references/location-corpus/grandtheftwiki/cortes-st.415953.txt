@@ -1,0 +1,39 @@
+[[LEAD]]
+'''Cortes St''' is a street running northeast in [[Vespucci Canals]] to the west in [[Vespucci Beach]], briefly enter [[Vespucci]], in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to [[Bay City Ave]] and [[Magellan Ave]].
+
+[[SECTION:2:Businesses and locations]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Fruity Dance Studio]]
+| [[Vespucci Canals]]
+|
+| Dance studio
+|-
+| [[Fruit on the Vine]]
+| [[Vespucci Canals]]
+|
+| Food and drink
+|-
+| data-sort-value="Pizza Coven, The"| [[The Pizza Coven]]
+| [[Vespucci Beach]]
+| Vespucci Beach boardwalk
+| Food and drink
+|-
+| [[Nut Buster]]
+| [[Vespucci]]
+| [[Magellan Ave]]
+| Food and drink
+|-
+| [[Pot-Heads Seafood Restaurant]]
+| [[Vespucci Canals]]
+| [[Bay City Ave]]
+| Food and drink
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

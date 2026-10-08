@@ -1,0 +1,68 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = factory
+|status         = active
+|image          = <gallery>
+CluckingBellFarms-GTAOe-Exterior.png|Building
+CluckingBellFarms-GTAV-Logo.jpg|Logo
+</gallery>
+|caption        = The Clucking Bell Farms in ''[[Grand Theft Auto Online]]''.
+|location       = [[Great Ocean Highway]], [[Paleto Bay]], [[Blaine County]]
+|games          = {{games|V=y|O=y}}
+|accessible     = Yes <small>(''GTA V''; {{H:title|The Paleto Score|mission only}})</small><br/>Yes <small>(''GTA Online''; {{H:title|'Factory Raid' Business Battle and The Cluckin' Bell Farm Raid|mission only}})</small>
+|opened         = [[1917]]
+|occupants      = [[Director Mode/Actors#Laborers|Slaughterhouse Workers]]<br/>[[Cluckin' Bell Cartel]]
+|map            = CluckingBellFarms-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Clucking Bell Farms''' (previously known as '''Bell Farms''') is a factory farm located on [[Great Ocean Highway]] in [[Paleto Bay]], [[Blaine County]], featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[Heist Prep: Getaway Vehicles#Illicit Importers|Heist Prep: Getaway Vehicles]] <small>(Possible location)</small>
+
+[[SECTION:4:The Chop Shop]]
+*[[The Gangbanger Robbery]]
+**[[Task: Getaway Vehicle]] <small>(Possible location)</small>
+*[[The Cluckin' Bell Farm Raid]]
+**[[Hit and Run]]
+**[[Scene of the Crime]]
+
+[[SECTION:3:Interior]]
+<gallery position="center" spacing="small">
+cluckinbellfarms-room.jpg|An accessible room in the factory, featured in The Paleto Score.
+cluckinbellfarms-room2.jpg|An accessible room in the factory, featured in The Paleto Score.
+cluckinbellfarms-cover.jpg|One of the protagonists taking cover behind a cage.
+cluckinbellfarms-lockers.jpg|Lockers, bench, water cooler and signs in the factory.
+CluckingBellFarms-GTAV-InteriorCagedChickens.png|Caged chickens.
+CluckingBellFarms-GTAV-InteriorLiveChickens.png|Live chickens.
+CluckingBellFarms-GTAV-InteriorSigns.png|Safety signage.
+CluckingBellFarms-GTAV-InteriorCrudeSign.png|Crude signage.
+CluckingBellFarms-GTAV-InteriorSignage.png|More safety signs.
+CluckingBellFarms-GTAV-ProcessingChopper.png|Chicken processing: beheading.
+CluckingBellFarms-GTAV-ProcessingPluckingBath.png|Chicken processing: Plucking bath.
+CluckingBellFarms-GTAV-ProcessingPlucked.png|Chicken processing: plucked chickens.
+CluckingBellFarms-GTAV-ProcessingTrays.png|Chicken processing: processed chicken ready for packing.
+CluckingBellFarms-GTAV-Stock.png|Cases of packed chicken products.
+</gallery>
+
+[[SECTION:3:Cartel Facility]]
+
+
+[[SECTION:4:Basement]]
+<gallery position="center" spacing="small" widths="270px">
+CluckingBellFarms-GTAOe-Basement1.png
+CluckingBellFarms-GTAOe-Basement2.png
+</gallery>
+
+[[SECTION:4:Storage Area]]
+<gallery position="center" spacing="small" widths="270px">
+CluckingBellFarms-GTAOe-StorageArea1.png
+CluckingBellFarms-GTAOe-StorageArea2.png
+</gallery>
+
+[[CATEGORIES]]
+Factory complexes
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

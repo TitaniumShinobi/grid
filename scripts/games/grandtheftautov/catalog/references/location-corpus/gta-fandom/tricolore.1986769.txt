@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = airline
+|name          = Tricolore
+|sign          = 
+|image         = Tricolore-GTAO-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mp2024_01}}}}
+|mentioned     = 
+|locations     = 
+|business_type = Commercial airliner
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Tricolore''' is an [[Italy|Italian]] airline appearing in {{O}} as part of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update.
+
+[[CATEGORIES]]
+Airlines
+Businesses in GTA Online: Bottom Dollar Bounties

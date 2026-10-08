@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = dealership
+|name          = Pedal and Metal Cycles
+|sign          = PedalandMetal-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = Pedal and Metal
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]] <small>(formerly)</small>
+|business_type = Online Bicycle Retailer
+|founded       = 
+|founder       = 
+*Pete "The Gauge" Shafer
+*Sammy "Cogs" Sincowsky 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = [[Pedal_and_Metal_Cycles#Vehicles|Vehicles]]
+|weapons       = 
+|taglines      = ''The Premium Store For Cycling In San Andreas''
+|lifeinvader = [[Lifeinvader/Pedal and Metal|Pedal and Metal]]
+|status        = Active
+}}
+
+[[LEAD]]
+'''Pedal and Metal Cycles''' is an online bicycle retailer in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses with websites
+Vehicle dealerships

@@ -1,0 +1,381 @@
+[[INFOBOX]]
+{{Infobox location
+|style          = O
+|name = {{HUDIcons|game=V|propertyforsale}} Apartments {{HUDIcons|game=V|safehouse}}
+|image = Apartments-GTAOe-PurchaseSign.png
+|caption = An Apartment (Stilt House) for sale.
+|safehouse = y
+|accessible = Yes
+|floors = 1-3
+|garagecap = 2-10 [[Personal Vehicles]]<br/><small>(plus 1-3 [[Bicycles]])</small>
+|canplayerstore = Yes
+|unlockedby = [[Rank]] 5 <small>(Tutorial mode only)</small>
+|owner = {{GTAOP}} <small>(Player's choice)</small>
+|games = {{Games|O=y}}
+|location = [[State of San Andreas (HD Universe)|Southern San Andreas]]
+}}
+
+[[LEAD]]
+'''Apartments''' are purchasable [[Safehouses]] in ''[[Grand Theft Auto Online]]''.
+
+Like the [[Safehouses in GTA V|safehouses]] in ''[[Grand Theft Auto V]]'', all Apartments also come equipped with [[Garages|garages]] for vehicle storage.
+
+[[SECTION:2:Apartment Tiers]]
+The [[Dynasty 8/Dynasty 8 Listings|Dynasty 8 listings]] are divided into three tiers of purchasable Apartments; low-end, medium and high-end. Although referred to across the board as apartments, there is actually a mixture of apartment-building and standalone single-family dwelling homes available. Apartment building units are only available within Los Santos; elsewhere, they are standalone homes. All homes have two separate entrances - a front door and a garage entrance; apartment building front door and garage entrances are not always next to one another.
+
+[[SECTION:3:Low-end]]
+Low-end apartments have a basic one-level interior, which is relatively untidy, and basic furnishing and appliances. They are reminiscent of a small ghetto-style house, with cheap furniture and low lighting, re-using interior props from the [[Clinton Residence]] and the layout of [[924 Las Lagunas Boulevard|Harvey Molina's apartment]]. They feature a medium living room with an open kitchen and a small messy bedroom and bathroom. They do not include any sort of window view. Low-end apartments also come with two-car garages, where the player can also store one bicycle. Three standalone houses were added in the [[Independence Day Special]] DLC in 2014.
+{| class="wikitable"
+!colspan="3"|List of Low End Apartments
+|-
+!Address
+!Price
+!Notes
+|-
+|[[0232 Paleto Boulevard]]
+| style="text-align:right;"|$121,000
+| [[Independence Day Special|DLC]]
+|-
+|[[140 Zancudo Avenue]]
+| style="text-align:right;"|$120,000
+| [[Independence Day Special|DLC]]
+|-
+|[[1893 Grapeseed Avenue]]
+| style="text-align:right;"|$118,000
+| [[Independence Day Special|DLC]]
+|-
+|[[2143 Las Lagunas Boulevard]], Apt 9
+| style="text-align:right;"|$115,000
+|
+|-
+|[[0069 Cougar Avenue]], Apt 19
+| style="text-align:right;"|$112,000
+|
+|-
+|[[1237 Prosperity Street]], Apt 21
+| style="text-align:right;"|$105,000
+|
+|-
+|[[1561 San Vitas Street]], Apt 2
+| style="text-align:right;"|$99,000
+|FREE (with [[Criminal Enterprise Starter Pack]])
+|-
+|[[1115 Boulevard Del Perro]], Apt 18
+| style="text-align:right;"|$93,000
+|
+|-
+|[[2057 Vespucci Boulevard]], Apt 1
+| style="text-align:right;"|$87,000
+|
+|-
+|[[0112 South Rockford Drive]], Apt 13
+| style="text-align:right;"|$80,000
+|
+|-
+|}
+
+[[SECTION:3:Medium]]
+Medium apartments have a one-level interior with more appealing furniture, cleaner interiors and brighter lighting when compared to the low-end apartments, re-using props from [[Floyd's Apartment]]. They include a medium-sized bedroom and living room with an open kitchen and a small bathroom.  They feature six-car garages, where the player can also store two bicycles. Four standalone houses were added in the [[Independence Day Special]] DLC in 2014.
+{| class="wikitable"
+!colspan="3"|List of Medium Apartments
+|-
+!Address
+!Price
+!Notes
+|-
+|[[4 Hangman Avenue|4 Hangman Ave]]
+| style="text-align:right;"|$175,000
+| [[Independence Day Special|DLC]]
+|-
+|[[4401 Procopio Drive]]
+| style="text-align:right;"|$165,000
+| [[Independence Day Special|DLC]]
+|-
+|[[4584 Procopio Drive]]
+| style="text-align:right;"|$155,000
+| [[Independence Day Special|DLC]]
+|-
+|[[0115 Bay City Avenue]], Apt 45
+| style="text-align:right;"|$150,000
+|
+|-
+|[[0184 Milton Road]], Apt 13
+| style="text-align:right;"|$146,000
+|
+|-
+|[[12 Sustancia Road]]
+| style="text-align:right;"|$143,000
+| [[Independence Day Special|DLC]]
+|-
+|[[0504 South Mo Milton Drive]]
+| style="text-align:right;"|$141,000
+|
+|-
+|[[0325 South Rockford Drive]]
+| style="text-align:right;"|$137,000
+|
+|-
+|[[Dream Tower]], Apt 15
+| style="text-align:right;"|$134,000
+|
+|-
+|[[1162 Power Street]], Apt 3
+| style="text-align:right;"|$130,000
+|
+|-
+|[[0605 Spanish Avenue]], Apt 1
+| style="text-align:right;"|$128,000
+|
+|-
+|[[0604 Las Lagunas Boulevard]], Apt 4
+| style="text-align:right;"|$126,000
+|
+|-
+|[[The Royale]], Apt 19
+| style="text-align:right;"|$125,000
+|
+|-
+|}
+
+[[SECTION:3:High-end]]
+High-end apartments are more similar to that of [[3671 Whispymound Drive]], as they can have multi-level interiors with modern furnishing, colorful decorations, and good lighting. They feature a big living room with an open kitchen, a big bedroom with walk-in wardrobe, and a medium bathroom. They also have a large panoramic window view that allows the player to see the surrounding area. High-end apartments also have a small office/studio near the entrance, which was transformed into heist planning room with [[Heists Update|Heists DLC]]. They feature ten-car garages, where the player can store three bicycles.
+
+[[SECTION:4:Original High-End]]
+There are seventeen apartments located in seven different high-rise apartment buildings.
+{| class="wikitable"
+!colspan="3"|List of Original High-End Apartments
+|-
+!Address
+!Price
+!Notes
+|-
+|[[Eclipse Towers]], Apt 31
+| style="text-align:right;"|$400,000
+|
+|-
+|Eclipse Towers, Apt 40
+| style="text-align:right;"|$391,000
+|
+|-
+|Eclipse Towers, Apt 5
+| style="text-align:right;"|$382,000
+|
+|-
+|Eclipse Towers, Apt 9
+| style="text-align:right;"|$373,000
+|
+|-
+|[[Weazel Plaza]], Apt 101
+| style="text-align:right;"|$335,000
+|
+|-
+|Weazel Plaza, Apt 70
+| style="text-align:right;"|$319,000
+|
+|-
+|Weazel Plaza, Apt 26
+| style="text-align:right;"|$304,000
+|
+|-
+|[[Tinsel Towers]], Apt 29
+| style="text-align:right;"|$286,000
+|
+|-
+|Tinsel Towers, Apt 45
+| style="text-align:right;"|$270,000
+|
+|-
+|[[Richards Majestic]], Apt 51
+| style="text-align:right;"|$253,000
+|
+|-
+|[[Tinkle Building|4 Integrity Way]], Apt. 35
+| style="text-align:right;"|$247,000
+|
+|-
+|Richards Majestic Apt. 4
+| style="text-align:right;"|$241,000
+|
+|-
+|4 Integrity Way, Apt. 30
+| style="text-align:right;"|$235,000
+|
+|-
+|[[3 Alta Street Tower]], [[3 Alta Street Apt 57|Apt 57]]
+| style="text-align:right;"|$223,000
+|
+|-
+|3 Alta Street Tower, [[3 Alta Street Apt 10|Apt 10]]
+| style="text-align:right;"|$217,000
+|
+|-
+|[[Del Perro Heights]], Apt 20
+| style="text-align:right;"|$205,000
+|
+|-
+|Del Perro Heights, Apt 7
+| style="text-align:right;"|$200,000
+|
+|-
+|}
+
+[[SECTION:4:Updated Interiors]]
+An updated version of the high-end interior was made available with the [[High Life Update]]. This interior is slightly more traditional while retaining modern features. These apartments feature slightly less lighting and open space than the original high-end apartments, but still as luxurious in decoration. They feature a slightly smaller living room and kitchen but a larger entrance hallway. The layout is also different.
+
+One apartment with an update interior is available in five of the high-end apartment blocks. [[Weazel Plaza]] and [[3 Alta Street]] do not have one.
+{| class="wikitable"
+!colspan="3"|List of Updated Interior High-End Apartments
+|-
+!Address
+!Price
+!Notes
+|-
+|[[Eclipse Towers]], Apt. 3
+| style="text-align:right;"|$500,000
+|
+|-
+|[[Tinsel Towers]], Apt. 42
+| style="text-align:right;"|$492,000
+|
+|-
+|[[Richards Majestic]], Apt. 2
+| style="text-align:right;"|$484,000
+|
+|-
+|[[Tinkle Building|4 Integrity Way]], Apt. 28
+| style="text-align:right;"|$476,000
+|
+|-
+|[[Del Perro Heights]], Apt. 4
+| style="text-align:right;"|$468,000
+|
+|-
+|}
+
+[[SECTION:4:Stilt Houses]]
+Ten Stilt houses were added in the [[GTA Online: Executives and Other Criminals|Executives and Other Criminals]] update.
+
+These new houses are distinct with their city vista from the main window as all of the stilt houses are located in [[Vinewood Hills]]. Stilt houses are three-story houses with two different interior models, which cannot be changed.
+{| class="wikitable"
+!colspan="3"|List of Stilt House High-End Apartments
+|-
+!Address
+!Price
+!Notes
+|-
+|[[3655 Wild Oats Drive]]
+| style="text-align:right;"|$800,000
+|
+|-
+|[[2044 North Conker Avenue]]
+| style="text-align:right;"|$762,000
+|
+|-
+|[[2045 North Conker Avenue]]
+| style="text-align:right;"|$727,000
+|
+|-
+|[[2862 Hillcrest Avenue]]
+| style="text-align:right;"|$705,000
+|
+|-
+|[[2868 Hillcrest Avenue]]
+| style="text-align:right;"|$672,000
+|
+|-
+|[[2117 Milton Road]]
+| style="text-align:right;"|$608,000
+|
+|-
+|[[2874 Hillcrest Avenue]]
+| style="text-align:right;"|$571,000
+|
+|-
+|[[2866 Hillcrest Avenue]]
+| style="text-align:right;"|$525,000
+|
+|-
+|[[3677 Whispymound Drive]]
+| style="text-align:right;"|$478,000
+|
+|-
+|[[2113 Mad Wayne Thunder Drive]]
+| style="text-align:right;"|$449,000
+|
+|-
+|}
+
+[[SECTION:4:Custom Apartments (Penthouse Suites)]]
+Three Custom Apartments were also added in the Executives and Other Criminals update. Befitting their status as the most expensive residential properties at the time, they feature top quality fixtures and furnishings and, as they are located on the upper floors of [[Eclipse Towers]] they feature views over the city of Los Santos (Suites 1 and 3) or the Vinewood Hills (Suite 2).
+{{Help Text|You have the ability to change the interior style of this Apartment. Select Apartment Style in the Interaction Menu to preview and purchase new looks.}}
+Custom penthouse suites feature eight different customizable interior styles: Modern, Moody, Vibrant, Sharp, Monochrome, Seductive, Regal, and Aqua. These can be changed at any time after purchase via the [[Interaction Menu]] while inside the apartment.
+{| class="wikitable"
+!colspan="3"|List of Custom High-End Apartments
+|-
+!Address
+!Price
+!Notes
+|-
+|[[Eclipse Towers]], Penthouse Suite 3
+| style="text-align:right;"|$1,100,000
+|South facing city view
+|-
+|Eclipse Towers, Penthouse Suite 1
+| style="text-align:right;"|$985,000
+|South facing city view
+|-
+|Eclipse Towers, Penthouse Suite 2
+| style="text-align:right;"|$905,000
+|North facing hills view
+|-
+|}
+
+[[SECTION:3:High-end (Updated Interior)]]
+<gallery position="center" spacing="small" widths="250px">
+Apartments-GTAOe-HighEnd-Interior-Map.png|Interior map.
+Apartments-GTAOe-HighEnd-Entry.png|Entry.
+Apartments-GTAOe-HighEnd-Kitchen.png|Kitchen.
+Apartments-GTAOe-HighEnd-DiningRoom.png|Dining room.
+Apartments-GTAOe-HighEnd-LivingRoom1.png|Living room.
+Apartments-GTAOe-HighEnd-LivingRoom2.png|Living room from the opposite direction.
+Apartments-GTAOe-HighEnd-Bedroom.png|Bedroom.
+Apartments-GTAOe-HighEnd-Bathroom.png|Bathroom.
+Apartments-GTAOe-HighEnd-HeistOffice.png|Heist Office.
+Apartments-GTAOe-HighEnd-10CarGarage.png|Garage.
+</gallery>
+
+[[SECTION:3:Stilt House 1]]
+<gallery position="center" spacing="small" widths="250px">
+Apartments-GTAOe-StiltHouse-Interior1-Map.png|Interior map.
+Apartments-GTAOe-StiltHouse-Style1-Entry.png|Entry.
+Apartments-GTAOe-StiltHouse-Style1-Kitchen.png|Kitchen.
+Apartments-GTAOe-StiltHouse-Style1-DiningRoom.png|Dining room.
+Apartments-GTAOe-StiltHouse-Style1-LivingRoom1.png|Living room.
+Apartments-GTAOe-StiltHouse-Style1-LivingRoom2.png|Living room from the opposite direction.
+Apartments-GTAOe-StiltHouse-Style1-Stairs.png|Stairs.
+Apartments-GTAOe-StiltHouse-Style1-Bedroom1.png|Bedroom.
+Apartments-GTAOe-StiltHouse-Style1-Bedroom2.png|Bedroom from the opposite direction.
+Apartments-GTAOe-StiltHouse-Style1-Wardrobe.png|Wardrobe.
+Apartments-GTAOe-StiltHouse-Style1-Bathroom.png|Bathroom.
+Apartments-GTAOe-StiltHouse-Style1-LowerLanding.png|Lower landing.
+Apartments-GTAOe-StiltHouse-Style1-HeistOffice.png|Heist Office.
+</gallery>
+
+[[SECTION:3:Stilt House 2]]
+<gallery position="center" spacing="small" widths="250px">
+Apartments-GTAOe-StiltHouse-Interior2-Map.png|Interior map.
+Apartments-GTAOe-StiltHouse-Style2-Entry.png|Entry.
+Apartments-GTAOe-StiltHouse-Style2-Kitchen.png|Kitchen.
+Apartments-GTAOe-StiltHouse-Style2-DiningRoom.png|Dining room.
+Apartments-GTAOe-StiltHouse-Style2-LivingRoom1.png|Living room.
+Apartments-GTAOe-StiltHouse-Style2-Stairs.png|Stairs.
+Apartments-GTAOe-StiltHouse-Style2-Bedroom1.png|Bedroom.
+Apartments-GTAOe-StiltHouse-Style2-Bedroom2.png|Bedroom from the opposite direction.
+Apartments-GTAOe-StiltHouse-Style2-Wardrobe.png|Wardrobe.
+Apartments-GTAOe-StiltHouse-Style2-Bathroom.png|Bathroom.
+Apartments-GTAOe-StiltHouse-Style2-LowerLanding.png|Lower landing.
+</gallery>
+
+[[CATEGORIES]]
+Features in GTA Online
+Safehouses in GTA Online

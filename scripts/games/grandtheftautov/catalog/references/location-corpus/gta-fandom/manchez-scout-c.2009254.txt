@@ -1,0 +1,83 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name                = Manchez Scout C
+|aka                 = Delivery Bike
+|front_image         = ManchezScoutC-GTAOe-front.png
+|rear_image          = ManchezScoutC-GTAOe-rear.png
+|caption             = A '''Manchez Scout C''' in ''[[Grand Theft Auto Online]]''.
+|class               = [[:Category:Motorcycles class|Motorcycles]] {{Small|(''GTA Online'')}}
+|body_style          = Off-road motorcycle
+|capacity            = 1 {{Small|(rider)}}
+|manufacturer        = [[Maibatsu Corporation (HD Universe)|Maibatsu]]
+|price               = FREE {{Small|(Upon upgrading the [[Brickade 6x6]])}}
+|games               = {{Games|O={{EEEV}} {{DLC|mpchristmas3}}}}
+|type            = dirtbike
+|basevariant         = [[Manchez Scout]]
+|lineup          = 
+|variants            = 
+|swankness           = 2/5
+|dashtype            = Sport Bike {{Small|(needle)}}<br>[[File:Motorbike-Dials-GTAV.png|thumb|center|170px]]<br>Sports Bike {{Small|(dial texture)}}<br>[[File:SportsBike-GTAV-DialSet.png|thumb|center|170px]]
+|inttxd              = Biker
+|wheeltype           = Bike
+|flags               = 
+{{Flags|FLAG_NO_BOOT}}<br>
+{{Flags|FLAG_IGNORE_ON_SIDE_CHECK}}<br>
+{{Flags|FLAG_AVERAGE_CAR}}<br>
+{{Flags|FLAG_HEADLIGHTS_USE_ACTUAL_BONE_POS}}<br>
+|modelsets           = 
+|modelname           = manchez3
+|handlingname        = MANCHEZ3
+|textlabelname       = MANCHEZ3
+|roadspawnmaxcol     = 10
+|roadspawnfreq       = 30
+|roadspawntrailer    = 
+|roadspawnidendis    = 80
+|roadspawn           = No
+|roadspawndrivers    = 
+|roadspawngroups     = 
+|roadspawnlicense    = Standard White - 100%
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The [[Maibatsu Corporation (HD Universe)|Maibatsu]] '''Manchez Scout C''' is an off-road motorcycle featured in ''[[Grand Theft Auto Online]]'' as part of the [[GTA Online: Los Santos Drug Wars|Los Santos Drug Wars]] update.
+
+[[SECTION:2:Locations]]
+*Available at [[The Freakshop]] upon acquisition of the [[Brickade 6x6]], after completing all six [[First Dose]] missions.
+**Can be requested from the [[Interaction Menu]], under the "Acid Lab" services. No cooldown is applied to the vehicle, meaning it can be requested right after being sent to storage or destroyed.
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Manchez Scout C
+|manufacturer  = Maibatsu
+|class         = Motorcycles 
+|image         = ManchezScoutC-GTAO-RGSC-MainNew.jpg
+|caption       = Main image.
+|image2        = ManchezScoutC-GTAO-RGSC-Action.jpg
+|caption2      = "Action" image.
+|speed         = 69.751678
+|accel         = 68
+|braking       = 26.666668
+|traction      = 63.939392
+|seats         = 1
+|garage        = n
+|moddable      = y
+|premium       = n
+|super         = n
+|buy           = n
+|sell          = n
+}}
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Manchez Scout C}}
+{{Defaultradio|game=O|defaultgroup=rock}}
+
+[[CATEGORIES]]
+Dirt bikes
+Motorcycles class
+Off-roading vehicles
+Vehicles in GTA Online: Los Santos Drug Wars
+Vehicles manufactured by Maibatsu

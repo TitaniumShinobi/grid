@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = Cassidy.jpg
+|caption = The '''Raton Canyon Bridge''' crossing over [[Cassidy Creek]].
+|games = {{Games|V=y|O=y}}
+|bridge = y
+|location = [[Raton Canyon]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+The '''Raton Canyon Bridge''', also erroneously known as the '''Calafia Bridge''', is a train bridge in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in the [[Raton Canyon]] National Park, [[Blaine County]].
+
+[[CATEGORIES]]
+Arch bridges
+Rail bridges
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

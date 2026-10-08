@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = SchlongbergSachsCenter-GTAV.png
+|caption        = The skyscraper as seen from the southeast.
+|games          = {{games|V=y|O=y}}
+|location       = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|use            = Schlongberg Sachs Headquarters
+|floors         = 46
+|file_name      = <code>dt1_10_build1</code>
+}}
+
+[[LEAD]]
+The '''Schlongberg Sachs Center''' is a skyscraper in {{VO}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Skyscrapers

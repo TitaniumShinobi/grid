@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = motel
+|name           = Bilingsgate Motel
+|sign           = BilingsgateMotel-GTAV-Logo.png
+|image          = BilingsgateMotel-GTAV.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = 6834 [[Innocence Boulevard]], [[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|use            = 
+|owner          = 
+|operator       = 
+|occupants      = 
+|employees      = 
+|architecture   = 
+|length         = 
+|height         = 
+|area           = 
+|size           = 
+|floors         = 2
+|phone          = 
+|accessible     = No
+|file_name      = 
+|map = BilingsgateMotel-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Bilingsgate Motel''' is a motel appearing in {{V}} and {{O}}, located in [[Rancho]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Motels

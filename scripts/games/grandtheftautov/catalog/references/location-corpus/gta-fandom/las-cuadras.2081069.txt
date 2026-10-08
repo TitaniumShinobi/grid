@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|type       = restaurant
+|name       = Las Cuadras
+|image      = LasCuadras-GTAV.png
+|caption    = Las Cuadras in ''GTA V''
+|games      = {{Games|V=y|O=y}}
+|location   = [[North Rockford Drive]], [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+}}
+
+[[LEAD]]
+'''Las Cuadras''' is a restaurant deli and bar in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Casual restaurants
+Deli restaurants

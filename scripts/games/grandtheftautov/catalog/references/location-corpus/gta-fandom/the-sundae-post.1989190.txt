@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = The Sundae Post
+|image = TheSundaePost-GTAV-Logo.png
+|type = Fast Food
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''The Sundae Post''' is a fast food restaurant in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurants

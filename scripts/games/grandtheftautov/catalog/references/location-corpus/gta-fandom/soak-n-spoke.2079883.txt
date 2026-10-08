@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = SoakNSpoke-GTAVe-Logo.png
+|name = Soak N Spoke
+|taglines = 
+|type = Equipment Rental Shop
+|games = ''[[Grand Theft Auto V]]''<br />''[[Grand Theft Auto Online]]''
+|locations = [[Del Perro Pier]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Soak N Spoke''' Board & Bike Hire is a beach equipment rental shop in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

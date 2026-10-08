@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Henna Tattoos
+|image = HennaTattoos-GTAV-Logo.png
+|type = Tattoo Parlor
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Henna Tattoos''' is a tattoo parlor in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tattoo parlors

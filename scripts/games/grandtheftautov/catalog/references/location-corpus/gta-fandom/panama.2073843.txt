@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox country
+|image_flag = Flag_of_Panama.svg
+|currency_ingame = Panamanian balboa
+}}
+
+[[LEAD]]
+The '''Republic of Panama''' (Spanish: ''República de Panamá''), simply known as '''Panama''', is a transcontinental country spanning the southern part of North America and the northern part of South America. It is bordered by [[Costa Rica]] to the west, [[Colombia]] to the southeast, the [[Caribbean Sea]] to the north, and the [[Pacific Ocean]] to the south.
+
+[[SECTION:3:''Episodes from Liberty City'']]
+*After completing the mission [[Off Route]] in ''[[The Lost and Damned]]'', [[Thomas Stubbs]] will call [[Johnny Klebitz|Johnny]] and inform him that the prisoners he just liberated are going to Panama.
+
+[[CATEGORIES]]
+North American countries

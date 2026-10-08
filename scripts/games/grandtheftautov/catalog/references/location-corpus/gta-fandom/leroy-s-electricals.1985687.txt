@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = elecstore
+|name          = Leroy's Electricals
+|sign          = LeroysElectricals-GTAVe-Logo.png
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founder       = [[Leroy]]
+|ceo           = 
+|owner         = Leroy
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|status        = active
+|phone         = 
+|accessible    = No
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Leroy's Electricals '''is a chain of electronics stores in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+LeroysElectricals-GTAV-Exterior.jpg|[[Strawberry Avenue]], [[Strawberry]].
+Leroys_Electricals_GTAVe_Mirror_Park_Store.jpg|[[West Mirror Drive]], [[Mirror Park]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics store chains

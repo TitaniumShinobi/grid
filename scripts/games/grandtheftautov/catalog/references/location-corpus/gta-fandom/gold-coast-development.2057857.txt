@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Gold Coast Development
+|darklogo = y
+|image = GoldCoastDevelopment-GTAV-Logo.png
+|lcn = {{BAWSAQ/Slider}} '''GCD'''
+|type = Real Estate Developer
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]
+|ceo =  [[The Gold Coast Development CEO|Unnamed CEO]] 
+}}
+
+[[LEAD]]
+'''Gold Coast Development''' is a real estate developer in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', based in [[Los Santos (HD Universe)|Los Santos]]. Their main rivals are [[STD Contractors]]. The player can buy their stocks at the [[Lcn-exchange.com]] website.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Construction companies

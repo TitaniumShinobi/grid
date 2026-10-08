@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 
+|game_1 = GTA V
+|name = Fred's Pictures
+|type = Film Studio
+|owner = [[Fred Whitney]]
+|location = [[Movie Star Way]] in [[Rockford Hills]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = [[Fred Whitney]]
+}}
+
+[[LEAD]]
+'''Fred's Pictures''' is a production company based in the [[United Kingdom]], and is likely a parody of [[wp:Disney|Disney]]. However Fred's Pictures seem to be a dark parody compared to the features of Walt Disney movies featuring darker concepts like [[drugs|drug abuse]], sexual themes, and insanity.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Film Production Companies

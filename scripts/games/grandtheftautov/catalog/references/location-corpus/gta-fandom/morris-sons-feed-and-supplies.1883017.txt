@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Morris&Sons-GTAV-Sign.png
+|caption = 
+|name = Morris & Sons Feed and Supplies
+|taglines = 
+|type = Animal Feed & Supplies
+|games = {{Games|V=y|O=y}}
+|locations = [[Paleto Bay]], [[Blaine County]]
+|reference =
+}}
+
+[[LEAD]]
+'''Morris & Sons Feed and Supplies''' is a business in {{V}} and {{O}} which is located in [[Paleto Bay]], [[Blaine County]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

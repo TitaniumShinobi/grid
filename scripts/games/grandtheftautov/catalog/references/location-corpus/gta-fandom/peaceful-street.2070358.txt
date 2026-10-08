@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = PeacefulStreet-GTAV.png
+|caption =
+|start = [[Vespucci Boulevard]]
+|end = [[San Andreas Avenue]]
+|games={{Games|V=y|O=y}}
+|map=<gallery>
+PeacefulStreet-GTAV-Map.png|Map
+PeacefulStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Peaceful Street''' is a two-way street in {{V}} and {{O}}, located in [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+*[[707 Vespucci]] <small>(corner of Vespucci Boulevard)</small>
+*[[Peaceful Street Building]]
+*[[Quik House]] <small>(corner of Vespucci Boulevard)</small>
+*[[Schlongberg Sachs Center]] <small>(corner of San Andreas Avenue)</small>
+
+[[SECTION:2:Businesses]]
+*[[The Bean Machine]] <small>(corner of Vespucci Boulevard)</small>
+*[[Café Redemption]]
+*[[GoPostal]]
+*[[LS Quik]]
+*[[San Andreas Parking Counsel|SAP Counsel]]
+*[[Schlongberg Sachs]]
+*[[Slaughter, Slaughter & Slaughter]] <small>(corner of San Andreas Avenue)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

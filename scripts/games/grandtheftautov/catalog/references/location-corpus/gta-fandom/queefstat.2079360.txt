@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Oscilloscope manufacturer
+|games = {{V}}<br>{{O}}
+|image = Queefstat-GTAV-Logo.png
+}}
+
+[[LEAD]]
+'''Queefstat''' is an electronics company in {{V}} and {{O}} that manufactures oscilloscopes.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics companies

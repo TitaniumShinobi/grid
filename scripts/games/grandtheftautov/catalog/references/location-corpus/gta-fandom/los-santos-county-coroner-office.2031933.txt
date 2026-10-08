@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox location
+|image    = LosSantosCountyCoronerOffice-GTAV.png
+|caption  = Front view of the building.
+|use      = Forensic building
+|games    = {{Games|V=y|O=y}}
+|location = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+The '''Los Santos County Coroner Office''' is a forensic building and morgue in {{V}} and {{O}}.
+
+[[SECTION:3:Interior]]
+The office's interior is accessed by [[Michael De Santa]] in the mission [[Dead Man Walking]]. [[International Affairs Agency|IAA]] guards patrol the building during the mission. The interior is also accessed during [[Setup: Dead Courier]] and [[Heist Prep: Security Pass]] in ''Grand Theft Auto Online''. These are the only times the player can access the building.
+
+The general interior layout and design is heavily based on that of the {{URL|http://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Los_Angeles_County_Coroner_Building.JPG/1280px-Los_Angeles_County_Coroner_Building.JPG|Los Angeles County Department of Medical Examiner-Coroner}}, presenting the same type of architecture, color, logo and even a similar unique gift shop. The locations accessible to the player during the Dead Man Walking mission, are as follows:
+*'''Autopsy suite 3''' {{nd}} Contains two dissection tables, a couple of medical posters (circulatory and muscular systems), three X-rays on display (two cranial, one of the arm), one trolley containing latex gloves and surgical equipment, as well as other medical/scientific paraphernalia (labcoats, protective face gear, etc.).
+*'''Morgue '''- Reveals multiple standard morgue refrigerators (a total of 16), two female corpses (each on top of a gurney, humorously named the 'Vein Drain Deluxe') and an industrial elevator. A white board is also present that reveals the corpse's names in each chamber (only 10 out of the 16 are identified); it also notes that chambers number 9 and 10 are not to be used.
+* '''Autopsy suite 2''' {{nd}} Unlike suite no. 3, this one possesses one large dissection table surrounded by several wheeled stools, two standard dissection tables, one medical poster (circulatory system), a drawing on a white board (of a human heart diagram), three X-rays (two of a fractured arm and one thoracic), two trolleys containing latex gloves and surgical equipment and medical/scientific paraphernalia (a functioning oscilloscope, several glass laboratory materials, chemicals, a centrifuge, etc.).
+*'''Autopsy suite 1''' {{nd}} This suite has a direct connection with suite no. 2, through one glass door in the middle. It is very similar to the aforementioned suite, as it also presents two standard dissection tables, one large dissection table, one cranial X-ray, two trolleys containing latex gloves and surgical equipment, four medical posters (circulatory system, muscular makeup of lower extremity, knee joints and the muscular system), as well as several medical/scientific paraphernalia (this one having a stereo microscope instead of an oscilloscope).
+*'''Reception''' {{nd}} Standard reception table with office supplies, as well as a small room behind it, containing four lockers and several metal file cabinets.
+*'''Forensics lab''' {{nd}} Large room on the facility's top floor, with multiple laboratory countertops, as well a noticeable large table with four X-rays (two cranial, one of the arm and one of the thorax). This room contains the largest diversity of scientific paraphernalia, which include two different models of an oscilloscope, a signal generator, a stereo microscope, laboratory glassware and so on.
+*'''Office room''' {{nd}} Appears as an ordinary office room, with six desks, and two white boards at the front.
+*'''Small kitchen''' {{nd}} Next to the office room is a small kitchen that has a toaster, a microwave and two [[Vending Machines|vending machines]] ([[Sprunk (HD Universe)|Sprunk]] and [[Bean Machine]]).
+*'''CME's office''' {{nd}} Ordinary office, which has its walls decorated with multiple frameworks (diploma, achievements and certificates), a phrenology bust, a shelf with books and an amusing 'coroner of the year' award. It is revealed in the office's door that it belongs to Dr. [[Andy Smith]], Chief Medical Examiner. On top of the desk, a sign can be read that reveals that the doctor's name is Andy Smith and is given the title of 'Chief Coroner'.
+*'''File storage room''' {{nd}} This room is adjacent to the CME's office. It has four large mobile shelves containing many boxes filled with documents. It should be noted that the shelves have stickers that read 'Dead Dudes', 'Dead Chicks', 'Coffin Fodder' and 'Clients', which vary in year.
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[Heist Prep: Security Pass]] {{Small|(possible location)}}
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Low-rise buildings

@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|type          = electronics
+|name          = Tenshun
+|sign          = Tenshun-Logo-GTAO.png
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Consumer electronics & industrial equipment
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = [[#Products|Products]]
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Tenshun''' (텐션) is a [[South Korea]]n electronics company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics companies

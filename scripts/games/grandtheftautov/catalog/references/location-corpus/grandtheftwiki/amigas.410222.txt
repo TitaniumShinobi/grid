@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Amigas
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = Fuel supplier
+|owner = 
+|location = 
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Amigas''' is a fuel supply company, which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company slogan is ''Natural fuels''. Gas containers bearing the company name can be found across [[Los Santos in GTA V|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA V

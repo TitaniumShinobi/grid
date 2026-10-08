@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|name = Croq-A-Hoop
+|caption = The logo
+|location = [[Burton]]<br>[[Rockford Hills]]
+|accessible = No
+|altnames = 
+|products = Shoes
+|bawsaq = 
+|image = Croq-a-Hoop-GTAV-Logo1.png
+|darklogo = y
+|image_size = 300
+|condition = Active
+|taglines = 
+|reference = 
+|games = {{Games|V=y|O=y}}
+|type = Clothing Store
+|map = 
+|oldlogo = CroqAHoop-GTAV-Logo.png
+|oldlogo1 = Croq-a-Hoop-GTAV-Logo-Script-Texture.png
+|oldcaption = Alternative logo.
+}}
+
+[[LEAD]]
+'''Croq-A-Hoop''' is a high-class clothing brand featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+There are two branches in [[Los Santos (HD Universe)|Los Santos]]:
+
+<gallery position="center" spacing="small" widths="270px">
+Croq-A-Hoop-GTAV-RockfordHills-General.png|[[Portola Drive]], [[South Boulevard Del Perro]] and [[Rockford Drive]], [[Rockford Hills]].(Night [[:File:Croq-A-Hoop-GTAV-NightFront.png|view]])
+CroqAHoop-GTAV-RockfordPlaza.png|[[Las Lagunas Boulevard]] and [[Hawick Avenue]], [[Rockford Plaza]], [[Burton]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

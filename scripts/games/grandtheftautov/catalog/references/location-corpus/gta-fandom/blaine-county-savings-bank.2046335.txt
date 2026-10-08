@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Blaine County Savings Bank
+|aka       = Blaine County Savings and Loan <small>(by [[Lester Crest|Lester]])</small>
+|image     = BlaineCountySavingsBank-GTAV-Logo.png
+|taglines  = ''"Your nest egg!"''
+|type      = Banking company
+|games     = {{Games|V=y|O=y}}
+|locations = [[Paleto Bay]], [[Blaine County]]<br>[[Chumash]], [[Los Santos County]]
+}}
+
+[[LEAD]]
+The '''Blaine County Savings Bank''' is a bank featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+BlaineCountySavingsBank-GTAV-BlaineCounty.png|[[Cascabel Avenue]] and [[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]].
+ChumashPlaza-GTAV-BlaineCountySavingsBank.png|[[Route 1]], [[Chumash Plaza]], [[Chumash]], [[Los Santos County]].
+</gallery>
+
+[[CATEGORIES]]
+Banking companies
+Businesses in GTA Online
+Businesses in GTA V

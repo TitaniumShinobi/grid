@@ -1,0 +1,52 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = gasoline
+|name          = Limited Gasoline
+|sign          = LTDGasoline-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = LTD
+|games         = {{Games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[State of San Andreas (HD Universe)|State of San Andreas]]
+*[[Hamlet]], [[State of Leonida|Leonida]]
+{{Small|(see [[#Locations|Locations]])}}
+|business_type = 
+*Gasoline company
+*Convenience store chain
+|founded       = [[1973]]
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+*"It's here 'till it runs out"
+*"unLTD great prices!"
+|bawsaq        = {{BAWSAQ/Slider}} '''LTD'''
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Limited Gasoline''', more commonly known as simply '''LTD''', is a gasoline company and convenience store chain appearing in {{V}} and {{O}}, and due to appear in {{VI}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="250px">
+LTDGasoline-GTAV-LittleSeoul.png|Intersection of [[Ginger Street]] and [[Lindsay Circus]], [[Little Seoul]].
+LTDGasoline-GTAV-Davis.png|Intersection of [[Grove Street (HD Universe)|Grove Street]] and [[Davis Avenue]], [[Davis]].
+LTDGasoline-GTAV-MirrorPark.png|Intersection of [[West Mirror Drive]] and [[Mirror Park Boulevard]], [[Mirror Park]].
+LTDGasoline-GTAV-RichmanGlen.png|Intersection of [[North Rockford Drive]] and [[Banham Canyon Drive]], [[Richman Glen]].
+LTDGasoline-GTAV-Grapeseed.png|[[Grapeseed Main Street]], [[Grapeseed]], [[Blaine County]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Gas station chains
+Petroleum companies

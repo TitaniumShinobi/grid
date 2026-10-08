@@ -47,6 +47,7 @@ internal sealed class PowerShellAssistantRequestExecutionService : IAssistantReq
         using var result = await InvokeAsync(input, TimeSpan.FromMinutes(2), cancellationToken);
         var root = result.RootElement;
         var envelope = root.GetProperty("requestEnvelope");
+        VerifyPreparedIntake(Property(root, "investigationIntake"), request);
         var review = root.GetProperty("authorizationReview");
         var canonical = new AssistantCanonicalRequest(
             RequiredString(envelope, "requestId"), RequiredString(envelope, "envelopeSha256"),
@@ -57,7 +58,8 @@ internal sealed class PowerShellAssistantRequestExecutionService : IAssistantReq
             var toolId = new ToolId(RequiredString(scope, "toolId"));
             return new AssistantReadScope(toolId, names.GetValueOrDefault(toolId, toolId.Value),
                 OptionalString(scope, "adapter"), OptionalString(scope, "observationMode"), RequiredString(scope, "availability"),
-                scope.GetProperty("exactReadPaths").EnumerateArray().Select(value => value.GetString()!).ToImmutableArray());
+                scope.GetProperty("exactReadPaths").EnumerateArray().Select(value => value.GetString()!).ToImmutableArray(),
+                ParseExactReadResources(scope));
         }).ToImmutableArray();
         var semanticBinding = review.GetProperty("semanticBinding");
         var authorityClass = RequiredString(review, "authorityClass");
@@ -65,7 +67,7 @@ internal sealed class PowerShellAssistantRequestExecutionService : IAssistantReq
             RequiredString(review, "reviewId"), RequiredString(semanticBinding, "submissionId"), canonical,
             RequiredString(semanticBinding, "planSha256"), scopes, RequiredString(review, "semanticBindingSha256"),
             !string.Equals(authorityClass, "Read", StringComparison.Ordinal),
-            "Authorize only the displayed exact read paths. Papyrus attachments may launch the bundled read-only Grid diagnostics collector; this grants no mutation authority.");
+            "Authorize only the displayed exact read scope, including any listed filesystem paths and logical resources. This grants no mutation authority.");
         if (authorization.MutationAuthorized) throw new InvalidDataException("The request bridge returned a mutating authorization review.");
         prepared[authorization.ReviewId] = new(request, submissionId, CloneObject(input));
         return authorization;
@@ -169,9 +171,11 @@ internal sealed class PowerShellAssistantRequestExecutionService : IAssistantReq
         var root = result.RootElement;
         var envelope = Property(root, "requestEnvelope");
         if (parentRequest is not null) VerifyActionEnvelope(envelope, parentRequest.Draft);
+        var intake = Property(root, "investigationIntake");
         var successorDraft = parentRequest is null
-            ? ParsePreparedDraft(envelope, Property(root, "investigationIntake"), action)
+            ? ParsePreparedDraft(envelope, intake, action)
             : parentRequest.Draft with { Attachments = attachments };
+        VerifyPreparedIntake(intake, successorDraft);
         var review = Property(root, "authorizationReview");
         var canonical = new AssistantCanonicalRequest(
             RequiredString(envelope, "requestId"), RequiredString(envelope, "envelopeSha256"),
@@ -182,7 +186,8 @@ internal sealed class PowerShellAssistantRequestExecutionService : IAssistantReq
             var toolId = new ToolId(RequiredString(scope, "toolId"));
             return new AssistantReadScope(toolId, names.GetValueOrDefault(toolId, toolId.Value),
                 OptionalString(scope, "adapter"), OptionalString(scope, "observationMode"), RequiredString(scope, "availability"),
-                Property(scope, "exactReadPaths").EnumerateArray().Select(value => value.GetString()!).ToImmutableArray());
+                Property(scope, "exactReadPaths").EnumerateArray().Select(value => value.GetString()!).ToImmutableArray(),
+                ParseExactReadResources(scope));
         }).ToImmutableArray();
         var semanticBinding = Property(review, "semanticBinding");
         var authorityClass = RequiredString(review, "authorityClass");
@@ -193,7 +198,7 @@ internal sealed class PowerShellAssistantRequestExecutionService : IAssistantReq
             mutationAuthorized,
             mutationAuthorized
                 ? "Authorize one exact reversible filesystem transition on only the displayed targets. The grant is single-use, context-bound, verified, and recorded for Undo/Redo."
-                : "Authorize only the displayed exact read paths. Papyrus attachments may launch the bundled read-only Grid diagnostics collector; this grants no mutation authority.");
+                : "Authorize only the displayed exact read scope, including any listed filesystem paths and logical resources. This grants no mutation authority.");
         if (authorization.MutationAuthorized != (action is AssistantCaseAction.ApplyRepair or AssistantCaseAction.RollBack))
             throw new InvalidDataException("The action authorization class does not match the requested operation.");
 
@@ -238,32 +243,81 @@ internal sealed class PowerShellAssistantRequestExecutionService : IAssistantReq
         return ParseTask(returned[0]);
     }
 
-    private object CreateInput(string operation, AssistantRequestDraft request, string submissionId, string? authorizationGrantId) => new
+    private object CreateInput(string operation, AssistantRequestDraft request, string submissionId, string? authorizationGrantId)
     {
-        schemaVersion = 2,
-        operation,
-        gameId = ToEngineGameId(request.GameId),
-        installationId = request.InstallationId.Value,
-        profileId = request.ProfileId.Value,
-        classId = request.ClassId,
-        capabilityIds = string.IsNullOrWhiteSpace(request.CapabilityId) ? [] : new[] { request.CapabilityId },
-        mods = request.Mods.Select(mod => mod.ProviderName).ToArray(),
-        tools = request.Tools.Select(tool => tool.ToolId.Value).ToArray(),
-        request = request.VerbatimUserText,
-        expectedBehavior = request.ExpectedBehavior,
-        reproductionLocation = request.ReproductionOrLocation,
-        desiredOutcome = request.DesiredOutcome,
-        authorizationScope = request.Attachments.IsDefaultOrEmpty ? "SelectedContext" : "SelectedContextAndAttachments",
-        captureCurrentState = true,
-        attachments = request.Attachments.IsDefault ? [] : request.Attachments.ToArray(),
-        submissionId,
-        actorId,
-        sessionId,
-        toolInputs = new Dictionary<string, object>(),
-        authorizationGrantId,
-        gridDataRoot,
-        caseStoreRoot,
-    };
+        ValidateSelectorContext(request.CanonicalSelections, request.UnresolvedUserContext);
+        ValidateTaxonomySelections(request);
+        return new
+        {
+            schemaVersion = 2,
+            operation,
+            gameId = ToEngineGameId(request.GameId),
+            installationId = request.InstallationId.Value,
+            profileId = request.ProfileId.Value,
+            classId = request.ClassId,
+            gameSelectionSource = request.GameSelectionSource.ToString(),
+            installationSelectionSource = request.InstallationSelectionSource.ToString(),
+            profileSelectionSource = request.ProfileSelectionSource.ToString(),
+            classSelectionSource = request.ClassSelectionSource.ToString(),
+            capabilityIds = string.IsNullOrWhiteSpace(request.CapabilityId) ? [] : new[] { request.CapabilityId },
+            mods = request.Mods.Select(mod => mod.ProviderName).ToArray(),
+            tools = request.Tools.Select(tool => tool.ToolId.Value).ToArray(),
+            request = request.VerbatimUserText,
+            expectedBehavior = request.ExpectedBehavior,
+            reproductionLocation = request.ReproductionOrLocation,
+            desiredOutcome = request.DesiredOutcome,
+            authorizationScope = request.Attachments.IsDefaultOrEmpty ? "SelectedContext" : "SelectedContextAndAttachments",
+            captureCurrentState = true,
+            attachments = request.Attachments.IsDefault ? [] : request.Attachments.ToArray(),
+            canonicalSelections = Normalize(request.CanonicalSelections).Select(selection => new
+            {
+                selectionKind = selection.SelectionKind.ToString(),
+                knowledgeKind = selection.KnowledgeKind.ToString(),
+                catalogRevisionId = selection.CatalogRevisionId.Value,
+                catalogCompositionId = selection.CatalogCompositionId.Value,
+                projectionPolicyId = selection.ProjectionPolicyId.Value,
+                projectionPolicyVersion = selection.ProjectionPolicyVersion,
+                selectedPathId = selection.SelectedPathId?.Value,
+                knowledgeRecordId = selection.KnowledgeRecordId?.Value,
+                unresolvedOtherContextId = selection.UnresolvedOtherContextId,
+            }).ToArray(),
+            unresolvedUserContext = Normalize(request.UnresolvedUserContext).Select(context => new
+            {
+                kind = context.Kind.ToString(),
+                value = context.Value,
+                resolution = context.Resolution.ToString(),
+                provenance = context.Provenance.ToString(),
+                matchedReferenceId = context.MatchedReferenceId?.Value,
+            }).ToArray(),
+            problemSelection = request.ProblemSelection is null ? null : new
+            {
+                id = request.ProblemSelection.Id.Value,
+                classId = request.ProblemSelection.ClassId.Value,
+                displayName = request.ProblemSelection.DisplayName,
+                provenance = request.ProblemSelection.Provenance.ToString(),
+            },
+            timingSelection = request.TimingSelection is null ? null : new
+            {
+                id = request.TimingSelection.Id.Value,
+                classId = request.TimingSelection.ClassId.Value,
+                displayName = request.TimingSelection.DisplayName,
+                provenance = request.TimingSelection.Provenance.ToString(),
+            },
+            goalSelection = request.GoalSelection is null ? null : new
+            {
+                id = request.GoalSelection.Id.Value,
+                displayName = request.GoalSelection.DisplayName,
+                provenance = request.GoalSelection.Provenance.ToString(),
+            },
+            submissionId,
+            actorId,
+            sessionId,
+            toolInputs = new Dictionary<string, object>(),
+            authorizationGrantId,
+            gridDataRoot,
+            caseStoreRoot,
+        };
+    }
 
     private async Task<JsonDocument> InvokeAsync(
         object input,
@@ -730,6 +784,99 @@ internal sealed class PowerShellAssistantRequestExecutionService : IAssistantReq
             throw new InvalidDataException("The successor action changed the canonical mod, tool, or gameplay-capability selections.");
     }
 
+    private static void VerifyPreparedIntake(JsonElement intake, AssistantRequestDraft submittedDraft)
+    {
+        var hasStructuredTaxonomy = submittedDraft.ProblemSelection is not null ||
+            submittedDraft.TimingSelection is not null || submittedDraft.GoalSelection is not null;
+        if (!TryProperty(intake, "schemaVersion", out var schemaValue) || !schemaValue.TryGetInt32(out var schemaVersion) ||
+            hasStructuredTaxonomy && schemaVersion != 3 || !hasStructuredTaxonomy && schemaVersion is not (1 or 2))
+            throw new InvalidDataException("The request bridge returned an incompatible investigation-intake schema version.");
+        var returnedCanonical = ParseCanonicalSelections(intake);
+        var returnedUnresolved = ParseUnresolvedUserContext(intake);
+        var returnedProblem = ParseProblemSelection(intake);
+        var returnedTiming = ParseTimingSelection(intake);
+        var returnedGoal = ParseGoalSelection(intake);
+        ValidateSelectorContext(submittedDraft.CanonicalSelections, submittedDraft.UnresolvedUserContext);
+        ValidateSelectorContext(returnedCanonical, returnedUnresolved);
+        ValidateTaxonomySelections(submittedDraft);
+
+        var expectedCanonical = Normalize(submittedDraft.CanonicalSelections)
+            .OrderBy(selection => selection.KnowledgeKind)
+            .ToImmutableArray();
+        var actualCanonical = returnedCanonical
+            .OrderBy(selection => selection.KnowledgeKind)
+            .ToImmutableArray();
+        var expectedUnresolved = Normalize(submittedDraft.UnresolvedUserContext)
+            .OrderBy(context => context.Kind)
+            .ToImmutableArray();
+        var actualUnresolved = returnedUnresolved
+            .OrderBy(context => context.Kind)
+            .ToImmutableArray();
+        if (!actualCanonical.SequenceEqual(expectedCanonical) || !actualUnresolved.SequenceEqual(expectedUnresolved) ||
+            returnedProblem != submittedDraft.ProblemSelection || returnedTiming != submittedDraft.TimingSelection ||
+            returnedGoal != submittedDraft.GoalSelection)
+            throw new InvalidDataException("The request bridge changed canonical selections, unresolved Other context, or structured taxonomy while preparing authorization.");
+    }
+
+    private static void ValidateTaxonomySelections(AssistantRequestDraft request)
+    {
+        var hasAny = request.ProblemSelection is not null || request.TimingSelection is not null || request.GoalSelection is not null;
+        if (!hasAny) return;
+        if (request.ProblemSelection is null || request.GoalSelection is null)
+            throw new InvalidDataException("Structured taxonomy requires exact Problem and Goal selections.");
+        if (!string.Equals(request.ProblemSelection.ClassId.Value, request.ClassId, StringComparison.Ordinal) ||
+            request.TimingSelection is not null && !string.Equals(request.TimingSelection.ClassId.Value, request.ClassId, StringComparison.Ordinal))
+            throw new InvalidDataException("Structured Problem and Timing selections must belong to the selected Class.");
+        if (string.IsNullOrWhiteSpace(request.ProblemSelection.DisplayName) ||
+            string.IsNullOrWhiteSpace(request.GoalSelection.DisplayName) ||
+            request.TimingSelection is not null && string.IsNullOrWhiteSpace(request.TimingSelection.DisplayName))
+            throw new InvalidDataException("Structured taxonomy selections require exact registered display text.");
+        if (request.ProblemSelection.Provenance != TicketSelectionProvenance.ExplicitUserSelection ||
+            request.GoalSelection.Provenance != TicketSelectionProvenance.ExplicitUserSelection ||
+            request.TimingSelection is not null && request.TimingSelection.Provenance != TicketSelectionProvenance.ExplicitUserSelection)
+            throw new InvalidDataException("New structured taxonomy selections must preserve explicit-user provenance.");
+    }
+
+    private static void ValidateSelectorContext(
+        ImmutableArray<CanonicalSelectorSelection> canonicalSelections,
+        ImmutableArray<TicketUserContext> unresolvedUserContext)
+    {
+        var canonical = Normalize(canonicalSelections);
+        var unresolved = Normalize(unresolvedUserContext);
+        if (canonical.Any(selection => selection.SelectionKind != CanonicalSelectorSelectionKind.CanonicalRecord) ||
+            unresolved.Any(context =>
+                context.Resolution != TicketUserContextResolution.Unresolved ||
+                context.MatchedReferenceId is not null ||
+                context.Provenance is not TicketSelectionProvenance.ExplicitUserSelection and not TicketSelectionProvenance.LegacyImported))
+            throw new InvalidDataException("Canonical selections or unresolved Other context violate the bounded selector intake contract.");
+
+        var nonLocationCanonical = canonical.Where(selection => selection.KnowledgeKind != KnowledgeKind.Location).ToArray();
+        if (nonLocationCanonical.Select(selection => selection.KnowledgeKind).Distinct().Count() != nonLocationCanonical.Length)
+            throw new InvalidDataException("Mission, Item, and Actor canonical selections must be unique per kind.");
+
+        var locationCanonical = canonical.Where(selection => selection.KnowledgeKind == KnowledgeKind.Location).ToArray();
+        if (locationCanonical.Select(selection => $"{selection.KnowledgeRecordId?.Value}:{selection.SelectedPathId?.Value}")
+                .Distinct(StringComparer.Ordinal).Count() != locationCanonical.Length)
+            throw new InvalidDataException("Location canonical selections must be unique per record and path.");
+
+        var nonLocationUnresolved = unresolved.Where(context => context.Kind != TicketReferenceContextKind.Location).ToArray();
+        if (nonLocationUnresolved.Select(context => context.Kind).Distinct().Count() != nonLocationUnresolved.Length)
+            throw new InvalidDataException("Unresolved Other context must be unique per semantic kind except Location.");
+
+        var unresolvedKinds = unresolved.Select(context => context.Kind).ToHashSet();
+        if (canonical.Any(selection => unresolvedKinds.Contains(ToReferenceContextKind(selection.KnowledgeKind))))
+            throw new InvalidDataException("Canonical selection and unresolved Other context cannot coexist for the same semantic kind.");
+    }
+
+    private static TicketReferenceContextKind ToReferenceContextKind(KnowledgeKind kind) => kind switch
+    {
+        KnowledgeKind.Location => TicketReferenceContextKind.Location,
+        KnowledgeKind.MissionQuest => TicketReferenceContextKind.MissionOrQuest,
+        KnowledgeKind.Item => TicketReferenceContextKind.Item,
+        KnowledgeKind.Actor => TicketReferenceContextKind.Entity,
+        _ => throw new InvalidDataException($"Unsupported canonical selector knowledge kind '{kind}'."),
+    };
+
     private static AssistantRequestDraft ParsePreparedDraft(JsonElement envelope, JsonElement intake, AssistantCaseAction action)
     {
         var context = Property(envelope, "context");
@@ -748,6 +895,11 @@ internal sealed class PowerShellAssistantRequestExecutionService : IAssistantReq
             var path = RequiredString(value, "path");
             return new AssistantAttachmentDraft(path, Path.GetFileName(path), OptionalString(value, "mediaType"));
         }).ToImmutableArray();
+        var canonicalSelections = ParseCanonicalSelections(intake);
+        var unresolvedUserContext = ParseUnresolvedUserContext(intake);
+        var problemSelection = ParseProblemSelection(intake);
+        var timingSelection = ParseTimingSelection(intake);
+        var goalSelection = ParseGoalSelection(intake);
         return new AssistantRequestDraft(
             new GameId(ToApplicationGameId(RequiredString(context, "gameId"))),
             new InstallationId(RequiredString(context, "installationId")),
@@ -770,23 +922,119 @@ internal sealed class PowerShellAssistantRequestExecutionService : IAssistantReq
             OptionalString(intake, "reproductionLocation") ?? string.Empty,
             OptionalString(intake, "desiredOutcome") ?? string.Empty,
             attachments,
-            AssistantAuthorizationScope.SelectedInstallationAndProfileReadOnly,
             TryProperty(selections, "capabilities", out var capabilityValues) && capabilityValues.ValueKind == JsonValueKind.Array
                 ? capabilityValues.EnumerateArray().Select(value => RequiredString(value, "capabilityId")).SingleOrDefault()
-                : null);
+                : null,
+            CanonicalSelections: canonicalSelections,
+            UnresolvedUserContext: unresolvedUserContext,
+            ProblemSelection: problemSelection,
+            TimingSelection: timingSelection,
+            GoalSelection: goalSelection);
     }
+
+    private static ImmutableArray<CanonicalSelectorSelection> ParseCanonicalSelections(JsonElement intake)
+    {
+        if (!TryProperty(intake, "canonicalSelections", out var values) || values.ValueKind != JsonValueKind.Array)
+            return [];
+        return values.EnumerateArray().Select(value => new CanonicalSelectorSelection(
+            Enum.Parse<CanonicalSelectorSelectionKind>(RequiredString(value, "selectionKind"), false),
+            Enum.Parse<KnowledgeKind>(RequiredString(value, "knowledgeKind"), false),
+            new CatalogRevisionId(RequiredString(value, "catalogRevisionId")),
+            new CatalogCompositionId(RequiredString(value, "catalogCompositionId")),
+            new CanonicalSelectorProjectionPolicyId(RequiredString(value, "projectionPolicyId")),
+            RequiredString(value, "projectionPolicyVersion"),
+            OptionalString(value, "selectedPathId") is { } path ? new CanonicalNavigationPathId(path) : null,
+            OptionalString(value, "knowledgeRecordId") is { } record ? new KnowledgeRecordId(record) : null,
+            OptionalString(value, "unresolvedOtherContextId"))).ToImmutableArray();
+    }
+
+    private static ImmutableArray<TicketUserContext> ParseUnresolvedUserContext(JsonElement intake)
+    {
+        if (!TryProperty(intake, "unresolvedUserContext", out var values) || values.ValueKind != JsonValueKind.Array)
+            return [];
+        return values.EnumerateArray().Select(value => new TicketUserContext(
+            Enum.Parse<TicketReferenceContextKind>(RequiredString(value, "kind"), false),
+            RequiredString(value, "value"),
+            Enum.Parse<TicketUserContextResolution>(RequiredString(value, "resolution"), false),
+            Enum.Parse<TicketSelectionProvenance>(RequiredString(value, "provenance"), false),
+            OptionalString(value, "matchedReferenceId") is { } reference
+                ? new TicketReferenceContextId(reference)
+                : null)).ToImmutableArray();
+    }
+
+    private static TicketProblemSelection? ParseProblemSelection(JsonElement intake)
+    {
+        if (!TryProperty(intake, "problemSelection", out var value) || value.ValueKind is JsonValueKind.Null or JsonValueKind.Undefined)
+            return null;
+        return new TicketProblemSelection(
+            new TicketProblemId(RequiredString(value, "id")),
+            new TicketClassId(RequiredString(value, "classId")),
+            RequiredString(value, "displayName"),
+            ParseExplicitUserProvenance(value));
+    }
+
+    private static TicketTimingSelection? ParseTimingSelection(JsonElement intake)
+    {
+        if (!TryProperty(intake, "timingSelection", out var value) || value.ValueKind is JsonValueKind.Null or JsonValueKind.Undefined)
+            return null;
+        return new TicketTimingSelection(
+            new TicketTimingId(RequiredString(value, "id")),
+            new TicketClassId(RequiredString(value, "classId")),
+            RequiredString(value, "displayName"),
+            ParseExplicitUserProvenance(value));
+    }
+
+    private static TicketGoalSelection? ParseGoalSelection(JsonElement intake)
+    {
+        if (!TryProperty(intake, "goalSelection", out var value) || value.ValueKind is JsonValueKind.Null or JsonValueKind.Undefined)
+            return null;
+        return new TicketGoalSelection(
+            new TicketGoalId(RequiredString(value, "id")),
+            RequiredString(value, "displayName"),
+            ParseExplicitUserProvenance(value));
+    }
+
+    private static TicketSelectionProvenance ParseExplicitUserProvenance(JsonElement value)
+    {
+        var provenance = Enum.Parse<TicketSelectionProvenance>(RequiredString(value, "provenance"), false);
+        if (provenance != TicketSelectionProvenance.ExplicitUserSelection)
+            throw new InvalidDataException("New structured taxonomy selections must preserve explicit-user provenance.");
+        return provenance;
+    }
+
+    private static ImmutableArray<T> Normalize<T>(ImmutableArray<T> values) =>
+        values.IsDefault ? [] : values;
 
     private static string ToApplicationGameId(string gameId) => gameId switch
     {
         "skyrimspecialedition" => "game.skyrim-special-edition",
+        "grandtheftautov-enhanced" => "game.grandtheftautov-enhanced",
+        "grandtheftautov-legacy" => "game.grandtheftautov-legacy",
         _ => gameId,
     };
 
     private static string ToEngineGameId(GameId gameId) => gameId.Value switch
     {
         "game.skyrim-special-edition" => "skyrimspecialedition",
+        "game.grandtheftautov-enhanced" => "grandtheftautov-enhanced",
+        "game.grandtheftautov-legacy" => "grandtheftautov-legacy",
         _ => gameId.Value,
     };
+
+    private static ImmutableArray<AssistantReadResource> ParseExactReadResources(JsonElement scope)
+    {
+        if (!TryProperty(scope, "exactReadResources", out var resources) || resources.ValueKind != JsonValueKind.Array)
+            return [];
+        return resources.EnumerateArray().Select(resource => new AssistantReadResource(
+            RequiredString(resource, "resourceType"),
+            RequiredString(resource, "resourceId"),
+            TryProperty(resource, "constraints", out var constraints) && constraints.ValueKind == JsonValueKind.Array
+                ? constraints.EnumerateArray()
+                    .Select(value => value.GetString() ?? string.Empty)
+                    .Where(value => value.Length > 0)
+                    .ToImmutableArray()
+                : [])).ToImmutableArray();
+    }
     private static string SanitizeError(string output, string error)
     {
         try

@@ -1,0 +1,111 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = TOWN
+|image = PaletoBay-GTAV-Montage.png
+|caption = Clockwise from top: Aerial view of Paleto Bay, [[St. Brigid Baptist Church]], a [[Blaine County Savings Bank]] branch, [[Duluoz Avenue]], the sign at the entrance of [[Clucking Bell Farms]]
+|games = {{Games|V=y|O=y}}
+|mayor = [[Roy Buckley]]
+|established = [[1898]]
+|pop = 4,006–4,906 <small>(estimated)</small>
+|country = [[United States of America]]
+|state = [[State of San Andreas (HD Universe)|San Andreas]]
+|name = Paleto Bay
+|pscanner       = PoliceScanner-GTAV-Neighborhood-PaletoBay.ogg
+|map             = <gallery>
+PaletoBay-IngameGPS-GTAV-Map.png|Paleto Bay
+PaletoBay-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS). <font color="blue">Procopio Beach</font> is located in Paleto Bay.
+|aka=
+}}
+
+[[LEAD]]
+'''Paleto Bay''' is a small town located in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in {{V}} and {{O}}. It is situated northwest of the [[Paleto Forest]], west of [[Procopio Beach]] and sits on the coastline of the [[Pacific Ocean]] and the northwestern foot of [[Mount Chiliad (HD Universe)|Mount Chiliad]]. It is mainly a residential area with some shops.
+
+[[SECTION:4:The Chop Shop]]
+*[[Task: Getaway Vehicle]] <small>(Possible location for the [[Street Racers]] [[Auto Shops|Auto Shop]])</small>
+*[[Planning Work: Sabotage And Disguise]] <small>(Possible location for the [[The Port Authority of Los Santos|LSPA]] office)</small>
+*[[The McTony Robbery/Finale|The McTony Robbery]]
+*[[The Cluckin' Bell Farm Raid]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Cascabel Avenue]]
+*[[Duluoz Avenue]]
+*[[Great Ocean Highway]]
+*[[Paleto Boulevard]]
+*[[Procopio Drive]]
+*[[Procopio Promenade]]
+*[[Pyrite Avenue]]
+
+[[SECTION:2:Purchasable Properties]]
+
+
+[[SECTION:3:''Grand Theft Auto V'']]
+*[[The Hen House]]
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+*[[0232 Paleto Boulevard]]
+*[[4401 Procopio Drive]]
+*[[4584 Procopio Drive]]
+
+[[SECTION:2:Places of Interest]]
+*[[Paleto Bay Fire Station]]
+*[[Paleto Bay Rest Stop]]
+*[[Paleto Bay Sheriff's Office]]
+*[[Paleto Bay Training Grounds]]
+*[[Red's Machine Supplies]]
+*[[St. Brigid Baptist Church]]
+*[[The Bay Care Center]]
+
+[[SECTION:2:Businesses]]
+{{Columns
+|
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Bay Hardware]]
+*[[Bay Side Drugs]]
+*[[Beeker's Garage]]
+*[[Belinda Mays Beauty Salon]]
+*[[Blaine County Depot]]
+*[[Blaine County Savings Bank]]
+*[[Clucking Bell Farms]]
+*[[Del Vecchio Liquor]]
+*[[Discount Store]]
+*[[Donkey Punch Family Farm]]
+*[[Don's Country Store]]
+*[[Dream View Motel]]
+*[[Golden Buns Bakery]]
+*[[Helmut's European Autos]]
+*[[Herr Kutz Barber]]
+*[[Jetsam]]
+*[[J's Bonds]]
+*[[Liquor Deli]]
+*[[Mojito Inn]]
+|
+*[[Morris & Sons Feed and Supplies]]
+*[[No Marks Cleaners]]
+*[[Paleto Bay Financial Services Inc.]]
+*[[Paleto Construction Company]]
+*[[Paleto Pets]]
+*[[Paleto Tattoo]]
+*[[Peckerwood]]
+*[[Pop's Pills]]
+*[[Post OP]]
+*[[Ray's Electronics]]
+*[[Red's Machine Supplies]]
+*[[RON]]
+*[[Sally's Surf Shop]]
+*[[South Seas Apartments]]
+*[[The Bay Bar (Paleto Bay)|The Bay Bar]]
+*[[The Chrome Dome]]
+*[[The Hen House]]
+*[[Willie's Supermarket]]
+*[[Wilson Hatcheries]]
+*[[Xero]]
+}}
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Towns
+Zones

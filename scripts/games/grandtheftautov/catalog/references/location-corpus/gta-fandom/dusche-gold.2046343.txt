@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Dusche Gold
+|image = DuscheGold-GTAO-OvalLogo.png
+|type = Alcohol Beverage
+|taglines = "''Let it rain...''"<br>"''Let it pour''"<br>''"Das Ist Gut Ja!"''
+|games = ''[[Grand Theft Auto IV]]''<br>''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|founded = [[1888]] 
+}}
+
+[[LEAD]]
+'''Dusche Gold''' is a [[Germany|German]] alcoholic beverage that appears in the [[HD Universe]] of ''[[Grand Theft Auto]]''.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V

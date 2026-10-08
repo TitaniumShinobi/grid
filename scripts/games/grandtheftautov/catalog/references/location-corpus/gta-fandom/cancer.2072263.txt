@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Cancer
+|image = Cancer-Cigarettes-GTAV-packaging.png
+|type = Tobacco Company
+|games = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Cancer''' is a cigarette brand appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tobacco brands

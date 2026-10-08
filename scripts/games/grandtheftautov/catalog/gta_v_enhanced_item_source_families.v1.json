@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "grid.gta-v-enhanced.item-source-families",
+  "gameId": "game.grandtheftautov-enhanced",
+  "locale": "en-US",
+  "dataFileTypes": {
+    "VEHICLE_METADATA_FILE": "vehicles",
+    "VEHICLE_SHOP_DLC_FILE": "vehicle-shop",
+    "WEAPONINFO_FILE": "weapons",
+    "WEAPONINFO_FILE_PATCH": "weapons",
+    "WEAPONCOMPONENTSINFO_FILE": "components",
+    "WEAPON_SHOP_INFO_METADATA_FILE": "weapon-shop",
+    "DLC_WEAPON_PICKUPS": "pickups",
+    "SHOP_PED_APPAREL_META_FILE": "apparel",
+    "TEXTFILE_METAFILE": "text-manifest"
+  },
+  "xmlRoots": {
+    "vehicles": "CVehicleModelInfo__InitDataList",
+    "vehicle-shop": "ShopVehicleDataArray",
+    "weapons": "CWeaponInfoBlob",
+    "components": "CWeaponComponentInfoBlob",
+    "weapon-shop": "WeaponShopItemArray",
+    "pickups": "CPickupDataManager",
+    "apparel": "ShopPedApparel",
+    "text-manifest": "CExtraTextMetaFile"
+  },
+  "vehicleClassReference": {
+    "enumIndexUrl": "https://gtamods.com/mediawiki/index.php?title=Vehicles.meta&oldid=19769#vehicleClass",
+    "indexLabelUrl": "https://github.com/citizenfx/natives/blob/7263f2118982857a08787f81045fbdc3defa1d70/VEHICLE/GetVehicleClass.md",
+    "provenance": "REFERENCE_VERIFIED",
+    "admission": "Requires the separately receipt-bound reference bridge; this manifest is not evidence."
+  }
+}

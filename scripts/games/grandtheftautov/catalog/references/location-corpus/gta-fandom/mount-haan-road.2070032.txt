@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=MountHaanRoad-Street-GTAV.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Marlowe Drive]], [[Vinewood Hills]]
+|end=[[Baytree Canyon Road]], [[Great Chaparral]]
+|map=<gallery>
+MountHaanRoad-GTAV-Map.png|Map
+MountHaanRoad-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Mount Haan Road '''is a two way road located in [[Los Santos County]] in {{V}} and {{O}}, that begins at [[Marlowe Drive]] in [[Vinewood Hills]] and ends at [[Baytree Canyon Road]] in [[Great Chaparral]].
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

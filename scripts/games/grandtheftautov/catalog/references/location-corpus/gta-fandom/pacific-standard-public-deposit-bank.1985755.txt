@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|bank        = y
+|name           = Pacific Standard Public Deposit Bank
+|sign           = PacificStandardBank-GTAV-Logo.png
+|image          = PacificStandardPublicDepositBank-GTAV.png
+|caption        = Overview of the building.
+|structure_type = Bank
+|opened         = [[1903]]
+|games          = {{games|V=y|O=y}}
+|location       = [[Alta Street]] and [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Downtown Vinewood]]
+|accessible     = Yes
+|map            = PacificStandardPublicDepositBank-GTAV-Map.png
+|map_caption    = Location on the map (red).
+|reference=First National Bank of Hollywood}}
+
+[[LEAD]]
+The '''Pacific Standard Public Deposit Bank''' is a public deposit bank in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Banks
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Businesses in GTA Online
+Businesses in GTA V
+Low-rise buildings

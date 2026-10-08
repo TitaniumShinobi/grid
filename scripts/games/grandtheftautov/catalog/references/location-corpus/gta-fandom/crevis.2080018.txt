@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{infobox business
+|image = Crevis-GTA4-logo.png
+|caption =
+|bawsaq = {{BAWSAQ/Slider}} '''CRE'''
+|games = ''[[Grand Theft Auto IV]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|name = Crevis
+|taglines = "''Discover the unknown''"<br>"''Never stop pretending''"<br>"''Built for survival''"
+|type = Casual Clothing/Streetwear
+|locations = 
+* [[Montauk Avenue]], [[Downtown Broker]]
+* [[Nickel Street]], [[Middle Park East]]
+|reference = [[wp:Adidas|Adidas]]<br>[[wp:The North Face|The North Face]]
+}}
+
+[[LEAD]]
+'''Crevis''' is a clothing company in the [[HD Universe]]. The player can buy stocks from them in the [[Bawsaq.com]] website in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Commercials
+Fashion brands

@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Oriental Theater
+|type = Theater/Cinema
+|owner = 
+|location = [[Vinewood Blvd]] in [[Downtown Vinewood]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = [[Meltdown (GTA V)|Meltdown]]
+|employee = 
+}}
+
+[[LEAD]]
+The '''Oriental Theater''' is a theater/cinema located on [[Vinewood Blvd]] in [[Downtown Vinewood]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The theater opened in [[1928]] and on the opening night riots broke out as fans attempted to take up-skirt pictures of silent film actress [[Miriam Turner]]. A number of films premiered at the cinema and in [[2013]] the film [[Capolavoro]] returns to the theater. During the mission [[Meltdown (GTA V)|Meltdown]], the [[Meltdown (film)|film of the same name]] is being premiered at the theater with director [[Anton Beaudelaire]], producers [[Solomon Richards]] and [[Michael De Santa]], and actor [[Milton McIlroy]] appearing on the red carpet with [[Lazlow Jones|Lazlow]] one of the many people interviewing those behind the film. Michael, however, quickly leaves the premiere after being told by [[Richards Majestic]] co-owner that [[Merryweather Security Consulting]] mercenaries were going to kill his [[Amanda De Santa|wife]] and [[Tracey De Santa|daughter]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

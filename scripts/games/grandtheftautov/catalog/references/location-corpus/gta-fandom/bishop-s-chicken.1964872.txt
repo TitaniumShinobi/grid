@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fastfood
+|name          = Bishop's Chicken
+|image         = Bishop'sChicken-GTAV-Logo.png
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Fast food chicken restaurant
+|founded       = 
+|founder       = 
+|taglines      = ''Taste You Can't Bash!''
+|status        = active
+|accessible    = 
+|lcn           = 
+}}
+
+[[LEAD]]
+'''Bishop's Chicken''' is a fast-food restaurant chain specializing in [[chicken]]-based food products that is featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px" hideaddbutton="true">
+Bishop'sChicken-GTAV-Davis.png|[[Davis Avenue]], [[Davis]], [[Los Santos (HD Universe)|Los Santos]].
+Bishop'sChicken-GTAV-TataviamMts.png|[[Tataviam Truckstop]], [[Tataviam Mountains]], [[Los Santos County]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Chicken restaurants
+Fast-food restaurant chains

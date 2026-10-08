@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 1561 San Vitas Street
+|image = 1561_San_Vitas_Street_1.jpg
+|caption = The exterior of the building during the morning.
+|game = O
+|location = [[San Vitus Boulevard]], [[West Vinewood]]
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end apartment
+|garage = 2 vehicles <br /> 1 bike
+|price = [[Money|$]]99,000<br>FREE <small>(with [[Criminal Enterprise Starter Pack]])</small>
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5}}
+
+[[LEAD]]
+'''1561 San Vitas St, Apt 2''' is a [[Safehouses in GTA Online|safehouse]] located on [[San Vitus Boulevard]] in [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]], featured in ''[[Grand Theft Auto Online]]''.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]99,000 and includes a 2-car garage.
+
+If the player has purchased the [[Criminal Enterprise Starter Pack]], this apartment will be available for FREE.
+
+[[CATEGORIES]]
+Safehouses in GTA Online

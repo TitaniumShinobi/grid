@@ -1,0 +1,55 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|purchasable   = 
+|type          = cosmetics
+|name          = Pharaoh Cosmetics
+|sign          = PharaohCosmetics-GTAV-Logo.png
+|image         = PharaohCosmetics-GTAIV-StevenWalshPortfolioGreyLogo.png
+|caption       = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations_2|See more]])
+|business_type = Cosmetics manufacturer and store
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = [[#Products|Products]]
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Pharaoh Cosmetics''' is a manufacturer of cosmetics in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[SECTION:3:Locations]]
+*There is a Pharaoh Cosmetics store on [[Prosperity Street Promenade]] in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]], inspired by the Sephora store on the Third Street Promenade in Santa Monica, California.
+
+{{clr}}
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+PharaohCosmetics-GTAIV-TheTriangle.jpg|[[The Triangle]], [[Algonquin]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small" widths="270px">
+PharaohCosmetics-GTAVe-ProsperityStreetPromenade.png|[[Prosperity Street Promenade]], [[Del Perro]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Cosmetics companies

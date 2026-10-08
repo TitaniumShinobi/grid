@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|name = Air Emu
+|type = [[:Category:Airlines|Airline]]
+|owner = 
+|location = 
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Air Emu''' are an airline in [[Grand Theft Auto V]] and [[Grand Theft Auto V]].
+
+[[CATEGORIES]]
+Airlines
+Businesses in GTA V

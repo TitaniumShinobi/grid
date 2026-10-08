@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = transportation
+|name          = KnoWay
+|image         = KnoWay-GTAO-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mp2025_02}}}}
+|locations     = [[Dorset Drive Office Building|KnoWay Depot]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = Autonomous hailing system
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|divisions     = 
+|employees     = 
+*[[KnoWay Engineer]]
+*[[KnoWay Mercenaries]]
+**[[KnoWay Contact]]
+|products      = 
+|vehicles      = 
+*[[Metrotrain]]
+*[[Vivanite (KnoWay)]]
+|taglines      = 
+*"We Kno where you're going..."
+*"Let us take you for a ride"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''KnoWay''' is an autonomous driving technology company appearing in {{O}} as part of the [[GTA Online: A Safehouse in the Hills|A Safehouse in the Hills]] update, serving as its main group of [[antagonist]]s.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|DorsetDriveOfficeBuilding-GTAOee.png|'''KnoWay'''{{'}}s depot, located in the [[Dorset Drive Office Building]] in [[Rockford Hills]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online: A Safehouse in the Hills
+Taxi companies

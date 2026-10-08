@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Even Architecture & Design
+|image = Even-GTAV-Logo.png
+|type = Architecture company
+|games = ''[[Grand Theft Auto V]]''
+|locations = [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Even Architecture & Design''' is an architecture company in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series that appears in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Construction companies

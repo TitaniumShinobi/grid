@@ -1,0 +1,114 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|image = VehicleWarehouse-GTAO.png
+|style = {{HUDIcons|game=O|warehousevehicle|animated=y}} Warehouse
+|occupants =
+*[[GTA Online Protagonist]]
+*[[Motorcycle Clubs]] <small>(determinant)</small>
+*[[Organizations]] <small>(determinant)</small>
+|price = [[Money|$]]1,500,000 - $2,850,000
+|game = O
+}}
+
+[[LEAD]]
+'''Vehicle Warehouses''' are [[Properties in GTA Online|properties]] featured in {{O}} added as part of the [[GTA Online: Import/Export|Import/Export]] update. They are available to buy once the player registers as a CEO and buys an [[Office]]. These are the vehicle counterparts of the [[Warehouses]].
+
+[[SECTION:2:Interior]]
+The interior layout is the same for all of the warehouses, the only difference being the interior decorations that can be added during purchase or later redecorated.
+
+The interiors of the vehicle warehouse have an office with a laptop computer, sleeping arrangements, a vending machine and a closet for changing clothes. On the other side of the office is a mod shop that is used for repairs and to mod vehicles for special sales (the only time the player interacts with the mod shop is when preparing a vehicle for sale; it cannot be used outside of sell missions). There is also an [[Underground Garage|underground storage]] for special vehicles that were released in the update.
+
+Scattered around the interior are various tools and machinery, some reused from other garages such as [[Los Santos Customs]] and [[Benny's Original Motor Works]], while others are entirely new. Various tool companies are used, including [[Device]], [[Power Metal]], [[Hard Stand]], [[Strokemaster]] and [[Flint]]. The color of various equipment, particularly storage facilities, change depending on the interior theme.
+
+The three interior options do not change the layout nor props used inside the warehouse, but completely redo the walls, floors and paint scheme used in the warehouse. For example, the "Basic" option (standard) uses a relatively rundown appearance, sharing textures from [[Hayes Autos]]. the "Urban" option is slightly more worn and faded than the default scheme, but has decorative graffiti on the walls. The "Branded" option is the most clean out of all options, having a blue floor and white/purple walls. As well as the cleaned appearance, various posters are hung from walls, including vehicle company [[Vehicle Brands|brand]] names such as [[Mammoth]], [[Declasse]], [[Albany]], and [[Willard (HD Universe manufacturer)|Willard]], as well as various auto-related companies such as [[Atomic]], [[Fukaru]], [[Chepalle]] and [[Sumo]].
+
+Over time, prop versions of cars covered with a cloak will spawn in the garage. The vehicles underneath don't resemble the car it replaces, however. There are 7 prop models which resemble covered versions of the [[Turismo R]], [[Coquette Classic]], [[Tampa]], [[Roosevelt]], [[Baller]] (first generation), [[Omnis]] and [[Z-Type]].
+
+{| class="wikitable" align="center"
+!Name
+!Images
+!Price
+|-
+|Basic
+|[[File:BasicInterior-GTAO-VehicleWarehouse.png|center|400px]]
+|$125,000*
+|-
+|Urban
+|[[File:UrbanInterior-GTAO-VehicleWarehouse.png|center|400px]]
+|$230,000
+|-
+|Branded
+|[[File:BrandedInterior-GTAO-VehicleWarehouse.png|center|400px]]
+|$295,000
+|}
+<nowiki>*</nowiki>''Comes with vehicle warehouse purchase''
+
+[[SECTION:2:Locations]]
+There are a total of nine vehicle warehouses available to purchase. All Vehicle Warehouses are available to purchase through the [[SecuroServ|SecuroServ Network]] on the main computer portal at the player's [[Office]]. The price of the warehouse reflects the convenience of the warehouse's location, the cheapest being in rather narrow, restricted areas or areas with high gang activity, while the more expensive locations are open space, allowing the [[Cargobob (HD Universe)|Cargobob]] to become more useful. All Vehicle Warehouses are located in the [[Los Santos County]] area, more specifically the southern and eastern areas.
+
+{| class="wikitable sortable"
+!Name
+!Images
+!Description
+!Price
+!Location
+|-
+|Cypress Flats Vehicle Warehouse
+|[[File:CypressFlats-GTAO-VehicleWarehouse.png|thumb]][[File:CypressFlats-GTAO-VehicleWarehouseExterior.png|thumb]]
+|"''There's no more discreet place to locate a gigantic storage unit than in a neighborhood full of other gigantic storage units. And compared to them, whatever you're planning will almost look legal.''"
+|$2,675,000
+|[[Cypress Flats]]
+|-
+|Davis Vehicle Warehouse
+|[[File:Davis-GTAO-VehicleWarehouse.png|thumb]][[File:Davis-GTAO-VehicleWarehouseExterior.png|thumb]]
+|"''Does it qualify as a bonded warehouse if the government just doesn't know it exists? We think so, and we've got another warehouse full of lawyers who'll say the same. On the market for a limited time only.''"
+|$2,495,000
+|[[Davis]]
+|-
+|El Burro Heights Vehicle Warehouse
+|[[File:ElBurro-GTAO-VehicleWarehouse.png|thumb]][[File:ElBurroHeights-GTAO-VehicleWarehouseExterior.png|thumb]]
+|"''Who would locate an off-the-books vehicle depot in the middle of a suburban wasteland where the white picket fences got burned for fuel a decade ago? A visionary venture capitalist with an eye on privacy, that's who.''"
+|$1,635,000
+|[[El Burro Heights]]
+|-
+|Elysian Island Vehicle Warehouse
+|[[File:ElysianIsland-GTAO-VehicleWarehouse.png|thumb]][[File:ElysianIsland-GTAO-VehicleWarehouseExterior.png|thumb]]
+|"''In a recent survey of warehouse owners in the port area of Los Santos, 94% self-identity as radical entrepreneurs while only 2% could spell the word 'tax'. Welcome home.''"
+|$1,950,000
+|[[Elysian Island]]
+|-
+|La Mesa Vehicle Warehouse
+|[[File:LaMesa-GTAO-VehicleWarehouse.png|thumb]][[File:LaMesa-GTAO-VehicleWarehouseExterior.png|thumb]]
+|"''Sure, this part of La Mesa won the LSPD's "Most Gang-Related Stabbings" award three years running. But the previous owner of this spacious depot had the largest collection of authentic Customs and Border Protection agency badges in the state, and his widow is throwing them in as a sweetener. You can't say fairer than that.''"
+|$1,500,000
+|[[La Mesa]]
+|-
+|La Puerta Vehicle Warehouse
+|[[File:LaPuerta-GTAO-VehicleWarehouse.png|thumb]][[File:LaPuerta-GTAO-VehicleWarehouseExterior.png|thumb]]
+|"''If buying a red brick warehouse in a blue collar neighborhood and filling it with unregistered super cars doesn't count as gentrification, then nothing does. Throw in a flat white served in a chemistry beaker and consider this community regenerated.''"
+|$2,735,000
+|[[La Puerta]]
+|-
+|LSIA Vehicle Warehouse
+|[[File:LSIA-GTAO-VehicleWarehouse.png|thumb]][[File:LSIA-GTAO-VehicleWarehouseExterior.png|thumb]]
+|"''If you want your business to inspire the masses, this is the location for you. Because when they're queuing for another cavity search at LSIA, the sight of you stepping off your private jet to take delivery of a million dollar hypercar will be just the motivation they need to get off their asses and start being incredibly rich.''"
+|$2,170,000
+|[[Los Santos International Airport (HD Universe)|LSIA]]
+|-
+|LSIA Vehicle Warehouse
+|[[File:LosSantosInternationalAirport-GTAO-VehicleWarehouse.png|thumb]][[File:LosSantosInternationalAirport-GTAO-VehicleWarehouseExterior.png|thumb]]
+|"''It's a sad day for democracy when political correctness, liberal media elites and nineteen counts of human trafficking conspire to bring down one of the oldest storage companies in the state. Lesson learned: don't deal in goods that can testify against you in court, and this place could serve you for decades to come.''"
+|$2,300,000
+|[[Los Santos International Airport (HD Universe)|LSIA]]
+|-
+|Murrieta Heights Vehicle Warehouse
+|[[File:MurrietaHeights-GTAO-VehicleWarehouse.png|thumb]][[File:MurrietaHeights-GTAO-VehicleWarehouseExterior.png|thumb]]
+|"''Here at SecuroServ, we have a dream that one day everyone living in Murrieta Heights will be a billionaire crimelord with an enormous portfolio of nearly-new luxury cars. But we also know that every journey of a thousand miles begins with a single warehouse full of stolen goods. Step up, be the hope, pocket the change.''"
+|$2,850,000
+|[[Murrieta Heights]]
+|}
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online
+Warehouses

@@ -1,0 +1,136 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=VespucciBoulevard-GTAV.jpg
+|caption=Vespucci Boulevard running through Little Seoul.
+|games={{Games|V=y|O=y}}
+|start=[[El Rancho Boulevard]], [[East Los Santos (HD Universe)|East Los Santos]]
+|end=[[Vespucci Beach Sidewalk]]
+|map=<gallery>
+VespucciBoulevard-GTAV-Map.png|Map
+VespucciBoulevard-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Vespucci Boulevard''' is a major east-west thoroughfare in [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+'''La Mesa'''
+*[[Darnell Bros.]] <small>(corner of Popular Street)</small>
+
+'''Little Seoul'''
+{{Columns
+|
+*[[2057 Vespucci Boulevard]] <small>(corner of Palomino Avenue)</small>
+*[[Arirang Plaza]]
+*[[Decker Park]] <small>(corners of South Rockford Drive and Decker Street)</small>
+*[[Dream Tower]] <small>(corner of Ginger Street)</small>
+*[[Kayton|Kayton Banking Group]] <small>(corner of Ginger Street)</small>
+|
+*[[Korean Pavilion]] <small>(corner of Decker Street)</small>
+*[[Los Santos Hoard House]] <small>(corner of Palomino Avenue)</small>
+*Sunshine Apartments <small>(corner of Ginger Street)</small>
+*[[La Puerta Apartments]] <small>([[STD Contractors|STD]] construction site, corner of Calais Avenue)</small>
+}}
+
+'''Mission Row'''
+*[[Mission Row Police Station]] <small>(corner of Sinner Street)</small>
+*[[Templar Hotel]] <small>(x2)</small>
+*[[The Vault]] <small>(corner of Strawberry Avenue)</small>
+
+'''Murrieta Heights'''
+*[[120 Murrieta Heights]]
+
+'''Pillbox Hill'''
+{{Columns
+|
+*[[707 Vespucci]] <small>(corners of Peaceful Street and Alta Street)</small>
+*[[Hookah Palace]] <small>(corner of Power Street)</small>
+*[[Lombank Building (GTA V)|Lombank Building]] <small>(corner of Power Street)</small>
+*[[Maze Bank Tower]] <small>(corners of Alta Street and Power Street)</small>
+|
+*[[Mile High Club]] <small>(corners of Alta Street and Power Street)</small>
+*[[Quik House]] <small>(4 Vespucci Boulevard, corner of Peaceful Street)</small>
+*[[The Emissary]] <small>(corner of Elgin Avenue)</small>
+}}
+
+'''Vespucci'''
+*[[Vespucci Police Station]] <small>(parking lot entrance, corner of South Rockford Drive)</small>
+*[[Venetian]] <small>(corners of Magellan Avenue and Vespucci Beach Sidewalk)</small>
+
+[[SECTION:2:Businesses]]
+'''La Mesa'''
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]] <small>(325 Vespucci Boulevard</small>)
+*Léyer
+*[[National Transfer and Storage Co.]] <small>(12724 Vespucci Boulevard, corner of Popular Street)</small>
+*[[RON]] [[Filling Stations|Gas station]] <small>(corner of Popular Street)</small>
+
+'''Little Seoul'''
+{{Columns
+|
+*[[24/7 (HD Universe)|24/7]]
+*Big Dan Vision Optometry
+*[[Blick]]
+*[[Digital Den]] <small>(corner of Palomino Avenue)</small>
+*[[Caesars Auto Parking]] <small>(corner of Calais Avenue)</small>
+*Look-See Opticians <small>(486 Vespucci Boulevard)</small>
+*[[Lucky Plucker]] <small>(opening soon, corner of Palomino Avenue)</small>
+|
+*[[S. Ho Korean Noodle House]]
+*[[Save-A-Cent]]
+*[[The Bean Machine]] <small>(opposite Arirang Plaza)</small>
+*[[The Bean Machine]] <small>(corner of Palomino Avenue)</small>
+*[[TW@ (HD Universe)|Totally Wireless]] <small>(opposite Arirang Plaza)</small>
+*[[TW@ (HD Universe)|TW@]] <small>(opposite Arirang Plaza)</small>
+*[[Yogarishima]] <small>(corner of Calais Avenue)</small>
+}}
+
+'''Mission Row'''
+{{Columns
+|
+*Cash Advance Loans
+*Downtown Liquor Deli
+*Family Pharmacy
+*[[Ground & Pound Café]] <small>(corner of Sinner Street)</small>
+*[[Limey's Juice and Smoothies|Limey's]] <small>(corner of Strawberry Avenue)</small>
+|
+*[[J's Bonds]] <small>(x2)</small>
+*La Moda
+*[[O'Deas Pharmacy]]
+*Pipe Down Cigars
+*[[Rusty Brown's Ring Donuts (HD Universe)|Rusty Brown's]]
+}}
+
+'''Murrieta Heights'''
+*[[Maibatsu Corporation (HD Universe)|Maibatsu Motors Inc.]] <small>(corner of Supply Street)</small>
+*Mexican and American <small>(corner of El Rancho Boulevard)</small>
+
+'''Pillbox Hill'''
+{{Columns
+|
+*Bar Fès & Restaurant <small>(at Hookah Palace)</small>
+*[[Bite!]]
+*Cafe Morocco <small>(at Hookah Palace)</small>
+*[[Chihuahua Hotdogs]]
+*[[Fleeca|Fleeca Bank]] <small>(accessible interior)</small>
+*Frenchie's Restaurant <small>(at The Emissary)</small>
+*[[GoPostal]] <small>(at 707 Vespucci)</small>
+*[[Gruppe Sechs (HD Universe)|Gruppe Sechs]] <small>(at 707 Vespucci)</small>
+|
+*[[Hotel Wisdahl]] <small>(corner of Elgin Avenue)</small>
+*[[LS Quik]] <small>(at Quik House)</small>
+*[[San Andreas Parking Counsel]]
+*Spines Bookshop
+*[[The Bean Machine]]
+*[[The Bean Machine]] <small>(corner of Elgin Avenue)</small>
+*[[Post OP]] <small>(corner of Alta Street)</small>
+}}
+
+'''Vespucci'''
+*A&R Market <small>(corner of Magellan Avenue)</small>
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

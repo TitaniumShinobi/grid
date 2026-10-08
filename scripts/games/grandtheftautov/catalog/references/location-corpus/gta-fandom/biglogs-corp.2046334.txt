@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Biglogs Corp.
+|image_label   = O
+|image         = Biglogs-GTAO-Logo.png
+|caption       = Current logo.
+|image_label2  = IV
+|image2        = BigLogs-Logo.png
+|caption2      = Former logo.
+|type        = Cereal Manufacturer
+|founded     = [[1908]] <small>({{HD}})</small>
+|games       = {{Games|SA=y|VCS=y|IV=y|EFLC=y|V=y|O=y}}
+|locations   = 125 Liberty Boulevard, [[Algonquin]]
+|taglines    = ''"Everybody loves Biglogs in the morning"''
+|reference   = [[wp:Kellogg's|Kellogg's]]
+}}
+
+[[LEAD]]
+'''Biglogs''' is a company that produces breakfast cereals featured in both the {{3D}} and {{HD}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA Vice City Stories
+Food and drink companies

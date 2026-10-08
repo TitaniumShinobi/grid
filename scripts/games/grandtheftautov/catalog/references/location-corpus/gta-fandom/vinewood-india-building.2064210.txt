@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = RETAIL CENTER
+|image = VinewoodIndiaBuilding-GTAV-Thumbnail.jpg
+|location = 6069 [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Vinewood (HD Universe)|Vinewood]],  [[Los Santos (HD Universe)|Los Santos]]
+|games = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''Vinewood India Building''' is a retail space in {{V}} and {{O}}, located at 6069 [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]] in [[Vinewood (HD Universe)|Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

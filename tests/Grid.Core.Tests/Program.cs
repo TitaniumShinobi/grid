@@ -1,4 +1,4 @@
-﻿using System.Collections.Immutable;
+using System.Collections.Immutable;
 using System.Text.Json;
 using Grid.Core.Application;
 using Grid.Core.Models;
@@ -6,15 +6,138 @@ using Grid.Core.Services;
 using MockLaunchTargetState = Grid.Core.Application.LaunchTargetSelectionState;
 using MockWorkspaceSessionState = Grid.Core.Application.WorkspaceSessionState;
 
+if (args.Length == 1 && args[0] == "--registration-engine-compatibility")
+{
+    var coreChecks = CanonicalKnowledgeKernelChecks.Run();
+    var packageChecks = await CanonicalCatalogPackageImportChecks.RunAsync();
+    var preparedChecks = await PreparedCanonicalNavigationChecks.RunAsync();
+    var packageFactory = typeof(CanonicalCatalogPackageImportChecks).GetMethod("CreatePackage", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static)!;
+    var package = (CanonicalCatalogPackage)packageFactory.Invoke(null, ["registration-legacy", (byte)0x61])!;
+    var legacyChecks = await CanonicalRegistrationEngineChecks.VerifyLegacyAsync(package);
+    Console.WriteLine($"Passed registration compatibility: kernel={coreChecks}, packages={packageChecks}, prepared={preparedChecks}, legacy={legacyChecks}.");
+    return;
+}
+
+if (args.Length > 0 && args[0] == "--registration-engine-proof")
+{
+    if (args.Length != 3) throw new ArgumentException("Usage: --registration-engine-proof <repository-root> <proof-output>");
+    var registrationChecks = await CanonicalRegistrationEngineChecks.RunAsync(args[1], args[2]);
+    Console.WriteLine($"Passed {registrationChecks} independent canonical registration proof checks.");
+    return;
+}
+
+if (args.Length > 0 && args[0] == "--relationship-registration-proof")
+{
+    if (args.Length != 3) throw new ArgumentException("Usage: --relationship-registration-proof <repository-root> <proof-output>");
+    var relationshipChecks = await CanonicalRelationshipRegistrationChecks.RunAsync(args[1], args[2]);
+    Console.WriteLine($"Passed {relationshipChecks} relationship registration proof checks.");
+    return;
+}
+
+if (args.Length > 0 && args[0] == "--gta-v-location-population-2a-iii-proof")
+{
+    if (args.Length != 3) throw new ArgumentException("Usage: --gta-v-location-population-2a-iii-proof <repository-root> <proof-output>");
+    var populationChecks = await GtaVLocationPopulation2AIIIChecks.RunAsync(args[1], args[2]);
+    Console.WriteLine($"Passed {populationChecks} GTA V Enhanced Location population 2.A.III proof checks.");
+    return;
+}
+
+if (args.Length > 0 && args[0] == "--gta-v-location-saturation-proof")
+{
+    if (args.Length != 3) throw new ArgumentException("Usage: --gta-v-location-saturation-proof <repository-root> <proof-output>");
+    var saturationChecks = await GtaVLocationRegistrationSaturationChecks.RunAsync(args[1], args[2], live: false);
+    Console.WriteLine($"Passed {saturationChecks} GTA V Enhanced Location registration saturation proof checks.");
+    return;
+}
+
+if (args.Length > 0 && args[0] == "--gta-v-location-saturation-live-proof")
+{
+    if (args.Length != 3) throw new ArgumentException("Usage: --gta-v-location-saturation-live-proof <repository-root> <proof-output>");
+    var saturationLiveChecks = await GtaVLocationRegistrationSaturationChecks.RunAsync(args[1], args[2], live: true);
+    Console.WriteLine($"Passed {saturationLiveChecks} GTA V Enhanced Location registration saturation LIVE checks.");
+    return;
+}
+
+if (args.Length > 0 && args[0] == "--catalog-store-repair-remove-package")
+{
+    if (args.Length != 5) throw new ArgumentException("Usage: --catalog-store-repair-remove-package <store-path> <package-id> <expected-restored-sha256> <backup-path>");
+    Console.WriteLine(await new JsonCanonicalKnowledgeCatalogStore(args[1]).RepairRemoveImportedPackageAsync(
+        new CatalogPackageId(args[2]), args[3], args[4]));
+    return;
+}
+
+if (args.Length > 0 && args[0] == "--catalog-store-diagnose")
+{
+    if (args.Length != 2) throw new ArgumentException("Usage: --catalog-store-diagnose <store-path>");
+    var diagnosed = await new JsonCanonicalKnowledgeCatalogStore(args[1]).LoadAsync();
+    Console.WriteLine($"valid={diagnosed.IsValid} revision={diagnosed.Snapshot.Revision} issues={diagnosed.Issues.Length}");
+    foreach (var issue in diagnosed.Issues.Take(20)) Console.WriteLine("  issue: " + (issue.Length > 1200 ? issue[..1200] : issue));
+    foreach (var imported in diagnosed.Snapshot.ImportedPackages) Console.WriteLine("  package: " + imported.Id.Value);
+    return;
+}
+
+if (args.Length > 0 && args[0] == "--gta-v-location-population-2a-iii-live-proof")
+{
+    if (args.Length != 3) throw new ArgumentException("Usage: --gta-v-location-population-2a-iii-live-proof <repository-root> <proof-output>");
+    var liveChecks = await GtaVLocationPopulation2AIIIChecks.RunLivePublicationAsync(args[1], args[2]);
+    Console.WriteLine($"Passed {liveChecks} GTA V Enhanced Location population 2.A.III LIVE publication checks.");
+    return;
+}
+
+if (args.Length == 1 && args[0] == "--prepared-navigation-only")
+{
+    var preparedChecks = await PreparedCanonicalNavigationChecks.RunAsync();
+    var projectionChecks = CanonicalGtaAdaptiveProjectionChecks.Run();
+    var draftChecks = InvestigationTicketDraftChecks.Run();
+    Console.WriteLine($"Passed prepared={preparedChecks}, projection={projectionChecks}, draft={draftChecks} checks.");
+    return;
+}
+if (args.Length == 2 && args[0] == "--canonical-runtime-capture")
+{
+    CanonicalSelectorRuntimeChecks.Capture(args[1]);
+    return;
+}
+if (args.Length == 1 && args[0] == "--startup-instrumentation")
+{
+    var instrumentationChecks = StartupReceiptChecks.Run();
+    var regressionChecks = StartupRegressionChecks.Run();
+    Console.WriteLine($"Passed startup instrumentation checks ({instrumentationChecks}) and regression checks ({regressionChecks}).");
+    return;
+}
+if (args.Length == 1 && args[0] == "--startup-regression")
+{
+    var regressionChecks = StartupRegressionChecks.Run();
+    Console.WriteLine($"Passed {regressionChecks} startup regression checks.");
+    return;
+}
+if (args.Length == 1 && args[0] == "--canonical-runtime-focused")
+{
+    var selectorChecks = CanonicalSelectorAndInstructionChecks.Run();
+    var gtaAdaptiveChecks = CanonicalGtaAdaptiveProjectionChecks.Run();
+    var runtimeChecks = CanonicalSelectorRuntimeChecks.Run();
+    var validationChecks = await CanonicalSelectorRuntimeChecks.RunStoreValidationAsync();
+    var storeChecks = await CanonicalKnowledgeCatalogStoreChecks.RunAsync();
+    var focusedChecks = selectorChecks + gtaAdaptiveChecks + runtimeChecks + validationChecks + storeChecks;
+    Console.WriteLine($"Selector={selectorChecks}; GtaAdaptive={gtaAdaptiveChecks}; Runtime={runtimeChecks}; Validation={validationChecks}; Store={storeChecks}.");
+    Console.WriteLine($"Passed {focusedChecks} focused canonical runtime checks.");
+    return;
+}
+
 var checks = 0;
 checks += CanonicalKnowledgeKernelChecks.Run();
 checks += CanonicalLocationContractChecks.Run();
+checks += CanonicalRegistrationRefreshChecks.Run();
+checks += CanonicalRelationshipRegistrationMdboChecks.Run();
+checks += GtaVLocationPopulation2AIIIChecks.Run();
 checks += CanonicalSelectorAndInstructionChecks.Run();
+checks += CanonicalGtaAdaptiveProjectionChecks.Run();
 checks += await CanonicalKnowledgeCatalogStoreChecks.RunAsync();
 checks += await CanonicalCatalogPackageImportChecks.RunAsync();
 checks += await CrossSourceCanonicalAssertionChecks.RunAsync();
 checks += await UniversalKnowledgeContractChecks.RunAsync();
 checks += InvestigationTicketDraftChecks.Run();
+checks += StartupReceiptChecks.Run();
+checks += StartupRegressionChecks.Run();
 checks += await AssistantCanonicalDraftStateChecks.RunAsync();
 var service = new MockGridCatalogService();
 var catalog = await service.GetCatalogAsync();
@@ -2185,13 +2308,14 @@ executableAssistant.SetComposerText("This remains a user claim until evidence su
 executableAssistant.SetExpectedBehavior("The profile should have complete compatible assets.");
 executableAssistant.SetReproductionOrLocation("The selected installation and profile.");
 executableAssistant.SetDesiredOutcome("Produce a read-only evidence-backed diagnosis.");
+var skyrimProjectionPolicy = CanonicalSelectorProjectionPolicyResolver.ResolveForGame(skyrim.Id);
 var authorizedCanonicalSelection = new CanonicalSelectorSelection(
     CanonicalSelectorSelectionKind.CanonicalRecord,
     KnowledgeKind.Location,
     new CatalogRevisionId("grid.catalog-revision.v5.sha256." + new string('5', 64)),
     new CatalogCompositionId("composition.authorization-drift.fixture"),
-    CanonicalSelectorProjectionPolicy.V1.Id,
-    CanonicalSelectorProjectionPolicy.V1.ExactVersion,
+    skyrimProjectionPolicy.Id,
+    skyrimProjectionPolicy.ExactVersion,
     new CanonicalNavigationPathId("grid.canonical-navigation-path.v1.sha256." + new string('6', 64)),
     new KnowledgeRecordId("grid.knowledge-record.v1.sha256." + new string('7', 64)),
     null);

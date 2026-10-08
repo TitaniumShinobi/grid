@@ -1,3 +1,5 @@
+using System.Collections.Immutable;
+using System.Globalization;
 using Grid.Core.Models;
 using Grid.Core.Services;
 using Grid.App.Services;
@@ -33,7 +35,15 @@ public sealed record GridCompositionRoot(
     IOfflineAlertIndexStore? OfflineAlertIndexStore = null,
     IGameInstallationRegistrationStore? GameRegistrationStore = null,
     IVortexInstallationConnectionStore? VortexConnectionStore = null,
-    GridProviderDiscoveryService? ProviderDiscoveryService = null)
+    GridProviderDiscoveryService? ProviderDiscoveryService = null,
+    GridProfileEnvironmentResolver? ProfileEnvironmentResolver = null,
+    GridExistingProfileDiscoveryService? ExistingProfileDiscoveryService = null,
+    IUserToolConfigurationStore? UserToolConfigurationStore = null,
+    IInstalledToolKnowledgeStore? InstalledToolKnowledgeStore = null,
+    IInstalledToolIdentityService? InstalledToolIdentityService = null,
+    IUserToolLaunchService? UserToolLaunchService = null,
+    CanonicalCatalogRuntimeService? CanonicalCatalogRuntimeService = null,
+    CanonicalRegistrationRefreshService? CanonicalRegistrationRefreshService = null)
 {
     public bool IsDemo => Mode == GridApplicationMode.Demo;
 
@@ -42,22 +52,25 @@ public sealed record GridCompositionRoot(
         new MockGridCatalogService(),
         new InMemoryUserHistoryStore());
 
-    public static GridCompositionRoot CreateProduction()
+    /// <summary>
+    /// Creates the state-free Production shell used before authentication.
+    /// Account-owned services must not be composed until a stable account
+    /// identity is available.
+    /// </summary>
+    public static GridCompositionRoot CreateProductionShell() => new(
+        GridApplicationMode.Production,
+        new ProductionGridCatalogService(),
+        new InMemoryUserHistoryStore());
+
+    public static GridCompositionRoot CreateProduction(string stableAccountId)
     {
         var fileSystem = new Mo2FileSystem();
         var pathCanonicalizer = new WindowsPathCanonicalizer();
         var localApplicationData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         var systemDriveRoot = Path.GetPathRoot(Environment.SystemDirectory) ?? "C:\\";
         var globalInstancesRoot = Path.Combine(localApplicationData, "ModOrganizer");
-        var gridDataRoot = Environment.GetEnvironmentVariable("GRID_DATA_ROOT");
-        if (string.IsNullOrWhiteSpace(gridDataRoot))
-        {
-            gridDataRoot = Path.Combine(localApplicationData, "Grid");
-        }
-        else
-        {
-            gridDataRoot = Path.GetFullPath(gridDataRoot);
-        }
+        var baseDataRoot = GridAccountDataScope.ResolveBaseDataRoot();
+        var gridDataRoot = GridAccountDataScope.Resolve(baseDataRoot, stableAccountId);
         var referenceStore = new Mo2InstallationReferenceStore(
             fileSystem,
             pathCanonicalizer,
@@ -135,7 +148,8 @@ public sealed record GridCompositionRoot(
             Path.Combine(gridDataRoot, "connections", "game-installations.v1.json"));
         var vortexConnectionStore = new JsonVortexInstallationConnectionStore(
             Path.Combine(gridDataRoot, "connections", "vortex-installations.v1.json"));
-        var registeredGames = new RegisteredGameCatalogService(new ProductionGridCatalogService(), gameRegistrationStore);
+        var supportedGames = new VortexSupportedGameCatalogService(new ProductionGridCatalogService());
+        var registeredGames = new RegisteredGameCatalogService(supportedGames, gameRegistrationStore);
         var vortexGames = new VortexCatalogService(registeredGames, vortexConnectionStore);
         var catalog = new Mo2CatalogService(
             vortexGames,
@@ -166,6 +180,36 @@ public sealed record GridCompositionRoot(
         var providerDiscoveryService = new GridProviderDiscoveryService(
             Path.Combine(AppContext.BaseDirectory, "RequestEngine", "scripts", "health", "Invoke-GridProviderDiscovery.ps1"),
             Path.Combine(gridDataRoot, "discovery", "provider-scan.v1.json"));
+        var mo2DiscoveryOptions = new Mo2DiscoveryOptions(
+            localApplicationData, systemDriveRoot, ProductionGridCatalogService.SkyrimSpecialEditionId);
+        var profileEnvironmentResolver = new GridProfileEnvironmentResolver(
+            new Mo2ProfileEnvironmentResolutionService(
+                discovery,
+                validator,
+                profileSnapshots,
+                inventories,
+                profileAuthorization,
+                modsAuthorization,
+                pathCanonicalizer,
+                fileSystem),
+            mo2DiscoveryOptions);
+        var existingProfileDiscoveryService = new GridExistingProfileDiscoveryService([
+            new Mo2ExistingProfileDiscoveryAdapter(profileEnvironmentResolver, pathCanonicalizer),
+        ]);
+        var userToolConfigurationStore = new JsonUserToolConfigurationStore(
+            Path.Combine(gridDataRoot, "connections", "tool-launch-configurations.v1.json"));
+        var installedToolKnowledgeStore = new JsonInstalledToolKnowledgeStore(
+            Path.Combine(gridDataRoot, "evidence", "tool-identity-resolutions.v1.json"));
+        var installedToolIdentityService = new PowerShellInstalledToolIdentityService(
+            Path.Combine(AppContext.BaseDirectory, "RequestEngine", "scripts", "health", "Get-GridInstalledToolIdentity.ps1"));
+        var userToolLaunchService = new WindowsUserToolLaunchService();
+        var canonicalCatalogRuntimeService = CreateCanonicalCatalogRuntimeService(baseDataRoot);
+        var uiCulture = CultureInfo.CurrentUICulture;
+        var fallbackTags = uiCulture.Name.StartsWith("en", StringComparison.OrdinalIgnoreCase)
+            ? ImmutableArray<string>.Empty
+            : ImmutableArray.Create("en");
+        var terminologyLocale = new CanonicalTerminologyLocalePreference(uiCulture.Name, fallbackTags);
+        var canonicalRegistrationRefreshService = new CanonicalRegistrationRefreshService(baseDataRoot, terminologyLocale);
 
         return new(
             GridApplicationMode.Production,
@@ -173,7 +217,7 @@ public sealed record GridCompositionRoot(
             new LocalUserHistoryStore(Path.Combine(gridDataRoot, "history", "history.v1.json")),
             validator,
             onboarding,
-            new(localApplicationData, systemDriveRoot, ProductionGridCatalogService.SkyrimSpecialEditionId),
+            mo2DiscoveryOptions,
             profileAuthorization,
             modsAuthorization,
             resolvedService,
@@ -191,6 +235,59 @@ public sealed record GridCompositionRoot(
             OfflineAlertIndexStore: offlineAlertIndexStore,
             GameRegistrationStore: gameRegistrationStore,
             VortexConnectionStore: vortexConnectionStore,
-            ProviderDiscoveryService: providerDiscoveryService);
+            ProviderDiscoveryService: providerDiscoveryService,
+            ProfileEnvironmentResolver: profileEnvironmentResolver,
+            ExistingProfileDiscoveryService: existingProfileDiscoveryService,
+            UserToolConfigurationStore: userToolConfigurationStore,
+            InstalledToolKnowledgeStore: installedToolKnowledgeStore,
+            InstalledToolIdentityService: installedToolIdentityService,
+            UserToolLaunchService: userToolLaunchService,
+            CanonicalCatalogRuntimeService: canonicalCatalogRuntimeService,
+            CanonicalRegistrationRefreshService: canonicalRegistrationRefreshService);
+    }
+
+    private static CanonicalCatalogRuntimeService CreateCanonicalCatalogRuntimeService(string baseDataRoot)
+    {
+        // Canonical packages are shared machine-local knowledge, independent of account-owned state.
+        var catalogsRoot = Path.Combine(baseDataRoot, "catalogs");
+        Directory.CreateDirectory(catalogsRoot);
+        var catalogStorePath = Environment.GetEnvironmentVariable("GRID_CANONICAL_CATALOG_PATH");
+        if (string.IsNullOrWhiteSpace(catalogStorePath))
+            catalogStorePath = Path.Combine(catalogsRoot, CanonicalCatalogRuntimeBindingStore.DefaultCatalogStoreFileName);
+        else
+            catalogStorePath = Path.GetFullPath(catalogStorePath);
+
+        var binding = new CanonicalCatalogRuntimeBindingStore(
+            Path.Combine(catalogsRoot, "canonical-runtime-binding.v1.json")).Load();
+        var allowCandidate = ParseOptionalBooleanEnvironment("GRID_CANONICAL_ALLOW_CANDIDATE") ??
+                             binding?.AllowCandidatePackages ??
+                             false;
+        CatalogPackageId? pinnedPackageId = null;
+        var packageOverride = Environment.GetEnvironmentVariable("GRID_CANONICAL_PACKAGE_ID");
+        if (!string.IsNullOrWhiteSpace(packageOverride))
+            pinnedPackageId = new CatalogPackageId(packageOverride);
+        else if (binding is not null)
+            pinnedPackageId = binding.PackageId;
+
+        var uiCulture = CultureInfo.CurrentUICulture;
+        var fallbackTags = uiCulture.Name.StartsWith("en", StringComparison.OrdinalIgnoreCase)
+            ? ImmutableArray<string>.Empty
+            : ImmutableArray.Create("en");
+        var terminologyLocale = new CanonicalTerminologyLocalePreference(uiCulture.Name, fallbackTags);
+        return new CanonicalCatalogRuntimeService(
+            catalogStorePath,
+            terminologyLocale,
+            allowCandidate,
+            pinnedPackageId,
+            runtimeBindingPath: Path.Combine(catalogsRoot, "canonical-runtime-binding.v1.json"));
+    }
+
+    private static bool? ParseOptionalBooleanEnvironment(string name)
+    {
+        var value = Environment.GetEnvironmentVariable(name);
+        if (string.IsNullOrWhiteSpace(value)) return null;
+        return bool.TryParse(value, out var parsed)
+            ? parsed
+            : throw new InvalidDataException($"Environment variable '{name}' must be 'True' or 'False'.");
     }
 }

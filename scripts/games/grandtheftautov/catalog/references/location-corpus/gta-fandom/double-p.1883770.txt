@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = fashion
+|name          = Double-P
+|image         = Double-P-Logo.png
+|caption       = Pre-[[2015]] logo.
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Hip-hop
+|founded       = 
+|founder       = 
+|products      = [[#Merchandise|Merchandise]]
+|taglines      = "''Airtight Apparel''"
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Double-P''' is a hip-hop fashion brand featured in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Fashion brands

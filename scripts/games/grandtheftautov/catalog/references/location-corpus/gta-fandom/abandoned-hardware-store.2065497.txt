@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = hwstore
+|name           = Abandoned Hardware Store
+|status         = defunct
+|image          = AbandonedHardwareStore-GTAVe-View1.png
+|caption        = View of the exterior.
+|games          = {{games|V=y|O=y}}
+|location       = [[Sandy Shores]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|structure_type = 
+*Hardware store
+*Drug facility
+|condition      = Abandoned
+|occupants      = 
+*[[Los Santos Vagos (HD Universe)|Vagos]]
+*[[Rednecks (GTA V)|Rednecks]]
+|accessible     = Yes <small>(Mission only, ''GTA Online'')</small>
+|file_name      = <code>cs4_03_hardware.ydr</code>
+|map            = ShortTrips-FireItUp-GTAOe-FirstWeedStorage-Map.png
+|map_caption    = Marked on the map during the Short Trip.
+}}
+
+[[LEAD]]
+The '''Abandoned Hardware Store''' is an unnamed building in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Abandoned buildings
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Hardware stores

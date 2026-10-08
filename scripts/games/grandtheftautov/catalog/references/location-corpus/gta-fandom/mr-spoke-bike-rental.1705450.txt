@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = MrSpokeSponsor-GTAV.jpg
+|name = Mr. Spoke Bike Rental
+|taglines = 
+|type = Bike rental
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Mr. Spoke Bike Rental''' is a business featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle rental companies

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Slaughter, Slaughter & Slaughter
+|image = SlaughterSlaughterSlaughter-Logo-GTAV.png
+|lcn = {{BAWSAQ/Slider}} '''SSS'''
+|type = Law Firm
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]]}}
+
+[[LEAD]]
+'''Slaughter, Slaughter & Slaughter''' is a law firm in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The player can invest in it on the [[Lcn-exchange.com|LCN website]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Law firms

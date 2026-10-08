@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{infobox business
+|business = y
+|activebiz = y
+|name = LD Organics
+|sign = LDOrganics-GTAOe-Logo.png
+|image = LDOrganics-GTAOe.png
+|caption = LD Organics in ''[[Grand Theft Auto Online]]''.
+|type = Marijuana business
+|founder = [[Lamar Davis]]
+|founded = c. [[2021]]
+|taglines = ''"Rolling through Los Santos"''
+|games = {{Games|O=y}}
+|locations = [[Forum Drive]], [[Chamberlain Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|map = <gallery>
+LDOrganics-GTAOe-Map.png|Map
+LDOrganics-GTAOe-SatelliteMap.png|Satellite
+</gallery>
+|map_caption = Location in the map (red).
+}}
+
+[[LEAD]]
+'''LD Organics''' is a marijuana business operated by entrepreneur [[Lamar Davis]] in a warehouse located on [[Forum Drive]] in [[Chamberlain Hills]], [[Los Santos (HD Universe)|Los Santos]], in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Contract
+Companies

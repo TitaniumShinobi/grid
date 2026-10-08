@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = modshop
+|name           = Auto Re-Perez
+|sign           = AutoRePerez-GTAV-Logo.png
+|image          = AutoRePerez-GTAVee.jpg
+|caption        = The repair garage as seem from [[Little Bighorn Avenue]].
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type  = 
+|taglines       =
+|map            = 
+|map_caption    = 
+|phone          = 284-555-0139
+}}
+
+[[LEAD]]
+'''Auto Re-Perez''' is an auto repair shop in {{V}} and {{O}} located in [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mod shops

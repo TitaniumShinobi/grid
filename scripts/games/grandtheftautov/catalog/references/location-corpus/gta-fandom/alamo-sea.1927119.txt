@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = LAKE
+|image =
+<gallery>
+AlamoSea-GTAV-West.png|West
+AlamoSea-GTAV-East.png|East
+</gallery>
+|caption =
+|games = {{Games|V=y|O=y}}
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines = "The jewel of San Andreas"
+|height = 798m (2619 ft)
+|map             = <gallery>
+AlamoSea-IngameGPS-GTAV-Map.png|Alamo Sea
+AlamoSea-IngameGPS-GTAV-BlaineCountyMap.jpg|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+|pscanner       = PoliceScanner-GTAV-Neighborhood-TheAlamoSea.ogg
+}}
+
+[[LEAD]]
+The '''Alamo Sea''' is a salt lake in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in the middle of [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[SECTION:2:Roads and Streets]]
+*[[Marina Drive]]
+*[[Calafia Road]]
+*[[Seaview Road]]
+*[[North Calafia Way]]
+
+[[CATEGORIES]]
+Lakes
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Zones

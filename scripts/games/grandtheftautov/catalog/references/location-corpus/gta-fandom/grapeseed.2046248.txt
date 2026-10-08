@@ -1,0 +1,67 @@
+[[INFOBOX]]
+{{Infobox location
+|type        = town
+|image       = Grapeseed-GTAV-Montage.png
+|caption     = A '''Grapeseed''' montage.
+|games       = {{Games|V=y|O=y}}
+|location    = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|motto       = "The Industrial Heart of the Alamo Sea"
+|name        = Grapeseed
+|pscanner    = PoliceScanner-GTAV-Neighborhood-Grapeseed.ogg
+|map         = 
+<gallery>
+Grapeseed-GTAV-Map.png|Grapeseed
+Grapeseed-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption = Location on the map (red) and its HUD boundaries (blue).
+}}
+
+[[LEAD]]
+'''Grapeseed''' is a small rural town located in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in {{V}} and {{O}}. Grapeseed is situated north of [[Sandy Shores]], southwest of [[Mount Gordo]], west of the [[San Chianski Mountain Range]] and sits on the coastline of the [[Alamo Sea]] and the southeastern foot of [[Mount Chiliad (HD Universe)|Mount Chiliad]]. Its slogan is "The Industrial Heart of the Alamo Sea". 
+[[File:Grapeseed-GTAV-Advertisement.jpg|thumb|A billboard in '''Grapeseed'''.]]
+
+[[SECTION:2:Roads and Streets]]
+*[[East Joshua Road]]
+*[[Grapeseed Avenue]]/[[Grapeseed Main Street]]
+*[[Joad Lane]]
+*[[North Calafia Way]]
+*[[O'Neil Way]]
+*[[Seaview Road]]
+*[[Union Road]]
+
+[[SECTION:2:Purchasable Properties]]
+*[[1893 Grapeseed Avenue]]
+*1932 Grapeseed Avenue
+
+[[SECTION:2:Places of Interest]]
+*[[Grapeseed Cow Farm]]
+*[[Grapeseed Train Depot]]
+*[[Lucky Jim's Ranch]]
+*[[McKenzie Field]]
+*[[O'Neil Ranch]]
+*[[Shady Tree Farm]]
+*[[Union Grain Farm]]
+
+[[SECTION:2:Businesses]]
+*[[Alamo Fruit Market]]
+*[[Auto Repairs]]
+*[[Discount Store]]
+*[[Feed Store]]
+*[[Frankie's Service Center]]
+*[[Grapeseed Farmers Market]]
+*[[Grapeseed Supermarket]] {{Small|(Formerly)}}{{Ref|name=Arcade|ref=Replaced by [[Arcades|Wonderama]] Arcade building in December [[2019]], as part of [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update in {{O}} ([[Grand Theft Auto V: Enhanced Edition|Enhanced version]]).}}
+*[[Grape Smugglers Liquor]]
+*[[HJ Silos Galileo Park]]
+*[[LTD Gasoline|Limited Gasoline]]
+*[[Liquor Market]]
+*[[McKenzie Field Hangar]]
+*[[R L Hunter & Sons]]
+*[[The Paint Shop]]
+*[[Arcades|Wonderama Arcade]]
+*[[Xero]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Towns
+Zones

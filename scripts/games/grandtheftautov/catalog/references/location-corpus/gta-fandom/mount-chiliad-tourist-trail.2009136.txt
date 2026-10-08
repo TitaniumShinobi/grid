@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = MountChiliadTouristTrail-GTAV-Poster.png
+|caption = A leaflet advertising the trail on the ''GTA V'' Digital Manual.
+|games = {{Games|V=y|O=y}}
+|Name Change = HIKING TRAIL
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map  = MountChiliadTouristTrail-GTAV-Map.png
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+The '''Mount Chiliad Tourist Trail''' is a hiking trail in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

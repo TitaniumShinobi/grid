@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Electrotoke
+|image = Electrotoke.png
+|type = Tobacco Company
+|taglines    = ''"Chase the digital dragon"''
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Electrotoke''' is an electronic drug pipe manufacturer that appears in [[Grand Theft Auto V|''Grand Theft Auto V'']] and ''[[Grand Theft Auto Online]].''
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Drugs
+Media in GTA V
+Tobacco brands
+Websites

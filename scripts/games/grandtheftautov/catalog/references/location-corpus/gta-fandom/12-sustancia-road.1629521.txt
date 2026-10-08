@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 12 Sustancia Road
+|image = 12SustanciaRoad-GTAO.jpg
+|caption = The house's exterior.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Medium-end house
+|garage = 6 vehicles <br /> 2 bicycles
+|price = $143,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5
+|location = [[Sustancia Road]], [[El Burro Heights]]
+}}
+
+[[LEAD]]
+'''12 Sustancia Road''' is a [[Safehouses in GTA Online|safehouse]] located on [[Sustancia Road]] in [[El Burro Heights]], [[Los Santos County]] featured in the [[Independence Day Special]] for ''[[Grand Theft Auto Online]]''.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]143,000 and includes a 6-car garage.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online

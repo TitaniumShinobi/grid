@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = The Brewer's Drop
+|image     = TheBrewer'sDrop-GTAV.jpg
+|caption   = '''The Brewer's Drop'''
+|taglines  = <u>HARD ON</u> COMPETITION - <u>SOFT ON</u> CUSTOMERS
+|type      = Liquor Store
+|games     = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''The Brewer's Drop''' is a liquor store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Liquor stores
+Stores

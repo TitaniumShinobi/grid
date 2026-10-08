@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = The Cherry Popper Ice Cream Company
+|image     = TheCherryPopperIceCreamCompany-Logo.svg
+|type      = food
+|taglines  = 
+*''"You'll always remember your first"''
+*''"Always on top"''
+|games     = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations = 
+*[[Liberty City (HD Universe)|Liberty City]]
+*[[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''The Cherry Popper Ice Cream Company''' is a brand of ice cream featured in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+<gallery position="center" spacing="small" widths="270px">
+TheCherryPopperIceCreamCompany-GTAIV-EastIslandCity.png|[[Morris Street]]/[[Dukes Boulevard]] in [[East Island City]], [[Dukes]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+TheCherryPopperIceCreamCompany-GTACW-EastIslandCity.png|Morris Street/Dukes Boulevard in East Island City, Dukes.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small" widths="250px">
+CherryPopper-GTAVee-KoreanPlaza.jpg|[[Korean Plaza]], [[Calais Avenue]], [[Little Seoul]].
+CherryPopper-GTAVee-Morningwood.jpg|[[Morningwood Boulevard]], [[Morningwood]].
+CherryPopperIceCream-GTAVe-DelPerroPier.png|[[Pleasure Pier]], [[Del Perro Pier]], [[Del Perro Beach]]. Based on Scoops Ice Cream and Treats on the Santa Monica Pier in Santa Monica, California.<small>([[:File:CherryPopperIceCream-GTAVe-DelPerroPier-NightView.png|Night view]])</small>
+CherryPopper-GTAV-FruitMachine.png|[[Hawick Avenue]], [[Burton]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+In-Game Products

@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{infobox business|
+|image = HawaiianSnow-GTAIV-StarJunction-exterior.jpg
+|size = 350x350px
+|caption = The [[Star Junction]] store in [[Grand Theft Auto IV]].
+|game_1 = GTA IV
+|game_2 = GTA V
+|game_3 = GTA Online
+|name = Hawaiian Snow
+|type = [[:Category:Clothing Stores|Clothing store]]
+|owner = 
+|location = [[Star Junction]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Hawick Ave]]/[[Power St]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Hawaiian Snow''' is a clothing store in [[Star Junction]], [[Liberty City in GTA IV Era|Liberty City]] and the corner of [[Hawick Ave]] and [[Power St]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]. It and sells casual wear. The term "''hawaiian snow''" is slang for marijuana seeds. The brand is possibly a parody of [[wp:Volcom|Volcom]].
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA V
+Businesses in Liberty City in GTA IV Era
+Businesses in Los Santos in GTA V
+Clothing Stores

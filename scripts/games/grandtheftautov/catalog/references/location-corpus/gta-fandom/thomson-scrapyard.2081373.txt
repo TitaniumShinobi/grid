@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Thomson Scrapyard
+|location = [[Grand Senora Desert]], [[Blaine County]]
+|image = ThomsonScrapyard-GTAV.png
+|games = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Thomson Scrapyard''' is a [[Scrap Yards|scrap yard]] in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is found south of the [[Senora National Park]] on [[Cat-Claw Avenue]] by the junction of the [[Senora Freeway]] and [[Route 68]] in the [[Grand Senora Desert]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Scrap yards

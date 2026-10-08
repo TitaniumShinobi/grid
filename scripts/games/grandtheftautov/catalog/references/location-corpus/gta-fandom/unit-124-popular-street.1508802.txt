@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = Unit 124 Popular Street
+|image = Dynasty8-GTAV-LowEnd-Image-Unit124PopularSt.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end garage
+|garage = 2 vehicles <br> 1 bike
+|price = [[Money|$]]25,000<br>FREE <small>(with [[Grand Theft Auto V/Editions|Collector's Edition]])</small>
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''Unit 124 Popular Street''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located in [[La Mesa]] under an [[Interstate 4|Olympic Freeway]] on-ramp, and is accessed through alley connected to [[Popular Street]]. It sits adjacent to a small skate park.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]25,000 (or for FREE if the player owns the [[Grand Theft Auto V/Editions|Collector's Edition]]) and can store 2 [[Personal Vehicles]] and one [[Pedal and Metal Cycles|Bicycle]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

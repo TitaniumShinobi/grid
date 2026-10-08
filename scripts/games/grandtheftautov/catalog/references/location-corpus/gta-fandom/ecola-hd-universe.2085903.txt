@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = eCola
+|image         = E-Cola-logo.png
+|lcn           = {{BAWSAQ/Slider}} '''ECL'''
+|taglines      = 
+*"''Deliciously Infectious!''"
+*''"Spread the Fizz"''
+*"''Go viral!''"
+*"''More Style Same Substance''"
+*"''It's Infectious!''"
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|owner         = [[Sprunk (HD Universe)|The Sprunk Company]]{{Ref|name=gtav-cantexture|type=texture|image=ECola-GTAV-CanTexture.png|imagesize=250px}}
+|type          = drink
+|business_type = Soft drink brand
+|bleeter       = [[File:Bleeter_GTAVpc_eColaSoftDrink.png|40px]] @eColaSoftDrink
+|locations     = [[Port Tudor]], [[State of Alderney|Alderney]]
+}}
+
+[[LEAD]]
+'''eCola''' is a brand of soft drinks owned by [[Sprunk (HD Universe)|The Sprunk Company]] appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Businesses in TBOGT
+Businesses in TLAD
+Food
+Soda brands

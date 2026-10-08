@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox structure
+|name = Cavalry Boulevard
+|image = CavalryBlvd_GTAV.jpg
+|caption = Cavalry Boulevard in Ludendorff, North Yankton.
+|games = {{Games|V=y|O={{EEEV}}{{DLC|mp2024_01}}}}
+|start = Unknown
+|end = Unknown
+|map=<gallery>
+CavalryBoulevard-GTAV-Map.png|Map
+CavalryBoulevard-GTAV-SateliteMap.png|Satellite View
+</gallery>
+|mapcaption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Cavalry Boulevard''' is a road in [[Ludendorff]], [[North Yankton]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is the only known named road in Ludendorff.
+
+During [[Bury the Hatchet]], if playing as [[Michael De Santa]], the player can hear a flashback of Michael discussing his deal with the [[Federal Investigation Bureau|FIB]] with his wife [[Amanda De Santa|Amanda]] while driving on Cavalry Boulevard.
+
+[[SECTION:2:Places of Interest]]
+*[[The Ludendorff Beaver]]
+
+[[SECTION:2:Businesses]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Banner Hotel & Spa|Banner Hotel]]
+*[[Bobcat Security Depot]]
+*[[Caipira Airways]]
+*[[Discount Kitchen Supplies]]
+*[[Klepto's Pawn Store]]
+*[[Pollock Cinema]]
+*[[Ludendorff Hardware]]
+*[[Ludendorff Locksmiths]]
+*[[Ludendorff Wood Supplies]]
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Ludendorff
+Structures in GTA V in Ludendorff

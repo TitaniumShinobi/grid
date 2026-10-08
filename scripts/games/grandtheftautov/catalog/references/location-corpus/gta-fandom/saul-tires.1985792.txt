@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Saul Tires
+|image = Saul-Tires-GTAV-Sign.png
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|type = Tire company
+}}
+
+[[LEAD]]
+'''Saul Tires''' is a tire company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle parts manufacturers

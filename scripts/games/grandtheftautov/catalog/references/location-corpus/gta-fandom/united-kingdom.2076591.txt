@@ -1,0 +1,64 @@
+[[INFOBOX]]
+{{Infobox country
+|image_flag               = Flag of the United Kingdom.svg
+|capital_ingame           = [[London]]
+|currency_ingame          = British Pound
+}}
+
+[[LEAD]]
+The '''{{WP|United Kingdom}}''' (officially named the '''United Kingdom of Great Britain and Northern Ireland''', commonly known as the '''UK''', and erroneously known as '''{{WP|Great Britain|Britain}}'''), is a country located off the north-western coast of mainland Europe. The UK consists of four constituent nations: {{WP|England}}, [[Scotland]], [[Wales]], and {{WP|Northern Ireland}}. With the exception of Northern Ireland's land border with the [[Ireland|Republic of Ireland]], the UK is surrounded by the {{WP|Atlantic Ocean}}, the {{WP|North Sea}}, the {{WP|English Channel}} and the {{WP|Irish Sea}}.
+
+The UK is the setting for {{L69}} and {{L61}}. The capital city, [[London]], is the centerpiece of those two video games. [[Manchester]] is available as a multiplayer map.
+
+The ''[[Grand Theft Auto]]'' games are developed in the United Kingdom, more specifically in Scotland, where [[Rockstar North]] is based. The games are first shipped to the [[United States of America]] and [[Canada]], before they are made available in the UK and the remainder of continental [[Europe]], [[Australia]], [[New Zealand]], and finally the rest of the world.
+
+The UK is currently home to five Rockstar studios:
+*[[Rockstar North]]
+*[[Rockstar Leeds]]
+*[[Rockstar Lincoln]]
+*[[Rockstar London]]
+*[[Rockstar Dundee]]
+
+The United Kingdom is also home to the ''[[BBFC]]'' rating system, which has given the most scrutiny towards the {{S}} without the need for any of the games to be censored or re-rated. [[Dan Houser]], [[Sam Houser]], [[Terry Donovan]] and [[Gary Dale]] are all British.
+
+Owing to the series' British (especially Scottish) origins, many references are made to the country through the games.
+
+[[SECTION:3:''Grand Theft Auto: Vice City'']]
+*[[Kent Paul]] is from England, and he later moves to [[State of San Andreas (3D Universe)|San Andreas]] in [[1992]].
+*The Ammu-Nation owner is again voiced and influenced by [[Sam Houser]].
+*According to the official {{VC}} website, the [[Washington]] is imported from the United Kingdom.
+*Edinburgh is listed as a holiday destination by [[Avec Moi Holidays]].
+
+[[SECTION:3:''Grand Theft Auto: Liberty City Stories'']]
+*The [[V8 Ghost]] is a British exotic car based on the {{WP|Lotus Esprit}}.
+*The voiceover in [[The Pilgrim's Pantry]] advert has what appears to be a British accent.
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+*[[Phil Collins]] voices himself in the game. His assistant, [[Barry Mickelthwaite]], is also English.
+*There is a space programme on any radio station which features voices that sound British.
+*The announcer of [[The Buy American Coalition]] (the national organization that keeps the United States of America independent from foreign goods) slightly slams the Brits by telling them to "shove their tea up their limey asses, and show them the American spirit - by drinking moonshine and killing natives instead."
+*The [[Splitz-6 ATV]] is based on the {{WP|Supacat}}, which is a British vehicle manufactured by that company.
+*[[Trish Camden]], co-host of [[Wave 103]], is English. She thinks of her co-hosting an American radio station as "a little bit of a British invasion" and says that she wants to bring a little bit of Britain onto the American radio. She also mentions {{WP|Margaret Thatcher}}, who was the UK Prime Minister at the time of the game's setting.
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+[[File:BritishFlags-GTAIV.png|thumb|British flags seen in {{IV}}.]]
+*[[Roman Bellic]] mentions a time when he and [[Niko Bellic|Niko]] learnt English from "English girls with the big {{H:title|Not shown in subtitles, which simply show &quot;...&quot;|titties}}".
+*[[Tony Prince]] mentions that he has clubs in London.
+*[[Daisie Cash-Cooze]] is a Londoner who moved to [[Liberty City (HD Universe)|Liberty City]].
+*[[Ricky Gervais]] and [[Frankie Boyle]] are both British comedians who appear at the [[Split Sides]] comedy club.
+*A British embassy with two {{WP|Union Jack}} flags flying can be seen at [[Jousters]] in [[Middle Park East]], [[Algonquin]].
+*The man who accidentally runs over [[Jeff Harlingford]] has a posh English accent.
+*The [[buskers]] are played by Walter Houser, the father of [[Sam Houser]] and [[Dan Houser]].
+*[[DJ Paul]], the DJ of [[Vladivostok FM]], is from the United Kingdom.
+*During [[Three Leaf Clover]], [[Derrick McReary]] mentions {{WP|The Troubles}}, a conflict affecting Northern Ireland and the rest of the United Kingdom, during which Derrick saw conflict in {{WP|Belfast}} and went between the UK and [[Ireland]].
+*Several automotive manufacturers are British:
+**[[Dewbauchee]]
+**[[Enus]]
+**[[Ocelot]]
+*The voice messages found on [[Ray Boccino]] and [[Wade Johnson|The Fixer]]'s phone contacts are recorded by two English voices; a female and a male, respectively.
+*One of the [[Club Management]] tasks has [[Luis Fernando Lopez|Luis]] doing errands for a [[British Prince]].
+*A pedestrian has a Northern English accent. If he gets stuck in traffic, he will say that he is "busting for a slash".
+**Also, a pedestrian can be heard shouting "Call 999!", referencing the emergency telephone number used in the United Kingdom, as well as in its overseas territories and some former colonies.
+
+[[CATEGORIES]]
+European countries

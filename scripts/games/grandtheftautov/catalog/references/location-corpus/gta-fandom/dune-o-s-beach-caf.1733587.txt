@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Dune-O's Beach Cafe
+|image = DuneO-GTAV-Logo.png
+|caption =
+|locations = [[Del Perro Beach]], [[Los Santos (HD Universe)|Los Santos]]
+|type = Cafe
+|games = ''[[Grand Theft Auto V]]'' <br> ''[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Dune-O's Beach Café''' is a café in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Cafés

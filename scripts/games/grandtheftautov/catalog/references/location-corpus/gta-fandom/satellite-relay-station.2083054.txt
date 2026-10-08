@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|name     = Satellite Relay Station
+|image    = RadioTelescopeArray-GTAV-Overview.png
+|caption  = The telescope array seen from the north.
+|games    = {{Games|V=y|O=y}}
+|use      = Observatory<br>IAA Facility
+|location = [[Grand Senora Desert]], [[Blaine County]]
+}}
+
+[[LEAD]]
+The '''Satellite Relay Station''' (also known as the '''Radio Telescope Array''' or '''Satellite Communication Complex''') is a location in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in the [[Grand Senora Desert]], [[Blaine County]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Observatories

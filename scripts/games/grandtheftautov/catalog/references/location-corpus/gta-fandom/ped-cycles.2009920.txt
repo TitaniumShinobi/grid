@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = PED Cycles
+|image       = PEDCycles-GTAV-Logo.png
+|type        = vehicles
+|games       = {{games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''PED Cycles''', also known simply as '''PED''', is a bicycle manufacturer appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle manufacturers

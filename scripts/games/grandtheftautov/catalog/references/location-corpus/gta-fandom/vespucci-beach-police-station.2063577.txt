@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|name        = Vespucci Beach Police Station
+|type        = policestation
+|image       = VespucciBeachPoliceStation-GTAVee.png
+|caption     = Overview of the station.
+|location    = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+|games       = {{Games|V=y|O=y}}
+|map         = VespucciBeachPoliceStation-GTAV-Map.png
+|map_caption = Location on the map (red).
+|file_name   = <code>vb_34_policestation</code>
+|accessible  = No
+}}
+
+[[LEAD]]
+The '''Vespucci Beach Police Station''' is a station of the [[Los Santos Police Department (HD Universe)|Los Santos Police Department]] in {{V}} and {{O}} located on [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Police stations

@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Rogers Salvage & Scrap
+|image       = 
+<gallery>
+RogersSalvage&Scrap-GTAV-Logo.png|Logo 1
+RogersSalvage&Scrap-GTAV-OldLogo.png|Logo 2
+</gallery>
+|Name Change = RECYCLING CENTER
+|taglines    = "''Taking your scrap since 1924''"
+|games       = {{Games|V=y|O=y}}
+|locations   = [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]]
+|type        = Recycling center<br>Scrap yard
+|founded     = [[1924]]
+|phone       = 310-555-0169
+|map         = RogersSalvage-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Rogers Salvage & Scrap''' is a scrap yard and recycling center appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Scrap yards

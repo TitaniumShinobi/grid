@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 4531 Dry Dock Street
+|image = Dynasty8-GTAV-Medium-Image-4531DryDockSt.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Medium garage
+|garage = 6 vehicles <br> 2 bikes
+|price = [[Money|$]]67,500
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''4531 Dry Dock Street''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located on [[Dry Dock Street]], adjacent to [[Nicholl's Liquor]] and [[Kennedy Sneaker Co.]] .
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]67,500 and can store 6 [[Personal Vehicles]] and two [[Pedal and Metal Cycles|Bicycles]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = Bourgeoix
+|sign          = 
+|image_label   = O
+|image         = BourgeoixCognac-GTAOe-NewLogo.png
+|caption       = Logo in {{O}}.
+|image_label2  = IV
+|image2        = Bourgeoix-GTAIV-Logo.png
+|caption2      = Logo in {{IV}}.
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Cognac
+|founded       = {{WP|Châtellerault}}, {{WP|Nouvelle-Aquitaine}}, [[France]]
+|founder       = 
+|products      = 
+|taglines      = "''Fit for a prince''"
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Bourgeoix''' is a brand of [[France|French]] cognac that appears in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V

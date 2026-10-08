@@ -1,0 +1,13 @@
+[[INFOBOX]]
+{{Infobox country
+|image_flag = Flag of Peru.svg
+|currency_ingame = Peruvian nuevo sol
+}}
+
+[[LEAD]]
+The '''Republic of Peru''', simply known as '''Peru''', is a country in South America. It is bordered by [[Ecuador]] and [[Colombia]] to the north, [[Brazil]] to the east, [[Bolivia]] to the south-east, [[Chile]] to the south, and the Pacific Ocean to the west.
+
+It is referenced throughout the ''Grand Theft Auto'' series.
+
+[[CATEGORIES]]
+South American countries

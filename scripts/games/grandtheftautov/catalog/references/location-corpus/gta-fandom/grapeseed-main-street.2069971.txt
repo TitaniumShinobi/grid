@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=GrapeseedMainStreet-GTAV.png
+|caption=Grapeseed Main Street.
+|games={{Games|V=y|O=y}}
+|start=[[Seaview Road]] corner [[North Calafia Way]], [[Grapeseed]] 
+|end=[[Joad Lane]] corner [[Union Road]], Grapeseed  
+|map=<gallery>
+GrapeseedMainStreet-GTAV-Map.png|Map
+GrapeseedMainStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).<br>It is sometimes referred as being a section of [[Grapeseed Avenue]].
+}}
+
+[[LEAD]]
+'''Grapeseed Main Street''' is the section of [[Grapeseed Avenue]] that forms the main thoroughfare in the town of [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]], in {{V}} and {{O}}.
+
+[[SECTION:2:Purchasable Properties]]
+*[[1893 Grapeseed Avenue]]
+
+[[SECTION:2:Businesses]]
+*[[Discount Store]]
+*[[Feed Store]]
+*[[Grapeseed Farmers Market]]
+*[[Grapeseed Supermarket]]
+*[[LTD Gasoline|Limited Gasoline]]
+*[[The Paint Shop]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|landmark = y
+|name = Tremor's Rock
+|image = TremorsRock-GTAVe.png
+|caption = Tremor's Rock in ''[[Grand Theft Auto V]]''.
+|games = ''[[Grand Theft Auto V]]<br/>[[Grand Theft Auto Online]]''
+|location = [[Senora National Park]], [[Grand Senora Desert]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map = TremorsRock-GTAV-Map.jpg
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Tremor's Rock''' is a natural rock formation located in the [[Senora National Park]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Landmarks
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Ink Inc.
+|type = [[:Category:Tattoo Parlors|Tattoo parlor]]
+|owner = 
+|location = [[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]<br />[[Chumash]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Ink Inc.''', also stylized as '''INK INC.''', is a [[:Category:Tattoo Parlors|tattoo parlor]] chain with stores located on [[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]] and another in [[Chumash]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company also has a [[Lifeinvader]] page, which can be accessed while using Lifeinvader while playing as [[Franklin Clinton]]. The company's Lifeinvader page has 2,261 friends, which includes Franklin, [[Lamar Davis]], [[Tonya Wiggins]], [[Taylor Hoyte]], [[Andy Whitford]], [[Mike Hathaway]], [[Harvey Pritchard]] and [[Steve Welby]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Tattoo Parlors

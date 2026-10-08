@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Strawberry Plaza
+|type = shoppingcenter
+|status = active
+|accessible = no
+|image = StrawberryPlaza-GTAVee.jpg
+|caption =  General view of Strawberry Plaza.
+|location = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|map = Strawberry_Plaza_GTAV_Map_Location.jpg
+|map_caption = Map location.
+|games = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''Strawberry Plaza''' is a plaza within the [[Strawberry]] neighborhood in [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Businesses]]
+*[[Dollar Pills]]
+*[[Edzell Foundation Youth Center]]
+*[[Suds Law Laundromat]]
+*Take-Me-Hire <small>(though there doesn't seem to be any store)</small>
+*[[Totally Rental]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Shopping malls

@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = RUNE
+|sign          = RUNE-GTAO-Logo.png
+|image         = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpassault}}}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+*Automobile manufacturer
+*Naval shipbuilder
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''RUNE''' ([[Russia]]n: '''РУНА''') is a {{WP|Soviet Union|Soviet}} vehicle manufacturer appearing in {{O}} as part of the [[GTA Online: Southern San Andreas Super Sport Series|Southern San Andreas Super Sport Series]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Southern San Andreas Super Sport Series
+Vehicle manufacturers

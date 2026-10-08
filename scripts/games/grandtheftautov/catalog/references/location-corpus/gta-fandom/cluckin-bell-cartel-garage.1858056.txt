@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|warehouse=y
+|image = CluckinBellCartelGarage-GTAOe-Interior-1.png
+|caption = The Cluckin' Bell Cartel Garage in ''[[Grand Theft Auto Online]]''.
+|location = [[East Los Santos (HD Universe)|East Los Santos]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games = ''[[Grand Theft Auto Online]]''
+|accessible = Yes <small>(mission only)</small>
+|founded = [[2024]]
+|occupants = [[Cluckin' Bell Cartel]]
+}}
+
+[[LEAD]]
+'''Cluckin' Bell Cartel Garage''' is a warehouse owned by the [[Cluckin' Bell Cartel]] appearing in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Chop Shop|The Chop Shop]] update.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Fronts

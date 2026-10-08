@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Two Roosters
+|image = TwoRoostersPinotNoir-GTAV-Logo.png
+|type = alcohol
+|games = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Two Roosters''' is a brand of pinot noir wine in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Online
+Businesses in GTA V

@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|landmark       = y
+|type           = skyscraper
+|name           = Arcadius Business Center
+|sign           = ArcadiusBusinessCenter-GTAV-Logo.png
+|image          = ArcadiusBusinessCenter-GTAV.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]]
+|floors         = 41
+|map            = ArcadiusBusinessCenter-GTAV-Map.png
+|map_caption    = Location on the map (red).
+|file_name      = <code>dt1_02_w01</code>
+}}
+
+[[LEAD]]
+The '''Arcadius Business Center''' is a skyscraper in {{V}} and {{O}}, located on [[Alta Street]], [[San Andreas Avenue]] and [[Las Lagunas Boulevard]] in [[Pillbox Hill]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Landmarks
+Properties in GTA Online
+Safehouses in GTA Online
+Skyscrapers

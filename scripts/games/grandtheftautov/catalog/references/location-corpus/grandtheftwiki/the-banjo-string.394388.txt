@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = TheBanjoString-GTAV-MirrorPark-exterior.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = The Banjo String
+|type = [[:Category:Music Stores|Music store]]
+|owner = 
+|location = [[Mirror Park Blvd]] in [[Mirror Park]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''The Banjo String''' is a [[:Category:Music Stores|music store]] located on [[Mirror Park Blvd]] in [[Mirror Park]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The business is located next to [[Cool Beans]] coffee shop.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Music Stores

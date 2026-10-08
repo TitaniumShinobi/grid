@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = CLOTHING STORE
+|type          = 
+|name          = Shadey Petes Sunglasses
+|image         = ShadeyPetes-GTAV-Logo.png
+|caption       = '''Shadey Petes''' banner in ''[[Grand Theft Auto V]]''.
+|locations     = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|status        = active
+|games         = {{games|V=y|O=y}}
+|business_type = Sunglasses store
+|founder       = 
+|taglines      = 
+}}
+
+[[LEAD]]
+'''Shadey Petes Sunglasses''' is a clothing store in {{VO}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business
+|name = AKAN Records
+|image = 
+<gallery>
+AkanRecords-GTAV-Logo.png|Logo
+AKANRecords-GTAV-DorsetDrive.png|Building
+</gallery>
+|type = Record Label
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|reference = }}
+
+[[LEAD]]
+'''AKAN Records''' (Japanese: アカンレコード, ''Akan Rekōdo'') is a [[Japan]]ese record label featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Record labels

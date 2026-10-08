@@ -1,0 +1,67 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = delivery
+|name          = Alpha Mail
+|sign          = AlphaMail-GTAIV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Port Tudor]], [[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Delivery company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        = 
+|products      = 
+|vehicles      =
+*[[Mule]]
+*[[Alphamail]]
+|weapons       = 
+|taglines      = 
+*"''The postal evolution''"
+*"''Always comes first''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Alpha Mail''' is a delivery company featured in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|AlphaMailDepot-GTAIV-MainBuilding.png|'''Alpha Mail''' depot, [[Industrial (GTA IV)|Industrial]], [[Bohan]], [[Liberty City (HD Universe)|Liberty City]].
+|AlphaMailDepot-GTAIV-Building2.png|Building 2, Industrial, Bohan, Liberty City.
+|AlphaMail-GTAIV-PortTudor.png|[[Port Tudor]], [[State of Alderney|Alderney]].
+}}
+
+{{Gallery
+|game = CW
+|AlphaMailDepot-GTACW-MainBuilding.png|'''Alpha Mail''' depot, Industrial, Bohan, Liberty City.
+|AlphaMailDepot-GTACW-Building2.png|Building 2, Industrial, Bohan, Liberty City.
+}}
+
+{{Gallery
+|game = VO
+|Alpha Mail Depot.jpg|[[Terminal]], [[Port of Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]].
+|AlphaMail-GTAV.png|[[Los Santos International Airport (HD Universe)|LSIA]], [[Los Santos (HD Universe)|Los Santos]], San Andreas.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Delivery companies

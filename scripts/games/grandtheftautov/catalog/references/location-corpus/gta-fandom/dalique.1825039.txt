@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|name = Dalique
+|caption = The logo
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|altnames = 
+|products = Designer fashion
+|bawsaq = 
+|image = Dalique-GTAV-Logo.png
+|darklogo = y
+|image_size = 300
+|condition = Active
+|taglines = 
+|games = {{Games|V=y|O=y}}
+|type = Fashion retailer
+|reference = Lalique
+|map = 
+|oldlogo = 
+|oldcaption =
+}}
+
+[[LEAD]]
+'''Dalique''' is a fashion store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Dalique-GTAV-DaylightFront.png|[[Portola Drive]] location. ([[:File:Dalique-GTAV-NightFront.png|At night]])
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

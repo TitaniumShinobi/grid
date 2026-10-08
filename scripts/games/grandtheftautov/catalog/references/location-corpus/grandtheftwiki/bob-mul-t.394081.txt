@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{infobox business
+|image = BobMulet-GTAV-logo.png
+|caption = 
+|name = Bob Mulét
+|taglines = 
+|type = Hair & Beauty Salon
+|founded = 
+|founder = 
+|ceo = 
+|games = [[Grand Theft Auto V]]<br />[[Grand Theft Auto Online]]
+|locations = [[Los Santos in GTA V|Los Santos]]
+|reference =
+|size = }}
+
+[[LEAD]]
+'''Bob Mulét''' is a hair and beauty salon located in [[Los Santos in GTA V|Los Santos]] available in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Spines Bookshop
+|image = SpinesBookshop-GTAVe-Logo.png 
+|type = Bookstore
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Prosperity Street Promenade]], [[Del Perro]]<br>
+|reference = {{WP|Borders Group|Borders Book & Music}}
+}}
+
+[[LEAD]]
+'''Spines Bookshop''' is a bookstore chain in [[Los Santos (HD Universe)|Los Santos]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Bookstore chains
+Businesses in GTA Online
+Businesses in GTA V

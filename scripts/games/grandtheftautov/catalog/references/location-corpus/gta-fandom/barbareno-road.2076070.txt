@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=BarbarenoRoad-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Great Ocean Highway]]
+|end=Great Ocean Highway
+|map=<gallery>
+BarbarenoRoad-GTAV-Map.png|Map
+BarbarenoRoad-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Barbareno Road''' is a two-way residential street in {{V}} and {{O}}, located in [[Chumash]], [[Los Santos County]]. It begins and ends at [[Route 1]]. According to signage, the speed limit on the street is 25 mph.
+
+[[SECTION:2:Places of Interest]]
+*[[Chumash Historic Family Pier]]
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]] <small>(accessible interior)</small>
+*[[The Barracuda Cafe|Barracuda Café]] <small>(at Chumash Historic Family Pier)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

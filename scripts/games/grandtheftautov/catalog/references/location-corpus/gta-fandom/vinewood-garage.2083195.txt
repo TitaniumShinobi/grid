@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|garage = y
+|name = Vinewood Garage
+|image = VinewoodGarage-GTAVe-Day.png
+|image_size = 300px
+|caption = Exterior view of the garage. ([[:File:VinewoodGarage-GTAVe-Night.png|night view]])
+|price = $30,000
+|owner = [[Michael De Santa]] <small>(Optional)</small><br>
+|type = Garage
+|garagecap = 4
+|games = {{Games|V=y|O=y}}
+|location = [[Benefactor-Gallivanter Dealership]], [[Las Lagunas Boulevard]] and [[Spanish Avenue]], [[West Vinewood]]}}
+
+[[LEAD]]
+The '''Vinewood Garage''' is a [[Garages|garage]] for [[Michael De Santa]] in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Garages
+Properties
+Properties in GTA V

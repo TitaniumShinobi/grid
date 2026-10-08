@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox location
+|name     = La Fuente Blanca
+|sign     = LaFuenteBlanca-GTAV-Logo.png
+|image    = LaFuenteBlanca-GTAVe-Overview.png
+|type     = farm
+|games    = {{Games|V=y|O=y}}
+|location = [[Senora Road]], [[Vinewood Hills]]
+|owner    = [[Martin Madrazo]]
+|operator = [[Avery Duggan]] <small>(Briefly; Renting)</small> 
+|map = LaFuenteBlanca-GTAV-SatelliteView.png
+|map_caption = Satellite view.
+}}
+
+[[LEAD]]
+'''La Fuente Blanca''' is a large ranch featured in {{V}} and {{O}}.
+
+[[SECTION:4:Diamond Casino & Resort]]
+*[[Casino Story Missions]]
+**[[Casino - Cashing Out|Cashing Out]]
+
+[[SECTION:3:Interior]]
+{{Gallery
+|La_Fuente_Blanca-GTAV-Interior.png|Living/sitting room.
+|La_Fuente_Blanca-GTAV-Interior1.png|Looking back at the entry hall from the living room.
+|La_Fuente_Blanca-GTAV-Interior-PerciiFigurines.png|Detail of artworks behind [[Trevor Philips|Trevor]] including [[Percii]] limited editions.
+}}
+
+[[CATEGORIES]]
+Homes
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County

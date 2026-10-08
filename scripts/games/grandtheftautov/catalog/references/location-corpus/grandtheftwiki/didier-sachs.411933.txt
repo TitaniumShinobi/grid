@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{infobox business|
+|image = DidierSachs-GTAIV-logo.png
+|size = 250x250px
+|game_1 = GTA San Andreas
+|game_2 = GTA Liberty City Stories
+|game_3 = GTA IV
+|game_4 = The Ballad of Gay Tony
+|game_5 = GTA Chinatown Wars
+|game_6 = GTA V
+|name = Didier Sachs
+|type = [[:Category:Clothing Stores|Clothing]]
+|owner = 
+|location = '''[[3D Universe]]'''<br />[[Rodeo]], [[Los Santos in GTA III Era|Los Santos]]<br />'''[[HD Universe]]'''<br />[[Suffolk]], [[Algonquin]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Willis]], [[Dukes]], [[Liberty City in GTA IV Era|Liberty City]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Didier Sachs''' is a recurring high end clothing chain that originally debuted as an interactive clothing outlet in [[Grand Theft Auto: San Andreas]], but is also featured as a non-interactive entity in [[Grand Theft Auto: Liberty City Stories]], [[Grand Theft Auto IV]], [[Grand Theft Auto: Chinatown Wars]] and [[Grand Theft Auto V]].
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in Liberty City in GTA IV Era
+Businesses in Los Santos in GTA III Era
+Businesses in Los Santos in GTA V
+Businesses in The Ballad of Gay Tony
+Clothing Stores
+Clothing in GTA San Andreas

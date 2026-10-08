@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|name       = Venetian
+|image      = Venetian-GTAVee-West.jpg
+|caption    = The Venetian as seen from the west.
+|type       = hotel
+|games      = {{Games|V=y|O=y}}
+|location   = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+}}
+
+[[LEAD]]
+The '''Venetian''' is a luxury hotel in [[Vespucci Canals]] and [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hotels

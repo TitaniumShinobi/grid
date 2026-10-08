@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name     = Jonny Shapiro Gas Specialist
+|image    = JonnyShapiroGasSpecialist-GTAV-Logo.png
+|taglines = ''"Smell that? That's wrong."''
+|type     = utility
+|games    = {{Games|V=y|O=y}}
+|phone    =
+*(323) 555-0142
+*(323) 555-0154
+}}
+
+[[LEAD]]
+'''Jonny Shapiro Gas Specialist''' is a utility company appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Utility companies

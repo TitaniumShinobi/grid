@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Penaud
+|sign          = Penaud-GTAO-Text.png
+|image_label   = 
+|image         = Penaud-GTAO-Logo.png
+|caption       = 
+|aka           = 
+|games         = {{games|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Automotive manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|divisions     = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Penaud''' is a [[France|French]] automotive manufacturer featured in {{O}} as part of the [[GTA Online: San Andreas Mercenaries|San Andreas Mercenaries]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: San Andreas Mercenaries
+Vehicle manufacturers

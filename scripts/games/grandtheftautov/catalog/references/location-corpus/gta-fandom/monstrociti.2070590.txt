@@ -1,0 +1,101 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name                = 
+|aka                 = MonstroCITI {{Small|(Badging)}}
+|front_image         = MonstroCiti-GTAOe-front.png
+|rear_image          = MonstroCiti-GTAOe-rear.png
+|caption             = A '''MonstroCiti''' in {{O}}.
+|class               = [[:Category:Off-Road class|Off-Road]] {{Small|(''GTA Online'')}}
+|body_style          = 2-door compact SUV
+|capacity            = 2 {{Small|(driver and passenger)}}
+|manufacturer        = [[Maibatsu Corporation (HD Universe)|Maibatsu]]
+|price               = [[Money|$]]1,485,000 {{Small|([[Southern San Andreas Super Autos]])}}
+|games               = {{Games|O={{EEEV}} {{DLC|mp2023_01}}}}
+|type                = lighttruck
+|radar_icon          = 
+|swankness           = 1/5
+|dashtype            = Cavalcade {{Small|(needle)}}<br>[[File:Cavalcade-Dials-GTAV.png|thumb|center|170px]]<br>Cavalcade {{Small|(dial texture)}}<br>[[File:Cavalcade-GTAV-DialSet.png|thumb|center|170px]]
+|inttxd              = Cavalcade
+|wheeltype           = Off-Road
+|flags               = 
+{{Flags|FLAG_EXTRAS_ALL}}
+{{Flags|FLAG_EXTRAS_STRONG}}
+{{Flags|FLAG_NO_BOOT}}
+{{Flags|FLAG_AVERAGE_CAR}}
+{{Flags|FLAG_IS_OFFROAD_VEHICLE}}
+{{Flags|FLAG_HEADLIGHTS_USE_ACTUAL_BONE_POS}}
+{{Flags|FLAG_IS_BULKY}}
+{{Flags|FLAG_HAS_BULLET_RESISTANT_GLASS}}
+|modelsets           = 
+|modelname           = monstrociti
+|handlingname        = MONSTROCITI
+|textlabelname       = MONSTROCITI
+|roadspawn           = 
+|roadspawnmaxcol     = 10
+|roadspawnfreq       = 50
+|roadspawntrailer    = 
+|roadspawnidendis    = 20
+|roadspawndrivers    = 
+|roadspawngroups     = 
+|roadspawnlicense    = 
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The [[Maibatsu Corporation (HD Universe)|Maibatsu]] '''MonstroCiti''' is a two-door off-road competition car featured in {{O}} as part of the [[GTA Online: San Andreas Mercenaries|San Andreas Mercenaries]] update.
+
+[[SECTION:2:Locations]]
+*Available for purchase from [[Southern San Andreas Super Autos]] for [[Money|$]]1,485,000.
+**Conversion at [[Hao's Special Works]] available for [[Money|$]]1,109,000.
+
+[[SECTION:3:The Chop Shop]]
+*A white-and-black MonstroCiti is featured as an optional vehicle in the [[Task: Getaway Vehicle|Getaway Vehicle]] task, as part of the [[Salvage Yard Robberies|Salvage Yard]]'s [[The Gangbanger Robbery|Gangbanger Robbery]].
+
+{{Gallery
+|TheGangbangerRobbery-GTAOe-Task-GetawayVehicle-MonstroCiti.png|The '''MonstroCiti''' featured in The Gangbanger Robbery's Getaway Vehicle task.
+}}
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = MonstroCiti
+|manufacturer  = Maibatsu
+|class         = Off-Road 
+|image         = MonstroCiti-GTAOe-RGSC-MainNew.jpg
+|caption       = Main image.
+|image2        = MonstroCiti-GTAOe-RGSC-Action.jpg
+|caption2      = "Action" image for ''GTA Online''.
+|speed         = 76.02932
+|accel         = 68.375
+|braking       = 12.299999
+|traction      = 100
+|seats         = 2
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = sssa
+|schematic     = GenericFreecrawler
+}}
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=MonstroCiti}}
+{{Defaultradio|game=O|defaultgroup=rap}}
+
+[[CATEGORIES]]
+All wheel drive vehicles
+Light trucks
+Off-Road class
+Off-roading vehicles
+Rally vehicles
+SUVs
+Vehicles eligible for Hao's Special Works conversion
+Vehicles eligible for Imani Tech upgrades
+Vehicles in GTA Online: San Andreas Mercenaries
+Vehicles manufactured by Maibatsu
+Vehicles purchasable from Luxury Autos
+Vehicles purchasable from Southern San Andreas Super Autos

@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = The Royale
+|image = TheRoyaleApts-GTAV.png
+|caption = General view of the apartment building.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Medium-end apartment
+|garage = 6 vehicles <br /> 2 bikes
+|price = $125,000
+|occupants = [[Sapphire]]<br>[[GTA Online Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5
+}}
+
+[[LEAD]]
+'''The Royale''' is an apartment building in ''[[Grand Theft Auto V]]'' and safehouse in ''[[Grand Theft Auto Online]]'' located on 1051 [[Spanish Avenue]] and [[San Vitus Boulevard]] in [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Homes
+Low-rise buildings
+Safehouses

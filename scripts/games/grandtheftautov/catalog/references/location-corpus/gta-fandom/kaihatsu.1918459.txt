@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = Kaihatsu
+|type          = entertainment
+|image         = Kaihatsu-GTAO-Logo.png
+|oldlogo1      = 
+|oldcaption1   = 
+|games         = {{games|O=y}}
+|business_type = Video game developer
+|status        = active
+}}
+
+[[LEAD]]
+'''Kaihatsu''' (Japanese: 開発, lit. "Development") is a [[Japan]]ese video game developer featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Diamond Casino Heist
+Video game developers

@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox structure
+|name       = Tug Street
+|image      = TugStreet-GTAVee.jpg
+|caption    = The street as seen from [[Bay City Avenue]].
+|games      = {{Games|V=y|O=y}}
+|start      = [[Bay City Avenue]]
+|end        = - {{Small|(dead-end)}}
+|map        =
+<gallery>
+TugStreet-GTAV-Map.png|Map
+TugStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Tug Street''' is a street in [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[0115 Bay City Avenue]]
+
+[[SECTION:2:Businesses]]
+*[[KOI Retreat & Spa]]
+*[[La Spada]]
+
+{{Clear}}
+
+[[CATEGORIES]]
+Cul-de-sacs
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

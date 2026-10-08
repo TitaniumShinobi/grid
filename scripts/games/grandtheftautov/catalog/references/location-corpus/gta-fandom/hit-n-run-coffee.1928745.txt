@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name=Hit 'n' Run Coffee
+|image=[[File:HitNRun-GTAV.png]]
+|caption=
+|map=[[File:HitNRun-GTAV-Map.png]]
+|map_caption=Location on the map (red).
+|type=Coffee Shop|oldlogo1=|games=''[[Grand Theft Auto V]]'' <br> ''[[Grand Theft Auto Online]]''|locations=[[Little Seoul Tower]], [[Little Seoul]]}}
+
+[[LEAD]]
+'''Hit 'n' Run Coffee''' is a coffee shop in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on [[San Andreas Avenue]] in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Cafés

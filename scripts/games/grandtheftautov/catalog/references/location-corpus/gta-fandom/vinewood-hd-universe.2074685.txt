@@ -1,0 +1,161 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = district
+|name           = Vinewood
+|sign           = 
+|image          = Vinewood-GTAO-Montage.png
+|caption        = Clockwise from top: [[West Vinewood]], [[Mirror Park]], view from the [[Vinewood Sign (HD Universe)|Vinewood Sign]], [[Vinewood Racetrack]], [[Oriental Theater]] at night.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Los Santos (HD Universe)|Los Santos]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|seal           = 
+|seal2          = 
+|flag           = 
+|mayor          = 
+|president      = 
+|established    = 
+|country        = 
+|state          = 
+|county         = 
+|capital        = 
+|pop            = 
+|motto          = 
+|pscanner       = PoliceScanner-GTAV-Neighborhood-Vinewood.ogg
+|unlockedby     = 
+|unlockedafter  = 
+|map            = <gallery>
+Vinewood-Districts-GTAV-Map.png|Vinewood
+Vinewood-Districts-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption    = Location on the map (in-game GPS). <font color=red>Downtown Vinewood</font>, <font color=00eff2>West Vinewood</font>, <font color=d51bc6>Alta</font>, <font color=0dd916>Hawick</font>, and the neighborhoods of <font color=f9f001>East Vinewood</font>: <font color=d99003>Mirror Park</font> and <font color=d99003>Vinewood Racetrack</font>. The <font color=060cf8>small area in the south</font><sup>{{H:title|Simply referred to as Vinewood in the in-game GPS|(?)}}</sup> denotes the border between Vinewood and Downtown Los Santos.
+|map2           = Vinewood-Satellite-GTAV.png
+|map_caption2   = Satellite view of '''Vinewood''' (official manual).
+}}
+
+[[LEAD]]
+'''Vinewood''' is a district appearing in {{V}} and {{O}}, located in [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[SECTION:2:Neighborhoods]]
+*[[Alta]] ''({{WP|Little Armenia, Los Angeles|Little Armenia}}, {{WP|Los Feliz, Los Angeles|Los Feliz}})''
+*[[Downtown Vinewood]] ''({{WP|Hollywood, Los Angeles|Hollywood}})''
+*[[East Vinewood]] ''({{WP|East Hollywood, Los Angeles|East Hollywood}})''
+*[[Hawick]] ''({{WP|Melrose District, Los Angeles|Melrose District}})''
+*[[Mirror Park]] ''({{WP|Echo Park, California|Echo Park}}, {{WP|Silver Lake, Los Angeles|Silver Lake}})''
+*[[West Vinewood]] ''({{WP|West Hollywood, California|West Hollywood}})''
+
+[[SECTION:2:Roads and Streets]]
+{{Columns
+|
+*[[Alta Place]]
+*[[Alta Street]]
+*[[Abe Milton Parkway]]
+*[[Bridge Street]]
+*[[Clinton Avenue]]
+*[[East Mirror Drive]]
+*[[Eclipse Boulevard]]
+*[[Elgin Avenue]]
+*[[Gentry Lane]]
+*[[Glory Way]]
+*[[Hawick Avenue]]
+*[[Laguna Place]]
+*[[Las Lagunas Boulevard]]
+*[[Los Santos Freeway (HD Universe)|Los Santos Freeway]]
+*[[Meteor Street]]
+*[[Milton Road]]
+*[[Mirror Park Boulevard]]
+|
+*[[Mirror Place]]
+*[[Nikola Avenue]]
+*[[Nikola Place]]
+*[[North Archer Avenue]]
+*[[Occupation Avenue]]
+*[[Popular Street]]
+*[[Power Street]]
+*[[South Mo Milton Drive]]
+*[[Spanish Avenue]]
+*[[Tangerine Street]]
+*[[Utopia Gardens]]
+*[[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]]
+*[[Vinewood Park Drive]]
+*[[West Eclipse Boulevard]]
+*[[West Mirror Drive]]
+*[[York Street]]
+}}
+
+[[SECTION:2:Places of Interest]]
+{{Columns
+|
+*[[0604 Las Lagunas Boulevard]]
+*[[Badger Building]] ({{WP|Capitol Records Building}})
+*[[Bishop's WTF?!]] (Ripley's Believe It Or Not)
+*Blarney's World of Awesome (Guinness World Record Museum)
+*Domestic Japanese European Garage
+*[[Eclipse Medical Tower]] (Sunset Medical Tower)
+*[[Eclipse Towers]] ({{WP|Sierra Towers}})
+*[[Elgin House]] ({{WP|Mondrian Hotel}})
+*[[Epsilon Program in HD Universe|Epsilon Center]] ({{WP|Church of Scientology}} Celebrity Centre International)
+|
+*[[Los Santos City Hall (HD Universe)|Los Santos City Hall]] ({{WP|Los Angeles City Hall}})
+*[[Pegasus Concierge Hotel]]
+*[[San Andreas Gallery of Modern Art]] (SAGMA)
+*[[Tinsel Towers]]
+*[[Total Bankers]]
+*Vinewood India Building (Hollywood Cherokee Building)
+*Vinewood Museum ({{WP|Hollywood Museum}})
+*[[Vinewood Wax Haven]] ({{WP|Hollywood Wax Museum}})
+}}
+
+[[SECTION:2:Businesses]]
+{{Columns
+|
+*[[24/7 (HD Universe)|24/7]]
+*[[Bean Machine]] (Dialog Cafe)
+*[[Blazing Tattoo]]
+*[[Cine Areola]] ({{WP|Ritz Theatre (Hollywood, California)|Ritz Theatre}})
+*[[Croq-A-Hoop]]
+*[[Designer Slave]]
+*[[Discount Kitchen Supplies]]
+*[[Doppler]] ({{WP|Hollywood Pacific Theatre}})
+*[[Eclipse Lounge]] (Sunset Trocadero Lounge)
+*Eclipse Lounge Condos (The Venezia Condos)
+*El Cafe Rojo de Madera ({{WP|Plaza Substation}})
+*Fashion Vinewood (Headworld Sports Emporium)
+*[[FLEECA|Fleeca Bank]]
+*Gallerie Oeuvre (XIV Restaurant)
+*[[Globe Oil]]
+*[[Guido's Takeout - Liberty Style Pizza]] (Andre's Pizza)
+*Jazz Deserts
+*[[Los Santos Department of Water & Power]] (Dept of Water & Power Station 52)
+*[[Luxury Autos]]
+*[[Miss T]]
+*[[Muscle Gymnasium]]
+|
+*[[Non Stop Pop FM]]
+*[[Oriental Theater]] ({{WP|Grauman's Chinese Theatre}})
+*[[Pacific Standard Public Depository Bank]] ({{WP|Hollywood First National Bank}})
+*[[Pegasus Concierge Hotel]] ({{WP|Sunset Tower|Sunset Tower Hotel}})
+*[[Pink Sandwich]] ({{WP|The Green Room}})
+*[[Pizza This]] ({{WP|Popeye's Chicken}})
+*[[Schlongberg Sachs]] ({{WP|City National Bank (California)|City National Bank}})
+*[[Singleton's]]
+*Stargaze (Kress Nightclub)
+*[[Up-n-Atom Burger]] ({{WP|In-N-Out Burger}})
+*[[Vinewood Boulevard Radio]]
+*Vinewood Fantasies
+*[[Vinewood Gardens Hotel]]
+*Vinewood Liquor (Hollywood Liquor)
+*[[Vinewood Plaza]] (Sunset Plaza)
+*[[Vinewood Plaza Hotel]] ({{WP|Hollywood Plaza Hotel}})
+*[[Vinewood Video]]
+*[[Von Crastenburg Hotel]] ({{WP|Hollywood Roosevelt Hotel}})
+*[[Wigwam Burger]]
+*[[Whirligig Theater]] (Security Pacific Building/{{WP|El Capitan Theatre}})
+}}
+
+[[CATEGORIES]]
+Districts
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Zones

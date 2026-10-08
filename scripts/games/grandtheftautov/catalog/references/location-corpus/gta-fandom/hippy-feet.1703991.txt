@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name         = Hippy Feet
+|image        = HippyFeet-GTAV-logo.png
+|caption      = Current logo.
+|oldlogo1     = 
+|oldcaption1  =
+|type         = Clothing store
+|games        = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations    = [[Alta]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Hippy Feet''' is a clothing store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on [[Hawick Avenue]] in [[Alta]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

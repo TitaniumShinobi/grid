@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = MEDICAL EXAMINER
+|name        = County of Los Santos Department of Coroner
+|image       = DepartmentOfCoronerLosSantosCounty-GTAV-Seal.png
+|caption     = '''County of Los Santos Department of Coroner''' logo.
+|games       = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|type        = Medical examiner
+|locations   = [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+The '''County of Los Santos Department of Coroner''' is an agency responsible for the investigation of all unnatural deaths in [[Los Santos County]], appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Emergency services
+Medical services

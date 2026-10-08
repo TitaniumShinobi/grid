@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Electronics company
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|image = DigitalDen-GTAV-Logo.png
+|locations = [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Digital Den''' is an electronics company featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Store Locations]]
+<gallery position="center" spacing="small" widths="250px">
+DigitalDen-GTAV-TextileCity.png|[[San Andreas Avenue]] and [[Sinner Street]], [[Textile City]].
+DigitalDen-GTAV-PillboxHill.png|[[Power Street]], [[Pillbox Hill]].
+DigitalDen-GTAV-LittleSeoul.png|[[Vespucci Boulevard]] and [[Palomino Avenue]], [[Little Seoul]].
+DigitalDen-GTAVee-KoreanPlaza.png|[[Korean Plaza]], [[Calais Avenue]], [[Little Seoul]].
+DigitalDen-GTAV-MirrorPark.png|[[Mirror Park Boulevard]], [[Mirror Park]].
+DigitalDen-GTAV-DelPerroPlaza.png|[[Del Perro Plaza]], [[Boulevard Del Perro]] <small>(closed)</small>.
+DigitalDen-GTAV-CrimeScene.jpg|[[Boulevard Del Perro]], [[Morningwood]] <small>(closed)</small>.
+DigitalDen-GTAV-WestVinewood.png|[[Eclipse Boulevard]], [[West Vinewood]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics stores

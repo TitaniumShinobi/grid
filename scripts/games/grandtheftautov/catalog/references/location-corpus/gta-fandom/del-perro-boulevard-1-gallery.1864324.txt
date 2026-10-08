@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = ART GALLERY
+|type           = 
+|name           = Del Perro Boulevard 1 Gallery
+|sign           = DelPerroBoulevard1-GTAV-Logo.png
+|image          = DelPerroBoulevard1-GTAVe-Building.png
+|games          = {{Games|V=y|O=y}}
+|location       = [[Hawick Avenue]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|structure_type = Art gallery
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Del Perro Boulevard 1 Gallery''' is an art gallery that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Art galleries
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos

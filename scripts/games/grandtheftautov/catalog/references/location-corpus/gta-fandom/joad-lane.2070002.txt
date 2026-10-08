@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=JoadLane-Street-GTAV.jpg
+|caption=Joad Lane with [[O'Neil Way]] on the right.
+|games={{Games|V=y|O=y}}
+|start=[[Grapeseed Main Street]] corner [[Union Road]], [[Grapeseed]]
+|end=[[Seaview Road]], Grapeseed
+|map=<gallery>
+JoadLane-GTAV-Map.png|Map
+JoadLane-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Joad Lane''' is a two-way road located in [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Grapeseed Cow Farm]]
+*[[Lucky Jim's Ranch]]
+*[[Union Grain Farm]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = fashion
+|name          = Zorse Leatherware
+|sign          = ZorseLeatherware-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = Leatherware brand
+|status        = active
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Zorse Leatherware''' is a leather goods brand in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|ZorseLeatherware-GTAVee-Store.png|[[The Emissary]], [[Elgin Avenue]], [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fashion brands

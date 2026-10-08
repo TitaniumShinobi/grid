@@ -4,9 +4,47 @@ using System.Text;
 using System.Text.Json;
 using Grid.Core.Models;
 using Grid.Core.Services;
+using Grid.GtaV.Knowledge;
 
 internal static class RegistrationCoverageReport
 {
+    public static object WithPlan2(object historicalReport, GtaVRouteMetrics routes,
+        GtaVItemCorpusIndex items, GtaVPresentationCorpusIndex presentation)
+    {
+        var report = JsonSerializer.SerializeToNode(historicalReport, CompactJson)!.AsObject();
+        report.Remove("contentSha256");
+        if (report["unsupportedSourceFamilies"] is System.Text.Json.Nodes.JsonArray unsupported)
+            foreach (var entry in unsupported.Where(value => value?["sourceFamilyId"]?.GetValue<string>() ==
+                         "rockstar.gta-v.enhanced.patch-american-localization").ToArray()) unsupported.Remove(entry);
+        var labels = items.Rows.Where(row => row.LabelKey is not null)
+            .Select(row => items.ResolveText(row.Source, row.LabelKey!).Select(text => text.Text).Distinct(StringComparer.Ordinal).Count()).ToArray();
+        report["plan2"] = JsonSerializer.SerializeToNode(new
+        {
+            coverage = "partial",
+            locale = "en-US",
+            routes,
+            itemFamilies = items.Sources.GroupBy(value => value.Family, StringComparer.Ordinal)
+                .OrderBy(group => group.Key, StringComparer.Ordinal).Select(group => new
+                {
+                    family = group.Key,
+                    sources = group.Count(),
+                    parsedRows = items.Rows.Count(row => row.Source.Family == group.Key),
+                }).ToArray(),
+            itemDeclaredSourceGaps = items.Unresolved,
+            itemTerminologyJoinOutcomes = new { exact = labels.Count(count => count == 1), unmatched = labels.Count(count => count == 0), conflicting = labels.Count(count => count > 1) },
+            actorReferenceModels = presentation.Actors.Select(row => row.ModelHash).Distinct().Count(),
+            generatedActivityTextDiagnostics = presentation.GeneratedTextDiagnostics,
+            deferredCoverage = new[] {
+                "Location: geographic parents, POIs, properties, IPL/interior and room names, effective mounted roads",
+                "MissionQuest: fmnm title bridge, Story registry, full taxonomy, playlist locale, heist constituents",
+                "Item: weapon category labels, wardrobe sections, armor, equipment/consumables, visible generic pickups, vehicle customization",
+                "Actor: remaining/conditional models, dynamic Online actors, factions, content and mission relationships",
+            },
+        }, CompactJson);
+        report["contentSha256"] = Sha256(JsonSerializer.SerializeToUtf8Bytes(report, CompactJson));
+        return report;
+    }
+
     private static readonly JsonSerializerOptions CompactJson = new(JsonSerializerDefaults.Web);
 
     public static object Create(
@@ -167,6 +205,14 @@ internal static class RegistrationCoverageReport
                           payload.UnresolvedSourceAssertions.Count(value => value.CandidateKind == kind),
                     canonicalRecords = records.Length,
                     playerFacingTerminologyResolved = namedIds.Count,
+                    presentationLocale = "en-US",
+                    exactEnglishPrimaryNames = terminology
+                        .Where(value => value.Role == TerminologyAssertionRole.PrimaryName && value.LanguageTag == "en-US")
+                        .GroupBy(value => value.KnowledgeRecordId)
+                        .Count(group => group.Select(value => value.VerbatimValue).Distinct(StringComparer.Ordinal).Count() == 1),
+                    explicitlyPlayerAddressableRecords = classifications
+                        .Where(value => value.RoleId == CanonicalProjectionSemantics.SelectorPlayerAddressable)
+                        .Select(value => value.KnowledgeRecordId).Distinct().Count(),
                     identifierOnly = records.Count(value => !namedIds.Contains(value.Id)),
                     terminology = terminology
                         .GroupBy(value => new { role = value.Role.ToString(), languageTag = value.LanguageTag })
@@ -194,6 +240,7 @@ internal static class RegistrationCoverageReport
                             assertions = value.Count(),
                             distinctValues = value.Select(item => item.ExactValueIdentity).Distinct().Count(),
                             displayBearingAssertions = value.Count(item => item.VerbatimDisplayValue is not null),
+                            localeQualifiedAssertions = value.Count(item => item.LanguageTag == "en-US"),
                         }).ToArray(),
                     relationships = relationships
                         .GroupBy(value => new { semanticId = value.SemanticId.Value, resolution = value.Resolution.ToString() })

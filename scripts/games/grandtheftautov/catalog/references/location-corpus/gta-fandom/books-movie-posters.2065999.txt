@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|name        = Books & Movie Posters
+|image       = BooksMoviePosters-GTAV.png
+|type        = shop
+|games       = {{Games|V=y|O=y}}
+|status      = active
+|accessible  = No
+|location    = [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Books & Movie Posters''' is a bookshop in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Bookstores
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos

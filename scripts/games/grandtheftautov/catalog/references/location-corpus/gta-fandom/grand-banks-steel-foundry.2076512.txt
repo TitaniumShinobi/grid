@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = GroundBanksSteelFoundry-GTAV.png
+|caption = Overview of the foundry.
+|altnames = {{H:title|Foundry signage|East Los Santos Foundry}}
+|name = Grand Banks Steel Foundry
+|type = Steel foundry
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Cypress Flats]]/[[Murrieta Heights]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Grand Banks Steel Inc Foundry''' (also known as the '''East Los Santos Foundry''') is a business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Cypress Flats]]/[[Murrieta Heights]], [[East Los Santos (HD Universe)|East Los Santos]].
+
+[[CATEGORIES]]
+Factory complexes
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

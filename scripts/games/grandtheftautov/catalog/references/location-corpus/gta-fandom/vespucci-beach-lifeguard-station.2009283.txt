@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|name          = {{PAGENAME}}
+|image         = VespucciBeachLifeguard-GTAVee.jpg
+|caption       = Overview of the station.
+|type          = 
+|location      = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+|games         = {{Games|V=y|O=y}}
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+The '''Vespucci Beach Lifeguard Station''' is a station of the [[Los Santos Lifeguard]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

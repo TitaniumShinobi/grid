@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|image     = WindsorRealEstate-Logo.png
+|games     = {{Games|V=y|O=y}}
+|type      = realestate
+|locations = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Windsor Real Estate''' is a real estate company featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Real Estate
+Real estate companies

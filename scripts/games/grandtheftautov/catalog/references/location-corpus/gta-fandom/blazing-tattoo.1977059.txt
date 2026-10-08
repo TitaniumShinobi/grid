@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Blazing Tattoo
+|image = BlazingTattoo-GTAV-Logo.png
+|type = Tattoo parlor
+|games = ''[[Grand Theft Auto V]]<br/>[[Grand Theft Auto Online]]''
+|locations = [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Downtown Vinewood]]}}
+
+[[LEAD]]
+'''Blazing Tattoo''' is a [[Tattoo Parlors|tattoo parlor]] located on [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]] in [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tattoo parlors

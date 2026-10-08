@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = cleaningproduct
+|name          = Blox
+|image         = Blox-GTAV-Logo.png
+|games         = {{games|VC=y|VCS=y|IV=y|EFLC=y|V=y|O=y}}
+|business_type = Detergent
+|taglines      = 
+*"''Blox the germs away!''"
+*"''Kills indiscriminately''"
+*"''Stops leprosy''"
+*"''Kills everything''"
+|status        = 
+}}
+
+[[LEAD]]
+'''Blox''' is a detergent brand featured in the {{3D}} and {{HD}} of the {{S}}.
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+<gallery position="center" spacing="small" bordercolor="#011665" widths="270px">
+Blox-GTAVCS.jpg|Multiple '''Blox''' bottles inside [[Verdi Groceries]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA Vice City
+Businesses in GTA Vice City Stories
+Cleaning product brands
+Commercials

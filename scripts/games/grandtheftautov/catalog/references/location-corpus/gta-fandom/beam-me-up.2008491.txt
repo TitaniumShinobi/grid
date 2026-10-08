@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|image = BeamMeUp-GTAV.png
+|caption =
+|landmark = y
+|games = {{Games|V=y|O=y}}
+|aka = Silent Probe Mountain<br />Senora Quarry
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map = BeamMeUp-GTAV-Map.png
+|pscanner = SilentProbeMountain-GTAV-PoliceScanner.ogg
+}}
+
+[[LEAD]]
+'''Beam Me Up''' (also known as '''Silent Probe Mountain''') is an art installation featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:4:The Diamond Casino & Resort]]
+*[[Project 4808D: Desert]] <small>([[Survival]])</small>
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Secrets

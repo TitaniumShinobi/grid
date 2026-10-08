@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|safehouse      = 
+|type           = factory
+|name           = Rimm Paint Factory
+|sign           = 
+|image          = RimmPaint-GTAV.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Power Street]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|price          = 
+|condition      = 
+|status         = defunct
+|use            = 
+*Paint factory <small>(Formerly)</small>{{Ref|name = rimm-factory-disused|type = quote|date = 11/20/2024|ref  = {{Quote|One of the little-known perks of setting up a night club in a disused paint factory is the presence of high residual levels of industrial solvent. Good atmosphere, happy patrons, all night. guaranteed.|Nightclubs, [[Maze Bank Foreclosures]]}}}}
+|owner          = 
+*[[Rimm Paint]] <small>(Formerly)</small>
+|map         = RimmPaint-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Rimm Paint Factory''' is a disused{{Ref|name = rimm-factory-disused}} paint factory seen in {{V}} and {{O}}, formerly owned and operated by the [[Rimm Paint]] company.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Factory buildings
+Former buildings

@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=DryDockStreet-GTAV.png
+|caption=Dry Dock Street as seen from [[Orchardville Avenue]].
+|games={{Games|V=y|O=y}}
+|start=[[Popular Street]]
+|end=[[Orchardville Avenue]]
+|map=<gallery>
+DryDockStreet-GTAV-Map.png|Map
+DryDockStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Dry Dock Street''' is a short two-way [[List of Street Names|street]] in [[Cypress Flats]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*Kennedy Sneaker Co.
+*Nicholl's Liquor
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

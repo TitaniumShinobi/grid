@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 2866 Hillcrest Avenue
+|image = 2866HillcrestAvenue-AerialView-GTAO.png
+|caption = Aerial view of the stilt house.
+|games = ''[[Grand Theft Auto Online]]''
+|style = High-end apartment
+|garage = * 10 vehicles<br>* 3 bicycles
+|price = $525,000
+|occupants = [[GTA Online Protagonist]] <small>(determinant)</small>
+}}
+
+[[LEAD]]
+'''2866 Hillcrest Avenue''' is a stilt house [[Safehouses in GTA Online|safehouse]] located on [[Hillcrest Avenue]] in [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], featured in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online
+Safehouses
+Safehouses in GTA Online
+Stilt houses

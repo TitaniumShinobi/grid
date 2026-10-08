@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "taxonomyId": "grid.investigation-taxonomy.minimal-canary",
+  "taxonomyVersion": "1.0.0",
+  "problems": [
+    {
+      "problemId": "grid.problem.crash",
+      "classId": "grid.class.crash-freeze",
+      "displayName": "Crash"
+    }
+  ],
+  "timings": [
+    {
+      "timingId": "grid.timing.after-leaving-activity",
+      "classId": "grid.class.crash-freeze",
+      "displayName": "After leaving an activity"
+    }
+  ],
+  "goals": [
+    {
+      "goalId": "grid.goal.identify-evidence-backed-cause",
+      "displayName": "Identify evidence-backed cause"
+    }
+  ]
+}

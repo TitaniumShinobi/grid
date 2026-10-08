@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Spanner-GTAV-HRUTopPrint.png
+|name = Spannar
+|lcn = 
+|type = HRU manufacturer
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = 
+}}
+
+[[LEAD]]
+'''Spannar''' is a manufacturer of hydrostatic release units (HRU) in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

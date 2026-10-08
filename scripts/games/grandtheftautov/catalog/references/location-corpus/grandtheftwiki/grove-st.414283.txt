@@ -1,0 +1,34 @@
+[[LEAD]]
+'''Grove St''' is a street in [[Davis]], [[Los Santos in GTA V|Los Santos]] with connections to [[Davis Ave]] and [[Brouge Ave]]. It was once [[Grove Street Families]] turf, but by the events of [[Grand Theft Auto V]] the street is now under [[Ballas in GTA V|Ballas]] control with gang members easily visible wearing purple. The [[Los Santos River]] also runs parallel to the street. The street has twenty-two houses of which two are for sale and one for rent.
+
+[[SECTION:2:Businesses]]
+{| class="wikitable sortable"
+! Business name
+! Location
+! class="unsortable"| Street
+! Business type
+|-
+| [[Auto Fix Factory]]
+| [[Davis]]
+| [[Davis Ave]]
+| Garage
+|-
+| [[Franklin Clinton's Garage]]
+| [[Davis]]
+| 
+| Private garage<br />(<small>part of Auto Fix Factory</small>)
+|-
+| [[LTD]] [[Filling Station|filling station]]
+| [[Davis]]
+| [[Davis Ave]]
+| Filling station
+|-
+| Unnamed convenience store
+| [[Davis]]
+|
+| Convenience store
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

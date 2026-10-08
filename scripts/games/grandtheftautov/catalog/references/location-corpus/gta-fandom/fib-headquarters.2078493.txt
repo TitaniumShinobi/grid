@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = FIB Headquarters
+|image          = FIBHeadquarters-GTAV.png
+|caption        = The skyscraper as seen from the south.
+|games          = {{Games|V=y|O=y}}
+|aka            = FIB building
+|location       = [[Pillbox Hill]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|use            = Los Santos Headquarters of the FIB
+|floors         = 53
+|file_name      = 
+*<code>dt1_05_build1_h</code>
+*<code>dt1_05_build1_damage</code> <small>(damaged)</small>
+}}
+
+[[LEAD]]
+The '''FIB Headquarters''' is a skyscraper appearing in {{V}} and {{O}}. It is the [[Federal Investigation Bureau]] (FIB)'s field office for the state of [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[Heist Prep: Hacking Device]] <small>(possible location)</small>
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Federal buildings
+Landmarks

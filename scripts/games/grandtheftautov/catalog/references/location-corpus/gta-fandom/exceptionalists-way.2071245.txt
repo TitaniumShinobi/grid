@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = ExceptionalistsWay-GTAVee.jpg
+|caption = The street at the intersection with [[Greenwich Parkway]].
+|games = {{Games|V=y|O=y}}
+|start = [[Autopia Parkway]]
+|end = [[New Empire Way]]
+|map =
+<gallery>
+ExceptionalistsWay-GTAV-Map.png|Map
+ExceptionalistsWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Exceptionalists Way''' is a street in [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[1337 Exceptionalists Way]]
+
+[[SECTION:2:Businesses]]
+*[[Alpha Mail]]
+*[[Big House Storage Inc.]] {{Small|(corner of [[Autopia Parkway]])}}
+*[[Opium Nights]] {{Small|(corner of [[Greenwich Parkway]])}}
+*[[Poppy House]]
+*[[Sightings Bar & Restaurant]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

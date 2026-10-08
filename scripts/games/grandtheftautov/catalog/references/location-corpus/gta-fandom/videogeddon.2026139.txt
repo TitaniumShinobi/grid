@@ -1,0 +1,78 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = videogame
+|name          = Videogeddon
+|sign          = Videogeddon-GTAO-Logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y}}
+|mentioned     = 
+|locations     =
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Videogeddon''' is a chain of video game arcades featured in {{IV}}, {{EFLC}}, {{CW}}, {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+*The [[Chinatown (GTA IV)|Chinatown]] branch in [[Liberty City (HD Universe)|Liberty City]] is based on the Oltarsh Building located at {{URL|https://maps.app.goo.gl/wpJvJX5E7L3zbM4D6|277 Canal Street}} in New York.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|ColumbusEmeraldBldg-GTAIV-Arcade.png|Overview of '''Videogeddon'''.
+}}
+{{Gallery
+|game = CW
+|Videogeddon-GTACW.PNG|Overview of '''Videogeddon'''.
+}}
+{{Gallery
+|game = O
+|VideogeddonArcade-GTAO-Front.jpg|Overview of '''Videogeddon'''.
+}}
+
+[[CATEGORIES]]
+Arcades
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V

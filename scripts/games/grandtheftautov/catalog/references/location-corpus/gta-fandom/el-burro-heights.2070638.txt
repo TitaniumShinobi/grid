@@ -1,0 +1,58 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = neighborhood
+|name           = El Burro Heights
+|sign           = 
+|image          = ElBurroHeights-GTAV.png
+|caption        = Overview of '''El Burro Heights''' in {{V}}.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|established    = 
+|state          = [[State of San Andreas (HD Universe)|San Andreas]]
+|county         = [[Los Santos County]]
+|city           = [[Los Santos (HD Universe)|Los Santos]]
+|pop            = 
+|motto          = 
+|pscanner       = PoliceScanner-GTAV-Neighborhood-ElBurroHeights.ogg
+|pscannernotes  = 
+|map            = <gallery>
+ElBurroHeights-GTAV-Map.png|El Burro Heights
+ElBurroHeights-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+'''El Burro Heights''' is a suburban neighborhood in [[East Los Santos (HD Universe)|East Los Santos]] in {{V}} and {{O}}. It borders [[Murrieta Heights]] to the north, [[Palomino Highlands]] to the east, [[Terminal]] to the south, and [[La Mesa]] and [[Cypress Flats]] to the west.
+
+[[SECTION:2:Roads and Streets]]
+*[[Amarillo Vista]]
+*[[Amarillo Way]]
+*[[Capital Boulevard]]
+*[[El Rancho Boulevard]]
+*[[Fudge Lane]]
+*[[Labor Place]]
+*[[Sustancia Road]]
+
+[[SECTION:2:Places of Interest]]
+*[[Car Scrapyard]]
+*[[El Burro Heights Fire Station]]
+*[[Lester's House]]
+*[[LSA Lockup]]
+*[[Murrieta Oil Field]]
+*[[Skinny's House]]
+*[[St. Fiacre Hospital]]
+
+[[SECTION:2:Businesses]]
+*[[Los Santos Tattoos]]
+*[[LT Weld Supply Co.]]
+*[[RON]] [[Filling Stations|gas station]]
+*[[Thorns]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

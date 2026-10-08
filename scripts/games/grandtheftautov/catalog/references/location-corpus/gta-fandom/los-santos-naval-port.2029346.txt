@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox location
+|type         = militarybase
+|name         = Los Santos Naval Port
+|aka          = 
+*Naval Warehouse
+*Pier 45
+*Merryweather HQ
+|image        = LosSantosNavalPort-GTAV-OverviewFromSouth.png
+|sign         = LosSantosNavalPort-GTAV-Sign.png
+|games        = {{Games|V=y|O=y}}
+|location     = [[Elysian Island]], [[Port of Los Santos]], [[Los Santos (HD Universe)|Los Santos]]
+|marinacap    = 3 {{Small|(2 wet, 1 dry)}}
+|occupants    = [[Merryweather Security]]
+|map          =
+<gallery>
+LosSantosNavalPort-GTAV-Map.png|Map
+LosSantosNavalPort-GTAV-Satellite.png|Satellite
+</gallery>
+|accessible   = Yes
+|status       = active
+}}
+
+[[LEAD]]
+The '''Los Santos Naval Port''', also named the '''Naval Warehouse'''{{Ref|name=warehouse|type=screenshot|image=LosSantosNavalPort-GTAV-NavalWarehouseSignage.png|caption=On entry signage.}}, '''Pier 45''' and known as the '''Merryweather HQ''', is a [[Military (HD Universe)|military]] facility located on [[Elysian Island]] in the [[Port of Los Santos]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Military ports
+Restricted locations
+Seaports

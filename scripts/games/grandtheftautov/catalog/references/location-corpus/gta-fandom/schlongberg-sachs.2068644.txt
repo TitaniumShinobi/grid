@@ -1,0 +1,64 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = FINANCIAL SERVICES COMPANY
+|type          = 
+|name          = Schlongberg Sachs
+|image         = SchlongbergSachs-GTAV-Logo.png
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Alderney City]], [[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Corporate and investment banking firm
+|ceo           = 
+|employees     = [[Glenn Scoville]]
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Schlongberg Sachs''' is a financial services company that appears in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+*[[The Triangle]] location is based on the {{WP|3 Times Square|Thomson Reuters Building}} at {{URL|https://maps.app.goo.gl/1yw477hDGUSX6z7v8|3 Times Square}} in {{WP|Times Square}}, {{WP|Midtown Manhattan}}.
+
+[[SECTION:2:Locations]]
+{{Split}}
+
+{{Gallery
+|game = IV
+|SchlongbergSachsAlderney-GTAIV-Overview.png|[[Schlongberg Sachs Building (Alderney)|Schlongberg Sachs Building]], [[Koresh Square]], [[Alderney City]], [[State of Alderney|Alderney]].
+|SchlongbergSachs-GTAIV-Lancaster.png|'''Schlongberg Sachs''' on [[Bismarck Avenue]] and [[Silicon Street]], [[Lancaster]], [[Algonquin]].
+|SchlongbergSachs-GTAIV-TheTriangle.png|'''Schlongberg Sachs''' on [[Denver-Exeter Avenue]] and [[Iron Street]], [[The Triangle]], [[Algonquin]]. {{Small|([[:File:SchlongbergSachs-GTAIV-TheTriangleNight.png|Night view]])}}
+}}
+
+{{Gallery
+|game = CW
+|TriangleTower-GTACW.jpg|[[Triangle Tower]], [[The Triangle]], [[Algonquin]].
+}}
+
+{{Gallery
+|game = VO
+|SchlongbergSachs_GTAV_WestVinewood_Building.png|[[South Mo Milton Drive]] and [[West Eclipse Boulevard]], [[West Vinewood]]. {{Small|([[:File:SchlongbergSachs GTAV WestVinewood Map.png|Map]])}}
+|SchlongbergSachs_GTAV_RockfordHills_Building.png|[[Heritage Way]] and [[Marathon Avenue]], [[Rockford Hills]]. {{Small|([[:File:SchlongbergSachs GTAV RockfordHills Entry.png|Entrance view]]/[[:File:SchlongbergSachs GTAV RockfordHills Map.png|Map]])}}
+|SchlongbergSachsCenter-GTAV.png|[[Schlongberg Sachs Center]], [[San Andreas Avenue]], [[Alta Street]] and [[Peaceful Street]], [[Pillbox Hill]]. {{Small|([[:File:SchlongbergSachsCenter-StreetView-GTAV.png|Worm's eye view]]/[[:File:SchlongbergSachs GTAV PillboxHill Map.png|Map]])}}
+|SchlongbergSachs-GTAVee-PillboxHill.jpg|[[Adam's Apple Boulevard]] and [[Strawberry Avenue]], [[Pillbox Hill]]. {{Small|([[:File:SchlongbergSachs GTAV PillboxHill South Entry.png|Entrance view]]/[[:File:SchlongbergSachs GTAV PillboxHill South Map.png|Map]])}}
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Financial services companies

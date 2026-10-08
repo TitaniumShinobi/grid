@@ -1,0 +1,112 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name                = Enduro
+|front_image         = Enduro-GTAO-front.png
+|rear_image          = Enduro-GTAO-rear.png
+|caption             = An '''Enduro''' in ''[[Grand Theft Auto Online]]''.
+|class               = [[:Category:Motorcycles class|Motorcycles]] {{Small|(''GTA Online'')}}
+|body_style          = Off-road {{WP|Enduro motorcycle|enduro trials motorcycle}}
+|capacity            = 2 {{Small|(rider and passenger)}}
+|manufacturer        = [[Dinka]]
+|price               = [[Money|$]]48,000 {{Small|([[Southern San Andreas Super Autos]]; [[#Locations|no longer available]])}}
+|games               = {{Games|O={{DLC|mpheist}}|VI=y}}
+|type                = dirtbike
+|swankness           = 1/5
+|dashtype            = Sport Bike {{Small|(needles)}}[[File:Motorbike-Dials-GTAV.png|thumb|center|170px]]Sports Bike {{Small|(dials)}}[[File:SportsBike-GTAV-DialSet.png|thumb|center|170px]]
+|inttxd              = Sports Bike
+|carcols             = 
+{{Expand||
+{{CarColV/Title}}
+{{CarColV|no=1|6|0|111|156}}
+{{CarColV|no=2|4|0|111|156}}
+{{CarColV|no=3|5|11|111|156}}
+{{CarColV|no=4|27|0|28|156}}
+{{CarColV|no=5|33|127|90|156}}
+{{CarColV|no=6|62|1|62|156}}
+{{CarColV|no=7|38|35|88|156}}
+{{CarColV|no=8|92|0|89|156}}
+{{CarColV|no=9|111|1|0|156}}<br>
+}}
+|wheeltype           = Motorcycle
+|flags               = 
+{{Expand||
+{{Flags|FLAG_NO_BOOT}}<br>
+{{Flags|FLAG_HAS_LIVERY}}<br>
+{{Flags|FLAG_IGNORE_ON_SIDE_CHECK}}<br>
+{{Flags|FLAG_AVERAGE_CAR}}<br>
+{{Flags|FLAG_IS_OFFROAD_VEHICLE}}<br>
+{{Flags|FLAG_HEADLIGHTS_USE_ACTUAL_BONE_POS}}<br>
+}}
+|modelsets           = 
+|modelname           = enduro
+|handlingname        = ENDURO
+|textlabelname       = ENDURO
+|roadspawn           = No
+|roadspawnmaxcol     = 10
+|roadspawnfreq       = 30
+|roadspawntrailer    = 
+|roadspawnidendis    = 80
+|roadspawndrivers    = 
+*A_M_M_Hillbilly_02
+*A_M_M_Salton_01
+|roadspawngroups     = 
+|roadspawnlicense    = 
+*Standard White - 70%
+*White Plate 2 - 30%
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The [[Dinka]] '''Enduro''' is an off-road {{WP|Enduro motorcycle|enduro motorcycle}} featured in {{O}} as part of the [[GTA Online: Heists|Heists]] update.
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Enduro
+|manufacturer  = Dinka
+|class         = Motorcycles 
+|image         = Enduro-GTAO-RGSC-MainNew.jpg
+|caption       = Main image (after 2019).
+|image2        = Enduro-GTAO-RGSC-Action.jpg
+|caption2      = "Action" image.
+|image3        = Enduro-GTAO-RGSC-Main.jpg
+|caption3      = Main image (prior to 2019).
+|speed         = 63.849609
+|accel         = 72.5
+|braking       = 36.666668
+|traction      = 65.454552
+|seats         = 2
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = sssa
+|schematic     = BikeGenericEnduro
+}}
+
+[[SECTION:2:Locations]]
+*Available for purchase from [[Southern San Andreas Super Autos]] for [[Money|$]]48,000.
+**No longer available in the enhanced versions of the game; [[:Category:Vehicles removed for purchase in GTA Online: San Andreas Mercenaries|removed]] from the website as part of the [[GTA Online: San Andreas Mercenaries|San Andreas Mercenaries]] update.
+
+'''Enhanced version'''
+*Associates of [[Organizations]] can have access to an Enduro, available via [[SecuroServ]] through the "Associate Vehicles" option in the [[Interaction Menu]] for FREE. It spawns in matte black and has bullet-proof tires.
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Enduro}}
+{{Defaultradio|game=O|defaultgroup=punk}}
+
+[[CATEGORIES]]
+Agent
+Dirt bikes
+Motorcycles class
+Motorsport vehicles
+Off-roading vehicles
+Vehicles in GTA Online: Heists
+Vehicles manufactured by Dinka
+Vehicles purchasable from Premium Deluxe Motorsport
+Vehicles purchasable from Southern San Andreas Super Autos
+Vehicles removed for purchase in GTA Online: San Andreas Mercenaries

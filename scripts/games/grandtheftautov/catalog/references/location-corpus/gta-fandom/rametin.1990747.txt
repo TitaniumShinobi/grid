@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Rametin
+|image = Rametin-Logo.png
+|type = Clothing
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Hawick Avenue]], [[Hawick]]}}
+
+[[LEAD]]
+'''Rametin''' is a clothing store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = warehouse
+|image          = TPIWarehouse-GTAVe.png
+|caption        = View of the warehouse in 2013.
+|games          = {{Games|V=y|O=<small>(formerly)</small>}}
+|location       = [[Mirror Park Railyard]], [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|structure_type = Warehouse
+|floors         = 2
+|owner          = [[Trevor Philips Enterprises]] <small>([[2022|formerly]])</small>
+|occupants      = 
+*[[Ron Jakowski]] <small>(formerly)</small>
+*[[Trevor Philips]] <small>(formerly)</small>
+*[[The Professionals]] <small>(formerly)</small>
+|file_name      = <code>hei_dt1_08_i400.ydr</code>
+|coords         = 602.2845,-437.0917,30.26609
+|map            = TPIWarehouse-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''TPI Warehouse''' is a large warehouse appearing in {{V}} and formerly in {{O}}.
+
+On December 13, [[2022]], it was replaced by [[The Freakshop]] as part of the [[GTA Online: Los Santos Drug Wars|Los Santos Drug Wars]] update in ''Grand Theft Auto Online''.
+
+[[CATEGORIES]]
+Former locations in GTA Online
+Locations in GTA V in Los Santos
+Warehouses

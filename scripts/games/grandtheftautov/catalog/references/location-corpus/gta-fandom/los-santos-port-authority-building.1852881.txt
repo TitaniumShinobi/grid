@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = policestation
+|image          = LSPA-GTAV-Building.png
+|caption        = Overview of the building.
+|name           = Los Santos Port Authority Building
+|location       = [[Plaice Place]], [[Elysian Island]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games          = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Los Santos Port Authority Building''' is the main headquarters of the [[The Port Authority of Los Santos]] appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Government
+Government Buildings
+Government Buildings in GTA Online
+Government Buildings in GTA V
+Police stations

@@ -1,0 +1,127 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = coffee
+|name          = The Bean Machine
+|sign          = TheBeanMachine-GTA4-logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|image_label3  = 
+|image3        = 
+|caption3      = 
+|image_label4  = 
+|image4        = 
+|caption4      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Port Tudor]], [[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Coffeehouse
+|founded       = [[1970]]
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = "''Tastes like fuel. Kicks like a mule.''"
+|bawsaq        = 
+|lcn           = {{BAWSAQ/Slider}} '''BEN'''
+|status        = active
+|phone         = 5550110
+|email         = 
+|website       = [[Bean Machine#website|beanmachinecoffee.com]]
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+|opentimes     = 
+|accessible    =
+|unlockedby    = 
+|unlockedafter = 
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+|map3          = 
+|map_caption3  = 
+}}
+
+[[LEAD]]
+'''The Bean Machine''' is a coffeehouse chain corporation in {{IV}}, {{EFLC}}, {{CW}}, {{V}}, and {{O}}, and due to appear in {{VI}}.
+
+[[SECTION:3:Locations]]
+*The location on [[Prosperity Street Promenade]], [[Del Perro]] is based on the former Promenade Cafe at {{URL|https://goo.gl/maps/CgrSRquJcpuuHhAK8|12 Third Street Promenade}} in Santa Monica, California.
+*The location on [[Pleasure Pier]], [[Del Perro Pier]], [[Del Perro Beach]] is based on {{URL|https://goo.gl/maps/QVeyqkpEK8xW53fx9|The Coffee Bean}} location on the Santa Monica Pier in Santa Monica, California.
+
+{{Clear}}
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|BeanMachine-GTAIV-Warehouse.png|'''Bean Machine''' warehouse in [[Port Tudor]], [[State of Alderney|Alderney]].
+|YGDrugs-GTAIV-AlbanyAvenue.png|'''Bean Machine''' on [[Albany Avenue]], [[Chinatown (GTA IV)|Chinatown]], [[Algonquin]], adjoined to [[Y G Drugs]]. {{Small|([[:File:YGDrugs-GTAIV-AlbanyAvenueNight.png|night view]])}}
+|BeanMachine-GTAIV-Easton.png|'''Bean Machine''' on [[Albany Avenue]], [[Easton]], Algonquin.
+|BeanMachine-GTAIV-FishmarketSouth.png|'''Bean Machine''' at [[Pier 45]], [[Fishmarket South]], Algonquin.
+|BeanMachine-GTAIV-ColumbusAvenue.png|'''Bean Machine''' on [[Columbus Avenue]] and [[Lorimar Street]], [[Star Junction]], Algonquin.
+|BeanMachine-GTAIV-ColumbusCenter.png|'''Bean Machine''' at the [[Columbus Center]], Star Junction, Algonquin.
+|BeanMachine-GTAIV-DenverExeterAvenue2.png|'''Bean Machine''' on [[Denver-Exeter Avenue]], Star Junction, Algonquin.
+|BeanMachine-GTAIV-BurlesqueIronStreet.png|'''Bean Machine''' on [[Burlesque]] and [[Iron Street]], [[The Triangle]], Algonquin.
+|BeanMachine-GTAIV-DenverExeterAvenue.png|'''Bean Machine''' Denver-Exeter Avenue and [[Hematite Street]], The Triangle, Algonquin.
+|BeanMachine-GTAIV-FrankfortAvenue.png|'''Bean Machine''' on [[Frankfort Avenue]] and Iron Street, The Triangle, Algonquin.
+|BeanMachine-GTAIV-Broker.png|'''Bean Machine''' at [[Munsee Avenue]] and [[Dillon Street]], [[Downtown (GTA IV)|Downtown]], [[Broker]].
+|BeanMachine-GTAIV-Willis.png|'''Bean Machine''' on [[Saratoga Avenue]] and [[Carrollton Street]], [[Willis]], [[Dukes]].
+}}
+{{Gallery
+|game = CW
+|BeanMachine-GTACW-Easton-HematiteSt.png|'''Bean Machine''' on Columbus Avenue and [[Hematite Street]], [[Easton]], Algonquin.
+|BeanMachine-GTACW-Easton.png|'''Bean Machine''' on [[Albany Avenue]], [[Easton]], [[Algonquin]].
+|BeanMachine-GTACW-Pier45.png|'''Bean Machine''' at [[Pier 45]], [[Fishmarket South]], Algonquin.
+|ImageNeeded.png|'''Bean Machine''' at the [[Columbus Center]], Star Junction, Algonquin.{{fact}}
+|BeanMachine-GTACW-StarJunction-ColumbusAvenue.png|'''Bean Machine''' on [[Columbus Avenue]] and [[Lorimar Street]], [[Star Junction]], Algonquin.
+|BeanMachine-GTACW-TheTriangle-Burlesque.png|'''Bean Machine''' on [[Burlesque]] and [[Iron Street]], [[The Triangle]], Algonquin.
+|BeanMachine-GTACW-TheTriangle-FrankfortAvenue.png|'''Bean Machine''' on [[Frankfort Avenue]] and Iron Street, The Triangle, Algonquin.
+|BeanMachine-GTACW-TheTriangle-DenverExeterAvenue.png|'''Bean Machine''' Denver-Exeter Avenue and [[Hematite Street]], The Triangle, Algonquin.
+|ImageNeeded.png|'''Bean Machine''' at [[Munsee Avenue]] and [[Dillon Street]], [[Downtown (GTA IV)|Downtown]], [[Broker]].{{fact}}
+|BeanMachine-GTACW-Willis.png|'''Bean Machine''' on [[Saratoga Avenue]] and [[Carrollton Street]], [[Willis]], [[Dukes]].
+}}
+{{Gallery
+|game = VO
+|TheBeanMachine-GTAV-KaytonTowers.png|'''Bean Machine''' at [[Kayton Towers]], [[Movie Star Way]] and [[San Andreas Avenue]], [[Little Seoul]].
+|TheBeanMachine-GTAV-Morningwood.png|'''Bean Machine''' on [[Morningwood Boulevard]], [[Morningwood]].
+|TheBeanMachine-GTAV-TextileCity.png|'''Bean Machine''' on [[Simmet Alley]], [[Textile City]].
+|TheBeanMachine-GTAV-LittleSeoul.png|'''Bean Machine''' on [[Vespucci Boulevard]], Little Seoul, opposite [[Arirang Plaza]].
+|BeanMachine-GTAV-MissionRow.jpg|'''Bean Machine''' on [[Atlee Street]], [[Mission Row]].
+|BeanMachine-GTAVe-ProsperityStreetPromenade.png|'''Bean Machine''' on [[Prosperity Street Promenade]], [[Del Perro]].
+|BeanMachine-GTAVe-DelPerroPier.png|'''Bean Machine''' on [[Pleasure Pier]], [[Del Perro Pier]], [[Del Perro Beach]] {{Small|([[:File:BeanMachine-GTAVe-DelPerroPier-NightView.png|Night view]].)}}
+|BeanMachine-GTAV-KoreanPlaza.jpg|'''Bean Machine''' on [[Korean Plaza]], [[Calais Avenue]], Little Seoul.
+|BeanMachine-GTAVee-PillboxHill.jpg|'''Bean Machine''' on [[Peaceful Street]] and Vespucci Boulevard, [[Pillbox Hill]].
+|BeanMachine-GTAV-RockfordHills.jpg|'''Bean Machine''' on [[Heritage Way]], [[Rockford Hills]].
+|BeanMachine-GTAV-SouthMoMiltonDr.jpg|'''Bean Machine''' on [[South Mo Milton Drive]], [[West Vinewood]], at the [[Eclipse Medical Tower]].
+|BeanMachine-GTAV-Vespucci.jpg|'''Bean Machine''' on [[Magellan Avenue]], [[Vespucci]].
+|BeanMachine-GTAV-WestVinewood.jpg|'''Bean Machine''' on [[Strangeways Drive]] and [[Eclipse Boulevard]], West Vinewood.
+|DelPerro-GTAV-ElginAvenue.jpg|'''Bean Machine''' on [[Elgin Avenue]] and Vespucci Boulevard, Pillbox Hill.
+|BeanMachine-GTAV-PalominoAve.jpg|'''Bean Machine''' on [[Palomino Avenue]] and Vespucci Boulevard, Little Seoul.
+|BeanMachine-GTAV-DelPerroPlaza.jpg|'''Bean Machine''' on [[Del Perro Plaza]], [[Boulevard Del Perro]], Del Perro.
+|BeanMachine-GTAV-3AltaStreet.jpg|'''Bean Machine''' at [[3 Alta Street]], [[Alta Street]], Pillbox Hill.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses with websites
+Café chains

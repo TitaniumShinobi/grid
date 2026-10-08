@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Rebel Radio Building
+|image          = RebelRadioBuilding-GTAVee.jpg
+|games          = {{games|V=y|O=y}}
+|owner          = [[Rebel Radio]]
+|map            = RebelRadioBuilding-GTAV-MapLocation.png
+|location       = [[Route 68]], [[Grand Senora Desert]], [[Blaine County]]
+}}
+
+[[LEAD]]
+The '''Rebel Radio Building''' is the headquarters of the country radio station [[Rebel Radio]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Low-rise buildings
+Radio broadcasting buildings

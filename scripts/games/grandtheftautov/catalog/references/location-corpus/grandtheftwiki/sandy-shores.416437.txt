@@ -1,0 +1,103 @@
+[[LEAD]]
+'''Sandy Shores''' is a town located inside the [[Grand Senora Desert]] in [[Blaine County]], [[San Andreas in GTA V|San Andreas]], located south of the [[Alamo Sea]] and appears in both [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. Sandy Shores has a population of 3,010 people although there are not enough houses and trailers within the town to house that number of people. The town is home to [[Trevor Philips]], one of the [[protagonist]]s of GTA V.
+
+[[SECTION:2:Homes]]
+* [[140 Zancudo Ave]]
+* [[Merle Abrahams' House]]
+* [[Cletus Ewing's House]]
+* [[Mrs. Gilbert's House]]
+* [[Ron Jakowski's Trailer]]
+* [[Trevor Philips' Trailer]]
+
+[[SECTION:2:Places]]
+* [[Beam Me Up]], an art installation on the edge of town.
+* [[Sandy Shores County Sheriff Station]]
+* [[Sandy Shores Fire Station]]
+* [[Sandy Shores Medical Center]]
+
+[[SECTION:2:Businesses]]
+{| class="wikitable sortable"
+! Name
+! class="unsortable"| Street(s)
+! Type
+|-
+| [[24/7]]
+| [[Alhambra Dr]]/[[Niland Ave]]
+| Convenience store
+|-
+| [[Abandoned Motel]]
+| [[Algonquin Blvd]]
+| Motel (<small>formerly</small>)
+|-
+| [[Ammu-Nation]]
+| [[Algonquin Blvd]]
+| Weapons sales
+|-
+| [[Aunt Tammy's Hair Salon]]
+| [[Algonquin Blvd]]/[[Mountain View Dr]]
+| Hair salon
+|-
+| data-sort-value="Betsy Boat House, The"| [[The Boat House]]
+| [[Marina Dr]]
+| Restaurant
+|-
+| [[Chihuahua Hotdogs]] stand
+| [[Alhambra Dr]]
+| Restaurant
+|-
+| [[Chinese Restaurant]]
+| [[Alhambra Dr]] & [[Zancudo Ave]]
+| Restaurant
+|-
+| [[Flywheels Garage]]
+| [[Panorama Dr]]
+| Garage
+|-
+| [[Liquor]]
+| [[Algonquin Blvd]]/[[Marina Dr]]
+| Liquor store
+|-
+| [[Liquor Ace]]
+| [[Algonquin Blvd]]
+| Convenience store
+|-
+| [[O'Sheas Barbers Shop]]
+| [[Alhambra Dr]]/[[Niland Ave]]
+| Barbers
+|-
+| [[Ottos Auto Parts]]
+| [[Alhambra Dr]]
+| Auto parts sales
+|-
+| [[Sandy's Gas Station]]
+| [[Marina Dr]]/[[Zancudo Ave]]
+| Gas Station
+|-
+| [[Tattoo Parlor (Blaine County)|Unnamed tattoo parlor]]
+| [[Armadillo Ave]]/[[Zancudo Ave]]
+| Tattoo parlor
+|-
+|}
+
+[[SECTION:2:Streets]]
+{{Col-begin}}
+{{Col-1-of-2}}
+*[[Algonquin Blvd]]
+*[[Alhambra Dr]]
+*[[Armadillo Ave]]
+*[[Cholla Springs Ave]]
+*[[East Joshua Rd]]
+*[[Joshua Rd]]
+*[[Lesbos Ln]]
+{{Col-2-of-2}}
+*[[Lolita Ave]]
+*[[Marina Dr]]
+*[[Meringue Ln]]
+*[[Mountain View Dr]]
+*[[Niland Ave]]
+*[[Panorama Dr]]
+*[[Zancudo Ave]]
+{{Col-end}}
+
+[[CATEGORIES]]
+Blaine County

@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 4584 Procopio Drive
+|image = 4584_Procopio_Drive_1.jpg‎
+|caption = General view of the house.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Medium-end house
+|garage = 6 vehicles <br> 2 bikes
+|price = $155,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''4584 Procopio Drive''' is a [[Safehouses in GTA Online|safehouse]] located on [[Procopio Drive]] in [[Paleto Bay]], [[Blaine County]], featured in the [[Independence Day Special]] for ''[[Grand Theft Auto Online]]''.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]155,000 and includes a 6-car garage.
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online

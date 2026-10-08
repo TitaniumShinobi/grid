@@ -1,0 +1,22 @@
+[[LEAD]]
+'''Little Mexico''' is a small district located slightly to the east of the city centre of [[Los Santos in GTA III Era|Los Santos]]. Surrounding this area are the districts of [[El Corona]], [[Idlewood]] and [[Commerce]]. Also nearby is [[Unity Station]]. Little Mexico is presumably based off of [[:wp:Olvera Street|Olvera Street]] in [[:wp:Los Angeles|Los Angeles]]. The district is controlled by the [[Varrios Los Aztecas]] and there are no known residents in Little Mexico.
+
+[[SECTION:2:Neighbouring areas]]
+{{Location
+|Centre    = Little Mexico
+|North     = [[Downtown Los Santos in GTA III Era|Downtown Los Santos]]
+|Northeast = [[Idlewood]]
+|East      = [[Ganton]]
+|Southeast = [[Willowfield]]
+|South     = [[El Corona]]
+|Southwest = [[Verdant Bluffs]]
+|West      = [[Los Santos City Hall|City Hall]]
+|Northwest = [[Pershing Square]]
+}}
+
+{{Los Santos}}
+{{Varrios Los Aztecas}}
+{{Los Santos Vagos}}
+
+[[CATEGORIES]]
+Areas in Los Santos

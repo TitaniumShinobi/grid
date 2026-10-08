@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 1115 Boulevard Del Perro
+|image = 1115_Boulevard_Del_Perro_1.jpg
+|caption = The exterior of the building during a rain.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end apartment
+|garage = 2 vehicles <br /> 1 bike
+|price = $93,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5}}
+
+[[LEAD]]
+'''1115 Boulevard Del Perro''' is a [[Safehouses in GTA Online|safehouse]] located on [[Boulevard Del Perro]] in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]] featured in ''[[Grand Theft Auto Online]]''.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]93,000 and includes a 2-car [[Garages|garage]].
+
+{{Clr}}
+
+[[CATEGORIES]]
+Safehouses in GTA Online

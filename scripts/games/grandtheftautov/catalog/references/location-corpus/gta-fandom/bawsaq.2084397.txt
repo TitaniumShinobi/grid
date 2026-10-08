@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = BAWSAQ
+|Name Change   = STOCK EXCHANGE
+|image         = BAWSAQA.png
+|size          = 205px
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|taglines      = "''Dealing in life's ups and downs''"
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|lifeinvader   = [[Lifeinvader/Bawsaq|Bawsaq]] [[File:Lifeinvader-GTAV-Bawsaq.png|40px|right|link=Lifeinvader/Bawsaq]]
+|website       = [[Bawsaq.com|www.bawsaq.com]]
+}}
+
+[[LEAD]]
+'''BAWSAQ''' is a global stock exchange featured in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game   = IV
+|header = 
+|BawsaqBuilding-GTAIV.png|[[Bawsaq Building]], [[Star Junction]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]].
+}}
+{{Gallery
+|game   = V
+|header =
+|BAWSAQBuilding-GTAV.png|[[Boulevard Del Perro]], [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Finance

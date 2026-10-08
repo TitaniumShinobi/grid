@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = Unit 2 Popular Street
+|image = Dynasty8-GTAV-HighEnd-Image-Unit2 PopularSt.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = High-end garage
+|garage = 10 vehicles <br> 3 bikes
+|price = [[Money|$]]142,500
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''Unit 2 Popular Street''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located in a [[National Transfer & Storage Co.|small warehouse complex]] accessed off of [[Popular Street]] in [[La Mesa]], along with [[Unit 14 Popular Street]]. The alley between Unit 14 and the [[Maibatsu Factory]], accessed off [[Supply Street]], may also be used to enter the complex.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]142,500 and can store 10 [[Personal Vehicles]] and three [[Pedal and Metal Cycles|Bicycles]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

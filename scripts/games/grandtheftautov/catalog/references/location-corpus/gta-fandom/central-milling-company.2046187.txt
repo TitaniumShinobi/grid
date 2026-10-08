@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y/n
+|safehouse      = y/n
+|type           = factory
+|name           = Central Milling Company
+|sign           = CMC-GTAV-Sign.png
+|image          = CMC-GTAVee.png
+|caption        = The '''CMC''' factory in {{VO}}.
+|aka            = CMC
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = {{Location|v-cypressflats|3}}
+|file_name      = <code>id1_05_structures1</code>
+|interior       = 
+|coords         = 808.2593,-2327.805,45.83561
+|map            = CMC-GTAV-Map.png
+|map_caption    = Location on the map (red) in {{VO}}.
+}}
+
+[[LEAD]]
+'''Central Milling Company''' ('''CMC''') is a factory in {{V}} and {{O}}, located in {{Location|v-cypressflats|3}}.
+
+[[CATEGORIES]]
+Factory complexes
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

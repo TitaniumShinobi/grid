@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|house = y
+|image = MaudeEcclesTrailer-GTAVe.png
+|caption = General view of the trailer.
+|games = {{Games|V=y|O=y}}
+|location = [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|owner = [[Maude Eccles]]
+|accessible = No
+}}
+
+[[LEAD]]
+'''Maude's Trailer''' is a trailer owned by [[Maude Eccles]] appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Homes
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

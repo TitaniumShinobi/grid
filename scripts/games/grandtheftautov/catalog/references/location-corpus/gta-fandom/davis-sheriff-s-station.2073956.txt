@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|style          = 
+|type           = policestation
+|image          = DavisSheriffs Station-GTAVee-Exterior.jpg
+|use            = Police station
+|location       = [[Innocence Boulevard]], [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+|games          = {{Games|V=y|O=y}}
+|map = DavisSheriff'sStation-GTAV-Location.png
+|map_caption = Location on the map (red).
+|Name Change=POLICE STATION}}
+
+[[LEAD]]
+The '''Davis Sheriff's Station''' is a police station in [[Davis]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]] appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Police stations

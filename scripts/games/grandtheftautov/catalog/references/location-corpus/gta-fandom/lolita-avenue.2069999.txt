@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=LolitaAve-GTAV.jpg
+|caption=Street view of Lolita Avenue from [[Algonquin Boulevard]].
+|games={{Games|V=y|O=y}}
+|start=[[Algonquin Boulevard]]
+|end=[[Zancudo Avenue]]
+|map=<gallery>
+LolitaAvenue-GTAV-Map.png|Map
+LolitaAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Lolita Avenue''' is a two-way [[street]] in {{V}} and {{O}}, located in [[Sandy Shores]] that begins at [[Algonquin Boulevard]] and ends at [[Zancudo Avenue]].
+
+[[CATEGORIES]]
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County
+Thoroughfares

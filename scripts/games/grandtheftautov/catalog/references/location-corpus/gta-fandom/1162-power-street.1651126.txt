@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 1162 Power Street
+|image = 1162_Power_Street_1.jpg
+|caption = General view of the apartment building.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Medium-end apartment
+|garage = 6 vehicles <br /> 2 bikes
+|price = $130,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5}}
+
+[[LEAD]]
+'''1162 Power Street''' is a [[Safehouses in GTA Online|safehouse]] located on [[Power Street]] in [[Hawick]], [[Los Santos (HD Universe)|Los Santos]] featured in ''[[Grand Theft Auto Online]]''.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]130,000 and includes a 6-car garage.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Safehouses in GTA Online

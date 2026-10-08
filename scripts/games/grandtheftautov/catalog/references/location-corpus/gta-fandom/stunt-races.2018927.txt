@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox_raceseries
+|front_image=WeaponizedDinghyWeek-GTAO-StuntRacesAdvert.jpg
+|race=StuntRace
+|type=Laps, Point to Point
+|location=Various
+|events=50
+|players=1-16
+|vehclass=Various
+}}
+
+[[LEAD]]
+'''Stunt Races''' in ''[[Grand Theft Auto Online]]'' are a class of fast-paced [[Races in GTA Online|races]] added to the game in the [[GTA Online: Cunning Stunts|Cunning Stunts]] update for the [[Xbox One]], [[PlayStation 4]], and [[Personal Computer|PC]] versions of the game.
+__TOC__
+
+[[CATEGORIES]]
+Gameplay in GTA Online: Cunning Stunts
+Gameplay in GTA Online: Smuggler's Run
+Racing game modes
+Stunt Races

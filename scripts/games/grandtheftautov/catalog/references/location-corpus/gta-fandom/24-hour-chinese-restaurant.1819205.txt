@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|type        = restaurant
+|name        = 24-Hour Chinese Restaurant
+|image       = 24-HourChineseRestaurant-GTAV-Front.jpg
+|caption     = Overview of the restaurant.
+|sign        = 24-HourChineseRestaurant-GTAV-Logo.png
+|taglines    = "''You won't want to share our noodles''"
+|games       = {{Games|V=y|O=y}}
+|location    = [[Alhambra Drive]], [[Sandy Shores]], [[Blaine County]]
+|accessible  = No
+|map         = 24HourChineseRestaurant-GTAV-MapLocation.jpg|
+|map_caption = Map location in Sandy Shores
+}}
+
+[[LEAD]]
+The '''24-Hour Chinese Restaurant''' is a [[China|Chinese]] restaurant in {{V}} and {{O}}, located in [[Sandy Shores]], [[Blaine County]].
+
+[[CATEGORIES]]
+Asian-themed restaurants
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Fast casual restaurants

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = vehicleparts
+|name          = FIOO
+|image         = FIOO-GTAO-Logo.png
+|games         = {{games|O={{EEEV}} {{DLC|mp2024_01}}}} 
+|business_type = Vehicle modifications
+|status        = active
+}}
+
+[[LEAD]]
+'''FIOO''' is a vehicle performance and parts company appearing in {{O}} as part of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Bottom Dollar Bounties
+Vehicle parts manufacturers

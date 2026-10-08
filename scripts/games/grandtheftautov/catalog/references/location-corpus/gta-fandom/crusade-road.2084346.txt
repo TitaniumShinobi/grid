@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox structure
+|name    = Crusade Road
+|image   = CrusadeRoad-GTAVee.jpg
+|caption = The street as seen from [[Innocence Boulevard]].
+|games   = {{Games|V=y|O=y}}
+|start   = [[Little Bighorn Avenue]]
+|end     = [[Innocence Boulevard]]
+|map     = 
+<gallery>
+CrusadeRoad-GTAV-Map.png|Map
+CrusadeRoad-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+}}
+
+[[LEAD]]
+'''Crusade Road''' is a two-way street in [[Davis]] and [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Central Los Santos Medical Center]] {{Small|(corners of [[Capital Boulevard]] and [[Innocence Boulevard]])}}
+*[[Los Santos County Coroner Office]] {{Small|(corner of Innocence Boulevard)}}
+
+[[SECTION:2:Businesses]]
+*[[Attack-a-Taco]]
+*[[Auto Re-Perez]] {{Small|(corner of [[Little Bighorn Avenue]])}}
+*[[Bert's Tool Supply Co.]] {{Small|(corner of Capital Boulevard)}}
+*[[JJ's Forklift Repair]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

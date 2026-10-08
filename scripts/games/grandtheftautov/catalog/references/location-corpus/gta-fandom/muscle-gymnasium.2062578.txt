@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Muscle Gymnasium
+|type = Gymnasium
+|games = {{Games|IV=y|EFLC=y|V=y|O=y}}
+|locations = [[Downtown Vinewood]] <small>(vacant)</small><br>[[Rockford Hills]]
+|image = Muscle_Gym_GTAV_Logo.png
+}}
+
+[[LEAD]]
+'''Muscle Gymnasium''' is a gym business in {{HD}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" widths="270px" bordercolor="#CB2127" hideaddbutton="true">
+Muscle_Gym_GTAV_Vinewood.png|[[Clinton Avenue]], [[Downtown Vinewood]].
+MuscleGym-GTAV-RockfordHills.png|[[West Eclipse Boulevard]], [[Rockford Hills]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Gyms

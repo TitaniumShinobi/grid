@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = JohnsonsRealty-GTAV-Logo.png
+|taglines = 
+|type = Real estate company
+|games = {{Games|V=y|O=y}}
+|locations = [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Johnsons Realty''' is a real estate company in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Real Estate
+Real estate companies

@@ -1,0 +1,91 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=BlvdDelPerro-GTAV-RockfordHillsSign.jpg
+|caption=Boulevard Del Perro intersecting [[Portola Drive]], and [[Rockford Hills Sign]] on the right.
+|games={{Games|V=y|O=y}}
+|start=[[Bay City Avenue]], [[Del Perro]]
+|end=[[Hawick Avenue]] and [[Milton Road]], [[Burton]]
+|map=<gallery>
+BoulevardDelPerro-GTAV-Map.png|Map
+BoulevardDelPerro-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Boulevard Del Perro''' is a boulevard featured in {{V}} and {{O}}, located in [[Del Perro]], [[Rockford Hills]] and [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+'''Del Perro'''
+*[[1115 Boulevard Del Perro]]
+*[[Del Perro Plaza]] <small>(corner of Prosperity Street)</small>
+*[[Lombank West]] <small>(corner of Bay City Avenue)</small>
+'''Rockford Hills'''
+*[[Epsilon Building]] <small>(corners of Rockford Drive and Strangeways Drive)</small>
+*[[Lifeinvader Office]] <small>(corners of Dorset Drive and South Boulevard Del Perro)</small>
+*[[Portola Drive Station]] <small>(corners of Mad Wayne Thunder Drive and Portola Drive)</small>
+*[[Rockford Hills Church]] <small>(corners of Portola Drive and Rockford Drive)</small>
+*[[Rockford Hills Sign]] <small>(corners of Portola Drive and Mad Wayne Thunder Drive)</small>
+*[[Tinsel Towers]] <small>(In '''[[West Vinewood]]''' at corners of Milton Road and Strangeways Drive)</small>
+
+[[SECTION:2:Businesses]]
+'''Del Perro'''
+{{Columns
+|
+*[[Banner Hotel & Spa]] <small>(corner of Bay City Avenue)</small>
+*[[Bean Machine]] <small>(at Del Perro Plaza)</small>
+*[[Bite!]] <small>(at Del Perro Plaza)</small>
+*[[Chihuahua Hotdogs]] <small>(at Del Perro Plaza)</small>
+*[[Von Crastenburg Hotel|Crastenburg Hotels &amp; Resorts]]
+*[[Digital Den]] <small>(at Del Perro Plaza)</small>
+*Hayes Auto Body Shop <small>(corner of Prosperity Street)</small>
+*[[Limey's Juice and Smoothies]] <small>(at Del Perro Plaza)</small>
+|
+*Panache <small>(corner of North Rockford Drive)</small>
+*[[Ranch (HD Universe)|Ranch]] <small>(corner of Liberty Street)</small>
+*[[Save-A-Cent]] <small>(corner of North Rockford Drive)</small>
+*[[Taco Bomb]] <small>(at Del Perro Plaza)</small>
+*[[Up-n-Atom Burger]] <small>(at Del Perro Plaza)</small>
+*Vinewood Beauty
+*[[Vinewood Pawn & Jewelry]] <small>(corner of Prosperity Street)</small>
+*[[Wigwam Burger]] <small>(at Del Perro Plaza)</small>
+}}
+
+'''Morningwood'''
+{{Columns
+|
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Binco (HD Universe)|Binco]] <small>(corner of North Rockford Drive)</small>
+*Cell Phones Sales and Repair
+*[[Checkout!]]
+*[[Digital Den]]
+*Electrical Supplies
+*Laser Prints
+|
+*Loyal Discount Carpets
+*[[Los Santos Office Supply Co.]] <small>(corner of Morningwood Boulevard)</small>
+*Nail Bar & Spa
+*Vitamins Pharmacy <small>(corner of Morningwood Boulevard)</small>
+*[[Woody's Autos]] <small>(corner of North Rockford Drive)</small>
+}}
+
+'''Rockford Hills'''
+{{Columns
+|
+*[[BAWSAQ]]
+*[[Betta Pharmaceuticals|Betta Life]]
+*[[Bite!]]
+*[[Fleeca|Fleeca Bank]]
+*[[Fruit of the Vine]]
+*[[Java Update Coffeeshop]]
+|
+*[[Limey's Juice and Smoothies]]
+*[[Noodle Exchange]]
+*[[Pump & Run Gymnasium]] <small>(corner of Morningwood Boulevard)</small>
+*[[Von Crastenburg Hotel]] <small>(corner of Dorset Drive)</small>
+}}
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

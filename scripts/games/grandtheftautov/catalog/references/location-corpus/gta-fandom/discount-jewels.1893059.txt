@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox business
+|style         = 
+|type          = jewelrystore
+|name          = Discount Jewels
+|sign          = 
+|image         = DiscountJewels-GTAV-Sign.png
+|caption       =
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = *[[Carson Avenue]], [[Davis]], [[Los Santos County]]
+*[[Morningwood]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Senora Freeway]], [[Blaine County]]
+|business_type = Jewelry store
+|founded       =
+|founder       =
+|taglines      = ''"EZ CA$H"''<br>''"Ladies love a ring on their finger"''
+|status        = active
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Discount Jewels''' is a chain of jewelry stores appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+DiscountJewels-GTAVe-Davis.png|[[Carson Avenue]], [[Davis]].
+DiscountJewels-GTAVee-Morningwood.png|[[Morningwood Boulevard]] and [[Cougar Avenue]], [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]].
+DiscountJewels-GTAVe-BlaineCounty.png|[[Senora Freeway]], [[Blaine County]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Jewelry stores

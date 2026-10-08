@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|image = KaytonBankingGroup-GTAV-Logo.png
+|type = Banking
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Kayton''' (케이 튼) (stylized as "'''KAYTON'''") is a banking company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Banking companies
+Businesses in GTA Online
+Businesses in GTA V

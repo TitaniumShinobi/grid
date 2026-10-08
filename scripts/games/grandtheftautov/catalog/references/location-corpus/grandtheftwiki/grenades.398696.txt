@@ -1,0 +1,111 @@
+[[LEAD]]
+'''[[:wp:Grenades|Grenades]]''' are an area-effect weapon which have been featured in every [[Grand Theft Auto]] game since [[Grand Theft Auto 2]].
+
+Grenades are highly destructive to both people and objects, including vehicles — in most GTA games, conventional vehicles can be destroyed with a single grenade, and people will almost always be killed if within the blast radius. Grenades are ideal for taking out enemies hiding behind cover, and for scattering tight-knit groups of foes. In GTA III, GTA Vice City, GTA San Andreas and GTA Liberty City Stories the grenades are based on an M67 grenade. In GTA IV they are based on the M26A1 frag grenade. The the GTA Vice City Stories and the GTA Chinatown Wars models remain unidentified.
+
+Grenades can, of course, be just as dangerous to the player as to enemies, and must be deployed carefully to avoid the grenade bouncing back to the player. In [[Grand Theft Auto IV]], the player can drop a live grenade to the ground, but must run for cover before it detonates. One can also 'cook' a grenade (hold onto it while it counts down) for a short time before throwing it. It begins beeping if it is held for too long, and if not thrown, will explode in the player's hands. In Grand Theft Auto IV, grenades are in fact much more lethal to the player than to enemies -- unless a grenade explodes very close to an enemy, they will likely survive, despite being thrown by the explosion.
+
+In GTA IV, grenades can be dropped while driving, and are more effective for in-car use than Molotovs, due to their far superior radius of effect, however the player must take care to remain on the move while using grenades — the player's own car can easily be caught in the explosion if it does not move on immediately. In [[Multiplayer in GTA IV|multiplayer]], a popular tactic is to cook a grenade, then walk up to a group of unsuspecting players and let it detonate; this tactic, called Martyrdom, is useful for killing a large group at the expense of the perpetrator's own life. This is only advised in Free Mode.
+
+In [[Grand Theft Auto: Chinatown Wars]], the player can use the touch screen to throw Grenades at a distance in any direction.
+
+[[SECTION:2:Locations]]
+;GTA 2
+(''To show your coordinates you have to enter a [[Cheats in GTA 2|cheat code]], use at your own risk'') 
+
+'''[[Residential District]]''':
+*Go to the parking lot south of the shopping mall. Take the street south of it and take the first street on west direction. Stop before it rises over the next street ([[Largo]]) (127,5 216,5 2)
+*Go to the Belmont car shop. Take the road on its east side towards east. Take the first street on south direction. Use the alley on the west side to get to a courtyard. ([[Belmont]]) (28,5 197,5 2)
+*Go south as soon as you leave the church. You’ll see three alleys. Take the tiny one on the right ([[Wormley]]) (118,5 143,5 2)
+*Awarded when a [[Panto]] is [[Crusher|crushed]]
+
+'''[[Industrial District]]''':
+*Go to the block of houses west of the Russian Mafia headquarters, and enter it from its south side ([[Azeri Heights]]) (119 20 2)
+*Go to the processing plant. Go to the north side and look between the two pairs of water tanks (Blind Eye processing plant) (222,5 7,5 2)
+*Go to the north section of the road west of the Vedic Temple. You’ll see a passage south of the east tower near the street end. Follow it until its end ([[Narayana]]) (238,5 205 3)
+*Go to the building east of Bayano hospital. Enter from the stairs on its east side, then use the ramp to go up. Use one of the side ramps and jump to the central platform. Jump from the central platform to the one on the east side ([[Bayano]]) (67 187,5 5)
+*Go to the big road north of the construction site. Go to the zone where it turns north near the Vedic Temple. Check the building three squares north of the corner ([[Petula]]) (157,5 173,5 2)
+*Awarded when a [[Panto]] is [[Crusher|crushed]]
+
+;GTA III
+Grenades are available from the [[Newport]] [[Ammu-Nation]] on [[Staunton Island]] after the completion of [[Last Requests]]. They cost $2,000).
+*Safehouses - Grenades spawn outside every safehouse once the player collects 30 [[Hidden Packages|hidden packages]].
+
+;GTA Vice City
+Grenades can be purchased from the [[North Point Mall]] Ammu-Nation, for $300.
+*[[Washington Beach]] - Behind the Washington Beach Police Station (only on Xbox, PC and later versions of the PS2, replacing the [[Tear Gas]] spawn point).
+*[[Little Havana]] - Inside the basketball court just west of [[West Haven Community Healthcare Center]].
+
+;GTA San Andreas
+*[[Las Colinas]], [[Los Santos in GTA III Era|Los Santos]] - Beside a burnt wooden shack
+*[[East Beach]], Los Santos - In a corner of the multistorey carpark
+*[[Idlewood]], Los Santos - Behind the [[Well Stacked Pizza]], on a balcony
+*[[Santa Maria Beach]], Los Santos - Near the end of [[Yacht Harbor]], right beside the railing
+*[[Doherty]], [[San Fierro]] - Spawns outside the [[Doherty Garage]] after photographing all 50 [[Snapshot]]s.
+*[[Bayside]], [[Tierra Robada]] - In a small alleyway.
+*[[Rockshore East]], [[Las Venturas]] - On top of the southernmost building in the eastern complex
+
+;GTA Liberty City Stories
+Grenades can be purchased from Ammu-Nation after completion of [[Driving Mr. Leone]], for $360.
+*[[Newport]], [[Staunton Island]] - In an alleyway behind Ammu-Nation. The player passes by the grenade during "[[Night of the Livid Dreads]]".
+*Portland Docks, Portland- On the back of the black boat to the left of the blue freighter that you use on the mission "The Portland Chainsaw Masquerade" Opposite side of ramp. Hidden package near.<br />
+
+;GTA Vice City Stories
+Grenades can be purchased from the [[Downtown Vice City]] Ammu-Nation, or the [[Vice Point Mall]] Ammu-Nation, for $360; the price is decreased to $240 once the player beats [[Phil's Shooting Range]].
+*[[Ocean Beach]] - Behind the hospital by a tree and some bushes, just by the helipad.
+*[[Washington Beach]] - Next to the building in the center of an apartment complex near the [[Island Bridge]].
+*[[Little Haiti]] - Next to one of the many shacks.
+
+;GTA IV
+Grenades can be purchased from the back-alley gun shops for $1,000. They can also be purchased from [[Little Jacob]] for $700.
+
+'''[[Dukes]]'''
+*[[Steinway]] - Can be found in the fourth gated yard in an alley between Tinconderoga Ave and Trenton Ave.
+*[[Meadows Park]] - Can be found underneath the large steel globe in the larger fountain.
+*[[Francis International Airport in GTA IV Era|Francis International Airport]] - Can be found on the west end of the boat dock south of the aviation fuel storage facility to the southwest of the airport.
+
+'''[[Bohan]]'''
+*[[Fortside]] - Can be found in an alley between Folsom Way and Rykers Ave.
+
+'''[[Charge Island]]'''
+*[[Charge Island]] - Can be found on the catwalk above the oil refinery on the east end of the island. This is the same catwalk Niko and [[Patrick McReary|Packie]] use in the mission [[Diamonds Are a Girl's Best Friend]].
+
+'''[[Algonquin]]'''
+*[[Star Junction]] - Can be found in an alley off Kunzite St, between the [[Magic Curtain Theater]] and the Celtica Hotel.
+*[[The Triangle]] - Can be found next to a large spool of electrical cable in the north side of the Columbus Ave construction site.
+*[[The Triangle]] - Can be found next to a manhole on the north side of the [[Frankfort Ave]] [[LibEl]] construction site.
+*[[The Meat Quarter]] - Can be found in the alley between Iron St and Union Drive West.
+*[[Suffolk]] - Can be found atop the roof of the [[Globe Oil]] gas station on Feldspar St and [[Union Drive West]].
+*[[Chinatown, Algonquin|Chinatown]] - Can be found on the second floor of the construction project on [[Bismarck Ave]], south of Diamond St.
+
+'''[[Happiness Island]]'''
+*[[Happiness Island]] - Can be found in the entrance hall to the statue, on the right.
+
+'''[[Alderney]]'''
+*[[Alderney City]] - Can be found on the ledge of a building behind the [[Mr. Fuk's Rice Box]] restaurant.
+*[[Port Tudor]] - Can be found on a second-floor catwalk in a large boat repair warehouse on the docks.
+
+;GTA V
+Grenades can be purchased at Ammu-Nation in Los Santos and Blaine County.
+
+'''[[Los Santos in GTA V|Los Santos]]'''
+*Vinewood Hills - The Grenades can be found behind the Big Orange Juice stand at the vista point.
+*Chumash Beach house - Can be found between the supports of the beach front house.
+
+'''[[Blaine County]]'''
+*Alamo Sea - Found at the end of the jetty.
+*Harmony - Found behind the old gas station.
+
+[[CATEGORIES]]
+Thrown Weapons
+Weapons
+Weapons in GTA 2
+Weapons in GTA Advance
+Weapons in GTA Chinatown Wars
+Weapons in GTA III
+Weapons in GTA IV
+Weapons in GTA Liberty City Stories
+Weapons in GTA San Andreas
+Weapons in GTA V
+Weapons in GTA Vice City
+Weapons in GTA Vice City Stories

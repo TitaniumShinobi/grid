@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|name       = Rob's Liquor
+|image      = RebsLiquor-GTAV.png
+|type       = liquor
+|games      = {{games|V=y|O=y}}
+|locations  = 
+[[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|taglines   = "''Liquor to the Max.''"<br>"''Cheap & Beerful''"<br>"''Pop in, Liquor out.''"
+|products   = [[#Products|
+*Liquor
+*Tobacco
+*Snacks
+]]
+|accessible = Yes
+|status     = active
+}}
+
+[[LEAD]]
+'''Rob's Liquor''' is a chain of liquor and convenience stores in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" bordercolor="#FE2E2E" spacing="small" widths="250px">
+RobsLiquor-GTAOee-VespucciCanals.jpg|[[San Andreas Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]].
+RobsLiquor-GTAOee-Morningwood.jpg|[[Prosperity Street]], [[Morningwood]], Los Santos.
+RobsLiquor-GTAVee-MurietaHeights.jpg|[[El Rancho Boulevard]], [[Murrieta Heights]], Los Santos.
+RobsLiquor-GTAOee-BanhamCanyon.jpg|[[Great Ocean Highway]], [[Banham Canyon]], [[Los Santos County]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Liquor store chains

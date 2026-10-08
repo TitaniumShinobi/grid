@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Big O Fruit Juice
+|image = BigOFruitJuice-GTAV-Logo.png
+|type = 
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Great Chaparral]]<br>[[Grapeseed]]
+}}
+
+[[LEAD]]
+'''Big O Fruit Juice''' is a fresh juice business featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|BigOFruitJuice-GTAV-Arthur'sPassTrails.png|[[Arthur's Pass Trails]], [[Great Chaparral]].
+|BigOFruitJuice-GTAV-SenoraFreeway.png|[[East Joshua Road]] and [[Senora Freeway]], [[Grapeseed]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Easter Eggs

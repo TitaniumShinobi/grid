@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=ChupacabraStreet-Street-GTAV.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Plaice Place]]
+|end=[[Plaice Place]]
+|map=<gallery>
+ChupacabraStreet-GTAV-Map.png|Map
+ChupacabraStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Chupacabra Street''' is a [[List of Street Names|street]] in [[Elysian Island]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Jetsam]]
+*[[Los Santos Marine]]
+*[[Pacific Bait]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

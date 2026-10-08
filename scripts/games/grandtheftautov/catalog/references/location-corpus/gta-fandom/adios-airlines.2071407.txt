@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = airline
+|name          = Adios Airlines
+|sign          = 
+|image         = AdiosAirlines-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Francis International Airport (HD Universe)|Francis International Airport]], [[Dukes]], [[Liberty City (HD Universe)|Liberty City]]
+*[[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+<center>'''[[:Category:Airplanes|Aircraft]]'''</center>
+*[[Jet]]
+*[[Static Planes|Numerous static aircraft]]
+|weapons       = 
+|taglines      = ''Say your goodbyes!''
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Adios Airlines''' is an airline in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Airlines
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in TBOGT
+Businesses in TLAD

@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 1337 Exceptionalists Way
+|image = Dynasty8-GTAV-HighEnd-Image-1337ExceptionalistsWay.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = High-end garage
+|garage = 10 vehicles <br> 3 bikes
+|price = [[Money|$]]112,500<br>FREE <small>(with [[Criminal Enterprise Starter Pack]])</small>
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''1337 Exceptionalists Way''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located on a parallel side street on [[Exceptionalists Way]], facing the [[Opium Nights]] Hotel. It can be accessed via Exceptionalists Way by entering near the [[Alpha Mail]] warehouse. 
+
+The address number is a reference to {{WP|Leet|Leetspeak}}.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]112,500 and can store 10 [[Personal Vehicles]] and three [[Pedal and Metal Cycles|Bicycles]].
+
+If the player has purchased the [[Criminal Enterprise Starter Pack]], this garage will be available for FREE.
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

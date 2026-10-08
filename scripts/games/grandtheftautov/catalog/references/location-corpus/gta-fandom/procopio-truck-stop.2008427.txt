@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|image = ProcopioTruckStop-GTAV.jpg
+|caption = Aerial view from the northwest.
+|games = {{Games|V=y|O=y}}
+|Name Change = TRUCK STOP
+|location = [[Procopio Beach]], [[Blaine County]]
+|map  = Procopio_Truck_Stop_GTAV_Map_Location.png
+|map_caption   = The truck stop within Blaine County.
+}}
+
+[[LEAD]]
+'''Procopio Truck Stop''' is a truck stop in {{V}} and {{O}} located along the [[Great Ocean Highway]] in [[Procopio Beach]], [[Blaine County]], [[San Andreas]].
+
+The area takes its name from an {{WP|Procopio|infamous Californian bandit}}. It houses the first ever [[Up-n-Atom Burger]] outlet.
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]] <small>(accessible interior)</small>
+*[[Globe Oil]]
+*[[Up-n-Atom Burger]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

@@ -1,0 +1,24 @@
+[[LEAD]]
+'''Vitus St''' is a street running northeast in [[Vespucci Canals]] to southwest in [[Vespucci Beach]], [[Los Santos in GTA V|Los Santos]], briefly enter [[Vespucci]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to [[Bay City Ave]] and [[Magellan Ave]].
+
+[[SECTION:2:Businesses and locations]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Slice 'N' Dice Pizzeria]]
+| [[Vespucci Beach]]
+| Vespucci Beach boardwalk
+| Food and drink
+|-
+| [[Vespuccink]]
+| [[Vespucci Beach]]
+| Vespucci Beach boardwalk
+| Tattoo parlor
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

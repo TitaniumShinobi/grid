@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox_location
+|image       = Sunken UFO-GTAV.png
+|caption     = The Submerged UFO Crash Site.
+|games       = {{Games|V=y|O=y}}
+|location    = [[Procopio Beach]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+The '''Submerged UFO Crash Site''' is an underwater landmark appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Easter Eggs
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Secrets

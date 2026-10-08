@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = salon
+|name          = Nail Bar & Spa
+|sign          = 
+|image         = NailBar&Spa-GTAV-Logo.png
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = 
+|taglines      = 
+|status        = active
+|phone         = 733-555-0199
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Nail Bar & Spa''' is a chain of nail salons in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = VO
+|NailBar&Spa-GTAVee-TextileCity.png|[[Alesandro Hotel]], [[Strawberry Avenue]], [[Textile City]], [[Los Santos (HD Universe)|Los Santos]].
+|LoyalDiscountCarpets-GTAVee.png|[[Boulevard Del Perro]], [[Morningwood]], Los Santos.
+|NailBar&Spa-GTAVee-LosSantosCorner.png|[[Los Santos Corner]], [[Las Lagunas Boulevard]], [[Burton]], Los Santos.
+|NailBar&Spa-GTAVee-OccupationAve.png|[[Occupation Avenue]], Burton, Los Santos.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Salon chains

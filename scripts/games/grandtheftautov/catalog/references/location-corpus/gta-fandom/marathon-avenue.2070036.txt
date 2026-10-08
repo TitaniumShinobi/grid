@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=Marathon_Avenue.jpg
+|caption=Marathon Avenue in [[Del Perro]].
+|games={{Games|V=y|O=y}}
+|start=[[Bay City Avenue]], [[Del Perro]]
+|end=[[Dorset Drive]], [[Rockford Hills]]
+|map=<gallery>
+MarathonAvenue-GTAV-Map.png|Map
+MarathonAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Marathon Avenue''' is a [[List of Street Names|street]] in {{V}} and {{O}}, located in [[Del Perro]] and [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+'''Del Perro'''
+*[[Bluff Tower|Bluff Tower Office Complex]] <span style="font-size:12px;">(corner of Bay City Avenue)</span>
+*[[Del Perro City Hall]] <small>(corner of North Rockford Drive)</small>
+*[[Del Perro Heights]] <small>(Del Perro)</small>
+*[[Del Perro Station]] <small>(at the Maze Bank building)</small>
+*[[Prosperity Street Promenade]] <small>(north entrance)</small>
+*[[University of San Andreas, Los Santos|ULSA]] Annexe <small>(corner of Morningwood Boulevard)</small>
+
+'''Rockford Hills'''
+*[[The Archipelago]] <small>(corner of Movie Star Way)</small>
+*[[Portola Trinity Medical Center]] <small>(corner of Dorset Drive)</small>
+
+[[SECTION:2:Businesses]]
+'''Del Perro'''
+*[[Bahama Mamas|Bahama Mamas West]] <small>(corner of Prosperity Street Promenade)</small>
+*[[Elgin House]] <small>(corner of Morningwood Boulevard)</small>
+*[[Maze Bank]] <small>(corner of Prosperity Street)</small>
+*[[Miss T]] <small>(corner of Prosperity Street Promenade)</small>
+*[[Perrera Beach Motel]] <small>(corner of Bay City Avenue)</small>
+*[[Swallow]]
+
+'''Rockford Hills'''
+*[[AKAN Records]] <small>(corner of Movie Star Way)</small>
+*[[BAWSAQ]]
+*[[Eugenics Incorporated]]
+*[[Penris]]
+*[[Schlongberg Sachs]]
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

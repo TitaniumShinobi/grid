@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox mission
+|Name Change  = SALVAGE YARD ROBBERY
+|name         = The McTony Robbery
+|image        = TheMcTonyRobbery-GTAOe-Finale-Infobox.png
+|location     = [[Salvage Yards]] <small>(Start/End)</small><br/>[[Pacific Ocean (HD Universe)|Pacific Ocean]]<br/>[[Kosatka]]
+|game           = {{games|O=y}}
+|type           = mp2023_02
+|fail         = *Target vehicle is destroyed.
+|for          = {{For|game=O|salvageyardrobbery}}
+|unlockedby   = 
+*Purchasing an [[Salvage Yards|Salvage Yard]].
+*Completing all required [[The McTony Robbery|preparations]].
+|todo =*Go to {{Color|v-hud-location|Paleto Cove.}}
+*Enter the {{Color|v-hud-friendly|submersible.}}
+*Take the submersible out to {{Color|v-hud-location|sea.}}
+*Locate Tony McTony's submarine.
+*Board Tony's {{Color|v-hud-location|submarine}} via the moon pool.
+*Get to the {{Color|v-hud-location|engine room.}}
+*Open the {{Color|v-hud-enemy|sealed door.}}
+*Disable the {{Color|v-hud-enemy|navigation systems.}}
+*Locate Tony's head of security.
+*Eliminate Tony's {{Color|v-hud-enemy|head of security.}}
+*Search the {{Color|v-hud-friendly|body}} for the control codes.
+*Get to the {{Color|v-hud-location|bridge.}}
+*Insert the {{Color|v-hud-pickup|control codes.}}
+*Take control of Tony's {{Color|v-hud-pickup|submarine.}}
+*Crash Tony's submarine on to the {{Color|v-hud-location|beach.}}
+*Get to the {{Color|v-hud-location|landing pad.}}
+*Activate the {{Color|v-hud-pickup|landing pad.}}
+*Enter the {{Color|v-hud-friendly|[target vehicle].}}
+*Exit Tony's submarine.
+*Lose the Cops.
+*Deliver the [target vehicle] to the {{Color|v-hud-location|Salvage Yard.}}
+|protagonists = *1 to 4 [[GTA Online Protagonist|players]]
+|reward = Vehicle-dependent
+The McTony Security outfit
+|target = [[Salvage Yard Robberies#Target Vehicles|Target Vehicle]]
+|tod=12:00, then 18:00 after controlling the Kosatka.}}
+
+[[LEAD]]
+'''The McTony Robbery''' is a [[Salvage Yard Robberies|Salvage Yard Robbery]] featured in ''[[Grand Theft Auto Online]]'' as part of the continuation of [[GTA Online: The Chop Shop|The Chop Shop]] update.
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Chop Shop

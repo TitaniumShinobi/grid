@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = High and Dry
+|image = HighAndDry-GTAV-Logo.png
+|type = Cannabis Dispensary
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''High and Dry''' is a cannabis dispensary in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pharmacies

@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehiclerental
+|name          = JiffiRent
+|sign          = JiffiRent-GTAV-Logo.png
+|image         = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[State of San Andreas (HD Universe)|State of San Andreas]]
+|business_type = Car rental agency
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|vehicles      = 
+|taglines      = "''See San Andreas in a Jiffi''"
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|opentimes     = 
+|accessible    = 
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''JiffiRent''' is a car rental agency that appears in {{VO}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle rental companies

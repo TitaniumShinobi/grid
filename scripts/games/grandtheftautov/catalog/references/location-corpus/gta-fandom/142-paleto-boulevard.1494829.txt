@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 142 Paleto Boulevard
+|image = Dynasty8-GTAV-LowEnd-Image-142PaletoBlvd.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end garage
+|garage = 2 vehicles <br> 1 bike
+|price = [[Money|$]]26,500
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''142 Paleto Boulevard''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located on [[Paleto Boulevard]] in [[Paleto Bay]], to the left to the [[Xero]] Gas Station.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]26,500 and can store 2 [[Personal Vehicles]] and one [[Pedal and Metal Cycles|Bicycle]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

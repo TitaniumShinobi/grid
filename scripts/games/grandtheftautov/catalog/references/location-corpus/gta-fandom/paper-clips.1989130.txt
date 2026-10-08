@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = OFFICE SUPPLY COMPANY
+|style         = 
+|type          = 
+|name          = Paper Clips
+|sign          = PaperClips-Logo-GTAV.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|opentimes     = 
+|accessible    = No
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Paper Clips''' is an office supply company that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" bordercolor="#d7261e" widths="270px">
+PaperClips-GTAV.jpg|[[San Andreas Avenue]], [[Pillbox Hill]].
+PaperClips-GTAV-VespucciMall.png|[[Vespucci Mall]], [[South Rockford Drive]], [[Vespucci Canals]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Supply store chains

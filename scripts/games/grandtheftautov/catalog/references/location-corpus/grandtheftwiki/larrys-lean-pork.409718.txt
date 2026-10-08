@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Larrys Lean Pork
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = Food manufacturing or processing
+|owner = 
+|location = [[Alta St]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Larrys Lean Pork''' is a food manufacturing or processing business located on [[Alta St]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]] in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

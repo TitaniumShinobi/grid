@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=ShankStreet-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Dutch London Street]]
+|end=[[Vespucci Helipad]]
+|map=map=<gallery>
+ShankStreet-GTAV-Map.png|Map
+ShankStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Shank Street''' is a short two-way [[List of Street Names|street]] in [[Puerto Del Sol]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Higgins Helitours]]
+
+[[SECTION:2:Place of Interest]]
+*[[Vespucci Helipad]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

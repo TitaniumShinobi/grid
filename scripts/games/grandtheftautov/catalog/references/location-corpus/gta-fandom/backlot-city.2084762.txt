@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = BacklotCity-GTAV.png
+|caption = Overview of Backlot City.
+|altnames = {{H:title|Name on the map|Richards Majestic}}<br>{{H:title|Police dispatch|Richards Majestic Studio}}<br>{{H:title|Police dispatch| The Movie Studios}}
+|location = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|pscanner       = PoliceScanner-GTAV-Neighborhood-BacklotCity.ogg
+|map           = <gallery>
+BacklotCity-IngameGPS-GTAV-Map.png|Backlot City
+BacklotCity-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Backlot City''', simply referred to as '''Richards Majestic''' on the map, '''Richards Majestic Studio''' on the police dispatch, and '''Vinewood Studios''' in the [[Heads-Up Display|HUD]] in the mission [[Last Play - Go Figure]], is a neighborhood in [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], in {{V}} and {{O}}. The entire neighborhood is gated and consists of two businesses: [[Richards Majestic Productions]] and [[De Santa (company)|De Santa]].
+
+[[SECTION:2:Streets]]
+*[[Industry Passage]]
+
+[[SECTION:2:Places of Interest]]
+*[[Richards Majestic Productions]]
+*[[Sam Austin Memorial Building]]
+**[[Solomon Richards' office]]
+
+[[SECTION:2:Businesses]]
+*[[Richards Majestic Productions]]
+*[[De Santa (company)|De Santa]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Restricted locations
+Studios
+Unlockable locations
+Zones

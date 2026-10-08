@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox structure
+|name  = Adam's Apple Boulevard
+|image = 
+<gallery>
+Adam'sAppleBoulevard-GTAVee-East.jpg|Mission Row
+Adam'sAppleBoulevard-GTAVee-West.jpg|Pillbox Hill
+</gallery>
+|games = {{Games|V=y|O=y}}
+|start = [[Calais Avenue]], [[Little Seoul]]
+|end   = [[Little Bighorn Avenue]], [[Mission Row]]
+|map   = 
+<gallery>
+AdamsAppleBoulevard-GTAV-Map.png|Map
+AdamsAppleBoulevard-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+}}
+
+[[LEAD]]
+'''Adam's Apple Boulevard''' is a two-way street in {{V}} and {{O}}, running through [[Little Seoul]], [[Pillbox Hill]] and [[Mission Row]] in [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+'''Mission Row'''
+*[[Templar Hotel]] {{Small|(corner of [[Fantastic Place]])}}
+*[[The Vault]] {{Small|(corner of [[Strawberry Avenue]])}}
+
+'''Pillbox Hill'''
+*[[Banner Hotel & Spa]] {{Small|(corner of [[Alta Street]])}}
+*[[Mile High Club]] {{Small|([[STD Contractors|STD]] construction site, corner of [[Power Street]])}}
+*[[Pillbox Hill Garage]]
+*[[Premium Deluxe Motorsport]] {{Small|(corner of Power Street)}}
+
+[[SECTION:2:Businesses]]
+'''Mission Row'''
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]] with [[Ammu-Nation Shooting Ranges|shooting range]] {{Small|(corner of [[Elgin Avenue]])}}
+*Auto Repair {{Small|(corner of Fantastic Place)}}
+*[[Discount Kitchen Supplies]]
+*[[Get Aweigh]]
+*[[Sanders Motorcycles]]
+*Wholesale Hosiery {{Small|(corner of [[Sinner Street]])}}
+
+'''Pillbox Hill'''
+*[[Caesars Auto Parking]]
+*[[Schlongberg Sachs]] {{Small|(corner of Strawberry Avenue)}}
+*[[Wolfs International Realty]] {{Small|(corner of Elgin Avenue)}}
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

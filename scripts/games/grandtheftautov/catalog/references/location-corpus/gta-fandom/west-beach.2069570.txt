@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox_location
+|mpheist4 infiltration = y
+|image = CayoPerico-GTAO-WestBeach.png
+|caption = Overview of West Beach.
+|games = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location = [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|map           = <gallery>
+WestBeach-GTAO-Map.png|West Beach
+WestBeach-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption   = Location on the map (red).
+}}
+
+[[LEAD]]
+'''West Beach''' is a beach party area in [[Cayo Perico]], [[Colombia]], which appears as an [[:Category:Infiltration Points in The Cayo Perico Heist|infiltration point]] for [[The Cayo Perico Heist]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Points of Interest]]
+
+
+[[SECTION:3:Sand Sculpture]]
+[[File:CayoPerico-GTAO-LochNessMonster.png|thumb|200px|The sand sculpture of the [[Loch Santos Monster]], found behind the bar at the beach party.]]
+{{Quote|Well now, what do we have here? Sand sculpture... but it looks familiar, no? I wonder if the people here have ever... No, it is not possible. Not this far south. Excuse me, kapitan. I was just thinking out aloud.|[[Pavel]] to the [[GTA Online Protagonist|''GTA Online'' Protagonist]].}}
+A sculpture of the [[Loch Ness Monster]] made of sand can be found behind the bar at the Cayo Perico Beach Party. The player can photograph the sculpture and send the picture to Pavel, who will comment on it. His comment foreshadows the creature's appearance in [[The Cayo Perico Heist/Finale|The Cayo Perico Heist finale]].
+
+[[SECTION:3:IAA Buzzard]]
+[[File:Wrecks-GTAO-CayoPerico-Buzzard.png|thumb|200px|The IAA Buzzard.]]
+{{Quote|You know who uses this type of helicopter? IAA. So, the rumors were true, after all...|Pavel to the ''GTA Online'' Protagonist.}}
+A [[Wrecks|wreck]] of an [[International Affairs Agency|IAA]] [[Buzzard]] can be found on top of the cliff between West Beach and the [[Main Dock]]. The player can photograph the helicopter and send the picture to Pavel, who will comment on it. Its location can only be reached by using the [[Parachute|parachute]] from the top of the [[Communications Tower]] or after leaving the compound during the heist finale.
+
+[[SECTION:3:Party Guest]]
+[[File:CayoPerico-GTAO-Skeletons-PartyGoer.png|thumb|200px|The party guest. <small>([[:File:CayoPerico-GTAO-Skeletons-PartyGuest-Map.png|Map location]])</small>]]
+{{Quote|Well, well. A guest at the last party, perhaps. Just think, if we do not pull this off perfectly, we too will be found like this...|Pavel to the ''GTA Online'' Protagonist.}}
+On the same clifftop as the IAA Buzzard, a skeleton can be found on the rock promontory just north of West Beach. It is only visible from the clifftop above. Pavel suggests this was a previous beach party guest who didn't follow the rules. This is confirmed in overheard guard dialogue during the heist itself.
+
+[[CATEGORIES]]
+Beaches
+Infiltration Points in The Cayo Perico Heist
+Locations in GTA Online in Cayo Perico

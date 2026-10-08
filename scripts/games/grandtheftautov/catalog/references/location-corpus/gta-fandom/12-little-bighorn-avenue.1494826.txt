@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 12 Little Bighorn Avenue
+|image = 12LittleBighornAvenue-GTAO-Overview.png
+|caption = The garage as it appears in ''[[Grand Theft Auto Online]]''
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''.
+|style = Low-end garage
+|garage = 2 vehicles <br> 1 bike
+|price = [[Money|$]]32,000
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''12 Little Bighorn Avenue''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located next to a [[Los Santos Department of Water & Power]] substation overlooking the [[Los Santos River (HD Universe)|LS River]]. It is on the corner of [[Little Bighorn Avenue]] and [[Roy Lowenstein Boulevard]] in [[Rancho]], [[Los Santos (HD Universe)|Los Santos]]. The Roy Lowenstein Boulevard side of the building is occupied by stores including [[East Los Santos Appliances]], [[Trinculo Clothing]] and [[Bean's Market]].
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]32,000 and can store 2 [[Personal Vehicles]] and one [[Pedal and Metal Cycles|Bicycle]].
+
+[[CATEGORIES]]
+Garages
+Properties
+Properties in GTA Online

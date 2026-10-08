@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Enormous Twin Airbags
+|sign          = EnormousTwinAirbags-GTAO-Logo.png
+|image         = 
+|games         = {{games|O=y}}
+|business_type = Airbag manufacturer
+|taglines      = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Enormous Twin Airbags (ETA)''' is an airbag manufacturer appearing in {{O}} as part of the [[GTA Online: Cunning Stunts|Cunning Stunts]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Cunning Stunts
+Vehicle parts manufacturers

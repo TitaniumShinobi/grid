@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|type = warehouse
+|image=RavenSlaughterhouse-GTAV-Logo.png
+|caption=Logo.
+|location=[[Orchardville Avenue]], [[Cypress Flats]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible=Yes <small>(missions only)</small>
+|games={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Raven Slaughterhouse''' is a slaughterhouse featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Meat companies

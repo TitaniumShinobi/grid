@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Ellen's Liquor Lover
+|image = EllensLiquorLover-GTAV.jpg
+|type = Liquor Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = Corner of [[San Vitus Boulevard]]<br>[[Eclipse Boulevard]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Ellen's Liquor Lover''' is a liquor store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Liquor stores
+Stores

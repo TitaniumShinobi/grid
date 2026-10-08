@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|image    = MiguelMadrazosMansion-GTAOe.png
+|caption  = Miguel Madrazo's Mansion in {{O}}.
+|games    = {{Games|V=y|O=y}}
+|location = [[Ace Jones Drive]], [[Vinewood Hills]], [[Los Santos County]]
+|owner    = [[Miguel Madrazo]]
+|operator = [[Dima Popov]] <small>(renting)</small>
+|architecture = [[:Category:Mediterranean Revival buildings|Mediterranean Revival]]
+|map = MiguelMadrazosMansion-GTAOe-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Miguel Madrazo's Mansion''' is a mansion owned by [[Miguel Madrazo]] located in [[Vinewood Hills]], [[Los Santos County]], that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos County
+Buildings in GTA V in Los Santos County
+Homes
+Mansions
+Mediterranean Revival buildings

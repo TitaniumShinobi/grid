@@ -1,0 +1,92 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = district
+|name           = South Los Santos
+|sign           = 
+|image          = SouthLosSantos-GTAV-Montage.png
+|caption        = Clockwise from top: [[Davis]], [[Strawberry]], [[Rancho Towers]], [[Grove Street (HD Universe)|Grove Street]], [[Forum Drive]].
+|aka            = South LS
+|games          = {{Games|V=y|O=y}}
+|location       = [[Los Santos (HD Universe)|Los Santos]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|seal           = 
+|seal2          = 
+|flag           = 
+|mayor          = 
+|president      = 
+|established    = 
+|country        = 
+|state          = 
+|county         = 
+|capital        = 
+|pop            = 
+|motto          = 
+|pscanner       = PoliceScanner-GTAV-Neighborhood-SouthLosSantos.ogg
+|unlockedby     = 
+|unlockedafter  = 
+|map            = 
+<gallery>
+SouthLosSantos-IngameGPS-GTAV-Map.png|South Los Santos
+SouthLosSantos-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption    = Location on the map (in-game GPS). The neighborhoods of South Los Santos: <font color=6dbf66>Chamberlain Hills</font>, <font color=6268e2>Strawberry</font>, <font color=c864c0>Davis</font> and <font color=red>Rancho</font>.
+}}
+
+[[LEAD]]
+'''South Los Santos''' is a district in [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}.
+
+[[SECTION:2:Neighborhoods/Cities]]
+*[[Strawberry]]
+*[[Rancho]]
+*[[Chamberlain Hills]] 
+*[[Davis]]
+
+[[SECTION:2:Places of Interest]]
+*[[Beacon Theatre]] 
+*[[Central Los Santos Hospital]] 
+*[[Children of the Mountain Fellowship]] 
+*[[Clinton Residence]]
+*[[Davis City Hall]] 
+*[[Davis Courts Building]]
+*[[Davis Fire Station]] 
+*[[Davis Mega Mall]] 
+*Davis Park 
+*Davis Public Library 
+*[[Davis Sheriff/Police Station]] 
+*Dragon Hotel
+*[[Los Santos County Coroner Office]]
+*[[Rancho Projects]] 
+*[[Rancho Towers]] 
+*[[Strawberry Mortuary]]
+
+[[SECTION:2:Businesses]]
+*[[Albany]] dealership
+*[[Bert's Tool Supply Co.]]
+*[[Checkout!]]
+*[[City Paints Inc.]]
+*Deep Pile Nation 
+*[[Dollar Pills]] 
+*Go & Wash
+*Green Leaf Smokers Emporium
+*[[Hands On Car Wash]] 
+*[[LD Organics]]
+*[[Los Santos Meteor]]
+*[[Los Santos Office Supply Co.]]
+*[[Lucky Plucker]] 
+*[[New Do Barber Shop]]
+*[[Panache Laundering]] 
+*[[Rancho Church]] 
+*[[Ring of Fire Chili House]] 
+*[[Southern Tile]]
+*Sud's Quality Cleaners
+*[[Suds Law Laundromat]] 
+*[[The Tahitian]]
+*[[Timmy's Flowers]]
+*[[Xero]]
+
+[[CATEGORIES]]
+Districts
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Zones

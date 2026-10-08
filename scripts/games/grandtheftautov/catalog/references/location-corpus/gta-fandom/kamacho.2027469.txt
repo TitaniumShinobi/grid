@@ -1,0 +1,107 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name                = Kamacho
+|aka                 = 
+|image_label     = O
+|front_image     = Kamacho-GTAO-front.png
+|rear_image      = Kamacho-GTAO-rear.png
+|caption         = A '''Kamacho''' in {{O}}.
+|image_label2    = VI
+|front_image2    = Kamacho-GTAVI-Artwork-JasonAndLucia02.jpg
+|rear_image2     = 
+|caption2        = The rear of a '''Kamacho''' in [[Grand Theft Auto VI/Artwork|official artwork]] of {{VI}}.
+|class               = [[:Category:Off-Road class|Off-Road]] {{Small|(''GTA Online'')}}
+|body_style          = [[:Category:Pickup trucks|4-door pickup truck]]
+|capacity            = 4 {{Small|(driver and 3 passengers)}}
+|manufacturer        = [[Canis]]
+|price               = [[Money|$]]345,000 {{Small|([[Southern San Andreas Super Autos]])}}
+|games               = {{games|O={{EEEV}} {{DLC|mpchristmas2017}}|VI=y}}
+|type            = lighttruck
+|variants            = 
+|swankness           = 1/5
+|dashtype            = Cavalcade {{Small|(needle)}}<br>[[File:Cavalcade-Dials-GTAV.png|thumb|center|170px]]<br>Cavalcade {{Small|(dial texture)}}<br>[[File:Cavalcade-GTAV-DialSet.png|thumb|center|170px]]
+|inttxd              = Cavalcade
+|wheeltype           = SUV
+|flags               = 
+{{Expand||
+{{Flags|FLAG_AVERAGE_CAR}}
+{{Flags|FLAG_POOR_CAR}}
+{{Flags|FLAG_IS_OFFROAD_VEHICLE}}
+{{Flags|FLAG_HEADLIGHTS_USE_ACTUAL_BONE_POS}}
+{{Flags|FLAG_IS_BULKY}}
+{{Flags|FLAG_HAS_INTERIOR_EXTRAS}}
+{{Flags|FLAG_EXTRAS_REQUIRE}}
+{{Flags|FLAG_EXTRAS_STRONG}}
+}}
+|modelsets           = 
+|modelname           = kamacho
+|handlingname        = KAMACHO
+|textlabelname       = KAMACHO
+|roadspawn           = No
+|roadspawnmaxcol     = 10
+|roadspawnfreq       = 30
+|roadspawntrailer    = 
+|roadspawnidendis    = 20
+|roadspawndrivers    = 
+|roadspawngroups     = 
+|roadspawnlicense    = Standard White – 100%
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The [[Canis]] '''Kamacho''' is an off-road utility truck featured in {{O}} as part of [[GTA Online: The Doomsday Heist|The Doomsday Heist]] update, released on February 6th, 2018, during the [[Battle Week]] event, and due to appear in {{VI}}.
+
+[[SECTION:2:Locations]]
+*Available for purchase from [[Southern San Andreas Super Autos]] for [[Money|$]]345,000.
+
+[[SECTION:3:The Diamond Casino & Resort]]
+*[[Casino Story Missions]] {{Vague}} {{Nd}} Used by the [[Duggan Crime Family]] and [[The Professionals]].
+
+[[SECTION:3:The Diamond Casino Heist]]
+*[[The Diamond Casino Heist/Preparations|The Diamond Casino Heist Preparations]] {{Vague}} {{Nd}} May appear during certain missions involving the Duggan Crime Family and The Professionals.
+*[[The Diamond Casino Heist]] Finale {{Nd}} If the heist leader choose [[Chester McCoy]] as the getaway driver, a Kamacho appears as the departure vehicle. The truck is painted in gray, with a Retro Red Stripe livery.
+{{Gallery|Kamacho-GTAOee-CasinoHeistCar.jpg|The '''Kamacho''' provided as a departure vehicle by [[Chester McCoy]] for The Diamond Casino Heist.}}
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Kamacho
+|manufacturer  = Canis
+|class         = Off-Road 
+|image         = Kamacho-GTAO-RGSC-MainNew.jpg
+|caption       = Main image (after 2019).
+|image2        = Kamacho-GTAO-RGSC-Action.jpg
+|caption2      = "Action" image.
+|image3        = Kamacho-GTAO-RGSC-Main.jpg
+|caption3      = Main image (prior to 2019).
+|speed         = 71.897881
+|accel         = 63.75
+|braking       = 10
+|traction      = 60.606064
+|seats         = 4
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = sssa
+|schematic     = Generic4DoorTruck
+}}
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Kamacho}}
+{{Defaultradio|game=O|defaultgroup=rap}}
+
+[[CATEGORIES]]
+Crew cabs
+Light trucks
+Off-Road class
+Off-roading vehicles
+Vehicles in GTA Online: The Doomsday Heist
+Vehicles in GTA VI
+Vehicles manufactured by Canis
+Vehicles purchasable from Premium Deluxe Motorsport
+Vehicles purchasable from Southern San Andreas Super Autos

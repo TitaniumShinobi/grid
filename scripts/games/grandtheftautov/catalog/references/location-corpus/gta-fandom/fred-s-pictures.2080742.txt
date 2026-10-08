@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = entertainment
+|name          = Fred's Pictures
+|sign          = FredsPictures-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           =
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Film production company
+|founded       = 
+|founder       = [[Fred Quincy]]
+|ceo           = 
+|employees     = 
+*[[Isaac (GTA V)|Isaac]] <small>(actor/producer)</small>
+*S. Louis Crawford
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Fred's Pictures''' is a film production company featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Film production companies

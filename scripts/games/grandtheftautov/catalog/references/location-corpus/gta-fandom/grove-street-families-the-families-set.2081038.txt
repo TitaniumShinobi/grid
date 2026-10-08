@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox organization
+|name = Grove Street Families
+|image = TheFamilies-GTAVe-Graffiti-DeadSet.jpg
+|caption = Faded graffiti of the Grove Street set of The Families.
+|locations = [[Grove Street (HD Universe)|Grove Street]], [[Davis]], [[Los Santos County]] <small>(Formerly)</small>
+|leader = Unknown 
+|status = defunct
+|aka = 
+*Groves
+*Grove Street
+*GSF
+|type = gang
+|gang_type = Former set of [[The Families]]
+|enemies = [[Ballas (HD Universe)|Ballas]]
+|colors = Green
+|members = Unknown 
+|Name Change = GANG SET OF [[The Families|THE FAMILIES]]
+|games = N/A
+|mentioned = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''Grove Street Families (GSF)''', also referred to simply as '''Grove Street''' and the '''Groves''', are a former street gang mentioned in {{V}} and {{O}}, originally formed in [[Grove Street (HD Universe)|Grove Street]] in the incorporated city of [[Davis]] from [[The Families]] gang.
+
+[[CATEGORIES]]
+Afro-descendant organizations
+Easter Eggs
+Former organizations
+Gangs
+Organizations in GTA Online
+Organizations in GTA V

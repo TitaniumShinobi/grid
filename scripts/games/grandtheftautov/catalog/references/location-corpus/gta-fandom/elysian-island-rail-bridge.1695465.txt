@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox_location
+|bridge      = y
+|name        = Elysian Island Rail Bridge
+|image       = ElysianIslandTrainBridge-GTAV.png
+|caption     = 
+|games       = {{games|V=y|O=y}}
+|location    = [[Elysian Island]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map         = 
+|map_caption = 
+}}
+
+[[LEAD]]
+'''Elysian Island Rail Bridge''' is an unnamed rail bridge in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that crosses an unnamed water channel and connects [[Banning]] to [[Elysian Island]].
+
+[[CATEGORIES]]
+Rail bridges
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Vertical-lift bridges

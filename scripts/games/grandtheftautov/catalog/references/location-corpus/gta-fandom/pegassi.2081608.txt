@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|name          = Pegassi
+|image         = Pegassi-GTAO-Logo.png
+|type          = vehicles
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|business_type = Vehicle manufacturer
+|products      = [[#Vehicles|Vehicles]]
+|status        = active
+}}
+
+[[LEAD]]
+'''Pegassi''' is an [[Italy|Italian]] luxury automotive manufacturer in the [[HD Universe]] of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

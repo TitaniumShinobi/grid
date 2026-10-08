@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Newspaper
+|image = LosSantosShepherd-GTAV-Logo.png
+|games = ''[[Grand Theft Auto V]]
+|locations = [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Los Santos Shepherd''' is a [[Los Santos (HD Universe)|Los Santos]]-based newspaper in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+News companies
+Newspaper publishers

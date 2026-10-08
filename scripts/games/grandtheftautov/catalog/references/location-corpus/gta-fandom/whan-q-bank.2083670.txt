@@ -1,0 +1,75 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = bank
+|name          = Whan-Q Bank
+|sign          = WhanQbank.jpg
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|O=y}}
+|mentioned     = 
+|locations     = [[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = Whan Wong Lee <small>(Possibly)</small>
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = "''Blow it all on someone you love''"
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Whan-Q Bank''' is a [[China|Chinese]] banking company in {{IV}}, {{EFLC}}, {{CW}} and {{O}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" widths="250px" spacing="small" bordercolor="#9C0000">
+WhanQBank-GTAIV-Dukes.png|'''Whan-Q Bank''' in Dukes.
+Whan-Q-Bank-GTAIV-FrankfortAve.png|'''Whan-Q Bank''' in The Triangle. ([[:File:Whan-Q-Bank-GTAIV-FrankfortAve-Facade.png|Close-up]])
+WhanQBank-GTAIV-Chinatown.jpg|'''Whan-Q Bank''' in Chinatown.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" widths="250px" spacing="small" bordercolor="#9C0000">
+WhanQBank-GTACW-CervezaHeights.png|'''Whan-Q Bank''' in Dukes.
+WhanQBank-GTACW-TheTriangle.png|'''Whan-Q Bank''' in The Triangle.
+WhanQBank-GTACW-Chinatown.png|'''Whan-Q Bank''' in Chinatown.
+</gallery>
+
+[[CATEGORIES]]
+Banking companies
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online

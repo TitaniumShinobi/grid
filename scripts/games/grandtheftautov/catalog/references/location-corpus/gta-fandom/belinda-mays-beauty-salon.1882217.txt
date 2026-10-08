@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = salon
+|name          = Belinda Mays Beauty Salon
+|sign          = BelindaMaysBeautySalon-GTAV-Sign.png
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[State of San Andreas (HD Universe)|State of San Andreas]]
+([[#Locations_2|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = 
+|status        = 
+|phone         = 
+|email         = 
+|website       = 
+|accessible    = No
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Belinda Mays Beauty Salon''' is a chain of beauty salons in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+*The [[Chumash]] location is based on {{URL|https://maps.app.goo.gl/uzt92geGYdaaHFLXA|22943 Pacific Coast Highway}} in Malibu, CA.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+BelindaMaysBeautySalon-GTAV.jpg|[[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]]. 
+BelindaMaysBeautySalon-GTAVe-BanhamCanyon.png|22943 [[Ineseno Road]], [[Chumash]], [[Los Santos County]].
+</gallery>
+
+
+
+
+[[ru:Belinda Mays Beauty Salon]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Salon chains

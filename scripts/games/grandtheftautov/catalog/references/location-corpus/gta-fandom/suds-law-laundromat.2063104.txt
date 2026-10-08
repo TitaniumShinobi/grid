@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = laundromat
+|name           = Suds Law Laundromat
+|sign           =
+|image          = SudsLawLaundromat-GTAVee.jpg
+|caption        = The laundromat in Strawberry Plaza.
+|games          = {{Games|V=y|O=y}}
+|location       = [[Strawberry Plaza]], [[Strawberry]]
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Suds Law Laundromat''' is a self-service laundry in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Laundromats

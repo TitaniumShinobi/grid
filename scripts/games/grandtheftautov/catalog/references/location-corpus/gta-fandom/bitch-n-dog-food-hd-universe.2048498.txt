@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Bitch'n Dog Food
+|image_label   = V
+|image         = BitchNDogFood-GTAV-Logo2013.png
+|caption       = Bitch'n Dog Food logo in {{VO}}.
+|image_label2  = IV
+|image2        = BitchnDogFood-GTAIV-Logo.png
+|caption2      = Bitch'n' Dog Food logo in {{IV}}.
+|type        = petfood
+|games       = {{games|IV=y|EFLC=y|V=y|O=y}}
+|locations   = 
+|founder     = 
+}}
+
+[[LEAD]]
+'''Bitch'n Dog Food''', formerly stylized as '''Bitch'n' Dog Food''', is a dog food producing company in the [[HD Universe]] of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Meat companies
+Pet food brands

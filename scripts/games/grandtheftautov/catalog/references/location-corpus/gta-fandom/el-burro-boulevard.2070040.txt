@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=ElBurroBoulevard-GTAV.png
+|caption=El Burro Boulevard running through [[East Los Santos (HD Universe)|East Los Santos]] and the [[Palomino Highlands]].
+|games={{Games|V=y|O=y}}
+|start=[[Elysian Fields Freeway]]
+|end=[[Sustancia Road]]
+|map=<gallery>
+ElBurroBoulevard-GTAV-Map.png|Map
+ElBurroBoulevard-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''El Burro Boulevard''' is a [[List of Street Names|road]] in [[East Los Santos (HD Universe)|East Los Santos]] and the [[Palomino Highlands]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Jay & Son]] Vehicle Parts & Accessories <small>(intersection of Elysian Fields Freeway)</small>
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

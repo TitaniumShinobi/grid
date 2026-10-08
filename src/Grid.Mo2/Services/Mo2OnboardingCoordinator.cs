@@ -56,6 +56,10 @@ public sealed class Mo2OnboardingCoordinator(
         foreach (var authorizedPath in request.Validation.EffectiveAuthorizedConfiguredPaths)
         {
             RegisterExactAuthorization(result.Reference.Id, authorizedPath);
+            var observation = result.Validation.Paths.FirstOrDefault(candidate =>
+                candidate.CanonicalPath is not null && paths.Equals(candidate.CanonicalPath, authorizedPath));
+            if (observation is not null)
+                AuthorizeObservedPath(result.Reference.Id, observation.Label, authorizedPath);
         }
         return await ResumeAsync(result.Reference, cancellationToken).ConfigureAwait(false);
     }
@@ -109,14 +113,7 @@ public sealed class Mo2OnboardingCoordinator(
 
         cancellationToken.ThrowIfCancellationRequested();
         RegisterExactAuthorization(state.Reference.Id, expected);
-        switch (requirement.Label)
-        {
-            case "Profiles directory": profileAuthorizations.AuthorizeProfilesRoot(state.Reference.Id, expected); break;
-            case "Mods directory": modAuthorizations.AuthorizeModsRoot(state.Reference.Id, expected); break;
-            case "Game directory": contentAuthorizations.AuthorizeRoot(state.Reference.Id, Mo2ContentRootKind.GameDirectory, expected); break;
-            case "Overwrite directory": contentAuthorizations.AuthorizeRoot(state.Reference.Id, Mo2ContentRootKind.Overwrite, expected); break;
-            case "MO2 executable": executableAuthorizations.AuthorizePath(state.Reference.Id, expected); break;
-        }
+        AuthorizeObservedPath(state.Reference.Id, requirement.Label, expected);
         return await ResumeAsync(state.Reference, cancellationToken).ConfigureAwait(false);
     }
 
@@ -162,6 +159,18 @@ public sealed class Mo2OnboardingCoordinator(
             return authorizedConfiguredPaths.TryGetValue(referenceId, out var authorizations)
                 ? authorizations.Order(StringComparer.OrdinalIgnoreCase).ToImmutableArray()
                 : [];
+        }
+    }
+
+    private void AuthorizeObservedPath(InstallationReferenceId referenceId, string label, string exactPath)
+    {
+        switch (label)
+        {
+            case "Profiles directory": profileAuthorizations.AuthorizeProfilesRoot(referenceId, exactPath); break;
+            case "Mods directory": modAuthorizations.AuthorizeModsRoot(referenceId, exactPath); break;
+            case "Game directory": contentAuthorizations.AuthorizeRoot(referenceId, Mo2ContentRootKind.GameDirectory, exactPath); break;
+            case "Overwrite directory": contentAuthorizations.AuthorizeRoot(referenceId, Mo2ContentRootKind.Overwrite, exactPath); break;
+            case "MO2 executable": executableAuthorizations.AuthorizePath(referenceId, exactPath); break;
         }
     }
 

@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|type           = entertainment
+|name           = Dreyfuss Productions
+|image          = DreyfussProductions-GTAVe-Logo.png
+|ceo            = [[Peter Dreyfuss]] 
+|business_type  = Film production company
+|games          = {{Games|V=y|O=y|VI=y}}
+|status         = defunct
+|locations      = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Dreyfuss Productions''' is a film production company appearing in {{V}}, {{O}} and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Film production companies

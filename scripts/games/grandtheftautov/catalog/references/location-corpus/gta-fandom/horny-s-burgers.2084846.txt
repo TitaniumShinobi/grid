@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = fastfood
+|name          = Horny's Burgers
+|sign          = Horny'sBurgers-GTAV-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations_2|See more]])
+|business_type = Fast-food burger restaurant
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = "The beef with the bone!"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Horny's Burgers''' is a fast food burger restaurant chain that appears in {{V}} and {{O}}, and is due to appear in {{VI}}.
+
+[[SECTION:3:Locations]]
+{{H4|''Grand Theft Auto V'' and ''Online''}}
+*The [[Mirror Park]] branch is a modified rendition of the former Tom's Burgers restaurant, located at {{URL|https://maps.app.goo.gl/6FpjhEb26W8dy2CE9|2861 Sunset Boulevard}} in the {{WP|Silver Lake, Los Angeles|Silver Lake}} neighborhood of {{WP|Los Angeles}}, {{WP|California}}, which closed in 2013. The space has since been modified and is now a Japanese restaurant.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+{{Gallery
+|Horny'sBurgers-GTAV.png|[[East Mirror Drive]] and [[Mirror Park Boulevard]], [[Mirror Park]], [[Los Santos (HD Universe)|Los Santos]].  {{Small|([[:File:HornysBurgers-GTAV-Night.png|Night view]])}}
+}}
+
+[[CATEGORIES]]
+Burger restaurants
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Fast-food restaurant chains

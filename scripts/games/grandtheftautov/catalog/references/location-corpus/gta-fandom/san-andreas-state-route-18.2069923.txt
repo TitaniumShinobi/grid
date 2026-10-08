@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = HIGHWAY
+|name              = State Route 18
+|number            = 18
+|caption2          = State Route 18 shield
+|image             = 
+|caption           = 
+|games             = {{Games|V=y|O=y}}
+|highway_eastend  = [[Route 20]] and [[Route 17]] in [[East Los Santos (GTA V)|East Los Santos]]
+|highway_westend  = [[Route 1]] in [[Del Perro]]
+|highway_junctions = [[Route 14]] in [[Morningwood]]<br />
+[[Route 16]] in [[Rockford Hills]]<br />
+[[Route 19]] in [[Vinewood (GTA V)|Vinewood]]<br />
+[[Interstate 1]]/[[Route 13]] near [[Vinewood Bowl]]
+|pscanner    = 
+|map         = 
+|mapcaption  = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''San Andreas State Route 18 ''' is one of the [[Numbered Highways in GTA V]]. It is an east-west urban highway that travels along the northern section of metro [[Los Santos (HD Universe)|Los Santos]]. This route is signed on [[Interstate 1]] guide signs as well as on the official ''Grand Theft Auto V'' print map. However, it doesn't show the exact path of the route. Presuming the route needs to begin and end at another route, and based on the [[wp:control city|control cities]], it connects the [[Great Ocean Highway]] near [[Del Perro Beach]] with the [[Elysian Fields Freeway]] in [[East Los Santos (HD Universe)|East Los Santos]], by [[West Eclipse Boulevard]], [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Mirror Park Boulevard]] and [[El Rancho Boulevard]].
+
+[[CATEGORIES]]
+Highways
+Structures in GTA V in Los Santos

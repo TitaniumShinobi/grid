@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = publictransit
+|name          = Vice City Metro Mule
+|sign          = 
+|image         = ViceCityMetroMule-GTAO-WornLogo.png
+|caption       = The worn VCMM logo on the [[Nightmare Scarab]].
+|aka           = 
+|games         = {{games|VI=y}}
+|mentioned     = {{games|O={{EEEV}} {{DLC|mpchristmas2018}}}}
+|locations     = [[Vice City (HD Universe)|Vice City]], [[Vice-Dale County]], [[State of Leonida|Leonida]]
+|business_type = Public transportation network
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|vehicles      = [[Unnamed GTA VI VCMM train|Unnamed ''GTA VI'' VCMM train]]
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Vice City Metro Mule''' is a public transportation network operating in [[Vice City (HD Universe)|Vice City]], [[State of Leonida|Leonida]], mentioned in {{O}} as part of the [[GTA Online: Arena War|Arena War]] update, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Arena War
+Businesses in GTA VI
+Public transportation companies

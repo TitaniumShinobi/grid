@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = darklogo
+|type         = talkstation
+|name         = Blaine County Radio
+|logo         = BlaineCountyTalkRadio-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Sandy Shores]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = 
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Talk radio stations|Talk radio station]]
+|genre        = 
+|established  = [[1998]]
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 96.5 FM
+|host         = 
+*[[Bobby June]]
+*[[Ron Jakowski]]
+*[[Duane Earl]]
+|product      = 
+|radio_tracks = 
+|radio_length = 
+}}
+
+[[LEAD]]
+'''Blaine County Radio''' is a public talk [[Radio Stations in GTA V|radio station]] featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It was established in [[1998]], as stated on [[Duane Earl]]'s [[Lifeinvader]] page.
+
+[[CATEGORIES]]
+Media in GTA Online
+Media in GTA V
+Talk radio stations

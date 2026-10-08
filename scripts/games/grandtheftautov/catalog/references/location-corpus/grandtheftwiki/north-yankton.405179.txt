@@ -1,0 +1,13 @@
+[[INFOBOX]]
+{{infobox state|
+|image = [[File:Ludendorff-GTAV-map.png|300px]]
+|caption = The street map of [[Ludendorff]], North Yankton
+|games = [[Grand Theft Auto V]]
+|name = State of North Yankton
+}}
+
+[[LEAD]]
+'''North Yankton''' is a [[United States of America|American]] state in the [[HD Universe]] appearing in [[Grand Theft Auto V]]. North Yankton is on the American/[[Canada|Canadian]] border and contains the town of [[Ludendorff]]. North Yankton is based on the real-life state [[:wp:North Dakota|North Dakota]]. The state is rural and the climate is primarily cold with the state covered in snow in both its appearances in GTA V. The states police force is the [[North Yankton State Patrol]].
+
+[[CATEGORIES]]
+States

@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|name = 7184 Cholla Springs Avenue
+|image = 7184ChollaSpringsAve-GTAVe-Front.png
+|caption = 
+|games = {{Games|V=y|O=y}}
+|location = [[Cholla Springs Avenue]], [[Sandy Shores]], [[Blaine County]]
+|type  = house
+|occupants = [[Polly Patterson]]
+[[Brandon Patterson]]
+|floors = 1
+|map = 7184ChollaSpringsAve-GTAVe-Map.png
+|map_caption =
+}}
+
+[[LEAD]]
+'''7184 Cholla Springs Ave''' is a numbered home in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

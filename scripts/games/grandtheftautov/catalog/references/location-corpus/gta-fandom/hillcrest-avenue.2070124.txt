@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=HillcrestAvenue-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[North Sheldon Avenue]]
+|end=[[Normandy Drive]]
+|map=<gallery>
+HillcrestAvenue-GTAV-Map.png|Map
+HillcrestAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Hillcrest Avenue''' is a residential [[List of Street Names|street]] in [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Houses]]
+*2858
+*Unnumbered (across the street from 2858, possibly 2857 or 2859)
+*Unnumbered (2860)
+*[[2862 Hillcrest Avenue|2862]]
+*2864
+*[[2866 Hillcrest Avenue|Unnumbered (2866)]]
+*[[2868 Hillcrest Avenue|2868]]
+*2870
+*Under construction (across the street from 2870)
+*2872
+*[[2874 Hillcrest Avenue|2874]]
+*2876
+*2878
+*2880
+*2882
+*[[Martin Madrazo's house|Unnumbered (Madrazo's), assumed to be 2884]]
+*Unnumbered (across the street from Madrazo's, possibly 2883 or 2885)
+*2886
+*2888
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

@@ -1,0 +1,94 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name                = Riata
+|front_image         = Riata-GTAO-front.png
+|rear_image          = Riata-GTAO-rear.png
+|caption             = A '''Riata''' in ''[[Grand Theft Auto Online]]''.
+|class               = [[:Category:Off-Road class|Off-Road]] {{Small|(''GTA Online'')}}
+|type                = lighttruck
+|body_style          = [[:Category:Pickup trucks|2-door pickup truck]]
+|manufacturer        = [[Vapid]]
+|capacity            = 2 {{Small|(Rockstar Games Social Club)}}
+|price               = [[Money|$]]380,000 {{Small|([[Southern San Andreas Super Autos]]; [[#Locations|no longer available]])}}
+|games               = {{Games|O={{EEEV}} {{DLC|mpchristmas2017}}}}
+|variants            = 
+|lineup          = 
+*[[Riata Classic]]
+*[[Riata]]
+|swankness           = 1/5
+|dashtype            = Cavalcade {{Small|(needle)}}<br>[[File:Cavalcade-Dials-GTAV.png|thumb|center|170px]]<br>Cavalcade {{Small|(dial texture)}}<br>[[File:Cavalcade-GTAV-DialSet.png|thumb|center|170px]]
+|inttxd              = Cavalcade
+|wheeltype           = SUV
+|flags               = 
+{{Expand||
+{{Flags|FLAG_AVERAGE_CAR}}<br>
+{{Flags|FLAG_POOR_CAR}}<br>
+{{Flags|FLAG_IS_OFFROAD_VEHICLE}}<br>
+{{Flags|FLAG_HEADLIGHTS_USE_ACTUAL_BONE_POS}}<br>
+{{Flags|FLAG_IS_BULKY}}<br>
+{{Flags|FLAG_HAS_INTERIOR_EXTRAS}}<br>
+}}
+|modelname           = riata
+|handlingname        = RIATA
+|textlabelname       = RIATA
+|roadspawn           = No
+|roadspawnmaxcol     = 10
+|roadspawnfreq       = 30
+|roadspawntrailer    = 
+|roadspawnidendis    = 20
+|roadspawndrivers    = 
+|roadspawngroups     = 
+|roadspawnlicense    = Standard White - 100%
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The [[Vapid]] '''Riata''' is an off-road truck featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Doomsday Heist|The Doomsday Heist]] update.
+
+[[SECTION:2:Locations]]
+*Available for purchase from [[Southern San Andreas Super Autos]] for [[Money|$]]380,000.
+**No longer available; [[:Category:Vehicles removed for purchase in GTA Online: San Andreas Mercenaries|removed]] from the website as part of the [[GTA Online: San Andreas Mercenaries|San Andreas Mercenaries]] update.
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Riata
+|manufacturer  = Vapid
+|class         = Off-Road 
+|image         = Riata-GTAO-RGSC-MainNew.jpg
+|caption       = Main image (after 2019).
+|image2        = Riata-GTAO-RGSC-Action.jpg
+|caption2      = "Action" image.
+|image3        = Riata-GTAO-RGSC-Main.jpg
+|caption3      = Main image (prior to 2019).
+|speed         = 72.434425
+|accel         = 62.5
+|braking       = 10
+|traction      = 62.121212
+|seats         = 2
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = sssa
+|schematic     = GenericSUV
+}}
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Riata}}
+{{Defaultradio|game=O|defaultgroup=rock}}
+
+[[CATEGORIES]]
+Light trucks
+Off-Road class
+Off-roading vehicles
+Pickup trucks
+Vehicles in GTA Online: The Doomsday Heist
+Vehicles manufactured by Vapid
+Vehicles purchasable from Premium Deluxe Motorsport
+Vehicles purchasable from Southern San Andreas Super Autos
+Vehicles removed for purchase in GTA Online: San Andreas Mercenaries

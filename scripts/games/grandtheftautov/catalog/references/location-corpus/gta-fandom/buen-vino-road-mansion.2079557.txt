@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|safehouse      = 
+|type           = mansion
+|name           = Buen Vino Road Mansion
+|image          = BuenVinoRoadMansion-GTAVee.jpg
+|caption        = Overview of '''Buen Vino Road Mansion''' in {{VO}}.
+|aka            = 
+|games          = {{Games|V=y|O={{Small|(formerly)}}}}
+|mentioned      = 
+|location       = {{Location|v-tongvahills}}
+|price          = 
+|condition      = Replaced by [[The Tongva Estate]] {{Small|(''GTA Online'')}}
+|use            = 
+|owner          = [[Devin Weston]] {{Small|(formerly)}}
+|operator       = 
+|occupants      = [[The Lost MC]] {{Small|(formerly)}}
+|employees      = 
+|structure_type = 
+|architecture   = 
+|length         = 
+|height         = 
+|area           = 
+|size           = 
+|floors         = 2
+|rooms          = 
+|garagecap      = 
+|parkingcap     = 
+|accessible     = No
+|canplayerstore = 
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = BuenVinoRoadMansion-GTAVe-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Buen Vino Road Mansion''' is a luxury mansion appearing in {{V}} and formerly in {{O}}, located in {{Location|v-tongvahills}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos County
+Buildings in GTA V in Los Santos County
+Contemporary buildings
+Former buildings
+Mansions

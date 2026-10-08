@@ -1,5 +1,6 @@
 using System.Collections.Concurrent;
 using System.Collections.Immutable;
+using System.Text;
 using System.Text.Json;
 using Grid.Core.Models;
 
@@ -13,9 +14,16 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
     private const int CrossSourceAssertionSchemaVersion = 5;
     private const int LegacySchemaVersion = 1;
     private const int MaximumEntitiesPerCollection = 100_000;
-    private const long MaximumStoreBytes = 512L * 1024 * 1024;
+    /// <summary>
+    /// Default ceiling for the shared canonical library on disk. Saturation-scale Location packages
+    /// (evidence-dense Contract 2 payloads) exceed the prior 512 MiB when merged with history.
+    /// Override with GRID_CANONICAL_STORE_MAX_BYTES for local diagnostics.
+    /// </summary>
+    private const long DefaultMaximumStoreBytes = 1024L * 1024 * 1024;
+    private static readonly long MaximumStoreBytes = ResolveMaximumStoreBytes();
     private static readonly ConcurrentDictionary<string, SemaphoreSlim> Gates = new(StringComparer.OrdinalIgnoreCase);
     private static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web) { WriteIndented = true };
+    private static readonly JsonSerializerOptions JsonWriteOptions = new(JsonSerializerDefaults.Web) { WriteIndented = false };
     private readonly SemaphoreSlim gate;
     private readonly string storePath;
 
@@ -98,6 +106,7 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
     public async Task<CanonicalCatalogImportResult> ImportPackageAsync(
         long expectedRevision,
         CanonicalCatalogPackage package,
+        CatalogPackageId? retireImportedPackageId = null,
         CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(package);
@@ -150,6 +159,18 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
                 {
                     Revision = checked(loaded.Snapshot.Revision + newRevisionCount),
                 };
+                if (retireImportedPackageId is { } retiredPackageId &&
+                    retiredPackageId != package.Id &&
+                    next.ImportedPackages.Any(value => value.Id == retiredPackageId))
+                {
+                    next = next with
+                    {
+                        ImportedPackages = next.ImportedPackages
+                            .Where(value => value.Id != retiredPackageId)
+                            .ToImmutableArray(),
+                    };
+                }
+
                 ValidateSnapshot(next);
             }
             catch (Exception exception) when (exception is ArgumentException or InvalidDataException or OverflowException)
@@ -157,7 +178,14 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
                 return new(CanonicalCatalogImportStatus.Invalid, loaded.Snapshot.Revision, 0, exception.Message);
             }
 
-            await WriteAtomicAsync(next, cancellationToken).ConfigureAwait(false);
+            try
+            {
+                await WriteAtomicAsync(next, cancellationToken).ConfigureAwait(false);
+            }
+            catch (InvalidDataException exception)
+            {
+                return new(CanonicalCatalogImportStatus.Invalid, loaded.Snapshot.Revision, 0, exception.Message);
+            }
             return new(CanonicalCatalogImportStatus.Imported, next.Revision, newRevisionCount,
                 "The structurally verified canonical catalog package was imported atomically.");
         }
@@ -170,51 +198,155 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
         finally { gate.Release(); }
     }
 
-    private async Task<CanonicalCatalogLoadResult> LoadCoreAsync(CancellationToken cancellationToken)
+    /// <summary>
+    /// Repair: reverses one package import exactly. The package and every global item that only its payload
+    /// carried are removed; the result replaces the store only when its bytes hash to the digest recorded for
+    /// the pre-import store. The current store is copied to <paramref name="backupPath"/> first.
+    /// </summary>
+    public async Task<string> RepairRemoveImportedPackageAsync(
+        CatalogPackageId packageId, string expectedSha256, string backupPath, CancellationToken cancellationToken = default)
+    {
+        await gate.WaitAsync(cancellationToken).ConfigureAwait(false);
+        try
+        {
+            if (!File.Exists(backupPath)) File.Copy(storePath, backupPath);
+            var loaded = await LoadCoreAsync(cancellationToken, enforceSizeLimit: false).ConfigureAwait(false);
+            if (!loaded.IsValid) return "store-invalid: " + string.Join("; ", loaded.Issues);
+            var snapshot = loaded.Snapshot;
+            var removed = snapshot.ImportedPackages.SingleOrDefault(value => value.Id == packageId);
+            if (removed is null) return "package-absent";
+            var others = snapshot.ImportedPackages.Where(value => value.Id != packageId).ToArray();
+
+            string Key(object? value) => JsonSerializer.Serialize(value, JsonOptions);
+            HashSet<string> Keys(Func<CanonicalCatalogPayload, System.Collections.IEnumerable> select, IEnumerable<CanonicalCatalogPayload> payloads) =>
+                payloads.SelectMany(p => select(p).Cast<object?>()).Select(Key).ToHashSet(StringComparer.Ordinal);
+
+            var restored = snapshot with { ImportedPackages = others.ToImmutableArray() };
+            var removedRevisionCount = 0;
+            foreach (var property in typeof(CanonicalKnowledgeCatalogSnapshot).GetProperties())
+            {
+                if (property.Name == nameof(CanonicalKnowledgeCatalogSnapshot.ImportedPackages) ||
+                    !property.PropertyType.IsGenericType ||
+                    property.PropertyType.GetGenericTypeDefinition() != typeof(ImmutableArray<>))
+                    continue;
+                Func<CanonicalCatalogPayload, System.Collections.IEnumerable>? select = property.Name switch
+                {
+                    nameof(CanonicalKnowledgeCatalogSnapshot.SourceRevisions) => p => p.SourceRevisions.Select(r => r.Revision),
+                    nameof(CanonicalKnowledgeCatalogSnapshot.AdapterBoundSourceRevisions) => p => p.SourceRevisions,
+                    _ => typeof(CanonicalCatalogPayload).GetProperty(property.Name) is { } payloadProperty
+                        ? p => (System.Collections.IEnumerable)payloadProperty.GetValue(p)!
+                        : null,
+                };
+                if (select is null) continue;
+                var onlyRemoved = Keys(select, [removed.Payload]);
+                onlyRemoved.ExceptWith(Keys(select, others.Select(o => o.Payload)));
+                if (onlyRemoved.Count == 0) continue;
+                var current = (System.Collections.IEnumerable)property.GetValue(restored)!;
+                var elementType = property.PropertyType.GetGenericArguments()[0];
+                var kept = current.Cast<object?>().Where(item => !onlyRemoved.Contains(Key(item))).ToArray();
+                if (property.Name == nameof(CanonicalKnowledgeCatalogSnapshot.SourceRevisions))
+                    removedRevisionCount = current.Cast<object?>().Count() - kept.Length;
+                var array = Array.CreateInstance(elementType, kept.Length);
+                for (var i = 0; i < kept.Length; i++) array.SetValue(kept[i], i);
+                var create = typeof(ImmutableArray).GetMethods()
+                    .Single(m => m.Name == nameof(ImmutableArray.Create) && m.GetParameters() is [{ ParameterType.IsArray: true }])
+                    .MakeGenericMethod(elementType);
+                property.SetValue(restored, create.Invoke(null, [array]));
+            }
+            restored = restored with { Revision = snapshot.Revision - removedRevisionCount };
+            ValidateSnapshot(restored);
+
+            var candidatePath = storePath + ".repair-candidate";
+            await WriteDocumentAsync(restored, candidatePath, cancellationToken).ConfigureAwait(false);
+            string digest;
+            await using (var stream = File.OpenRead(candidatePath))
+                digest = Convert.ToHexString(await System.Security.Cryptography.SHA256.HashDataAsync(stream, cancellationToken).ConfigureAwait(false)).ToLowerInvariant();
+            if (!string.Equals(digest, expectedSha256, StringComparison.OrdinalIgnoreCase))
+                return $"digest-mismatch: restored {digest} revision {restored.Revision}; live store left unchanged; candidate at {candidatePath}";
+            File.Move(candidatePath, storePath, true);
+            return $"restored revision {restored.Revision} sha256 {digest}";
+        }
+        finally { gate.Release(); }
+    }
+
+    private async Task<CanonicalCatalogLoadResult> LoadCoreAsync(CancellationToken cancellationToken, bool enforceSizeLimit = true)
     {
         if (!File.Exists(storePath)) return new(CanonicalKnowledgeCatalogSnapshot.Empty, []);
 
         try
         {
             var info = new FileInfo(storePath);
-            if (info.Length > MaximumStoreBytes) throw new InvalidDataException("Canonical catalog store exceeds its size limit.");
-            var json = await File.ReadAllTextAsync(storePath, cancellationToken).ConfigureAwait(false);
-            using var parsed = JsonDocument.Parse(json);
-            if (!parsed.RootElement.TryGetProperty("schemaVersion", out var schemaProperty) ||
-                !schemaProperty.TryGetInt32(out var schemaVersion))
-                throw new InvalidDataException("Canonical catalog store schema is absent.");
-            if (schemaVersion < CrossSourceAssertionSchemaVersion &&
-                HasNonEmptyCrossSourceState(parsed.RootElement))
-                throw new InvalidDataException("A legacy store cannot carry cross-source assertion state.");
-
-            CanonicalKnowledgeCatalogSnapshot snapshot = schemaVersion switch
+            if (enforceSizeLimit && info.Length > MaximumStoreBytes) throw new InvalidDataException("Canonical catalog store exceeds its size limit.");
+            CanonicalKnowledgeCatalogSnapshot snapshot;
+            await using (var stream = new FileStream(storePath, FileMode.Open, FileAccess.Read, FileShare.Read,
+                64 * 1024, FileOptions.Asynchronous | FileOptions.SequentialScan))
             {
-                LegacySchemaVersion => CreateSnapshot(
-                    JsonSerializer.Deserialize<LegacyDocument>(json, JsonOptions)
-                    ?? throw new InvalidDataException("Canonical catalog store is empty.")),
-                CurrentSchemaVersion => CreateSnapshot(
-                    JsonSerializer.Deserialize<CurrentDocument>(json, JsonOptions)
-                    ?? throw new InvalidDataException("Canonical catalog store is empty.")),
-                LocationContractSchemaVersion => CreateSnapshot(
-                    JsonSerializer.Deserialize<LocationContractDocument>(json, JsonOptions)
-                    ?? throw new InvalidDataException("Canonical catalog store is empty.")),
-                ProjectionContractSchemaVersion => CreateSnapshot(
-                    JsonSerializer.Deserialize<ProjectionContractDocument>(json, JsonOptions)
-                    ?? throw new InvalidDataException("Canonical catalog store is empty.")),
-                CrossSourceAssertionSchemaVersion => CreateSnapshot(
-                    JsonSerializer.Deserialize<CrossSourceContractDocument>(json, JsonOptions)
-                    ?? throw new InvalidDataException("Canonical catalog store is empty.")),
-                _ => throw new InvalidDataException("Canonical catalog store schema is unsupported."),
-            };
-            ValidateSnapshot(snapshot);
-            return new(snapshot, []);
+                using var parseStage = CanonicalRuntimeDiagnostics.Measure("store.read-parse-dom");
+                await using var jsonStream = await OpenUtf8JsonStreamAsync(stream, cancellationToken).ConfigureAwait(false);
+                using var parsed = await JsonDocument.ParseAsync(jsonStream, cancellationToken: cancellationToken).ConfigureAwait(false);
+                parseStage.Dispose();
+                if (!parsed.RootElement.TryGetProperty("schemaVersion", out var schemaProperty) ||
+                    !schemaProperty.TryGetInt32(out var schemaVersion))
+                    throw new InvalidDataException("Canonical catalog store schema is absent.");
+                if (schemaVersion < CrossSourceAssertionSchemaVersion &&
+                    HasNonEmptyCrossSourceState(parsed.RootElement))
+                    throw new InvalidDataException("A legacy store cannot carry cross-source assertion state.");
+
+                using var deserializeStage = CanonicalRuntimeDiagnostics.Measure("store.deserialize");
+                snapshot = schemaVersion switch
+                {
+                    LegacySchemaVersion => CreateSnapshot(
+                        parsed.RootElement.Deserialize<LegacyDocument>(JsonOptions)
+                        ?? throw new InvalidDataException("Canonical catalog store is empty.")),
+                    CurrentSchemaVersion => CreateSnapshot(
+                        parsed.RootElement.Deserialize<CurrentDocument>(JsonOptions)
+                        ?? throw new InvalidDataException("Canonical catalog store is empty.")),
+                    LocationContractSchemaVersion => CreateSnapshot(
+                        parsed.RootElement.Deserialize<LocationContractDocument>(JsonOptions)
+                        ?? throw new InvalidDataException("Canonical catalog store is empty.")),
+                    ProjectionContractSchemaVersion => CreateSnapshot(
+                        parsed.RootElement.Deserialize<ProjectionContractDocument>(JsonOptions)
+                        ?? throw new InvalidDataException("Canonical catalog store is empty.")),
+                    CrossSourceAssertionSchemaVersion => CreateSnapshot(
+                        parsed.RootElement.Deserialize<CrossSourceContractDocument>(JsonOptions)
+                        ?? throw new InvalidDataException("Canonical catalog store is empty.")),
+                    _ => throw new InvalidDataException("Canonical catalog store schema is unsupported."),
+                };
+                deserializeStage.Dispose();
+            }
+            using (CanonicalRuntimeDiagnostics.Measure("store.validate"))
+                ValidateSnapshot(snapshot);
+            return CanonicalCatalogLoadResult.FromValidatedSnapshot(snapshot);
         }
         catch (OperationCanceledException) { throw; }
         catch (Exception exception) when (exception is IOException or UnauthorizedAccessException or JsonException or InvalidDataException or ArgumentException)
         {
             return new(CanonicalKnowledgeCatalogSnapshot.Empty,
-                [$"Canonical catalog could not be loaded ({exception.GetType().Name})."]);
+                [$"Canonical catalog could not be loaded ({exception.GetType().Name}): {exception.Message}"]);
         }
+    }
+
+    private static async Task<Stream> OpenUtf8JsonStreamAsync(FileStream stream, CancellationToken cancellationToken)
+    {
+        // Preserve StreamReader's historical BOM handling without retaining a UTF-16
+        // copy of the entire store. Transcoding, when needed, uses bounded buffers.
+        var prefix = new byte[4];
+        var count = await stream.ReadAtLeastAsync(prefix, prefix.Length, throwOnEndOfStream: false,
+            cancellationToken: cancellationToken).ConfigureAwait(false);
+        Encoding? encoding = null;
+        var skip = 0;
+        if (count >= 4 && prefix[0] == 0xff && prefix[1] == 0xfe && prefix[2] == 0 && prefix[3] == 0)
+            (encoding, skip) = (Encoding.UTF32, 4);
+        else if (count >= 4 && prefix[0] == 0 && prefix[1] == 0 && prefix[2] == 0xfe && prefix[3] == 0xff)
+            (encoding, skip) = (new UTF32Encoding(true, false), 4);
+        else if (count >= 2 && prefix[0] == 0xff && prefix[1] == 0xfe)
+            (encoding, skip) = (Encoding.Unicode, 2);
+        else if (count >= 2 && prefix[0] == 0xfe && prefix[1] == 0xff)
+            (encoding, skip) = (Encoding.BigEndianUnicode, 2);
+        else if (count >= 3 && prefix[0] == 0xef && prefix[1] == 0xbb && prefix[2] == 0xbf)
+            skip = 3;
+        stream.Position = skip;
+        return encoding is null ? stream : Encoding.CreateTranscodingStream(stream, encoding, Encoding.UTF8, leaveOpen: true);
     }
 
     private static bool HasNonEmptyCrossSourceState(JsonElement root)
@@ -237,8 +369,22 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
 
     private async Task WriteAtomicAsync(CanonicalKnowledgeCatalogSnapshot snapshot, CancellationToken cancellationToken)
     {
-        var directory = Path.GetDirectoryName(storePath)!;
-        Directory.CreateDirectory(directory);
+        var temporary = storePath + ".tmp";
+        await WriteDocumentAsync(snapshot, temporary, cancellationToken).ConfigureAwait(false);
+        var written = new FileInfo(temporary).Length;
+        if (written > MaximumStoreBytes)
+        {
+            // The loader refuses stores over the limit; replacing the store would leave it unloadable.
+            File.Delete(temporary);
+            throw new InvalidDataException(
+                $"Canonical catalog store would exceed its size limit ({written} > {MaximumStoreBytes} bytes); the store was not overwritten.");
+        }
+        File.Move(temporary, storePath, true);
+    }
+
+    private static async Task WriteDocumentAsync(CanonicalKnowledgeCatalogSnapshot snapshot, string path, CancellationToken cancellationToken)
+    {
+        Directory.CreateDirectory(Path.GetDirectoryName(path)!);
         var document = new CrossSourceContractDocument(
             CrossSourceAssertionSchemaVersion,
             snapshot.Revision,
@@ -274,12 +420,21 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
             snapshot.UnresolvedCrossSourceClaimContents.ToArray(),
             snapshot.UnresolvedCrossSourceEvidenceBindings.ToArray(),
             snapshot.UnresolvedCrossSourceAssertions.ToArray());
-        var temporary = storePath + ".tmp";
         await File.WriteAllTextAsync(
-            temporary,
-            JsonSerializer.Serialize(document, JsonOptions) + Environment.NewLine,
+            path,
+            JsonSerializer.Serialize(document, JsonWriteOptions) + Environment.NewLine,
             cancellationToken).ConfigureAwait(false);
-        File.Move(temporary, storePath, true);
+    }
+
+    private static long ResolveMaximumStoreBytes()
+    {
+        var raw = Environment.GetEnvironmentVariable("GRID_CANONICAL_STORE_MAX_BYTES");
+        if (string.IsNullOrWhiteSpace(raw))
+            return DefaultMaximumStoreBytes;
+        if (!long.TryParse(raw, System.Globalization.NumberStyles.Integer, System.Globalization.CultureInfo.InvariantCulture, out var parsed) ||
+            parsed < 16L * 1024 * 1024)
+            return DefaultMaximumStoreBytes;
+        return parsed;
     }
 
     private static CanonicalKnowledgeCatalogSnapshot CreateSnapshot(LegacyDocument document)
@@ -603,14 +758,7 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
         {
             if (record.SourceRevisionId != registration.SourceRevision.Id)
                 throw new InvalidDataException("Knowledge record does not belong to the registered source revision.");
-            if (NativeRecordIdentityId.DeriveV1(record.GameId, record.NativeIdentity) != record.NativeRecordIdentityId ||
-                KnowledgeRecordId.DeriveV1(
-                    record.GameId,
-                    record.GameVersion,
-                    record.ModVersion,
-                    record.SourceRevisionId,
-                    record.Kind,
-                    record.NativeRecordIdentityId) != record.Id)
+            if (!KnowledgeRecordId.MatchesPackageIdentity(record))
                 throw new InvalidDataException("Knowledge record identity does not match its canonical inputs.");
         }
 
@@ -1106,8 +1254,7 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
                 throw new InvalidDataException("Persisted source artifact is not reachable from a source revision.");
         foreach (var record in snapshot.KnowledgeRecords)
             if (!snapshot.SourceRevisions.Any(value => value.Id == record.SourceRevisionId) ||
-                NativeRecordIdentityId.DeriveV1(record.GameId, record.NativeIdentity) != record.NativeRecordIdentityId ||
-                KnowledgeRecordId.DeriveV1(record.GameId, record.GameVersion, record.ModVersion, record.SourceRevisionId, record.Kind, record.NativeRecordIdentityId) != record.Id)
+                !KnowledgeRecordId.MatchesPackageIdentity(record))
                 throw new InvalidDataException("Persisted knowledge record is invalid.");
         foreach (var term in snapshot.TerminologyAssertions)
             if (!SnapshotAssertionSourceIsPermitted(
@@ -1168,7 +1315,7 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
                       snapshot.RecordContributionAssertions,
                       snapshot.OrganizationalValueAssertions,
                       snapshot.CrossSourceTargetLinkClaims))
-                throw new InvalidDataException("Persisted evidence binding is invalid.");
+                throw new InvalidDataException("Persisted evidence binding is invalid: " + DescribeInvalidBinding(snapshot, binding, receiptCoordinates));
 
         foreach (var record in snapshot.KnowledgeRecords)
             if (!snapshot.EvidenceBindings.Any(value => value.KnowledgeRecordId == record.Id && value.ClaimKind == EvidenceClaimKind.KnowledgeIdentity))
@@ -1320,7 +1467,14 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
 
         foreach (var package in snapshot.ImportedPackages)
         {
-            if (!CanonicalCatalogPackageKernel.Verify(package).IsStructurallyValid || !PackageContained(snapshot, package))
+            bool structurallyValid;
+            using (CanonicalRuntimeDiagnostics.Measure("store.package-verify"))
+                structurallyValid = CanonicalCatalogPackageKernel.Verify(package).IsStructurallyValid;
+            bool contained = false;
+            if (structurallyValid)
+                using (CanonicalRuntimeDiagnostics.Measure("store.package-containment"))
+                    contained = PackageContained(snapshot, package);
+            if (!structurallyValid || !contained)
                 throw new InvalidDataException("Persisted imported package is invalid or incomplete.");
         }
         foreach (var adapterBound in snapshot.AdapterBoundSourceRevisions)
@@ -1837,6 +1991,28 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
             $"grid.catalog-source-revision.v{CatalogSourceRevisionId.LegacyAlgorithmVersion}.sha256.",
             StringComparison.Ordinal);
 
+    private static string DescribeInvalidBinding(
+        CanonicalKnowledgeCatalogSnapshot snapshot,
+        EvidenceBinding binding,
+        IReadOnlyDictionary<EvidenceReceiptId, EvidenceReceiptCoordinate> receiptCoordinates)
+    {
+        var failed = new List<string>();
+        if (!receiptCoordinates.TryGetValue(binding.EvidenceReceiptId, out var coordinate)) failed.Add("receipt-missing");
+        else
+        {
+            if (coordinate.SourceRevisionId != binding.SourceRevisionId) failed.Add("receipt-revision");
+            if (!string.Equals(coordinate.FieldPath, binding.ClaimLocator, StringComparison.Ordinal)) failed.Add("receipt-field-path:" + coordinate.FieldPath);
+        }
+        if (!SnapshotBindingSourceIsPermitted(snapshot, binding)) failed.Add("source-not-permitted");
+        if (EvidenceBindingId.DeriveV2(binding.EvidenceReceiptId, binding.ClaimKind, binding.KnowledgeRecordId, binding.SourceRevisionId,
+                binding.ClaimLocator, binding.ClaimContentId) != binding.Id) failed.Add("binding-id");
+        if (!BindingTargetsExactClaim(binding, snapshot.TerminologyAssertions, snapshot.RelationshipAssertions,
+                snapshot.SourceNativeLocationTypeAssertions, snapshot.LocationSemanticClassificationAssertions, snapshot.RecordLifecycleAssertions,
+                snapshot.SemanticClassificationAssertions, snapshot.RecordContributionAssertions, snapshot.OrganizationalValueAssertions,
+                snapshot.CrossSourceTargetLinkClaims)) failed.Add("claim-target");
+        return string.Join(",", failed) + $" (kind {binding.ClaimKind}, record {binding.KnowledgeRecordId}, revision {binding.SourceRevisionId}, locator {binding.ClaimLocator})";
+    }
+
     private static ImmutableArray<T> MergeById<T, TId>(
         ImmutableArray<T> existing,
         ImmutableArray<T> incoming,
@@ -1855,7 +2031,7 @@ public sealed class JsonCanonicalKnowledgeCatalogStore : ICanonicalKnowledgeCata
                 continue;
             }
             if (!equivalent(match, candidate))
-                throw new InvalidDataException($"A {description} identity conflicts with immutable persisted content.");
+                throw new InvalidDataException($"A {description} identity conflicts with immutable persisted content: {id(candidate)}; persisted {match}; incoming {candidate}.");
         }
         return values.OrderBy(value => id(value)?.ToString(), StringComparer.Ordinal).ToImmutableArray();
     }

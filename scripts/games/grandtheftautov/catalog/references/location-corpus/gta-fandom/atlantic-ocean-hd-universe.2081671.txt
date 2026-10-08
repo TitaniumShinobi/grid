@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|name          = Atlantic Ocean
+|type          = ocean
+|image         = AtlanticOcean-GTAIV.png
+|caption       = Atlantic Ocean as seen from [[Beachgate]] in ''Grand Theft Auto IV''.
+|games         = {{Games|IV=y|EFLC=y|CW=y|O={{Small|([[Caribbean Sea]] only)}}|VI=y}}
+|pscanner      = 
+}}
+
+[[LEAD]]
+The '''{{WP|Atlantic Ocean}}'''  is the second-largest of the world's five oceans, which appears in {{IV}}, {{EFLC}}, {{CW}}, {{O}} and {{VI}}. It is located on the eastern coast of the [[United States of America]].
+
+[[CATEGORIES]]
+Locations in GTA Chinatown Wars
+Locations in GTA IV
+Locations in GTA Online
+Locations in GTA VI
+Seas

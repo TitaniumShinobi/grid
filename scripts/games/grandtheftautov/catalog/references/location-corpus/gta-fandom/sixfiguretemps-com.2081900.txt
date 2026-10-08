@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Six Figure Temps
+|image = Sixfiguretemps.com-GTAV-logo.png
+|caption = The company logo.
+|type = Temp employment agency
+|taglines = "''We're Hiring.''"
+|games = ''[[Grand Theft Auto V]]''}}
+
+[[LEAD]]
+''sixfiguretemps'' is a business and website seen in ''[[Grand Theft Auto V]]''. The website is seen on the in-game internet and the business also has a [[Bleeter]] account.
+{{clr}}
+[[File:Sixfiguretemps.com-GTAV-website.png|thumb|350px|The website]]
+
+[[CATEGORIES]]
+Media in GTA V
+Websites

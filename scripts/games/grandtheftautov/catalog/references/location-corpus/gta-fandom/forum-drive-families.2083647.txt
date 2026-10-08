@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox organization
+|image = ForumDriveFamilies-GTAOe.png
+|caption = Franklin's Forum Drive Families support in {{O}}.
+|games = {{Games|V=y|O=y}}
+|locations = [[Forum Drive]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|leader = Collective leadership  (Franklin Clinton and Lamar Davis)
+|aka = 
+*Forum Gangsters
+*FDF
+*F.G.
+|type = gang
+|gang_type = Set of [[The Families]]
+|enemies = 
+*[[Ballas (HD Universe)|Ballas]] <small>([[South Central Leak/Finale|Formerly]])</small>
+*[[Los Santos Vagos (HD Universe)|Los Santos Vagos]]
+*[[Stretch (character)|Stretch]] 
+*[[Devin Weston]] 
+|affiliations = 
+*[[Trevor Philips]]
+*[[Michael De Santa]]
+|colors = Green
+|members = 
+*[[Franklin Clinton]]
+*[[Lamar Davis]]
+*[[Slim Skills]] 
+|Name Change = GANG SET OF [[The Families|THE FAMILIES]]
+|status = active
+}}
+
+[[LEAD]]
+The '''Forum Drive Families (FDF)''', also known as the '''Forum Gangsters''', are a street gang in {{V}} and {{O}}, originally formed in [[Forum Drive]] from [[The Families]] gang.
+
+[[CATEGORIES]]
+Afro-descendant organizations
+Gangs
+Organizations in GTA Online
+Organizations in GTA V

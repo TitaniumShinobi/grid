@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Smack Shack
+|image = SmackShack-GTAVe-Name.png
+|caption = 
+|games = {{Games|V=y|O=y}}
+|location = [[Cholla Springs Avenue]], [[Sandy Shores]], [[Blaine County]]
+|type  = house
+|floors = 1
+|map = SmackShack-GTAVe-Map.png
+|map_caption =
+}}
+
+[[LEAD]]
+The '''Smack Shack''' is a named mobile home in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

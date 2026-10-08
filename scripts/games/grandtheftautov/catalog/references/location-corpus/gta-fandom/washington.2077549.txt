@@ -1,0 +1,175 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name                = Washington
+|front_image         = Washington-GTAV-front.png
+|rear_image          = Washington-GTAV-rear.png
+|caption             = A '''Washington''' in {{V}}.
+|class               =  [[:Category:Sedans class|Sedans]] {{Small|(''GTA V'' & ''GTA Online'')}}
+|body_style          = [[:Category:Sedans|Four-door sedan]]
+|capacity            = 4 {{Small|(driver and 3 passengers)}}
+|aka                 = Executive {{Small|(HD Universe, badging)}}
+|manufacturer        = [[Albany]] {{Small|([[HD Universe]])}}
+|price               = [[Money|$]]15,000 {{Small|(''GTA Online'') ([[Southern San Andreas Super Autos]]; [[#Locations|no longer available]])}}
+|games               = {{Games|VC=y|SA=y|VCS=y|IV=y|EFLC=y|V=y|O=y}}
+|type                = fullsize
+|variants            = 
+*[[FBI Washington]] {{Small|(3D Universe)}}
+*[[Stretch]] {{Small|(''GTA V'')}}
+*[[Romero's Hearse|Romero]] {{Small|(HD Universe)}}
+|swankness           = 2/5
+|dashtype            = 
+*Gen Taxi {{Small|(needles)}}[[File:GenericTaxi-Dials-GTAV.png|thumb|center|170px]]
+*Police Taxi {{Small|(dial texture)}}[[File:PoliceTaxi-GTAV-DialSet.png|thumb|center|170px]]
+|inttxd              = 
+*Generic {{Small|(3D Universe)}}
+*Washington {{Small|(''GTA IV'')}}
+*Police Taxi {{Small|(''GTA V'')}}
+|wheeltype           = Sport
+|flags               = 
+{{Expand|'''GTA V'''|
+{{Flags|FLAG_AVERAGE_CAR}}
+{{Flags|FLAG_HAS_INTERIOR_EXTRAS}}
+}}
+|modelsets           = 
+*CARS_TOURIST
+*[[#Scientists|SCIENTIST]]
+|roadspawn           = 
+*Yes {{Small|(all games)}}
+*Parked {{Small|(all games)}}
+|roadspawnmaxcol     = 10
+|roadspawnfreq       = 100
+|roadspawntrailer    = 
+|roadspawnidendis    = 20
+|roadspawndrivers    = 
+|roadspawngroups     =
+<center>'''GTA V'''</center>
+{{Popgroups|veh_mid}}
+|roadspawnlicense    = 
+*Standard White - 60%
+*White Plate 2 - 40%
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The '''Washington''' is a range of executive sedans found in {{VC}}, {{SA}}, {{VCS}}, {{IV}}, and {{V}}. It is manufactured by [[Albany]] in the {{HD}}.
+
+[[SECTION:2:Rockstar Games Social Club]]
+
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+{{RSSC
+|name          = Washington
+|manufacturer  = Albany
+|class         = Sedans 
+|image         = Washington-GTAV-RGSC-MainNew.jpg
+|caption       = Main image (after 2019).
+|image2        = Washington-GTAV-RGSC-Action.jpg
+|caption2      = "Action" image for ''GTA V''.
+|image3        = Washington-GTAO-RGSC-Action.jpg
+|caption3      = "Action" image for ''GTA Online''.
+|image4        = Washington-GTAV-RGSC-Main.jpg
+|caption4      = Main image (prior to 2019).
+|speed         = 75.11718
+|accel         = 50
+|braking       = 29.999998
+|traction      = 74.242424
+|seats         = 4
+|garage        = y
+|moddable      = y
+|premium       = n
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = sssa
+|schematic     = Generic4Door
+}}
+
+[[SECTION:3:''Grand Theft Auto: Vice City'']]
+Two unique black Washingtons may be seen driven by the [[GIGN and DGSE|French]] during the mission [[All Hands On Deck!]], in ''GTA Vice City''. While it is possible to reach the cars and enter them, it is impossible to drive them (as the mission immediately ends and the car is lost). It is also impossible to push the cars to a garage as an alternative, as the player is only given a brief window of time before [[Juan Cortez]] is killed, leading to mission failure which warps the player back to the nearby mission trigger with the cars vanished. This variant is often confused as the FBI version, but closer inspections reveals that the details are completely different.
+
+{{Gallery
+|Washington-GTAVC-GIGN-front.jpg|One of two black Washingtons featured during "[[All Hands On Deck!]]" in GTA Vice City. ({{Small|[[:Image:Black-Washington-GTAVC.png|Rear quarter view]]}}).
+}}
+
+[[SECTION:3:''Grand Theft Auto: Vice City'']]
+*[[All Hands On Deck!]] {{nd}} The first [[France|Frenchs]] to attack [[Cortez's Yacht]] come into two unique black Washingtons.
+*[[Sunshine Autos Import Garage]] {{nd}} The Washington is one of the 24 vehicles wanted by [[Sunshine Autos]] for its import garage. Placed on the second list.
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+*[[In the Air Tonight]] {{nd}} A Washington appears in the parking lot of the [[Ocean View Hospital|hospital]] at the start of the mission.
+*[[Robbery]] {{nd}} Designed as the vehicle to carry the briefcase in the "Briefcase Courier" type of the mission, based on land.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto: Vice City'']]
+*It can be seen around the [[Escobar International Airport|airport]] and [[Downtown Vice City (3D Universe)|Downtown]].
+*It can normally appear around [[Washington Beach (3D Universe)|Washington Beach]] and [[Ocean Beach (3D Universe)|Ocean Beach]].
+*It can be occasionally seen around the [[North Point Mall]] in [[Vice Point]].
+
+[[SECTION:3:''Grand Theft Auto: San Andreas'']]
+*One is parked next to the [[Mike Toreno's Ranch]] ([[Save Point|save point]]) in [[Tierra Robada]].
+*It spawns around [[Easter Basin]] in [[San Fierro (3D Universe)|San Fierro]]
+*It spawns in [[Market (3D Universe)|Market]] and [[Rodeo]] in [[Los Santos (3D Universe)|Los Santos]]
+*It spawns in [[Whitewood Estates]], [[Redsands West]] and [[Redsands East]] in [[Las Venturas (3D Universe)|Las Venturas]].
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+*It can be occasionally found in the parking lot of [[Vice Point Mall]] in [[Vice Point]], [[Vice City (3D Universe)|Vice City]].
+*It may be found in the parking lot behind [[Lance Vance|Lance Vance's]] [[1412 Hoarmount Avenue|hotel]] in [[Downtown Vice City (3D Universe)|Downtown]], Vice City.
+*It can be found in the car park on the left side of [[Hyman Memorial Stadium]] in Downtown.
+*It regularly spawns around [[Ocean Beach (3D Universe)|Ocean Beach]], [[Little Havana]], and [[Escobar International Airport]].
+*It can regularly be found at the car park near the [[Escobar International Airport V.I.P. Terminal|VIP terminal]] at Escobar International Airport.
+
+[[SECTION:3:''Grand Theft Auto IV ''+'' Episodes from Liberty City'']]
+*It usually spawns in central [[Algonquin]], [[Outlook]] in [[Broker]], and also in [[Berchem]], [[State of Alderney|Alderney]]. 
+*It rarely spawns in [[Broker]], [[Dukes]], or [[Bohan]].
+**However, it commonly spawns in these areas when driving a [[Stretch]], a [[Turismo]] or a [[Super GT]].
+*One is parked on [[Franklin Street (Dukes)|Franklin Street]] in [[Steinway]], in the opposite side of the [[Steinway Park]], only when requested in the [[Stevie's Car Thefts]] side mission.
+*It often spawns when the player loads a game at the [[Middle Park East Safehouse]].
+
+[[SECTION:3:''Grand Theft Auto V'']]
+*It is seen driving around randomly in [[Los Santos (HD Universe)|Los Santos]] and along the western coast of [[Blaine County]] to [[Paleto Bay]].
+*It can be found in a [[Random Events in GTA V#Stag Do Running Man|random encounter]] in which the player has to untie a [[Groom in Trouble|wedding groom]] from a telephone pole, after dropping the groom and his friend off, a unique colored Washington can be found near the player which is available to be taken.
+*In the [[Grand Theft Auto V: Enhanced Edition|enhanced version]], a white Washington and [[Burrito (second generation)|Burrito]] can be found parked next to the [[Satellite Relay Station|satellites]] in the [[Grand Senora Desert]] with FIB agents and scientists between 10:00 am and 12:00 pm.
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+*Available for purchase from [[Southern San Andreas Super Autos]] for [[Money|$]]15,000.
+**No longer available in the enhanced versions of the game; [[:Category:Vehicles removed for purchase in GTA Online: San Andreas Mercenaries|removed]] from the website as part of the [[GTA Online: San Andreas Mercenaries|San Andreas Mercenaries]] update.
+
+;Enhanced versions
+*It can be found at the same location in the Grand Senora Desert.
+*It can be requested by a [[Organizations|VIP]] (and any bodyguards of the organization) for free from the Interaction Menu > VIP Vehicles. It will always spawn in matte black and will spawn near the player where there is enough space.
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+Even though the Washington has dual exhaust pipes, exhaust fumes only come from the right pipe.
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Washington}}
+{{Defaultradio|game=SA|defaultstation=[[West Coast Talk Radio (3D Universe)|West Coast Talk Radio]]}}
+{{Defaultradio|game=IV|defaultgroup=ambient}}
+{{Defaultradio|game=EFLC|defaultgroup=ambient}}
+{{Defaultradio|game=IVEFLC|defaultgroup=ambient}}
+{{Defaultradio|game=VO|defaultgroup=right-talk}}
+
+[[CATEGORIES]]
+Full-size cars
+Sedans
+Sedans class
+Vehicles in GTA IV
+Vehicles in GTA Online
+Vehicles in GTA San Andreas
+Vehicles in GTA V
+Vehicles in GTA Vice City
+Vehicles in GTA Vice City Stories
+Vehicles in TBOGT
+Vehicles in TLAD
+Vehicles manufactured by Albany
+Vehicles purchasable from Premium Deluxe Motorsport
+Vehicles purchasable from Southern San Andreas Super Autos
+Vehicles removed for purchase in GTA Online: San Andreas Mercenaries
+Vehicles requested by Stevie
+Vehicles requested via SecuroServ
+Vehicles with PoliceTaxi interior

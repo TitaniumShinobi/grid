@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = VENUE
+|business = y
+|activebiz = y
+|name = Split Sides
+|altnames = Spilt Sides West
+|image = Split-Sides-GTAIV-Logo.png
+|taglines = ''"I almost sh@ myself!"'' <small>(Split Sides West Comedy Club)</small>
+|type = Comedy Club
+|games = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|location =
+*[[Star Junction]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]]
+*[[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = Yes <small>(''GTA IV'' & ''TLAD'')</small>
+|opentimes = 24 hours <small>(with a cooldown between visits)</small>
+|oldlogo1 = SplitSidesWest-GTAV-Logo.png
+|oldcaption1 = Split Sides West Logo
+|map = SplitSides-GTAIV-LocationOfficialMap.png
+|map_caption = Liberty City
+|map2 = SplitSidesWest-GTAV-Location-Map.png
+|map_caption2 = Los Santos
+}}
+
+[[LEAD]]
+'''Split Sides Comedy Club''' is a comedy club featured in {{IV}} and {{TLAD}}. The club is made inaccessible in {{TBOGT}} and {{CW}}.
+
+In {{V}} and {{O}}, there is also an inaccessible '''Split Sides West''' in [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Comedy clubs
+Friend Activities in GTA IV
+Locations in GTA Chinatown Wars in Algonquin
+Locations in GTA IV in Algonquin
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

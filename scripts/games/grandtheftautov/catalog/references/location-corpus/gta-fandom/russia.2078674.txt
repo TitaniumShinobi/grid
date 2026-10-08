@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox country
+|image_flag = Flag of Russia.svg}}
+
+[[LEAD]]
+The '''Russian Federation''' (Russian: '''Российская Федерация'''), more commonly known simply as '''Russia''' (Russian: '''Россия'''), is a transcontinental country spanning Northern Asia and Eastern Europe. It is the largest country in the world, and shares land borders with the most countries in the world with a total of 16. From its northwest to its southeast, Russia shares borders with [[Norway]], [[Finland]], {{WP|Estonia}}, {{WP|Latvia}}, {{WP|Lithuania}} and [[Poland]] (both via {{WP|Kaliningrad Oblast}}), [[Belarus]], [[Ukraine]], [[Georgia]], [[Azerbaijan]], [[Kazakhstan]], [[China]], [[Mongolia]], [[United States of America|USA]] and [[North Korea]].
+
+Russia does not use the [[PEGI]] system of other European countries, and instead uses its own {{WP|On Protecting Children from Information Harmful to Their Health and Development|ratings system}}.
+
+Between 1922 and 1991, Russia was formerly part of the '''{{WP|Soviet Union|Union of Soviet Socialist Republics}}''' (Russian: '''Союз Советских Социалистических Республик''') ('''USSR'''/'''СССР''') also known as the '''Soviet Union''' (Russian: '''Советский Союз'''). Because of this, any games which make reference to the Soviet Union are listed below.
+
+[[CATEGORIES]]
+Asian countries
+European countries

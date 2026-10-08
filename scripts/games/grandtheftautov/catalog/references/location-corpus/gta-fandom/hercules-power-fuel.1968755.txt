@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = drink
+|name          = Hercules Power Fuel
+|image         = HerculesPowerFuel-GTAV-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|V=y|O=y}}
+|business_type = 
+|taglines      = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Hercules Power Fuel''' is a brand of energy drink featured in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA V
+Energy drinks
+Food
+In-Game Products

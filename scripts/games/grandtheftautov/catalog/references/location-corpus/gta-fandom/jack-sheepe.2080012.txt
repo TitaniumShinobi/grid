@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = Jack Sheepe
+|aka           = Jacksheepe
+|image         = JackSheepe-GTAV-Logo.png
+|type          = vehicles
+|business_type = 
+*Vehicle manufacturer 
+*Agricultural machinery manufacturer
+|products      = [[#Vehicles|Vehicles]]
+|games         = {{games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Jack Sheepe''', also known as '''Jacksheepe''', is a machinery manufacturer appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Agricultural Companies
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle manufacturers

@@ -1,0 +1,66 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|Name Change = 
+|name = Bail Office
+|image = BailOffices-GTAOe.gif
+|style =  {{HUDIcons|game=O|bailoffice}} Bail Office
+|occupants = [[Maude Eccles]] <small>(formerly)</small><br>[[Jenette Eccles]]<br>[[GTA Online Protagonist|''GTA Online'' Protagonist]]<br>2 Bail Enforcement Agents <small>(optional)</small>
+|price = [[Money|$]]1,650,000 - $2,620,000
+|game = gtaofreemode
+}}
+
+[[LEAD]]
+A '''Bail Office''' is a purchasable property in ''[[Grand Theft Auto Online]]'' added as part of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update.
+
+[[SECTION:3:Office]]
+The office is the main area of the business. This is where Jenette, as well as two unnamed enforcement agents if hired, will be working. The holding cell is also located in this area, where bounty targets will be held for processing if brought in alive.
+
+[[SECTION:3:Player's office]]
+Behind Jenette's desk is the player's office. A computer there will allow the player to start bounty hunting missions. If purchased, the player's office will feature a small storage room used as the player's personal quarters. In the office, one of the desks will gain a plaque with a certificate of bail enforcement after the player has completed at least 10 bail target missions, a trophy of a golden sheriff star after completing at least 100 bail target missions, and a trophy of golden handcuffs after the player brings in all 24 unique bail jumpers alive. Also, completing four bounties will result in Jenette replacing the plant on the computer desk.
+
+[[SECTION:3:Garage]]
+Near the main entrance, there is a staircase leading into the garage, where the [[Burrito (Bail Enforcement)|Bail Enforcement Van]] is stored. Two [[Personal Vehicles]] may also be stored inside the garage.{{clr}}
+
+[[SECTION:3:Locations]]
+{| class="wikitable"
+! width="100%" align="center" colspan="5" | Locations
+|-
+! width="20%" |Location
+! width="25%" |Image
+! width="30%" |In-game description
+! width="10%" |Price
+! width="15%" |Notes
+|-
+|Behind [[Willie's Supermarket]], [[Paleto Boulevard]], [[Paleto Bay]]
+|[[File:BailOffices-GTAOe-PaletoBay.png|220px|center]]
+|''Some people find business in Paleto Bay to be isolating and outdated. But those people are lacking vision. Take this property for example: A lick of paint, a slick new sign, and you'll be making bank like it's late 2007.''
+|$1,650,000
+|
+|-
+|Next to [[Herr Kutz Barber]], [[Carson Avenue]], [[Davis]]<br>(Formerly [[Chringo's Carpets]])
+|[[File:BailOffices-GTAOe-Davis.png|220px|center]]
+|''Our market analysts informs us this prime piece of real estate has fabulous potential as a bail enforcement office, and we could not agree more. With the Davis community's strong reputation for the sudden and final resolution of long-standing conflicts, your activities are going to be some of  the least prosecutable on the block.''
+|$2,000,000
+|Garage entrance at rear of building, accessible via neighboring alleyway.
+|-
+|Behind [[The Grain of Truth]], [[Red Desert Avenue]], [[Del Perro]]
+|[[File:BailOffices-GTAOe-DelPerro.png|220px|center]]
+|''An exquisite piece of prime Del Perro real estate. Once we had the trust fund kid posing as a tantra guru removed from breaking the conditions of his bail, and the popup yoga shala dismantled, the space scrubbed up beautifully. There is a lingering smell of Palo Santo and cultural appropriation but that's a small price to pay for such a unique real estate opportunity.''
+|$2,350,000
+|Accessible via neighboring alleyway.
+|-
+|Across from [[Mission Row Police Station]], [[Atlee Street]], [[Mission Row]]<br>(Formerly [[The Look Depository]])
+|[[File:BailOffices-GTAOe-MissionRow.png|220px|center]]
+|''This striking city center property has been flooded with interest since its first listing. Please bear with us while we respond to questions. FAQs include "What's that smell"? "Who's that jimmying the window?" and "Was this a crack den?" to which we say, would Maze Bank Foreclosures, Four Time Time Em & Flip Em Award Winners, really sell you a crack den?''
+|$2,390,000
+|Garage entrance faces [[Little Bighorn Avenue]].
+|-
+|Next to [[Pop's Pills]], [[Alta Street]], [[Downtown Vinewood]]
+|[[File:BailOffices-GTAOe-DowntownVinewood.png|220px|center]]
+|''You're probably wondering how we can afford to list suck a competitive price in Downtown Vinewood. And that's understandable. But our website's strict character limit means we just don't have the space to explain. Instead, rest assured when we say this Retail property is a golden opportunity to be creative, optimistic, forward-thinking and wholly ignorant of the recent past.''
+|$2,620,000
+|Garage entrance faces parking lot on [[Spanish Avenue]].
+|}
+
+[[CATEGORIES]]
+Properties in GTA Online

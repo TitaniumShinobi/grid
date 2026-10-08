@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|type       = restaurant
+|name       = The Big Puffa
+|image      = TheBigPuffa-GTAVe-Logo.png
+|games      = {{Games|V=y|O=y}}
+|location   = [[Del Perro Pier]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+}}
+
+[[LEAD]]
+'''The Big Puffa''' is a seafood restaurant in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Fine dining restaurants
+Seafood restaurants

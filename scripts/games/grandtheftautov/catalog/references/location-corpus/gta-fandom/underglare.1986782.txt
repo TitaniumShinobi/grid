@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = UnderGlare
+|image         = UnderGlare-GTAO-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mp2024_02}}}} 
+|mentioned     = 
+|business_type = Neon undercar kits
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|weapons       = 
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''UnderGlare''' is an automotive neon lights manufacturer appearing in {{O}} as part of the [[GTA Online: Agents of Sabotage|Agents of Sabotage]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Agents of Sabotage
+Vehicle parts manufacturers

@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business
+|name = Click Lovers
+|image = ClickLovers-GTAV-Logo.png
+|caption = '''Click Lovers''' logo.
+|taglines = 
+|type = Electronics Store
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Click Lovers''' is an electronics store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+*[[Korean Plaza]] in [[Little Seoul]].
+*[[Davis Plaza]] in [[Davis]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics stores

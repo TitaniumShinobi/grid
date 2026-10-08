@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 1932 Grapeseed Avenue
+|image = Dynasty8-GTAV-LowEnd-Image-1932GrapeseedAve.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end garage
+|garage = 2 vehicles <br> 1 bike
+|price = [[Money|$]]27,500
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''1932 Grapeseed Avenue''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located on [[Grapeseed Avenue]] in [[Grapeseed]], being the smaller of the two structures on the property of [[Shady Tree Farm]]. The entrance to the [[O'Neil Ranch]] can be found across the street.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]27,500 and can store 2 [[Personal Vehicles]] and one [[Pedal and Metal Cycles|Bicycle]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

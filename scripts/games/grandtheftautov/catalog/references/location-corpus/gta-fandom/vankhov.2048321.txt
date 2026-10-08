@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox business
+|name       = Vankhov
+|type       = jewelrystore
+|taglines   =
+|image      = Vankhov-GTAV-Logo.png
+|games      = {{Games|V=y|O=y}}
+|locations  = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+{{Small|(see [[#Locations|Locations]])}}
+|accessible = No
+}}
+
+[[LEAD]]
+'''Vankhov''' is a jewelry company in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|Vankhov-GTAVee-Morningwood.jpg|[[Perth Street]], [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]].
+|Kronos-Building-GTAV.jpg|[[Elgin Avenue]], [[Legion Square]], Los Santos {{Small|(next to [[Kronos (HD Universe)|Kronos]])}}.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Jewelry store chains

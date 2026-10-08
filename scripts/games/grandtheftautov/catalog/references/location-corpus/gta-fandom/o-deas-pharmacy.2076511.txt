@@ -1,0 +1,51 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = pharmacy
+|name          = O'Deas Pharmacy
+|sign          = OdeasPharmacy-GTAV-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = [[Zombix]]
+|vehicles      =
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|opentimes     = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''O'Deas Pharmacy''' is a pharmacy chain that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" bordercolor="#506893" widths="270px">
+O'deasPharmacy-GTAV-ChumashPlaza.png|[[Chumash Plaza]], [[U.S. Route 1|Great Ocean Highway]], [[Chumash]].
+OdeasPharmacy-GTAV-MissionRow.png|[[Vespucci Boulevard]], [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pharmacy chains

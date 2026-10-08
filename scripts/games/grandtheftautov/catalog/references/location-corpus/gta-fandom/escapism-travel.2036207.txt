@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = travel
+|name          = Escapism Travel
+|sign          = Escapism-GTAIV-Logo.png
+|taglines      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y}}
+|mentioned     = 
+|locations     =
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Escapism Travel''' is a travel agency featured in {{IV}} and {{VO}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|Escapism-GTAIV-GalvestonAveVarsityHeights.png|[[Galveston Avenue]], between [[Ruby Street|Ruby]] and [[Quartz Street|Quartz]] streets, [[Varsity Heights]], [[Algonquin]].
+|Escapism-GTAIV-GalvestonAve&RubyStVarsityHeights.png|Galveston Avenue and Ruby Street, Varsity Heights, Algonquin.
+|Escapism-GTAIV-GalvestonAve&ObsidianStNight.png|Galveston Avenue and [[Obsidian Street]], [[Middle Park West]], Algonquin. {{Small|([https://gta.fandom.com/wiki/File:Escapism-GTAIV-GalvestonAve%26ObsidianStDay.png Day picture])}}
+|Escapism-GTAIV-GalvestonAve&PyriteSt.png|Galveston Avenue and [[Pyrite Street]], Middle Park West, Algonquin.
+|Escapism-GTAIV-GalvestonAve&QuartzSt.png|Galveston Avenue and Quartz Street, Middle Park West, Algonquin.
+|Escapism-GTAIV-Lancaster.png|[[Albany Avenue]] and [[Quartz Street]], [[Lancaster]], Algonquin.
+|Escapism-GTAIV-KunziteStreet.png|[[Kunzite Street]], between [[Columbus Avenue|Columbus]] and [[Denver-Exeter Avenue|Denver-Exeter]] avenues, [[Star Junction]], Algonquin.
+|Escapism-GTAIV-JadeStreet.png|[[Frankfort Avenue]] and [[Jade Street]], Star Junction, Algonquin.
+|Escapism-GTAIV-BismarckAve&CalciumSt.png|[[Bismarck Avenue]] and [[Calcium Street]], [[Chinatown (GTA IV)|Chinatown]], Algonquin.
+|Escapism-GTAIV-BariumStTheExchange.png|[[Barium Street]], between [[Borlock Road]] and [[Albany Avenue]], The Exchange, Algonquin.
+|Escapism-GTAIV-AlbanyAveTheExchange.png|Albany Avenue, between Barium and Calcium streets, The Exchange, Algonquin.
+}}
+{{Gallery
+|game = VO
+|EscapismTravel-GTAV.png|[[Elgin Avenue]], [[Legion Square]], [[Los Santos (HD Universe)|Los Santos]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Travel agencies

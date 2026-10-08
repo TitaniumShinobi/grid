@@ -1,0 +1,97 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = fastfood
+|name          = Burger Shot
+|sign          = BurgerShot-HDLogo.svg
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Westdyke]], [[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[Flint County (HD Universe)|Flint County]], San Andreas
+([[#Locations|See more]])
+|business_type = Fast-food burger restaurant
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+*[[Traci Wilson]] <small>(''GTA IV'')</small>
+*[[Ahron Ward]] <small>(''GTA V'')</small>
+|taglines      = 
+*''Kill your hunger!''
+*''It's bleedin' tasty!''
+*''Die with a smile on your face!''
+|bawsaq        = 
+|lcn           = {{BAWSAQ/Slider}} '''BGR'''
+|status        = active
+|website = [[Burgershot.net|burgershot.net]]
+|lifeinvader    = Burger Shot [[File:Burgershot GTAV LifeinvaderIcon.png|40px|right]]
+}}
+
+[[LEAD]]
+'''Burger Shot''' is a chain of hamburger fast-food restaurants in the {{HD}} of the {{S}}. The player can buy stocks from them on the [[Lcn-exchange.com]] website in ''[[Grand Theft Auto V]]''.
+
+[[SECTION:3:Location Influences]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'' and ''Episodes'']]
+*The [[Golden Pier]] location is based on {{URL|https://maps.app.goo.gl/fMd1ectEKAzfVFRXA|62 Chelsea Piers}} in New York City.
+
+[[SECTION:4:''Grand Theft Auto V'' and ''Online'']]
+*The [[Del Perro Pier]] location is based on the Pizza Hut location on the {{URL|https://goo.gl/maps/4dND2vYzuQzfReGM6|Santa Monica Pier}} in Santa Monica, California.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+In ''Grand Theft Auto IV'', Burger Shot operates a total of ten outlets in and throughout [[Liberty City (HD Universe)|Liberty City]] and [[State of Alderney|Alderney State]] alone, including two integrated mini-restaurants at the city's two [[Memory Lanes]] bowling alleys, and one closed outlet in [[Cerveza Heights]], [[Dukes]]. Some of the outlets features padding on the windows and signs on the entrance stating that the store has either undergone renovation, closed down, or moved. They include as follows:
+<gallery position="center" widths="250px" spacing="small">
+BurgerShot-GTA4-BeechwoodCity.jpg|[[Broker - Dukes Expressway]] and [[Carson Street]], [[Beechwood City]], [[Broker]], [[Liberty City (HD Universe)|Liberty City]].
+BurgerShot-GTA4-CervezaHeights.jpg|[[Cerveza Heights]], [[Dukes]], Liberty City (out of business).
+BurgerShot-GTA4-Fortside.jpg|[[San Quentin Avenue]] and [[Hollowback Street]], [[Fortside]], [[Bohan]], Liberty City.
+BurgerShot-GTA4-Industrial.jpg|[[Lompoc Avenue]] and [[Drill Street]], [[Industrial (GTA IV)|Industrial]], [[Bohan]], Liberty City.
+BurgerShot-GTA4-StarJunction.jpg|[[Denver-Exeter Avenue]] and [[Kunzite Street]], [[Star Junction]], [[Algonquin]], Liberty City.
+BurgerShot-GTA4-NorthHolland.jpg|[[Topaz Street]] and [[Galveston Avenue]], [[North Holland]], [[Algonquin]], Liberty City.
+BurgerShot-GTA4-Westminster.jpg|[[Golden Pier]], [[Westminster]]/[[The Meat Quarter]], [[Algonquin]], Liberty City.
+BurgerShot-GTA4-Westdyke.jpg|[[Sacramento Avenue]], between [[Owl Creek Avenue]] and [[Beaverhead Avenue]], [[Westdyke]], [[State of Alderney|Alderney]]. {{Small|([[:File:BurgerShot-GTAIV-AlderneyNight.png|night view]])}}
+BurgerShot-GTAIV-MemoryLanes.jpg|[[Memory Lanes]] Burger Shot outlet found in both [[Firefly Island]], [[Broker]] and [[Golden Pier]], [[The Meat Quarter]], [[Algonquin]] in [[Liberty City (HD Universe)|Liberty City]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+The distribution of Burger Shots in ''GTA Chinatown Wars'' is mostly the same, but with the Alderney branch and Memory Lanes outlets omitted, as Alderney is not in the game and Memory Lanes are not accessible.
+
+<gallery position="center" widths="250px" spacing="small">
+BurgerShot-GTACW-BeechwoodCity.jpg|Beechwood City, Broker, Liberty City.
+BurgerShot-GTACW-CervezaHeights.jpg|Cerveza Heights, Dukes, Liberty City.
+BurgerShot-GTACW-Fortside.jpg|Fortside, Bohan, Liberty City.
+BurgerShot-GTACW-Industrial.jpg|Industrial, Bohan, Liberty City.
+BurgerShot-GTACW-NorthHolland.jpg|North Holland, Algonquin, Liberty City.
+BurgerShot-GTACW-Westminster.jpg|Westminster/The Meat Quarter, Algonquin, Liberty City.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+There are two Burger Shot restaurants in [[Los Santos (HD Universe)|Los Santos]], located in [[Vespucci Canals]] and the [[Pleasure Pier]]. According to an unused [[Police Scanner]] audio file, a [[Vinewood (HD Universe)|Vinewood]] Burger Shot was intended to be in the game. However, it does not exist. It is possible that it was replaced by Up-n-Atom Burger.
+
+<gallery position="center" widths="270px" spacing="small">
+BurgerShot-GTAV-Vespucci.png|[[San Andreas Avenue]] and [[Prosperity Street]], [[Vespucci Canals]].
+BurgerShot-GTAVe-DelPerroPier.png|[[Pleasure Pier]], [[Del Perro]].<small>([[:File:BurgerShot-GTAVe-DelPerroPier-NightView.png|Night view]])</small>
+</gallery>
+
+[[CATEGORIES]]
+Burger restaurants
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in TBOGT
+Businesses in TLAD
+Fast-food restaurant chains

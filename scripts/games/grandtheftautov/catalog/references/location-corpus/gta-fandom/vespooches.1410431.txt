@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = VesPooches
+|image       = VesPooches-GTAV.jpg
+|type        = Pet Store
+|games       = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations   = [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''VesPooches''' is a pet store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

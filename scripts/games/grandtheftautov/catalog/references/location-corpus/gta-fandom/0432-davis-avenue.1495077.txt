@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 0432 Davis Avenue
+|image = Dynasty8-GTAV-Medium-Image-0432DavisAve.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Medium garage
+|garage = 6 vehicles <br> 2 bikes
+|price = [[Money|$]]72,500
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''0432 Davis Avenue''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located in an apartment building accessed through an alley off [[Roy Lowenstein Boulevard]]. The entrance may also be accessed off [[Davis Avenue]] and [[Innocence Boulevard]]. It is directly across the alleyway from the [[Hi-Men]] Cocktail Bar, as well as across the street from [[0754 Roy Lowenstein Boulevard]].
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]72,500 and can store 6 [[Personal Vehicles]] and two [[Pedal and Metal Cycles|Bicycles]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

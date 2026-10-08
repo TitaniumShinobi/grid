@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox location
+|name        = Davis Plaza
+|type        = shoppingcenter
+|status      = active
+|accessible  = No
+|image       = DavisPlaza-GTAVee.jpg
+|caption     = General view of Davis Plaza.
+|location    = [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+|map         = Davis_Plaza_GTAV_Map_Location.jpg
+|map_caption = Map location.
+|games       = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Davis Plaza''' is a strip mall in [[Davis]], [[Los Santos (HD Universe)|Los Santos]] appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Bad Day Goods]]
+*[[Click Lovers]]
+*[[Fowl Mouthed]]
+*[[Mom's Famous Tacos]]
+*[[Porn Crackers]]
+*[[Sheet Yourself Laundromat]]
+*[[She Nails Surprise Facial]]
+*[[Zany-Z's]]
+
+{{Clear}}
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Shopping malls

@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = ADVERTISING COMPANY
+|image       = 
+|games       = {{games|IV=y|EFLC=y|V=y|O=y}}
+|locations   = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[State of Alderney]]
+*[[State of San Andreas (HD Universe)|State of San Andreas]]
+}}
+
+[[LEAD]]
+'''Media Giant''' is an advertising company featured in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V

@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = neighborhood
+|name           = Chamberlain Hills
+|sign           = 
+|image          = ChamberlainHills-GTAV.png
+|caption        = Overview of '''Chamberlain Hills''' in {{V}}.
+|aka            = The Woods{{Ref|name = chamberlainhills-thewoods}}
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|established    = 
+|state          = [[State of San Andreas (HD Universe)|San Andreas]]
+|county         = [[Los Santos County]]
+|city           = [[Los Santos (HD Universe)|Los Santos]]
+|pop            = 
+|motto          = 
+|pscanner       = PoliceScanner-GTAV-Neighborhood-ChamberlainHills.ogg
+|pscannernotes  = 
+|map            = <gallery>
+ChamberlainHills-IngameGPS-GTAV-Map.png|Chamberlain Hills
+ChamberlainHills-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption    = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Chamberlain Hills''' is a neighborhood in the [[South Los Santos|south region]] of [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], appearing in {{V}} and {{O}}. It is bordered by [[Strawberry]] to the north, [[La Puerta]] to the south and west, and [[Davis]] to the east.
+
+[[SECTION:2:Places of Interest]]
+*[[All Swell]]
+*[[BJ Smith Recreational Center]]
+*[[Chamberlain Hills Shopping Plaza]]
+*[[Crystal Heights]]
+
+[[SECTION:2:Businesses]]
+*[[LD Organics]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Autopia Parkway]]
+*[[Carson Avenue]]
+*[[Forum Drive]]
+*[[Innocence Boulevard]]
+*[[Strawberry Avenue]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

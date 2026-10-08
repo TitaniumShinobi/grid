@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox structure
+|image       = RoyLowensteinBlvd-GTAV-Trailer2.jpg
+|caption     = Roy Lowenstein Boulevard, as seen in the [[Grand Theft Auto V/Trailers#Trailer_.232|second trailer]] of {{V}}.
+|games       = {{Games|V=y|O=y}}
+|start       = [[Little Bighorn Avenue]], [[Rancho]]
+|end         = [[Dutch London Street]], [[Davis]]
+|map         = 
+<gallery>
+RoyLowensteinBoulevard-GTAV-Map.png|Map
+RoyLowensteinBoulevard-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Roy Lowenstein Boulevard''' is a [[List of Street Names|street]] in [[Davis]] and [[Rancho]], [[South Los Santos]] featured in {{V}} and {{O}}.
+
+[[SECTION:2:Properties]]
+*[[LSPD Auto Impound]] {{Small|(corner of Innocence Boulevard, [[Franklin Clinton|Franklin]] only)}}
+
+[[SECTION:2:Places of Interest]]
+*[[Davis Courts Building]] Parking Garage {{Small|(corner of Macdonald Street)}}
+
+[[SECTION:2:Businesses]]
+*Auto Parts
+* Beauty Store {{Small|(corner of Macdonald Street)}} 
+*Cabinets & Carpets {{Small|(corner of Carson Avenue)}}
+*Cent Carpet {{Small|(corner of Innocence Boulevard)}}
+*[[Hayes Auto Body Shop]] {{Small|(corner of Carson Avenue)}}
+*[[Hearty Taco]] {{Small|(corner of Dutch London Street)}}
+*[[Hi-Men]]
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

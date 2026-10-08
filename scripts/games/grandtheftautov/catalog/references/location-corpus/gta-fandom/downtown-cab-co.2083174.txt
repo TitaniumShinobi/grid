@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y
+|type          = transportation
+|name          = Downtown Cab Co.
+|sign          = DowntownCabCo-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 0897 [[Mirror Park Boulevard]], [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]] <small>(Depot)</small>
+|business_type = 
+|founded       = [[1922]]
+|founder       = 
+|ceo           = 
+|employees     = 
+*[[Franklin Clinton]] <small>(Owner, optional)</small>
+*[[Raul (GTA V)|Raul]]
+*{{GTAOP}}
+|price         = $200,000 <small>(Depot)</small>
+|income        = $2,000 per week
+|products      = 
+|vehicles      = 
+*[[Taxi (HD Universe)|Taxi]]
+*[[Broadway]]
+*[[Eudora]]
+|taglines      = ''In transit since 1922''
+|status        = active
+|phone         = (323) 555-5555
+|unlockedby    = [[Friends Reunited]] <small>(unlocked for purchase)</small>
+}}
+
+[[LEAD]]
+'''Downtown Cab Company''' is a [[Taxi (HD Universe)|taxi]] company featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Properties
+Properties in GTA V
+Taxi companies

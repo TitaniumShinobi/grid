@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = The Pink Cage Motel
+|type = [[:Category:Motels|Motel]]
+|owner = 
+|location = [[Hawick Ave]] in [[Alta]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''The Pink Cage Motel''' is a [[:Category:Motels|motel]] located on [[Hawick Ave]] in [[Alta]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The motel has colour televisions, a pool table and air conditioned rooms.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Motels

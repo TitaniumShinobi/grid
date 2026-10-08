@@ -1,0 +1,78 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = n
+|type          = hotel
+|name          = Opium Nights
+|sign          = OpiumNights-Logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games          = {{games|IV=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     =
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Opium Nights''' is a hotel chain in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+*The [[Liberty City (HD Universe)|Liberty City]] branch is based on {{URL|https://maps.app.goo.gl/nyGU4ncfV9gfL4Yx7|812 5th Avenue}} in the {{WP|Upper East Side}}, {{WP|Manhattan}}, {{WP|New York City}}. The annex appears to be based on {{URL|https://maps.app.goo.gl/37MQbr6RR8zhBZHs7|150 East 77th Street}}, also in the Upper East Side.
+*The [[Los Santos (HD Universe)|Los Santos]] branch appears to be based on the {{WP|Sheraton Hotels and Resorts|Sheraton Gateway Hotel}} at {{URL|https://goo.gl/maps/oZTUVeg5BzLXcGSNA|6101 West Century Boulevard}} at {{WP|Los Angeles International Airport}}, {{WP|Los Angeles}}, since it shares a similar structure and is also located near the airport.
+
+{{Clear}}
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|OpiumNights-GTAIV-Overview.png|[[Columbus Avenue]],  [[Middle Park East]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]].
+}}
+{{Gallery
+|game = VO
+|OpiumNights-GTAV.png|[[Greenwich Parkway]] and [[Exceptionalists Way]], [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Hotel chains
+Hotels in GTA Online

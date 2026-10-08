@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = 707Vespucci-GTAV.PNG
+|games          = {{Games|V=y|O=y}}
+|location       = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|use            = Office building
+|floors         = 27
+|file_name      = <code>dt1_10_build3</code>
+}}
+
+[[LEAD]]
+'''707 Vespucci''', also known as '''Go Center''', is a high-rise office building in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' in [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos

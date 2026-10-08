@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|type = Auto parts
+|name = Otto's Auto Parts
+|image = Otto's_Auto_Parts-GTAV-Logo-Texture.png
+|captions = Logo/signage
+|taglines = "No refunds"
+|location = [[State of San Andreas (HD Universe)|San Andreas]]
+|games = {{Games|V=y|O=y}}
+|accessible = No
+}}
+
+[[LEAD]]
+'''Otto's Auto Parts''' is an automobile parts shop in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+There are two locations in [[State of San Andreas (HD Universe)|southern San Andreas]]:
+
+<gallery position="center" spacing="small" widths="270px">
+OttosAutoParts-GTAV-SandyShores.png|[[Alhambra Drive]], [[Sandy Shores]].
+Otto's_Auto_Parts-GTAV-LaMesa.png|[[Popular Street]], [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[ru:Otto's Auto Parts]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Mod shop brands

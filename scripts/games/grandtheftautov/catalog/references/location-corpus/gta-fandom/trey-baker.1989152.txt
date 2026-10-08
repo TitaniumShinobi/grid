@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = fashion
+|name          = Trey Baker
+|sign          = TreyBaker-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+[[Hawick Avenue]], [[Hawick]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = Clothing & purfume brand
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Trey Baker''' is a clothing & perfume brand appearing in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+*The [[Hawick Avenue]] location is seemingly based on the former Johnny Cupcakes location at {{URL|https://maps.app.goo.gl/Nyb29MAgMVKrfxEY6|7959 Melrose Avenue}} in the {{WP|Melrose Avenue|Melrose District}} of {{WP|Los Angeles}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+TreyBaker-GTAVe-Store.png|[[Hawick Avenue]], [[Hawick]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing in GTA Online
+Clothing in GTA V
+Fashion brands

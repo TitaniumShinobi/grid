@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|type       = restaurant
+|name       = The Pizza Coven
+|image      = ThePizzaCoven-GTAV-Logo.png
+|games      = {{Games|V=y|O=y}}
+|location   = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+}}
+
+[[LEAD]]
+'''The Pizza Coven''' is a restaurant in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Fast casual restaurants
+Pizzerias

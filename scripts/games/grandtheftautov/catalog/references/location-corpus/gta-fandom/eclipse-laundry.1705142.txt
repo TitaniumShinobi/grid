@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Eclipse Laundry
+|image = EclipseLaundry-GTAV.jpg
+|type = Laundry Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Eclipse Boulevard]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Eclipse Laundry''' is a closed laundry store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on [[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]. It currently has a [[Wolfs International Realty]] 'For Rent' sign in the window.
+
+The store is not enterable and plays no role in the storyline.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Laundromats
+Stores

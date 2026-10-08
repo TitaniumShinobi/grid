@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = LagunaPlace-GTAVee.jpg
+|caption = Laguna Place as seen from Spanish Avenue.
+|games = {{Games|V=y|O=y}}
+|start = [[Hawick Avenue]]
+|end = [[Spanish Avenue]]
+|map = <gallery>
+LasLagunasPlace-GTAV-Map.png|Map
+LasLagunasPlace-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Laguna Place''', also known as '''Las Lagunas Place''' in the official map, is a short street in [[Hawick]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Lettuce Be]] <small>(corner of Hawick Avenue)</small>
+*[[Period Rags]] <small>(corner of Hawick Avenue)</small>
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Blaine County Savings Bank
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = [[:Category:Banks|Bank]]
+|owner = 
+|location = [[Cascabel Ave]]/[[Paleto Blvd]] in [[Paleto Bay]], [[Blaine County]]<br />[[Route 1]] in [[Chumash]], [[Los Santos County]]
+|affiliation = 
+|missions = [[Paleto Score Setup]]<br />[[The Paleto Score]]
+|employee = 
+}}
+
+[[LEAD]]
+The '''Blaine County Savings Bank''' is a small [[:Category:Banks|bank]] chain located in southern [[San Andreas in GTA V|San Andreas]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The bank has two branches located at the corner of [[Cascabel Ave]] and [[Paleto Blvd]] in [[Paleto Bay]], [[Blaine County]] and another on [[Route 1]] in [[Chumash]], [[Los Santos County]]. Security company [[Gruppe Sechs]] are used to transport money between the two branches.
+The Paleto Bay branch is used by the [[Los Santos County Sheriff]] to hold funds obtained from bribery, extortion, and general corruption, which stands at over [[Money|$]]8 million when it is robbed by [[Franklin Clinton]], [[Michael De Santa]], [[Trevor Philips]], and their chosen accomplice. When exiting the bank, the group is confronted by local police, [[NOOSE]] agents and [[Military|soldiers]] from [[Fort Zancudo]].
+
+[[CATEGORIES]]
+Banks
+Businesses in Blaine County
+Businesses in GTA V
+Businesses in Los Santos County

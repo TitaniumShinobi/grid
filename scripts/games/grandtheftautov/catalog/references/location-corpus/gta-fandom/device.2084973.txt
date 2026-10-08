@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|name  = Device
+|image = Device-GTAO-Logo.png
+|type  = tools
+|games = {{games|O={{EEEV}} {{DLC|mpimportexport}}|VI=y}}
+}}
+
+[[LEAD]]
+'''Device''' is a tools manufacturer appearing in ''[[Grand Theft Auto Online]]'' as part of the [[GTA Online: Import/Export|Import/Export]] update, and is due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Import/Export
+Tool manufacturers

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|name = St. Brigid Baptist Church
+|image = StBrigidBaptistChurch-GTAV.png
+|games = {{Games|V=y|O=y}}
+|location = [[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]]
+|use = Baptist Church
+|church = y
+}}
+
+[[LEAD]]
+'''St. Brigid Baptist Church''' is a church in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located on [[Paleto Boulevard]] in [[Paleto Bay]], [[Blaine County]].
+
+[[CATEGORIES]]
+Churches
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

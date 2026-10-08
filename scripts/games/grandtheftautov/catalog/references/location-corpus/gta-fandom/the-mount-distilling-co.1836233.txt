@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = The Mount Distilling Co.
+|sign          = 
+|image         = TheMountBourbonWhiskey-GTAO-Logo.png
+|caption       = The Mount whiskey logo
+|aka           = The Mount
+|games         = {{Games|IV=y|EFLC=y|V=y|O=y}}
+|mentioned     = 
+|business_type = Whiskey Company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = ''"It's true cowboys love The Mount"''
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''The Mount Distilling Co.''' is a whiskey company in the {{HD}} of the ''[[Grand Theft Auto]]'' series.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V

@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Krapea
+|image     =
+<gallery>
+Krapea-GTAIV-Logo.svg|Logo 1
+KrapeaLogo1.jpg|Logo 2
+</gallery>
+|games     = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|lcn       = {{BAWSAQ/Slider}} '''KRP'''
+|taglines  = 
+*"''We fake it, you make it''"
+*"''Budget lifestyle solutions made from particleBoard.''"
+|type      = furniture
+|website = [[Krapea#Website|krapea.com]]
+|locations = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[State of Alderney]]{{ref|name=WeazelNews|ref={{Quote|A 14-year-old boy was reunited with his family today after spending an amazing six years lost in a Krapea store in Alderney. "Man, it was a nightmare! Every time I thought I'd found my way out, I'd end up back in Home Furnishings. I never wanna see a floating candle again!" The Swedish furniture giant has refused to comment, but nobody understands their stupid language anyway. Their website is krapea.com. This is Weazel News.|[[Weazel News]] radio news report in ''Grand Theft Auto IV''.|sound=WeazelNews-GTAIV-Radio33.ogg}}}}
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|employees = Astrid
+}}
+
+[[LEAD]]
+'''Krapea''' is a [[Sweden|Swedish]] major furniture manufacturer store in {{HD}}. The player can buy stocks from them on the [[Lcn-exchange.com]] website.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" widths="270px">
+Krapea-GTAIV-FrankfortAve.png|[[Hematite Street]] and [[Frankfort Avenue]], [[The Triangle]], [[Algonquin]].
+Krapea-GTAIV-AlbanyAve.png|[[Albany Avenue]] and [[Barium Street]], [[The Exchange (GTA IV)|The Exchange]], Algonquin.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+<gallery position="center" widths="270px">
+Krapea-GTAV-TextileCity.png|[[Strawberry Avenue]], [[Textile City]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Furniture companies
+Furniture store chains

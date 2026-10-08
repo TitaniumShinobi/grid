@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = MOUNTAIN PASS
+|image    = BraddockPass-GTAV.png
+|caption  = Overview of Braddock Pass.
+|type      = mountainpass
+|games    = {{Games|V=y|O=y}}
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-BraddockPass.ogg
+|map           = <gallery>
+BraddockPass-IngameGPS-GTAV-Map.png|Braddock Pass
+BraddockPass-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Braddock Pass''' is a mountain pass located in the [[State of San Andreas (HD Universe)|State of San Andreas]] featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Business]]
+*[[Braddock Farm]]
+*[[Limited LTD Service]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Senora Freeway]]
+*[[Braddock Tunnel]]
+
+[[CATEGORIES]]
+Highlands
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Zones

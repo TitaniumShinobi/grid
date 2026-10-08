@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Bite-GTAV-MirrorPark-exterior.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Bite!
+|type = [[:Category:Restaurants|Fast food restaurant]]
+|owner = 
+|location = [[Alta St]]/[[Hawick Ave]] in [[Alta]], [[Los Santos in GTA V|Los Santos]]<br />[[Mirror Park]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Bite!''' is a [[:Category:Restaurants|fast food restaurant]] chain with stores on the corner of [[Alta St]] and [[Hawick Ave]] in [[Alta]] and in [[Mirror Park]], both in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+
+
+
+[[Type::Business| ]]
+[[Location::Alta St| ]]
+[[Location::Hawick Ave| ]]
+[[Location::Alta| ]]
+[[Location::Mirror Park| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Restaurants

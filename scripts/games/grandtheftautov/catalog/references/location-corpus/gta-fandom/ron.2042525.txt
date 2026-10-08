@@ -1,0 +1,93 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = gasoline
+|name          = RON OIL
+|sign          = RON-Vertical-Logo-GTAV.png
+|image         = 
+|caption       = 
+|aka           = 
+*RON
+*RON Gasoline
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[State of Alderney]]
+*[[State of San Andreas (HD Universe)|State of San Andreas]]
+([[#Locations|See more]])
+|business_type = Gas station chain
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+*"''Put RON in your tank.''"
+*"''Refining Our Nation''"
+*"''Until the last drop''"
+*"''Stop'N'Go''"
+*"''Stop'N'Snack''"
+*"''Giving You Both Barrels''"
+*"''Don't Pump And Run''"
+*"''Winners put RON in their tanks''"
+|bawsaq        = {{BAWSAQ/Slider}} '''RON'''
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''RON OIL''' ([[BAWSAQ]]: RON), commonly shortened to '''RON''', is a multinational petroleum company featured in the {{HD}} of {{S}}. The player can buy stocks of the company on the [[Bawsaq.com]] website in {{V}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+RON have seven filling stations, six within [[Liberty City (HD Universe)|Liberty City]] and another one in [[State of Alderney|Alderney]].
+
+<gallery position="center" spacing="small" caption="Filling stations" widths="250px">
+RON-GTAIV-GasStations-HoveBeach.png|[[Masterson Street|Materson]] and [[Kid Street]], [[Hove Beach]], [[Broker]].
+RON-GTAIV-GasStations-BOABO.jpg|[[Mohanet Avenue]], [[BOABO]], Broker. It appears to be based on a gas station which is located at {{URL|https://maps.app.goo.gl/mDDDZZtayxCA2uGV8|14 Old Fulton Street}} in {{WP|Brooklyn, New York}}.
+RON-GTAIV-GasStations-CervezaHeights.jpg|[[Dukes Boulevard]], [[Cerveza Heights]], [[Dukes]].
+RON-GTAIV-GasStations-MeadowsPark.jpg|[[Cleves Avenue]], [[Meadows Park]], Dukes.
+RON-GTAIV-GasStations-LittleBay.jpg|[[Sing Sing Avenue]], [[Little Bay]], [[Bohan]].
+RON-GTAIV-GasStations-MeatQuarter.jpg|[[Galveston Avenue]], [[The Meat Quarter]], [[Algonquin]].
+RON-GTAIV-GasStations-Westdyke.jpg|[[Big Horn Drive]], [[Westdyke]], [[State of Alderney|Alderney]] (combined with a [[Car Washes|car wash]]). It seems to be based on a {{WP|Lukoil}} gas station which is located at {{URL|https://maps.app.goo.gl/Cg2xq88x7dAK3NSn9|251 County Road}} in {{WP|Tenafly, New Jersey}}.
+</gallery>
+
+They also have several refineries and offices across Alderney:
+
+<gallery position="center" spacing="small" widths="270px">
+RONBuilding-GTAIV.png|[[RON Building]] in [[Alderney City]], Alderney.
+RON-GTA4-refinery-exterior.jpg|[[RON Refinery]] at the [[Acter Industrial Park]], Alderney.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+RON have eight filling stations, five within [[Los Santos (HD Universe)|Los Santos]], one in [[Los Santos County]] and another two in [[Blaine County]].
+
+<gallery position="center" spacing="small" caption="Filling stations" widths="250px">
+RON-GTAV-Morningwood.png|'''RON''' filling station on [[Perth Street]] and [[North Rockford Drive]], [[Morningwood]].
+RON-GTAV-Davis.png|'''RON''' filling station on [[Macdonald Street]] and [[Davis Avenue]], [[Davis]].
+RONLaMesa-GTAV.png|'''RON''' filling station on [[Popular Street]] and [[Vespucci Boulevard]], [[La Mesa]].
+RON-GTAV-ElBurroHeights.png|'''RON''' filling station on [[El Rancho Boulevard]] and [[Capital Boulevard]], [[El Burro Heights]].
+RON-GTAV-TataviamMountains.png|'''RON''' filling station on [[Route 15]] within the [[Tataviam Mountains]], [[Los Santos County]].
+RON-GTAV-LagoZancudo.png|'''RON''' filling station on [[Route 68]], [[Lago Zancudo]], [[Blaine County]].
+RONPaletoBay-GTAV.png|'''RON''' filling station within the [[Paleto Bay Rest Stop]], [[Paleto Bay]], Blaine County.
+</gallery>
+
+RON also operate a large wind farm, north of the [[Tataviam Mountains]].
+
+<gallery position="center" spacing="small" widths="270px">
+Ronwindfarm.jpg|[[RON Alternates Wind Farm]] in [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Gas station chains
+Petroleum companies

@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image= ElBurroHeights-GTAV-AmarilloVista.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[El Rancho Boulevard]]
+|end=[[Innocence Boulevard]]
+|map=<gallery>
+AmarilloVista-GTAV-Map.png|Map
+AmarilloVista-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Amarillo Vista '''is a short street in {{V}} and {{O}}, located in [[El Burro Heights]], [[East Los Santos (HD Universe)|East Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+*[[Lester's House]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

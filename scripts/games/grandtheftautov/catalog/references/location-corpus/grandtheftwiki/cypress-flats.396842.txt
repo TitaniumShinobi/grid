@@ -1,0 +1,63 @@
+[[LEAD]]
+'''Cypress Flats''' is an industrial neighbourhood in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The majority of the neighbourhood lies in the east of Los Santos and is bordered by [[La Mesa]] in the north and north east, [[El Burro Heights]] in the east and south east, [[Terminal]] to the south, [[Elysian Island]] to the south west, [[Banning]] to the west and [[Rancho]] to the north west.
+
+[[SECTION:2:Roads]]
+*[[Abattoir Ave]]
+*[[Buccaneer Way]]
+*[[Chum St]]
+*[[Dry Dock St]]
+*[[El Rancho Blvd]]
+*[[Elysian Fields Freeway]]
+*[[Hanger Way]]
+*[[Innocence Blvd]]
+*[[Labor Pl]]
+*[[Orchardville Ave]]
+*[[Popular St]]
+*[[South Shambles St]]
+*[[Tower Way]]
+
+[[SECTION:2:Businesses]]
+*[[Ammu-Nation]]
+*[[Body Shop]]
+*[[Central Milling Company]]
+*[[Cypress Warehouses]]
+*[[Grand Banks Steel Inc.|East Los Santos Foundry/Grand Banks Steel Inc.]]
+*[[Fridgit]]
+*[[Go Loco]]
+*[[Guns 4 Fun]]
+*[[Kennedy Sneaker Co.]]
+*[[The Los Santos State Gas Company]]
+*[[Nicholl's Liquor]]
+*[[Olson's Autos]]
+*[[Pißwasser]]
+*[[Raven Abattoir]]
+*[[Thorns]]
+*[[Vitreous]]
+*[[Wholesale Office Furniture]]
+*[[Zalinsky Supply & MFR Corp]]
+
+[[SECTION:2:Places]]
+*Department of Water and Power City of Los Santos]]
+*Flea Market (<small>does not appear in game, 9-6 on Saturdays on Orchadville Ave</small>)
+
+[[SECTION:2:Neighbouring areas]]
+{{Location
+|Centre    = Cypress Flats
+|North     = [[La Mesa]]
+|Northeast = [[La Mesa]]
+|East      = [[El Burro Heights]]
+|Southeast = [[El Burro Heights]]
+|South     = [[Terminal]]
+|Southwest = [[Elysian Island]]
+|West      = [[Banning]]
+|Northwest = [[Rancho]]
+}}
+
+{{Navboxes
+|title= Navigation
+|list1=
+{{Los Santos in GTA V|state=collapsed}}
+}}
+
+[[CATEGORIES]]
+Areas in Los Santos in GTA V

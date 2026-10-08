@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change    = TEXTILE STORE CHAIN
+|type           = 
+|name           = Fabric, Lace, Cloth
+|sign           = 
+|image          = FabricLaceCloth-GTAV-Logo.png
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|locations      = {{Location|v-textilecity|3}}
+|established    =
+|taglines       =
+|status         = active
+|phone          = 
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Fabric, Lace, Cloth''' is a chain of textile stores in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = V
+|FabricLaceCloth-GTAVee-SimmetAlley1.png|[[Simmet Alley]], [[Textile City]], [[Los Santos (HD Universe)|Los Santos]].
+|FabricLaceCloth-GTAVee-SimmetAlley2.png|Second store on Simmet Alley.
+|FabricLaceCloth-GTAVee-SinnerStreet.png|[[Sinner Street]], Textile City, Los Santos.
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Stores

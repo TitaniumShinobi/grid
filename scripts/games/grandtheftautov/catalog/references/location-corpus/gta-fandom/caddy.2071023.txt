@@ -1,0 +1,185 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name                = Caddy
+|aka                 = 
+|front_image         = Caddy-GTAV-front.png
+|rear_image          = Caddy-GTAV-rear.png
+|caption             = A '''Caddy''' in {{V}}.
+|class               = [[:Category:Utility class|Utility]] {{Small|(''GTA V'' & ''GTA Online'')}}
+|body_style          = Golf cart
+|capacity            = 2 {{Small|(driver and passenger)}}
+|manufacturer        = [[Nagasaki]] {{Small|(HD Universe)}}{{Ref|name=Nagasaki|ref=As seen in ''GTA Online'' in the [[Races in GTA Online|Races]] vehicle selection screen.}}
+|price               = 
+|games               = {{Games|VC=y|SA=y|VCS=y|TBOGT=y|V=y|O=y}}
+|type                = buggy
+|variants            = 
+*[[Caddy (civilian)|Caddy]] (civilian)
+*[[Caddy (bunker)|Caddy]] (bunker)
+|swankness           = 
+*2/5 {{Small|(''The Ballad of Gay Tony'')}}
+*0/5 {{Small|(''GTA V'' & ''GTA Online'')}}
+|dashtype            = 
+|inttxd              = 
+|wheeltype           = Sport
+|flags               = 
+{{Expand|'''TBOGT'''|
+{{Flags|FLAG_NO_BOOT}}
+{{Flags|FLAG_EXTRAS_SCRIPT}}
+}}
+----
+{{Expand|'''GTA V'''|
+{{Flags|FLAG_IS_ELECTRIC}}
+{{Flags|FLAG_INCREASE_PED_COMMENTS}}
+{{Flags|FLAG_HAS_LIVERY}}
+{{Flags|FLAG_HAS_NO_ROOF}}
+{{Flags|FLAG_PEDS_INSIDE_CAN_BE_SET_ON_FIRE_MP}}
+}}
+|modelname           = caddy {{Small|(all games)}}
+|handlingname        = 
+*GOLFCART {{Small|(''GTA Vice City'' & ''GTA San Andreas'')}}
+*CADDY {{Small|(''GTA Vice City Stories'' & HD Universe)}}
+|textlabelname       = CADDY {{Small|(all games)}}
+|roadspawn           = 
+*Yes {{Small|(''GTA Vice City'' & ''GTA San Andreas'')}}
+*Parked {{Small|(''GTA Vice City Stories'', ''TBOGT'' - Multiplayer-only, ''GTA V'')}}
+*No {{Small|(''TBOGT'' - story mode)}}
+|roadspawnmaxcol     = 10
+|roadspawnfreq       = 100 {{Small|(HD Universe)}}
+|roadspawntrailer    = 
+|roadspawnidendis    = 20
+|roadspawndrivers    = 
+*A_F_Y_Golfer_01
+*A_M_M_Golfer_01
+*A_M_Y_Golfer_01
+|roadspawngroups     = 
+{{Expand|'''TBOGT'''|
+{{Popgroups|POPCYCLE_GROUP_ONLY_IN_NATIVE_ZONE}}
+}}
+----
+{{Expand|'''GTA V'''|
+{{Popgroups|native_zone_only}}
+}}
+|roadspawnlicense    = 
+*Standard White - 60%
+*White Plate 2 - 40%
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The '''Caddy''' is a golf cart in both the {{3D}} and {{HD}}. It is manufactured by [[Nagasaki]] in the HD Universe.
+
+[[SECTION:2:Rockstar Games Social Club]]
+
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+{{RSSC
+|name          = Caddy
+|manufacturer  = 
+|class         = Utility 
+|image         = Caddy-GTAV-RGSC-MainNew.jpg
+|caption       = Main image (after 2019).
+|image2        = Caddy-GTAV-RGSC-Action.jpg
+|caption2      = "Action" image for ''GTA V''.
+|image3        = Caddy-GTAO-RGSC-Action.jpg
+|caption3      = "Action" image for ''GTA Online''.
+|image4        = Caddy-GTAV-RGSC-Main.jpg
+|caption4      = Main image (prior to 2019).
+|speed         = 34.875839
+|accel         = 75
+|braking       = 6.666667
+|traction      = 45.454548
+|seats         = 2
+|garage        = n
+|moddable      = n
+|premium       = n
+|super         = n
+|buy           = n
+|sell          = n
+|dealer        = 
+|notes         = 
+}}
+
+[[SECTION:3:''Grand Theft Auto: Vice City'']]
+*[[Four Iron]] {{nd}} Four Caddies are parked around the driving range of [[Leaf Links (3D Universe)|Leaf Links]] driving range where the mission's target is playing.
+*[[Phnom Penh '86]] {{nd}} Two will always spawn parked directly under the path of the [[Maverick (3D Universe)|helicopter]] in Leaf Links, for some unknown reason.
+*[[Stunt Boat Challenge]] {{nd}} The player must jump a ramp located in Leaf Links, passing over a Caddy and three golfers.
+*[[Sunshine Autos Import Garage]] {{nd}} The Caddy is one of the 24 vehicles wanted by [[Sunshine Autos]] for their import garage. Placed on the fourth and final list.
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+*[[Home's on the Range]] {{nd}} Driven by [[Gonzalez]] at the [[Leaf Links (3D Universe)|golf course]].
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto: Vice City'']]
+*It is driven around the [[Leaf Links (3D Universe)|Leaf Links]] golf course by [[golfers]] around noon.
+*One is parked in bushes in [[Ocean Beach (3D Universe)|Ocean Beach]] near the [[Vice City Lighthouse|lighthouse]].
+*One can be spawned using a [[:Cheats in GTA Vice City|cheat]]:
+**PS2: CIRCLE, L1, UP, R1, L2, X, R1, L1, CIRCLE, X
+**PC: BETTERTHANWALKING
+**Xbox: B, L, Up, R, White, A, R, L, B, A
+
+[[SECTION:3:''Grand Theft Auto: San Andreas'']]
+*It is often found in the car park of the [[Avispa Country Club]] in [[San Fierro (3D Universe)|San Fierro]] and [[Yellow Bell Golf Course]] in [[Las Venturas (3D Universe)|Las Venturas]].
+*It is driven around the golf course at the Avispa Country Club in San Fierro.
+*Three can be found parked inside the movie studio in [[Vinewood (3D Universe)|Vinewood]], [[Los Santos (3D Universe)|Los Santos]].
+*It is driven around the palm trees in the course at Yellow Bell Golf Course.
+*One can be spawned using a [[Cheats in GTA San Andreas|cheat]] :
+**PS2: Circle, L1, Up, R1, L2, X, R1, L1, Circle, X
+**PC: rzhsuew or 18holes
+**Xbox: B, LT, D-Pad Up, RT, White, A, RT, LT, B, A
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+*One is parked inside the Leaf Links golf course by the tennis court. In the [[PlayStation 2]] version of the game, the Caddy may be used to trigger the [[Caddy Daddy]] side-mission. 
+*Another one is parked close to the entrance of the golf course.
+*One is parked at the [[InterGlobal Films|InterGlobal]] movie studio in [[Prawn Island]].
+
+[[SECTION:3:''The Ballad of Gay Tony'']]
+*During "[[Practice Swing]]", which is the only way to get one in single player. After the final objective (driving Tony back to his apartment in the Caddy), the vehicle should be right behind the player. One can simply take it and park it at the safehouse.
+*One is parked near the mini golf course on [[Firefly Island]] in multiplayer.
+*One is parked on the [[Golden Pier Swingers Golf Club|golf course]] in western [[Algonquin]] in multiplayer.
+
+[[SECTION:3:''Grand Theft Auto V'']]
+*It is mostly found at the [[Los Santos Golf Club]].
+**The variant with the bags on the back can be obtained by driving away from the golf club once the [[Golf]] activity is started, and the player must reject the option to retry. However, the bags cannot be kept when the player stores the vehicle on a garage, and will despawn once the player returns.
+*It can be spawned with the following cheat code button combinations:
+:*'''[[Xbox 360]] / [[Xbox One]]'''
+
+<div style="margin-left: 70px">
+{{Button|B}}{{Button|LB}}{{Button|xboxleft}}{{Button|RB}}{{Button|LT}}{{Button|A}}{{Button|RB}}{{Button|LB}}{{Button|B}}{{Button|A}}
+</div>
+
+:*'''[[PlayStation 3]] / [[PlayStation 4]]'''
+
+<div style="margin-left: 70px">
+{{Button|circle}}{{Button|l1}}{{Button|psleft}}{{Button|r1}}{{Button|l2}}{{Button|cross}}{{Button|r1}}{{Button|l1}}{{Button|circle}}{{Button|cross}}
+</div>
+
+:*'''[[Personal Computer|PC]]''': <code>HOLEIN1</code>
+:*1-999-4653-46-1 (HOLEIN1)
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+*It rarely spawns at the [[Los Santos Golf Club]], unless the player is driving one.
+**Scripted variants with a bag on the back can be obtained from the [[Payphone Hits|Payphone Hit]] "[[Payphone Hit: The Judge|The Judge]]", and can be taken as the getaway vehicle when the player kills the target.
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Caddy}}
+{{Defaultradio|game=SA|defaultstation=[[K-Rose]]}}
+
+[[CATEGORIES]]
+All wheel drive vehicles
+Buggies
+Electric vehicles
+Gang vehicles
+Golf
+Utility class
+Vehicles in GTA Online
+Vehicles in GTA San Andreas
+Vehicles in GTA V
+Vehicles in GTA Vice City
+Vehicles in GTA Vice City Stories
+Vehicles in TBOGT
+Vehicles manufactured by Nagasaki

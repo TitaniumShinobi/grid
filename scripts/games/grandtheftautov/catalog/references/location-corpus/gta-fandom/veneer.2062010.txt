@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Veneer
+|image = Veneer-Logo.png
+|type = Cosmetics Company
+|games = ''[[Grand Theft Auto IV]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''}}
+
+[[LEAD]]
+'''Veneer''' is a cosmetics company in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Cosmetics companies

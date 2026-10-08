@@ -1,0 +1,76 @@
+<Page
+    x:Class="Grid.App.Views.AddProfilePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+        <Grid MaxWidth="900" Padding="40,32,40,48" HorizontalAlignment="Center">
+            <StackPanel Spacing="18">
+                <TextBlock Text="ADD PROFILE" FontSize="28" FontWeight="SemiBold" AutomationProperties.Name="Add Profile" />
+                <Button x:Name="BrowseButton" HorizontalAlignment="Left" Content="Browse" AutomationProperties.Name="Browse for existing profile" Click="OnBrowseClicked" />
+
+                <ProgressRing x:Name="BusyIndicator" Width="24" Height="24" HorizontalAlignment="Left" IsActive="False" Visibility="Collapsed" />
+                <InfoBar x:Name="StatusBar" IsOpen="False" IsClosable="True" AutomationProperties.LiveSetting="Assertive" />
+
+                <Border x:Name="ReviewCard" Padding="18" Style="{StaticResource CardStyle}" Visibility="Collapsed">
+                    <StackPanel Spacing="12">
+                        <TextBlock Text="Resolved profile environment" FontSize="18" FontWeight="SemiBold" />
+                        <StackPanel x:Name="ProfileSelectionPanel" Spacing="5" Visibility="Collapsed">
+                            <TextBlock Text="Profiles" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <ComboBox x:Name="ProfileSelector"
+                                      MinWidth="280"
+                                      HorizontalAlignment="Left"
+                                      DisplayMemberPath="ProfileName"
+                                      PlaceholderText="Select a profile"
+                                      AutomationProperties.Name="Resolved profile selection"
+                                      SelectionChanged="OnProfileSelectionChanged" />
+                            <TextBlock Text="More than one existing profile was resolved. Select the profile to review and connect."
+                                       Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                       TextWrapping="Wrap" />
+                        </StackPanel>
+                        <Grid ColumnDefinitions="140,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="8" ColumnSpacing="12">
+                            <TextBlock Text="Game" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <TextBlock x:Name="GameText" Grid.Column="1" TextWrapping="Wrap" />
+                            <TextBlock Grid.Row="1" Text="Manager" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <TextBlock x:Name="ManagerText" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" />
+                            <TextBlock Grid.Row="2" Text="Topology" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <TextBlock x:Name="TopologyText" Grid.Row="2" Grid.Column="1" TextWrapping="Wrap" />
+                            <TextBlock Grid.Row="3" Text="Profile" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <TextBlock x:Name="ProfileText" Grid.Row="3" Grid.Column="1" TextWrapping="Wrap" />
+                            <TextBlock Grid.Row="4" Text="Application" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <TextBlock x:Name="ApplicationText" Grid.Row="4" Grid.Column="1" TextWrapping="Wrap" />
+                            <TextBlock Grid.Row="5" Text="Instance" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <TextBlock x:Name="EnvironmentText" Grid.Row="5" Grid.Column="1" TextWrapping="Wrap" />
+                            <TextBlock Grid.Row="6" Text="Game directory" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <TextBlock x:Name="GameDirectoryText" Grid.Row="6" Grid.Column="1" TextWrapping="Wrap" />
+                            <TextBlock Grid.Row="7" Text="Mods" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <TextBlock x:Name="ModsText" Grid.Row="7" Grid.Column="1" TextWrapping="Wrap" />
+                            <TextBlock Grid.Row="8" Text="Plugins" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <TextBlock x:Name="PluginsText" Grid.Row="8" Grid.Column="1" TextWrapping="Wrap" />
+                            <TextBlock Grid.Row="9" Text="Configuration" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <TextBlock x:Name="ConfigurationText" Grid.Row="9" Grid.Column="1" TextWrapping="Wrap" />
+                            <TextBlock Grid.Row="10" Text="Observation" Foreground="{ThemeResource TextFillColorSecondaryBrush}" />
+                            <TextBlock x:Name="ObservationText" Grid.Row="10" Grid.Column="1" TextWrapping="Wrap" />
+                        </Grid>
+                        <TextBlock x:Name="EvidenceText" Foreground="{ThemeResource TextFillColorSecondaryBrush}" TextWrapping="Wrap" />
+                        <StackPanel x:Name="WarningsPanel" Spacing="5" Visibility="Collapsed">
+                            <TextBlock Text="Warnings" FontWeight="SemiBold" />
+                            <ItemsControl x:Name="WarningsList" AutomationProperties.Name="Profile resolution warnings">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding}" TextWrapping="Wrap" Foreground="{ThemeResource SystemFillColorCautionBrush}" />
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Spacing="8">
+                            <Button x:Name="ConnectButton" IsEnabled="False" Content="Connect profile" AutomationProperties.Name="Connect resolved profile" Click="OnConnectClicked" Style="{StaticResource AccentButtonStyle}" />
+                            <Button Content="Browse again" AutomationProperties.Name="Browse again" Click="OnBrowseClicked" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <HyperlinkButton Padding="0" HorizontalAlignment="Left" Content="Back to Game Catalog" AutomationProperties.Name="Back to Game Catalog" Click="OnCancelClicked" />
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>

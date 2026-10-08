@@ -1,0 +1,164 @@
+[[LEAD]]
+'''Elgin Ave''' is a street, running northeast to south, in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The avenue starts in [[Vinewood Hills]] in the north and ends in [[Strawberry]] in the south, running through [[Hawick]], [[Alta]], [[Vinewood in GTA V|Vinewood]], [[Pillbox Hill]] and [[Legion Square]]. The street has connections to [[Adam's Apple Blvd]], [[Bridge St]], [[Clinton Ave]], the [[Del Perro Freeway]], [[Hawick Ave]], [[Innocence Blvd]], [[Marlowe Dr]], the [[Olympic Freeway]], [[San Andreas Ave]], [[Senora Rd]], [[Spanish Ave]], [[Swiss St]], [[Vespucci Blvd]], [[Vinewood Blvd]] and [[Vinewood Park Dr]]. The avenue is 1.34 miles long.
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[24/7]]
+| [[Hawick]]
+|
+| Convenience store
+|-
+| [[Ammu-Nation]]
+| [[Pillbox Hill]]
+| [[Adam's Apple Blvd]]
+| Weapons
+|-
+| [[Auto Exotic]]
+| [[Hawick]]
+|
+| Garage
+|-
+| [[Badger]]
+| [[Hawick]]
+| [[Spanish Ave]]
+| Communications
+|-
+| [[Bean Machine]]
+| [[Pillbox Hill]]
+| [[Vespucci Blvd]]
+| Food and drink
+|-
+| data-sort-value="Brewer's Drop, The"| [[The Brewer's Drop]]
+| [[Strawberry]]
+| 
+| Food and drink
+|-
+| [[Caesars Auto Parking]]
+| [[Pillbox Hill]]
+| 
+| Parking lot
+|-
+| data-sort-value="Café Rojo de Madera, El"| [[El Café Rojo de Madera]]
+| [[Alta]]
+|
+| Food and drink
+|-
+| [[CNT]]
+| [[Vinewood Hills]]
+| [[Clinton Ave]]
+| Media
+|-
+| data-sort-value="Emissary, The"| [[The Emissary]]
+| [[Pillbox Hill]]
+| 
+| Hotel
+|-
+| [[Escapism Travel]]
+| [[Pillbox Hill]]
+|
+| Travel agent
+|-
+| [[Fallen Angels]]
+| [[Strawberry]]
+|
+| Charity
+|-
+| [[Fern's]]
+| [[Strawberry]]
+| [[Innocence Blvd]]
+| Import/Export
+|-
+| [[FIB Building]]
+| [[Pillbox Hill]]
+| [[San Andreas Ave]]
+| Law enforcement
+|-
+| [[Frenchie's Restaurant]]
+| [[Pillbox Hill]]
+| [[Vespucci Blvd]]
+| Food and drink
+|-
+| [[Hotel Wisdahl]]
+| [[Pillbox Hill]]
+| [[Vespucci Blvd]]
+| Hotel
+|-
+| [[Integrity Tower]]
+| [[Pillbox Hill]]
+|
+| Residential
+|-
+| [[Kronos]]
+| [[Pillbox Hill]]
+|
+| Clothing
+|-
+| [[Los Santos City Hall (GTA V)|Los Santos City Hall]]
+| [[Alta]]
+| [[Occupation Ave]]
+| Government
+|-
+| [[Los Santos Department of Water and Power]]
+| [[Downtown Vinewood]]/[[Vinewood Hills]]
+| [[Clinton Ave]]/[[Vinewood Blvd]]
+| Energy and fuel
+|-
+| [[Los Santos Office Supply Co.]]
+| [[Strawberry]]
+|
+| Office supplies
+|-
+| [[Maison Ricard]]
+| [[Pillbox Hill]]
+| [[San Andreas Ave]]
+|
+|-
+| [[Penris]]
+| [[Pillbox Hill]]
+| [[Swiss St]]
+| Healthcare
+|-
+| [[Pillbox Hill Medical Center]]
+| [[Pillbox Hill]]
+|
+| Healthcare
+|-
+| [[Smoker's Emporium]]
+| [[Strawberry]]
+| [[Innocence Blvd]]
+| Smoking
+|-
+| [[Tennis]] court
+| [[Alta]]
+|
+| Sports
+|-
+| [[Vanilla Unicorn]]
+| [[Strawberry]]
+|
+| Strip club
+|-
+| [[Vankhov Jewelry]]
+| [[Pillbox Hill]]
+|
+| Jewellers
+|-
+| [[Vinewood Police Station]]
+| [[Downtown Vinewood]]
+| [[Vinewood Blvd]]
+| Law enforcement
+|-
+| [[Zorse]]
+| [[Pillbox Hill]]
+| 
+| Clothing
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

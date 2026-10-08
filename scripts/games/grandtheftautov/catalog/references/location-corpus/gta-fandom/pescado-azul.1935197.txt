@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = restaurant
+|name           = Pescado Azul
+|sign           = PescadoAzul-GTAV-Logo.png
+|image          = PescadoAzul-GTAVee.png
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]]
+|taglines       =
+|status         = active
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Pescado Azul''' (English: ''Blue Fish'') is a seafood restaurant in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Casual restaurants
+Seafood restaurants

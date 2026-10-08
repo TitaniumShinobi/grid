@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = ParkViewDiner-Logo-GTAV.png
+|name = Park View Diner
+|taglines = 
+|type = Diner
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Grapeseed]]}}
+
+[[LEAD]]
+The '''Park View Diner''' is a diner in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located at the east end of [[East Joshua Road]] on the border of [[Grapeseed]] and [[Sandy Shores]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Diners
+Fast casual restaurants

@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = fashion
+|name          = Bull Emic
+|sign          = BullEmic-GTAIV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Bismarck Avenue]], [[Middle Park East]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]]
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = "''Smell the part''"
+|status        = active
+|phone         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|accessible    = No
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''Bull Emic''' is a [[Germany|German]] fashion label featured in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+{{image|an in-game image taken at daytime without the [[Heads-Up Display|HUD]].<br>This article also needs an image taken in {{CW}}}}
+<gallery position="center" spacing="small" widths="270px" bordercolor="#cbc39c">
+BullEmic-EFLC-Store.jpg|[[Bismarck Avenue]] between [[Obsidian Street]] and [[Pyrite Street]], [[Middle Park East]], [[Algonquin]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Fashion brands

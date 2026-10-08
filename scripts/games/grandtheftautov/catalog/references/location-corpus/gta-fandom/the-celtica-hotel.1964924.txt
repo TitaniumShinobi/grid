@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{infobox business
+|image = TheCelticaHotel-GTAIV-Logo.png
+|name = The Celtica Hotel
+|type = Hotel chain
+|games = ''[[Grand Theft Auto IV]]<br>[[The Lost and Damned]]<br>[[The Ballad of Gay Tony]]<br>[[Grand Theft Auto: Chinatown Wars]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Liberty City (HD Universe)|Liberty City]]<br>[[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''The Celtica Hotel''' is a hotel chain in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Hotel chains

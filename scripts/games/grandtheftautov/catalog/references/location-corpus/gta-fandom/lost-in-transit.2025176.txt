@@ -1,0 +1,55 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = Lost in Transit
+|image        = LostinTransit-GTAO-Thumbnail.png
+|location     = Various
+|game           = {{games|O=y}}
+|type           = CasinoWork
+|fail         = 
+|for          = [[Agatha Baker]]
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] <small>(organization)</small>
+*1 to 8 players <small>(motorcycle club)</small>
+|todo         = 
+*Go to <span class="v-hud-location">[Location]</span>.
+*Search the area for the missing security van.
+*Take out the <span class="v-hud-enemy">enemies</span>.
+*Recover the <span class="v-hud-friendly">security van</span>.
+*Deliver the security van to the <span class="v-hud-location">Casino</span>.
+|reward = 
+*[[Money|Cash]], [[Chips]], and [[Reputation|RP]].
+|target = Security van
+}}
+
+[[LEAD]]
+'''Lost in Transit''' is a [[Casino Work]] mission featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update. It is a freeroam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[SECTION:3:Cypress Flats Locations]]
+{{Gallery
+|LostinTransit-GTAO-CypressFlatsSearchArea.png|The general search area.
+|LostinTransit-GTAO-CypressFlatsLocation1.png|In an alleyway between [[Popular Street]] and [[Orchardville Avenue]].
+|LostinTransit-GTAO-CypressFlatsLocation2.png|In an alleyway between Orchardville Avenue and [[South Shambles Street]].
+|LostinTransit-GTAO-CypressFlatsLocation3.png|On some train tracks, east of Orchardville Avenue.
+}}
+
+[[SECTION:3:Little Seoul Locations]]
+{{Gallery
+|LostinTransit-GTAO-LittleSeoulSearchArea.png|The general search area.
+|LostinTransit-GTAO-LittleSeoulLocation1.png|In an alleyway between [[South Rockford Drive]] and [[Calais Avenue]].
+|LostinTransit-GTAO-LittleSeoulLocation2.png|In an alleyway between [[Ginger Street]] and [[Palomino Avenue]].
+|LostinTransit-GTAOe-LittleSeoulLocation3.png|Under the [[Interstate 5|La Puerta Freeway]].
+}}
+
+[[SECTION:3:Rancho Locations]]
+{{Gallery
+|LostinTransit-GTAO-RanchoSearchArea.png|The general search area.
+|LostinTransit-GTAO-RanchoLocation1.png|In an alleyway behind [[Hands On Car Wash]].
+|LostinTransit-GTAO-RanchoLocation2.png|In an alleyway bordered by [[Carson Avenue]], [[Roy Lowenstein Boulevard]], [[Macdonald Street]], and [[Jamestown Street]].
+|LostinTransit-GTAO-RanchoLocation3.png|In an alleyway next to [[0432 Davis Avenue]].
+}}
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

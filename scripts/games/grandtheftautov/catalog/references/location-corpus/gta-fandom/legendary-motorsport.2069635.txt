@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = dealership
+|name          = Legendary Motorsport
+|image_label   = 
+|image         = LegendaryMotorsport-GTAV-Logo.png
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[State of San Andreas (HD Universe)|State of San Andreas]]
+|business_type = Online vehicle retailer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|weapons       = 
+|website       = legendarymotorsport.net
+|taglines      = "''Choose from our top end high performance cars at great prices''"
+|status        = active
+}}
+
+[[LEAD]]
+'''Legendary Motorsport''' is a vehicle sales business featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses with websites
+Vehicle dealerships

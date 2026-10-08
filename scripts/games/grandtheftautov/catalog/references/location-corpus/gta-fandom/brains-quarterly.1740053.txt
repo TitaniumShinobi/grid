@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image= BrainsQuarterly-GTAVe-Logo.png
+|caption=
+|type= Psyhcology magazine
+|games=''[[Grand Theft Auto V]]''
+|reference = 
+|taglines = Making You Think
+}}
+
+[[LEAD]]
+'''''Brains Quarterly''''' is a magazine in the [[HD Universe]] that discusses various ideas, news, and advice for the world of psychology. It is featured in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Magazines
+Media

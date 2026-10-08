@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = fashion
+|name          = Flying Bravo
+|sign          = FlyingBravo-GTAV-Logo2.png
+|image         = FlyingBravo-GTAV-Logo.png
+|caption       = 
+|aka           = FB
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = "''Sophisticated, Timeless, Patrician''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Flying Bravo''' is a lifestyle and clothing company featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fashion brands

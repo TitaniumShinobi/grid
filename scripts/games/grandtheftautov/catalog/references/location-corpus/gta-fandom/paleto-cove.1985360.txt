@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox_location
+|image          = PaletoCove-GTAV.png
+|type           = waterway
+|location       = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|aka            = Paleto Bay Delta
+|games          = {{Games|V=y|O=y}}
+|map            = <gallery>
+PaletoCove-IngameGPS-GTAV-Map.png|Paleto Cove
+PaletoCove-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption    = Location on the map (in-game GPS). The <font color="blue">blue area</font> is simply referred to as [[Pacific Ocean]].
+|pscanner       = PoliceScanner-GTAV-Neighborhood-PaletoBayDelta.ogg
+}}
+
+[[LEAD]]
+'''Paleto Cove''', also known as the '''Paleto Bay Delta''',{{Ref|name = paletobaydelta|type = audiodata|filepath = Grand Theft Auto V\x64\audio\sfx\POLICE_SCANNER.rpf 01_specific_locations.awc 0x111BF88B.wav}} is a body of water appearing in {{V}} and {{O}}. It is located off the northwestern coast of [[Blaine County]], to the west of the [[Chiliad Mountain State Wilderness]] and [[Paleto Forest]], and directly north of [[North Chumash]].
+
+[[SECTION:2:Businesses]]
+*[[Sonar Collections Dock]]
+
+[[CATEGORIES]]
+Inlets
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Zones

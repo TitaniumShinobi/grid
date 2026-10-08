@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|type       = restaurant
+|image      = BeachwalkBistro-GTAV.jpg
+|caption    = Beachwalk Bistro in ''GTA V''.
+|games      = {{Games|V=y|O=y}}
+|location   = [[Vespucci Beach Sidewalk]], [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+}}
+
+[[LEAD]]
+'''Beachwalk Bistro''' is a small restaurant in ''[[Grand Theft Auto V]]''.
+
+It is located next to [[Canal Treats]] and [[Papa Surf]] on the [[Vespucci Beach Sidewalk|walkway]] near [[Vespucci Beach]] in [[Vespucci]], [[Los Santos (HD Universe)|Los Santos]]. It accepts [[Fleeca]], [[Shark (company)|Shark]] and [[Limit]] credit cards and [[Money|cash]] as payment options. According to signs, the business prohibits the allowance of pets. It is inaccessible to the player and plays no role in the storyline.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Bistros
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Casual restaurants

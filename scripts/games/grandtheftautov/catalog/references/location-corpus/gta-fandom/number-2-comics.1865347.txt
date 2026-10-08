@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Number 2 Comics
+|image = Number2Comics-GTAV-Logo.png
+|type = Comic book publisher
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|reference= {{WP|Marvel Comics}}<br>{{WP|DC Comics}}
+}}
+
+[[LEAD]]
+'''Number 2 Comics''' is a comic book publication in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Media

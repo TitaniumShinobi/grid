@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = Unit 14 Popular Street
+|image = Dynasty8-GTAV-Medium-Image-Unit14PopularSt.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Medium garage
+|garage = 6 vehicles <br> 2 bikes
+|price = [[Money|$]]77,500
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''Unit 14 Popular Street''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located in a small warehouse complex accessed off of [[Popular Street]] in [[La Mesa]], along with [[Unit 2 Popular Street]]. It sits adjacent to the [[Maibatsu Factory]], and an alley between the two buildings, accessed off [[Supply Street]], may also be used to enter the complex.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]77,500 and can store 6 [[Personal Vehicles]] and two [[Pedal and Metal Cycles|Bicycles]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

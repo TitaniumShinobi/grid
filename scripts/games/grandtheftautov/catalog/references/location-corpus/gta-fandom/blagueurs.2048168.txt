@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Blagueurs
+|image = Blagueurs-GTAO-ShirtLogo1.png
+|type = fashion
+|games = {{Games|O={{EEEV}} {{DLC|mpimportexport}}}}
+}}
+
+[[LEAD]]
+'''Blagueurs''' is a French clothing brand in {{O}} introduced in the [[GTA Online: Import/Export|Import/Export]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Import/Export
+Fashion brands

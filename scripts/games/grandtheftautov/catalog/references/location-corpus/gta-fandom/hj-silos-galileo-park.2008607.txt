@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|factory=y
+|business=y
+|activebiz=y
+|image=HJ_Silos_GTAV_Overview.jpg
+|caption=Overview
+|location=[[Grapeseed]], [[Blaine County]]
+|accessible=No
+|games={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''HJ Silos - Galileo Park''' is a business in [[Grapeseed]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Agricultural Companies
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

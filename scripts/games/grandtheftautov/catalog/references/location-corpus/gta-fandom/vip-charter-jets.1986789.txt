@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = airline
+|name          = VIP Charter Jets
+|sign          = 
+|image         = VIPCharterJets-GTAOe-SignTexture.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpheist4}}}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[Cayo Perico Airstrip]], [[Cayo Perico]]
+|business_type = Air charter
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+<center>'''[[:Category:Airplanes|Aircraft]]'''</center>
+*[[Nimbus]]
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''VIP Charter Jets''' is an air charter airline appearing in {{O}} as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+Airlines
+Businesses in GTA Online: The Cayo Perico Heist

@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Albany
+|sign          = Albany-GTAO-TextLogo.png
+|image_label   = 
+|image         = Albany-GTAO-Logo.png
+|caption       = The '''Albany''' logo in {{O}}.
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = [[Mosley Auto Service]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Automotive manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+*"American Quality"
+*"Born in America"
+|bawsaq        = 
+|lcn           = 
+}}
+
+[[LEAD]]
+'''Albany''' is an [[United States of America|American]] luxury automotive manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+{{Gallery
+|MosleyAutoService-GTAV-AlbanyLogo.png|[[Mosley Auto Service]], [[Carson Avenue]] and [[Davis Avenue]], [[Davis]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Vehicle manufacturers

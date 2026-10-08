@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Gyro Day Hot Food
+|image     = GyroDayHotFood-GTAV-Sign.png
+|games     = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Simmet Alley]], [[Textile City]]<br>[[Melanoma Street]], [[Vespucci Beach]]
+|type      = Fast food
+}}
+
+[[LEAD]]
+'''Gyro Day Hot Food''' is a fast food restaurant chain in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+GyroDayHotFood-GTAV.jpg|[[Melanoma Street]], [[Vespucci Beach]].
+GyroDayHotFood-GTAV-SimmetAlley.png|[[Simmet Alley]], [[Textile City]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurant chains

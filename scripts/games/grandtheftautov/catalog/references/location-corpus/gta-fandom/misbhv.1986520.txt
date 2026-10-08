@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = MISBHV
+|sign          = 
+|image         = MISBHVLogo.svg
+|caption       = Real-world logo.
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpheist4}}}}
+|mentioned     = 
+|locations     = {{WP|Kraków}}, [[Poland]]
+|business_type = Streetwear
+|founded       = [[2007]]
+|founder       = Natalia Maczek
+|ceo           = 
+|products      = 
+|taglines      = 
+|status        = active
+|website       = {{URL|http://misbhv.com|misbhv.com}} <small>(real-world website)</small>
+}}
+
+[[LEAD]]
+'''MISBHV''' (pronounced "misbehave") is a real-world{{Ref|name = misbhv-newswire}} streetwear label from {{WP|Kraków}}, [[Poland]], that appears in {{O}} as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Cayo Perico Heist
+Fashion brands
+Real-world companies

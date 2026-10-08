@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 2057 Vespucci Boulevard
+|image = 2057 Vespucci Boulevard 1.jpg
+|caption = The exterior of the building.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end apartment
+|garage = 2 vehicles <br /> 1 bike
+|price = $87,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5
+|apartment = y
+|location = [[Vespucci Boulevard]], [[Little Seoul]]
+}}
+
+[[LEAD]]
+'''2057 Vespucci Boulevard''' is a [[Safehouses in GTA Online|safehouse]] located on [[Vespucci Boulevard]] in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]] featured in ''[[Grand Theft Auto Online]]''.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]87,000 and includes a 2-car garage.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online

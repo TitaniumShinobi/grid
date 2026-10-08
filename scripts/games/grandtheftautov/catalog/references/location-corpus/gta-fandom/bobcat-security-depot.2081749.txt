@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = warehouse
+|name           = Bobcat Security Depot
+|image          = BobcatSecurityDepot-GTAVPC.png
+|games          = {{Games|V=y}}
+|location       = [[Cavalry Boulevard]], [[Ludendorff]], [[State of North Yankton|North Yankton]]
+|owner          = [[Bobcat Security]]
+|architecture   = [[:Category:Neo-Romanesque buildings|Neo-Romanesque]]
+|floors         = 3
+|accessible     = Yes <small>([[Prologue]] only)</small>
+|map            = BobcatSecurityDepot-GTAVee-Location.png
+|map_caption    = The location of the depot on the map.
+|map2           = BobcatDepot-GTAVe-Map.png
+|map_caption2   = The interior as seen from the minimap (Enhanced version).
+}}
+
+[[LEAD]]
+The '''Bobcat Security Depot''' is a cash depot in {{V}}, located in [[Cavalry Boulevard]] in [[Ludendorff]], [[State of North Yankton|North Yankton]].
+
+[[CATEGORIES]]
+Buildings in GTA V in Ludendorff
+Neo-Romanesque buildings
+Warehouses

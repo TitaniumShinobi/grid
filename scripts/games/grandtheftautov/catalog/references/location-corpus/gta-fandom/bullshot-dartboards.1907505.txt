@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = sportsequipment
+|name          = Bullshot Dartboards
+|sign          = BullshotDartboards-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|business_type = Dartboard manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Bullshot Dartboard''' is a manufacturer of dartboards in {{V}} and {{O}}. The dartboards are used for the [[Darts]] minigame.
+
+The manufacturer's name is likely a reference to the vulgar word ''bullshit''.
+
+{{clr}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Companies
+Sports equipment manufacturers

@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = WIND FARM
+|image = RONAlternatesWindFarm-GTAV.png
+|owner = [[RON]]
+|altnames = Senora Wind Farm
+|games = {{Games|V=y|O=y}}
+|location = [[San Chianski Mountain Range]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-RONAlternatesWindFarm.ogg
+|map           = <gallery>
+RONAlternatesWindFarm-IngameGPS-GTAV-Map.png|RON Alternates Wind Farm
+RONAlternatesWindFarm-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+The '''RON Alternates Wind Farm''' is a large wind farm owned by [[RON]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in the [[San Chianski Mountain Range]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[SECTION:2:Known Roads and Streets]]
+*[[Senora Freeway]]
+*[[Senora Way]]
+
+[[CATEGORIES]]
+Power stations
+Structure zones
+Structures in GTA Online in Los Santos County
+Structures in GTA V in Los Santos County

@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Wandlust-GTAV-Sign.png
+|name = Mr. Gibson's Wandlust
+|type = Novelty Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = Corner of [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Mr. Gibson's Wandlust''' is a chain of novelty stores in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Wandlust-GTAV-Thumbnail.jpg|[[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+Wandlust-GTAV-VespucciCanals.png|[[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Stores

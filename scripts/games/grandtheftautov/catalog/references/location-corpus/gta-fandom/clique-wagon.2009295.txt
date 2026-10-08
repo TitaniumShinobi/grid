@@ -1,0 +1,84 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name                = Clique Wagon
+|front_image         = CliqueWagon-GTAOe-front.png
+|rear_image          = CliqueWagon-GTAOe-rear.png
+|caption             = A '''Clique Wagon''' in ''[[Grand Theft Auto Online]]''.
+|class               = [[:Category:Muscle class|Muscle]] {{Small|(''GTA Online'')}}
+|body_style          = [[:Category:Station wagons|2-door station wagon]]
+|capacity            = 2 {{Small|(driver and passenger)}}
+|manufacturer        = [[Vapid]]
+|price               = [[Money|$]]1,205,000 {{Small|([[Southern San Andreas Super Autos]])}}
+|games               = {{Games|O={{EEEV}} {{DLC|mp2023_01}}}}
+|type            = fullsize
+|basevariant         = [[Clique]]
+|lineup          = 
+|variants            = 
+|radar_icon          = 
+|swankness           = 1/5
+|dashtype            = 
+|inttxd              = 
+|wheeltype           = Lowrider
+|flags               = 
+{{Flags|FLAG_CARGOBOB_HOOK_UP_CHASSIS}}
+{{Flags|FLAG_EXTRAS_REQUIRE}}
+|modelsets           = 
+|modelname           = clique2
+|handlingname        = CLIQUE2
+|textlabelname       = CLIQUE2
+|roadspawn           = No
+|roadspawnmaxcol     = 10
+|roadspawnfreq       = 5
+|roadspawntrailer    = 
+|roadspawnidendis    = 20
+|roadspawndrivers    = 
+|roadspawngroups     = 
+|roadspawnlicense    = 
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The [[Vapid]] '''Clique Wagon''' is a station wagon featured in ''[[Grand Theft Auto Online]]'' as part of the [[GTA Online: San Andreas Mercenaries|San Andreas Mercenaries]] update.
+
+[[SECTION:2:Locations]]
+*Available for purchase from [[Southern San Andreas Super Autos]] for [[Money|$]]1,205,000.
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Clique Wagon
+|manufacturer  = Vapid
+|class         = Muscle 
+|image         = CliqueWagon-GTAOe-RGSC-MainNew.jpg
+|caption       = Main image.
+|image2        = CliqueWagon-GTAOe-RGSC-Action.jpg
+|caption2      = "Action" image for ''GTA Online''.
+|speed         = 63.313057
+|accel         = 49.5
+|braking       = 11.666667
+|traction      = 63.030304
+|seats         = 2
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = sssa
+}}
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Clique Wagon}}
+{{Defaultradio|game=O|defaultgroup=country}}
+
+[[CATEGORIES]]
+Full-size cars
+Muscle class
+Station wagons
+Vehicles in GTA Online: San Andreas Mercenaries
+Vehicles manufactured by Vapid
+Vehicles manufactured in the 1950s
+Vehicles purchasable from Premium Deluxe Motorsport
+Vehicles purchasable from Southern San Andreas Super Autos

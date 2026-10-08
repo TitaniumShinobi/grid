@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Leroy'sElectricals-GTAV-StrawberryAve-exterior.jpg
+|size = 300x300px
+|game_1 = GTA V
+|name = Leroy's Electricals
+|type = Electronics retailer
+|owner = [[Leroy (GTA O)|Leroy]]
+|location = [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]<br />[[West Mirror Dr]] in [[Mirror Park]], Los Santos
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Leroy's Electronics''' is an electronics retailer owned by [[Leroy (GTA O)|Leroy]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company has stores on [[Strawberry Ave]] in [[Strawberry]] and on [[West Mirror Dr]] in [[Mirror Park]], both in [[Los Santos in GTA V|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

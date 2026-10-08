@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Ronnie's Luxury Car Wash
+|image     = RonniesLuxuryCarWash-GTAV-Logo.png
+|caption   = '''Ronnie's Luxury Car Wash''' logo.
+|taglines  = 
+|type      = 
+|games     = {{Games|V=y|O=y}}
+|locations = [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Ronnie's Luxury Car Wash''' is a hand [[Car Washes|car wash]] business in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Car washes

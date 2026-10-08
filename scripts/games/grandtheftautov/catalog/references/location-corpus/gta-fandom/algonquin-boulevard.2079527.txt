@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=AlgoquinBlvd-GTAV.jpg
+|caption=View of Algonquin Boulevard.
+|games={{Games|V=y|O=y}}
+|start=[[Marina Drive]]
+|end=[[Joshua Road]]
+|map=<gallery>
+AlgonquinBoulevard-GTAV-Map.png|Map
+AlgonquinBoulevard-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Algonquin Boulevard''' is a two-lane divided boulevard located in [[Sandy Shores]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Aunt Tammy's]] (abandoned)
+*Beth's Dog Grooming
+*[[Derelict Motel]] (abandoned)
+*[[Globe Oil]] (abandoned)
+*[[Liquor Ace]]
+*Marina Drive Liquor Mart
+*Roadside fruit stand
+*Seaton Sand's Automobile Services (abandoned)
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

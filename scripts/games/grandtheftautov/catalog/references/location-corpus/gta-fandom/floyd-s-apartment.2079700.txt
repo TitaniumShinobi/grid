@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox location
+|style          = V
+|safehouse      = y
+|type           = apartment
+|name           = Floyd's Apartment
+|image          = FloydsApartment-GTAV.png
+|caption        = Floyd's Apartment as it appears in {{V}}.
+|games          = {{Games|V=y|O=y}}
+|location       = [[Goma Street]], [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]]
+|condition      = Abandoned
+|occupants      = 
+*[[Trevor Philips]] {{Small|([[Caida Libre|formerly]])}}
+*[[Wade Hebert]] {{Small|(formerly)}}
+*[[Floyd Hebert]] {{Small|([[Hang Ten|deceased]])}}
+*[[Debra]] {{Small|(deceased)}}
+*[[Mr. Raspberry Jam]] {{Small|(formerly)}}
+|parkingcap     = 2
+|unlockedafter  = [[Friends Reunited]]
+|file_name      = <code>vb_30_bld2c.ydr</code>
+|coords         = -1147.938,-1523.658,3.340771
+|map            = FloydsApartment-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Floyd's apartment''' is a [[Safehouses in GTA V|safehouse]] in {{V}}, located at the corner of [[Goma Street]] and [[Magellan Avenue]] in [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Safehouses

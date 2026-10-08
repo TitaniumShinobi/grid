@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Fred'sStore-GTAV-StoreLogo.jpg
+|name = Fred's Store
+|type = Retail outlet
+|founder = [[Fred Quincy]]
+|locations = [[Vinewood (HD Universe)|Vinewood]]
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Fred's Store''' is a storefront in [[Vinewood (HD Universe)|Vinewood]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

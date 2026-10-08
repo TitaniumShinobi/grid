@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{infobox business
+|Name Change=CORPORATION
+|image = Weazel_Logo_GTAV.png
+|caption = Weazel logo in ''[[Grand Theft Auto V]]''.
+|name = Weazel Television Network
+|bawsaq = {{BAWSAQ/Slider}} '''WZL'''
+|taglines = ''"Standing Up To The Liberal Agenda One Issue At A Time"<br>"Confirming Your Prejudices"''
+|type =Television network
+|founded =
+|founder = 
+|ceo =
+|divisions = [[Weazel News]]
+|games={{Games|VC=y|SA=y|LCS=y|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|locations=[[Channel 15 Studio]] at the [[Cherenkov Vodka|Cherenkov Vodka Warehouse]], [[Hove Beach]], [[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]<br>[[Weazel Plaza]] in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|reference={{WP|Fox Broadcasting Company|Fox}}
+}}
+
+[[LEAD]]
+'''Weazel Television Network''' ([[BAWSAQ]]: WZL) is a television network in both the [[3D Universe]] and [[HD Universe]] of the ''[[Grand Theft Auto]]'' series. The player can buy their stocks from the [[Bawsaq.com]] website in'' [[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA Vice City
+TV broadcasting companies

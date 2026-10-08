@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = MOUNTAIN
+|image = MountGordo-GTAV.png
+|caption = A View of Mount Gordo from [[Mount Chiliad (HD Universe)|Mount Chiliad]].
+|games = {{Games|V=y|O=y}}
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map             = <gallery>
+MountGordo-IngameGPS-GTAV-Map.png|Mount Gordo
+MountGordo-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS). <font color="blue">El Gordo Lighthouse</font> and <font color="yellow">Heart Attacks Beach</font> are considered part of Mount Gordo.
+|pscanner       = PoliceScanner-GTAV-Neighborhood-MountGordo.ogg
+}}
+
+[[LEAD]]
+'''Mount Gordo''' is one of three named mountain peaks in [[State of San Andreas (HD Universe)|San Andreas]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', the others being [[Mount Chiliad (HD Universe)|Mount Chiliad]] and [[Mount Josiah]]. Mount Gordo is the smallest of the three. It is located in the northeast of [[Blaine County]]. A small [[Mount Gordo Lake|lake]] can be found here, as well as a small pond. The mountain is the site of the [[Jolene Cranley-Evans]] ghost [[Secrets and Easter Eggs in GTA V|easter egg]].
+
+The top of the mountain is one of the two locations where [[Michael De Santa|Michael]] can practice yoga. The other being [[Michael's mansion]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Mountains
+Neighborhoods
+Zones

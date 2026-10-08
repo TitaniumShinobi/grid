@@ -1,0 +1,13 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Rallye De Paleto
+|image = RallyeDePaleto-GTAO.png
+|games = ''[[Grand Theft Auto Online]]''
+|type = Rally race event
+}}
+
+[[LEAD]]
+The '''Rallye De Paleto''' was a rally race held in [[Paleto Bay]], [[State of San Andreas (HD Universe)|San Andreas]], in [[1979]].
+
+[[CATEGORIES]]
+Businesses in GTA Online

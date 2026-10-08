@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{infobox business
+|image = Covington-GTAV-Logo.png
+|type = Engineering services
+|locations = [[Murrieta Oil Field]], [[Los Santos (HD Universe)|Los Santos]]
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Covington Engineering Services''' is an oilfield service company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

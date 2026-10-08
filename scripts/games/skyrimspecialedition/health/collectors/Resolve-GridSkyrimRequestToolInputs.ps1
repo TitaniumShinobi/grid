@@ -2,7 +2,13 @@
 <# .SYNOPSIS Resolves exact read scopes from one persisted Grid MO2 reference. #>
 function Resolve-GridSkyrimRequestToolInputs {
     [CmdletBinding()]
-    param([Parameter(Mandatory)][string]$GridDataRoot, [Parameter(Mandatory)][string]$InstallationId, [Parameter(Mandatory)][string]$ProfileId, [Parameter(Mandatory)][string[]]$ToolIds)
+    param(
+        [Parameter(Mandatory)][string]$GridDataRoot,
+        [Parameter(Mandatory)][string]$InstallationId,
+        [Parameter(Mandatory)][string]$ProfileId,
+        [Parameter(Mandatory)][string[]]$ToolIds,
+        [switch]$PrepareAuthorizationScope
+    )
     $storePath = Join-Path ([IO.Path]::GetFullPath($GridDataRoot)) 'connections\mo2-installations.v1.json'
     if (-not (Test-Path -LiteralPath $storePath -PathType Leaf)) { throw 'InstallationContextUnresolved: persisted MO2 reference store is missing.' }
     $storeItem = Get-Item -LiteralPath $storePath -ErrorAction Stop
@@ -11,6 +17,35 @@ function Resolve-GridSkyrimRequestToolInputs {
     $references = @($store.references | Where-Object { [string]$_.installationId -ceq $InstallationId -and [string]$_.gameId -ceq 'game.skyrim-special-edition' -and [string]$_.adapterId -ceq 'adapter.mod-organizer-2' })
     if ($references.Count -ne 1) { throw 'InstallationContextUnresolved: the requested persisted MO2 installation is absent or ambiguous.' }
     $instanceRoot = [IO.Path]::GetFullPath([string]$references[0].instanceDirectory).TrimEnd('\')
+    if ($PrepareAuthorizationScope) {
+        # Authorization preparation may read Grid's account-owned connection
+        # record, but it must not inspect the selected external environment.
+        # Bind the review to the persisted roots; manager-owned configuration
+        # is resolved and validated only after the one-use read grant.
+        $gameRoot = if ($references[0].PSObject.Properties['gameDirectory'] -and
+            -not [string]::IsNullOrWhiteSpace([string]$references[0].gameDirectory)) {
+            [IO.Path]::GetFullPath([string]$references[0].gameDirectory).TrimEnd('\')
+        } else { $null }
+        $baseAuthorizedRoots = @(@($instanceRoot, $gameRoot) |
+            Where-Object { -not [string]::IsNullOrWhiteSpace([string]$_) } |
+            Sort-Object -Unique)
+        $lootRoot = if ($env:LOCALAPPDATA) {
+            [IO.Path]::GetFullPath((Join-Path $env:LOCALAPPDATA 'LOOT\Skyrim Special Edition')).TrimEnd('\')
+        } else { $null }
+        $result = @{}
+        foreach ($toolId in @($ToolIds | Sort-Object -Unique)) {
+            $authorizedRoots = if ($toolId -ceq 'grid.tool.loot' -and $lootRoot) { @($lootRoot) } else { @($baseAuthorizedRoots) }
+            $result[$toolId] = [pscustomobject][ordered]@{
+                gridDataRoot = [IO.Path]::GetFullPath($GridDataRoot)
+                installationId = $InstallationId
+                requestedProfileId = $ProfileId
+                mo2Root = $instanceRoot
+                deferredResolution = $true
+                authorizedReadPaths = @($authorizedRoots)
+            }
+        }
+        return $result
+    }
     $iniPath = Join-Path $instanceRoot 'ModOrganizer.ini'
     $iniItem = Get-Item -LiteralPath $iniPath -ErrorAction Stop
     if ([long]$iniItem.Length -gt 1MB) { throw 'InstallationContextUnresolved: ModOrganizer.ini exceeds 1 MiB.' }

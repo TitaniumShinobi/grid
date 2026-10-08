@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|airfield  = n
+|business  = n
+|activebiz = n
+|sign      = McKenzieField-GTAVee-Signage.jpg
+|image     = <gallery>
+McKenzieField-GTAVee-Header.jpg|Day
+McKenzieField-GTAVee-OverviewNight.jpg|Night
+</gallery>
+|games     = {{Games|V=y|O=y}}
+|location  = [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''McKenzie Field''' is a small dirt airstrip with an accompanying hangar located in the small rural town of [[Grapeseed]] in [[State of San Andreas (HD Universe)|San Andreas]], featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Airports
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

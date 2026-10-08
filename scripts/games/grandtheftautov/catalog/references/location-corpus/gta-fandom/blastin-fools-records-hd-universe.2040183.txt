@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = recordlabel
+|name          = Blastin' Fools Records
+|sign          = 
+|image         = 
+|caption       =
+|aka           = 
+|games         = {{Games|O={{EEEV}}{{DLC|mpsecurity}}}}
+|locations     = [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Music label
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = [[#Artists|Artists]]
+|products      = 
+|taglines      = 
+|status        = unknown
+}}
+
+[[LEAD]]
+'''Blastin' Fools Records''' is a record label mentioned in {{O}} as part of [[GTA Online: The Contract|The Contract]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Contract
+Record labels

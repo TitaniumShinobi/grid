@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|accessible = No
+|sign = FatLosers-GTAV-Sign.png
+|image = FatLosers-GTAV-VespucciCanals.png
+|caption = The clinic at [[Bay City Avenue]], [[Vespucci Canals]], in ''GTA V''.
+|taglines = ''"We'll make you half the person you were."''
+|type = Liposuction Clinic
+|games = {{Games|V=y|O=y}}
+|location = [[Magellan Avenue]], [[Vespucci Canals]]
+}}
+
+[[LEAD]]
+'''Fat Losers Liposuction''' is a liposuction clinic appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Clinics

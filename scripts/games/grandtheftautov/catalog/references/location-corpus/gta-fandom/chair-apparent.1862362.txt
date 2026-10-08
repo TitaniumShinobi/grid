@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = furniture
+|name           = Chair Apparent
+|sign           = ChairApparent-GTAV-Logo.png
+|image          = ChairApparent-GTAVe-Store.png
+|games          = {{Games|V=y|O=y}}
+|location       = [[San Vitus Boulevard]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = No
+|products       = Furniture
+|status         = active
+}}
+
+[[LEAD]]
+'''Chair Apparent''' is a furniture store that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Furniture stores

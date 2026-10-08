@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|landmark       = 
+|type           = diner
+|name           = Last Train in Los Santos
+|sign           = 
+|image          = LastTrainInLosSantos-GTAVee-FrontView.jpg
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Eclipse Boulevard]], {{Location|v-westvinewood|3}}
+|business_type  = 
+|opened         = 
+|taglines       = 
+|status         = active
+|owner          = 
+|employees      = 
+|structure_type = 
+|architecture   = 
+|phone          = 
+|accessible     = No
+|map            = LastTrainInLosSantos-GTAV-Map.png
+|map_caption    = Location on the map (red) in ''Grand Theft Auto V'' and ''Online''.
+}}
+
+[[LEAD]]
+'''Last Train in Los Santos''' is a diner appearing in {{V}} and {{O}}, located in {{Location|v-westvinewood|3}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Diners
+Fast casual restaurants

@@ -1,0 +1,34 @@
+[[LEAD]]
+'''Low Power St''' is a street in [[Pillbox Hill]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. Low Power St continues on at ground level while a ramp keeps the player on Power St, heading to [[Alta]] and [[Hawick]]. There are connections to [[Integrity Way]] and [[San Andreas Ave]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Ground & Pound Café]]
+| [[Pillbox Hill]]
+| [[San Andreas Ave]]
+| Food and drink
+|-
+| [[Lombank]]
+| [[Pillbox Hill]]
+| [[Power St]]
+| Bank
+|-
+| [[Maze Bank]]
+| [[Pillbox Hill]]
+| [[Power St]]/[[Vespucci Blvd]]
+| Bank
+|-
+| [[Union Depository]]
+| [[Pillbox Hill]]
+| [[San Andreas Ave]]
+| Bank
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

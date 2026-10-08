@@ -1,0 +1,16 @@
+{
+  "authorized": true,
+  "operation": "establish",
+  "productId": "grid",
+  "revision": "fa989b5e9a44b74f2bd017fd62c5922574df1eb3e1795c0ecb8bfedf5536b526",
+  "expectedHead": null,
+  "expectedContractDigest": "84b0e2010831f0df307e16058f8eddd56b70690dbfc8e37d1661e0b9813da0c2",
+  "observerDigest": "69863bbe29a1c363625ace466375bb74c8b11e420f635375b048a34bdb2846d4",
+  "artifactDigest": "158718912f4bed116631dfb94a34e649cd33301745adb1251ef539cb81a64692",
+  "configurationDigest": "bb2980c5b91e702073417976fa122b7f3bd933dafea4f9033705aec838dc7e5e",
+  "runId": "18dfe5a5-d6be-4738-a842-47dddb30074a",
+  "operator": "Devon (human reviewer)",
+  "reason": "Explicit operator approval on 2026-10-08 to establish GRID AUTH at revision fa989b5e9a44b74f2bd017fd62c5922574df1eb3e1795c0ecb8bfedf5536b526 following pre-establish verify report 7cf7aa3e-3fcc-4692-a771-71bb1f6771ad (profile_verification=PASS).",
+  "retireChecks": [],
+  "verifyReport": ".auth-kit/reports/7cf7aa3e-3fcc-4692-a771-71bb1f6771ad.json"
+}

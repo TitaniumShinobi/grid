@@ -1,0 +1,56 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = EclipseBoulevard-GTAV.png
+|caption =
+|games={{Games|V=y|O=y}}
+|start = [[West Eclipse Boulevard]] and [[South Mo Milton Drive]]
+|end = [[Las Lagunas Boulevard]] and [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]]
+|pscanner    = [[File:PoliceScanner-GTAV-Neighborhood-Eclipse.ogg|150px|center|noicon]]
+|map=<gallery>
+EclipseBoulevard-GTAV-Map.png|Map
+EclipseBoulevard-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Eclipse Boulevard''' is an iconic [[List of Street Names|street]] in [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Full Moon Film Theater]]
+*[[Gentry Manor Hotel]] <small>(corner of Las Lagunas Boulevard)</small>
+*[[Pegasus Concierge Hotel]] <small>(8358 Eclipse Boulevard)</small>
+*[[Tequi-la-la]] <small>(corner of Milton Road)</small>
+
+[[SECTION:2:Businesses]]
+*[[$1 Saver]]
+*[[Bean Machine]] <small>(corner of Strangeways Drive)</small>
+*[[Betta Pharmaceuticals|Betta Life]]
+*[[Binco (HD Universe)|Binco]]
+*[[Cheap Shot Coffee]] (Closed)
+*[[Digital Den]] <small>(corner of Milton Road)</small>
+*[[DM Pets]]
+*[[Eclipse Laundry]] (Closed)
+*Eclipse [[liquor.deli]]
+*[[Ellen's Liquor Lover]] <small>(corner of San Vitus Boulevard)</small>
+*[[Eclipse Lounge]] <small>(corner of North Archer Avenue)</small>
+*[[Hardcore Comic Store]] <small>(corner of North Archer Avenue)</small>
+*[[Haute]] <small>(corner of Las Lagunas Boulevard)</small>
+*[[Hornbills]] <small>(2497 Eclipse Boulevard)</small>
+*[[Laser Prints]]
+*[[Last Train in Los Santos]]
+*[[Liquor Hole]]
+*[[Pipe Down]]
+*[[Spitroasters Meathouse]]
+*[[Split Sides West]]
+*[[Specs Pest]]
+*[[Surface]]
+*[[The Dungeon Crawler]] <small>(8852 Eclipse Boulevard)</small>
+*[[The Generic Hotel]] <small>(corner of Milton Road)</small>
+*[[The Lust Resort]] <small>(corner of Milton Road)</small>
+*[[Vinewood Records]]
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

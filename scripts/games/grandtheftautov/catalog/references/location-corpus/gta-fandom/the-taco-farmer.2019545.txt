@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business
+|image = TheTacoFarmer-GTAV-Logo.png
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = [[State of San Andreas (HD Universe)|State of San Andreas]]
+|type = Mexican-style fast food chain
+}}
+
+[[LEAD]]
+'''The Taco Farmer''' is a [[Mexico|Mexican]]-style fast food chain in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" widths="270px" spacing="small">
+TheTacoFarmer-GTAV-Harmony.png|'''The Taco Farmer''' at [[Harmony Plaza]] on [[Route 68]], [[Harmony]], [[Blaine County]].
+TheTacoFarmer-GTAV-Strawberry.png|'''The Taco Farmer''' on [[Strawberry Avenue]] and [[Carson Avenue]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurant chains

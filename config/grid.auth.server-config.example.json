@@ -1,0 +1,57 @@
+{
+  "app": {
+    "id": "grid",
+    "name": "Grid",
+    "brandTagline": "Your game and mod collection, in one grid."
+  },
+  "oauth": { "envPrefix": "GRID" },
+  "allowedOrigins": [
+    "https://signin.grid.app",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:51706",
+    "http://127.0.0.1:51706",
+    "http://192.168.86.72:17591"
+  ],
+  "redirects": { "postLoginPath": "/return", "postLogoutPath": "/" },
+  "credentials": { "enabled": true },
+  "docs": [
+    {
+      "product": "grid",
+      "docType": "terms",
+      "key": "grid_terms_v1",
+      "version": "2026.09.1",
+      "label": "Grid Terms of Service",
+      "url": "https://grid.app/legal/terms",
+      "required": true
+    },
+    {
+      "product": "grid",
+      "docType": "privacy",
+      "key": "grid_privacy_v1",
+      "version": "2026.09.1",
+      "label": "Grid Privacy Policy",
+      "url": "https://grid.app/legal/privacy",
+      "required": true
+    }
+  ],
+  "turnstile": { "required": false, "enabled": false },
+  "providers": [
+    { "provider": "microsoft", "label": "Continue with Microsoft" },
+    { "provider": "github", "label": "Continue with GitHub" },
+    { "provider": "google", "label": "Continue with Google" }
+  ],
+  "publicClients": [
+    {
+      "clientId": "grid-windows",
+      "authorizationUiUrl": "https://signin.grid.app/signin",
+      "redirectUris": [],
+      "loopback": {
+        "hosts": ["127.0.0.1", "::1"],
+        "path": "/grid-natives-callback",
+        "allowDynamicPorts": true
+      },
+      "scopes": ["openid", "profile", "email"]
+    }
+  ]
+}

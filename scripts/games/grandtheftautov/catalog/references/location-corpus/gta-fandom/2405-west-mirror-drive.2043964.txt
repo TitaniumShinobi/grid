@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = 2405 West Mirror Drive
+|type           = house
+|image          = 2405WestMirrorDrive-GTAVe-Overview.png
+|caption        = Overview of the house in {{VO}}.
+|games          = {{games|V=y|O=y}}
+|location       = {{Location|v-mirrorpark}}
+|structure_type = Bungalow
+|architecture   = [[:Category:Traditional buildings|Traditional]]
+|floors         = 1
+|file_name      = <code>lf_house_07_</code>
+|coords         = 920.8018,-473.5139,59.70586
+|map            = 2405WestMirrorDrive-GTAV-Map.png
+|map_caption    = Location on the map (red) in {{VO}}.
+}}
+
+[[LEAD]]
+'''2405 West Mirror Drive''' is a single-family home appearing in {{VO}}, located in {{Location|v-mirrorpark}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Easter Eggs
+Single-family homes
+Traditional buildings

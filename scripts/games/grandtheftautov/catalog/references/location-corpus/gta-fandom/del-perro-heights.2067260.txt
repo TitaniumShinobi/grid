@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = Del Perro Heights
+|image = DelPerroHeights-GTAVee.png
+|caption = The building as seen from Marathon Avenue.
+|game = O
+|location = [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|appearances = {{Games|V=y|O=y}}
+|style = High-end apartments
+|garage = 10 vehicles <br /> 3 bikes
+|price = [[Money|$]]468,000 <small>(apartment 4)</small><br>$200,000 <small>(apartment 7)</small><br>$205,000 <small>(apartment 20)</small>
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small><br>[[Corrupt Union Depository Businessman]] 
+|unlocked = Rank 5}}
+
+[[LEAD]]
+'''Del Perro Heights''' is an apartment building in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mid-rise buildings
+Safehouses

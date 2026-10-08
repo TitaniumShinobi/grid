@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = electronics
+|name          = Celltowa
+|sign          = CelltowaLogo-GTAV.png
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Celltowa Building]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = [[Celltowa Cellphone]]
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Celltowa''' is a phone and telecommunications company that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" bordercolor="#af1e2b" widths="270px">
+CelltowaBuilding-GTAVee-West.png|[[Celltowa Building]], [[San Andreas Avenue]] and [[South Rockford Drive]], [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Communications
+Electronics companies
+Phone companies

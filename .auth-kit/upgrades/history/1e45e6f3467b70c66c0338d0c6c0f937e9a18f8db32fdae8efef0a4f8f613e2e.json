@@ -1,0 +1,42 @@
+{
+  "contract": "life.auth.verifier-upgrade/1",
+  "sequence": 1,
+  "previous": null,
+  "productId": "grid",
+  "revision": "378ec93fab7d4427c16b54f1dc77662576bfe7404245bf5a3ac224ca6778a912",
+  "historyHead": "d9d3382f6839d320010183dd0522360adb16df643b8121e85abdd5038a8bfd7c",
+  "historySequence": 1,
+  "contractDigest": "5fe10136dd402b83045c4d9f9b3ca04b38464eb4adfd445cfd40bfbdc3df2e83",
+  "oldDigest": "cf13a337bbd73438c8edaa795581212eaea98737a5cbc60f0c4130bee47547f4",
+  "newDigest": "77ba0341a301b514ba2aafbe14ccea946e58922b37d74187018e42b6bb51f2ab",
+  "files": {
+    "auth-blocker-handoff.mjs": "a1f52a391bfe5f15006e67c3e1761579fa94af1369d5772342e2b389598c716f",
+    "auth-capability-catalog.mjs": "a3a120567739d379c00994049959b435b613b874e983bce3b6e57a0ef85eda2d",
+    "auth-conformance-binding.mjs": "261d44c48364f2e34a8d55cebaf6da48b7df1a22708886cd6ec0f910dcf73c80",
+    "auth-evidence-ownership.mjs": "e78d25044c75630611708683152ec4608d1989adf24149b15c931be4ca755898",
+    "auth-git.mjs": "a5c5a52b5579ef4e9baf2464fba2d9a8b820d721fb8586f18f38f55f5b6b9d59",
+    "auth-lifecycle.mjs": "db000fd153e042e3971c0cc69fdf81d237c587511fe1960a075c12e749324785",
+    "auth-product-contract.mjs": "f0f7ba9dec3fcc568b0a44f5114b909e6a4fd1d1b9473cfb12d090bc3c9ccfd2",
+    "auth-product-inventory.mjs": "4892e35d178fb152784ea641d87d70916225ecc2b65e7dd447c3e9519be030f5",
+    "auth-verification-profiles.mjs": "f399ec036b110e049517e5b53e7c9d1d1e374699fb40b898a1c1f89e14c35918",
+    "auth-verifier-upgrade-chain.mjs": "be3a0ea1abc4c7099d3cb24ed768aa8c10b2a0f3ce11cb1fc5fdce7cd2bc2dbe",
+    "auth-wizard.mjs": "501a1abbc6ab8eeffd0c853cb7667a4ece4e39f399e02f8de043e70aaa4d903e"
+  },
+  "authorization": {
+    "authorized": true,
+    "operation": "upgrade-verifier",
+    "productId": "grid",
+    "revision": "378ec93fab7d4427c16b54f1dc77662576bfe7404245bf5a3ac224ca6778a912",
+    "expectedHead": "d9d3382f6839d320010183dd0522360adb16df643b8121e85abdd5038a8bfd7c",
+    "expectedContractDigest": "5fe10136dd402b83045c4d9f9b3ca04b38464eb4adfd445cfd40bfbdc3df2e83",
+    "expectedUpgradeHead": null,
+    "oldDigest": "cf13a337bbd73438c8edaa795581212eaea98737a5cbc60f0c4130bee47547f4",
+    "newDigest": "77ba0341a301b514ba2aafbe14ccea946e58922b37d74187018e42b6bb51f2ab",
+    "operator": "Devon Woodson",
+    "reason": "Apply reviewed AUTH verifier fix for false HISTORICAL_REGRESSION while preserving GRID baseline and history.",
+    "runId": "9f4c88c8-81c8-44d9-a39f-14b75700ed4c"
+  },
+  "initialVerifier": "import { runProductCli } from './runtime/auth-product-contract.mjs';\nawait runProductCli(process.argv.slice(2), new URL('../', import.meta.url));\n",
+  "generatedAt": "2026-10-08T18:26:51.856Z",
+  "digest": "1e45e6f3467b70c66c0338d0c6c0f937e9a18f8db32fdae8efef0a4f8f613e2e"
+}

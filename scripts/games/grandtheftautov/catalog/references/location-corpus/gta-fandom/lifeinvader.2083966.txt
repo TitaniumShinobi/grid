@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Lifeinvader
+|image = Lifeinvader-GTAV-Logo.png
+|taglines = ''"Invasion never felt so good"<br>"It's not technology, it's your life!"<br>"Social self respect"<br>"Putting your personal life in the public domain"<br>"Dock and Dock again"''
+|lcn = {{BAWSAQ/Slider}} '''LFI'''
+|type = Social Network
+|ceo = [[Jay Norris]]
+|games = {{Games|V=y|O=y}}
+|locations = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+|founder = [[Jay Norris]]
+|reference = {{WP|Facebook}}
+|website    = lifeinvader.com}}
+
+[[LEAD]]
+'''Lifeinvader''' is an online social networking service and company in {{V}} and {{O}} and rumoured to appear in {{VI}}. The website is currently only interactive in ''GTA V,'' where it is also featured on the [[Liberty City National Exchange|LCN]] stock exchange website.
+
+[[CATEGORIES]]
+Apps
+Businesses in GTA Online
+Businesses in GTA V
+Communications
+Lifeinvader
+Media in GTA V
+Phone companies
+Social networking
+Websites

@@ -1,0 +1,79 @@
+[[INFOBOX]]
+{{Infobox location
+|name  = Downtown Vinewood
+|image = DowntownVinewood-AerialView-GTAV.png
+|caption = Overview of Downtown Vinewood.
+|location = [[Vinewood (HD Universe)|Vinewood]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games = {{Games|V=y|O=y}}
+|type = neighborhood
+|pscanner       = PoliceScanner-GTAV-Neighborhood-DowntownVinewood.ogg
+|map           = <gallery>
+DowntownVinewood-IngameGPS-GTAV-Map.png|Downtown Vinewood
+DowntownVinewood-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+|map2           = DowntownVinewood-GTAV-SatelliteView.jpg
+|map_caption2   = Satellite view of Downtown Vinewood.
+}}
+
+[[LEAD]]
+'''Downtown Vinewood''' is a neighborhood of [[Vinewood (HD Universe)|Vinewood]], [[Los Santos (HD Universe)|Los Santos]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is bordered by [[West Vinewood]] to the west, [[Hawick]] to the south, [[Vinewood Hills]] to the north and [[East Vinewood]] to the east. The district acts as Vinewood's main commercial area, and is focused around the eastern stretches of [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]].
+
+[[SECTION:2:Roads and Streets]]
+*[[Alta Street]]
+*[[Clinton Avenue]]
+*[[Elgin Avenue]]
+*[[Fenwell Place]]
+*[[Laguna Place]]
+*[[Meteor Street]]
+*[[Spanish Avenue]]
+*[[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]]
+*[[Las Lagunas Boulevard]]
+
+[[SECTION:2:Places of Interest]]
+*[[0605 Spanish Avenue]]
+*[[Abandoned FIB Lockup]]
+*[[Doppler]]
+*[[F. Clinton and Partner Safehouse]]
+*[[Los Santos Department of Water & Power]]
+*[[Oriental Theater]]
+*[[Pacific Standard Public Deposit Bank]]
+*[[Vinewood Plaza Hotel]]
+*[[Vinewood Police Station]]
+*[[Vinewood Walk of Fame]]
+*[[Vinewood Wax Haven]]
+*[[Von Crastenburg Hotel]]
+*[[Whirligig Theater]]
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+*[[Bishop's WTF?!]]
+*[[Blazing Tattoo]]
+*[[The 'C'* Bomb]]
+*[[Cine Areola]]
+*[[Clappers]]
+*[[Designer Slave]]
+*[[Fruit of the Vine]]
+*[[Globe Oil]]
+*[[GoPostal]]
+*[[Guido's Takeout - Liberty Style Pizza]]
+*[[Ice Planet Jewelry]]
+*[[Jazz Desserts]]
+*[[Miss T]]
+*[[Pink Sandwich]]
+*[[Pitchers]]
+*[[Pizza This]]
+*[[Pop's Pills]]
+*[[Singleton's]]
+*[[Stargaze]]
+*[[The Lust Resort]]
+*[[T-Shirts XXS-XXXL]]
+*[[Up-n-Atom Burger]]
+*[[Vinewood Liquor]]
+*[[Vinewood Mall]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Üder Milkén
+|Name Change = ICE CREAM BRAND
+|image       = UderMilken.png
+|games       = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|taglines    = "''The treat from the teat''"
+|status      = active
+|vehicles    = [[Steed]]
+}}
+
+[[LEAD]]
+'''Üder Milkén''' is an ice cream brand featured in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Food and drink companies

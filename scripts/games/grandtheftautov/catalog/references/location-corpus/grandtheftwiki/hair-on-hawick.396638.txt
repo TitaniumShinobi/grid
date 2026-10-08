@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Hair on Hawick
+|type = [[:Category:Barbers|Barber salon]]
+|owner = 
+|location = [[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = [[Donna]]
+}}
+
+[[LEAD]]
+'''Hair on Hawick''' is a [[:Category:Barbers|barber salon]] located on [[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The store shares its interior and only employee, [[Donna]], with the [[Herr Kutz]] barber chain.
+
+[[CATEGORIES]]
+Barbers
+Businesses in GTA V
+Businesses in Los Santos in GTA V

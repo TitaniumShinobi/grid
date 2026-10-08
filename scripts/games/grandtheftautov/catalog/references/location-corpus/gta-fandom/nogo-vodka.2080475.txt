@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Nogo Vodka
+|size = 100px
+|image = Nogovodkalogo_GTAIV.png
+|taglines = ''"The premium vodka from the heartland, not the motherland."<br>"X marks the shot"''
+|type = Alcohol Beverage Company
+|games = ''[[Grand Theft Auto IV]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''}}
+
+[[LEAD]]
+'''Nogo Vodka''' is a brand of alcohol in the [[HD Universe]] of the ''[[Grand Theft Auto]]'' series.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V

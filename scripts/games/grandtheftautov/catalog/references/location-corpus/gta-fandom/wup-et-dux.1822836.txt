@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|name = Wup et Dux
+|caption = The logo
+|location = [[Portola Drive]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|altnames = 
+|products = 
+|bawsaq = 
+|image = WupEtDux-GTAV-Logo-Texture.png
+|darklogo = y
+|image_size = 300
+|condition = Active
+|taglines = 
+|reference = 
+|games = {{Games|V=y|O=y}}
+|type = Fashion retailer
+|map = 
+}}
+
+[[LEAD]]
+'''Wup et Dux''' is a store appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Location]]
+<gallery position="center" spacing="small" widths="270px">
+WupEtDux-GTAV-DaylightFront.png|[[Portola Drive]], [[Rockford Hills]] (night [[:File:WupEtDux-GTAV-NightFront.png|view]]).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores
+Salons

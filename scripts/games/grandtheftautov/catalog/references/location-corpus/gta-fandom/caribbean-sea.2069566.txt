@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change   = SEA
+|image         = CaribbeanSea-GTAO.png
+|caption       = The Caribbean Sea in ''Grand Theft Auto Online''
+|games         = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location      = [[Atlantic Ocean (HD Universe)|Atlantic Ocean]]
+}}
+
+[[LEAD]]
+The '''{{WP|Caribbean Sea}}''' is an {{WP|Americas|American}} mediterranean sea of the [[Atlantic Ocean (HD Universe)|Atlantic Ocean]] that is mentioned in ''[[Grand Theft Auto: Vice City]]'' and appears in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+The entire area of the Caribbean Sea, the numerous islands of the West Indies, and adjacent coasts, are collectively known as the [[Caribbean]].
+
+[[SECTION:2:Places of Interest]]
+*[[Wrecks#Maritime.C2.A0wrecks|Wrecked sea, air and land vehicles]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Cayo Perico
+Seas

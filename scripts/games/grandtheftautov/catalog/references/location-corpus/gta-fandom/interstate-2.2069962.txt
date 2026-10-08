@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = INTERSTATE HIGHWAY
+|name              = Interstate 2
+|image2            = Interstate 2 shield.svg
+|caption2          = Interstate 2 shield
+|image             = 
+|caption           = 
+|games             = {{Games|V=y|O=y}}
+|highway_eastend  = {{rmark|US|20}} and {{rmark|I|4}}{{rmark|US|15}} in [[East Los Santos (GTA V)|East Los Santos]]
+|highway_westend  = {{rmark|US|1}} in [[Del Perro]]
+|highway_junctions = {{rmark|SA|14}} in [[Del Perro]] (w/b)<br />
+{{rmark|SA|16}} in [[Rockford Hills]] (e/b)<br />
+{{rmark|I|5}} in [[Downtown Los Santos (GTA V)|Downtown Los Santos]]<br />
+{{rmark|I|1}} in [[Downtown Los Santos (GTA V)|Downtown Los Santos]]<br />
+|pscanner    = 
+|map         = 
+|mapcaption  = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''Interstate 2''', also known as '''I-2''' and most of the '''Del Perro Freeway''' is a freeway in {{V}} and {{O}} that runs through [[Downtown Los Santos (HD Universe)|Downtown Los Santos]] heading east. Its western terminus is at a merging off the [[Great Ocean Highway]] ([[U.S. Route 1]]) in Del Perro and goes east throughout the northern-central section of Los Santos before it later turns southwards and ends at the intersection of the [[Interstate 4]]/[[U.S. Route 15]], where it continues as [[U.S. Route 20]].
+
+The highway never serves less than six lanes in total and is one of the largest highways in the ''[[Grand Theft Auto]]'' series by max lanes. The highway is eight lanes without lane merges at its greatest.
+
+[[CATEGORIES]]
+Interstates
+Structures in GTA Online in San Andreas
+Structures in GTA V in San Andreas

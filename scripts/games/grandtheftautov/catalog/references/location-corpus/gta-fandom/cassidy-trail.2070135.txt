@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=CassidyTrail-Street-GTAV.jpg
+|caption=
+|games=''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|start=[[Raton Pass]]
+|end=[[Calafia Road]]
+|map=<gallery>
+CassidyTrail-GTAV-Map.png|Map
+CassidyTrail-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Cassidy Trail''' is a long rural [[List of Street Names|road]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in the [[Raton Canyon]], [[Blaine County]]. It runs from [[Raton Pass]] in the west to [[Calafia Road]] in the east, near the [[Calafia Bridge]].
+
+{{clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=ChianskiPassage-Street-GTAV.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Union Road]]
+|end=[[Humane Labs and Research]]
+|map=<gallery>
+ChianskiPassage-GTAV-Map.png|Map
+ChianskiPassage-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Chianski Passage''' is a two-way road in {{V}} and {{O}}, located in [[Blaine County]] that begins at [[Union Road]] and ends at the entrance to the [[Humane Labs and Research]].
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

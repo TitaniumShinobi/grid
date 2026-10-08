@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = FlyLo FM
+|logo         = FlyLoFM-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{Games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Vespucci Beach]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = ''A mix to carry you through the Los Santos freeways at top speed.''
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Continuous mix radio stations|Continuous mix radio station]]
+|genre        = [[:Category:Hip hop radio stations|Hip hop]]
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 
+|host         = 
+*[[Flying Lotus]]
+*[[Tierra Whack]] <small>([[GTA Online: The Cayo Perico Heist]]; guest)</small>
+|product      = 
+|radio_tracks = 
+*21 <small>(''GTA V'' and ''GTA Online''; original versions)</small>
+*36 <small>(''GTA V''; [[Grand Theft Auto V: Enhanced Edition|enhanced version]])</small>
+*58 <small>(''GTA Online''; enhanced version)</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+'''FlyLo FM''' is a [[Radio Stations in GTA V|radio station]] featured in {{V}} and {{O}} that plays alternative hip-hop and dance music.
+
+[[CATEGORIES]]
+Continuous mix radio stations
+Dance radio stations
+Electronic radio stations
+Hip hop radio stations
+Media in GTA Online
+Media in GTA V

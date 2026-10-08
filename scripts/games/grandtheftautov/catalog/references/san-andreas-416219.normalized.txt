@@ -1,0 +1,8 @@
+[Information]
+The only area of San Andreas that is playable in GTA V is Los Santos and Blaine County. However, this area is obviously not representative of all the state.
+
+[Southern San Andreas]
+[Southern San Andreas / Los Santos County]
+Los Santos, City of Davis, Chumash
+[Southern San Andreas / Blaine County]
+Grapeseed, Harmony, North Chumash, Paleto Bay, Sandy Shores

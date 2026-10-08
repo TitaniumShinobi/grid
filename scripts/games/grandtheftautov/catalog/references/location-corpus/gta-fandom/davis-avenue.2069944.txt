@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox structure
+|image      = DavisAvenue-Street-GTAV.jpg
+|caption    = '''Davis Avenue''' in [[Strawberry]].
+|games={{Games|V=y|O=y}}
+|start      = [[Capital Boulevard]], [[Davis]]
+|end        = [[New Empire Way]], [[Los Santos International Airport (HD Universe)|LSIA]]
+|map=<gallery>
+DavisAvenue-GTAV-Map.png|Map
+DavisAvenue-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Davis Avenue''' is a [[List of Street Names|street]] in [[Los Santos (HD Universe)|Los Santos]] featured in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Beacon Theatre]]
+*[[Central Los Santos Medical Center]]
+*[[City of Davis Public Library]]
+*[[Davis Courts Building]]
+*[[Davis Mega Mall]]
+*[[Davis Plaza]]
+*[[Strawberry Mortuary]]
+
+[[SECTION:2:Businesses]]
+*[[Bad Day Goods]]
+*[[Bishop's Chicken]] <small>(corner of Macdonald Street)</small>
+*[[Click Lovers]]
+*Deep Pile Nation <small>(corner of Capital Boulevard)</small>
+*[[Discount Carpet Center]] <small>(corner of Capital Boulevard)</small>
+*[[Fowl Mouthed]]
+*[[Hearty Taco]]
+*[[Liquor Deli]]
+*[[LTD Gasoline]] <small>(corner of Grove Street)</small>
+*[[Mom's Famous Tacos]] <small>(corner of Innocence Boulevard)</small>
+*[[Mosley Auto Service]]
+*[[Panache Laundering]] <small>(corner of Capital Boulevard)</small>
+*[[Porn Crackers]]
+*[[RON]] <small>(corner of Macdonald Street)</small>
+*[[She Nails Surprise Facial]]
+*[[Sheet Yourself Laundromat]]
+*[[Zany-Z's]]
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

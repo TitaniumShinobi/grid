@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = insurance
+|name          = Mors Mutual Insurance
+|sign          = MorsMutual-Logo-GTAV.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Dorset Drive]] and [[Mad Wayne Thunder Drive]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Pillbox Hill Garage]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = Health and automotive insurance company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = ''We expect the unexpected.''
+|bawsaq        = 
+|lcn           = {{BAWSAQ/Slider}} '''MOR'''
+|status        = active
+}}
+
+[[LEAD]]
+'''Mors Mutual Insurance''' is an health and automotive insurance company that appears in {{VO}}.
+
+[[SECTION:3:Location Influences]]
+*Mors Mutual's headquarters in [[Rockford Hills]] is based on {{URL|https://maps.app.goo.gl/7DgrimdUwTQEAQZS6|9701 Wilshire Boulevard}} in {{WP|Beverly Hills, California}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Features in GTA Online
+Insurance companies

@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 634 Boulevard Del Perro
+|image = Dynasty8-GTAV-LowEnd-Image-634BlvdDelPerro.png
+|caption = The garage as it appears on ''[[Dynasty 8]]''.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end garage
+|garage = 2 vehicles <br> 1 bike
+|price = [[Money|$]]33,500
+|occupants = {{GTAOP}} <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''634 Boulevard Del Perro''' is a [[Garages in GTA Online|purchasable garage]] in ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Property Information]]
+The garage is located behind the [[Noodle Exchange]] restaurant on [[Boulevard Del Perro]] in [[Rockford Hills]], and is accessed by an alley adjacent to the restaurant.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]33,500 and can store 2 [[Personal Vehicles]] and one [[Pedal and Metal Cycles|Bicycle]].
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

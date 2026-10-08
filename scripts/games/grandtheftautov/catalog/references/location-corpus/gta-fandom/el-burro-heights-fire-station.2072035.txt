@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = firestation
+|image          = ElBurroHeightsFireStation-GTAV-FullView.png
+|caption        = Full view of the fire station.
+|games          = {{Games|V=y|O=y}}
+|location       = [[Capital Boulevard]], [[El Burro Heights]]
+|accessible     = Yes
+|status         = active
+}}
+
+[[LEAD]]
+'''El Burro Heights Fire Station''' is the [[Los Santos Fire Department|LSFD]] station number 7, and serves the [[East Los Santos (HD Universe)|East Los Santos]] area in {{V}} and {{O}}.
+
+[[SECTION:3:Interior]]
+<gallery position="center" widths="270px" spacing="small">
+El_Burro_Heights_Fire_Station_No_7_GTAV_Interior_View.jpg|Interior.
+ElBurroHeightsFireStation-GTAV-FireTruck.png|[[Fire Truck (HD Universe)|Fire Truck]] inside the station.
+ElBurroHeightsFireStation-GTAV-FirePole.png|Fire pole.
+</gallery>
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Fire stations

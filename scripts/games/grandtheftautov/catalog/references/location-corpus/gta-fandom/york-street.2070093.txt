@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = YorkStreet-GTAVee.jpg
+|caption = The street, as seen from [[Mirror Park Boulevard]].
+|games = {{Games|V=y|O=y}}
+|start = [[Mirror Park Boulevard]]
+|end = [[Bridge Street]]
+|map = <gallery>
+YorkStreet-GTAV-Map.png|Map
+YorkStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''York Street''' is a short residential street in [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[BJ's Market]] <small>(corner of Mirror Park Boulevard)</small>
+*Laundromat <small>(corner of Mirror Park Boulevard)</small>
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

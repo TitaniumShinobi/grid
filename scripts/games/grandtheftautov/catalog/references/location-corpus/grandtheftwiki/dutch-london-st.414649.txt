@@ -1,0 +1,44 @@
+[[LEAD]]
+'''Dutch London St''' is a street in southern [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street runs from [[La Puerta]] in the east to [[Rancho]] in the west, going through [[Maze Bank Arena]] and [[Banning]]. The street is a continuation of [[Calais Ave]] and runs into [[El Rancho Blvd]] as the road enters [[Cypress Flats]]. The street has connections to [[Autopia Pkwy]], [[Carson Ave]], [[Davis Ave]], [[Greenwich Pkwy]], [[Jamestown St]], [[La Puerta Fwy]], [[Roy Lowenstein Blvd]], [[Shank St]], [[Signal St]], [[South Arsenal St]], and [[South Rockford Dr]].
+
+[[SECTION:2:Businesses and locations]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Avalon Laundry & Dry Cleaners]]
+| [[Rancho]]
+| 
+| Laundromat
+|-
+| [[Diego's]]
+| [[Davis]]
+| [[Roy Lowenstein Blvd]]
+| Garage
+|-
+| [[Hearty Taco]]
+| [[Rancho]]
+| [[Roy Lowenstein Blvd]]
+| Food and drink
+|-
+| data-sort-value="Los Santos State Gas Company, The"| [[The Los Santos State Gas Company]]
+| [[Banning]]/[[Rancho]]/[[Cypress Flats]]
+| 
+| Energy and fuel
+|-
+| [[South LS Liquor]]
+| [[Rancho]]
+| [[Carson Ave]]
+| Food and drink
+|-
+| [[Tony's Carpets]]
+| [[Rancho]]
+| 
+| Furniture
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

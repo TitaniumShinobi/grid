@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Vespucci Book Store
+|image       = VespucciBookStore-GTAV.jpg
+|type        = Bookshop
+|games       = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations   = [[Bay City Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Vespucci Book Store''' is a bookshop in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

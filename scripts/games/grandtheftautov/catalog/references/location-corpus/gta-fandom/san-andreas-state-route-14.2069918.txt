@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = HIGHWAY
+|name              = State Route 14
+|number            = 14
+|caption2          = State Route 14 shield
+|image             = 
+|caption           = 
+|games             = {{Games|V=y|O=y}}
+|highway_northend  = {{rmark|US|11}} in [[Richman Glen]]
+|highway_southend  = {{rmark|SA|22}} in [[Little Seoul]]
+|highway_junctions = {{rmark|I|2}} in [[Del Perro]] <br />
+{{rmark|SA|17}} in [[Morningwood]] <br />
+{{rmark|SA|18}} in Morningwood
+|pscanner    = 
+|map         = 
+|mapcaption  = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''San Andreas State Route 14''' is a north-south urban [[Numbered Highway in San Andreas]]. It was revealed as a highway on the leaked {{V}} map{{Citation needed}}, but is completely unsigned in the game. Since there is no exact route path on the leaked map, it's presumed to connect [[San Andreas State Route 22]] and [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], through high-end western Los Santos area communities, with [[U.S. Route 11]] and the [[Tongva Valley]].
+
+[[SECTION:2:Route description]]
+Route 14 is a four-lane major road almost all of its length. From the south, it begins as [[North Rockford Drive]], at an intersection with Calais Avenue and [[Dutch London St]] (the western end of [[San Andreas State Route 22]]) in [[Little Seoul]]. It bypasses the [[Vespucci Canals]], heading toward an intersection with [[Interstate 2]] and a parking garage. It continues through [[Del Perro]], where its city hall and the [[Los Santos Transit|Del Perro Metro station]] are lined up. The west end of [[San Andreas State Route 17]] intersects here as well.
+
+It goes along the edges of [[Morningwood]] (while connecting with [[San Andreas State Route 18]]) and [[Richman (HD Universe)|Richman]] as it heads off into the hills, becoming [[Tongva Drive]]. The main entrance to the [[Kortz Center]], and [[University of San Andreas, Los Santos]] campus can be accessed from an intersection in this area. It narrows down as it passes through [[Richman Glen]] as a two lane road. The northern terminus of Route 14 is the intersection of [[Banham Canyon Drive]]; an LTD gas station sits at this intersection as the last sign of civilization for a while. Tongva Drive continues north as rural [[Route 11]].
+
+[[CATEGORIES]]
+Highways

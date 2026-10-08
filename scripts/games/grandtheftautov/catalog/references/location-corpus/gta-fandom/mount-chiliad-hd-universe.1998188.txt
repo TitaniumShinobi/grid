@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox location
+|type = mountain
+|name = Mount Chiliad
+|image = MountChiliad-GTAV.png
+|caption =
+|games = {{Games|V=y|O=y}}
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|height = 2,744m {{Ref|name = overlooksign|type = texture|date = 07/21/2024|ref = <code>cs4_11_overlookasign.ydr</code>|image = MountChiliad-GTAV-SilentProbeMountainSign.png|caption = Overlook sign texture in [[Beam Me Up|Silent Probe Mountain]].}}
+|map             = <gallery>
+MountChiliad-IngameGPS-GTAV-Map.png|Mount Chiliad
+MountChiliad-IngameGPS-GTAV-BlaineCountyMap.jpg|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS). <font color="blue">Galilee</font> is considered part of Mount Chiliad.
+|pscanner       = PoliceScanner-GTAV-Neighborhood-MountChiliad.ogg
+}}
+
+[[LEAD]]
+'''Mount Chiliad''' is one of three named mountains in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', the others being [[Mount Josiah]] and [[Mount Gordo]]. Mount Chiliad is the tallest peak in the state.
+
+[[SECTION:2:Location]]
+Located far to the north, in the [[Chiliad Mountain State Wilderness]], it serves as the tallest mountain in the game at 2774m {{Ref|name = overlooksign}} above sea level. Two small towns sit at its base. [[Grapeseed]] can be found to the southeast, and [[Paleto Bay]] to the northwest.
+
+[[SECTION:2:Points of Interest]]
+[[File:MountChiliad-GTAV-Map.jpg|thumb|250px|The strange mural inside the tramway.]]
+At the base and peak is an [[Cablecar|aerial tramway]] station to facilitate travel (however, the tramway is not available in ''GTA Online''). There is also a hiking trail marked on the map that runs down the east side of the mountain.
+
+At the peak of the mountain is a small wooden observation deck. Two stationary [[Telescope|telescopes]] can be found on the deck, which cost [[Money|$]]1 each per use. In addition, two [[Sanchez|dirt bikes]] are parked at the peak of the mountain near the observation decks. There is also a derelict wooden ramp near the Gondola station that can be used to drive off the edge.
+
+Inside the cable car station is a cryptic drawing on a wall that depicts what appears to be the mountain and various symbols. There appears to be two sealed doors leading to a cable car station room directly adjacent to the mysterious drawing. The meaning of this drawing relates to petroglyphs that can be found on the side of the mountain in relation to UFOs. Many players have noted that one part of the mural appears to depict a jetpack which is used to escape the launch facility during a ''GTA Online'' mission in the region. This same drawing can be seen on one of the murals inside of the [[Mount Chiliad Launch Facility]], a secret facility that contains a lab and is capable of launching missiles, during the ''GTA Online'' mission.{{Ref|name = launchfacilitymural|type = texture|date = 07/15/2020|ref = Mural artwork seen inside the [[Mount Chiliad Launch Facility]].|image = MtChiliadLaunchFacility-GTAO-MuralArts.png}} The inclusion of this drawing on the mural suggests that the US government is somehow involved with the mystery of the UFOs. An [[Aliens#Appearances_in_Grand_Theft_Auto_Online|egg]] is also visible which also has a related mission in ''GTA Online'' in [[GTA Online: Smuggler's Run|Smuggler's Run]], and can be found underwater in [[Cayo Perico]].
+
+The message ''"COME BACK WHEN YOUR STORY IS COMPLETE"'' is written on the back of the observation deck. Under the observation deck, there is a large red eye on the mountain itself, resembling the eye from the cable car station drawing.  This is later revealed by the clues on the mountain to be related to the hidden UFO sighting.  The same eye can also be seen at the [[Beam Me Up]] site in [[Sandy Shores]], along with a drawing of a rain cloud.  The mural leads to petroglyphs which can be found on the side of the mountain to unlock the mystery of the mural.  These glyphs like the ones at the other sites are likely to inform the player that the weather must be stormy during night in order to see the UFO above the mountain after completing 100% of the story mode.
+
+[[SECTION:2:Known Roads and Streets]]
+*[[North Calafia Way]]
+*[[Senora Freeway]]
+
+[[SECTION:2:Businesses]]
+*[[24/7 (HD Universe)|24/7]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Mountains
+Neighborhoods
+Zones

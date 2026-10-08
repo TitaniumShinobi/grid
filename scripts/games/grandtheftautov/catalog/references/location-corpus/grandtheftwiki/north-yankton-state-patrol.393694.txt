@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox gang
+|image = 
+|size = 
+|caption = 
+|game = Grand Theft Auto V
+|locations = State of [[North Yankton]]
+|leader = Unknown
+|type = Law Enforcement agency
+|header = Law Enforcement Agency
+|enemies = Unknown
+|affiliations = Unknown
+|cars = [[Albany]] [[Esperanto]]<br />[[Declasse]] [[Rancher XL]]
+|weapons = [[Pistol]], [[Pump Shotgun]], [[SMG]]
+|businesses = Law Enforcement
+|members = [[Dave Norton]] <small>(until 2004)</small>
+}}
+
+[[LEAD]]
+The '''North Yankton State Patrol''' is the State Law Enforcement of North Yankton that only appear in the [[Prologue (GTA V)|Prologue]] where many of them were killed in a shootout with [[Trevor Philips]], [[Michael De Santa|Michael Townley]], and [[Bradley Snider]].
+
+[[CATEGORIES]]
+Police Departments

@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 0184 Milton Road
+|image = 0184MiltonRoad-GTAO.jpg
+|caption = General view of the apartment building.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Medium-end apartment
+|garage = 6 vehicles <br /> 2 bikes
+|price = $146,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5
+|location= [[Milton Road]], [[West Vinewood]]
+}}
+
+[[LEAD]]
+'''0184 Milton Road''' is a [[Safehouses in GTA Online|safehouse]] located on [[Milton Road]] in [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]] featured in ''[[Grand Theft Auto Online]].''
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]146,000 and includes a 6-car garage.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online

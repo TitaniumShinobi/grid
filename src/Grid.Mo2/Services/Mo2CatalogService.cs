@@ -1,4 +1,4 @@
-using System.Collections.Immutable;
+﻿using System.Collections.Immutable;
 using System.Security.Cryptography;
 using System.Text;
 using Grid.Core.Application;
@@ -365,7 +365,8 @@ public sealed class Mo2CatalogService(
             null,
             default,
             observed.Observation with { Environment = environment, ToolOutputs = toolOutputs?.Summary },
-            toolOutputs?.Outputs ?? []);
+            toolOutputs?.Outputs ?? [],
+            ProfileOrigin.ModOrganizer2);
     }
 
     private static Mo2ProfileSnapshot AttachInventory(

@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Hi-men
+|image = Hi-men-GTAV-RoyLowensteinBlvd-exterior.jpg
+|size = 350px
+|caption = The exterior from the [[PlayStation 4]] release of [[Grand Theft Auto V|GTA V]].
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = Bar/Nightclub
+|owner = 
+|location = [[Roy Lowenstein Blvd]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = Friend activities
+|employee = 
+}}
+
+[[LEAD]]
+'''Hi-men''' is a nightclub and bar located on [[Roy Lowenstein Blvd]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The player, as any of the three protagonists, can take a friend [[drinking]] to the bar, which will result in both characters becoming drunk. Three bank foreclosure notices can be found on the side of the building. Despite this, the player will still hear muffled music coming from inside the club.
+
+[[CATEGORIES]]
+Bars
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Nightclubs

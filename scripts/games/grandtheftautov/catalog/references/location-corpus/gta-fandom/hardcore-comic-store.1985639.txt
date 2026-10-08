@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Hardcore Comic Store
+|image = HardcoreComicStore-GTAV.png
+|caption = Hardcore Comic Store
+|locations = [[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Hardcore Comic Store''' is an unenterable comic store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is located on [[Eclipse Boulevard]] in [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]], next to Specs Pest and Surface.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Stores

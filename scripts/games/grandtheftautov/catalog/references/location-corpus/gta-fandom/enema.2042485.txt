@@ -1,0 +1,64 @@
+[[INFOBOX]]
+{{Infobox business
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|type = fashion
+|name = Enema
+|aka = Enema Los Santos <small>(in [[Los Santos (HD Universe)|Los Santos]])</small>
+|taglines = 
+|reference = 
+|locations = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Leftwood]], [[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|accessible = No
+|status = active 
+|products = 
+|bawsaq = 
+|founded = 1922
+|image = Enema-GTAV-Logo-Texture.png
+|oldlogo = Enema-Logo.png
+|darklogo = y
+|caption = The logo.
+|image_size = 300
+|games = {{games|IV=y|EFLC=y|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Enema''' (also known as '''Enema Los Santos''') is a high-end fashion brand appearing in ''[[Grand Theft Auto IV]]'', ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:3:Locations]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'']]
+*The Enema store on [[Manzano Road]] in [[Leftwood]], [[State of Alderney|Alderney]], is seemingly a rendition of {{URL|https://www.propertyshark.com/mason/Property/1910903/3-W-Railroad-Ave-Tenafly-NJ-07670/|3 West Railroad Avenue}} in {{WP|Tenafly, New Jersey}}.
+
+[[SECTION:4:''Grand Theft Auto V'' and ''Online]]
+*The branch on Rockford Drive is modeled after a {{WP|Dolce & Gabbana}} location at 312 North {{WP|Rodeo Drive}}. Dolce & Gabbana is primarily represented in game as [[Gutter & Blood]], which occupies a store next door, also on Rockford Drive. This specific in-game Gutter & Blood store is modeled after a nearby Prada location at 343 North Rodeo Drive, with the swapped positions of these brands in relation to their real-life counterparts likely being intentional.
+
+{{clr}}
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+Enema-GTAIV-Leftwood-DaylightFront.png|[[Manzano Road]], [[Leftwood]], [[State of Alderney|Alderney]] ([[:File:Enema-GTAIV-Leftwood-NightFront.png|night view]]).
+Enema-GTAIV-MiddleParkEast-DaylightFront.png|[[East Tower]], [[Columbus Avenue]], [[Middle Park East]], [[Algonquin]] ([[:File:Enema-GTAIV-MiddleParkEast-NightFront.png|night view]]).
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+<gallery position="center" spacing="small" widths="270px">
+Enema-GTAV.png|[[Rockford Drive]], [[Rockford Hills]] ([[:File:Enema-GTAV-NightFront.png|night view]]).
+TheArchipelago-GTAVe-EnemaStorefront.png|[[The Archipelago]], [[South Boulevard Del Perro]], Rockford Hills.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

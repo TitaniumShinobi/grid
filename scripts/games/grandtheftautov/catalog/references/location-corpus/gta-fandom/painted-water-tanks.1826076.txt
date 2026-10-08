@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Painted Water Tanks
+|image = PaintedWaterTanks-GTAVe.png
+|caption = Overview of the tanks.
+|games = {{Games|V=y|O=y}}
+|location = [[Calafia Road]], [[Alamo Sea]], [[Blaine County]]
+|file_name = <code>cs3_08f_watertank</code>
+}}
+
+[[LEAD]]
+The unnamed '''Painted Water Tanks''' is a location in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County
+Water supply structures

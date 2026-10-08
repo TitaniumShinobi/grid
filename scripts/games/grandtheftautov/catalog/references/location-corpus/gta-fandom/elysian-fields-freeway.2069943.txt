@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = HIGHWAY
+|name              = Route 20
+|number            = 20
+|caption2          = Route 20 shield
+|image             = 
+|caption           = 
+|games             = {{Games|V=y|O=y}}
+|highway_westend  = {{rmark|I|5}} at [[Elysian Island]]
+|highway_eastend  = {{rmark|I|2}} and {{rmark|I|4}}{{rmark|US|15}} in [[Murrieta Heights]]
+|highway_junctions = {{rmark|SA|17}} and {{rmark|SA|18}} in [[El Burro Heights]]
+|pscanner    = 
+|map         = 
+|mapcaption  = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+|altnames    = Elysian Fields Freeway
+}}
+
+[[LEAD]]
+'''Elysian Fields Freeway''' ('''U.S. Route 20'''), is a freeway located in [[East Los Santos (HD Universe)|East Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]. It is part of the in-game [[Numbered Highways in GTA V|highway system]].
+
+[[SECTION:2:Route Description]]
+The Elysian Fields Freeway is an east-west highway in southern Los Santos that serves as a freeway bypass of [[San Andreas State Route 22]] through the [[Port of Los Santos]]. Its carried by [[Elysian Freeway Bridge]] and is a major connector between [[East Los Santos (HD Universe)|East Los Santos]] and [[Los Santos International Airport (HD Universe)|LSIA]].
+
+From the west, The four-lane elevated freeway continues from the [[La Puerta Freeway]] at an off-ramp into the [[Port of Los Santos|Port]]. As soon as it touches ground after the Desmond Bridge, it hooks north along the [[Murrieta Oil Field]], and crosses [[El Rancho Boulevard]] at the intersection of San Andreas state routes [[San Andreas State Route 17|17]] and [[San Andreas State Route 18|18]]. It becomes a proper freeway at this point (widening up to six or eight lanes) as it reaches the the intersection of the [[Interstate 4]]/[[U.S. Route 15]]. From there it continues as the [[Del Perro Freeway]] (Interstate 2).
+
+[[CATEGORIES]]
+Freeways
+Highways

@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = liquorstore
+|name           = Scoops Liquor Barn
+|sign           = Scoops logo GTA V.png
+|image          = ScoopsLiquorBarn-GTAOee-GrandSenoraDesert.jpg
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[U.S. Route 68]], [[Grand Senora Desert]], [[Blaine County]]
+|products       = 
+|taglines       = 
+|status         = active
+|employees      = 
+|structure_type = 
+|architecture   = 
+|phone          = 
+|accessible     = Yes
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Scoops Liquor Barn''' is a liquor store in {{V}} and {{O}}, located in [[Blaine County]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Liquor stores

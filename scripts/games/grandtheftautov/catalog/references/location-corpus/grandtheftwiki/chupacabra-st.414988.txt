@@ -1,0 +1,39 @@
+[[LEAD]]
+'''Chupacabra St''' is a street on [[Elysian Island]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to [[Chum St]] and [[Plaice Pl]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Jetsam]]
+| [[Elysian Island]]
+| [[Plaice Pl]]
+| Haulage
+|-
+| [[Merryweather Security Consulting]]
+| [[Elysian Island]]
+| [[Chum St]]
+| Security
+|-
+| [[Pacific Bait]]
+| [[Elysian Island]]
+|
+| Fishing
+|-
+| [[Pier 400]]
+| [[Elysian Island]]
+|
+| Port
+|-
+| [[RON]] (<small>storage</small>)
+| [[Elysian Island]]
+| [[Chum St]]
+| Energy and fuel
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

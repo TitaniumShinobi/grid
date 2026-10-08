@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Rockford Dorset Hotel
+|image = RockfordDorsetHotel-GTAV.png
+|caption = The hotel during daytime.
+|type = Hotel
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Dorset Drive]] and [[Palomino Avenue]], [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+The '''Rockford Dorset Hotel''' is a luxury hotel that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hotels

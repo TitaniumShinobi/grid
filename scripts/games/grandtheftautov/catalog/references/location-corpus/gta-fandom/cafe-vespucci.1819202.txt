@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = cafe
+|name           = Cafe Vespucci
+|sign           = 
+|image          = CafeVespucci-GTAV.png
+|caption        = View of the building from Morningwood Boulevard.
+|image2         = 
+|caption2       = 
+|aka            = 
+|games          = {{games|V=y|O=y}}
+|location       = [[Cougar Avenue]] and [[Morningwood Boulevard]], [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]]
+|taglines       = 
+|structure_type = 
+|architecture   = [[:Category:Moorish buildings|Moorish]]
+|floors         = 
+|accessible     = No
+|file_name      = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Cafe Vespucci''' is a café in {{V}} and {{O}}, located in [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Cafés

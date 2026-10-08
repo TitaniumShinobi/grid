@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = DAZL
+|image         = DAZL-GTAO-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mp2024_02}}}} 
+|mentioned     = 
+|business_type = Vehicle lighting manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|weapons       = 
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''DAZL''' is a vehicle lighting manufacturer appearing in {{O}} as part of the [[GTA Online: Agents of Sabotage|Agents of Sabotage]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Agents of Sabotage
+Vehicle parts manufacturers

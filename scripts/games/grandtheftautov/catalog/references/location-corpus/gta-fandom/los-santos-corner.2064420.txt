@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = shoppingcenter
+|name           = Los Santos Corner
+|image          = LosSantosCorner-GTAVee.png
+|caption        =
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Hawick Avenue]] & [[Las Lagunas Boulevard]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|businesses     = 
+*Airbrush Tanning
+*Cash Advance Loans
+*Cell Phones Sales and Repair
+*[[Discount Kitchen Supplies]]
+*Kushy Farmacy
+*[[Nail Bar & Spa]]
+*[[Sunset Bleach]]
+*Tax Lawyers
+|floors         = 2
+|map            =
+|map_caption    =
+|accessible     = No
+|file_name      = <code>ss1_05_build3_b.ydr</code>
+}}
+
+[[LEAD]]
+'''Los Santos Corner''' is a commercial building in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*Airbrush Tanning
+*Cash Advance Loans
+*Cell Phones Sales and Repair
+*[[Discount Kitchen Supplies]]
+*Kushy Farmacy
+*[[Nail Bar & Spa]]
+*[[Sunset Bleach]]
+*Tax Lawyers
+
+{{Clear}}
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Shopping malls

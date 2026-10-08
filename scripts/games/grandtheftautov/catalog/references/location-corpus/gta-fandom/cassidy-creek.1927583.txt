@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = CassidyCreek-GTAV.png
+|caption = Cassidy Creek, looking east.
+|games = {{Games|V=y|O=y}}
+|river = y
+|pscanner       = PoliceScanner-GTAVe-CassidyCreek.ogg
+|location = [[Raton Canyon]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = <gallery>
+CassidyCreek-GTAV-IngameGPS-Map.png|Cassidy Creek
+CassidyCreek-GTAV-IngameGPS-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Cassidy Creek''' is a large creek featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[Raton Canyon]], [[Blaine County]]. It runs from the [[Alamo Sea]] to the [[Pacific Ocean]] through Raton Canyon. It features multiple rapids and waterfalls. The banks of the creek are heavily forested by giant sequoia trees toward its western end, and features paths popular with hikers.
+
+There are four bridges crossing the creek, one of which is a [[Raton Canyon Bridge|train bridge]]. The three largest bridges are part of the [[Under the Bridge]] Challenge.
+
+[[CATEGORIES]]
+Neighborhoods
+Waterways
+Zones

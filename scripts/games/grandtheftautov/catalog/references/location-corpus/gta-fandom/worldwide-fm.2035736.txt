@@ -1,0 +1,59 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = darklogo
+|type         = radiostation
+|name         = WorldWide FM
+|logo         = WorldwideFM-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = ''Gilles Peterson brings beats from around the world to Los Santos.''
+|bawsaq       = 
+|lcn          = {{BAWSAQ/Slider}} '''WFM'''
+|status       = active
+|media_type   = [[:Category:Continuous mix radio stations|Continuous mix radio station]]
+|genre        = [[:Category:World radio stations|World]]
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 
+|host         = [[Gilles Peterson]]
+|product      = 
+|radio_tracks = 
+*19 <small>(''GTA V'' and ''GTA Online''; original version)</small>
+*38 <small>(''GTA V''; [[Grand Theft Auto V: Enhanced Edition|enhanced version]])</small>
+*79 <small>(''GTA Online''; enhanced version)</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+'''WorldWide FM''' is a [[Radio Stations in GTA V|radio station]] featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that plays world music and jazz.
+
+[[SECTION:3:Radio station]]
+*[[La Spada]]
+*[[Al Dente's]] ([[Vespucci Beach]] and [[Vespucci Canals]] branches)
+*[[Devin Weston's Mansion]] at night
+*[[Del Perro Plaza (restaurant)|Del Perro Plaza]]
+*[[The Fish Net]] ([[Del Perro]] branch)
+*[[LTD Gasoline]] ([[Little Seoul]] branch)
+*The Rockpool
+*[[Les Bianco]] ([[West Vinewood]] and [[Del Perro]] branches)
+*[[Prawn Vivant]]
+*[[Ring of Fire Chili House]]
+
+[[CATEGORIES]]
+Continuous mix radio stations
+Jazz radio stations
+Media in GTA Online
+Media in GTA V
+World radio stations

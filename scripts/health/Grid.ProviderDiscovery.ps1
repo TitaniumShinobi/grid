@@ -1,4 +1,4 @@
-#requires -Version 5.1
+﻿#requires -Version 5.1
 Set-StrictMode -Version Latest
 
 function ConvertFrom-GridProviderKeyValueText {
@@ -86,13 +86,13 @@ function Get-GridSteamGameCandidates {
     foreach($library in $libraries){foreach($entry in $definitions){
         $appId=[string]$entry.app.appId;$manifestPath=Join-Path $library "steamapps\appmanifest_$appId.acf";if(-not(Test-Path -LiteralPath $manifestPath -PathType Leaf)){continue}
         $manifest=ConvertFrom-GridProviderKeyValueText -LiteralPath $manifestPath
-        if(-not$manifest.ContainsKey('appid')-or[string]$manifest.appid-cne$appId-or-not$manifest.ContainsKey('installdir')){$items+=[pscustomobject]@{providerId='steam';gameId=[string]$entry.game.gameId;edition=[string]$entry.app.edition;status='InvalidManifest';appId=$appId;manifestPath=$manifestPath;installRoot=$null;profiles=@();changedExternalState=$false};continue}
+        if(-not$manifest.ContainsKey('appid')-or[string]$manifest.appid-cne$appId-or-not$manifest.ContainsKey('installdir')){$items+=[pscustomobject]@{providerId='steam';gameId=if($entry.app.gameId){[string]$entry.app.gameId}else{[string]$entry.game.gameId};edition=[string]$entry.app.edition;status='InvalidManifest';appId=$appId;manifestPath=$manifestPath;installRoot=$null;profiles=@();changedExternalState=$false};continue}
         $commonRoot = Join-Path $library 'steamapps\common'
         $install = [IO.Path]::GetFullPath((Join-Path $commonRoot ([string]$manifest['installdir'])))
         $required = @($entry.app.requiredFiles | ForEach-Object { Join-Path $install ([string]$_) })
         $conflicts = @($entry.app.conflictingFiles | ForEach-Object { Join-Path $install ([string]$_) })
         $missing=@($required|Where-Object{-not(Test-Path -LiteralPath $_ -PathType Leaf)});$present=@($conflicts|Where-Object{Test-Path -LiteralPath $_ -PathType Leaf});$status=if(-not(Test-Path -LiteralPath $install -PathType Container)){'InstallRootMissing'}elseif($missing.Count){'RequiredFilesMissing'}elseif($present.Count){'EditionAmbiguous'}else{'Verified'}
-        $items+=[pscustomobject][ordered]@{schemaVersion=1;candidateKind='GameInstallation';providerId='steam';gameId=[string]$entry.game.gameId;gameDisplayName=[string]$entry.game.displayName;edition=[string]$entry.app.edition;status=$status;appId=$appId;manifestPath=$manifestPath;installRoot=$install;executablePath=if($required.Count){$required[0]}else{$null};profiles=@();missingRequiredFiles=$missing;conflictingFiles=$present;changedExternalState=$false}
+        $items+=[pscustomobject][ordered]@{schemaVersion=1;candidateKind='GameInstallation';providerId='steam';gameId=if($entry.app.gameId){[string]$entry.app.gameId}else{[string]$entry.game.gameId};gameDisplayName=[string]$entry.game.displayName;edition=[string]$entry.app.edition;status=$status;appId=$appId;manifestPath=$manifestPath;installRoot=$install;executablePath=if($required.Count){$required[0]}else{$null};profiles=@();missingRequiredFiles=$missing;conflictingFiles=$present;changedExternalState=$false}
     }}
     [pscustomobject]@{schemaVersion=1;providerId='steam';status=if(-not$clients.Count){'ProviderNotFound'}elseif(@($items|Where-Object status -eq 'Verified').Count){'CandidatesReadyForReview'}else{'NoVerifiedCandidates'};providerRoots=$clients;libraryRoots=$libraries;candidates=@($items);changedExternalState=$false}
 }

@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = Tamarro
+|sign          = Tamarro-GTAO-Logo.png
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mp2024_01}}}}
+|mentioned     = 
+|business_type = {{WP|Apéritif and digestif|Apéritif}}
+|founded       = 
+|founder       = 
+|divisions     = Tamarro Racing
+|products      = 
+|taglines      = 
+|status        = active
+|phone         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Tamarro''' is an [[Italy|Italian]] {{WP|Apéritif and digestif|apéritif}} brand that appears in {{O}} as part of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Online: Bottom Dollar Bounties

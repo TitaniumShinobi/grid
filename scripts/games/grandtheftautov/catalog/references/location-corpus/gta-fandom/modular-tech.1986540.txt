@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Modular Tech
+|image         = ModularTech-GTAO-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|oldlogo2      = 
+|oldcaption2   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mp2024_01}}}} 
+|mentioned     = 
+|business_type = Vehicle modifications
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|weapons       = 
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Modular Tech''' is a vehicle performance and parts company appearing in {{O}} as part of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Bottom Dollar Bounties
+Vehicle parts manufacturers

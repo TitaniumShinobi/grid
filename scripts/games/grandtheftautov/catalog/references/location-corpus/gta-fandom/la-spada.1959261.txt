@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = restaurant
+|image          = LaSpada-GTAV.png
+|caption        = General view of the restaurant.
+|games          = {{Games|V=y|O=y}}
+|location       = [[Goma Street]] and [[Aguja Street]], [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]]
+|architecture   = [[:Category:Spanish Revival buildings|Spanish Revival]]
+|business_type  = [[:Category:Italian-themed restaurants|Italian]] [[:Category:Seafood restaurants|seafood]]
+|status         = active
+}}
+
+[[LEAD]]
+'''La Spada''' is an [[Italy|Italian]] seafood restaurant in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Casual restaurants
+Italian-themed restaurants
+Seafood restaurants
+Spanish Revival buildings

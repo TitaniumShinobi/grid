@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image= ShrinkMonthly-GTAVe-Logo.png
+|caption=
+|type= Psyhcology magazine
+|games=''[[Grand Theft Auto V]]''
+|reference = {{WP|People (magazine)|Psychology Today}}
+|taglines = 
+}}
+
+[[LEAD]]
+'''''Shrink Monthly''''' is a magazine in the [[HD Universe]] that discusses various ideas, news, and advice for the world of psychology. It is featured in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Magazines
+Media

@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox location
+|name     = Humane Labs and Research
+|image    = 
+<gallery>
+HumaneLabsandResearch-GTAV.png|Aerial View
+Humane Labs & Research logo GTA V.png|Logo
+</gallery>
+|type     = facility
+|games    = {{Games|V=y|O=y}}
+|owner    = [[Merryweather Security]]
+|location = [[San Chianski Mountain Range]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner = PoliceScanner-GTAVe-Neighborhood-HumaneLabsandResearch.ogg
+|map      = 
+<gallery>
+HumaneLabsandResearch-IngameGPS-GTAV-Map.png|Humane Labs and Research
+HumaneLabsandResearch-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption    = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Humane Labs and Research''' is a chemical research company prominently featured in {{V}} and {{O}}.
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[Heist Prep: Reinforced Armor]] {{Small|([[Heist Prep: Reinforced Armor#Humane Labs|Humane Labs mission variant]] only)}}
+*[[Heist Prep: Infiltration Suits]]
+
+[[SECTION:4:A Safehouse in the Hills]]
+* Possible location of a gas leak during the [[Firefighter in GTA Online|Firefighter]] odd job.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Companies
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Research complexes
+Restricted locations
+Zones

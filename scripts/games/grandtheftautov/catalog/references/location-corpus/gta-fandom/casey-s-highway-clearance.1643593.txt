@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Casey'sClearance-GTAV.png
+|founded = [[1967]]
+|taglines =
+|type = Towing
+|games = ''[[Grand Theft Auto V]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Casey's Highway Clearance''' is a towing company featured in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Companies

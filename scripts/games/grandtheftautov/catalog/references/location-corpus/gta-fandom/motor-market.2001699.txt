@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|type          = vehiclewebsite
+|name          = Motor Market
+|sign          = 
+|image         = Motor-Market-Vehicle-Auction-Logo-GTAO.png
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpsmuggler}}}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Motor Market''' is an vehicle auction company featured in {{O}} as part of the [[GTA Online: Smuggler's Run|Smuggler's Run]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Smuggler's Run
+Vehicle dealerships

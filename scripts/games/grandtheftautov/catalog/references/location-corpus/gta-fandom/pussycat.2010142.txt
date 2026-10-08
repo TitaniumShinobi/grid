@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Adult Entertainment magazine
+|taglines = "''Entertainment For Men On The Prowl''"
+|games = {{Games|V=y|O=y|VI=y}}
+|image = Pussycat-GTAV-Logo.png
+|bleeter = [[File:Bleeter GTAVpc Generic.png|40px]] @PussycatPorn
+}}
+
+[[LEAD]]
+'''Pussycat''' is an adult entertainment magazine appearing in {{V}}, {{O}}, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Magazines
+Media

@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|mpheist4-location = y
+|image = CayoPerico-GTAO-RadioTower.png
+|caption = The Communications Tower.
+|games = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location = [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|map           = <gallery>
+CommunicationsTower-GTAO-Map.png|Communications Tower
+CommunicationsTower-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption   = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Communications Tower''' is an area in [[Cayo Perico]], [[Colombia]], introduced in [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update for ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Radio towers
+Structures in GTA Online in Cayo Perico

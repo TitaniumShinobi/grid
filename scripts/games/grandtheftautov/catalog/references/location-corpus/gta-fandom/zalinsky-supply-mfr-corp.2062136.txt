@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox_business
+|name       = Zalinsky Supply & MFR Corp.
+|sign       = ZalinskySupply&MFRCorp-GTAV-Logo.png
+|image      =
+|caption    =
+|type       = 
+|games      = {{Games|V=y|O=y}}
+|locations   = {{location|v-els}}
+|accessible = No
+}}
+
+[[LEAD]]
+'''Zalinsky Supply & MFR Corp.''' is a manufacturing supply company appearing in {{V}} and {{O}}, located in {{location|v-els}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|ZalinskySupply&MFRCorp-GTAVee-CypressFlats.jpg|[[Orchardville Avenue]] and [[Hanger Way]], [[Cypress Flats]] {{Small|([[:File: ZalinskySupply&MFRCorp-GTAVee-East.jpg|alternative view]])}}
+|ZalinskySupply&MFRCorp-GTAVee-LaMesa.jpg|[[Popular Street]], [[La Mesa]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

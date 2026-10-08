@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|type       = modshop
+|sign       = MosleyAutoService-GTAVe-Sign-texturefile.png
+|image      = 
+|name       = Mosley Auto Service
+|aka        = Moseley Auto
+|games      = {{Games|V=y|O=y}}
+|map        = MosleyAutoService-GTAVe-Map.png
+|location   = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+|status     = active
+|phone      = 555-0186
+}}
+
+[[LEAD]]
+'''Mosley Auto Service''' (also spelled '''Moseley Auto''') is an auto dealership{{Ref|name=Simeon|ref=As described by [[Simeon Yetarian|Simeon]] in [[Blow Up]]}} and service and repair shop in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Art Deco buildings
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mod shops

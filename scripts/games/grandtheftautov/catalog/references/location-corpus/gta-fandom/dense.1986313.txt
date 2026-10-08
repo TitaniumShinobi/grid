@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fashion
+|name          = Dense
+|sign          = Dense-Logo-GTAV.png
+|games         = {{games|O={{EEEV}} {{DLC|mpstunt}}}}
+|mentioned     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = [[#Merchandise|Merchandise]]
+|taglines      = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Dense''' is an [[United States of America|American]] clothing company appearing in {{O}} as part of the [[GTA Online: Cunning Stunts|Cunning Stunts]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Cunning Stunts
+Clothing in GTA Online
+Fashion brands

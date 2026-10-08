@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|type       = restaurant
+|image      = JazzDessert-GTAV-Logo.jpg
+|name       = Jazz Desserts
+|games      = {{Games|V=y|O=y}}
+|location   = Corner of [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]] and [[Meteor Street]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible = No
+}}
+
+[[LEAD]]
+'''Jazz Desserts''' is a restaurant that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Contemporary casual restaurants
+Dessert restaurants

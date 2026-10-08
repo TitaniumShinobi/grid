@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Electronics company
+|taglines = 
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|image = BAB-GTAV-Logo.png
+|bawsaq = 
+}}
+
+[[LEAD]]
+'''BAB''' is a electronics company which appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It manufactures audio speakers.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics companies

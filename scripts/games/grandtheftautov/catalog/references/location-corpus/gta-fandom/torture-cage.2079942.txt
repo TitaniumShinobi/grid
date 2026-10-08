@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|image = CayoPerico-GTAO-CartelCage.png
+|caption = The Torture Cage on Cayo Perico.
+|games = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location = West of the [[Communications Tower]] on [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|map = <gallery>
+TortureCage-GTAO-Map.png|Torture Cage
+TortureCage-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Torture Cage''' is a point of interest on [[Cayo Perico]], [[Colombia]], that appears in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online in Cayo Perico
+Points of Interest in The Cayo Perico Heist

@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Flight School
+|image     = FlightSchool-GTAV-Logo.png
+|type      = Aviation School
+|game      = {{Games|V=y|O=y}}
+|founded   = [[2004]]
+|locations = [[Los Santos International Airport (HD Universe)|Los Santos International Airport]]
+}}
+
+[[LEAD]]
+The '''Flight School''' is an activity in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Gameplay in GTA Online
+Gameplay in GTA V
+Hobbies and Pastimes
+School activities

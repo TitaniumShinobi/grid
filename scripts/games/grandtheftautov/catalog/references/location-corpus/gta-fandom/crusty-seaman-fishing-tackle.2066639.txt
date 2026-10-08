@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = CrustySeaman-GTAV-Logo.png
+|name = Crusty Seaman Fishing Tackle
+|taglines = "''Master Baiter''"
+|type = Fishing Bait & Tackle
+|games = ''[[Grand Theft Auto V]]''<br />''[[Grand Theft Auto Online]]''
+|locations = [[Del Perro Pier]]
+}}
+
+[[LEAD]]
+'''Crusty Seaman Fishing Tackle''' is a bait & tackle business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Sports stores

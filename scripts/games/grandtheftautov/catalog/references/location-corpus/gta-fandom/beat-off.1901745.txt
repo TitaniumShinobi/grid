@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = electronics
+|name          = Beat Off
+|sign          = BeatOff-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = Beat Off Headphone Technology
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Consumer headphones
+|founded       = 
+|founder       = 
+|ceo           = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Beat Off''' is a brand of [[Clothing in GTA Online#Headphones|headphones]] featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing in GTA Online
+Electronics companies

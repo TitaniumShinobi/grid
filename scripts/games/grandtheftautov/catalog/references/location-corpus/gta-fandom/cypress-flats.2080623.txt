@@ -1,0 +1,56 @@
+[[INFOBOX]]
+{{Infobox location
+|name         = Cypress Flats
+|image        = CypressFlats-GTAV.png
+|caption      = Overview of Cypress Flats.
+|games        = {{Games|V=y|O=y}}
+|type         = neighborhood
+|location     = [[East Los Santos (HD Universe)|East Los Santos]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map          = <gallery position="center">
+CypressFlats-GTAV-Map.png|Cypress Flats
+CypressFlats-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption  = Location on the map (red).
+|map2         = CypressFlats-GTAV-Satellite.png
+|map_caption2 = Satellite view of '''Cypress Flats'''.
+|pscanner       = PoliceScanner-GTAV-Neighborhood-CypressFlats.ogg
+}}
+
+[[LEAD]]
+'''Cypress Flats''' is an industrial estate in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[East Los Santos (HD Universe)|East Los Santos]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]] (with gun-range) on [[Popular Street]]
+*[[LS Car Meet]] warehouse
+*[[Raven Slaughterhouse]] on [[Orchardville Avenue]]
+
+[[SECTION:2:Roads and Streets]]
+*[[Buccaneer Way]]
+*[[Dry Dock Street]]
+*[[El Rancho Boulevard]]
+*[[Hanger Way]]
+*[[Innocence Boulevard]]
+*[[Orchardville Avenue]]
+*[[Popular Street]]
+*[[South Shambles Street]]
+
+[[SECTION:2:Businesses]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[CMC]]
+*[[Cypress Warehouses]]
+*[[Fridgit]]
+*[[Grand Banks Steel Foundry]]
+*Kennedy Sneaker Co.
+*[[The Los Santos State Gas Company]]
+*Nicholl's Liquor
+*Olson's Autos
+*[[Pißwasser Factory|Pißwasser&nbsp;Factory]]
+*Thorns
+*[[Vitreous]]
+*Zalinsky Supply & MFR Corp
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

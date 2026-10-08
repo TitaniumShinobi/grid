@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name    = Stoner Cement Works
+|image   = Stoner-Cement-Works-SCW-GTAO-Worn-Logo.png
+|founded = [[1952]]
+|type    = Cement Company
+|games   = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Joshua Road]], [[Harmony]]<br>[[Senora Road]], [[Blaine County]]
+}}
+
+[[LEAD]]
+'''Stoner Cement Works''' is a concrete company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Construction companies

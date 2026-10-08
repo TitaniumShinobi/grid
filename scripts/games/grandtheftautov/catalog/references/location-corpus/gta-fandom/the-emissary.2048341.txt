@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{infobox business
+|type          = hotel
+|image         = TheEmissary-GTAV-Logo.png
+|name          = The Emissary
+|games         = ''[[Grand Theft Auto IV]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations     =
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[San Andreas]]
+([[#Locations|See more]])
+|accessible    = No
+}}
+
+[[LEAD]]
+'''The Emissary''' is a luxury hotel chain appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+*The [[Liberty City (HD Universe)|Liberty City]] branch is based on the {{WP|Plaza Hotel}} at {{URL|https://maps.app.goo.gl/15G8Uz8KoEXQKs858|768 5th Avenue}} in {{WP|Midtown Manhattan}}, {{WP|New York City}}.
+*The [[Los Santos (HD Universe)|Los Santos]] branch is based on the {{WP|Millennium Biltmore Hotel}} at {{URL|https://maps.app.goo.gl/ZJtJwWLv1GFC81Sw7|506 South Grand Avenue}} in {{WP|Downtown Los Angeles}}, {{WP|California}}.
+
+{{Clear}}
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|TheEmissary-GTAIV.png|[[Columbus Avenue]] and [[Manganese Street]], [[Star Junction]] {{Small|([[:File:TheEmissary-GTAIV-2.png|alternative view]])}}
+}}
+{{Gallery
+|game = V
+|TheEmissary-GTAVee.jpg|[[Elgin Avenue]] and [[Vespucci Boulevard]], [[Pillbox Hill]] {{Small|([[:File:TheEmissary-GTAVee-Entrance.jpg|Vespucci Blvd. entrance]])}}
+}}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Hotel chains

@@ -1,0 +1,65 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = bank
+|name          = Fleeca
+|sign          = Fleeca-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[State of San Andreas (HD Universe)|State of San Andreas]]
+*[[Vice City (HD Universe)|Vice City]], [[State of Leonida|Leonida]]
+([[#Locations|See more]])
+|business_type = Banking and Credit Card Company
+|founded       = [[1899]]/[[1913]]
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = 
+*"''It's time to start paying for everything''"
+*"''Everything, at a price''"
+|bawsaq        = 
+|lcn           = {{BAWSAQ/Slider}} '''FLC'''
+|status        = active
+}}
+
+[[LEAD]]
+'''Fleeca''' (pronounced "FLEE-sah") is a banking and credit card company in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|Fleeca-GTAIV-Algonquin.png|[[Columbus Avenue]] and [[Barium Street]], [[The Exchange (GTA IV)|The Exchange]].
+|Fleeca-GTAIV-HellGate.png|[[Hell Gate]], [[Purgatory]].
+|Fleeca-GTAIV-FrankfortAvenue.png|[[Frankfort Avenue]], [[The Triangle]].
+|Fleeca-GTAIV-IronStreet.png|[[Iron Street]], The Triangle.
+}}
+
+{{Gallery
+|game = CW
+|Fleeca-GTACW-Algonquin.png|Columbus Avenue and Barium Street, The Exchange.
+}}
+
+{{Gallery
+|game = VO
+|Fleeca-GTAVee-PillboxHill.jpg|[[Vespucci Boulevard]], [[Legion Square]], [[Pillbox Hill]].
+|Fleeca-GTAVee-RockfordHills.jpg|[[Boulevard Del Perro]], [[Rockford Hills]].
+|Fleeca-GTAVee-Alta.jpg|[[Hawick Avenue]] and [[Meteor Street]], [[Alta]].
+|Fleeca-GTAVee-Burton.jpg|Hawick Avenue, [[Burton]].
+|Fleeca-GTAVee-VespucciCanals.jpg|[[Vespucci Mall]], [[South Rockford Drive]] and [[Palomino Avenue]], [[Vespucci Canals]]. {{Small|(not accessible)}}
+|Fleeca-GTAVee-BanhamCanyon.jpg|[[Great Ocean Highway]], [[Banham Canyon]], [[Los Santos County]].
+|Fleeca-GTAVee-Harmony.jpg|[[Route 68]], [[Harmony]], [[Blaine County]].
+}}
+
+[[CATEGORIES]]
+Banking companies
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses with radio ads
+Businesses with websites
+Credit card companies

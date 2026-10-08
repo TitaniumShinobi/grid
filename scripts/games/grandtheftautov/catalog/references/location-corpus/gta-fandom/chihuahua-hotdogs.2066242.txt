@@ -1,0 +1,60 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = fastfood
+|name          = Chihuahua Hotdogs
+|sign          = ChihuahuaHotdogs-GTAIV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[State of Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Fast-food hot dog restaurant
+|founded       = [[1982]]
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = 
+*''You can't beat our meat''
+*''Keeping it regular since '82''
+*''Sausage farming since '82''
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Chihuahua Hotdogs''' is a brand of [[Hotdog (food)|hotdogs]] featured in the {{HD}}.
+
+[[SECTION:3:Location Influences]]
+*In ''Grand Theft Auto V'', the [[Vespucci Boulevard]] location appears to be based on {{URL|https://maps.app.goo.gl/3nM7jjEz4gxgFP4A6|728 S Olive St}} in {{WP|Los Angeles}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+Foodstall-GTA4-hotdog1.jpg|A '''Chihuahua Hotdogs''' food cart in {{IV}}.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small" widths="270px">
+ChihuahuaHotdogs-GTAVee-CineAreola.png|[[Cine Areola]], [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+Chihuahua-del-perro-plaza-GTAV.jpg|[[Del Perro Plaza]], [[Boulevard Del Perro]], [[Del Perro]].
+ChihuahuaHotdogs-MissionRow-GTAV.png|[[Vespucci Boulevard]], [[Pillbox Hill]], Los Santos.
+ChihuahuaHotdogs-GTAVee-PowerStreet.png|[[Power Street]], Pillbox Hill, Los Santos {{Small|(closed)}}.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurant chains
+Hot dog restaurants

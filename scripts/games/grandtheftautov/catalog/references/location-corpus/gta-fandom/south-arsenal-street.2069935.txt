@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=SouthArsenalStreet-GTAV.png
+|caption=South Arsenal Street as seen from the east.
+|games={{Games|V=y|O=y}}
+|start=[[Dutch London Street]]
+|end=[[Alta Street]]
+|map=<gallery>
+SouthArsenalStreet-GTAV-Map.png|Map
+SouthArsenalStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''South Arsenal Street''' is a [[List of Street Names|street]] in [[La Puerta]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Rogers Salvage and Scrap]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

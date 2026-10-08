@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=SinnerStreet-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Adam's Apple Boulevard]], [[Mission Row]]
+|end=[[Integrity Way]], [[Textile City]]
+|map=<gallery>
+SinnersStreet-GTAV-Map.png|Map
+SinnersStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Sinner Street''' is a [[List of Street Names|street]] in [[Mission Row]] and [[Textile City]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Mission Row Police Station]] <small>(accessible interior)</small>
+*[[Ten Cent Theater]] <small>(corner of Integrity Way)</small>
+
+[[SECTION:3:Food Market Wall Mural]]
+[[File:SinnerStreet-GTAVe-FoodMarketMural.png|thumb|300px|The full mural, above the Food Market awning.]] 
+Located on the street-facing wall of the Food Market is a large mosaic-like wall mural. It depicts two arms reaching out of a disc with a poem within it, with a different poem lining the outer edge of the mural. There are also a Roman numeral V and an eye depicted in the mural. The mural itself is based on the infamous street art piece by {{WP|Johanna Poethig}}, ''Calle de la Eternidad'', which was located on Broadway Boulevard in {{WP|Los Angeles}} before it was renovated in 2012. The poem on the outer border of the mural is an inaccurate reference to the final line of ''Alumnus Football'' by {{WP|Grantland Rice}}: ''"For when the Great Scorer comes to write against your name, He marks - not - that you won, but how you played the Game."
+
+[[SECTION:2:Businesses]]
+*[[Binco (HD Universe)|Binco]] <small>(accessible interior, corner of Sinners Passage)</small>
+*[[Bite!]]
+*[[Broker (brand)|Broker]] <small>(corner of Integrity Way)</small>
+*[[Digital Den]] <small>(corner of San Andreas Avenue)</small>
+*Food Market
+*L.S. Gentstyle
+*Mama's Grocery
+*Payback Time
+*[[Ranch (HD Universe)|Ranch]]
+*Santos Farmacia
+*Sound Sanctuary Ind.
+*Wall Fabric
+*Wholesale Mart <small>(corner of San Andreas Avenue)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

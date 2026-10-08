@@ -1,0 +1,32 @@
+[[LEAD]]
+'''Banning''' is a small industrial neighbourhood in the south of [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. Banning is bordered by [[Davis]] to the north, northeast and northwest, [[Rancho]] to the east, [[Elysian Island]] to the south and the [[Port of Los Santos|Port of South Los Santos]] to the west.
+
+[[SECTION:2:Streets]]
+*[[Autopia Pkwy]]
+*[[Dutch London St]]
+*[[Signal St]]
+
+[[SECTION:2:Businesses]]
+*[[The Secure Unit Storage Facility]]
+
+[[SECTION:2:Neighbouring areas]]
+{{Location
+|Centre    = Banning
+|North     = [[Davis]]
+|Northeast = [[Davis]]
+|East      = [[Rancho]]
+|Southeast = [[Elysian Island]]
+|South     = [[Elysian Island]]
+|Southwest = [[Elysian Island]]
+|West      = [[Port of Los Santos|Port of South Los Santos]]
+|Northwest = [[Davis]]
+}}
+
+{{Navboxes
+|title= Navigation
+|list1=
+{{Los Santos in GTA V|state=collapsed}}
+}}
+
+[[CATEGORIES]]
+Areas in Los Santos in GTA V

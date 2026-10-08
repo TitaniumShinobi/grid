@@ -1,0 +1,76 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = HIGHWAY
+|name              = Route 1
+|number            = 1
+|caption2          = Route 1 shield
+|image             = 
+<gallery>
+
+</gallery>
+|caption           = 
+|games             = {{Games|V=y|O=y}}
+|highway_northend  = {{rmark|US|13}} near [[Grapeseed]]
+|highway_southend  = {{rmark|I|2}} in [[Del Perro]]
+|highway_junctions = 
+{{rmark|SA|18}} in [[Pacific Bluffs]]<br>
+{{rmark|US|68}} in [[Tongva Hills]]
+|pscanner    = 
+|map         = 
+|mapcaption  = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''U.S. Route 1''', also known as the '''Great Ocean Highway (GOH)''' or the '''Western Highway''', is a rural [[Numbered Highways in GTA V|numbered highway in San Andreas]]. Route 1 travels along the western and northern coastlines of [[State of San Andreas (HD Universe)|San Andreas]]. The route covers the entire Great Ocean Highway, from its southern terminus in [[Del Perro]] to [[Dignity Village]]. It then becomes the [[Senora Freeway]] as it travels through [[Braddock Pass]], before becoming [[Route 13]] in [[Grapeseed]]. It is one of the longest roads in San Andreas as it encircles half of the state.
+
+[[SECTION:2:Route Description]]
+From the south, Route 1 begins in the tunnel at the western end of the [[Interstate 2]]. Once leaving the tunnel, the six lane [[Del Perro Freeway]] travels northwest along the edge of [[Del Perro Beach]]. Even as a freeway, beachfront property still lines the side of the road. The Del Perro Freeway ends near [[Pacific Bluffs]] (and a possible [[Route 18]] west end) and begins to narrow down until the south end of Ineseno Road, where it turns north and becomes a divided two lane highway. It then runs through [[Chumash]] and along the west edge of the [[Tongva Hills]] where it eventually meets the western terminus of [[Route 68]].
+
+It then crosses the [[Lago Zancudo]] bridge, and passes under [[Fort Zancudo]] through a tunnel, emerging into [[North Chumash]]. Near [[Raton Canyon]], it creates an S-curve before driving over another bridge and traveling in a northeastern direction. It passes along the western edge of the [[Chiliad Mountain State Wilderness]] preserve, and into the town of [[Paleto Bay]].
+
+As it leaves the city, it turns east and travels along [[Procopio Beach]], where it passes the [[Dignity Village]] and becomes the [[Senora Freeway]]. As a four-lane freeway, it turns south along [[Braddock Pass]]. Southbound traffic flows through the [[Braddock Tunnel]], as it makes its way into [[Grapeseed]]. The freeway becomes [[Route 13]] a few hundred feet from the intersection of [[Union Road]].
+
+[[SECTION:2:Purchasable Properties]]
+*[[Hookies]]
+*[[Sonar Collections Dock]]
+
+[[SECTION:2:Places of Interest]]
+*[[Chumash Plaza]]
+*[[Pacific Bluffs Country Club]]
+*[[Raton Canyon Ranger Office]]
+
+[[SECTION:2:Businesses]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]]
+*[[Blaine County Savings Bank]]
+*[[Clucking Bell Farms]]
+*[[Davis Hardware]]
+*[[Donkey Punch Family Farm]]
+*[[Dream View Motel]]
+*[[Fleeca|Fleeca Bank]]
+*[[GoPostal]]
+*[[Hang Ten (business)|Hang Ten]]
+*[[Helmut's European Autos]]
+*[[Ink Inc.]]
+*[[Jetsam|Jetsam Paleto Bay Office]]
+*[[Morris & Sons Feed and Supplies]]
+*[[Nelsons General Store]]
+*[[O'Deas Pharmacy]]
+*[[Pala Springs Aerial Tramway]]
+*[[Pipeline Inn]]
+*[[Sub Urban (HD Universe)|Sub Urban]]
+*[[Tidemarks]]
+*[[Wilson Hatcheries]]
+*[[Xero|Xero Gas Station]]
+
+[[SECTION:2:Neighborhoods and Locations]]
+*[[Del Perro]]
+*[[Pacific Bluffs]]
+*[[Chumash]]
+*[[North Chumash]]
+*[[Fort Zancudo]] <small>(passed underneath)</small>
+*[[Pala Springs]]
+*[[Paleto Bay]]
+
+[[CATEGORIES]]
+Freeways
+Highways

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox_business
+|Name Change = BUSINESS
+|name = Reflex Nails
+|image = ReflexNails-GTAV-Sign.png
+|type = Beauty Salon
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Mirror Park Boulevard]], [[Mirror Park]]
+}}
+
+[[LEAD]]
+'''[[Reflex Nails]]''' is a beauty salon that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

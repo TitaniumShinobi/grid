@@ -107,6 +107,77 @@
         }
       }
     },
+    "canonicalSelections": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "selectionKind", "knowledgeKind", "catalogRevisionId", "catalogCompositionId",
+          "projectionPolicyId", "projectionPolicyVersion", "selectedPathId", "knowledgeRecordId"
+        ],
+        "properties": {
+          "selectionKind": { "const": "CanonicalRecord" },
+          "knowledgeKind": { "enum": ["Location", "MissionQuest", "Item", "Actor"] },
+          "catalogRevisionId": { "type": "string", "pattern": "^grid\\.catalog-revision\\.v[1-9][0-9]*\\.sha256\\.[a-f0-9]{64}$" },
+          "catalogCompositionId": { "type": "string", "pattern": "^grid\\.runtime-catalog-composition\\.v1\\.sha256\\.[a-f0-9]{64}$" },
+          "projectionPolicyId": { "const": "grid.canonical-selector-projection" },
+          "projectionPolicyVersion": { "const": "1" },
+          "selectedPathId": { "type": "string", "pattern": "^grid\\.canonical-navigation-path\\.v1\\.sha256\\.[a-f0-9]{64}$" },
+          "knowledgeRecordId": { "type": "string", "pattern": "^grid\\.knowledge-record\\.v1\\.sha256\\.[a-f0-9]{64}$" },
+          "unresolvedOtherContextId": { "type": "null" }
+        }
+      }
+    },
+    "unresolvedUserContext": {
+      "type": "array",
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["kind", "value", "resolution", "provenance"],
+        "properties": {
+          "kind": { "enum": ["Location", "MissionOrQuest", "Item", "Entity"] },
+          "value": { "type": "string", "minLength": 1, "maxLength": 4096 },
+          "resolution": { "const": "Unresolved" },
+          "provenance": { "enum": ["ExplicitUserSelection", "LegacyImported"] },
+          "matchedReferenceId": { "type": "null" }
+        }
+      }
+    },
+    "problemSelection": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["id", "classId", "displayName", "provenance"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,511}$" },
+        "classId": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,511}$" },
+        "displayName": { "type": "string", "minLength": 1, "maxLength": 512 },
+        "provenance": { "const": "ExplicitUserSelection" }
+      }
+    },
+    "timingSelection": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["id", "classId", "displayName", "provenance"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,511}$" },
+        "classId": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,511}$" },
+        "displayName": { "type": "string", "minLength": 1, "maxLength": 512 },
+        "provenance": { "const": "ExplicitUserSelection" }
+      }
+    },
+    "goalSelection": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["id", "displayName", "provenance"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,511}$" },
+        "displayName": { "type": "string", "minLength": 1, "maxLength": 512 },
+        "provenance": { "const": "ExplicitUserSelection" }
+      }
+    },
     "parentTaskId": {
       "type": "string"
     },

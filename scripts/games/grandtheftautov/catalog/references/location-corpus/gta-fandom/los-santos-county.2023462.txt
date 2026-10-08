@@ -1,0 +1,73 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = county
+|name           = County of Los Santos
+|sign           = 
+|image          = LosSantosCounty-GTAV-Montage.png
+|caption        = Hills of [[Great Chaparral]], the [[Marlowe Vineyards]], [[Richman Glen]], the [[Bolingbroke Penitentiary]] state prison, [[Banham Canyon]], a view of [[Los Santos (HD Universe)|Los Santos]] from the [[Galileo Observatory]] in [[Vinewood Hills]], and the [[RON Alternates Wind Farm]].
+|aka            = Los Santos County
+|games          = {{games|V=y|O=y}}
+|location       = 
+|seal           = [[File:Los-Santos-County-Seal.png|center|thumb|100px|The official [[Seal of the County of Los Santos]].]]
+|seal2          = 
+|flag           = 
+|mayor          = 
+|president      = 
+|established    = [[1889]]{{fact|Does this confirm the county's establishment, or just the sheriff's establishment?}}
+|country        = [[United States of America]]
+|state          = [[State of San Andreas (HD Universe)|San Andreas]]
+|county         = 
+|capital        = [[Los Santos (HD Universe)|Los Santos]]
+|pop            = 
+|motto          = ''Amor Patria''
+|pscanner       = 
+|unlockedby     = 
+|unlockedafter  = 
+|map            = <gallery>
+LosSantosCounty-GTAV-Map.jpg|Map
+LosSantosCounty-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption    = Map of the County of Los Santos.
+}}
+
+[[LEAD]]
+'''Los Santos County''', officially the '''County of Los Santos''', is a county featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in southern [[State of San Andreas (HD Universe)|San Andreas]]. It is bordered by [[Blaine County]] to the north by [[Route 68]].
+
+[[SECTION:3:Cities]]
+*[[Los Santos (HD Universe)|Los Santos]] ({{WP|Los Angeles}}) - <small>'''County seat'''</small>
+*[[Davis]] ({{WP|Compton, California|Compton}}) - <small>'''Incorporated city'''</small>
+*[[Del Perro]] ({{WP|Santa Monica, California|Santa Monica}}) - <small>'''Incorporated city'''</small>
+*[[Rockford Hills]] ({{WP|Beverly Hills, California|Beverly Hills}}) - <small>'''Incorporated city'''</small>
+
+[[SECTION:3:Towns]]
+*[[Chumash]] ({{WP|Malibu, California|Malibu}})
+
+[[SECTION:3:Mountains, Valleys, & Hills]]
+*[[Tataviam Mountains]] ({{WP|San Gabriel Mountains}})
+*[[Palomino Highlands]] ({{WP|Santa Ana Mountains}})
+*[[Mount Haan]] ({{WP|Mount Lee}})
+*[[Vinewood Hills]] ({{WP|Hollywood Hills}})
+*[[Banham Canyon]] ({{WP|Topanga, California|Topanga Canyon}})
+*[[Tongva Hills]] ({{WP|Agoura Hills, California|Agoura Hills}})
+*[[Tongva Valley]] ({{WP|Topanga, California|Topanga Canyon}})
+*[[Great Chaparral]] ({{WP|Santa Monica Mountains}})
+
+[[SECTION:2:Places of Interest]]
+*[[Vinewood Sign (HD Universe)|Vinewood Sign]] ({{WP|Hollywood Sign}})
+*[[Mirror Park]] ({{WP|Echo Park}})
+*[[Legion Square]] ({{WP|Pershing Square}})
+*[[Vespucci Canals]] ({{WP|Venice Canals}})
+*[[Puerto Del Sol]] ({{WP|Marina Del Rey}})
+*[[RON Alternates Wind Farm]] ({{WP|San Gorgonio Pass Wind Farm}})
+*[[Maze Bank Tower]] ({{WP|US Bank Tower}})
+*[[Maze Bank Arena]] ({{WP|The Forum (Inglewood)|Great Western Forum}})
+*[[Vinewood Bowl]] ({{WP|Hollywood Bowl}})
+*[[Sisyphus Theater]] ({{WP|Greek Theatre (Los Angeles)|Greek Theater}})
+
+[[CATEGORIES]]
+Counties
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Zones

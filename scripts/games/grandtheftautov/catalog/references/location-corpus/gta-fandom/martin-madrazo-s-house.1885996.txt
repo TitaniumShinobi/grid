@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox location
+|name = 2884 Hillcrest Avenue
+|image = MadrazoHouse-AerialView-GTAV.png
+|caption = Aerial view of the house.
+|games = {{Games|V=y|O=y}}
+|location = [[Hillcrest Avenue]], [[Vinewood Hills]]
+|owner = [[Martin Madrazo]]<br>[[Natalia Zverovna]]
+|altnames = *Martin Madrazo's house
+*Natalia Zverovna's house
+|condition = Rebuilt
+|floors = 2
+|style = Modern stilt house
+|occupants = [[Natalia Zverovna]]
+|canplayerstore = No
+|accessible = No
+}}
+
+[[LEAD]]
+'''Martin Madrazo's house''' (also known as '''2884 Hillcrest Avenue'''{{Ref|name=Houseno|ref=The row of houses on Hillcrest Avenue follows a number pattern of every second house. The house before is numbered 2882, and the one after is numbered 2886. Following this pattern, it can be assumed that the house's number is 2884.}}) is a stilt house located on [[Hillcrest Avenue]] in [[Vinewood Hills]], appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Homes

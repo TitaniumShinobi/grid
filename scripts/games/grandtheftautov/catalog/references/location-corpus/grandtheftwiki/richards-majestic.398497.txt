@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 
+|game_1 = GTA V
+|name = Richards Majestic
+|type = Film Studio
+|owner = [[David Richards]] <small>([[1929]] - [[1978]])</small><br />[[Solomon Richards]] <small>([[1978]] - present)</small><br />[[Ira Richards]]<br />[[Devin Weston]] <small>([[2013]])</small>
+|location = [[Movie Star Way]] in [[Rockford Hills]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = [[Franklin and Lamar]]<br />[[Mr. Richards]]<br />[[The Ballad of Rocco]]<br />[[Legal Trouble]]<br />[[Meltdown (film)|Meltdown]]
+|employee = [[Solomon Richards]] <small>(until [[1978]])</small><br />[[Peter Dreyfuss]] <small>(until [[1991]])</small><br />[[Michael De Santa]] <small>([[2013]])</small>
+}}
+
+[[LEAD]]
+'''Richards Majestic''' is a film production company based on [[Movie Star Way]] in [[Rockford Hills]], [[Los Santos in GTA V|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Film Production Companies

@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = GingerStreet-GTAV.png
+|caption =  The street as seen from the south.
+|games={{Games|V=y|O=y}}
+|start = [[San Andreas Avenue]]
+|end = [[South Rockford Drive]] and [[Invention Court]]
+|map=<gallery>
+GingerStreet-GTAV-Map.png|Map
+GingerStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Ginger Street''' is a [[List of Street Names|street]] in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]] in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Dream Tower]] <small>(corner of Vespucci Boulevard)</small>
+*[[Little Seoul Church]] <small>(corner of San Andreas Avenue)</small>
+*Sunshine Apartments <small>(corner of Vespucci Boulevard)</small>
+*[[Valdez Theater]] <small>(corner of San Andreas Avenue)</small>
+
+[[SECTION:2:Businesses]]
+*[[Big Dan Vision Optometry]] <small>(corner of San Andreas Avenue)</small>
+*[[Eugenics Incorporated]] <small>(plaza near tunnel entrance)</small>
+*[[Kayton|Kayton Banking Group]] <small>(corner of Vespucci Boulevard)</small>
+*Lady n' Boy <small>(plaza near tunnel entrance)</small>
+*[[Lombank]] <small>(corner of San Andreas Avenue)</small>
+*[[LTD Gasoline]] <small>(corner of Lindsay Circus)</small>
+*[[TW@ (HD Universe)|Totally Wireless]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

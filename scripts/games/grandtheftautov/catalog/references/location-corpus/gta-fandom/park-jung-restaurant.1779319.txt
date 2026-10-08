@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = BUSINESS
+|name = Park Jung Restaurant
+|image = ParkJungRestaurant-GTAV-Logo.jpg
+|structure_type = Traditional Korean restaurant
+|location = [[Palomino Avenue]], [[Little Seoul]]
+|games = {{Games|V=y|O=y}}
+|accessible     = No
+|map = 
+<gallery>
+Parkjungrestaurant-GTAV-map.png|Map
+KoreanPlaza-GTAV-SatelliteView.png|Satellite
+</gallery>
+|map_caption = Map Location (red)
+}}
+
+[[LEAD]]
+The '''Park Jung Restaurant''' (박정식당) is a [[South Korea|Korean]] restaurant that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Asian-themed restaurants
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Casual restaurants

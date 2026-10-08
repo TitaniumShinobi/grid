@@ -1,0 +1,24 @@
+[[LEAD]]
+'''South Arsenal St''' is a street in [[La Puerta]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to [[Alta St]], [[Dutch London St]], and [[Mutiny Rd]] while going under the [[La Puerta Freeway]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Fridgit]]
+| [[La Puerta]]
+| 
+| Storage
+|-
+| [[Rogers Salvage and Scrap]]
+| [[La Puerta]]
+| [[Alta St]]
+| Scrap
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

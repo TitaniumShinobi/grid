@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Stacey's Flower Emporium
+|image     = StaceysFlowerEmporium-GTAV-Logo.png
+|caption   = '''Stacey's Flower Emporium''' logo.
+|taglines  = 
+|type      = Florists
+|games     = {{Games|V=y|O=y}}
+|locations = 
+*[[Morningwood]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Stacey's Flower Emporium''' is a flower shop chain that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+StaceysFlowerEmporium-GTAV.jpg|[[Strawberry]], [[Los Santos (HD Universe)|Los Santos]].
+StaceysFlowerEmporium2-GTAV.png|[[Morningwood]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+
+
+
+[[ru:Stacey's Flower Emporium]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Flower shops

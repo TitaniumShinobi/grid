@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|type         = theater
+|image        = PollockCinema-GTAVpc.png
+|caption      = '''Pollock Cinema''' in {{V}}.
+|games        = {{Games|V=y|O={{EEEV}}{{DLC|mp2024_01}}}}
+|location     = [[Cavalry Boulevard]], [[Ludendorff]], [[State of North Yankton|North Yankton]]
+|architecture = [[:Category:Art Deco buildings|Art Deco]]
+|accessible   = No
+|map          = PollockCinema-GTAV-Map.png
+|map_caption  = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Pollock Cinema''' is an art deco theater in {{V}} and {{O}}, located on [[Cavalry Boulevard]] in [[Ludendorff]], [[North Yankton]].
+
+[[CATEGORIES]]
+Art Deco buildings
+Buildings in GTA Online in Ludendorff
+Buildings in GTA V in Ludendorff
+Theatres

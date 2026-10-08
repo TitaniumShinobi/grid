@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = drink
+|name          = Ming Ha Ling Beverage of Shanghai
+|sign          = 
+|image         = 
+|caption       = 
+|aka           = 
+|games         = 
+|mentioned     = {{games|V=y}}
+|business_type = Beverage company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = [[Logger Beer]]
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Ming Ha Ling Beverage of Shanghai''' is a [[China|Chinese]] beverage company mentioned on [[WNKA International Newspaper|WNKA International]] news in {{V}}. It reportedly purchased [[Logger Beer|Logger]] for [[Money|$]]4.2 billion.
+{{clr}}
+
+[[CATEGORIES]]
+Businesses in GTA V

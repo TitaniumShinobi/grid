@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|name = The Range
+|image = TheRange-CloseUp-GTAV.jpg
+|location = [[Stab City]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|occupants = [[The Lost MC]]
+|games = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''The Range''' is [[The Lost MC]]'s Blaine County headquarters in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Gang hideouts
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+The Lost MC

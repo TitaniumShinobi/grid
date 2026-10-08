@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Bravado
+|sign          = Bravado-GTAO-TextLogo.png
+|image_label   = O
+|image         = Bravado-GTAO-NewLogoMonochrome.png
+|caption       = Monochrome Bravado logo in {{O}}.
+|image_label2  = IV
+|image2        = Bravado-GTAO-Logo.png
+|caption2      = Pre-[[2024]] logo.
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Automotive manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|divisions     = Bravado Racing
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|taglines      = "''United we stand, together we fall.''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Bravado''' is an [[United States of America|American]] automotive manufacturer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Businesses with radio ads
+Vehicle manufacturers

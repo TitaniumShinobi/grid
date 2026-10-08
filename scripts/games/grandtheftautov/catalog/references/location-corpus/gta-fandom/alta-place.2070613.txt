@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=AltaPlace-GTAVee.jpg
+|caption=Alta Place as seen from Spanish Avenue.
+|games={{Games|V=y|O=y}}
+|start=[[Hawick Avenue]]
+|end=[[Spanish Avenue]]
+|map=<gallery>
+AltaPlace-GTAV-Map.png|Map
+AltaPlace-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Alta Place''' is a short residential street in [[Hawick]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Lârss & Elbö]] <small>(corner of Hawick Avenue)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

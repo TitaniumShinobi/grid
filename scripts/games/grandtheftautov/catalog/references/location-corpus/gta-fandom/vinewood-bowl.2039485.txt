@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = theater
+|name           = Vinewood Bowl
+|sign           = 
+|image          = VinewoodBowl-GTAV-Thumbnail.png
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Vinewood Park Drive]] and [[Fenwell Place]], [[Vinewood Hills]], [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|use            = Open-air amphitheater
+}}
+
+[[LEAD]]
+The '''Vinewood Bowl''' is an amphitheater in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[Vinewood Hills]], [[Los Santos County]], accessed from [[Vinewood Park Drive]] and [[Fenwell Place]].
+
+[[CATEGORIES]]
+Building zones
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Theatres

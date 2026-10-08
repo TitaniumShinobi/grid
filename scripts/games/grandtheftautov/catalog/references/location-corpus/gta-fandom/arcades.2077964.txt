@@ -1,0 +1,106 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|image = 
+<gallery>
+Arcades-GTAO-ArcadeOverview.png|Arcade
+Arcades-GTAO-BasementOverview.png|Basement
+</gallery>
+|caption = 
+|style = 
+{{HUDIcons|game=O|arcade}} Arcade Buildings
+|occupants = 
+*{{GTAOP}}
+*[[Motorcycle Clubs]] <small>(determinant)</small>
+*[[Organizations]] <small>(determinant)</small>
+*[[Lester Crest]]
+*[[Wendy]]
+*[[Jimmy De Santa]]
+|price = 
+*[[Money|$]]1,235,000 - $4,082,500
+*Extra $6,967,500 for [[Pixel Emporium]] purchases
+|game  = O
+}}
+
+[[LEAD]]
+'''Arcades''' are a business venture introduced to {{O}} in [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update.
+
+[[SECTION:2:Locations]]
+[[File:MBF-GTAO-Arcades-Map.png|thumb|350px|center|Map of all locations]]
+
+{| class="wikitable"
+! colspan="4" align="center" width="100%" | Arcades
+|-
+! width="15%" |Location
+! width="24%" |Image
+! width="44%" |In-game description
+! width="8%" |Base Price
+|-
+|Warehouse - [[Davis]]<br />
+Formerly: [[Grove Street Garage|Auto Fix Factory]]
+|[[File:Arcades-GTAO-WarehouseDavis.png|center|280px]]
+|''Don't let the economic turmoil of Davis put you off this one-of-a-kind property. The Auto Fix Factory once made great business here, before going under. And Warehouse lasted at least a week before it went bust. But you know what they say. It's not the business. It's the owner. And, after this one, you won't be making the same mistakes.''
+|$2,135,000
+|-
+|[[Videogeddon]] {{nd}} [[La Mesa]]<br />
+Formerly: Unnamed warehouse at 744 [[Popular Street]]
+|[[File:Arcades-GTAO-VideogeddonLaMesa.png|center|280px]]
+|''In the charming industrial district of La Mesa, where dreams of gentrification are few and far between, we present this bargain property. Before closing down, Videogeddon was a hive of heavy metal gamers who played for days at a time, only breaking to do another line. New carpets are recommended.''
+|$1,875,000
+|-
+|Eight-Bit - [[Vinewood (HD Universe)|Vinewood]]<br />
+Formerly: [[Vinewood Records]] & [[DM Pets]]
+|[[File:Arcades-GTAO-EightBitVinewood.png|center|280px]]
+|''As far as renovations go, the Eight-Bit has all the grit and grime needed to be the perfect hangout. This one-time record shop and three-time drug front couldn't feel trendier, Plus, the West Vinewood location guarantees a herd of cold brew drinking hipsters will swarm for retro gratification.''
+|$2,530,000
+|-
+|Insert Coin - [[Rockford Hills]]<br />
+Formerly: [[Fruit of the Vine]]
+|[[File:Arcades-GTAO-InsertCoinRockfordHills.png|center|280px]]
+|''We don't need to convince you of the charms of Rockford Hills, but the residents may need convinced by an arcade's charms. Luckily for you, the musty smell of the wine shop previously on this site adds a touch of class to the ambience.''
+|$2,345,000
+|-
+|Wonderama - [[Grapeseed]]<br />
+Formerly: [[Grapeseed Supermarket]]
+|[[File:Arcades-GTAO-WonderamaGrapeseed.png|center|280px]]
+|''Back in the 80s, Wonderama was the greatest night out in Grapeseed. Ten-pin bowling, soft play, kids' parties and parties of kids running feral for days. You name it, they had it. But it just takes one health inspector and an infested ball pit and suddenly you're out of business. Bad luck for them. Good luck for you.''
+|$1,565,000
+|-
+|Pixel Pete's - [[Paleto Bay]]<br />
+Formerly: [[Helmut's European Autos]]
+|[[File:Arcades-GTAO-PixelPete'sPaletoBay.png|center|280px]]
+|''Pixel Pete's Fun Time Arcade was a legendary dive, run by a hero who loved games so much three heart attacks couldn't convince him to take more breaks. Features hand painted details by Pete's own nephew. It's remarkable that we do not charge extra for this characterful addition. Buy now before we change our mind.''
+|$1,235,000*
+|}
+*The property was free for players who linked their [[Social Club]] account to their Twitch Prime account.
+
+[[SECTION:4:List of stations available]]
+* "Classic Rock" - [[Los Santos Rock Radio]]
+* "Modern Rock" - [[Vinewood Boulevard Radio]]
+* "Hip Hop" - [[West Coast Classics]] / [[Radio Los Santos (HD Universe)|Radio Los Santos]] (randomized)
+* "Punk" - [[Channel X]]
+* "Pop" - [[Non-Stop-Pop FM]]
+* "Dance" - [[Soulwax FM]]
+* "EDM" - [[Los Santos Underground Radio]]
+* "Mirror Park" - [[Radio Mirror Park]]
+* "WWFM" - [[WorldWide FM]]
+* "Media Player" - [[Media Player]] (added with [[GTA Online: Los Santos Tuners|Los Santos Tuners]])
+* "MOTOMAMI" - [[MOTOMAMI Los Santos]] (added in unknown update)
+* "Kult" - [[Kult FM]] (added in unknown update)
+* "The Lab" - [[The Lab]] (added in unknown update)
+* "FlyLo" - [[FlyLo FM]] (added in unknown update)
+* "iFruit" - [[iFruit Radio]] (added in unknown update)
+* "MLR" - [[Music Locker Radio]] (added in unknown update)
+* "Reggae" - [[Blue Ark]] (added in unknown update)
+* "Funk" - [[Space 103.2]] (added in unknown update)
+* "Country" - [[Rebel Radio]] (added in unknown update)
+* "Motown" - [[The Lowdown 91.1]] (added in unknown update)
+
+Next to the bar, there is the manager's office; this is where the owner manages the business. A [[Pixel Emporium]] laptop is provided to purchase arcade machines. Trophies for Arcade Games released after The Diamond Casino Heist update are placed on the desk along with the plushies obtained from [[Shiny Wasabi Kitty Claw]]. There is also a safe in the office that stores the Arcade's daily income, the amount of which varies according to the number of arcade games installed in the dedicated floor slots of the arcade. The maximum attainable income is $5,000 per in-game day. All floor slots must be equipped with a game to reach this amount, and the maximum capacity of the safe is $100,000 ($50,000 prior to [[GTA Online: The Contract|The Contract]] update). It must then be emptied for it to accumulate money again. Note that it is not necessary to acquire the most expansive arcade machines to attain the maximum passive daily income of $5,000.
+
+Once an arcade machine is owned, the player can use Arcade Management in the Interaction Menu to place up to four copies of the machine around the main floor in any slot that is large enough to accommodate the machine or group of machines.
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA Online in Los Santos
+Properties
+Properties in GTA Online

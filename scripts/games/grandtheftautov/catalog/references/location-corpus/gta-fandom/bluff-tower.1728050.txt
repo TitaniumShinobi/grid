@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Bluff Tower
+|image          = BluffTower-GTAV.png
+|games          = {{games|V=y|O=y}}
+|location       = [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|use            = Office building
+|map            = BluffTower-GTAV-MapLocation.png
+|map_caption    = Location on the map (red).
+|height         = 33 m
+}}
+
+[[LEAD]]
+'''Bluff Tower''' is an office complex in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mid-rise buildings
+Postmodern buildings

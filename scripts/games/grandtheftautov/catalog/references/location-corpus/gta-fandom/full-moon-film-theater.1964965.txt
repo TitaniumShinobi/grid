@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Full Moon Film Theater
+|image = FullMoonTheater-GTAV-Logo.png
+|type = Theater
+|games = {{Games|V=y|O=y}}
+|locations = [[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|reference = [http://youtellconcerts.com/wp-content/uploads/2011/10/key-club.jpg The Key Club]}}
+
+[[LEAD]]
+'''Full Moon Film Theater''' is a movie theater in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Cinemas
+Theatres

@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = cleaningproduct
+|name          = Squrt Spray
+|image         = SquirtSpray-GTAO-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mpsecurity}}}} 
+|mentioned     = 
+|business_type = Air freshener
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = Citrusy Squrt Spray
+|weapons       = 
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Squrt Spray''' is a brand of air freshener spray appearing in {{O}} as part of [[GTA Online: The Contract|The Contract]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Contract
+Cleaning product brands

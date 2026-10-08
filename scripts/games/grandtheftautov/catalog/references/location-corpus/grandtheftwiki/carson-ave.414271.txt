@@ -1,0 +1,214 @@
+[[LEAD]]
+'''Carson Ave''' is a street in [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The avenue runs from [[Chamberlain Hills]] in the west to [[Rancho]] in the east, running through [[Davis]] and [[Strawberry]]. There are connections to [[Brouge Ave]], [[Davis Ave]], [[Dutch London St]], [[Forum Dr]], [[Innocence Blvd]], [[Jamestown St]], [[Little Bighorn Ave]], [[Roy Lowenstein Blvd]] and [[Strawberry Ave]]. The avenue runs through three gang controlled areas: the [[Los Santos Vagos]] in Rancho, the [[Ballas]] in Davis and [[The Families]] in Strawberry. A [[Soapboxxers|preacher]] can also be found along the avenue.
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[B.J. Smith Recreation Center and Park]]
+| [[Chamberlain Hills]]
+| 
+| Recreation center
+|-
+| [[Cabinets & Carpets]]
+| [[Rancho]]
+| [[Roy Lowenstein Blvd]]
+| Furniture
+|-
+| [[Carson Salon Supplies & Hair Color Center]]
+| [[Davis]]
+| 
+| Beauty salon
+|-
+| [[Carson Self Storage]]
+| [[Davis]]
+| [[Davis Ave]]
+| Storage
+|-
+| [[Cart-L Farmacia]]
+| [[Chamberlain Hills]]
+| [[Innocence Blvd]]
+| Pharmacy
+|-
+| [[Casa Cristina]]
+| [[Chamberlain Hills]]
+| [[Forum Dr]]
+| Residential
+|-
+| [[Cent Carpet]]
+| [[Davis]]/[[Rancho]]
+| 
+| Furniture
+|-
+| [[Chantelle's Beauty Salon]]
+| [[Rancho]]
+| 
+| Beauty salon
+|-
+| [[Chringo's Carpets]]
+| [[Davis]]
+| 
+| Furniture
+|-
+| [[Cluckin' Bell]]
+| [[Chamberlain Hills]]
+| [[Innocence Blvd]]
+| Food and drink
+|-
+| [[Cosas $1 & Up Baratas]]
+| [[Davis]]
+|
+| Discount store
+|-
+| [[Davis Electricals]]
+| [[Rancho]]
+|
+| Electronics
+|-
+| [[Davis Mega Mall]]
+| [[Davis]]
+| [[Davis Ave]]
+| Shopping mall
+|-
+| [[Davis Station]]
+| [[Davis]]
+| 
+| Metro station
+|-
+| [[Discount Depot]]
+| [[Davis]]
+| 
+| Clothing
+|-
+| [[Discount Jewels]]
+| [[Davis]]
+| 
+| Jewellers
+|-
+| [[East Side Wigs]]
+| [[Davis]]
+| 
+| Hair
+|-
+| [[Family Pharmacy]]
+| [[Davis]]
+| 
+| Pharmacy
+|-
+| [[Furniture]]
+| [[Davis]]
+| 
+| Furniture
+|-
+| [[Groceries]]
+| [[Strawberry]]
+| [[Davis Ave]]
+| Supermarket
+|-
+| [[Happy Shark Bail Bonds]]
+| [[Chamberlain Hills]]/[[Strawberry]]
+| [[Innocence Blvd]]
+| Bail bonds
+|-
+| [[Hayes Auto ABody Shop]]
+| [[Rancho]]
+| [[Roy Lowenstein Blvd]]
+| Garage
+|-
+| [[Herr Kutz Barber]]
+| [[Davis]]
+|
+| Barber
+|-
+| [[Laundromat]]
+| [[Rancho]]
+|
+| Laundromat
+|-
+| [[Licensed Sex Shop]]
+| [[Davis]]
+|
+| Adult
+|-
+| [[Locksmith]]
+| [[Davis]]
+| 
+| Locksmith
+|-
+| data-sort-value="Molarstation Dentistry, The"| [[The Molarstation Dentistry]]
+| [[Rancho]]
+|
+| Healthcare
+|-
+| [[Mom's Tacos]]
+| [[Rancho]]
+| [[Little Bighorn Ave]]/[[Jamestown St]]
+| Food and drink
+|-
+| [[Mosley Auto Service]]
+| [[Strawberry]]
+| [[Strawberry Ave]]/[[Davis Ave]]
+| Garage
+|-
+| [[Nails]]
+| [[Davis]]
+|
+| Nail salon
+|-
+| [[Ronnie's Luxury Car Wash]]
+| [[Davis]]
+| [[Brouge Ave]]
+| Car wash
+|-
+| [[Ruedas De Fuego]]
+| [[Davis]]
+|
+| Automobile supplies
+|-
+| [[Save-a-¢ent]]
+| [[Davis]]
+| [[Brouge Ave]]
+| Discount store
+|-
+| [[Snapper's Delight]]
+| [[Chamberlain Hills]]
+| [[Innocence Blvd]]
+| Photography
+|-
+| [[South LS Liquor]]
+| [[Rancho]]
+| [[Dutch London St]]
+| Food and drink
+|-
+| data-sort-value="Taco Farmer, The"| [[The Taco Farmer]]
+| [[Strawberry]]
+| [[Strawberry Ave]]
+| Food and drink
+|-
+| data-sort-value="Tahitian, The"| [[The Tahitian]]
+| [[Strawberry]]
+| [[Strawberry Ave]]
+| Residential
+|-
+| [[Video Alcove]]
+| [[Chamberlain Hills]]
+| [[Innocence Blvd]]
+| Entertainment
+|-
+| [[Wok It Off]]
+| [[Chamberlain Hills]]
+| [[Innocence Blvd]]
+| Food and drink
+|-
+| [[Yum Fish]]
+| [[Davis]]/[[Strawberry]]
+| 
+| Food and drink
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

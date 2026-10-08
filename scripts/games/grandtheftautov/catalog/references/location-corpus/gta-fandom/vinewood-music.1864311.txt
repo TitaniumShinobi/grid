@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change   = 
+|type          = music
+|name          = Vinewood Music
+|sign          = VinewoodMusic-GTAV-Logo.png
+|image         = VinewoodMusic-GTAVe-Store.png
+|games         = {{Games|V=y|O=y}}
+|location      = [[Alta Street]] & [[Hawick Avenue]], [[Hawick]], [[Los Santos (HD Universe)|Los Santos]]
+|opened        = [[1991]]
+|taglines      = 
+*"''Suppliers of finest Rock n' Roll and Comix''"
+*"''Home of Rock and Comix since 1991''"
+|accessible    = No
+|status        = active
+}}
+
+[[LEAD]]
+'''Vinewood Music''' is a music and comic book store that appeares in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Music stores

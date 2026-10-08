@@ -1,0 +1,61 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = restaurant
+|name          = Viendemorte
+|sign          = Viendermorte-GTAV-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = Fine dining
+|founded       = 
+|founder       = 
+|owner         = 
+|employees     = 
+|products      = 
+|taglines      = "''The Rarer The Better.''"
+|status        = active
+|phone         = 669-555-0169
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Viendemorte''' is a fine dining restaurant chain appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+{{Images|an image of the [[Columbus Center]] restaurant without a [[Mobile Phone]] on screen}}
+<gallery position="center" spacing="small" bordercolor="#e31b40" widths="270px">
+TriangleBuilding-GTAIV-Viendemerte.jpg|[[Triangle Building]], [[Columbus Avenue]], [[Star Junction]], [[Algonquin]].
+Viendemorte-GTAIV-ColumbusAve.png|[[Columbus Center]], [[Columbus Avenue]] and [[Manganese Street]], [[Star Junction]], [[Algonquin]].
+Viendemorte-GTAIV-FrankfurtAve.png|[[Frankfort Avenue]], between [[Hell Gate]] and [[Lorimar Street]], [[Star Junction]], [[Algonquin]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small" bordercolor="#e31b40" widths="270px">
+Viendemorte-GTAVe-ProsperityStreetPromenade.png|[[Prosperity Street Promenade]], [[Del Perro]].
+Viendemorte-GTAV-RockfordPlaza.jpg|[[San Vitus Boulevard]] and [[Dorset Drive]], [[Rockford Plaza]], [[Rockford Hills]].
+Viendemorte-GTAV-Moningwood.jpg|[[Morningwood Boulevard]], [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Fine dining restaurant chains
+Friend Activities in Episodes from Liberty City

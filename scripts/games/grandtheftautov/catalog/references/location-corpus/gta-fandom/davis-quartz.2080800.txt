@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = QUARRY
+|image    =
+<gallery>
+DavisQuartz-GTAV.png|Aerial view
+DavisQuartz-GTAV-Sign1.png|Sign
+</gallery>
+|games = {{Games|V=y|O=y}}
+|location = [[San Chianski Mountain Range]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = PoliceScanner-GTAV-Neighborhood-DavisQuartz.ogg
+|map = <gallery>
+DavisQuartz-IngameGPS-GTAV-Map.png|Davis Quartz
+DavisQuartz-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Davis Quartz''' is a terraced mining site in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It is located on [[Senora Way]], to the east of [[Sandy Shores]] and southeast of the [[Grand Senora Desert]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Quarries
+Zones

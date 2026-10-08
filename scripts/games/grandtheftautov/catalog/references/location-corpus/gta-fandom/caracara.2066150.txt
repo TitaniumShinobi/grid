@@ -1,0 +1,120 @@
+[[INFOBOX]]
+{{Infobox vehicle
+|name                = Caracara
+|front_image         = Caracara-GTAO-front.png
+|rear_image          = Caracara-GTAO-rear.png
+|caption             = A '''Caracara''' in {{O}}.
+|class               = [[:Category:Off-Road class|Off-Road]] {{Small|(''GTA Online'')}}
+|type                = lighttruck
+|body_style          = 4-door armed 6x6 pickup truck
+|capacity            = 5 {{Small|(driver, 3 passengers and gunner)}}
+|manufacturer        = [[Vapid]]
+|price               = [[Money|$]]1,775,000 {{Small|([[Warstock Cache & Carry]])}}
+|games               = {{Games|O={{EEEV}} {{DLC|mpassault}}}}
+|basevariant         = [[Caracara 4x4]]
+|radar_icon          = {{HUDIcons|game=O|acsrwp2}}{{Ref|name=HUDIcon|ref={{HUDIcons|game=O|acsrwp2|size=60px}} Seen when parked or when another player is driving a Caracara.}}
+|swankness           = 1/5
+|dashtype            = 
+*Cavalcade {{Small|(needles)}}[[File:Cavalcade-Dials-GTAV.png|thumb|center|170px]]
+*Cavalcade {{Small|(dial texture)}}[[File:Cavalcade-GTAV-DialSet.png|thumb|center|170px]]
+|inttxd              = Cavalcade
+|wheeltype           = SUV
+|flags               = 
+{{Expand|'''Caracara'''|
+{{Flags|FLAG_AVERAGE_CAR}}<br>
+{{Flags|FLAG_IS_OFFROAD_VEHICLE}}<br>
+{{Flags|FLAG_HEADLIGHTS_USE_ACTUAL_BONE_POS}}<br>
+{{Flags|FLAG_IS_BULKY}}<br>
+{{Flags|FLAG_HAS_INTERIOR_EXTRAS}}<br>
+{{Flags|FLAG_HAS_TURRET_SEAT_ON_VEHICLE}}<br>
+{{Flags|FLAG_DISABLE_AUTO_VAULT_ON_VEHICLE}}<br>
+{{Flags|FLAG_HAS_REAR_MOUNTED_TURRET}}<br>
+{{Flags|FLAG_TURRET_MODS_ON_ROOF}}<br>
+{{Flags|FLAG_KEEP_ALL_TURRETS_SYNCHRONISED}}<br>
+}}
+{{Expand|'''Machine Gun'''|
+{{Flags|Gun}}<br>
+{{Flags|UsableOnFoot}}<br>
+{{Flags|Vehicle}}<br>
+{{Flags|ForceEjectShellAfterFiring}}<br>
+{{Flags|StaticReticulePosition}}<br>
+{{Flags|ApplyVehicleDamageToEngine}}<br>
+{{Flags|Turret}}<br>
+}}
+{{Expand|'''Minigun'''|
+{{Flags|Automatic}}<br>
+{{Flags|Gun}}<br>
+{{Flags|UsableOnFoot}}<br>
+{{Flags|Vehicle}}<br>
+{{Flags|ForceEjectShellAfterFiring}}<br>
+{{Flags|StaticReticulePosition}}<br>
+{{Flags|CanBlowUpVehicleAtZeroBodyHealth}}<br>
+{{Flags|Turret}}<br>
+{{Flags|DisableAimAngleChecksForReticule}}<br>
+{{Flags|SkipVehiclePetrolTankDamage}}<br>
+}}
+|modelsets           = 
+|modelname           = caracara
+|handlingname        = CARACARA
+|textlabelname       = CARACARA
+|roadspawn           = No
+|roadspawnmaxcol     = 10
+|roadspawnfreq       = 30
+|roadspawntrailer    = 
+|roadspawnidendis    = 20
+|roadspawndrivers    = 
+|roadspawngroups     = 
+|roadspawnlicense    = Standard White - 100%
+|engineacceleration  = 
+|exhaustacceleration = 
+|idle                = 
+|deceleration        = 
+}}
+
+[[LEAD]]
+The [[Vapid]] '''Caracara''' is a 6x6 weaponized off-road pickup featured in {{O}} as part of the continuation of the [[GTA Online: Southern San Andreas Super Sport Series|Southern San Andreas Super Sport Series]] update, released on April 3rd, 2018, during the [[Target Assault Week]] event.{{Ref|name=targetassault|type=rockstarweb|ref='''Rockstar Newswire''': https://www.rockstargames.com/newswire/article/60387/New-from-the-Southern-San-Andreas-Super-Sport-Series-Target-Assault-Ra}}
+
+[[SECTION:2:Location]]
+*Can be purchased from [[Warstock Cache & Carry]] for [[Money|$]]1,775,000.
+
+[[SECTION:2:Rockstar Games Social Club]]
+{{RSSC
+|name          = Caracara
+|manufacturer  = Vapid
+|class         = Off-Road 
+|image         = Caracara-GTAO-RGSC-MainNew.jpg
+|caption       = Main image (after 2019).
+|image2        = Caracara-GTAO-RGSC-Action.jpg
+|caption2      = "Action" image for ''GTA Online''.
+|image3        = Caracara-GTAO-RGSC-Main.jpg
+|caption3      = Main image (prior to 2019).
+|speed         = 72.434425
+|accel         = 75
+|braking       = 9
+|traction      = 72.434425
+|seats         = 5
+|garage        = y
+|moddable      = y
+|premium       = y
+|super         = n
+|buy           = y
+|sell          = y
+|dealer        = ws
+|schematic     = GenericPickupTurretSixWheel
+}}
+
+[[SECTION:2:Radio Stations]]
+{{Defaultradioheader|name=Caracara}}
+{{Defaultradio|game=O|defaultgroup=rock}}
+
+[[CATEGORIES]]
+All wheel drive vehicles
+Armed vehicles
+Crew cabs
+Light trucks
+Off-Road class
+Off-roading vehicles
+Vehicles in GTA Online: Southern San Andreas Super Sport Series
+Vehicles manufactured by Vapid
+Vehicles purchasable from Warstock Cache & Carry
+Weaponized Vehicles in GTA Online

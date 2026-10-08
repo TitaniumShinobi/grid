@@ -1,0 +1,89 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = SKATEBOARDING BRAND
+|style         = 
+|purchasable   = y/n
+|type          = 
+|name          = Curbcrawler Skateboards
+|sign          = CurbcrawlerSkateboards-GTAV-Logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|image_label3  = 
+|image3        = 
+|caption3      = 
+|image_label4  = 
+|image4        = 
+|caption4      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     =
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = [[1974]]
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = ''"Cruisin' Since 74"''
+|bawsaq        = 
+|lcn           = 
+|status        = 
+
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|opentimes     = 
+|accessible    = 
+
+|unlockedby    = 
+|unlockedafter = 
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+|map3          = 
+|map_caption3  = 
+}}
+
+[[LEAD]]
+'''Curbcrawler Skateboards''' is a skateboarding brand in the [[HD Universe]] based in [[State of Liberty (HD Universe)|Liberty]] and [[San Andreas]].
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+Curbcrawler-GTAIV-Broker.png|[[Munsee Avenue]], [[Dillon Street Building (Downtown)|Dillon Street building]], [[Downtown (GTA IV)|Downtown]], [[Broker]].
+Curbcrawler-GTAIV-StarJunction.png|[[Denver-Exeter Avenue]], [[Star Junction]], [[Algonquin]].
+Curbcrawler-GTAIV-MeatQuarter.png|[[Galveston Avenue]], [[The Meat Quarter]], Algonquin.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small" widths="270px">
+Curbcrawler-store-LS-GTAV.jpg|[[Hawick Avenue]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = VinewoodCasino-GTAV.jpg
+|size = 350x350px
+|game_1 = GTA V
+|name = Vinewood Casino
+|type = [[:Category:Casinos|Casino]]
+|owner = 
+|location = [[East Vinewood]], [[Los Santos in GTA V|Los Santos]]<br />
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+The '''Vinewood Casino''' is a casino located on [[Mirror Park Blvd|Mirror Park Boulevard]] in [[East Vinewood]], [[Los Santos]], next to the [[Vinewood Racetrack]] in [[GTA V]]. It is based on the Hollywood Park Casino in Inglewood, California. The building appears to have been under construction prior to the events of Grand Theft Auto V, because there is a large banner over its entrance that reads "Opening Soon". It plays no role in the storyline whatsoever and is inaccessible to the player.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Casinos

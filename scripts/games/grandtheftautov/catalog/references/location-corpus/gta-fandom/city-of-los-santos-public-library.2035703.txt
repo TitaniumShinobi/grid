@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change   = 
+|type          = library
+|image         = LosSantosPublicLibrary-GTAVee-MainEntrance.png
+|caption       = Entrance to the library on [[Rockford Drive]].
+|games         = {{Games|V=y|O=y}}
+|location      = [[Rockford Hills]], [[Los Santos County]]
+|opened        = [[1990]]
+|structure_type= Public library
+|architecture  = [[:Category:Art Deco buildings|Art Deco]]-[[:Category:Spanish Revival buildings|Spanish Revival]]
+|floors        = 3
+|accessible    = No
+|file_name     = <code>bh1_20_in_bld.ydr</code>
+|map            = LosSantosPublicLibrary-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''City of Los Santos Public Library''' is a public library in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Art Deco buildings
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Civic buildings
+Landmarks
+Spanish Revival buildings

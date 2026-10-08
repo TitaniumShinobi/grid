@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|name = White Widow
+|image = White-Widow-Logo.png
+|type = Clothing Company
+|games = ''[[Grand Theft Auto IV]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Liberty City (HD Universe)|Liberty City]]<br>[[Los Santos (HD Universe)|Los Santos]]
+|owner = [[Sub Urban (HD Universe)|Suburban]]
+}}
+
+[[LEAD]]
+'''White Widow''' is a clothing company featured in ''[[Grand Theft Auto IV]]'', ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:3:Locations]]
+{{H4|''Grand Theft Auto V'' and ''Online''}}
+*The [[Alta]] outlet is a rendition of the former Chateau Denim store located at {{URL|https://maps.app.goo.gl/gSeUWXKy9Vb6pfM69|7500 Melrose Avenue}} in the {{WP|Melrose Avenue#Melrose District|Melrose District}} of {{WP|Los Angeles}}, {{WP|California}}.
+*The [[Del Perro]] outlet is a rendition of the Anthropologie store located at {{URL|https://maps.app.goo.gl/g6fq3wD8cBLv6P989|1402 Third Street Promenade}} in {{WP|Santa Monica, California}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+WhiteWidow-GTAIV-Lancaster.png|[[Silicon Street]], [[Lancaster]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]]
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small">
+WhiteWidow-GTAV-Alta.jpg|[[Hawick Avenue]] and [[Power Street]], [[Alta]], Los Santos.
+WhiteWidow-GTAVe-ProsperityStreetPromenade.png|[[Red Desert Avenue]] and [[Prosperity Street Promenade]], [[Del Perro]], Los Santos.
+WhiteWidow-GTAV-DelPerro.jpg|The Prosperity Street Promenade location in the original version of ''[[Grand Theft Auto V]]''.
+WhiteWidow-GTAV-RockfordPlaza.png|[[Rockford Plaza]] on [[San Vitus Boulevard]], [[Burton]], Los Santos.
+WhiteWidow-GTAV-LaPuerta.jpg|[[Palomino Avenue]], [[La Puerta]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains
+Fashion brands

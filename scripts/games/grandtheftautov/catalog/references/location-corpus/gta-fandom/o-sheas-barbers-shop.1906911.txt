@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox business
+|image = O'SheasBarbers-GTAV-Logo.png
+|caption = 
+|name = O'Sheas Barbers Shop
+|taglines = 
+|type = Hair & Beauty Salon
+|founded = 
+|founder = 
+|ceo = 
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Alhambra Drive]], [[Sandy Shores]]
+|reference =
+|size = }}
+
+[[LEAD]]
+'''O'Sheas Barbers Shop''' is a barber shop featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Barber shops
+Businesses in GTA Online
+Businesses in GTA V
+Salons

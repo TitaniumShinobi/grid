@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Lubri-Nation
+|sign          = 
+|image         = Lubri-Nation-Motor-Oil-Logo-USA-GTAO.png
+|caption       = Lubri-Nation logo.
+|aka           = Lubrination
+|games         = {{games|O={{EEEV}} {{DLC|mpassault}}}}
+|mentioned     = 
+|business_type = Motor oil and lubricants
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = ''Greasing America's Wheels''
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Lubri-Nation''' is an [[United States of America|American]] motor oil and lubricant company appearing in {{O}} as part of the [[GTA Online: Southern San Andreas Super Sport Series|Southern San Andreas Super Sport Series]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Southern San Andreas Super Sport Series
+Vehicle products manufacturers

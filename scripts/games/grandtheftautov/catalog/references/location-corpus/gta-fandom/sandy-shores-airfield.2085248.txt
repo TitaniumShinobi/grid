@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox location
+|name          = Sandy Shores Airfield
+|image         = Sandy-shores-airfield.jpg
+|altnames      = Alamo Sea Airfield
+|caption       =
+|unlockedafter = [[Nervous Ron]]
+|type          = airfield
+|hangarcap     = One plane or one helicopter
+|runways       = 3
+|owner         = 
+*[[Trevor Philips]]
+*[[The Lost MC]] {{Small|(formerly)}}
+*[[Rednecks (GTA V)|Rednecks]] {{Small|(formerly)}}
+*[[Avon Hertz]] {{Small|(formerly)}}
+|games         = {{Games|V=y|O=y}}
+|location      = [[Grand Senora Desert]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = SandyShoresAirfield-GTAV-Map.png
+}}
+
+[[LEAD]]
+'''Sandy Shores Airfield''' is a private airfield located on [[Panorama Drive]], southwest of the namesake town of [[Sandy Shores]], [[Blaine County]], in the middle of the [[Grand Senora Desert]]. The airfield appears in {{V}} and {{O}}.
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[Heist Prep: Unmarked Weapons (The Diamond Casino Heist)#Smugglers|Heist Prep: Unmarked Weapons]] (Smuggler Variant)
+*[[Heist Prep: Getaway Vehicles#Drag Race|Heist Prep: Getaway Vehicles]] (Drag Race Variant)
+
+[[CATEGORIES]]
+Airports
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Properties
+Properties in GTA V

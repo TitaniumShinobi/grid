@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Ikes-Propane-GTAV-Logo.png
+|type = gasoline
+|business_type = Propane company
+|status = active
+|games = {{Games|V=y|O=y}}
+|locations = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Ike's Propane''' is a propane company in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Petroleum companies

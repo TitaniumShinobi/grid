@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|image     = Blick-GTAV-Logo.png
+|name      = Blick
+|type      = electronics
+|games     = {{Games|V=y|VI=y}}
+|locations = [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+|phone     = 555-0147
+}}
+
+[[LEAD]]
+'''Blick''' is an electronics company featured in {{V}} that is also due to appear in {{VI}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Blick-GTAV-Store.png|[[Vespucci Boulevard]], [[Little Seoul]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in GTA VI
+Electronics companies

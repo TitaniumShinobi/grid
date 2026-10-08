@@ -1,0 +1,101 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Bleeter
+|image = Bleeter-GTAIV-Logo.png
+|type = Social Networking
+|bawsaq = {{BAWSAQ/Slider}} '''BLE'''
+|taglines = "''Life suddenly got quick!''"
+|games = ''[[The Ballad of Gay Tony]]<br>[[Grand Theft Auto V]]''
+|founder = [[Unnamed Bleeter founder|Unnamed founder]]
+|reference = {{WP|Twitter}}
+}}
+
+[[LEAD]]
+'''Bleeter''' is a social networking and microblogging service that appears in ''[[The Ballad of Gay Tony]]'' and ''[[Grand Theft Auto V]]''. The service is an obvious parody of {{WP|Twitter}}. The player can buy stocks from them at the [[Bawsaq.com]] website in ''Grand Theft Auto V''.
+
+[[SECTION:3:Businesses]]
+<gallery position=center widths=115 columns=4 captionalign=center captionsize=small hideaddbutton=true>
+Bleeter_GTAVpc_AccountantTVShow.png|@AccountantTVShow
+Bleeter_GTAVpc_AlamoSeaTouristBoard.png|@AlamoSeaTouristBoard
+Bleeter_GTAVpc_Generic.png|[[Alco Patch]] @Alcopatch
+Bleeter_GTAVpc_AppropriateAssociates.png|[[Www.appropriateassociates.com|Appropiate Associates]] @AppropriateAssociates
+Bleeter_GTAVpc_BahamaMamasWest.png|[[Bahama Mamas#Bahama Mamas West (Los Santos)|Bahama Mamas West]] @BahamaMamasWest
+Bleeter_GTAVpc_BarbequeSpaceflight.png|@BarbequeSpaceflight
+Bleeter_GTAVpc_Benefactor.png|[[Benefactor]] @Benefactor
+Bleeter_GTAVpc_BitterSweetCellphone.png|[[BitterSweet]] @BitterSweetCellphone
+Bleeter_TBoGTpc_Generic.png|[[Brown Streak]]<br>	@
+Bleeter_GTAVpc_CashForDeadDreams.png|[[Cashfordeaddreams.com|Cash for Dead Dreams]] @CashForDeadDreams
+Bleeter_GTAVpc_CherenkovVodka.png|[[Cherenkov Vodka]] @CherenkovVodka
+Bleeter_GTAVpc_CluckinBell.png|[[Cluckin' Bell (HD Universe)|Cluckin' Bell]] @CluckinBell
+Bleeter_GTAVpc_CreditCardConsolidationKings.png|@CreditCardConsolodationKings
+Bleeter_GTAVpc_CrevisOutdoorApparel.png|[[Crevis]] @CrevisOutdoorApparel
+Bleeter_GTAVpc_cunningstuntacademy.png|[[Cunning Stunt Academy]] @cunningstuntacademy
+Bleeter_GTAVpc_DIGIFARM.png|@DIGIFARM
+Bleeter_GTAVpc_DrugObservationAgency.png|[[Drug Observation Agency]] @DrugObservationAgency
+Bleeter_GTAVpc_DudeEatDog.png|[[Dude Eat Dog]] @DudeEatDog
+Bleeter_GTAVpc_eColaSoftDrink.png|[[eCola (HD Universe)|eCola]] @eColaSoftDrink
+Bleeter_GTAVpc_ELECTROTOKE.png|[[Electrotoke]] @ELECTROTOKE
+Bleeter_GTAVpc_ERIS.png|[[Eris (HD Universe)|Eris]] @ERIS
+Bleeter_GTAVpc_FacadeComputers.png|[[Facade]] @FacadeComputers
+Bleeter_GTAVpc_Generic.png|[[Facepalm Cosmetics]] @FacePalmCosmetics
+Bleeter_GTAVpc_FameOrShame.png|[[Fame or Shame]] @FameOrShame
+Bleeter_GTAVpc_FleecaBank.png|[[Fleeca]] @FleecaBank
+Bleeter_GTAVpc_FRUIT.png|[[Fruit (HD Universe)|Fruit]] @FRUIT
+Bleeter_GTAVpc_Honkers.png|[[Honker's Gentlemen's Club|Honkers]] @Honkers
+Bleeter_GTAVpc_Generic.png|@HushSmush
+Bleeter_GTAVpc_Generic.png|@ImplantOutsourceTVShow
+Bleeter_GTAVpc_ImpotentRage.png|[[Impotent Rage]] @ImpotentRage
+Bleeter_GTAVpc_JunkEnergyDrink.png|[[Junk Energy Drink]] @JunkEnergyDrink
+Bleeter_GTAVpc_JusticeForLeonora.png|@JusticeForLeonora
+Bleeter_GTAVpc_KungFuRainbowLazerForce.png|[[Kung Fu Rainbow Lazer Force]] @KungFuRainbowLazerForce
+Bleeter_GTAVpc_loggerlight.png|[[Logger Beer]] @loggerlight
+Bleeter_GTAVpc_Lombank.png|[[Lombank]] @Lombank
+Bleeter_GTAVpc_Generic.png|[[Los Santos Corkers Baseball Team]] @LosSantosCorkers
+Bleeter_GTAVpc_LosSantosPolice.png|[[Los Santos Police Department (HD Universe)|Los Santos Police Department]] @LosSantosPolice
+Bleeter_GTAVpc_LostMotorcycleClub.png|[[The Lost MC]] @LostMotorcycleClub
+Bleeter_GTAVpc_Generic.png|[[Max Renda]] @MaxRendaCosmetics
+Bleeter_GTAVpc_MerryweatherSecurity.png|[[Merryweather Security]] @MerryweatherSecurity
+Bleeter_GTAVpc_MeTV.png|[[MeTV]] @MeTV
+Bleeter_GTAVpc_MisfireGames.png|[[Misfire Games]] @MisfireGames
+Bleeter_GTAVpc_NATIONALOFFICEOFSECURITYENFORCEMENT.png|[[National Office of Security Enforcement]] @NATIONALOFFICEOFSECURITYENFORCEMENT
+Bleeter_GTAVpc_Generic.png|[[Organ Farm]] @OrganfarmTVShow
+Bleeter_GTAVpc_PFISTERDESIGN.png|[[Pfister Design]] @PFISTERDESIGN
+Bleeter_GTAVpc_pillpharm.png|[[Pill Pharm]] @pillpharm
+Bleeter_GTAVpc_Generic.png|@PirateMusicStore
+Bleeter_GTAVpc_Generic.png|[[Pole Position]] @PolePositionAdultLounge
+Bleeter_GTAVpc_PoundersFootball.png|[[LS Pounders]] @PoundersFootball
+Bleeter_GTAVpc_PowCleanse.png|@PowCleanse
+Bleeter_GTAVpc_PremiumDeluxeMotorsport.png|[[Premium Deluxe Motorsport]] @PremiumDeluxeMotorsport
+Bleeter_GTAVpc_Generic.png|[[Princess Robot Bubblegum]] @PrincessRobotBubblegum
+Bleeter_GTAVpc_Generic.png|[[Propositions|Proposition 14]] @PROP14
+Bleeter_GTAVpc_Generic.png|[[Pussycat|Pussycat Magazine]] @PussycatPorn
+Bleeter_GTAVpc_RedwoodCigarettes.png|[[Redwood Cigarettes]] @RedwoodCigarettes
+Bleeter_GTAVpc_Generic.png|[[Rehab Island]] @RehabIsland
+Bleeter_GTAVpc_RepublicanSpaceRangers.png|[[Republican Space Rangers]] @RepublicanSpaceRangers
+Bleeter_GTAVpc_RustyBrownsDonuts.png|[[Rusty Brown's Ring Donuts (HD Universe)|Rusty Brown's Ring Donuts]] @RustyBrownsDonuts
+Bleeter_GTAVpc_SebastianDixFashion.png|[[Sebastian Dix]] @SebastianDixFashion
+Bleeter_GTAVpc_SeriousCougarShow.png|[[Serious Cougar]] @SeriousCougarShow
+Bleeter_GTAVpc_SixFigureTemps.png|[[Sixfiguretemps.com|Six Figure Temps]] @SixFigureTemps
+Bleeter_GTAVpc_SorryComodeBand.png|[[Sorry Commode]] @SorryComodeBand
+Bleeter_GTAVpc_Sprunk.png|[[Sprunk (HD Universe)|Sprunk]] @Sprunk
+Bleeter_GTAVpc_SwallowClothing.png|[[Swallow]] @SwallowClothing
+Bleeter_GTAVpc_SwingersBaseball.png|[[Liberty City Swingers]] @SwingersBaseball
+Bleeter_GTAVpc_Generic.png|@TheGastroBand
+Bleeter_GTAVpc_ToeShoes.png|[[Toe Shoes]] @ToeShoes
+Bleeter_GTAVpc_Generic.png|[[Vanilla Unicorn]] @VanillaUnicorn
+Bleeter_GTAVpc_Generic.png|@VeneerCosmetics
+Bleeter_TBoGTpc_Generic.png|[[Weazel News]] @
+Bleeter_GTAVpc_WhizWireless.png|[[Whiz]] @WhizWireless
+Bleeter_GTAVpc_Generic.png|@WifebeaterTVShow
+Bleeter_GTAVpc_YourDeadFamily.png|[[Yourdeadfamily.com|Your Dead Family]] @YourDeadFamily
+Bleeter_GTAVpc_YourNewBabysName.png|@YourNewBabysName
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in TBOGT
+Media in GTA Online
+Media in GTA V
+Media in TBOGT
+Social networking

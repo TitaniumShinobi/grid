@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Radge
+|image     = Radge-GTAV-Logo.png
+|type      = clothingstore
+|games     = {{Games|IV=y|EFLC=y|V=y|O=y}}
+|locations =
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Leftwood]], [[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|status    = active
+}}
+
+[[LEAD]]
+'''Radge''' is a company in {{IV}}, {{EFLC}}, {{V}} and {{O}} that makes footwear.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+{{Gallery
+|Radge-GTAIV-Suffolk.png|[[Back Passage]], [[Suffolk]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]].
+|Radge-GTAIV-Leftwood.png|[[Manzano Road]], [[Leftwood]], [[State of Alderney|Alderney]].
+}}
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+{{Gallery
+|Radge-GTAVee.jpg|[[Morningwood Boulevard]], [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]].
+}}
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores

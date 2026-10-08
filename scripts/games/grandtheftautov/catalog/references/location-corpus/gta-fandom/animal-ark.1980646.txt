@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = Animal Ark
+|image         = AnimalArk-GTAV-Logo.png
+|lcn           = {{BAWSAQ/Slider}} '''ARK'''
+|business_type = Pet food stores
+|ceo           = [[Gray Nicholson]]
+|founded       = [[2010]]
+|games         = {{Games|V=y|O=y}}
+|locations     = [[U.S. Route 68]], [[Harmony]]
+}}
+
+[[LEAD]]
+'''Animal Ark''' is a chain of all-natural pet food stores in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pet food store chains

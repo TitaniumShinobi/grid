@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name     = O'Connor Landscape Gardening
+|image    = UtilityTruck3-GTAV-Livery.png
+|type     = utility
+|games    = {{Games|V=y|O=y}}
+|taglines = 
+|phone    = (323) 555-0175
+}}
+
+[[LEAD]]
+'''O'Connor Landscape Gardening''' is a landscaping & gardening service appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Utility companies

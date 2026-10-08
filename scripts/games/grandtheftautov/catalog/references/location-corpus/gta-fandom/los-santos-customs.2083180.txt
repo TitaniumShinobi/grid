@@ -1,0 +1,80 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = vehiclecustoms
+|name          = Los Santos Customs
+|sign          = GTAV-LSCustoms-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See all]])
+|business_type = 
+|founded       = [[1987]]
+|founder       = 
+|employees     = 
+*[[Hao]]
+*[[Los Santos Customs Mechanic]]
+*[[Garage Mechanic|J. Jones]]
+*[[Franklin Clinton]] {{Small|(Optional owner; Harmony branch only)}}
+|price         = [[Money|$]]349,000 {{Small|(Harmony property only)}}
+|income        = $1,600 per week {{Small|(Harmony property only)}}
+|taglines      = 
+|status        = Active
+|bawsaq        = {{BAWSAQ/Slider}} '''LSC'''
+|lifeinvader   = [[Lifeinvader/Los Santos Customs|Los Santos Customs]]
+[[File:Lifeinvader-GTAV-Los Santos Customs.png|40px|right|link=Lamar Davis]]
+|map           = Los_Santos_Customs_GTAVe_Map_Icon.png
+|map_caption   = Map icon.
+|map2          = LosSantosCustoms-GTAV-HUDIcon.png
+|map_caption2  = HUD Icon.
+}}
+
+[[LEAD]]
+'''Los Santos Customs''' is a vehicle customization and repair shop featured in {{V}} and {{O}}. The player can buy stocks from them at [[Bawsaq.com]].
+
+[[SECTION:2:Locations]]
+There are four Los Santos Customs garages in [[State of San Andreas (HD Universe)|San Andreas]]:
+
+<gallery position="center" spacing="small" widths="250px">
+LosSantosCustoms-GTAV-Burton.png|[[Carcer Way]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]].
+LosSantosCustoms-GTAV-LaMesa.png|[[Popular Street]], [[La Mesa]], Los Santos.
+LosSantosCustoms-GTAV-LSIA.png|[[Greenwich Parkway]], [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], Los Santos.
+LosSantosCustoms-GTAV-Harmony.png|[[Route 68]], [[Harmony]], [[Blaine County]].
+</gallery>
+
+It is possible to enter all branches of Los Santos Customs (and [[Beeker's Garage]]) on foot. The Los Santos Customs branch in [[Harmony]] and Beeker's Garage can both be accessed through a small side door to the left of the vehicle entrance, while the branches in [[Burton]], [[La Mesa]], and [[Los Santos International Airport (HD Universe)|Los Santos International Airport]] must be accessed by parking a car far enough into the entrance that the door can't close, but not so far that the [[Cutscenes|cutscene]] of the car entering is triggered, before getting out of the car and walking in.
+
+[[SECTION:2:Property]]
+The Harmony branch of the company is one of the [[Properties in GTA V|properties]] available to be purchased by [[Franklin Clinton]] for [[Money|$]]349,000 and generates a weekly income of $1,600. It is available to purchase after the mission [[Nervous Ron]].
+
+[[SECTION:3:E-Mail]]
+Upon purchasing the Harmony Los Santos Customs shop as Franklin, [[Hao]] will email the player regarding the purchase:
+
+{{Quote|WTF? Just heard you bought a franchise in LS Customs, man??? Crazy. Clearly your game's not as weak as I thought it was! Well I guess I can't charge you for work any more :) Just please promise me you won't make me call you boss... Say hi to that shit-talker Lamar.|Hao's e-mail}}
+
+[[SECTION:3:Benefits]]
+If Franklin purchases the Los Santos Customs garage on [[Route 68]], all vehicle modifications will be free, although only at that location and only for him. However, it is still possible to take advantage of this and customize other characters' [[Personal Vehicles]] for free (e.g. [[Michael De Santa|Michael]]'s [[Tailgater]] and [[Premier]], [[Trevor Philips|Trevor]]'s [[Bodhi]], [[Amanda De Santa|Amanda]]'s [[Sentinel]] and [[Tracey De Santa|Tracey]]'s [[Issi]]). To do this, players need to acquire these vehicles as Franklin; in the case of Michael and Trevor, players will need to move them and their personal vehicle close to Franklin in the game world, before [[Switch Scenes|switching characters]] and taking the car as Franklin. Amanda's and Tracey's cars, meanwhile, can be found at the [[De Santa Residence]].
+
+[[SECTION:3:Interiors]]
+<gallery position="center" spacing="small" widths="250px">
+HighendLSCustoms-InteriorMap-GTAV.png|LSC Garage 1 (High End).
+MiddleendLSCustoms-InteriorMap-GTAV.png|LSC Garage 2 (Middle End).
+LowendLSCustoms-InteriorMap-GTAV.png|LSC Garage 3 (Low End).
+LosSantosCustoms-GTAV-Interior04.jpg|The interior of the '''Los Santos Customs''' on [[Carcer Way]], [[Burton]].
+LosSantosCustoms-GTAV-Interior03.jpg|Ditto.
+LosSantosCustoms-GTAV-Interior02.jpg|Ditto.
+LosSantosCustoms-GTAV-Interior01.jpg|Ditto.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Mod shop brands
+Properties
+Properties in GTA V

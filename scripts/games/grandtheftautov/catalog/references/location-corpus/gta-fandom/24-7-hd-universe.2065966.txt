@@ -1,0 +1,110 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = conveniencestore
+|name          = 24/7
+|sign          = 
+|image         = 247-GTAIV-Logo.png
+|caption       = 
+|aka           = Twenty Four Seven
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Carcer City (HD Universe)|Carcer City]]{{Ref|name=darksoullock3|type=screenshot|image=Blogsnobs-GTAIV-Darksoulock-3.png|imagesize=100px|ref=[[darksoullock.blogsnobs.org]] in {{IV}}.}}
+*[[State of San Andreas (HD Universe)|State of San Andreas]]
+*[[Key Lento]], [[State of Leonida|Leonida]]
+{{Small|(see [[#Locations 2|Locations]])}}
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = [[Darksoullock.blogsnobs.org|DarkSoulLock]] <small>(Formerly)</small>{{Ref|name=darksoullock3}}
+|products      = [[Big Chug]]
+|vehicles      = 
+*[[Benson (HD Universe)|Benson]]
+*[[Steed]]
+*[[Yankee]]
+|weapons       = 
+|taglines      = "''Go All Night''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|accessible    = Yes {{Small|(''GTA Chinatown Wars'', ''GTA V'', ''GTA Online'', ''GTA VI'')}}
+}}
+
+[[LEAD]]
+'''24/7''' (also written as '''Twenty Four Seven''') is a chain of convenience stores featured in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'']]
+*The [[Downtown (GTA IV)|Downtown]] store appears to be based on a now-closed Price Mart supermarket formerly located at {{URL|https://maps.app.goo.gl/hSRHCmnbtiQat9VN9|408 Fulton Street}} in {{WP|Downtown Brooklyn}}, New York.
+
+[[SECTION:4:''Grand Theft Auto VI'']]
+*The [[Key Lento]] store appears to be based on a {{WP|Circle K}} branch located at {{URL|https://maps.app.goo.gl/k7fpsY5yxesP7C8S8|106501 Overseas Highway}} in {{WP|Key Largo, Florida}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="250px">
+247-GTAIV-HoveBeach.png|[[Masterson Street]] and [[Wappinger Avenue]], [[Hove Beach]], [[Broker]].
+247-GTAIV-Broker.png|[[Montauk Avenue]], [[Downtown Broker]].
+TwentyFourSeven-GTAIV-TwatFurS.png|Defunct store at [[Wenrohronon Avenue]], [[Cassidy Street]] and [[Cayuga Avenue]], [[Schottler]], [[Broker]].
+247-GTAIV-Bohan.JPG|[[Leavenworth Avenue]], [[Northern Gardens]], [[Bohan]].
+247-GTAIV-StarJunction.JPG|[[Kunzite St]]reet and [[Frankfort Ave]]nue, [[Star Junction]], [[Algonquin]].
+247-GTAIV-Northwood.JPG|[[Frankfort Ave]]nue and [[Wardite Street]], [[Northwood]], [[Algonquin]].
+247-GTAIV-FishmarketSouth.jpg|[[Borlock Road]], [[Fishmarket South]], [[Algonquin]].
+247-GTAIV-Suffolk.jpg|[[Feldspar Street]], [[Suffolk]], [[Algonquin]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="250px">
+247-GTACW-Broker-HoveBeach.png|[[Masterson Street]] and [[Wappinger Avenue]], [[Hove Beach]], [[Broker]].
+247-GTACW-Broker-Downtown.png|[[Montauk Ave]]nue, [[Downtown Broker]].
+247-GTACW-Broker-Schottler.png|Defunct store at [[Wenrohronon Avenue]], [[Cassidy Street]] and [[Cayuga Avenue]], [[Schottler]], [[Broker]].
+247-GTACW-Bohan.png|[[Leavenworth Avenue]], [[Northern Gardens]], [[Bohan]].
+247-GTACW-Algonquin-StarJunction.png|[[Kunzite St]]reet and [[Frankfort Ave]]nue, [[Star Junction]], [[Algonquin]].
+247-GTACW-Algonquin-Northwood.png|[[Frankfort Ave]]nue and [[Wardite Street]], [[Northwood]], [[Algonquin]].
+247-GTACW-Algonquin-FishmarketSouth.png|[[Borlock Road]], [[Fishmarket South]], [[Algonquin]].
+247-GTACW-LowerEaston.png|[[Feldspar Street]], [[Lower Easton]], [[Algonquin]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small" widths="250px">
+247-GTAVee-Strawberry.png|[[Innocence Boulevard]], [[Strawberry]], opposite Hands-On Car Wash. <small>(enterable)</small>
+247-GTAVee-ClintonAve.png|[[Clinton Avenue]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]. <small>(enterable)</small>
+247-GTAVee-BarbarenoRd.png|[[Barbareno Road]], [[Chumash]], southwest of the [[Chumash Plaza]]. <small>(enterable)</small>
+247-GTAVee-InesenoRd.png|[[Ineseno Road]], [[Banham Canyon]], [[Los Santos County]]. <small>(enterable)</small>
+247-GTAVee-TataviamMountains.png|[[Tataviam Truckstop]], [[Palomino Freeway]], [[Tataviam Mountains]]. <small>(enterable)</small>
+247-GTAVee-Harmony.png|[[Route 68]], [[Harmony]], opposite [[Animal Ark]]. <small>(enterable)</small>
+247-GTAVee-SenoraDesert.png|[[Earl's Mini-Mart]] & Gas Station, [[Senora Freeway]], southeast [[Grand Senora Desert]]. <small>(enterable)</small>
+247-GTAVee-SandyShores.png|[[Niland Avenue]] and [[Alhambra Drive]], [[Sandy Shores]], [[Blaine County]]. <small>(enterable)</small>
+247-GTAVee-Procopio.png|[[Globe Oil]] [[Gas Station|gas station]], [[Senora Freeway]], [[Procopio Truck Stop]], north [[Mount Chiliad (HD Universe)|Mount Chiliad]]. <small>(enterable)</small>
+247-GTAVee-VinewoodBlvd.png|[[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], Downtown Vinewood, Los Santos.
+247-GTAVee-Alta.png|[[Echo Rock Shopping Plaza]], [[Hawick Avenue]], [[Alta]], Los Santos.
+247-GTAVee-VinewoodPlaza.png|[[Vinewood Plaza (Mall)|Vinewood Plaza]], [[Spanish Avenue]], [[Hawick]].
+247-GTAVee-ElginAve.png|[[Elgin Avenue]], [[Hawick]], opposite [[Badger Building]].
+247-GTAVee-KoreanPlaza.png|[[Korean Plaza]], [[Calais Avenue]], [[Little Seoul]].
+247-GTAVee-VespucciBlvd.png|[[Vespucci Boulevard]], Little Seoul, opposite Arirang Plaza.
+247-GTAVee-Route68.png|[[RON]] Gas Station, [[Route 68]], [[Lago Zancudo]].
+</gallery>
+
+[[SECTION:4:Interior]]
+<gallery position="center" spacing="small" widths="250px">
+247-GTAVee-Interior1.jpg
+247-GTAVee-Interior2.jpg
+247-GTAVee-Interior3.jpg
+247-GTAVee-Interior4.jpg
+247-GTAVee-Interior5.jpg
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Convenience store chains

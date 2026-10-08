@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox country
+|name            = United Mexican States
+|image_flag      = Flag of Mexico.svg
+|currency_ingame = Mexican Peso
+}}
+
+[[LEAD]]
+The '''United Mexican States''', (Spanish: ''Estados Unidos Mexicanos'') simply known as '''Mexico''', is a country in North America, south of the [[United States of America|United States]], north of [[Guatemala]] and Belize and to the west of the island nation of [[Cuba]].
+
+[[SECTION:4:''Grand Theft Auto: Vice City'']]
+*[[Mexican Arms Dealers]] {{nd}} A minor group who only make one appearance in the game.
+
+[[SECTION:4:''Grand Theft Auto: Vice City Stories'']]
+*[[Cholos]] {{nd}} A Mexican street gang who rivaled the [[Cubans|Cabrones]]. Their name is derived from "cholo", a term for Mexican gang members.
+
+[[SECTION:4:''Grand Theft Auto: Vice City'']]
+*[[Pedro Garcia]] {{nd}} The Mexican Arms Dealers boss, is Mexican.
+
+[[SECTION:4:''Grand Theft Auto: Vice City Stories'']]
+*[[Jerry Martinez]] {{nd}} The main antagonist of the game is Mexican.
+
+[[CATEGORIES]]
+North American countries

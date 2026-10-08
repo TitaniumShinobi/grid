@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Eberhard
+|sign          = Eberhard-GTAO-LogoOnWhite.png
+|image         = Eberhard-GTAO-TextLogo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mp2024_02}}}}
+|mentioned     = 
+|locations     = [[Eberhard Munitions Airstrip]], [[Tongva Hills]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = 
+*Aeronautics manufacturer
+*Munitions manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|divisions     = 
+*[[Eberhard Munitions]]
+*[[Eberhard Security]]
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Eberhard''' is a multinational aeronautics and [[Eberhard Munitions|munitions]] manufacturer appearing in {{O}} as part of the [[GTA Online: Agents of Sabotage|Agents of Sabotage]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Agents of Sabotage
+Vehicle manufacturers

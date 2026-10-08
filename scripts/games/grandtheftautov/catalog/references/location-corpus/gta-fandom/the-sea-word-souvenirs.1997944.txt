@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox location
+|type     = giftshop
+|image    = TheSeaWord-GTAVe-Logo.png
+|name     = The Sea Word
+|games    = {{Games|V=y|O=y}}
+|location = [[Del Perro Pier]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''The Sea Word''' Souvenirs is a souvenir shop in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Gift stores

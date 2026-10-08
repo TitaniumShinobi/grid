@@ -1,0 +1,50 @@
+[[INFOBOX]]
+{{Infobox mission
+|Name Change  = SALVAGE YARD ROBBERY
+|name         = The Podium Robbery
+|image        = ThePodiumRobbery-GTAOe-Finale-Infobox.png
+|location     = [[Salvage Yards]] <small>(Start/End)</small><br/>[[The Diamond Casino & Resort]]
+|game           = {{games|O=y}}
+|type           = mp2023_02
+|fail         = *Target vehicle is destroyed.
+*[[Boxville (LSDS)]] is destroyed.
+|for          = {{For|game=O|salvageyardrobbery}}
+|unlockedby   = 
+*Purchasing an [[Salvage Yards|Salvage Yard]].
+*Completing all required [[The Podium Robbery|preparations]].
+|todo = *Enter the {{Color|v-hud-friendly|LSDS van.}}
+*Take the LSDS van to the {{Color|v-hud-location|vantage point.}}
+*Detonate the explosive.
+*Take the LSDS van to the {{Color|v-hud-location|Casino.}}
+*Collect the {{Color|v-hud-pickup|rappel equipment.}}
+*Enter the {{Color|v-hud-location|Casino.}}
+*Follow the {{Color|v-hud-friendly|guard.}}
+*Clean up the {{Color|v-hud-pickup|mess.}}
+*Wait for the {{Color|v-hud-friendly|guard}} to leave.
+*Sneak to the elevator.
+*Call the {{Color|v-hud-location|elevator.}}
+*Locate the elevator hatch.
+*Open the {{Color|v-hud-pickup|elevator hatch.}}
+*Rappel down the elevator shaft.
+*Open the storage facility {{Color|v-hud-pickup|doors.}}
+*Take out the {{Color|v-hud-enemy|guards.}}
+*Disable the security measures.
+*Steal the {{Color|v-hud-friendly|[target vehicle].}}
+*Escape the {{Color|v-hud-location|Casino.}}
+*Locate a security terminal.
+*Hack the {{Color|v-hud-pickup|security terminal.}}
+*Steal the {{Color|v-hud-friendly|[target vehicle].}}
+*Escape the {{Color|v-hud-location|Casino.}}
+*Lose the Cops.
+*Deliver the [target vehicle] to the {{Color|v-hud-location|Salvage Yard.}}
+|protagonists = *1 to 4 [[GTA Online Protagonist|players]]
+|reward = Vehicle-dependent
+The LSDS outfit
+|target = [[Salvage Yard Robberies#Target Vehicles|Target Vehicle]]
+|tod=12:00, 00:00 when searching for elevator shaft.}}
+
+[[LEAD]]
+'''The Podium Robbery''' is a [[Salvage Yard Robberies|Salvage Yard Robbery]] featured in ''[[Grand Theft Auto Online]]'' as part of the continuation of [[GTA Online: The Chop Shop|The Chop Shop]] update.
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Chop Shop

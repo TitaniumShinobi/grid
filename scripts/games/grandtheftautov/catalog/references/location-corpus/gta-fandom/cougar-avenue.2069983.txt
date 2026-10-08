@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=CougarAve-GTAV-TivoliCinemaView.jpg
+|caption=Cougar Avenue at an intersection with [[Morningwood Boulevard]], with the [[Tivoli Cinema]] on the left.
+|games={{Games|V=y|O=y}}
+|start=[[Dorset Drive]] and [[West Eclipse Boulevard]]
+|end=[[Bay City Avenue]] and [[Bay City Incline]]
+|map=CougarAve-GTAV-MapLocation.jpg
+|mapcaption=Map location.
+}}
+
+[[LEAD]]
+'''Cougar Avenue''' is a two-way [[List of Street Names|street]] in {{V}} and {{O}}, located in [[Del Perro]], [[Morningwood]] and [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Places of Interest]]
+'''Del Perro'''
+*[[0069 Cougar Avenue]]
+*[[Banner Hotel & Spa]] <small>(corner of Bay City Avenue)</small>
+
+'''Morningwood'''
+*[[Tivoli Cinema]] <small>(corner of Morningwood Boulevard)</small>
+*[[Weazel Morningwood|Weazel Morningwood Cinema]] <small>(corner of Morningwood Boulevard)</small>
+
+[[SECTION:2:Businesses]]
+'''Rockford Hills'''
+*[[International Online Unlimited]] <small>(corner of West Eclipse Boulevard)</small>
+
+'''Morningwood'''
+*Discount Jewels <small>(inside XYZ Store)</small>
+*Fruit of The Vine
+*[[Homme Gina]] <small>(corner of North Rockford Drive)</small>
+*[[Miss T]]
+*[[Ponsonbys]]
+*[[Café Vespucci]] <small>(corner of Morningwood Boulevard)</small>
+*[[XYZ Store]] <small>(corner of Morningwood Boulevard)</small>
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

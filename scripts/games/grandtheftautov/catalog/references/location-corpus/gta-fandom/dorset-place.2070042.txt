@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=DorsetPlace-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[Dorset Drive]]
+|end=[[Abe Milton Parkway]]
+|map=<gallery>
+DorsetPlace-GTAV-Map.png|Map
+DorsetPlace-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Dorset Place''' is a street in [[Rockford Hills]] and [[Burton]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

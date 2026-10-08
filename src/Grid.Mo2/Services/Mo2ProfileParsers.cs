@@ -352,7 +352,8 @@ public static class Mo2ProfileParsers
     public static (ImmutableArray<PluginEntry> Plugins, ImmutableArray<Mo2ParseWarning> Warnings) ProjectPlugins(
         ProfileId profileId,
         Mo2PluginStateParseResult pluginStates,
-        Mo2LoadOrderParseResult loadOrder)
+        Mo2LoadOrderParseResult loadOrder,
+        IReadOnlySet<string>? implicitlyActivePlugins = null)
     {
         var warnings = ImmutableArray.CreateBuilder<Mo2ParseWarning>();
         var states = pluginStates.Entries
@@ -368,7 +369,7 @@ public static class Mo2ProfileParsers
             var entry = loadOrder.Entries[sourcePriority];
             if (!states.TryGetValue(entry.Name, out var matchingStates))
             {
-                if (!IsImplicitSkyrimPlugin(entry.Name))
+                if (!IsImplicitSkyrimPlugin(entry.Name, implicitlyActivePlugins))
                 {
                     warnings.Add(new("mo2.loadorder.plugin_unmatched", $"'{entry.Name}' is in loadorder.txt but not plugins.txt.", entry.SourceLineIndex));
                     continue;
@@ -407,13 +408,11 @@ public static class Mo2ProfileParsers
         return (projected.ToImmutable(), warnings.ToImmutable());
     }
 
-    private static bool IsImplicitSkyrimPlugin(string name) =>
+    private static bool IsImplicitSkyrimPlugin(
+        string name,
+        IReadOnlySet<string>? implicitlyActivePlugins) =>
         ImplicitSkyrimCorePlugins.Contains(name) ||
-        name.StartsWith("cc", StringComparison.OrdinalIgnoreCase) &&
-        Path.GetExtension(name) is string extension &&
-        (extension.Equals(".esm", StringComparison.OrdinalIgnoreCase) ||
-         extension.Equals(".esp", StringComparison.OrdinalIgnoreCase) ||
-         extension.Equals(".esl", StringComparison.OrdinalIgnoreCase));
+        implicitlyActivePlugins?.Contains(name) == true;
 
     public static ProfileId StableProfileId(InstallationReferenceId referenceId, string canonicalProfilePath) =>
         new($"profile.mo2.{StableSuffix(referenceId.Value, canonicalProfilePath)}");

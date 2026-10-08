@@ -232,7 +232,18 @@ public sealed record CanonicalCatalogLoadResult(
     CanonicalKnowledgeCatalogSnapshot Snapshot,
     ImmutableArray<string> Issues)
 {
+    // Only the store's successful validation path may mint this capability. Record
+    // copies keep it only for the very same immutable snapshot and package objects.
+    private CanonicalKnowledgeCatalogSnapshot? validatedSnapshot;
+
     public bool IsValid => Issues.IsEmpty;
+
+    public bool HasValidatedPackage(CanonicalCatalogPackage package) =>
+        IsValid && ReferenceEquals(validatedSnapshot, Snapshot) &&
+        Snapshot.ImportedPackages.Any(value => ReferenceEquals(value, package));
+
+    internal static CanonicalCatalogLoadResult FromValidatedSnapshot(CanonicalKnowledgeCatalogSnapshot snapshot) =>
+        new(snapshot, []) { validatedSnapshot = snapshot };
 }
 
 public enum CanonicalCatalogAppendStatus

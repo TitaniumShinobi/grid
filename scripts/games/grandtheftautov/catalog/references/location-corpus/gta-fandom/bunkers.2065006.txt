@@ -1,0 +1,101 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|image = Gunrunning-GTAO-OfficialScreen-Bunker.jpg
+|style ={{HUDIcons|game=O|propertybunker|animated=y}} Underground bunker
+|occupants = [[Military (HD Universe)|Military]] <small>(formerly)</small><br>
+[[International Affairs Agency|IAA]] <small>(formerly)</small><br>
+[[Agent 14]] <small>(formerly)</small><br>
+[[GTA Online Protagonist|''GTA Online'' Protagonist]]<br>
+[[Motorcycle Clubs]] <small>(determinant)</small><br>
+[[Organizations]] <small>(determinant)</small>
+|price = [[Money|$]]1,165,000 - $4,070,000
+|game = O
+}}
+
+[[LEAD]]
+'''Bunkers''' (also known as '''Los Santos Airbase Bunkers''', according to the sign) are purchasable properties in ''[[Grand Theft Auto Online]]'' added in the [[GTA Online: Gunrunning|Gunrunning]] update. Judging by the signs seen on the entrances, it is implied to be former [[Military (HD Universe)|military]] facilities.
+
+[[SECTION:3:Locations]]
+{| class="wikitable"
+! colspan="5" align="center" width="100%" | Bunkers
+|-
+! width="9%" |Bunker
+! width="9%" |Location
+! width="30%" |Image
+! width="44%" |In-game description
+! width="8%" |Price
+|-
+|Paleto Forest Bunker:
+|[[Paleto Forest]], west side of [[Procopio Promenade]] and approaching [[Paleto Cove]].
+|[[File:Bunker-GTAO-PaletoForest.png|220px|center]]
+|''Ever wanted to give something back to the untouched woodlands that have given you so much peace and joy? Have you considered a thousand tons of concrete and titanium? If you're looking for that elusive dovetail between crazy militarism and environmental diligence, you found it.''
+|$1,165,000<br>FREE <small>(with [[Criminal Enterprise Starter Pack]])</small>
+|-
+|Raton Canyon Bunker:
+|[[Raton Canyon]], on a large portion of the area, located between the [[Calafia Road]] bridge and the [[Calafia Train Bridge]], accesed via the [[Cassidy Trail]].
+|[[File:Bunker-GTAO-RatonCanyon.png|220px|center]]
+|''Raton Canyon is a federally protected wilderness area, which all but guarantees the kind of peace and solitude your newly converted missile silo deserves. Plus, when the recycled air is making you nauseous, you can pop up for a lungful of the purest breeze in the state.''
+|$1,450,000
+|-
+|Lago Zancudo Bunker:
+|[[Lago Zancudo]], westmost side of [[Fort Zancudo]].
+|[[File:Bunker-GTAO-LagoZancudo.png|220px|center]]
+|''Nestled among the sand dunes, enjoying year-round sunshine, the pacific gently breaking just a few strides away... If you can ignore the constant earthquake warnings and the threat of flooding, this is as close to paradise as a subterranean bunker is going to get.''
+|$1,550,000
+|-
+|Chumash Bunker:
+|[[Chumash]], beyond the north-west side of [[Barbareno Road]].
+|[[File:Bunker-GTAO-Chumash.png|220px|center]]
+|''I know what you're thinking. Who cares about sea views when you're fifty feet underground in a hermetically sealed nuke-proof bunker? Well just remember. It doesn't need to make any sense to add a fat premium to the resale value. This is how you climb the ladder.''
+|$1,650,000
+|-
+|Grapeseed Bunker:
+|[[Grapeseed]], past the west side of [[McKenzie Field Hangar|McKenzie Field]] airstrip. Mainly accessed via a dirt road from [[Grapeseed Main Street]].
+|[[File:Bunker-GTAO-Grapeseed.png|220px|center]]
+|''Amid all this talk of the death of small-town America, it's important to remember that somewhere like Grapeseed has an advantage over the big city: there's plenty of space for the one percent to build subterranean lairs in preparation for the apocalypse. Hey, the heartlands aren't going to rejuvenate themselves.''
+|$1,750,000
+|-
+|Route 68 Bunker:
+|Grand Senora Desert, north of [[Route 68 Approach]] and west of [[Joshua Road]].
+|[[File:Bunker-GTAO-Route68.png|220px|center]]
+|''On one side, you hear the bubbling stream of the Zancudo River taking its share of bloated corpses from the Alamo Sea to the coast; on the other, the distant sound of whooping and gunfire from nearby Harmony. And beneath your feet a sprawling nuclear fortress. Welcome to Eden.''
+|$1,950,000
+|-
+|Grand Senora Oilfields Bunker:
+|Past a "dead-end" dirt road connected to [[Joshua Road]].
+|[[File:Bunker-GTAO-GrandSenoraOilfields.png|220px|center]]
+|''If you're a budding survivalist looking for a decent simulation of a nuclear wasteland, you could do a lot worse than the Grand Senora Desert. This cozy property was originally built as an end-of-the-world shelter and general hangout for a cryptocurrency pioneer - and if that doesn't scream 'high build quality' what does?''
+|$2,035,000
+|-
+|Grand Senora Desert Bunker:
+|Grand Senora Desert, past the west side of the [[Sandy Shores Airfield]] runway.
+|[[File:Bunker-GTAO-GrandSenoraDesert.png|220px|center]]
+|''Due to high levels of unexplained radiation, the Grand Senora Desert is home to varieties of flora, fauna and underground bunker seen nowhere else on the planet. And this baby is triple-lined with tinfoil all the way round, so you're definitely safe.''
+|$2,120,000
+|-
+|Smoke Tree Road Bunker:
+|Grand Senora Desert, next to [[Smoke Tree Road]] and [[Nowhere Road]].
+|[[File:Bunker-GTAO-SmokeTreeRoad.png|220px|center]]
+|''This discreet site in the Grand Senora Desert holds the record for the most unidentified bodies excavated during construction. And if nothing else, that means it's popular with all the right people.''
+|$2,205,000
+|-
+|Thomson Scrapyard Bunker:
+|Grand Senora Desert, north-east side of [[Thomson Scrapyard]].
+|[[File:Bunker-GTAO-ThomsonScrapyard.png|220px|center]]
+|''Like any other phase of the property market, Armageddon is really all about location. On the one hand you want the perfect seclusion of the desert. On the other hand, you want to be able to stagger to a 24/7 without dragging your knuckles through too much fallout. Well, look no further: on both counts, this lovely prospect in Blaine County is all set for the mushroom cloud.''
+|$2,290,000
+|-
+|Farmhouse Bunker:
+|[[Grand Senora Desert]], south of [[Bolingbroke Penitentiary]].
+|[[File:Bunker-GTAO-Farmhouse.png|220px|center]]
+|''The Grand Senora ecosystem comes in three tiers: the wannabe hippies staging a made up fire festival; the roaming gangs of mutants who prey on them for sustenance and sport; and the paranoid software tycoon hoarding enough underground munitions to start World War 3. That's right, you're the top of the food chain.''
+|$2,375,000
+|}
+
+[[CATEGORIES]]
+Features
+Features in GTA Online
+Locations in GTA Online in Blaine County
+Locations in GTA Online in Los Santos County
+Properties
+Properties in GTA Online

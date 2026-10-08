@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = ChumashChew-GTAV-Logo.png
+|name = Chumash Chew
+|taglines = "''The taste of the old West''"
+|type = Tobacco Brand
+|games = ''[[Grand Theft Auto V]]''<br />''[[Grand Theft Auto Online]]''
+|locations = [[Donkey Punch Family Farm]], [[Paleto Bay]]
+}}
+
+[[LEAD]]
+'''Chumash Chew''' is a loose tobacco business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tobacco brands

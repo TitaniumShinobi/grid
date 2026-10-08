@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Talon Scout Nails
+|image = TalonScoutNails-GTAV-Logo.png
+|type = Nail Salon
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Echo Rock Shopping Plaza]], [[Hawick Avenue]], [[Hawick]]
+|accessible = No
+}}
+
+[[LEAD]]
+'''Talon Scout Nails''' is a nail salon in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Salons

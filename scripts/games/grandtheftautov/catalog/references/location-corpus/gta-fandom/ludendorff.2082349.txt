@@ -1,0 +1,53 @@
+[[INFOBOX]]
+{{Infobox location
+|type        = town
+|name        = Ludendorff
+|image       = Ludendorff-GTAV-Montage.png
+|imagesize   = 300px
+|caption     = Clockwise from top: Overview of Ludendorff, [[The Ludendorff Beaver|"the Mid-West's Biggest Beaver!"]], Ludendorff welcome sign, [[Bobcat Security Depot]], agricultural scene on the outskirts of town, [[Ludendorff Church and Cemetery]], [[Cavalry Boulevard]] at night.
+|games       = {{Games|V=y|O={{EEEV}}{{DLC|mp2024_01}}}}
+|mayor       = Unknown
+|established = [[1945]]{{Ref|name=sign|ref=Ludendorff welcome sign}}
+|state       = [[State of North Yankton|North Yankton]]
+|pop         = 918
+|motto       = ''"Home of the Mid-West's Biggest Beaver!"''
+|pscanner    = PoliceScanner-GTAV-Neighborhood-NorthYankton.ogg
+|map         = 
+<gallery>
+Ludendorff-GTAV-SnapmaticPrintMap.png|Map
+Ludendorff-GTAV-SnapmaticSateliteMap.png|Satellite View
+</gallery>
+|map_caption = Map of Ludendorff.
+}}
+
+[[LEAD]]
+'''Ludendorff''' is a small rural town located in the state of [[State of North Yankton|North Yankton]], featured in {{V}}, and appears as a seasonal [[Survival]] setting in {{O}} as part of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update.
+
+[[SECTION:2:Roads]]
+*[[Cavalry Boulevard]]
+
+[[SECTION:2:Businesses]]
+*[[Ammu-Nation (HD Universe)|Ammu-Nation]] (x3)
+*[[Banner Hotel & Spa|Banner Hotel]] (x2)
+*[[Bobcat Security Depot]]
+*Burgers
+*[[Caipira Airways]] travel agency
+*Café
+*[[Cheap Shot Coffee]]
+*[[Discount Kitchen Supplies]]
+*[[Klepto's Pawn Store]]
+*Liquor Store (x3)
+*[[Ludendorff Hardware]]
+*[[Ludendorff Locksmiths]]
+*[[Ludendorff Repairs]]
+*[[Ludendorff Shipping Co.]]
+*[[Ludendorff Wood Supplies]]
+*Pharmacy
+*[[Pollock Cinema]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Ludendorff
+Locations in GTA V in Ludendorff
+Neighborhoods
+Towns
+Zones

@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = BAIL ENFORCEMENT
+|style         = 
+|purchasable   = y
+|type          = 
+|name          = Bottom Dollar Bail Enforcement
+|sign          = BottomDollarBailEnforcement-GTAO-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mp2024_01}}}}
+|mentioned     = 
+|locations     = 
+[[State of San Andreas (HD Universe)|State of San Andreas]]
+([[Bail_Offices#Locations|See more]])
+|business_type = 
+|founded       = [[2024]]
+|founder       = [[Maude Eccles]]
+|ceo           = {{GTAOP}}
+|employees     = 
+*[[Jenette Eccles]]
+*2 [[Bail Enforcement Agents]] <small>(optional)</small>
+|price         = 
+|income        =
+|products      = 
+|vehicles      = [[Burrito (Bail Enforcement)]]
+|weapons       = 
+|taglines      = 
+|status        = Active
+}}
+
+[[LEAD]]
+'''Bottom Dollar Bail Enforcement''' is a [[Bail Offices|Bail Office]] in ''[[Grand Theft Auto Online]]'' introduced in the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Bottom Dollar Bounties

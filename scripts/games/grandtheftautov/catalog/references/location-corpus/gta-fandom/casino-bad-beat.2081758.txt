@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox mission
+|image        = CasinoBadBeat-GTAO-JobImage.png
+|game         = {{games|O=y}}
+|type         = DiamondCasino
+|for          = {{For|game=O|agatha}}
+|location     = [[The Diamond Casino & Resort]]
+|tod          = 
+|target       = [[The Professionals|Duggan's mercenaries]]
+|todo         = 
+*Take out the {{Color|v-hud-enemy|mercenaries.}}
+*Take out the remaining {{Color|v-hud-enemy|mercenaries.}}
+*Return to {{Color|v-hud-friendly|Vincent.}} 
+|fail         = 
+*Out of lives.
+*Vincent dies.
+|reward       = 
+*JP +15
+*Cash, Chips and RP vary depending on difficulty and time spent.
+----
+<center>[[Awards]]</center>
+*"Bad Beat" award + $50,000 <small>(if completed for the first time)</small>
+*"Lucky Lucky" award + $50,000 <small>(by completing a single Casino Story Mission without dying)</small>
+|unlockedby   = [[Casino - Play to Win]]
+|unlocks      = [[Casino - Cashing Out]]
+|protagonists = 1-4 [[GTA Online Protagonist|players]]
+}}
+
+[[LEAD]]
+'''Casino - Bad Beat''' is a [[Casino Story Missions|Casino Story Mission]] featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update.
+
+[[CATEGORIES]]
+Casino mission strand
+Gameplay in GTA Online: The Diamond Casino & Resort
+Storyline missions

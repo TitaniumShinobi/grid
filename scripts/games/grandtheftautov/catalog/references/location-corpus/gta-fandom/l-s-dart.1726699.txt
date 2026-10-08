@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|image=LS Dart logo GTA V.png
+|games=''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations=[[Los Santos (HD Universe)|Los Santos]]
+|type=Railway company}}
+
+[[LEAD]]
+'''L.S. Dart Railway Company''' is a railroad company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that operates trains in [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Railroad companies

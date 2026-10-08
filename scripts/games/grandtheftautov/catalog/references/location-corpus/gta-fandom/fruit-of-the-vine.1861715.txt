@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = liquor
+|name          = Fruit of the Vine
+|sign          = FruitoftheVine-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = Fruit of the Vine Wine Merchant
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations_2|See more]])
+|business_type = Wine store
+|founded       = 
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Fruit of the Vine Wine Merchant''' is a chain of wine stores featured in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+*The [[Hawick Avenue]] location (alongside the [[Clinton Avenue]] location as they share the same architecture) is based on the now-closed McConnell's Picture Frames at {{URL|https://maps.app.goo.gl/hPPePQEJxp3SLxqD7|7969 Melrose Avenue}} in the {{WP|Melrose Avenue|Melrose District}} of {{WP|Los Angeles}}. This location features a large yellow neon sign where Fruit of the Vine's typical store signage originates.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small">
+FruitoftheVine-Yeti-GTAV.png|[[Hawick Avenue]], [[Burton]].
+FruitoftheVine-GTAV-Vinewood.png|[[Clinton Avenue]], [[Downtown Vinewood]].
+FruitOfTheVine-GTAV-Morningwood.png|[[Cougar Avenue]], [[Morningwood]].
+FruitoftheVine-GTAV-RockfordHills.png|[[Boulevard Del Perro]], [[Rockford Hills]].
+FruitoftheVine-GTAV-Vespucci.png|[[Cortes Street]] and [[Magellan Avenue]], [[Vespucci Canals]].
+</gallery>
+
+[[de:Fruit of the Vine]]
+[[es:Fruit of the Vine]]
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Liquor stores

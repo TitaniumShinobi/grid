@@ -20,6 +20,14 @@ param(
     [ValidateNotNullOrEmpty()]
     [string] $RockstarCloudSnapshotBundle,
 
+    # Frozen Plan 2 bundles are acquired separately. This release entry point never
+    # fetches public references or silently changes the approved source snapshot.
+    [string] $RouteAcquisitionReceipt,
+    [string] $RouteCorpusIndex,
+    [string] $ItemAcquisitionReceipt,
+    [string] $ItemCorpusIndex,
+    [string] $PresentationAcquisitionReceipt,
+
     [Parameter(Mandatory = $true)]
     [ValidateNotNullOrEmpty()]
     [string] $ObservedAtUtc,
@@ -158,6 +166,18 @@ if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($repositoryRoot)) {
     throw 'The registration command must run from a Git worktree.'
 }
 $repositoryRoot = (Resolve-Path -LiteralPath $repositoryRoot).Path
+$plan2Inputs = @($RouteAcquisitionReceipt, $RouteCorpusIndex, $ItemAcquisitionReceipt, $ItemCorpusIndex, $PresentationAcquisitionReceipt)
+$plan2Count = @($plan2Inputs | Where-Object { -not [string]::IsNullOrWhiteSpace($_) }).Count
+if ($plan2Count -ne 0 -and $plan2Count -ne 5) {
+    throw 'Plan 2 requires all five frozen route, Item and presentation receipt/index inputs.'
+}
+$plan2Arguments = @()
+if ($plan2Count -eq 5) {
+    $plan2Names = @('route-acquisition-receipt', 'route-corpus-index', 'item-acquisition-receipt', 'item-corpus-index', 'presentation-acquisition-receipt')
+    for ($plan2Index = 0; $plan2Index -lt 5; $plan2Index++) {
+        $plan2Arguments += @('--' + $plan2Names[$plan2Index], (Resolve-RequiredFile -Path $plan2Inputs[$plan2Index] -Name $plan2Names[$plan2Index]))
+    }
+}
 $gameRootPath = Resolve-RequiredDirectory -Path $GameRoot -Name 'GameRoot'
 $wheelPath = Resolve-RequiredFile -Path $FiveFuryWheel -Name 'FiveFuryWheel'
 $uvPath = Resolve-RequiredFile -Path $UvExecutable -Name 'UvExecutable'
@@ -220,6 +240,9 @@ $acquisitionScript = Join-Path $repositoryRoot 'scripts\games\grandtheftautov\ca
 $actorAcquisitionScript = Join-Path $repositoryRoot 'scripts\games\grandtheftautov\catalog\gta_v_enhanced_actor_acquire.py'
 $spatialAcquisitionScript = Join-Path $repositoryRoot 'scripts\games\grandtheftautov\catalog\gta_v_enhanced_spatial_acquire.py'
 $sourceManifest = Join-Path $repositoryRoot 'scripts\games\grandtheftautov\catalog\gta_v_enhanced_registration_sources.v5.json'
+if ($plan2Count -eq 5) {
+    $sourceManifest = Join-Path $repositoryRoot 'scripts\games\grandtheftautov\catalog\gta_v_enhanced_registration_sources.v6.json'
+}
 $actorSourceManifest = Join-Path $repositoryRoot 'scripts\games\grandtheftautov\catalog\gta_v_enhanced_actor_source_families.v1.json'
 $spatialSourceManifest = Join-Path $repositoryRoot 'scripts\games\grandtheftautov\catalog\gta_v_enhanced_spatial_source_families.v1.json'
 $canaryProject = Join-Path $repositoryRoot 'eng\catalog\Grid.GtaVEnhanced.Canary\Grid.GtaVEnhanced.Canary.csproj'
@@ -326,6 +349,7 @@ foreach ($runRoot in $runRoots) {
     if ($cloudBundlePath -ne $null) {
         $canaryArguments += @('--rockstar-cloud-snapshot-bundle', $cloudBundlePath)
     }
+    $canaryArguments += $plan2Arguments
     Invoke-CheckedProcess -FilePath 'dotnet' -WorkingDirectory $repositoryRoot -Arguments $canaryArguments
 }
 

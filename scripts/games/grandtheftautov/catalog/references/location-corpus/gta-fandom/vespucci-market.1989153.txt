@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Vespucci Market
+|image       = VespucciMarket-GTAV-Front.jpg
+|type        = Market
+|games       = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|lcn         = 
+|locations   = [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Vespucci Market''' is a small market complex featuring several stores in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

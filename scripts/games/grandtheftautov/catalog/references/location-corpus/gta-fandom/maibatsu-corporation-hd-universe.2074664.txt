@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|name          = Maibatsu Corporation
+|image         = Maibatsu-GTAV-Logo2.png
+|caption       = Maibatsu Corporation logo in {{V}}.
+|type          = conglomerate
+|bawsaq        = {{BAWSAQ/Slider}} '''MAI'''
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|locations     = [[Maibatsu Factory]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Vehicle manufacturer
+|divisions     = 
+*Maibatsu Motorsports
+*Maibatsu Rally Division
+|status        = active
+|products      = 
+|reference     = 
+}}
+
+[[LEAD]]
+'''Maibatsu Corporation''' (Japanese: '''マイバツ''') ([[BAWSAQ]]: MAI) is a [[Japan]]ese multinational conglomerate appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Electronics companies
+Motorcycle Brands
+Vehicle manufacturers
+Weapon manufacturers

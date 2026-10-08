@@ -1,0 +1,42 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Pißwasser
+|type      = alcohol
+|image     = Pißwasser-GTAIV-Logo.png
+|bawsaq    = {{BAWSAQ/Slider}} '''PIS'''
+|taglines  = 
+*''"You're In, For A Good Time"''
+*''"Cheap German Lager For Export Only"''
+*''"German Fighting Lager For Export Only"''
+*''"Ice Cold Gold"''
+|games     = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+}}
+
+[[LEAD]]
+'''Pißwasser''', stylized as '''PIßWASSER''' ([[BAWSAQ]]: PIS) (English: /ˈpɪsˌwɑsər/; German: /ˈpɪsˌvasɐ/), Anglicised as '''Pisswasser''' or '''Piswasser''', is a German export lager frequently advertised on radio and TV in the {{HD}} of the {{S}}. The player can buy stocks from them on the [[Bawsaq.com]] website in {{V}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+There is a small warehouse with Pißwasser signage above the door in [[Liberty City (HD Universe)|Liberty City]].
+
+<gallery position="center" spacing="small" widths="270px" bordercolor="#DEAC3D">
+Pisswasser-GTAIV-Warehouse-BOABO.png|[[Chicory Street]], [[BOABO]], [[Broker]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+Pißwasser have a large factory in [[State of San Andreas (HD Universe)|San Andreas]]:
+
+<gallery position="center" spacing="small" widths="270px" bordercolor="#DEAC3D">
+PisswasserFactory-GTAV.png|[[Pißwasser Factory]], [[Popular Street]], [[Cypress Flats]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Commercials

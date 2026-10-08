@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox animal
+|name = Sharks
+|image = Tiger shark-GTAV.png
+|caption = A Tiger shark in ''Grand Theft Auto V''.
+|scientific name = ''Galeocerdo cuvier'' <small>(Tiger shark)</small><br>''Carcharhinus leucas'' <small>(Bull shark)</small><br>''Sphyrna lewini'' <small>(Hammerhead shark)</small>
+|games = {{Games|VC=y|SA=y|V={{Peyote}}|O={{EEEV}} {{Peyote}}|VI=y}}
+|type        = sea
+|species = [[Fish]]
+|locations = Deep parts of oceans.
+|size = Large
+|interactive = [[Peyote Plants|Controllable]] <small>([[Grand Theft Auto V#Enhanced and PC Versions|GTA V Enhanced version]] and [[Grand Theft Auto Online|GTA Online]])</small>
+}}
+
+[[LEAD]]
+'''Sharks''' are a [[Animals|species]] of marine animals appearing in {{VC}}, {{SA}}, {{V}}, {{O}} and {{VI}}.
+
+While harmless in both aforementioned games, sharks are, on the other hand, deadly in ''GTA V'' and ''GTA Online''.
+
+[[SECTION:3:''Grand Theft Auto: Vice City'']]
+[[File:Gta3.jpg|thumb|A shark in GTA Vice City.]]
+Sharks are modeled after {{WP|Bull shark|Bull Sharks}} in ''GTA Vice City''. Even though not as common as most sea creatures, they can be spotted everywhere in the [[Water|waters]] of [[Vice City (3D Universe)|the city]] and, due to the slightly similar body, they can sometimes be mistaken as [[dolphins]]. Sharks do not take damage when shot at, and like other marine animals in ''GTA Vice City'', don't have any movement animation when swimming. The easiest way to spot a shark is to just search the water for it, preferably through a [[Sniper Rifle]]. The player can also kill a shark by throwing [[grenades]] at it.
+
+Sharks are also mentioned in the 10th page of the ''GTA Vice City'' manual: ''"Shark attacks off Vice City happen a few times a year and there are more sharks out there than you would like to think – Best advice: Stay out of the water!"''. This might suggest that sharks could have been used as an excuse for the player's inability to [[Swimming|swim]] in ''GTA Vice City''.
+
+[[CATEGORIES]]
+Animals in GTA Online: The Diamond Casino & Resort
+Animals in GTA San Andreas
+Animals in GTA V
+Animals in GTA VI
+Animals in GTA Vice City
+Aquatic animals

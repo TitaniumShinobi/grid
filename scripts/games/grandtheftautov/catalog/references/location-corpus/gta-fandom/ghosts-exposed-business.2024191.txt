@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = DOCUMENTARISTS
+|type          = 
+|name          = Ghosts Exposed Paranormal Investigators
+|image         = GhostsExposed-GTAOe-Logo.png
+|aka           = Ghosts Exposed<br/>Ghosts Exposed Team
+|games         = {{Games|O={{EEEV}} {{DLC|mp2023_01}}}}
+|mentioned     = 
+|business_type = {{WP|Parapsychology|Parapsychology investigation}}
+|founded       = 
+|vehicles      = [[Brigham]]
+|weapons       = 
+|taglines      = "''Expose Yourself to the Truth!''"
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Ghosts Exposed Paranormal Investigators''', or simply '''Ghosts Exposed''', is a paranormal documentary crew that appears in {{O}} as part of the [[GTA Online: San Andreas Mercenaries|San Andreas Mercenaries]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: San Andreas Mercenaries
+Media
+Mission givers

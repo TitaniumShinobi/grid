@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = LagoonsDiner-GTAVe-Logo.png
+|name = Lagoons Diner
+|type = Diner
+|taglines = ''"Come On Over To My Plaice"''
+|games = ''[[Grand Theft Auto V]]''<br />''[[Grand Theft Auto Online]]''
+|locations = [[Del Perro Pier]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Lagoon's Diner''' is a fast food diner in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Diners
+Fast casual restaurants

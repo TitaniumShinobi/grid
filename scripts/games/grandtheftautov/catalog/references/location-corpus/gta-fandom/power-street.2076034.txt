@@ -1,0 +1,58 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=PowerStreet-GTAV.png
+|caption=Power Street running through Downtown Los Santos.
+|games={{Games|V=y|O=y}}
+|start=[[Innocence Boulevard]], [[South Los Santos]]
+|end=[[Alta Street]] and [[Baytree Canyon Road]], [[Vinewood (HD Universe)|Vinewood]]
+|map=<gallery>
+PowerStreet-GTAV-Map.png|Map
+PowerStreet-GTAV-SatelliteMap.jpg|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Power Street''' is a long two-way [[List of Street Names|street]] in [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[1162 Power Street]]
+*[[Callisto Apartments]] <small>(main entrance)</small>
+*[[FIB Headquarters]] <small>(corner of San Andreas Avenue)</small>
+*[[IAA Headquarters]] <small>(corner of Swiss Street)</small>
+*[[Lombank Building (GTA V)|Lombank Building]] <small>(corner of Vespucci Boulevard)</small>
+*[[Los Santos City Hall (HD Universe)|Los Santos City Hall]] <small>(corner of Occupation Avenue)</small>
+*[[Los Santos Department of Water & Power|Los Santos Water and Power]] Station Ten
+*[[Mile High Club]] <small>(corner of Vespucci Boulevard)</small>
+*[[Rimm Paint Factory]]
+*[[Union Depository]] <small>(17 Power Street, corner of San Andreas Avenue)</small>
+
+[[SECTION:2:Businesses]]
+*[[Chihuahua Hotdogs]] <small>(closed)</small>
+*[[Clappers]] <small>(corner of Vinewood Boulevard)</small>
+*[[Digital Den]]
+*Downtown Liquor Deli
+*F.T. Pawn <small>(corner of Clinton Avenue)</small>
+*[[Flints Autos]]
+*[[Fred's Pictures|Fred's Store]] <small>(corner of Vinewood Boulevard)</small>
+*[[Harsh Souls]]
+*[[Hawaiian Snow]] <small>(corner of Hawick Avenue)</small>
+*[[Hookah Palace]] <small>(corner of Vespucci Boulevard)</small>
+*[[Los Santos Meteor Building|Los Santos Meteor]]
+*[[Oeuvre Gallery]] <small>(corner of Hawick Avenue)</small>
+*[[Porn Crackers]]
+*[[Premium Deluxe Motorsport]] <small>(corner of Adam's Apple Boulevard)</small>
+*[[Tire Nutz]]
+*Tsunami <small>(corner of Vinewood Boulevard)</small>
+*[[Pillbox Hill Garage|Vapid Dealership]]
+*[[Vinewood Gardens Hotel]] <small>(corner of Spanish Avenue)</small>
+*Vinewood Mall <small>(corner of Vinewood Boulevard)</small>
+*[[Vinewood Plaza]] <small>(corner of Spanish Avenue)</small>
+*Vinewood Self Storage
+*[[Von Crastenburg Hotel]] <small>(corner of Vinewood Boulevard)</small>
+*[[White Widow]] <small>(corner of Hawick Avenue)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

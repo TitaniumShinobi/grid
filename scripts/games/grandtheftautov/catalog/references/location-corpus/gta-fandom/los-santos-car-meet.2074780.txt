@@ -1,0 +1,361 @@
+[[INFOBOX]]
+{{Infobox location
+|name        = {{HUDIcons|game=O|carmeet|size=35px}} LS Car Meet
+|image       = 
+<gallery>
+LSCarMeet-GTAO-DayView.png|Day
+LSCarMeet-GTAO-NightView.png|Night
+</gallery>
+|caption     = The LS Car Meet warehouse exterior.
+|type        = warehouse
+|founded     = [[2021|July 20th, 2021]]
+|founder     = [[Mimi]] {{Small|(Head of the meet)}}
+|games       = {{Games|O=y}}
+|location    = [[Popular Street]], [[Cypress Flats]], [[East Los Santos (HD Universe)|East Los Santos]]
+|map         = 
+<gallery>
+LSCarMeet-GTAO-InteriorMap.png|Interior
+</gallery>
+}}
+
+[[LEAD]]
+The '''LS Car Meet''' ('''Los Santos Car Meet''', '''LSCM''') is an underground indoor facility in {{O}} added in the [[GTA Online: Los Santos Tuners|Los Santos Tuners]] update.
+
+[[SECTION:2:Interior]]
+Players can enter the meet on foot or in a [[Personal Vehicles|Personal Vehicle]] (including most motorcycles). [[Weapon Wheel]] access is completely disabled inside the car meet. Some [[Weaponized Vehicles]] and ones with various special abilities can enter, but their weapons and functions are also rendered inaccessible. There is no prohibition on parking flying vehicles such as the [[Thruster]] or [[Oppressor Mk II]] on the roof. Players cannot enter with a [[Prostitutes|prostitute]] in their vehicle. The music that plays inside the meet is always the "[[CircoLoco Records|CLR]] Launch Party (Seth Troxler)" tracklist from the [[Media Player]], and the player's vehicle [[Radio Station Wheel]] will automatically set to the Player when exiting the meet in a vehicle, specifically continuing the currently playing track where it left off.
+
+;Weaponized/Special Vehicles:
+{| class="wikitable mw-collapsible mw-collapsed" style="width:100%; border-collapse: separate;"
+!scope=col style="width:50%; border: 2px solid green;"|Allowed
+!scope=col style="width:50%; border: 2px solid red;"|Disallowed
+|-
+!colspan=2|General Vehicles storable in personal garages
+|-
+|style="border: 1px solid green;"|
+*[[300R]]
+*[[Aleutian]]
+*[[Ardent]]
+*[[Baller ST-D]]
+*[[Buffalo EVX]]
+*[[Buffalo STX]]
+*[[Champion]]
+*[[Comet Safari]]
+*[[Deity]]
+*[[Deluxo]]
+*[[Envisage]]
+*[[Granger 3600LX]]
+*[[Greenwood (HD Universe)|Greenwood]]
+*[[JB 700W]]
+*[[Jubilee]]
+*[[La Coureuse]]
+*[[MonstroCiti]]
+*[[Nightshark]]
+*[[Oppressor]]
+*[[Omnis e-GT]]
+*[[Paragon R (Armored)]]
+*[[Paragon S]]
+*[[Patriot Mil-Spec]]
+*[[Revolter]]
+*[[Savestra]]
+*[[Scramjet]]
+*[[Speedo Custom (personal vehicle)|Speedo Custom]] {{Small|(Personal Vehicle variant)}}
+*[[Stinger TT]]
+*[[Stromberg (car)|Stromberg]]
+*[[Terminus]]
+*[[Toreador]]
+*[[Turismo Omaggio]]
+*[[Vigilante (car)|Vigilante]]
+*[[Virtue]]
+*[[Viseris]]
+*[[Weaponized Ignus]]
+|style="border: 1px solid red;"|
+*[[APC]]
+*[[Barrage]]
+*[[Caracara]]
+*[[Chernobog]]
+*[[Dune FAV]]
+*[[Half-track]]
+*[[Insurgent Pick-Up Custom]]
+*[[Menacer]]
+*[[Oppressor Mk II]]
+*[[Technical Custom]]
+*[[Thruster]] {{Small|(PV/Avenger Thruster)}}
+*[[TM-02 Khanjali]]
+*[[Weaponized Tampa]]
+*[[Zhaba]]
+|-
+!colspan=2|Personal Emergency Vehicles
+|-
+|style="border: 1px solid green;"|
+*[[Blazer Lifeguard]]
+*[[Caracara Pursuit]] {{Small|(Unmodifiable)}}
+*[[Coquette D10 Pursuit]] {{Small|(Unmodifiable)}}
+*[[Dominator FX Interceptor]] {{Small|(Unmodifiable)}}
+*[[Dorado Cruiser]] {{Small|(Unmodifiable)}}
+*[[Gauntlet Interceptor]] {{Small|(Unmodifiable)}}
+*[[Greenwood Cruiser]] {{Small|(Unmodifiable)}}
+*[[Impaler LX Cruiser]] {{Small|(Unmodifiable)}}
+*[[Impaler SZ Cruiser]] {{Small|(Unmodifiable)}}
+*[[Lifeguard]] {{Small|(Unmodifiable)}}
+*[[Outreach Faction]] {{Small|(Unmodifiable)}}
+*[[Park Ranger]] {{Small|(Unmodifiable)}}
+*[[Police Bike (custom)|Police Bike]] {{small|(Unmodifiable)}}
+*[[Stanier LE Cruiser]] {{Small|(Unmodifiable)}}
+*[[Terminus Patrol]] {{Small|(Unmodifiable)}}
+*[[Unmarked Cruiser]] {{Small|(Unmodifiable)}}
+|style="border: 1px solid red;"|
+*[[RCV]]
+|-
+!colspan=2|[[Arena War]] Vehicles
+|-
+|style="border: 1px solid green;"|
+*[[Brutus]] variants
+*[[Deathbike]] variants
+*[[Dominator]] variants
+*[[Impaler]] variants
+*[[Imperator]] variants
+*[[Issi]] variants
+*[[Slamvan (HD Universe)|Slamvan]] variants
+*[[ZR380]] variants
+|style="border: 1px solid red;"|
+*[[Bruiser]] variants
+*[[Cerberus]] variants
+*[[Sasquatch]] variants
+*[[Scarab]] variants
+|-
+!colspan=2|All [[Special Vehicles]] are disallowed:
+|-
+|style="border: 1px solid green;"|
+|style="border: 1px solid red;"|
+*Vehicle Warehouse
+**[[Armored Boxville]]
+**[[Blazer Aqua]]
+**[[Phantom Wedge]]
+**[[Ramp Buggy]]
+**[[Rocket Voltic]]
+**[[Ruiner 2000]]
+**[[Technical Aqua]]
+**[[Wastelander]]
+*Nightclubs
+**[[Mule Custom]]
+**[[Pounder Custom]]
+**[[Speedo Custom]]
+*Maze Bank Arena
+**[[RC Bandito]]
+*Bunker
+**[[Anti-Aircraft Trailer]]
+*Acid Lab
+**[[Manchez Scout C]]
+*Salvage Yard
+**[[Towtruck (Chop Shop)|Towtruck]]
+**[[Towtruck (Chop Shop beater)|Towtruck (Beater)]]
+*Bail Office
+**[[Burrito (Bail Enforcement)]]
+*Other
+**[[Invade and Persuade Tank]]
+
+|-
+!colspan=2|All [[Pegasus Lifestyle Management]] Vehicles are disallowed
+|-
+|style="border: 1px solid green;"|
+|style="border: 1px solid red;"|
+*Includes [[Arena War]] unlocked specials
+|-
+!colspan=2|All bicycles are disallowed 
+|-
+|style="border: 1px solid green;"|
+|style="border: 1px solid red;"|
+*[[BMX (HD Universe)|BMX]]
+*[[Cruiser (bike)|Cruiser]]
+*[[Endurex Race Bike]]
+*[[Inductor]]
+*[[Junk Energy Inductor]]
+*[[Scorcher]]
+*[[Tri-Cycles Race Bike]]
+*[[Whippet Race Bike]]
+|-
+!colspan=2|All Vehicular Properties are disallowed 
+|-
+|style="border: 1px solid green;"|
+|style="border: 1px solid red;"|
+*[[Brickade 6x6]]
+*[[Hauler Custom]]
+*[[Mobile Operations Center]]
+*[[Phantom Custom]]
+*[[Terrorbyte]]
+|-
+|}
+The interior consists of two instanced zones.
+
+[[SECTION:3:LS Car Meet]]
+The main car meet parking lot, where all player vehicles will intermingle with randomly spawned [[NPC]]-Modified vehicles on display in a large parking lot.
+
+[[SECTION:4:People]]
+The meet is "staffed" by 5 permanent inhabitants and several other known characters may also appear randomly.
+*Permanent "staff"
+**{{HUDIcons|game=O|casinoconcierge}} [[Mimi]] {{nd}} The head of the meet
+**{{HUDIcons|game=O|raceorganiser}} [[Race Organizer]] 
+**{{HUDIcons|game=V|clothesstore}} [[Merch Store Owner]]
+**{{HUDIcons|game=V|tattoo}} [[LSCM Tattooist]]
+**{{HUDIcons|game=V|carmodshop}} [[LSCM Mechanic]]
+***Replaced by [[Hao]] in [[Grand Theft Auto Online/Editions|E&E version]]
+*Random attendees - any two of:
+**[[Moodymann]]
+**[[Hao]]
+**[[Benny (GTA Online)|Benny]]
+**[[Garage Mechanic]]
+**[[Los Santos Customs Mechanic]]
+**[[Warehouse Mechanic]]
+**[[Benny's OMW Mechanic]]
+
+When the player gets near any of the random attendees (except the Garage Mechanic), they will greet the player and farewell them when the player walks away.
+
+[[SECTION:4:Vehicles]]
+{{Main|/Vehicles}}
+There is a total of 50 different vehicles (not tied to a named NPC) that may spawn within the car meet, each with 3-5 customization variations. The game will randomly choose approximately 9-11 different modified vehicles to spawn parked in the car meet.
+
+Along with the randomly generated vehicles, certain pre-defined and/or constant vehicles will be found:
+*Constant
+**Mimi's [[Minivan Custom]] '''68HYO893'''
+**Race Organizer's [[ZR350]] '''01KQX761'''
+**[[Los Santos Customs]] [[Slamtruck]] '''LSC''' (holding a Prize Ride on the back)
+**Merch shop [[Mule]] {{nd}} a prop, no licence plate.
+**Mod Shop "Mobile Auto Repairs" [[Mule]] {{nd}} a prop, no licence plate.
+**Tattoo shop [[Boxville (HD Universe)|Boxville]] {{nd}} a prop, no licence plate.
+*Can spawn - any two of:
+**Will always spawn when their owner is in the meet:
+***Moodymann's [[Gauntlet Hellfire]] '''MOODYMAN'''
+***Benny's [[Hermes]] '''B3NNY'''
+***Garage Mechanic's [[Futo]] '''ONDASPOT'''
+***Los Santos Customs Mechanic's [[Drift Yosemite]] '''LSC2'''
+***Hao's [[Penumbra]] '''60HSW264'''
+***Benny's OMW Mechanic's [[Peyote Custom]] '''09AIO297'''
+***Warehouse Mechanic's [[Impaler]] '''62CSB145'''
+**Spawn as [[Secrets and Easter Eggs in GTA Online|Easter Eggs]] without their owner:
+***An unknown owner's [[Winky]] '''42OYK235'''
+***[[Lamar Davis]]' [[Emperor (HD Universe)|Emperor]] '''LAMAR G'''
+***[[Yung Ancestor]]'s [[Furia]] '''ANCESTOR'''
+***[[Miguel Madrazo]]'s [[Tyrant]] '''MADRA20'''
+***[[Brucie Kibbutz]]'s [[Banshee (HD Universe)|Banshee]] '''D481TCH'''
+***[[Yusuf Amir]]'s [[Windsor Drop]] '''L1BERTY''' (as of [[GTA Online: The Chop Shop|The Chop Shop]] update)
+*Test Rides
+{{HUDIcons|game=O|testcar}} Three tuner vehicles available for test driving on the Test Track.
+:Holding the zoom button (''z'' on Keyboard, D-Pad Down on a controller) will display vehicle information including an "Owner" field which will be populated for all player-owned vehicles in the Meet. NPC-owned vehicles, including the static ones above, will have the owner field left blank. The Test Rides have the website where that vehicle can be purchased listed as "Owner".
+{{HUDIcons|game=O|hswtestvehicle}} With the release of the [[Grand Theft Auto Online/Editions|Expanded & Enhanced]] Edition of ''GTA Online'', A [[Hao's Special Works]]-modified vehicle was added for test driving on the Test Track.
+
+[[SECTION:4:Awards]]
+The following [[Awards]] are earned for completing gameplay milestones related to Los Santos Car Meet content.
+
+They can be tracked from the [[Pause Menu]] in '''Stats > Awards > Los Santos Tuners'''.
+
+{| class="article-table"
+! rowspan="2" |Image
+! rowspan="2" |Name
+! colspan="4" style="text-align:center;" |Levels
+! rowspan="2" |Unlocked by
+! rowspan="2" |Also Unlocks
+|-
+!Bronze
+!Silver
+!Gold
+!Platinum
+|-
+|[[File:Awards-GTAO-LSCarMeet.png|center|100px]]
+|LS Car Meet
+|—
+|—
+|—
+|1
+|Visit the [[LS Car Meet]] for the first time.
+|
+|-
+|[[File:Awards-GTAO-LSCarMeetMember.png|center|100px]]
+|LS Car Meet Member
+|5
+|25
+|50
+|100
+|Reach LS Car Meet [[Reputation (LS Car Meet)|reputation]] level ''n''{{Ref|name=casinoheist|ref=The displayed number in the description changes based on the required target for the next tier of the given award.}}.
+|
+|}
+
+[[SECTION:3:Test Track]]
+{{HUDIcons|game=O|cartestarea}} Visible from inside the Meet zone, the Test track is populated by two low-poly prop [[Drift Tampa]]s with the Hotring Racer livery. They are coded to loop around a few columns and create burnouts within the vicinity of the entrance.
+
+Players can enter the zone by getting in one of the Test Rides or from the special Vehicle Options Menu while inside any player's [[Personal Vehicles]].
+
+Players can choose to enter a shared instance of the test track with other players in the session able to join, or enter alone and have the arena to themselves. If hosting a Private Takeover Meet, Test Track access is automatically shared with others in the private meet and can not be entered in solo mode.
+
+The Test Track can be accessed directly from outside at the river side of the building by using the northern garage doors marked by the test track icon on the [[Radar]].
+
+Players can not exit their vehicle inside the Test Track. Holding down the key/button for vehicle exit will allow the player to exit the Test Track back to the main Meet space or outside. Otherwise, the player can drive back to the marked gate where they can choose to enter the Meet space or exit the building. If testing a Test Ride vehicle, players can only return to the Meet space, they may not take the Test Ride outside.
+
+[[SECTION:4:Spectator Zone]]
+Pedestrian access to the Test Track is disallowed except for two secure raised areas. These are accessible from doorways near the Tattoo Parlor and Mod Shop, and allows the player to access small alcove areas overlooking the track to view any other players using the shared test track session instead of the NPC controlled action visible from within the meet area. If there are no players in the Test Track shared session, the track will be empty, even if there is a player conducting a solo session. Players in the spectator zone can see new players entering the shared test track.
+
+[[SECTION:4:Races]]
+Three race types are available in the test track, although two can not be accessed in solo instances. A player launches each race mode from the LS Car Meet Interaction menu.
+
+[[SECTION:4:Time Trial]]
+Set a personal best time around the marked LS Car Meet Test Track (1 player - all other cars will turn to non-contact ghost-mode).
+<div class="stretch-img" style="width:75%; margin: auto;">[[File:TestTrack-GTAO-Map.png]]</div>
+
+[[SECTION:4:Head-to-Head]]
+Challenge another player to a 5 leg there-and-back drag race across the LS Car Meet Test Track space (2 players - contact on. All other non-competing cars will turn to non-contact ghost-mode). All other players in the Test Track instance will be invited to join. As soon as another player accepts the challenge, a timer will count down and both attendees will be automatically positioned at the start point. Each player has their own turn marker corona.
+
+[[SECTION:4:Scramble]]
+A randomized race around the LS Car Meet Test Track space where players compete to be the first to reach 20 checkpoints (2-4 players - contact on. All other non-competing cars will turn to non-contact ghost-mode). All other players in the Test Track instance will be invited to join. As soon as the minimum number of player accept the challenge, a timer will count down and attendees will be automatically positioned at the start point. All players share the same corona markers. Each checkpoint corona has a direction arrow pointing towards the location of the next checkpoint.
+<div class="stretch-img" style="width:75%; margin: auto;">[[File:Scramble-GTAO-Map.png]]<br>A random example of the 20 Scramble checkpoints distributed around the Test Track</div>
+
+[[SECTION:4:Awards]]
+The following [[Awards|Award]] is earned for completing gameplay milestones related to Los Santos Car Meet content.
+
+They can be tracked from the [[Pause Menu]] in '''Stats > Awards > Los Santos Tuners'''.
+
+{| class="article-table"
+! rowspan="2" |Image
+! rowspan="2" |Name
+! colspan="4" style="text-align:center;" |Levels
+! rowspan="2" |Unlocked by
+! rowspan="2" |Also Unlocks
+|-
+!Bronze
+!Silver
+!Gold
+!Platinum
+|-
+|[[File:Awards-GTAO-TriedAndTested.png|center|100px]]
+|Tried and Tested
+|30
+|60
+|120
+|240
+|Test Drive an LS Car Meet car for X minutes inside the Test Area.
+|
+|}
+
+[[SECTION:4:While on the Test Track]]
+*Invite to LS Car Meet 
+*Time Trial
+*Head-to-Head
+*Scramble
+*Leaderboards - View leaderboards for the three Test Track races
+*Test Track Access
+
+[[SECTION:3:Merch Shop]]
+The merch shop is set up out of the back of a unique prop spray-painted [[Mule]]. The shop owner sells Outfits and there are stacks of shoes, hats and a garment rack for the tops. All [[GTA Online: Los Santos Tuners/Character Customization|clothing]] is locked behind [[Reputation (LS Car Meet)|Rep Level]] and can only be purchased when unlocked. Wearing Car Meet clothing inside the meet will double the earning rate of passive Rep.
+
+[[SECTION:3:Mod Shop]]
+A four bay vehicle Mod Shop is available. Access for modifying any [[Personal Vehicles]] is from the Vehicle Menu while sitting in the vehicle. The shop is open to view by all players in the meet and they can watch the modifications being undertaken in real time. This is the only mod shop capable of applying the Low Grip Tires to the vehicles added in the Tuners update.
+
+[[SECTION:4:Hao's Special Works]]
+{{Version|game=O|version=ee}}
+{{Main|Hao’s Special Works}}
+{{Quote|This new generation of GTA Online includes a range of new vehicles and a new addition to the Los Santos Car Meet: Hao’s Special Works.<br>Hao’s Special Works encompasses best-in-class vehicle upgrades, a new class of Races using specially modified vehicles, and a weekly rotation of Hao’s Special Works Time Trials, along with a Premium Test Ride, where you can get behind the wheel of these newly modified vehicles for free.|{{URL|https://www.rockstargames.com/newswire/article/172872k8a375k8/gtav-and-gta-online-coming-march-15-for-playstation-5-and-xbox-series|Newswire}}}}
+{{Quote|Exclusive to the latest generation consoles, Hao has taken over the LS Car Meet’s Mod Shop to offer his services as a specialist customizer with Hao’s Special Works. First, unlock Hao’s Special Works by taking his phone call and completing a time trial using a high-performing, HSW-modified vehicle. Once you beat the par time, Hao’s shop will be unlocked for business, allowing you to purchase an HSW upgrade for eligible vehicles and then add a new range of modifications including groundbreaking acceleration, Chameleon Paint, and more.|{{URL|https://www.rockstargames.com/newswire/article/4ka18ao8a4o227/grand-theft-auto-v-and-gta-online-out-now-on-playstation-5-and-xbox-se|Newswire}}}}
+In the [[Expanded & Enhanced Edition]], the generic mod shop is replaced by [[Hao's Special Works]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Converted buildings
+Warehouses

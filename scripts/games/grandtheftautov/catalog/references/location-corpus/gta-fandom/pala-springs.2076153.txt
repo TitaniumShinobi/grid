@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|miscplacename = NATURAL FEATURE
+|name = Pala Springs
+|image =Route1-GTAV-PaletoForest.jpg
+|image_size =
+|caption = View looking south from Paleto Bay
+|games = {{Games|V=y|O=y}}
+|location = [[Paleto Forest]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Pala Springs''' is an unmarked location in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Businesses]]
+* [[Pala Springs Aerial Tramway]]
+* Skyview Cafébar
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|hotel = y
+|structure_type = Hotel and Apartments
+|status         = active
+|image          = EclipseLodge-GTAVe-Overview.png
+|sign           = 
+<gallery>
+EclipseLodge-GTAVe-Sign.png|Lodge
+EclipseLodge-GTAVe-ApartmentsSign.png|Apartments
+</gallery>
+|location       = [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = No
+|games          = {{games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Eclipse Lodge''' (also known as '''Eclipse Lodge Apartments''') is a hotel and apartment building appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hotels

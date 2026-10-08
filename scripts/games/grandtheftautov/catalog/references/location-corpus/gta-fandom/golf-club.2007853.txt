@@ -1,0 +1,91 @@
+[[INFOBOX]]
+{{Infobox weapon
+|name         = Golf Club
+|image        = GolfClub-GTAVee.png
+|caption      = The '''Golf Club''' in {{VO}}.
+|slot         = [[Melee Weapons|Melee]]
+|type         = Club
+|ammo         = 
+|games        = {{Games|III={{UN|cutcontent}}|VC=y|SA=y|LCS={{UN|gamefileonly}}|VCS=y|TBOGT={{UN|missiononly}}|V=y|O=y}}
+|manufacturer = 
+|reticle      = 
+*None
+*Generic {{Small|(''GTA San Andreas'')}}
+|anim         = 
+*Golfclub {{Small|(''GTA Vice City'')}}
+*Melee Club {{Small|(''GTA V'')}}
+|flags        = 
+{{Expand|'''GTA V''' & '''Online'''|
+{{Flags|AllowMeleeBlock}}<br>
+{{Flags|CarriedInHand}}<br>
+{{Flags|ArmourPenetrating}}<br>
+{{Flags|CanLockonOnFoot}}<br>
+{{Flags|CanLockonInVehicle}}<br>
+{{Flags|TwoHanded}}<br>
+{{Flags|MeleeClub}}<br>
+{{Flags|UsableOnFoot}}<br>
+{{Flags|UsableClimbing}}<br>
+{{Flags|DoesRevivableDamage}}<br>
+{{Flags|AllowCloseQuarterKills}}<br>
+{{Flags|NoWheelStats}}<br>
+{{Flags|UseFPSAimIK}}<br>
+{{Flags|UseFPSSecondaryMotion}}<br>
+}}
+|filename     = 
+*GolfClub {{Small|(''GTA Vice City'')}}
+*GOLFCLUB {{Small|(''GTA V'')}}
+*gclub {{Small|(''GTA V'', Model name)}}
+*GCLUB {{Small|(''GTA V'', Stat name)}}
+|spawnmap     = Yes {{Small|(all games)}}
+|spawnped     = 
+*Golfers {{Small|(all games)}}
+*Road ragers {{Small|(''GTA San Andreas'')}}
+|spawnvehicle = [[Caddy]] {{Small|(''GTA Vice City'', ''GTA San Andreas'', ''GTA Vice City Stories'')}}
+}}
+
+[[LEAD]]
+The '''Golf Club''' is a weapon and a [[Golf|golfing]] equipment appeared in {{VC}}, {{SA}}, {{VCS}}, {{V}} and {{O}}. It also appeared, although not as a weapon, in {{TBOGT}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto: Vice City'']]
+*[[Leaf Links (3D Universe)|Leaf Links]], [[Vice City Beach]] {{nd}} Behind the golf club clubhouse.
+*Entering a [[Caddy]] also gives the player a golf club if the melee weapon slot is free.
+
+[[SECTION:3:''Grand Theft Auto: San Andreas'']]
+[[File:GolfClub-LocationsMap-GTASA.jpg|thumb|Golf Club's locations map]]
+*[[Mulholland]], [[Los Santos (3D Universe)|Los Santos]] {{nd}} At the base of the broadcasting tower behind the [[Vinewood Sign (3D Universe)|Vinewood Sign]].
+*[[Angel Pine]], [[Whetstone]] {{nd}} In a garage on the southwest side of Angel Pine.
+*[[Avispa Country Club]], [[San Fierro (3D Universe)|San Fierro]] {{nd}} Beside the entrance to the Avispa Country Club building.
+*[[Yellow Bell Golf Course]], [[Las Venturas (3D Universe)|Las Venturas]] {{nd}} On top of the overhang behind the main clubhouse.
+*Angering NPC drivers, especially [[Taxi Drivers]], by ramming their car can cause them to attack the player with a golf club.
+*Entering the [[Caddy]] will automatically give the player a golf club.
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+*Found at various areas of Leaf Links, Vice Beach:
+**West side of the north part of Leaf Links Golf Club.
+**Driving range at the north part of the golf course.
+**Northwest of a path loop connecting the north and central parts of the golf course.
+**South of the bridge connecting the golf course to [[Vice Point]].
+**By a tree in the middle part of the south island of the golf course.
+*Entering a [[Caddy]] also gives the player a golf club if the melee weapon slot is free.
+
+[[SECTION:3:''Grand Theft Auto V'']]
+*[[Los Santos Country Club|Los Santos Golf Club]], [[Richman (HD Universe)|Richman]] {{nd}} The player is granted one after playing a round of golf. It can also be gained by going around back and scaring a golfer to make them drop the weapon.
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+*Los Santos Golf Club - Can be acquired by scaring or killing any golfer to make them drop their club.
+*Can be found in player-created content, such as [[Deathmatch]]es, [[Capture]]s and [[Last Team Standing|LTS]].
+*Can be found in a shack on an island in [[North Chumash]].
+* Acquired for the mission [[On Course]] and kept afterward.
+
+[[CATEGORIES]]
+Golf
+Melee class
+Melee weapons
+Weapons in GTA Online
+Weapons in GTA San Andreas
+Weapons in GTA V
+Weapons in GTA Vice City
+Weapons in GTA Vice City Stories

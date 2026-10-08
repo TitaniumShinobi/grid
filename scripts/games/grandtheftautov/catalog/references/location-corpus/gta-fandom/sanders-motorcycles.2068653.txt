@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|type     = dealership
+|image    = SandersMotorcycles-GTAVee.jpg
+|caption  = View of Sanders Motorcycles from [[Adam's Apple Boulevard]].
+|status   = active
+|location = [[Adam's Apple Boulevard]], [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]]
+|games    = {{Games|V=y|O=y}}
+|products =
+*[[Shitzu]] vehicles
+*[[Maibatsu Corporation (HD Universe)|Maibatsu]] vehicles
+*[[Speedophile]] vehicles
+}}
+
+[[LEAD]]
+'''Sanders Motorcycles''' is an authorized motorcycle dealership in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Vehicle dealerships

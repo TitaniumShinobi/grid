@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Radio Los Santos
+|logo         = RadioLosSantos-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{Games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Chamberlain Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]] 
+|taglines     = ''Blazin' hip hop across San Andreas for 25 years.''
+|bawsaq       = 
+|lcn          = {{BAWSAQ/Slider}} '''RLS'''
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:Hip hop radio stations|Hip hop]]
+|established  = [[1988]]
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 106.1 FM
+|host         = [[Kurt Alexander|Big Boy]]
+|product      = 
+|radio_tracks = 
+*15 <small>(''GTA V'' and ''GTA Online''; original version)</small>
+*31 <small>(''GTA V''; [[Grand Theft Auto V: Enhanced Edition|enhanced version]])</small>
+*64 <small>(''GTA Online''; enhanced version)</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+'''Radio Los Santos''' is a [[Radio Stations|radio station]] featured in {{V}} and {{O}}, playing contemporary {{WP|Hip-hop|hip hop}}. 
+
+The player can buy stocks from the radio station on the [[Lcn-exchange.com]] website in ''GTA V''.
+
+[[CATEGORIES]]
+Dynamic mix radio stations
+Hip hop radio stations
+Media in GTA Online
+Media in GTA V

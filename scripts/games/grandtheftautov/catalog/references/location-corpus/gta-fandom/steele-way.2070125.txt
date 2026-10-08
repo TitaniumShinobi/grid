@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = SteeleWay-GTAV.png
+|caption = 
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|start = [[West Eclipse Boulevard]]
+|end = -
+|map = <gallery>
+SteeleWay-GTAV-Map.png|Map
+SteeleWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Steele Way''' is a [[List of Street Names|street]] in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Cul-de-sacs
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

@@ -1,0 +1,20 @@
+[[LEAD]]
+'''Los Santos International Airport (LSIA)''' is the airport of and a neighbourhood in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The airport consists of three runways, a large terminal building, several smaller warehouses, parking and airport related businesses such as car rentals, hotels and restaurants. [[NOOSE]] has a branch at the airport, which has no gang influence. [[Devin Weston]] owns a hangar at the airport with [[Franklin Clinton]] and [[Michael De Santa]] both able to purchase hangars at the airport. Unless the player owns a hanger or participates in the flight school, entering the secure area of the airport, the runways and surrounding area, without authorisation gains the player a [[Wanted Level in GTA V|three star wanted level]]. The airport is largely based on [[:wp:Los Angeles International Airport|Los Angeles International Airport]].
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:Exterior]]
+The exterior of the airport takes the most architectural influences from the actual Los Angeles International Airport (LAX). The Sightings Bar and Restaurant, located just near two car parks, is very clearly a rendition of the Theme Building in LAX.
+
+[[SECTION:3:Runways and taxiways]]
+The airport has three runways - one running north-south with the designation 3/21, and another two running west-east with the designations 12L/33R and 12R/33L respectively. Runways 12L/33L and 12R/22R measure 740m or 0.46 miles each, and the north-south runway measures 595m or 0.37 miles long. The larger [[Jet|Jets]] take off and land on runways 12L and 12R respectively, while Shamals and Luxors land on runway 3. Jets landing will always taxi to a building near Franklin's hangar, while Shamals and Luxors taxi to a small area near the Flight School.
+
+The runways are connected by taxiways fanning out in six points. They are relatively small for an international airport - it is hard to manoeuvre a Jet around without having to make constant adjustments.
+
+[[SECTION:3:Hangars]]
+Michael and Franklin can purchase hangars located at the southern end of the airport.
+
+[[CATEGORIES]]
+Airports
+Areas in Los Santos in GTA V

@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Vinewood Self Storage
+|image = VinewoodSelfStorage-Logo-GTAV.png
+|type = Storage
+|games = {{Games|V=y|O=y}}
+|locations = [[Power Street]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Vinewood Self Storage''' is a storage facility in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Storage companies

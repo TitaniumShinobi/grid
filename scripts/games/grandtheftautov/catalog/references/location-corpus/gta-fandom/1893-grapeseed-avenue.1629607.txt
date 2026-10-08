@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 1893 Grapeseed Avenue
+|image = 1893 Grapeseed Avenue 1.jpg
+|caption = The house as it appears in ''[[Grand Theft Auto Online]]''
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end house
+|garage = 2 vehicles <br> 1 bike
+|price = $118,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = [[Rank]] 5}}
+
+[[LEAD]]
+'''1893 Grapeseed Avenue''' is a [[Safehouses in GTA Online|safehouse]] located on [[Grapeseed Avenue]] in [[Grapeseed]], [[Blaine County]], featured in the [[Independence Day Special]] for ''[[Grand Theft Auto Online]]''.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]118,000 and includes a 2-car garage.
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online

@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|name = Mexican and American
+|type = [[:Category:Restaurants|Restaurant]]
+|owner = 
+|location = [[West Mirror Dr]], [[Mirror Park]]<br />[[Davis Ave]], [[Rancho]]<br />[[Dutch London St]]/[[Roy Lowenstein Blvd]] in [[Rancho]], [[Los Santos in GTA V|Los Santos]]<br />[[El Rancho Blvd]]/[[Vespucci Blvd]] in [[Murrieta Heights]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Mexican and American''' is a [[:Category:Restaurants|restaurant]] in [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The company has locations at the corner of [[Dutch London St]] and [[Roy Lowenstein Blvd]] in [[Rancho]], the corner of [[El Rancho Blvd]] and [[Vespucci Blvd]] in [[Murrieta Heights]], on [[Davis Ave]] in [[Rancho]] (attached to a [[Hearty Taco]]) and on [[West Mirror Dr]] in [[Mirror Park]]. The stores are open twenty-four hours a day and serve breakfast from 5-11am.
+
+
+
+
+[[Type::Business| ]]
+[[Location::Davis Ave| ]]
+[[Location::Dutch London St| ]]
+[[Location::Roy Lowenstein Blvd| ]]
+[[Location::Rancho| ]]
+[[Location::El Rancho Blvd| ]]
+[[Location::Vespucci Blvd| ]]
+[[Location::Murrieta Heights| ]]
+[[Location::West Mirror Dr| ]]
+[[Location::Mirror Park| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Restaurants

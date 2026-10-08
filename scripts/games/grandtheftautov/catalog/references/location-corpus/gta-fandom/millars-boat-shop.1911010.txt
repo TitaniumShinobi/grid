@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Millars Boat Shop
+|image = MillarsFishery-GTAOee-BoatShop.jpg
+|caption = 
+|games = {{Games|V=y|O=y}}
+|location = [[Galilee]], [[Blaine County]]
+|type = dealership
+|map = 
+|map_caption = 
+}}
+
+[[LEAD]]
+'''Millars Boat Shop''' is a business appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Stores

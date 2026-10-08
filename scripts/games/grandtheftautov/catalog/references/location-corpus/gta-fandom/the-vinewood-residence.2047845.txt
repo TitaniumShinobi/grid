@@ -1,0 +1,58 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|safehouse      = y
+|type           = mansion
+|name           = The Vinewood Residence
+|sign           = 
+|image          = TheVinewoodResidence-GTAOee.jpg
+|caption        = Overview of '''The Vinewood Residence''' in {{O}}.
+|aka            = 
+|games          = {{games|O={{EEEV}} {{DLC|mp2025_02}}}}
+|location       = {{Location|v-vinewoodhills}}
+|use            = 
+|owner          = {{GTAOP}} {{Small|(determinant)}}
+|operator       = [[Prix Luxury]]
+|occupants      = 
+*[[Prix Luxury AI Concierge]]
+*Prix Luxury Security
+*Personal Barber
+*Personal Tattoo Artist
+*Personal Vehicle Workshop Mechanic
+*Pets {{Small|(determinant)}}
+|structure_type = Mansion
+|architecture   = [[:Category:Contemporary buildings|Contemporary]]
+|length         = 
+|height         = 
+|area           = 
+|size           = 
+|floors         = 
+|levels         = 4
+|rooms          = 
+|garagecap      = 
+*20 vehicles
+*1 helicopter
+|parkingcap     = 
+|accessible     = Yes
+|canplayerstore = Yes
+|price          = [[Money|$]]12,200,000
+|unlockedby     = 
+|unlockedafter  = 
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = TheVinewoodResidence-GTAOe-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+'''The Vinewood Residence''' is a [[Mansions|Mansion]] appearing in {{O}} as part of the [[GTA Online: A Safehouse in the Hills|A Safehouse in the Hills]] update, located in {{Location|v-vinewoodhills}}.
+
+It is available for purchase through the [[Prix Luxury|Prix Luxury Real Estate]] website for a base price of [[Money|$]]12,200,000.
+
+[[CATEGORIES]]
+Buildings in GTA Online: A Safehouse in the Hills
+Buildings purchasable on Prix Luxury Real Estate
+Contemporary buildings
+Mansions
+Safehouses in GTA Online

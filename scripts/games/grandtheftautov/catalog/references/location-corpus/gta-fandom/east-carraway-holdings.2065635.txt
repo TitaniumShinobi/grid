@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{infobox business
+|Name Change = HOLDING COMPANY
+|name = East Carraway Holdings
+|ceo = 
+|type = 
+|games = {{Games|O={{EEEV}} {{DLC|mpexecutive}}}}
+|locations = [[The Carraways|East Carraway]], [[State of Liberty (HD Universe)|Liberty]]
+}}
+
+[[LEAD]]
+'''East Carraway Holdings''' is a holding company from [[The Carraways|East Carraway]], [[State of Liberty (HD Universe)|Liberty]], appearing in {{O}} as part of the [[GTA Online: Further Adventures in Finance and Felony|Further Adventures in Finance and Felony]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Further Adventures in Finance and Felony
+Holding companies

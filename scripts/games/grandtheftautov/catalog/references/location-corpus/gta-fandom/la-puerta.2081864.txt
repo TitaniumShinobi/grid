@@ -1,0 +1,60 @@
+[[INFOBOX]]
+{{Infobox location
+|image        = LaPuerta-GTAVee.jpg
+|caption      = 
+|games        = {{Games|V=y|O=y}}
+|type         = neighborhood
+|location     = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner     = PoliceScanner-GTAV-Neighborhood-LaPuerta.ogg
+|map          = 
+<gallery>
+LaPuerta-IngameGPS-GTAV-Map.png|La Puerta
+LaPuerta-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption  = Location on the map (in-game GPS). The <font color="blue">Maze Bank Arena</font> is considered a neighborhood of <font color="red">La Puerta</font>.
+}}
+
+[[LEAD]]
+'''La Puerta''' is a small area featured in {{V}} and {{O}}. It is located in southern [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]. It is home to the famous [[Maze Bank Arena]].
+
+[[SECTION:2:Roads and Streets]]
+*[[Aguja Street]]
+*[[Alta Street]]
+*[[Calais Avenue]]
+*[[Dutch London St]]
+*[[Goma Street]]
+*[[Greenwich Parkway]]
+*[[Mutiny Road]]
+*[[Palomino Avenue]]
+*[[Rub Street]]
+*[[Shank Street]]
+*[[South Rockford Drive]]
+*[[South Arsenal Street]]
+*[[Tackle Street]]
+*[[Tug Street]]
+*[[Vespucci Boulevard]]
+
+[[SECTION:2:Places of Interest]]
+*[[Maze Bank Arena]]
+*[[Puerto Del Sol Yacht Club]]
+*[[Rogers Salvage and Scrap]]
+*[[Vespucci Suites]]
+
+[[SECTION:2:Businesses]]
+*Bigv Surf Shop
+*[[Fridgit]]
+*[[The Happy Teeth Dentistry]]
+*[[Globe Oil]]
+*[[KOI Retreat & Spa]]
+*[[La Spada]]
+*[[Liquor Market]]
+*[[Los Santos Customs]]
+*Pony & Trap Accountancy
+*[[The Viceroy Hotels & Resorts]]
+*[[Xero]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

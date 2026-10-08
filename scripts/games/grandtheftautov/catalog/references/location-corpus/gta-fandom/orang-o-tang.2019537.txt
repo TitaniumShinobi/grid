@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = drink
+|name          = Orang-O-Tang
+|sign          = Orang-O-Tang-GTA4-logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|price         = 
+|income        =
+|products      = [[#Products|Products]]
+|vehicles      = 
+|weapons       = 
+|taglines      =
+*"''All the cool kidz are sippin' it, word!''"
+*"''me Pongo, Pongo thirsty''" 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Orang-O-Tang''' is a beverage brand appearing in the {{HD}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in TBOGT
+Businesses in TLAD
+Soda brands

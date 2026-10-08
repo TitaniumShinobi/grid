@@ -1,0 +1,24 @@
+[[LEAD]]
+'''Dry Dock St''' is a street, running west to east, in [[Cypress Flats]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The street has connections to [[Orchardville Ave]] in the east and [[Popular St]] in the west.
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Kennedy Sneaker Co.]]
+| [[Cypress Flats]]
+| [[Orchardville Ave]]
+| Clothing
+|-
+| [[Nicholl's Liquor]]
+| [[Cypress Flats]]
+|
+| Food and drink
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

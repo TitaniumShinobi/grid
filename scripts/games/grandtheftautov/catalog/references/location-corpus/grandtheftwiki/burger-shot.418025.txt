@@ -1,0 +1,104 @@
+[[INFOBOX]]
+{{infobox business|
+| image = BurgerShot-GTAIV-logo.png
+| size = 300x300px
+| caption = The Burger Shot logo in GTA IV.
+| name = (The) Burger Shot
+| game_1 = GTA Vice City
+| game_2 = GTA San Andreas
+| game_3 = GTA Liberty City Stories
+| game_4 = GTA Vice City Stories
+| game_5 = GTA IV
+| game_6 = GTA Chinatown Wars
+| game_7 = GTA V
+| type = [[:Category:Restaurants|Fast food restaurant]]
+| owner = 
+| location = '''[[3D Universe]]'''<br />[[Spinybed]], [[Las Venturas]]<br />[[Whitewood Estates]], Las Venturas<br />[[Redsands East]], Las Venturas<br />[[Old Venturas Strip]], Las Venturas<br />[[Old Venturas Strip]], Las Venturas<br />[[Marina, Los Santos|Marina]], [[Los Santos in GTA III Era|Los Santos]]<br />[[Mulholland]], Los Santos<br />[[Calton Heights]], [[San Fierro]]<br />[[Doherty]], San Fierro<br />[[Financial]], San Fierro<br />[[Vice Point]], [[Vice City in GTA III Era|Vice City]]<br />'''[[HD Universe]]'''<br />[[Beechwood City]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Cerveza Heights]], Liberty City (<small>closed</small>)<br />[[Firefly Island]], Liberty City<br />[[Fortside]], Liberty City<br />[[Bohan Industrial|Industrial]], Liberty City<br />[[North Holland]], Liberty City<br />[[Star Junction]], Liberty City<br />[[Westminster]]/[[The Meat Quarter]], Liberty City<br />[[Westdyke]]<br />[[Del Perro]], [[Los Santos in GTA V|Los Santos]]<br />[[Vespucci Canals]], Los Santos
+| affiliation = 
+| missions = 
+| employee = '''[[3D Universe]]'''<br />[[OG Loc|Jeffery "OG Loc" Cross]]<br />'''[[HD Universe]]'''<br />[[Ahron Ward]]
+}}
+
+[[LEAD]]
+'''Burger Shot''' (known as '''The Burger Shot''' in GTA Vice City) is a chain of fast-food restaurants which appear in [[Grand Theft Auto: Vice City]], [[Grand Theft Auto: San Andreas]], [[Grand Theft Auto: Liberty City Stories]], [[Grand Theft Auto IV]] and its [[GTA IV Episodes|episodes]], [[Grand Theft Auto: Chinatown Wars]] and [[Grand Theft Auto V]]. The chain is based on [[wp:Burger King|Burger King]]. The name "burger shot" is a pornographic term referring to a photo or video scene with a close-up view of the female genitals. The franchise's mottos are: ''"Die with a smile on your face!"'' and ''"Kill your Hunger!"''
+
+[[SECTION:3:GTA Vice City — GTA San Andreas]]
+Originally, The Burger Shot in GTA Vice City lacks any readable menus, although it still does display images of a variety of burgers, sandwiches and side dishes. Burger Shot in GTA San Andreas, however, offer the player four meals, each with different quantities of fats, with one meal, the Salad Meal, lacking any fats. The names of two meals relate to homosexuality; "beef tower" is slang for naked men stacked together and "meat stack" is pornographically-defined for women having sex together. In Las Venturas outlets, the pricing of the Beef Tower, Meat Stack and Salad Meal are 20% higher than in the rest of the state, as noted below:
+
+<gallery width="auto" perrow="4" style="font-size:95%; padding:0; text-align:left" widths="160">
+BurgerShot-GTASA-MooKidsMeal.jpg|Moo Kids Meal ($2); increases fat by 1%.
+BurgerShot-GTASA-BeefTower.jpg|Beef Tower Meal ($5/$6); increases fat by 2%.
+BurgerShot-GTASA-MeatStack.jpg|Meat Stack Meal ($10/$12); increases fat by 3%.
+BurgerShot-GTASA-SaladMeal.jpg|Salad Meal ($10/$12); does not increase fat.
+</gallery>
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:GTA Vice City]]
+In GTA Vice City, The Burger Shot exists in [[Vice City in GTA III Era|Vice City]] as only two outlets within [[North Point Mall]] in [[Vice Point]] alongside another three outlets (the [[Beef Bandit]], [[The Cheesy Crust Pizza Co.|Cheesy Crust Pizza]] and [[Shaft Hot Dogs]]) on both the east and west sides of the mall.
+
+[[SECTION:3:GTA San Andreas]]
+In GTA San Andreas, Burger Shot is interestingly confined within the limits of [[San Andreas in GTA III Era|San Andreas']] three major cities, [[Los Santos in GTA III Era|Los Santos]], [[San Fierro]] and [[Las Venturas]], and as a result is not found in rural San Andreas.
+
+There are ten Burger Shot outlets in total; two in Los Santos, three in San Fierro, and five in Las Venturas (the largest number of operational fast food outlets within a city in GTA San Andreas). [[Old Venturas Strip]] itself has two Burger Shot outlets that are only a short walk from each other.
+
+<gallery width="auto" perrow="4" style="font-size:95%; padding:0; text-align:left" widths="160">
+BurgerShot-GTASA-Marina-exterior.jpg|[[Marina, Los Santos|Marina]], [[Los Santos in GTA III Era|Los Santos]], [[San Andreas in GTA III Era|San Andreas]].
+BurgerShot-GTASA-Mulholland-exterior.jpg|[[Mulholland]], Los Santos, San Andreas.
+BurgerShot-GTASA-CaltonHeights-exterior.jpg|[[Calton Heights]], [[San Fierro]], San Andreas.
+BurgerShot-GTASA-Doherty-exterior.jpg|[[Doherty]], [[San Fierro]], San Andreas
+BurgerShot-GTASA-Financial-exterior.jpg|[[Financial]], [[San Fierro]], San Andreas
+BurgerShot-GTASA-SpinyBed-exterior.jpg|[[Spinybed]], [[Las Venturas]], San Andreas
+BurgerShot-GTASA-WhitewoodEstates-exterior.jpg|[[Whitewood Estates]], [[Las Venturas]], San Andreas
+BurgerShot-GTASA-RedsandsEast-exterior.jpg|[[Redsands East]], [[Las Venturas]], San Andreas
+BurgerShot-GTASA-centralOldVenturasStrip-exterior.jpg|[[Old Venturas Strip]], [[Las Venturas]], San Andreas
+BurgerShot-GTASA-eastOldVenturasStrip-exterior.jpg|[[Old Venturas Strip]], [[Las Venturas]], San Andreas
+</gallery>
+
+[[SECTION:3:GTA IV]]
+In GTA IV, Burger Shot operates a total of ten outlets in and throughout [[Liberty City in GTA IV Era|Liberty City]] alone, including two integrated mini-restaurants at the city's two [[Memory Lanes]] bowling alleys, and one shuttered outlet in [[Cerveza Heights]], [[Dukes]]. They include as follows:
+
+<gallery width="auto" perrow="5" style="font-size:95%; padding:0; text-align:left" widths="160">
+BurgerShot-GTAIV-BeechwoodCity.jpg|[[Beechwood City]], [[Broker]], [[Liberty City in GTA IV Era|Liberty City]].
+BurgerShot-GTAIV-CervezaHeights.jpg|[[Cerveza Heights]], [[Dukes]], Liberty City (closed).
+BurgerShot-GTAIV-Fortside.jpg|[[Fortside]], [[Bohan]], Liberty City.
+BurgerShot-GTAIV-Industrial.jpg|[[Bohan Industrial]], Liberty City.
+BurgerShot-GTAIV-StarJunction.jpg|[[Star Junction]], [[Algonquin]], Liberty City.
+BurgerShot-GTAIV-NorthHolland.jpg|[[North Holland]], [[Algonquin]], Liberty City.
+BurgerShot-GTAIV-Westminster.jpg|[[Golden Pier]], [[Westminster]]/[[The Meat Quarter]], [[Algonquin]], Liberty City.
+BurgerShot-GTAIV-Westdyke.jpg|[[Westdyke]], [[Alderney]].
+BurgerShot-GTAIV-MemoryLanes.jpg|[[Memory Lanes]] Burger Shot outlet found in both [[Firefly Island]], [[Broker]] and [[Golden Pier]], [[The Meat Quarter]], [[Algonquin]] in Liberty City.
+</gallery>
+
+[[SECTION:3:GTA Chinatown Wars]]
+The distribution of Burger Shots in GTA Chinatown Wars is mostly the same, but with the Alderney branch and Memory Lanes outlets omitted, as Alderney is not in the game and Memory Lanes are not accessible.
+
+<gallery width="auto" perrow="4" style="font-size:95%; padding:0; text-align:left" widths="160">
+BurgerShot-GTACW-BeechwoodCity.jpg|Beechwood City, Broker, Liberty City.
+BurgerShot-GTACW-CervezaHeights.jpg|Cerveza Heights, Dukes, Liberty City.
+BurgerShot-GTACW-Fortside.jpg|Fortside, Bohan, Liberty City.
+BurgerShot-GTACW-Industrial.jpg|Industrial, Bohan, Liberty City.
+BurgerShot-GTACW-NorthHolland.jpg|North Holland, Algonquin, Liberty City.
+BurgerShot-GTACW-Westminster.jpg|Westminster/The Meat Quarter, Algonquin, Liberty City.
+</gallery>
+
+[[CATEGORIES]]
+Assets in GTA San Andreas
+Businesses in 3D Universe
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA Vice City
+Businesses in HD Universe
+Businesses in Las Venturas in 3D Universe
+Businesses in Liberty City in 3D Universe
+Businesses in Liberty City in HD Universe
+Businesses in Los Santos in 3D Universe
+Businesses in Los Santos in HD Universe
+Businesses in San Fierro in 3D Universe
+Businesses in Vice City in 3D Universe
+Food
+Restaurants

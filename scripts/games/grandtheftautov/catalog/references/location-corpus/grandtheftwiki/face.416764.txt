@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{infobox business|
+|image = FACE-GTAVC-logo.png
+|size = 200x200px
+|caption = The Face logo in [[Grand Theft Auto: Vice City|GTA Vice City]].
+|game_1 = GTA Vice City
+|game_2 = GTA San Andreas
+|game_3 = GTA IV
+|game_4 = GTA V
+|name = Face
+|type = Jewelry/watch manufacturer
+|owner = 
+|location = 
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Face ''' is a company in [[Grand Theft Auto: Vice City]], [[Grand Theft Auto: San Andreas]], [[Grand Theft Auto IV]] and [[Grand Theft Auto V]] that makes jewelry and watches. The brand is also featured on [[Peepthatshit.com]], and has sponsors on [[Hotring Racer]]s. In GTA V, [[Lazlow Jones|Lazlow]] promotes the brand as one of the official sponsors for the [[Fame or Shame]] television show.
+
+[[CATEGORIES]]
+Businesses in 3D Universe
+Businesses in GTA IV
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA Vice City

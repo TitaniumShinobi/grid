@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change  = ANTIQUE STORE CHAIN
+|name        = Oldie But Goodie Antiquities
+|image       = OldieButGoodieAntiques-GTAV-Logo.png
+|games       = {{Games|V=y|O=y}}
+|locations   = 
+*[[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Morningwood]], Los Santos
+*[[Vespucci Canals]], Los Santos
+|accessible  = No
+|status      = active
+}}
+
+[[LEAD]]
+'''Oldie But Goodie Antiquities''' is a chain of antique stores in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Antique store chains
+Businesses in GTA Online
+Businesses in GTA V

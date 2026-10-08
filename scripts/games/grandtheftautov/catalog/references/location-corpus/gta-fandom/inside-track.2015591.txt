@@ -1,0 +1,68 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Inside Track
+|image       = 
+<gallery>
+InsideTrack-GTAO-Logo.png|O
+InsideTrack-GTASA-Logo.png|SA
+</gallery>
+|taglines    = ''Horse races daily''
+|Name Change = BETTING SHOP CHAIN
+|games       = {{Games|VC=y|SA=y|VCS=y|IV=y|EFLC=y|O={{EEEV}} {{DLC|mpvinewood}}}}
+}}
+
+[[LEAD]]
+'''Inside Track''' is an interactive betting shop for thoroughbred horse races featured as an accessible store in {{SA}} and as a [[casino]]-themed activity in {{O}}.
+
+[[SECTION:2:Interior]]
+
+
+[[SECTION:3:''Grand Theft Auto: San Andreas'']]
+[[File:InsideTrack-GTASA-interior.jpg|thumb|250px|Shared interior of '''Inside Track''' outlets in ''GTA San Andreas''.]]
+
+The interior of each Inside Track features four manned counters, ceiling-mounted television screens that broadcast horse races, and two inside track betting (ITB) machines, the only interactive items in the establishment, that line the walls. The interior also features a backroom which can be entered.
+
+Unlike virtually every other [[Interiors in GTA San Andreas|interior]] space in the game, it is possible to enter Inside Track shops with recruited gang members and other [[Pedestrians|NPCs]]. This is mostly likely a programming oversight linked to the storyline mission [[Against All Odds]], where [[Catalina]] enters an Inside Track shop with [[Carl Johnson]].
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+The interior of the Inside Track room consists of a large room with a large LCD screen displaying the horse races. Numerous IBT machines can be seen, enough for at least 16 participants (though NPCs may be seen participating in the game).
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto: San Andreas'']]
+<gallery position="center" spacing="small" widths="270px" bordercolor="#EC3507">
+InsideTrack-GTASA-Mulholland-exterior.jpg|[[Downtown Los Santos (3D Universe)|Downtown Los Santos]] under the [[Mulholland Intersection]].
+InsideTrack-GTASA-Montgomery-exterior.jpg|[[Montgomery (3D Universe)|Montgomery]], [[Red County (3D Universe)|Red County]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Vice City'']]
+<gallery position="center" spacing="small" widths="270px" bordercolor="#EC3507">
+ViceCityInsideTrack-GTAVC.png|[[Vice City Inside Track]], [[Vice Point]], [[Vice City (3D Universe)|Vice City]], just east of the [[Pay 'n' Spray]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+<gallery position="center" spacing="small" widths="270px" bordercolor="#EC3507">
+ViceCityInsideTrack-GTAVCS.png|Vice City Inside Track, Vice Point, Vice City, just east of the Pay 'n' Spray. The "OTB" acronym stands for "{{WP|off-track betting}}".
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px" bordercolor="#EC3507">
+InsideTrack-GTAIV-Overview.png|[[Morris Street]] in [[East Island City]], [[Dukes]], [[Liberty City (HD Universe)|Liberty City]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+<gallery position="center" spacing="small" widths="270px" bordercolor="#EC3507">
+TheDiamondCasino&Resort-GTAO-Advert.jpg|[[The Diamond Casino & Resort]], [[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA San Andreas
+Businesses in GTA Vice City
+Businesses in GTA Vice City Stories
+Features
+Features in GTA Online
+Features in GTA San Andreas
+Gambling
+Gambling companies

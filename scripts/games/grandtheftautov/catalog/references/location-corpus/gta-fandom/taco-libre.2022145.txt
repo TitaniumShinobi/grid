@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Taco Libre
+|image = TacoLibre-GTAV-Logo.png
+|type = Fast Food
+|taglines = "''Auténtica Comida Mexicana''"
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Taco Libre''' is a [[Mexico|Mexican]] food restaurant in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurants
+Taco restaurants

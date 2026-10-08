@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Vinewood Fantasies
+|image = VinewoodFantasies-GTAV-AltaStreet.jpg
+|type = Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Alta Street]], [[Downtown Vinewood]]
+}}
+
+[[LEAD]]
+'''Vinewood Fantasies''' is a store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

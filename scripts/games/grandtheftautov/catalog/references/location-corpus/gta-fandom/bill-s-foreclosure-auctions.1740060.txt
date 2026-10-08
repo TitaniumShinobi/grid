@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox_business
+|name = Bill's Foreclosure Auctions
+|image = BillsForeclosureAuctions-Billboard-GTAV.png
+|taglines = Misfortune need not cost a fortune!
+|founder = Bill
+|ceo = Bill
+|type = Real Estate Auctions
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|Name Change =
+|sign =
+|map_caption = The billboard with the Bill's Foreclosure Auctions advertisement.
+}}
+
+[[LEAD]]
+'''Bill's Foreclosures Auctions''' is a real estate auction company which appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

@@ -1,0 +1,16 @@
+{
+  "contract": "life-startup-event/v1",
+  "version": "1.0.0",
+  "authority": "start",
+  "stage_classes": ["REGISTRATION", "STARTUP_REQUIRED", "BACKGROUND_OPTIONAL", "STALE_REFRESH", "REBUILD"],
+  "statuses": ["STARTED", "COMPLETED", "SKIPPED", "FAILED", "RETRYING"],
+  "progress_states": ["KNOWN", "INDETERMINATE"],
+  "dependency_statuses": ["PASS", "FAIL", "INDETERMINATE"],
+  "readiness_statuses": ["PASS", "FAIL", "INDETERMINATE"],
+  "semantics": {
+    "timestamps_are_product_emitted": true,
+    "unknown_progress_is_explicit": true,
+    "start_does_not_infer_product_stage_meaning": true,
+    "receipt_digest_excludes_only_self": true
+  }
+}

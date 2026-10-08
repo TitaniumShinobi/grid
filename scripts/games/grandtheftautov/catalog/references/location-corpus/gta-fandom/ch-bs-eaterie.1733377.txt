@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|type       = restaurant
+|name       = Chébs Eaterie
+|image      = ChebsEaterie-GTAV-Logo-Texture.png
+|caption    = The logo
+|games      = {{Games|V=y|O=y}}
+|location   = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|status     = active
+|accessible = No
+|map        = 
+}}
+
+[[LEAD]]
+'''Chébs Eaterie''' is a restaurant appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Bistros
+Buildings in in GTA Online in Los Santos
+Buildings in in GTA V in Los Santos
+Contemporary casual restaurants

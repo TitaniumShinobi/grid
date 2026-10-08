@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox location
+|name        = Bolingbroke Penitentiary
+|image       = BolingbrokePenitentiary-GTAV.png
+|games       = {{Games|V=y|O=y}}
+|location    = [[Grand Senora Desert]], [[Los Santos County]] and [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|type        = prison
+|pscanner    = PoliceScanner-GTAV-Neighborhood-BolingbrokePenitentiary.ogg
+|map         = 
+<gallery>
+BolingbrokePenitentiary-IngameGPS-GTAV-Map.png|Bolingbroke Penitentiary
+BolingbrokePenitentiary-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Bolingbroke Penitentiary''' is the state prison of [[State of San Andreas (HD Universe)|San Andreas]] in {{V}} and {{O}}, lying between the jurisdiction of [[Los Santos County]] and [[Blaine County]].
+
+[[SECTION:2:Events of ''GTA Online:'' The Diamond Casino Heist]]
+During the "Prison Guard" variant of the [[Heist Prep: Vault Keycards]] mission for [[The Diamond Casino Heist]], the player must enter the prison and kill a security guard to steal the [[The Diamond Casino & Resort|Diamond Casino]] vault keycards. The player hijacks a [[Prison Bus|prison bus]] and disguises themselves as a prison guard to gain entry without raising suspicion.
+
+[[SECTION:4:The Diamond Casino Heist]]
+*[[Heist Prep: Vault Keycards|Heist Prep: Vault Keycards - Prison Guard]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Prison complexes
+Restricted locations
+Zones

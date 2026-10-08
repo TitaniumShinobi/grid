@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Sopa-GTAV-Logo.png
+|taglines = ''Still dirty...smells great!''
+|type = Detergent
+|games = {{Games|V=y|O=y}}
+|reference = {{WP|Daz (detergent)|Daz}}
+}}
+
+[[LEAD]]
+'''Sopa''' is a laundry detergent appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Cleaning product brands
+In-Game Products

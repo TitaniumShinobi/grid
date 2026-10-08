@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = Abandoned FIB Lockup
+|image          = AbandonedFIBLockup-GTAOe.png
+|caption        = The Abandoned FIB Lockup in ''[[Grand Theft Auto Online]]''.
+|aka            = Vincent's Lockup
+|games          = {{games|V=y|O=y}}
+|location       = [[Clinton Avenue]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|use            = Compound of the FIB <small>(Formerly)</small>
+|map            = AbandonedFIBLockup-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Abandoned FIB Lockup''', also known as '''Vincent's Lockup''', is a compound of the [[Federal Investigation Bureau|FIB]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:4:The Chop Shop]]
+*[[The Cluckin' Bell Farm Raid]]
+**[[Slush Fund]]
+**[[Breaking and Entering]]
+**[[Concealed Weapons]]
+**[[Hit and Run]]
+**[[Disorganized Crime]]
+**[[Scene of the Crime]]
+
+[[CATEGORIES]]
+Abandoned buildings
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Federal buildings

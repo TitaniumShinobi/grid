@@ -2,6 +2,7 @@
     x:Class="Grid.App.Views.AssistantPanel"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Grid.App.Controls"
     IsTabStop="False" KeyDown="OnPanelKeyDown">
 
     <UserControl.Resources>
@@ -19,6 +20,59 @@
             <Setter Property="Padding" Value="0" />
             <Setter Property="CornerRadius" Value="16" />
         </Style>
+        <Style x:Key="TicketSelectorButtonStyle" TargetType="Button" BasedOn="{StaticResource ChatActionButtonStyle}">
+            <Setter Property="Height" Value="32" />
+            <Setter Property="MinWidth" Value="0" />
+            <Setter Property="Padding" Value="9,0" />
+            <Setter Property="FontSize" Value="11" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="CornerRadius" Value="0" />
+            <Setter Property="ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate><TextBlock Text="{Binding}" TextTrimming="CharacterEllipsis" TextWrapping="NoWrap" /></DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="TicketSelectorFlyoutPresenterStyle" TargetType="FlyoutPresenter">
+            <Setter Property="MinWidth" Value="0" />
+            <Setter Property="MinHeight" Value="0" />
+            <Setter Property="CornerRadius" Value="0" />
+            <Setter Property="Padding" Value="4" />
+        </Style>
+        <Style x:Key="TicketSelectorOptionStyle" TargetType="RadioButton">
+            <Setter Property="MinWidth" Value="0" />
+            <Setter Property="MinHeight" Value="28" />
+            <Setter Property="Padding" Value="8,4" />
+            <Setter Property="FontSize" Value="11" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="HorizontalContentAlignment" Value="Left" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="{StaticResource CardBorderBrush}" />
+            <Setter Property="BorderThickness" Value="0,0,0,1" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="RadioButton">
+                        <Border x:Name="OptionRow" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}" CornerRadius="0">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="PointerOver"><VisualState.Setters><Setter Target="OptionRow.Background" Value="{StaticResource CardHoverBrush}" /></VisualState.Setters></VisualState>
+                                    <VisualState x:Name="Pressed"><VisualState.Setters><Setter Target="OptionRow.Background" Value="{StaticResource CardHoverBrush}" /></VisualState.Setters></VisualState>
+                                    <VisualState x:Name="Disabled"><VisualState.Setters><Setter Target="OptionRow.Opacity" Value="0.45" /></VisualState.Setters></VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="CheckStates">
+                                    <VisualState x:Name="Unchecked" />
+                                    <VisualState x:Name="Checked"><VisualState.Setters><Setter Target="OptionContent.FontWeight" Value="SemiBold" /></VisualState.Setters></VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <ContentPresenter x:Name="OptionContent" Content="{TemplateBinding Content}" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </UserControl.Resources>
 
     <Grid Background="{ThemeResource ShellSurfaceBrush}">
@@ -30,8 +84,12 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <Border Padding="14,3" BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="0,0,0,1">
-            <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+        <Border BorderBrush="{ThemeResource ShellDividerBrush}" BorderThickness="0,0,0,1">
+            <Grid Height="30"
+                  Margin="{StaticResource ShellInteriorHeaderInset}"
+                  AutomationProperties.Name="Chat panel header row"
+                  ColumnDefinitions="*,Auto"
+                  ColumnSpacing="8">
                 <StackPanel Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
                     <TextBlock VerticalAlignment="Center" FontSize="13" Text="Chat" />
                     <Border Padding="9,3" CornerRadius="4" Background="{StaticResource CardHoverBrush}">
@@ -62,8 +120,8 @@
             </Grid>
         </Border>
 
-        <ScrollViewer Grid.Row="1" AutomationProperties.Name="Grid chat content" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Stretch">
-            <Grid Padding="16,14,16,24" HorizontalAlignment="Stretch">
+        <ScrollViewer x:Name="ChatContentScrollViewer" Grid.Row="1" AutomationProperties.Name="Grid chat content" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Stretch">
+            <Grid x:Name="DifContentInset" Padding="16,14,16,24" HorizontalAlignment="Stretch">
                 <StackPanel x:Name="HomeSurface" Spacing="12">
                     <StackPanel x:Name="EmptyHome" Spacing="4" HorizontalAlignment="Center" Margin="0,30,0,0">
                         <FontIcon FontFamily="Segoe Fluent Icons" FontSize="28" Foreground="{StaticResource MutedTextBrush}" Glyph="&#xE8BD;" />
@@ -71,63 +129,93 @@
                         <TextBlock FontSize="11" Foreground="{StaticResource MutedTextBrush}" Text="Build a deterministic request from your connected workspace." TextAlignment="Center" TextWrapping="Wrap" />
                     </StackPanel>
 
-                    <Border x:Name="IntakeForm" Padding="12" Style="{StaticResource CardStyle}" Visibility="Collapsed" AutomationProperties.Name="Grid data intake form">
-                        <StackPanel Spacing="10">
+                    <Border x:Name="IntakeForm" Padding="10" Style="{StaticResource CardStyle}" Visibility="Collapsed" AutomationProperties.Name="Grid data intake form">
+                        <StackPanel Spacing="6">
                             <Grid ColumnDefinitions="*,Auto">
-                                <TextBlock FontSize="13" FontWeight="SemiBold" Text="New Investigation" />
-                                <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="2">
-                                    <ToggleButton x:Name="GameScopeButton" Content="GAME" Style="{StaticResource ShellChromeToggleStyle}" Width="58" AutomationProperties.Name="Game intake" Click="OnGameScopeClicked" />
-                                    <ToggleButton x:Name="GridScopeButton" Content="GRID" Style="{StaticResource ShellChromeToggleStyle}" Width="58" AutomationProperties.Name="Grid intake" Click="OnGridScopeClicked" />
-                                </StackPanel>
+                                <TextBlock VerticalAlignment="Center" FontSize="13" FontWeight="SemiBold" Text="New Investigation" />
+                                <Button Grid.Column="1" Width="24" Height="24" Padding="0" Style="{StaticResource ShellChromeButtonStyle}"
+                                        AutomationProperties.Name="Authorization information"
+                                        ToolTipService.ToolTip="Exact read resources are reviewed separately before evidence collection.">
+                                    <FontIcon FontFamily="Segoe Fluent Icons" FontSize="11" Glyph="&#xE946;" />
+                                </Button>
                             </Grid>
 
-                            <StackPanel x:Name="GameFields" Spacing="8">
-                                <ComboBox x:Name="GameSelector" Header="Game" DisplayMemberPath="Name" HorizontalAlignment="Stretch" SelectionChanged="OnGameSelectionChanged" AutomationProperties.Name="Select game" />
-                                <ComboBox x:Name="InstallationSelector" Header="Installation" DisplayMemberPath="Name" HorizontalAlignment="Stretch" SelectionChanged="OnInstallationSelectionChanged" AutomationProperties.Name="Select installation" />
-                                <ComboBox x:Name="ProfileSelector" Header="Profile" DisplayMemberPath="Name" HorizontalAlignment="Stretch" SelectionChanged="OnProfileSelectionChanged" AutomationProperties.Name="Select profile" />
-                                <Button x:Name="ModsButton" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" Content="Mods · None selected" AutomationProperties.Name="Select multiple mods">
+                            <StackPanel x:Name="TicketSelectorRows" Spacing="6" SizeChanged="OnTicketSelectorRowsSizeChanged">
+                                <!-- Semantic row 1: Game | Profile -->
+                                <Grid ColumnDefinitions="*,*" ColumnSpacing="6">
+                                    <Button x:Name="GameSelector" Style="{StaticResource TicketSelectorButtonStyle}" Content="Game" AutomationProperties.Name="Select game">
+                                        <Button.Flyout><Flyout Placement="Bottom" FlyoutPresenterStyle="{StaticResource TicketSelectorFlyoutPresenterStyle}"><ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"><StackPanel x:Name="GameOptions" Spacing="0" /></ScrollViewer></Flyout></Button.Flyout>
+                                    </Button>
+                                    <Button x:Name="ProfileSelector" Grid.Column="1" Style="{StaticResource TicketSelectorButtonStyle}" Content="Profile" AutomationProperties.Name="Select profile">
+                                        <Button.Flyout><Flyout Placement="Bottom" FlyoutPresenterStyle="{StaticResource TicketSelectorFlyoutPresenterStyle}"><ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"><StackPanel x:Name="ProfileOptions" Spacing="0" /></ScrollViewer></Flyout></Button.Flyout>
+                                    </Button>
+                                </Grid>
+                                <!-- Semantic row 2: Class | Problem | Timing -->
+                                <Grid x:Name="ClassificationRow" ColumnSpacing="6" RowSpacing="6">
+                                    <Button x:Name="ClassSelector" Style="{StaticResource TicketSelectorButtonStyle}" Content="Class" AutomationProperties.Name="Select Class">
+                                        <Button.Flyout><Flyout Placement="Bottom" FlyoutPresenterStyle="{StaticResource TicketSelectorFlyoutPresenterStyle}"><ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"><StackPanel x:Name="ClassOptions" Spacing="0" /></ScrollViewer></Flyout></Button.Flyout>
+                                    </Button>
+                                    <Button x:Name="ProblemSelector" Style="{StaticResource TicketSelectorButtonStyle}" Content="Problem" AutomationProperties.Name="Select Problem">
+                                        <Button.Flyout><Flyout Placement="Bottom" FlyoutPresenterStyle="{StaticResource TicketSelectorFlyoutPresenterStyle}"><ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"><StackPanel x:Name="ProblemOptions" Spacing="0" /></ScrollViewer></Flyout></Button.Flyout>
+                                    </Button>
+                                    <Button x:Name="TimingSelector" Style="{StaticResource TicketSelectorButtonStyle}" Content="Timing" AutomationProperties.Name="Select Timing">
+                                        <Button.Flyout><Flyout Placement="Bottom" FlyoutPresenterStyle="{StaticResource TicketSelectorFlyoutPresenterStyle}"><ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"><StackPanel x:Name="TimingOptions" Spacing="0" /></ScrollViewer></Flyout></Button.Flyout>
+                                    </Button>
+                                </Grid>
+
+                                <!-- Semantic row 3: Tool[] | Mod[] -->
+                                <Grid x:Name="ToolModRow" ColumnDefinitions="*,*" ColumnSpacing="6">
+                                <Button x:Name="ModsButton" HorizontalAlignment="Stretch" Content="Mod" AutomationProperties.Name="Select multiple mods">
                                     <Button.Flyout>
-                                        <Flyout Placement="Bottom">
-                                            <ScrollViewer MaxHeight="320" MinWidth="280" VerticalScrollBarVisibility="Auto">
-                                                <StackPanel x:Name="ModsChecklist" Spacing="4" />
+                                        <Flyout Placement="Bottom" FlyoutPresenterStyle="{StaticResource TicketSelectorFlyoutPresenterStyle}">
+                                            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                                                <StackPanel x:Name="ModsChecklist" Spacing="0" />
                                             </ScrollViewer>
                                         </Flyout>
                                     </Button.Flyout>
                                 </Button>
-                                <Button x:Name="ToolsButton" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" Content="Tools · None selected" AutomationProperties.Name="Select multiple tools">
+                                <Button x:Name="ToolsButton" HorizontalAlignment="Stretch" Content="Tool" AutomationProperties.Name="Select multiple tools">
                                     <Button.Flyout>
-                                        <Flyout Placement="Bottom">
-                                            <ScrollViewer MaxHeight="260" MinWidth="280" VerticalScrollBarVisibility="Auto">
-                                                <StackPanel x:Name="ToolsChecklist" Spacing="4" />
+                                        <Flyout Placement="Bottom" FlyoutPresenterStyle="{StaticResource TicketSelectorFlyoutPresenterStyle}">
+                                            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                                                <StackPanel x:Name="ToolsChecklist" Spacing="0" />
                                             </ScrollViewer>
                                         </Flyout>
                                     </Button.Flyout>
                                 </Button>
-                                <ComboBox x:Name="ClassSelector" Header="Class" DisplayMemberPath="DisplayName" HorizontalAlignment="Stretch" SelectionChanged="OnClassSelectionChanged" AutomationProperties.Name="Select Class" />
-                                <ComboBox x:Name="CapabilitySelector" Header="Gameplay capability" DisplayMemberPath="DisplayName" HorizontalAlignment="Stretch" Visibility="Collapsed" SelectionChanged="OnCapabilitySelectionChanged" AutomationProperties.Name="Select gameplay capability" />
-                                <TextBox x:Name="ProblemText" Header="Problem" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="64" PlaceholderText="Describe what is wrong in plain language" TextChanged="OnProblemTextChanged" AutomationProperties.Name="Problem description" />
-                                <TextBox x:Name="ExpectedBehaviorText" Header="Expected behavior" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="52" PlaceholderText="What should happen instead?" TextChanged="OnExpectedBehaviorTextChanged" AutomationProperties.Name="Expected behavior" />
-                                <TextBox x:Name="ReproductionLocationText" Header="Reproduction or location" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="52" PlaceholderText="Where and how can the problem be reproduced?" TextChanged="OnReproductionLocationTextChanged" AutomationProperties.Name="Reproduction or location" />
-                                <TextBox x:Name="DesiredOutcomeText" Header="Desired outcome" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="52" PlaceholderText="What result do you want Grid to reach?" TextChanged="OnDesiredOutcomeTextChanged" AutomationProperties.Name="Desired outcome" />
-                                <StackPanel Spacing="5">
-                                    <Button x:Name="AttachEvidenceIntakeButton" Content="Attach screenshots or files" HorizontalAlignment="Stretch" HorizontalContentAlignment="Left" Click="OnAttachEvidenceClicked" AutomationProperties.Name="Attach Evidence" />
-                                    <ItemsControl x:Name="DraftAttachmentList" AutomationProperties.Name="Selected evidence attachments" />
-                                </StackPanel>
-                                <Border Padding="8" Background="{StaticResource CardHoverBrush}" CornerRadius="5">
-                                    <StackPanel Spacing="3">
-                                        <ComboBox x:Name="AuthorizationScopeSelector" Header="Authorization scope" HorizontalAlignment="Stretch" SelectionChanged="OnAuthorizationScopeSelectionChanged" AutomationProperties.Name="Select authorization scope">
-                                            <ComboBoxItem Content="Selected installation and profile (read-only)" Tag="SelectedInstallationAndProfileReadOnly" />
-                                        </ComboBox>
-                                        <TextBlock x:Name="DraftAuthorizationScopeText" FontSize="10" Foreground="{StaticResource MutedTextBrush}" TextWrapping="Wrap" Text="Only the selected installation, profile context, and explicitly attached files will be requested for read access." />
+                                </Grid>
+                                <!-- Semantic row 4: Location[] | Mission/Quest[] | Item[] | Entity[] -->
+                                <Grid x:Name="ReferenceContextRow" ColumnSpacing="6" RowSpacing="6">
+                                    <StackPanel x:Name="LocationSelectorContainer" Spacing="3">
+                                        <controls:CanonicalSelectorNavigationControl x:Name="LocationSelector" />
+                                        <StackPanel x:Name="LocationSelectionPreview" Spacing="2" AutomationProperties.Name="Location selection preview" />
+                                        <TextBox x:Name="LocationOtherText" Tag="Location" Height="28" Width="84" HorizontalAlignment="Left" Padding="7,3" PlaceholderText="Other location" Visibility="Collapsed" KeyDown="OnOtherContextKeyDown" AutomationProperties.Name="Other location" />
                                     </StackPanel>
-                                </Border>
+                                    <StackPanel x:Name="MissionSelectorContainer" Spacing="3">
+                                        <controls:CanonicalSelectorNavigationControl x:Name="MissionSelector" />
+                                        <StackPanel x:Name="MissionSelectionPreview" Spacing="2" AutomationProperties.Name="Mission selection preview" />
+                                        <TextBox x:Name="MissionOtherText" Tag="MissionOrQuest" Height="28" Width="84" HorizontalAlignment="Left" Padding="7,3" PlaceholderText="Other mission or quest" Visibility="Collapsed" KeyDown="OnOtherContextKeyDown" AutomationProperties.Name="Other mission or quest" />
+                                    </StackPanel>
+                                    <StackPanel x:Name="ItemSelectorContainer" Spacing="3">
+                                        <controls:CanonicalSelectorNavigationControl x:Name="ItemSelector" />
+                                        <StackPanel x:Name="ItemSelectionPreview" Spacing="2" AutomationProperties.Name="Item selection preview" />
+                                        <TextBox x:Name="ItemOtherText" Tag="Item" Height="28" Width="84" HorizontalAlignment="Left" Padding="7,3" PlaceholderText="Other item" Visibility="Collapsed" KeyDown="OnOtherContextKeyDown" AutomationProperties.Name="Other item" />
+                                    </StackPanel>
+                                    <StackPanel x:Name="EntitySelectorContainer" Spacing="3">
+                                        <controls:CanonicalSelectorNavigationControl x:Name="EntitySelector" />
+                                        <StackPanel x:Name="ActorSelectionPreview" Spacing="2" AutomationProperties.Name="Actor selection preview" />
+                                        <TextBox x:Name="EntityOtherText" Tag="Entity" Height="28" Width="84" HorizontalAlignment="Left" Padding="7,3" PlaceholderText="Other actor" Visibility="Collapsed" KeyDown="OnOtherContextKeyDown" AutomationProperties.Name="Other actor" />
+                                    </StackPanel>
+                                </Grid>
+
+                                <!-- Semantic row 5: Goal -->
+                                <Grid x:Name="GoalRow" ColumnDefinitions="*,*,*" ColumnSpacing="6">
+                                <Button x:Name="GoalSelector" Grid.Column="1" Style="{StaticResource TicketSelectorButtonStyle}" Content="Goal" AutomationProperties.Name="Select Goal">
+                                    <Button.Flyout><Flyout Placement="Bottom" FlyoutPresenterStyle="{StaticResource TicketSelectorFlyoutPresenterStyle}"><ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled"><StackPanel x:Name="GoalOptions" Spacing="0" /></ScrollViewer></Flyout></Button.Flyout>
+                                </Button>
+                                </Grid>
                             </StackPanel>
 
-                            <StackPanel x:Name="GridFields" Spacing="5" Visibility="Collapsed">
-                                <TextBlock FontSize="12" FontWeight="SemiBold" Text="GRID development requests" />
-                                <TextBlock FontSize="11" Foreground="{StaticResource MutedTextBrush}" Text="Feature, detail, agent-tool, and Class registries are not available yet. This boundary is intentionally inactive." TextWrapping="Wrap" />
-                                <Button Content="GRID intake unavailable" IsEnabled="False" HorizontalAlignment="Stretch" AutomationProperties.Name="GRID intake unavailable" />
-                            </StackPanel>
                         </StackPanel>
                     </Border>
                 </StackPanel>
@@ -278,7 +366,7 @@
                     <Button Style="{StaticResource ChatIconButtonStyle}" VerticalAlignment="Bottom" Click="OnAttachEvidenceClicked" AutomationProperties.Name="Attach Evidence from composer" ToolTipService.ToolTip="Attach evidence">
                         <FontIcon FontFamily="Segoe Fluent Icons" FontSize="14" Glyph="&#xE710;" />
                     </Button>
-                    <TextBox x:Name="ComposerText" Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="38" MaxHeight="140" Padding="4,7" Background="Transparent" BorderThickness="0" PlaceholderText="Message Grid" TextChanged="OnComposerTextChanged" AutomationProperties.Name="Problem description" />
+                    <TextBox x:Name="ComposerText" Grid.Column="1" AcceptsReturn="True" TextWrapping="Wrap" MinHeight="38" MaxHeight="140" Padding="4,7" Background="Transparent" BorderThickness="0" PlaceholderText="Message Grid" TextChanged="OnComposerTextChanged" AutomationProperties.Name="Message Grid" />
                     <Button Grid.Column="2" x:Name="SendButton" Style="{StaticResource ChatIconButtonStyle}" VerticalAlignment="Bottom" IsEnabled="False" AutomationProperties.Name="Start Investigation unavailable" ToolTipService.ToolTip="Start investigation" Click="OnSendClicked">
                         <FontIcon FontFamily="Segoe Fluent Icons" FontSize="15" Glyph="&#xE74B;" />
                     </Button>
@@ -293,6 +381,7 @@
                     <TextBlock x:Name="LocationText" Grid.Column="1" VerticalAlignment="Center" FontSize="10" Foreground="{StaticResource MutedTextBrush}" TextTrimming="CharacterEllipsis" />
                     <TextBlock x:Name="ReadinessText" Grid.Column="2" VerticalAlignment="Center" FontSize="10" Foreground="{StaticResource MutedTextBrush}" TextWrapping="NoWrap" TextTrimming="CharacterEllipsis" />
                 </Grid>
+                <ItemsControl x:Name="DraftAttachmentList" AutomationProperties.Name="Selected evidence attachments" />
             </StackPanel>
         </Border>
 

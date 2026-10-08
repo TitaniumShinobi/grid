@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|name = Pegasus Concierge
+|caption = The logo
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|altnames = [[Pegasus]]
+|products = 
+|bawsaq = 
+|image = PegasusConcierge-GTAV-RockFordHillsOffice-FullLogo-Texture.png
+|oldlogo = PegasusConcierge-GTAV-RockFordHillsOffice-Logo-Texture.png
+|darklogo = y
+|image_size = 300
+|condition = Active
+|taglines = 
+|games = {{Games|V=y|O=y}}
+|type = Office
+|map = 
+|reference = 
+}}
+
+[[LEAD]]
+'''Pegasus Concierge''' is an office appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+PegasusConcierge-GTAV-entrance.jpg|[[Rockford Hills Valet Parking]] building, [[Mad Wayne Thunder Drive]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

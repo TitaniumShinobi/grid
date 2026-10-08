@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = INTERSTATE HIGHWAY
+|name              = Interstate 1
+|image2            = Interstate 1 shield.svg
+|caption2          = Interstate 1 shield
+|image             = 
+|caption           = 
+|games             = {{Games|V=y|O=y}}
+|highway_northend  = {{rmark|US|13}} and {{GTA V road/marker|US|68}} near [[Davis Quartz]]
+|highway_southend  = {{rmark|I|2}} and [[Strawberry Avenue]] - [[Downtown Los Santos (HD Universe)|Downtown]]
+|highway_junctions = {{rmark|SA|18}} - [[Vinewood Bowl]], [[Vinewood Hills]], [[Vinewood Racetrack]], [[East Vinewood]] <br />
+{{rmark|US|15}} - [[Tataviam Mountains]]
+|pscanner    = 
+|map         = Interstate 1 Map.svg
+|mapcaption  = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''Interstate 1''' is an [[Interstate System in GTA V|Interstate highway]] in the eastern part of [[San Andreas]]. It connects the [[Grand Senora Desert]] region to [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Route Description]]
+Interstate 1 begins from the south on Strawberry Avenue, at the intersection with the [[Del Perro Freeway]] in [[Textile City]] and [[Strawberry Avenue]]. It begins as the [[Los Santos Freeway (HD Universe)|Los Santos Freeway]], a six-lane urban freeway traveling northeast, passing between the [[Vinewood Racetrack]] and the [[Vinewood Bowl]]. It then begins to turn north while narrowing to a rural four-lane freeway at the [[San Andreas State Route 18]] interchange, and skirts along the western edge of the [[Tataviam Mountains]]. This part is co-signed with [[U.S. Route 13]].
+
+At the intersection of the [[Palomino Freeway]], the two routes split with Route 13 continuing north as the [[Senora Freeway]] and I-1 (according to the exit guide signs) turning toward [[U.S. Route 15]]. As soon as it goes onto the Palomino, it immediately exits onto [[Senora Way]], where it travels north again toward its north end at [[U.S. Route 68]].
+
+[[SECTION:3:Interstate Gap]]
+Unusual for an Interstate, the Senora Way section is a two-lane road, where all other Interstates in San Andreas are {{WP|Controlled access highway|controlled access}}. The only sign that indicates I-1 leading to Senora Way is an exit sign to the Palomino Freeway. Not only is there a gap in standards, but there is a gap in the road as well for southbound traffic. Since there is no ramp between Route 15 northbound and Interstate 1 southbound, there is a gap in the Interstate on the Route 15 portion for travelers going southbound.
+
+In order to legally return to Interstate 1 southbound from Route 15, one must continue on Route 13, make a U-turn on the Route 68 interchange. In order to legally go southbound on Interstate 1 after heading northbound, one must continue on Senora Way to the Route 68 interchange, take the ramp southbound on to Route 13, then keep right to get on to Interstate 1 southbound.
+
+[[CATEGORIES]]
+Interstates
+Structures in GTA Online in San Andreas
+Structures in GTA V in San Andreas

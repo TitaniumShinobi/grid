@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = snack
+|name          = Chedda Catfish
+|sign          = 
+|image         = CheddaCatfish-GTAO-Logo.png
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mpheist3}}}}
+|mentioned     = 
+|business_type = Cheese snacks
+|taglines      = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Chedda Catfish''' is a cheese snack brand featured in {{O}} as part of [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Diamond Casino Heist
+Food
+Snack brands

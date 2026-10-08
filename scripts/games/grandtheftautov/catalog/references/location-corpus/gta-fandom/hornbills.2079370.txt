@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = 
+|style       = 
+|type        = stripclub
+|name        = Hornbills
+|sign        = Hornbills-GTAV-Logo.png
+|aka         = 
+|games       = {{games|V=y|O=y}}
+|mentioned   = 
+|location    = 2497 [[Eclipse Boulevard]], [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|opened      = 
+|taglines    = "''Keeps your pecker up''"
+|status      = 
+|website     = 
+|phone       = 
+|accessible  = No
+|file_name   = 
+|interior    = 
+|coords      = 
+|map         = 
+|map_caption = 
+}}
+
+[[LEAD]]
+'''Hornbills''' is an adult entertainment venue in {{V}} and {{O}} located at 2497 [[Eclipse Boulevard]] in [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Strip clubs

@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = restaurant
+|name           = Del Perro Plaza
+|sign           = 
+|image          = DelPerroPlazaRestaurant-GTAVee.jpg
+|caption        = The plaza as seen from [[Bay City Avenue]].
+|games          = {{Games|V=y|O=y}}
+|location       = [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Del Perro Plaza''' is a fine dining restaurant place in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Fine dining restaurants

@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Alphabetz-GTAIV-logo.png
+|size = 200x200px
+|game_1 = GTA IV
+|game_2 = GTA V
+|game_3 = GTA Online
+|name = Alphabetz
+|type = [[:Category:Clothing Stores|Shoe store]]
+|owner = 
+|location = [[Kunzite St]] in [[Star Junction]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Nickel St]] in [[Middle Park East]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Hawick Ave]] in [[Hawick]], [[Los Santos in GTA V|Los Santos]]<br />[[Magellan Ave]] in [[Vespucci]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Alphabetz''' is a company that manufactures footwear in [[Grand Theft Auto IV]] and [[Grand Theft Auto V]]. The company has stores on [[Kunzite St]] in [[Star Junction]] and [[Nickel St]], [[Middle Park East]], both in [[Algonquin]], [[Liberty City in GTA IV Era|Liberty City]], and on [[Magellan Ave]] in [[Vespucci]] and [[Hawick Ave]] in [[Hawick]], both in [[Los Santos in GTA V|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA V
+Businesses in Liberty City in GTA IV Era
+Businesses in Los Santos in GTA V
+Clothing Stores

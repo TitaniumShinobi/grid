@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change   = 
+|type          = apartment
+|name          = Sunshine Apartments
+|sign          =
+|image         = SunshineApartments-GTAVee.png
+|games         = {{Games|V=y|O=y}}
+|location      = [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+|status        = active
+|taglines      = 
+|architecture  = [[:Category:Spanish Revival buildings|Spanish Revival]]
+|floors        = 4
+|accessible    = No
+|file_name     = <code>kt1_11_apt_01</code>
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''Sunshine Apartments''' (Korean: 선샤인 아파트) is an apartment building in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Housing Projects
+Low-rise buildings
+Spanish Revival buildings

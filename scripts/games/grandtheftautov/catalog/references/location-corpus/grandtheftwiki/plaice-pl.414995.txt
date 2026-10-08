@@ -1,0 +1,49 @@
+[[LEAD]]
+'''Plaice Pl''' is a street, running west to south, on [[Elysian Island]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[D-Rail]]
+| [[Elysian Island]]
+|
+| Transport
+|-
+| [[Jetsam]]
+| [[Elysian Island]]
+| [[Chupacabra St]]
+| Haulage
+|-
+| [[Los Santos Marine]]
+| [[Elysian Island]]
+|
+| Vehicle maintenance/storage
+|-
+| [[Pacific Allied Shipyard]]
+| [[Elysian Island]]
+|
+| Shipyard
+|-
+| [[Pacific Bait]]
+| [[Elysian Island]]
+| 
+| Fishing
+|-
+| [[Post Op]]
+| [[Elysian Island]]
+|
+| Postal service
+|-
+| [[Walker Logistics]]
+| [[Elysian Island]]
+|
+| Logistics
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Los Santos in GTA V

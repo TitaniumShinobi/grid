@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox mission
+|image        = CasinoPlaytoWin-GTAO-JobImage.png
+|game           = {{games|O=y}}
+|type           = DiamondCasino
+|for          = {{For|game=O|agatha}}
+|location     = 
+*[[The Diamond Casino & Resort]] <small>(start)</small>
+*[[Los Santos (HD Universe)|Los Santos]]
+*[[The Los Santos State Gas Company]], [[Banning]] <small>(end)</small>
+|tod          = 12:00
+|target       = [[Trailer (tanker)|Tanker trailers]]
+|todo         = 
+*Destroy Avery's {{Color|v-hud-enemy|oil tankers.}}
+*Go to the {{Color|v-hud-location|LS State Gas Company.}}
+*Destroy Avery's {{Color|v-hud-enemy|oil tankers.}}
+*Leave the area.
+|fail         = 
+*Out of lives.
+|reward       = 
+*JP +15
+*Cash, Chips and RP vary depending on difficulty and time spent.
+----
+<center>[[Awards]]</center>
+*"Play to Win" award + $50,000 <small>(if completed for the first time)</small>
+*"Lucky Lucky" award + $50,000 <small>(by completing a single Casino Story Mission without dying)</small>
+|unlockedby   = [[Casino - Strong Arm Tactics]]
+|unlocks      = [[Casino - Bad Beat]]
+|protagonists = 1-4 [[GTA Online Protagonist|players]]
+}}
+
+[[LEAD]]
+'''Casino - Play to Win''' is a [[Casino Story Missions|Casino Story Mission]] featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update.
+
+[[CATEGORIES]]
+Casino mission strand
+Gameplay in GTA Online: The Diamond Casino & Resort
+Storyline missions

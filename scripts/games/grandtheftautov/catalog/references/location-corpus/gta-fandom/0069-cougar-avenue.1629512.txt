@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 0069 Cougar Avenue
+|image = 0069CougarAvenue-GTAO.jpg
+|caption = The safehouse's exterior.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end apartment
+|garage = 2 vehicles <br /> 1 bike
+|price = [[money|$]]112,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5
+|heistroom = No
+|location= [[Cougar Avenue]], [[Del Perro]]
+}}
+
+[[LEAD]]
+'''0069 Cougar Avenue''' is a [[Safehouses in GTA Online|safehouse]] located on [[Cougar Avenue]] in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]] featured in ''[[Grand Theft Auto Online]]''.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]112,000 and includes a 2-car garage.
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online

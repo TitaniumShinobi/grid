@@ -1,0 +1,83 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = fastfood
+|name          = Cluckin' Bell
+|image         = CluckinBell-GTAO-Logo.png
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Berchem]], [[State of Alderney|Alderney]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations 2|See more]])
+|business_type = Fast food chicken restaurant
+|founded       = [[1917]]
+|founder       = Charles K. Bell
+|taglines      = 
+*"''Cock-a-doodle-do''"
+*"''Taste the cock''"
+*"''Putting the yolk into yokel''"
+*"''110% meat''"
+*"''More meat than taste''"
+*"''Super secret sauce''"
+|status        = active
+|accessible    = Yes {{Small|(''GTA IV'')}}
+|lcn           = {{BAWSAQ/Slider}} '''CLK'''
+}}
+
+[[LEAD]]
+'''Cluckin' Bell''' is a fast food restaurant chain appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'']]
+*The [[Northwood]] location is based on {{WP|Mosque No. 7}} in Harlem, Manhattan. The outlet itself may be a reference to an infamous {{URL|https://youtu.be/su0U37w2tws|KFC/Taco Bell location in Manhattan}}, which suffered a serious rodent infestation in early 2007, resulting in the location permanently closing.
+*The [[Dukes]] location is based on {{URL|https://maps.app.goo.gl/AznUctY63TVLS8Fo9|136-02 Roosevelt Avenue}} in Flushing, New York.
+
+[[SECTION:4:''Grand Theft Auto V'' and ''Online'']]
+*The [[Rockford Plaza]] location on [[Las Lagunas Boulevard]] is based on the now-closed California Pizza Kitchen location at the {{URL|https://goo.gl/maps/MjjaPAtXuJkCyauJ6|Beverly Center}} in Los Angeles, California.
+*The [[Del Perro Pier]] location is based on the Taco Bell location on the {{URL|https://goo.gl/maps/KN3koCjtxXYvSVpp8|Santa Monica Pier}} in Santa Monica, California.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+In {{IV}}, Cluckin' Bell has one branch on [[Huntington Street]] in [[Cerveza Heights]], [[Dukes]], one on [[Denver-Exeter Avenue]] in [[Northwood]] and another on [[Burlesque]] in [[The Triangle]] (both in [[Algonquin]]). There is also one branch on [[Babbage Drive]] in [[Berchem]], [[State of Alderney|Alderney]], which is inaccessible.
+
+<gallery position="center" spacing="small" widths="250px">
+Cluckin'Bell-GTA4-CervezaHeights.jpg|'''Cluckin' Bell''' in Dukes.
+Cluckin'Bell-GTA4-Northwood.jpg|'''Cluckin' Bell''' in Northwood (out of business).
+Cluckin'Bell-GTA4-StarJunction.jpg|'''Cluckin' Bell''' in The Triangle.
+Cluckin'Bell-GTA4-Berchem.jpg|'''Cluckin' Bell''' in Alderney (out of business).
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+{{CW}} features all the outlets from ''Grand Theft Auto IV'' except, naturally, for the Alderney branch.
+
+<gallery position="center" spacing="small" widths="270px">
+Cluckin'Bell-GTACW-CervezaHeights.png|'''Cluckin' Bell''' in Dukes.
+Cluckin'Bell-GTACW-Northwood.png|'''Cluckin' Bell''' in Northwood.
+Cluckin'Bell-GTACW-StarJunction.png|'''Cluckin' Bell''' in The Triangle.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+Cluckin' Bell operates three outlets in [[Los Santos (HD Universe)|Los Santos]], none of which are accessible to the player. An unused [[Police Scanner]] audio file mentions a Cluckin' Bell restaurant in [[Mirror Park]]. However, the location is not present in the game. It is possible that this location was replaced by [[Horny's Burgers]].
+
+<gallery position="center" spacing="small" widths="270px">
+CluckinBell-GTAV-Burton.png|[[Las Lagunas Boulevard]], [[Rockford Plaza]] in [[Burton]].
+CluckinBell-GTAV-Davis.png|[[Innocence Boulevard]], [[Strawberry]].
+CluckinBell-GTAV-PleasurePier.png|[[Pleasure Pier]], [[Del Perro]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in TBOGT
+Businesses in TLAD
+Chicken restaurants
+Fast-food restaurant chains

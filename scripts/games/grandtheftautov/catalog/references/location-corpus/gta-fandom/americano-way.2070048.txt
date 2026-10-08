@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=AmericanoWay-GTAV.png
+|caption=View of the street from West Eclipse Boulevard.
+|games={{Games|V=y|O=y}}
+|start=[[West Eclipse Boulevard]]
+|end=[[Picture Perfect Drive]]
+|map=<gallery>
+AmericanoWay-GTAV-Map.png|Map
+AmericanoWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Americano Way''' is a [[List of Street Names|street]] in {{V}} and {{O}}, located in [[Richman (HD Universe)|Richman]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

@@ -1,0 +1,91 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = y/n
+|type          = entertainment
+|name          = Canyon Entertainment
+|sign          = CanyonEntertainment-GTAVCS-logo-white.png
+|image         = 
+|caption       = 
+|image2        = 
+|caption2      = 
+|image3        = 
+|caption3      = 
+|image4        = 
+|caption4      = 
+|aka           =
+*Browne Canyon
+*Canyon Megaplex
+|games = {{Games|VCS=y|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+([[#Locations|See more]])
+|business_type = Media company
+|founded       = [[1921]] <small>(as "Browne Canyon")</small>
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees =
+*[[Abe Schwartzman]] 
+*[[Isaac (GTA V)|Isaac]] <small>(formerly)</small>
+|price         = 
+|income        =
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = CAN
+|lcn           = 
+|status        = 
+
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+
+|accessible    = No
+
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Canyon Entertainment''', also known as '''Browne Canyon''', is a media company in the {{3D}} and the {{HD}} of the {{S}}.
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+In {{VCS}}, Canyon Entertainment produced the crime drama ''[[Angel and the Knight]]'' for [[VBS]] in [[1984]].
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+CanyonEntertainment-GTAIV-CleethorpesTower.png|'''Canyon Entertainment''' at the [[Cleethorpes Tower]], [[Hatton Gardens]], [[Algonquin]].
+CanyonEntertainment-GTAIV-TheTriangleBuilding.png|'''Canyon Entertainment''' in [[The Triangle]], Algonquin.
+CanyonEntertainment-GTAIV-BigWillisMallMegaplexOverview.png|'''Canyon Megaplex''' at the [[Big Willis Mall]], [[Willis]], [[Dukes]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+Canyon-GTACW-HattonGardens.png|'''Canyon Entertainment''' at the Cleethorpes Tower, Hatton Gardens, Algonquin.
+CanyonEntertainment-GTACW-TheTriangle.png|'''Canyon Entertainment''' in The Triangle, Algonquin.
+CanyonEntertainment-GTACW-BigWillisMallMegaplexOverview.png|'''Canyon Megaplex''' at the Big Willis Mall, Willis, Dukes.
+</gallery>
+
+[[SECTION:3:Locations]]
+*In {{IV}}, the Canyon Entertainment cinema in [[The Triangle]], [[Algonquin]] is based on the {{WP|1501 Broadway|Paramount building}} located at {{URL|https://maps.app.goo.gl/FRZpFkiPa4pL3dyg6|1501 Broadway}} in Times Square, New York.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA Vice City Stories
+Cinemas
+Entertainment companies
+Film production companies

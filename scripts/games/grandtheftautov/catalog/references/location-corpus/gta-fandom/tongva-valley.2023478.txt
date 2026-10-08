@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox location
+|image         = Tongva Valley-GTAV.png
+|caption       = Overview of Tongva Valley in {{V}}.
+|location      = [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games         = {{Games|V=y|O=y}}
+|type          = neighborhood
+|pscanner      = PoliceScanner-GTAV-Neighborhood-TongvaValley.ogg
+|map           = <gallery>
+TongvaValley-IngameGPS-GTAV-Map.png|Tongva Valley
+TongvaValley-IngameGPS-GTAV-LosSantosCountyMap.png|Los Santos County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Tongva Valley''' is a rural area located in [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]], in {{V}} and {{O}}. The Los Santos and [[Blaine County]] line is located just south of [[Route 68]]. It is bordered by [[Lago Zancudo]] to the north, [[Tongva Hills]] to the west, [[Richman Glen]] to the south, and [[Great Chaparral]] and [[Vinewood Hills]] to the east.
+
+[[SECTION:2:Roads and Streets]]
+*[[Marlowe Drive]]
+*[[Route 11]]
+*[[Route 14]]
+*[[Route 68]]
+*[[Tongva Drive]]
+*[[Zancudo Barranca]]
+*[[Zancudo Road]]
+
+[[SECTION:2:Places of Interests]]
+*[[Two Hoots Falls]]
+
+[[SECTION:2:Businesses]]
+*[[With a Paddle White Water Activity Center]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County
+Neighborhoods
+Zones

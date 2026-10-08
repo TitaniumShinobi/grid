@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name  = Kabel Manufacturing<br>Kabel Manufacturing Weapons Group
+|image = Kabel-Logo-GTAV.png
+|oldlogo1 = 
+|oldlogo2 = 
+|type  = Weapon and tool manufacturer
+|founded = [[1920]]
+|games = ''[[Grand Theft Auto Online]]''
+}}
+
+[[LEAD]]
+'''Kabel''', '''Kabel Manufacturing''' or '''Kabel Manufacturing Weapons Group''' is a manufacturer present in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Tool manufacturers
+Weapon manufacturers

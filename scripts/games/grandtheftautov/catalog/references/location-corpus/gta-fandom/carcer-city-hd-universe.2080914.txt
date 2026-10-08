@@ -1,0 +1,53 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = city
+|name           = City of Carcer
+|sign           = 
+|image          = 
+|caption        = 
+|aka            = 
+*Carcer City
+*Carcer
+|games          = 
+|mentioned      = {{Games|IV=y|EFLC=y|V=y|O=y}}
+|country        = [[United States of America]]
+}}
+
+[[LEAD]]
+The '''City of Carcer''', commonly known as '''Carcer City''' or simply '''Carcer''', is a major city in the [[United States]] mentioned in the {{HD}} of the {{S}}, first mentioned in {{IV}}.
+
+[[SECTION:2:Geography]]
+The city is said to be located 100 miles away from [[Liberty City (HD Universe)|Liberty City]]; however, it is not confirmed if it is located in the [[State of Liberty (HD Universe)|State of Liberty]] or the [[State of Alderney]].
+
+[[SECTION:3:Neighborhoods]]
+There are no known neighborhood names or location names in Carcer City. Arcade Game depictions of the city in {{O}} imply that the city has an abandoned amusement park.
+
+[[SECTION:2:Known Locations]]
+*[[Save-A-Cent]]{{Ref|name=darksoullock3|type=screenshot|image=Blogsnobs-GTAIV-Darksoulock-3.png|imagesize=100px|ref=[[darksoullock.blogsnobs.org]] in {{IV}}.}}
+*[[Wigwam Burger]]{{Ref|name=darksoullock2|type=screenshot|image=Blogsnobs-GTAIV-Darksoulock-2.png|imagesize=100px|ref=[[darksoullock.blogsnobs.org]] in {{IV}}.}}
+*[[24/7 (HD Universe)|24/7]]{{Ref|name=darksoullock3}}
+
+[[SECTION:2:References to Carcer City in the HD Universe]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+*While searching the [[Liberty City Police Department (HD Universe)/Database|police database]], some of the characters listed were born in Carcer City.
+*Pedestrians may say "You drive like you're from Carcer City" if [[Niko Bellic]] narrowly misses them while driving. If the player listens to a group of girls talking, they might say things like "I'm so moving to Carcer City".
+*"[[Liberty City (HD Universe)|Liberty City]] to Carcer City" is a distance that the game can indicate in the 'Distance Traveled' statistic. It is a relatively lower level title in the overall statistic, and is listed before "Liberty City to the Capital", suggesting that Carcer City is closer to Liberty City than {{WP|Washington, DC}} to {{WP|New York City}}. 
+*Some pedestrians can be seen wearing Carcer City Unicorns clothing.
+*When walking in Little Italy, an Italian mobster is talking on his cell phone and he mentions that his cousin had recently flown in from Carcer City.
+*While in Middle Park and surrounding areas, the player can hear one of the pedestrians say "Oh shit, this is Liberty, not fucking Carcer!" when the player is shooting at people.
+
+[[SECTION:3:''Grand Theft Auto V'']]
+*During the mission [[The Paleto Score]], [[Trevor Philips]] decides to have everyone share stories of their first scores. [[Michael De Santa]] states that he took a small franchise worth $10,000 in [[1988]] on the outskirts of Carcer City.
+*Ads for Carcer Storage can be found around the [[Grand Senora Desert]].
+*There is a [[List of Street Names|street]] called [[Carcer Way]], which goes through [[Burton]].
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+*The ''[[Manhunt]]''-themed arcade game [[Camhedz]] (named after the cut {{Manhunt|Camheds}} hunter gang from ''Manhunt'') features a city that appears to be a 16-bit version of Carcer City in the HD Universe, similarly to how the [[Race and Chase (arcade series)|Race and Chase]] arcade games feature 16-bit versions of various ''GTA'' cities.
+
+[[CATEGORIES]]
+Cities
+Unseen cities

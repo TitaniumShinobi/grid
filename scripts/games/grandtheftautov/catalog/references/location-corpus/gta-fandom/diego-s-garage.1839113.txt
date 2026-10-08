@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|miscplace = y
+|business = y
+|image = DiegosGarage-GTAV-Front.jpg
+|caption = 
+|name = Diego's Garage
+|bawsaq =
+|type = Vehicle Repair shop
+|founded = 
+|owner = 
+|price = 
+|employees = 
+|games = {{Games|V=y|O=y}}
+|location = [[Davis]]
+|oldlogo1 = 
+|oldcaption1 = 
+}}
+
+[[LEAD]]
+'''Diego's Garage''' is a business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Davis]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Mod shop brands

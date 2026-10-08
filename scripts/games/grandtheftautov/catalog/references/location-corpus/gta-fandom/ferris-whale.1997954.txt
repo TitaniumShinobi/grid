@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = amusementparkride
+|name           = Ferris Whale
+|sign           = TheFerrisWhale-GTAV-Logo.png
+|image          = FerrisWhale-GTAVe-DayView.png
+|caption        = Aerial view of the Ferris Whale. <small>([[:File:FerrisWhale-GTAVe-NightView.png|Night view]])</small>
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Pleasure Pier]], [[Del Perro Pier]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|price          = 
+*[[Money|$]]8 per ride <small>(''GTA V'')</small>
+*[[Money|$]]10 per ride <small>(''GTA Online'')</small>
+|income         = 
+|condition      = 
+|taglines       = 
+|status         = active
+|owner          = 
+|operator       = 
+|structure_type = Ferris wheel
+|accessible     = Yes
+}}
+
+[[LEAD]]
+The '''Ferris Whale''' is a Ferris wheel in {{VO}}, located on [[Del Perro Pier]] at the [[Pleasure Pier]] amusement park in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Features in GTA Online
+Features in GTA V
+Ferris wheels
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = 
+|safehouse      = 
+|type           = garage
+|name           = Pillbox Hill Garage
+|sign           =
+|image          = MMI-GTAV-PillboxHillGarage.jpg
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y}}
+|mentioned      = 
+|location       = [[Vapid of Los Santos]], [[Adam's Apple Boulevard]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]]
+|owner          = [[Trevor Philips]] <small>(optional)</small>
+|price          = 
+$30,000<br/>
+FREE <small>(original Version of ''GTA V'' only, for owners of [[Grand_Theft_Auto_V/Editions#Original_Edition|Collector's Edition]])</small>
+|garagecap      = 4
+|accessible     = Yes
+|canplayerstore = Yes
+|unlockedby     = [[Father/Son]]
+}}
+
+[[LEAD]]
+'''Pillbox Hill Garage''' is a [[Garages|garage]] for [[Trevor Philips]] in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Garages
+Locations in GTA V in Los Santos
+Properties
+Properties in GTA V

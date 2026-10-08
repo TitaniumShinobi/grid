@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Gem's Jewelry
+|image = GemsJewelry-GTAV.jpg
+|type = Jewelry Store
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Downtown Vinewood]]
+}}
+
+[[LEAD]]
+'''Gem's Jewelry''' is a jewelry store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

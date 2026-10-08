@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox country
+|name = Republic of Ecuador
+|image_flag = Flag_of_Ecuador.svg
+|common_name = Ecuador
+|national_motto = Dios, patria y libertad <small>(God, homeland and freedom)</small>
+|national_anthem = {{WP|Salve, Oh Patria}}
+|capital = {{WP|Quito}}
+|largest_city = Quito
+|official_languages = {{WP|Spanish lanugage|Spanish}}
+|demonym = Ecuadorian
+|government_type = Unitary presidential republic
+|leader_name1 = {{WP|Guillermo Lasso}}
+|leader_name2 = {{WP|Alfredo Borrero}}
+|leader_title1 = President
+|leader_title2 = Vice President
+|area_km2 = 283,561 km²
+|population_estimate = 18,048,628 <small>(as of 2022)</small>
+|currency = {{WP|United States dollar}} (USD)
+|established = 13 May 1830
+}}
+
+[[LEAD]]
+The '''Republic of Ecuador''' (Spanish: ''República del Ecuador''), simply known as '''Ecuador''', is a country in northwestern South America, bordered by [[Colombia]] to the north, [[Peru]] to the east and south, and the [[Pacific Ocean]] to the west. Ecuador also includes the Galápagos Islands in the Pacific, about 1,000 kilometers (621&nbsp;mi) west of the mainland.
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+*Pedro is an Ecuadorian drug lord who is interviewed by John Sickerman on [[New World Order]] about how American money has changed South American society.
+
+[[CATEGORIES]]
+South American countries

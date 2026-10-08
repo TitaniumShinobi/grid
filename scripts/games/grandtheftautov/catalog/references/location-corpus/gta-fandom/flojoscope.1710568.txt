@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Viewing Instrument Manufacturer
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|image = Flojosope-Logo-GTAO.png
+}}
+
+[[LEAD]]
+'''Flojoscope''' is an electronics company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that manufactures viewing instruments.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics companies

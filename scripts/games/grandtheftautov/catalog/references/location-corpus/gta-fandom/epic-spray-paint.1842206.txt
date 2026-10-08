@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = PAINT COMPANY
+|style         = darklogo
+|type          = 
+|name          = Epic Spray Paint
+|sign          = 
+|image         = EpicSprayPaint-GTAV-SprayCanLabel.png
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Aerosol paint brand
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lif
+}}
+
+[[LEAD]]
+'''Epic Spray Paint''' is a brand of Aerosol paint in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

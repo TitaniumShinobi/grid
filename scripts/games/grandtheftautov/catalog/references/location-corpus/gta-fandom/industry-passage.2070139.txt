@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=IndustryPassage-GTAV-inside.png
+|caption=Industry Passage inside Backlot City.
+|games=''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|start=[[North Rockford Drive]]
+|end=[[Heritage Way]]
+|map=<gallery>
+IndustryPassage-GTAV-Map.png|Map
+IndustryPassage-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Industry Passage''' is a short, two-way restricted access [[List of Street Names|street]] running through the [[Richards Majestic Productions]] film studio in [[Backlot City]], [[Los Santos (HD Universe)|Los Santos]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:3:The Diamond Casino Heist]]
+
+
+[[SECTION:4:Gerald's Last Play]]
+*[[Last Play - Go Figure]]
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

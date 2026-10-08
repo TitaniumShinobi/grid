@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{infobox business
+|image = PegasusConcierge-GTAV-Logo2.png
+|caption =
+|name = Pegasus
+|bawsaq = 
+|taglines = 
+|type = Specialty Vehicle Delivery, Hotels
+|founded = 
+|founder = 
+|ceo =
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]<br>[[Blaine County]]
+|reference =
+|size = 200}}
+
+[[LEAD]]
+'''Pegasus''' is a business operating in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+Pegasus has a visible presence in the following locations:
+*The [[Pegasus Concierge Hotel]] on [[Eclipse Boulevard]] in [[Vinewood]].
+*[[Pegasus Concierge]] office on [[Mad Wayne Thunder Drive]] in [[Rockford Hills]] next to [[Luxury Autos]]
+*Pegasus Concierge hangar at [[Los Santos International Airport (HD Universe)|Los Santos International Airport]]
+*The Pegasus logo is also present on other buildings at LSIA such as the north side of the terminal building at Gate 11.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

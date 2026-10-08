@@ -16,6 +16,7 @@ static class Mo2ProfileChecks
         await RunAsync(results, "text decoding preserves bytes and byte line offsets", TextDecodingAsync);
         await RunAsync(results, "mod-list semantics preserve duplicates and reverse Core priority", ModListAsync);
         await RunAsync(results, "plugin active rows join load order safely", PluginsAsync);
+        await RunAsync(results, "Skyrim creation manifest supplies implicit active plugin evidence", CreationManifestAsync);
         await RunAsync(results, "profile settings accept only explicit MO2 boolean keys", SettingsAsync);
         await RunAsync(results, "session authorization prevents profile-root reads until exact grant", AuthorizationAsync);
         await RunAsync(results, "complete snapshot preserves raw sources and active manager state", CompleteSnapshotAsync);
@@ -78,19 +79,28 @@ static class Mo2ProfileChecks
         var states = Mo2ProfileParsers.ParsePluginStates(decoder.Decode(
             Encoding.UTF8.GetBytes("Skyrim.esm\nUpdate.esm\n*Literal.esp\nDuplicate.esp\nDuplicate.esp").ToImmutableArray()));
         var order = Mo2ProfileParsers.ParseLoadOrder(decoder.Decode(
-            Encoding.UTF8.GetBytes("update.ESM\nSkyrim.esm\nccBGSSSE001-Fish.esm\nMissing.esp\nLiteral.esp\nDuplicate.esp").ToImmutableArray()));
-        var (plugins, warnings) = Mo2ProfileParsers.ProjectPlugins(new("profile.plugins"), states, order);
-        Equal(4, plugins.Length);
+            Encoding.UTF8.GetBytes("update.ESM\nSkyrim.esm\nccBGSSSE001-Fish.esm\n_ResourcePack.esl\nMissing.esp\nLiteral.esp\nDuplicate.esp").ToImmutableArray()));
+        var implicitPlugins = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        {
+            "ccBGSSSE001-Fish.esm",
+            "_ResourcePack.esl",
+        };
+        var (plugins, warnings) = Mo2ProfileParsers.ProjectPlugins(
+            new("profile.plugins"), states, order, implicitPlugins);
+        Equal(5, plugins.Length);
         False(plugins[0].IsEnabled);
         False(plugins[1].IsEnabled);
         True(plugins[2].IsEnabled);
         Equal("ccBGSSSE001-Fish.esm", plugins[2].Name);
         True(plugins[3].IsEnabled);
-        Equal("Literal.esp", plugins[3].Name);
+        Equal("_ResourcePack.esl", plugins[3].Name);
+        True(plugins[4].IsEnabled);
+        Equal("Literal.esp", plugins[4].Name);
         Equal(0, plugins[0].LoadOrder);
         Equal(0, plugins[0].SourcePriority);
         Equal(2, plugins[2].SourcePriority);
-        Equal(4, plugins[3].SourcePriority);
+        Equal(3, plugins[3].SourcePriority);
+        Equal(5, plugins[4].SourcePriority);
         Contains(warnings, warning => warning.Code == "mo2.loadorder.plugin_unmatched");
         Contains(warnings, warning => warning.Code == "mo2.loadorder.plugin_ambiguous");
         return Task.CompletedTask;
@@ -105,6 +115,29 @@ static class Mo2ProfileChecks
         Equal(false, settings.LocalSettingsEnabled);
         Equal(ProfileSourceParseStatus.UnsupportedSyntax, settings.Status);
         return Task.CompletedTask;
+    }
+
+    private static async Task CreationManifestAsync()
+    {
+        using var fixture = await Mo2ProfileFixtureBuilder.CreateAsync();
+        await File.WriteAllTextAsync(
+            Path.Combine(fixture.GameRoot, "Skyrim.ccc"),
+            "ccBGSSSE001-Fish.esm\n_ResourcePack.esl\n");
+        fixture.CreateProfile(
+            "CreationManifest",
+            plugins: "*User.esp\nDisabled.esp\n",
+            loadOrder: "Skyrim.esm\nccBGSSSE001-Fish.esm\n_ResourcePack.esl\nUser.esp\nDisabled.esp\n");
+
+        var snapshot = await fixture.CreateSnapshotService().ObserveAsync(fixture.Request());
+        var profile = snapshot.Profiles.Single();
+        Equal(5, profile.Plugins.Length);
+        Equal(4, profile.Plugins.Count(plugin => plugin.IsEnabled));
+        Contains(profile.Plugins, plugin => plugin.Name == "_ResourcePack.esl" && plugin.IsEnabled);
+        var manifest = profile.Sources.Single(source => source.Name == "Skyrim.ccc");
+        Equal(ProfileSourceAvailability.Read, manifest.Availability);
+        Equal(ProfileSourceParseStatus.Parsed, manifest.ParseStatus);
+        False(profile.Sources.SelectMany(source => source.Warnings)
+            .Any(warning => warning.Code == "mo2.loadorder.plugin_unmatched"));
     }
 
     private static async Task AuthorizationAsync()

@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = MirrorFashion-GTAV-MirrorPark-exterior.jpg
+|size = 350x350px
+|game_1 = GTA V
+|name = Mirror Fashion
+|type = [[:Category:Clothing Stores|Clothing store]]
+|owner = 
+|location = [[Mirror Park]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Mirror Fashion''' is an inaccesible [[:Category:Clothing Stores|clothing store]] located on [[Mirror Park Blvd]] in [[Mirror Park]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Clothing Stores

@@ -1,0 +1,45 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = The Blue Ark
+|logo         = TheBlueArk-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = ''The hottest reggae, dancehall and dub served up by The Upsetter.''
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:Reggae radio stations|Reggae]]
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 
+|host         = [[Lee "Scratch" Perry]]
+|product      = 
+|radio_tracks = 
+*14 <small>(original version)</small>
+*21 <small>([[Grand Theft Auto V: Enhanced Edition|enhanced version]])</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+'''The Blue Ark''' is a [[Radio Stations in GTA V|radio station]] featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that plays reggae, dancehall and dub.
+
+[[CATEGORIES]]
+Dynamic mix radio stations
+Media in GTA Online
+Media in GTA V
+Reggae radio stations

@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{infobox business
+|image     = BannerHotel&Spa-GTAV-Logo.png
+|name      = Banner Hotel & Spa
+|type      = hotel
+|games     = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|locations = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[Ludendorff]], [[State of North Yankton|North Yankton]]
+([[#Locations|See more]])
+|status    = active
+}}
+
+[[LEAD]]
+The '''Banner Hotel & Spa''' is a chain of hotels that appears in the [[HD Universe]] of the {{S}}.
+
+[[SECTION:2:Locations]]
+{| class="wikitable sortable" style="text-align: center;" width="100%"
+!width=20px|Location
+!width=150px|Description
+!width=20px|Image
+|-
+|[[Star Junction]], [[Algonquin]]
+|Located on the northeast corner of Lorimar Street and Denver-Exeter Avenue, in {{IV}}, {{EFLC}} and {{CW}}. The telephone number for the hotel is: 1-669-555-5464. The hotel is a rendition of the Embassy Suites by Hilton at {{WP|https://maps.app.goo.gl/CSfdTKZPyRRMaDQx5|1568 Broadway}} in {{WP|Times Square|Times Square}}.
+|[[File:BannerHotels-GTAIV-Overview.png|300px]][[File:BannerHotels-GTAIV-Street.png|300px]]
+|-
+|[[Downtown Los Santos (HD Universe)|Downtown Los Santos]]
+|Located on [[Alta Street]] and [[Adam's Apple Boulevard]], [[Pillbox Hill]] in {{V}} and {{O}}. The hotel is based on the former Luxe City Center in {{WP|Downtown Los Angeles|Downtown Los Angeles}}.
+|[[File:BannerHotel-Downtown-GTAV.png|300px]][[File:BannerHotel&Spa-GTAV-GeneralView.jpg|300px]]
+|-
+|[[Del Perro]]
+|Bordered by [[Cougar Avenue]], [[Bay City Avenue]] and [[Marathon Avenue]] in [[Del Perro]], the other [[Los Santos (HD Universe)|Los Santos]] branch is modeled after the [http://www.fairmont.com/santa-monica/ Fairmont Miramar Hotel] on {{WP|Wilshire Boulevard|Wilshire Boulevard}}, {{WP|Santa Monica, California|Santa Monica}}.
+|[[File:BannerHotel-DelPerro-GTAV.png|300px]][[File:BannerHotel&Spa-GTAV-CougarAvenue.jpg|300px]]
+|-
+|[[Ludendorff]], [[North Yankton]]
+|Two branches are located on [[Cavalry Boulevard]] in [[Ludendorff]] in ''Grand Theft Auto V'' and ''Grand Theft Auto Online''. Not much is known about these branches, as their location is only briefly seen in the mission [[Bury the Hatchet]]. The logo of these branches is different, with simple "BANNER HOTEL" text without the graphic logo.
+|[[File:BannerHotel-GTAV-Ludendorff.png|300px]][[File:BannerHotel-GTAV-NorthYankton.jpg|300px]]
+|}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Hotels

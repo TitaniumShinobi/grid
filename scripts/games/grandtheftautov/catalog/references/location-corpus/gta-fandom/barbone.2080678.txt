@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|shop = y
+|clothesshop = y
+|business = y
+|activebiz = y
+|type = Fashion retailer
+|name = Barbone 
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|accessible = No
+|condition = Active 
+|image = Barbone-GTAV-Logo-Texture.png
+|darklogo = y
+|caption = The logo
+|image_size = 300
+|games = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Barbone''' is a high-end fashion store appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Location]]
+<gallery position="center" spacing="small" widths="270px">
+Barbone-GTAV-DaylightFront.png|[[Dorset Drive]] ([[:File:Barbone-GTAV-NightFront.png|night view]]).
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

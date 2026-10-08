@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{infobox business|
+|image = MazeBankofLosSantos-GTAV-roof-prerelease.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA O
+|name = Maze Bank of Los Santos
+|type = [[:Category:Banks|Bank]]
+|owner = 
+|location = [[Los Santos in GTA V|Los Santos]]
+|affiliation = [[Michael De Santa]] <small>(customer)</small><br />GTA Online protagonist <small>(customer)</small>
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+The '''Maze Bank of Los Santos''' is a banking institution present in [[Los Santos in GTA V|Los Santos]] in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. It is based on [[wp:U.S. Bancorp|U.S. Bank]]. Its logo can be seen on top of Los Santos' tallest skyscraper, the [[Maze Bank Tower]]. Maze Bank also owns the naming rights to the city's sports arena, the [[Maze Bank Arena]].
+
+The bank accounts of [[Michael De Santa]] and the GTA Online protagonist are held at Maze Bank. In GTA Online, the player can withdraw and deposit money into his/her account either by using an [[ATM]] or accessing the Maze Bank website from their [[mobile phone|smartphone]].
+
+[[CATEGORIES]]
+Banks
+Businesses in GTA V
+Businesses in Los Santos in GTA V

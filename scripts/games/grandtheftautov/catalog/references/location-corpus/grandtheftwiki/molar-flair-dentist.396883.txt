@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Molar Flair Dentist
+|type = Dentist
+|owner = 
+|location = [[Alta St]]/[[Hawick Ave]] in [[Alta]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Molar Flair Dentist''' is a dentists located on the corner of [[Alta St]] and [[Hawick Ave]] in [[Alta]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+
+
+[[Type::Business| ]]
+[[Location::Alta St| ]]
+[[Location::Hawick Ave| ]]
+[[Location::Alta| ]]
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

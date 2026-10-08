@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = MC Club Business
+|name = {{HUDIcons|game=O|productionmoney}} Counterfeit Cash Factory
+|image = CounterfeitCashFactory-GTAOe-InProduction.png
+|type = Counterfeiting
+|owner = {{GTAOP}} [[Motorcycle Clubs]] <small>(determinant)</small>
+|price = [[Money|$]]845,000 - $1,605,000<br/><small>(Plus optional upgrades)</small>
+|games = {{Games|O=y}}
+|condition = Active/Suspended<br/><small>(Player's choice)</small>
+|location = 
+*[[Grand Senora Desert]]
+*[[Paleto Bay]]
+*[[Cypress Flats]]
+*[[Vespucci Canals]]
+|accessible = Yes
+|employees = Multiple unnamed staff
+|products = Counterfeit [[Money|Cash]]
+|related = [[Cocaine Lockup]]<br/>[[Document Forgery Office]]<br/>[[Methamphetamine Lab]]<br/>[[Weed Farm]]
+|map = CounterfeitCashFactory-GTAOe-InteriorMap.png
+|map_caption = Common interior layout
+|unlokced by [[The Open Road/Business Set Ups]]
+}}
+
+[[LEAD]]
+A '''Counterfeit Cash Factory''' is an ownable business in {{O}} introduced in the [[GTA Online: Bikers|Bikers]] update.
+
+[[SECTION:3:Locations]]
+{{Main|The Open Road}}
+{| class="wikitable"
+!Location
+!Price
+|-
+|[[File:Counterfeit-GTAO-Senora_845000_Map.png|thumb|175px|center|[[Grand Senora Desert]]]]
+|[[File:OpenRoad-GTAO-Cash-GrandSenoraDesert.png|thumb|175px|center|$845,000<br>FREE <small>(with [[Criminal Enterprise Starter Pack]])</small>]]
+|-
+|[[File:Counterfeit-GTAO-Paleto_951600_Map.png|thumb|175px|center|[[Paleto Bay]]]]
+|[[File:OpenRoad-GTAO-Cash-PaletoBay.png|thumb|175px|center|$951,600]]
+|-
+|[[File:Counterfeit-GTAO-Cypress_1267500_Map.png|thumb|175px|center|[[Cypress Flats]]]]
+|[[File:OpenRoad-GTAO-Cash-CypressFlats.png|thumb|175px|center|$1,267,500]]
+|-
+|[[File:Counterfeit-GTAO-Vespucci_1605000_Map.png|thumb|175px|center|[[Vespucci Canals]]]]
+|[[File:OpenRoad-GTAO-Cash-VespucciCanals.png|thumb|175px|center|$1,605,000]]
+|}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA Online: Bikers

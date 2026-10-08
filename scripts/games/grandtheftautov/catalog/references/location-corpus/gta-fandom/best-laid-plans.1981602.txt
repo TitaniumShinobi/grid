@@ -1,0 +1,56 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = Best Laid Plans
+|image        = BestLaidPlans-GTAO-Thumbnail.png
+|location     = [[State of San Andreas (HD Universe)|San Andreas]]
+|game           = {{games|O=y}}
+|type           = CasinoWork
+|fail         = 
+|for          = [[Agatha Baker]]
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] <small>(organization)</small>
+*1 to 8 players <small>(motorcycle club)</small>
+|todo         = 
+*Go to <span class="v-hud-location">[Location]</span>.
+*Take out the <span class="v-hud-enemy">target</span>.
+*Pick up the <span class="v-hud-pickup">keycard</span>.
+*Go to <span class="v-hud-location">[Location]</span>.
+*Access the <span class="v-hud-pickup">keypad</span>.
+*Take out the <span class="v-hud-enemy">heist crew</span>.
+*Use the <span class="v-hud-pickup">laptop</span> to locate other crew members.
+*Take out the remaining <span class="v-hud-enemy">crew members</span>.
+|reward = 
+*[[Money|Cash]], [[Chips]], and [[Reputation|RP]].
+|target = Heist crew members
+}}
+
+[[LEAD]]
+'''Best Laid Plans''' is a [[Casino Work]] mission featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update. It is a freeroam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[SECTION:3:Mirror Park Scenario]]
+<gallery position="center" hideaddbutton="true" spacing="small">
+BestLaidPlans-GTAO-MirrorParkFirstTarget.png|The first target in [[Mirror Park]], jogging around the park.
+BestLaidPlans-GTAO-HayesAutosExterior.png|[[Hayes Autos]] exterior.
+BestLaidPlans-GTAO-HayesAutosInterior.png|Interior.
+BestLaidPlans-GTAO-RanchoTarget.png|A crew member walking in [[Rancho]].
+BestLaidPlans-GTAO-ChamberlainHillsTarget.png|A crew member using his phone in [[Chamberlain Hills]].
+BestLaidPlans-GTAO-MissionRowTarget.png|A crew member drinking coffee in [[Mission Row]].
+BestLaidPlans-GTAO-HayesAutosBurritoTarget.png|One of the final crew members is seen driving a [[Burrito (HD Universe)|Burrito]] around [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[SECTION:3:Legion Square Scenario]]
+<gallery position="center" hideaddbutton="true" spacing="small">
+BestLaidPlans-GTAO-LegionSquareFirstTarget.png|The first target in [[Legion Square]].
+BestLaidPlans-GTAO-BugstarsWarehouseExterior.png|[[Bugstars Warehouse]] exterior.
+BestLaidPlans-GTAO-BugstarsWarehouseInterior.png|Interior.
+BestLaidPlans-GTAO-MazeBankArenaTarget.png|A crew member walking outside the [[Maze Bank Arena]].
+BestLaidPlans-GTAO-DavisTarget.png|A crew member using his phone outside the [[Hearty Taco]] restaurant in [[Davis]].
+BestLaidPlans-GTAO-LongpigMiniMarketTarget.png|A target drinking coffee outside the [[Longpig Mini Market]] in [[Rancho]].
+BestLaidPlans-GTAO-BugstarsWarehouseBurritoTarget.png|One of the final crew members is seen driving a [[Bugstars]] [[Burrito (HD Universe)|Burrito]] around [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

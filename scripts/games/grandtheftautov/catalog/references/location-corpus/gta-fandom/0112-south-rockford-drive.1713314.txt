@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|name = 0112 South Rockford Drive
+|image = 0112SouthRockfordDrive-GTAO.jpg
+|caption = The exterior of the building during rain.
+|game = O
+|appearances = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|style = Low-end apartment
+|garage = 2 vehicles <br /> 1 bike
+|price = $80,000
+|occupants = [[GTA Online Protagonist|''GTA Online'' Protagonist]] <small>(determinant)</small>
+|unlocked = Rank 5
+|heistroom = No
+|location= [[South Rockford Drive]], [[Vespucci Canals]]
+}}
+
+[[LEAD]]
+'''0112 South Rockford Drive''' is a [[Safehouses in GTA Online|safehouse]] located on [[South Rockford Drive]] in [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]] featured in ''[[Grand Theft Auto Online]]'' and is currently the cheapest available safe house in Los Santos.
+
+It is available for purchase through [[Dynasty8realestate.com]] for [[Money|$]]80,000 and includes a 2-car garage.
+This apartment is in a very good location, Being close to Vespucci Helipad, Ginger Street Store, Ammu-Nation and 2057 Vespucci Boulevard.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Properties in GTA Online
+Safehouses in GTA Online

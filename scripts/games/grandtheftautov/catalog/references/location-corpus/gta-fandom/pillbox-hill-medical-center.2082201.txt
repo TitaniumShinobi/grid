@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change  = 
+|style        = 
+|type         = hospital
+|name         = Pillbox Hill Medical Center
+|image        = <gallery>
+PillboxHillMedicalCenter-GTAV.png|Building
+PillboxHillMedicalCenter-GTAV-Logo.png|Logo
+</gallery>
+|city         = [[Los Santos (HD Universe)|Los Santos]]
+|games        = {{Games|V=y|O=y}}
+|size         = General Hospital
+|map          = PillboxHillMedicalCenter-GTAV-Map.png
+|map_caption  = Location on the map (red).
+|map2         = PillboxHillMedicalCenter-GTAVe-InteriorMap.png
+|map_caption2 = The interior as seen from the minimap ([[Grand Theft Auto V: Enhanced Edition|Enhanced version]]).
+|floors       = 15
+|file_name    = <code>dt1_06_build3_1</code>
+}}
+
+[[LEAD]]
+The '''Pillbox Hill Medical Center''' is a general [[Hospitals|hospital]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hospitals

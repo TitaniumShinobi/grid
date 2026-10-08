@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|image = Los Santos Department of Sanitation Logo GTAV.png
+|taglines = "''Keep Los Santos Awesome!''"
+|type = Sanitation Company
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Los Santos (HD Universe)|Los Santos]]<br>[[Paleto Bay]]
+}}
+
+[[LEAD]]
+The '''Los Santos Department of Sanitation''' ('''LSDS''') is a public sanitation company operating in the city of [[Los Santos (HD Universe)|Los Santos]] and [[Blaine County]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Sanitation companies

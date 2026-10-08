@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Parsons Rehabilitation Center
+|caption = The center's sign.
+|location = [[Richman Glen]], [[Los Santos County]]
+|accessible = No
+|image = ParsonsRehabilitationCenter-GTAV-Sign.png
+|lightlogo = y
+|image_size = 300
+|games = {{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''Parsons Rehabilitation Center''' is a substance abuse treatment facility operated by the [[Rehabs of America]] company, located in [[Richman Glen]], [[Los Santos County]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County

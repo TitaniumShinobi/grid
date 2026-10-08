@@ -33,6 +33,21 @@ Assert-Equal 'grid.class.installation-integrity' $edited.class.classId 'Plain-la
 Assert-Equal 0 @($edited.selections.tools).Count 'Plain language must not invent tools.'
 Write-Host 'PASS: Class, mods, and tools are structured input and never mined from text.'
 
+$inherited = New-GridRequestEnvelope -GameId 'SkyrimSpecialEdition' -InstallationId 'installation.fixture' -ProfileId 'profile.fixture' `
+    -ClassId 'grid.class.installation-integrity' -ClassRecipeVersion '1.1.0' -PlainText 'Preserve this context-bound claim.' `
+    -GameSelectionSource ContextInherited -InstallationSelectionSource ContextInherited -ProfileSelectionSource ContextInherited -ClassSelectionSource ContextInherited
+Assert-Equal 'ContextInherited' (@($inherited.provenance | Where-Object field -eq 'context.gameId'))[0].source 'Context-prefilled game provenance must not claim explicit user selection.'
+Assert-Equal 'ContextInherited' (@($inherited.provenance | Where-Object field -eq 'context.installationId'))[0].source 'Context-prefilled installation provenance must not claim explicit user selection.'
+Assert-Equal 'ContextInherited' (@($inherited.provenance | Where-Object field -eq 'context.profileId'))[0].source 'Context-prefilled profile provenance must not claim explicit user selection.'
+Assert-Equal 'ContextInherited' (@($inherited.provenance | Where-Object field -eq 'class.classId'))[0].source 'An unambiguous context-inherited Class must not claim explicit user selection.'
+Assert-True (Test-GridRequestEnvelope -Envelope $inherited).IsValid 'Truthful context-inherited provenance must remain part of the canonical envelope contract.'
+
+$derivedInstallation = New-GridRequestEnvelope -GameId 'SkyrimSpecialEdition' -InstallationId 'installation.fixture' -ProfileId 'profile.fixture' `
+    -ClassId 'grid.class.installation-integrity' -ClassRecipeVersion '1.1.0' -PlainText 'Preserve this profile-selected claim.' `
+    -GameSelectionSource UserSelected -InstallationSelectionSource DerivedFromProfile -ProfileSelectionSource UserSelected -ClassSelectionSource UserSelected
+Assert-Equal 'DerivedFromProfile' (@($derivedInstallation.provenance | Where-Object field -eq 'context.installationId'))[0].source 'A hidden installation derived from an explicit profile choice must retain truthful provenance.'
+Assert-True (Test-GridRequestEnvelope -Envelope $derivedInstallation).IsValid 'Profile-derived installation provenance must remain part of the canonical envelope contract.'
+
 $capabilityEnvelope = New-GridRequestEnvelope -GameId 'skyrimspecialedition' -InstallationId 'installation.fixture' -ProfileId 'profile.fixture' `
     -ClassId 'grid.class.outfits-bodies-physics' -ClassRecipeVersion '1.1.0' -CapabilityIds @('grid.capability.equipment.multiple-rings') -PlainText 'Can this profile wear more than one ring?'
 $capabilityPlan = Resolve-GridRequestPlan -Envelope $capabilityEnvelope -ScriptsRoot $scriptsRoot
@@ -87,10 +102,19 @@ Assert-Equal 'UnsupportedCoverage' $unsupportedTool.status 'A tool without Class
 Write-Host 'PASS: planner resolves supported coverage and refuses missing context, unsupported Classes, and unsupported tools.'
 
 $crashEnvelope = New-GridRequestEnvelope -GameId 'skyrimspecialedition' -InstallationId 'installation.fixture' -ProfileId 'profile.fixture' `
-    -ClassId 'grid.class.crash-freeze' -ClassRecipeVersion '1.1.0' -ToolIds @('grid.tool.mo2') -PlainText 'Preserved crash claim.'
+    -ClassId 'grid.class.crash-freeze' -ClassRecipeVersion '1.2.0' -ToolIds @('grid.tool.mo2') -PlainText 'Preserved crash claim.'
 $crashPlan = Resolve-GridRequestPlan -Envelope $crashEnvelope -ScriptsRoot $scriptsRoot
 Assert-Equal 'ReadyToCollect' $crashPlan.status 'Crash & Freeze must route the current bounded CrashLogger and MO2-provider baseline.'
 Assert-True (@($crashPlan.capabilityBindings | Where-Object capabilityId -eq 'grid.game.skyrimspecialedition.baseline.collect').Count -eq 1) 'Crash & Freeze must bind the baseline crash collector.'
+
+$gtaCrashEnvelope = New-GridRequestEnvelope -GameId 'grandtheftautov-enhanced' -InstallationId 'installation.gta-enhanced.fixture' -ProfileId 'profile.gta-enhanced.fixture' `
+    -ClassId 'grid.class.crash-freeze' -ClassRecipeVersion '1.2.0' -PlainText 'My game keeps crashing during the casino mission after I get into the limo and start driving.'
+$gtaCrashPlan = Resolve-GridRequestPlan -Envelope $gtaCrashEnvelope -ScriptsRoot $scriptsRoot
+Assert-Equal 'ReadyToCollect' $gtaCrashPlan.status 'GTA V Enhanced Crash & Freeze must route its registered read-only investigation closure.'
+Assert-Equal 'Invoke-GridGtaCrashInvestigation' $gtaCrashPlan.dispatch.entryPoint 'GTA V Enhanced must dispatch only to the GTA investigation adapter entry point.'
+Assert-True (@($gtaCrashPlan.capabilityBindings | Where-Object capabilityId -eq 'grid.game.grandtheftautov.crash-investigation.collect').Count -eq 1) 'GTA V Enhanced must bind the exact GTA crash-investigation root.'
+Assert-True (@($gtaCrashPlan.capabilityBindings | Where-Object capabilityId -like 'grid.game.skyrimspecialedition.*').Count -eq 0) 'GTA V Enhanced must not bind any Skyrim capability.'
+Assert-Equal 'My game keeps crashing during the casino mission after I get into the limo and start driving.' $gtaCrashEnvelope.claims.text 'GTA crash prose must remain a verbatim claim and cannot create structured selections.'
 
 $distributionEnvelope = New-GridRequestEnvelope -GameId 'skyrimspecialedition' -InstallationId 'installation.fixture' -ProfileId 'profile.fixture' `
     -ClassId 'grid.class.distribution-leveled-lists' -ClassRecipeVersion '1.1.0' -ToolIds @('grid.tool.mo2') -PlainText 'Preserved distribution claim.'

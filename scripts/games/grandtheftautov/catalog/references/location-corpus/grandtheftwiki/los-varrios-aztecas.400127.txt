@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{infobox gang|
+| image = 
+| caption = 
+| game = GTA V
+| game2 = GTA Online
+| locations = [[Blaine County]], [[San Andreas in GTA V|San Andreas]]<br />Northern [[Rancho]], [[Los Santos in GTA III Era|Los Santos]], [[West Vinewood]], [[Los Santos in GTA V|Los Santos]]
+| leader = 
+| leaders = 
+| header = Gang
+| name = Los Varrios Aztecas
+| type = Street gang
+| enemies = [[Los Santos Vagos]]<br />[[Marabunta Grande]]<br />[[Guzmán Cartel]]<br />[[The Lost Brotherhood]]<br />[[Trevor Philips Industries (gang)|Trevor Philips Industries]]
+| affiliations = [[Trevor Philips]] <small>(until [[2013]])</small>
+| colors = Light blue
+| cars = [[Emperor (car)|Emperor]]<br />[[Ingot]]<br />[[Mesa]]<br />[[Phoenix]]<br />[[Rancher]]<br />[[Sultan]]
+| weapons = [[Knife]]<br />[[Micro SMG]]<br />[[Pistol]]<br />[[SMG]]
+| businesses = Drug smuggling<br />Weapons smuggling
+| fronts = 
+| members = [[Ortega]]
+|}}
+
+[[LEAD]]
+The '''Los Varrios Aztecas''', also referred to as the '''Varrios Los Aztecas''', is a Hispanic street gang operating in around the [[Alamo Sea]] in [[Blaine County]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The gang also has territory in northern [[Rancho]] and in [[West Vinewood]], [[Los Santos in GTA V|Los Santos]]. The gang is involved in drug and weapons smuggling. They had previously been based in [[Los Santos in GTA V|Los Santos]] but were forced out after a gang war with the [[Los Santos Vagos in GTA V|Los Santos Vagos]], and also have rivalries with El Salvadorean street gang the [[Marabunta Grande]], [[The Lost Brotherhood]] biker gang and [[Trevor Philips Industries (gang)|Trevor Philips Industries]], led by [[Trevor Philips]].
+
+[[CATEGORIES]]
+Gangs in GTA V
+Street Gangs

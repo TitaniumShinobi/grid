@@ -1,0 +1,115 @@
+[[INFOBOX]]
+{{Infobox organization
+|name = Ballas
+|image = Ballas-Logo-GTAV.png
+|enemies =
+*[[The Families]] <small>(formerly)</small>
+*[[Los Santos Vagos (HD Universe)|Los Santos Vagos]] <small>([[GTA Online: Lowriders|Lowrider]] missions)</small>
+*[[Trevor Philips Enterprises]]
+*{{GTAOP}}
+*[[Motorcycle Clubs]]
+|affiliations =
+*[[Adric Howard]]
+*[[Stretch (character)|Stretch]]
+*[[Little Laita's Cousin]]
+*[[The Professionals]] <small>(''GTA Online'')</small> 
+*[[Rednecks (GTA V)|Rednecks]] <small>(''GTA Online'')</small> {{Ref|name=Rednecks|ref=[[Hit 'Em Up]]}}
+*[[Los Santos Vagos (HD Universe)|Los Santos Vagos]] <small>(''GTA Online'')</small> {{Ref|name=LSV|ref=[[Deal Breaker (GTA Online)|Deal Breaker]]}}
+*[[Armenian Mob]] <small>(''GTA Online'')</small> {{Ref|name=ArmenianMob|ref=[[Clubhouse Contracts|Clubhouse Contract]]: [[By the Pound]]}}
+*[[Street Punks]] <small>(''GTA Online'')</small> {{Ref|name=Street Punks|ref=[[Nightclub Management: Eliminate the drug operation]]}}
+*[[The Families]] <small>(''GTA Online'')</small> <small>(c. [[2021]])</small>
+*{{GTAOP}} <small>(''GTA Online'')</small> <small>(c. 2021)</small>
+|fronts =
+*[[Paleto Forest Sawmill]]
+*[[Grove Street (HD Universe)|Grove Street]]
+|members =
+*[[D]]
+*[[Big T]]
+*[[Little T]]
+*[[Small F]]
+*[[Terrance]]
+*[[Cook Kenzie]]
+*[[Colby Wright]]
+*[[Marquel Green]]
+*[[Darnell Stevens]]
+*[[Regis Welsh]]
+*[[Lifeinvader/Antoine Porter|Antoine Porter]]
+*[[Grove Street Dealer|The Drug Dealer]]
+*[[P]]
+*[[King Tiny]] <small>(formerly)</small>
+|colors = Purple
+|vehicles =
+*[[BMX (HD Universe)|BMX]]
+*[[Buffalo (HD Universe)|Buffalo]]
+*[[Buccaneer (HD Universe)|Buccaneer]] ([[Buccaneer Custom|Custom]])
+*[[Emperor (HD Universe)|Emperor]]
+*[[Felon]]
+*[[Manana]]
+*[[Peyote]]
+*[[Jackal]]
+*[[Tornado]] ([[Tornado Custom|Custom]])
+*[[Baller]] ([[Baller LE|LE]])
+*[[Oracle]]
+*[[Primo (HD Universe)|Primo]]
+*[[Ruffian]]
+*[[Oracle XS]]
+*[[Bati 800]]
+*[[Thrust]]
+*[[Speedo]]
+*[[Sultan (HD Universe)|Sultan]]
+*[[Voodoo Custom]]
+*[[Sabre Turbo Custom]]
+*[[Chino]] ([[Chino Custom|Custom]])
+*[[Moonbeam Custom]]
+*[[Faction Custom]] ([[Faction Custom Donk|Custom Donk]])
+*[[Virgo Classic Custom]]
+*[[Frogger]]
+|type = gang
+|gang_type = African-[[United States of America|American]] street gang
+|games = {{Games|V=y|O=y}}
+|locations =
+*[[Davis]]
+*[[Chamberlain Hills]] (certain missions)
+*[[Rancho]] (partially)
+*[[Strawberry]] (mentioned only)
+*[[Grove Street (HD Universe)|Grove Street]] (Main Front/Base)
+|weapons =
+*[[Knife]]
+*[[Pistol (HD Universe)|Pistol]]
+*[[Machine Pistol]]{{fact}}
+*[[Micro-SMG]]
+*[[SMG (HD Universe)|SMG]]
+*[[Machine Gun|MG]]
+*[[Combat MG]]
+*[[Pump Shotgun]]
+*[[Sawed-Off Shotgun]]
+*[[Assault Shotgun]]
+*[[Assault Rifle]]
+*[[Carbine Rifle]]
+*[[Compact Rifle]]
+*[[RPG (HD Universe)|Rocket Launcher]]
+*[[Minigun]]
+*[[Sniper Rifle]]
+|leader = [[P]] <small>(OCB set)</small>{{Ref|name=P|ref=P's model name: <code>ig_ballas_leader</code>}}
+|status = active|aka=Los Santos Ballas}}
+
+[[LEAD]]
+The '''Ballas''' are a large [[United States of America|African American]] street gang featured in {{V}} and {{O}}, where they appear as secondary antagonists in the [[GTA Online: Lowriders|Lowriders]] update missions, as well as deuteragonists in [[GTA Online: The Contract|The Contract]] update. They mainly operate in the cities of [[Los Santos (HD Universe)|Los Santos]] and [[Davis]].
+
+[[SECTION:4:The Diamond Casino & Resort]]
+*[[Grove Street Survival]]
+
+[[SECTION:4:The Diamond Casino Heist]]
+*Two [[Gerald's Last Play]] missions
+**[[Last Play - Deal With It]]
+**[[Last Play - End Product]]
+
+[[SECTION:4:The Chop Shop]]
+*[[The Gangbanger Robbery]]
+**[[The Gangbanger Robbery/Finale|Finale]] <small>(one of the three possible enemies)</small>
+
+[[CATEGORIES]]
+Afro-descendant organizations
+Gangs
+Organizations in GTA Online
+Organizations in GTA V

@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = jewelshop
+|name           = Love Beads?
+|image          = LoveBeads-GTAVee.png
+|games          = {{Games|V=y|O=y}}
+|location       = [[Simmet Alley]], {{Location|v-textilecity|3}}
+|accessible     = No
+|status         = active
+|phone          = 626-555-0175
+}}
+
+[[LEAD]]
+'''Love Beads?''' is a jewelry store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Jewelry stores

@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = darklogo
+|type          = airline
+|name          = Devin Weston Jet Charter
+|sign          = 
+|image         = DevinWestonJetCharter-GTAV-Logo.png
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Devin Weston Jet Charter Hangar]], [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = Air charter
+|founded       = 
+|founder       = 
+|ceo           = [[Devin Weston]]
+|employees     = 
+|products      = 
+|vehicles      = 
+<center>'''[[:Category:Airplanes|Airplanes]]'''</center>
+*[[Jet]]
+*[[Shamal]]
+*[[Streamer216]] (Livery)
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Devin Weston Jet Charter''' is an {{WP|air charter}} company featured in {{V}}, owned by billionaire [[Devin Weston]].
+
+[[CATEGORIES]]
+Airlines
+Businesses in GTA V
+Companies

@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|name = Pole Position Adult Lounge
+|type = stripclub
+|image = <gallery>
+PolePosition-GTAOe-RampantRocketLiveryLogo1.png|Logo 1
+PolePosition-GTAOe-RampantRocketLiveryLogo2.png|Logo 2
+</gallery>
+|games = {{Games|V=y|O=y}}
+|location = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''Pole Position Adult Lounge''' is a [[strip club]] and lounge advertised in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Strip clubs

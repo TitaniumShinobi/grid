@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = IntegrityTower-GTAV.png
+|caption        = The building as seen from the southwest.
+|games          = {{games|V=y|O=y}}
+|height         = Unknown
+|location       = [[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|use            = Residential building}}
+
+[[LEAD]]
+The '''Integrity Tower''' is a high-rise building in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+High-rise buildings

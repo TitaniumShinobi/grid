@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=GreenwichPkwy-GTAV.jpg
+|caption=The street as seen from Exceptionalists Way.
+|games={{Games|V=y|O=y}}
+|start=[[Dutch London Street]], [[La Puerta]]
+|end=[[Exceptionalists Way]], [[Los Santos International Airport (HD Universe)|LSIA]]
+|map=<gallery>
+GreenwichParkway-GTAV-Map.png|Map
+GreenwichParkway-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Greenwich Parkway''' is a [[List of Street Names|street]] in {{V}} and {{O}} that runs in [[La Puerta]] and the [[Los Santos International Airport (HD Universe)|LSIA]] district in [[Los Santos (HD Universe)|Los Santos]].
+
+[[SECTION:2:Businesses]]
+*[[Bilgeco]]
+*[[Escalera Rent-A-Car]]
+*[[Los Santos Customs]]
+*[[Opium Nights]]
+*[[Poppy House]]
+*[[Touchdown Car Rentals]]
+*[[Von Crastenburg Hotel]]
+*[[Xero|Xero Gas]]
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

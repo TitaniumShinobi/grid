@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{infobox business
+|name      = Lenny Avery Realty
+|type      = realestate
+|sign      = LennyAvery-GTAV-Logo.png
+|image     = LennyAveryRealtyWebsite-GTAV-Home.png
+|caption   = The home page of the Lenny Avery Realty website.
+|games     = {{games|V=y|O=y}}
+|locations = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines  = Various
+|founded   = Early [[1990]]s
+|founder   = [[Lenny Avery]]
+|ceo       = Lenny Avery
+|website = [[#Website|lennyavery-realty.com]]
+}}
+
+[[LEAD]]
+'''Lenny Avery Realty''' is a real estate company that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Media in GTA V
+Real estate companies
+Websites

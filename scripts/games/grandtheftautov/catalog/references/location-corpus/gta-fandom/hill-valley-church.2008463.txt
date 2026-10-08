@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|church=y
+|name={{PAGENAME}}
+|image=HillValleyChurch-GTAV-Sign.png
+|caption=
+|location=[[West Eclipse Boulevard]], [[Pacific Bluffs]], [[Los Santos (HD Universe)|Los Santos]]<br>[[Route 68]], [[Great Chaparral]]
+|accessible=No
+|games={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''Hill Valley Church''' is a church ministry in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Cemeteries
+Churches
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

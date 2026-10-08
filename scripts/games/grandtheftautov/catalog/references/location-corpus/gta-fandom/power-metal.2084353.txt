@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Power Metal
+|image = PowerMetal-GTAV-Logo.png
+|type = Tool Company
+|founded = Prior to 1938
+|games = ''[[Grand Theft Auto IV]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|taglines = ''"For those about to work"''<br>''"Drill them All"''
+}}
+
+[[LEAD]]
+'''Power Metal''' is a tool company featured in ''[[Grand Theft Auto IV]]'', ''[[Grand Theft Auto V]]'', and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Tool manufacturers
+Weapon manufacturers

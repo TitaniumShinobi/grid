@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = Logger
+|sign          = 
+|image         = LoggerBeer-GTAO-Logo.png
+|caption       = Logo in GTA Online and GTA VI.
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|IV=y|SFLC=y|V=y|O=y|VI=y}}
+|mentioned     = {{games|SA=y|LCS=y|VCS=y}}
+|business_type = Beverage company
+|founded       = Unknown <small>({{3D}})</small><br>[[1874]] <small>({{HD}})</small>
+|founder       = 
+|ceo           = 
+|owner         = [[Ming Ha Ling]] <small>(''Since [[2013]]'')</small>
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = ''"The beer that brought the forests down"<br>"Best served with your sister"''
+|bawsaq        = 
+|lcn           = {{BAWSAQ/Slider}} '''LOG'''
+|status        = active
+}}
+
+[[LEAD]]
+'''Logger Beer''' is an alcoholic beverage that appears in both the {{3D}} and {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA IV
+Businesses in GTA Liberty City Stories
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in GTA VI
+Businesses in GTA Vice City Stories

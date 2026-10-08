@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|name     = FanBoys
+|type     = Fans and hand dryers
+|games    = ''[[Grand Theft Auto Online]]''
+|image    = FanBoys-GTAO-Logo.png
+}}
+
+[[LEAD]]
+'''FanBoys''' is an electronics company that makes hand dryers in ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Electronics companies

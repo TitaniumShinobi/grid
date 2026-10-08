@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|landmark    = y
+|type        = park
+|image       = RockfordHillsSign-GTAV.png
+|caption     = Front view of the sign.
+|games       = {{Games|V=y|O=y}}
+|height      = 8.4m
+|location    = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|file_name   = <code>bh1_46_c_grnd</code>
+|map         = RockfordHillsSign-GTAV-Map.png
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+The '''Rockford Hills Sign''' is a landmark icon and public park in {{V}} and {{O}}, located in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[CATEGORIES]]
+Landmarks
+Urban parks

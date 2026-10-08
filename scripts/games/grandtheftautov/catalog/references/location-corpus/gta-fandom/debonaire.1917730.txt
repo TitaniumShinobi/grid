@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Debonaire
+|lcn = {{BAWSAQ/Slider}} '''DEB'''
+|type = Tobacco Company
+|taglines = ''"A fresh American taste."''
+|games = {{Games|IV=y|EFLC=y|V=y|O=y}}
+|image = Debonaire-GTAIV-Logo.png
+}}
+
+[[LEAD]]
+'''Debonaire''' is a tobacco-related company in {{IV}}, {{V}}, and {{O}}. The player can buy their stocks at the [[Lcn-exchange.com]] website.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Tobacco brands

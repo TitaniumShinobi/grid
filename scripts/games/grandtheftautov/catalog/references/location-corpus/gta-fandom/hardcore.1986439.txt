@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = 
+|name          = Hardcore
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mp2023_02}}}} 
+|mentioned     = 
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Hardcore''' is an unspecified company appearing in {{O}} as part of [[GTA Online: The Chop Shop|The Chop Shop]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Chop Shop

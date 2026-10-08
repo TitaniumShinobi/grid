@@ -1,0 +1,114 @@
+[[LEAD]]
+A '''Climax''' is the point in a story with the highest amount of tension. In ''[[Grand Theft Auto]]'' games, the climax is usually the final mission, or a group of missions towards the end of the game. A climax typically consists of the player battling a large force of a rival organization, followed by the player killing the game's [[antagonist]]. In most cases, the [[weather]] of the climax depends on the player's timing, but in a few cases the weather is predetermined by the game. Some examples are [[End of the Line]] in {{SA}}, and [[The Sicilian Gambit]] in {{LCS}}.
+
+There are two possible [[Endings in GTA IV|endings]] in {{IV}}, each with its own climax. In the [[A Revenger's Tragedy|"Deal" ending]], antagonist [[Dimitri Rascalov]] is seen killing [[Jimmy Pegorino]], who [[Niko Bellic|Niko]] planned to kill himself anyway, and is killed himself by the player later in the mission. In the "Revenge" ending, Dimitri is killed [[A Dish Served Cold|two missions prior to the ending]], and Pegorino becomes the main antagonist after killing [[Kate McReary]] in the [[Mr. & Mrs. Bellic|penultimate mission]]. Pegorino is killed by the player in the [[Out of Commission|final mission]].
+
+There are three possible [[Endings in GTA V|endings]] in {{V}}, each with its own climax. When [[Franklin Clinton|Franklin]] goes to his [[3671 Whispymound Drive|house]] after [[The Big Score (GTA V)|The Big Score]], [[Devin Weston]] will pay him a visit and give him three choices. Option ''A'' is killing [[Trevor Philips]], triggering the mission [[Something Sensible]]. Option ''B'' is killing [[Michael De Santa]], triggering the mission [[The Time's Come]]. And finally, Option ''C is'' "''Deathwish"'', meaning that all the law enforcement agencies will come after the [[protagonist]]s to kill them. If this option is chosen, the mission [[The Third Way]] is triggered, featuring the three protagonists working together, killing all the antagonists and solving the problems with the law enforcement agencies in the [[State of San Andreas (HD Universe)|state]].
+
+Climaxes usually span across several parts of the in-game world during some sort of chase, but finally end in a confrontation between the protagonist and antagonist.
+
+Similar to a climax is a mission that involves a climactic battle of sorts, but earlier in the game, before the actual climax. In these missions, the player usually kills a secondary or tertiary antagonist. Some examples are [[Rub Out]] in {{VC}}, where [[Tommy Vercetti]] kills tertiary antagonist [[Ricardo Diaz]], [[Pier 69 (mission)|Pier 69]] in ''Grand Theft Auto: San Andreas'', where [[Carl Johnson]] kills tertiary antagonist [[Ryder]] and minor antagonist [[T-Bone Mendez]], and the mission [[High Noon]], where he chases and kills quaternary antagonist [[Eddie Pulaski]]. Another example is [[Light My Pyre]] in {{VCS}}, where [[Victor Vance]] kills secondary antagonist [[Armando Mendez]].
+
+[[SECTION:3:''Grand Theft Auto: Vice City'']]
+{| border="2"
+!'''Game'''
+! '''Mission'''
+!'''For'''
+!'''Starting Location'''
+!'''Ending Location''' 
+!'''Antagonist(s)'''
+!'''Notes''' 
+|-
+|'''{{VC}}'''
+|'''[[Keep Your Friends Close...]]'''
+|[[Tommy Vercetti]]
+| colspan="2" |[[Vercetti Estate]]
+|[[Lance Vance]], [[Sonny Forelli]], [[Forelli Crime Family|Forelli Family]]
+|
+|}
+
+[[SECTION:3:''Grand Theft Auto: Liberty City Stories'']]
+{| border="2"
+!'''Game'''
+! '''Mission'''
+!'''For'''
+!'''Starting Location'''
+!'''Ending Location''' 
+!'''Antagonist(s)'''
+!'''Notes''' 
+|-
+|'''{{LCS}}'''
+|'''[[The Sicilian Gambit]]'''
+|[[Salvatore Leone]]
+|[[Salvatore's Gentlemen's Club|Salvatore's House]]
+|[[Portland Rock]]
+|[[Massimo Torini]], [[Sicilian Mafia]]
+|
+|}
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+{| border="2"
+!'''Game'''
+! '''Mission'''
+!'''For'''
+!'''Starting Location'''
+!'''Ending Location''' 
+!'''Antagonist(s)'''
+!'''Notes''' 
+|-
+|'''{{VCS}}'''
+|'''[[Last Stand]]'''
+|[[Ricardo Diaz]]
+|[[Vercetti Estate|Diaz's Mansion]]
+|[[The Mendez Building]]
+|[[Diego Mendez]], [[Jerry Martinez]], [[Mendez Cartel]]
+|
+|}
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+{| border="2"
+!'''Game'''
+! '''Mission'''
+!'''For'''
+!'''Starting Location'''
+!'''Ending Location''' 
+!'''Antagonist(s)'''
+!'''Notes''' 
+|-
+| rowspan="4" |'''{{IV}}'''
+| colspan="6" |<center>'''[[Endings in GTA IV#Deal|Deal]]'''</center>
+|-
+|'''[[A Revenger's Tragedy]]'''
+|[[Little Jacob]]
+|[[State of Alderney|Alderney]]
+|[[Happiness Island]]
+|[[Dimitri Rascalov]], [[Faustin Mafiya|Rascalov Mafiya]], [[Pegorino Crime Family|Pegorino Family]]
+|
+|-
+| colspan="6" |<center>'''[[Endings in GTA IV#Revenge|Revenge]]'''</center>
+|-
+|'''[[Out of Commission]]'''
+|Little Jacob
+|Alderney
+|Happiness Island
+|[[Jimmy Pegorino]], Pegorino Family
+|
+|-
+|'''{{TLAD}}'''
+|'''[[Get Lost]]'''
+|[[Thomas Stubbs]]
+| colspan="2" |[[The Lost MC Clubhouse]]
+|[[Billy Grey]], [[Alderney State Department of Corrections|ASDC]], [[National Office of Security Enforcement|NOOSE]]
+|{{Small|Similarly to [[End of the Line]], the climax spans across [[State of Alderney|Alderney]], but ends back at the clubhouse, which is also the starting point.}}
+|-
+|'''{{TBOGT}}'''
+|'''[[Departure Time]]'''
+|[[Tony Prince|Anthony "Gay Tony" Prince]]
+|[[Tony Prince's Apartment|Tony's Apartment]]
+|[[Meadows Park]]
+|[[Ray Bulgarin]], [[Timur]], [[Bulgarin Crime Syndicate]]
+|
+|}
+
+[[CATEGORIES]]
+Plot

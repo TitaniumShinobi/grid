@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Family Pharmacy
+|image = FamilyPharmacy-GTAV-Logo.png
+|type = Pharmacy
+|games = {{Games|V=y|O=y}}
+|locations = 
+*[[Carson Avenue]], [[Davis]]
+*[[Fantastic Place]], [[Mission Row]]
+*[[San Andreas Avenue]], [[Pillbox Hill]]
+}}
+
+[[LEAD]]
+'''Family Pharmacy''' is a pharmacy company featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pharmacies

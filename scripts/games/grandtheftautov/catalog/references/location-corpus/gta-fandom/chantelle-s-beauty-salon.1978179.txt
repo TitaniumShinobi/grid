@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = salon
+|name           = Chantelle's Beauty Salon
+|sign           = ChantellesBeautySalon-GTAV-Logo.png
+|image          = ChantellesBeautySalon-GTAV.jpg
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Carson Avenue]], [[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|products       = 
+|taglines       = 
+|status         = active
+|owner          = [[Chantelle]]
+|employees      = 
+|structure_type = 
+|architecture   = 
+|website        = 
+|phone          = 465-714-0192
+|accessible     = No
+|file_name      = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Chantelle's Beauty Salon''' is a beauty salon appearing in {{V}} and {{O}}, located in [[Rancho]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Fronts
+Salons

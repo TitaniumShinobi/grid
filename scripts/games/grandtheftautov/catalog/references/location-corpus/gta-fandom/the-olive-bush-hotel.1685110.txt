@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name         = The Olive Bush Hotel
+|image        = The-Olive-Bush-Hotel-Mission-Row-GTAV-Logo.png
+|caption      = Hotel logo.
+|type         = Hotel
+|games        = ''[[Grand Theft Auto V]] <br> [[Grand Theft Auto Online]]''
+|locations    = [[Vespucci Boulevard]], [[Mission Row]]}}
+
+[[LEAD]]
+'''The Olive Bush Hotel''' is a 3 star hotel removed from ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+{{Clr}}
+
+[[CATEGORIES]]
+Beta content in GTA V
+Beta locations
+Businesses in GTA V
+Hotels

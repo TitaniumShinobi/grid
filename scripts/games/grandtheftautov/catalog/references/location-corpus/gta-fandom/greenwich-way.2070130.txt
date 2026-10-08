@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=GreenwichWay-GTAV.png
+|caption=Greenwich Way as seen from [[Dunstable Drive]].
+|games=''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|start=[[Dunstable Drive]]
+|end=[[Mad Wayne Thunder Drive]]
+|map=<gallery>
+GreenwichWay-GTAV-Map.png|Map
+GreenwichWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Greenwich Way''' is a short [[List of Street Names|street]] in [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Places of Interest]]
+*[[Cottage Park]]
+*[[Tyler Dixon]]'s mansion
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

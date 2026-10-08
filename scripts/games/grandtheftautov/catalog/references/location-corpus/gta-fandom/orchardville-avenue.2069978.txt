@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox structure
+|image= 
+<gallery>
+OrchardvilleAvenue-GTAVee-South.jpg|South
+OrchardvilleAvenue-GTAVee-North.jpg|North
+</gallery>
+
+
+|caption     = Orchardville Avenue as seen from [[Dry Dock Street]].
+|games       = {{Games|V=y|O=y}}
+|start       = [[Innocence Boulevard]]
+|end         = [[Hanger Way]]
+|map         = 
+<gallery>
+OrchardvilleAvenue-GTAV-Map.png|Map
+OrchardvilleAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Orchardville Avenue''' is a large two-way street located in [[East Los Santos (HD Universe)|East Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Grand Banks Steel Foundry]]
+*[[Pißwasser Factory]]
+*[[Raven Slaughterhouse]]
+
+[[SECTION:2:Businesses]]
+*[[Thorns]] {{Small|(corner of El Rancho Boulevard)}}
+*[[Vitreous]] {{Small|(corner of El Rancho Boulevard)}}
+*[[Zalinsky Supply & MFR Corp.]] {{Small|(corner of Hanger Way)}}
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

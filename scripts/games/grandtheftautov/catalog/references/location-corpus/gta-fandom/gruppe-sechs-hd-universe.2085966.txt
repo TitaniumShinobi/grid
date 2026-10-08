@@ -1,0 +1,59 @@
+[[INFOBOX]]
+{{Infobox business
+|type      = security
+|name      = Gruppe Sechs
+|image     = Gruppe Sechs Logo 2008.png
+|taglines  = "''Putting U in secure''"
+|use       = 
+*Private security company
+*Riot control service
+|games     = {{Games|IV=y|EFLC=y|V=y|O=y|VI=y}}
+|status    = active
+|locations = 
+*[[Liberty City (HD Universe)|Liberty City]]
+*[[State of Alderney|Alderney]]
+*[[State of San Andreas (HD Universe)|San Andreas]]
+*[[State of Leonida|Leonida]]
+|vehicles  = [[#Vehicles]]
+|lcn       = {{BAWSAQ/Slider}} '''GRU'''
+}}
+
+[[LEAD]]
+'''Gruppe Sechs''' (German for '''group six,''' also written as '''gruppe 6''') is a private security company and riot control service appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:''Grand Theft Auto IV'' and ''Episodes from Liberty City'']]
+Gruppe Sechs security guards are not present in storyline missions or in traffic in ''Grand Theft Auto IV'' or {{EFLC}}, with Securicars driven by civilians and no deadly force being used if their vehicles are stolen.
+
+The company's security guards make a minor appearance during the [[Multiplayer in GTA IV|multiplayer mode]] [[Bomb Da Base II]], driving Securicars in three possible spawn points around [[Algonquin]].
+
+[[SECTION:2:Stations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" widths="270px">
+GruppeSechs-GTAIV-Locations-CavityLane.png|[[Cavity Lane]] in [[Chinatown (GTA IV)|Chinatown]], [[Algonquin]].
+GruppeSechs-GTAIV-Locations-DiamondStreet.png|[[Diamond Street]] in Chinatown, Algonquin.
+GruppeSechs-GTAIV-Locations-Leftwood.png|[[Leftwood]], [[State of Alderney|Alderney]].
+GruppeSechs-GTAIV-Locations-Berchem.png|[[Berchem]], Alderney.
+GruppeSechs-GTAIV-Locations-Acter.png|[[Acter]], Alderney.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' & ''Grand Theft Auto Online'']]
+<gallery position="center" widths="270px">
+707Vespucci-GTAV.PNG|[[707 Vespucci]] in [[Pillbox Hill]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+'''Gruppe Sechs''' locations during the [[Money Laundering/Hands On Car Wash: Recover the Cash (Stockade)|Hands On Car Wash: Recover the Cash (Stockade)]] [[Money Laundering]] mission.
+
+<gallery position="center" spacing="small" widths="270px">
+RecoverTheCashStockade-GTAOee-Stockade-Location1.jpg|[[Terminal]].
+RecoverTheCashStockade-GTAOee-Stockade-Location3.jpg|[[Strawberry]].
+RecoverTheCashStockade-GTAOee-Stockade-Location2.jpg|[[Harmony]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Security companies

@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{infobox business|
+| image = LosSantosCustoms-GTAV-Gameplaytrailer.jpg
+| size = 350x350px
+| caption = The player customizing a car at Los Santos Customs.
+| game_1 = GTA V
+| name = Los Santos Customs
+| type = [[:Category:Garages|Garage]]
+| owner = 
+| location = [[Los Santos in GTA V|Los Santos]]
+| affiliation = 
+| missions = 
+| employee = 
+}}
+
+[[LEAD]]
+'''Los Santos Customs''' is an automobile customization shop in [[Grand Theft Auto V]] that allows the player to customize various standard road vehicles in the game. Upgrades can be both aesthetic or mechanical. The garage is based on [[wp:West Coast Customs|West Coast Customs]].
+
+Los Santos Customs replaces the [[Pay 'n' Spray]] garages from previous games.
+
+[[SECTION:2:Locations]]
+[[File:LosSantosCustoms-GTAV-LosSantosInternational.jpg|thumb|left|The Los Santos Customs at Los Santos International Airport.]]
+Los Santos Customs garages are located throughout the game. There are four within the game, located at [[Los Santos International Airport in GTA V|Los Santos International Airport]], [[La Mesa]], [[Burton]], and the [[Grand Senora Desert]] (the latter of which [[Franklin Clinton|Franklin]] can purchase, and once he does, all modifications performed there are free for him).
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Garages

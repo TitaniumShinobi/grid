@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|lightlogo = n
+|image = 
+<gallery>
+VinewoodWaxHaven-GTAVee.jpg|Front
+VinewoodWaxHaven-GTAVee-Rear.jpg|Rear
+</gallery>
+|games          = {{Games|V=y|O=y}}
+|type           = museum
+|location       = [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Vinewood Wax Haven''' is a wax museum in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Museums

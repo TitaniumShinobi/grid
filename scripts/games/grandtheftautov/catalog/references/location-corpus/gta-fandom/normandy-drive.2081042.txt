@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=NormandyDrive-GTAV.png
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[North Sheldon Avenue]]
+|end=[[Milton Road]] and [[Kimble Hill Drive]]
+|map=<gallery>
+NormandyDrive-GTAV-Map.png|Map
+NormandyDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+}}
+
+[[LEAD]]
+'''Normandy Drive''' is a residential two-way [[List of Street Names|street]] in [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

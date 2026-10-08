@@ -11,7 +11,7 @@ roots already present in validated production manifests.
 
 $script:GridRequestEnvelopeSchemaVersion = 1
 $script:GridClassRecipeSchemaVersion = 1
-$script:GridRequestProvenanceSources = @('UserSelected', 'ContextInherited', 'DetectedRunning', 'ProductionManifest')
+$script:GridRequestProvenanceSources = @('UserSelected', 'ContextInherited', 'DerivedFromProfile', 'DetectedRunning', 'ProductionManifest')
 $script:GridClassCoverageStates = @('Registered', 'Unsupported')
 $script:GridClassPipelineStages = @('diagnose', 'propose', 'execute', 'verify')
 $script:GridClassEvidenceFields = @('providerSeeds', 'candidatePlugins', 'observedForms', 'locations', 'claims.text', 'evidenceReferences')
@@ -116,6 +116,10 @@ function New-GridRequestEnvelope {
         [string[]]$CapabilityIds = @(),
         [AllowEmptyString()][string]$PlainText = '',
         [ValidateSet('UserSelected', 'ContextInherited')][string]$ContextSource = 'UserSelected',
+        [ValidateSet('UserSelected', 'ContextInherited')][string]$GameSelectionSource = $ContextSource,
+        [ValidateSet('UserSelected', 'ContextInherited', 'DerivedFromProfile')][string]$InstallationSelectionSource = $ContextSource,
+        [ValidateSet('UserSelected', 'ContextInherited')][string]$ProfileSelectionSource = $ContextSource,
+        [ValidateSet('UserSelected', 'ContextInherited')][string]$ClassSelectionSource = 'UserSelected',
         [ValidateSet('UserSelected', 'ContextInherited', 'DetectedRunning')][string]$ToolSelectionSource = 'UserSelected'
     )
 
@@ -138,10 +142,16 @@ function New-GridRequestEnvelope {
         $id
     })
     $provenance = New-Object Collections.Generic.List[object]
-    $provenance.Add([pscustomobject][ordered]@{ field = 'context.gameId'; source = $ContextSource; confidence = 1.0; note = 'Exact selected game adapter identity.' })
-    if (-not [string]::IsNullOrWhiteSpace($InstallationId)) { $provenance.Add([pscustomobject][ordered]@{ field = 'context.installationId'; source = $ContextSource; confidence = 1.0; note = 'Exact selected installation identity.' }) }
-    if (-not [string]::IsNullOrWhiteSpace($ProfileId)) { $provenance.Add([pscustomobject][ordered]@{ field = 'context.profileId'; source = $ContextSource; confidence = 1.0; note = 'Exact selected profile identity.' }) }
-    $provenance.Add([pscustomobject][ordered]@{ field = 'class.classId'; source = 'UserSelected'; confidence = 1.0; note = 'Explicit Class selection; never inferred from claims.' })
+    $provenance.Add([pscustomobject][ordered]@{ field = 'context.gameId'; source = $GameSelectionSource; confidence = 1.0; note = 'Exact selected game adapter identity.' })
+    if (-not [string]::IsNullOrWhiteSpace($InstallationId)) {
+        $installationNote = if ($InstallationSelectionSource -ceq 'DerivedFromProfile') {
+            'Exact installation identity derived from the explicitly selected connected profile.'
+        } else { 'Exact selected installation identity.' }
+        $provenance.Add([pscustomobject][ordered]@{ field = 'context.installationId'; source = $InstallationSelectionSource; confidence = 1.0; note = $installationNote })
+    }
+    if (-not [string]::IsNullOrWhiteSpace($ProfileId)) { $provenance.Add([pscustomobject][ordered]@{ field = 'context.profileId'; source = $ProfileSelectionSource; confidence = 1.0; note = 'Exact selected profile identity.' }) }
+    $classNote = if ($ClassSelectionSource -ceq 'UserSelected') { 'Explicit Class selection; never inferred from claims.' } else { 'Single compatible registered Class inherited from the selected connected context; never inferred from claims.' }
+    $provenance.Add([pscustomobject][ordered]@{ field = 'class.classId'; source = $ClassSelectionSource; confidence = 1.0; note = $classNote })
 
     $modSelections = New-Object Collections.Generic.List[object]
     foreach ($name in $mods) {
@@ -326,12 +336,63 @@ function Test-GridClassRecipe {
     }
     foreach ($stage in $script:GridClassPipelineStages) {
         if ($null -eq $Recipe.pipelines.PSObject.Properties[$stage]) { $errors.Add("Missing pipeline stage '$stage'.") }
+        $pipeline = $Recipe.pipelines.$stage
+        if ($null -eq $pipeline) { continue }
+        $pipelineFields = @($pipeline.PSObject.Properties.Name)
+        foreach ($field in $pipelineFields) {
+            if ($field -notin @('rootCapabilityIds','gameRootCapabilityIds')) { $errors.Add("Unsupported pipeline field '$field' in stage '$stage'.") }
+        }
+        $hasSharedRoots = $null -ne $pipeline.PSObject.Properties['rootCapabilityIds']
+        $hasGameRoots = $null -ne $pipeline.PSObject.Properties['gameRootCapabilityIds']
+        if ($hasSharedRoots -eq $hasGameRoots) {
+            $errors.Add("Pipeline stage '$stage' must declare exactly one of rootCapabilityIds or gameRootCapabilityIds.")
+            continue
+        }
+        if ($hasSharedRoots) {
+            $roots = @($pipeline.rootCapabilityIds)
+            if ($roots.Count -eq 0) { $errors.Add("Pipeline stage '$stage' requires at least one root capability.") }
+            if (@($roots | Sort-Object -Unique).Count -ne $roots.Count) { $errors.Add("Pipeline stage '$stage' contains duplicate root capabilities.") }
+            foreach ($rootId in $roots) {
+                if ([string]$rootId -notmatch '^grid\.[a-z0-9]+(?:[.-][a-z0-9]+)*$') { $errors.Add("Pipeline stage '$stage' contains invalid root capability '$rootId'.") }
+            }
+            continue
+        }
+        $mappedGames = @($pipeline.gameRootCapabilityIds.PSObject.Properties.Name)
+        if ($mappedGames.Count -eq 0) { $errors.Add("Pipeline stage '$stage' requires at least one game root mapping.") }
+        foreach ($mappedGame in $mappedGames) {
+            if ([string]$mappedGame -notin @($Recipe.supportedGames)) { $errors.Add("Pipeline stage '$stage' maps unsupported game '$mappedGame'.") }
+            $roots = @($pipeline.gameRootCapabilityIds.$mappedGame)
+            if ($roots.Count -eq 0) { $errors.Add("Pipeline stage '$stage' requires at least one root capability for '$mappedGame'.") }
+            if (@($roots | Sort-Object -Unique).Count -ne $roots.Count) { $errors.Add("Pipeline stage '$stage' contains duplicate root capabilities for '$mappedGame'.") }
+            foreach ($rootId in $roots) {
+                if ([string]$rootId -notmatch '^grid\.[a-z0-9]+(?:[.-][a-z0-9]+)*$') { $errors.Add("Pipeline stage '$stage' contains invalid root capability '$rootId' for '$mappedGame'.") }
+            }
+        }
+        foreach ($supportedGame in @($Recipe.supportedGames)) {
+            if ([string]$supportedGame -notin $mappedGames) { $errors.Add("Pipeline stage '$stage' has no root capability mapping for supported game '$supportedGame'.") }
+        }
     }
     $recipeText = $Recipe | ConvertTo-Json -Depth 30 -Compress
     if ($recipeText -match '"[A-Za-z]:[\\/][^"\r\n]+"' -or $recipeText -match '(?i)"[^"\r\n]+\.(esp|esm|esl)"' -or $recipeText -match '(?i)"(?:0x)?[0-9a-f]{8}"') {
         $errors.Add('Class recipes may not contain machine paths, plugin identities, or FormIDs.')
     }
     [pscustomobject]@{ IsValid = ($errors.Count -eq 0); Errors = @($errors) }
+}
+
+function Resolve-GridClassPipelineRootIds {
+    [CmdletBinding()]
+    param(
+        $Pipeline,
+        [Parameter(Mandatory)][ValidateNotNullOrEmpty()][string]$GameId
+    )
+
+    if ($null -eq $Pipeline) { return @() }
+    if ($null -ne $Pipeline.PSObject.Properties['gameRootCapabilityIds']) {
+        $mapping = $Pipeline.gameRootCapabilityIds.PSObject.Properties[$GameId]
+        if ($null -eq $mapping) { return @() }
+        return @($mapping.Value)
+    }
+    @($Pipeline.rootCapabilityIds)
 }
 
 function Get-GridClassRecipeRegistry {
@@ -415,8 +476,7 @@ function Resolve-GridRequestPlan {
             if ([string]$toolId -notin $registeredToolIds) { $gaps.Add("Class recipe references unregistered tool '$toolId'.") }
         }
         $diagnose = $recipe.pipelines.diagnose
-        $rootIds = @()
-        if ($null -ne $diagnose) { $rootIds = @($diagnose.rootCapabilityIds) }
+        $rootIds = @(Resolve-GridClassPipelineRootIds -Pipeline $diagnose -GameId ([string]$Envelope.context.gameId))
         if ($rootIds.Count -eq 0) { $gaps.Add("Class '$($recipe.classId)' has no diagnosis capability roots.") }
         else {
             try {
@@ -425,6 +485,15 @@ function Resolve-GridRequestPlan {
                     if ([string]$contract.sideEffectClassification -in @('ExternalWrite','ExternalProcessControl')) { throw "Mutation capability '$($contract.capabilityId)' is prohibited in a diagnosis pipeline." }
                 }
                 $bindings = @(ConvertTo-GridCapabilityBindings -Contracts $contracts)
+                $mdboRoots = @($rootIds | Where-Object { [string]$_ -like 'grid.registration.*' })
+                if ($mdboRoots.Count -gt 0) {
+                    if (-not (Get-Command Get-GridMdboExecutionPlan -ErrorAction SilentlyContinue)) {
+                        throw 'MdboCapabilityRegistryUnavailable: Grid.MdboCapabilities.ps1 is not loaded.'
+                    }
+                    $mdboRegistry = @(Get-GridMdboCapabilityRegistry -ScriptsRoot $ScriptsRoot)
+                    $mdboPlan = @(Get-GridMdboExecutionPlan -Registry $mdboRegistry -GoalCapabilityIds $mdboRoots)
+                    if ($mdboPlan.Count -eq 0) { throw 'MdboRegistrationPlanEmpty: Contract 2 goals did not resolve an execution plan.' }
+                }
             } catch { $gaps.Add($_.Exception.Message) }
         }
     }
@@ -445,6 +514,8 @@ function Resolve-GridRequestPlan {
                 [pscustomobject][ordered]@{ entryPoint = 'Get-GridSkyrimGameplayCapabilityAssessment'; purpose = 'GameplayCapabilityAssessment'; requiredGates = @('InstallationBaseline','ProfileBaseline'); mutationAuthorized = $false }
             } elseif ($toolCount -gt 0) {
                 [pscustomobject][ordered]@{ entryPoint = 'Invoke-GridToolEvidenceOrchestration'; purpose = 'SelectedToolEvidence'; requiredGates = $baselineRequiredGates; mutationAuthorized = $false }
+            } elseif (@($rootIds) -contains 'grid.game.grandtheftautov.crash-investigation.collect') {
+                [pscustomobject][ordered]@{ entryPoint = 'Invoke-GridGtaCrashInvestigation'; purpose = 'GameDiagnosticEvidence'; requiredGates = @('InstallationBaseline'); mutationAuthorized = $false }
             } else {
                 [pscustomobject][ordered]@{ entryPoint = 'Invoke-GridBaseline.ps1'; purpose = 'Baseline'; requiredGates = $baselineRequiredGates; mutationAuthorized = $false }
             }
@@ -461,8 +532,9 @@ function Get-GridRegisteredCoverage {
     $registry = @(Get-GridCapabilityRegistry -ScriptsRoot $ScriptsRoot)
     @((Get-GridClassRecipeRegistry -ClassesRoot $ClassesRoot) | ForEach-Object {
         $recipe = $_
-        $roots = @()
-        if ($null -ne $recipe.pipelines.diagnose) { $roots = @($recipe.pipelines.diagnose.rootCapabilityIds) }
+        $roots = @($recipe.supportedGames | ForEach-Object {
+            Resolve-GridClassPipelineRootIds -Pipeline $recipe.pipelines.diagnose -GameId ([string]$_)
+        } | Sort-Object -Unique)
         $missing = @($roots | Where-Object { $id = $_; @($registry | Where-Object { [string]$_.capabilityId -ieq [string]$id }).Count -ne 1 })
         $unsafe = @()
         if ($roots.Count -gt 0 -and $missing.Count -eq 0) {

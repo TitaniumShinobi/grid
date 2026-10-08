@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = MEDICAL SERVICE
+|name        = Los Santos Medical Center
+|image       = LSMC-GTAV-Logo.png
+|caption     = '''Los Santos Medical Center''' logo.
+|games       = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|type        = Medical service
+|locations   = [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+The '''Los Santos Medical Center (LSMC)''' is a medical service company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Medical services

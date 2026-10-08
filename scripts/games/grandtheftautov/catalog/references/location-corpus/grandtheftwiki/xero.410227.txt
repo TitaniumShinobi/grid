@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Xero
+|image = Xero-GTAIV-refinery-exterior.jpg
+|size = 350x350px
+|caption = The "Xero Gas" [[Acter Industrial Park]] refinery in GTA IV.
+|game_1 = GTA IV
+|game_2 = TLAD
+|game_3 = TBOGT
+|game_4 = GTA Chinatown Wars
+|game_5 = GTA V
+|game_6 = GTA Online
+|type = Petroleum supplier
+|owner = 
+|location = [[Acter Industrial Park]] in [[Alderney]]<br />[[Los Santos International Airport in GTA V|Los Santos International Airport]], [[Los Santos in GTA V|Los Santos]]<br />[[Capital Blvd]]/[[Strawberry Ave]] in [[Strawberry]], Los Santos
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Xero''' is a company in [[Grand Theft Auto IV]] and [[Grand Theft Auto V]] presumably specialized in petroleum. Unlike its competitors, Xero does not appear to have set up any [[Filling Stations|gas stations]] in [[Liberty City in GTA IV Era|Liberty City]], although it does in [[Los Santos in GTA V|Los Santos]]. The company operate a refinery at the southwestern corner of the [[Acter Industrial Park]] in [[Alderney]], a building at [[Los Santos International Airport in GTA V|Los Santos International Airport]], and a gas station at the corner of [[Capital Blvd]] and [[Strawberry Ave]] in [[Strawberry]], Los Santos. Xero storage tanks and faded advertising of the brand can also be found in selected parts of the city, and Xero sponsorship vinyls are visible on certain [[Bati Custom]]s designs. Xero is a [[BAWSAQ]]-listed company.
+
+Its name and logo design appear to be similar to that of [[Xoomer]] in [[Grand Theft Auto: San Andreas]].
+
+[[CATEGORIES]]
+Businesses in Alderney
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Businesses in The Ballad of Gay Tony
+Businesses in The Lost and Damned
+Corporations

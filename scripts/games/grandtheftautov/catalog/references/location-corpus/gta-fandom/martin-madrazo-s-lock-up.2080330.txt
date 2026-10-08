@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox location
+|warehouse=y
+|image=Martin_Madrazos_Lock-up-GTAV-Front_View.png
+|caption=
+|location=[[Grand Senora Desert]], [[Los Santos County]]
+|accessible=Yes
+|games={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Martin Madrazo's lock-up''' is a collection of buildings located on an unnamed dirt road just to the north of [[La Fuente Blanca]], appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The lock-up only plays a role in ''GTA Online'', where it is often used as an alternative to his mansion for larger items the [[GTA Online Protagonist|protagonist]] must deliver for [[Martin Madrazo|Martin]].
+
+[[CATEGORIES]]
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Los Santos County

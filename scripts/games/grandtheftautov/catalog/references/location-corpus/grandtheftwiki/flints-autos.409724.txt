@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Flints Autos
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = Food manufacturing or processing
+|owner = 
+|location = [[Innocence Blvd]]/[[Power St]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Flints Autos''' is an auto repair shop located at the corner of [[Innocence Blvd]] and [[Power St]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The business also gives customers a free smog check.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

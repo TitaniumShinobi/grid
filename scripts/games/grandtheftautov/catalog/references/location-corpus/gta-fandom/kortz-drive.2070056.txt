@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=
+<gallery>
+KortzDrive-GTAVee-South.jpg|South
+KortzDrive-GTAVee-North.jpg|North
+</gallery>
+|games={{Games|V=y|O=y}}
+|start=[[North Rockford Drive]]
+|end=[[Kortz Center]] <small>(dead-end)</small>
+|map=<gallery>
+KortzDrive-GTAV-Map.png|Map
+KortzDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Kortz Drive''' is a road in {{V}} and {{O}}, located in [[Pacific Bluffs]] and [[Richman (HD Universe)|Richman]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

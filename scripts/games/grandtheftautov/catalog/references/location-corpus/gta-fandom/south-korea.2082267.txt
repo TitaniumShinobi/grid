@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox country
+|image_flag      = Flag_of_South_Korea.svg
+|currency_ingame = South Korean won}}
+
+[[LEAD]]
+The '''Republic of Korea''' (Korean: '''대한민국'''), more commonly known as '''South Korea''' (Korean: '''남한'''), is a country located on the Korean Peninsula in eastern Asia. It is bordered by [[North Korea]] to the north.
+
+''Grand Theft Auto'' games in South Korea are rated by the country's own {{WP|Game Rating and Administration Committee}} (GRAC); prior to 2006, ''Grand Theft Auto'' games were banned in the country, but the ban has long since been lifted, with formerly banned games being unofficially translated into Korean. The 3D Universe games were eventually formally released in South Korea as ''[[Grand Theft Auto: The Trilogy - The Definitive Edition]]'' in 2021.
+
+Like its Asian neighbor Japan, South Korea typically sees ''Grand Theft Auto'' and other Rockstar releases months later than the rest of the world due to the translation/localization process. {{IV}} was released in South Korea on September 23, 2008, on console and December 3, 2008, on PC, and distribution was handled by Wiz Hands (console version) and WBA Interactive (PC version). {{V}} was distributed by H2 Interactive.
+
+There are a few references to the country in the {{S}}.
+
+[[CATEGORIES]]
+Asian countries

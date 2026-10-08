@@ -1,0 +1,62 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = electronics
+|name          = Kakagawa
+|image         = Kakagawa-GTASAde-Logo.png
+|caption       = Kakagawa logo in ''[[Grand Theft Auto: The Trilogy - The Definitive Edition|The Definitive Edition]]'' of {{SA}}.
+|image2        = 
+|caption2      = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|SA=y|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+<center>'''3D Universe'''</center>
+*[[LVA Freight Depot]], [[Las Venturas (3D Universe)|Las Venturas]], [[State of San Andreas (3D Universe)|San Andreas]]
+<center>'''HD Universe'''</center>
+*[[Kakagawa Building]], [[Alderney City]], [[State of Alderney|Alderney]]
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = [[#Products|Products]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+|phone         = 
+|website       = 
+|map           = 
+|map_caption   = 
+}}
+
+[[LEAD]]
+'''Kakagawa''' (Japanese: カカガワ) is a [[Japan]]ese electronics company that appears in {{SA}} and the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto: San Andreas'']]
+<gallery position="center" spacing="small" widths="270px" bordercolor="#ec2023">
+Kakagawa-GTASA-LVAFreightDepot-exterior.jpg|'''Kakagawa''' warehouse at the [[LVA Freight Depot]] in [[Las Venturas (3D Universe)|Las Venturas]].
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" widths="270px" spacing="small" bordercolor="#ec2023">
+KakagawaBuilding-GTAIV.png|[[Kakagawa Building]], [[Alderney City]], [[State of Alderney|Alderney]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Electronics companies

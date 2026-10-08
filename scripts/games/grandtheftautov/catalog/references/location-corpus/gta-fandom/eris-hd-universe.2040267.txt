@@ -1,0 +1,68 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = fashion
+|name          = Eris
+|image_label   = 
+|image         = Eris-GTASA-Logo.svg
+|caption       = Former Eris logo.
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = Eris Footwear
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Leftwood]], [[State of Alderney|Alderney]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = [[Pete Vassal]]
+|owner         = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|taglines      = "Bring chaos to your feet"
+|bawsaq        = 
+|lcn           = 
+|status        = 
+|phone         = 
+|email         = 
+|website       = [[erisfootware.com]] <small>(''GTA IV'')</small>
+|bleeter       = [[File:Bleeter GTAVpc ERIS.png|40px|right]] @ERIS
+|lifeinvader   = 
+|snapmatic     = 
+|opentimes     = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Eris''' (stylized as '''ERIS''') is a sportswear company appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+Eris-GTAIV-Locations-DowntownBroker.png|[[Dillon Street Building (Downtown)|Dillon Street Building]], [[Downtown (GTA IV)|Downtown]], [[Broker]], [[Liberty City (HD Universe)|Liberty City]].
+Eris-GTAIV-Locations-ManzanoRoad.png|[[Manzano Road]] and [[Sacramento Avenue]], [[Leftwood]], [[State of Alderney|Alderney]].
+Eris-GTAIV-Locations-LongJohnAvenue.png|[[Long John Avenue]], Leftwood, Alderney.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+Eris-GTACW-Locations-DowntownBroker.png|Dillon Street Building, Downtown, Broker, Liberty City.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Clothing store chains
+Fashion brands

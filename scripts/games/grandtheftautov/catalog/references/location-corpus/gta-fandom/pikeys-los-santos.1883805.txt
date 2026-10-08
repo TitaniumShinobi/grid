@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = fashion
+|name          = Pikeys Los Santos
+|sign          = PikeysLosSantos-GTAV-Logo.png
+|image         =
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Hawick Avenue]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = Clothing brand
+|status        = active
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Pikeys Los Santos''' is a clothing brand appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+PikeysLosSantos-GTAVe-Store.png|[[Hawick Avenue]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fashion brands

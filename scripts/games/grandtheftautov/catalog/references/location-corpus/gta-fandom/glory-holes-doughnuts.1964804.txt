@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = restaurant
+|name          = Glory Holes Doughnuts
+|sign          = 
+|image         = Beta-GloryHolesDoughnuts-GTAV-Logo.png
+|caption       = Full '''Glory Holes''' logo, found on lead graphic designer [[Steven Walsh]]'s {{URL|https://archive.fo/Hw6py|portfolio website}}.
+|aka           = 
+|games         = {{Games|V=y}}
+|mentioned     = 
+|locations     = 
+[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Doughnut & coffee shop
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|taglines      = ''Close your eyes and bite!''
+|bawsaq        = 
+|lcn           = 
+|bleeter       = 
+|lifeinvader   = 
+|status        = defunct
+}}
+
+[[LEAD]]
+'''Glory Holes Doughnuts''' was a cut chain of doughnut shops which was planned to appear in {{V}}.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Café chains

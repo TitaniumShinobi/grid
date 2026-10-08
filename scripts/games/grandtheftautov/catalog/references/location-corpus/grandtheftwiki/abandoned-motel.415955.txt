@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = AbandonedMotel-GTAV-SandyShores-exterior.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Abandoned Motel
+|type = Motel
+|owner = 
+|location = [[Algonquin Blvd]] in [[Sandy Shores]], [[Blaine County]]
+|affiliation = [[The Lost Brotherhood]] (<small>briefly in [[2013]]</small>)
+|missions = [[Cleaning the Cat House]]<br />[[Target Practice]]
+|employee = 
+}}
+
+[[LEAD]]
+The '''Abandoned Motel''' is a former motel on [[Algonquin Blvd]] in [[Sandy Shores]], [[Blaine County]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The motel may have been run by [[Jeb Evans]] and his wife who owned a guesthouse in the town during the 1970s. A [[Stunt Jumps in GTA V|stunt jump]] involves jumping over the motel.
+
+[[CATEGORIES]]
+Businesses in Blaine County
+Businesses in GTA V
+Motels

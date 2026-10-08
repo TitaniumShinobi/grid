@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox structure
+|image = FudgeLane-GTAV.png
+|caption = Fudge Lane as seen from [[Sustancia Road]].
+|games = {{Games|V=y|O=y}}
+|start = [[Innocence Boulevard]]
+|end = [[Sustancia Road]]
+|map = <gallery>
+FudgeLane-GTAV-Map.png|Map
+FudgeLane-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Fudge Lane''' is a residential street in [[El Burro Heights]], [[East Los Santos (HD Universe)|East Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Homes]]
+*[[Skinny's House]]
+
+{{Clear}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

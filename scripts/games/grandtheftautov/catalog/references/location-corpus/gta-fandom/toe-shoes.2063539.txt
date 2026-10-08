@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox business
+|type     = fashion
+|games    = {{Games|V=y|O=y}}
+|name     = Toe Shoes
+|image    = ToeShoesLogo-GTAV.png
+|taglines = 
+*"''Run like a caveman''"
+*"''They're shoes for toes and twats''"
+|website  = Toeshoesusa.com
+|bleeter  = [[File:Bleeter_GTAVpc_ToeShoes.png|40px]] @ToeShoes
+}}
+
+[[LEAD]]
+'''Toe Shoes''' is a clothing brand in {{V}} and {{O}} that sells athletic shoes and caps.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Commercials

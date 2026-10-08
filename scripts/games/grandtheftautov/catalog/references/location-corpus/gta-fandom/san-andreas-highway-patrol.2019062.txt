@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox organization
+|Name Change  = 
+|style        = 
+|type         = police
+|name         = San Andreas Highway Patrol
+|logo         = 
+|image        =SAHP-GTAV-Logo.png 
+|caption      =Patch of the SAHP 
+|aka          =
+*SAHP
+*Los Santos Highway Patrol
+*LSHP
+|games        = {{games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Numbered Highways in GTA V|San Andreas Highway System]]
+|org_type     = State police force
+|founded      = 
+|founder      = 
+|ceo          = 
+|employees    = 
+|motto        = 
+|businesses   = 
+|affiliations = 
+|vehicles     = [[#Vehicles|Vehicles]]
+|weapons      = [[#Weapons|Weapons]]
+|status       = active
+}}
+
+[[LEAD]]
+The '''San Andreas Highway Patrol (SAHP)''' is a state level agency that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+The San Andreas Highway Patrol does not operate any stations, but they are seen patrolling highways in ''GTA V'' and ''GTA Online''.
+
+*One SAHP officer can be seen ending a traffic stop on the [[Palomino Freeway]] next to the train bridge and [[NOOSE Headquarters]] between 11 AM and 6 PM.
+*One SAHP officer can be seen watching the [[Senora Freeway]] through binoculars next to the Senora Freeway and [[Route 68]] interchange between 11 AM and 3 PM.
+*Two SAHP officers can be seen on the side of the Senora Freeway next to [[Davis Quartz]] between 3 PM and 6 PM. One will be sitting on their motorcycle while the other is standing and holding coffee.
+*Two SAHP officers can be seen on the side of the Senora Freeway south of [[Grapeseed]] between 7 AM and 11 AM. One will be sitting on their motorcycle while the other is standing and holding a phone.
+*Two SAHP officers can be seen on the side of [[Route 1]] south of the [[Paleto Forest]] between 3 PM and 10 PM. One will be sitting on their motorcycle while the other is standing and holding coffee.
+*Three SAHP officers can be seen in [[Raton Canyon]] on a ledge south of the [[Altruist Camp]], as part of the ''{{WP|Thelma and Louise}}'' [[Secrets and Easter Eggs in GTA V|Easter egg]], between 7 PM and 8 PM. They will be standing next to two [[Sheriff Cruiser]]s and accompanied by an [[International Affairs Agency|IAA]] agent and two [[National Office of Security Enforcement|NOOSE]] members in a helicopter that can change between a [[Buzzard]] and a [[Police Maverick (HD Universe)|Police Maverick]].
+
+[[CATEGORIES]]
+Organizations in GTA Online
+Organizations in GTA V
+Police departments

@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = SPA
+|type           = 
+|name           = Paradise Sauna
+|sign           = 
+|image          = ParadiseSauna-GTAV.jpg
+|caption        = View of the exterior.
+|aka            = 
+|games          = {{games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Clinton Avenue]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|condition      = 
+|status         = defunct
+|structure_type = 
+|architecture   = 
+|phone          = 
+|accessible     = No
+|file_name      = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Paradise Sauna''' is a shuttered spa in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Spas

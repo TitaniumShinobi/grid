@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|image = RatonCanyonBridge-GTAV.jpeg
+|location = [[Raton Canyon]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|games = {{Games|V=y|O=y}}
+|bridge = y
+}}
+
+[[LEAD]]
+The '''Cassidy Creek Bridge''' is a bridge located in the [[Raton Canyon]] National Park, [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Arch bridges
+Road bridges
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

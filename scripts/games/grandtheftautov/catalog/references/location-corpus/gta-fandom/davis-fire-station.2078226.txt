@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = firestation
+|image          = DavisFireStation-GTAV.PNG
+|caption        = '''Davis Fire Station''' from street level.
+|structure_type = Fire Station
+|games          = {{games|V=y|O=y}}
+|location       = [[Macdonald Street]], [[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+|map            = DavisFireStation-GTAV-Map.png
+|map_caption    = Location on the map (red).
+|accessible     = Yes
+}}
+
+[[LEAD]]
+The '''Davis Fire Station''', also known as the '''Davis Fire Dept.''', is a fire station of the [[Los Santos Fire Department]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located in [[Davis]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Fire stations

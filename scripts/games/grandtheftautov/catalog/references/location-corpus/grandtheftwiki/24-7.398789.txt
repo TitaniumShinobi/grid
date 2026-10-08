@@ -1,0 +1,89 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 24-7-GTASA-logo.png
+|size = 350x350px
+|caption = The 24/7 logo in [[Grand Theft Auto: San Andreas]]
+|game_1 = GTA San Andreas
+|game_2 = GTA IV
+|game_3 = GTA Chinatown Wars
+|game_4 = GTA V
+|game_5 = GTA Online
+|name = 24/7
+|type = [[:Category:Supermarkets|Convenience store]]
+|owner = 
+|location = '''[[GTA III Era|3D Universe]]''':<br />[[Commerce]], [[Los Santos in GTA III Era|Los Santos]]<br />[[El Corona]], [[Los Santos in GTA III Era|Los Santos]]<br />[[Mulholland]], [[Los Santos in GTA III Era|Los Santos]] (x2)<br />[[Redsands East]], [[Las Venturas]]<br />[[The Emerald Isle]], [[Las Venturas]]<br />[[Starfish Casino]], [[Las Venturas]] (x2)<br />[[Old Venturas Strip]], [[Las Venturas]]<br />[[Roca Escalante]], [[Las Venturas]]<br />[[Creek]], [[Las Venturas]]<br />[[Whetstone]]<br />[[Fort Carson]], [[Bone County]]<br />'''[[HD Universe]]''':<br />[[Hove Beach]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Downtown Broker]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Schottler]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Northern Gardens]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Star Junction]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Northwood]], [[Liberty City in GTA IV Era|Liberty City]]<br />[[Alta St]]/[[Hawick Ave]] in [[Alta]], [[Los Santos in GTA V|Los Santos]]<br />[[Little Seoul]], [[Los Santos in GTA V|Los Santos]]<br />[[Alhambra Dr]] in [[Sandy Shores]], [[Blaine County]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''24/7''' (also written as '''24-7''') is a chain of convenience stores in [[Grand Theft Auto: San Andreas]], [[Grand Theft Auto IV]], [[Grand Theft Auto: Chinatown Wars]] and [[Grand Theft Auto V]], based on [[:wp:7 Eleven|7 Eleven]]. The business may also have a store in [[Little Havana]], [[Vice City in GTA III Era|Vice City]] in [[Grand Theft Auto: Vice City]] (a sign reading "24 (Squirt) 7" can be found hung alongside signs reading "'''Callegi Delicatessen Restaurant'''").
+
+[[SECTION:2:Interiors]]
+
+
+[[SECTION:3:3D Universe]]
+[[File:24-7-GTASA-interior.jpg|left|thumb|250px|An interior of a 24/7 in GTA San Andreas.]]
+
+In GTA San Andreas, 24/7 stores use a total of three different interiors internally named "<code>X7_11S</code>", "<code>X711S3</code>" and "<code>X7_11B</code>". <code>X7_11S</code> and <code>X7_11B</code>, which are used for all but one 24/7 store, occupy a smaller area and features the aforementioned vending machines and arcade games. However, <code>X711S3</code>, which is linked to the west [[Mulholland]], [[Los Santos in GTA III Era|Los Santos]] outlet, features a moderately deep interior but has no vending machine or arcade cabinet, rendering that outlet useless in gameplay.
+
+There are additionally three unused 24/7 interiors, "<code>X711S2</code>", "<code>X7_11C</code>" and "<code>X7_11D</code>", that are only accessible via in the [[Hidden Interiors Universe|interior realm]]. <code>X7_11C</code> is designed as a moderately large interior; <code>X711S2</code> and <code>X7_11D</code> are the two largest 24/7 interiors, with <code>X7_11D</code> bearing a unique L-shaped floorplan.
+
+The interiors tend to feature a clerk manning the stores' counter, while two to four pedestrians (or customers) are usually found roaming the aisles, uttering unique shopping-related lines, as well as performing animated sequences where they retrieve items from store shelves and interacting with the player only if provoked. Customers may also interact with the store clerk in a short animation, but the customers never leave the store. The store shelves are also fairly detailed, featuring various branded products like [[Love Juice (product)|Love Juice]], [[Cherry Popper Ice Cream Factory|Cherry Popper]] ice-cream or pizzas from [[Vice City in GTA III Era|Vice City]].
+
+[[SECTION:3:GTA V]]
+Only two unique interiors are known to exist at this time. Both are staffed by clerks of East Asian origin.
+
+[[SECTION:2:Locations]]
+;GTA Vice City
+* [[Little Havana]] (debatable, as the "24 (Squirt) 7" signage is hung alongside signs reading "'''Callegi Delicatessen Restaurant'''").
+
+;GTA San Andreas
+<gallery width="auto" perrow="5" style="font-size:95%; padding:0; text-align:left;" widths="160">
+File:Roboi'sFoodMart-GTASA-Commerce-exterior.jpg|[[Commerce]] (with [[Roboi's Food Mart]] exterior), [[Los Santos in GTA III Era|Los Santos]].
+File:69¢Store-GTASA-southwestIdlewood-exterior.jpg|[[El Corona]] (with [[69¢ Store]] exterior), Los Santos.
+File:Roboi'sFoodMart-GTASA-Mulholland-exterior.jpg|[[Mulholland]] (with Roboi's Food Mart exterior), Los Santos.
+File:24-7-GTASA-Mulholland-exterior.jpg|Mulholland (part of an unnamed gas station), Los Santos.
+File:24-7-GTASA-RedsandsEast-exterior.jpg|[[Redsands East]], [[Las Venturas]].
+File:24-7-GTASA-EmeraldIsle-exterior.jpg|[[The Emerald Isle]], Las Venturas.
+File:24-7-GTASA-westStarfishCasino-exterior.jpg|West [[Starfish Casino]], Las Venturas.
+File:24-7-GTASA-eastStarfishCasino-exterior.jpg|East [[Starfish Casino]], Las Venturas.
+File:24-7-GTASA-OldVenturasStrip-exterior.jpg|[[Old Venturas Strip]], Las Venturas.
+File:24-7-GTASA-RocaEscalante-exterior.jpg|[[Roca Escalante]], Las Venturas.
+File:24-7-GTASA-Creek-exterior.jpg|[[Creek]], Las Venturas.
+File:24-7-GTASA-Whetstone-exterior.jpg|[[Whetstone]] (part of a [[Xoomer]] gas station).
+File:24-7-GTASA-FortCarson-exterior.jpg|[[Fort Carson]] (with a liquor store exterior), [[Bone County]].
+</gallery>
+
+;GTA IV
+<gallery width="auto" perrow="3" style="font-size:95%; padding:0; text-align:left;" widths="160">
+File:24-7-GTAIV-HoveBeach-exterior.jpg|Masterson Street and Wappinger Avenue, [[Hove Beach]], [[Broker]].
+File:24-7-GTAIV-DowntownBroker-exterior.jpg|Montauk Avenue, [[Downtown Broker]].
+File:24-7-GTAIV-Schottler.jpg|Cassidy Street and Wenrohronon Avenue, [[Schottler]], [[Broker]] (abandoned). 
+File:24-7-GTAIV-NorthernGardens-exterior.jpg|Leavenworth Avenue, [[Northern Gardens]], [[Bohan]] (behind the Northern Gardens police station and [[Bohan Medical & Dental Center]]).
+File:24-7-GTAIV-StarJunction-exterior.jpg|Frankfort Avenue and Kunzite Street, [[Star Junction]], [[Algonquin]].
+File:24-7-GTAIV-Northwood-exterior.jpg|Frankfort Avenue and Wardite Street, [[Northwood]], Algonquin.
+</gallery>
+
+[[File:24-7cashier-GTAV.jpg|right|thumb|The 24/7 cashier in GTA V.]]
+;GTA V and GTA Online
+<gallery width="auto" perrow="3" style="font-size:95%; padding:0; text-align:left;" widths="160">
+File:24-7-GTAV-SandyShores-exterior.jpg|[[Alhambra Dr]], [[Sandy Shores]].
+File:24-7-GTAV-SandyShores-interior.jpg|Shared interior.
+File:24-7-GTAV-SandyShores-office.jpg|Shared office.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in Blaine County
+Businesses in Bone County
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA San Andreas
+Businesses in GTA V
+Businesses in Las Venturas
+Businesses in Liberty City in GTA IV Era
+Businesses in Los Santos in GTA III Era
+Businesses in Los Santos in GTA V
+Businesses in Whetstone
+Supermarkets

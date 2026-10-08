@@ -1,0 +1,148 @@
+[[INFOBOX]]
+{{Infobox business
+|taglines = ''"It's not a superiority complex when you really are better than everyone else."''
+|games = {{Games|O={{EEEV}}}}
+|type = Real Estate company
+|image = Dynasty8Executive-GTAO-Logo.png
+|locations = [[Los Santos (HD Universe)|Los Santos]]
+|owner = [[Dynasty 8]]
+}}
+
+[[LEAD]]
+'''Dynasty 8 Executive''' is a branch of the [[Dynasty 8]] real estate company available in {{O}} as part of the [[Further Adventures in Finance and Felony]] update, and was expanded in [[The Contract: Dr. Dre|The Contract]] update.
+
+[[SECTION:2:Offices]]
+
+
+[[SECTION:3:Map]]
+<gallery position="center" widths="350">
+Dynasty8Executive-GTAO-AllProperties.png|All Offices on '''Dynasty 8 Executive'''.
+</gallery>
+
+[[SECTION:3:Locations]]
+{| class="wikitable"
+!Office
+!Image
+!Location
+!Price
+!Description
+|-
+|[[Maze Bank West]]
+|[[File:Dynasty8Executive-GTAO-MazeBankWest.png|center|200px]]
+|[[Del Perro]]
+|$1,000,000
+|"''Maze has been the target for more boycotts, demonstrations and civil rights lawsuits than any other bank in America. Access to that wealth of experience doesn't come cheap, but a good education is an investment worth any price.''"
+|-
+|[[Arcadius Business Center]]
+|[[File:Dynasty8Executive-GTAO-ArcadiusBusinessCenter.png|center|200px]]
+|[[Pillbox Hill]]
+|$2,250,000
+|"''The City within the City, the Arcadius Business Center boasts more AAA hedge funds, smoothie bars and executive suicides per square foot of office space than any other building in the business district. Welcome to Cutting edge.''"
+|-
+|[[Lombank West]]
+|[[File:Dynasty8Executive-GTAO-LombankWest.png|center|200px]]
+|[[Del Perro]]
+|$3,100,000
+|"''In a radical new step towards diversification of the banking sector. Industry giant Lombank is selling office space to results-driven, high-liquidity kill squads and drug cartels. Be part of the change our financial industry needs.''"
+|-
+|[[Maze Bank Tower]]
+|[[File:Dynasty8Executive-GTAO-MazeBankTower.png|center|200px]]
+|[[Pillbox Hill]]
+|$4,000,000
+|"''The building that defined the LS Skyline for a generation. Taller, Classier, more opulent, more shamelessly phallic, less structurally sound - you name it, the Maze Bank Tower is best in class.''"
+|}
+
+[[SECTION:3:Customization]]
+{| class="wikitable"
+! colspan="5" align="center" width="100%" | Customization options
+|-
+! width="9%" | Option
+! width="27%" | Description
+! width="27%" | Image
+! width="27%" | Price
+|-
+|Personnel
+|Male or Female
+|[[File:Offices-GTAO-Assistant-Male-Default.png|center|220px]]{{Clr}}[[File:Offices-GTAO-Assistant-Female-Default.png|center|220px]]
+|N/A
+|-
+|Interiors
+|Customizable interiors for the Office.
+|[[File:Office-Decor-GTAO-Executive Rich.png|center|220px]]{{Clr}}[[File:Office-Decor-GTAO-Executive Cool.png|center|220px]]{{Clr}}[[File:Office-Decor-GTAO-Executive Contrast.png|center|220px]]{{Clr}}[[File:Office-Decor-GTAO-Old Spice Classical.png|center|220px]]{{Clr}}[[File:Office-Decor-GTAO-Old Spice Vintage.png|center|220px]]{{Clr}}[[File:Office-Decor-GTAO-Old Spice Warm.png|center|220px]]{{Clr}}[[File:Office-Decor-GTAO-Power Broker Conservative.png|center|220px]]{{Clr}}[[File:Office-Decor-GTAO-Power Broker Polished.png|center|220px]]{{Clr}}[[File:Office-Decor-GTAO-Power Broker Ice.png|center|220px]]{{Clr}}
+|
+*Executive Rich: FREE
+*Executive Cool: $415,000
+*Executive Contrast: $500,000
+*Old Spice Classical: $685,000
+*Old Spice Vintage: $760,000
+*Old Spice Warm: $950,000
+*Power Broker Conservative: $835,000
+*Power Broker Polished: $910,000
+*Power Broker Ice: $1,000,000
+''Note: All custom interiors will result in the assistant's hair and clothing [[Assistant#Gallery|changing in color and/or style]].''
+|-
+|Organization Name
+|Organization name
+|[[File:OrganizationName-GTAO.jpg|center|220px]]
+|FREE
+''Note: Costs $250,000 when changing afterwards. 13 font options and 8 colour options.''
+|-
+|Money Safe
+|''Forget the banks - you know what's actually too big to fail? A huge pile of hard cash in a secure safe on the 50th floor. just close the door, dim the lights and discover that $100 bills are surprisingly comfy and absorbent.''
+|[[File:Office-GTAO-MoneySafe.png|center|220px]]
+|$335,000
+''Note: Amount of money shown in the safe depends on how much the player has in the bank with a maximum of $1 million.''
+|-
+|Gun Locker
+|''Tired of bringing your knife to every gunfight? Next time only take what you won't live without, and leave the rest back at base in this secure locker.''
+|[[File:Office-GTAO-GunLocker.png|center|220px]]
+|$520,000
+|-
+|Accommodation
+|''A burgeoning crime syndicate demands late nights and early mornings, Your secretary requires extensive after-hours personal training free of charge. You need somewhere to black out with a bellyful of tequila and junk lite. The answer is simple: add furnished living quarters to your office, kill your commute, and make time for the important things in life.''
+|[[File:Office-GTAO-Accomodation.png|center|220px]]
+|$795,000
+|}
+
+[[SECTION:3:Locations]]
+{| class="wikitable"
+!Agency
+!Image
+!Location
+!Price
+!In-game Description
+|-
+|[[Little Seoul]]
+|[[File:Agency-GTAOe-LittleSeoul.png|220px|center]]
+|Unnamed building
+Corner [[San Andreas Avenue]] and [[Palomino Avenue]].
+|$2,010,000
+|"''This grade-A office comes with the delightful addition of Little Seoul ambience, a soothing mix of nightlife, gang crime, and the howling curbside breakdowns of lonely businessmen.''"
+|-
+|[[Vespucci Canals]]
+|[[File:Agency-GTAOe-VespucciCanals.png|220px|center]]
+|[[Celltowa Building]]Corner [[South Rockford Drive]] and [[San Andreas Avenue]].
+|$2,145,000
+|"''Want to add some European glamor to your agency? It's never been easier with these two simple steps: 1. Pick a spot in Vespucci Canals. 2. Start day-drinking. Eccolo!''"
+|-
+|[[Rockford Hills]]
+|[[File:Agency-GTAOe-RockfordHills.png|220px|center]]
+|Unnamed building
+Corner [[Marathon Avenue]] and [[Movie Star Way]].
+|$2,415,000
+|"''For many, the bad part about Rockford Hills is its population of wealthy celebrities endlessly complaining about their problems. For you, the good part about Rockford Hills is the population of wealthy celebrities endlessly complaining about their problems.''"
+|-
+|[[Hawick]]
+|[[File:Agency-GTAOe-Hawick.png|220px|center]]
+|[[Galileo House]]
+Corner [[Spanish Avenue]] and [[Meteor Street]].
+|$2,830,000
+|"''This luxurious office space in Galileo House offers splendid views of shameless commercialism at its finest. You know you've made it when you're side by side with Queefstat.''"
+|}
+
+[[CATEGORIES]]
+Media in GTA Online
+Properties
+Real Estate
+Real estate companies
+Websites

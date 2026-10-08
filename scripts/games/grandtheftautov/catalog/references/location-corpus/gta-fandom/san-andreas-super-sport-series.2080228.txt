@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox raceseries
+|name={{HUDIcons|game=O|acsrracehotring}} San Andreas Super Sport Series/Hotring Circuit Races 2023
+|front_image=HotringEveronWeek-GTAOe-HotringRaces.jpg
+|race=StuntRace
+|type=Laps, Point to Point
+|players=1-30
+|events=16
+|location=[[State of San Andreas (HD Universe)|San Andreas]]
+|vehclass=[[Hotring Sabre]]/[[Hotring Everon]]
+}}
+
+[[LEAD]]
+The '''San Andreas Super Sport Series''' also known as '''Hotring Circuit Races 2023''' are a series of [[Stunt Races]], originally introduced to ''[[Grand Theft Auto Online]]'' on March 20, 2018, as part of the [[GTA Online: Southern San Andreas Super Sport Series|Southern San Andreas Super Sport Series]] update. They were originally called '''Hotring Circuit''' Races until the [[GTA Online: After Hours]] update and returned to the original name in [[2023]] after [[Hotring Everon Week]].
+
+[[CATEGORIES]]
+Gameplay in GTA Online
+Hotring Circuits
+Racing game modes
+Stunt Races

@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|image = PaletoBayRestStop-GTAV.jpg
+|caption = The rest stop viewed from the south.
+|games = {{Games|V=y|O=y}}
+|Name Change = REST STOP
+|location = [[Paleto Bay]], [[Blaine County]]
+|map  = PaletoBayRestStop-GTAV-Map.png
+|map_caption   = The rest stop within Paleto Bay.
+}}
+
+[[LEAD]]
+The '''Paleto Bay Rest Stop''' is a location on the east side of [[Paleto Bay]], [[Blaine County]] in {{V}} and {{O}}.
+
+[[SECTION:2:Businesses]]
+*[[Beeker's Garage]]
+*[[Don's Country Store]]
+*[[Pop's Pills]]
+*[[RON]]
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County

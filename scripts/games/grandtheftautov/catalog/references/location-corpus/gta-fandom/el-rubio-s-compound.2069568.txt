@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox location
+|image = ElRubiosCompound-GTAO-LookingSouth.png
+|caption = Overview of El Rubio's Compound.
+|games = {{Games|O={{EEEV}}{{DLC|mpheist4}}}}
+|location = [[Cayo Perico]], [[Caribbean Sea]], [[Colombia]]
+|accessible = Yes <small>(during The Cayo Perico Heist)</small>
+|owner = [[Juan Strickler]]
+|floors = Varies 1-3
+|map           = <gallery>
+ElRubiosCompound-GTAO-Map.png|El Rubio's Compound
+ElRubiosCompound-GTAO-CayoPericoMap.png|Cayo Perico
+</gallery>
+|map_caption   = Location on the map (red).
+}}
+
+[[LEAD]]
+'''El Rubio's Compound''' is a fortified compound located in [[Cayo Perico]], [[Colombia]]. The compound was introduced in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update.
+
+[[SECTION:2:Entry Points]]
+#Main Gate
+#North Wall
+#North Gate
+#South Wall
+#South Gate
+#Drainage Tunnel
+
+[[CATEGORIES]]
+Compounds
+Locations in GTA Online in Cayo Perico
+Restricted locations

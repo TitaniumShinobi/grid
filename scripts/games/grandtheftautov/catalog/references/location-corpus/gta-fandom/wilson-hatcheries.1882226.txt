@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = WilsonHatcheries-GTAV-BuildingFront.jpg
+|caption = 
+|name = Wilson Hatcheries
+|taglines = 
+|type = Poultry Supplies
+|games = {{Games|V=y|O=y}}
+|locations = [[Paleto Bay]], [[Blaine County]]
+|reference = 
+}}
+
+[[LEAD]]
+'''Wilson Hatcheries''' is a business in {{V}} and {{O}} which has a warehouse in [[Paleto Bay]], [[Blaine County]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

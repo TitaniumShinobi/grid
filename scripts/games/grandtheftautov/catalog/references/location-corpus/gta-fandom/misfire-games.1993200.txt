@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = videogame
+|name          = Misfire Games
+|sign          = Misfire-Games-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = Miƨfire Games
+|games         = {{Games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = [[:Category:Video game developers|Video game developer]]
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+*''[[Righteous Slaughter 7|Righteous Slaughter]]'' franchise
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = Active
+}}
+
+[[LEAD]]
+'''Misfire Games''' (stylized as '''Miƨfire Games''') is a video game developer featured in ''[[Grand Theft Auto V]]'', ''[[Grand Theft Auto Online]]'' and ''[[Grand Theft Auto VI]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Video game developers

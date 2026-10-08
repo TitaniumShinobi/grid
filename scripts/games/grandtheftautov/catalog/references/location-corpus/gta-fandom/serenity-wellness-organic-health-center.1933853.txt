@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change   = HEALTHCARE CENTER 
+|type          = 
+|name          = Serenity Wellness Organic Health Center
+|sign          = 
+|image         = SerenityWellness-GTAVee.png
+|games         = {{Games|V=y|O=y}}
+|location      = [[Hawick Avenue]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|taglines      = 
+|status        = active
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Serenity Wellness Organic Health Center''' is a healthcare center appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Pharmacies

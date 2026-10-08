@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|safehouse      = 
+|type           = supermarket
+|name           = Chico's Hypermarket
+|sign           = 
+|image          = ChicosHipermarket-GTAV.jpg
+|caption        = Exterior of '''Chico's Hypermarket''' in [[Mirror Park]].
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[West Mirror Drive]], [[Mirror Park]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|condition      = 
+|taglines       = 
+|status         = active
+|pscanner       = 
+|owner          = 
+|operator       = 
+|structure_type = 
+|architecture   = 
+|accessible     = 
+|file_name      = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Chico's Hypermarket''' is a supermarket and department store featured in {{VO}}
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Supermarkets

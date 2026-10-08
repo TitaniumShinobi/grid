@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{infobox business|
+|image = 
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Mountebank Gallery
+|type = Art gallery
+|owner = 
+|location = [[Hawick Ave]]/[[Power St]] in [[Alta]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Mountebank Gallery''' is an art gallery on the corner of [[Hawick Ave]] and [[Power St]] in [[Alta]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. A [[Random Events in GTA V|random event]] occurs in an alley at the side of the gallery where a man holds a woman at gun point.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

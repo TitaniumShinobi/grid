@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=TackleStreet-GTAV.png
+|caption=Tackle Street as seen from [[South Rockford Drive]].
+|games={{Games|V=y|O=y}}
+|start=[[South Rockford Drive]]
+|end=[[Puerto Del Sol Marina]]
+|map=<gallery>
+TackleStreet-GTAV-Map.png|Map
+TackleStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Tackle Street''' is a short [[List of Street Names|street]] in [[Puerto Del Sol]], [[Los Santos (HD Universe)|Los Santos]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Properties]]
+*[[Puerto Del Sol Marina]] <small>([[Michael De Santa|Michael]], [[Franklin Clinton|Franklin]] or [[Trevor Philips|Trevor]])</small>
+
+[[SECTION:2:Businesses]]
+*Los Santos Marina Yacht Club (LSMYC)
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

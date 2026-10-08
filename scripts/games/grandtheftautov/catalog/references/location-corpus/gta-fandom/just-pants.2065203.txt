@@ -1,0 +1,30 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = clothesshop
+|name           = Just Pants
+|sign           = JustPants-GTAV-Sign.png
+|image          = JustPants-GTAV-VespucciCanals.png
+|caption        = View of the exterior.
+|games          = {{games|V=y|O=y}}
+|location       = [[Bay City Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+|structure_type = 
+|architecture   = 
+|length         = 
+|height         = 
+|area           = 
+|size           = 
+|floors         = 
+|rooms          = 
+|accessible     = No
+|file_name      = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Just Pants''' is a clothing store that appears in {{V}} and {{O}}, located in [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Clothing stores

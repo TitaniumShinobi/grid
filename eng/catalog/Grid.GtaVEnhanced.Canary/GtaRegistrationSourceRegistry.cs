@@ -51,11 +51,13 @@ internal sealed record GtaRegistrationSourceRegistry(
             MaxDepth = 32,
         });
         var root = document.RootElement;
+        var registryVersion = root.GetProperty("schemaVersion").GetInt32();
+        var plan2 = registryVersion == 6;
         RequireExactProperties(root,
-            ["schemaVersion", "manifestId", "gameId", "steamAppId", "steamBuildId",
+            new[] { "schemaVersion", "manifestId", "gameId", "steamAppId", "steamBuildId",
                 "localSourceFamilyManifest", "actorSourceFamilyManifest", "spatialSourceFamilyManifest",
-                "referenceSources"]);
-        Require(root.GetProperty("schemaVersion").GetInt32() == 5 &&
+                "referenceSources" }.Concat(plan2 ? ["routeSourceFamilyManifest", "itemSourceFamilyManifest", "presentationSourceFamilyManifest"] : Array.Empty<string>()).ToArray());
+        Require(registryVersion is 5 or 6 &&
                 RequireText(root, "manifestId") == "grid.gta-v-enhanced.registration-sources" &&
                 RequireText(root, "gameId") == "game.grandtheftautov-enhanced" &&
                 RequireText(root, "steamAppId") == "3240220" &&
@@ -91,6 +93,19 @@ internal sealed record GtaRegistrationSourceRegistry(
         var spatialManifestDigest = CanonicalJsonSha256(File.ReadAllBytes(spatialManifestPath));
         Require(string.Equals(spatialManifestDigest, ExpectedSpatialManifestDigest, StringComparison.Ordinal),
             "The checked-in spatial source-family manifest does not match the registration registry.");
+
+        if (plan2)
+            foreach (var family in new[] { "route", "item", "presentation" })
+            {
+                var pin = root.GetProperty(family + "SourceFamilyManifest");
+                RequireExactProperties(pin, ["manifestId", "schemaVersion", "documentSha256"]);
+                var path = Path.Combine(Path.GetDirectoryName(registryPath)!, $"gta_v_enhanced_{family}_source_families.v1.json");
+                using var familyDocument = JsonDocument.Parse(File.ReadAllBytes(path));
+                Require(pin.GetProperty("schemaVersion").GetInt32() == 1 &&
+                        RequireText(pin, "manifestId") == RequireText(familyDocument.RootElement, "manifestId") &&
+                        RequireText(pin, "documentSha256") == CanonicalJsonSha256(File.ReadAllBytes(path), relaxed: true),
+                    $"Plan 2 {family} source manifest does not match its registered digest.");
+            }
 
         var references = root.GetProperty("referenceSources");
         Require(references.ValueKind == JsonValueKind.Array && references.GetArrayLength() == 1,
@@ -144,7 +159,7 @@ internal sealed record GtaRegistrationSourceRegistry(
 
         return new GtaRegistrationSourceRegistry(
             "grid.gta-v-enhanced.registration-sources",
-            5,
+            registryVersion,
             CanonicalJsonSha256(bytes),
             localManifestPath,
             actorManifestPath,
@@ -164,11 +179,12 @@ internal sealed record GtaRegistrationSourceRegistry(
                 Encoding.UTF8.GetBytes(descriptor.GetRawText())));
     }
 
-    private static string CanonicalJsonSha256(ReadOnlySpan<byte> bytes)
+    private static string CanonicalJsonSha256(ReadOnlySpan<byte> bytes, bool relaxed = false)
     {
         using var document = JsonDocument.Parse(bytes.ToArray());
         using var stream = new MemoryStream();
-        using (var writer = new Utf8JsonWriter(stream, new JsonWriterOptions { Indented = false }))
+        using (var writer = new Utf8JsonWriter(stream, new JsonWriterOptions { Indented = false,
+            Encoder = relaxed ? System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping : null }))
             WriteCanonical(writer, document.RootElement);
         return Convert.ToHexStringLower(SHA256.HashData(stream.ToArray()));
     }

@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = amusementparkride
+|name           = Leviathan
+|sign           = TheLeviathanRollercoaster-GTAV-Logo.png
+|image          = TheLeviathanRollercoaster-GTAV-RollerCoasterAerialView.png
+|caption        = Aerial view of the Leviathan. <small>([[:File:Leviathan-GTAVe-NightView.png|Night view]])</small>
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = {{Games|VI=y}}
+|location       = [[Pleasure Pier]], [[Del Perro Pier]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|price          = [[Money|$]]15 per ride
+|income         = 
+|condition      = 
+|taglines       = ''I Went Down On The Leviathan''
+|status         = active
+|owner          = 
+|operator       = 
+|structure_type = Roller coaster
+|accessible     = Yes
+}}
+
+[[LEAD]]
+The '''Leviathan''' is a small roller coaster in {{V}} and {{O}}, located on [[Del Perro Pier]] at the  [[Pleasure Pier]] amusement park in [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Features in GTA Online
+Features in GTA V
+Roller coasters
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

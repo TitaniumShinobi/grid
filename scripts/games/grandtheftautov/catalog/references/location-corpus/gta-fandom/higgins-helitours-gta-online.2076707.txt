@@ -1,0 +1,51 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change    = 
+|style          = O
+|type           = 
+|name           = Higgins Helitours
+|sign           = 
+|image          = HigginsHelitoursLosSantos-GTAOee-Overview.jpg
+|caption        = 
+|aka            = 
+|games          = {{Games|O={{EEEV}} {{DLC|mp2025_01}}}}
+|location       = [[Shank Street]], [[Puerto Del Sol]], [[Los Santos (HD Universe)|Los Santos]]
+|opened         = 
+|price          = [[Money|$]]900,000
+|income         = 
+|condition      = 
+|status         = active
+|use            = [[File:Blips-GTAO-HigginsHelitours.png|25px]] Helitours
+|owner          = {{GTAOP}}
+|occupants      = [[Raf De Angelis]]
+|architecture   = 
+|garagecap      = 
+|accessible     = Yes
+|canplayerstore = No
+|unlockedafter  = Purchasing [[Hands On Car Wash (GTA Online)|Hands On Car Wash]] from [[Maze Bank Foreclosures]]
+}}
+
+[[LEAD]]
+'''Higgins Helitours''' is a purchasable property in {{O}} added in the [[GTA Online: Money Fronts|Money Fronts]] update.
+
+[[SECTION:2:Locations]]
+{| class="wikitable"
+! width="100%" align="center" colspan="5" | Hands On Car Wash
+|-
+! width="15%" |Higgins Helitours Location
+! colspan="2" width="30%" |Image
+! width="45%" |In-game description
+! width="10%" |Price
+|-
+|[[La Puerta]]
+|[[File:HigginsHelitoursProperty-GTAO-Exterior.png|220px|center]]
+|[[File:HigginsHelitoursProperty-GTAO-Interior.png|220px|center]]
+|''We assumed that no number of near misses, botched maneuvers or mid-flight collisions could incur the intervention of the LS Safety Board, but the previous owner of this property proved us wrong. Luckily for you, Higgins Helitours is now available. Revitalize the brand, summon your personal aircraft or carefully maintain a stream of untraceable laundered income — as long as you're not proven responsible for smoking wreckage raining down on LS, it's yours to keep.''
+|$900,000
+|}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Fronts
+Heliports
+Properties in GTA Online

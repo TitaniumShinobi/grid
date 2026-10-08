@@ -1,0 +1,55 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Rebel Radio
+|logo         = RebelRadio-GTAV-Logo.svg
+|image        = 
+|caption      = 
+|aka          = 
+|games        = {{games|V=y|O=y}}
+|mentioned    = 
+|locations    = [[Rebel Radio Building]], [[Harmony]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines     = ''The true sound of Blaine County - drunk, armed, and ready to party.''
+|bawsaq       = 
+|lcn          = 
+|status       = active
+|media_type   = [[:Category:Dynamic mix radio stations|Dynamic mix radio station]]
+|genre        = [[:Category:Country radio stations|Country]]
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 101.9 FM
+|host         = [[Jesco White]]
+|product      = 
+|radio_tracks = 
+*11 <small>(original version)</small>
+*17 <small>([[Grand Theft Auto V: Enhanced Edition|enhanced version]])</small>
+|radio_length = 
+}}
+
+[[LEAD]]
+'''Rebel Radio''' is a [[Radio Stations in GTA V|radio station]] featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that plays classic country music.
+
+[[SECTION:3:Radio station]]
+*Can be heard outside the [[Rebel Radio Building]], though the song heard may not match the song playing on the radio.
+*Plays in most stores in [[Blaine County]].
+*Plays in [[Up-n-Atom Burger]].
+*Plays in [[O'Sheas Barbers Shop]].
+*Plays in [[Yellow Jack Inn]].
+*Plays in [[Last Train in Los Santos]].
+*Plays in [[Wigwam Burger]].
+*Plays in [[Mojito Inn]].
+
+[[CATEGORIES]]
+Country radio stations
+Dynamic mix radio stations
+Media in GTA Online
+Media in GTA V

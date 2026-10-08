@@ -18,6 +18,7 @@ public sealed partial class ExistingMo2ConnectionDialog : ContentDialog
     private readonly IInstallationPathPicker _pathPicker;
     private readonly Mo2DiscoveryOptions _discoveryOptions;
     private readonly GameAdapterId _adapterId;
+    private readonly Mo2DiscoveryCandidate? _initialCandidate;
     private CancellationTokenSource? _operationCancellation;
     private string? _manualApplicationPath;
     private string? _manualInstancePath;
@@ -33,20 +34,33 @@ public sealed partial class ExistingMo2ConnectionDialog : ContentDialog
         Mo2OnboardingCoordinator onboardingCoordinator,
         IInstallationPathPicker pathPicker,
         Mo2DiscoveryOptions discoveryOptions,
-        GameAdapterId adapterId)
+        GameAdapterId adapterId,
+        Mo2DiscoveryCandidate? initialCandidate = null)
     {
         _validator = validator ?? throw new ArgumentNullException(nameof(validator));
         _onboardingCoordinator = onboardingCoordinator ?? throw new ArgumentNullException(nameof(onboardingCoordinator));
         _pathPicker = pathPicker ?? throw new ArgumentNullException(nameof(pathPicker));
         _discoveryOptions = discoveryOptions ?? throw new ArgumentNullException(nameof(discoveryOptions));
         _adapterId = adapterId;
+        _initialCandidate = initialCandidate;
 
         InitializeComponent();
+        Loaded += OnLoaded;
         Closed += OnDialogClosed;
         RenderWizardStep();
     }
 
     public Mo2InstallationReference? ConnectedReference { get; private set; }
+
+    private async void OnLoaded(object sender, RoutedEventArgs e)
+    {
+        Loaded -= OnLoaded;
+        if (_initialCandidate is null) return;
+        BindCandidates([_initialCandidate]);
+        CandidateList.SelectedIndex = 0;
+        SetWizardStep(3);
+        await ValidateRequestAsync(CreateValidationRequest(_initialCandidate), "Validating selected profile environment");
+    }
 
     private async void OnDetectClicked(object sender, RoutedEventArgs e)
     {

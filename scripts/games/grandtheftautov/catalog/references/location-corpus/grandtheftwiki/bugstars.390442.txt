@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Burrito-GTAV-Bugstars-firsttrailer.jpg
+|size = 350x350px
+|game_1 = GTA V
+|name = Bugstars
+|type = Pest control
+|owner = 
+|location = [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Bugstars''' is a pest control business in [[Grand Theft Auto V]].
+
+Bugstar has two slogans. The first, "''Putting the FU in fumigate''", makes reference to [[wp:Fumigation|fumigation]] and the term "''fuck you''". The second, "''Bug'R'Us''", makes reference to toystore [[wp:Toys "R" Us|Toys Я Us]] whilst also sounding like "''[[wp:bugger|bugger]] us''". Their business number is 1-999-BUGSTAR. The name of the company may be a reference to the GTA clone "Gangstars". The uniform of the company resembles those used by the [[wp:Ghostbusters|Ghostbusters]] and also those used by the fictional bug extermination company in [[wp:King of the Hill|King of the Hill]] called "Dale's Dead Bug".
+
+[[CATEGORIES]]
+Businesses
+Businesses in GTA V
+Businesses in Los Santos in GTA V

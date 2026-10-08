@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = GrapeseedSupermarket-GTAV-FrontView.jpg
+|name = Grapeseed Supermarket
+|taglines = 
+|type = Supermarket
+|games = {{Games|V=y|O=<small>(Formerly)</small>}}
+|locations = [[Grapeseed]]
+}}
+
+[[LEAD]]
+The '''Grapeseed Supermarket''' is a large supermarket located on [[Grapeseed Main Street]] in [[Grapeseed]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Former locations in GTA Online
+Supermarkets

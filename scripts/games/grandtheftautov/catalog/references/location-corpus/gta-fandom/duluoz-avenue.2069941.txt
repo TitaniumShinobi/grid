@@ -1,0 +1,32 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=DuluozAvenue-Aerialandgroundviews2-GTAV.png
+|caption=Aerial and ground view.
+|games={{Games|V=y|O=y}}
+|start=[[Great Ocean Highway]]
+|end=[[Procopio Drive]]
+|map=<gallery>
+DuluozAvenue-GTAV-Map.png|Map
+DuluozAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Duluoz Avenue''' is a street located in [[Paleto Bay]], [[Blaine County]], in {{V}} and {{O}}. The street begins at [[Great Ocean Highway]], crosses through [[Paleto Boulevard]] and ends at [[Procopio Drive]].
+
+[[SECTION:2:Businesses]]
+*[[Golden Buns Bakery]] <small>(corner of [[Paleto Boulevard]])</small>
+*[[Helmut's European Autos]] <small>(corner of [[U.S. Route 1|Great Ocean Highway]])</small>
+*[[Arcades#Locations|Pixel Pete's]] <small>(corner of Great Ocean Highway)</small>
+*[[The Hen House]] <small>(corner of Paleto Boulevard)</small>
+*[[Jetsam]] <small>(corner of Great Ocean Highway)</small>
+*[[Paleto Bay Financial Services Inc.]]
+*[[Paleto Tattoo]]
+
+{{Clear}}
+
+[[CATEGORIES]]
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County
+Thoroughfares

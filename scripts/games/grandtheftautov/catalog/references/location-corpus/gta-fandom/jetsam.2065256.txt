@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = shipping
+|name          = Jetsam
+|sign          = Jetsam-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Port of Los Santos]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[PortViceCity]], [[Vice City (HD Universe)|Vice City]], [[Vice-Dale County]], [[State of Leonida|Leonida]]
+|business_type = Shipping company
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Jetsam''' is a shipping company appearing in {{VO}}, and is set to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Shipping companies

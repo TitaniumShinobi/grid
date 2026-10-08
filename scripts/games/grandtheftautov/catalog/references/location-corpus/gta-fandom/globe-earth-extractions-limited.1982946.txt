@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = Globe Earth Extractions Limited
+|sign          = GEE-GTAV-Logo.png
+|caption       =
+|taglines      = 
+|type          = gasoline
+|games         = {{Games|V=y|O=y}}
+|locations     = [[Murrieta Oil Field]], [[Los Santos (HD Universe)|Los Santos]]
+|business type = Oil extraction
+|owner         = [[Globe Oil]]
+|status        = active
+|accessible    = Yes
+}}
+
+[[LEAD]]
+'''Globe Earth Extractions Limited'''{{Ref|name=FullName|type=screenshot|image=GEE-GTAV-WarningSign.png|imagesize=200px|caption=Warning sign found at the site.}} ('''GEE''') is an oil extraction company appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Petroleum companies
+Subsidiary companies

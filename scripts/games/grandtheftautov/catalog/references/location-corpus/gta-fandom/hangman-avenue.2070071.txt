@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=HangmanAvenue-GTAVee.jpg
+|caption=
+|games={{Games|V=y|O=y}}
+|start=[[North Sheldon Avenue]]
+|end=North Sheldon Avenue
+|map=<gallery>
+HangmanAvenue-GTAV-Map.png|Map
+HangmanAvenue-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Hangman Avenue''' is a residential [[List of Street Names|street]] in [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], in {{V}} and {{O}}. It begins and ends at [[North Sheldon Avenue]].
+
+[[SECTION:2:Places of Interest]]
+*[[4 Hangman Avenue]]
+
+{{Clr}}
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Thoroughfares

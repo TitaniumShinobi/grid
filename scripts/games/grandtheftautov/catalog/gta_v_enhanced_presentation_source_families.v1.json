@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "grid.gta-v-enhanced.presentation-source-families",
+  "gameId": "game.grandtheftautov-enhanced",
+  "steamAppId": "3240220",
+  "steamBuildId": "25261616",
+  "languageContainer": {
+    "coordinate": "x64b.rpf!/data/lang/american_rel.rpf",
+    "sha256": "b0cc51a4bd71819b2da8149455f3be80801dc9ddbebbeeed2bd4fd497ea223b6",
+    "members": [
+      { "path": "dir_mnu.gxt2", "sha256": "17cefe7e906f32e04b8ffde288674c6ead1d3078a6f7bfd0956253b45f2dd9a8" },
+      { "path": "global.gxt2", "sha256": "3a2f26f398812b3852df8ebe97d1720b9c2810a669844eeb53579a75ca0e6418" }
+    ]
+  },
+  "references": [
+    { "id": "director-mode", "repository": "root-cause/v-decompiled-scripts", "revision": "7a800e34172bc50f13b07884ca55942028e8c8d0", "path": "director_mode.c", "sha256": "f310a45e1522343628b35c0e88a21358a1cdec5138fc00712fe055abd3f47400" },
+    { "id": "freemode", "repository": "root-cause/v-decompiled-scripts", "revision": "7a800e34172bc50f13b07884ca55942028e8c8d0", "path": "freemode.c", "sha256": "cc6becd2109c1b6ea7615858b7916db95e83b2d777f7246c5d3a7bbf3738174b" },
+    { "id": "race-creator", "repository": "root-cause/v-decompiled-scripts", "revision": "7a800e34172bc50f13b07884ca55942028e8c8d0", "path": "fm_race_creator.c", "sha256": "5cb33206a4bfa51b9b5c8f78600e3fb19ecfd0def5948ac2aeac379ef6242798" },
+    { "id": "language-enum", "repository": "citizenfx/natives", "revision": "6e8b306e5b2d9bef343a456f89712319e87f9bf4", "path": "LOCALIZATION/GetCurrentLanguage.md", "sha256": "ca949f3b8c3163fff4823a1bbe2c1d190db5864ee52767e0357fd208b995163b" },
+    { "id": "vehicle-class-native", "repository": "citizenfx/natives", "revision": "7263f2118982857a08787f81045fbdc3defa1d70", "path": "VEHICLE/GetVehicleClass.md", "sha256": "e6da9b42addcbf4b7527a7c02752d5d96bb94feb7f514f730fda8a07f47e71b2" },
+    { "id": "vehicle-class-table", "url": "https://gtamods.com/mediawiki/index.php?title=Vehicles.meta&oldid=19769#vehicleClass", "revision": "19769", "path": "vehicles-reference-19769.html", "sha256": "ac330d3a795019978d4eeccd878980b25443775b6e3504d03a59248e1561503e" }
+  ],
+  "actorCategories": [35, 37, 38, 39, 41, 42, 44, 46, 47, 48, 49, 50],
+  "missionTuples": [
+    { "type": 0, "subtype": 0, "labelKey": "FMMC_RSTAR_MS" },
+    { "type": 0, "subtype": 2, "labelKey": "FMMC_RSTAR_MS" },
+    { "type": 2, "subtype": 1, "labelKey": "FMMC_RSTAR_LR" }
+  ]
+}

@@ -1,0 +1,24 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=RichmanStreet-East-GTAV.png
+|caption=Eastern stretch of Richman Street.
+|games={{Games|V=y|O=y}}
+|start=[[North Rockford Drive]]
+|end=[[Picture Perfect Drive]]
+|map=<gallery>
+RichmanStreet-GTAV-Map.png|Map
+RichmanStreet-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Richman Street''' is a [[List of Street Names|street]] in [[Richman (HD Universe)|Richman]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[University of San Andreas, Los Santos]] (ULSA)
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

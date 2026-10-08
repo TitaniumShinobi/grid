@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Four Wheel Rotation System
+|sign          = 
+|image         = FourWheelRotationSystem-GTAO-Logo.png
+|games         = {{games|IV=y|EFLC=y|V=y|O=y}}
+|business_type = Differential manufacturer
+|taglines      = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Four Wheel Rotation System (FWRS)''' is a differential manufacturer that appears in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle parts manufacturers

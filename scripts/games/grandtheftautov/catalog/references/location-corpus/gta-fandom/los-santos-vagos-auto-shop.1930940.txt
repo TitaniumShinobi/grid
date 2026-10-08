@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox location
+|status         = active
+|name           = Los Santos Vagos Auto Shop
+|structure_type = Auto shop and gang hideout
+|games          = {{games|V=y|O=y}}
+|image          = TheCnCHeist-GTAVe-Multiplayer-VagosSafehouse.png
+|owner          = [[Los Santos Vagos (HD Universe)|Los Santos Vagos]]
+|location       = [[Cypress Flats]]/[[La Mesa]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map            = LosSantosVagosAutoShop-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Los Santos Vagos Auto Shop''' is a collection of buildings located in [[Cypress Flats]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that serves as a front and originally, the base of operations for the local Mexican gang, the [[Los Santos Vagos (HD Universe)|Los Santos Vagos]].
+
+[[SECTION:3:Auto Shop]]
+<gallery position="center" spacing="small" widths="250px">
+TheCnCHeist-GTAVe-Multiplayer-VagosSafehouse-AutoShop-Exterior.png|Auto shop exterior.
+TheCnCHeist-GTAVe-Multiplayer-VagosSafehouse-AutoShop-Flag.png|Mexican flag.
+TheCnCHeist-GTAVe-Multiplayer-VagosSafehouse-AutoShop-Platform.png|A platform.
+TheCnCHeist-GTAVe-Multiplayer-VagosSafehouse-AutoShop-RearView.png|Rear view of the building.
+</gallery>
+
+[[SECTION:3:Adjacent Warehouse]]
+<gallery position="center" spacing="small" widths="250px">
+TheCnCHeist-GTAVe-Multiplayer-VagosSafehouse-Warehouse.png|Adjacent warehouse exterior.
+TheCnCHeist-GTAVe-Multiplayer-VagosSafehouse-Warehouse-Rooftop.png|Rooftop.
+TheCnCHeist-GTAVe-Multiplayer-VagosSafehouse-Warehouse-RoofAccess.png|Access to the roof.
+TheCnCHeist-GTAVe-Multiplayer-VagosSafehouse-Warehouse-Platform.png|A platform.
+TheCnCHeist-GTAVe-Multiplayer-VagosSafehouse-Warehouse-GarageDoor.png|Garage door.
+</gallery>
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Fronts
+Mod shops

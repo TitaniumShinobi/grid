@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|image = LosSantosTheatre-GTAV.png
+|caption = Full view of the building.
+|games = {{Games|V=y|O=y}}
+|location = [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]]
+|use = 
+}}
+
+[[LEAD]]
+The '''Los Santos Theatre''' is an historic theater in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Cinemas
+Theatres

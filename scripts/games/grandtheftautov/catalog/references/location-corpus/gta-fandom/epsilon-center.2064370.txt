@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|image =
+<gallery>
+EpsilonCenter-GTAVee-South.jpg|South view
+EpsilonCenter-GTAVee-North.jpg|North view
+</gallery>
+|caption =
+|games = {{Games|V=y|O=y}}
+|location = [[Rockford Hills]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|use = Epsilon Program Headquarters
+|height = 
+}}
+
+[[LEAD]]
+The '''Epsilon Center''', also known as '''Epsilon Building''', is a large mansion featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Epsilon Program
+Mansions

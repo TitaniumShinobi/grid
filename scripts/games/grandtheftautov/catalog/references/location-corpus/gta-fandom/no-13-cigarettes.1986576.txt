@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = tobacco
+|name          = No. 13 Cigarettes
+|sign          = 
+|image         = No13Cigarettes-GTAO-Logo.png
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mp2024_01}}}}
+|business_type = 
+|taglines      = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''No. 13''' is a brand of cigarettes appearing in {{O}} as part of the [[GTA Online: Bottom Dollar Bounties|Bottom Dollar Bounties]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Bottom Dollar Bounties
+Tobacco brands

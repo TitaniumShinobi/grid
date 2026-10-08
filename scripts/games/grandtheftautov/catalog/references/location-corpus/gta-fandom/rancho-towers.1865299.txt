@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox location
+|image          = RanchoTowers-GTA5.png
+|games          = {{games|V=y|O=y}}
+|location       = [[Dutch London Street]], [[Rancho]]
+}}
+
+[[LEAD]]
+The '''Rancho Towers''' is a monument that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Landmarks
+Sculptures

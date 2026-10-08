@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox_location
+|image = PaletoForest-GTAV.png
+|caption = Overview of Paleto Forest.
+|games = {{Games|V=y|O=y}}
+|Name Change = FOREST
+|pscanner       = PoliceScanner-GTAV-Neighborhood-PaletoForest.ogg
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = <gallery>
+PaletoForest-IngameGPS-GTAV-Map.png|Paleto Forest
+PaletoForest-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption   = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''Paleto Forest''' is a large coniferous forest located in northern [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]], that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Roads and Streets]]
+*[[Route 1]]
+*[[Procopio Promenade]]
+
+[[SECTION:2:Points Of Interest]]
+*[[Bayview Lodge]]
+*[[Paleto Forest Lumber Yard]]
+*Mountain Bike Rentals
+*[[Mount Chiliad Tourist Trail]]
+*[[Pala Springs]] [[Cablecar|Aerial Tramway]]
+*[[Paleto Forest Sawmill]]
+
+[[CATEGORIES]]
+Neighborhoods
+Zones

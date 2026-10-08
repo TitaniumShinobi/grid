@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|image = GangAttack_GTAO_Wiki_ref_38.jpg
+|caption = Front exterior view
+|locations = [[Port of Los Santos]], [[Elysian Island]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|name = Pacific Allied Shipyard
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|type = Shipyard
+}}
+
+[[LEAD]]
+'''Pacific Allied Shipyard''' is a business in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located within the [[Port of Los Santos]] on [[Elysian Island]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

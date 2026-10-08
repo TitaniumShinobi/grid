@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = sanitation
+|name          = Waste Transfer Services
+|sign          = WasteTransferServices-GTAOe-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|O={{UN|cutcontent}} {{EEEV}} {{DLC|mpheist3}}|VI=y}}
+|mentioned     = 
+|locations     = [[Ambrosia]], [[State of Leonida|Leonida]]
+|business_type = Waste collections and disposal
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Waste Transfer Services''' is a waste disposal company that was cut from {{O}}, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Diamond Casino Heist
+Businesses in GTA VI
+Sanitation companies

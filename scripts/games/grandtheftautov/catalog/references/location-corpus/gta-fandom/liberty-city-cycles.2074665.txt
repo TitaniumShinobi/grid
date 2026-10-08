@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change = MANUFACTURER
+|name = [[File:Logo-IV-LCC.png|50px]]
+|image = File:Logo2-IV-LCC.png
+|type = Automotive
+|games = {{Games|EFLC=y|V=y|O=y|VI=y}}
+|founded = 1960s{{Ref|name=ambrosia3|type=screenshot|ref=Liberty City Cycles cap worn by a [[Final Chapter MC]] biker - Est. 196?|image=OfficialScreenshots-GTAVI-PromotionalWebsite-Ambrosia-SS3.jpg|imagesize=200px}}
+|reference = {{WP|West Coast Choppers}}
+}}
+
+[[LEAD]]
+'''Liberty City Cycles''' (also known as '''LCC''') is a motorcycle manufacturer in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Businesses in TBOGT
+Businesses in TLAD
+Motorcycle Brands
+Vehicle manufacturers

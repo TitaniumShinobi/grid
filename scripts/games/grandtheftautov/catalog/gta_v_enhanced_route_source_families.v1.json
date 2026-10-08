@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "manifestId": "grid.gta-v-enhanced.route-source-families",
+  "gameId": "game.grandtheftautov-enhanced",
+  "steamAppId": "3240220",
+  "steamBuildId": "25261616",
+  "sourceFamilyId": "rockstar.gta-v.enhanced.update-paths-named-routes",
+  "scope": "bounded-update-paths-snapshot-not-effective-mounted-road-registry",
+  "locale": "en-US",
+  "pathsCoordinate": "update/update.rpf!/x64/levels/gta5/paths.rpf",
+  "pathsByteLength": 2263040,
+  "pathsSha256": "12c0d5862572ec539202e3a88ccd040f2ee546e5ad1ccff0745203b18203c26c",
+  "memberPattern": "^nodes[0-9]+\\.ynd$",
+  "languageCoordinate": "x64b.rpf!/data/lang/american_rel.rpf",
+  "gxtCoordinate": "x64b.rpf!/data/lang/american_rel.rpf!/global.gxt2",
+  "gxtSha256": "3a2f26f398812b3852df8ebe97d1720b9c2810a669844eeb53579a75ca0e6418",
+  "exactBuildClosure": {
+    "yndArtifactCount": 274,
+    "nodeCount": 79788,
+    "distinctNonzeroHashes": 1318,
+    "namedRouteCount": 230,
+    "unmatchedHashCount": 1088
+  }
+}

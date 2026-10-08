@@ -226,7 +226,12 @@ public sealed record TicketUserContext(
     string Value,
     TicketUserContextResolution Resolution,
     TicketSelectionProvenance Provenance,
-    TicketReferenceContextId? MatchedReferenceId = null);
+    TicketReferenceContextId? MatchedReferenceId = null)
+{
+    /// <summary>Optional UI scaffold path, not a canonical record, matched reference, or game fact.</summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public string? ScaffoldPathId { get; init; }
+}
 
 public sealed record TicketAttachmentReference(
     TicketAttachmentId Id,

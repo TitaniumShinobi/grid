@@ -33,13 +33,16 @@ Assert-Grid (@($skse.artifacts | ForEach-Object { Split-Path -Leaf $_.path }) -c
 Assert-Grid ($skse.collectionPolicy -eq 'BoundedTopLevelFiles' -and $skse.maxFiles -eq 256) 'SKSE diagnostic reads are explicitly bounded.'
 
 $gta = Resolve-GridGameUserDataRoots -ScriptsRoot $scriptsRoot -GameId 'grandtheftautov' -KnownFolders $knownFolders
-$gtaUser = @($gta.roots | Where-Object rootId -eq 'gtavUserData')[0]
-$gtaLogs = @($gta.roots | Where-Object rootId -eq 'gtavDiagnostics')[0]
-Assert-Grid ($gtaUser.path -eq 'C:\Users\Fixture\Documents\Rockstar Games\GTA V') 'The observed GTA variant resolves its exact game-owned Documents root.'
-Assert-Grid ($gtaUser.authority -eq 'ObservedLocal' -and $gtaUser.confidence -eq 'Observed') 'The GTA V path is not promoted to an unsupported official claim.'
-Assert-Grid ($gtaUser.excludedPaths -contains 'C:\Users\Fixture\Documents\Rockstar Games\GTA V\Profiles') 'GTA profile/save contents are explicitly excluded.'
-Assert-Grid (@($gtaUser.artifacts | Where-Object { $_.path -like '*\Profiles\*' }).Count -eq 0) 'No GTA profile or save artifact is collectible.'
-Assert-Grid ($gtaLogs.collectionPolicy -eq 'BoundedTopLevelFiles' -and $gtaLogs.maxFiles -eq 16) 'GTA diagnostic reads are bounded and top-level only.'
+$gtaEnhancedUser = @($gta.roots | Where-Object rootId -eq 'gtavEnhancedUserData')[0]
+$gtaEnhancedCrashes = @($gta.roots | Where-Object rootId -eq 'gtavEnhancedCrashDiagnostics')[0]
+$gtaLegacyUser = @($gta.roots | Where-Object rootId -eq 'gtavLegacyUserData')[0]
+Assert-Grid ($gtaEnhancedUser.path -eq 'C:\Users\Fixture\Documents\Rockstar Games\GTAV Enhanced') 'Enhanced resolves its exact game-owned Documents root.'
+Assert-Grid ($gtaLegacyUser.path -eq 'C:\Users\Fixture\Documents\Rockstar Games\GTA V') 'Legacy retains its distinct observed Documents root.'
+Assert-Grid ($gtaEnhancedUser.authority -eq 'ObservedLocal' -and $gtaEnhancedUser.confidence -eq 'Observed') 'The Enhanced path is not promoted to an unsupported official claim.'
+Assert-Grid ($gtaEnhancedUser.excludedPaths -contains 'C:\Users\Fixture\Documents\Rockstar Games\GTAV Enhanced\Profiles') 'Enhanced profile/save contents are explicitly excluded.'
+Assert-Grid (@($gtaEnhancedUser.artifacts | Where-Object { $_.observation -ne 'PresenceOnly' -and $_.path -like '*\Profiles*' }).Count -eq 0) 'No Enhanced profile or save content is collectible.'
+Assert-Grid ($gtaEnhancedCrashes.path -eq 'C:\Users\Fixture\AppData\Local\Rockstar Games\GTAV Enhanced\CrashLogs') 'Enhanced crash diagnostics resolve beneath LocalApplicationData.'
+Assert-Grid ($gtaEnhancedCrashes.collectionPolicy -eq 'BoundedTopLevelFiles' -and $gtaEnhancedCrashes.maxFiles -eq 64) 'Enhanced crash diagnostic reads are bounded and top-level only.'
 Assert-Grid ((ConvertTo-Json $gta -Depth 10 -Compress) -ceq (ConvertTo-Json (Resolve-GridGameUserDataRoots -ScriptsRoot $scriptsRoot -GameId 'grandtheftautov' -KnownFolders $knownFolders) -Depth 10 -Compress)) 'Root resolution is deterministic.'
 
 Assert-GridThrows { Resolve-GridGameUserDataRoots -ScriptsRoot $scriptsRoot -GameId 'skyrimspecialedition' -KnownFolders @{ Documents = '\\server\share'; LocalApplicationData = $knownFolders.LocalApplicationData } } 'explicit local fully-qualified path'

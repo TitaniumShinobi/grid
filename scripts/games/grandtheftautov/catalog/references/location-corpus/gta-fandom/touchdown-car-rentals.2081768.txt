@@ -1,0 +1,41 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehiclerental
+|name          = Touchdown Car Rentals
+|sign          = TouchdownCarRentals-GTAV-Logo.png
+|image         = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type = Car rental agency
+|founded       = 
+|founder       = 
+|ceo           = 
+|products      = 
+|vehicles      = 
+*[[Rental Shuttle Bus]] 
+*Various rental vehicles
+|taglines      = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|opentimes     = 
+|accessible    = 
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Touchdown Car Rentals''' is a car rental agency that appears in {{VO}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle rental companies

@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=ONeilWay-GTAV-Looking_west.png
+|caption=O'Neil Way looking west.
+|games={{Games|V=y|O=y}}
+|start=[[Joad Lane]]
+|end=[[Union Road]]
+|map=<gallery>
+ONeilWay-GTAV-Map.png|Map
+ONeilWay-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''O'Neil Way''' is a two-way road located in [[Grapeseed]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]] that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Grapeseed Cow Farm]]
+*[[Lucky Jim's Ranch]]
+*[[O'Neil Ranch]]
+
+{{Clr}}
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

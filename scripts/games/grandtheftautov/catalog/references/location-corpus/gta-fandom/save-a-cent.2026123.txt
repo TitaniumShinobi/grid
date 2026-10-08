@@ -1,0 +1,69 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = discountstore
+|name          = Save-A-Cent
+|image_label   = 
+|image         = SaveACent-GTAV-Logo.png
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+*[[Carcer City (HD Universe)|Carcer City]]{{Ref|name=darksoullock3|type=screenshot|image=Blogsnobs-GTAIV-Darksoulock-3.png|imagesize=100px|ref=[[darksoullock.blogsnobs.org]] in {{IV}}.}}
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = 
+|taglines      = "''Spend More, Save Less''"
+|status        = active
+|phone         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+|opentimes     = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Save-A-Cent''' is a discount store chain appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+<gallery position="center" spacing="small" widths="270px">
+SaveaCent-GTAIV-LowerEaston.jpg|[[Albany Avenue]] and [[Feldspar Street]], [[Lower Easton]], [[Algonquin]].
+SaveaCent-GTAIV-Westminster.jpg|[[Galveston Avenue]] and [[Jade Street]], [[Westminster]], Algonquin.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto: Chinatown Wars'']]
+<gallery position="center" spacing="small" widths="270px">
+SaveaCent-GTACW-LowerEaston.png|{{H:title|Not Albany Avenue or Borlock Rd|[??]}} and [[Feldspar Street]], [[Lower Easton]], [[Algonquin]].
+SaveaCent-GTACW-Westminster.png|[[Galveston Ave]] and [[Jade Street]], [[Westminster]], Algonquin.
+</gallery>
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" spacing="small" widths="270px">
+SaveaCent-GTAV-Morningwood.png|[[Boulevard Del Perro]] and [[North Rockford Drive]], [[Morningwood]].
+SaveaCent-GTAV-LittleSeoul.png|[[Vespucci Boulevard]], [[Little Seoul]].
+SaveaCent-GTAV-KoreanPlaza.png|[[Korean Plaza]], [[Calais Avenue]], Little Seoul.
+SaveaCent-GTAV-Davis.png|[[Carson Avenue]] and [[Brouge Avenue]], [[Davis]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Grocery store chains

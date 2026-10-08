@@ -1,0 +1,29 @@
+[[LEAD]]
+'''Cat-Claw Ave''' is a road in the [[Grand Senora Desert]] in [[Blaine County]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The road travels from [[Smoke Tree Rd]] in the north to [[Route 68]] in the south.
+
+[[SECTION:2:Businesses and places]]
+{| class="wikitable sortable"
+! Name
+! Location
+! class="unsortable"| Street
+! Type
+|-
+| [[Senora National Park]]
+| [[Grand Senora Desert]]
+|
+| National Park
+|-
+| Recycling Center
+| [[Grand Senora Desert]]
+|
+| Recycling Center
+|-
+| [[Thomson Aviation Scrap]]
+| [[Grand Senora Desert]]
+| 
+| Scrapyard
+|-
+|}
+
+[[CATEGORIES]]
+Streets in Blaine County

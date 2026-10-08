@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|name           = {{PAGENAME}}
+|type           = policestation
+|sign           = DelPerroPoliceStation-GTAV-Sign.png
+|image          = DelPerroPoliceStation-GTAV.png
+|caption        = Overview of the station.
+|structure_type = Police station
+|location       = [[Del Perro Pier]], [[Del Perro]], [[Los Santos (HD Universe)|Los Santos]]
+|games          = {{games|V=y|O=y}}
+|map            = DelPerroPoliceStation-GTAV-Map.png
+|map_caption    = Location on the map (red).
+|aka            = Del Perro Police
+|file_name      = <code>sm_22_building_69</code>
+}}
+
+[[LEAD]]
+The '''Del Perro Police Station''' is a station of the [[Los Santos Police Department (HD Universe)|Los Santos Police Department]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Police stations

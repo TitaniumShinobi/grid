@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|image = MirrorParkTavern-GTAV-MirrorPark-exterior.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = Mirror Park Tavern
+|type = [[:Category:Bars|Bar]]
+|owner = 
+|location = [[Mirror Park Blvd]] in [[Mirror Park]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Mirror Park Tavern''' is a [[:Category:Bars|bar]] located on [[Mirror Park Blvd]] in [[Mirror Park]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The tavern has a 'Happy Hour' on Monday to Friday between 5 and 8.
+
+[[CATEGORIES]]
+Bars
+Businesses in GTA V
+Businesses in Los Santos in GTA V

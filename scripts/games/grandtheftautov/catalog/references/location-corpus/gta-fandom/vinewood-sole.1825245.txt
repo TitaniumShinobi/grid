@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|accessible = No
+|name = Vinewood Sole
+|image = VinewoodSole-GTAV-MirrorPark-Logo-Texture.png
+|type = Shoe repairs.
+|games = {{Games|V=y|O=y}}
+|location = [[Mirror Park Boulevard]], [[Mirror Park]]
+}}
+
+[[LEAD]]
+'''[[Vinewood Sole]]''' is a shop that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

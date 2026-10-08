@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = Undisclosed Cargo
+|image        = UndisclosedCargo-GTAO-Thumbnail.png
+|location     = [[State of San Andreas (HD Universe)|San Andreas]]
+|game           = {{games|O=y}}
+|type           = CasinoWork
+|fail         = 
+|for          = [[Agatha Baker]]
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] <small>(organization)</small>
+*1 to 8 players <small>(motorcycle club)</small>
+|todo         = 
+*Enter the <span class="v-hud-friendly">[Vehicle]</span>.
+*Go to (the) <span class="v-hud-location">[Location]</span>.
+*Torch the <span class="v-hud-enemy">Emperor</span>. <small>(Lago Zancudo location only)</small>
+*Drive into the ocean to destroy the evidence. <small>(Banning location only)</small>
+*Leave the area. <small>(Altruist Camp location only)</small>
+|reward = 
+*[[Money|Cash]], [[Chips]], and [[Reputation|RP]].
+|target =
+}}
+
+[[LEAD]]
+'''Undisclosed Cargo''' is a [[Casino Work]] mission featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino &amp; Resort]] update. It is a free roam mission given to the [[GTA Online Protagonist|player]] by [[Agatha Baker]].
+
+[[SECTION:3:Possible Drop-Off Locations]]
+<gallery position="center" hideaddbutton="true" spacing="small">
+UndisclosedCargo-GTAO-AltruistCampDropLocation.png|The [[Altruist Camp]]; the Tornado has to be delivered here to end the mission.
+UndisclosedCargo-GTAO-BanningDropLocation.png|[[Banning]]; the Landstalker has to be driven into the water.
+UndisclosedCargo-GTAO-LagoZancudoDropLocation.png|[[Lago Zancudo]]; the Emperor has to be driven here and torched to complete the mission.
+UndisclosedCargo-GTAO-RogersSalvage&ScrapDropLocation.png|[[Rogers Salvage & Scrap]]; the Baller has to be driven here to end the mission.
+</gallery>
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

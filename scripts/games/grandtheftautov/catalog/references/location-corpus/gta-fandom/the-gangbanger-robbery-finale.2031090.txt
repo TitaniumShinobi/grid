@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox mission
+|Name Change  = SALVAGE YARD ROBBERY
+|name         = The Gangbanger Robbery
+|image        = TheGangbangerRobbery-GTAOe-Finale-Infobox.png
+|location     = [[Salvage Yards]] <small>(Start/End)</small><br/>[[Mission Row Police Station]]
+|game           = {{games|O=y}}
+|type           = mp2023_02
+|fail         = *Target vehicle is destroyed.
+*[[Conada]] is destroyed.
+*[[King Tiny]] is killed.
+|for          = {{For|game=O|salvageyardrobbery}}
+|unlockedby   = 
+*Purchasing an [[Salvage Yards|Salvage Yard]].
+*Completing all required [[The Gangbanger Robbery|preparations]].
+|todo = *Go to the Police Maverick's {{Color|v-hud-location|location.}}
+*Enter the {{Color|v-hud-friendly|Police Maverick.}}
+*Fly to {{Color|v-hud-location|Mission Row Police Station.}}
+*Land on the {{Color|v-hud-location|roof.}}
+*Throw the BZ gas into the {{Color|v-hud-pickup|ventilation units.}}
+*Enter {{Color|v-hud-location|Mission Row Police Station.}}
+*Get to the {{Color|v-hud-location|first floor.}}
+*Locate the cell keys.
+*Steal the {{Color|v-hud-pickup|cell keys.}}
+*Get to the {{Color|v-hud-location|basement.}}
+*Access the {{Color|v-hud-pickup|computer.}}
+*Use the keys to open King Tiny's cell.
+*Escort {{Color|v-hud-friendly|King Tiny}} to the {{Color|v-hud-location|exit.}}
+*Collect the stashed {{Color|v-hud-pickup|weapons.}}
+*Destroy the {{Color|v-hud-enemy|control panel.}}
+*Lose the Cops.
+*Take {{Color|v-hud-friendly|King Tiny}} to {{Color|v-hud-location|LSIA.}}
+*Infiltrate the [gang] {{Color|v-hud-location|hideout.}}
+*Steal the {{Color|v-hud-friendly|[target vehicle].}}
+*Deliver the [target vehicle] to the {{Color|v-hud-location|Salvage Yard.}}
+|protagonists = *1 to 4 [[GTA Online Protagonist|players]]
+|reward = Vehicle-dependent
+|target = [[Salvage Yard Robberies#Target Vehicles|Target Vehicle]]
+|tod = 00:00
+}}
+
+[[LEAD]]
+'''The Gangbanger Robbery''' is a [[Salvage Yard Robberies|Salvage Yard Robbery]] featured in ''[[Grand Theft Auto Online]]'' as part of [[GTA Online: The Chop Shop|The Chop Shop]] update.
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Chop Shop

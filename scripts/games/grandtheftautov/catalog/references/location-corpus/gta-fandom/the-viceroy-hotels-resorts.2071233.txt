@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = hotel
+|name           = The Viceroy Hotels & Resorts
+|sign           = 
+|image          = 
+<gallery>
+TheViceroy-GTAO-Logo.png|Logo 1
+TheViceroy-GTAV-Logo.png|Logo 2
+</gallery>
+|caption        = '''Hotel Dixon''' seen in the [[Grand Theft Auto VI/Trailers#Trailer 1|first trailer]] for {{VI}}.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Vespucci Canals]]/[[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+|status         = active
+|architecture   =
+|floors         = 11
+|accessible     = No
+}}
+
+[[LEAD]]
+'''The Viceroy Hotels & Resorts''' is a high-standing hotel featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hotels

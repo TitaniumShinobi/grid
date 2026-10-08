@@ -1,0 +1,33 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = sanitation
+|name          = Trash Metal Recycling Co.
+|sign          = TrashMetalRecycling-GTAOe-Logo.png 
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|O={{UN|cutcontent}} {{EEEV}} {{DLC|mpheist3}}}}
+|mentioned     = 
+|locations     = 
+|business_type = Metal collections and recycling
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Trash Metal Recycling Co.''' is a metal recycling company that was cut from ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online: The Diamond Casino Heist
+Sanitation companies

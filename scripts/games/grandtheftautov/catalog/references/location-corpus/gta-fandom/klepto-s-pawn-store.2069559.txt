@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = pawnshop
+|name           = Klepto's Pawn Store
+|sign           = 
+|image          = KleptosPawnStore-GTAV.png
+|caption        = View of the exterior.
+|games          = {{Games|V=y|O={{EEEV}}{{DLC|mp2024_01}}}}
+|location       = [[Cavalry Boulevard]], [[Ludendorff]], [[State of North Yankton|North Yankton]]
+|condition      = 
+|structure_type = 
+|architecture   = 
+|floors         = 
+|phone          = 
+|accessible     = No
+|unlockedby     = 
+|unlockedafter  = 
+|file_name      = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Klepto's Pawn Store''' is a pawn shop that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Ludendorff
+Buildings in GTA V in Ludendorff
+Pawn shops

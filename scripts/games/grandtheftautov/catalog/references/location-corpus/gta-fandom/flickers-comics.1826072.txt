@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|name = Flickers Comics
+|image = FlickersComics-GTAVe-Storefront.png
+|caption = Storefront
+|location = [[Hawick Avenue]], [[Hawick]], [[Los Santos (HD Universe)|Los Santos]]
+|games = {{Games|V=y|O=y}}
+|map = FlickersComics-GTAVe-Map.png
+|map_caption = Location
+}}
+
+[[LEAD]]
+'''Flickers Comics''' is a comic store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Stores

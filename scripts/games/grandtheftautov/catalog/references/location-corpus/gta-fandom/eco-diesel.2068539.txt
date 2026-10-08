@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = gasoline
+|name          = Eco-Diesel
+|image         = Eco-Diesel-GTAO-Logo.png
+|status        = active
+|games         = {{Games|O={{EEEV}} {{DLC|mpstunt}}}}
+|mentioned     = 
+|business_type = {{WP|Diesel fuel}}
+|taglines      = 
+}}
+
+[[LEAD]]
+'''Eco-Diesel''' is a diesel system brand appearing in {{O}} as part of the [[GTA Online: Cunning Stunts|Cunning Stunts]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Cunning Stunts
+Petroleum companies

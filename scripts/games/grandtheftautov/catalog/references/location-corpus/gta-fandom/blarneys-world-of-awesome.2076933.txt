@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Blarneys World of Awesome
+|image = BlarneysWorldOfAwesome-GTAV-VinewoodFrontView.png
+|type = Museum
+|caption = The museum during the day.
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Blarneys World of Awesome''' is a museum in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located on [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]] in [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Museums

@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = policestation
+|image          =LaMesaPoliceStation-GTAV.png
+|caption        =General view of the station.
+|use            =Police station
+|location       =[[Popular Street]], [[La Mesa]], [[Los Santos (HD Universe)|Los Santos]]
+|games          ={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''La Mesa Police Station''' is a branch of the [[Los Santos Police Department (HD Universe)|Los Santos Police Department]] in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Police stations

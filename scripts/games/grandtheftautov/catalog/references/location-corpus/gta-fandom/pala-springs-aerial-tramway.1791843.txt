@@ -1,0 +1,68 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = tramway
+|name           = Pala Springs Aerial Tramway
+|sign           = Pala-Springs-AT-GTAV-MainSign.png
+|image          = Pala-Springs-AT-GTAV-Ride.png
+|caption        = The '''Pala Springs Aerial Tramway''' in {{V}}.
+|aka            = 
+*Aerial Tramway
+*Cable Car <small>(Map icon)</small>
+|games          = {{games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Pala Springs]], [[Paleto Forest]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|opened         = 
+|price          = [[Money|$]]10 <small>(Tram ride)</small>
+|condition      = 
+|products       = 
+*Transportation
+*Restaurant/Bar
+*Mountain bike hire
+|taglines       = ''Taking you all the way up.''
+|bawsaq         = 
+|lcn            = 
+|status         = active
+|pscanner       = 
+|use            = 
+|owner          = [[Tramaer]]
+|operator       = Tramaer
+|occupants      = 
+|businesses     = 
+|employees      = 
+|structure_type = [[:Category:Aerial tramways|Aerial tramway]]
+|architecture   = 
+|length         = 
+|height         = 
+|area           = 
+|size           = 
+|floors         = 
+|levels         = 
+|rooms          = 
+|opentimes      = 
+|capacity       = 
+|garagecap      = 
+|hangarcap      = 
+|marinacap      = 
+|parkingcap     = 
+|accessible     = Yes
+|canplayerstore = 
+|unlockedby     = 
+|unlockedafter  = 
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+The '''Pala Springs Aerial Tramway''', also known as the '''Cable Car''', is an aerial tramway appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Aerial tramways
+Structures in GTA Online in Blaine County
+Structures in GTA V in Blaine County

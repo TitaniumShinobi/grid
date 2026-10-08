@@ -1,0 +1,191 @@
+[[INFOBOX]]
+{{Infobox weapon
+|name         = Sniper Rifle
+|image        = SniperRifle-GTAVee.png
+|caption      = A '''Sniper Rifle''' in {{VO}}.
+|aka          = 
+|slot         = [[Sniper Rifles|Sniper Rifle]]
+|type         = 
+*Rifle {{Small|(''GTA III'', ''GTA Vice City'', ''GTA San Andreas'', ''GTA Liberty City Stories'' & ''GTA IV'')}}
+*Sniper Rifle {{Small|(''GTA Vice City Stories'', ''GTA Chinatown Wars'', ''GTA V'' & ''GTA Online'')}}
+|ammo         = 
+*1 round {{Small|(3D Universe)}}
+*5 rounds {{Small|(''GTA IV'')}}
+*10 rounds {{Small|(''GTA V'' & ''GTA Online'')}}
+|games        = {{Games|III=y|VC=y|SA=y|LCS=y|VCS=y|IV=y|EFLC=y|CW={{Small|(Missions and [[Liberty City Gun Club]] only)}}|V=y|O=y}}
+|manufacturer = [[Shrewsbury]] {{Small|(''GTA V'' & ''GTA Online'')}}
+|sold in      = 
+*[Ammu-Nation]] {{Small|(''GTA III'', ''GTA Vice City'', ''GTA San Andreas'', ''GTA Liberty City Stories'', ''GTA Vice City Stories'', ''GTA V'' & ''GTA Online'')}}
+*[[Underground Gun Shops]] {{Small|(''GTA IV'', ''TLAD'' & ''TBoGT'')}}
+*[[Agencies|Agency Armory]] {{Small|(''GTA Online'')}}
+*[[Gun Van]] {{Small|(''GTA Online'')}}
+|price        = 
+[[Money|$]]10,000 {{Small|(''GTA III'')}}<br>
+$1,500 {{Small|(''GTA Vice City'')}}<br>
+$5,000 {{Small|(''GTA San Andreas'')}}<br>
+*$6,000 {{Small|(Purchased in [[Las Venturas (3D Universe)|Las Venturas]])}}<br>
+$6,000 {{Small|(''GTA Liberty City Stories'', ''GTA Vice City Stories'' & ''GTA IV'')}}<br>
+*$4,500 {{Small|([[Phil's Shooting Range]] discount; ''GTA Vice City Stories'')}}<br>
+$5,000 {{Small|(''GTA V'')}}<br>
+*$4,500 {{Small|(Bronze medal discount)}}<br>
+*$4,250 {{Small|(Silver medal discount)}}<br>
+*$3,750 {{Small|(Gold medal discount)}}<br>
+$20,000 {{Small|(''GTA Online'')}}
+|unlock       = 
+*[[Last Requests]] {{Small|(''GTA III'')}}
+*[[Phnom Penh '86]] {{Small|(''GTA Vice City'')}}
+*[[Snail Trail]] {{Small|(''GTA San Andreas'')}}
+*[[Driving Mr Leone]] {{Small| (''GTA Liberty City Stories'')}}
+*[[From Zero to Hero]] {{Small|(''GTA Vice City Stories'')}}
+*[[Luck of the Irish]] {{Small|(''GTA IV'')}}
+*[[Nervous Ron]] {{Small|(''GTA V'')}}
+*[[Rank]] 21 {{Small|(''GTA Online'')}}
+|origin       = {{Flagicon|United States of America|Flag of the United States}}[[United States of America|U.S.A]] {{Small| (3D Universe, ''GTA IV'', ''GTA V'', ''GTA Online'')}}
+[[File:Flag of Finland.png|20x20px]] [[Finland|Finnish]]{{Small| (''GTA Chinatown Wars'')}}
+|caliber      = 
+|firemode     = Bolt-Action {{Small|(All games)}}
+|reticle      = 
+*Sniper
+*Generic {{Small|(HD Universe; When blind firing from cover)}}
+|anim         = 
+*Unarmed {{Small|(3D Universe)}}
+*Gun Large {{Small|(HD Universe)}}
+|flags        = 
+{{Expand|'''GTA IV'''|
+{{Flags|GUN}}<br>
+{{Flags|CAN_FREE_AIM}}<br>
+{{Flags|FIRST_PERSON}}<br>
+{{Flags|ANIM_RELOAD}}<br>
+{{Flags|ANIM_CROUCH_FIRE}}<br>
+{{Flags|2HANDED}}<br>
+}}
+----
+{{Expand|'''GTA V'''|
+{{Flags|CarriedInHand}}<br>
+{{Flags|FirstPersonScope}}<br>
+{{Flags|Gun}}<br>
+{{Flags|CanFreeAim}}<br>
+{{Flags|TwoHanded}}<br>
+{{Flags|AnimReload}}<br>
+{{Flags|AnimCrouchFire}}<br>
+{{Flags|UsableOnFoot}}<br>
+{{Flags|UsableInCover}}<br>
+{{Flags|HasLowCoverReloads}}<br>
+{{Flags|HasLowCoverSwaps}}<br>
+{{Flags|DriveByMPOnly}}<br>
+{{Flags|UseFPSAimIK}}<br>
+{{Flags|UseFPSSecondaryMotion}}<br>
+{{Flags|UseFPSAnimatedRecoil}}<br>
+{{Flags|DisableFPSAimForScope}}<br>
+}}
+|filename     = 
+*SniperRifle {{Small|(3D Universe & ''GTA V'')}}
+*M40a1 {{Small|(''GTA IV'')}}
+*SNIPERRFL {{Small|(''GTA V'', Stat name)}}
+|spawnmap     = Yes
+|spawnped     = 
+|spawnvehicle = 
+{{Expand|'''GTA V'''|
+[[Police Maverick (HD Universe)|Police Maverick]]<br>
+[[Annihilator]]<br>
+[[Valkyrie]]<br>
+[[Valkyrie MOD.0]]<br>
+}}
+|firingfx     = 
+|reloadingfx  = 
+}}
+
+[[LEAD]]
+The '''Sniper Rifle''' is a [[Sniper Rifles|weapon]] that has been featured in every ''[[Grand Theft Auto]]'' game since {{III}}, with the exception of {{A}}. In {{V}} and {{O}}, it is manufactured by [[Shrewsbury]].
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto III'']]
+*[[Belleville Park]], [[Staunton Island]] {{nd}} On top of the building south of the Belleville Park [[Liberty City Fire Department (3D Universe)|Fire Station]] behind the [[MSX FM]] sign (and next to the body armor icon) (use the angled edge of the [[Shoreside Lift Bridge]] Loop to jump to it).
+*[[Newport]], Staunton Island - Available to buy from [[Ammu-Nation (3D Universe)|Ammu-Nation]] after completion of [[Last Requests]] ([[Money|$]]10,000).
+*[[Cochrane Dam]], [[Shoreside Vale]] {{nd}} In the trees along the path to the base of the Cochrane Dam from the main entrance (near [[Cedar Grove]]).
+*Spawns at every [[Safehouses in GTA III|safehouse]] once the player collects 80 [[Hidden Packages in GTA III|Hidden Packages]].
+*Automatically given to the player in [[Bomb Da Base: Act II]].
+
+[[SECTION:3:''Grand Theft Auto: Vice City'']]
+*[[North Point Mall]] {{nd}} Available to buy from Ammu-Nation after completion of [[Phnom Penh '86]] ($1,500).
+*[[Starfish Island]] {{nd}} In the hedge maze at the west part of the Mansion.
+*[[Viceport]] {{nd}} On the ledge on the south side of the base of the south bridge housing at the west end of the [[South bridge|South Bridge]] that connects [[Ocean Beach (3D Universe)|Ocean Beach]] and [[Little Havana]]. (Only way to safely obtain it without drowning is with a [[Skimmer]])
+
+[[SECTION:3:''Grand Theft Auto: San Andreas'']]
+[[File:SniperRifle-LocationsMap-GTASA.jpg|thumb|Sniper Rifle's locations map]]
+*[[Jefferson (neighborhood)|Jefferson]], [[Los Santos (3D Universe)|Los Santos]] {{nd}} On the roof of the [[County General Hospital]]. It is only accessible by jetpack, helicopter, Hydra, etc. Bailing out of a plane and parachuting down with low flying skill will most likely result in death. Early in the game, this pickup can be reached by parachuting from [[Los Santos Tower]], if the parachute is opened quickly enough and provided that the player has enough health to survive the fall back on the ground level.
+*[[Vinewood (3D Universe)|Vinewood]], [[Los Santos (3D Universe)|Los Santos]] {{nd}} On the highest floor of a scaffolding at the back side of [[InterGlobal Studios]], immediately next to a car park located within the studios premises; there are signs "INTERGLOBAL TELEVISION" and "STAGE 25" on the building. This pickup gives less ammo (10 rounds) compared to the other pickup locations (20 rounds).
+*[[Mulholland]], [[Los Santos (3D Universe)|Los Santos]] {{nd}} On a balcony of a house, near a body armor pickup. Due to Mulholland being a hilly district, the balcony can be accessed by the road behind the building using a fast bike such as the [[NRG-500]] or through the [[Sweeper]]'s glitch.
+*[[Flint County (3D Universe)|Flint County]] {{nd}} At the end of a winding dirt road inside a small shack next to a [[cropduster]]; south east of [[Easter Tunnel]] , west of [[The Farm]], and east of [[Foster Valley]]. It doesn't spawn when wandering around the map during [[Reuniting the Families]], probably due to a bug.
+*[[Downtown San Fierro|Downtown]], [[San Fierro (3D Universe)|San Fierro]] {{nd}} Atop a building beside [[Otto's Autos]]. Requires a Jetpack or a Helicopter. Alternatively, it can be acquired by performing the [[Unique Stunt Jumps in GTA San Andreas|Unique Stunt Jump]] #40 as the jump ends exactly on top of this building.
+*[[Doherty (3D Universe)|Doherty]], San Fierro - In the exterior of the [[Doherty Garage]] after photographing all 50 [[Snapshot]]s.
+*[[Julius Thruway North]], [[Las Venturas (3D Universe)|Las Venturas]] {{nd}} On the roof of a little chapel near the [[Las Venturas Police Headquarters]].
+*[[The Clown's Pocket]], Las Venturas - Somewhere on the Clown's Pocket Casino roof.
+*[[The Four Dragons Casino]], Las Venturas - On the lower roof of the casino.
+*Can be bought from [[Ammu-Nation (3D Universe)|Ammu-Nation]] for $5,000 ($6,000 in Las Venturas) after the completion of [[Pier 69 (mission)|Pier 69]].
+*Given to the player (in one of large concrete pipes located in the construction site beside the Doherty Garage) during the mission "[[Snail Trail]]". One time only.
+
+[[SECTION:3:''Grand Theft Auto: Liberty City Stories'']]
+*[[Hepburn Heights]], [[Portland]] {{nd}} On top of the construction site roof (to get it use the ruins of [[The Dolls House]] as a ramp, can access after mission [[Blow Up 'Dolls']] is completed).
+*[[Torrington]], Staunton Island - On top of the large star monument.
+*[[Francis International Airport (3D Universe)|Francis International Airport]], Shoreside Vale - Underneath a small wooden ramp/bridge leading to [[Wichita Gardens]].
+*Cochrane Dam, Shoreside Vale - In the large tunnel entrance (tunnel leading to Cedar Grove).
+*Newport, Stauton Island - Can be bought in the Ammu-Nation for $6,000 after the mission [[Driving Mr Leone]].
+
+[[SECTION:3:''Grand Theft Auto: Vice City Stories'']]
+*[[Starfish Island]] {{nd}} Behind a mansion in the northern part of the island after completion of [[From Zero to Hero]].
+*Outside every [[Safehouses|safehouse]] after bursting 90 [[Red Balloons|red balloons]].
+*Ocean Beach - Can be bought in the Ammu-Nation for $6,000 ($4,500 if the player completes [[Phil's Shooting Range]]) after the mission [[From Zero to Hero]].
+[[File:IV - Sniper Rifle (Remington 700)-target.png|thumb|251px]]
+
+[[SECTION:3:''Grand Theft Auto IV'']]
+'''General'''
+*After the completion of [[Luck of the Irish]], the Sniper Rifle can be purchased from the [[Underground Gun Shops]] for $6,000, and each additional magazine will cost $800.
+
+'''[[Broker]]'''
+*[[East Hook]] {{nd}} Can be found on a gantry crane at the docks where the [[Platypus]] is berthed, which is located on Mohanet Ave. Specifically, the gantry crane closest to the bow on the starboard side of the ship. Only found after [[Luck of the Irish]].
+'''[[Dukes]]'''
+*[[Steinway]] {{nd}} Can be found atop a ferry terminal-type structure in Gantry Park, located off Dukes Drive. From the leftmost portion of the docks, the rifle is located atop the second structure. Again, only found after [[Luck of the Irish]].
+'''[[Algonquin]]'''
+*[[Northwood]] {{nd}} Can be found atop a crude oil refining tower at the intersection of Exeter Ave and Grummer Rd, near the water's edge. This is the only sniper able to get at the beginning of the game, but it's easy to get [[Busted]] or [[Wasted]] with a [[Wanted Level in GTA IV|6-star wanted level]].
+
+[[SECTION:3:''Grand Theft Auto V'']]
+[[File:Gta5.weapon.pickups.png|thumb|Weapon pickups map including the Sniper Rifle observatory location in ''Grand Theft Auto V''.]]
+*Can be purchased from [[Ammu-Nation (HD Universe)|Ammu-Nation]] for $5,000 after the mission [[Nervous Ron]].
+*The Sniper Rifle is equipped by the protagonists in the following missions:
+**[[Trevor Philips]] in [[Nervous Ron]] (w/ suppressor & advanced scope)
+**[[Michael De Santa]] in [[By the Book]] (w/ advanced scope)
+**[[Franklin Clinton]] in [[The Merryweather Heist]] (freighter approach only) (w/ suppressor & advanced scope).
+*[[Los Santos International Airport (HD Universe)|Los Santos International Airport]] {{nd}} on the top of the airport radar.
+*[[Galileo Observatory]], [[Vinewood Hills (GTA V)|Vinewood Hills]] {{nd}} on the observatory viewpoint, next to a telescope facing south.
+*One can be found north-west of the [[Galileo Observatory]], next to a tree that is on top of a hill to the south of [[East Galileo Avenue]].
+*On top of the more northern of the two red/white smokestacks inside [[Palmer-Taylor Power Station]].
+*[[Paleto Bay]], [[Blaine County]] {{nd}} on the top of the yellow water tower.
+*Can be found in the [[RON Alternates Wind Farm]].
+*Found at several places underwater around [[wrecks]].
+*After [[Minor Turbulence]], in the wreck of the [[Cargo Plane]] in the [[Alamo Sea]] almost directly north of [[Stab City]].
+*Used by [[SASPA]] guards at any watch towers of [[Bolingbroke Penitentiary]].
+*Awarded to the player by entering a [[Police Maverick (HD Universe)|Police Maverick]], with 10 rounds.
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+*Can be purchased from Ammu-Nation at [[Rank#GTA Online Rank 21|Rank 21]], for $20,000.
+*A sniper rifle can be found and kept for free by attacking the gang hideout south of the [[Cypress Flats]] Ammu-Nation. The [[Gang Attacks|gang attack]] only appears from 12:00 to 20:00. The sniper rifle is not in the [[crates]], but can be picked up from one of the enemies.
+*Awarded to the player by entering a Police Maverick, [[Annihilator]], [[Valkyrie]] and [[Valkyrie MOD.0]], with 10 rounds.
+
+[[CATEGORIES]]
+Sniper rifles
+Sniper rifles class
+Weapons in GTA Chinatown Wars
+Weapons in GTA III
+Weapons in GTA IV
+Weapons in GTA Liberty City Stories
+Weapons in GTA Online
+Weapons in GTA San Andreas
+Weapons in GTA V
+Weapons in GTA Vice City
+Weapons in GTA Vice City Stories
+Weapons in TBOGT
+Weapons in TLAD
+Weapons manufactured by Shrewsbury

@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox country
+|common_name     = Japan
+|image_flag      = Flag of Japan.svg
+|currency_ingame = Japanese yen
+}}
+
+[[LEAD]]
+'''Japan''' (Japanese: 日本国) is an island country in {{WP|East Asia}}, located in the {{WP|Pacific Ocean}} off the northeastern coast of the Asian mainland. 
+
+The country uses the [[CERO]] rating system to rate all ''[[Grand Theft Auto]]'' releases, with all games in the series so far being rated Z (18+). Japan receives ''Grand Theft Auto'' releases at a much later time, as it has taken a long time for [[Rockstar Games]] to localize them. Japanese releases of ''Grand Theft Auto'' games do not feature dialogue re-dubbed in the Japanese language and instead feature English voice acting and Japanese subtitles.
+
+Published by Syscom Entertainment:
+*{{1}} (August 27, [[1998]])
+
+Published by [[Capcom]]:
+*{{III}} (September 25, [[2003]])
+*{{VC}} (May 20, [[2004]])
+*[[Grand Theft Auto Double Pack]] (July 29, 2004 - [[Xbox (console)|Xbox]] version; February 27, [[2007]] - [[PlayStation 2|PS2]] version)
+*{{SA}} (January 25, 2007)
+*{{LCS}} (July 26, 2007 - [[PlayStation Portable|PSP]] version; September 6, 2007 - PS2 version)
+*{{VCS}} (December 6, 2007)
+*{{IV}} (October 30, [[2008]])
+*{{V}} (October 10, [[2013]])
+
+Published by {{URL|https://www.mobygames.com/company/1866/cyberfront-corporation/|CyberFront}}:
+*{{CW}} (October 29, [[2009]])
+
+Published by Take-Two Interactive Japan:
+*{{EFLC}} (June 10, [[2010]])
+*{{V}} (October 10, 2013)
+
+[[CATEGORIES]]
+Asian countries

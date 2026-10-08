@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox Structures|
+|name=Sandy Shores Fire Station
+|image= [[File:SandyShoresfirestation-GTAV-exterior.jpg|350px]]
+|caption= The Sandy Shores Fire Station in GTA V.
+|game_1 = GTA V
+|game_2 = GTA Online
+|location = [[Alhambra Dr]] in [[Sandy Shores]], [[Blaine County]]
+|use = Fire station
+}}
+
+[[LEAD]]
+The '''Sandy Shores Fire Station''' is a fire station located on [[Alhambra Dr]] in [[Sandy Shores]], [[Blaine County]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Fire Departments
+Fire Stations in GTA V

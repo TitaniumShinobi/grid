@@ -1,0 +1,17 @@
+{
+  "$schema": "../docs/reference/auth-config-schema.json",
+  "comment": "Desktop auth settings Grid ships inside the app (core/features/users/auth/AuthOptions.cs). Public-client only: NO secrets ever live here.",
+  "baseUrl": "https://signin.grid.app",
+  "clientId": "grid-windows",
+  "loopbackHost": "127.0.0.1",
+  "loopbackPort": 51706,
+  "loopbackPath": "/grid-natives-callback",
+  "scope": ["openid", "profile", "email"],
+  "sessionCookieName": "auth_sid",
+  "refreshCookieName": "auth_rid",
+  "presentationFallback": [
+    { "provider": "microsoft", "label": "Continue with Microsoft" },
+    { "provider": "github", "label": "Continue with GitHub" },
+    { "provider": "google", "label": "Continue with Google" }
+  ]
+}

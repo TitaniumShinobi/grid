@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = TEXTILE STORE
+|type           = 
+|name           = Wall Fabric Fashion
+|image          = WallFabricFashion-GTAVee.png
+|games          = {{Games|V=y|O=y}}
+|location       = [[Simmet Alley]], {{Location|v-textilecity|3}}
+|accessible     = No
+|status         = active
+|phone          = 
+*1-999-HANGELS
+*626-555-0150
+}}
+
+[[LEAD]]
+'''Wall Fabric Fashion''' is a textile store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Stores

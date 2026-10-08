@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Trinculo Clothing
+|image       =
+|type        = clothingstore
+|games       = {{Games|V=y|O=y}}
+|locations   = *[[Bay City Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Roy Lowenstein Boulevard]], [[Rancho]], Los Santos
+|phone       = 555-012
+|accessible  = No
+|status      = active
+}}
+
+[[LEAD]]
+'''Trinculo Clothing''' is a chain of clothing stores in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+TrinculoClothing-GTAV-VespucciCanals.jpg|[[Bay City Avenue]], [[Vespucci Canals]], [[Los Santos (HD Universe)|Los Santos]].
+TrinculoClothing-GTAV-Rancho.png|[[Roy Lowenstein Boulevard]], [[Rancho]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing stores
+Stores

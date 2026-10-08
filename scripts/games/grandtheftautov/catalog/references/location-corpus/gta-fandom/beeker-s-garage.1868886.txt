@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = vehiclecustoms
+|name          = Beeker's Garage
+|sign          = Beeker's logo GTA V.png
+|image         = BeekersGarage-GTAV-TowTruck.jpg
+|caption       = Exterior of the garage with a [[Tow Truck]] parked outside.
+|aka           = Beeker's Garage & Parts
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[Paleto Bay Rest Stop]], [[U.S. Route 1|Route 1]], [[Paleto Bay]], [[Blaine County]]
+|business_type = 
+|founded       = 
+|founder       = 
+|taglines      = 
+|status        = Active
+}}
+
+[[LEAD]]
+'''Beeker's Garage & Parts''' is an independent [[Spray Shop|vehicle customization and repair shop]] featured in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Mod shops

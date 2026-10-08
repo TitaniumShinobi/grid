@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = The Jetty
+|image = TheJetty-GTAV.png
+|caption = '''The Jetty''' as seen from the northwest.
+|type = Hotel
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|locations = [[Pacific Bluffs]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''The Jetty''' is a hotel featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hotels

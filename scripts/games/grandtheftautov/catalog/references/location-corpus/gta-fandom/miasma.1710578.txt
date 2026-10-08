@@ -1,0 +1,14 @@
+[[INFOBOX]]
+{{Infobox business
+|type = Centrifuge Manufacturer
+|games = ''[[Grand Theft Auto V]]''<br>''[[Grand Theft Auto Online]]''
+|image = Miasma-GTAV-Logo.png
+}}
+
+[[LEAD]]
+'''Miasma''' is an electronics company in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' that manufactures centrifuge devices.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics companies

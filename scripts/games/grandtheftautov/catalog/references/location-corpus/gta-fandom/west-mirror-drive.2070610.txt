@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox structure
+|image =
+<gallery>
+WestMirrorDrive-GTAVee-North.jpg|North
+WestMirrorDrive-GTAVee-South.jpg|South
+</gallery>
+|games = {{Games|V=y|O=y}}
+|start = [[Mirror Park Boulevard]]
+|end = Mirror Park Boulevard
+|map =
+<gallery>
+WestMirrorDrive-GTAV-Map.png|Map
+WestMirrorDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''West Mirror Drive''' is a street in [[Mirror Park]], [[Los Santos (HD Universe)|Los Santos]], that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Homes]]
+*[[2405 West Mirror Drive]]
+
+[[SECTION:2:Businesses]]
+*Aqua Drive-Thru
+*[[Auto Repairs]]
+*Car Accessories
+*[[Chico's Hypermarket]]
+*[[Hearty Taco]] <small>(corner of Bridge Street)</small>
+*[[Leroy's Electricals]]
+*[[LTD Gasoline]] <small>(accessible interior, corner of Mirror Park Boulevard)</small>
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

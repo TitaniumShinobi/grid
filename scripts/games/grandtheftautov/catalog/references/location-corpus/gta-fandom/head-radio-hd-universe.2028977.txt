@@ -1,0 +1,40 @@
+[[INFOBOX]]
+{{Infobox media
+|Name Change  = 
+|style        = 
+|type         = radiostation
+|name         = Head Radio
+|logo         = 
+|image        = HeadRadio-GTAOe-Logo.png
+|caption      = '''Head Radio''' logo in {{O}}.
+|aka          = 
+|games        = N/A
+|mentioned    = {{Games|O={{EEEV}} {{DLC|mpheist3}}}}
+|locations    = Unknown
+|taglines     = 
+|bawsaq       = 
+|lcn          = 
+|status       = Unknown
+|media_type   = 
+|genre        = Unknown
+|established  = 
+|released     = 
+|publisher    = 
+|directors    = 
+|producers    = 
+|writers      = 
+|composers    = 
+|artwork      = 
+|cast         = 
+|frequency    = 
+|host         = Unknown
+|product      = 
+|radio_tracks = 
+}}
+
+[[LEAD]]
+'''Head Radio''' is a [[Radio Stations|radio station]] mentioned in {{O}} as part of [[GTA Online: The Diamond Casino Heist|The Diamond Casino Heist]] update.
+
+[[CATEGORIES]]
+Media in GTA Online: The Diamond Casino Heist
+Radio stations

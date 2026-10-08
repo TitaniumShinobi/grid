@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|image     = BlackEagle-GTAO-Logo.png
+|type      = weapons
+|taglines  = "''When Reason Fails, Force Prevails."''
+|games     = {{games|O={{EEEV}} {{DLC|mpgunrunning}}}}
+|name      = Black Eagle Handgun Specialists
+|reference = 
+}}
+
+[[LEAD]]
+'''Black Eagle''' is a weapons manufacturer appearing in ''[[Grand Theft Auto Online]]'' as part of the [[GTA Online: Gunrunning|Gunrunning]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Gunrunning
+Weapon manufacturers

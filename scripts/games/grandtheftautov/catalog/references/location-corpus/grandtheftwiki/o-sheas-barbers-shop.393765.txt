@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{infobox business|
+|image = O'SheasBarbersShop-GTAV-SandyShores-exterior.jpg
+|size = 350x350px
+|game_1 = GTA V
+|game_2 = GTA Online
+|name = O'Sheas Barbers Shop
+|type = [[:Category:Barbers|Barbers shop]]
+|owner = 
+|location = [[Alhambra Dr]] in [[Sandy Shores]], [[Blaine County]]
+|affiliation = 
+|missions = 
+|employee = [[Donna]]
+}}
+
+[[LEAD]]
+'''O'Sheas Barbers Shop''' is a barbers shop on [[Alhambra Dr]] in [[Sandy Shores]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]]. The player, as [[Franklin Clinton]], [[Michael De Santa]] or [[Trevor Philips]], can visit the barbers shop to change hairstyles. The interior and the barber, [[Donna]], are shared with the other barbers across the [[San Andreas in GTA V|state]].
+
+<gallery width="auto" perrow="2" style="font-size:95%; padding:0; text-align:left;" widths="160">
+File:O'SheasBarbersShop-GTAV-SandyShores-exterior.jpg|Exterior.
+File:O'SheasBarbersShop-GTAV-SandyShores-interior.jpg|Interior.
+</gallery>
+
+
+
+
+
+[[Location::Sandy Shores| ]]
+
+[[CATEGORIES]]
+Barbers
+Businesses in Blaine County
+Businesses in GTA Online
+Businesses in GTA V

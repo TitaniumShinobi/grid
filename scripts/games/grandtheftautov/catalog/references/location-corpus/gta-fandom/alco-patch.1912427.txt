@@ -1,0 +1,36 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = drug
+|name          = Alco Patch
+|sign          = AlcoPatch-GTAV-Logo.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Alcohol patch
+|founded       = 
+|founder       = 
+|owner         = [[Betta Pharmaceuticals]]
+|vehicles      = 
+|taglines      = "''It's the same refreshing feeling of your favorite drink, but delivered transdermally and discreetly.''"
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Alco Patch''' is an alcohol patch brand appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Items in GTA IV
+Items in GTA Online
+Items in GTA V
+Items manufactured by Betta Pharmaceuticals
+Medical items

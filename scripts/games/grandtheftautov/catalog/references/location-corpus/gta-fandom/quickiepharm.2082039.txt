@@ -1,0 +1,39 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = medicine
+|name          = QuickiePharm
+|sign          = QuickiePharm-GTAOe-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|O={{EEEV}} {{DLC|mp2025_01}}}}
+|mentioned     = 
+|locations     = [[Wenger Institute]], [[Carcer Way]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = Pharmaceutical deliveries 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         =
+|divisions     = 
+|employees     = 
+|products      = 
+|vehicles      = [[Sentinel GTS]]
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''QuickiePharm''' is a pharmaceutical delivery company appearing in {{O}} as part of the [[GTA Online: Money Fronts|Money Fronts]] update.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Money Fronts
+Pharmaceutical companies

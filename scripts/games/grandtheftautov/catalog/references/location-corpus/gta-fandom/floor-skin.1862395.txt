@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox location
+|type          = hwstore
+|name          = Floor Skin Hardwood Coverings
+|sign          = 
+|image         = FloorSkin-GTAVe-Store.png
+|games         = {{Games|V=y|O=y}}
+|location      = [[Hawick Avenue]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type = Flooring store
+|taglines      = 
+|status        = active
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Floor Skin Hardwood Coverings''' is a flooring materials store in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Hardware stores

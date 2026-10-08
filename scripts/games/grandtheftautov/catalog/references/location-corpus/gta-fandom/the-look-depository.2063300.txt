@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|type           = warehouse
+|name           = The Look Depository
+|sign           = 
+|image          = TheLookDepository-GTAVee.png
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Atlee Street]] & [[Little Bighorn Avenue]], [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]]
+|taglines       =
+|phone          = 1-999-thelook
+|status         = defunct
+|accessible     = No
+}}
+
+[[LEAD]]
+'''The Look Depository''' is a commercial import warehouse appearing in {{V}} and formerly in {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA V in Los Santos
+Former locations in GTA Online
+Warehouses

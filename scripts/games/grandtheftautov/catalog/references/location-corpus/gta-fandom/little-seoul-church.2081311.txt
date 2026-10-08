@@ -1,0 +1,19 @@
+[[INFOBOX]]
+{{Infobox location
+|church=y
+|name=Little Seoul Church
+|image=LittleSeoulChurch-GTAV.png
+|caption=General view of the church.
+|location=[[San Andreas Avenue]] and [[Ginger Street]], [[Little Seoul]]
+|accessible=No
+|games={{Games|V=y|O=y}}
+}}
+
+[[LEAD]]
+'''Little Seoul Church''' is a church that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Churches
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neo-Romanesque buildings

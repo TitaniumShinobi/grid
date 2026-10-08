@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=CockingendDrive-GTAV.png
+|caption=
+|games=''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|start=[[Picture Perfect Drive]]
+|end=[[Mad Wayne Thunder Drive]]
+|map=<gallery>
+CockingendDrive-GTAV-Map.png|Map
+CockingendDrive-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Cockingend Drive''' is a short residential [[List of Street Names|street]] in [[Rockford Hills]] and [[Vinewood Hills]], [[Los Santos (HD Universe)|Los Santos]], that appears in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

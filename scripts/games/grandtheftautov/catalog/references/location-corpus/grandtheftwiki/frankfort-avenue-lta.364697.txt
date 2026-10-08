@@ -1,0 +1,25 @@
+[[INFOBOX]]
+{{Infobox LTA
+| name = Frankfort Avenue
+| bullets = [[File:AlgonquinInnerLine-GTAIV-logo.png|50px]]
+| bg_color = #FFC800
+| font_color = black
+| bg_color_2 = #1689EA
+| line = K/C Algonquin Inner Line
+| service = K/C
+| platforms = 2
+| tracks = 2
+| borough = Algonquin 
+| north_station = Suffolk
+| south_station = West Park
+| image = FrankfortAvenuestation-GTAIV-sign.jpg
+}}
+
+[[LEAD]]
+'''Frankfort Avenue''' is an underground subway station in [[Grand Theft Auto IV]], in the [[Subway in GTA IV|Liberty City Subway]] system, serving the [[Algonquin Inner Line|W]] trains only. The express N and Q trains bypass this station at all times except late nights, when the N serves this station.
+
+The station is not to be confused with [[Frankfort High LTA|Frankfort High station]] and [[Frankfort Low LTA|Frankfort Low station]], which are both located further north along [[Frankfort Avenue]].
+
+[[CATEGORIES]]
+Algonquin
+Subway Stations in Liberty City in GTA IV Era

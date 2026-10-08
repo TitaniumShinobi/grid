@@ -1,0 +1,56 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = clothingstore
+|name          = Peckerwood
+|sign          = Peckerwood-GTAV-Logo.png
+|image_label   = 
+|image         = 
+|caption       = 
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = [[State of San Andreas (HD Universe)|State of San Andreas]]
+([[#Locations_2|See more]])
+|business_type = College-style
+|founded       = [[1908]]
+|founder       = 
+|ceo           = 
+|owner         = 
+|employees     = 
+|products      = 
+|taglines      = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+|accessible    = No <small>(see [[#Beta Content|Beta Content]])</small>
+|map           = 
+|map_caption   = 
+|map2          = 
+|map_caption2  = 
+}}
+
+[[LEAD]]
+'''Peckerwood '''is a college-style clothing retailer appearing in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+*The [[Paleto Bay]] outlet appears to be a narrowed rendition of {{URL|https://maps.app.goo.gl/Fc9fGS55RbjHt1ap7|508 Santa Clara Avenue}} in {{WP|Fillmore, California|Fillmore}}, {{WP|California}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+Peckerwood-GTAV.jpg|[[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]].
+Peckerwood-GTAVe-DelPerro.png|[[Prosperity Street Promenade]], [[Del Perro]], [[Los Santos County]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains

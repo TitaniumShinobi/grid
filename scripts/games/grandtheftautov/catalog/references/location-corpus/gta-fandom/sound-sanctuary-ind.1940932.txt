@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = Sound Sanctuary, Ind.
+|sign          = SoundSanctuary-GTAV-Logo.png
+|caption       =
+|aka           = Video Veranda <small>(formerly)</small>
+|taglines      = 
+|type          = elecstore
+|games         = {{Games|V=y|O=y}}
+|locations     = 
+*[[Mission Row]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Textile City]], Los Santos
+|status        = active
+|phone         = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Sound Sanctuary, Ind.''' is a chain of audiovisual equipment stores in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+SoundSanctuary-GTAVee-AtleeStreet.png|[[Atlee Street]], [[Mission Row]], [[Los Santos (HD Universe)|Los Santos]].
+SoundSanctuary-GTAVee-SinnerStreet.png|[[Sinner Street]], Mission Row, Los Santos.
+SoundSanctuary-GTAVee-SanAndreasAve.png|[[San Andreas Avenue]], [[Textile City]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Electronics store chains

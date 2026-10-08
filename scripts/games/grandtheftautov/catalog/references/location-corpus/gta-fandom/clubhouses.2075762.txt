@@ -1,0 +1,110 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|image     = Clubhouses-GTAO.gif
+|style     = {{HUDIcons|game=O|bikerclubhouse|animated=y}} Clubhouse
+|occupants = {{GTAOP}}<br>[[Sindy]]<br>[[Zach Nelson]]<br>[[Motorcycle Clubs]]
+|price     = [[Money|$]]200,000 - $495,000
+|game      = O
+}}
+
+[[LEAD]]
+'''Clubhouses''' are purchasable properties in {{O}} added as part of the [[GTA Online: Bikers|Bikers]] update and expanded upon in [[GTA Online: The Criminal Enterprises|The Criminal Enterprises]] update.
+
+[[SECTION:3:Locations]]
+{| class="article-table"
+! colspan="5" align="center" width="100%" | Clubhouses
+|-
+! width="9%" |Clubhouse
+! width="9%" |Location
+! width="30%" |Image
+! width="44%" |In-game description
+! width="8%" |Price
+|-
+|[[Del Perro Beach]] Clubhouse (Layout 1)
+|7 Del Perro Beach
+|[[File:DelPerroBeach-GTAO-MCclubhouse.png|thumb]]
+|''This functional ground floor property used to be a soup kitchen, and repossessing that kind of attack on American values isn't just business for us - it's pleasure. Now available for purchase by a patriotic entrepreneur or kingpin, this place will be serving the community again in no time.''
+|[[Money|$]]365,000
+|-
+|[[Downtown Vinewood]] Clubhouse (Layout 2)
+|2214 [[Clinton Avenue]]
+|[[File:DowntownVinewood-GTAO-MCclubhouse.png|thumb]]
+|''Don't just sit there gorging on welfare and compassion. Take a stand for the trickle down economy today. Plunge capital back into your community. Buy up every last derelict and turn it into a living, breathing, buzzing hive of fugitives and meth heads. It's time to be the change, people.''
+|$472,000
+|-
+|[[Grapeseed]] Clubhouse (Layout 2)
+|2111 [[East Joshua Road]]
+|[[File:Grapeseed-GTAO-MCclubhouse.png|thumb]]
+|''If you're looking for somewhere that's off the beaten path you just found it: miles from anywhere, deemed hazardous by the Los Santos Building Standards Commission, and the last occupants died in murder-suicide pact. How many reassurances of total privacy do you need?''
+|$225,000
+|-
+|[[Great Chaparral]] Clubhouse (Layout 1)
+|101 [[Route 68]]
+|[[File:GreatChaparral-GTAO-MCclubhouse.png|thumb]]
+|''We all thought there was a rock bottom, but nope, it turns out the value of a place like this just falls and falls! Get in here before we burn it for kicks. The authorities just want to forget it exists, so go wild.''
+|$200,000<br>FREE <small>(with [[Criminal Enterprise Starter Pack]])</small>
+|-
+|[[Hawick]] Clubhouse (Layout 2)
+|1778 [[Hawick Avenue]]
+|[[File:Hawick-GTAO-MCclubhouse.png|thumb]]
+|''You know a property must be something really special when the previous occupants have such a hard time letting go. You just can't fake that kind of helpless desperation and rage, and in a world as cynical as this that's the best review of all.''
+|$495,000
+|-
+|[[La Mesa]] Clubhouse (Layout 2)
+|137 [[Capital Boulevard]]
+|[[File:LaMesa-GTAO-MCclubhouse.png|thumb]]
+|''The locals assumed it was abandoned, but in fact this spacious warehouse was the heart and soul of the Los Santos snuff industry for years. Now tax hikes are forcing those pioneering filmmakers out of business, so this is your chance to buy your way under the radar and stay there for good.''
+|$449,000
+|-
+|[[Paleto Bay]] Clubhouse (Layout 1)
+|1 [[Paleto Boulevard]]
+|[[File:PaletoBay1PaletoBlvd-GTAO-MCclubhouse.png|thumb]]
+|''You might assume this is a glass-half-empty kind of place, but the people of Paleto believe the glass is actually half full of cut-price real estate, disenfranchised workers and raw opportunity. That's right, this dingy storage unit is a step towards a brighter future for us all.''
+|$242,000
+|-
+|Paleto Bay Clubhouse (Layout 2)
+|68 Paleto Boulevard
+|[[File:PaletoBay-GTAO-Clubhouse.jpg|thumb]]
+|''Sure, coastal small town America has mile after mile of foreclosed retail premises within fifty feet of a church and a gun store, so why choose this one? Well ask yourself this: can you think of a better way to blend in and disappear? Act now before it stops making sense.''
+|$250,000
+|-
+|[[Pillbox Hill]] Clubhouse (Layout 1)
+|75 [[Elgin Avenue]]
+|[[File:PillboxHill-GTAO-Clubhouse.jpg|thumb]]
+|''The repo guys who raided this place died of smallpox three days later, which is almost certainly a coincidence and has in no way affected the valuation of the property. And hey, worst case scenario, you couldn't pay for a more robust security system.''
+|$455,000
+|-
+|[[Rancho]] Clubhouse (Layout 1)
+|1334 [[Roy Lowenstein Boulevard]]
+|[[File:Rancho-GTAO-MCclubhouse.png|thumb]]
+|''This little gem is nestled so snugly in the heart of longstanding urban squalor that we'd forgotten it was even on our books. As far as we can tell it's not on any property register, so just give us the cash and make it disappear.''
+|$420,000
+|-
+|[[Sandy Shores]] Clubhouse (Layout 1)
+|47 [[Algonquin Boulevard]]
+|[[File:SandyShores-GTAO-MCclubhouse.png|thumb]]
+|''Are you a real fixer upper? Can you share the cool desert evenings with packs of wild dogs and openly incestuous couples? If so this is the project for you. It's got nothing but potential.''
+|$210,000
+|-
+|[[Vespucci Beach]] Clubhouse (Layout 2)
+|4 [[Goma Street]]
+|[[File:VespucciBeach-GTAO-MCclubhouse.png|thumb]]
+|''You know times are tough when not even a million hipsters getting a tattoo of a swallow in flight on their taint could save this place from going under. Bad news for those who wanted to follow up with that bold yet simple triangle design, but the rock bottom pricetag is good news for you.''
+|$395,000
+|}
+
+[[SECTION:3:Bar]]
+The bar is staffed by the Clubhouse bartender [[Sindy]], whom the player can interact with to order free shots of [[The Mount Distilling Co.|The Mount]] whiskey and, post-[[GTA Online: The Criminal Enterprises|The Criminal Enterprises]] update, start a [[Bar Resupply]] mission. Tied to this mission is a cash bag located behind the office desk, where the player can collect their accumulated Bar Earnings, up to a maximum of $100,000.
+
+[[SECTION:4:List of stations available]]
+*"Classic Rock" - [[Los Santos Rock Radio]]
+*"Modern Rock" - [[Vinewood Boulevard Radio]]
+*"Hip Hop" - [[West Coast Classics]]
+*"Punk" - [[Channel X]]
+*"Media Player" - [[Media Player]] (added with [[GTA Online: Los Santos Tuners|Los Santos Tuners]])
+
+[[CATEGORIES]]
+Features
+Features in GTA Online
+Properties
+Properties in GTA Online

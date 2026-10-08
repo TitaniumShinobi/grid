@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change   = 
+|type          =
+|name          = Periscope
+|sign          = Periscope-GTAV-Logo.png
+|image         = Periscope-GTAVe-Store.png
+|games         = {{Games|V=y|O=y}}
+|location      = [[Hawick Avenue]], [[Burton]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Periscope''' is a business that appears in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos

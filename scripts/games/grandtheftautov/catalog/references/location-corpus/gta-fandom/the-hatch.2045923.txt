@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox_location
+|image    = TheHatch-GTAVe.png
+|caption  = The Hatch in ''[[Grand Theft Auto V]]''.
+|games    = {{Games|V=y|O=y}} 
+|location = [[San Chianski Mountain Range]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+}}
+
+[[LEAD]]
+'''The Hatch''' is an underwater steel hatch that appears as an [[Secrets|Easter egg]] in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Easter Eggs
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Secrets

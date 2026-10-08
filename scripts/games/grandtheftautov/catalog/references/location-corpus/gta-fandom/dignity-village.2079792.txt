@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = TENT CITY
+|image = DignityVillage2-TopandAerialViews-GTAV.png
+|caption = Main entrance (top) and aerial view (bottom).
+|games = {{Games|V=y|O=y}}
+|location = [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map = DignityVillage-GTAV-MapLocation.png
+|map_caption = Dignity Village's location east of Paleto Bay.
+}}
+
+[[LEAD]]
+'''Dignity Village''' is an unincorporated tent city established by [[Tramps|homeless people]] near [[Procopio Beach]], located in [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]. Dignity Village is bordered by the [[Pacific Ocean]] to the north, [[Mount Chiliad (HD Universe)|Mount Chiliad]] to the southwest, [[Mount Gordo]] to the east, and [[Paleto Bay]] to the west. It is featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', but plays no role in the storyline, except for a [[Gang Attacks|Gang Attack]] and having a [[Letter Scraps|letter scrap]]. It is accessible south of [[Route 1]], via an underpass. Dignity Village is the second-smallest settlement in ''Grand Theft Auto V ''and ''Grand Theft Auto Online'', while [[Cape Catfish]] is the smallest.
+
+[[Curtis Weaver]], the final [[Bail Bond]] target, is located here.
+
+[[CATEGORIES]]
+Locations in GTA Online in Blaine County
+Locations in GTA V in Blaine County
+Neighborhoods
+Towns
+Zones

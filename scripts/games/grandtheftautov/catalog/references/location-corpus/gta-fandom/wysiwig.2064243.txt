@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = WIG STORE CHAIN
+|type          = 
+|name          = Wysiwig
+|sign          = 
+|image         = Wysiwig-GTAV-Logo.png
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Vespucci Canals]], Los Santos
+|business_type = 
+|taglines      = 
+|status        = active
+|phone         = 555-0172
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Wysiwig''' is a chain of wig stores in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+WysiWig-GTAV-VinewoodIndiaBuilding.png|[[Vinewood India Building]], [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]].
+Wysiwig-GTAV.jpg|[[Clinton Avenue]], [[Downtown Vinewood]], Los Santos.
+Wysiwig-GTAVee-VespucciCanals.png|[[Bay City Avenue]], [[Vespucci Canals]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Beauty store chains
+Businesses in GTA Online
+Businesses in GTA V

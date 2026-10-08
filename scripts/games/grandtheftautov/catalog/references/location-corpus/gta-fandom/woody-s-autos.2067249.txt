@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = modshop
+|name           = Woody's Autos
+|sign           = 
+|image          = Woody'sAutos-GTAVee.jpg
+|caption        = The repair shop as seen from Boulevard Del Perro.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]]
+|business_type  = 
+|taglines       = "''Los Santos #1 Muffler Man''"
+|map            = 
+|map_caption    = 
+}}
+
+[[LEAD]]
+'''Woody's Autos''' is an auto repair shop in {{V}} and {{O}} located in [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mod shops

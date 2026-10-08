@@ -1,0 +1,66 @@
+[[INFOBOX]]
+{{Infobox business
+|type          = bank
+|name          = Bank of Liberty
+|image_label   = O
+|image         = BankofLiberty-GTAV-Logo.png
+|caption       = Bank of Liberty logo in {{O}}.
+|image_label2  = IV
+|image2        = BankofLiberty-GTAIV-Logo.png
+|caption2      = Bank of Liberty logo in {{IV}}.
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|lcn           = {{BAWSAQ/Slider}} '''BOL'''
+|phone         = 808-555-8372
+|website       = [[#Website|www.thebankofliberty.com]]
+|accessible    = Yes <small>([[Bank of Liberty (Chinatown)|Chinatown branch]]; [[Three Leaf Clover|mission only]])</small>
+|taglines      = 
+*''"Bleeding you dry for over 25 years"''
+*''"Cleaning your green for over 25 years"''{{Ref|name=motto|ref=[[Civilization Committee]] Booklet, Page 4 (''GTA Chinatown Wars'' Manual)}}
+*''"The More You Spend. The More Fees You Pay."''
+*''"Your Money. Our Rewards."''
+|locations     = [[Liberty City (HD Universe)|Liberty City]], [[State of Liberty (HD Universe)|Liberty]]
+([[#Locations|See more]])
+}}
+
+[[LEAD]]
+The '''Bank of Liberty''' is a bank chain appearing in the {{HD}} of the {{S}}.
+
+[[SECTION:3:Locations]]
+
+
+[[SECTION:4:''Grand Theft Auto IV'']]
+*The [[Hatton Gardens]] and [[Suffolk]] branches are based on the now-closed {{WP|Valley Bank|Valley National Bank}} branch formerly located at {{URL|https://maps.app.goo.gl/WoKFLmBKh1AdwyTq5|434 Broadway}} in {{WP|Soho, Manhattan|Soho}}, {{WP|Manhattan}}, {{WP|New York City}}.
+*The [[South Slopes]] branch is based on the Greenpoint Savings Bank at {{URL|https://maps.app.goo.gl/6AHeo8wCjsPYRajQ7|807 Manhattan Avenue}} in {{WP|Greenpoint, Brooklyn|Greenpoint}}, {{WP|Brooklyn}}, New York City. Curiously, the bank features a plaque on the side elevation which seems to be based on the {{URL|https://maps.app.goo.gl/ep8yw3K1jVUYSGYU7|plaque}} in homage to {{WP|Elkan Naumburg}} located at the Naumburg Bandshell at Central Park.
+*The [[East Island City]] branch is based on the now-closed {{URL|https://maps.app.goo.gl/SpzuQtm4DR5yn6My8|HSBC branch}} formerly located at 22-15 43rd Avenue in Long Island City, New York.
+
+[[SECTION:2:Locations]]
+{{Gallery
+|game = IV
+|BankofLibertyChinatown-GTAIV-ColumbusAvenue.png|[[Bank of Liberty (Chinatown)|Chinatown branch]], [[Columbus Avenue]] and [[Calcium Street]], [[Chinatown (GTA IV)|Chinatown]], [[Algonquin]].
+|BankofLiberty-GTAIV-TheExchange.png|[[Amsterdam Lane]] and [[Amethyst Street]], [[The Exchange (GTA IV)|The Exchange]], Algonquin.
+|BankofLiberty-GTAIV-Suffolk.png|[[Garnet Street]] and [[Denver Avenue]], [[Suffolk]], Algonquin. {{Small|([[:File:BankofLiberty-GTAIV-SuffolkBuilding.png|building view]])}}
+|BankofLiberty-GTAIV-HattonGardens.png|[[Albany Avenue]] and [[Manganese Street]], [[Hatton Gardens]], Algonquin. {{Small|([[:File:BankofLiberty-GTAIV-HattonGardensBuilding.png|building view]])}}
+|BankofLiberty-GTAIV-DenverExeterAvenue.png|[[MeTV Building]], [[Star Junction]], Algonquin.
+|BankofLiberty-GTAIV-LorimarStreet.png|[[Lorimar Street]], [[Banner Hotel & Spa]], Star Junction, Algonquin.
+|BankofLiberty-GTAIV-EastHolland.png|[[East Holland Cinema]], [[Exeter Avenue]] and [[Vauxite Street]], [[East Holland]], Algonquin.
+|BankofLiberty-GTAIV-Broker.png|[[Deadwood Street]], [[South Slopes]], [[Broker]]. {{Small|([[:File:BankofLiberty-GTAIV-BrokerNight.png|night view]])}}
+|BankofLiberty-GTAIV-Dukes.png|[[Yorktown Avenue]], [[East Island City]], [[Dukes]].
+}}
+{{Gallery
+|game = CW
+|BankOfLiberty-GTACW-Chinatown.PNG|[[Bank of Liberty (Chinatown)|Chinatown branch]], [[Columbus Avenue]] and [[Calcium Street]], [[Chinatown (GTA IV)|Chinatown]], [[Algonquin]].
+|BankofLiberty_SouthSlopes_GTACW.png|[[Deadwood Street]], [[South Slopes]], [[Broker]].
+}}
+
+[[CATEGORIES]]
+Banking companies
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in TBOGT
+Businesses in TLAD
+Media in GTA IV
+Media in GTA Online
+Media in GTA V
+Websites

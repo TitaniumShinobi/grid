@@ -1,0 +1,23 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Davis Mega Mall
+|image = DavisMegaMall-GTAV-exterior.jpg
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = [[:Category:Shopping Malls|Shopping mall]]
+|owner = 
+|location = [[Carson Ave]]/[[Davis Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+The '''Davis Mega Mall''' is a shopping mall located at the corner of [[Davis Ave]] and [[Carson Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]. [[Carson Self Storage]] and [[Discount Jewels]] are the only businesses known to be at the mall. The malls car park is occasionally used by non-playable characters.
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V
+Shopping Malls

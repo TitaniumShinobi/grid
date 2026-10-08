@@ -1,0 +1,174 @@
+[[INFOBOX]]
+{{Infobox location
+|style          = O
+|name = {{HUDIcons|game=V|garageforsale}} Garages {{HUDIcons|game=V|garage}}
+|image = Garages-GTAOe-PurchaseSign.png
+|caption = A Garage for sale.
+|type    = safehouse
+|accessible = Yes
+|floors = 
+|garagecap = 2-10 [[Personal Vehicles]]<br/><small>(plus 1-3 [[Bicycles]])</small>
+|canplayerstore = Yes
+|unlockedby = [[Rank]] 5 <small>(Tutorial mode only)</small>
+|owner = {{GTAOP}} <small>(Player's choice)</small>
+|games = {{Games|O=y}}
+|location = [[State of San Andreas (HD Universe)|Southern San Andreas]]
+}}
+
+[[LEAD]]
+'''Garages''' are purchasable [[Safehouses]] in {{O}}.
+
+[[SECTION:2:Garage Tiers]]
+The [[Dynasty 8/Dynasty 8 Listings|Dynasty 8 listings]] are divided into three tiers of purchasable properties; low-end, medium and high-end.
+
+[[SECTION:3:Low-end]]
+Low-end garages have a basic, dingy interior with poor lighting and various tools and machine parts scattered around. A laptop and radio are located on the rear workbench for the player to interact with. These garages can store a maximum of two [[Personal Vehicles]] and one [[Pedal and Metal Cycles|Bicycle]].
+
+{| class="wikitable"
+!colspan="3"|List of Low End Garages
+|-
+!Address
+!Price
+!Notes
+|-
+|[[0897 Mirror Park Boulevard]]
+| style="text-align:right;"|$35,000
+|
+|-
+|[[Garage Innocence Boulevard]]
+| style="text-align:right;"|$34,000
+|
+|-
+|[[634 Boulevard Del Perro]]
+| style="text-align:right;"|$33,500
+|
+|-
+|[[1920 Senora Way]]
+| style="text-align:right;"|$32,000
+|
+|-
+|[[12 Little Bighorn Avenue]]
+| style="text-align:right;"|$32,000
+|
+|-
+|[[2000 Great Ocean Highway]]
+| style="text-align:right;"|$31,500
+|
+|-
+|[[0754 Roy Lowenstein Boulevard]]
+| style="text-align:right;"|$29,500
+|
+|-
+|[[197 Route 68]]
+| style="text-align:right;"|$29,000
+|
+|-
+|[[1200 Route 68]]
+| style="text-align:right;"|$28,000
+|
+|-
+|[[1932 Grapeseed Avenue]]
+| style="text-align:right;"|$27,500
+|
+|-
+|[[142 Paleto Boulevard]]
+| style="text-align:right;"|$26,000
+|
+|-
+|[[1 Strawberry Avenue]]
+| style="text-align:right;"|$26,000
+|Actually located on [[Duluoz Avenue]], [[Paleto Bay]]
+|-
+|[[Unit 124 Popular Street]]
+| style="text-align:right;"|$25,000
+|FREE with [[Grand Theft Auto V/Editions|Collector's Edition]]
+|-
+|}
+
+[[SECTION:3:Medium]]
+Medium garages feature better quality lighting and a cleaner atmosphere, with more organized work areas. The larger rear work bench features a laptop and radio. These garages can store a maximum of 6 Personal Vehicles and two Bicycles, which now have dedicated wall racks.
+{| class="wikitable"
+!colspan="3"|List of medium Garages
+|-
+!Address
+!Price
+!Notes
+|-
+|[[0552 Roy Lowenstein Boulevard]]
+| style="text-align:right;"|$80,000
+|
+|-
+|[[Unit 14 Popular Street]]
+| style="text-align:right;"|$77,500
+|
+|-
+|[[1905 Davis Avenue]]
+| style="text-align:right;"|$75,000
+|
+|-
+|[[0432 Davis Avenue]]
+| style="text-align:right;"|$72,500
+|
+|-
+|[[Unit 1 Olympic Freeway]]
+| style="text-align:right;"|$70,000
+|
+|-
+|[[4531 Dry Dock Street]]
+| style="text-align:right;"|$67,500
+|
+|-
+|[[8754 Route 68]]
+| style="text-align:right;"|$65,000
+|
+|-
+|[[870 Route 68 Approach]]
+| style="text-align:right;"|$62,500
+|Actually located on [[Joshua Road]]
+|-
+|}
+
+[[SECTION:3:High-end]]
+High-end garages feature premium quality lighting and an all-white interior, with a more pristine work area. Most of the [[Garage Mechanic]]'s vehicle maintenance and mechanical equipment are inaccessible and separated behind a glass wall at the rear of the garage. Like the other tier garages, the rear workbench features a laptop and radio, but a wall-mounted TV has also been added to the left of the workbench, allowing the player to watch TV and CCTV, and spectate other players. These garages can store a maximum of 10 Personal Vehicles and three Bicycles, which are stored on dedicated wall racks. Note that though there are six total bike racks, only three may be stored.
+{| class="wikitable"
+!colspan="3"|List of High End Garages
+|-
+!Address
+!Price
+!Notes
+|-
+|[[120 Murrieta Heights]]
+| style="text-align:right;"|$150,000
+|
+|-
+|[[Unit 2 Popular Street]]
+| style="text-align:right;"|$142,000
+|
+|-
+|[[331 Supply Street]]
+| style="text-align:right;"|$135,000
+|Actually located on [[Popular Street]]
+|-
+|[[Unit 76 Greenwich Parkway]]
+| style="text-align:right;"|$120,000
+|
+|-
+|[[1337 Exceptionalists Way]]
+| style="text-align:right;"|$112,500
+|FREE with [[Criminal Enterprise Starter Pack]]
+|-
+|[[1623 South Shambles Street]]
+| style="text-align:right;"|$105,000
+|
+|-
+|}
+
+[[SECTION:4:Eclipse Boulevard Garage]]
+{{Main|Eclipse Boulevard Garage}}
+Added with the [[GTA Online: Los Santos Drug Wars|Los Santos Drug Wars]] update, the Eclipse Boulevard Garage is listed as a high-end garage, but features significant differences to other high-end garages. The property can hold up to a total of 50 Personal Vehicles, features customizable interiors similar to [[Office Garages]], access to a roof patio, and a kitchenette area on each floor that offer [[Snacks]] and other amenities.
+
+[[CATEGORIES]]
+Features
+Features in GTA Online
+Safehouses
+Safehouses in GTA Online

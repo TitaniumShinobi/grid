@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox business
+|name          = L.S. Gentstyle
+|sign          = LSGentstyle-GTAV-Logo.png
+|caption       =
+|taglines      = 
+|type          = clothingstore
+|games         = {{Games|V=y|O=y}}
+|locations     = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|status        = active
+|phone         = 555-0122
+|accessible    = No
+}}
+
+[[LEAD]]
+'''L.S. Gentstyle''' is a chain of men's fashion stores in {{V}} and {{O}}.
+
+[[SECTION:3:Locations]]
+*The Morningwood outlet is modeled after {{WP|Holmby Hall}} in {{WP|Westwood Village, Los Angeles}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="250px">
+LSGentstyle-GTAVee-Morningwood.png|[[Morningwood Boulevard]] and [[Perth Street]], [[Morningwood]], [[Los Santos (HD Universe)|Los Santos]].
+LSGentstyle-GTAVee-AtleeStreet1.png|[[Atlee Street]], [[Mission Row]], Los Santos.
+LSGentstyle-GTAVee-AtleeStreet2.png|Atlee Street, Mission Row, Los Santos.
+LSGentstyle-GTAVee-SinnerStreet1.png|[[Sinner Street]], Mission Row, Los Santos.
+LSGentstyle-GTAVee-SinnerStreet2.png|Sinner Street, Mission Row, Los Santos.
+LSGentstyle-GTAVee-SanAndreasAve.png|[[San Andreas Avenue]], [[Textile City]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Clothing store chains

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox business
+|name = [[File:H&L-GTAO-TextLogo.png|center|250px]]
+|image = H&L-GTAO-Logo.png
+|type = Weapons Manufacturer
+|bawsaq = {{BAWSAQ/Slider}} '''HAL'''
+|founded = [[1850]]
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''}}
+
+[[LEAD]]
+'''Hawk & Little''' is an [[United States of America|American]] firearm manufacturer in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The player can buy stocks from them at the [[Bawsaq.com]] website.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Explosives manufacturers
+Weapon manufacturers

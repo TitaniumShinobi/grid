@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|image = ChildrenOfTheMountainFellowship-GTAV.png
+|caption = The temple as seen from the east.
+|games = {{Games|V=y|O=y}}
+|location = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+|use = 
+}}
+
+[[LEAD]]
+'''Children of the Mountain Fellowship''' is a religious building in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Children of the Mountain
+Churches
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

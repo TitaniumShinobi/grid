@@ -1,0 +1,21 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Yours
+|sign          = Yours-GTAO-Logo.png
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|business_type = Vehicle modifications
+|products      = 
+|taglines      = 
+|status        = 
+}}
+
+[[LEAD]]
+'''Yours''' is a vehicle performance and parts company that appears in {{VO}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle parts manufacturers

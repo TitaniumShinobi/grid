@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change = LIGHTHOUSE
+|image          = ElGordoLighthouse-GTAV.jpg
+|games          = {{games|V=y|O=y}}
+|location       = [[Mount Gordo]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|pscanner       = 
+|map            = <gallery>
+ElGordoLighthouse-IngameGPS-GTAV-Map.png|El Gordo Lighthouse
+ElGordoLighthouse-IngameGPS-GTAV-BlaineCountyMap.png|Blaine County
+</gallery>
+|map_caption    = Location on the map (in-game GPS).
+}}
+
+[[LEAD]]
+'''El Gordo Lighthouse''' is a small settlement in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located along the east coast of [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[CATEGORIES]]
+Building zones
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Lighthouses

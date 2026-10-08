@@ -1,0 +1,15 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Golden Buns Bakery
+|image = GoldenBunsBakery-GTAV.png
+|type = Bakery
+|games = {{Games|V=y|O=y}}
+|locations = [[Duluoz Avenue]] and [[Paleto Boulevard]], [[Paleto Bay]], [[Blaine County]]
+}}
+
+[[LEAD]]
+'''Golden Buns Bakery''' is a bakery in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

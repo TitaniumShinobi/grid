@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{infobox business|
+|image = Alfonzo'sAppliances-GTAV-Strawberry-exterior.jpg
+|size = 300x300px
+|game_1 = GTA V
+|name = Alfonzo's Appliances
+|type = Appliance store
+|owner = 
+|location = [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA III Era|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Alfonzo's Appliances''' is an appliance store on [[Strawberry Ave]] in [[Strawberry]], [[Los Santos in GTA V|Los Santos]] appearing in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

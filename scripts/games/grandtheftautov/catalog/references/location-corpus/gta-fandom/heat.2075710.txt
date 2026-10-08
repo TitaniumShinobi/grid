@@ -1,0 +1,37 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Heat
+|image = Heat-Logo 3.png
+|caption = Logo in [[2008]] and [[2013]].
+|oldlogo1 = 
+|oldcaption1 = 
+|type = Clothing Company
+|taglines = "''Feel the Burn''"<br>"''Break the Rules''"
+|games = ''[[Grand Theft Auto: San Andreas]]<br>[[Grand Theft Auto: Liberty City Stories]]<br>[[Grand Theft Auto IV]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Alta]], [[Los Santos (HD Universe)|Los Santos]]<br>[[Del Perro]], Los Santos<br>[[Little Seoul]], Los Santos
+|reference = {{WP|Adidas|Adidas}}<br>{{WP|Nike, Inc.|Nike}}<br>{{WP|Puma SE|Puma}}
+}}
+
+[[LEAD]]
+'''Heat''' is a sportswear clothing company featured in ''[[Grand Theft Auto: San Andreas]]'', ''[[Grand Theft Auto IV]]'', ''[[Grand Theft Auto V]]'', and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Grand Theft Auto Online'']]
+<gallery position="center" spacing="small" hideaddbutton="true" widths="270px">
+Heat-GTAVe-ProsperityStreetPromenade.png|[[Prosperity Street Promenade]], [[Del Perro]]. Based on the former {{WP|Puma (brand)|Puma}} store in {{WP|Santa Monica, California|Santa Monica}}, California.
+Heat-GTAV-DelPerroStore.jpg|The Prosperity Streetv Promenade location in the original version of ''[[Grand Theft Auto V]]''.
+Heat-GTAV-Alta.jpg|[[Hawick Avenue]] and [[Alta Place]], [[Alta]].
+Heat-GTAV-KoreanPlaza.jpg|[[Korean Plaza]], [[Calais Avenue]], [[Little Seoul]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Clothing in GTA Online
+Clothing in GTA V
+Clothing store chains
+Fashion brands

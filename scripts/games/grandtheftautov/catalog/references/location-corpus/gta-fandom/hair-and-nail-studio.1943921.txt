@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Hair and Nail Studio
+|image     = HairandNailStudio-GTAV-Logo.png
+|caption   = '''Hair and Nail Studio''' logo.
+|taglines  = 
+|type      = Salon
+|games     = {{Games|V=y|O=y}}
+|locations = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Hair and Nail Studio''' is a salon in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Salons

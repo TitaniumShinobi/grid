@@ -1,0 +1,118 @@
+[[INFOBOX]]
+{{Infobox_location
+|miscplace = y
+|miscplacename = CITY
+|image = DelPerro-GTAV-Montage.png
+|caption = Clockwise from top: overview of Del Perro, [[Del Perro Beach]], [[Prosperity Street Promenade]], [[Del Perro Pier]] at night, [[Route 1|Great Ocean Highway]].
+|mayor = Unknown
+|pop = Unknown
+|established = 
+|location = [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|country = [[United States of America]]
+|games = {{Games|V=y|O=y}}
+|pscanner       = PoliceScanner-GTAV-Neighborhood-DelPerro.ogg
+|map           = <gallery>
+DelPerro-IngameGPS-GTAV-Map.png|Del Perro
+DelPerro-IngameGPS-GTAV-LosSantosMap.png|Los Santos
+</gallery>
+|map_caption   = Location on the map (in-game GPS). The neighborhood of <font color=red>Del Perro</font>: <font color=green>Del Perro Beach</font>. The <font color=blue>small area</font> is {{H:title|Referred simply as San Andreas in the radar|unnamed}}.
+}}
+
+[[LEAD]]
+'''Del Perro''' is an incorporated affluent city featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Los Santos County]], [[State of San Andreas (HD Universe)|San Andreas]]. It is bordered by [[Pacific Bluffs]] and [[Morningwood]] to the north, [[Rockford Hills]] to the east and [[Vespucci]] to the south.
+
+[[SECTION:2:Places of Interest]]
+*[[0069 Cougar Avenue]]
+*[[1115 Boulevard Del Perro]]
+*[[1237 Prosperity Street]]
+*[[Bluff Tower]] (Wilshire Palisades)
+*[[Clock Tower Building]] (Bay Cities Guaranty Building)
+*[[Del Perro Beach]] ({{WP|Santa Monica Beach}})
+*[[Del Perro Beach Lifeguard Station]] (Santa Monica Coast Guard Station)
+*[[Del Perro City Hall]] (Santa Monica City Hall)
+*[[Del Perro Heights]] (233 Wilshire)
+*[[Del Perro Parking Garage]]
+*[[Del Perro Pier]] ({{WP|Santa Monica Pier}})
+*[[Del Perro Pier Beach Maintenance Department]]
+*[[Del Perro Plaza]] (Portofino Plaza)
+*[[Del Perro Police Station|Del Perro Police Station ]](Santa Monica Police Station)
+*[[Pleasure Pier]] ({{WP|Pacific Park}})
+*[[Prosperity Street Promenade]]
+
+[[SECTION:2:Businesses]]
+*[[Astro Theaters]] (AMC Santa Monica Theatre)
+*[[Bahama Mamas|Bahama Mamas West]] (Barnes & Noble Booksellers)
+*[[Banner Hotel & Spa]] (Fairmont Miramar Hotel)
+*[[The Beachfront Market]]
+*[[Bean Machine]] (Promenade Cafe)
+*[[Cool Beans]]
+*[[Crown Jewel Motel]]
+*[[Del Perro Gifts]]
+*[[Del Perro Pier Food Market]]
+*[[Del Perro Pier Surf 'N' Stuff]]
+*[[Del Perro Plaza (restaurant)|Del Perro Plaza Restaurant]] (Santa Monica Food Plaza)
+*[[Derriere]] ({{WP|Victoria's Secret}})
+*[[Didier Sachs (HD Universe)|Didier Sachs]] ({{WP|Armani Exchange}})
+*[[Dionysia Theatre]] (Criterion Theater)
+*[[Double Denim]] ({{WP|United Colors of Benetton}})
+*[[Dune-O's Beach Cafe]] (Big Dean's Muscle In Cafe)
+*[[The Fish Net|The Fish Net Restaurant]] (Van Tilburg Building)
+*[[The Grain of Truth]]
+*[[Haute]]
+*[[Hayes Auto Body Shop]]
+*[[Heat]] ({{WP|Puma SE|Puma}})
+*[[Hedera Hotel]] (The Georgian Hotel)
+*[[Heroin Chic]] ({{WP|Mango (clothing)|Mango}}/{{WP|Apple Inc.|Apple}} stores)
+*[[Hung Drawn & Quarters]] (Playland Arcade)
+*[[Lârss & Elbö]] (Pascal Mouawad)
+*[[Les Bianco]]
+*[[Lettuce Be]] ({{WP|Starbucks|Starbucks Coffee}})
+*[[Lézard]] (Hard Tails)
+*[[Limey's Juice and Smoothies]] (Cafe Bellagio)
+*[[Lombank West]] (100 Wilshire)
+*[[Los Santos Style]]
+*[[Maze Bank]] (First Federal Bank of California)
+*[[Miss T]] ({{WP|Banana Republic}})
+*[[Nutsaki]] (Trastevere)
+*[[Peckerwood]] ({{WP|Urban Outfitters}})
+*[[Perrera Beach Motel]] (Pacific Sands Motel)
+*[[Pescado Rojo]] (Paseo Del Mar)
+*[[Pharaoh Cosmetics]] ({{WP|Sephora}})
+*[[Ranch (HD Universe)|Ranch]] ({{WP|Miss Sixty}})
+*[[Scarper]] (Sunglass Hut)
+*[[Spines Bookshop]] ({{WP|Borders Group|Borders Book & Music}})
+*[[Sub Urban (HD Universe)|SubUrban]]
+*[[Sumac Restaurant]] (Ivy at the Shore)
+*[[Swallow]] ({{WP|Sur La Table|Sur La Table Store}})
+*[[Taco Bomb]] (Gaucho Grill)
+*Tree Tops
+*[[Universal Uniform]]
+*[[Vinewood Pawn & Jewelry]]
+*[[Von Crastenburg Hotel]] (Ocean Towers)
+*[[White Widow]]
+*[[ZIP (HD Universe)|ZIP]] ({{WP|Barnes & Nobel|Barnes & Noble Booksellers}})
+
+[[SECTION:2:Roads and Streets]]
+*[[Bay City Avenue]]
+*[[Boulevard Del Perro]]
+*[[Eastbourne Way]]
+*[[Equality Way]]
+*[[Great Ocean Highway]]
+*[[Hawick Avenue]]
+*[[Liberty Street]]
+*[[Magellan Avenue]]
+*[[Marathon Avenue]]
+*[[North Rockford Drive]]
+*[[Playa Vista]]
+*[[Prosperity Street]]
+*[[Prosperity Street Promenade]]
+*[[Red Desert Avenue]]
+*[[San Andreas Avenue]]
+*[[Sandcastle Way]]
+
+[[CATEGORIES]]
+Cities
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones

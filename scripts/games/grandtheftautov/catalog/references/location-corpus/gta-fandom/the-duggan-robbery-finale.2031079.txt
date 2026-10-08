@@ -1,0 +1,43 @@
+[[INFOBOX]]
+{{Infobox mission
+|Name Change  = SALVAGE YARD ROBBERY
+|name         = The Duggan Robbery
+|image        = TheDugganRobbery-GTAOe-Finale-Infobox.png
+|location     = [[Salvage Yards]] <small>(Start/End)</small><br/>[[Maze Bank Arena]]
+|game           = {{Games|O=y}}
+|type           = mp2023_02
+|fail         = *Target vehicle is destroyed.
+*[[Trailer (LS Panic)|LS Panic Trailer]] is destroyed.
+*[[Hao]] is killed.
+|for          = {{For|game=O|salvageyardrobbery}}
+|unlockedby   = *Purchasing a [[Salvage Yard]].
+*Completing all required [[The Duggan Robbery|preparations]].
+|todo = *Go to {{Color|v-hud-location|La Puerta.}}
+*Enter the {{Color|v-hud-friendly|LS Panic trailer.}}
+*Take the LS Panic trailer to the {{Color|v-hud-location|arena.}}
+*Enter the {{Color|v-hud-location|arena.}}
+*Show the VIP pass to the {{Color|v-hud-friendly|guard.}}
+*Access the {{Color|v-hud-pickup|elevator.}}
+*Take out the {{Color|v-hud-enemy|Duggans.}}
+*Look through a {{Color|v-hud-pickup|telescope.}}
+*Locate the [target vehicle].
+*Disable the [target vehicle] with a {{Color|v-hud-pickup|drone.}}
+*Disable the {{Color|v-hud-friendly|[target vehicle].}}
+*Go down to the {{Color|v-hud-location|pit lane.}}
+*Steal the {{Color|v-hud-friendly|[target vehicle].}}
+*Install the bypass module.
+*Wait for the bypass module to install.
+*Exit the {{Color|v-hud-location|arena.}}
+*Take the [target vehicle] to {{Color|v-hud-location|Hao.}}
+*Deliver the [target vehicle] to the {{Color|v-hud-location|Salvage Yard.}}
+|protagonists = *1 to 4 [[GTA Online Protagonist|players]]
+|reward = Vehicle-dependent
+The LS Panic outfit
+|target = [[Salvage Yard Robberies#Target Vehicles|Target Vehicle]]
+|tod=12:00}}
+
+[[LEAD]]
+'''The Duggan Robbery''' is a [[Salvage Yard Robberies|Salvage Yard Robbery]] featured in {{O}} as part of [[GTA Online: The Chop Shop|The Chop Shop]] update.
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Chop Shop

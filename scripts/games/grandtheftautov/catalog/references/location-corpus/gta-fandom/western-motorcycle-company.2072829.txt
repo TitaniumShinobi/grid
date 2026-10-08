@@ -1,0 +1,46 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = vehicles
+|name          = Western Motorcycle Company
+|image_label   = O
+|image         = WMC-GTAO-2021Logo.png
+|caption       = [[2021]]–present logo in {{O}}.
+|image_label2  = V
+|image2        = WMC-GTAO-Logo.png
+|caption2      = [[2014]]–[[2021]] logo.
+|image_label3  = IV
+|image3        = WMC.png
+|caption3      = Pre-[[2014]] logo.
+|aka           = 
+|games         = {{games|IV=y|EFLC=y|CW=y|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+|business_type = Motorcycle manufacturer
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = [[Western Company]]
+|employees     = 
+|products      = [[#Vehicles|Vehicles]]
+|vehicles      = 
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+}}
+
+[[LEAD]]
+'''Western Motorcycle Company''' is an [[United States of America|American]] motorcycle manufacturer in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Motorcycle Brands
+Subsidiary companies
+Vehicle manufacturers

@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|image     = AttackATaco-GTAV-Logo.png
+|type      = Taco restaurant
+|games     = {{Games|V=y|O=y}}
+|locations = [[Davis]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|taglines  = ''"Kill that hunger"''
+}}
+
+[[LEAD]]
+'''Attack-a-Taco''' is a [[Mexico|Mexican]] restaurant in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Fast-food restaurant chains

@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Tire Nutz
+|image     = TireNutz-GTAV.jpg
+|caption   = '''Tire Nutz'''
+|taglines  = 
+|type      = Auto Repair Shop
+|games     = {{Games|V=y|O=y}}
+|locations = [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Tire Nutz''' is an auto repair shop in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Mod shops

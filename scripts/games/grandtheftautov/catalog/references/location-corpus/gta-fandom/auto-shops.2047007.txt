@@ -1,0 +1,86 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|image = AutoShops-GTAO.gif
+|style = {{HUDIcons|game=O|autoshopproperty|animated=y}} Auto Shop
+|occupants = 
+[[Sessanta]] <small>(mechanic)</small><br>
+[[GTA Online Protagonist|''GTA Online'' Protagonist]]<br>
+Unnamed male staff member <small>(determinant)</small><br>
+Unnamed female staff member <small>(determinant)</small><br>
+[[Motorcycle Clubs]] <small>(determinant)</small><br>
+[[Organizations]] <small>(determinant)</small>
+|price = [[Money|$]]1,670,000 - $4,472,000
+|game = O
+}}
+
+[[LEAD]]
+'''Auto Shops''' are purchasable properties in ''[[Grand Theft Auto Online]]'' added in the [[GTA Online: Los Santos Tuners|Los Santos Tuners]] update.
+
+[[SECTION:3:Shop Floor]]
+The main work area where customer cars are delivered over time, which are placed in a hydraulic lift near the entrance (plus a second one if the player bought it). Under the stairs, there is some comfortable seating with a small table that the player can interact with to replenish their snacks from a bowl, as well as a free [[Race and Chase (arcade series)|Race and Chase]] arcade game further along the wall if the player logged in during the week Los Santos Tuners came out, which can be changed through the property management on the Interaction Menu. There is an inaccessible spray paint booth on the right where Sessanta's car is stored (though it can be occupied by either [[Lil' Dee]]'s [[Remus]] after completing the planning work [[Planning Work: Inside Man|Inside Man]] for [[The Prison Contract]], or a [[Barrage]] after completing the planning work [[Planning Work: Safehouse Location|Safehouse Location]] for [[The Data Contract]].
+
+[[SECTION:3:Garage]]
+{{Help Text|This garage space can be used for storing Personal Vehicles after completing the Auto Shop setup.}}
+A 10-car garage is provided for storage of the player's [[Personal Vehicles]] to the left of the work area, with the option for customization in a personal shop with a reduced price for all items, as well as free classic paintjobs and [[Crews|Crew emblems/colors]]. As usual, a Vehicle Management [[Corona]] provides access to a keypad which can be used for rearranging personal vehicle parking spaces.
+
+[[SECTION:3:Legitimate repair business]]
+{{Main|Auto Shop Service}}
+Players will occasionally be tasked with repairing and modifying customer cars to their requested specification. Players can then choose to deliver the modified car back to the customer themselves, or send shop staff to do the delivery for them to earn reduced rewards.
+
+Optionally, the player may choose to purchase the customer car for themselves, with any customization options added by the player included. The purchase price for these customer cars were originally purely the stock retail price of the vehicle, making the customizations essentially free. However, with the [[Grand Theft Auto V/Title Update Notes/Update-2022-04-26|1.59]] update to ''[[Grand Theft Auto Online]]'', the customization charges are now included in the purchase price.
+
+[[SECTION:3:Mod Shop]]
+Players can modify their own vehicles in their Auto Shop. Crew Emblems, Classic and Crew paint is free, and other modifications have a 5% discount. All locked modifications are unlocked for the shop owner in their own Auto Shop, but still need to be unlocked to be applied at other modification garages.
+
+They can drive and modify their vehicle only if their garage is not full, otherwise they will need to replace a car in their garage or drive into another player's auto shop.
+
+All player-owned Auto Shops can be accessed by other players, although players can restrict access via the interaction menu. Players can repair and customize their vehicles in another players Auto Shop but don't get the discounted rates. Members of the shop owner's [[Organizations]] or [[Motorcycle Clubs]], or their friends and crew members get their damage repairs for free.
+
+[[SECTION:2:Auto Shops]]
+
+
+[[SECTION:3:Map]]
+<gallery position="center" widths="300" hideaddbutton="true">
+MBF-GTAO-AutoShops-Map.png
+</gallery>
+
+[[SECTION:3:Locations]]
+{| class="wikitable"
+! width="100%" align="center" colspan="5" | Auto Shops
+|-
+! width="15%" |Auto Shop Location
+! width="30%" |Image
+! width="45%" |In-game description
+! width="10%" |Price
+|-
+|[[Mission Row]]
+|[[File:AutoShop-GTAO-MissionRow.png|220px|center]]
+|''We recommend investing in personal quarters to avoid the commute through your "characterful" neighborhood. Law abiding business owners will be pleased to know the police station is within screaming distance. You are law abiding, right?''
+|$1,670,000
+|-
+|[[Strawberry]]
+|[[File:AutoShop-GTAO-Strawberry.png|220px|center]]
+|''"Charming, for Strawberry", "seared into my memory", "I'm physically stunned" are just some of the phrases that appeared on the Flint Autos property evaluation.''
+|$1,705,000
+|-
+|[[Rancho]]
+|[[File:AutoShop-GTAO-Rancho.png|220px|center]]
+|''It's not central, it's not safe, and it's not sanitary. But it's the closest mod shop to the LSCM in all of San Andreas. If you're looking to set up shop next to your target demographic, this right here is your stop.''
+|$1,750,000
+|-
+|[[Burton]]
+|[[File:AutoShop-GTAO-Burton.png|220px|center]]
+|''With good connections to the main roads nearby, this little auto shop packs a lot of potential. It also just happens to be in one of the state's trendiest commercial centers, not that you will have any views of the outside world. Trust us, it's better that way.''
+|$1,830,000
+|-
+|[[La Mesa]]
+|[[File:AutoShop-GTAO-LaMesa.png|220px|center]]
+|''This property boasts immediate access to the highway, which is ideal for desperate drivers with damaged cars who seek shelter from the chaos of La Mesa, or desperate drivers with damaged cars who are responsible for the chaos in La Mesa.''
+|$1,920,000
+|}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Mod shops
+Properties
+Properties in GTA Online

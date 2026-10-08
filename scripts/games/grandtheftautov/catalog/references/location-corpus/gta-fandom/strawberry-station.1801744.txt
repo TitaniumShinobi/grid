@@ -1,0 +1,49 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = gtavsubway
+|type           = subwaystation
+|name           = Strawberry Station
+|sign           = 
+|image          = <gallery>
+StrawberryStation-GTAV-GroundLevel.png|Entrance
+StrawberryStation-GTAV.png|Platform
+</gallery>
+|caption        = '''Strawberry Station''' in ''[[Grand Theft Auto V]]''.
+|aka            = Strawberry
+|games          = {{games|V=y|O=y}}
+|location       = [[Downtown Los Santos]]
+|status         = active
+|pscanner       = 
+|use            = 
+|owner          = 
+|operator       = [[Los Santos Transit]]
+|occupants      = 
+|businesses     = 
+|employees      = 
+|station_type   = Subway station
+|platforms      = 1
+|tracks         = 2
+|lines          = 
+|transfer       = 
+|clockwise      = [[Puerto Del Sol Station]]
+|anticlockwise  = 
+*[[Pillbox North Station]] <small>(closed)</small>
+*[[Burton Station]]
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = <gallery>
+StrawberryStation-GTAV-Map.png|Strawberry Station
+StrawberryStation-GTAV-LSTMap.png|LST Map
+</gallery>
+|map_caption    = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+}}
+
+[[LEAD]]
+'''Strawberry Station''' is a [[Los Santos Transit]] station in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos
+Subway stations

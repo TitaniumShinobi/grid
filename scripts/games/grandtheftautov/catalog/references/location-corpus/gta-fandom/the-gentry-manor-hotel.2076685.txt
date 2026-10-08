@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|name = The Gentry Manor Hotel
+|sign = GentryManorHotel-GTAV-Logo.png
+|image = GentryManorHotel-GTAV.png
+|caption = '''The Gentry Manor Hotel''' in {{VO}}.
+|opened = [[1921]]
+|type = hotel
+|games = {{Games|V=y|O=y}}
+|location = [[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''The Gentry Manor Hotel''' is a luxury hotel featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Hotels
+Landmarks

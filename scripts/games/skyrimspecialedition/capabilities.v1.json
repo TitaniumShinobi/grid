@@ -6,7 +6,8 @@
     "gameId": "skyrimspecialedition"
   },
   "supportingFiles": [
-    "scripts/games/skyrimspecialedition/health/tool-registry.v1.json",
+    "scripts/games/skyrimspecialedition/discovery.steam.v1.json",
+    "scripts/games/skyrimspecialedition/health/tool-registry.v2.json",
     "scripts/games/skyrimspecialedition/health/adapter.psd1",
     "scripts/games/skyrimspecialedition/health/collectors/Resolve-GridSkyrimRequestToolInputs.ps1",
     "scripts/games/skyrimspecialedition/health/collectors/Resolve-GridSkyrimPlacedActorReference.ps1",
@@ -20,6 +21,7 @@
     "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedEslFlag.ps1",
     "scripts/games/skyrimspecialedition/health/actions/Invoke-GridAuthorizedEslFlagHistory.ps1",
     "scripts/games/skyrimspecialedition/mo2/Grid.EslFlag.ps1",
+    "scripts/games/skyrimspecialedition/mo2/Get-GridMo2PluginActivationReconciliation.ps1",
     "scripts/games/skyrimspecialedition/health/collectors/Select-GridSkyrimRecordCatalogTargets.ps1",
     "scripts/games/skyrimspecialedition/health/actions/Resolve-GridSkyrimNexusSourceIdentity.ps1",
     "scripts/games/skyrimspecialedition/health/schemas/papyrus-state-evidence.v1.schema.json",

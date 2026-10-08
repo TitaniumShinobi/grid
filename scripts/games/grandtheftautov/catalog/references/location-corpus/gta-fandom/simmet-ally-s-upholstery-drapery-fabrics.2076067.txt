@@ -1,0 +1,31 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change    = TEXTILE STORE CHAIN
+|type           =  
+|name           = Simmet Ally's Upholstery & Drapery Fabrics 
+|sign           = 
+|image          = SimmetAllys-GTAV-Logo.png
+|caption        = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Textile City]], [[Los Santos (HD Universe)|Los Santos]]
+|established    =
+|taglines       =
+|status         = active
+|phone          = 
+|accessible     = No
+}}
+
+[[LEAD]]
+'''Simmet Ally's Upholstery & Drapery Fabrics''' is a chain of textile stores appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+SimmetAllys-GTAVee-SimmetAlleyStore1.png|[[Simmet Alley]], [[Textile City]], [[Los Santos (HD Universe)|Los Santos]].
+SimmetAllys-GTAVee-SimmetAlleyStore2.png|Second store on Simmet Alley.
+SimmetAllys-GTAVee-SinnerStreet.png|[[Sinner Street]], Textile City, Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Stores

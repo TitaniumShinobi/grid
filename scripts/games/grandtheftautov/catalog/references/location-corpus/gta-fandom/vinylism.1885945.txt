@@ -1,0 +1,58 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = music
+|name          = Vinylism
+|sign          = Vinylism-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{games|V=y|O=y|VI=y}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+*[[Hamlet]], [[State of Leonida|Leonida]]
+([[#Locations_2|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|taglines      = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|opentimes     = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Vinylism''' is a record store chain that appears in {{V}} and {{O}}, and is due to appear in {{VI}}.
+
+[[SECTION:3:Locations]]
+
+
+[[SECTION:4:''Grand Theft Auto V'' and ''Online'']]
+*The commercial building where the [[Hawick Avenue]] location is situated is based on {{URL|https://maps.app.goo.gl/QEyPYNbR9vf5xQdk8|7600 Melrose Avenue}} in {{WP|West Hollywood, California}}.
+
+[[SECTION:4:''Grand Theft Auto VI'']]
+*The structure containing the [[Hamlet]] outlet in the [[Grand Theft Auto VI/Leaks#September_2022|September 2022 ''GTA VI'' leaks]] is a rendition of {{URL|https://maps.app.goo.gl/dR6ZcbN3KppshRjTA|123 North Krome Avenue}} in {{WP|Homestead, Florida}}.
+
+{{clr}}
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''Grand Theft Auto V'' and ''Online'']]
+<gallery position="center" bordercolor="#32a6d9" spacing="small" widths="270px">
+Vinylism-GTAV-Hawick.png|[[Hawick Avenue]], [[Hawick]], [[Los Santos (HD Universe)|Los Santos]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Music store chains

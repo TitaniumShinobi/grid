@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox structure
+|name        = Capital Boulevard
+|image       = 
+<gallery>
+CapitalBoulevard-GTAVee-East.jpg|East
+CapitalBoulevard-GTAVee-West.jpg|West
+</gallery>
+|games       = {{Games|V=y|O=y}}
+|start       = [[El Rancho Boulevard]], [[El Burro Heights]]
+|end         = [[Strawberry Avenue]], [[Strawberry]]
+|map         =
+<gallery>
+CapitalBoulevard-GTAV-Map.png|Map
+CapitalBoulevard-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Capital Boulevard''' is a street in [[Los Santos (HD Universe)|Los Santos]] featured in {{V}} and {{O}}.
+
+[[SECTION:2:Places of Interest]]
+*[[Central Los Santos Medical Center]] {{Small|(corner of [[Crusade Road]])}}
+*Central Los Santos Medical Center Parking {{Small|(corner of Crusade Road)}}
+*[[El Burro Heights Fire Station]]
+*[[Los Santos County Coroner Office]]
+*[[St. Fiacre Hospital]]
+
+[[SECTION:2:Businesses]]
+*[[AGL Refrigerated Storage Inc.]] {{Small|(corner of [[Little Bighorn Avenue]])}}
+*[[Bert's Tool Supply Co.]] {{Small|(corner of Crusade Road)}}
+*[[Discount Carpet Center]]
+*[[Los Santos Bag Co.]] {{Small|(corner of [[Popular Street]])}}
+*[[LT Weld Supply Co.]]
+*[[Panache Laundering]]
+*[[RON]] [[Filling Stations|filling station]] {{Small|(corner of [[El Rancho Boulevard]])}}
+*[[San An Taqueria]]
+*[[Stacey's Flower Emporium]]
+*[[Thorns]]
+*[[Tits N Bobs]]
+*[[Xero]] filling station {{Small|(corner of [[Strawberry Avenue]])}}
+
+[[CATEGORIES]]
+Boulevards
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

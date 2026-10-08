@@ -1,0 +1,28 @@
+[[INFOBOX]]
+{{Infobox structure
+|Name Change       = HIGHWAY
+|name              = Senora Freeway
+|number            = 
+|caption2          = 
+|image             = Senora_Freeway.jpg
+|caption           = Senora Freeway going north from [[Route 68]]
+|games             = {{Games|V=y|O=y}}
+|highway_northend  = [[Great Ocean Highway]]
+|highway_southend  = [[Los Santos Freeway (HD Universe)|Los Santos Freeway]]<br/>[[Palomino Freeway]]
+|highway_junctions = 
+|pscanner    = 
+|map         = 
+|mapcaption  = Location on the map (red) in ''[[Grand Theft Auto V]]''.
+|altnames    = 
+}}
+
+[[LEAD]]
+The '''Senora Freeway''' ([[U.S. Route 1]] and [[U.S. Route 13]]) is a freeway in {{V}} and {{O}} that runs through [[Los Santos County]] and [[Blaine County]] in [[State of San Andreas (HD Universe)|San Andreas]]. Its southern end is at the meeting of the two freeways, the [[Los Santos Freeway (HD Universe)|Los Santos Freeway]] and the [[Palomino Freeway]] in the northeastern part of [[Los Santos (HD Universe)|Los Santos]] and travels north until reaching [[Dignity Village]], where it becomes the [[Great Ocean Highway]].
+
+[[CATEGORIES]]
+Freeways
+Highways
+Locations in GTA Online in Blaine County
+Locations in GTA Online in Los Santos County
+Locations in GTA V in Blaine County
+Locations in GTA V in Los Santos County

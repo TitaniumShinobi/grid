@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{infobox business|
+|name = Brouge Iron Works Inc
+|image = 
+|size = 350px
+|caption = 
+|game_1 = GTA V
+|game_2 = GTA Online
+|type = [[:wp:Ironworks|Iron works]]
+|owner = 
+|location = [[Brouge Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]]
+|affiliation = 
+|missions = 
+|employee = 
+}}
+
+[[LEAD]]
+'''Brouge Iron Works Inc''' is an [[:wp:Ironworks|iron works]] located on [[Brouge Ave]] in [[Davis]], [[Los Santos in GTA V|Los Santos]], which appears in [[Grand Theft Auto V]] and [[Grand Theft Auto Online]].
+
+[[CATEGORIES]]
+Businesses in GTA V
+Businesses in Los Santos in GTA V

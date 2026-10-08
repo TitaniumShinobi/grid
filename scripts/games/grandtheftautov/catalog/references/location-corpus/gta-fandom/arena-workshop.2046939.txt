@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox safehouse
+|image = [[File:ArenaWorkshop-GTAO-Overview.png]]
+|style = 
+|occupants = 
+[[GTA Online Protagonist|''GTA Online'' Protagonist]]<br>
+[[Motorcycle Clubs]] <small>(determinant)</small><br>
+[[Organizations]] <small>(determinant)</small>
+|price = [[Money|$]]995,000 - $4,365,000
+|game  = O
+}}
+
+[[LEAD]]
+The '''Arena Workshop''' is a purchasable property featured in ''[[Grand Theft Auto Online]]'' as part of the [[GTA Online: Arena War|Arena War]] update.
+
+[[CATEGORIES]]
+Properties
+Properties in GTA Online

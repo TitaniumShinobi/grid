@@ -1,0 +1,16 @@
+[[INFOBOX]]
+{{Infobox business
+|name = Mug Shots
+|sign = MugShots-GTAV-Logo.png
+|type = Photo booth.
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = [[Pleasure Pier]], [[Del Perro Pier]], [[Los Santos (HD Universe)|Los Santos]].
+|taglines=''"Your face on a mug!"''
+}}
+
+[[LEAD]]
+'''Mug Shots''' is a photo booth appearing in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V

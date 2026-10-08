@@ -1,0 +1,38 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = vehicleparts
+|name          = Halt
+|sign          = 
+|image_label   = 
+|image         = Halt-GTAO-LSTunersBanner.png
+|caption       = '''Halt''' banner seen inside [[Auto Shops]] with the [[Auto Shops/Indoor Decorations#"Undressed" Style|Undressed]] interior style equipped in {{O}}.
+|image_label2  = 
+|image2        = 
+|caption2      = 
+|aka           = 
+|games         = {{Games|O={{EEEV}} {{DLC|mptuner}}|VI=y}}
+|business_type = Brakes and brake fluids
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = 
+|products      = 
+|vehicles      = 
+|taglines      = "''Grind to a Halt''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|snapmatic     = 
+}}
+
+[[LEAD]]
+'''Halt''' is a [[Germany|German]] brake systems company appearing in {{O}} as part of the [[GTA Online: Los Santos Tuners|Los Santos Tuners]] update, and due to appear in {{VI}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online: Los Santos Tuners
+Businesses in GTA VI
+Vehicle parts manufacturers

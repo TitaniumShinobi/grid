@@ -1,0 +1,35 @@
+[[INFOBOX]]
+{{Infobox mission
+|name         = Department of Defense
+|image        = DepartmentofDefense-GTAO-Thumbnail.png
+|location     = 
+*[[The Diamond Casino & Resort]], [[East Vinewood]]
+*Various
+|game         = {{Games|O=y}}
+|type         = CasinoWork
+|fail         = 
+|for          = [[Agatha Baker]]
+|unlockedby   = 
+*Purchasing the [[Master Penthouse]].
+|tod = 
+|protagonists = 
+*1 to 4 [[GTA Online Protagonist|players]] {{Small|([[Organizations|Organization]])}}
+*1 to 8 players {{Small|([[Motorcycle Clubs|Motorcycle Club]])}}
+|todo         = 
+*Go to the <span class="v-hud-location">Casino</span>.
+*Take out the <span class="v-hud-enemy">Professional Crew</span>.
+*Tail the <span class="v-hud-friendly">Speedo</span>.
+*Take out the <span class="v-hud-enemy">leader</span>.
+*Take out the remaining <span class="v-hud-enemy">crew members</span>. {{Small|(if any)}}
+|reward       = 
+*[[Money|Cash]]
+*[[Chips]]
+*[[Reputation|RP]]
+|target       = Mercenaries
+}}
+
+[[LEAD]]
+'''Department of Defense''' was a [[Casino Work]] mission featured in {{O}} as part of [[GTA Online: The Diamond Casino & Resort|The Diamond Casino & Resort]] update. It was a freeroam mission given to the player by [[Agatha Baker]]. The event was removed with [[GTA Online: The Cayo Perico Heist|The Cayo Perico Heist]] update, likely due to its location interfering with [[The Music Locker]] entrance.
+
+[[CATEGORIES]]
+Gameplay in GTA Online: The Diamond Casino & Resort

@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox location
+|business = y
+|activebiz = y
+|shop = y
+|miscshop = y
+|miscshopname = LIQUOR
+|name = Vinewood Liquor
+|image = VinewoodLiquor-GTAV-Thumbnail.jpg
+|type = Liquor Store
+|games = {{Games|V=y|O=y}}
+|location = [[Vinewood Boulevard (HD Universe)|Vinewood Boulevard]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Vinewood Liquor''' is a liquor store in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Liquor stores
+Stores

@@ -1,0 +1,34 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|type          = alcohol
+|name          = Pride Brew
+|sign          = PrideBrew-GTAV-Logo.png
+|aka           = 
+|games         = {{Games|IV=y|EFLC=y|CW=y|V=y|O=y}}
+|mentioned     = 
+|business_type = {{WP|Lager}}
+|founded       = 
+|founder       = 
+|products      = 
+|taglines      = 
+*"''Swallow Me''"
+*"''Fa Di Dreaded Bredren''"
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+}}
+
+[[LEAD]]
+'''Pride Brew''' is a brand of [[Jamaica]]n beer appearing in the {{HD}} of the {{S}}.
+
+[[CATEGORIES]]
+Alcohol brands
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA V

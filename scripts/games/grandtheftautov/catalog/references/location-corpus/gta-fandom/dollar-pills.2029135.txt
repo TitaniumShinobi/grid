@@ -1,0 +1,27 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Dollar Pills
+|image     = DollarPillsLogo-GTAV.png
+|games     = {{Games|V=y|O=y}}
+|lcn       = {{BAWSAQ/Slider}} '''DOP'''
+|type      = Pharmacy brand
+|locations = [[Strawberry Avenue]], [[Strawberry]]<br>[[Hawick Avenue]], [[Alta]]<br>[[Route 68]], [[Harmony]]
+}}
+
+[[LEAD]]
+'''Dollar Pills''' is a pharmacy, grocery and drug store chain featured in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. It also offers a 24-hour photo service. The player can buy stocks from them at the [[Lcn-exchange.com]] website. Most likely Dollar Pills is selling medicaments at low prices.
+
+[[SECTION:3:Locations]]
+*The [[Harmony]] and [[Strawberry]] branches are renditions of a former Rite Aid branch located at {{URL|https://maps.app.goo.gl/YpCoAb7sSPt9z1KKA|3566 Rodeo Place}} in the {{WP|Crenshaw, Los Angeles|Crenshaw District}} of {{WP|Los Angeles}}, {{WP|California}}, which has since been demolished.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small" widths="270px">
+DollarPills-GTAV-SouthLS.png|[[Strawberry Plaza]], [[Strawberry Avenue]], [[Strawberry]], [[Los Santos (HD Universe)|Los Santos]].
+HarmonyPlaza-GTAV-DollarPills.png|[[Harmony Plaza]], [[Route 68]], [[Harmony]], [[Blaine County]].
+DollarPills-GTAVee-Alta.jpg|[[Echo Rock Shopping Plaza]], [[Hawick Avenue]], [[Alta]], Los Santos.
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pharmacy chains

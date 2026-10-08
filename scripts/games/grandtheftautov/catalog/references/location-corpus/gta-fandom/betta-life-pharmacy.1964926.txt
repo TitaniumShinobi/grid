@@ -1,0 +1,54 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|type          = pharmacy
+|name          = Betta Life Pharmacy
+|sign          = BettaLifePharmacy-GTAV-MirrorPark-Logo-Texture.png
+|image         = 
+|caption       = 
+|oldlogo1      = 
+|oldcaption1   = 
+|aka           = 
+|games         = {{games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|owner         = [[Betta Pharmaceuticals]]
+|employees     = 
+|products      = [[Betta Pharmaceuticals#Products|Pharmaceuticals]]
+|vehicles      =
+|weapons       = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = 
+|status        = active
+|phone         = 
+|email         = 
+|website       = 
+|bleeter       = 
+|lifeinvader   = 
+|opentimes     = 
+|accessible    = No
+}}
+
+[[LEAD]]
+'''Betta Life Pharmacy''' is the pharmacy chain division of [[Betta Pharmaceuticals]], appearing in {{V}} and {{O}}.
+
+[[SECTION:2:Locations]]
+<gallery position="center" bordercolor="#c51f1f" spacing="small" widths="270px">
+BettaLife-GTAV-WestVinewood.jpg|[[South Mo Milton Drive]] and [[Eclipse Boulevard]], [[West Vinewood]].
+BettaLife-GTAV-KoreanPlaza.png|[[Korean Plaza]], [[Calais Avenue]], [[Little Seoul]].
+BettaLifePharmacy-GTAV-MirrorPark.png|[[Mirror Park Boulevard]] and [[Nikola Avenue]], [[Mirror Park]]. <small>(closed down)</small>
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pharmacy chains
+Subsidiary companies

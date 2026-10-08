@@ -1,0 +1,381 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = Ammu-Nation
+|image       = AmmuNation-GTAOe-Logo.png
+|taglines    = 
+*"''Order the protection you need''" {{Small|(''GTA Chinatown Wars'')}}
+*"''Where would America be if you needed a permit to live!''"
+*"''Protecting your rights''" 
+|type        = weaponstore
+|founded     = Late 1950s/Early 1960s
+|games       = {{Games|CW=y|V=y|O=y|VI=y}}
+|locations   =
+*[[State of San Andreas (HD Universe)|State of San Andreas]]
+*[[Ludendorff]], [[State of North Yankton|North Yankton]]
+*[[State of Leonida]]
+([[#Locations|See more]])
+|phone       = 19999327667
+|website     = [[AmmuNation.net]]
+|bawsaq      = {{BAWSAQ/Slider}} '''AMU'''
+|lifeinvader = [[Lifeinvader/AmmuNation|AmmuNation]] [[File:Lifeinvader-GTAV-AmmuNation.png|40px|right|link=Lifeinvader/AmmuNation]]
+|employees   =
+*[[Melvin]]
+*[[Phil (GTA VI)|Phil]]
+|status      = active
+}}
+
+[[LEAD]]
+'''Ammu-Nation''' is a major chain of gun shops in the {{HD}} of the {{S}}.
+
+[[SECTION:4:Locations]]
+<gallery position="center" spacing="small" widths="250px">
+AmmuNation-GTAVe-Downtown.png|[[Adam's Apple Boulevard]] and [[Elgin Avenue]] in [[Downtown Los Santos (HD Universe)|Downtown Los Santos]].
+AmmuNation-GTAVe-LittleSeoul.png|[[Lindsay Circus]] and [[Palomino Avenue]] in [[Little Seoul]].
+AmmuNation-GTAVe-CypressFlats.png|[[Popular Street]] in [[Cypress Flats]], [[East Los Santos (HD Universe)|East Los Santos]].
+AmmuNation-GTAVe-TataviamMountains.png|[[Tataviam Truckstop]], in the [[Tataviam Mountains]].
+AmmuNation-GTAVe-PaletoBay.png|[[Paleto Bay]].
+AmmuNation-GTAVe-GreatChaparral.png|[[Great Chaparral]].
+AmmuNation-GTAVe-SandyShores.png|[[Algonquin Boulevard]], [[Sandy Shores]].
+AmmuNation-GTAVe-Morningwood.png|[[Boulevard Del Perro]], [[Morningwood]].
+AmmuNation-GTAVe-Hawick.png|[[Vinewood Plaza]], [[Spanish Avenue]], [[Hawick]].
+AmmuNation-GTAVe-LaMesa.png|[[Vespucci Boulevard|325 Vespucci Boulevard]] in [[La Mesa]].
+AmmuNation-GTAVe-Chumash.png|[[Chumash Plaza]], [[Great Ocean Highway]], [[Chumash]].
+</gallery>
+
+{| class="wikitable" style="vertical-align:top;" valign="top"
+!Type of Weapon
+!Weapon
+!Cost
+!Rounds
+!Available after:
+!Update/DLC required:
+|-
+| rowspan="8" |[[Melee Weapons|Melee]]
+|[[Knife]]
+|$100
+|None
+|[[Franklin and Lamar]]
+|None
+|-
+|[[Nightstick]]
+|$250
+|None
+|[[I Fought the Law...]]
+|None
+|-
+|[[Hammer]]
+|Free / $500
+|None
+|Franklin and Lamar / [[Repossession]]
+|[[Grand Theft Auto V/Editions|Special/Collector's Edition]]<br>[[Grand Theft Auto V: Enhanced Edition|Enhanced Version]]
+|-
+|[[Bottle|Broken Bottle]]
+|Free / $300
+|None
+|Franklin and Lamar / Repossession
+|[[Beach Bum Update]]
+|-
+|[[Antique Cavalry Dagger]]
+|Free / $2,000
+|None
+|Franklin and Lamar / [[Mr. Philips]]
+|[[The "I'm Not a Hipster" Update]]
+|-
+|[[Hatchet]]
+|$750
+|None
+|[[Trevor Philips Industries]]
+|Enhanced Version {{Small|(for returning players)}}
+|-
+|[[Brass Knuckles]]
+|Free / $7,500
+|None
+|Franklin and Lamar / [[Complications]]
+|[[Ill-Gotten Gains Part 2]]
+|-
+|[[Machete]]
+|$8,900
+|None
+|[[Nervous Ron]]
+|[[GTA Online: Lowriders|Lowriders]]
+|-
+| rowspan="10" |[[Handguns]]
+|[[Pistol (HD Universe)|Pistol]]
+|$350
+|12 (16 with extended clip)
+|Franklin and Lamar
+|None
+|-
+|[[Combat Pistol]]
+|$600
+|12 (16 with extended clip)
+|[[Dead Man Walking]]
+|None
+|-
+|[[Pistol .50]]
+|Free / $4,000
+|9 (12 with extended clip)
+|Franklin and Lamar / [[Monkey Business]]
+|Special/Collector's Edition<br>Enhanced Version
+|-
+|[[SNS Pistol]]
+|Free / $2,750
+|6 (12 with extended clip)
+|Franklin and Lamar / Repossession
+|Beach Bum Update
+|-
+|[[Heavy Pistol]]
+|Free / $3,750
+|18 (36 with extended clip)
+|Franklin and Lamar / Dead Man Walking
+|[[The Business Update]]
+|-
+|[[Vintage Pistol]]
+|Free / $3,450
+|7 (14 with extended clip)
+|Franklin and Lamar / Mr. Philips
+|The "I'm Not a Hipster" Update
+|-
+|[[Marksman Pistol]]
+|Free / $4,350
+|1
+|Franklin and Lamar / [[Mr. Richards]]
+|Ill-Gotten Gains Part 2
+|-
+|[[AP Pistol]]
+|$1,000
+|18 (36 with extended clip)
+|[[Three's Company]]
+|None
+|-
+|[[Flare Gun]]
+|$5,635
+|1
+|N/A (unavailable in ''GTA V'') 
+|[[GTA Online: Heists|Heists]] 
+|-
+|[[Stun Gun]]
+|$100
+|Unlimited
+|Monkey Business
+|None
+|-
+| rowspan="6" |[[Shotguns]]
+|[[Pump Shotgun|Pump Action Shotgun]]
+|$2,000
+|8
+|Repossession
+|None
+|-
+|[[Sawed-Off Shotgun|Sawn-Off Shotgun]]
+|$2,500
+|8
+|Mr. Philips
+|None
+|-
+|[[Assault Shotgun]]
+|$3,000
+|8 (32 with extended clip)
+|[[Blitz Play]]
+|None
+|-
+|[[Bullpup Shotgun]]
+|Free / $1,250
+|14
+|Franklin and Lamar / Blitz Play
+|Special/Collector's Edition<br>Enhanced Version
+|-
+|[[Musket]]
+|Free / $21,400
+|1
+|Franklin and Lamar / Mr. Richards
+|[[The Independence Day Special]]
+|-
+|[[Heavy Shotgun]]
+|Free / $13,550
+|6 (12 with extended clip)
+|Franklin and Lamar / Monkey Business
+|[[The Last Team Standing Update]]
+|-
+| rowspan="8" |Machine Guns
+|[[Micro SMG (HD Universe)|Micro SMG]]
+|$850
+|16 (30 with extended clip)
+|Franklin and Lamar
+|None
+|-
+|[[SMG (HD Universe)|SMG]]
+|$1,300
+|30 (60 with extended clip)
+|Franklin and Lamar
+|None
+|-
+|[[Assault SMG]]
+|Free
+|30 (60 with extended clip)
+|Franklin and Lamar
+|Link [[Rockstar Games Social Club]] account to the game 
+|-
+|[[MG]]
+|$3,000
+|54 (100 with extended clip)
+|[[The Paleto Score]]
+|None
+|-
+|[[Combat MG]]
+|$3,700
+|100 (200 with extended clip)
+|Blitz Play
+|None
+|-
+|[[Tec-9|Machine Pistol]]
+|$6,250
+|12 (20 with extended clip)
+|[[Hood Safari]]
+|Lowriders
+|-
+|[[Gusenberg Sweeper]]
+|Free / $14,600
+|30 (50 with extended clip)
+|Franklin and Lamar / [[Something Sensible]]; [[The Time's Come]]; [[The Third Way]]
+|[[The Valentine's Day Massacre Special]]
+|-
+|[[Combat PDW]]
+|Free / $11,750
+|30 (60 with extended clip)
+|Franklin and Lamar / [[Military Hardware]]
+|[[Ill-Gotten Gains Part 1]]
+|-
+| rowspan="5" |Rifles
+|[[Assault Rifle]]
+|$1,400
+|30 (60 with extended clip)
+|Franklin and Lamar
+|None
+|-
+|[[Carbine Rifle]]
+|$2,000
+|30 (60 with extended clip)
+|[[The Jewel Store Job]]
+|None
+|-
+|[[Advanced Rifle]]
+|$2,500
+|30 (60 with extended clip)
+|[[The Big Score (GTA V)|The Big Score]]
+|None
+|-
+|[[Special Carbine]]
+|Free / $14,750
+|30 (60 with extended clip)
+|Franklin and Lamar / The Jewel Store Job
+|The Business Update
+|-
+|[[Bullpup Rifle]]
+|Free / $14,500
+|30 (60 with extended clip)
+|Franklin and Lamar / The Big Score
+|[[The High Life Update]]
+|-
+| rowspan="3" |[[Sniper Rifles]]
+|[[Sniper Rifle]]
+|$1,500
+|10
+|Nervous Ron
+|None
+|-
+|[[Heavy Sniper]]
+|$2,500
+|6
+|Three's Company
+|None
+|-
+|[[Marksman Rifle]]
+|Free / $15,750
+|8 (16 with extended clip)
+|Franklin and Lamar / The Paleto Score
+|The Last Team Standing Update
+|-
+| rowspan="6" |[[Heavy Weapons]]
+|[[Grenade Launcher]]
+|$8,100
+|10
+|Trevor Philips Industries
+|None 
+|-
+|[[RPG (HD Universe)|RPG]]
+|$3,000
+|1
+|Blitz Play
+|None
+|-
+|[[Minigun]]
+|$3,000
+|595 (9999 with max [[Skills in GTA V|shooting skill]])
+|The Paleto Score
+|None
+|-
+|[[Firework Launcher]]
+|Free
+|1
+|Franklin and Lamar
+|The Independence Day Special
+|-
+|[[Railgun|Rail Gun]]
+|$250,000
+|1
+|[[Minor Turbulence]]
+|Enhanced Version {{Small|(for returning players)}}
+|-
+|[[Homing Launcher]]
+|Free / $165,000
+|1
+|Franklin and Lamar / Minor Turbulence
+|[[Festive Surprise]]
+|-
+| rowspan="5" |Explosives
+|[[Grenades|Grenade]]
+|$150
+|25
+|Franklin and Lamar
+|None
+|-
+|[[Sticky Bombs|Sticky Bomb]]
+|$400
+|25
+|[[Friends Reunited]]
+|None
+|-
+|[[Tear Gas]]
+|$300
+|25
+|The Jewel Store Job
+|None
+|-
+|[[Jerry Can]]
+|$25
+|100
+|[[Crystal Maze]]
+|None
+|-
+|[[Proximity Mines]]
+|Free / $1,000
+|25 
+|Franklin and Lamar / Friends Reunited
+|Festive Surprise
+|-
+| rowspan="1" |Misc
+|[[Parachute]]
+|$100 
+|1
+|Minor Turbulence
+|None
+|}
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA Online
+Businesses in GTA V
+Businesses in GTA VI
+Gun clubs
+Weapon retailers

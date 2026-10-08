@@ -1,0 +1,748 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Dynasty 8
+|type      = realestate
+|image     = Dynasty8-GTAV-Logo.png
+|games     = {{games|V=y|O=y}}
+|locations = [[State of San Andreas (HD Universe)|State of San Andreas]]
+|taglines  = "''The best move you'll ever make!''"
+|status    = active
+|phone     = (310)-555-0156
+|website   = 
+[[#Website|dynasty8realestate.com]]
+[[Dynasty 8 Executive|dynasty8executiverealty.com]]
+}}
+
+[[LEAD]]
+'''Dynasty 8''' is a real estate company that appears in {{V}} and {{O}}.
+
+[[SECTION:2:Properties]]
+
+
+[[SECTION:3:''Grand Theft Auto V'']]
+{{Main|Properties in GTA V}}
+{|class="wikitable sortable"
+!Property
+!Location
+!Cost
+!Owner
+|-
+|[[LSPD Auto Impound]]
+|[[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+|$150,000
+|[[Franklin Clinton|Franklin]]
+|-
+|[[Downtown Cab Co.]]
+|[[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|$200,000
+|Franklin
+|-
+|[[McKenzie Field Hangar]]
+|[[Grapeseed]], [[Blaine County]]
+|$150,000
+|[[Trevor Philips|Trevor]]
+|-
+|[[Sonar Collections Dock]]
+|[[Paleto Cove]], [[Blaine County]]
+|$250,000
+|Any
+|-
+|[[Los Santos Customs]]
+|[[Grand Senora Desert]], [[Blaine County]]
+|$349,000
+|Franklin
+|-
+|[[Doppler Cinema]]
+|[[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|$10,000,000
+|[[Michael De Santa|Michael]]
+|-
+|[[Ten Cent Theater]]
+|[[Textile City]], [[Los Santos (HD Universe)|Los Santos]]
+|$20,000,000
+|Michael
+|-
+|[[Tivoli Cinema]]
+|[[Morningwood]], [[Los Santos (HD Universe)|Los Santos]]
+|$30,000,000
+|Michael
+|-
+|[[Los Santos Golf Club]]
+|[[GWC and Golfing Society]], [[Los Santos (HD Universe)|Los Santos]]
+|$150,000,000
+|Any
+|-
+|[[Car Scrapyard]]
+|[[El Burro Heights]], [[Los Santos (HD Universe)|Los Santos]]
+|$275,000
+|Any
+|-
+|[[Smoke on the Water]]
+|[[La Puerta]], [[Los Santos (HD Universe)|Los Santos]]
+|$204,000
+|Franklin
+|-
+|[[Tequi-la-la]]
+|[[West Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|$2,000,000
+|Any
+|-
+|[[Pitchers]]
+|[[Downtown Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|$750,000
+|Any
+|-
+|[[The Hen House]]
+|[[Paleto Bay]], [[Blaine County]]
+|$80,000
+|Any
+|-
+|[[Hookies]]
+|[[North Chumash]], [[Los Santos (HD Universe)|Los Santos]]
+|$600,000
+|Franklin or Michael
+|-
+|[[Puerto Del Sol Marina]]
+|[[Puerto Del Sol]], [[Los Santos (HD Universe)|Los Santos]]
+|$75,000
+|Any
+|-
+|[[Vespucci Helipad]]
+|[[Puerto Del Sol]], [[Los Santos (HD Universe)|Los Santos]]
+|$419,850
+|Franklin and Michael
+|-
+|[[Los Santos International Airport (HD Universe)#Hangars|Los Santos International Hangar]]
+|[[Los Santos International Airport (HD Universe)|Los Santos International Airport]], [[Los Santos (HD Universe)|Los Santos]]
+|$1,378,600
+|Franklin and Michael
+|-
+|[[Grove Street Garage]]
+|[[Davis]], [[Los Santos (HD Universe)|Los Santos]]
+|$30,000
+|Franklin
+|-
+|[[Pillbox Hill Garage]]
+|[[Pillbox Hill]], [[Los Santos (HD Universe)|Los Santos]]
+|$30,000
+|Trevor
+|-
+|[[Vinewood Garage]]
+|[[East Vinewood]], [[Los Santos (HD Universe)|Los Santos]]
+|$30,000
+|Michael
+|}
+
+[[SECTION:3:''Grand Theft Auto Online'']]
+{{Main|Apartments|Garages in GTA Online}}
+{|class="wikitable sortable mw-collapsible mw-collapsed" width="100%"
+! scope="col"|Class
+! scope="col"|Location
+! scope="col"|Address
+! scope="col"|Garaging
+! scope="col" style="text-align:right;" data-sort-type="currency"|Price
+! scope="col"|Notes
+|-
+|HIGH-END
+|North Los Santos
+|[[Eclipse Towers]], Penthouse Suite 3
+|10
+| style="text-align:right;"|$1,100,000
+|Custom
+|-
+|HIGH-END
+|North Los Santos
+|Eclipse Towers, Penthouse Suite 1
+|10
+| style="text-align:right;"|$985,000
+|Custom
+|-
+|HIGH-END
+|North Los Santos
+|Eclipse Towers, Penthouse Suite 2
+|10
+| style="text-align:right;"|$905,000
+|Custom
+|-
+|HIGH-END
+|North Los Santos
+|[[3655 Wild Oats Drive]]
+|10
+| style="text-align:right;"|$800,000
+|Stilt
+|-
+|HIGH-END
+|North Los Santos
+|[[2044 North Conker Avenue]]
+|10
+| style="text-align:right;"|$762,000
+|Stilt
+|-
+|HIGH-END
+|North Los Santos
+|[[2045 North Conker Avenue]]
+|10
+| style="text-align:right;"|$727,000
+|Stilt
+|-
+|HIGH-END
+|North Los Santos
+|[[2862 Hillcrest Avenue]]
+|10
+| style="text-align:right;"|$705,000
+|Stilt
+|-
+|HIGH-END
+|North Los Santos
+|[[2868 Hillcrest Avenue]]
+|10
+| style="text-align:right;"|$672,000
+|Stilt
+|-
+|HIGH-END
+|North Los Santos
+|[[2117 Milton Road]]
+|10
+| style="text-align:right;"|$608,000
+|Stilt
+|-
+|HIGH-END
+|North Los Santos
+|[[2874 Hillcrest Avenue]]
+|10
+| style="text-align:right;"|$571,000
+|Stilt
+|-
+|HIGH-END
+|North Los Santos
+|[[2866 Hillcrest Avenue]]
+|10
+| style="text-align:right;"|$525,000
+|Stilt
+|-
+|HIGH-END
+|North Los Santos
+|Eclipse Towers, Apt. 3
+|10
+| style="text-align:right;"|$500,000
+|Updated
+|-
+|HIGH-END
+|North Los Santos
+|[[Tinsel Towers]], Apt. 42
+|10
+| style="text-align:right;"|$492,000
+|Updated
+|-
+|HIGH-END
+|North Los Santos
+|[[Richards Majestic]], Apt. 2
+|10
+| style="text-align:right;"|$484,000
+|Updated
+|-
+|HIGH-END
+|North Los Santos
+|[[3677 Whispymound Drive]]
+|10
+| style="text-align:right;"|$478,000
+|Stilt
+|-
+|HIGH-END
+|North Los Santos
+|[[Tinkle Building|4 Integrity Way]], Apt. 28
+|10
+| style="text-align:right;"|$476,000
+|Updated
+|-
+|HIGH-END
+|North Los Santos
+|[[Del Perro Heights]], Apt. 4
+|10
+| style="text-align:right;"|$468,000
+|Updated
+|-
+|HIGH-END
+|North Los Santos
+|[[2113 Mad Wayne Thunder Drive]]
+|10
+| style="text-align:right;"|$449,000
+|Stilt
+|-
+|HIGH-END
+|North Los Santos
+|Eclipse Towers, Apt 31
+|10
+| style="text-align:right;"|$400,000
+|
+|-
+|HIGH-END
+|North Los Santos
+|Eclipse Towers, Apt 40
+|10
+| style="text-align:right;"|$391,000
+|
+|-
+|HIGH-END
+|North Los Santos
+|Eclipse Towers, Apt 5
+|10
+| style="text-align:right;"|$382,000
+|
+|-
+|HIGH-END
+|North Los Santos
+|Eclipse Towers, Apt 9
+|10
+| style="text-align:right;"|$373,000
+|
+|-
+|HIGH-END
+|North Los Santos
+|[[Weazel Plaza]], Apt 101
+|10
+| style="text-align:right;"|$335,000
+|
+|-
+|HIGH-END
+|North Los Santos
+|Weazel Plaza, Apt 70
+|10
+| style="text-align:right;"|$319,000
+|
+|-
+|HIGH-END
+|North Los Santos
+|Weazel Plaza, Apt 26
+|10
+| style="text-align:right;"|$304,000
+|
+|-
+|HIGH-END
+|North Los Santos
+|Tinsel Towers, Apt 29
+|10
+| style="text-align:right;"|$286,000
+|
+|-
+|HIGH-END
+|North Los Santos
+|Tinsel Towers, Apt 45
+|10
+| style="text-align:right;"|$270,000
+|
+|-
+|HIGH-END
+|North Los Santos
+|Richards Majestic, Apt 51
+|10
+| style="text-align:right;"|$253,000
+|
+|-
+|HIGH-END
+|Downtown Los Santos
+|4 Integrity Way, Apt. 35
+|10
+| style="text-align:right;"|$247,000
+|
+|-
+|HIGH-END
+|North Los Santos
+|Richards Majestic Apt. 4
+|10
+| style="text-align:right;"|$241,000
+|
+|-
+|HIGH-END
+|Downtown Los Santos
+|4 Integrity Way, Apt. 30
+|10
+| style="text-align:right;"|$235,000
+|
+|-
+|HIGH-END
+|West Los Santos
+|[[3 Alta Street Tower]], Apt 57
+|10
+| style="text-align:right;"|$223,000
+|
+|-
+|HIGH-END
+|West Los Santos
+|3 Alta Street Tower, Apt 10
+|10
+| style="text-align:right;"|$217,000
+|
+|-
+|HIGH-END
+|North Los Santos
+|[[Del Perro Heights]], Apt 20
+|10
+| style="text-align:right;"|$205,000
+|
+|-
+|HIGH-END
+|North Los Santos
+|Del Perro Heights, Apt 7
+|10
+| style="text-align:right;"|$200,000
+|
+|-
+|HIGH-END
+|East Los Santos
+|[[120 Murrieta Heights]]
+|10
+| style="text-align:right;"|$150,000
+|
+|-
+|HIGH-END
+|East Los Santos
+|[[Unit 2 Popular Street]]
+|10
+| style="text-align:right;"|$142,500
+|
+|-
+|HIGH-END
+|East Los Santos
+|[[331 Supply Street]]
+|10
+| style="text-align:right;"|$135,000
+|
+|-
+|HIGH-END
+|South Los Santos
+|[[Unit 76 Greenwich Parkway]]
+|10
+| style="text-align:right;"|$120,000
+|
+|-
+|HIGH-END
+|South Los Santos
+|[[1337 Exceptionalists Way]]
+|10
+| style="text-align:right;"|$112,500
+|
+|-
+|HIGH-END
+|East Los Santos
+|[[1623 South Shambles Street]]
+|10
+| style="text-align:right;"|$105,000
+|
+|-
+|MEDIUM
+|North Los Santos
+|[[4 Hangman Avenue|4 Hangman Ave]]
+|6
+| style="text-align:right;"|$175,000
+|
+|-
+|MEDIUM
+|Blaine County
+|[[4401 Procopio Drive]]
+|6
+| style="text-align:right;"|$165,000
+|
+|-
+|MEDIUM
+|Blaine County
+|[[4584 Procopio Drive]]
+|6
+| style="text-align:right;"|$155,000
+|
+|-
+|MEDIUM
+|West Los Santos
+|[[0115 Bay City Avenue]], Apt 45
+|6
+| style="text-align:right;"|$150,000
+|
+|-
+|MEDIUM
+|North Los Santos
+|[[0184 Milton Road]], Apt 13
+|6
+| style="text-align:right;"|$146,000
+|
+|-
+|MEDIUM
+|East Los Santos
+|[[12 Sustancia Road]]
+|6
+| style="text-align:right;"|$143,000
+|
+|-
+|MEDIUM
+|North Los Santos
+|[[0504 South Mo Milton Drive]]
+|6
+| style="text-align:right;"|$141,000
+|
+|-
+|MEDIUM
+|West Los Santos
+|[[0325 South Rockford Drive]]
+|6
+| style="text-align:right;"|$137,000
+|
+|-
+|MEDIUM
+|West Los Santos
+|[[Dream Tower]], Apt 15
+|6
+| style="text-align:right;"|$134,000
+|
+|-
+|MEDIUM
+|North Los Santos
+|[[1162 Power Street]], Apt 3
+|6
+| style="text-align:right;"|$130,000
+|
+|-
+|MEDIUM
+|North Los Santos
+|[[0605 Spanish Avenue]], Apt 1
+|6
+| style="text-align:right;"|$128,000
+|
+|-
+|MEDIUM
+|North Los Santos
+|[[0604 Las Lagunas Boulevard]], Apt 4
+|6
+| style="text-align:right;"|$126,000
+|
+|-
+|MEDIUM
+|North Los Santos
+|[[The Royale]], Apt 19
+|6
+| style="text-align:right;"|$125,000
+|
+|-
+|MEDIUM
+|South Los Santos
+|[[0552 Roy Lowenstein Boulevard]]
+|6
+| style="text-align:right;"|$80,000
+|
+|-
+|MEDIUM
+|East Los Santos
+|[[Unit 14 Popular Street]]
+|6
+| style="text-align:right;"|$77,500
+|
+|-
+|MEDIUM
+|South Los Santos
+|[[1905 Davis Avenue]]
+|6
+| style="text-align:right;"|$75,000
+|
+|-
+|MEDIUM
+|South Los Santos
+|[[0432 Davis Avenue]]
+|6
+| style="text-align:right;"|$72,500
+|
+|-
+|MEDIUM
+|East Los Santos
+|[[Unit 1 Olympic Freeway]]
+|6
+| style="text-align:right;"|$70,000
+|
+|-
+|MEDIUM
+|East Los Santos
+|[[4531 Dry Dock Street]]
+|6
+| style="text-align:right;"|$67,500
+|
+|-
+|MEDIUM
+|Blaine County
+|[[8754 Route 68]]
+|6
+| style="text-align:right;"|$65,000
+|
+|-
+|MEDIUM
+|Blaine County
+|[[870 Route 68 Approach]]
+|6
+| style="text-align:right;"|$62,500
+|
+|-
+|LOW-END
+|Blaine County
+|[[0232 Paleto Boulevard]]
+|2
+| style="text-align:right;"|$121,000
+|
+|-
+|LOW-END
+|Blaine County
+|[[140 Zancudo Avenue]]
+|2
+| style="text-align:right;"|$120,000
+|
+|-
+|LOW-END
+|Blaine County
+|[[1893 Grapeseed Avenue]]
+|2
+| style="text-align:right;"|$118,000
+|
+|-
+|LOW-END
+|North Los Santos
+|[[2143 Las Lagunas Boulevard]], Apt 9
+|2
+| style="text-align:right;"|$115,000
+|
+|-
+|LOW-END
+|North Los Santos
+|[[0069 Cougar Avenue]], Apt 19
+|2
+| style="text-align:right;"|$112,000
+|
+|-
+|LOW-END
+|North Los Santos
+|[[1237 Prosperity Street]], Apt 21
+|2
+| style="text-align:right;"|$105,000
+|
+|-
+|LOW-END
+|North Los Santos
+|[[1561 San Vitas Street]], Apt 2
+|2
+| style="text-align:right;"|$99,000<br>FREE <small>(with [[Criminal Enterprise Starter Pack]])</small>
+|
+|-
+|LOW-END
+|North Los Santos
+|[[1115 Boulevard Del Perro]], Apt 18
+|2
+| style="text-align:right;"|$93,000
+|
+|-
+|LOW-END
+|West Los Santos
+|[[2057 Vespucci Boulevard]], Apt 1
+|2
+| style="text-align:right;"|$87,000
+|
+|-
+|LOW-END
+|West Los Santos
+|[[0112 South Rockford Drive]], Apt 13
+|2
+| style="text-align:right;"|$80,000
+|
+|-
+|LOW-END
+|North Los Santos
+|[[0897 Mirror Park Boulevard]]
+|2
+| style="text-align:right;"|$35,000
+|
+|-
+|LOW-END
+|West Los Santos
+|[[Garage Innocence Boulevard]]
+|2
+| style="text-align:right;"|$34,000
+|
+|-
+|LOW-END
+|North Los Santos
+|[[634 Boulevard Del Perro]]
+|2
+| style="text-align:right;"|$33,500
+|
+|-
+|LOW-END
+|Blaine County
+|[[1920 Senora Way]]
+|2
+| style="text-align:right;"|$32,000
+|
+|-
+|LOW-END
+|South Los Santos
+|[[12 Little Bighorn Avenue]]
+|2
+| style="text-align:right;"|$32,000
+|
+|-
+|LOW-END
+|Blaine County
+|[[2000 Great Ocean Highway]]
+|2
+| style="text-align:right;"|$31,500
+|
+|-
+|LOW-END
+|South Los Santos
+|[[0754 Roy Lowenstein Boulevard]]
+|2
+| style="text-align:right;"|$29,500
+|
+|-
+|LOW-END
+|Blaine County
+|[[197 Route 68]]
+|2
+| style="text-align:right;"|$29,000
+|
+|-
+|LOW-END
+|Blaine County
+|[[1200 Route 68]]
+|2
+| style="text-align:right;"|$28,000
+|
+|-
+|LOW-END
+|Blaine County
+|[[1932 Grapeseed Avenue]]
+|2
+| style="text-align:right;"|$27,500
+|
+|-
+|LOW-END
+|Blaine County
+|[[142 Paleto Boulevard]]
+|2
+| style="text-align:right;"|$26,500
+|
+|-
+|LOW-END
+|Blaine County
+|[[1 Strawberry Avenue]]
+|2
+| style="text-align:right;"|$26,000
+|
+|-
+|LOW-END
+|East Los Santos
+|[[Popular Street, Unit 124]]
+|2
+| style="text-align:right;"|$25,000
+|
+|}
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Media in GTA Online
+Media in GTA V
+Real estate companies
+Websites

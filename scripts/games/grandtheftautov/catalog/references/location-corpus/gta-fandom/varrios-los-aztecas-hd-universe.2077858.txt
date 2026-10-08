@@ -1,0 +1,89 @@
+[[INFOBOX]]
+{{Infobox organization
+|name = Varrios Los Aztecas
+|image = VarriosLosAztecas-GTAOe-Members.png
+|caption = Varrios Los Aztecas in {{O}}.
+|games = {{Games|V=y|O=y}}
+|aka =
+*{{H:title|Abbreviated in-game|VLA}}
+*Aztecas
+|color = turquoise
+|locations =
+*Northern [[Rancho]], [[Los Santos (HD Universe)|Los Santos]]
+*[[Blaine County]]
+|leader = [[Ortega]] <small>(Blaine County Set)</small>
+|type = gang
+|gang_type = Mexican Street Gang
+|enemies =
+*[[The Families]]
+*[[Trevor Philips Enterprises]]
+*[[The Lost MC]]{{Fact}}
+*[[Marabunta Grande]]
+*[[Los Santos Vagos (HD Universe)|Los Santos Vagos]]
+*[[Motorcycle Clubs]] <small>(''GTA Online'')</small>
+*[[Organizations]] <small>(''GTA Online'')</small>
+*{{GTAOP}} <small>(''GTA Online'')</small>
+|affiliations =
+*[[Trevor Philips]] <small>(Formerly)</small>
+*[[The Lost MC]] <small>(''GTA Online'')</small> 
+|colors = Turquoise
+|vehicles =
+*[[Mesa (HD Universe)|Mesa]]
+*[[Ingot]]
+*[[Sultan (HD Universe)|Sultan]]
+*[[Rancher XL]]
+*[[Emperor (HD Universe)|Emperor]]
+*[[Phoenix (HD Universe)|Phoenix]]
+*[[Picador]]
+*[[Rebel]]
+*[[Sadler]]
+*[[Dubsta]]
+*[[Buzzard Attack Chopper|Buzzard]]
+*[[Cuban 800]]
+*[[Kuruma (HD Universe)|Kuruma]] <small>(''GTA Online'' only)</small>
+*Orange [[Dominator]] <small>(''GTA Online'' only)</small>
+*Blue [[Futo]] <small>(''GTA Online'' only)</small>
+*[[Enduro]] <small>(''GTA Online'' only)</small>
+*[[Cavalcade (second generation)]] <small>(''GTA Online'' only)</small>
+*[[Huntley S]] <small>(''GTA Online'' only)</small>
+*[[Frogger]] <small>(''GTA Online'' only)</small>
+*[[Warrener HKR]] <small>(''GTA Online'' only)</small>
+*[[Streamer216]] <small>(''GTA Online'' only)</small>
+*[[Innovation]] <small>([[Business Supplies/Steal Missions#Raid Nasty People|Business Supplies Steal Mission: Raid Nasty People]] only; don't drive)</small>
+|weapons =
+*[[Knife]]
+*[[Pistol (HD Universe)|Pistol]]
+*[[Micro-SMG]]
+*[[SMG (HD Universe)|SMG]]
+*[[Machine Gun|MG]]
+*[[Combat MG]]
+*[[Pump Shotgun]]
+*[[Sawed-Off Shotgun]]
+*[[Assault Shotgun]]
+*[[Assault Rifle]]
+*[[Carbine Rifle]]
+*[[Minigun]]
+|businesses =
+*Drug Trafficking/Manufacturing
+*Arms Trafficking
+*Vehicles Trafficking
+*Contraband
+|fronts =
+|members = [[Ortega]]
+|status = active
+}}
+
+[[LEAD]]
+The '''Varrios Los Aztecas''', also known as '''VLA''' or simply '''Aztecas''', are a moderately sized [[Mexico|Mexican]] street gang featured in {{V}} and {{O}}.
+
+[[SECTION:2:Territory]]
+Varrios Los Aztecas members can be found in their territory east of [[Central Los Santos Hospital]] around Northern [[Rancho]]. Probably, they are at war with the North Side Vagos set in the northern part of Rancho, due to the proximity of the territories. They also have territory on Blaine County, with their headquarters being the Alamo Sea. Many Aztecas drive vehicles and members are seen standing on the sidewalks in groups of 3-5. Sometimes, Aztecas will rarely spawn and be replaced by Los Santos Vagos. To prevent this, try approaching Rancho from the north instead of the south.
+
+[[SECTION:4:The Diamond Casino & Resort]]
+*[[Meth Lab Survival]]
+
+[[CATEGORIES]]
+Gangs
+Latino-descendant organizations
+Organizations in GTA Online
+Organizations in GTA V

@@ -1,0 +1,17 @@
+[[INFOBOX]]
+{{Infobox location
+|image = Ortega'sTrailer-GTAVe-Overview.png
+|games = {{Games|V=y|O=y}}
+|location = [[Zancudo River]], [[Blaine County]], [[State of San Andreas (HD Universe)|San Andreas]]
+|house = y
+|accessible = No
+|occupants = [[Ortega]] 
+|map = Ortega'sTrailer-GTAVe-Map.png
+}}
+
+[[LEAD]]
+'''Ortega's trailer''', also referred to as the '''riverside trailer''' is the home of [[Varrios Los Aztecas (HD Universe)|Varrios Los Aztecas]] leader [[Ortega]] in ''[[Grand Theft Auto V]]''.
+
+[[CATEGORIES]]
+Homes
+Locations in GTA V in Blaine County

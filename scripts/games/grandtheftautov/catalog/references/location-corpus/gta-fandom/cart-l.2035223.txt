@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name      = Cart-L
+|image     = Cart-LFamarcia-GTAV.jpg
+|caption   = '''Cart-L''' Farmacia
+|taglines  = 
+|type      = Retailer
+|games     = {{Games|V=y|O=y}}
+|locations = [[Chamberlain Hills]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+'''Cart-L''' is a retailer in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Pharmacies

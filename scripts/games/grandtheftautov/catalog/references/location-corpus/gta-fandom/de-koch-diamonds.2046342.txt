@@ -1,0 +1,48 @@
+[[INFOBOX]]
+{{Infobox business
+|name        = De Koch Diamonds
+|type        = Jewelry Store
+|taglines    = ''"Shut that bitch up with Ice"''<br>''"Chill that bitch out with Ice"''
+|image_label   = IV
+|image         = DeKoch-GTAIV-Logo.png
+|caption       = Logo in {{IV}}.
+|image_label2  = SA
+|image2        = DeKochDiamonds-GTASA-logo.png
+|caption2      = Logo in {{SA}}.
+|games       = ''[[Grand Theft Auto: San Andreas]]<br>[[Grand Theft Auto IV]]<br>[[Grand Theft Auto: Chinatown Wars]]<br>[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations   = <center>'''3D Universe'''</center>[[List of Street Names#State of San Andreas (3D Universe)|Dix Road]] , [[Los Santos (3D Universe)|Los Santos]], [[State of San Andreas (3D Universe)|San Andreas]]<br><br><center>'''HD Universe'''</center>[[Albany Avenue]], [[Lancaster]], [[Algonquin]], [[Liberty City (HD Universe)|Liberty City]]<br>[[Columbus Avenue]], [[Star Junction]], Algonquin, Liberty City
+|reference = {{WP|De Beers}}
+}}
+
+[[LEAD]]
+'''De Koch''' (non-capitalized: '''de Koch'''; also '''deKoch''') is a fine jewelers appearing in ''[[Grand Theft Auto: San Andreas]]'', ''[[Grand Theft Auto IV]]'', ''[[Grand Theft Auto: Chinatown Wars]]'', ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:2:Locations]]
+
+
+[[SECTION:3:''GTA: San Andreas'']]
+<gallery position="center" bordercolor="#d1222a" widths="225" hideaddbutton="true">
+DeKoch-GTASA-ManualAdvertisement.png|Dix Road, [[Los Santos (3D Universe)|Los Santos]]. <small>(Unseen)</small> 
+</gallery>
+
+[[SECTION:3:''GTA Chinatown Wars'']]
+<gallery position="center" bordercolor="#d1222a" widths="225" hideaddbutton="true">
+DeKochDiamonds_GTACW.png|De Koch Jewelry in ''GTA Chinatown Wars''.
+</gallery>
+
+[[SECTION:3:''GTA IV'']]
+<gallery position="center" bordercolor="#808080" widths="225" hideaddbutton="true">
+DeKoch-GTAIV-69AlbanyAvenue.png|69 [[Albany Avenue]], [[Lancaster]]
+DeKoch-GTAIV-ColumbusAvenue.png|[[Columbus Avenue]], [[Star Junction]], [[Algonquin]]
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Chinatown Wars
+Businesses in GTA IV
+Businesses in GTA Online
+Businesses in GTA San Andreas
+Businesses in GTA V
+Clothing
+Clothing in GTA V
+Commercials
+Jewelry store chains

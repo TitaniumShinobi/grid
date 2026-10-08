@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = hospital
+|name           = Sandy Shores Medical Center
+|image          = SandyShoresMedicalCenter-GTAV.png
+|caption        = Front view of the clinic.
+|city           = [[Sandy Shores]]
+|games          = {{Games|V=y|O=y}}
+|size           = Medical Clinic
+}}
+
+[[LEAD]]
+The '''Sandy Shores Medical Center''' is the medical center serving [[Sandy Shores]], [[Blaine County]], in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Blaine County
+Buildings in GTA V in Blaine County
+Hospitals

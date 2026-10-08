@@ -1,0 +1,47 @@
+[[INFOBOX]]
+{{Infobox business
+|Name Change   = 
+|style         = 
+|purchasable   = 
+|type          = coffee
+|name          = Cool Beans
+|sign          = CoolBeans-GTAV-Logo.png
+|image         = 
+|caption       = 
+|aka           = 
+|games         = {{Games|V=y|O=y}}
+|mentioned     = 
+|locations     = 
+*[[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+([[#Locations_2|See more]])
+|business_type = 
+|founded       = 
+|founder       = 
+|ceo           = 
+|employees     = 
+|products      = 
+|taglines      = 
+|bawsaq        = 
+|lcn           = {{BAWSAQ/Slider}} '''BAN'''
+|status        = Active
+}}
+
+[[LEAD]]
+'''Cool Beans''' is a coffeehouse chain in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''.
+
+[[SECTION:3:Locations]]
+*The [[Mirror Park]] location is based on the Intelligentsia Coffee location at {{URL|https://maps.app.goo.gl/QQHeJrPDR5PeUhCM9|3922 Sunset Boulevard}} in Los Angeles, California.
+*The [[Vespucci Canals]] location is based on the former {{WP|The Coffee Bean & Tea Leaf|Coffee Bean & Tea Leaf}} (now {{WP|Starbucks}}) location at {{URL|https://maps.app.goo.gl/8aUeQEcQD7B4BpgQ7|2901 Main Street}} in Santa Monica, California.
+
+[[SECTION:2:Locations]]
+<gallery position="center" spacing="small">
+CoolBeansDowntown-GTAV.png|[[Strawberry Avenue]], [[Legion Square]], [[Downtown Los Santos (HD Universe)|Downtown Los Santos]].
+CoolBeansMirrorPark-GTAV.png|[[Mirror Park Boulevard]] and [[West Mirror Drive]], [[Mirror Park]].
+CoolBeansDelPerro-GTAV.png|[[San Andreas Avenue]] and [[Bay City Avenue]], [[Del Perro]]
+CoolBeansVespucci-GTAV.png|[[Bay City Avenue]] and [[Imagination Court]], [[Vespucci Canals]].
+</gallery>
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Café chains

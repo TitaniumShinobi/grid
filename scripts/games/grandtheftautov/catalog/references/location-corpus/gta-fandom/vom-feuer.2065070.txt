@@ -1,0 +1,18 @@
+[[INFOBOX]]
+{{Infobox business
+|name = [[File:VomFeuer-GTAO-TextLogo.png|center|200px]]
+|image = VomFeuer-GTAO-Logo.png
+|bawsaq = {{BAWSAQ/Slider}} '''VOM'''
+|type = Weapons Manufacturer
+|games = ''[[Grand Theft Auto V]]<br>[[Grand Theft Auto Online]]''
+|locations = {{WP|Vienna|Vienna, Austria}}
+}}
+
+[[LEAD]]
+'''Vom Feuer''' is an [[Austria]]n [[Weapons in GTA V|firearm]] manufacturer in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]''. The player can buy stocks from them at the [[Bawsaq.com]] website.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Explosives manufacturers
+Weapon manufacturers

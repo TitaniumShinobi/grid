@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|type           = warehouse
+|name           = Big House Storage Inc.
+|sign           = 
+|image          = BigHouseStorageInc-GTAVee.jpg
+|caption        = General view of the storage facility.
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|location       = [[Autopia Parkway]] and [[Exceptionalists Way]], [[Los Santos International Airport (HD Universe)|LSIA]]
+}}
+
+[[LEAD]]
+'''Big House Storage Inc.''' is a storage facility appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Storage companies
+Warehouses

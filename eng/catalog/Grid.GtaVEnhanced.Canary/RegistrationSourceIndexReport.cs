@@ -4,6 +4,26 @@ using System.Text.Json;
 
 internal static class RegistrationSourceIndexReport
 {
+    public static object WithPlan2(object historicalReport, IEnumerable<Grid.Core.Models.FrozenSourceArtifact> artifacts)
+    {
+        var report = JsonSerializer.SerializeToNode(historicalReport, CompactJson)!.AsObject();
+        report.Remove("contentSha256");
+        report["plan2FrozenArtifacts"] = JsonSerializer.SerializeToNode(artifacts
+            .DistinctBy(value => value.SourceCoordinate)
+            .OrderBy(value => value.SourceCoordinate.ExactRepresentation, StringComparer.Ordinal)
+            .Select(value => new
+            {
+                sourceCoordinate = value.SourceCoordinate.ExactRepresentation,
+                artifactId = value.Id.Value,
+                contentSha256 = value.Digest.HexValue,
+                byteLength = value.ExactBytes.Length,
+                observedAtUtc = value.ObservedAtUtc,
+                format = value.DeclaredFormat,
+            }).ToArray(), CompactJson);
+        report["contentSha256"] = Sha256(JsonSerializer.SerializeToUtf8Bytes(report, CompactJson));
+        return report;
+    }
+
     private static readonly JsonSerializerOptions CompactJson = new(JsonSerializerDefaults.Web);
 
     public static object Create(ValidatedGtaAcquisition acquisition, string sourceManifestPath)

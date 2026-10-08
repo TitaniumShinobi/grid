@@ -1,0 +1,20 @@
+[[INFOBOX]]
+{{Infobox location
+|type          = factory
+|name          = Pißwasser Factory
+|image         = PisswasserFactory-GTAV.png
+|lightlogo     = y
+|caption       = The factory as seen from the west.
+|location      = [[Cypress Flats]], [[Los Santos (HD Universe)|Los Santos]]
+|accessible    = No
+|status        = 
+|games         = {{games|V=y|O=y}}
+}}
+
+[[LEAD]]
+The '''Pißwasser Factory''' or the '''Pißwasser Plant'''  is a large factory in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'' located in [[Cypress Flats]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Factory complexes
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos

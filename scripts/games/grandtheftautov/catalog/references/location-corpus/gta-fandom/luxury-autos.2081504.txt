@@ -1,0 +1,44 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|type           = dealership
+|name           = {{HUDIcons|game=O|luxurycarshowroom}} Luxury Autos
+|sign           = LuxuryAutos-GTAV-UsedLogo-Texture.png
+|image          = 
+<gallery>
+LuxuryAutos-GTAOe-UpdatedExterior-Day.png|2022
+LuxuryAutos-GTAVe-Entrance-Day.png|2013
+</gallery>
+|aka            = Luxury Autos on Portola
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Rockford Hills Valet Parking]] building, [[Rockford Hills]], [[State of San Andreas (HD Universe)|San Andreas]]
+|business_type  = 
+|opened         = 
+|products       = [[#Showroom|Vehicles]]
+|taglines       = 
+|status         = active
+|use            = 
+|structure_type = 
+|architecture   = 
+|floors         = 
+|rooms          = 
+|website        = 
+|phone          = 
+|opentimes      = 
+|accessible     = No
+|file_name      = 
+|interior       = 
+|coords         = 
+|map            = LuxuryAutos-GTAV-Map.png
+|map_caption    = Location on the map (red).
+}}
+
+[[LEAD]]
+'''Luxury Autos''' (also known as '''Luxury Autos on Portola''') is an automotive dealership appearing in {{V}} and {{O}}.
+
+[[CATEGORIES]]
+Businesses in GTA Online
+Businesses in GTA V
+Vehicle dealerships

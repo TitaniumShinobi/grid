@@ -1,0 +1,22 @@
+[[INFOBOX]]
+{{Infobox structure
+|image=UtopiaGardens-GTAV.png
+|caption=Utopia Gardens as seen from the east.
+|games={{Games|V=y|O=y}}
+|start=[[East Mirror Drive]]
+|end=-
+|map=<gallery>
+UtopiaGardens-GTAV-Map.png|Map
+UtopiaGardens-GTAV-SatelliteMap.png|Satellite View
+</gallery>
+|map_caption=Location on the map (red).
+}}
+
+[[LEAD]]
+'''Utopia Gardens''' is a [[List of Street Names|street]] in {{V}} and {{O}}, located in [[Mirror Park]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Cul-de-sacs
+Streets
+Structures in GTA Online in Los Santos
+Structures in GTA V in Los Santos

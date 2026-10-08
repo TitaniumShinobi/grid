@@ -1,0 +1,26 @@
+[[INFOBOX]]
+{{Infobox location
+|Name Change    = 
+|style          = 
+|landmark       = y
+|safehouse      = 
+|type           = cinema
+|name           = Valdez Theater
+|sign           = ValdezTheater-GTAV-Logo.png
+|image          = 
+|caption        = 
+|aka            = 
+|games          = {{Games|V=y|O=y}}
+|mentioned      = 
+|location       = [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]]
+}}
+
+[[LEAD]]
+The '''Valdez Theater''' is a theater in ''[[Grand Theft Auto V]]'' and ''[[Grand Theft Auto Online]]'', located at the intersection of [[San Andreas Avenue]] and [[Ginger Street]] in [[Little Seoul]], [[Los Santos (HD Universe)|Los Santos]].
+
+[[CATEGORIES]]
+Art Deco buildings
+Buildings in GTA Online in Los Santos
+Buildings in GTA V in Los Santos
+Cinemas
+Theatres

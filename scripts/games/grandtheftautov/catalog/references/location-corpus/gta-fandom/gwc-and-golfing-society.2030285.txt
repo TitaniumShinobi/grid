@@ -1,0 +1,29 @@
+[[INFOBOX]]
+{{Infobox location
+|name          = Great Western Country and Golfing Society
+|aka           = GWC and Golfing Society
+|games         = {{Games|V=y|O=y}}
+|type          = golfclub
+|image         = GWCandGolfingSociety-GTAV.png
+|caption       = Overview of the course.
+|location      = [[Richman]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]]
+|map           = 
+<gallery>
+GWCandGolfingSociety-GTAV-Map.png|GWC
+GWCandGolfingSociety-GTAV-Map-LosSantos.jpg|Los Santos
+</gallery>
+|map_caption   = Location on the map (red) and its HUD boundaries (blue)
+|map2          = GWCandGolfingSociety-GTAV-Satellite.png
+|map_caption2  = Satellite view of '''GWC and Golfing Society'''.
+|pscanner      = PoliceScanner-GTAV-Neighborhood-GWCandGolfingSociety.ogg
+}}
+
+[[LEAD]]
+'''Great Western Country and Golfing Society''' is a neighborhood and golf course used by [[Los Santos Golf Club]] in {{V}} and {{O}}, located in [[Richman]], [[Los Santos (HD Universe)|Los Santos]], [[State of San Andreas (HD Universe)|San Andreas]].
+
+[[CATEGORIES]]
+Golf clubs
+Locations in GTA Online in Los Santos
+Locations in GTA V in Los Santos
+Neighborhoods
+Zones
