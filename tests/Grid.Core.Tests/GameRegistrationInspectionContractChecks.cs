@@ -35,10 +35,14 @@ internal static class GameRegistrationInspectionContractChecks
         {
             var expected = $"GR-{index + 1:00}";
             Assert(categories[index].GetProperty("id").GetString() == expected, "Category order is GR-01 through GR-21.");
-            Assert(categories[index].GetProperty("coverage").GetString() is "Implemented" or "Partial" or "Missing",
-                expected + " uses the v1 coverage vocabulary.");
+            var coverage = categories[index].GetProperty("coverage").GetString();
+            Assert(coverage is "Partial" or "Missing",
+                expected + " uses Partial or Missing in v1; Implemented inspection completeness is not claimed.");
         }
         checks += 22;
+        Assert(root.GetProperty("coverageRule").GetString()?.Contains("game-agnostic completeness", StringComparison.Ordinal) is true,
+            "Coverage rule keeps game-specific coverage distinct from game-agnostic completeness.");
+        checks++;
 
         Console.WriteLine($"PASS: {checks} game-registration inspection contract checks; DIF mold 98; NOT_PUBLISHED.");
         return checks;
@@ -46,13 +50,17 @@ internal static class GameRegistrationInspectionContractChecks
 
     private static string FindInspectionContract()
     {
-        for (var directory = new DirectoryInfo(Directory.GetCurrentDirectory()); directory is not null; directory = directory.Parent)
+        foreach (var start in new[] { Directory.GetCurrentDirectory(), AppContext.BaseDirectory })
         {
-            var candidate = Path.Combine(directory.FullName, "src", "Grid.Core", "Contracts",
-                "game-registration-inspection.v1.json");
-            if (File.Exists(candidate)) return candidate;
+            for (var directory = new DirectoryInfo(start); directory is not null; directory = directory.Parent)
+            {
+                var candidate = Path.Combine(directory.FullName, "src", "Grid.Core", "Contracts",
+                    "game-registration-inspection.v1.json");
+                if (File.Exists(candidate)) return candidate;
+            }
         }
-        throw new FileNotFoundException("game-registration-inspection.v1.json was not found from the current directory.");
+        throw new FileNotFoundException(
+            "game-registration-inspection.v1.json was not found from the current directory or AppContext.BaseDirectory.");
     }
 
     private static void Assert(bool condition, string message)

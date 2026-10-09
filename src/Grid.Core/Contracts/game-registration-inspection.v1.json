@@ -48,7 +48,7 @@
     "prepare"
   ],
   "coverageVocabulary": ["Implemented", "Partial", "Missing"],
-  "coverageRule": "DIF node presence is not inspection completeness. Partial never means complete. Missing categories stay visible.",
+  "coverageRule": "DIF node presence is not inspection completeness. Partial never means complete. Missing categories stay visible. Game-specific adapter coverage is not game-agnostic completeness.",
   "evidence": {
     "rulingTags": ["FILE VERIFIED", "REFERENCE VERIFIED", "CORRELATED", "UNRESOLVED"],
     "verificationKinds": ["FileVerified", "ReferenceVerified"],
@@ -63,6 +63,7 @@
       "FrozenRepositoryDataset"
     ],
     "rules": [
+      "Preserve ambiguity instead of guessing when evidence does not resolve.",
       "Correlation is not FileVerified.",
       "Unresolved remains explicit; it is not selectable truth.",
       "A missing hash is Unresolved, not proof of absence.",
@@ -191,10 +192,10 @@
     {
       "id": "GR-09",
       "name": "Localization",
-      "inspect": "Locale, aliases, source-owned terminology, string tables when native adapters expose them.",
+      "inspect": "Locale and alias fields on names/records, plus source-owned terminology. String tables only when a native adapter already exposes them; they are not implied by Partial.",
       "grounding": ["canonical-registration-checklist.v1.json locale and source-owned-terminology requirements", "RegistrationName.Locale"],
       "coverage": "Partial",
-      "v1Default": "Locale is an attribute on names/records, not a new DIF selector."
+      "v1Default": "Partial means locale/alias fields exist (RegistrationName.Locale, DIF locale requirements). It does not mean string-table completeness."
     },
     {
       "id": "GR-10",
@@ -271,10 +272,10 @@
     {
       "id": "GR-19",
       "name": "Applicability",
-      "inspect": "Which game, edition, installation, and profile a candidate applies to.",
+      "inspect": "Which game, edition, installation, and profile a candidate is about. Implemented Contract 2 RegistrationApplicability remains GameId plus optional ProfileId only; edition and installation are inspection facts, not extra applicability fields.",
       "grounding": ["RegistrationApplicability", "request-envelope.v1 context", "all 98 DIF nodes require game and profile"],
       "coverage": "Partial",
-      "v1Default": "Bind candidates to exact game + edition + installation; profile when the game uses profiles."
+      "v1Default": "Do not widen RegistrationApplicability in v1. Bind candidates to GameId and optional ProfileId. Record edition and installation as evidence-backed facts when observed; leave them Unresolved when not."
     },
     {
       "id": "GR-20",
