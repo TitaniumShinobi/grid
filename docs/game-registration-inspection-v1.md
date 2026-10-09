@@ -4,12 +4,12 @@ Status: **Proposed** review contract. Not live publication.
 
 Machine-readable source: [`src/Grid.Core/Contracts/game-registration-inspection.v1.json`](../src/Grid.Core/Contracts/game-registration-inspection.v1.json)
 
-This is the metadata-first **inspection** checklist for Contract 2 (LIF-8). It says what GRID must inspect and understand before a canonical projection is trustworthy. It is **not** the frozen 98-node DIF selector mold.
+This is the Proposed metadata-first **inspection** checklist for Contract 2 (LIF-8). It says what GRID must inspect and understand before a canonical projection is trustworthy. It is **not** the frozen 98-node DIF selector mold.
 
 | Artifact | Role |
 |---|---|
 | `GRID.md` “Registered Knowledge Graph [Canonical Reference Library]” | Product authority |
-| `src/Grid.Core/Contracts/game-registration-inspection.v1.json` | Inspection checklist (this contract) |
+| `src/Grid.Core/Contracts/game-registration-inspection.v1.json` | Proposed inspection checklist (this contract) |
 | `src/Grid.Core/Contracts/canonical-registration-checklist.v1.json` | DIF projection mold (exactly 98 nodes; Tool, Mod, Location, MissionQuest, Item, Actor) |
 | `CanonicalRegistrationEngine` / `CanonicalRegistrationCandidateVerifier` | Implemented candidate engine; `publicationState` remains `NOT_PUBLISHED` |
 
@@ -31,17 +31,17 @@ Candidate verification is not live publication, KnowledgeRebuild catalog import,
 - **Partial** — some supporting implementation exists; the complete inspection capability is not proven.
 - **Missing** — not an inspection/registration authority yet. The category stays visible.
 
-DIF node presence is not inspection completeness.
+DIF node presence is not inspection completeness. Game-specific adapter coverage is not game-agnostic completeness.
 
 ## Evidence and provenance
 
 GRID.md ruling tags: `FILE VERIFIED`, `REFERENCE VERIFIED`, `CORRELATED`, `UNRESOLVED`.
 
-Contract 2 `EvidenceVerificationKind` is `FileVerified` or `ReferenceVerified`. Correlation is a `RegistrationOutcome`, not a file-verification upgrade. Digests are SHA-256. Unresolved stays explicit.
+Contract 2 `EvidenceVerificationKind` is `FileVerified` or `ReferenceVerified`. Correlation is a `RegistrationOutcome`, not a file-verification upgrade. Digests are SHA-256. Preserve ambiguity instead of guessing. Unresolved stays explicit.
 
 ## Inspection categories
 
-The JSON enumerates GR-01 through GR-21 (game identity through tools). Packages/DLC/updates, assets, overrides, and operational instructions remain first-class even where coverage is Partial or Missing.
+The JSON enumerates GR-01 through GR-21 (game identity through tools). Packages/DLC/updates, assets, overrides, and operational instructions remain first-class even where coverage is Partial or Missing. GR-09 Partial is locale/alias fields, not string-table completeness. GR-19 inspects edition/installation as facts; implemented `RegistrationApplicability` stays `GameId` plus optional `ProfileId`.
 
 ## Proposed versus implemented
 

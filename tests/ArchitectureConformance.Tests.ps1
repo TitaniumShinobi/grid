@@ -176,6 +176,7 @@ Assert-Contains $provenanceGate 'GPLBoundaryInvalid' 'Distribution gate must rej
 # LIF-8 inspection checklist is a sibling contract, not the 98-node DIF mold, and is not engine-loaded.
 $docsIndex = Get-RepoText 'docs/README.md'
 Assert-Contains $docsIndex 'Game Registration Inspection Checklist v1' 'Docs index must name the inspection checklist.'
+Assert-Contains $docsIndex 'Proposed metadata-first inspection checklist' 'Docs index must mark the inspection checklist as Proposed.'
 Assert-Contains $docsIndex 'not the frozen 98-node DIF projection mold' 'Docs index must keep the inspection checklist distinct from the DIF mold.'
 
 $gridMd = Get-RepoText 'GRID.md'
@@ -216,6 +217,14 @@ foreach ($category in @($inspection.categories)) {
 $coverageValues = @($inspection.categories | ForEach-Object { [string]$_.coverage } | Sort-Object -Unique)
 Assert-True ($coverageValues -contains 'Partial') 'Inspection checklist must distinguish Partial coverage from Implemented.'
 Assert-True ($coverageValues -contains 'Missing') 'Inspection checklist must keep Missing categories visible.'
+Assert-True ($coverageValues -notcontains 'Implemented') 'No GR category may claim Implemented inspection completeness in v1.'
+Assert-Contains ([string]$inspection.coverageRule) 'game-agnostic completeness' 'Coverage rule must keep game-specific coverage distinct from game-agnostic completeness.'
+Assert-Contains $inspectionJson 'Preserve ambiguity instead of guessing' 'Inspection evidence rules must preserve GRID.md ambiguity.'
+$gr09 = @($inspection.categories | Where-Object { [string]$_.id -eq 'GR-09' })[0]
+Assert-Contains ([string]$gr09.v1Default) 'It does not mean string-table completeness.' 'GR-09 Partial must not be read as string-table completeness.'
+$gr19 = @($inspection.categories | Where-Object { [string]$_.id -eq 'GR-19' })[0]
+Assert-Contains ([string]$gr19.inspect) 'RegistrationApplicability remains GameId plus optional ProfileId' 'GR-19 must distinguish implemented applicability from inspection facts.'
+Assert-Contains ([string]$gr19.v1Default) 'Do not widen RegistrationApplicability in v1.' 'GR-19 must not widen Contract 2 applicability fields.'
 Assert-Equal 3 @($inspection.escalations).Count 'Inspection checklist must retain the three product-intent escalations only.'
 foreach ($escalation in @($inspection.escalations)) {
     Assert-Equal 'No' ([string]$escalation.v1Recommendation) "Escalation $($escalation.id) v1 recommendation must remain No."
@@ -229,5 +238,8 @@ Assert-Contains $inspectionDoc 'game-registration-inspection.v1.json' 'Human che
 Assert-Contains $inspectionDoc 'canonical-registration-checklist.v1.json' 'Human checklist must name the DIF mold it is not.'
 Assert-Contains $inspectionDoc 'NOT_PUBLISHED' 'Human checklist must preserve the NOT_PUBLISHED boundary.'
 Assert-Contains $inspectionDoc 'GR-01 through GR-21' 'Human checklist must cover the 21 inspection categories.'
+Assert-Contains $inspectionDoc 'game-agnostic completeness' 'Human checklist must keep game-specific coverage distinct from game-agnostic completeness.'
+Assert-Contains $inspectionDoc 'Preserve ambiguity' 'Human checklist must preserve GRID.md ambiguity.'
+Assert-Contains $inspectionDoc 'Proposed metadata-first' 'Human checklist must remain Proposed, not a frozen live contract.'
 
 Write-Host 'PASS: GRID architecture/documentation conformance checks passed.'
