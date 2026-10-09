@@ -127,6 +127,7 @@ var checks = 0;
 checks += CanonicalKnowledgeKernelChecks.Run();
 checks += CanonicalLocationContractChecks.Run();
 checks += CanonicalRegistrationRefreshChecks.Run();
+checks += GameRegistrationInspectionContractChecks.Run();
 checks += CanonicalRelationshipRegistrationMdboChecks.Run();
 checks += GtaVLocationPopulation2AIIIChecks.Run();
 checks += CanonicalSelectorAndInstructionChecks.Run();
