@@ -1,3 +1,7 @@
+param(
+    [switch]$InspectionContract
+)
+
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version 2.0
 
@@ -21,6 +25,8 @@ function Assert-Contains {
     param([string]$Text, [string]$Needle, [string]$Message)
     Assert-True ($Text.IndexOf($Needle, [StringComparison]::OrdinalIgnoreCase) -ge 0) $Message
 }
+
+if (-not $InspectionContract) {
 
 $requiredDocs = @(
     'README.md',
@@ -173,6 +179,8 @@ $provenanceGate = Get-RepoText 'eng/provenance/Test-GridProvenance.ps1'
 Assert-Contains $provenanceGate 'RepositoryLicenseMissing' 'Distribution gate must require an attorney-approved repository license.'
 Assert-Contains $provenanceGate 'GPLBoundaryInvalid' 'Distribution gate must reject silent proprietary treatment of GPL-derived code.'
 
+}
+
 # LIF-8 inspection checklist is a sibling contract, not the 98-node DIF mold, and is not engine-loaded.
 $docsIndex = Get-RepoText 'docs/README.md'
 Assert-Contains $docsIndex 'Game Registration Inspection Checklist v1' 'Docs index must name the inspection checklist.'
@@ -241,5 +249,9 @@ Assert-Contains $inspectionDoc 'GR-01 through GR-21' 'Human checklist must cover
 Assert-Contains $inspectionDoc 'game-agnostic completeness' 'Human checklist must keep game-specific coverage distinct from game-agnostic completeness.'
 Assert-Contains $inspectionDoc 'Preserve ambiguity' 'Human checklist must preserve GRID.md ambiguity.'
 Assert-Contains $inspectionDoc 'Proposed metadata-first' 'Human checklist must remain Proposed, not a frozen live contract.'
+Assert-Contains $inspectionDoc '--game-registration-inspection' 'Human checklist must name the independent Core inspection selector.'
+Assert-Contains $inspectionDoc '-InspectionContract' 'Human checklist must name the independent ArchitectureConformance inspection selector.'
+$coreTestsEntry = Get-RepoText 'tests/Grid.Core.Tests/Program.cs'
+Assert-Contains $coreTestsEntry '--game-registration-inspection' 'Core tests must expose an independent LIF-8 inspection selector.'
 
 Write-Host 'PASS: GRID architecture/documentation conformance checks passed.'
