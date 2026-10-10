@@ -122,11 +122,18 @@ if (args.Length == 1 && args[0] == "--canonical-runtime-focused")
     Console.WriteLine($"Passed {focusedChecks} focused canonical runtime checks.");
     return;
 }
+if (args.Length == 1 && args[0] == "--game-registration-inspection")
+{
+    var inspectionChecks = GameRegistrationInspectionContractChecks.Run();
+    Console.WriteLine($"Passed {inspectionChecks} game-registration inspection contract checks.");
+    return;
+}
 
 var checks = 0;
 checks += CanonicalKnowledgeKernelChecks.Run();
 checks += CanonicalLocationContractChecks.Run();
 checks += CanonicalRegistrationRefreshChecks.Run();
+checks += GameRegistrationInspectionContractChecks.Run();
 checks += CanonicalRelationshipRegistrationMdboChecks.Run();
 checks += GtaVLocationPopulation2AIIIChecks.Run();
 checks += CanonicalSelectorAndInstructionChecks.Run();

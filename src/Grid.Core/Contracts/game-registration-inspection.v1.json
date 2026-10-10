@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "contractId": "grid.game-registration-inspection.v1",
+  "contractVersion": "1.0.0",
+  "status": "Proposed",
+  "title": "Metadata-first Game Registration Inspection Checklist",
+  "productAuthority": "GRID.md",
+  "implementsIssue": "LIF-8",
+  "sourceReviewCommentId": "ca187be6-47ef-4ebb-b091-f9bd57510674",
+  "repositoryCommitBasis": "3ff26d5c0c5d1d92999f40a760a36a7e9a495d14",
+  "role": "InspectionChecklist",
+  "loadedByCanonicalRegistrationChecklist": false,
+  "authority": {
+    "kind": "InspectionAndEvidence",
+    "notAuthority": [
+      "src/Grid.Core/Contracts/canonical-registration-checklist.v1.json"
+    ],
+    "difMold": {
+      "path": "src/Grid.Core/Contracts/canonical-registration-checklist.v1.json",
+      "requiredNodeCount": 98,
+      "selectors": ["Tool", "Mod", "Location", "MissionQuest", "Item", "Actor"],
+      "role": "DIF projection scaffold. Slots describe required evidence, not populated game facts."
+    },
+    "publicationState": "NOT_PUBLISHED",
+    "candidateVerificationIsNot": [
+      "live publication",
+      "KnowledgeRebuild catalog import",
+      "Workstation Refresh publish",
+      "populated live DIF"
+    ]
+  },
+  "flow": [
+    "inspect + sealed evidence",
+    "canonical candidate + verified relationship graph",
+    "later DIF projection onto the 98-node mold"
+  ],
+  "engineSteps": [
+    "discover source",
+    "identify entity",
+    "identify parent/category relationships",
+    "map into nearest valid GRID root",
+    "preserve source-native deeper hierarchy",
+    "resolve names/aliases",
+    "preserve ambiguity",
+    "attach provenance",
+    "validate",
+    "register candidate",
+    "prepare"
+  ],
+  "coverageVocabulary": ["Implemented", "Partial", "Missing"],
+  "coverageRule": "DIF node presence is not inspection completeness. Partial never means complete. Missing categories stay visible. Game-specific adapter coverage is not game-agnostic completeness.",
+  "evidence": {
+    "rulingTags": ["FILE VERIFIED", "REFERENCE VERIFIED", "CORRELATED", "UNRESOLVED"],
+    "verificationKinds": ["FileVerified", "ReferenceVerified"],
+    "digestAlgorithm": "SHA-256",
+    "sourceKinds": [
+      "LocalGameDistribution",
+      "LocalModArtifact",
+      "PluginRecordFile",
+      "OfficialProvider",
+      "ModProvider",
+      "ReferenceProvider",
+      "FrozenRepositoryDataset"
+    ],
+    "rules": [
+      "Preserve ambiguity instead of guessing when evidence does not resolve.",
+      "Correlation is not FileVerified.",
+      "Unresolved remains explicit; it is not selectable truth.",
+      "A missing hash is Unresolved, not proof of absence.",
+      "Adapters must not mutate admitted source bytes.",
+      "Source-owned names are copied exactly; GRID identity points at source identity and does not rename."
+    ]
+  },
+  "engineDistinction": {
+    "thisContract": "Proposed inspection checklist for what GRID must inspect before a canonical projection is trustworthy. Reviewable artifact only. Not loaded by CanonicalRegistrationChecklist.Load().",
+    "implementedContract2": {
+      "candidateEngine": "CanonicalRegistrationEngine emits CanonicalRegistrationCandidate with publicationState NOT_PUBLISHED.",
+      "verifier": "CanonicalRegistrationCandidateVerifier rejects published candidates.",
+      "relationshipCapabilities": "src/Grid.Core/Contracts/canonical-relationship-registration-capabilities.v1.json",
+      "encoding": "CanonicalRegistrationEncoding.NotPublished"
+    },
+    "implementedDifMold": {
+      "path": "src/Grid.Core/Contracts/canonical-registration-checklist.v1.json",
+      "loader": "CanonicalRegistrationChecklist",
+      "constraint": "Exactly 98 authored nodes and six selector roots."
+    },
+    "implementedConnection": "Add Game / installation stores / MO2 two-pass registration are connection/catalog, not this inspection contract.",
+    "notWired": [
+      "CanonicalRegistrationEngine.Evaluate does not read this file.",
+      "CanonicalRegistrationRefreshOrchestrator is unchanged.",
+      "Workstation Refresh and DIF behavior are unchanged."
+    ]
+  },
+  "gapMap": [
+    { "id": "A", "layer": "Physical / provider inspection", "status": "Partial", "note": "Game-specific collectors exist; not a comprehensive inspection authority." },
+    { "id": "B", "layer": "Connection / catalog (Add Game)", "status": "Implemented", "note": "Present; not Contract 2 library registration." },
+    { "id": "C", "layer": "Contract 2 candidate engine", "status": "Implemented", "note": "Candidate-only, NOT_PUBLISHED, evidence-only." },
+    { "id": "D", "layer": "98-node / 6-selector DIF mold", "status": "Implemented", "note": "Projection scaffold, not inspection authority." },
+    { "id": "E", "layer": "GTA knowledge adapters", "status": "Partial", "note": "Substantial on some Location/Item/Actor/Mission evidence; not game-agnostic completeness." },
+    { "id": "F", "layer": "Live publish / Refresh / DIF fill", "status": "OutOfScope", "note": "Candidate verification must not enter these paths." }
+  ],
+  "assumptions": [
+    { "id": "A1", "text": "Repo GRID.md is the product contract. Linear uploads are not substitutes.", "reversible": true },
+    { "id": "A2", "text": "canonical-registration-checklist.v1.json remains the DIF mold and is not this inspection checklist.", "reversible": true },
+    { "id": "A3", "text": "GRID.md GAME REGISTRATION implemented names Contract 2 / library registration, not complete physical inspection of every category.", "reversible": true },
+    { "id": "A4", "text": "This file is not an EmbeddedResource and is not loaded by the registration engine. Wiring it into Evaluate would be a later, separate change.", "reversible": true },
+    { "id": "A5", "text": "Existing install-id formulas stay distinct and are not unified in v1.", "reversible": true },
+    { "id": "A6", "text": "If a later machine schema is needed beyond this JSON, add a sibling file rather than replacing this version or the 98-node mold.", "reversible": true }
+  ],
+  "escalations": [
+    {
+      "id": "E1",
+      "question": "May candidate-only proof set publicationState other than NOT_PUBLISHED?",
+      "v1Recommendation": "No"
+    },
+    {
+      "id": "E2",
+      "question": "May inspection skip File/Reference evidence or treat Unresolved as selectable truth?",
+      "v1Recommendation": "No"
+    },
+    {
+      "id": "E3",
+      "question": "May a candidate graph trigger KnowledgeRebuild import, Workstation Refresh publish, or populated live DIF?",
+      "v1Recommendation": "No"
+    }
+  ],
+  "categories": [
+    {
+      "id": "GR-01",
+      "name": "Game identity",
+      "inspect": "Stable GameId, source-owned names, GRID key pointing at source identity; GRID does not rename.",
+      "grounding": ["GRID.md KnowledgeEntry", "GRID.md sources own names", "ProductionGridCatalogService GameIds", "adapter.psd1 Id"],
+      "coverage": "Partial",
+      "v1Default": "Keep existing GameIds. Do not add a third identity family."
+    },
+    {
+      "id": "GR-02",
+      "name": "Edition / build / platform",
+      "inspect": "Distinct editions and observed build/file version. Legacy is not Enhanced; SE is not VR.",
+      "grounding": ["GRID.md catalog inequality examples", "scripts/games/grandtheftautov/discovery.steam.v1.json", "Get-GridGtaInstallationInventory"],
+      "coverage": "Partial",
+      "v1Default": "Edition is identity. Do not merge editions. Unobserved build/platform stays Unresolved."
+    },
+    {
+      "id": "GR-03",
+      "name": "Installation roots and executables",
+      "inspect": "Canonical install root, required executable beneath it, user-data roots, manager instance roots.",
+      "grounding": ["JsonGameInstallationRegistrationStore", "Mo2RegistrationService", "game-user-data-roots.v1", "GTA installation inventory"],
+      "coverage": "Partial",
+      "v1Default": "Keep existing install-id formulas. User-data roots are descriptors, not proof of connection."
+    },
+    {
+      "id": "GR-04",
+      "name": "Packages / DLC / updates",
+      "inspect": "Official packages, DLC, updates, Creations/CCC, version migration.",
+      "grounding": ["GRID.md MissionQuest/DLC DIF branch", "scripts/health/classes/updates-migration/class.v1.json"],
+      "coverage": "Missing",
+      "v1Default": "Keep the category visible. Record Observed/Unresolved only. No package schema in v1."
+    },
+    {
+      "id": "GR-05",
+      "name": "Files and hashes",
+      "inspect": "Bounded file identity, SHA-256, change-during-read, size, readability.",
+      "grounding": ["scripts/health/schemas/file-observation.v1.schema.json", "artifact-integrity-report.v1", "RegistrationSource.Sha256"],
+      "coverage": "Partial",
+      "v1Default": "SHA-256 only. Missing hash is Unresolved, not absence. Do not require full-tree hashing for v1 trust."
+    },
+    {
+      "id": "GR-06",
+      "name": "Manifests",
+      "inspect": "Provider, adapter, capability, plugin, archive, and recipe manifests.",
+      "grounding": ["adapter.psd1 SchemaVersion 2", "discovery.steam.v1.json", "capabilities.v1.json", "GTA forever-together.v1.json"],
+      "coverage": "Partial",
+      "v1Default": "Each manifest family is evidence, not the library."
+    },
+    {
+      "id": "GR-07",
+      "name": "Assets",
+      "inspect": "Meshes, textures, scripts, archives, winners, declared versus provided paths.",
+      "grounding": ["GRID.md Wearable Lanterns example", "Mo2SkyrimAssetInspectionService", "missing-mesh / missing-texture Classes"],
+      "coverage": "Partial",
+      "v1Default": "Keep visible. Do not claim a shared asset catalog."
+    },
+    {
+      "id": "GR-08",
+      "name": "Native record families and IDs",
+      "inspect": "Native family, canonical native ID, defining plugin, EditorID, data hash where evidenced.",
+      "grounding": ["GRID.md do not assume stable mission IDs", "RegistrationOrigin", "Mo2Tes4CanonicalRecordKey", "TES4 diagnostic families"],
+      "coverage": "Partial",
+      "v1Default": "Native and game-owned keys. Unstable IDs stay Unresolved."
+    },
+    {
+      "id": "GR-09",
+      "name": "Localization",
+      "inspect": "Locale and alias fields on names/records, plus source-owned terminology. String tables only when a native adapter already exposes them; they are not implied by Partial.",
+      "grounding": ["canonical-registration-checklist.v1.json locale and source-owned-terminology requirements", "RegistrationName.Locale"],
+      "coverage": "Partial",
+      "v1Default": "Partial means locale/alias fields exist (RegistrationName.Locale, DIF locale requirements). It does not mean string-table completeness."
+    },
+    {
+      "id": "GR-10",
+      "name": "Locations / world records",
+      "inspect": "Worlds, cells, places, and evidence-backed hierarchy including fractional levels.",
+      "grounding": ["GRID.md Location L0-L10 and fractionals", "GTA location adapters", "TES4 WRLD/CELL/REFR"],
+      "coverage": "Partial",
+      "v1Default": "Map to nearest Location anchor. Do not coerce geography into the mold."
+    },
+    {
+      "id": "GR-11",
+      "name": "Actors",
+      "inspect": "Player and non-player actors, factions, placed versus base identities.",
+      "grounding": ["GRID.md Actor mold", "GTA ped adapters", "TES4 NPC_/ACHR", "Resolve-GridSkyrimPlacedActorReference"],
+      "coverage": "Partial",
+      "v1Default": "Keep actor versus placed-actor distinct."
+    },
+    {
+      "id": "GR-12",
+      "name": "Items",
+      "inspect": "Weapons, wearables, vehicles-as-items, consumables, magic, and related native records.",
+      "grounding": ["GRID.md Item mold", "GTA item/weapons/apparel adapters", "TES4 ARMO/ALCH/INGR/COBJ/OTFT/LVLI"],
+      "coverage": "Partial",
+      "v1Default": "Native records plus relationships. No extra shared taxonomy in v1."
+    },
+    {
+      "id": "GR-13",
+      "name": "Missions",
+      "inspect": "Story, DLC, Online, and Mod jobs or quests.",
+      "grounding": ["GRID.md MissionQuest mold", "GTA online/UGC adapters", "scripts/health/classes/quests-aliases/class.v1.json"],
+      "coverage": "Partial",
+      "v1Default": "Inventory is not mission understanding. Keep Unresolved when native IDs are absent."
+    },
+    {
+      "id": "GR-14",
+      "name": "Vehicles",
+      "inspect": "Vehicle identities, models, and world links.",
+      "grounding": ["GRID.md Item/vehicles", "GtaVMountedVehicleKnowledgeAdapter"],
+      "coverage": "Partial",
+      "v1Default": "Keep visible. Do not map TES4 families onto vehicles."
+    },
+    {
+      "id": "GR-15",
+      "name": "Relationships",
+      "inspect": "Containment, masters, providers, load order, references, enable-parents, and manager relationships.",
+      "grounding": ["canonical-relationship-registration-capabilities.v1.json", "CanonicalRelationshipRegistrationPipeline", "GRID.md Tongva/Aela examples"],
+      "coverage": "Partial",
+      "v1Default": "The candidate graph is the Contract 2 output. Unresolved edges stay Unresolved."
+    },
+    {
+      "id": "GR-16",
+      "name": "Overrides",
+      "inspect": "Winning versus defining records and files.",
+      "grounding": ["GRID.md iNeed/SunHelm example", "Mo2Tes4OverrideChain", "asset winner resolution"],
+      "coverage": "Partial",
+      "v1Default": "Keep file versus record overrides separate. Override is not a defect."
+    },
+    {
+      "id": "GR-17",
+      "name": "Conflicts",
+      "inspect": "Record conflicts, asset conflicts, and compatibility observations.",
+      "grounding": ["scripts/health/classes/record-conflicts/class.v1.json", "compatibility-matrix.v1.schema.json"],
+      "coverage": "Partial",
+      "v1Default": "IncompleteEvidence and Contradictory remain valid. Community intel is not executable truth."
+    },
+    {
+      "id": "GR-18",
+      "name": "Provenance",
+      "inspect": "Source, adapter, time, SHA-256, ruling tags, and verificationStatus.",
+      "grounding": ["GRID.md Evidence Ruling Tags", "EvidenceVerificationKind", "CanonicalRegistrationCandidate.Rulings"],
+      "coverage": "Partial",
+      "v1Default": "Reuse evidence/provenance contracts. Do not weaken ruling tags."
+    },
+    {
+      "id": "GR-19",
+      "name": "Applicability",
+      "inspect": "Which game, edition, installation, and profile a candidate is about. Implemented Contract 2 RegistrationApplicability remains GameId plus optional ProfileId only; edition and installation are inspection facts, not extra applicability fields.",
+      "grounding": ["RegistrationApplicability", "request-envelope.v1 context", "all 98 DIF nodes require game and profile"],
+      "coverage": "Partial",
+      "v1Default": "Do not widen RegistrationApplicability in v1. Bind candidates to GameId and optional ProfileId. Record edition and installation as evidence-backed facts when observed; leave them Unresolved when not."
+    },
+    {
+      "id": "GR-20",
+      "name": "Operational instructions",
+      "inspect": "Installation, configuration, usage, compatibility, update, uninstall, and troubleshooting guidance.",
+      "grounding": ["GRID.md original instructions are part of registration", "GTA BattlEye/Menyoo operator confirmations"],
+      "coverage": "Missing",
+      "v1Default": "Keep visible. Instructions are inspection evidence of required operator action, not auto-execution."
+    },
+    {
+      "id": "GR-21",
+      "name": "Tools (launch versus knowledge)",
+      "inspect": "Launch configuration can work while integration knowledge remains unresolved.",
+      "grounding": ["GRID.md Cherax split", "Tool DIF root allowsEntities"],
+      "coverage": "Partial",
+      "v1Default": "Launch config works unresolved. Integration knowledge stays Unresolved until evidenced."
+    }
+  ]
+}
