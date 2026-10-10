@@ -14,6 +14,13 @@ public static class CanonicalRelationshipRegistrationPipeline
         CancellationToken cancellationToken = default)
         => CanonicalRelationshipRegistrationMdboComposer.RegisterCandidateAsync(adapter, sources, rules, null, cancellationToken);
 
+    public static Task<CanonicalRegistrationCandidate> RegisterAsync(IRegistrationEvidenceAdapter adapter,
+        IReadOnlyList<RegistrationSourceArtifact> sources, RegistrationRuleSet rules,
+        IReadOnlyList<OperationalInstructionSectionRequest> instructionSections,
+        CancellationToken cancellationToken = default)
+        => CanonicalRelationshipRegistrationMdboComposer.RegisterCandidateAsync(
+            adapter, sources, rules, null, instructionSections, cancellationToken);
+
     public static Task<CanonicalRegistrationCandidate> RegisterWithLegacyAsync(IRegistrationEvidenceAdapter adapter,
         IReadOnlyList<RegistrationSourceArtifact> sources, RegistrationRuleSet rules,
         IReadOnlyList<CanonicalCatalogPackage> existingPackages, CancellationToken cancellationToken = default)
