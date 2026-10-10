@@ -15,6 +15,13 @@ This is the Proposed metadata-first **inspection** checklist for Contract 2 (LIF
 
 `CanonicalRegistrationChecklist.Load()` embeds only the 98-node mold. This inspection JSON is **not** an `EmbeddedResource` and is **not** evaluated by the registration engine.
 
+Independent LIF-8 acceptance selectors (these do not skip or replace the full suites):
+
+```text
+dotnet run --project tests/Grid.Core.Tests/Grid.Core.Tests.csproj -c Debug -- --game-registration-inspection
+pwsh -NoProfile -ExecutionPolicy Bypass -File tests/ArchitectureConformance.Tests.ps1 -InspectionContract
+```
+
 ## Flow
 
 ```text
