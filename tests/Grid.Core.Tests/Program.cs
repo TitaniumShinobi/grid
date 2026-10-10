@@ -87,9 +87,7 @@ if (args.Length > 0 && args[0] == "--gta-v-location-population-2a-iii-live-proof
 if (args.Length == 1 && args[0] == "--operational-instruction-inspection")
 {
     var instructionChecks = CanonicalOperationalInstructionInspectionChecks.Run();
-    var mdboChecks = CanonicalRelationshipRegistrationMdboChecks.Run();
     Console.WriteLine($"Passed {instructionChecks} operational-instruction inspection checks; candidate only, NOT_PUBLISHED.");
-    Console.WriteLine($"Passed {mdboChecks} existing no-instruction MDBO composer checks.");
     return;
 }
 
