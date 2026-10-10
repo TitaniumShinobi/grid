@@ -10,9 +10,22 @@ public static class CanonicalRegistrationEngine
         CancellationToken cancellationToken = default)
         => await RegisterWithLegacyAsync(adapter, sources, rules, [], cancellationToken).ConfigureAwait(false);
 
+    public static Task<CanonicalRegistrationCandidate> RegisterAsync(IRegistrationEvidenceAdapter adapter,
+        IReadOnlyList<RegistrationSourceArtifact> sources, RegistrationRuleSet rules,
+        IReadOnlyList<OperationalInstructionSectionRequest> instructionSections,
+        CancellationToken cancellationToken = default)
+        => RegisterCoreAsync(adapter, sources, rules, [], instructionSections, cancellationToken);
+
     public static async Task<CanonicalRegistrationCandidate> RegisterWithLegacyAsync(IRegistrationEvidenceAdapter adapter,
         IReadOnlyList<RegistrationSourceArtifact> sources, RegistrationRuleSet rules,
         IReadOnlyList<CanonicalCatalogPackage> existingPackages, CancellationToken cancellationToken = default)
+        => await RegisterCoreAsync(adapter, sources, rules, existingPackages, null, cancellationToken).ConfigureAwait(false);
+
+    private static async Task<CanonicalRegistrationCandidate> RegisterCoreAsync(IRegistrationEvidenceAdapter adapter,
+        IReadOnlyList<RegistrationSourceArtifact> sources, RegistrationRuleSet rules,
+        IReadOnlyList<CanonicalCatalogPackage> existingPackages,
+        IReadOnlyList<OperationalInstructionSectionRequest>? instructionSections,
+        CancellationToken cancellationToken)
     {
         ArgumentNullException.ThrowIfNull(adapter);
         ArgumentNullException.ThrowIfNull(sources);
@@ -31,6 +44,15 @@ public static class CanonicalRegistrationEngine
         var evidence = await adapter.ExtractAsync(frozen, cancellationToken).ConfigureAwait(false);
         if (frozen.Any(item => CanonicalRegistrationEncoding.Digest(item.Bytes) != item.Source.Sha256))
             throw new InvalidDataException("An adapter modified its admitted source bytes.");
+        if (instructionSections is { Count: > 0 })
+        {
+            var inspection = CanonicalOperationalInstructionInspector.Inspect(frozen, instructionSections);
+            evidence = evidence with
+            {
+                Evidence = evidence.Evidence.Concat(inspection.Evidence).ToArray(),
+                Instructions = inspection.Instructions.Select(OperationalInstructionInspection.ToClaim).ToArray(),
+            };
+        }
         cancellationToken.ThrowIfCancellationRequested();
         return Evaluate(Normalize(new(frozen.Select(s => s.Source).ToArray(), rules, evidence)), existingPackages);
     }
@@ -55,7 +77,13 @@ public static class CanonicalRegistrationEngine
                 input.Evidence.Entities.Select(e => e with { Names = Names(e.Names), Applicability = Applies(e.Applicability),
                     Origins = Origins(e.Origins), EvidenceIds = E(e.EvidenceIds) }).OrderBy(e => e.Key, StringComparer.Ordinal).ToArray(),
                 input.Evidence.Relationships.Select(r => r with { EvidenceIds = E(r.EvidenceIds) }).OrderBy(r => r.Id, StringComparer.Ordinal).ToArray(),
-                input.Evidence.Facets.Select(f => f with { EvidenceIds = E(f.EvidenceIds) }).OrderBy(f => f.Id, StringComparer.Ordinal).ToArray()));
+                input.Evidence.Facets.Select(f => f with { EvidenceIds = E(f.EvidenceIds) }).OrderBy(f => f.Id, StringComparer.Ordinal).ToArray(),
+                input.Evidence.Instructions is null or { Length: 0 } ? null :
+                    input.Evidence.Instructions.Select(i => i with
+                    {
+                        Applicability = Applies(i.Applicability),
+                        EvidenceIds = E(i.EvidenceIds),
+                    }).OrderBy(i => i.Id, StringComparer.Ordinal).ToArray()));
     }
 
     internal static CanonicalRegistrationCandidate Evaluate(RegistrationInput input, IReadOnlyList<CanonicalCatalogPackage>? existingPackages = null)
@@ -74,6 +102,7 @@ public static class CanonicalRegistrationEngine
         Unique(input.Evidence.Entities.Select(e => e.Key), "entity claim");
         Unique(input.Evidence.Relationships.Select(e => e.Id), "relationship claim");
         Unique(input.Evidence.Facets.Select(e => e.Id), "facet claim");
+        Unique((input.Evidence.Instructions ?? []).Select(e => e.Id), "instruction claim");
         var sources = input.Sources.ToDictionary(s => s.Id, StringComparer.Ordinal);
         foreach (var source in sources.Values)
         {
@@ -316,12 +345,58 @@ public static class CanonicalRegistrationEngine
             if (alias.Select(a => a.Entity.Id).Distinct().Count() > 1)
                 Rule(CanonicalRegistrationEncoding.Digest(alias.Key.ToString()), "alias", RegistrationOutcome.Ambiguous,
                     "alias-multiple-identities", CanonicalRegistrationEncoding.Ordered(alias.SelectMany(a => a.Name.EvidenceIds)));
+        var instructions = new List<RegisteredOperationalInstruction>();
+        foreach (var claim in input.Evidence.Instructions ?? [])
+        {
+            if (!Enum.IsDefined(claim.Kind) || !Enum.IsDefined(claim.Presence) ||
+                !sources.ContainsKey(claim.SourceId) || string.IsNullOrWhiteSpace(claim.Locator) ||
+                claim.VerbatimText is null || !CanonicalRegistrationEncoding.IsDigest(claim.ContentSha256))
+            { Rule(claim.Id, "instruction", RegistrationOutcome.Rejected, "instruction-evidence-missing", claim.EvidenceIds); continue; }
+            if (claim.ContentSha256 != OperationalInstructionInspection.ContentDigest(claim.VerbatimText))
+                throw new InvalidDataException("Instruction content digest does not match retained wording.");
+            if (!Backed(claim.EvidenceIds) ||
+                !claim.EvidenceIds.Any(id => evidence[id].SourceId == claim.SourceId &&
+                    string.Equals(evidence[id].Locator, claim.Locator, StringComparison.Ordinal)))
+            { Rule(claim.Id, "instruction", RegistrationOutcome.Rejected, "instruction-evidence-missing", claim.EvidenceIds); continue; }
+            var applicability = (claim.Applicability ?? [])
+                .Where(a => !string.IsNullOrWhiteSpace(a.GameId) &&
+                    (a.ProfileId is null || !string.IsNullOrWhiteSpace(a.ProfileId)) && Backed(a.EvidenceIds)).ToArray();
+            if (applicability.Length != (claim.Applicability?.Length ?? 0))
+                Rule(claim.Id, "instruction", RegistrationOutcome.Unresolved, "optional-metadata-evidence-incomplete", claim.EvidenceIds);
+            instructions.Add(new(claim.Id, claim.SourceId, claim.Locator, claim.Kind,
+                OperationalInstructionInspection.CategoryIdFor(claim.Kind), claim.Presence, claim.VerbatimText,
+                claim.ContentSha256, applicability, claim.EvidenceIds));
+            var reason = claim.Presence switch
+            {
+                OperationalInstructionSectionPresence.Present => "instruction-section-admitted",
+                OperationalInstructionSectionPresence.Missing => "instruction-section-missing",
+                OperationalInstructionSectionPresence.ProvenAbsence => "instruction-section-absent",
+                OperationalInstructionSectionPresence.EmptyUnresolved => "instruction-section-empty",
+                _ => "instruction-evidence-missing",
+            };
+            Rule(claim.Id, "instruction",
+                claim.Presence == OperationalInstructionSectionPresence.Present
+                    ? RegistrationOutcome.Correlated : RegistrationOutcome.Unresolved,
+                reason, claim.EvidenceIds);
+        }
+        foreach (var group in instructions
+                     .Where(item => item.Presence == OperationalInstructionSectionPresence.Present &&
+                                    item.VerbatimText.Length > 0)
+                     .GroupBy(item => string.Join('\u001f', item.Kind.ToString(),
+                         string.Join('\u001e', item.Applicability.Select(value => value.GameId + "\u001d" + (value.ProfileId ?? ""))))))
+        {
+            if (group.Select(item => item.VerbatimText).Distinct(StringComparer.Ordinal).Count() < 2) continue;
+            foreach (var item in group)
+                Rule(item.Id, "instruction", RegistrationOutcome.Ambiguous, "instruction-guidance-conflicting", item.EvidenceIds);
+        }
         var orderedRelationships = relationships.OrderBy(r => r.Id, StringComparer.Ordinal).ToArray();
         var orderedRulings = rulings.OrderBy(r => r.Stage, StringComparer.Ordinal).ThenBy(r => r.ClaimId, StringComparer.Ordinal)
             .ThenBy(r => r.Reason, StringComparer.Ordinal).ToArray();
+        var orderedInstructions = instructions.OrderBy(value => value.Id, StringComparer.Ordinal).ToArray();
         var candidate = new CanonicalRegistrationCandidate(1, CanonicalRegistrationEncoding.EngineVersion, checklist.Version, checklist.Digest,
             CanonicalRegistrationEncoding.Digest(input.RuleSet), input, entities.ToArray(), orderedRelationships,
-            facets.OrderBy(f => f.Id, StringComparer.Ordinal).ToArray(), orderedRulings, CanonicalRegistrationEncoding.NotPublished);
+            facets.OrderBy(f => f.Id, StringComparer.Ordinal).ToArray(), orderedRulings, CanonicalRegistrationEncoding.NotPublished,
+            orderedInstructions.Length == 0 ? null : orderedInstructions);
         CanonicalRelationshipGraphValidator.Validate(candidate);
         return candidate;
     }

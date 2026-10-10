@@ -73,7 +73,7 @@ public static class CanonicalOperationalInstructionInspector
                 OperationalInstructionInspection.CategoryIdFor(request.Kind),
                 presence,
                 verbatim,
-                CanonicalRegistrationEncoding.Digest(StrictUtf8.GetBytes(verbatim)),
+                OperationalInstructionInspection.ContentDigest(verbatim),
                 applicability,
                 [evidenceId]), evidence));
         }

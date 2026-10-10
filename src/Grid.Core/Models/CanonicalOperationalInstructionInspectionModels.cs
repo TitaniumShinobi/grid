@@ -55,8 +55,8 @@ public sealed record RegisteredOperationalInstruction(
     string[] EvidenceIds);
 
 /// <summary>
-/// Sibling of CanonicalRegistrationCandidate for GR-20. Evaluate/Verifier do not load this type.
-/// BoundCandidateDigest is an optional attachment pointer; this record does not mutate the bound candidate.
+/// Extraction receipt for explicitly identified instruction sections. RegisterAsync copies
+/// claims into RegistrationEvidenceSet so Evaluate/Verifier persist them on the canonical candidate.
 /// </summary>
 public sealed record CanonicalOperationalInstructionCandidate(
     int FormatVersion,
@@ -75,6 +75,13 @@ public static class OperationalInstructionInspection
     public const string InspectorVersion = "grid.operational-instruction-inspection.v1";
     public const string CategoryId = "GR-20";
     public const int FormatVersion = 1;
+
+    public static string ContentDigest(string verbatim) =>
+        CanonicalRegistrationEncoding.Digest(new System.Text.UTF8Encoding(false, true).GetBytes(verbatim));
+
+    public static RegistrationInstructionClaim ToClaim(RegisteredOperationalInstruction instruction) =>
+        new(instruction.Id, instruction.SourceId, instruction.Locator, instruction.Kind, instruction.Presence,
+            instruction.VerbatimText, instruction.ContentSha256, instruction.Applicability, instruction.EvidenceIds);
 
     public static string CategoryIdFor(OperationalInstructionKind kind) => kind switch
     {

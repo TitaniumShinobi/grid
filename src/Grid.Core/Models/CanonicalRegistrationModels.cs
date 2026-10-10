@@ -36,8 +36,14 @@ public sealed record RegistrationLevelFrameNode(string Id, string Selector, stri
     string Label, string Locale, string[] EvidenceIds);
 public sealed record RegistrationRuleSet(string Version, RegistrationMappingRule[] Rules,
     [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] RegistrationLevelFrameNode[]? LevelFrame = null);
+public sealed record RegistrationInstructionClaim(
+    string Id, string SourceId, string Locator, OperationalInstructionKind Kind,
+    OperationalInstructionSectionPresence Presence, string VerbatimText, string ContentSha256,
+    RegistrationApplicability[] Applicability, string[] EvidenceIds);
 public sealed record RegistrationEvidenceSet(RegistrationEvidence[] Evidence, RegistrationEntityClaim[] Entities,
-    RegistrationRelationshipClaim[] Relationships, RegistrationFacetClaim[] Facets);
+    RegistrationRelationshipClaim[] Relationships, RegistrationFacetClaim[] Facets,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    RegistrationInstructionClaim[]? Instructions = null);
 public sealed record RegistrationInput(RegistrationSource[] Sources, RegistrationRuleSet RuleSet,
     RegistrationEvidenceSet Evidence);
 public sealed record RegistrationRuling(string ClaimId, string Stage, RegistrationOutcome Outcome,
@@ -56,7 +62,9 @@ public sealed record RegisteredCanonicalFacet(string Id, string EntityId, Regist
 public sealed record CanonicalRegistrationCandidate(int FormatVersion, string EngineVersion,
     string ChecklistVersion, string ChecklistDigest, string RuleDigest, RegistrationInput Input,
     RegisteredCanonicalEntity[] Entities, RegisteredCanonicalRelationship[] Relationships,
-    RegisteredCanonicalFacet[] Facets, RegistrationRuling[] Rulings, string PublicationState);
+    RegisteredCanonicalFacet[] Facets, RegistrationRuling[] Rulings, string PublicationState,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    RegisteredOperationalInstruction[]? Instructions = null);
 public sealed record RegistrationNavigationContext(string GameId, string ProfileId, string Locale);
 public sealed record RegistrationNavigationRow(string PathId, string? ParentPathId, string Selector,
     string Label, string? EntityId, bool Selectable, bool CanDescend, string[] EvidenceIds);

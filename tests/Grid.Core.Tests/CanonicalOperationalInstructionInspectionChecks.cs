@@ -122,7 +122,118 @@ internal static class CanonicalOperationalInstructionInspectionChecks
         var checklist = CanonicalRegistrationChecklist.Load();
         Assert(checklist.Nodes.Length == 98 && checklist.Version == "1",
             "This slice does not change the frozen 98-node DIF mold.");
+        checks += RunRegistrationPathAsync().GetAwaiter().GetResult();
         return checks;
+    }
+
+    private static async Task<int> RunRegistrationPathAsync()
+    {
+        var checks = 0;
+        void Assert(bool condition, string message)
+        {
+            if (!condition) throw new InvalidOperationException("Operational instruction registration: " + message);
+            checks++;
+        }
+        async Task Reject(Func<Task> action, string reason)
+        {
+            try { await action(); }
+            catch (Exception error) when (error is InvalidDataException or ArgumentException)
+            {
+                checks++;
+                return;
+            }
+            throw new InvalidOperationException("Operational instruction registration expected rejection: " + reason);
+        }
+
+        var widget = WidgetOverlayFixture();
+        var archive = ArchiveRepairFixture();
+        var widgetSources = WithEntity(widget, "src.widget.entity", "Mod", "Overlay", "widget-overlay",
+            "game.fixture.widget", "profile.overlay", "Widget Overlay");
+        var archiveSources = WithEntity(archive, "src.tool.entity", "Tool", "Utility", "archive-repair-cli",
+            "game.fixture.archive", null, "Archive Repair CLI");
+        var rules = new RegistrationRuleSet("1",
+        [
+            new("map.mod", "fixture.mod", "Mod", "Overlay", "Mod"),
+            new("map.tool", "fixture.tool", "Tool", "Utility", "Tool"),
+        ]);
+
+        var widgetCandidate = await CanonicalRegistrationEngine.RegisterAsync(
+            new FamilyAdapter(), widgetSources, rules, widget.Requests);
+        var archiveCandidate = await CanonicalRegistrationEngine.RegisterAsync(
+            new FamilyAdapter(), archiveSources, rules, archive.Requests);
+        CanonicalRegistrationCandidateVerifier.Verify(widgetCandidate);
+        CanonicalRegistrationCandidateVerifier.Verify(archiveCandidate);
+
+        Assert(widgetCandidate.PublicationState == CanonicalRegistrationEncoding.NotPublished &&
+               archiveCandidate.PublicationState == CanonicalRegistrationEncoding.NotPublished,
+            "RegisterAsync candidates remain NOT_PUBLISHED.");
+        Assert(widgetCandidate.Instructions is { Length: > 0 } && archiveCandidate.Instructions is { Length: > 0 },
+            "RegisterAsync stores operational instructions on the canonical candidate.");
+        Assert(widgetCandidate.Input.Evidence.Instructions is { Length: > 0 } &&
+               archiveCandidate.Input.Evidence.Instructions is { Length: > 0 },
+            "Instruction claims are durable on the registration input that Verify re-evaluates.");
+
+        TraceRegistered(widgetCandidate, widgetSources, "widget.install", "## Installation",
+            "Install through the manager. Enable Widget Overlay.esm last.", Assert);
+        TraceRegistered(archiveCandidate, archiveSources, "tool.install", "/instructions/installation",
+            "Copy archive-repair.exe next to the game executable.", Assert);
+        Assert(widgetCandidate.Rulings.Any(value => value.ClaimId == "widget.update" &&
+                                                    value.Reason == "instruction-section-missing") &&
+               archiveCandidate.Rulings.Any(value => value.ClaimId == "tool.update" &&
+                                                     value.Reason == "instruction-section-absent"),
+            "Registration retains missing versus proven-absence instruction rulings.");
+        Assert(widgetCandidate.Rulings.Any(value => value.ClaimId == "widget.install" &&
+                                                    value.Reason == "instruction-guidance-conflicting") &&
+               archiveCandidate.Rulings.Any(value => value.ClaimId == "tool.usage" &&
+                                                     value.Reason == "instruction-guidance-conflicting"),
+            "Registration retains contradictory guidance without resolving it.");
+
+        var widgetAgain = await CanonicalRegistrationEngine.RegisterAsync(
+            new FamilyAdapter(), widgetSources.Reverse().ToArray(), rules, widget.Requests.Reverse().ToArray());
+        Assert(CanonicalRegistrationEncoding.Bytes(widgetCandidate)
+                   .SequenceEqual(CanonicalRegistrationEncoding.Bytes(widgetAgain)),
+            "RegisterAsync instruction attachment is deterministic.");
+
+        var mutated = widgetSources[1] with { Bytes = widgetSources[1].Bytes.ToArray() };
+        mutated.Bytes[0] ^= 1;
+        await Reject(() => CanonicalRegistrationEngine.RegisterAsync(
+                new FamilyAdapter(), [widgetSources[0], mutated, .. widgetSources.Skip(2)], rules, widget.Requests),
+            "RegisterAsync fails closed on changed instruction source bytes.");
+
+        var baseline = await CanonicalRegistrationEngine.RegisterAsync(
+            new FamilyAdapter(), widgetSources, rules);
+        CanonicalRegistrationCandidateVerifier.Verify(baseline);
+        Assert(baseline.Instructions is null && baseline.Input.Evidence.Instructions is null,
+            "Registration without explicit instruction sections does not invent instruction claims.");
+        Assert(!System.Text.Encoding.UTF8.GetString(CanonicalRegistrationEncoding.Bytes(baseline))
+                .Contains("\"instructions\"", StringComparison.Ordinal),
+            "Omitting instruction sections keeps existing candidate JSON byte-compatible.");
+        return checks;
+    }
+
+    private static void TraceRegistered(
+        CanonicalRegistrationCandidate candidate,
+        IReadOnlyList<RegistrationSourceArtifact> sources,
+        string requestId,
+        string locator,
+        string expectedSpan,
+        Action<bool, string> assert)
+    {
+        var instruction = candidate.Instructions!.Single(value => value.Id == requestId);
+        var claim = candidate.Input.Evidence.Instructions!.Single(value => value.Id == requestId);
+        var evidence = candidate.Input.Evidence.Evidence.Single(value => value.Id == instruction.EvidenceIds.Single());
+        var source = sources.Single(value => value.Source.Id == instruction.SourceId);
+        var text = Utf8.GetString(source.Bytes).Replace("\r\n", "\n", StringComparison.Ordinal);
+        assert(instruction.Locator == locator && claim.Locator == locator && evidence.Locator == locator &&
+               evidence.SourceId == instruction.SourceId,
+            requestId + " registration evidence keeps source identity and locator.");
+        assert(instruction.Applicability.Length > 0 && instruction.Applicability.All(value =>
+                value.EvidenceIds.Contains(evidence.Id, StringComparer.Ordinal)),
+            requestId + " registration applicability is evidence-backed.");
+        assert(instruction.VerbatimText.Contains(expectedSpan, StringComparison.Ordinal) &&
+               text.Contains(instruction.VerbatimText, StringComparison.Ordinal) &&
+               instruction.ContentSha256 == OperationalInstructionInspection.ContentDigest(instruction.VerbatimText),
+            requestId + " registration wording is exact admitted source evidence.");
     }
 
     private static void TracePresent(
@@ -259,6 +370,83 @@ internal static class CanonicalOperationalInstructionInspectionChecks
         return new(new RegistrationSource(id, uri, kind, CanonicalRegistrationEncoding.Digest(bytes),
             "fixture.operational-instruction", "1", family), bytes);
     }
+
+    private static RegistrationSourceArtifact[] WithEntity(
+        Fixture fixture, string entityId, string selector, string classification, string nativeId,
+        string game, string? profile, string displayName)
+    {
+        var profileJson = profile is null ? "null" : $"\"{profile}\"";
+        var entity = $$"""
+            {
+              "rows": [
+                {
+                  "key": "{{entityId}}",
+                  "nativeId": "{{nativeId}}",
+                  "selector": "{{selector}}",
+                  "game": "{{game}}",
+                  "classification": "{{classification}}",
+                  "kind": "Entity",
+                  "names": [{ "text": "{{displayName}}", "locale": "en-US" }],
+                  "scopes": [{ "game": "{{game}}", "profile": {{profileJson}} }],
+                  "parents": [],
+                  "facets": [],
+                  "origin": "{{selector}}",
+                  "nativeNamespace": "fixture.native"
+                }
+              ]
+            }
+            """;
+        var entitySource = Artifact(entityId, "mod://entities/" + entityId,
+            KnowledgeSourceKind.LocalModArtifact, fixture.Family, entity);
+        return [entitySource, .. fixture.Sources];
+    }
+
+    private sealed class FamilyAdapter : IRegistrationEvidenceAdapter
+    {
+        public string Id => "fixture.operational-instruction";
+        public string Version => "1";
+        public Task<RegistrationEvidenceSet> ExtractAsync(IReadOnlyList<RegistrationSourceArtifact> sources,
+            CancellationToken cancellationToken = default)
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+            var evidence = new List<RegistrationEvidence>();
+            var entities = new List<RegistrationEntityClaim>();
+            foreach (var artifact in sources)
+            {
+                NativeFamily? family;
+                try
+                {
+                    family = System.Text.Json.JsonSerializer.Deserialize<NativeFamily>(
+                        artifact.Bytes, CanonicalRegistrationEncoding.Json);
+                }
+                catch (System.Text.Json.JsonException)
+                {
+                    continue;
+                }
+                if (family?.Rows is null) continue;
+                foreach (var row in family.Rows)
+                {
+                    var eid = artifact.Source.Id + ":" + row.Key;
+                    var basis = artifact.Source.Kind == KnowledgeSourceKind.ModProvider
+                        ? EvidenceVerificationKind.ReferenceVerified : EvidenceVerificationKind.FileVerified;
+                    evidence.Add(new(eid, artifact.Source.Id, "/rows/" + row.Key, basis));
+                    entities.Add(new(row.Key, artifact.Source.Id, row.NativeNamespace, row.NativeId, row.Selector,
+                        row.Game, row.Classification, row.Kind,
+                        row.Names.Select(n => new RegistrationName(n.Text, n.Locale, n.Alias, [eid])).ToArray(),
+                        row.Scopes.Select(s => new RegistrationApplicability(s.Game, s.Profile, [eid])).ToArray(),
+                        [new(row.Origin, row.NativeNamespace, row.NativeId, [eid])], [eid]));
+                }
+            }
+            return Task.FromResult(new RegistrationEvidenceSet(evidence.ToArray(), entities.ToArray(), [], []));
+        }
+    }
+
+    private sealed record NativeName(string Text, string Locale, bool Alias = false);
+    private sealed record NativeScope(string Game, string? Profile);
+    private sealed record NativeRow(string Key, string NativeId, string Selector, string? Game, string Classification,
+        RegistrationEntityKind Kind, NativeName[] Names, NativeScope[] Scopes, string[] Parents,
+        object[] Facets, string Origin = "Game", string NativeNamespace = "fixture.native");
+    private sealed record NativeFamily(NativeRow[] Rows);
 
     private sealed record Fixture(string Family, RegistrationSourceArtifact[] Sources,
         OperationalInstructionSectionRequest[] Requests);
