@@ -84,6 +84,13 @@ if (args.Length > 0 && args[0] == "--gta-v-location-population-2a-iii-live-proof
     return;
 }
 
+if (args.Length == 1 && args[0] == "--operational-instruction-inspection")
+{
+    var instructionChecks = CanonicalOperationalInstructionInspectionChecks.Run();
+    Console.WriteLine($"Passed {instructionChecks} operational-instruction inspection checks; candidate only, NOT_PUBLISHED.");
+    return;
+}
+
 if (args.Length == 1 && args[0] == "--prepared-navigation-only")
 {
     var preparedChecks = await PreparedCanonicalNavigationChecks.RunAsync();
@@ -127,6 +134,7 @@ var checks = 0;
 checks += CanonicalKnowledgeKernelChecks.Run();
 checks += CanonicalLocationContractChecks.Run();
 checks += CanonicalRegistrationRefreshChecks.Run();
+checks += CanonicalOperationalInstructionInspectionChecks.Run();
 checks += CanonicalRelationshipRegistrationMdboChecks.Run();
 checks += GtaVLocationPopulation2AIIIChecks.Run();
 checks += CanonicalSelectorAndInstructionChecks.Run();
