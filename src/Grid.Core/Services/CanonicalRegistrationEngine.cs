@@ -44,17 +44,29 @@ public static class CanonicalRegistrationEngine
         var evidence = await adapter.ExtractAsync(frozen, cancellationToken).ConfigureAwait(false);
         if (frozen.Any(item => CanonicalRegistrationEncoding.Digest(item.Bytes) != item.Source.Sha256))
             throw new InvalidDataException("An adapter modified its admitted source bytes.");
-        if (instructionSections is { Count: > 0 })
-        {
-            var inspection = CanonicalOperationalInstructionInspector.Inspect(frozen, instructionSections);
-            evidence = evidence with
-            {
-                Evidence = evidence.Evidence.Concat(inspection.Evidence).ToArray(),
-                Instructions = inspection.Instructions.Select(OperationalInstructionInspection.ToClaim).ToArray(),
-            };
-        }
+        evidence = AdmitInstructionClaims(frozen, evidence, instructionSections);
         cancellationToken.ThrowIfCancellationRequested();
         return Evaluate(Normalize(new(frozen.Select(s => s.Source).ToArray(), rules, evidence)), existingPackages);
+    }
+
+    /// <summary>
+    /// Merges explicitly identified instruction sections into adapter evidence.
+    /// Null or empty sections leave the evidence set unchanged so no-instruction candidates keep their bytes.
+    /// </summary>
+    internal static RegistrationEvidenceSet AdmitInstructionClaims(
+        IReadOnlyList<RegistrationSourceArtifact> sources,
+        RegistrationEvidenceSet evidence,
+        IReadOnlyList<OperationalInstructionSectionRequest>? instructionSections)
+    {
+        ArgumentNullException.ThrowIfNull(evidence);
+        if (instructionSections is not { Count: > 0 })
+            return evidence;
+        var inspection = CanonicalOperationalInstructionInspector.Inspect(sources, instructionSections);
+        return evidence with
+        {
+            Evidence = evidence.Evidence.Concat(inspection.Evidence).ToArray(),
+            Instructions = inspection.Instructions.Select(OperationalInstructionInspection.ToClaim).ToArray(),
+        };
     }
 
     internal static RegistrationInput Normalize(RegistrationInput input)

@@ -18,11 +18,20 @@ public static class CanonicalRelationshipRegistrationMdboComposer
             CanonicalMdboCapabilityRegistry.RelationshipRegistration,
             goalCapabilityIds);
 
-    public static async Task<CanonicalRegistrationCandidate> RegisterCandidateAsync(
+    public static Task<CanonicalRegistrationCandidate> RegisterCandidateAsync(
         IRegistrationEvidenceAdapter adapter,
         IReadOnlyList<RegistrationSourceArtifact> sources,
         RegistrationRuleSet rules,
         IReadOnlyList<CanonicalCatalogPackage>? existingPackages = null,
+        CancellationToken cancellationToken = default)
+        => RegisterCandidateAsync(adapter, sources, rules, existingPackages, null, cancellationToken);
+
+    public static async Task<CanonicalRegistrationCandidate> RegisterCandidateAsync(
+        IRegistrationEvidenceAdapter adapter,
+        IReadOnlyList<RegistrationSourceArtifact> sources,
+        RegistrationRuleSet rules,
+        IReadOnlyList<CanonicalCatalogPackage>? existingPackages,
+        IReadOnlyList<OperationalInstructionSectionRequest>? instructionSections,
         CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(adapter);
@@ -45,6 +54,7 @@ public static class CanonicalRelationshipRegistrationMdboComposer
         var evidence = await ExecuteDiscoverEvidenceAsync(adapter, frozen, cancellationToken).ConfigureAwait(false);
         if (frozen.Any(item => CanonicalRegistrationEncoding.Digest(item.Bytes) != item.Source.Sha256))
             throw new InvalidDataException("An adapter modified its admitted source bytes.");
+        evidence = CanonicalRegistrationEngine.AdmitInstructionClaims(frozen, evidence, instructionSections);
 
         var input = CanonicalRegistrationEngine.Normalize(new(
             frozen.Select(s => s.Source).ToArray(), rules, evidence));

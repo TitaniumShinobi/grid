@@ -123,6 +123,7 @@ internal static class CanonicalOperationalInstructionInspectionChecks
         Assert(checklist.Nodes.Length == 98 && checklist.Version == "1",
             "This slice does not change the frozen 98-node DIF mold.");
         checks += RunRegistrationPathAsync().GetAwaiter().GetResult();
+        checks += RunComposerPathAsync().GetAwaiter().GetResult();
         return checks;
     }
 
@@ -208,6 +209,64 @@ internal static class CanonicalOperationalInstructionInspectionChecks
         Assert(!System.Text.Encoding.UTF8.GetString(CanonicalRegistrationEncoding.Bytes(baseline))
                 .Contains("\"instructions\"", StringComparison.Ordinal),
             "Omitting instruction sections keeps existing candidate JSON byte-compatible.");
+        return checks;
+    }
+
+    private static async Task<int> RunComposerPathAsync()
+    {
+        var checks = 0;
+        void Assert(bool condition, string message)
+        {
+            if (!condition) throw new InvalidOperationException("Operational instruction MDBO composer: " + message);
+            checks++;
+        }
+
+        var widget = WidgetOverlayFixture();
+        var archive = ArchiveRepairFixture();
+        var widgetSources = WithEntity(widget, "src.widget.entity", "Mod", "Overlay", "widget-overlay",
+            "game.fixture.widget", "profile.overlay", "Widget Overlay");
+        var archiveSources = WithEntity(archive, "src.tool.entity", "Tool", "Utility", "archive-repair-cli",
+            "game.fixture.archive", null, "Archive Repair CLI");
+        var rules = new RegistrationRuleSet("1",
+        [
+            new("map.mod", "fixture.mod", "Mod", "Overlay", "Mod"),
+            new("map.tool", "fixture.tool", "Tool", "Utility", "Tool"),
+        ]);
+
+        var engineBaseline = await CanonicalRegistrationEngine.RegisterAsync(new FamilyAdapter(), widgetSources, rules);
+        var composerBaseline = await CanonicalRelationshipRegistrationMdboComposer.RegisterCandidateAsync(
+            new FamilyAdapter(), widgetSources, rules);
+        var pipelineBaseline = await CanonicalRelationshipRegistrationPipeline.RegisterAsync(
+            new FamilyAdapter(), widgetSources, rules);
+        CanonicalRegistrationCandidateVerifier.Verify(engineBaseline);
+        CanonicalRegistrationCandidateVerifier.Verify(composerBaseline);
+        CanonicalRegistrationCandidateVerifier.Verify(pipelineBaseline);
+        Assert(CanonicalRegistrationEncoding.Bytes(engineBaseline)
+                   .SequenceEqual(CanonicalRegistrationEncoding.Bytes(composerBaseline)) &&
+               CanonicalRegistrationEncoding.Bytes(composerBaseline)
+                   .SequenceEqual(CanonicalRegistrationEncoding.Bytes(pipelineBaseline)),
+            "No-instruction composer/pipeline candidates are byte-identical to the engine path.");
+        Assert(composerBaseline.Instructions is null &&
+               !System.Text.Encoding.UTF8.GetString(CanonicalRegistrationEncoding.Bytes(composerBaseline))
+                   .Contains("\"instructions\"", StringComparison.Ordinal),
+            "MDBO composer without section requests does not add an instructions property.");
+
+        var widgetComposer = await CanonicalRelationshipRegistrationMdboComposer.RegisterCandidateAsync(
+            new FamilyAdapter(), widgetSources, rules, null, widget.Requests);
+        var archivePipeline = await CanonicalRelationshipRegistrationPipeline.RegisterAsync(
+            new FamilyAdapter(), archiveSources, rules, archive.Requests);
+        CanonicalRegistrationCandidateVerifier.Verify(widgetComposer);
+        CanonicalRegistrationCandidateVerifier.Verify(archivePipeline);
+        Assert(widgetComposer.PublicationState == CanonicalRegistrationEncoding.NotPublished &&
+               archivePipeline.PublicationState == CanonicalRegistrationEncoding.NotPublished,
+            "MDBO composer instruction candidates remain NOT_PUBLISHED.");
+        TraceRegistered(widgetComposer, widgetSources, "widget.install", "## Installation",
+            "Install through the manager. Enable Widget Overlay.esm last.", Assert);
+        TraceRegistered(archivePipeline, archiveSources, "tool.install", "/instructions/installation",
+            "Copy archive-repair.exe next to the game executable.", Assert);
+        Assert(widgetComposer.Rulings.Any(value => value.Reason == "instruction-guidance-conflicting") &&
+               archivePipeline.Rulings.Any(value => value.Reason == "instruction-section-absent"),
+            "Composer path retains conflicting and proven-absence instruction rulings.");
         return checks;
     }
 
