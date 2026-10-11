@@ -37,7 +37,9 @@ public static class CanonicalRelationshipRegistrationRealizations
         ArgumentNullException.ThrowIfNull(adapter);
         if (string.Equals(adapter.Id, CanonicalRelationshipRegistrationProductionBindings.ProductionEvidenceAdapterId, StringComparison.Ordinal))
             CanonicalRelationshipRegistrationProductionBindings.EnsureProductionEvidenceAdapter(adapter);
-        _ = await adapter.DiscoverAsync(sources, cancellationToken).ConfigureAwait(false);
+        var discovered = await adapter.DiscoverAsync(sources, cancellationToken).ConfigureAwait(false);
+        if (sources.Any(source => source.Source.InstructionSource is not null))
+            CanonicalRegistrationEngine.ValidateDiscoveredSources(discovered, sources);
         return await adapter.ExtractAsync(sources, cancellationToken).ConfigureAwait(false);
     }
 

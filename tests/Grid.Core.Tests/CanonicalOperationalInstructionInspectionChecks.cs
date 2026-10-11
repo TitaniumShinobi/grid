@@ -1,661 +1,385 @@
+using System.Collections.Immutable;
 using System.Text;
+using System.Text.Json;
 using Grid.Core.Models;
 using Grid.Core.Services;
 
 internal static class CanonicalOperationalInstructionInspectionChecks
 {
-    private static readonly UTF8Encoding Utf8 = new(false);
+    private static readonly UTF8Encoding Utf8 = new(false, true);
+    private static readonly DateTimeOffset Observed = DateTimeOffset.Parse("2026-01-01T00:00:00Z");
+    private static readonly RegistrationRuleSet Rules = new("1", []);
+    private static int checks;
 
-    public static int Run()
+    public static int Run() => RunAsync().GetAwaiter().GetResult();
+    private static void Check(bool condition, string message)
     {
-        var checks = 0;
-        void Assert(bool condition, string message)
+        if (!condition) throw new InvalidOperationException("Operational instruction: " + message);
+        checks++;
+    }
+    private static async Task Reject(Func<Task> action, string message)
+    {
+        try { await action(); }
+        catch (Exception e) when (e is InvalidDataException or ArgumentException or JsonException) { checks++; return; }
+        throw new InvalidOperationException("Expected instruction rejection: " + message);
+    }
+    private static Task Reject(Action action, string message) => Reject(() => { action(); return Task.CompletedTask; }, message);
+
+    private static async Task<int> RunAsync()
+    {
+        checks = 0;
+        var provider = new ProviderAdapter();
+        var package = new PackageAdapter();
+        var providerSources = ProviderSources();
+        var packageSources = PackageSources();
+        Check(provider.Id != package.Id && providerSources[0].Source.Family != packageSources[0].Source.Family,
+            "Two unrelated provider/package fixtures use different adapters and shapes.");
+        foreach (var fixture in new[] { (Adapter: (FixtureAdapter)provider, Sources: providerSources),
+                                        (Adapter: (FixtureAdapter)package, Sources: packageSources) })
         {
-            if (!condition) throw new InvalidOperationException("Operational instruction inspection: " + message);
-            checks++;
-        }
-        void Reject(Action action, string reason)
-        {
-            try { action(); }
-            catch (Exception error) when (error is InvalidDataException or ArgumentException)
+            var sourceDigests = fixture.Sources.Select(s => CanonicalRegistrationEncoding.Digest(s.Bytes)).ToArray();
+            var candidate = await Register(fixture.Adapter, fixture.Sources);
+            Check(sourceDigests.SequenceEqual(fixture.Sources.Select(s => CanonicalRegistrationEncoding.Digest(s.Bytes))),
+                "Registration leaves admitted source bytes unchanged.");
+            CanonicalRegistrationCandidateVerifier.Verify(candidate);
+            await CanonicalRegistrationCandidateVerifier.VerifyAgainstSourcesAsync(candidate, fixture.Adapter, fixture.Sources);
+            var roundTrip = JsonSerializer.Deserialize<CanonicalRegistrationCandidate>(
+                CanonicalRegistrationEncoding.Bytes(candidate), CanonicalRegistrationEncoding.Json)!;
+            CanonicalRegistrationCandidateVerifier.Verify(roundTrip);
+            Check(CanonicalRegistrationEncoding.Bytes(candidate).SequenceEqual(CanonicalRegistrationEncoding.Bytes(roundTrip)),
+                "Canonical assertion/receipt JSON round trip is exact.");
+            Check(candidate.PublicationState == "NOT_PUBLISHED" && candidate.Entities.Length == 0 &&
+                  candidate.Relationships.Length == 0 && candidate.Facets.Length == 0,
+                "Instruction-only candidate creates no entity, navigation, or live state.");
+            Check(candidate.Instructions!.Length == 5 && candidate.Input.Evidence.Instructions!.Length == 5,
+                "Both fixtures retain all observations on input and candidate.");
+            foreach (var state in Enum.GetValues<OperationalInstructionSectionPresence>())
+                Check(candidate.Instructions.Any(i => i.Claim.Presence == state), "Distinct observation state: " + state);
+            Check(candidate.Instructions.Single(i => i.Claim.Presence == OperationalInstructionSectionPresence.EmptyUnresolved)
+                    .Claim.Assertion.Content.VerbatimText == (fixture.Adapter is ProviderAdapter ? "\r\n \t" : ""),
+                "Empty/unresolved source whitespace is retained without trimming or fabricated absence.");
+            var first = candidate.Instructions.Single(i => i.Claim.Assertion.NativeIdentity.ExactRepresentation == "install");
+            Check(first.Claim.Assertion.Content.VerbatimText == FixtureText,
+                "CRLF, LF, Unicode, escapes, spaces and leading/trailing blank lines survive exactly.");
+            Check(candidate.Instructions.Where(i => i.Claim.Presence == OperationalInstructionSectionPresence.Present)
+                    .Select(i => i.Claim.Assertion.Content.VerbatimText).Distinct(StringComparer.Ordinal).Count() == 2,
+                "Contradictory source wording remains as two independent assertions.");
+            Check(first.Claim.Assertion.Content.ContentDigest == InstructionContent.FromVerbatim(FixtureText).ContentDigest,
+                "Canonical content digest binds exact wording.");
+            Check(candidate.InstructionConflicts is { Length: 1 } &&
+                  candidate.InstructionConflicts[0].MemberIds.Length == 2 &&
+                  candidate.Rulings.Count(r => r.Reason == "instruction-guidance-conflicting") == 2,
+                "Explicit adapter conflict survives independently without synthesizing a winner.");
+            Check(candidate.Instructions.All(i => i.Applicability.Length == 0 &&
+                  i.ApplicabilityResolution == CanonicalResolutionState.Unresolved &&
+                  i.Claim.UnresolvedApplicability.Single().GameId == "game.unproven" &&
+                  i.Claim.UnresolvedApplicability.Single().ProfileId == "profile.unproven"),
+                "Caller game/profile claims remain unresolved despite text evidence.");
+            Check(candidate.Instructions.All(i => i.Claim.Binding.Id.AlgorithmVersion == 3 &&
+                  i.Claim.Binding.ClaimContentId == EvidenceClaimContentId.DeriveV1(i.Claim.Assertion)),
+                "Existing v3 evidence bindings and canonical claim-content identities are reused.");
+
+            var reordered = await Register(fixture.Adapter with { Reverse = true }, fixture.Sources.Reverse().ToArray());
+            Check(Bytes(candidate).SequenceEqual(Bytes(reordered)), "Enumeration order does not change semantic/candidate bytes.");
+            var composer = await CanonicalRelationshipRegistrationMdboComposer.RegisterCandidateAsync(fixture.Adapter, fixture.Sources, Rules);
+            var pipeline = await CanonicalRelationshipRegistrationPipeline.RegisterAsync(fixture.Adapter, fixture.Sources, Rules);
+            Check(Bytes(candidate).SequenceEqual(Bytes(composer)) && Bytes(candidate).SequenceEqual(Bytes(pipeline)),
+                "MDBO composer and registration pipeline reach identical candidate behavior.");
+
+            await Reject(() => Register(fixture.Adapter with { CorruptDiscovery = true }, fixture.Sources),
+                "Discovery cannot replace admitted source metadata.");
+            await Reject(() => CanonicalRelationshipRegistrationMdboComposer.RegisterCandidateAsync(
+                    fixture.Adapter with { CorruptDiscovery = true }, fixture.Sources, Rules),
+                "MDBO discovery enforces the same instruction source closure.");
+            var changed = fixture.Sources.Select(s => s with { Bytes = s.Bytes.ToArray() }).ToArray();
+            changed[0].Bytes[^1] ^= 1;
+            await Reject(() => Register(fixture.Adapter, changed), "Changed source bytes.");
+            var digestWrong = fixture.Sources.Select((s, n) => n == 0 ? s with { Source = s.Source with { Sha256 = new string('0', 64) } } : s).ToArray();
+            await Reject(() => Register(fixture.Adapter, digestWrong), "Wrong source digest.");
+            var revisionWrong = fixture.Sources.Select((s, n) => n == 0 ? s with { Source = s.Source with
             {
-                checks++;
-                return;
-            }
-            throw new InvalidOperationException("Operational instruction inspection expected rejection: " + reason);
+                InstructionSource = s.Source.InstructionSource! with
+                { Revision = s.Source.InstructionSource.Revision with { NativeRevision = SourceNativeVersion.FromExactUtf8("fixture.revision", "wrong") } }
+            } } : s).ToArray();
+            await Reject(() => Register(fixture.Adapter, revisionWrong), "Wrong revision closure.");
+            var unsupported = fixture.Sources.Select((s, n) => n == 0 ? s with { Source = s.Source with
+            { InstructionSource = s.Source.InstructionSource! with { Format = new("unsupported.binary", "99") } } } : s).ToArray();
+            await Reject(() => Register(fixture.Adapter, unsupported), "Unsupported source format.");
+            var repinnedRevision = fixture.Sources.Select(s => Artifact(s.Source.Id, s.Source.AdapterId, s.Source.Family,
+                s.Source.Kind, s.Source.InstructionSource!.Format.FormatId,
+                Utf8.GetBytes(Utf8.GetString(s.Bytes).Replace("r1", "r2", StringComparison.Ordinal)), "r2")).ToArray();
+            var revised = await Register(fixture.Adapter, repinnedRevision);
+            Check(!candidate.Instructions.Select(i => i.Claim.Assertion.Id).Intersect(revised.Instructions!.Select(i => i.Claim.Assertion.Id)).Any(),
+                "A correctly re-admitted native revision changes canonical instruction identities.");
+            var repinnedBytes = fixture.Sources.Select(s => Artifact(s.Source.Id, s.Source.AdapterId, s.Source.Family,
+                s.Source.Kind, s.Source.InstructionSource!.Format.FormatId,
+                Utf8.GetBytes(Utf8.GetString(s.Bytes).Replace("Install", "Place", StringComparison.Ordinal)))).ToArray();
+            var reworded = await Register(fixture.Adapter, repinnedBytes);
+            Check(first.Claim.Assertion.Id != reworded.Instructions!.Single(i =>
+                    i.Claim.Assertion.NativeIdentity.ExactRepresentation == "install").Claim.Assertion.Id,
+                "Changed wording with a correct fresh digest changes identity.");
+            await Reject(() => CanonicalRegistrationCandidateVerifier.VerifyAgainstSourcesAsync(candidate, fixture.Adapter, repinnedRevision),
+                "Old candidate fails against a newer admitted revision.");
+            var input = candidate.Input.Evidence.Instructions!;
+            var original = input[0];
+            await Reject(() => CanonicalRegistrationCandidateVerifier.Verify(ChangeInput(candidate,
+                original with { Id = new string('f', 64) })), "Forged instruction identity.");
+            await Reject(() => CanonicalRegistrationCandidateVerifier.Verify(ChangeInput(candidate,
+                original with { SourceId = fixture.Sources.Single(s => s.Source.Id != original.SourceId).Source.Id })),
+                "Wrong source identity.");
+            await Reject(() => CanonicalRegistrationCandidateVerifier.Verify(ChangeInput(candidate,
+                original with { Presence = original.Presence == OperationalInstructionSectionPresence.Present ? OperationalInstructionSectionPresence.Missing : OperationalInstructionSectionPresence.Present })),
+                "Observation/content tamper.");
+            var alteredAssertion = Assertion(original.Assertion, text: original.Assertion.Content.VerbatimText + "edited");
+            await Reject(() => CanonicalRegistrationCandidateVerifier.Verify(ChangeInput(candidate,
+                original with { Assertion = alteredAssertion })), "Content changed but evidence/identity unchanged.");
+            var alteredLocator = Assertion(original.Assertion, locator: new InstructionSourceLocator(original.Assertion.SourceLocator.ArtifactId, original.Assertion.SourceLocator.NativeObjectIdentity, "wrong-locator", original.Assertion.SourceLocator.ProviderObjectRevision));
+            await Reject(() => CanonicalRegistrationCandidateVerifier.Verify(ChangeInput(candidate,
+                original with { Assertion = alteredLocator })), "Wrong source locator.");
+            var swappedScope = original with { ScopeEvidence = original.ScopeEvidence with { Receipt = original.Receipt } };
+            await Reject(() => CanonicalRegistrationCandidateVerifier.Verify(ChangeInput(candidate, swappedScope)),
+                "Instruction text receipt cannot prove scope.");
+            await Reject(() => CanonicalRegistrationCandidateVerifier.Verify(candidate with { PublicationState = "PUBLISHED" }),
+                "Published candidate.");
+            var editedOutput = candidate.Instructions!.Select((i, n) => n == 0 ? i with
+            { ApplicabilityResolution = CanonicalResolutionState.Resolved, Applicability = [new("game.unproven", "profile.unproven", [])] } : i).ToArray();
+            await Reject(() => CanonicalRegistrationCandidateVerifier.Verify(candidate with { Instructions = editedOutput }),
+                "Candidate applicability tampering.");
+
+            // Even an internally re-hashed forged extraction is rejected against the external source anchor.
+            var fabricated = OperationalInstructionInspection.Create(original.SourceId, alteredAssertion,
+                OperationalInstructionSectionPresence.Present, original.Receipt, original.ScopeEvidence, original.UnresolvedApplicability);
+            var forgedEvidence = candidate.Input.Evidence with
+            {
+                Instructions = input.Select(i => i.Id == original.Id ? fabricated : i).ToArray(),
+                InstructionConflicts = null,
+            };
+            var forged = await Register(new ReplayAdapter(fixture.Adapter.Id, forgedEvidence), fixture.Sources);
+            await Reject(() => CanonicalRegistrationCandidateVerifier.VerifyAgainstSourcesAsync(forged, fixture.Adapter, fixture.Sources),
+                "Coordinated content/claim/binding changes cannot bypass source replay.");
         }
 
-        var widget = WidgetOverlayFixture();
-        var archive = ArchiveRepairFixture();
-        Assert(widget.Family != archive.Family, "The two fixtures are unrelated source families.");
+        var providerCandidate = await Register(provider, providerSources);
+        var packageCandidate = await Register(package, packageSources);
+        var providerClaim = providerCandidate.Input.Evidence.Instructions![0];
+        var packageClaim = packageCandidate.Input.Evidence.Instructions![0];
+        await Reject(() => CanonicalRegistrationCandidateVerifier.Verify(ChangeInput(providerCandidate,
+            providerClaim with { Receipt = packageClaim.Receipt })), "FILE receipt borrowed for REFERENCE.");
+        await Reject(() => CanonicalRegistrationCandidateVerifier.Verify(ChangeInput(packageCandidate,
+            packageClaim with { Receipt = providerClaim.Receipt })), "REFERENCE receipt borrowed for FILE.");
+        var mixed = providerClaim with { Receipt = new(packageClaim.Receipt.File, providerClaim.Receipt.Reference) };
+        await Reject(() => CanonicalRegistrationCandidateVerifier.Verify(ChangeInput(providerCandidate, mixed)), "Mixed evidence classes.");
 
-        var widgetResult = CanonicalOperationalInstructionInspector.Inspect(widget.Sources, widget.Requests);
-        var archiveResult = CanonicalOperationalInstructionInspector.Inspect(archive.Sources, archive.Requests);
-        CanonicalOperationalInstructionInspector.Verify(widgetResult, widget.Sources);
-        CanonicalOperationalInstructionInspector.Verify(archiveResult, archive.Sources);
-
-        Assert(widgetResult.InspectorVersion == archiveResult.InspectorVersion &&
-               widgetResult.InspectionCategory == "GR-20" &&
-               archiveResult.InspectionCategory == "GR-20",
-            "The same inspector admits both fixtures without a game-specific branch.");
-        Assert(widgetResult.PublicationState == CanonicalRegistrationEncoding.NotPublished &&
-               archiveResult.PublicationState == CanonicalRegistrationEncoding.NotPublished,
-            "Inspection output remains NOT_PUBLISHED.");
-        Assert(widgetResult.BoundCandidateDigest is null && archiveResult.BoundCandidateDigest is null,
-            "Unbound inspection does not invent a live-store or candidate digest.");
-
-        TracePresent(widgetResult, widget.Sources, "widget.install", "## Installation",
-            "Install through the manager. Enable Widget Overlay.esm last.", Assert);
-        TracePresent(widgetResult, widget.Sources, "widget.config", "## Configuration",
-            "Set overlayOpacity to 0.4 in WidgetOverlay.ini.", Assert);
-        TracePresent(archiveResult, archive.Sources, "tool.install", "/instructions/installation",
-            "Copy archive-repair.exe next to the game executable.", Assert);
-        TracePresent(archiveResult, archive.Sources, "tool.usage", "/instructions/usage",
-            "Run archive-repair.exe --verify then --repair.", Assert);
-
-        Assert(widgetResult.Instructions.Single(value => value.Id == "widget.update").Presence ==
-               OperationalInstructionSectionPresence.Missing,
-            "A requested heading that is not in the source is missing, not proven absence.");
-        Assert(widgetResult.Rulings.Any(value => value.ClaimId == "widget.update" &&
-                                                value.Outcome == RegistrationOutcome.Unresolved &&
-                                                value.Reason == "instruction-section-missing"),
-            "Missing instruction sections stay unresolved.");
-        Assert(widgetResult.Instructions.Single(value => value.Id == "widget.uninstall").Presence ==
-               OperationalInstructionSectionPresence.ProvenAbsence &&
-               widgetResult.Instructions.Single(value => value.Id == "widget.uninstall").VerbatimText ==
-               "This package does not include uninstall guidance.",
-            "An explicit absence statement is proven absence and retains source wording.");
-        Assert(archiveResult.Instructions.Single(value => value.Id == "tool.update").Presence ==
-               OperationalInstructionSectionPresence.ProvenAbsence,
-            "JSON absent:true is proven absence, not a missing pointer.");
-        Assert(archiveResult.Instructions.Single(value => value.Id == "tool.missing").Presence ==
-               OperationalInstructionSectionPresence.Missing,
-            "A JSON pointer to an absent key is missing, not proven absence.");
-
-        Assert(widgetResult.Rulings.Any(value => value.ClaimId == "widget.install" &&
-                                                value.Outcome == RegistrationOutcome.Ambiguous &&
-                                                value.Reason == "instruction-guidance-conflicting") &&
-               widgetResult.Instructions.Count(value => value.Kind == OperationalInstructionKind.Installation &&
-                                                       value.Presence == OperationalInstructionSectionPresence.Present) == 2,
-            "Contradictory installation wording is retained without choosing a winner.");
-        Assert(archiveResult.Rulings.Any(value => value.ClaimId == "tool.usage" &&
-                                                 value.Outcome == RegistrationOutcome.Ambiguous) &&
-               archiveResult.Instructions.Count(value => value.Kind == OperationalInstructionKind.Usage &&
-                                                        value.Presence == OperationalInstructionSectionPresence.Present) == 2,
-            "Contradictory tool usage wording is retained without choosing a winner.");
-
-        var widgetAgain = CanonicalOperationalInstructionInspector.Inspect(widget.Sources.Reverse().ToArray(),
-            widget.Requests.Reverse().ToArray());
-        var archiveAgain = CanonicalOperationalInstructionInspector.Inspect(archive.Sources.Reverse().ToArray(),
-            archive.Requests.Reverse().ToArray());
-        Assert(CanonicalRegistrationEncoding.Bytes(widgetResult)
-                   .SequenceEqual(CanonicalRegistrationEncoding.Bytes(widgetAgain)) &&
-               CanonicalRegistrationEncoding.Bytes(archiveResult)
-                   .SequenceEqual(CanonicalRegistrationEncoding.Bytes(archiveAgain)),
-            "Inspection bytes are deterministic after source and request reordering.");
-
-        var mutated = widget.Sources[0] with { Bytes = widget.Sources[0].Bytes.ToArray() };
-        mutated.Bytes[0] ^= 1;
-        Reject(() => CanonicalOperationalInstructionInspector.Inspect([mutated, .. widget.Sources.Skip(1)], widget.Requests),
-            "Changed source bytes fail closed.");
-        Reject(() => CanonicalOperationalInstructionInspector.Inspect(
-                widget.Sources.Select((item, index) => index == 0
-                    ? item with { Source = item.Source with { Sha256 = new string('0', 64) } }
-                    : item).ToArray(),
-                widget.Requests),
-            "Wrong admitted digest fails closed.");
-
-        var published = UnpublishedCandidate() with { PublicationState = "PUBLISHED" };
-        Reject(() => CanonicalOperationalInstructionInspector.Inspect(widget.Sources, widget.Requests, published),
-            "A published bound candidate is rejected.");
-        var bound = UnpublishedCandidate();
-        var attached = CanonicalOperationalInstructionInspector.Inspect(widget.Sources, widget.Requests, bound);
-        Assert(attached.PublicationState == CanonicalRegistrationEncoding.NotPublished &&
-               attached.BoundCandidateDigest == CanonicalRegistrationEncoding.Digest(bound) &&
-               CanonicalRegistrationEncoding.Bytes(bound).SequenceEqual(CanonicalRegistrationEncoding.Bytes(UnpublishedCandidate())),
-            "Binding records the candidate digest and does not mutate the bound candidate.");
-        CanonicalOperationalInstructionInspector.Verify(attached, widget.Sources, bound);
-
-        Assert(widgetResult.Instructions.All(value => value.CategoryId.StartsWith("grid.instructions.", StringComparison.Ordinal)) &&
-               archiveResult.Instructions.All(value => value.CategoryId.StartsWith("grid.instructions.", StringComparison.Ordinal)),
-            "Admitted sections reuse InstructionCategories identifiers.");
-        var checklist = CanonicalRegistrationChecklist.Load();
-        Assert(checklist.Nodes.Length == 98 && checklist.Version == "1",
-            "This slice does not change the frozen 98-node DIF mold.");
-        checks += RunRegistrationPathAsync().GetAwaiter().GetResult();
-        checks += RunComposerPathAsync().GetAwaiter().GetResult();
-        checks += RunRealAdmittedSourceBoundary();
+        var plain = new ReplayAdapter("fixture.empty", new([], [], [], []));
+        var noInstructions = await Register(plain, []);
+        var emptyInstructions = await Register(plain with { Evidence = new([], [], [], [], [], []) }, []);
+        Check(Bytes(noInstructions).SequenceEqual(Bytes(emptyInstructions)) &&
+              !Utf8.GetString(Bytes(noInstructions)).Contains("\"instructions\"", StringComparison.Ordinal),
+            "Null and empty instruction collections preserve the historical candidate shape.");
+        // Golden digest captured from the unmodified origin/main engine using the same empty input/rules.
+        Check(CanonicalRegistrationEncoding.Digest(noInstructions) == LegacyEmptyCandidateDigest,
+            "No-instruction bytes equal the pre-PR engine golden vector.");
+        var legacySources = new RegistrationSourceArtifact[] { new(new("legacy", "https://fixtures.invalid/legacy",
+            KnowledgeSourceKind.ReferenceProvider, CanonicalRegistrationEncoding.Digest(new byte[] { 123, 125 }),
+            "fixture.empty", "1", "legacy"), [123, 125]) };
+        var legacy = await Register(plain, legacySources);
+        Check(CanonicalRegistrationEncoding.Digest(legacy) == "3e9e936ec47c6d1194b71b5c5b0d1ae9d8c6f0575c0ab40e4540ae6e02cf5e7e",
+            "Existing nonempty source input preserves the pre-PR candidate bytes.");
+        Check(CanonicalRegistrationChecklist.Load().Nodes.Length == 98, "Frozen DIF mold remains 98 nodes.");
         return checks;
     }
 
-    private static async Task<int> RunRegistrationPathAsync()
+    private const string LegacyEmptyCandidateDigest = "3dd405f7d4a44fdebd81b82c7fd55ec1d9ba7ac4e3b9cd2ec69d8406a96f5ea9";
+    private const string FixtureText = "\r\n\n  Install café e\u0301 Ω 🛠 through the manager.\\mods\\new\r\nKeep \"quoted\" paths.\n\r\n ";
+    private static byte[] Bytes(CanonicalRegistrationCandidate c) => CanonicalRegistrationEncoding.Bytes(c);
+    private static Task<CanonicalRegistrationCandidate> Register(IRegistrationEvidenceAdapter adapter, RegistrationSourceArtifact[] sources) =>
+        CanonicalRegistrationEngine.RegisterAsync(adapter, sources, Rules);
+    private static CanonicalRegistrationCandidate ChangeInput(CanonicalRegistrationCandidate c, RegistrationInstructionClaim value) =>
+        c with { Input = c.Input with { Evidence = c.Input.Evidence with
+        { Instructions = [value, .. c.Input.Evidence.Instructions!.Skip(1)] } } };
+
+    private static InstructionAssertion Assertion(InstructionAssertion a, string? text = null, InstructionSourceLocator? locator = null)
     {
-        var checks = 0;
-        void Assert(bool condition, string message)
+        var content = text is null ? a.Content : InstructionContent.FromVerbatim(text);
+        var path = locator ?? a.SourceLocator;
+        var id = InstructionAssertionId.DeriveV1(a.SourceRevisionId, a.SourceScope, a.NativeIdentity,
+            a.CategoryId, content.RetentionMode, content.ContentDigest, path, a.ExactLanguageTag,
+            a.CategoryMappingMethodId, a.CategoryMappingMethodVersion, [], []);
+        return new(id, a.SourceRevisionId, a.SourceScope, a.NativeIdentity, a.CategoryId,
+            a.CategoryMappingMethodId, a.CategoryMappingMethodVersion, a.ExactLanguageTag, content, path, [], []);
+    }
+
+    private static RegistrationSourceArtifact Artifact(string id, string adapter, string family, KnowledgeSourceKind kind,
+        string format, byte[] bytes, string revision = "r1")
+    {
+        var native = SourceNativeIdentifier.FromExactUtf8("fixture.source", "document", id);
+        var source = new CatalogSourceRecord(CatalogSourceId.DeriveV1(kind, native), kind, native);
+        var digest = ContentDigest.ComputeSha256(bytes);
+        var artifact = SourceArtifactId.DeriveV1(digest);
+        var nativeRevision = SourceNativeVersion.FromExactUtf8("fixture.revision", revision);
+        var rev = new CatalogSourceRevisionRecord(CatalogSourceRevisionId.DeriveV1(source.Id, nativeRevision, [artifact]),
+            source.Id, nativeRevision, [artifact]);
+        return new(new(id, "https://fixtures.invalid/" + id, kind, digest.HexValue, adapter, "1", family,
+            new(source, rev, new(format, "1"))), bytes);
+    }
+
+    private static RegistrationInstructionReceipt Receipt(RegistrationSource source, string locator, SourceNativeIdentifier obj)
+    {
+        var closure = source.InstructionSource!;
+        var rev = closure.Revision;
+        var digest = new ContentDigest("sha256", source.Sha256);
+        var artifact = SourceArtifactId.DeriveV1(digest);
+        if (source.Kind == KnowledgeSourceKind.ModProvider)
         {
-            if (!condition) throw new InvalidOperationException("Operational instruction registration: " + message);
-            checks++;
+            var r = new ReferenceEvidenceReceipt(closure.Source.Id, rev.Id, artifact, digest,
+                obj, rev.NativeRevision, locator, Observed);
+            return new(null, new(EvidenceReceiptId.DeriveV1(r), r));
         }
-        async Task Reject(Func<Task> action, string reason)
-        {
-            try { await action(); }
-            catch (Exception error) when (error is InvalidDataException or ArgumentException)
-            {
-                checks++;
-                return;
-            }
-            throw new InvalidOperationException("Operational instruction registration expected rejection: " + reason);
-        }
-
-        var widget = WidgetOverlayFixture();
-        var archive = ArchiveRepairFixture();
-        var widgetSources = WithEntity(widget, "src.widget.entity", "Mod", "Overlay", "widget-overlay",
-            "game.fixture.widget", "profile.overlay", "Widget Overlay");
-        var archiveSources = WithEntity(archive, "src.tool.entity", "Tool", "Utility", "archive-repair-cli",
-            "game.fixture.archive", null, "Archive Repair CLI");
-        var rules = new RegistrationRuleSet("1",
-        [
-            new("map.mod", "fixture.mod", "Mod", "Overlay", "Mod"),
-            new("map.tool", "fixture.tool", "Tool", "Utility", "Tool"),
-        ]);
-
-        var widgetCandidate = await CanonicalRegistrationEngine.RegisterAsync(
-            new FamilyAdapter(), widgetSources, rules, widget.Requests);
-        var archiveCandidate = await CanonicalRegistrationEngine.RegisterAsync(
-            new FamilyAdapter(), archiveSources, rules, archive.Requests);
-        CanonicalRegistrationCandidateVerifier.Verify(widgetCandidate);
-        CanonicalRegistrationCandidateVerifier.Verify(archiveCandidate);
-
-        Assert(widgetCandidate.PublicationState == CanonicalRegistrationEncoding.NotPublished &&
-               archiveCandidate.PublicationState == CanonicalRegistrationEncoding.NotPublished,
-            "RegisterAsync candidates remain NOT_PUBLISHED.");
-        Assert(widgetCandidate.Instructions is { Length: > 0 } && archiveCandidate.Instructions is { Length: > 0 },
-            "RegisterAsync stores operational instructions on the canonical candidate.");
-        Assert(widgetCandidate.Input.Evidence.Instructions is { Length: > 0 } &&
-               archiveCandidate.Input.Evidence.Instructions is { Length: > 0 },
-            "Instruction claims are durable on the registration input that Verify re-evaluates.");
-
-        TraceRegistered(widgetCandidate, widgetSources, "widget.install", "## Installation",
-            "Install through the manager. Enable Widget Overlay.esm last.", Assert);
-        TraceRegistered(archiveCandidate, archiveSources, "tool.install", "/instructions/installation",
-            "Copy archive-repair.exe next to the game executable.", Assert);
-        Assert(widgetCandidate.Rulings.Any(value => value.ClaimId == "widget.update" &&
-                                                    value.Reason == "instruction-section-missing") &&
-               archiveCandidate.Rulings.Any(value => value.ClaimId == "tool.update" &&
-                                                     value.Reason == "instruction-section-absent"),
-            "Registration retains missing versus proven-absence instruction rulings.");
-        Assert(widgetCandidate.Rulings.Any(value => value.ClaimId == "widget.install" &&
-                                                    value.Reason == "instruction-guidance-conflicting") &&
-               archiveCandidate.Rulings.Any(value => value.ClaimId == "tool.usage" &&
-                                                     value.Reason == "instruction-guidance-conflicting"),
-            "Registration retains contradictory guidance without resolving it.");
-
-        var widgetAgain = await CanonicalRegistrationEngine.RegisterAsync(
-            new FamilyAdapter(), widgetSources.Reverse().ToArray(), rules, widget.Requests.Reverse().ToArray());
-        Assert(CanonicalRegistrationEncoding.Bytes(widgetCandidate)
-                   .SequenceEqual(CanonicalRegistrationEncoding.Bytes(widgetAgain)),
-            "RegisterAsync instruction attachment is deterministic.");
-
-        var mutated = widgetSources[1] with { Bytes = widgetSources[1].Bytes.ToArray() };
-        mutated.Bytes[0] ^= 1;
-        await Reject(() => CanonicalRegistrationEngine.RegisterAsync(
-                new FamilyAdapter(), [widgetSources[0], mutated, .. widgetSources.Skip(2)], rules, widget.Requests),
-            "RegisterAsync fails closed on changed instruction source bytes.");
-
-        var baseline = await CanonicalRegistrationEngine.RegisterAsync(
-            new FamilyAdapter(), widgetSources, rules);
-        CanonicalRegistrationCandidateVerifier.Verify(baseline);
-        Assert(baseline.Instructions is null && baseline.Input.Evidence.Instructions is null,
-            "Registration without explicit instruction sections does not invent instruction claims.");
-        Assert(!System.Text.Encoding.UTF8.GetString(CanonicalRegistrationEncoding.Bytes(baseline))
-                .Contains("\"instructions\"", StringComparison.Ordinal),
-            "Omitting instruction sections keeps existing candidate JSON byte-compatible.");
-        return checks;
+        var f = new FileEvidenceReceipt(rev.Id, artifact, digest, source.AdapterId, source.AdapterVersion,
+            obj.ExactRepresentation, locator, null, null, null, Observed, obj);
+        return new(new(EvidenceReceiptId.DeriveV2(f), f), null);
     }
 
-    private static async Task<int> RunComposerPathAsync()
+    private static RegistrationInstructionClaim Claim(RegistrationSource source, string game, string scopePath,
+        string section, string locator, OperationalInstructionSectionPresence presence, string text)
     {
-        var checks = 0;
-        void Assert(bool condition, string message)
-        {
-            if (!condition) throw new InvalidOperationException("Operational instruction MDBO composer: " + message);
-            checks++;
-        }
-
-        var widget = WidgetOverlayFixture();
-        var archive = ArchiveRepairFixture();
-        var widgetSources = WithEntity(widget, "src.widget.entity", "Mod", "Overlay", "widget-overlay",
-            "game.fixture.widget", "profile.overlay", "Widget Overlay");
-        var archiveSources = WithEntity(archive, "src.tool.entity", "Tool", "Utility", "archive-repair-cli",
-            "game.fixture.archive", null, "Archive Repair CLI");
-        var rules = new RegistrationRuleSet("1",
-        [
-            new("map.mod", "fixture.mod", "Mod", "Overlay", "Mod"),
-            new("map.tool", "fixture.tool", "Tool", "Utility", "Tool"),
-        ]);
-
-        var engineBaseline = await CanonicalRegistrationEngine.RegisterAsync(new FamilyAdapter(), widgetSources, rules);
-        var composerBaseline = await CanonicalRelationshipRegistrationMdboComposer.RegisterCandidateAsync(
-            new FamilyAdapter(), widgetSources, rules);
-        var pipelineBaseline = await CanonicalRelationshipRegistrationPipeline.RegisterAsync(
-            new FamilyAdapter(), widgetSources, rules);
-        CanonicalRegistrationCandidateVerifier.Verify(engineBaseline);
-        CanonicalRegistrationCandidateVerifier.Verify(composerBaseline);
-        CanonicalRegistrationCandidateVerifier.Verify(pipelineBaseline);
-        Assert(CanonicalRegistrationEncoding.Bytes(engineBaseline)
-                   .SequenceEqual(CanonicalRegistrationEncoding.Bytes(composerBaseline)) &&
-               CanonicalRegistrationEncoding.Bytes(composerBaseline)
-                   .SequenceEqual(CanonicalRegistrationEncoding.Bytes(pipelineBaseline)),
-            "No-instruction composer/pipeline candidates are byte-identical to the engine path.");
-        Assert(composerBaseline.Instructions is null &&
-               !System.Text.Encoding.UTF8.GetString(CanonicalRegistrationEncoding.Bytes(composerBaseline))
-                   .Contains("\"instructions\"", StringComparison.Ordinal),
-            "MDBO composer without section requests does not add an instructions property.");
-
-        var widgetComposer = await CanonicalRelationshipRegistrationMdboComposer.RegisterCandidateAsync(
-            new FamilyAdapter(), widgetSources, rules, null, widget.Requests);
-        var archivePipeline = await CanonicalRelationshipRegistrationPipeline.RegisterAsync(
-            new FamilyAdapter(), archiveSources, rules, archive.Requests);
-        CanonicalRegistrationCandidateVerifier.Verify(widgetComposer);
-        CanonicalRegistrationCandidateVerifier.Verify(archivePipeline);
-        Assert(widgetComposer.PublicationState == CanonicalRegistrationEncoding.NotPublished &&
-               archivePipeline.PublicationState == CanonicalRegistrationEncoding.NotPublished,
-            "MDBO composer instruction candidates remain NOT_PUBLISHED.");
-        TraceRegistered(widgetComposer, widgetSources, "widget.install", "## Installation",
-            "Install through the manager. Enable Widget Overlay.esm last.", Assert);
-        TraceRegistered(archivePipeline, archiveSources, "tool.install", "/instructions/installation",
-            "Copy archive-repair.exe next to the game executable.", Assert);
-        Assert(widgetComposer.Rulings.Any(value => value.Reason == "instruction-guidance-conflicting") &&
-               archivePipeline.Rulings.Any(value => value.Reason == "instruction-section-absent"),
-            "Composer path retains conflicting and proven-absence instruction rulings.");
-        return checks;
+        var scope = KnowledgeSourceScope.BaseGame(new(game), null);
+        var obj = SourceNativeIdentifier.FromExactUtf8("fixture.document", "document", source.Id);
+        var native = SourceNativeIdentifier.FromExactUtf8("fixture.section", "section", section);
+        var c = InstructionContent.FromVerbatim(text);
+        var path = new InstructionSourceLocator(source.InstructionSource!.Revision.ArtifactIds.Single(), obj, locator,
+            source.Kind == KnowledgeSourceKind.ModProvider ? source.InstructionSource.Revision.NativeRevision : null);
+        var category = section switch { "absent" => InstructionCategories.Uninstall, "empty" => InstructionCategories.Configuration,
+            "missing" => InstructionCategories.Troubleshooting, _ => InstructionCategories.Installation };
+        var id = InstructionAssertionId.DeriveV1(source.InstructionSource.Revision.Id, scope, native,
+            category, c.RetentionMode, c.ContentDigest, path, "en",
+            source.AdapterId, "1", [], []);
+        var a = new InstructionAssertion(id, source.InstructionSource.Revision.Id, scope, native,
+            category, source.AdapterId, "1", "en", c, path, [], []);
+        var receipt = Receipt(source, locator, obj);
+        // Explicit caller claim is retained, including its attempted section-receipt citation, but never resolved.
+        var requested = new RegistrationApplicability("game.unproven", "profile.unproven",
+            [(receipt.File?.Id ?? receipt.Reference!.Id).Value]);
+        return OperationalInstructionInspection.Create(source.Id, a, presence, receipt,
+            new(source.Id, scope, Receipt(source, scopePath, obj)), [requested]);
     }
 
-    /// <summary>
-    /// Records the remaining LIF-10 product-integration gap: no in-repo admitted
-    /// game/mod/tool source uniquely identifies GR-20 instruction locators.
-    /// Does not invent headings, admit operator docs, or mark integration done.
-    /// If a unique source-owned locator later appears in the admitted trees,
-    /// this check fails so that locator can be wired instead of ignored.
-    /// </summary>
-    private static int RunRealAdmittedSourceBoundary()
+    private abstract record FixtureAdapter : IRegistrationEvidenceAdapter
     {
-        var checks = 0;
-        void Assert(bool condition, string message)
-        {
-            if (!condition) throw new InvalidOperationException("Operational instruction real-source boundary: " + message);
-            checks++;
-        }
-
-        var root = LocateRepositoryRoot();
-        var srcRoot = Path.Combine(root, "src");
-        var adapterFiles = Directory.GetFiles(srcRoot, "*RegistrationEvidenceAdapter*.cs", SearchOption.AllDirectories);
-        var productionAdapters = adapterFiles
-            .Where(path => !string.Equals(Path.GetFileName(path), "IRegistrationEvidenceAdapter.cs", StringComparison.Ordinal))
-            .ToArray();
-        Assert(adapterFiles.Any(path => string.Equals(Path.GetFileName(path), "IRegistrationEvidenceAdapter.cs",
-                StringComparison.Ordinal)) &&
-               productionAdapters.Length == 2 &&
-               productionAdapters.All(path => path.Contains("Grid.GtaV.Knowledge" + Path.DirectorySeparatorChar,
-                   StringComparison.Ordinal)),
-            "The only production IRegistrationEvidenceAdapter implementations are the GTA location adapters.");
-
-        var locationAdapter = File.ReadAllText(Path.Combine(srcRoot, "Grid.GtaV.Knowledge",
-            "GtaVLocationRegistrationEvidenceAdapter.cs"));
-        var hierarchyAdapter = File.ReadAllText(Path.Combine(srcRoot, "Grid.GtaV.Knowledge",
-            "GtaVLocationHierarchyRegistrationEvidenceAdapter.cs"));
-        Assert(locationAdapter.Contains("do not match the pinned corpus and native inventory.", StringComparison.Ordinal) &&
-               hierarchyAdapter.Contains("do not match the pinned corpus index.", StringComparison.Ordinal),
-            "GTA adapters pin the admitted location corpus and reject unexpected sources.");
-
-        var refreshAuthor = File.ReadAllText(Path.Combine(srcRoot, "Grid.GtaV.Knowledge",
-            "GtaVRegistrationMdboRefreshAuthor.cs"));
-        var rebuildAuthor = File.ReadAllText(Path.Combine(srcRoot, "Grid.GtaV.Knowledge",
-            "GtaVRegistrationPreparedNavigationRebuild.cs"));
-        Assert(!ContainsInstructionSectionSupply(refreshAuthor) && !ContainsInstructionSectionSupply(rebuildAuthor),
-            "GTA MDBO authors do not invent or supply instruction locators.");
-
-        var skyrimRoot = Path.Combine(root, "scripts", "games", "skyrimspecialedition");
-        Assert(Directory.Exists(skyrimRoot) &&
-               Directory.GetFiles(skyrimRoot, "*RegistrationEvidenceAdapter*", SearchOption.AllDirectories).Length == 0 &&
-               Directory.GetFiles(srcRoot, "*RegistrationEvidenceAdapter*.cs", SearchOption.AllDirectories)
-                   .All(path => !path.Contains("skyrim", StringComparison.OrdinalIgnoreCase)),
-            "Skyrim has tool-registry material but no registration evidence adapter.");
-
-        var admittedReferences = Path.Combine(root, "scripts", "games", "grandtheftautov", "catalog", "references");
-        Assert(Directory.Exists(admittedReferences), "The admitted GTA registration reference tree is present.");
-        var headingHits = FindExactInstructionHeadings(admittedReferences);
-        Assert(headingHits.Count == 0,
-            "Admitted GTA location/wiki/native references uniquely identify GR-20 headings; wire those locators instead of reporting this gap. Hits: " +
-            string.Join("; ", headingHits.Take(8)));
-        var instructionJsonHits = FindInstructionJsonObjects(admittedReferences);
-        Assert(instructionJsonHits.Count == 0,
-            "Admitted GTA JSON uniquely identifies /instructions pointers; wire those locators instead of reporting this gap. Hits: " +
-            string.Join("; ", instructionJsonHits.Take(8)));
-
-        var foreverTogether = Path.Combine(root, "scripts", "games", "grandtheftautov", "setup", "recipes",
-            "forever-together.v1.json");
-        var toolRegistry = Path.Combine(root, "scripts", "games", "skyrimspecialedition", "health",
-            "tool-registry.v2.json");
-        var guidedSetup = Path.Combine(root, "docs", "gta-v-guided-setup.md");
-        Assert(File.Exists(foreverTogether) && File.Exists(toolRegistry) && File.Exists(guidedSetup),
-            "Near-miss operator/recipe/registry files exist in-repo.");
-        Assert(!foreverTogether.StartsWith(admittedReferences, StringComparison.Ordinal) &&
-               !toolRegistry.StartsWith(admittedReferences, StringComparison.Ordinal) &&
-               !guidedSetup.StartsWith(admittedReferences, StringComparison.Ordinal),
-            "Near-miss setup recipe, Skyrim tool-registry, and guided-setup docs are not admitted registration sources.");
-        using (var recipe = System.Text.Json.JsonDocument.Parse(File.ReadAllBytes(foreverTogether)))
-            Assert(recipe.RootElement.TryGetProperty("recipeId", out _) &&
-                   recipe.RootElement.TryGetProperty("configuration", out var configuration) &&
-                   configuration.ValueKind == System.Text.Json.JsonValueKind.Array,
-                "forever-together.v1.json is a setup recipe with a configuration array, not admitted instruction text.");
-        using (var registry = System.Text.Json.JsonDocument.Parse(File.ReadAllBytes(toolRegistry)))
-        {
-            var firstCompatibility = registry.RootElement.GetProperty("tools")[0].GetProperty("compatibility")[0];
-            Assert(firstCompatibility.ValueKind == System.Text.Json.JsonValueKind.Object &&
-                   firstCompatibility.TryGetProperty("gameId", out _) &&
-                   firstCompatibility.TryGetProperty("evidenceCapabilityIds", out _),
-                "Skyrim tool-registry compatibility is capability-routing metadata, not operational instruction wording.");
-        }
-
-        return checks;
-    }
-
-    private static bool ContainsInstructionSectionSupply(string source) =>
-        source.Contains("OperationalInstructionSectionRequest", StringComparison.Ordinal) ||
-        source.Contains("instructionSections", StringComparison.Ordinal);
-
-    private static readonly string[] InstructionHeadingTitles =
-    [
-        "Installation", "Configuration", "Usage", "Compatibility", "Update", "Uninstall", "Troubleshooting",
-    ];
-
-    private static List<string> FindExactInstructionHeadings(string directory)
-    {
-        var hits = new List<string>();
-        foreach (var file in Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories))
-        {
-            var extension = Path.GetExtension(file);
-            if (extension is not (".md" or ".txt")) continue;
-            var lines = File.ReadAllText(file).Replace("\r\n", "\n", StringComparison.Ordinal).Replace('\r', '\n')
-                .Split('\n');
-            for (var i = 0; i < lines.Length; i++)
-            {
-                var line = lines[i];
-                var level = 0;
-                while (level < line.Length && line[level] == '#') level++;
-                if (level is < 1 or > 6 || level >= line.Length || line[level] != ' ') continue;
-                var title = line[(level + 1)..];
-                if (InstructionHeadingTitles.Contains(title, StringComparer.Ordinal))
-                    hits.Add(Path.GetRelativePath(directory, file) + ":" + (i + 1) + ":" + line);
-            }
-        }
-        return hits;
-    }
-
-    private static List<string> FindInstructionJsonObjects(string directory)
-    {
-        var hits = new List<string>();
-        foreach (var file in Directory.EnumerateFiles(directory, "*.json", SearchOption.AllDirectories))
-        {
-            var text = File.ReadAllText(file);
-            if (text.Contains("\"instructions\"", StringComparison.Ordinal))
-                hits.Add(Path.GetRelativePath(directory, file));
-        }
-        return hits;
-    }
-
-    private static string LocateRepositoryRoot()
-    {
-        var fromEnvironment = Environment.GetEnvironmentVariable("GRID_REPOSITORY_ROOT");
-        if (!string.IsNullOrWhiteSpace(fromEnvironment) && Directory.Exists(Path.Combine(fromEnvironment, ".git")))
-            return Path.GetFullPath(fromEnvironment);
-        for (var directory = AppContext.BaseDirectory; !string.IsNullOrEmpty(directory); directory = Path.GetDirectoryName(directory)!)
-        {
-            if (Directory.Exists(Path.Combine(directory, ".git")))
-                return directory;
-        }
-
-        throw new InvalidOperationException("Repository root is unavailable for operational-instruction real-source checks.");
-    }
-
-    private static void TraceRegistered(
-        CanonicalRegistrationCandidate candidate,
-        IReadOnlyList<RegistrationSourceArtifact> sources,
-        string requestId,
-        string locator,
-        string expectedSpan,
-        Action<bool, string> assert)
-    {
-        var instruction = candidate.Instructions!.Single(value => value.Id == requestId);
-        var claim = candidate.Input.Evidence.Instructions!.Single(value => value.Id == requestId);
-        var evidence = candidate.Input.Evidence.Evidence.Single(value => value.Id == instruction.EvidenceIds.Single());
-        var source = sources.Single(value => value.Source.Id == instruction.SourceId);
-        var text = Utf8.GetString(source.Bytes).Replace("\r\n", "\n", StringComparison.Ordinal);
-        assert(instruction.Locator == locator && claim.Locator == locator && evidence.Locator == locator &&
-               evidence.SourceId == instruction.SourceId,
-            requestId + " registration evidence keeps source identity and locator.");
-        assert(instruction.Applicability.Length > 0 && instruction.Applicability.All(value =>
-                value.EvidenceIds.Contains(evidence.Id, StringComparer.Ordinal)),
-            requestId + " registration applicability is evidence-backed.");
-        assert(instruction.VerbatimText.Contains(expectedSpan, StringComparison.Ordinal) &&
-               text.Contains(instruction.VerbatimText, StringComparison.Ordinal) &&
-               instruction.ContentSha256 == OperationalInstructionInspection.ContentDigest(instruction.VerbatimText),
-            requestId + " registration wording is exact admitted source evidence.");
-    }
-
-    private static void TracePresent(
-        CanonicalOperationalInstructionCandidate candidate,
-        IReadOnlyList<RegistrationSourceArtifact> sources,
-        string requestId,
-        string locator,
-        string expectedSpan,
-        Action<bool, string> assert)
-    {
-        var instruction = candidate.Instructions.Single(value => value.Id == requestId);
-        var evidence = candidate.Evidence.Single(value => value.Id == instruction.EvidenceIds.Single());
-        var source = sources.Single(value => value.Source.Id == instruction.SourceId);
-        var text = Utf8.GetString(source.Bytes).Replace("\r\n", "\n", StringComparison.Ordinal);
-        assert(instruction.Presence == OperationalInstructionSectionPresence.Present, requestId + " is present.");
-        assert(instruction.Locator == locator && evidence.Locator == locator && evidence.SourceId == instruction.SourceId,
-            requestId + " keeps source identity and locator.");
-        assert(instruction.VerbatimText.Contains(expectedSpan, StringComparison.Ordinal) &&
-               text.Contains(instruction.VerbatimText, StringComparison.Ordinal),
-            requestId + " verbatim wording is exact source evidence.");
-        assert(evidence.Basis == (source.Source.Kind is KnowledgeSourceKind.ModProvider or KnowledgeSourceKind.OfficialProvider
-                ? EvidenceVerificationKind.ReferenceVerified
-                : EvidenceVerificationKind.FileVerified),
-            requestId + " verification basis matches the admitted source kind.");
-    }
-
-    private static CanonicalRegistrationCandidate UnpublishedCandidate() =>
-        new(1, CanonicalRegistrationEncoding.EngineVersion, "1", new string('a', 64), new string('b', 64),
-            new RegistrationInput([], new RegistrationRuleSet("1", []), new RegistrationEvidenceSet([], [], [], [])),
-            [], [], [], [], CanonicalRegistrationEncoding.NotPublished);
-
-    private static Fixture WidgetOverlayFixture()
-    {
-        var readme = """
-            # Widget Overlay
-
-            ## Installation
-            Install through the manager. Enable Widget Overlay.esm last.
-
-            ## Configuration
-            Set overlayOpacity to 0.4 in WidgetOverlay.ini.
-
-            ## Usage
-            Press F8 to toggle the overlay.
-
-            ## Compatibility
-            Works with Community Overlay Framework 3. Do not use with Legacy Overlay.
-
-            ## Uninstall
-            This package does not include uninstall guidance.
-
-            ## Troubleshooting
-            If the overlay is blank, disable ENB first.
-            """;
-        var forum = """
-            # Widget Overlay forum note
-
-            ## Installation
-            Do not use a manager. Copy Widget Overlay.esm into Data by hand.
-            """;
-        var readmeSource = Artifact("src.widget.readme", "mod://widget-overlay/readme",
-            KnowledgeSourceKind.ModProvider, "fixture.mod", readme);
-        var forumSource = Artifact("src.widget.forum", "mod://widget-overlay/forum",
-            KnowledgeSourceKind.ModProvider, "fixture.mod", forum);
-        var apply = new RegistrationApplicability("game.fixture.widget", "profile.overlay", []);
-        return new("widget-overlay-mod",
-            [readmeSource, forumSource],
-            [
-                Request("widget.install", readmeSource.Source.Id, "## Installation", OperationalInstructionKind.Installation, apply),
-                Request("widget.install.forum", forumSource.Source.Id, "## Installation", OperationalInstructionKind.Installation, apply),
-                Request("widget.config", readmeSource.Source.Id, "## Configuration", OperationalInstructionKind.Configuration, apply),
-                Request("widget.usage", readmeSource.Source.Id, "## Usage", OperationalInstructionKind.Usage, apply),
-                Request("widget.compat", readmeSource.Source.Id, "## Compatibility", OperationalInstructionKind.Compatibility, apply),
-                Request("widget.update", readmeSource.Source.Id, "## Update", OperationalInstructionKind.Update, apply),
-                Request("widget.uninstall", readmeSource.Source.Id, "## Uninstall", OperationalInstructionKind.Uninstall, apply,
-                    absenceMarker: "This package does not include uninstall guidance."),
-                Request("widget.trouble", readmeSource.Source.Id, "## Troubleshooting", OperationalInstructionKind.Troubleshooting, apply),
-            ]);
-    }
-
-    private static Fixture ArchiveRepairFixture()
-    {
-        var guide = """
-            {
-              "tool": "archive-repair-cli",
-              "instructions": {
-                "installation": "Copy archive-repair.exe next to the game executable.",
-                "configuration": "Create repair.toml with verify=true.",
-                "usage": "Run archive-repair.exe --verify then --repair.",
-                "compatibility": "Requires the game's shipped archive format v2.",
-                "update": { "absent": true },
-                "uninstall": "Delete archive-repair.exe and repair.toml.",
-                "troubleshooting": "If verify fails, do not repair. Capture the log."
-              }
-            }
-            """;
-        var alt = """
-            {
-              "tool": "archive-repair-cli",
-              "instructions": {
-                "usage": "Always run --repair before --verify."
-              }
-            }
-            """;
-        var guideSource = Artifact("src.tool.guide", "file:///opt/archive-repair/guide.json",
-            KnowledgeSourceKind.LocalModArtifact, "fixture.tool", guide);
-        var altSource = Artifact("src.tool.alt", "file:///opt/archive-repair/alt.json",
-            KnowledgeSourceKind.LocalModArtifact, "fixture.tool", alt);
-        var apply = new RegistrationApplicability("game.fixture.archive", null, []);
-        return new("archive-repair-cli",
-            [guideSource, altSource],
-            [
-                Request("tool.install", guideSource.Source.Id, "/instructions/installation", OperationalInstructionKind.Installation, apply),
-                Request("tool.config", guideSource.Source.Id, "/instructions/configuration", OperationalInstructionKind.Configuration, apply),
-                Request("tool.usage", guideSource.Source.Id, "/instructions/usage", OperationalInstructionKind.Usage, apply),
-                Request("tool.usage.alt", altSource.Source.Id, "/instructions/usage", OperationalInstructionKind.Usage, apply),
-                Request("tool.compat", guideSource.Source.Id, "/instructions/compatibility", OperationalInstructionKind.Compatibility, apply),
-                Request("tool.update", guideSource.Source.Id, "/instructions/update", OperationalInstructionKind.Update, apply),
-                Request("tool.uninstall", guideSource.Source.Id, "/instructions/uninstall", OperationalInstructionKind.Uninstall, apply),
-                Request("tool.trouble", guideSource.Source.Id, "/instructions/troubleshooting", OperationalInstructionKind.Troubleshooting, apply),
-                Request("tool.missing", guideSource.Source.Id, "/instructions/changelog", OperationalInstructionKind.Update, apply),
-            ]);
-    }
-
-    private static OperationalInstructionSectionRequest Request(
-        string id, string sourceId, string locator, OperationalInstructionKind kind,
-        RegistrationApplicability applicability, string? absenceMarker = null) =>
-        new(id, sourceId, locator, kind, [applicability], absenceMarker);
-
-    private static RegistrationSourceArtifact Artifact(
-        string id, string uri, KnowledgeSourceKind kind, string family, string text)
-    {
-        var bytes = Utf8.GetBytes(text.Replace("\r\n", "\n", StringComparison.Ordinal));
-        return new(new RegistrationSource(id, uri, kind, CanonicalRegistrationEncoding.Digest(bytes),
-            "fixture.operational-instruction", "1", family), bytes);
-    }
-
-    private static RegistrationSourceArtifact[] WithEntity(
-        Fixture fixture, string entityId, string selector, string classification, string nativeId,
-        string game, string? profile, string displayName)
-    {
-        var profileJson = profile is null ? "null" : $"\"{profile}\"";
-        var entity = $$"""
-            {
-              "rows": [
-                {
-                  "key": "{{entityId}}",
-                  "nativeId": "{{nativeId}}",
-                  "selector": "{{selector}}",
-                  "game": "{{game}}",
-                  "classification": "{{classification}}",
-                  "kind": "Entity",
-                  "names": [{ "text": "{{displayName}}", "locale": "en-US" }],
-                  "scopes": [{ "game": "{{game}}", "profile": {{profileJson}} }],
-                  "parents": [],
-                  "facets": [],
-                  "origin": "{{selector}}",
-                  "nativeNamespace": "fixture.native"
-                }
-              ]
-            }
-            """;
-        var entitySource = Artifact(entityId, "mod://entities/" + entityId,
-            KnowledgeSourceKind.LocalModArtifact, fixture.Family, entity);
-        return [entitySource, .. fixture.Sources];
-    }
-
-    private sealed class FamilyAdapter : IRegistrationEvidenceAdapter
-    {
-        public string Id => "fixture.operational-instruction";
+        public abstract string Id { get; }
         public string Version => "1";
-        public Task<RegistrationEvidenceSet> ExtractAsync(IReadOnlyList<RegistrationSourceArtifact> sources,
-            CancellationToken cancellationToken = default)
+        public bool Reverse { get; init; }
+        public bool CorruptDiscovery { get; init; }
+        public Task<IReadOnlyList<RegistrationSource>> DiscoverAsync(IReadOnlyList<RegistrationSourceArtifact> sources, CancellationToken cancellationToken = default)
+        {
+            var copies = JsonSerializer.Deserialize<RegistrationSource[]>(CanonicalRegistrationEncoding.Bytes(sources.Select(s => s.Source).ToArray()),
+                CanonicalRegistrationEncoding.Json)!;
+            if (CorruptDiscovery) copies[0] = copies[0] with { Uri = "https://wrong.invalid/" };
+            return Task.FromResult<IReadOnlyList<RegistrationSource>>(copies);
+        }
+        protected abstract IEnumerable<RegistrationInstructionClaim> Extract(RegistrationSourceArtifact source);
+        public Task<RegistrationEvidenceSet> ExtractAsync(IReadOnlyList<RegistrationSourceArtifact> sources, CancellationToken cancellationToken = default)
         {
             cancellationToken.ThrowIfCancellationRequested();
-            var evidence = new List<RegistrationEvidence>();
-            var entities = new List<RegistrationEntityClaim>();
-            foreach (var artifact in sources)
-            {
-                NativeFamily? family;
-                try
-                {
-                    family = System.Text.Json.JsonSerializer.Deserialize<NativeFamily>(
-                        artifact.Bytes, CanonicalRegistrationEncoding.Json);
-                }
-                catch (System.Text.Json.JsonException)
-                {
-                    continue;
-                }
-                if (family?.Rows is null) continue;
-                foreach (var row in family.Rows)
-                {
-                    var eid = artifact.Source.Id + ":" + row.Key;
-                    var basis = artifact.Source.Kind == KnowledgeSourceKind.ModProvider
-                        ? EvidenceVerificationKind.ReferenceVerified : EvidenceVerificationKind.FileVerified;
-                    evidence.Add(new(eid, artifact.Source.Id, "/rows/" + row.Key, basis));
-                    entities.Add(new(row.Key, artifact.Source.Id, row.NativeNamespace, row.NativeId, row.Selector,
-                        row.Game, row.Classification, row.Kind,
-                        row.Names.Select(n => new RegistrationName(n.Text, n.Locale, n.Alias, [eid])).ToArray(),
-                        row.Scopes.Select(s => new RegistrationApplicability(s.Game, s.Profile, [eid])).ToArray(),
-                        [new(row.Origin, row.NativeNamespace, row.NativeId, [eid])], [eid]));
-                }
-            }
-            return Task.FromResult(new RegistrationEvidenceSet(evidence.ToArray(), entities.ToArray(), [], []));
+            var claims = sources.SelectMany(Extract).ToArray();
+            var members = claims.Where(c => c.Assertion.NativeIdentity.ExactRepresentation is "install" or "contradiction")
+                .Select(c => c.Assertion.Id).OrderBy(i => i.Value, StringComparer.Ordinal).ToImmutableArray();
+            var conflict = new InstructionConflictGroup(InstructionConflictGroupId.DeriveV1(members, Id + ".explicit-conflict", "1"),
+                members, Id + ".explicit-conflict", "1");
+            if (Reverse) Array.Reverse(claims);
+            return Task.FromResult(new RegistrationEvidenceSet([], [], [], [], claims, [conflict]));
         }
     }
 
-    private sealed record NativeName(string Text, string Locale, bool Alias = false);
-    private sealed record NativeScope(string Game, string? Profile);
-    private sealed record NativeRow(string Key, string NativeId, string Selector, string? Game, string Classification,
-        RegistrationEntityKind Kind, NativeName[] Names, NativeScope[] Scopes, string[] Parents,
-        object[] Facets, string Origin = "Game", string NativeNamespace = "fixture.native");
-    private sealed record NativeFamily(NativeRow[] Rows);
+    // Escaped provider fields (representative of a frozen Discord/Nexus/Steam API response).
+    // This grammar is owned by the fixture evidence adapter, never the canonical engine.
+    private sealed record ProviderAdapter : FixtureAdapter
+    {
+        public override string Id => "fixture.widget-provider";
+        protected override IEnumerable<RegistrationInstructionClaim> Extract(RegistrationSourceArtifact artifact)
+        {
+            if (artifact.Source.InstructionSource!.Format != new KnowledgeFormatCoordinate("fixture.provider-response", "1"))
+                throw new InvalidDataException("Unsupported provider response format.");
+            using var doc = JsonDocument.Parse(artifact.Bytes);
+            var root = doc.RootElement;
+            if (root.GetProperty("revision").GetString() != artifact.Source.InstructionSource.Revision.NativeRevision!.ExactRepresentation)
+                throw new InvalidDataException("Provider response revision differs from admission.");
+            var game = root.GetProperty("game").GetString()!;
+            var sections = root.GetProperty("fields");
+            var keys = artifact.Source.Id.EndsWith("alternate", StringComparison.Ordinal) ? new[] { "contradiction" } :
+                new[] { "install", "absent", "empty", "missing" };
+            foreach (var key in keys)
+            {
+                var found = sections.TryGetProperty(key, out var field);
+                var state = !found ? OperationalInstructionSectionPresence.Missing :
+                    field.ValueKind == JsonValueKind.Null || field.ValueKind == JsonValueKind.String && string.IsNullOrWhiteSpace(field.GetString())
+                        ? OperationalInstructionSectionPresence.EmptyUnresolved :
+                    field.ValueKind == JsonValueKind.Object ? OperationalInstructionSectionPresence.ProvenAbsence :
+                    OperationalInstructionSectionPresence.Present;
+                // Absence must be explicit source data, never an empty-is-absence caller option.
+                if (state == OperationalInstructionSectionPresence.ProvenAbsence &&
+                    (!field.GetProperty("absent").GetBoolean() || field.GetProperty("text").ValueKind != JsonValueKind.String))
+                    throw new InvalidDataException("Unsupported provider absence encoding.");
+                var text = !found || field.ValueKind == JsonValueKind.Null ? "" :
+                    field.ValueKind == JsonValueKind.Object ? field.GetProperty("text").GetString()! : field.GetString()!;
+                yield return Claim(artifact.Source, game, "/game", key, "/fields/" + key, state, text);
+            }
+        }
+    }
 
-    private sealed record Fixture(string Family, RegistrationSourceArtifact[] Sources,
-        OperationalInstructionSectionRequest[] Requests);
+    // An unrelated installer/package text document with explicit byte-span locators.
+    private sealed record PackageAdapter : FixtureAdapter
+    {
+        public override string Id => "fixture.archive-tool";
+        protected override IEnumerable<RegistrationInstructionClaim> Extract(RegistrationSourceArtifact artifact)
+        {
+            if (artifact.Source.InstructionSource!.Format != new KnowledgeFormatCoordinate("fixture.installer-text", "1"))
+                throw new InvalidDataException("Unsupported package text format.");
+            var bytes = artifact.Bytes;
+            var newline = Array.IndexOf(bytes, (byte)'\n');
+            if (newline < 0) throw new InvalidDataException("Missing package metadata line.");
+            var metadata = Utf8.GetString(bytes, 0, newline).Split('|');
+            if (metadata.Length != 4 || metadata[0] != "archive-tool" || !metadata[3].StartsWith("uninstall-absent:", StringComparison.Ordinal) ||
+                metadata[2] != artifact.Source.InstructionSource.Revision.NativeRevision!.ExactRepresentation)
+                throw new InvalidDataException("Package metadata/revision differs from admission.");
+            var game = metadata[1];
+            var offset = newline + 1;
+            var alternate = artifact.Source.Id.EndsWith("alternate", StringComparison.Ordinal);
+            var text = Utf8.GetString(bytes, offset, bytes.Length - offset);
+            yield return Claim(artifact.Source, game, "metadata:game", alternate ? "contradiction" : "install",
+                $"utf8-bytes:{offset}:{bytes.Length - offset}", OperationalInstructionSectionPresence.Present, text);
+            if (alternate) yield break;
+            yield return Claim(artifact.Source, game, "metadata:game", "absent", "metadata:no-uninstall",
+                OperationalInstructionSectionPresence.ProvenAbsence, metadata[3]["uninstall-absent:".Length..]);
+            // The separate metadata field explicitly states the absence of uninstall guidance.
+            yield return Claim(artifact.Source, game, "metadata:game", "empty", $"utf8-bytes:{bytes.Length}:0",
+                OperationalInstructionSectionPresence.EmptyUnresolved, "");
+            yield return Claim(artifact.Source, game, "metadata:game", "missing", "section:troubleshooting",
+                OperationalInstructionSectionPresence.Missing, "");
+        }
+    }
+
+    private sealed record ReplayAdapter(string Id, RegistrationEvidenceSet Evidence) : IRegistrationEvidenceAdapter
+    {
+        public string Version => "1";
+        public Task<RegistrationEvidenceSet> ExtractAsync(IReadOnlyList<RegistrationSourceArtifact> sources, CancellationToken cancellationToken = default) =>
+            Task.FromResult(Evidence);
+    }
+
+    private static RegistrationSourceArtifact[] ProviderSources() =>
+    [
+        Artifact("widget-primary", "fixture.widget-provider", "widget-overlay", KnowledgeSourceKind.ModProvider,
+            "fixture.provider-response", Utf8.GetBytes(JsonSerializer.Serialize(new { game = "game.widget", revision = "r1",
+                fields = new { install = FixtureText, absent = new { absent = true, text = "No uninstall guidance." }, empty = "\r\n \t" } }))),
+        Artifact("widget-alternate", "fixture.widget-provider", "widget-overlay", KnowledgeSourceKind.ModProvider,
+            "fixture.provider-response", Utf8.GetBytes(JsonSerializer.Serialize(new { game = "game.widget", revision = "r1",
+                fields = new { contradiction = "Never use a manager. Install manually." } }))),
+    ];
+    private static RegistrationSourceArtifact[] PackageSources() =>
+    [
+        Artifact("archive-primary", "fixture.archive-tool", "archive-repair-cli", KnowledgeSourceKind.LocalModArtifact,
+            "fixture.installer-text", Utf8.GetBytes("archive-tool|game.archive|r1|uninstall-absent:No uninstall guidance.\n" + FixtureText)),
+        Artifact("archive-alternate", "fixture.archive-tool", "archive-repair-cli", KnowledgeSourceKind.LocalModArtifact,
+            "fixture.installer-text", Utf8.GetBytes("archive-tool|game.archive|r1|uninstall-absent:No uninstall guidance.\nNever use a manager. Install manually.")),
+    ];
 }

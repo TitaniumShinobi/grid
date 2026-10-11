@@ -84,6 +84,42 @@ if (args.Length > 0 && args[0] == "--gta-v-location-population-2a-iii-live-proof
     return;
 }
 
+if (args.Length == 1 && args[0] == "--registration-instruction-regression")
+{
+    // Run each complete relevant suite independently so inherited failures do not hide later suites.
+    var suites = new (string Name, Func<Task<int>> Run)[]
+    {
+        ("instructions", () => Task.FromResult(CanonicalOperationalInstructionInspectionChecks.Run())),
+        ("kernel", () => Task.FromResult(CanonicalKnowledgeKernelChecks.Run())),
+        ("selectors-instructions", () => Task.FromResult(CanonicalSelectorAndInstructionChecks.Run())),
+        ("refresh", () => Task.FromResult(CanonicalRegistrationRefreshChecks.Run())),
+        ("relationship-mdbo", () => Task.FromResult(CanonicalRelationshipRegistrationMdboChecks.Run())),
+        ("catalog-import", CanonicalCatalogPackageImportChecks.RunAsync),
+        ("prepared-navigation", PreparedCanonicalNavigationChecks.RunAsync),
+        ("registration-legacy", async () =>
+        {
+            var factory = typeof(CanonicalCatalogPackageImportChecks).GetMethod("CreatePackage",
+                System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static)!;
+            var package = (CanonicalCatalogPackage)factory.Invoke(null, ["registration-legacy", (byte)0x61])!;
+            return await CanonicalRegistrationEngineChecks.VerifyLegacyAsync(package);
+        }),
+        ("cross-source", CrossSourceCanonicalAssertionChecks.RunAsync),
+        ("universal-contract", UniversalKnowledgeContractChecks.RunAsync),
+    };
+    var failures = new List<string>();
+    foreach (var suite in suites)
+    {
+        try { Console.WriteLine($"PASS {suite.Name}: {await suite.Run()} checks."); }
+        catch (Exception error) { failures.Add(suite.Name); Console.WriteLine($"FAIL {suite.Name}: {error}"); }
+    }
+    if (failures.Count > 0)
+    {
+        Console.Error.WriteLine("Failed regression suites: " + string.Join(", ", failures));
+        Environment.ExitCode = 1;
+    }
+    return;
+}
+
 if (args.Length == 1 && args[0] == "--operational-instruction-inspection")
 {
     var instructionChecks = CanonicalOperationalInstructionInspectionChecks.Run();

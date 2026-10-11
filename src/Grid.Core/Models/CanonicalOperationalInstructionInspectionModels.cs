@@ -1,97 +1,81 @@
 namespace Grid.Core.Models;
 
-/// <summary>
-/// GR-20 operational-instruction kinds. Values match existing InstructionCategories identifiers.
-/// Presence of sourced wording is not safety, compatibility, or execution authority.
-/// </summary>
-public enum OperationalInstructionKind
-{
-    Installation = 0,
-    Configuration = 1,
-    Usage = 2,
-    Compatibility = 3,
-    Update = 4,
-    Uninstall = 5,
-    Troubleshooting = 6,
-}
+/// <summary>Source-owned state; missing is never proof of absence.</summary>
+public enum OperationalInstructionSectionPresence { Present, Missing, ProvenAbsence, EmptyUnresolved }
 
-/// <summary>
-/// Distinguishes an unlocated section from an explicitly empty or absent section.
-/// </summary>
-public enum OperationalInstructionSectionPresence
-{
-    Present = 0,
-    Missing = 1,
-    ProvenAbsence = 2,
-    EmptyUnresolved = 3,
-}
+/// <summary>Optional canonical source closure for instruction-bearing registration artifacts.
+/// The adapter's format coordinate is metadata, never a grammar selected by Core.</summary>
+public sealed record RegistrationInstructionSource(
+    CatalogSourceRecord Source, CatalogSourceRevisionRecord Revision, KnowledgeFormatCoordinate Format);
 
-/// <summary>
-/// Caller-identified instruction section. The inspector never invents headings or pointers.
-/// A locator beginning with '/' is a JSON pointer; a locator beginning with '#' is an exact markdown ATX heading line.
-/// </summary>
-public sealed record OperationalInstructionSectionRequest(
+/// <summary>Exactly one canonical receipt class. No FILE/REFERENCE promotion.</summary>
+public sealed record RegistrationInstructionReceipt(
+    CatalogFileEvidenceReceipt? File, CatalogReferenceEvidenceReceipt? Reference);
+
+/// <summary>Separate adapter-extracted source scope evidence. An instruction section cannot
+/// serve as scope evidence. Scope is not a claim of compatibility or profile applicability.</summary>
+public sealed record RegistrationInstructionScopeEvidence(
+    string SourceId, KnowledgeSourceScope Scope, RegistrationInstructionReceipt Receipt);
+
+/// <summary>Typed adapter output, using the canonical assertion/content/locator/binding contracts.
+/// Requested applicability remains unresolved in this slice; text evidence never proves it.</summary>
+public sealed record RegistrationInstructionClaim(
     string Id,
     string SourceId,
-    string Locator,
-    OperationalInstructionKind Kind,
-    RegistrationApplicability[] Applicability,
-    string? AbsenceMarker = null,
-    bool EmptyIsAbsence = false);
-
-/// <summary>
-/// Candidate-only admitted guidance. VerbatimText is exact sourced wording when present.
-/// </summary>
-public sealed record RegisteredOperationalInstruction(
-    string Id,
-    string SourceId,
-    string Locator,
-    OperationalInstructionKind Kind,
-    string CategoryId,
+    InstructionAssertion Assertion,
     OperationalInstructionSectionPresence Presence,
-    string VerbatimText,
-    string ContentSha256,
-    RegistrationApplicability[] Applicability,
-    string[] EvidenceIds);
+    RegistrationInstructionReceipt Receipt,
+    InstructionEvidenceBinding Binding,
+    RegistrationInstructionScopeEvidence ScopeEvidence,
+    RegistrationApplicability[] UnresolvedApplicability);
 
-/// <summary>
-/// Extraction receipt for explicitly identified instruction sections. RegisterAsync copies
-/// claims into RegistrationEvidenceSet so Evaluate/Verifier persist them on the canonical candidate.
-/// </summary>
-public sealed record CanonicalOperationalInstructionCandidate(
-    int FormatVersion,
-    string InspectorVersion,
-    string InspectionCategory,
-    RegistrationSource[] Sources,
-    OperationalInstructionSectionRequest[] Requests,
-    RegistrationEvidence[] Evidence,
-    RegisteredOperationalInstruction[] Instructions,
-    RegistrationRuling[] Rulings,
-    string? BoundCandidateDigest,
-    string PublicationState);
+/// <summary>Candidate envelope around the existing canonical assertion, not another instruction model.</summary>
+public sealed record RegisteredOperationalInstruction(
+    RegistrationInstructionClaim Claim,
+    RegistrationApplicability[] Applicability,
+    CanonicalResolutionState ApplicabilityResolution);
 
 public static class OperationalInstructionInspection
 {
-    public const string InspectorVersion = "grid.operational-instruction-inspection.v1";
     public const string CategoryId = "GR-20";
-    public const int FormatVersion = 1;
 
-    public static string ContentDigest(string verbatim) =>
-        CanonicalRegistrationEncoding.Digest(new System.Text.UTF8Encoding(false, true).GetBytes(verbatim));
-
-    public static RegistrationInstructionClaim ToClaim(RegisteredOperationalInstruction instruction) =>
-        new(instruction.Id, instruction.SourceId, instruction.Locator, instruction.Kind, instruction.Presence,
-            instruction.VerbatimText, instruction.ContentSha256, instruction.Applicability, instruction.EvidenceIds);
-
-    public static string CategoryIdFor(OperationalInstructionKind kind) => kind switch
+    // Canonical framed encoding; the envelope adds observation state and provenance to the
+    // existing assertion identity, whose algorithm and golden vectors remain unchanged.
+    public static string ClaimId(RegistrationInstructionClaim claim)
     {
-        OperationalInstructionKind.Installation => InstructionCategories.Installation.Value,
-        OperationalInstructionKind.Configuration => InstructionCategories.Configuration.Value,
-        OperationalInstructionKind.Usage => InstructionCategories.Usage.Value,
-        OperationalInstructionKind.Compatibility => InstructionCategories.LoadOrderCompatibility.Value,
-        OperationalInstructionKind.Update => InstructionCategories.Update.Value,
-        OperationalInstructionKind.Uninstall => InstructionCategories.Uninstall.Value,
-        OperationalInstructionKind.Troubleshooting => InstructionCategories.Troubleshooting.Value,
-        _ => throw new ArgumentOutOfRangeException(nameof(kind)),
-    };
+        var writer = new CanonicalIdentityWriter("registration-instruction", 1);
+        writer.AddString("source", claim.SourceId);
+        writer.AddString("assertion", claim.Assertion.Id.Value);
+        writer.AddInt32("presence", (int)claim.Presence);
+        writer.AddString("binding", claim.Binding.Id.Value);
+        writer.AddString("scope-source", claim.ScopeEvidence.SourceId);
+        writer.AddString("scope", CanonicalRegistrationEncoding.Digest(claim.ScopeEvidence.Scope));
+        writer.AddString("scope-receipt", (claim.ScopeEvidence.Receipt.File?.Id ?? claim.ScopeEvidence.Receipt.Reference!.Id).Value);
+        foreach (var value in NormalizeApplicability(claim.UnresolvedApplicability))
+            writer.AddString("unresolved-applicability", CanonicalRegistrationEncoding.Digest(value));
+        return writer.Derive();
+    }
+
+    internal static RegistrationApplicability[] NormalizeApplicability(RegistrationApplicability[] values) =>
+        values.Select(value => value with { EvidenceIds = CanonicalRegistrationEncoding.Ordered(value.EvidenceIds) })
+            .DistinctBy(CanonicalRegistrationEncoding.Digest)
+            .OrderBy(CanonicalRegistrationEncoding.Digest, StringComparer.Ordinal).ToArray();
+
+    public static RegistrationInstructionClaim Create(
+        string sourceId, InstructionAssertion assertion, OperationalInstructionSectionPresence presence,
+        RegistrationInstructionReceipt receipt, RegistrationInstructionScopeEvidence scopeEvidence,
+        RegistrationApplicability[]? unresolvedApplicability = null)
+    {
+        var receiptId = receipt.File?.Id ?? receipt.Reference?.Id ??
+            throw new InvalidDataException("Instruction requires an exact canonical receipt.");
+        var basis = receipt.File is not null ? EvidenceVerificationKind.FileVerified : EvidenceVerificationKind.ReferenceVerified;
+        var contentId = EvidenceClaimContentId.DeriveV1(assertion);
+        var locator = assertion.SourceLocator.ExactFieldPathOrFragment;
+        var binding = new InstructionEvidenceBinding(
+            InstructionEvidenceBindingId.DeriveV3(receiptId, assertion.Id, assertion.SourceRevisionId, locator, contentId, basis),
+            receiptId, assertion.Id, assertion.SourceRevisionId, locator, contentId, basis);
+        var claim = new RegistrationInstructionClaim("", sourceId, assertion, presence, receipt, binding,
+            scopeEvidence, NormalizeApplicability(unresolvedApplicability ?? []));
+        return claim with { Id = ClaimId(claim) };
+    }
 }
