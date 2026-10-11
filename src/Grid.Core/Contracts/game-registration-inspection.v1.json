@@ -7,7 +7,7 @@
   "productAuthority": "GRID.md",
   "implementsIssue": "LIF-8",
   "sourceReviewCommentId": "ca187be6-47ef-4ebb-b091-f9bd57510674",
-  "repositoryCommitBasis": "3ff26d5c0c5d1d92999f40a760a36a7e9a495d14",
+  "repositoryCommitBasis": "57ae6a7de383ddd25a31e440bdaa4f1fc1863b09",
   "role": "InspectionChecklist",
   "loadedByCanonicalRegistrationChecklist": false,
   "authority": {
@@ -282,8 +282,8 @@
       "name": "Operational instructions",
       "inspect": "Installation, configuration, usage, compatibility, update, uninstall, and troubleshooting guidance.",
       "grounding": ["GRID.md original instructions are part of registration", "GTA BattlEye/Menyoo operator confirmations"],
-      "coverage": "Missing",
-      "v1Default": "Keep visible. Instructions are inspection evidence of required operator action, not auto-execution."
+      "coverage": "Partial",
+      "v1Default": "The bounded LIF-10 candidate-registration path is implemented. Real-provider coverage remains future source-admission work. Instructions are inspection evidence of required operator action, not auto-execution."
     },
     {
       "id": "GR-21",
