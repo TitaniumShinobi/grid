@@ -124,6 +124,7 @@ internal static class CanonicalOperationalInstructionInspectionChecks
             "This slice does not change the frozen 98-node DIF mold.");
         checks += RunRegistrationPathAsync().GetAwaiter().GetResult();
         checks += RunComposerPathAsync().GetAwaiter().GetResult();
+        checks += RunRealAdmittedSourceBoundary();
         return checks;
     }
 
@@ -268,6 +269,154 @@ internal static class CanonicalOperationalInstructionInspectionChecks
                archivePipeline.Rulings.Any(value => value.Reason == "instruction-section-absent"),
             "Composer path retains conflicting and proven-absence instruction rulings.");
         return checks;
+    }
+
+    /// <summary>
+    /// Records the remaining LIF-10 product-integration gap: no in-repo admitted
+    /// game/mod/tool source uniquely identifies GR-20 instruction locators.
+    /// Does not invent headings, admit operator docs, or mark integration done.
+    /// If a unique source-owned locator later appears in the admitted trees,
+    /// this check fails so that locator can be wired instead of ignored.
+    /// </summary>
+    private static int RunRealAdmittedSourceBoundary()
+    {
+        var checks = 0;
+        void Assert(bool condition, string message)
+        {
+            if (!condition) throw new InvalidOperationException("Operational instruction real-source boundary: " + message);
+            checks++;
+        }
+
+        var root = LocateRepositoryRoot();
+        var srcRoot = Path.Combine(root, "src");
+        var adapterFiles = Directory.GetFiles(srcRoot, "*RegistrationEvidenceAdapter*.cs", SearchOption.AllDirectories);
+        var productionAdapters = adapterFiles
+            .Where(path => !string.Equals(Path.GetFileName(path), "IRegistrationEvidenceAdapter.cs", StringComparison.Ordinal))
+            .ToArray();
+        Assert(adapterFiles.Any(path => string.Equals(Path.GetFileName(path), "IRegistrationEvidenceAdapter.cs",
+                StringComparison.Ordinal)) &&
+               productionAdapters.Length == 2 &&
+               productionAdapters.All(path => path.Contains("Grid.GtaV.Knowledge" + Path.DirectorySeparatorChar,
+                   StringComparison.Ordinal)),
+            "The only production IRegistrationEvidenceAdapter implementations are the GTA location adapters.");
+
+        var locationAdapter = File.ReadAllText(Path.Combine(srcRoot, "Grid.GtaV.Knowledge",
+            "GtaVLocationRegistrationEvidenceAdapter.cs"));
+        var hierarchyAdapter = File.ReadAllText(Path.Combine(srcRoot, "Grid.GtaV.Knowledge",
+            "GtaVLocationHierarchyRegistrationEvidenceAdapter.cs"));
+        Assert(locationAdapter.Contains("do not match the pinned corpus and native inventory.", StringComparison.Ordinal) &&
+               hierarchyAdapter.Contains("do not match the pinned corpus index.", StringComparison.Ordinal),
+            "GTA adapters pin the admitted location corpus and reject unexpected sources.");
+
+        var refreshAuthor = File.ReadAllText(Path.Combine(srcRoot, "Grid.GtaV.Knowledge",
+            "GtaVRegistrationMdboRefreshAuthor.cs"));
+        var rebuildAuthor = File.ReadAllText(Path.Combine(srcRoot, "Grid.GtaV.Knowledge",
+            "GtaVRegistrationPreparedNavigationRebuild.cs"));
+        Assert(!ContainsInstructionSectionSupply(refreshAuthor) && !ContainsInstructionSectionSupply(rebuildAuthor),
+            "GTA MDBO authors do not invent or supply instruction locators.");
+
+        var skyrimRoot = Path.Combine(root, "scripts", "games", "skyrimspecialedition");
+        Assert(Directory.Exists(skyrimRoot) &&
+               Directory.GetFiles(skyrimRoot, "*RegistrationEvidenceAdapter*", SearchOption.AllDirectories).Length == 0 &&
+               Directory.GetFiles(srcRoot, "*RegistrationEvidenceAdapter*.cs", SearchOption.AllDirectories)
+                   .All(path => !path.Contains("skyrim", StringComparison.OrdinalIgnoreCase)),
+            "Skyrim has tool-registry material but no registration evidence adapter.");
+
+        var admittedReferences = Path.Combine(root, "scripts", "games", "grandtheftautov", "catalog", "references");
+        Assert(Directory.Exists(admittedReferences), "The admitted GTA registration reference tree is present.");
+        var headingHits = FindExactInstructionHeadings(admittedReferences);
+        Assert(headingHits.Count == 0,
+            "Admitted GTA location/wiki/native references uniquely identify GR-20 headings; wire those locators instead of reporting this gap. Hits: " +
+            string.Join("; ", headingHits.Take(8)));
+        var instructionJsonHits = FindInstructionJsonObjects(admittedReferences);
+        Assert(instructionJsonHits.Count == 0,
+            "Admitted GTA JSON uniquely identifies /instructions pointers; wire those locators instead of reporting this gap. Hits: " +
+            string.Join("; ", instructionJsonHits.Take(8)));
+
+        var foreverTogether = Path.Combine(root, "scripts", "games", "grandtheftautov", "setup", "recipes",
+            "forever-together.v1.json");
+        var toolRegistry = Path.Combine(root, "scripts", "games", "skyrimspecialedition", "health",
+            "tool-registry.v2.json");
+        var guidedSetup = Path.Combine(root, "docs", "gta-v-guided-setup.md");
+        Assert(File.Exists(foreverTogether) && File.Exists(toolRegistry) && File.Exists(guidedSetup),
+            "Near-miss operator/recipe/registry files exist in-repo.");
+        Assert(!foreverTogether.StartsWith(admittedReferences, StringComparison.Ordinal) &&
+               !toolRegistry.StartsWith(admittedReferences, StringComparison.Ordinal) &&
+               !guidedSetup.StartsWith(admittedReferences, StringComparison.Ordinal),
+            "Near-miss setup recipe, Skyrim tool-registry, and guided-setup docs are not admitted registration sources.");
+        using (var recipe = System.Text.Json.JsonDocument.Parse(File.ReadAllBytes(foreverTogether)))
+            Assert(recipe.RootElement.TryGetProperty("recipeId", out _) &&
+                   recipe.RootElement.TryGetProperty("configuration", out var configuration) &&
+                   configuration.ValueKind == System.Text.Json.JsonValueKind.Array,
+                "forever-together.v1.json is a setup recipe with a configuration array, not admitted instruction text.");
+        using (var registry = System.Text.Json.JsonDocument.Parse(File.ReadAllBytes(toolRegistry)))
+        {
+            var firstCompatibility = registry.RootElement.GetProperty("tools")[0].GetProperty("compatibility")[0];
+            Assert(firstCompatibility.ValueKind == System.Text.Json.JsonValueKind.Object &&
+                   firstCompatibility.TryGetProperty("gameId", out _) &&
+                   firstCompatibility.TryGetProperty("evidenceCapabilityIds", out _),
+                "Skyrim tool-registry compatibility is capability-routing metadata, not operational instruction wording.");
+        }
+
+        return checks;
+    }
+
+    private static bool ContainsInstructionSectionSupply(string source) =>
+        source.Contains("OperationalInstructionSectionRequest", StringComparison.Ordinal) ||
+        source.Contains("instructionSections", StringComparison.Ordinal);
+
+    private static readonly string[] InstructionHeadingTitles =
+    [
+        "Installation", "Configuration", "Usage", "Compatibility", "Update", "Uninstall", "Troubleshooting",
+    ];
+
+    private static List<string> FindExactInstructionHeadings(string directory)
+    {
+        var hits = new List<string>();
+        foreach (var file in Directory.EnumerateFiles(directory, "*", SearchOption.AllDirectories))
+        {
+            var extension = Path.GetExtension(file);
+            if (extension is not (".md" or ".txt")) continue;
+            var lines = File.ReadAllText(file).Replace("\r\n", "\n", StringComparison.Ordinal).Replace('\r', '\n')
+                .Split('\n');
+            for (var i = 0; i < lines.Length; i++)
+            {
+                var line = lines[i];
+                var level = 0;
+                while (level < line.Length && line[level] == '#') level++;
+                if (level is < 1 or > 6 || level >= line.Length || line[level] != ' ') continue;
+                var title = line[(level + 1)..];
+                if (InstructionHeadingTitles.Contains(title, StringComparer.Ordinal))
+                    hits.Add(Path.GetRelativePath(directory, file) + ":" + (i + 1) + ":" + line);
+            }
+        }
+        return hits;
+    }
+
+    private static List<string> FindInstructionJsonObjects(string directory)
+    {
+        var hits = new List<string>();
+        foreach (var file in Directory.EnumerateFiles(directory, "*.json", SearchOption.AllDirectories))
+        {
+            var text = File.ReadAllText(file);
+            if (text.Contains("\"instructions\"", StringComparison.Ordinal))
+                hits.Add(Path.GetRelativePath(directory, file));
+        }
+        return hits;
+    }
+
+    private static string LocateRepositoryRoot()
+    {
+        var fromEnvironment = Environment.GetEnvironmentVariable("GRID_REPOSITORY_ROOT");
+        if (!string.IsNullOrWhiteSpace(fromEnvironment) && Directory.Exists(Path.Combine(fromEnvironment, ".git")))
+            return Path.GetFullPath(fromEnvironment);
+        for (var directory = AppContext.BaseDirectory; !string.IsNullOrEmpty(directory); directory = Path.GetDirectoryName(directory)!)
+        {
+            if (Directory.Exists(Path.Combine(directory, ".git")))
+                return directory;
+        }
+
+        throw new InvalidOperationException("Repository root is unavailable for operational-instruction real-source checks.");
     }
 
     private static void TraceRegistered(
