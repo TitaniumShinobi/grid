@@ -1,3 +1,7 @@
+param(
+    [switch]$InspectionContract
+)
+
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version 2.0
 
@@ -22,10 +26,15 @@ function Assert-Contains {
     Assert-True ($Text.IndexOf($Needle, [StringComparison]::OrdinalIgnoreCase) -ge 0) $Message
 }
 
+if (-not $InspectionContract) {
+
 $requiredDocs = @(
     'README.md',
     'docs/README.md',
     'docs/architecture.md',
+    'docs/game-registration-inspection-v1.md',
+    'src/Grid.Core/Contracts/game-registration-inspection.v1.json',
+    'src/Grid.Core/Contracts/canonical-registration-checklist.v1.json',
     'docs/CODEX_DIAGNOSTIC_SCRIPTING.md',
     'docs/capability-status.md',
     'docs/ui-authority-boundaries.md',
@@ -169,5 +178,80 @@ Assert-Contains $provenanceDoc 'distribution gate fails closed' 'Provenance docu
 $provenanceGate = Get-RepoText 'eng/provenance/Test-GridProvenance.ps1'
 Assert-Contains $provenanceGate 'RepositoryLicenseMissing' 'Distribution gate must require an attorney-approved repository license.'
 Assert-Contains $provenanceGate 'GPLBoundaryInvalid' 'Distribution gate must reject silent proprietary treatment of GPL-derived code.'
+
+}
+
+# LIF-8 inspection checklist is a sibling contract, not the 98-node DIF mold, and is not engine-loaded.
+$docsIndex = Get-RepoText 'docs/README.md'
+Assert-Contains $docsIndex 'Game Registration Inspection Checklist v1' 'Docs index must name the inspection checklist.'
+Assert-Contains $docsIndex 'Proposed metadata-first inspection checklist' 'Docs index must mark the inspection checklist as Proposed.'
+Assert-Contains $docsIndex 'not the frozen 98-node DIF projection mold' 'Docs index must keep the inspection checklist distinct from the DIF mold.'
+
+$gridMd = Get-RepoText 'GRID.md'
+Assert-Contains $gridMd 'Registration is metadata-first, not DIF-first.' 'GRID.md must retain metadata-first registration authority.'
+Assert-Contains $gridMd 'Register once. Resolve once. Use everywhere.' 'GRID.md must retain the register-once rule.'
+Assert-Contains $gridMd 'FILE VERIFIED' 'GRID.md must retain FILE VERIFIED evidence tags.'
+Assert-Contains $gridMd 'REFERENCE VERIFIED' 'GRID.md must retain REFERENCE VERIFIED evidence tags.'
+Assert-Contains $gridMd 'UNRESOLVED' 'GRID.md must retain UNRESOLVED evidence tags.'
+
+$coreProject = Get-RepoText 'src/Grid.Core/Grid.Core.csproj'
+Assert-Contains $coreProject 'Contracts\canonical-registration-checklist.v1.json' 'Core must embed the frozen DIF mold checklist.'
+Assert-True ($coreProject -notmatch 'game-registration-inspection\.v1\.json') 'Inspection checklist must not be an EmbeddedResource loaded by Core.'
+
+$mold = Get-RepoText 'src/Grid.Core/Contracts/canonical-registration-checklist.v1.json' | ConvertFrom-Json
+Assert-Equal '1' ([string]$mold.version) 'DIF mold checklist version must remain 1.'
+Assert-Equal 98 @($mold.nodes).Count 'DIF mold must remain exactly 98 authored nodes.'
+$moldSelectors = @($mold.nodes | Where-Object { -not $_.parentId } | ForEach-Object { [string]$_.id })
+Assert-Equal 'Tool Mod Location MissionQuest Item Actor' ($moldSelectors -join ' ') 'DIF mold selector roots must remain the six authored identities.'
+
+$inspectionJson = Get-RepoText 'src/Grid.Core/Contracts/game-registration-inspection.v1.json'
+$inspection = $inspectionJson | ConvertFrom-Json
+Assert-Equal 1 ([int]$inspection.schemaVersion) 'Inspection checklist schemaVersion must be 1.'
+Assert-Equal 'grid.game-registration-inspection.v1' ([string]$inspection.contractId) 'Inspection contractId must be stable.'
+Assert-Equal 'Proposed' ([string]$inspection.status) 'Inspection checklist remains Proposed until product publication is separately decided.'
+Assert-Equal 'NOT_PUBLISHED' ([string]$inspection.authority.publicationState) 'Inspection contract must preserve NOT_PUBLISHED.'
+Assert-Equal $false ([bool]$inspection.loadedByCanonicalRegistrationChecklist) 'Inspection checklist must declare it is not engine-loaded.'
+Assert-Equal 98 ([int]$inspection.authority.difMold.requiredNodeCount) 'Inspection contract must freeze the DIF mold at 98 nodes without modifying it.'
+Assert-Equal 21 @($inspection.categories).Count 'Inspection checklist must enumerate exactly 21 categories.'
+$expectedIds = @(1..21 | ForEach-Object { 'GR-{0:D2}' -f $_ })
+$actualIds = @($inspection.categories | ForEach-Object { [string]$_.id })
+Assert-Equal ($expectedIds -join ' ') ($actualIds -join ' ') 'Inspection category ids must be GR-01 through GR-21 in order.'
+foreach ($category in @($inspection.categories)) {
+    Assert-True (-not [string]::IsNullOrWhiteSpace([string]$category.name)) "Category $($category.id) must have a name."
+    Assert-True (-not [string]::IsNullOrWhiteSpace([string]$category.inspect)) "Category $($category.id) must declare what GRID inspects."
+    Assert-True (@('Implemented', 'Partial', 'Missing') -contains [string]$category.coverage) "Category $($category.id) coverage must use the v1 vocabulary."
+    Assert-True (@($category.grounding).Count -ge 1) "Category $($category.id) must cite repository grounding."
+}
+$coverageValues = @($inspection.categories | ForEach-Object { [string]$_.coverage } | Sort-Object -Unique)
+Assert-True ($coverageValues -contains 'Partial') 'Inspection checklist must distinguish Partial coverage from Implemented.'
+Assert-True ($coverageValues -contains 'Missing') 'Inspection checklist must keep Missing categories visible.'
+Assert-True ($coverageValues -notcontains 'Implemented') 'No GR category may claim Implemented inspection completeness in v1.'
+Assert-Contains ([string]$inspection.coverageRule) 'game-agnostic completeness' 'Coverage rule must keep game-specific coverage distinct from game-agnostic completeness.'
+Assert-Contains $inspectionJson 'Preserve ambiguity instead of guessing' 'Inspection evidence rules must preserve GRID.md ambiguity.'
+$gr09 = @($inspection.categories | Where-Object { [string]$_.id -eq 'GR-09' })[0]
+Assert-Contains ([string]$gr09.v1Default) 'It does not mean string-table completeness.' 'GR-09 Partial must not be read as string-table completeness.'
+$gr19 = @($inspection.categories | Where-Object { [string]$_.id -eq 'GR-19' })[0]
+Assert-Contains ([string]$gr19.inspect) 'RegistrationApplicability remains GameId plus optional ProfileId' 'GR-19 must distinguish implemented applicability from inspection facts.'
+Assert-Contains ([string]$gr19.v1Default) 'Do not widen RegistrationApplicability in v1.' 'GR-19 must not widen Contract 2 applicability fields.'
+Assert-Equal 3 @($inspection.escalations).Count 'Inspection checklist must retain the three product-intent escalations only.'
+foreach ($escalation in @($inspection.escalations)) {
+    Assert-Equal 'No' ([string]$escalation.v1Recommendation) "Escalation $($escalation.id) v1 recommendation must remain No."
+}
+$candidateIsNot = @($inspection.authority.candidateVerificationIsNot | ForEach-Object { [string]$_ })
+foreach ($forbidden in @('live publication', 'KnowledgeRebuild catalog import', 'Workstation Refresh publish', 'populated live DIF')) {
+    Assert-True ($candidateIsNot -contains $forbidden) "Candidate verification must remain distinct from '$forbidden'."
+}
+$inspectionDoc = Get-RepoText 'docs/game-registration-inspection-v1.md'
+Assert-Contains $inspectionDoc 'game-registration-inspection.v1.json' 'Human checklist must point at the machine-readable contract.'
+Assert-Contains $inspectionDoc 'canonical-registration-checklist.v1.json' 'Human checklist must name the DIF mold it is not.'
+Assert-Contains $inspectionDoc 'NOT_PUBLISHED' 'Human checklist must preserve the NOT_PUBLISHED boundary.'
+Assert-Contains $inspectionDoc 'GR-01 through GR-21' 'Human checklist must cover the 21 inspection categories.'
+Assert-Contains $inspectionDoc 'game-agnostic completeness' 'Human checklist must keep game-specific coverage distinct from game-agnostic completeness.'
+Assert-Contains $inspectionDoc 'Preserve ambiguity' 'Human checklist must preserve GRID.md ambiguity.'
+Assert-Contains $inspectionDoc 'Proposed metadata-first' 'Human checklist must remain Proposed, not a frozen live contract.'
+Assert-Contains $inspectionDoc '--game-registration-inspection' 'Human checklist must name the independent Core inspection selector.'
+Assert-Contains $inspectionDoc '-InspectionContract' 'Human checklist must name the independent ArchitectureConformance inspection selector.'
+$coreTestsEntry = Get-RepoText 'tests/Grid.Core.Tests/Program.cs'
+Assert-Contains $coreTestsEntry '--game-registration-inspection' 'Core tests must expose an independent LIF-8 inspection selector.'
 
 Write-Host 'PASS: GRID architecture/documentation conformance checks passed.'

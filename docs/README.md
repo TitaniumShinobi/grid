@@ -3,6 +3,7 @@
 This tree is the authoritative architecture baseline for current GRID work, subject to repository artifacts and root `AGENTS.md`.
 
 - [Architecture](architecture.md) defines the application, workspace, adapter, and authority boundaries.
+- [Game Registration Inspection Checklist v1](game-registration-inspection-v1.md) is the Proposed metadata-first inspection checklist (LIF-8). It is not the frozen 98-node DIF projection mold.
 - [MO2 dual-pane ordering](mo2-dual-pane-ordering.md) keeps left-pane mod/file priority independent from right-pane plugin load order and defines LOOT's role.
 - [UI and authority boundaries](ui-authority-boundaries.md) locks shell, sidebar, workspace, assistant, composer, and form behavior.
 - [Capability status](capability-status.md) distinguishes Implemented, Partial, Dormant prototype, Planned, and Prohibited behavior.
