@@ -10,7 +10,9 @@ public enum RegistrationEntityKind { Entity, Category, Variant, TechnicalArtifac
 public enum RegistrationOutcome { Correlated, Unresolved, Rejected, Ambiguous }
 public enum RegistrationFacetKind { AlternateView, Filter }
 public sealed record RegistrationSource(string Id, string Uri, KnowledgeSourceKind Kind, string Sha256,
-    string AdapterId, string AdapterVersion, string Family);
+    string AdapterId, string AdapterVersion, string Family,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    RegistrationInstructionSource? InstructionSource = null);
 public sealed record RegistrationSourceArtifact(RegistrationSource Source, byte[] Bytes);
 public sealed record RegistrationEvidence(string Id, string SourceId, string Locator, EvidenceVerificationKind Basis);
 public sealed record RegistrationName(string Value, string Locale, bool IsAlias, string[] EvidenceIds);
@@ -37,7 +39,9 @@ public sealed record RegistrationLevelFrameNode(string Id, string Selector, stri
 public sealed record RegistrationRuleSet(string Version, RegistrationMappingRule[] Rules,
     [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] RegistrationLevelFrameNode[]? LevelFrame = null);
 public sealed record RegistrationEvidenceSet(RegistrationEvidence[] Evidence, RegistrationEntityClaim[] Entities,
-    RegistrationRelationshipClaim[] Relationships, RegistrationFacetClaim[] Facets);
+    RegistrationRelationshipClaim[] Relationships, RegistrationFacetClaim[] Facets,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] RegistrationInstructionClaim[]? Instructions = null,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] InstructionConflictGroup[]? InstructionConflicts = null);
 public sealed record RegistrationInput(RegistrationSource[] Sources, RegistrationRuleSet RuleSet,
     RegistrationEvidenceSet Evidence);
 public sealed record RegistrationRuling(string ClaimId, string Stage, RegistrationOutcome Outcome,
@@ -56,7 +60,9 @@ public sealed record RegisteredCanonicalFacet(string Id, string EntityId, Regist
 public sealed record CanonicalRegistrationCandidate(int FormatVersion, string EngineVersion,
     string ChecklistVersion, string ChecklistDigest, string RuleDigest, RegistrationInput Input,
     RegisteredCanonicalEntity[] Entities, RegisteredCanonicalRelationship[] Relationships,
-    RegisteredCanonicalFacet[] Facets, RegistrationRuling[] Rulings, string PublicationState);
+    RegisteredCanonicalFacet[] Facets, RegistrationRuling[] Rulings, string PublicationState,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] RegisteredOperationalInstruction[]? Instructions = null,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] InstructionConflictGroup[]? InstructionConflicts = null);
 public sealed record RegistrationNavigationContext(string GameId, string ProfileId, string Locale);
 public sealed record RegistrationNavigationRow(string PathId, string? ParentPathId, string Selector,
     string Label, string? EntityId, bool Selectable, bool CanDescend, string[] EvidenceIds);

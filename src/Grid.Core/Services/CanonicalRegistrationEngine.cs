@@ -26,13 +26,24 @@ public static class CanonicalRegistrationEngine
         rules = System.Text.Json.JsonSerializer.Deserialize<RegistrationRuleSet>(CanonicalRegistrationEncoding.Bytes(rules), CanonicalRegistrationEncoding.Json)
             ?? throw new InvalidDataException("Mapping rules are empty.");
         var discovered = await adapter.DiscoverAsync(frozen, cancellationToken).ConfigureAwait(false);
-        if (!discovered.OrderBy(s => s.Id, StringComparer.Ordinal).SequenceEqual(frozen.Select(s => s.Source)))
-            throw new InvalidDataException("Discovery must account for exactly the admitted source set.");
+        ValidateDiscoveredSources(discovered, frozen);
         var evidence = await adapter.ExtractAsync(frozen, cancellationToken).ConfigureAwait(false);
         if (frozen.Any(item => CanonicalRegistrationEncoding.Digest(item.Bytes) != item.Source.Sha256))
             throw new InvalidDataException("An adapter modified its admitted source bytes.");
         cancellationToken.ThrowIfCancellationRequested();
         return Evaluate(Normalize(new(frozen.Select(s => s.Source).ToArray(), rules, evidence)), existingPackages);
+    }
+
+    internal static void ValidateDiscoveredSources(IReadOnlyList<RegistrationSource> discovered,
+        IReadOnlyList<RegistrationSourceArtifact> admitted)
+    {
+        var actual = discovered.OrderBy(s => s.Id, StringComparer.Ordinal).ToArray();
+        var expected = admitted.Select(s => s.Source).OrderBy(s => s.Id, StringComparer.Ordinal).ToArray();
+        if (actual.Length != expected.Length || actual.Where((source, index) =>
+            source with { InstructionSource = null } != expected[index] with { InstructionSource = null } ||
+            CanonicalRegistrationEncoding.Digest(source.InstructionSource) !=
+                CanonicalRegistrationEncoding.Digest(expected[index].InstructionSource)).Any())
+            throw new InvalidDataException("Discovery must account for exactly the admitted source set.");
     }
 
     internal static RegistrationInput Normalize(RegistrationInput input)
@@ -55,7 +66,9 @@ public static class CanonicalRegistrationEngine
                 input.Evidence.Entities.Select(e => e with { Names = Names(e.Names), Applicability = Applies(e.Applicability),
                     Origins = Origins(e.Origins), EvidenceIds = E(e.EvidenceIds) }).OrderBy(e => e.Key, StringComparer.Ordinal).ToArray(),
                 input.Evidence.Relationships.Select(r => r with { EvidenceIds = E(r.EvidenceIds) }).OrderBy(r => r.Id, StringComparer.Ordinal).ToArray(),
-                input.Evidence.Facets.Select(f => f with { EvidenceIds = E(f.EvidenceIds) }).OrderBy(f => f.Id, StringComparer.Ordinal).ToArray()));
+                input.Evidence.Facets.Select(f => f with { EvidenceIds = E(f.EvidenceIds) }).OrderBy(f => f.Id, StringComparer.Ordinal).ToArray(),
+                CanonicalRegistrationInstructionValidation.Normalize(input.Evidence.Instructions),
+                CanonicalRegistrationInstructionValidation.Normalize(input.Evidence.InstructionConflicts)));
     }
 
     internal static CanonicalRegistrationCandidate Evaluate(RegistrationInput input, IReadOnlyList<CanonicalCatalogPackage>? existingPackages = null)
@@ -316,12 +329,14 @@ public static class CanonicalRegistrationEngine
             if (alias.Select(a => a.Entity.Id).Distinct().Count() > 1)
                 Rule(CanonicalRegistrationEncoding.Digest(alias.Key.ToString()), "alias", RegistrationOutcome.Ambiguous,
                     "alias-multiple-identities", CanonicalRegistrationEncoding.Ordered(alias.SelectMany(a => a.Name.EvidenceIds)));
+        var instructions = CanonicalRegistrationInstructionValidation.Admit(input, rulings);
         var orderedRelationships = relationships.OrderBy(r => r.Id, StringComparer.Ordinal).ToArray();
         var orderedRulings = rulings.OrderBy(r => r.Stage, StringComparer.Ordinal).ThenBy(r => r.ClaimId, StringComparer.Ordinal)
             .ThenBy(r => r.Reason, StringComparer.Ordinal).ToArray();
         var candidate = new CanonicalRegistrationCandidate(1, CanonicalRegistrationEncoding.EngineVersion, checklist.Version, checklist.Digest,
             CanonicalRegistrationEncoding.Digest(input.RuleSet), input, entities.ToArray(), orderedRelationships,
-            facets.OrderBy(f => f.Id, StringComparer.Ordinal).ToArray(), orderedRulings, CanonicalRegistrationEncoding.NotPublished);
+            facets.OrderBy(f => f.Id, StringComparer.Ordinal).ToArray(), orderedRulings, CanonicalRegistrationEncoding.NotPublished,
+            instructions, input.Evidence.InstructionConflicts);
         CanonicalRelationshipGraphValidator.Validate(candidate);
         return candidate;
     }
